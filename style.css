@@ -11,6 +11,9 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: #d1e3f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Optimized Diagonal Wave Background (TR to BL) */
@@ -126,6 +129,7 @@ main.container {
     z-index: 1;
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 
 .news-grid {
