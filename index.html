@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cYHBernews | Tu Periódico Tech Estático</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="mesh-gradient"></div>
+    
+    <header class="ios-header">
+        <div class="ios-status-bar">
+            <span class="ios-time" id="current-time">09:41</span>
+            <div class="ios-icons">
+                <i data-lucide="signal" class="ios-icon"></i>
+                <i data-lucide="wifi" class="ios-icon"></i>
+                <i data-lucide="battery" class="ios-icon"></i>
+            </div>
+        </div>
+        <div class="ios-nav-bar">
+            <h1 class="ios-title">cYHBer<span>news</span></h1>
+            <nav class="ios-tabs" id="category-filters">
+                <button class="ios-tab active" data-category="all">Recientes</button>
+                <button class="ios-tab" data-category="Ciberseguridad">Seguridad</button>
+                <button class="ios-tab" data-category="Tech">Tech</button>
+                <button class="ios-tab" data-category="IA">IA</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="news-grid" class="news-grid">
+            <!-- Las noticias se cargarán aquí dinámicamente -->
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 cYHBernews.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+:root {
+    --primary: #007aff; 
+    --text: #1a1a1a;
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --radius: 24px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text);
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #d1e3f0;
+}
+
+/* Optimized Diagonal Wave Background (TR to BL) */
+#mesh-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: #d1e3f0;
+    background-image: 
+        radial-gradient(circle at 100% 0%, #3e6a8d 0%, transparent 40%),
+        radial-gradient(circle at 85% 15%, #6d96b0 0%, transparent 45%),
+        radial-gradient(circle at 70% 30%, #a2c4d9 0%, transparent 50%);
+    background-size: 150% 150%;
+    animation: flow-diagonal 20s ease-in-out infinite alternate;
+    will-change: background-position;
+}
+
+@keyframes flow-diagonal {
+    0% { background-position: 10% 10%; }
+    100% { background-position: 90% 90%; }
+}
+
+/* Minimal iOS Header */
+.ios-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.5); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 6px 0 10px;
+}
+
+.ios-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 0.7rem; 
+    font-weight: 700;
+    margin-bottom: 2px;
+    color: #000;
+    height: 14px;
+}
+
+.ios-icons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.ios-icon {
+    width: 14px;
+    height: 14px;
+    stroke-width: 2.5px;
+}
+
+.ios-nav-bar {
+    text-align: center;
+}
+
+.ios-title {
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+    text-align: center;
+    color: #000;
+}
+
+.ios-tabs {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 2px;
+    border-radius: 8px;
+    gap: 2px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.ios-tab {
+    border: none;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 5px 14px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ios-tab.active {
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+main.container {
+    padding-top: 30px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    padding-bottom: 60px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Optimized News Card */
+.news-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Performance: avoid heavy filters during scroll */
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-window-header {
+    padding: 12px 16px 8px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.card-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: #0d1117; 
+}
+
+.code-editor {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    padding: 16px;
+    color: #e6edf3;
+    line-height: 1.5;
+}
+
+.code-keyword { color: #ff7b72; } 
+.code-string { color: #a5d6ff; }  
+.code-comment { color: #8b949e; font-style: italic; }
+.code-func { color: #d2a8ff; }
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #8b949e;
+    background: #161b22;
+    padding: 8px 16px;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    .news-grid { grid-template-columns: 1fr; }
+}
