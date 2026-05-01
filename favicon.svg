@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007aff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Terminal window body -->
+  <rect width="64" height="64" rx="14" fill="#0d1117"/>
+  <!-- Traffic light dots -->
+  <circle cx="14" cy="18" r="4" fill="#ff5f56"/>
+  <circle cx="26" cy="18" r="4" fill="#ffbd2e"/>
+  <circle cx="38" cy="18" r="4" fill="#27c93f"/>
+  <!-- Separator line -->
+  <line x1="8" y1="27" x2="56" y2="27" stroke="#30363d" stroke-width="1.5"/>
+  <!-- "cY" monospace text -->
+  <text x="10" y="50" font-family="monospace" font-size="22" font-weight="700" fill="#007aff">cY</text>
+  <!-- Blinking cursor block -->
+  <rect x="42" y="33" width="10" height="16" rx="2" fill="#007aff" opacity="0.85"/>
 </svg>

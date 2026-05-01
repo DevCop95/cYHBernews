@@ -6,15 +6,52 @@
     <title>cYHBernews | Tu Periódico Tech Estático</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+
+    <!-- ═══════════════════════════════════════
+         LOADING SCREEN
+    ════════════════════════════════════════ -->
+    <div id="loader-overlay">
+        <div class="loader-inner">
+
+            <!-- Favicon SVG ampliado -->
+            <div class="loader-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="80" height="80">
+                    <rect width="64" height="64" rx="14" fill="#0d1117"/>
+                    <circle cx="14" cy="18" r="4" fill="#ff5f56"/>
+                    <circle cx="26" cy="18" r="4" fill="#ffbd2e"/>
+                    <circle cx="38" cy="18" r="4" fill="#27c93f"/>
+                    <line x1="8" y1="27" x2="56" y2="27" stroke="#30363d" stroke-width="1.5"/>
+                    <text x="10" y="50" font-family="monospace" font-size="22" font-weight="700" fill="#007aff">cY</text>
+                    <rect x="42" y="33" width="10" height="16" rx="2" fill="#007aff" opacity="0.85" class="cursor-blink"/>
+                </svg>
+            </div>
+
+            <!-- Título con scramble -->
+            <div class="loader-title" id="loader-scramble-title">cYHBernews</div>
+
+            <!-- Línea de estado tipo terminal -->
+            <div class="loader-status">
+                <span class="loader-status-dot"></span>
+                <span id="loader-status-text">Initializing feed...</span>
+            </div>
+
+            <!-- Barra de progreso -->
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill" id="loader-bar"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ═══════════════════════════════════════ -->
+
     <div id="mesh-gradient"></div>
-    
+
     <header class="ios-header">
         <div class="ios-status-bar">
             <span class="ios-time" id="current-time">09:41</span>
@@ -25,7 +62,7 @@
             </div>
         </div>
         <div class="ios-nav-bar">
-            <h1 class="ios-title">cYHBer<span>news</span></h1>
+            <h1 class="ios-title" id="scramble-title" aria-label="cYHBernews">cYHBernews</h1>
             <nav class="ios-tabs" id="category-filters">
                 <button class="ios-tab active" data-category="all">Recientes</button>
                 <button class="ios-tab" data-category="Ciberseguridad">Seguridad</button>
@@ -37,7 +74,6 @@
 
     <main class="container">
         <section id="news-grid" class="news-grid">
-            <!-- Las noticias se cargarán aquí dinámicamente -->
             <div class="skeleton-card"></div>
             <div class="skeleton-card"></div>
             <div class="skeleton-card"></div>
