@@ -1,13 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     const newsGrid = document.getElementById('news-grid');
     const filterButtons = document.querySelectorAll('.ios-tab');
-    let allNews = [];
+    const searchInput = document.getElementById('news-search');
+    const sortSelect = document.getElementById('news-sort');
+    const totalCount = document.getElementById('total-count');
+    const latestDate = document.getElementById('latest-date');
+    const sourceCount = document.getElementById('source-count');
+    const resultsLabel = document.getElementById('results-label');
+    const pager = document.getElementById('news-pager');
+    const pagerStatus = document.getElementById('pager-status');
+    const loadMoreButton = document.getElementById('load-more-news');
+    const menuButton = document.getElementById('nav-menu-button');
+    const newsMenu = document.getElementById('news-menu');
 
-    // ─────────────────────────────────────────
-    // 0.1  iOS Clock
-    // ─────────────────────────────────────────
+    let allNews = [];
+    let currentResults = [];
+    const PAGE_SIZE = 12;
+    const state = {
+        category: 'all',
+        query: '',
+        sort: 'newest',
+        visibleCount: PAGE_SIZE,
+    };
+
     function updateIOSTime() {
         const timeEl = document.getElementById('current-time');
+        if (!timeEl) return;
         const now = new Date();
         timeEl.textContent =
             now.getHours().toString().padStart(2, '0') + ':' +
@@ -21,9 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     refreshIcons();
 
-    // ─────────────────────────────────────────
-    // 0.2  Scramble Effect  (reutilizable)
-    // ─────────────────────────────────────────
     const CHARSET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&!?';
 
     function scramble(targetId, finalText, onDone) {
@@ -35,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         el.innerHTML = finalText
             .split('')
-            .map((ch, i) => `<span class="scramble-char" data-i="${i}">${ch}</span>`)
+            .map((ch, i) => `<span class="scramble-char" data-i="${i}">${escapeHTML(ch)}</span>`)
             .join('');
 
         const spans = el.querySelectorAll('.scramble-char');
@@ -46,8 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
             let revealed = false;
 
             const noiseId = setInterval(() => {
-                if (!revealed)
+                if (!revealed) {
                     span.textContent = CHARSET[Math.floor(Math.random() * CHARSET.length)];
+                }
             }, 40);
 
             setTimeout(() => {
@@ -70,49 +86,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ─────────────────────────────────────────
-    // 0.3  Loader Logic
-    // ─────────────────────────────────────────
     const loaderOverlay = document.getElementById('loader-overlay');
-    const loaderBar     = document.getElementById('loader-bar');
-    const statusText    = document.getElementById('loader-status-text');
+    const loaderBar = document.getElementById('loader-bar');
+    const statusText = document.getElementById('loader-status-text');
 
     const STATUS_STEPS = [
-        { pct: 20,  msg: 'Connecting to feed...' },
-        { pct: 45,  msg: 'Fetching articles...'  },
-        { pct: 70,  msg: 'Parsing data...'       },
-        { pct: 90,  msg: 'Almost there...'       },
-        { pct: 100, msg: 'Ready.'                },
+        { pct: 20, msg: 'Connecting to feed...' },
+        { pct: 45, msg: 'Fetching articles...' },
+        { pct: 70, msg: 'Parsing data...' },
+        { pct: 90, msg: 'Organizing feed...' },
+        { pct: 100, msg: 'Ready.' },
     ];
 
     function advanceLoader(step) {
-        if (step >= STATUS_STEPS.length) return;
-        loaderBar.style.width  = STATUS_STEPS[step].pct + '%';
+        if (!loaderBar || !statusText || step >= STATUS_STEPS.length) return;
+        loaderBar.style.width = STATUS_STEPS[step].pct + '%';
         statusText.textContent = STATUS_STEPS[step].msg;
     }
 
-    // Tiempo mínimo que el loader permanece visible (ms)
-    const MIN_LOADER_MS = 3200;
-    const loaderStart   = Date.now();
+    const MIN_LOADER_MS = 1600;
+    const loaderStart = Date.now();
 
     function hideLoader() {
-        const elapsed   = Date.now() - loaderStart;
+        if (!loaderOverlay) return;
+        const elapsed = Date.now() - loaderStart;
         const remaining = Math.max(0, MIN_LOADER_MS - elapsed);
         setTimeout(() => {
-            advanceLoader(4);                                          // barra al 100 %
-            setTimeout(() => loaderOverlay.classList.add('hide'), 700); // fade-out más suave
+            advanceLoader(4);
+            setTimeout(() => loaderOverlay.classList.add('hide'), 450);
         }, remaining);
     }
 
     scramble('loader-scramble-title', 'cYHBernews');
     advanceLoader(0);
-    setTimeout(() => advanceLoader(1), 700);   // Fetching…
-    setTimeout(() => advanceLoader(2), 1400);  // Parsing…
-    setTimeout(() => advanceLoader(3), 2200);  // Almost there…
+    setTimeout(() => advanceLoader(1), 400);
+    setTimeout(() => advanceLoader(2), 800);
+    setTimeout(() => advanceLoader(3), 1200);
 
-    // ─────────────────────────────────────────
-    // 0.4  Header scramble + hover
-    // ─────────────────────────────────────────
     function triggerHeaderScramble() {
         scramble('scramble-title', 'cYHBernews');
     }
@@ -124,16 +134,14 @@ document.addEventListener('DOMContentLoaded', () => {
         headerTitle.addEventListener('mouseenter', triggerHeaderScramble);
     }
 
-    // ─────────────────────────────────────────
-    // 1.  Cargar noticias
-    // ─────────────────────────────────────────
     async function loadNews() {
         try {
             const response = await fetch(`noticias.json?v=${Date.now()}`);
             if (!response.ok) throw new Error('Error al cargar noticias.');
             allNews = await response.json();
             allNews.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
-            renderNews(allNews);
+            updateOverview(allNews);
+            applyFilters();
         } catch (error) {
             console.error(error);
             newsGrid.innerHTML = `<p class="error-msg">Error: No se pudieron cargar las noticias.</p>`;
@@ -142,44 +150,154 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // ─────────────────────────────────────────
-    // 2.  Render
-    // ─────────────────────────────────────────
-    function renderNews(newsToRender) {
-        if (newsToRender.length === 0) {
-            newsGrid.innerHTML = `<p class="empty-msg">No hay noticias disponibles.</p>`;
+    function updateOverview(news) {
+        if (totalCount) totalCount.textContent = news.length.toString();
+        if (latestDate) latestDate.textContent = news[0] ? formatDate(news[0].fecha) : '-';
+        if (sourceCount) {
+            sourceCount.textContent = new Set(news.map(item => item.fuente).filter(Boolean)).size.toString();
+        }
+    }
+
+    function applyFilters() {
+        state.visibleCount = PAGE_SIZE;
+        currentResults = getFilteredNews();
+        renderNews();
+    }
+
+    function getFilteredNews() {
+        const query = normalizeText(state.query);
+        const filtered = allNews.filter(news => {
+            const matchesCategory = state.category === 'all' || news.categoria === state.category;
+            const searchable = normalizeText([
+                news.titulo,
+                news.resumen,
+                news.fuente,
+                news.categoria,
+            ].join(' '));
+            return matchesCategory && (!query || searchable.includes(query));
+        });
+
+        return filtered.sort((a, b) => {
+            if (state.sort === 'oldest') return new Date(a.fecha) - new Date(b.fecha);
+            if (state.sort === 'source') return String(a.fuente).localeCompare(String(b.fuente), 'es');
+            return new Date(b.fecha) - new Date(a.fecha);
+        });
+    }
+
+    function renderNews() {
+        const newsToRender = currentResults.slice(0, state.visibleCount);
+
+        if (resultsLabel) {
+            const label = state.category === 'all' ? 'la actualidad' : state.category;
+            resultsLabel.textContent = `${currentResults.length} noticias en ${label}`;
+        }
+
+        if (currentResults.length === 0) {
+            newsGrid.innerHTML = `<p class="empty-msg">No hay noticias para estos filtros.</p>`;
+            updatePager();
             return;
         }
 
-        newsGrid.innerHTML = newsToRender.map(news => `
-            <a href="${news.enlace_original}" target="_blank" rel="noopener noreferrer" class="news-card">
-                <div class="card-window-header">
-                    <div class="dot red"></div>
-                    <div class="dot yellow"></div>
-                    <div class="dot green"></div>
-                </div>
-                ${news.url_imagen
-                    ? `<img src="${news.url_imagen}" alt="${news.titulo}" class="card-image" loading="lazy">`
-                    : ''}
-                <div class="card-content">
-                    <div class="code-editor">
-                        <span class="code-comment"># cYHBernews_report.py</span><br>
-                        <span class="code-keyword">news_item</span> = {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"title"</span>: <span class="code-string">"${news.titulo}"</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"category"</span>: <span class="code-string">"${news.categoria}"</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"summary"</span>: <span class="code-string">"${news.resumen}"</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"source"</span>: <span class="code-func">load_source</span>(<span class="code-string">"${news.fuente}"</span>)<br>
-                        }
+        const [featured, ...rest] = newsToRender;
+        const groupedNews = groupByDay(rest);
+
+        newsGrid.innerHTML = `
+            <section class="featured-news" aria-label="Noticia destacada">
+                ${renderCard(featured, true)}
+            </section>
+            ${Object.entries(groupedNews).map(([day, items]) => `
+                <section class="news-day-group">
+                    <div class="day-heading">
+                        <span>${escapeHTML(day)}</span>
+                        <small>${items.length} ${items.length === 1 ? 'nota' : 'notas'}</small>
                     </div>
+                    <div class="news-list">
+                        ${items.map(news => renderCard(news)).join('')}
+                    </div>
+                </section>
+            `).join('')}
+        `;
+
+        refreshIcons();
+        updatePager();
+    }
+
+    function updatePager() {
+        if (!pager || !pagerStatus || !loadMoreButton) return;
+
+        const shown = Math.min(state.visibleCount, currentResults.length);
+        const remaining = Math.max(0, currentResults.length - shown);
+
+        pager.hidden = currentResults.length <= PAGE_SIZE;
+        pagerStatus.textContent = `Mostrando ${shown} de ${currentResults.length}`;
+        loadMoreButton.hidden = remaining === 0;
+        loadMoreButton.disabled = remaining === 0;
+        loadMoreButton.innerHTML = `<i data-lucide="plus"></i> Cargar ${Math.min(PAGE_SIZE, remaining)} más`;
+        refreshIcons();
+    }
+
+    function renderCard(news, isFeatured = false) {
+        const title = getCleanTitle(news);
+        const summary = getCleanSummary(news);
+        return `
+            <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="news-card ${isFeatured ? 'is-featured' : ''}">
+                ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" class="card-image" loading="lazy">` : ''}
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span>${escapeHTML(news.categoria || 'General')}</span>
+                        <span>${formatDate(news.fecha)}</span>
+                    </div>
+                    <h2>${escapeHTML(title)}</h2>
+                    <p>${escapeHTML(summary)}</p>
                     <div class="card-footer">
-                        <span class="card-source">Process: SUCCESS</span>
-                        <span class="card-date">${formatDate(news.fecha)}</span>
+                        <span>${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
+                        <span class="read-link">Abrir <i data-lucide="external-link"></i></span>
                     </div>
                 </div>
             </a>
-        `).join('');
+        `;
+    }
 
-        refreshIcons();
+    function groupByDay(news) {
+        return news.reduce((groups, item) => {
+            const day = formatDate(item.fecha);
+            groups[day] = groups[day] || [];
+            groups[day].push(item);
+            return groups;
+        }, {});
+    }
+
+    function getCleanTitle(news) {
+        const title = String(news.titulo || 'Sin título').replace(/^Tít[uú]lo:\s*/i, '').trim();
+        return title.split('\n')[0].trim();
+    }
+
+    function getCleanSummary(news) {
+        const summary = String(news.resumen || '').replace(/^Res[uú]men:\s*/i, '').trim();
+        if (summary) return summary;
+        const titleParts = String(news.titulo || '').split('\n').slice(1).join(' ').trim();
+        return titleParts || 'Resumen no disponible por ahora.';
+    }
+
+    function normalizeText(value) {
+        return String(value || '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase();
+    }
+
+    function escapeHTML(value) {
+        return String(value ?? '').replace(/[&<>"']/g, char => ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#039;',
+        }[char]));
+    }
+
+    function escapeAttribute(value) {
+        return escapeHTML(value).replace(/`/g, '&#096;');
     }
 
     function formatDate(isoString) {
@@ -187,17 +305,107 @@ document.addEventListener('DOMContentLoaded', () => {
             { year: 'numeric', month: 'short', day: 'numeric' });
     }
 
-    // ─────────────────────────────────────────
-    // 4.  Filtros
-    // ─────────────────────────────────────────
+    function closeMenu() {
+        if (!menuButton || !newsMenu || newsMenu.style.display === 'none') return;
+        
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Abrir herramientas');
+        menuButton.classList.remove('active');
+        newsMenu.style.display = 'none';
+        
+        // Swap icon back to menu
+        const iconEl = menuButton.querySelector('i');
+        if (iconEl) {
+            iconEl.setAttribute('data-lucide', 'menu');
+            refreshIcons();
+        }
+    }
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
-            const category = button.getAttribute('data-category');
-            renderNews(category === 'all' ? allNews : allNews.filter(n => n.categoria === category));
+            state.category = button.getAttribute('data-category');
+            applyFilters();
+            closeMenu();
         });
     });
+
+    if (searchInput) {
+        searchInput.addEventListener('input', event => {
+            state.query = event.target.value;
+            applyFilters();
+        });
+
+        searchInput.addEventListener('keydown', event => {
+            if (event.key === 'Enter') {
+                closeMenu();
+                searchInput.blur();
+            }
+        });
+        
+        // Also close if they click the search icon inside the box
+        const searchIcon = searchInput.parentElement.querySelector('i[data-lucide="search"]');
+        if (searchIcon) {
+            searchIcon.style.cursor = 'pointer';
+            searchIcon.addEventListener('click', () => {
+                closeMenu();
+            });
+        }
+    }
+
+    if (sortSelect) {
+        sortSelect.addEventListener('change', event => {
+            state.sort = event.target.value;
+            applyFilters();
+            closeMenu();
+        });
+    }
+
+    if (loadMoreButton) {
+        loadMoreButton.addEventListener('click', () => {
+            state.visibleCount += PAGE_SIZE;
+            renderNews();
+        });
+    }
+
+    if (menuButton && newsMenu) {
+        menuButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isClosed = newsMenu.style.display === 'none';
+            
+            if (isClosed) {
+                menuButton.setAttribute('aria-expanded', 'true');
+                menuButton.setAttribute('aria-label', 'Cerrar herramientas');
+                menuButton.classList.add('active');
+                newsMenu.style.display = 'grid';
+                
+                // Swap icon to X
+                const iconEl = menuButton.querySelector('i');
+                if (iconEl) {
+                    iconEl.setAttribute('data-lucide', 'x');
+                    refreshIcons();
+                }
+            } else {
+                closeMenu();
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key !== 'Escape' || newsMenu.style.display === 'none') return;
+            closeMenu();
+            menuButton.focus();
+        });
+
+        document.addEventListener('click', event => {
+            if (newsMenu.style.display === 'none') return;
+            const isClickInsideMenu = newsMenu.contains(event.target);
+            const isClickOnButton = menuButton.contains(event.target);
+            if (!isClickInsideMenu && !isClickOnButton) {
+                closeMenu();
+            }
+        });
+    }
 
     loadNews();
 });
