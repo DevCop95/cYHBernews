@@ -447,7 +447,11 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(`noticias.json?v=${Date.now()}`);
             if (!response.ok) throw new Error('Error al cargar noticias.');
-            allNews = await response.json();
+            const data = await response.json();
+            
+            // Filtrar noticias que no tengan resumen globalmente
+            allNews = data.filter(news => news.resumen && news.resumen.trim() !== "");
+            
             allNews.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
             updateOverview(allNews);
             applyFilters();
