@@ -435,15 +435,10 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => advanceLoader(2), 800);
     setTimeout(() => advanceLoader(3), 1200);
 
-    function triggerHeaderScramble() {
-        scramble('scramble-title', 'cYHBernews');
-    }
-    triggerHeaderScramble();
-
     const headerTitle = document.getElementById('scramble-title');
     if (headerTitle) {
+        headerTitle.textContent = 'cYHBernews';
         headerTitle.style.cursor = 'default';
-        headerTitle.addEventListener('mouseenter', triggerHeaderScramble);
     }
 
     // ─────────────────────────────────────────────────────────
@@ -566,6 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─────────────────────────────────────────────────────────
     function renderCard(news, isFeatured = false) {
         const title   = getCleanTitle(news);
+        const displayTitle = isFeatured ? getPunchyTitle(title) : title;
         const summary = getCleanSummary(news);
         const readTime = estimateReadingTime(title + ' ' + summary);
 
@@ -597,7 +593,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>${escapeHTML(news.categoria || 'General')}</span>
                         <span>${formatDate(news.fecha)}</span>
                     </div>
-                    <h2>${escapeHTML(title)}</h2>
+                    <h2>${escapeHTML(displayTitle)}</h2>
                     <p>${escapeHTML(summary)}</p>
                     <div class="card-footer">
                         <span>${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
@@ -631,7 +627,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function getCleanTitle(news) {
         const title = String(news.titulo || 'Sin título').replace(/^Tít[uú]lo:\s*/i, '').trim();
-        return title.split('\n')[0].trim();
+        return title.split('\n')[0].trim().replace(/^["'“”]+|["'“”]+$/g, '');
+    }
+
+    function getPunchyTitle(title) {
+        const firstSentence = String(title || '').split(/(?<=[.!?])\s+/)[0].trim();
+        const headline = firstSentence.split(/\s+(con|Esta|Este)\s+/i)[0].trim() || firstSentence;
+        const compact = headline.length > 82 ? `${headline.slice(0, 79).trim()}...` : headline;
+        return compact.replace(/^["'“”]+|["'“”]+$/g, '');
     }
 
     function getCleanSummary(news) {
