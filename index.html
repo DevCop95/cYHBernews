@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!--
+        Anti-FOUC: aplica el tema guardado ANTES de que el navegador
+        pinte el primer frame. Debe ser sincrónico y estar en <head>.
+    -->
+    <script>
+    (function () {
+        var t = localStorage.getItem('cyhbernews-theme');
+        if (t === 'dark' || t === 'light') {
+            document.documentElement.setAttribute('data-theme', t);
+        }
+    })();
+    </script>
 </head>
 <body>
     <div id="loader-overlay">
@@ -42,6 +54,13 @@
         <div class="ios-status-bar">
             <span class="ios-time" id="current-time">09:41</span>
             <div class="ios-icons">
+                <!--
+                    NUEVO: Botón de tema. El ícono (sun/moon) se gestiona
+                    dinámicamente en app.js según el tema activo.
+                -->
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema (claro / oscuro)">
+                    <i data-lucide="moon"></i>
+                </button>
                 <i data-lucide="signal" class="ios-icon"></i>
                 <i data-lucide="wifi" class="ios-icon"></i>
                 <i data-lucide="battery" class="ios-icon"></i>
@@ -80,9 +99,16 @@
                 </div>
 
                 <div class="toolbar">
+                    <!--
+                        NUEVO: kbd-hint muestra el atajo ⌘K / Ctrl+K.
+                        Se oculta automáticamente en móvil vía CSS.
+                    -->
                     <label class="search-box" for="news-search">
                         <i data-lucide="search"></i>
                         <input id="news-search" type="search" placeholder="Buscar por título, fuente o tema">
+                        <span class="kbd-hint" aria-hidden="true">
+                            <kbd class="kbd">⌘</kbd><kbd class="kbd">K</kbd>
+                        </span>
                     </label>
                     <label class="select-box" for="news-sort">
                         <i data-lucide="arrow-up-down"></i>
@@ -122,6 +148,14 @@
             <p>&copy; 2026 cYHBernews.</p>
         </div>
     </footer>
+
+    <!-- NUEVO: Botón flotante "Volver arriba" -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver al inicio">
+        <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- NUEVO: Toast de feedback (copiar enlace, errores, etc.) -->
+    <div id="app-toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <script src="app.js"></script>
 </body>

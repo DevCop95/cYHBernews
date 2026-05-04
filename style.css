@@ -485,3 +485,168 @@ main.container { padding-top: var(--sp-8); flex: 1; position: relative; z-index:
   .ios-tab      { padding: 4px 11px; }
   .card-content { padding: var(--sp-3) var(--sp-4); }
 }
+
+/* ══════════════════════════════════════════════════════════
+   NUEVOS COMPONENTES — Añadidos sobre la arquitectura base
+   ══════════════════════════════════════════════════════════ */
+
+/* ── THEME TOGGLE ────────────────────────────────────────── */
+/*
+   El botón vive en ios-status-bar dentro de ios-icons.
+   El ícono (sun / moon) se actualiza dinámicamente en JS.
+   Hereda las mismas variables de color que el resto de la barra.
+*/
+.theme-toggle-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; border-radius: var(--r-sm);
+  padding: 0; border: none; background: transparent; cursor: pointer;
+  color: var(--text);
+  transition: opacity var(--dur-fast) var(--ease-out),
+              transform var(--dur-fast) var(--ease-bounce);
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-toggle-btn:hover  { opacity: 0.55; }
+.theme-toggle-btn:active { transform: scale(0.88); }
+.theme-toggle-btn svg    { width: 13px; height: 13px; }
+
+/* ── BACK TO TOP ─────────────────────────────────────────── */
+/*
+   Posición fija, bottom-right. Usa las mismas sombras y radios
+   del sistema de tokens. La clase .visible la añade JS en scroll.
+*/
+.back-to-top {
+  position: fixed; bottom: var(--sp-6); right: var(--sp-6); z-index: 50;
+  width: 40px; height: 40px; border-radius: var(--r-full);
+  background: var(--surface-raised); border: 0.5px solid var(--border-hard);
+  box-shadow: var(--shadow-md); color: var(--blue);
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  /* Estado inicial: invisible y desplazado hacia abajo */
+  opacity: 0; transform: translateY(14px) scale(0.82);
+  pointer-events: none;
+  transition: opacity var(--dur-normal) var(--ease-out),
+              transform var(--dur-normal) var(--ease-bounce),
+              background var(--dur-fast) var(--ease-out),
+              border-color var(--dur-fast) var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+.back-to-top.visible {
+  opacity: 1; transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+.back-to-top:hover  { background: var(--blue-bg); border-color: var(--blue); transform: translateY(-2px) scale(1.06); }
+.back-to-top:active { transform: scale(0.93); transition-duration: var(--dur-fast); }
+.back-to-top svg    { width: 18px; height: 18px; }
+@media (max-width: 760px) {
+  /* En móvil sube por encima del posible sheet del menú */
+  .back-to-top { bottom: calc(var(--sp-6) + 12px); right: var(--sp-4); }
+}
+
+/* ── READING TIME ────────────────────────────────────────── */
+/*
+   Badge de tiempo estimado de lectura en el footer de cada card.
+   Usa la fuente mono para el valor numérico (consistente con scramble).
+*/
+.reading-time {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-family: var(--font-mono); font-size: 10px; font-weight: 500;
+  color: var(--text-tertiary); letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.reading-time svg { width: 10px; height: 10px; flex-shrink: 0; }
+.news-card.is-featured .reading-time { color: var(--featured-sub); }
+
+/* ── SHARE BUTTON ────────────────────────────────────────── */
+/*
+   Posicionado de forma absoluta en la esquina superior-derecha
+   de cada card. Se revela en hover con fade. La card ya tiene
+   position:relative, así que no necesitamos modificar nada más.
+*/
+.share-btn {
+  position: absolute; top: var(--sp-3); right: var(--sp-3); z-index: 2;
+  width: 30px; height: 30px; border-radius: var(--r-md);
+  background: var(--surface); border: 0.5px solid var(--border-hard);
+  box-shadow: var(--shadow-sm); color: var(--text-secondary);
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  /* Oculto por defecto; visible on hover (gestionado en JS también) */
+  opacity: 0; transform: scale(0.88);
+  transition: opacity var(--dur-fast) var(--ease-out),
+              transform var(--dur-fast) var(--ease-bounce),
+              background var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out);
+  -webkit-tap-highlight-color: transparent;
+}
+.share-btn svg      { width: 12px; height: 12px; }
+.share-btn:hover    { background: var(--surface-raised); color: var(--blue); border-color: var(--blue); }
+.share-btn:active   { transform: scale(0.90); }
+/* Revelar en hover de la card */
+.news-card:hover .share-btn,
+.news-card:focus-within .share-btn {
+  opacity: 1; transform: scale(1);
+}
+/* En móvil (touch) siempre visible para no depender de hover */
+@media (hover: none) {
+  .share-btn { opacity: 1; transform: scale(1); }
+}
+
+/* ── CARD FOOTER (extensión) ─────────────────────────────── */
+/*
+   Agrupamos reading-time + read-link en el lado derecho del footer.
+   El footer base ya es flex justify-content:space-between, así que
+   sólo necesitamos el wrapper del lado derecho.
+*/
+.card-footer-right {
+  display: flex; align-items: center; gap: var(--sp-3);
+}
+
+/* ── TOAST ───────────────────────────────────────────────── */
+/*
+   Notificación temporal (feedback de "enlace copiado", etc.).
+   Centrada en horizontal, aparece sobre el back-to-top.
+*/
+.toast {
+  position: fixed;
+  bottom: calc(var(--sp-6) + 52px); /* por encima del back-to-top */
+  left: 50%; transform: translateX(-50%) translateY(10px);
+  z-index: 300;
+  display: inline-flex; align-items: center; gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-5);
+  background: var(--surface-solid); border: 0.5px solid var(--border-hard);
+  border-radius: var(--r-full); box-shadow: var(--shadow-lg);
+  font-size: var(--text-sm); font-weight: 600; color: var(--text);
+  white-space: nowrap; pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--dur-normal) var(--ease-out),
+              transform var(--dur-normal) var(--ease-out);
+}
+.toast.show {
+  opacity: 1; transform: translateX(-50%) translateY(0);
+}
+.toast svg { width: 13px; height: 13px; color: var(--blue); flex-shrink: 0; }
+
+/* ── KEYBOARD SHORTCUT BADGE ─────────────────────────────── */
+/*
+   Indicador visual del atajo ⌘K dentro del input de búsqueda.
+   Se oculta en pantallas pequeñas donde los atajos de teclado
+   son poco relevantes (dispositivos táctiles).
+*/
+.kbd-hint {
+  display: inline-flex; align-items: center; gap: 2px;
+  flex-shrink: 0; margin-left: auto;
+  font-family: var(--font-mono); font-size: 10px;
+  color: var(--text-tertiary); opacity: 0.75; user-select: none;
+}
+.kbd {
+  display: inline-flex; align-items: center; justify-content: center;
+  height: 16px; min-width: 16px; padding: 0 3px;
+  background: var(--fill); border: 0.5px solid var(--border-hard);
+  border-radius: 3px;
+  font-size: 10px; font-family: var(--font-mono); line-height: 1;
+}
+/* Ocultar en móvil / touch */
+@media (max-width: 760px), (hover: none) {
+  .kbd-hint { display: none; }
+}
+/* Ocultar también cuando el input tiene foco (el texto lo tapa) */
+.search-box:focus-within .kbd-hint { opacity: 0; pointer-events: none; }
