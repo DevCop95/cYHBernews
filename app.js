@@ -232,9 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function syncThemeIcon() {
         if (!themeToggleBtn) return;
-        const iconEl = themeToggleBtn.querySelector('i');
-        if (!iconEl) return;
-        iconEl.setAttribute('data-lucide', isDarkThemeActive() ? 'sun' : 'moon');
+        themeToggleBtn.innerHTML = `<i data-lucide="${isDarkThemeActive() ? 'sun' : 'moon'}"></i>`;
         refreshIcons();
     }
 
@@ -425,7 +423,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const remaining = Math.max(0, MIN_LOADER_MS - elapsed);
         setTimeout(() => {
             advanceLoader(4);
-            setTimeout(() => loaderOverlay.classList.add('hide'), 450);
+            setTimeout(() => {
+                loaderOverlay.classList.add('hide');
+            }, 450);
         }, remaining);
     }
 
@@ -437,7 +437,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const headerTitle = document.getElementById('scramble-title');
     if (headerTitle) {
-        headerTitle.textContent = 'cYHBernews';
         headerTitle.style.cursor = 'default';
     }
 
@@ -681,11 +680,8 @@ document.addEventListener('DOMContentLoaded', () => {
         menuButton.classList.remove('active');
         newsMenu.style.display = 'none';
 
-        const iconEl = menuButton.querySelector('i');
-        if (iconEl) {
-            iconEl.setAttribute('data-lucide', 'menu');
-            refreshIcons();
-        }
+        menuButton.innerHTML = '<i data-lucide="menu"></i>';
+        refreshIcons();
     }
 
     function openMenu() {
@@ -695,11 +691,8 @@ document.addEventListener('DOMContentLoaded', () => {
         menuButton.classList.add('active');
         newsMenu.style.display = 'grid';
 
-        const iconEl = menuButton.querySelector('i');
-        if (iconEl) {
-            iconEl.setAttribute('data-lucide', 'x');
-            refreshIcons();
-        }
+        menuButton.innerHTML = '<i data-lucide="x"></i>';
+        refreshIcons();
     }
 
     filterButtons.forEach(button => {

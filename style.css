@@ -357,6 +357,7 @@ p, li { text-wrap: pretty; }
 
 /* ── NAV BAR ─────────────────────────────────────────────── */
 .ios-nav-bar {
+  position: relative;
   padding: var(--sp-3) var(--sp-5) 0;
   width: 100%; max-width: 900px; margin: 0 auto;
 }
@@ -946,11 +947,18 @@ select option { background: var(--surface-solid); color: var(--text); }
   .edition-vol, .edition-price { display: none; }
   .ios-title { font-size: clamp(2rem, 10vw, 3rem); }
   .news-menu {
-    left: 0; right: 0; width: 100%;
-    border-radius: var(--r-lg) var(--r-lg) 0 0;
-    position: fixed; bottom: 0; top: auto;
-    animation: sheet-up var(--dur-normal) var(--ease-out) both;
-    max-height: 85dvh; overflow-y: auto;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    border-radius: var(--r-lg) var(--r-lg) 0 0 !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    top: auto !important;
+    z-index: 2000 !important;
+    animation: sheet-up var(--dur-normal) var(--ease-out) both !important;
+    max-height: 80dvh !important;
+    overflow-y: auto !important;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.6) !important;
   }
   @keyframes sheet-up {
     from { transform: translateY(20px); opacity: 0; }
@@ -1045,8 +1053,16 @@ body {
 
 .ios-header {
   position: sticky;
-  background: linear-gradient(180deg, rgba(3, 5, 8, 0.92), rgba(3, 5, 8, 0.68));
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, rgba(3, 5, 8, 0.96), rgba(3, 5, 8, 0.82));
   box-shadow: 0 18px 80px rgba(0, 0, 0, 0.48);
+  will-change: transform;
+  contain: layout;
+}
+
+.ios-status-bar {
+  padding-top: var(--sp-4);
 }
 
 [data-theme="light"] .ios-header {
@@ -1070,8 +1086,8 @@ body {
 
 .nav-title-row {
   align-items: center;
-  min-height: 72px;
-  padding: clamp(0.55rem, 1.1vw, 0.9rem) 0 0.25rem;
+  min-height: 100px;
+  padding: clamp(1.5rem, 3vw, 2.5rem) 0 1rem;
 }
 
 .ios-title {
@@ -1079,7 +1095,7 @@ body {
   font-size: clamp(2.15rem, 5.2vw, 5.2rem);
   font-style: normal;
   font-weight: 700;
-  line-height: 0.78;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: none;
   color: var(--accent);
@@ -1092,8 +1108,8 @@ body {
 .nav-controls-row {
   display: flex;
   justify-content: flex-end;
-  margin-top: -0.35rem;
-  padding: 0 0 0.85rem;
+  margin-top: 0.5rem;
+  padding: 0 0 1.25rem;
 }
 
 .ios-tabs {
@@ -1266,48 +1282,38 @@ body {
   }
 }
 
+/* ── MOBILE STABILITY OVERRIDE ───────────────────────────── */
 @media (max-width: 760px) {
+  .ios-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border-hard);
+  }
+
   .ios-nav-bar {
-    padding-inline: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    margin-bottom: 0.25rem;
   }
 
   .ios-title {
-    font-size: clamp(2.1rem, 13vw, 4rem);
-    line-height: 0.86;
+    font-size: 1.7rem;
+    line-height: 1.2;
+    flex: 1;
   }
 
   .nav-controls-row {
-    justify-content: flex-start;
-    margin-top: 0;
+    padding: 0.25rem 0 0.75rem;
     overflow-x: auto;
-  }
-
-  .featured-news,
-  .featured-news .news-card.is-featured {
-    min-height: 72vh;
-  }
-
-  .news-card.is-featured::after {
-    background:
-      linear-gradient(0deg, rgba(3, 5, 8, 0.96) 0%, rgba(3, 5, 8, 0.74) 52%, rgba(3, 5, 8, 0.24) 100%);
-  }
-
-  .news-card.is-featured .card-content {
-    padding: 1.25rem;
-    justify-content: end;
-  }
-
-  .news-card.is-featured h2 {
-    font-size: clamp(2rem, 12vw, 4rem);
-    max-width: 10ch;
-  }
-
-  .news-list {
-    grid-template-columns: 1fr;
-  }
-
-  .news-card {
-    min-height: 0;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -1358,9 +1364,11 @@ body {
   position: relative !important;
   z-index: 2 !important;
   width: min(760px, 100%) !important;
-  min-height: inherit !important;
-  padding: clamp(1.5rem, 5vw, 5rem) !important;
-  justify-content: end !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  padding: clamp(2rem, 6vw, 6rem) !important;
 }
 
 .featured-news > .news-card h2 {
@@ -1368,6 +1376,8 @@ body {
   line-height: 0.98 !important;
   max-width: 12ch !important;
   color: var(--featured-text) !important;
+  flex: none !important;
+  margin-top: 1.5rem !important;
 }
 
 @media (max-width: 760px) {
