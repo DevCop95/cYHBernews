@@ -86,6 +86,32 @@
                 <button class="nav-menu-button" id="nav-menu-button" type="button" aria-label="Abrir herramientas" aria-expanded="false" aria-controls="news-menu">
                     <i data-lucide="menu"></i>
                 </button>
+
+                <!-- SEARCH DROPDOWN — anclado al botón hamburguesa -->
+                <section class="news-menu" id="news-menu" aria-label="Herramientas de noticias" style="display: none;">
+                    <div class="toolbar">
+                        <label class="search-box" for="news-search">
+                            <i data-lucide="search"></i>
+                            <input id="news-search" type="search" placeholder="Buscar por título, fuente o tema">
+                        </label>
+                        <label class="select-box" for="news-sort">
+                            <i data-lucide="arrow-up-down"></i>
+                            <select id="news-sort">
+                                <option value="newest">Más recientes</option>
+                                <option value="oldest">Más antiguas</option>
+                                <option value="source">Por fuente</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="results-row">
+                        <span id="results-label">Cargando noticias</span>
+                        <span class="menu-stats">
+                            <span id="source-count">0</span> fuentes &bull;
+                            <span id="total-count">0</span> noticias &bull;
+                            act. <span id="latest-date">-</span>
+                        </span>
+                    </div>
+                </section>
             </div>
 
             <!-- BOTTOM MASTHEAD RULE -->
@@ -101,35 +127,6 @@
             </div>
         </div>
     </header>
-
-    <!-- SEARCH / FILTER BAR — compacto, fuera del header, sticky debajo de él -->
-    <section class="news-menu" id="news-menu" aria-label="Herramientas de noticias" style="display: none;">
-        <div class="toolbar">
-            <label class="search-box" for="news-search">
-                <i data-lucide="search"></i>
-                <input id="news-search" type="search" placeholder="Buscar por título, fuente o tema">
-                <span class="kbd-hint" aria-hidden="true">
-                    <kbd class="kbd">⌘</kbd><kbd class="kbd">K</kbd>
-                </span>
-            </label>
-            <label class="select-box" for="news-sort">
-                <i data-lucide="arrow-up-down"></i>
-                <select id="news-sort">
-                    <option value="newest">Más recientes</option>
-                    <option value="oldest">Más antiguas</option>
-                    <option value="source">Por fuente</option>
-                </select>
-            </label>
-        </div>
-        <div class="results-row">
-            <span id="results-label">Cargando noticias</span>
-            <span class="menu-stats">
-                <span id="source-count">0</span> fuentes &bull;
-                <span id="total-count">0</span> noticias &bull;
-                act. <span id="latest-date">-</span>
-            </span>
-        </div>
-    </section>
 
     <main class="container">
         <section id="news-grid" class="news-feed">
