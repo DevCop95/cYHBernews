@@ -1380,16 +1380,101 @@ body {
   margin-top: 1.5rem !important;
 }
 
+/* ── MOBILE FIX FINAL ─────────────────────────────────────
+   Fixes para pantallas pequeñas (≤ 760px):
+   - Featured card menos alta (no ocupa toda la pantalla)
+   - Título más compacto y legible
+   - Titular featured controlado
+   - Cards normales sin min-height fijo
+   - Tabs con scroll horizontal sin wrap
+   - nav-title-row con min-height reducido
+   - overview-strip vertical en pantallas muy pequeñas
+   - Padding del content reducido en móvil
+*/
 @media (max-width: 760px) {
+  /* Nav title row compacta */
+  .nav-title-row {
+    min-height: 52px !important;
+    padding: 0.5rem 0 0.25rem !important;
+  }
+
+  /* Título legible y proporcional */
+  .ios-title {
+    font-size: clamp(1.45rem, 7.5vw, 2rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Featured card: altura razonable, no pantalla completa */
+  .featured-news {
+    min-height: 0 !important;
+  }
   .featured-news > .news-card {
-    min-height: 70vh !important;
+    min-height: clamp(260px, 52vh, 420px) !important;
   }
 
+  /* Degradado featured rebalanceado para móvil */
   .featured-news > .news-card::after {
-    background: linear-gradient(0deg, rgba(3, 5, 8, 0.96) 0%, rgba(3, 5, 8, 0.72) 58%, rgba(3, 5, 8, 0.20) 100%);
+    background:
+      linear-gradient(0deg, rgba(3, 5, 8, 0.97) 0%, rgba(3, 5, 8, 0.78) 52%, rgba(3, 5, 8, 0.22) 100%) !important;
   }
 
+  /* Titular featured: tamaño controlado */
   .featured-news > .news-card h2 {
-    font-size: clamp(2rem, 11vw, 3.7rem) !important;
+    font-size: clamp(1.55rem, 8.5vw, 2.8rem) !important;
+    line-height: 1.08 !important;
+    max-width: 100% !important;
+    margin-top: 0.75rem !important;
+  }
+
+  /* Padding interior featured compacto */
+  .featured-news > .news-card > .card-content {
+    padding: 1.25rem !important;
+  }
+
+  /* Cards normales: sin min-height fijo que las infla */
+  .news-card {
+    min-height: 0 !important;
+  }
+
+  /* Imagen en cards normales: ratio más compacto */
+  .news-card:not(.is-featured) .card-image {
+    aspect-ratio: 16 / 7;
+  }
+
+  /* Tabs: scroll horizontal en vez de wrap */
+  .nav-controls-row {
+    justify-content: flex-start !important;
+  }
+  .ios-tabs {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .ios-tabs::-webkit-scrollbar { display: none; }
+
+  /* overview-strip: fila compacta */
+  .overview-strip {
+    gap: var(--sp-2);
+  }
+  .overview-strip > div {
+    padding: var(--sp-2) var(--sp-1);
+  }
+  .overview-strip span {
+    font-size: var(--text-md);
+  }
+}
+
+/* Pantallas muy pequeñas: overview en columna */
+@media (max-width: 420px) {
+  .overview-strip {
+    flex-direction: column;
+    gap: var(--sp-1);
+  }
+  .overview-strip > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
