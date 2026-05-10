@@ -1,171 +1,4 @@
 /* ═══════════════════════════════════════════════════════════
-   THREE.JS BACKGROUND — Particle Network Topology
-   Nodes represent news sources; edges represent data flows.
-   Adapts to light/dark theme automatically.
-   ═══════════════════════════════════════════════════════════ */
-(function initThreeBackground() {
-    const canvas = document.getElementById('bg-canvas');
-    if (!canvas || typeof THREE === 'undefined') return;
-
-    /* ── Setup renderer ── */
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: false });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x000000, 0);
-
-    const scene = new THREE.Scene();
-    const camera = new THREE.OrthographicCamera(
-        -window.innerWidth / 2, window.innerWidth / 2,
-        window.innerHeight / 2, -window.innerHeight / 2,
-        0.1, 100
-    );
-    camera.position.z = 1;
-
-    /* ── Theme detection ── */
-    function isDark() {
-        const ex = document.documentElement.getAttribute('data-theme');
-        if (ex === 'dark')  return true;
-        if (ex === 'light') return false;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches;
-    }
-    function getAccentHex() { return isDark() ? 0x00ff88 : 0x1a6432; }
-    function getNodeOpacity()  { return isDark() ? 0.45 : 0.30; }
-    function getLineOpacity()  { return isDark() ? 0.10 : 0.08; }
-
-    /* ── Create nodes ── */
-    const NODE_COUNT = 70;
-    const nodes = [];
-    const nodeGeo = new THREE.CircleGeometry(2.5, 8);
-
-    for (let i = 0; i < NODE_COUNT; i++) {
-        const mat = new THREE.MeshBasicMaterial({
-            color: getAccentHex(),
-            transparent: true,
-            opacity: Math.random() * 0.3 + 0.15,
-        });
-        const mesh = new THREE.Mesh(nodeGeo, mat);
-        mesh.position.set(
-            (Math.random() - 0.5) * window.innerWidth  * 1.1,
-            (Math.random() - 0.5) * window.innerHeight * 1.1,
-            0
-        );
-        nodes.push({
-            mesh,
-            vx: (Math.random() - 0.5) * 0.22,
-            vy: (Math.random() - 0.5) * 0.22,
-            pulsePhase: Math.random() * Math.PI * 2,
-            pulseSpeed: 0.005 + Math.random() * 0.012,
-        });
-        scene.add(mesh);
-    }
-
-    /* ── Lines between nearby nodes ── */
-    const MAX_DIST = 180;
-    let lineSegments = null;
-    const lineMat = new THREE.LineBasicMaterial({
-        color: getAccentHex(),
-        transparent: true,
-        opacity: getLineOpacity(),
-    });
-
-    function rebuildLines() {
-        if (lineSegments) {
-            scene.remove(lineSegments);
-            lineSegments.geometry.dispose();
-        }
-        const pts = [];
-        for (let i = 0; i < nodes.length; i++) {
-            for (let j = i + 1; j < nodes.length; j++) {
-                const dx = nodes[i].mesh.position.x - nodes[j].mesh.position.x;
-                const dy = nodes[i].mesh.position.y - nodes[j].mesh.position.y;
-                if (dx * dx + dy * dy < MAX_DIST * MAX_DIST) {
-                    pts.push(
-                        nodes[i].mesh.position.x, nodes[i].mesh.position.y, 0,
-                        nodes[j].mesh.position.x, nodes[j].mesh.position.y, 0
-                    );
-                }
-            }
-        }
-        const geo = new THREE.BufferGeometry();
-        geo.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
-        lineSegments = new THREE.LineSegments(geo, lineMat);
-        scene.add(lineSegments);
-    }
-
-    /* ── Mouse parallax ── */
-    let mouse = { x: 0, y: 0 };
-    document.addEventListener('mousemove', e => {
-        mouse.x =  (e.clientX - window.innerWidth  / 2);
-        mouse.y = -(e.clientY - window.innerHeight / 2);
-    }, { passive: true });
-
-    /* ── Animation loop ── */
-    let frame = 0;
-    const hw = () => window.innerWidth  / 2 + 30;
-    const hh = () => window.innerHeight / 2 + 30;
-
-    function animate() {
-        requestAnimationFrame(animate);
-        frame++;
-
-        nodes.forEach(n => {
-            /* Pulse opacity */
-            n.pulsePhase += n.pulseSpeed;
-            n.mesh.material.opacity = getNodeOpacity() * (0.55 + 0.45 * Math.sin(n.pulsePhase));
-
-            /* Mouse repulsion */
-            const dx = n.mesh.position.x - mouse.x;
-            const dy = n.mesh.position.y - mouse.y;
-            const d2 = dx * dx + dy * dy;
-            if (d2 < 18000) {
-                const d = Math.sqrt(d2);
-                n.vx += (dx / d) * 0.04;
-                n.vy += (dy / d) * 0.04;
-            }
-
-            /* Speed cap + damping */
-            const sp = Math.sqrt(n.vx * n.vx + n.vy * n.vy);
-            if (sp > 0.7) { n.vx *= 0.92; n.vy *= 0.92; }
-
-            n.mesh.position.x += n.vx;
-            n.mesh.position.y += n.vy;
-
-            /* Wrap around */
-            const W = hw(), H = hh();
-            if (n.mesh.position.x >  W) n.mesh.position.x = -W;
-            if (n.mesh.position.x < -W) n.mesh.position.x =  W;
-            if (n.mesh.position.y >  H) n.mesh.position.y = -H;
-            if (n.mesh.position.y < -H) n.mesh.position.y =  H;
-        });
-
-        /* Rebuild lines every 3 frames */
-        if (frame % 3 === 0) rebuildLines();
-
-        /* Update colors when theme changes (every 60 frames) */
-        if (frame % 60 === 0) {
-            const col = getAccentHex();
-            lineMat.color.setHex(col);
-            lineMat.opacity = getLineOpacity();
-        }
-
-        renderer.render(scene, camera);
-    }
-
-    rebuildLines();
-    animate();
-
-    /* ── Resize ── */
-    window.addEventListener('resize', () => {
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        camera.left   = -window.innerWidth  / 2;
-        camera.right  =  window.innerWidth  / 2;
-        camera.top    =  window.innerHeight / 2;
-        camera.bottom = -window.innerHeight / 2;
-        camera.updateProjectionMatrix();
-    }, { passive: true });
-})();
-
-/* ═══════════════════════════════════════════════════════════
    APP MAIN — cYHBernews
    ═══════════════════════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded', () => {
@@ -401,11 +234,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusText    = document.getElementById('loader-status-text');
 
     const STATUS_STEPS = [
-        { pct: 20,  msg: 'Connecting to feed...' },
-        { pct: 45,  msg: 'Fetching articles...'  },
-        { pct: 70,  msg: 'Parsing data...'       },
-        { pct: 90,  msg: 'Organizing feed...'    },
-        { pct: 100, msg: 'Ready.'                },
+        { pct: 20,  msg: 'Conectando...' },
+        { pct: 45,  msg: 'Obteniendo noticias...'  },
+        { pct: 70,  msg: 'Procesando...'       },
+        { pct: 90,  msg: 'Organizando...'    },
+        { pct: 100, msg: 'Listo.'                },
     ];
 
     function advanceLoader(step) {
@@ -568,6 +401,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const summary = getCleanSummary(news);
         const readTime = estimateReadingTime(title + ' ' + summary);
 
+        // Debug: verificar fuente
+        if (!news.fuente) {
+            console.warn('News sin fuente:', news.id, news.titulo);
+        }
+
         return `
             <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer"
                class="news-card ${isFeatured ? 'is-featured' : ''}">
@@ -599,17 +437,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     <h2>${escapeHTML(displayTitle)}</h2>
                     <p>${escapeHTML(summary)}</p>
                     <div class="card-footer">
-                        <span>${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
-                        <!--
-                            NUEVO: Lado derecho del footer agrupa
-                            el tiempo de lectura y el CTA "Abrir".
-                        -->
-                        <div class="card-footer-right">
+                        <div class="card-footer-left">
                             <span class="reading-time">
                                 <i data-lucide="clock-3"></i>${escapeHTML(readTime)}
                             </span>
                             <span class="read-link">Abrir <i data-lucide="external-link"></i></span>
                         </div>
+                        <span class="card-source">${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
                     </div>
                 </div>
             </a>
@@ -676,28 +510,42 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─────────────────────────────────────────────────────────
     // MENÚ (sin cambios en la lógica, se añade ⌘K más abajo)
     // ─────────────────────────────────────────────────────────
-    function closeMenu() {
-        if (!menuButton || !newsMenu || newsMenu.style.display === 'none') return;
+    // Toggle atómico simple
+    if (menuButton && newsMenu) {
+        menuButton.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const isShowing = newsMenu.classList.toggle('show');
+            menuButton.classList.toggle('active', isShowing);
+            menuButton.setAttribute('aria-expanded', isShowing);
+            menuButton.innerHTML = isShowing ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
+            refreshIcons();
+            console.log('Menu state:', isShowing);
+        };
 
-        menuButton.setAttribute('aria-expanded', 'false');
-        menuButton.setAttribute('aria-label', 'Abrir herramientas');
-        menuButton.classList.remove('active');
-        newsMenu.style.display = 'none';
-
-        menuButton.innerHTML = '<i data-lucide="menu"></i>';
-        refreshIcons();
+        // Cerrar al click fuera
+        document.onclick = (e) => {
+            if (!newsMenu.contains(e.target) && !menuButton.contains(e.target)) {
+                newsMenu.classList.remove('show');
+                menuButton.classList.remove('active');
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.innerHTML = '<i data-lucide="menu"></i>';
+                refreshIcons();
+            }
+        };
     }
 
-    function openMenu() {
-        if (!menuButton || !newsMenu) return;
-        menuButton.setAttribute('aria-expanded', 'true');
-        menuButton.setAttribute('aria-label', 'Cerrar herramientas');
-        menuButton.classList.add('active');
-        newsMenu.style.display = 'grid';
-
-        menuButton.innerHTML = '<i data-lucide="x"></i>';
-        refreshIcons();
-    }
+    const closeMenu = () => {
+        if (newsMenu) {
+            newsMenu.classList.remove('show');
+            if (menuButton) {
+                menuButton.classList.remove('active');
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.innerHTML = '<i data-lucide="menu"></i>';
+                refreshIcons();
+            }
+        }
+    };
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -744,24 +592,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    if (menuButton && newsMenu) {
-        menuButton.addEventListener('click', (e) => {
-            e.stopPropagation();
-            if (newsMenu.style.display === 'none') {
-                openMenu();
-            } else {
-                closeMenu();
-            }
-        });
-
-        document.addEventListener('click', event => {
-            if (newsMenu.style.display === 'none') return;
-            const isClickInsideMenu = newsMenu.contains(event.target);
-            const isClickOnButton   = menuButton.contains(event.target);
-            if (!isClickInsideMenu && !isClickOnButton) closeMenu();
-        });
-    }
-
     // ─────────────────────────────────────────────────────────
     // NUEVO: ATAJOS DE TECLADO GLOBALES
     //   ⌘K (Mac) / Ctrl+K (Win/Linux) → abrir búsqueda
@@ -772,7 +602,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const modKey    = isMac ? event.metaKey : event.ctrlKey;
 
         // Escape: cerrar menú
-        if (event.key === 'Escape' && newsMenu && newsMenu.style.display !== 'none') {
+        if (event.key === 'Escape' && newsMenu && newsMenu.classList.contains('show')) {
             closeMenu();
             menuButton?.focus();
             return;
@@ -788,8 +618,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isInInput) return;
 
             event.preventDefault();
-            if (newsMenu && newsMenu.style.display === 'none') {
-                openMenu();
+            if (newsMenu && !newsMenu.classList.contains('show')) {
+                newsMenu.classList.add('show');
+                if (menuButton) menuButton.classList.add('active');
             }
             // Pequeño delay para que el menú termine de mostrarse
             setTimeout(() => {

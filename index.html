@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cYHBernews | Tu Periódico Tech Estático</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=Pixelify+Sans:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
     (function () {
         var t = localStorage.getItem('cyhbernews-theme');
@@ -20,42 +18,18 @@
 </head>
 <body>
 
-    <!-- THREE.JS BACKGROUND CANVAS -->
-    <canvas id="bg-canvas" aria-hidden="true"></canvas>
-
-    <!-- SCANLINE + NOISE OVERLAY -->
-    <div id="overlay-effects" aria-hidden="true">
-        <div class="scanlines"></div>
-        <div class="vignette"></div>
-    </div>
-
     <div id="loader-overlay">
         <div class="loader-inner">
-            <div class="loader-logo" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" width="80" height="80">
-                    <rect width="64" height="64" rx="4" fill="#050705"/>
-                    <rect x="1" y="1" width="62" height="62" rx="3" fill="none" stroke="#00ff88" stroke-width="1" opacity="0.6"/>
-                    <circle cx="14" cy="18" r="4" fill="#ff5f56"/>
-                    <circle cx="26" cy="18" r="4" fill="#ffbd2e"/>
-                    <circle cx="38" cy="18" r="4" fill="#27c93f"/>
-                    <line x1="8" y1="27" x2="56" y2="27" stroke="#00ff88" stroke-width="0.8" opacity="0.5"/>
-                    <text x="9" y="50" font-family="monospace" font-size="22" font-weight="700" fill="#00ff88">cY</text>
-                    <rect x="42" y="33" width="10" height="16" rx="1" fill="#00ff88" opacity="0.85" class="cursor-blink"/>
-                </svg>
-            </div>
-            <div class="loader-edition">[ INITIALIZING DISPATCH ]</div>
             <div class="loader-title" id="loader-scramble-title">cYHBernews</div>
             <div class="loader-status">
                 <span class="loader-status-dot"></span>
-                <span id="loader-status-text">Fetching encrypted feed...</span>
+                <span id="loader-status-text">Cargando noticias...</span>
             </div>
             <div class="loader-bar-track">
                 <div class="loader-bar-fill" id="loader-bar"></div>
             </div>
         </div>
     </div>
-
-    <div id="mesh-gradient"></div>
 
     <header class="ios-header">
         <div class="ios-status-bar">
@@ -71,24 +45,22 @@
         </div>
 
         <div class="ios-nav-bar">
-            <!-- NEWSPAPER MASTHEAD EDITION LINE -->
-            <div class="masthead-edition" aria-hidden="true">
-                <span class="edition-vol">VOL. I · Nº 026</span>
-                <span class="edition-tagline">SECTOR: CIBERSEGURIDAD</span>
-                <span class="edition-price">ACCESO LIBRE</span>
-            </div>
-
-            <!-- TOP MASTHEAD RULE -->
-            <div class="masthead-rule thick" aria-hidden="true"></div>
-
             <div class="nav-title-row">
                 <h1 class="ios-title" id="scramble-title" aria-label="cYHBernews">cYHBernews</h1>
                 <button class="nav-menu-button" id="nav-menu-button" type="button" aria-label="Abrir herramientas" aria-expanded="false" aria-controls="news-menu">
                     <i data-lucide="menu"></i>
                 </button>
+            </div>
+
+            <div class="nav-controls-row">
+                <nav class="ios-tabs" id="category-filters" aria-label="Categorías de noticias">
+                    <button class="ios-tab active" data-category="all">Actualidad</button>
+                    <button class="ios-tab" data-category="Ciberseguridad">Seguridad</button>
+                    <button class="ios-tab" data-category="IA">IA</button>
+                </nav>
 
                 <!-- SEARCH DROPDOWN — anclado al botón hamburguesa -->
-                <section class="news-menu" id="news-menu" aria-label="Herramientas de noticias" style="display: none;">
+                <section class="news-menu" id="news-menu" aria-label="Herramientas de noticias">
                     <div class="toolbar">
                         <label class="search-box" for="news-search">
                             <i data-lucide="search"></i>
@@ -113,18 +85,6 @@
                     </div>
                 </section>
             </div>
-
-            <!-- BOTTOM MASTHEAD RULE -->
-            <div class="masthead-rule thin" aria-hidden="true"></div>
-
-            <div class="nav-controls-row">
-                <nav class="ios-tabs" id="category-filters" aria-label="Categorías de noticias">
-                    <button class="ios-tab active" data-category="all">Actualidad</button>
-                    <button class="ios-tab" data-category="Ciberseguridad">Seguridad</button>
-                    <button class="ios-tab" data-category="Tech">Tech</button>
-                    <button class="ios-tab" data-category="IA">IA</button>
-                </nav>
-            </div>
         </div>
     </header>
 
@@ -146,8 +106,7 @@
 
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-rule" aria-hidden="true"></div>
-            <p>&copy; 2026 cYHBernews &mdash; <span class="footer-tag">CRYPTODISPATCH TERMINAL</span></p>
+            <p>&copy; 2026 cYHBernews &mdash; <span class="footer-tag">Noticias de Ciberseguridad</span></p>
         </div>
     </footer>
 
@@ -157,6 +116,6 @@
 
     <div id="app-toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=6"></script>
 </body>
 </html>
