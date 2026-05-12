@@ -869,7 +869,14 @@ body.menu-open .container {
   border-top: 0.5px solid var(--separator);
   background: var(--bg);
 }
-.main-footer .container { padding-top: 0; padding-bottom: 0; }
+.main-footer .container {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-4);
+}
 .footer-rule {
   display: none; /* Remove decorative rule */
 }
@@ -882,6 +889,41 @@ body.menu-open .container {
 }
 .footer-tag {
   color: var(--text-secondary);
+}
+
+/* ── FOOTER BOT BUTTON ───────────────────────────────────── */
+.footer-bot-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid var(--accent-bg);
+  border-radius: var(--r-full);
+  background: var(--accent-bg);
+  transition: background var(--dur-fast) var(--ease-smooth),
+              border-color var(--dur-fast) var(--ease-smooth),
+              opacity var(--dur-fast) var(--ease-smooth),
+              transform var(--dur-instant) var(--ease-in-out);
+  -webkit-tap-highlight-color: transparent;
+  letter-spacing: -0.016em;
+}
+.footer-bot-btn svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+.footer-bot-btn:hover {
+  background: rgba(0, 122, 255, 0.18);
+  border-color: rgba(0, 122, 255, 0.3);
+}
+.footer-bot-btn:active {
+  transform: scale(0.95);
+  opacity: 0.75;
 }
 
 /* ── THEME TOGGLE (iOS style) ────────────────────────────── */
@@ -1075,4 +1117,3 @@ body.menu-open .container {
 @media (min-width: 1100px) {
   .news-list { grid-template-columns: repeat(3, 1fr); }
 }
-
