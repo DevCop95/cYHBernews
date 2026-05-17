@@ -1,5 +1,15 @@
 [
   {
+    "id": 202,
+    "fecha": "2026-05-17T15:55:28Z",
+    "categoria": "IA",
+    "titulo": "Vulnerabilidad crítica en NGINX: explotación en el wild con posibles consecuencias de ejecución remota de código",
+    "resumen": "La vulnerabilidad CVE-2026-42945, con una puntuación CVSS de 9.2, es una sobrecarga de búfer en el módulo ngx_http_rewrite_module de NGINX, que afecta a versiones desde 0.6.27 hasta 1.30.0 y está siendo explotada en el wild, lo que puede causar fallos en los trabajadores y posibles ataques de ejecución remota de código.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzkwMzMzMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html",
+    "fuente": "The Hacker News"
+  },
+  {
     "id": 201,
     "fecha": "2026-05-17T15:55:22Z",
     "categoria": "Ciberseguridad",
@@ -488,15 +498,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Nzg3Mzk2OTV8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html",
     "fuente": "The Hacker News"
-  },
-  {
-    "id": 152,
-    "fecha": "2026-05-14T06:21:29Z",
-    "categoria": "IA",
-    "titulo": "Ataque a la cadena de suministro Shai-Hulud:",
-    "resumen": "cientos de paquetes comprometidos en npm y PyPI. La campaña utiliza tokens OIDC legítimos y firmas digitales válidas para distribuir malware indetectable, afectando a empresas como TanStack, Mistral AI, Bitwarden CLI y SAP.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218534-156f33c28f8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Nzg3Mzk2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/2026/05/shai-hulud-ataque-a-la-cadena-de-suministro-compromete-cientos-de-paquetes-en-npm-y-pypi.html?utm_source=rss&utm_medium=rss&utm_campaign=shai-hulud-ataque-a-la-cadena-de-suministro-compromete-cientos-de-paquetes-en-npm-y-pypi",
-    "fuente": "Una al Día (Hispasec)"
   }
 ]
