@@ -1,5 +1,15 @@
 [
   {
+    "id": 301,
+    "fecha": "2026-05-23T10:24:16Z",
+    "categoria": "Ciberseguridad",
+    "titulo": "Ataque de cadena de suministro de software compromete paquetes PHP de Laravel-Lang",
+    "resumen": "Un nuevo ataque de cadena de suministro de software ha sido detectado, que ha comprometido varios paquetes PHP de Laravel-Lang para entregar un marco de robo de credenciales integral, afectando a paquetes como laravel-lang/lang y otros relacionados. Los investigadores de ciberseguridad han alertado sobre este ataque que puede tener graves consecuencias para los desarrolladores que utilicen estos paquetes.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Nzk1MzE4NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/05/laravel-lang-php-packages-compromised.html",
+    "fuente": "The Hacker News"
+  },
+  {
     "id": 300,
     "fecha": "2026-05-23T02:38:17Z",
     "categoria": "IA",
@@ -488,15 +498,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1717501218221-1da14c0f365e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzkyOTk1NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html",
     "fuente": "The Hacker News"
-  },
-  {
-    "id": 251,
-    "fecha": "2026-05-20T17:52:32Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Incidente de seguridad en Grafana: token no renovado tras ataque a TanStack",
-    "resumen": "La brecha de seguridad en Grafana se debió a un token de GitHub que no se renovó después del ataque a la cadena de suministro de npm de TanStack, lo que permitió el acceso no autorizado a los sistemas de la empresa.",
-    "url_imagen": "https://picsum.photos/seed/cybersec99/800/450",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/grafana-breach-caused-by-missed-token-rotation-after-tanstack-attack/",
-    "fuente": "Bleeping Computer"
   }
 ]
