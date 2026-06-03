@@ -339,7 +339,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (currentResults.length === 0) {
-            newsGrid.innerHTML = `<p class="empty-msg">No hay noticias para estos filtros.</p>`;
+            newsGrid.innerHTML = `
+                <div class="empty-state">
+                    <p class="empty-msg">No hay noticias para estos filtros.</p>
+                    <button id="clear-filters-btn" class="clear-filters-btn">
+                        <i data-lucide="x-circle"></i> Limpiar búsqueda
+                    </button>
+                </div>
+            `;
+            refreshIcons();
+            const clearBtn = document.getElementById('clear-filters-btn');
+            if (clearBtn) {
+                clearBtn.addEventListener('click', () => {
+                    state.query = '';
+                    state.category = 'all';
+                    if (searchInput) searchInput.value = '';
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    const allBtn = document.querySelector('.ios-tab[data-category="all"]');
+                    if (allBtn) allBtn.classList.add('active');
+                    applyFilters();
+                    closeMenu();
+                });
+            }
             updatePager();
             return;
         }
@@ -558,9 +579,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (searchInput) {
+        let debounceTimer;
         searchInput.addEventListener('input', event => {
-            state.query = event.target.value;
-            applyFilters();
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => {
+                state.query = event.target.value;
+                applyFilters();
+            }, 300);
         });
 
         searchInput.addEventListener('keydown', event => {
