@@ -1,5 +1,15 @@
 [
   {
+    "id": 579,
+    "fecha": "2026-06-11T03:31:09Z",
+    "categoria": "Ciberseguridad",
+    "titulo": "Vulnerabilidad crítica en Langflow: atacantes explotan fallo para ejecución remota de código",
+    "resumen": "La plataforma de código abierto Langflow, utilizada para construir aplicaciones de inteligencia artificial, presenta una vulnerabilidad grave no parcheada (CVE-2026-5027) que está siendo explotada en el wild, permitiendo a los atacantes ejecutar código de manera remota sin autenticación. La vulnerabilidad, con una puntuación CVSS de 8,8, se debe a un problema de travesía de directorios que permite a los atacantes escribir archivos en ubicaciones arbitrarias.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODExNDg2Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html",
+    "fuente": "The Hacker News"
+  },
+  {
     "id": 578,
     "fecha": "2026-06-11T03:31:04Z",
     "categoria": "Ciberseguridad",
@@ -487,16 +497,6 @@
     "resumen": "Check Point vincula vulnerabilidades de VPN a gang de ciberdelincuentes. La empresa de ciberseguridad israelí ha lanzado actualizaciones de seguridad para parchear una falla crítica que afecta a las implementaciones de VPN de acceso remoto y acceso móvil, que fue explotada en ataques de día cero.",
     "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA5MzMyNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/check-point-links-vpn-zero-day-attacks-to-qilin-ransomware-gang/",
-    "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 529,
-    "fecha": "2026-06-08T15:41:11Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Simplificando la complejidad de las operaciones de seguridad con Wazuh Cloud",
-    "resumen": "Wazuh Cloud ayuda a simplificar las operaciones de SIEM/XDR a través de infraestructura administrada, escalado automatizado y análisis de seguridad impulsado por inteligencia artificial, reduciendo la sobrecarga de alertas y la complejidad de los entornos híbridos.",
-    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA5MzMyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/reducing-security-operations-complexity-with-wazuh-cloud/",
     "fuente": "Bleeping Computer"
   }
 ]
