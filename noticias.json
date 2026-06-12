@@ -1,5 +1,15 @@
 [
   {
+    "id": 593,
+    "fecha": "2026-06-12T03:30:48Z",
+    "categoria": "Ciberseguridad",
+    "titulo": "Nueva vulnerabilidad GreatXML evita BitLocker en Windows a través de archivos XML de la partición de recuperación",
+    "resumen": "Un investigador de seguridad ha descubierto una nueva forma de evitar la protección de BitLocker en Windows, denominada GreatXML, que aprovecha los archivos XML de la partición de recuperación para acceder al sistema sin autorización. Esta vulnerabilidad fue descubierta accidentalmente en solo 4 horas y permite a los atacantes acceder a los datos del sistema sin necesidad de la contraseña de BitLocker.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODEyMzUwNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/new-greatxml-exploit-bypasses-windows.html",
+    "fuente": "The Hacker News"
+  },
+  {
     "id": 592,
     "fecha": "2026-06-12T03:30:43Z",
     "categoria": "Ciberseguridad",
@@ -488,15 +498,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODEwMDYyMzF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://cybersecuritynews.es/aplicaciones-expuestas-y-accesos-comprometidos-claves-en-los-ciberataques-de-2025/",
     "fuente": "CyberSecurity News"
-  },
-  {
-    "id": 543,
-    "fecha": "2026-06-09T06:46:02Z",
-    "categoria": "IA",
-    "titulo": "Vulnerabilidad crítica en LiteLLM: CVE-2026-42271 explotada en el mundo real",
-    "resumen": "La Agencia de Ciberseguridad y Seguridad de Infraestructura de EE. UU. (CISA) agregó una falla de gravedad alta que afecta a BerriAI LiteLLM a su catálogo de Vulnerabilidades Explotadas Conocidas (KEV), citando evidencia de explotación activa, lo que permite a cualquier usuario autenticado ejecutar comandos arbitrarios en el sistema.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218347-64853a917fd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA5ODc1NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
-    "fuente": "The Hacker News"
   }
 ]
