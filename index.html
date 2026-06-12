@@ -16,43 +16,6 @@
     })();
     </script>
 
-    <!-- OneSignal Web SDK -->
-    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-    <script>
-        window.OneSignalDeferred = window.OneSignalDeferred || [];
-        OneSignalDeferred.push(async function (OneSignal) {
-            await OneSignal.init({
-                appId: "3cc6a0fe-f372-4948-b31f-a4109e560cbc",
-                serviceWorkerPath: "/cYHBernews/OneSignalSDKWorker.js",
-                serviceWorkerParam: { scope: "/cYHBernews/" },
-                notifyButton: {
-                    enable: true,
-                    size: "medium",
-                    position: "bottom-right",
-                    showCredit: false,
-                    text: {
-                        "tip.state.unsubscribed": "Suscríbete a las notificaciones",
-                        "tip.state.subscribed": "Estás suscrito a las notificaciones",
-                        "tip.state.blocked": "Has bloqueado las notificaciones",
-                        "message.prenotify": "¡Haz clic para suscribirte a las últimas noticias!",
-                        "message.action.subscribed": "¡Gracias por suscribirte!",
-                        "message.action.resubscribed": "¡Suscripción reactivada!",
-                        "message.action.unsubscribed": "No recibirás más notificaciones.",
-                        "dialog.main.title": "Gestiona las Notificaciones",
-                        "dialog.main.button.subscribe": "SUSCRIBIRME",
-                        "dialog.main.button.unsubscribe": "CANCELAR",
-                        "dialog.blocked.title": "Desbloquear Notificaciones",
-                        "dialog.blocked.message": "Para recibir notificaciones, desbloquea las notificaciones en tu navegador."
-                    }
-                },
-                welcomeNotification: {
-                    title: "cYHBernews",
-                    message: "¡Gracias por suscribirte! Te mantendremos al día en ciberseguridad.",
-                    url: window.location.origin
-                }
-            });
-        });
-    </script>
 </head>
 <body>
 
