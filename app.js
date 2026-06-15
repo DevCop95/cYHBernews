@@ -418,7 +418,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─────────────────────────────────────────────────────────
     function renderCard(news, isFeatured = false) {
         const title   = getCleanTitle(news);
-        const displayTitle = isFeatured ? getPunchyTitle(title) : title;
+        const displayTitle = title;
         const summary = getCleanSummary(news);
         const readTime = estimateReadingTime(title + ' ' + summary);
 
