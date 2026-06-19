@@ -1,5 +1,39 @@
 [
   {
+    "id": 722,
+    "fecha": "2026-06-19T19:44:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques SSH coordinados",
+    "resumen": "Se han detectado ataques de fuerza bruta SSH coordinados en los últimos tres meses, lo que sugiere una campaña maliciosa dirigida a explotar vulnerabilidades en sistemas de autenticación. Estos ataques pueden aprovecharse de contraseñas débiles o configuraciones inseguras, poniendo en riesgo la seguridad de los sistemas y la privacidad de los datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4OTgyNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33086",
+    "fuente": "SANS ISC",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no es relevante en este caso, en su lugar se puede considerar T1555 - Credentials from Password Attacks, pero como no se menciona explícitamente la extracción de credenciales, se puede considerar T1110 como la técnica principal y T1552 como una posible técnica relacionada con el uso de contraseñas débiles."
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 721,
     "fecha": "2026-06-19T19:44:02Z",
     "categoria": "Ciberseguridad",
