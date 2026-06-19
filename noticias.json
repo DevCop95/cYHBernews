@@ -1,5 +1,39 @@
 [
   {
+    "id": 714,
+    "fecha": "2026-06-19T17:16:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque AutoJack",
+    "resumen": "Los investigadores de Microsoft han descubierto una cadena de explotación llamada AutoJack, que permite a una página web hijackear un agente de navegación de IA para ejecutar código remoto en el host, sin requerir credenciales ni interacción del usuario, mediante la ejecución de JavaScript en la página web atacante. Esto permite a los atacantes acceder a servicios locales privilegiados y spawnear procesos en el host.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODk0MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/autojack-attack-lets-one-web-page.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 713,
     "fecha": "2026-06-19T17:16:34Z",
     "categoria": "Ciberseguridad",
