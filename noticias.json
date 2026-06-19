@@ -1,5 +1,39 @@
 [
   {
+    "id": 710,
+    "fecha": "2026-06-19T14:55:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brecha en Novo Nordisk",
+    "resumen": "Una fuga de un token de GitHub ha expuesto la pipeline de desarrollo de software de Novo Nordisk, destacando el riesgo de no tratar el manejo de secretos como un problema de identidad en lugar de uno de herramientas, lo que puede permitir ataques de phishing y exposición de datos sensibles. El incidente resalta la importancia de una gestión de identidad y acceso adecuada en el desarrollo de software.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODA5MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/novo-nordisk-breach-exposes-dev-pipeline-risk",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 709,
     "fecha": "2026-06-19T14:55:10Z",
     "categoria": "Ciberseguridad",
