@@ -1,5 +1,43 @@
 [
   {
+    "id": 711,
+    "fecha": "2026-06-19T14:55:20Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Spyware con texto prohibido evita análisis AI",
+    "resumen": "Desarrolladores de malware están incorporando texto sobre armas nucleares y biológicas en su spyware para evitar el análisis automático de modelos de lenguaje de IA, utilizando técnicas como comentarios de JavaScript y sustitución de caracteres para engañar a los sistemas de detección. Esto puede causar problemas en pipelines de análisis débiles, pero no evita la detección estática mediante reglas YARA, análisis de entropía y otros métodos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217911-a598ed4c4023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODA5MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html",
+    "fuente": "Schneier on Security",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Obfuscación o Ofuscación"
+      },
+      {
+        "id": "T1497.002",
+        "name": "Ofuscación de código mediante comentarios y sustitución de caracteres"
+      },
+      {
+        "id": "T1480",
+        "name": "Análisis de evasión"
+      },
+      {
+        "id": "T1497.003",
+        "name": "Ofuscación de código mediante técnicas de codificación"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious"
+      ]
+    }
+  },
+  {
     "id": 710,
     "fecha": "2026-06-19T14:55:15Z",
     "categoria": "Ciberseguridad",
