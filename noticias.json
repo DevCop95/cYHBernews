@@ -1,5 +1,39 @@
 [
   {
+    "id": 721,
+    "fecha": "2026-06-19T19:44:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "RaaS \"The Gentlemen\" utiliza GentleKiller",
+    "resumen": "La operación de ransomware-as-a-service (RaaS) \"The Gentlemen\" utiliza un framework de endpoint detection and response (EDR) llamado GentleKiller para inhabilitar las defensas del sistema antes de desplegar el cifrador, afectando a más de 400 procesos de seguridad. Esto permite a los afiliados debilitar las medidas de seguridad y aumentar el éxito de los ataques de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4OTgyNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 720,
     "fecha": "2026-06-19T19:43:56Z",
     "categoria": "Ciberseguridad",
