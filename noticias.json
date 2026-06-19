@@ -1,5 +1,39 @@
 [
   {
+    "id": 727,
+    "fecha": "2026-06-19T22:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Robos de datos en Salesforce",
+    "resumen": "La aplicación Klue Battlecards ha sido comprometida para robar datos de clientes de Salesforce, siendo la tercera aplicación integrada en ser afectada, con víctimas como Huntress, un proveedor de ciberseguridad. El ataque aprovecha la integración de aplicaciones para acceder a datos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MDY1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/salesforce-data-thefts-klue-app-compromise",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1530",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 726,
     "fecha": "2026-06-19T22:01:40Z",
     "categoria": "IA",
