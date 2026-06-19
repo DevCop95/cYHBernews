@@ -1,5 +1,39 @@
 [
   {
+    "id": 708,
+    "fecha": "2026-06-19T14:55:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques de phishing evaden MFA",
+    "resumen": "Los ataques de phishing modernos, como el phishing de Device Code, pueden eludir las protecciones de autenticación multifactor (MFA) y conceder a los atacantes acceso a cuentas corporativas sin robar contraseñas, por lo que el uso de inteligencia artificial (IA) conductual puede ayudar a los equipos de seguridad a detectar cuentas comprometidas más rápidamente y automatizar flujos de trabajo de respuesta. Esto puede mejorar la capacidad de respuesta ante ataques de phishing y proteger la seguridad de las cuentas corporativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODA5MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/webinar-how-attackers-bypass-mfa-and-how-defenders-can-respond/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1550",
+        "name": "Utilización de Funcionalidad de Sistema Operativo (no se menciona explícitamente, pero se infiere que los atacantes utilizan la funcionalidad del sistema para eludir MFA)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 707,
     "fecha": "2026-06-19T14:26:03Z",
     "categoria": "IA",
