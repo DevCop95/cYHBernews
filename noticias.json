@@ -1,5 +1,39 @@
 [
   {
+    "id": 713,
+    "fecha": "2026-06-19T17:16:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Texas",
+    "resumen": "Se ha producido una brecha de datos en el sistema de licencias del Departamento de Parques y Vida Silvestre de Texas (TPWD), expuso información personal de más de tres millones de individuos, incluyendo licencias de conducir, lo que puede aumentar el riesgo de phishing y robo de identidad. La brecha se debió a un incidente de seguridad en el proveedor del sistema de licencias.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODkzOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/texas-govt-data-breach-exposes-over-3-million-drivers-licenses/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise (No se menciona explícitamente, pero se puede inferir que la exposición de datos puede ser utilizada para ataques de phishing)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 712,
     "fecha": "2026-06-19T14:55:26Z",
     "categoria": "Ciberseguridad",
