@@ -1,5 +1,35 @@
 [
   {
+    "id": 735,
+    "fecha": "2026-06-20T16:14:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware Prinz Eugen",
+    "resumen": "El nuevo ransomware Prinz Eugen prioriza la cifrado de archivos recientemente modificados, aumentando el impacto en la disponibilidad de datos, y no deja nota de rescate en el sistema, complicando la negociación con los atacantes. El vector de ataque no ha sido especificado, pero es probable que se utilicen técnicas de phishing o explotación de vulnerabilidades para infectar los sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5NzIwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-prinz-eugen-ransomware-prioritizes-recent-files-for-encryption/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 734,
     "fecha": "2026-06-20T13:52:00Z",
     "categoria": "IA",
