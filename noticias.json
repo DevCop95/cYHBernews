@@ -1,5 +1,39 @@
 [
   {
+    "id": 731,
+    "fecha": "2026-06-20T02:55:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque de Ransomware",
+    "resumen": "Un grupo de ransomware ha reclamado responsabilidad por un ciberataque que ha interrumpido las operaciones de cosecha y molienda de Mackay Sugar, una productora de azúcar australiana, lo que ha llevado a la empresa a trabajar urgentemente para restaurar sus operaciones y verificar la veracidad de las reclamaciones. El vector de ataque no ha sido divulgado, pero se sospecha que el grupo de ransomware ha utilizado técnicas de phishing o explotación de vulnerabilidades para infiltrarse en los sistemas de la empresa.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/mackay-sugar-cyberattack-claimed-gentlemen",
+    "fuente": "The Record",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 730,
     "fecha": "2026-06-20T02:54:58Z",
     "categoria": "IA",
