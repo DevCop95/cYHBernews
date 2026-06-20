@@ -1,5 +1,39 @@
 [
   {
+    "id": 729,
+    "fecha": "2026-06-20T02:54:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Breach de OAuth en Klue",
+    "resumen": "La plataforma de inteligencia de mercado Klue ha confirmado un incidente de seguridad reciente que permitió a actores maliciosos robar tokens OAuth utilizados para conectar con entornos de Salesforce de los clientes, lo que ha sido reclamado por el nuevo grupo de extorsión \"Icarus\". El vector de ataque se centra en la explotación de vulnerabilidades en el flujo de autenticación OAuth.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQwOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-victim-list-grows-as-icarus-hackers-claim-attack/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Exploitar la confianza en el proveedor de identidad (se centra en la explotación de vulnerabilidades en el flujo de autenticación OAuth)"
+      },
+      {
+        "id": "T1556",
+        "name": "Exploitar la confianza en el proveedor de identidad no se aplica, en su lugar se aplica T1552, pero se puede considerar T1552.004 - OAuth Access Token"
+      },
+      {
+        "id": "T1552.004",
+        "name": "OAuth Access Token"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 728,
     "fecha": "2026-06-20T02:54:44Z",
     "categoria": "Ciberseguridad",
