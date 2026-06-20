@@ -1,5 +1,43 @@
 [
   {
+    "id": 733,
+    "fecha": "2026-06-20T11:13:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Gravity SMTP",
+    "resumen": "La vulnerabilidad CVE-2026-4020, con una puntuación CVSS de 5.3, permite a atacantes no autenticados extraer datos sensibles como claves API, secretos y tokens OAuth de sitios que utilizan el plugin Gravity SMTP de WordPress. El vector de ataque aprovecha una falla de divulgación de información en el plugin, que ha sido parcheada recientemente.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5NTQwMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1061",
+        "name": "Phishing (no se menciona explícitamente, pero se puede inferir que se podría utilizar para obtener datos sensibles)"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se menciona explícitamente la extracción de claves API, secretos y tokens OAuth)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-4020"
+      ]
+    }
+  },
+  {
     "id": 732,
     "fecha": "2026-06-20T02:55:10Z",
     "categoria": "IA",
