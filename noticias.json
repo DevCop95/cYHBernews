@@ -1,5 +1,43 @@
 [
   {
+    "id": 743,
+    "fecha": "2026-06-21T19:24:43Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Microsoft 365 Copilot",
+    "resumen": "Se ha identificado una vulnerabilidad de redirección de URL a sitios no confiables (open redirect) en Microsoft 365 Copilot's Business Chat, con un CVSS Score de 8.8, que permite a un atacante no autorizado elevar privilegios en una red. El vector de ataque aprovecha la función de chat de negocios para redirigir a usuarios a sitios maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217910-8f7e911ff0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk4ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-47645",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-47645"
+      ]
+    }
+  },
+  {
     "id": 742,
     "fecha": "2026-06-21T19:24:36Z",
     "categoria": "Ciberseguridad",
