@@ -1,5 +1,39 @@
 [
   {
+    "id": 741,
+    "fecha": "2026-06-21T16:27:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Botnet AryStinger infecta routers",
+    "resumen": "La botnet AryStinger, un malware no documentado previamente, ha comprometido más de 4.000 routers obsoletos de D-Link en todo el mundo, convirtiéndolos en proxies para tráfico malicioso, lo que puede facilitar ataques de phishing, DDoS y otros tipos de ciberdelincuencia. El vector de ataque aprovecha la falta de actualizaciones de seguridad en los dispositivos afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNTkyNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/arystinger-botnet-infected-thousands-of-d-link-routers-worldwide/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 740,
     "fecha": "2026-06-21T13:59:47Z",
     "categoria": "IA",
