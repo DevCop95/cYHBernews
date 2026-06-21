@@ -1,5 +1,43 @@
 [
   {
+    "id": 745,
+    "fecha": "2026-06-21T19:25:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Supabase",
+    "resumen": "Se ha identificado una vulnerabilidad de divulgación de información (CVE-2026-56214) en los endpoints de Supabase PostgREST RPC, que permite a atacantes no autenticados enumerar organizaciones y revelar el estado de facturación utilizando la clave pública sb_publishable, lo que puede ser utilizado para perfilado dirigido. La vulnerabilidad tiene un CVSS Score de 7.5, clasificada como alta.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk5MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-56214",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1119",
+        "name": "Automated Collection"
+      },
+      {
+        "id": "T1061",
+        "name": "Phishing for Information"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning (se infiere que los atacantes pueden realizar un escaneo activo para identificar y explotar la vulnerabilidad)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-56214"
+      ]
+    }
+  },
+  {
     "id": 744,
     "fecha": "2026-06-21T19:24:57Z",
     "categoria": "Ciberseguridad",
