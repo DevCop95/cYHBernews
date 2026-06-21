@@ -1,5 +1,22 @@
 [
   {
+    "id": 742,
+    "fecha": "2026-06-21T19:24:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS en Microsoft Edge",
+    "resumen": "Se ha identificado una vulnerabilidad de cross-site scripting (XSS) en Microsoft Edge basado en Chromium, con un CVSS Score de 8.8, que permite a un atacante autorizado realizar spoofing en la red. La vulnerabilidad se debe a la neutralización inadecuada de la entrada durante la generación de páginas web.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-32208",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-32208"
+      ]
+    }
+  },
+  {
     "id": 741,
     "fecha": "2026-06-21T16:27:28Z",
     "categoria": "Ciberseguridad",
