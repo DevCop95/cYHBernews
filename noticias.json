@@ -1,5 +1,43 @@
 [
   {
+    "id": 744,
+    "fecha": "2026-06-21T19:24:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-56082",
+    "resumen": "Se ha identificado una vulnerabilidad de control de acceso inadecuado en la función public.record_build_time de PostgREST RPC en Capgo, que permite a un atacante no autenticado insertar filas en public.build_logs para organizaciones arbitrarias y sobrescribir registros de uso y facturación existentes, lo que puede provocar un ataque de denegación de servicio con impacto financiero. La vulnerabilidad tiene un puntaje CVSS de 7.5 (ALTO) y se puede explotar mediante el uso de la clave publicable anon de Supabase.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-56082",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-56082"
+      ]
+    }
+  },
+  {
     "id": 743,
     "fecha": "2026-06-21T19:24:43Z",
     "categoria": "IA",
