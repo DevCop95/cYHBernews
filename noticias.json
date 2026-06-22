@@ -1,5 +1,18 @@
 [
   {
+    "id": 753,
+    "fecha": "2026-06-22T16:47:48Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Mercado de credenciales robadas",
+    "resumen": "Los atacantes pueden pagar a terceros para buscar credenciales robadas en grandes bases de datos, lo que facilita el acceso a información confidencial de empresas y dominios específicos, aumentando el riesgo de ataques de phishing y malware. Esto representa un nuevo vector de ataque en el mercado underground de credenciales robadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/a-glimpse-into-the-search-your-target-market-for-stolen-credentials/",
+    "fuente": "Bleeping Computer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 752,
     "fecha": "2026-06-22T11:46:04Z",
     "categoria": "IA",
@@ -1845,16 +1858,6 @@
     "resumen": "un solo clic podría haber permitido a atacantes robar correos electrónicos, archivos y códigos de autenticación de dos factores. La falla, conocida como SearchLeak, se debió a la combinación de tres errores que permitían a los atacantes acceder a información confidencial a través de un enlace de confianza de Microsoft.",
     "url_imagen": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE1ODExMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html",
-    "fuente": "The Hacker News"
-  },
-  {
-    "id": 653,
-    "fecha": "2026-06-16T03:38:51Z",
-    "categoria": "IA",
-    "titulo": "Vulnerabilidad en LiteLLM permite a usuarios de baja privilegio tomar el control de servidores de puerta de enlace de IA",
-    "resumen": "La vulnerabilidad de cadena en LiteLLM, una puerta de enlace de IA de código abierto ampliamente utilizada, permite a usuarios de baja privilegio escalar a administrador y ejecutar código en el servidor, lo que expone las claves de proveedor y secretos almacenados.",
-    "url_imagen": "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE1ODExMzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html",
     "fuente": "The Hacker News"
   }
 ]
