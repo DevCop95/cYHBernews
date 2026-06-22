@@ -1,5 +1,18 @@
 [
   {
+    "id": 767,
+    "fecha": "2026-06-22T22:44:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad PixelSmash en FFmpeg",
+    "resumen": "Se ha descubierto una vulnerabilidad en FFmpeg conocida como PixelSmash, que podría permitir la ejecución remota de código en servidores Jellyfin bajo ciertas condiciones, y también podría causar una condición de denegación de servicio en aplicaciones como Kodi, Emby, Nextcloud, PhotoPrism y OBS Studio. La explotación de esta vulnerabilidad podría tener un impacto significativo en la seguridad de los sistemas que utilizan FFmpeg.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ffmpeg-fixes-pixelsmash-flaw-in-widely-used-video-decoder/",
+    "fuente": "Bleeping Computer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 766,
     "fecha": "2026-06-22T22:44:26Z",
     "categoria": "Ciberseguridad",
@@ -2085,16 +2098,6 @@
     "resumen": "Los actores maliciosos están explotando múltiples vulnerabilidades de seguridad en Fortinet FortiSandbox, incluyendo CVE-2026-39813, CVE-2026-39808 y CVE-2026-25089, según la firma de inteligencia de amenazas Defused Cyber, que ha observado la explotación de estas vulnerabilidades en las últimas 24 horas.",
     "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2Njc0NjV8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/attackers-exploit-three-fortinet.html",
-    "fuente": "The Hacker News"
-  },
-  {
-    "id": 667,
-    "fecha": "2026-06-17T03:37:39Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "La mayoría de los incidentes de seguridad implican infraestructura anonimizada",
-    "resumen": "La mayoría de los equipos de seguridad siguen siendo reactivos a pesar de tener acceso a grandes cantidades de datos de IP, lo que les dificulta identificar a los responsables de un incidente de seguridad debido a la infraestructura anonimizada involucrada. Esto se debe a la dificultad para separar la información relevante de la irrelevante en un entorno con una gran cantidad de datos disponibles.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2Njc0NjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/survey-94-of-incidents-involve.html",
     "fuente": "The Hacker News"
   }
 ]
