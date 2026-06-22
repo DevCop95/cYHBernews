@@ -1,5 +1,18 @@
 [
   {
+    "id": 765,
+    "fecha": "2026-06-22T22:44:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Pérdida de $15M en bot MEV",
+    "resumen": "Un atacante manipuló la lógica de detección de oportunidades del bot MEV (Maximal Extractable Value) de JaredFromSubway, creando oportunidades de trading de criptomonedas falsas, lo que resultó en una pérdida de $15 millones. El vector de ataque se centró en explotar la lógica de oportunidad-detección del bot, permitiendo al atacante realizar operaciones fraudulentas.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/jaredfromsubway-mev-bot-hacked-in-15-million-crypto-theft/",
+    "fuente": "Bleeping Computer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 764,
     "fecha": "2026-06-22T22:44:12Z",
     "categoria": "Ciberseguridad",
@@ -2059,15 +2072,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NTAyODF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html",
     "fuente": "The Hacker News"
-  },
-  {
-    "id": 665,
-    "fecha": "2026-06-16T22:51:16Z",
-    "categoria": "IA",
-    "titulo": "Plugins maliciosos en JetBrains Marketplace roban claves de API de IA a desarrolladores",
-    "resumen": "Se han descubierto al menos 15 plugins maliciosos en el JetBrains Marketplace que fueron diseñados para robar claves de API de IA a desarrolladores, poniendo en riesgo la seguridad de sus proyectos y datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1718241905673-a81786aaa609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NTAyNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-jetbrains-marketplace-plugins-steal-ai-api-keys-from-developers/",
-    "fuente": "Bleeping Computer"
   }
 ]
