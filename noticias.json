@@ -1,5 +1,18 @@
 [
   {
+    "id": 759,
+    "fecha": "2026-06-22T20:39:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque de cadena de suministro en WordPress",
+    "resumen": "Varios plugins de WordPress de ShapedPlugin fueron comprometidos en un ataque de cadena de suministro después de que actores maliciosos desconocidos lograron manipular los canales oficiales de lanzamiento y agregar código backdoor a las versiones Pro de los plugins, que se distribuyeron a través de canales de actualización oficiales. Los atacantes comprometieron el pipeline de construcción y distribución del proveedor, inyectando código backdoor en las versiones Pro de los plugins.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA3OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
+    "fuente": "The Hacker News",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 758,
     "fecha": "2026-06-22T20:39:46Z",
     "categoria": "IA",
@@ -1952,16 +1965,6 @@
     "resumen": "La Comisión Federal de Comercio (FTC) de EE. UU. advirtió que los estadounidenses perdieron $3.5 mil millones debido a estafas de suplantación de identidad en 2025, con pérdidas reportadas que casi triplicaron desde 2020.",
     "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MjgxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/ftc-warns-of-record-35-billion-losses-to-imposter-scams-in-2025/",
-    "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 659,
-    "fecha": "2026-06-16T16:43:06Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Ataque GhostTree: Una nueva amenaza que utiliza enlaces recursivos de Windows para ocultar malware",
-    "resumen": "El ataque GhostTree aprovecha los enlaces recursivos del sistema de archivos NTFS de Windows para generar un gran número de rutas de archivos válidas, lo que puede evitar que Microsoft Defender detecte malware al no completar las escaneos de carpetas.",
-    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MjgxODZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/ghosttree-attack-abused-recursive-windows-junctions-to-hide-malware/",
     "fuente": "Bleeping Computer"
   }
 ]
