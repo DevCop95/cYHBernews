@@ -1,5 +1,40 @@
 [
   {
+    "id": 757,
+    "fecha": "2026-06-22T16:48:17Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Contenido AI en TikTok supera el 50%",
+    "resumen": "Un estudio de Kapwing encontró que el 59% de los primeros 500 vídeos mostrados a cuentas nuevas en TikTok son \"AI slop\", contenido generado por inteligencia artificial de baja calidad, lo que triplica la tasa encontrada en YouTube. El contenido infantil es el más afectado, con un 57,4% de vídeos clasificados como AI slop.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217963-67e30c290e6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/aplicaciones/problema-no-que-haya-ia-tiktok-que-mitad-que-ves-nada-entrar",
+    "fuente": "Xataka IA",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "thenextweb.com",
+        "unsplash.com",
+        "www.kapwing.com",
+        "www.theguardian.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/15a1f0/threads/375_142.jpeg",
+        "https://i.blogs.es/55319c/ia-tiktok/1024_2000.jpeg",
+        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/1024_2000.png",
+        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/1366_2000.png",
+        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/450_1000.png",
+        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/650_1200.png",
+        "https://thenextweb.com/news/tiktok-ai-slop-59-percent-new-users-kapwing-study",
+        "https://unsplash.com/es/@robin_rednine?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        "https://unsplash.com/es/fotos/un-par-de-cerdos-que-estan-acostados-6y7jACxmhP8",
+        "https://www.kapwing.com/resources/the-tiktok-ai-slop-report/",
+        "https://www.theguardian.com/technology/2025/nov/19/tiktok-users-power-reduce-ai-content-on-feeds"
+      ]
+    }
+  },
+  {
     "id": 756,
     "fecha": "2026-06-22T16:48:10Z",
     "categoria": "Ciberseguridad",
@@ -1904,15 +1939,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1717501219504-b9fe7c155773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MjgxODJ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/uk-to-require-id-or-face-scan-before-you-can-make-social-media-accounts/",
     "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 657,
-    "fecha": "2026-06-16T11:03:50Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Ataque cibernético a CDN de Awesome Motive: JavaScript malicioso inyectado en plugins de WordPress.",
-    "resumen": "Un ataque de cadena de suministro alteró el JavaScript que servía la CDN de Awesome Motive para OptinMonster y otros plugins, permitiendo la creación de un administrador falso y la instalación de un plugin de puerta trasera en sitios de WordPress.",
-    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MDc4MzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/un-ataque-a-la-cdn-de-awesome-motive-inyecta-javascript-malicioso-en-optinmonster-y-otros-plugins-de-wordpress/?utm_source=rss&utm_medium=rss&utm_campaign=un-ataque-a-la-cdn-de-awesome-motive-inyecta-javascript-malicioso-en-optinmonster-y-otros-plugins-de-wordpress",
-    "fuente": "Una al Día (Hispasec)"
   }
 ]
