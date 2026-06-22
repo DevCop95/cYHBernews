@@ -1,5 +1,39 @@
 [
   {
+    "id": 766,
+    "fecha": "2026-06-22T22:44:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "OXLOADER: Nueva carga maliciosa",
+    "resumen": "Investigadores de ciberseguridad han descubierto una nueva campaña que utiliza un cargador de malware llamado OXLOADER para entregar CastleStealer, aprovechando anuncios maliciosos de Google Ads como punto de partida. El actor amenazante parece ser de habla rusa y tiene motivaciones financieras, distribuyendo el malware a través de estos anuncios para obtener beneficios ilícitos.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/new-oxloader-loader-uses-malicious.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 765,
     "fecha": "2026-06-22T22:44:19Z",
     "categoria": "Ciberseguridad",
@@ -2061,16 +2095,6 @@
     "resumen": "La mayoría de los equipos de seguridad siguen siendo reactivos a pesar de tener acceso a grandes cantidades de datos de IP, lo que les dificulta identificar a los responsables de un incidente de seguridad debido a la infraestructura anonimizada involucrada. Esto se debe a la dificultad para separar la información relevante de la irrelevante en un entorno con una gran cantidad de datos disponibles.",
     "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2Njc0NjB8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/survey-94-of-incidents-involve.html",
-    "fuente": "The Hacker News"
-  },
-  {
-    "id": 666,
-    "fecha": "2026-06-16T22:51:21Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Nuevas campañas de malware ClickFix: carga de malware con nuevos loaders y trampas de actualizaciones falsas",
-    "resumen": "Las campañas de ClickFix han expandido su entrega de malware con nuevos loaders y trampas de actualizaciones falsas, incluyendo los loaders BabaDeda, Lorem Ipsum y Potemkin, que han sido detectados atacando a organizaciones educativas y financieras.",
-    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NTAyODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html",
     "fuente": "The Hacker News"
   }
 ]
