@@ -1,5 +1,39 @@
 [
   {
+    "id": 758,
+    "fecha": "2026-06-22T20:39:46Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Campaña FortiBleed roba credenciales",
+    "resumen": "La campaña FortiBleed, de gran escala, utilizó sniffers personalizados para extraer secretos de autenticación de dispositivos FortiGate comprometidos y robar credenciales, afectando la seguridad de las redes que confían en estos firewalls. Los atacantes aprovecharon vulnerabilidades en los dispositivos Fortinet para instalar los sniffers y obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217793-aa1fa7daa216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA3ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fortibleed-campaign-used-custom-fortigate-sniffer-to-steal-credentials/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1552",
+        "name": "Unconventional Password Brute Forcing no aplica, en su lugar: T1110 - Brute Force no aplica, en su lugar: T1204 no aplica, en su lugar:"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 757,
     "fecha": "2026-06-22T16:48:17Z",
     "categoria": "IA",
@@ -1928,16 +1962,6 @@
     "resumen": "El ataque GhostTree aprovecha los enlaces recursivos del sistema de archivos NTFS de Windows para generar un gran número de rutas de archivos válidas, lo que puede evitar que Microsoft Defender detecte malware al no completar las escaneos de carpetas.",
     "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MjgxODZ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/ghosttree-attack-abused-recursive-windows-junctions-to-hide-malware/",
-    "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 658,
-    "fecha": "2026-06-16T16:43:01Z",
-    "categoria": "IA",
-    "titulo": "Requisito de identificación para crear cuentas de redes sociales en el Reino Unido",
-    "resumen": "El gobierno del Reino Unido implementará un sistema que requiere la verificación de edad a través de la subida de una identificación o un escaneo facial para crear cuentas de redes sociales, lo que genera preocupaciones sobre la seguridad y el riesgo de violaciones de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219504-b9fe7c155773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MjgxODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/uk-to-require-id-or-face-scan-before-you-can-make-social-media-accounts/",
     "fuente": "Bleeping Computer"
   }
 ]
