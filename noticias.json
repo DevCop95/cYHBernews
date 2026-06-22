@@ -1,5 +1,39 @@
 [
   {
+    "id": 751,
+    "fecha": "2026-06-22T11:45:59Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Estafas de la Copa Mundial",
+    "resumen": "Los estafadores están utilizando la IA para crear estafas más sofisticadas, como sitios web clonados y boletos falsos, lo que dificulta que los fanáticos distingan entre lo real y lo falso, aumentando el riesgo de phishing y fraude. Los vectores de ataque incluyen sitios web falsos y correos electrónicos fraudulentos que aprovechan la emoción y la urgencia de los eventos deportivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219687-ddce079f704b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxMjg3NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/world-cup-scams-are-getting-harder-to-spot/",
+    "fuente": "Wired Security",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise (no se menciona explícitamente, pero se puede inferir que los sitios web falsos podrían ser utilizados para esto)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing: Spearphishing Attachment (no se menciona explícitamente, pero se puede inferir que los correos electrónicos fraudulentos podrían incluir archivos o enlaces maliciosos)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 750,
     "fecha": "2026-06-22T11:45:52Z",
     "categoria": "Ciberseguridad",
