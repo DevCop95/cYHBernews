@@ -1,5 +1,47 @@
 [
   {
+    "id": 749,
+    "fecha": "2026-06-22T11:45:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "AryStinger: 4.300 routers comprometidos",
+    "resumen": "La campaña AryStinger ha comprometido al menos 4.300 routers domésticos antiguos, principalmente con chipsets Realtek RTL819X, como el D-Link DIR-850L, para utilizarlos como proxies y nodos de reconocimiento en ataques, también se ha detectado una variante que afecta a NAS de QNAP. Los routers comprometidos pueden ser utilizados para ataques de phishing, DDoS y otros tipos de ciberataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxMjg3NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/arystinger-convierte-4-300-routers-antiguos-en-una-red-de-reconocimiento-y-proxies-para-ataques/?utm_source=rss&utm_medium=rss&utm_campaign=arystinger-convierte-4-300-routers-antiguos-en-una-red-de-reconocimiento-y-proxies-para-ataques",
+    "fuente": "Una al Día (Hispasec)",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/arystinger-convierte-4-300-routers-antiguos-en-una-red-de-reconocimiento-y-proxies-para-ataques/"
+      ]
+    }
+  },
+  {
     "id": 748,
     "fecha": "2026-06-22T11:45:40Z",
     "categoria": "IA",
