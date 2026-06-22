@@ -1,5 +1,22 @@
 [
   {
+    "id": 754,
+    "fecha": "2026-06-22T16:47:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Squidbleed",
+    "resumen": "Se ha descubierto una vulnerabilidad de lectura excesiva de memoria (heap over-read) en el proxy web Squid, conocida como Squidbleed, que puede filtrar solicitudes HTTP en texto plano de otros usuarios, incluyendo credenciales o tokens de sesión, a cualquier persona autorizada a enviar tráfico a través del mismo proxy. La vulnerabilidad se debe a un cambio en el análisis de FTP realizado en 1997 y sigue presente en la configuración predeterminada de Squid.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html",
+    "fuente": "The Hacker News",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "calif.io"
+      ]
+    }
+  },
+  {
     "id": 753,
     "fecha": "2026-06-22T16:47:48Z",
     "categoria": "IA",
@@ -1849,15 +1866,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1751448582395-27fc57293f1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MDc4MTh8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://cybersecuritynews.es/la-copa-mundial-2026-dispara-los-ciberataques-a-las-empresas-de-ee-uu-y-canada/",
     "fuente": "CyberSecurity News"
-  },
-  {
-    "id": 654,
-    "fecha": "2026-06-16T03:38:56Z",
-    "categoria": "IA",
-    "titulo": "Vulnerabilidad en Microsoft 365 Copilot:",
-    "resumen": "un solo clic podría haber permitido a atacantes robar correos electrónicos, archivos y códigos de autenticación de dos factores. La falla, conocida como SearchLeak, se debió a la combinación de tres errores que permitían a los atacantes acceder a información confidencial a través de un enlace de confianza de Microsoft.",
-    "url_imagen": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE1ODExMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html",
-    "fuente": "The Hacker News"
   }
 ]
