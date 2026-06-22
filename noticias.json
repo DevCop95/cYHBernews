@@ -1,5 +1,39 @@
 [
   {
+    "id": 764,
+    "fecha": "2026-06-22T22:44:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en Dify",
+    "resumen": "Se han descubierto cuatro vulnerabilidades en la plataforma Dify, que podrían permitir a atacantes leer conversaciones de inteligencia artificial (IA) de otras aplicaciones sin autenticación, afectando la privacidad de los datos de los clientes. Las vulnerabilidades, conocidas como DifyTap, fueron identificadas por Zafran Security y podrían ser explotadas para acceder a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1213",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 763,
     "fecha": "2026-06-22T22:44:05Z",
     "categoria": "Ciberseguridad",
@@ -2035,15 +2069,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1718241905673-a81786aaa609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NTAyNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-jetbrains-marketplace-plugins-steal-ai-api-keys-from-developers/",
     "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 664,
-    "fecha": "2026-06-16T22:51:10Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Ciberdelincuentes utilizan marcas reconocidas para engañar a usuarios en línea",
-    "resumen": "Los ciberdelincuentes están utilizando marcas digitales ampliamente reconocidas, como Netflix y Mastercard, como cebo en fraudes online para engañar a los usuarios, según un informe de Kaspersky sobre amenazas financieras cibernéticas.",
-    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NTAyNzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/netflix-y-mastercard-entre-las-10-marcas-mas-utilizadas-como-cebo-en-fraudes-online/",
-    "fuente": "CyberSecurity News"
   }
 ]
