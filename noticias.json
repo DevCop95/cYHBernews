@@ -1,5 +1,39 @@
 [
   {
+    "id": 760,
+    "fecha": "2026-06-22T20:39:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque de phishing con reputación falsa",
+    "resumen": "Los atacantes están utilizando múltiples canales en línea, incluyendo GitHub, YouTube y VirusTotal, para crear una ilusión de confianza y difundir un hijacker de portapapeles cross-platform, lo que puede llevar a una posible pérdida de criptomonedas. El ataque aprovecha la confianza de los usuarios en estas plataformas para robar información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA3OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/crypto-heist-fake-reputation-boosting-campaign",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Reputation Manipulation"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 759,
     "fecha": "2026-06-22T20:39:52Z",
     "categoria": "Ciberseguridad",
@@ -1955,16 +1989,6 @@
     "resumen": "El malware Rokarolla es un troyano bancario que utiliza un conjunto de 137 comandos para atacar 217 aplicaciones bancarias y de criptomonedas en dispositivos Android, representando una grave amenaza para la seguridad financiera de los usuarios.",
     "url_imagen": "https://images.unsplash.com/photo-1752451399417-eb6e072269bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NDI3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/new-rokarolla-android-malware-targets-217-banking-crypto-apps/",
-    "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 660,
-    "fecha": "2026-06-16T16:43:11Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Estafas de suplantación de identidad alcanzan un récord de pérdidas de $3.5 mil millones en 2025",
-    "resumen": "La Comisión Federal de Comercio (FTC) de EE. UU. advirtió que los estadounidenses perdieron $3.5 mil millones debido a estafas de suplantación de identidad en 2025, con pérdidas reportadas que casi triplicaron desde 2020.",
-    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2MjgxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/ftc-warns-of-record-35-billion-losses-to-imposter-scams-in-2025/",
     "fuente": "Bleeping Computer"
   }
 ]
