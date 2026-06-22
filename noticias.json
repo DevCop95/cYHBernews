@@ -1,5 +1,39 @@
 [
   {
+    "id": 763,
+    "fecha": "2026-06-22T22:44:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque de phishing en WhatsApp",
+    "resumen": "Un campaña de malware en curso está utilizando mensajes engañosos en WhatsApp para distribuir archivos VBScript, lo que permite el acceso remoto al sistema, afectando a usuarios en varios países a través de un vector de ataque de phishing. El ataque aprovecha la confianza en documentos empresariales falsos para infectar PCs.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/whatsapp-phishing-attack-uses-fake-business-docs-to-hack-pcs/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools"
+      },
+      {
+        "id": "T1193",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 762,
     "fecha": "2026-06-22T20:40:09Z",
     "categoria": "IA",
@@ -2011,15 +2045,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NTAyNzB8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://cybersecuritynews.es/netflix-y-mastercard-entre-las-10-marcas-mas-utilizadas-como-cebo-en-fraudes-online/",
     "fuente": "CyberSecurity News"
-  },
-  {
-    "id": 663,
-    "fecha": "2026-06-16T20:45:55Z",
-    "categoria": "IA",
-    "titulo": "Vulnerabilidad en Google Vertex AI SDK permite a atacantes secuestrar modelos de aprendizaje automático",
-    "resumen": "La falla en el SDK de Vertex AI de Google para Python permitía a un atacante sin acceso al proyecto de la víctima secuestrar la carga de modelos de aprendizaje automático y ejecutar código dentro de la infraestructura de servicio de Google.",
-    "url_imagen": "https://images.unsplash.com/photo-1555255707-c07966088b7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2NDI3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html",
-    "fuente": "The Hacker News"
   }
 ]
