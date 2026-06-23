@@ -1,5 +1,43 @@
 [
   {
+    "id": 793,
+    "fecha": "2026-06-23T22:09:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-20230 explotada",
+    "resumen": "Se ha detectado la explotación de una vulnerabilidad de alta gravedad SSRF (Server-Side Request Forgery) en el servidor de Cisco Unified Communications Manager, identificada como CVE-2026-20230, lo que permite a los atacantes realizar ataques dirigidos a los sistemas de comunicaciones unificadas. Esta vulnerabilidad puede ser utilizada para acceder a recursos internos y realizar acciones no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1558.003",
+        "name": "Steal Application Access Token (NO, no es explícito, reemplazar)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20230"
+      ]
+    }
+  },
+  {
     "id": 792,
     "fecha": "2026-06-23T22:09:04Z",
     "categoria": "Ciberseguridad",
@@ -2412,15 +2450,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4MjMyNTB8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://cybersecuritynews.es/espana-reduce-un-52-el-phishing-mientras-la-ia-impulsa-ataques-mas-sofisticados/",
     "fuente": "CyberSecurity News"
-  },
-  {
-    "id": 693,
-    "fecha": "2026-06-18T18:06:38Z",
-    "categoria": "IA",
-    "titulo": "Agentes de IA Huérfanos: Un Riesgo Oculto en su Red",
-    "resumen": "Los agentes de IA huérfanos, que son herramientas de IA que siguen funcionando después de que su creador abandona la empresa, pueden representar un riesgo significativo para la seguridad de la red, ya que pueden interactuar con la propiedad intelectual de la empresa sin autorización adecuada. Esto puede dejar a las empresas vulnerables a accesos no autorizados y brechas de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1674027444636-ce7379d51252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4MDU5OTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/orphaned-ai-agents-how-to-find-hidden.html",
-    "fuente": "The Hacker News"
   }
 ]
