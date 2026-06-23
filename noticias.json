@@ -1,5 +1,38 @@
 [
   {
+    "id": 781,
+    "fecha": "2026-06-23T14:46:44Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA vs Consciencia",
+    "resumen": "Un ingeniero de Microsoft ha demostrado que la inteligencia artificial (IA) no es consciente de sí misma utilizando un editor de mapas de Age of Empires II para crear puertas lógicas NAND con cabras, mostrando que la antropomorfización de los modelos de lenguaje a gran escala (LLM) es un fenómeno común. El estudio revela que la interfaz de chat puede crear una ilusión de consciencia, pero en realidad, la IA se basa en operaciones matemáticas y puertas lógicas.",
+    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjYwMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/ingeniero-microsoft-tuvo-idea-genial-para-demostrar-que-ia-no-consciente-usar-cabras-age-of-empires-ii",
+    "fuente": "Xataka IA",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "404media.co",
+        "adewynter.github.io",
+        "arxiv.org",
+        "platform.instagram.com",
+        "www.theatlantic.com",
+        "www.theguardian.com",
+        "www.xataka.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "https://adewynter.github.io/notes/aoe2-circuits?ref=404media.co",
+        "https://arxiv.org/pdf/2605.31514",
+        "https://i.blogs.es/5d4518/utilizando-ia/375_142.jpeg",
+        "https://i.blogs.es/7a66b7/megafono/375_142.jpeg",
+        "https://i.blogs.es/d3031c/nand/1024_2000.png",
+        "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/?ref=404media.co",
+        "https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt"
+      ]
+    }
+  },
+  {
     "id": 780,
     "fecha": "2026-06-23T14:46:37Z",
     "categoria": "Ciberseguridad",
@@ -2244,15 +2277,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1779309487417-6b44e5f4b036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3NTM0MjR8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/leak-confirms-openai-is-testing-a-chatgpt-for-science-subscription/",
     "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 681,
-    "fecha": "2026-06-17T22:44:16Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Vulnerabilidad cero día en Microsoft Defender: se trabaja en una actualización",
-    "resumen": "Microsoft ha confirmado oficialmente que está desarrollando una actualización para solucionar una vulnerabilidad cero día en Microsoft Defender, conocida como RoguePlanet, que permite una escalada de privilegios con una puntuación CVSS de 7,8.",
-    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MzYyNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html",
-    "fuente": "The Hacker News"
   }
 ]
