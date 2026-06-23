@@ -1,5 +1,39 @@
 [
   {
+    "id": 794,
+    "fecha": "2026-06-23T22:09:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FortiBleed: Ataque a Firewalls",
+    "resumen": "Un broker de acceso inicial (IAB) de habla rusa ha lanzado una operación de recolección de credenciales a gran escala llamada FortiBleed, que ha afectado a más de 430,000 firewalls FortiGate en todo el mundo, utilizando técnicas como fuerza bruta y explotación de servicios expuestos para recolectar más de 110 millones de credenciales. La campaña, activa desde febrero de 2026, representa un vector de ataque significativo para las organizaciones que utilizan estos firewalls.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 793,
     "fecha": "2026-06-23T22:09:11Z",
     "categoria": "Ciberseguridad",
@@ -2439,16 +2473,6 @@
     "resumen": "El 85% de las alertas de seguridad están relacionadas con identidades, entornos en la nube y credenciales comprometidas, según el informe Cyber Protect Report 2026 de SonicWall, destacando la importancia de proteger la identidad digital en la era digital.",
     "url_imagen": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4MjMyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://cybersecuritynews.es/el-85-de-las-alertas-de-seguridad-estan-ligadas-a-identidades-nube-y-credenciales-comprometidas/",
-    "fuente": "CyberSecurity News"
-  },
-  {
-    "id": 694,
-    "fecha": "2026-06-18T22:54:10Z",
-    "categoria": "IA",
-    "titulo": "La Inteligencia Artificial impulsa ataques cibernéticos más sofisticados a pesar de la disminución del phishing en España.",
-    "resumen": "El informe Zscaler ThreatLabz 2026 revela un cambio de paradigma en los ataques cibernéticos, con la IA jugando un papel clave en la creación de amenazas más complejas y difíciles de detectar.",
-    "url_imagen": "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4MjMyNTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/espana-reduce-un-52-el-phishing-mientras-la-ia-impulsa-ataques-mas-sofisticados/",
     "fuente": "CyberSecurity News"
   }
 ]
