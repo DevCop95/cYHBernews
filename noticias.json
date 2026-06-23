@@ -1,5 +1,39 @@
 [
   {
+    "id": 795,
+    "fecha": "2026-06-23T22:09:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques a Salesforce se amplían",
+    "resumen": "Los atacantes han ampliado su alcance después de infiltrarse en el proveedor de aplicaciones Klue, utilizando tokens OAuth para robar datos de clientes de Salesforce, lo que indica un vector de ataque basado en la autorización de terceros. El impacto real se centra en la exposición de datos confidenciales de los clientes afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/scope-salesforce-attacks-expands-icarus-leaks-data",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Credential Access"
+      },
+      {
+        "id": "T1552.004",
+        "name": "OAuth Access Token"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 794,
     "fecha": "2026-06-23T22:09:17Z",
     "categoria": "Ciberseguridad",
@@ -2464,15 +2498,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4MjMyNjF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/gentlemen-ransomware-uses-multiple-edr-killers-to-disable-defenses/",
     "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 695,
-    "fecha": "2026-06-18T22:54:15Z",
-    "categoria": "IA",
-    "titulo": "Amenazas a la seguridad: identidades y credenciales en el punto de mira",
-    "resumen": "El 85% de las alertas de seguridad están relacionadas con identidades, entornos en la nube y credenciales comprometidas, según el informe Cyber Protect Report 2026 de SonicWall, destacando la importancia de proteger la identidad digital en la era digital.",
-    "url_imagen": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4MjMyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/el-85-de-las-alertas-de-seguridad-estan-ligadas-a-identidades-nube-y-credenciales-comprometidas/",
-    "fuente": "CyberSecurity News"
   }
 ]
