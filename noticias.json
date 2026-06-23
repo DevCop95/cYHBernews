@@ -1,5 +1,39 @@
 [
   {
+    "id": 789,
+    "fecha": "2026-06-23T19:55:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Amenaza en workflows de desarrollo",
+    "resumen": "Se ha identificado una debilidad en los flujos de trabajo de CI/CD que afecta a varias herramientas y plataformas, incluyendo Azure Sentinel de Microsoft, AI Agent Development Kit de Google, la base de datos analítica Doris de Apache, Workers SDK de Cloudflare y Black de la Python Software Foundation, lo que permite a atacantes realizar solicitudes de extracción maliciosas. Esta vulnerabilidad puede ser explotada a través de ataques de suplantación de identidad y phishing dirigidos a desarrolladores.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNDQ1MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/cordyceps-malicious-pull-requests-developer-workflows",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking (no se menciona explícitamente, pero se infiere que podría ser utilizado en ataques de suplantación de identidad)"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 788,
     "fecha": "2026-06-23T19:55:24Z",
     "categoria": "Ciberseguridad",
@@ -2378,16 +2412,6 @@
     "resumen": "Las agencias internacionales de aplicación de la ley limpiaron casi 15.000 sitios web de WordPress infectados con malware y desmantelaron más de 100 servidores vinculados a la red de bots SocGholish y al grupo de ciberdelincuencia ruso Evil Corp.",
     "url_imagen": "https://images.unsplash.com/photo-1751448582395-27fc57293f1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3OTQ2ODl8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/",
-    "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 689,
-    "fecha": "2026-06-18T14:58:03Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Protección de datos insuficiente: 5 razones por las que Microsoft 365 no es suficiente",
-    "resumen": "La protección y recuperación de datos empresariales sigue siendo responsabilidad de las organizaciones, y Microsoft 365 tiene limitaciones que deben ser consideradas, como cinco brechas clave que Acronis ha identificado en la protección de datos de Microsoft 365.",
-    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3OTQ2ODR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/5-reasons-microsoft-365-backup-isnt-enough-for-business-data-protection/",
     "fuente": "Bleeping Computer"
   }
 ]
