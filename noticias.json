@@ -1,5 +1,22 @@
 [
   {
+    "id": 770,
+    "fecha": "2026-06-23T06:48:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2024-40766",
+    "resumen": "La vulnerabilidad CVE-2024-40766 se refiere a un bug que, aunque se ha parcheado, sigue siendo explotable debido a configuraciones inseguras, lo que permite a los atacantes aprovecharse de ella a través de vectores de ataque como phishing o exploits dirigidos. El impacto real depende de la implementación y configuración específica de los sistemas afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxOTcyODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33094",
+    "fuente": "SANS ISC",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-40766"
+      ]
+    }
+  },
+  {
     "id": 769,
     "fecha": "2026-06-23T06:47:58Z",
     "categoria": "Ciberseguridad",
@@ -2116,15 +2133,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2OTMyNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.welivesecurity.com/es/investigaciones/fishmonger-actualizado-sprysocks-para-windows/",
     "fuente": "WeLiveSecurity"
-  },
-  {
-    "id": 670,
-    "fecha": "2026-06-17T10:47:37Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Ciberamenazas en España: un aumento alarmante",
-    "resumen": "Más de 9,1 millones de ciberamenazas web han sido detectadas en España en el primer trimestre de 2026, lo que representa el 14,7% de los usuarios españoles, según datos de Kaspersky obtenidos a través de Kaspersky Security Network (KSN).",
-    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2OTMyNTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/detectan-mas-de-9-millones-de-ciberamenazas-web-en-espana-en-el-primer-trimestre-de-2026/",
-    "fuente": "CyberSecurity News"
   }
 ]
