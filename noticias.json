@@ -1,5 +1,39 @@
 [
   {
+    "id": 783,
+    "fecha": "2026-06-23T17:14:07Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agente AI falso evita escaneos de seguridad",
+    "resumen": "Un equipo de seguridad creó un agente AI falso que pasó todos los escaneos de seguridad y alcanzó aproximadamente 26,000 agentes, incluyendo algunos en cuentas corporativas, después de ser publicado en un mercado de habilidades populares y promocionado a través de un anuncio en Instagram. El payload del agente era inofensivo por diseño, recopilando solo la dirección de correo electrónico del usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009875-436f71457475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/fake-ai-agent-skill-passed-security.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Spearphishing via Servicio"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1056",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 782,
     "fecha": "2026-06-23T17:14:00Z",
     "categoria": "Ciberseguridad",
@@ -2269,16 +2303,6 @@
     "resumen": "La validación de exposición adversaria permite a los equipos de seguridad convertir la visibilidad en una priorización confiada, ya que deben decidir qué hallazgos requieren acción bajo presión constante y con información incompleta, lo que dificulta determinar qué riesgos son los más importantes.",
     "url_imagen": "https://images.unsplash.com/photo-1717501218347-64853a917fd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3NTM0MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/adversarial-exposure-validation-turns.html",
-    "fuente": "The Hacker News"
-  },
-  {
-    "id": 683,
-    "fecha": "2026-06-18T03:30:30Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Ataque cibernético sofisticado:",
-    "resumen": "un joven hacker utiliza Tailscale y OpenSSH para mantener el acceso a una red después de que su servidor de mando y control se desconectó. El atacante, que había instalado un keylogger y robado credenciales bancarias y de correo electrónico, demostró una habilidad notable para mantener su acceso a la red víctima incluso después de perder su servidor de control.",
-    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3NTM0MzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/junior-hacker-used-tailscale-and.html",
     "fuente": "The Hacker News"
   }
 ]
