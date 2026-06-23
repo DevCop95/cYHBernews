@@ -1,5 +1,39 @@
 [
   {
+    "id": 780,
+    "fecha": "2026-06-23T14:46:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque cibernético en Londres",
+    "resumen": "Dos miembros del grupo Scattered Spider han admitido su culpabilidad en un ataque cibernético que afectó la red de Transport for London en 2024, causando interrupciones en los servicios de transporte público durante meses, lo que sugiere un posible vector de ataque a través de vulnerabilidades en la infraestructura de TI. El incidente resalta la importancia de la ciberseguridad en la protección de servicios críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjU5OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/guilty-plea-tfl-cyberattack-scattered-spider-members",
+    "fuente": "The Record",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 779,
     "fecha": "2026-06-23T14:46:29Z",
     "categoria": "Ciberseguridad",
@@ -2220,15 +2254,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MzYyNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html",
     "fuente": "The Hacker News"
-  },
-  {
-    "id": 680,
-    "fecha": "2026-06-17T22:44:12Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Google utilizará direcciones IP de usuarios en el Reino Unido y la UE para personalizar anuncios",
-    "resumen": "Google comenzará a utilizar las direcciones IP de los usuarios en el Reino Unido, el Espacio Económico Europeo (EEA) y Suiza para medir y personalizar anuncios a partir del 3 de agosto de 2026, lo que plantea preocupaciones sobre la privacidad digital y el cumplimiento de las regulaciones de protección de datos. Esto sucede mientras la Oficina del Comisionado de Información (ICO) evalúa nuevas reglas de consentimiento para la recopilación de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MzYyNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-to-use-uk-and-eu-user-ip-addresses-for-ad-personalization/",
-    "fuente": "Bleeping Computer"
   }
 ]
