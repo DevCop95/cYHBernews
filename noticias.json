@@ -1,5 +1,39 @@
 [
   {
+    "id": 787,
+    "fecha": "2026-06-23T19:55:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque ClickFix en macOS",
+    "resumen": "Un nuevo ataque de malware llamado ClickFix utiliza comandos de Terminal para descargar, montar y ejecutar malware de robo de información desde archivos de imagen de disco (DMG) maliciosos, afectando la seguridad de los sistemas macOS. El ataque se lleva a cabo de manera silenciosa, lo que puede dificultar su detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNDQ1MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-macos-clickfix-attack-silently-mounts-dmgs-to-push-infostealer/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se infiere que el ataque utiliza comandos de Terminal para ejecutar malware)"
+      },
+      {
+        "id": "T1070",
+        "name": "Indicator Removal"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 786,
     "fecha": "2026-06-23T17:14:28Z",
     "categoria": "IA",
@@ -2352,15 +2386,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3OTQ2Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icarus-salesforce-data-theft-attacks/",
     "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 687,
-    "fecha": "2026-06-18T10:14:43Z",
-    "categoria": "IA",
-    "titulo": "Vulnerabilidades críticas en NGINX: F5 lanza parches de emergencia",
-    "resumen": "F5 ha publicado actualizaciones fuera de ciclo para corregir vulnerabilidades críticas en NGINX que permiten ataques remotos sin autenticación y pueden permitir la ejecución de código en condiciones concretas. Estas actualizaciones buscan mitigar los riesgos asociados con dos fallos con una calificación de gravedad de 9,2 en la escala CVSS.",
-    "url_imagen": "https://images.unsplash.com/photo-1696258686263-9f42a5e34371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3Nzc2ODN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/f5-lanza-parches-fuera-de-ciclo-para-fallos-criticos-en-nginx-con-riesgo-de-ejecucion-remota-de-codigo/?utm_source=rss&utm_medium=rss&utm_campaign=f5-lanza-parches-fuera-de-ciclo-para-fallos-criticos-en-nginx-con-riesgo-de-ejecucion-remota-de-codigo",
-    "fuente": "Una al Día (Hispasec)"
   }
 ]
