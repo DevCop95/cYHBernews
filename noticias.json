@@ -1,5 +1,47 @@
 [
   {
+    "id": 773,
+    "fecha": "2026-06-23T11:56:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware en npm como herramientas PostCSS",
+    "resumen": "Se ha detectado una campaña de cadena de suministro en npm que utiliza paquetes maliciosos disfrazados como herramientas de PostCSS para instalar un Remote Access Trojan (RAT) en sistemas Windows, aumentando el riesgo en entornos de desarrollo y CI/CD donde la instalación de dependencias puede exponer credenciales y tokens. El vector de ataque se aprovecha de la confianza en paquetes de npm para ejecutar código malicioso durante la instalación.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMTU4MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/paquetes-maliciosos-en-npm-se-hacen-pasar-por-herramientas-de-postcss-para-instalar-un-rat-en-windows/?utm_source=rss&utm_medium=rss&utm_campaign=paquetes-maliciosos-en-npm-se-hacen-pasar-por-herramientas-de-postcss-para-instalar-un-rat-en-windows",
+    "fuente": "Una al Día (Hispasec)",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se infiere que el paquete malicioso se ejecuta durante la instalación)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools (se menciona explícitamente el uso de un Remote Access Trojan)"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/paquetes-maliciosos-en-npm-se-hacen-pasar-por-herramientas-de-postcss-para-instalar-un-rat-en-windows/"
+      ]
+    }
+  },
+  {
     "id": 772,
     "fecha": "2026-06-23T06:48:18Z",
     "categoria": "Ciberseguridad",
@@ -2133,15 +2175,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MDkzODZ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/",
     "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 673,
-    "fecha": "2026-06-17T15:16:21Z",
-    "categoria": "IA",
-    "titulo": "Fallo crítico en Vertex AI: Secuestro de modelos a través de bucket squatting.",
-    "resumen": "Un fallo en el SDK de Vertex AI para Python permitió secuestrar la subida de modelos mediante un ataque de bucket squatting, lo que podría llevar a envenenamiento de modelos y ejecución remota de código.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219345-06ea2bf3eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MDkzODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/un-fallo-critico-en-el-sdk-de-vertex-ai-permitio-secuestrar-subidas-de-modelos-con-bucket-squatting/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-critico-en-el-sdk-de-vertex-ai-permitio-secuestrar-subidas-de-modelos-con-bucket-squatting",
-    "fuente": "Una al Día (Hispasec)"
   }
 ]
