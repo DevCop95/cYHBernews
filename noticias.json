@@ -1,5 +1,27 @@
 [
   {
+    "id": 784,
+    "fecha": "2026-06-23T17:14:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Scattered Spider se rinde",
+    "resumen": "Dos miembros clave del grupo de cibercrimen Scattered Spider se declararon culpables de cargos criminales relacionados con un ciberataque en agosto de 2024 que afectó a Transport for London, la entidad responsable de la red de transporte público en el área del Gran Londres. El ataque, que probablemente involucró técnicas de phishing o exploits de vulnerabilidades, demostró la capacidad del grupo para lanzar ataques significativos contra infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
+    "fuente": "Krebs on Security",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 783,
     "fecha": "2026-06-23T17:14:07Z",
     "categoria": "IA",
@@ -2294,15 +2316,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3Nzc2NzR8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://cybersecuritynews.es/las-identidades-no-humanas-abren-una-brecha-critica-en-ciberseguridad/",
     "fuente": "CyberSecurity News"
-  },
-  {
-    "id": 684,
-    "fecha": "2026-06-18T03:30:36Z",
-    "categoria": "IA",
-    "titulo": "Validación de Exposición Adversaria: De la Visibilidad a la Priorización Confiada",
-    "resumen": "La validación de exposición adversaria permite a los equipos de seguridad convertir la visibilidad en una priorización confiada, ya que deben decidir qué hallazgos requieren acción bajo presión constante y con información incompleta, lo que dificulta determinar qué riesgos son los más importantes.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218347-64853a917fd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3NTM0MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/adversarial-exposure-validation-turns.html",
-    "fuente": "The Hacker News"
   }
 ]
