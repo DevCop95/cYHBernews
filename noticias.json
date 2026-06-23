@@ -1,5 +1,39 @@
 [
   {
+    "id": 785,
+    "fecha": "2026-06-23T17:14:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque FortiBleed",
+    "resumen": "Los actores de amenaza han desarrollado un sniffer basado en Golang para explotar 430,000 firewalls FortiGate, identificando 110 millones de credenciales en una campaña global en curso, lo que convierte los firewalls en herramientas de robo de credenciales. El ataque aprovecha vulnerabilidades en los firewalls para obtener acceso no autorizado a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/fortibleed-attackers-firewalls-credentials-stealers",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 784,
     "fecha": "2026-06-23T17:14:13Z",
     "categoria": "Ciberseguridad",
@@ -2306,15 +2340,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1674544362969-a4269ef0ea69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3Nzc2Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "http://www.elladodelmal.com/2026/06/hacking-ai-jailbreak-prompt-injection.html",
     "fuente": "El Lado Del Mal"
-  },
-  {
-    "id": 685,
-    "fecha": "2026-06-18T10:14:33Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Identidades no humanas: el nuevo talón de Aquiles de la ciberseguridad",
-    "resumen": "La proliferación de identidades no humanas en entornos cloud y sistemas automatizados se ha convertido en un punto ciego crítico en la ciberseguridad empresarial, ya que superan en número a las identidades humanas en la mayoría de las organizaciones.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3Nzc2NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/las-identidades-no-humanas-abren-una-brecha-critica-en-ciberseguridad/",
-    "fuente": "CyberSecurity News"
   }
 ]
