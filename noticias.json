@@ -1,5 +1,22 @@
 [
   {
+    "id": 772,
+    "fecha": "2026-06-23T06:48:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Alertas de Seguridad",
+    "resumen": "El ISC Stormcast del 23 de junio de 2026 presenta un resumen de las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques cibernéticos como phishing y exploits de zero-day. Los sectores afectados incluyen finanzas, gobierno y tecnología, con un enfoque en la protección contra malware y ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxOTcyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33098",
+    "fuente": "SANS ISC",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/9982,"
+      ]
+    }
+  },
+  {
     "id": 771,
     "fecha": "2026-06-23T06:48:12Z",
     "categoria": "IA",
@@ -2126,15 +2143,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1717501219345-06ea2bf3eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MDkzODF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://unaaldia.hispasec.com/un-fallo-critico-en-el-sdk-de-vertex-ai-permitio-secuestrar-subidas-de-modelos-con-bucket-squatting/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-critico-en-el-sdk-de-vertex-ai-permitio-secuestrar-subidas-de-modelos-con-bucket-squatting",
     "fuente": "Una al Día (Hispasec)"
-  },
-  {
-    "id": 672,
-    "fecha": "2026-06-17T10:47:47Z",
-    "categoria": "IA",
-    "titulo": "Orden de emergencia: parchear vulnerabilidad crítica en plugin de Joomla antes del viernes",
-    "resumen": "La Agencia de Seguridad y Infraestructura Cibernética de EE. UU. (CISA) ha ordenado a las agencias federales que parcheen una vulnerabilidad de máxima gravedad en el plugin Widget Factory Joomla Content Editor (JCE) que está siendo explotada activamente en la naturaleza.",
-    "url_imagen": "https://images.unsplash.com/photo-1718241905439-3562f088758d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE2OTMyNjd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-joomla-plugin-flaw-by-friday/",
-    "fuente": "Bleeping Computer"
   }
 ]
