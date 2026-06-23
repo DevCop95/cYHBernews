@@ -1,5 +1,39 @@
 [
   {
+    "id": 779,
+    "fecha": "2026-06-23T14:46:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Desmantelamiento de SocGholish",
+    "resumen": "El desmantelamiento de SocGholish destaca la amenaza de los sistemas de distribución de tráfico (TDS) maliciosos, que proporcionan acceso inicial a las redes de las víctimas para grupos de ciberdelincuencia como Evil Corp, permitiendo ataques como phishing y ransomware. Los TDS son un vector de ataque clave para la infección de redes y la posterior explotación por parte de actores maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjU5ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/socgholish-takedown-malicious-tds-threats",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 778,
     "fecha": "2026-06-23T14:46:23Z",
     "categoria": "Ciberseguridad",
@@ -2196,15 +2230,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MzYyNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/google-to-use-uk-and-eu-user-ip-addresses-for-ad-personalization/",
     "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 679,
-    "fecha": "2026-06-17T22:44:06Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Peligro en el Prime Day: amenazas cibernéticas al acecho",
-    "resumen": "Check Point Research ha detectado un aumento en la creación de infraestructuras maliciosas diseñadas para aprovecharse del Amazon Prime Day, con 1 de cada 11 nuevas webs de Amazon siendo falsa o maliciosa.",
-    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MzYyNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/peligro-en-el-prime-day-1-de-cada-11-nuevas-webs-de-amazon-es-falsa-o-maliciosa/",
-    "fuente": "CyberSecurity News"
   }
 ]
