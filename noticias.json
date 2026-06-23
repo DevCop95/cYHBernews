@@ -1,5 +1,25 @@
 [
   {
+    "id": 775,
+    "fecha": "2026-06-23T11:57:04Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Fable 5 Jailbroken",
+    "resumen": "El modelo Fable 5 de Anthropic, diseñado como una versión segura con \"guardrails\" para prevenir su uso en ataques cibernéticos, fue \"jailbroken\" en cuestión de días, lo que plantea preocupaciones sobre su capacidad para evitar el uso malicioso. Esto podría permitir a los atacantes explotar el modelo para crear ataques cibernéticos, como phishing o malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217780-03809da32358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMTU4MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/anthropics-fable-5-model-jailbroken-within-days.html",
+    "fuente": "Schneier on Security",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "cybersecuritynews.com"
+      ],
+      "url": [
+        "https://cybersecuritynews.com/anthropics-claude-fable-5-jailbroken/"
+      ]
+    }
+  },
+  {
     "id": 774,
     "fecha": "2026-06-23T11:56:57Z",
     "categoria": "Ciberseguridad",
@@ -2167,16 +2187,6 @@
     "resumen": "El bloqueo de Telegram en la India, impuesto hasta el 22 de junio debido a la circulación de exámenes filtrados, ha tenido un efecto dominó y ha afectado a los usuarios en los Emiratos Árabes, quienes pueden sortear el bloqueo utilizando un proxy MTProto.",
     "url_imagen": "https://images.unsplash.com/photo-1717501218003-3c89682cfb3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MjY4NzF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/indias-telegram-ban-hit-the-uae-too-heres-how-to-get-around-it/",
-    "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 675,
-    "fecha": "2026-06-17T15:16:32Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "El auge de las tomas de cuentas: Cómo detener a los atacantes",
-    "resumen": "El número de tomas de cuentas está aumentando debido a que los atacantes están sorteando las defensas tradicionales a través del phishing, el secuestro de sesiones y la fatiga de autenticación multifactor, y la confianza en el dispositivo y la verificación continua pueden ayudar a reducir el riesgo de toma de cuentas.",
-    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MDkzOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/why-account-takeovers-are-rising-and-how-to-stop-them/",
     "fuente": "Bleeping Computer"
   }
 ]
