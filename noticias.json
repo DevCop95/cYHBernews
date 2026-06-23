@@ -1,5 +1,18 @@
 [
   {
+    "id": 774,
+    "fecha": "2026-06-23T11:56:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Paquetes npm Maliciosos",
+    "resumen": "Investigadores de ciberseguridad han descubierto paquetes npm maliciosos que se disfrazan de herramientas de PostCSS para entregar un troyano de acceso remoto (RAT) en Windows, afectando a desarrolladores que utilizan npm, con un total de 1016 descargas de los paquetes identificados. Los paquetes maliciosos, publicados en el último mes, aprovechan la confianza en las herramientas de PostCSS para infiltrarse en sistemas de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMTU4MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/malicious-npm-packages-pose-as-postcss.html",
+    "fuente": "The Hacker News",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 773,
     "fecha": "2026-06-23T11:56:49Z",
     "categoria": "Ciberseguridad",
@@ -2164,16 +2177,6 @@
     "resumen": "El número de tomas de cuentas está aumentando debido a que los atacantes están sorteando las defensas tradicionales a través del phishing, el secuestro de sesiones y la fatiga de autenticación multifactor, y la confianza en el dispositivo y la verificación continua pueden ayudar a reducir el riesgo de toma de cuentas.",
     "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MDkzOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.bleepingcomputer.com/news/security/why-account-takeovers-are-rising-and-how-to-stop-them/",
-    "fuente": "Bleeping Computer"
-  },
-  {
-    "id": 674,
-    "fecha": "2026-06-17T15:16:26Z",
-    "categoria": "IA",
-    "titulo": "Filtración masiva de credenciales VPN: 73.000 dispositivos Fortinet comprometidos",
-    "resumen": "La filtración de datos \"FortiBleed\" ha expuesto una colección de credenciales de VPN de Fortinet y FortiGate para 73.932 direcciones URL de firewalls en organizaciones de todo el mundo, poniendo en riesgo la seguridad de miles de dispositivos.",
-    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE3MDkzODZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/",
     "fuente": "Bleeping Computer"
   }
 ]
