@@ -1,5 +1,18 @@
 [
   {
+    "id": 803,
+    "fecha": "2026-06-24T06:44:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Masquerading en Linux",
+    "resumen": "Los atacantes pueden utilizar la técnica de masquerading para ocultar el nombre de un proceso malicioso en Linux, reemplazándolo con un nombre legítimo para evadir la detección, como se describe en la técnica T1036 del marco MITRE ATT&CK. Esta técnica ha sido utilizada por grupos como Velvet Ant para evitar la detección de malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33102",
+    "fuente": "SANS ISC",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 802,
     "fecha": "2026-06-24T06:43:44Z",
     "categoria": "IA",
@@ -2602,19 +2615,6 @@
     "url_imagen": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NzkxNDV8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/from-assistive-to-agentic-ai-shift.html",
     "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 703,
-    "fecha": "2026-06-19T14:25:39Z",
-    "categoria": "IA",
-    "severidad": "CRITICA",
-    "titulo": "Agentes AI: Nuevas Identidades",
-    "resumen": "Los agentes de IA pueden acceder a datos, desencadenar flujos de trabajo, implementar código y interactuar con sistemas comerciales críticos, a menudo con poca supervisión, lo que los convierte en un nuevo desafío de identidad y gobernanza. La falta de control sobre estos agentes puede generar vulnerabilidades de seguridad, como ataques de phishing o exploits de zero-day, si no se implementan medidas de seguridad adecuadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217900-da3e127098a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NzkxMzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/every-ai-agent-is-an-identity-most-organizations-dont-treat-them-that-way/",
-    "fuente": "Bleeping Computer",
     "ttps": [],
     "iocs": {}
   }
