@@ -1,5 +1,22 @@
 [
   {
+    "id": 811,
+    "fecha": "2026-06-24T11:18:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Cisco Umbrella",
+    "resumen": "Se ha identificado una vulnerabilidad de alto riesgo (CVSS 8.2) en Cisco Umbrella Insights Virtual Appliances 2.1.0 y versiones anteriores, que permite a un atacante local autenticado iniciar sesión con privilegios root en una máquina virtual afectada debido a credenciales estáticas por defecto. El vector de ataque implica el uso de la consola del hipervisor para conectarse localmente y explotar las credenciales estáticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk5MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-12350",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2017-12350"
+      ]
+    }
+  },
+  {
     "id": 810,
     "fecha": "2026-06-24T11:18:34Z",
     "categoria": "IA",
