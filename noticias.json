@@ -1,5 +1,18 @@
 [
   {
+    "id": 799,
+    "fecha": "2026-06-24T02:49:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades en Dify",
+    "resumen": "Se han descubierto cuatro vulnerabilidades en la plataforma Dify, que permiten a los atacantes acceder y exfiltrar silenciosamente datos sensibles, incluyendo historias de chat de aplicaciones de inteligencia artificial (IA), a través de técnicas de \"wiretap\" (interceptación de comunicaciones). Estas vulnerabilidades podrían ser explotadas para obtener acceso no autorizado a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/difytap-bugs-wiretap-ai-chat-histories",
+    "fuente": "Dark Reading",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 798,
     "fecha": "2026-06-24T02:49:38Z",
     "categoria": "Ciberseguridad",
@@ -2518,15 +2531,5 @@
     "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NjQzNzh8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.welivesecurity.com/es/investigaciones/gentlekiller-analisis-del-framework-edr-killer-de-gentlemen/",
     "fuente": "WeLiveSecurity"
-  },
-  {
-    "id": 699,
-    "fecha": "2026-06-19T03:52:21Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Amenazas en la red: el lado oscuro de la tecnología",
-    "resumen": "El boletín ThreatsDay revela una serie de amenazas cibernéticas, incluyendo el abuso de Claude Chat, paquetes npm maliciosos y phishing de códigos de dispositivo, que aprovechan las vulnerabilidades de la red para llevar a cabo ataques y estafas. Estas amenazas incluyen la exposición de dispositivos de borde, paquetes envenenados y estafas de mensajeros de dinero, entre otras.",
-    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NDExNDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/threatsday-bulletin-claude-chat-abuse.html",
-    "fuente": "The Hacker News"
   }
 ]
