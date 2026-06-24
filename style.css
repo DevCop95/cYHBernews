@@ -360,12 +360,26 @@ body.sidebar-closed .sidebar-item span {
   body:not(.sidebar-closed) .sidebar-item span { width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 
+.mobile-close-search { display: none; }
+
 @media (max-width: 768px) {
   .app-main { padding: 16px; }
   .pills-container-wrapper { margin: 0 -16px 16px; padding-left: 16px; padding-right: 16px; }
-  .header-center { display: none; } /* hide center search on mobile */
-  .mobile-only-search { display: flex; }
+  
+  .header-left { min-width: 0; width: auto; gap: 8px; }
+  .header-right { min-width: 0; width: auto; gap: 8px; }
   .logo-text { display: none; }
+  .header-center { display: none; }
+  .mobile-only-search { display: flex; }
+  
+  .app-header.mobile-search-active .header-left,
+  .app-header.mobile-search-active .header-right { display: none; }
+  .app-header.mobile-search-active .header-center {
+    display: flex; width: 100%; max-width: none;
+  }
+  .app-header.mobile-search-active .mobile-close-search { display: flex; margin-right: 8px; }
+  .app-header.mobile-search-active .mic-btn { display: none; }
+  
   .hero-card { aspect-ratio: auto; min-height: 400px; max-height: none; padding: 24px; }
   .hero-title { font-size: 24px; }
   .hero-desc { font-size: 14px; }

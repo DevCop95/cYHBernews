@@ -675,6 +675,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Mobile Search Toggle
+    const mobileSearchBtn = document.querySelector('.mobile-only-search');
+    const mobileCloseSearchBtn = document.querySelector('.mobile-close-search');
+    const appHeader = document.querySelector('.app-header');
+
+    if (mobileSearchBtn) {
+        mobileSearchBtn.addEventListener('click', () => {
+            appHeader.classList.add('mobile-search-active');
+            if (searchInput) searchInput.focus();
+        });
+    }
+    if (mobileCloseSearchBtn) {
+        mobileCloseSearchBtn.addEventListener('click', () => {
+            appHeader.classList.remove('mobile-search-active');
+            if (searchInput) {
+                searchInput.value = '';
+                state.query = '';
+                applyFilters();
+            }
+        });
+    }
+
     // Init
     loadNews();
 });
