@@ -1,5 +1,39 @@
 [
   {
+    "id": 815,
+    "fecha": "2026-06-24T14:21:56Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataques de ingeniería social",
+    "resumen": "Los service desks se han convertido en un objetivo favorito para los atacantes que buscan restablecer contraseñas, cambiar la autenticación multifactor (MFA) y obtener acceso a cuentas corporativas, aprovechando técnicas de ingeniería social como el phishing y el engaño telefónico. Las organizaciones pueden defenderse implementando medidas de seguridad como la verificación de identidad y la conciencia sobre la seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/securing-the-service-desk-why-social-engineering-attacks-keep-succeeding/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing para ingeniería social no se menciona explícitamente, pero se puede inferir que el engaño telefónico se relaciona con T1598.001 - Engaño telefónico"
+      },
+      {
+        "id": "T1598.001",
+        "name": "Engaño telefónico"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556",
+        "name": "Modificación de la autenticación"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 814,
     "fecha": "2026-06-24T11:42:52Z",
     "categoria": "Ciberseguridad",
