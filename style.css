@@ -397,6 +397,8 @@ body.sidebar-closed .sidebar-item span {
   .hero-card { aspect-ratio: auto; min-height: 400px; max-height: none; padding: 24px; }
   .hero-title { font-size: 24px; }
   .hero-desc { font-size: 14px; }
+  .hero-card .hero-content > div:last-child { gap: 8px; }
+  .hero-card .read-story-btn { font-size: 13px; padding: 10px 16px; }
   .app-sidebar { position: fixed; left: 0; top: var(--header-height); bottom: 0; z-index: 900; transform: translateX(-100%); width: var(--sidebar-width); }
   body.sidebar-open .app-sidebar { transform: translateX(0); }
 }
