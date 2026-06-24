@@ -1,5 +1,22 @@
 [
   {
+    "id": 832,
+    "fecha": "2026-06-24T22:13:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Vim",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros (CVE-2023-4734) con una puntuación CVSS de 7.8 en versiones de Vim anteriores a 9.0.1846, lo que podría permitir ataques de elevación de privilegios en sistemas que utilizan esta versión de Vim, incluyendo macOS. La vulnerabilidad se encuentra en el repositorio de GitHub de Vim.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-4734",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-4734"
+      ]
+    }
+  },
+  {
     "id": 831,
     "fecha": "2026-06-24T22:13:25Z",
     "categoria": "IA",
