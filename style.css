@@ -201,10 +201,11 @@ body.sidebar-closed .sidebar-item span {
 .sidebar-item.active-topic { font-weight: 600; }
 .sidebar-item svg { width: 22px; height: 22px; stroke-width: 1.5; flex-shrink: 0; }
 
-.sidebar-footer { padding: 16px 24px; font-size: 13px; color: var(--text-tertiary); display: flex; flex-direction: column; gap: 12px; }
-.sidebar-footer a { display: flex; align-items: center; justify-content: center; gap: 6px; font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
+.sidebar-footer { padding: 16px 24px; font-size: 13px; color: var(--text-tertiary); display: flex; flex-direction: column; gap: 12px; border-top: 1px solid var(--border-light); }
+.sidebar-footer p { text-align: left; }
+.sidebar-footer a { display: flex; align-items: center; gap: 8px; font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
 .sidebar-footer a:hover { color: var(--text); }
-.sidebar-footer .footer-icon { width: 22px; height: 22px; flex-shrink: 0; }
+.sidebar-footer .footer-icon { width: 20px; height: 20px; flex-shrink: 0; }
 
 /* ── MAIN CONTENT ── */
 .app-main {
