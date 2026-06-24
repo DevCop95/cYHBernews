@@ -82,7 +82,7 @@ ul, ol { list-style: none; }
 .loader-status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); animation: pulse 1s infinite; }
 @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
 .loader-bar-track { width: 200px; height: 4px; background: var(--surface); border-radius: 2px; overflow: hidden; }
-.loader-bar-fill { height: 100%; width: 0%; background: var(--accent); transition: width 0.3s; }
+.loader-bar-fill { height: 100%; width: 0%; background: #1c62b9; transition: width 0.3s; }
 
 /* ── APP HEADER ── */
 .app-header {
@@ -391,7 +391,6 @@ body.sidebar-closed .sidebar-item span {
   
   .app-sidebar .sidebar-footer { display: block !important; padding: 16px; }
   .sidebar-footer p { display: none; }
-  .sidebar-footer .footer-link-text { display: none; }
 
   .hero-card { aspect-ratio: auto; min-height: 400px; max-height: none; padding: 24px; }
   .hero-title { font-size: 24px; }
