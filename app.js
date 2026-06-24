@@ -314,6 +314,11 @@ document.addEventListener('DOMContentLoaded', () => {
         scramblePromise = scrambleText(scrambleEl, 'cYHBernews', 1800);
     }
 
+    const loaderBar = document.getElementById('loader-bar');
+    function setLoaderProgress(pct) {
+        if (loaderBar) loaderBar.style.width = pct + '%';
+    }
+
     function hideLoader() {
         if (loaderOverlay) {
             setTimeout(() => {
@@ -327,14 +332,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─────────────────────────────────────────────────────────
     async function loadNews() {
         try {
+            setLoaderProgress(20);
             const response = await fetch(`noticias.json?v=${Date.now()}`);
+            setLoaderProgress(50);
             if (!response.ok) throw new Error('Error loading news');
             const data = await response.json();
+            setLoaderProgress(70);
             allNews = data.filter(news => news.resumen && news.resumen.trim() !== "");
             allNews.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
             await applyFilters();
+            setLoaderProgress(100);
         } catch (error) {
             console.error(error);
+            setLoaderProgress(100);
             if (newsGrid) newsGrid.innerHTML = `<p class="error-msg">Error loading news.</p>`;
         } finally {
             await scramblePromise;
