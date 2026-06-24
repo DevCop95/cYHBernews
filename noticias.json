@@ -1,5 +1,27 @@
 [
   {
+    "id": 809,
+    "fecha": "2026-06-24T11:18:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "DoJ Incauta Cuenta de Huione por Lavado de Dinero",
+    "resumen": "El Departamento de Justicia de EE. UU. (DoJ) incautó una cuenta de computación en la nube utilizada por subsidiarias del conglomerado HuiOne Group, vinculado a lavado de dinero y estafas cibernéticas, mientras que el Tesoro impuso sanciones a nueve individuos y 26 entidades relacionadas con el Grupo Prince. Los subsidarios están acusados de ayudar a transferir fondos ilícitos, posiblemente mediante técnicas de phishing o malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/doj-seizes-huione-cloud-account-tied-to.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 808,
     "fecha": "2026-06-24T11:18:19Z",
     "categoria": "Ciberseguridad",
