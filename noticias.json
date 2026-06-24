@@ -1,5 +1,39 @@
 [
   {
+    "id": 798,
+    "fecha": "2026-06-24T02:49:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque cibernético en Tata Electronics",
+    "resumen": "Tata Electronics ha confirmado un ataque cibernético que ha afectado partes de su infraestructura de TI, con hackers filtrando datos. El incidente de seguridad puede tener implicaciones significativas para la empresa y sus clientes, ya que la filtración de datos puede ser utilizada para ataques de phishing o otros tipos de explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/tata-electronics-confirms-cyberattack-as-hackers-leak-data/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 797,
     "fecha": "2026-06-24T02:49:31Z",
     "categoria": "Ciberseguridad",
@@ -2493,16 +2527,6 @@
     "resumen": "El boletín ThreatsDay revela una serie de amenazas cibernéticas, incluyendo el abuso de Claude Chat, paquetes npm maliciosos y phishing de códigos de dispositivo, que aprovechan las vulnerabilidades de la red para llevar a cabo ataques y estafas. Estas amenazas incluyen la exposición de dispositivos de borde, paquetes envenenados y estafas de mensajeros de dinero, entre otras.",
     "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NDExNDF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/threatsday-bulletin-claude-chat-abuse.html",
-    "fuente": "The Hacker News"
-  },
-  {
-    "id": 698,
-    "fecha": "2026-06-19T03:52:16Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "F5 corrige dos vulnerabilidades críticas en NGINX Open Source que permiten la ejecución remota de código",
-    "resumen": "F5 ha lanzado actualizaciones de seguridad para abordar dos vulnerabilidades críticas en NGINX Open Source que podrían ser explotadas para lograr la ejecución de código en sistemas afectados, incluyendo una vulnerabilidad de uso después de la liberación con una puntuación CVSS v4 de 9,2.",
-    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NDExMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
     "fuente": "The Hacker News"
   }
 ]
