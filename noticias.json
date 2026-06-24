@@ -1,5 +1,22 @@
 [
   {
+    "id": 828,
+    "fecha": "2026-06-24T19:41:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Vim",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros (Integer Overflow) en el repositorio de GitHub de Vim, con un CVSS Score de 7.8, considerada como alta (HIGH), que afecta a versiones anteriores a 9.0.1532. Esta vulnerabilidad podría ser explotada para ejecutar código malicioso en sistemas que utilizan versiones no actualizadas de Vim.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-2610",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-2610"
+      ]
+    }
+  },
+  {
     "id": 827,
     "fecha": "2026-06-24T19:40:50Z",
     "categoria": "Ciberseguridad",
