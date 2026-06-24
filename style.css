@@ -132,6 +132,11 @@ ul, ol { list-style: none; }
   width: 100%; background: transparent; border: none; color: var(--text); font-size: 16px; outline: none;
 }
 #news-search::placeholder { color: var(--text-tertiary); font-weight: 400; }
+.clear-search-btn {
+  background: none; border: none; padding: 0 12px; cursor: pointer; color: var(--text-tertiary);
+  display: flex; align-items: center; justify-content: center; transition: color 0.2s;
+}
+.clear-search-btn:hover { color: var(--text); }
 .search-btn {
   width: 64px; border: 1px solid var(--border); border-radius: 0 40px 40px 0;
   background: var(--surface-light); display: flex; align-items: center; justify-content: center;
@@ -384,6 +389,8 @@ body.sidebar-closed .sidebar-item span {
   .app-header.mobile-search-active .mobile-close-search { display: flex; margin-right: 8px; }
   .app-header.mobile-search-active .mic-btn { display: none; }
   
+  .app-sidebar .sidebar-footer { display: block !important; padding: 16px; }
+
   .hero-card { aspect-ratio: auto; min-height: 400px; max-height: none; padding: 24px; }
   .hero-title { font-size: 24px; }
   .hero-desc { font-size: 14px; }

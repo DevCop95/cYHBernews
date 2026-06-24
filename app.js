@@ -657,10 +657,31 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     sidebarActions.forEach(btn => btn.addEventListener('click', handleActionClick));
 
+    // Clear search button (X)
+    const clearSearchBtn = document.getElementById('clear-search');
+    function updateClearBtn() {
+        if (clearSearchBtn) {
+            clearSearchBtn.style.display = searchInput && searchInput.value.length > 0 ? 'flex' : 'none';
+        }
+    }
+    if (clearSearchBtn) {
+        clearSearchBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            if (searchInput) {
+                searchInput.value = '';
+                searchInput.focus();
+            }
+            state.query = '';
+            updateClearBtn();
+            await applyFilters();
+        });
+    }
+
     if (searchInput) {
         let debounceTimer;
         searchInput.addEventListener('input', e => {
             clearTimeout(debounceTimer);
+            updateClearBtn();
             debounceTimer = setTimeout(async () => {
                 state.query = e.target.value;
                 await applyFilters();
@@ -696,6 +717,27 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Click outside to close sidebar (mobile)
+    document.addEventListener('click', (e) => {
+        const sidebar = document.getElementById('sidebar');
+        const isMobile = window.innerWidth <= 768;
+        if (isMobile && document.body.classList.contains('sidebar-open')) {
+            // Close if click is outside sidebar and outside menu button
+            if (sidebar && !sidebar.contains(e.target) && menuButton && !menuButton.contains(e.target)) {
+                document.body.classList.remove('sidebar-open');
+            }
+        }
+    });
+
+    // Click outside to close mobile search
+    document.addEventListener('click', (e) => {
+        if (!appHeader || !appHeader.classList.contains('mobile-search-active')) return;
+        const headerEl = document.querySelector('.app-header');
+        if (headerEl && !headerEl.contains(e.target)) {
+            appHeader.classList.remove('mobile-search-active');
+        }
+    });
 
     // Init
     loadNews();
