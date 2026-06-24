@@ -1,318 +1,350 @@
 /* ═══════════════════════════════════════════════════════════
-   APP MAIN — cYHBernews
+   APP MAIN — cYHBernews (YouTube Dark Mode + Firebase)
    ═══════════════════════════════════════════════════════════ */
+import { db, doc, getDoc, setDoc, updateDoc, increment } from './firebase-config.js';
+
 document.addEventListener('DOMContentLoaded', () => {
-    // ─────────────────────────────────────────────────────────
-    // SELECTORES ORIGINALES
-    // ─────────────────────────────────────────────────────────
     const newsGrid      = document.getElementById('news-grid');
-    const filterButtons = document.querySelectorAll('.ios-tab');
+    const heroSection   = document.getElementById('hero-section');
+    const filterPills   = document.querySelectorAll('.pill');
+    const sidebarTopics = document.querySelectorAll('.sidebar-item[data-category]');
+    const sidebarActions = document.querySelectorAll('.sidebar-item[data-action]');
     const searchInput   = document.getElementById('news-search');
-    const sortSelect    = document.getElementById('news-sort');
-    const totalCount    = document.getElementById('total-count');
-    const latestDate    = document.getElementById('latest-date');
-    const sourceCount   = document.getElementById('source-count');
-    const resultsLabel  = document.getElementById('results-label');
     const pager         = document.getElementById('news-pager');
     const pagerStatus   = document.getElementById('pager-status');
     const loadMoreButton = document.getElementById('load-more-news');
     const menuButton    = document.getElementById('nav-menu-button');
-    const newsMenu      = document.getElementById('news-menu');
-
-    // ─────────────────────────────────────────────────────────
-    // SELECTORES NUEVOS
-    // ─────────────────────────────────────────────────────────
     const themeToggleBtn = document.getElementById('theme-toggle');
     const backToTopBtn   = document.getElementById('back-to-top');
     const appToast       = document.getElementById('app-toast');
 
-    // ─────────────────────────────────────────────────────────
-    // ESTADO DE LA APP (sin cambios)
-    // ─────────────────────────────────────────────────────────
     let allNews = [];
     let currentResults = [];
+    let statsCache = {}; // Cache for views and likes
+    
     const PAGE_SIZE = 12;
     const state = {
         category:     'all',
         query:        '',
-        sort:         'newest',
+        action:       'home',
         visibleCount: PAGE_SIZE,
     };
 
     // ─────────────────────────────────────────────────────────
-    // MÓDULO: THEME MANAGER
-    // El token en localStorage puede ser 'light', 'dark' o null
-    // (null = seguir la preferencia del sistema operativo).
+    // FIREBASE HELPERS
+    // ─────────────────────────────────────────────────────────
+    // Generar un ID válido para Firestore basado en la URL
+    function getNewsId(url) {
+        if (!url) return 'unknown';
+        return btoa(url).replace(/[=+/]/g, ''); 
+    }
+
+    // Obtener stats de un lote de noticias (con timeout para no bloquear)
+    async function fetchStatsForNews(newsList) {
+        // Asignar defaults primero para que siempre haya datos
+        newsList.forEach(news => {
+            const id = getNewsId(news.enlace_original);
+            if (!statsCache[id]) statsCache[id] = { views: 0, likes: 0 };
+        });
+
+        if (!db) return;
+
+        // Race contra un timeout de 5s para no bloquear el render
+        const TIMEOUT_MS = 5000;
+        const timeoutPromise = new Promise(resolve => setTimeout(resolve, TIMEOUT_MS));
+
+        const fetchPromise = Promise.all(
+            newsList.map(async (news) => {
+                const id = getNewsId(news.enlace_original);
+                try {
+                    const docRef = doc(db, "news_stats", id);
+                    // Timeout individual de 4s por documento
+                    const docSnap = await Promise.race([
+                        getDoc(docRef),
+                        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 4000))
+                    ]);
+                    if (docSnap.exists()) {
+                        statsCache[id] = docSnap.data();
+                    }
+                } catch (e) {
+                    // Ya tiene defaults, solo log si no es timeout
+                    if (e.message !== 'timeout') {
+                        console.warn("Stats fetch skipped:", e.message);
+                    }
+                }
+            })
+        );
+
+        await Promise.race([fetchPromise, timeoutPromise]);
+    }
+
+    async function incrementView(id) {
+        if (!db) return;
+        try {
+            const docRef = doc(db, "news_stats", id);
+            const docSnap = await getDoc(docRef);
+            if (docSnap.exists()) {
+                await updateDoc(docRef, { views: increment(1) });
+            } else {
+                await setDoc(docRef, { views: 1, likes: 0 });
+            }
+        } catch (e) {
+            console.error("Error incrementing view:", e);
+        }
+    }
+
+    async function toggleLike(id, title) {
+        const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
+        const isLiked = !!likedNews[id];
+
+        if (!db) {
+            if (isLiked) {
+                delete likedNews[id];
+                statsCache[id] = statsCache[id] || {};
+                statsCache[id].likes = Math.max(0, (statsCache[id].likes || 0) - 1);
+                showToast('Like removido');
+            } else {
+                likedNews[id] = true;
+                statsCache[id] = statsCache[id] || {};
+                statsCache[id].likes = (statsCache[id].likes || 0) + 1;
+                showToast('¡Te gustó esta noticia!', 'heart');
+            }
+            localStorage.setItem('likedNews', JSON.stringify(likedNews));
+            const btns = document.querySelectorAll(`.like-btn[data-id="${id}"]`);
+            btns.forEach(btn => {
+                const nowLiked = !isLiked;
+                btn.classList.toggle('active', nowLiked);
+                const countSpan = btn.querySelector('.like-count');
+                if (countSpan) countSpan.textContent = statsCache[id].likes > 0 ? statsCache[id].likes : '';
+                
+                const svg = btn.querySelector('svg');
+                if (svg) svg.setAttribute('fill', nowLiked ? 'currentColor' : 'none');
+            });
+            return;
+        }
+
+        try {
+            const docRef = doc(db, "news_stats", id);
+            const docSnap = await getDoc(docRef);
+            
+            if (!docSnap.exists()) {
+                await setDoc(docRef, { views: 0, likes: isLiked ? 0 : 1 });
+            } else {
+                await updateDoc(docRef, { likes: increment(isLiked ? -1 : 1) });
+            }
+
+            if (isLiked) {
+                delete likedNews[id];
+                statsCache[id].likes = Math.max(0, (statsCache[id].likes || 0) - 1);
+                showToast('Like removido');
+            } else {
+                likedNews[id] = true;
+                statsCache[id].likes = (statsCache[id].likes || 0) + 1;
+                showToast('¡Te gustó esta noticia!', 'heart');
+            }
+            
+            localStorage.setItem('likedNews', JSON.stringify(likedNews));
+            
+            // Actualizar UI de todos los botones de like (hero y grid)
+            const btns = document.querySelectorAll(`.like-btn[data-id="${id}"]`);
+            btns.forEach(btn => {
+                const nowLiked = !isLiked;
+                btn.classList.toggle('active', nowLiked);
+                const countSpan = btn.querySelector('.like-count');
+                if (countSpan) countSpan.textContent = statsCache[id].likes > 0 ? statsCache[id].likes : '';
+                
+                // Actualizar icono SVG si existe
+                const svg = btn.querySelector('svg');
+                if (svg) svg.setAttribute('fill', nowLiked ? 'currentColor' : 'none');
+            });
+            
+        } catch (e) {
+            console.error("Error toggling like:", e);
+            showToast('Error de conexión', 'alert-circle');
+        }
+    }
+
+    // Interceptar clics en los enlaces para contar vistas y likes
+    document.body.addEventListener('click', async (e) => {
+        // Interceptar Share
+        const shareBtn = e.target.closest('.share-btn:not(.like-btn)');
+        if (shareBtn) {
+            e.preventDefault();
+            e.stopPropagation();
+            const url   = shareBtn.dataset.url;
+            const title = shareBtn.dataset.title;
+            try {
+                if (navigator.share && navigator.canShare && navigator.canShare({ title, url })) {
+                    await navigator.share({ title, url });
+                } else {
+                    await navigator.clipboard.writeText(url);
+                    showToast('Link copiado', 'clipboard-check');
+                }
+            } catch (err) {
+                if (err.name !== 'AbortError') showToast('Error al copiar', 'alert-circle');
+            }
+            return;
+        }
+
+        // Interceptar Like
+        const likeBtn = e.target.closest('.like-btn');
+        if (likeBtn) {
+            e.preventDefault();
+            e.stopPropagation();
+            const id = likeBtn.dataset.id;
+            const title = likeBtn.dataset.title;
+            await toggleLike(id, title);
+            return;
+        }
+
+        // Interceptar clic en la tarjeta para contar vista
+        const cardLink = e.target.closest('a.news-card, a.hero-card');
+        if (cardLink) {
+            const id = cardLink.dataset.id;
+            if (id) {
+                // No esperamos a que termine para no bloquear la navegación
+                incrementView(id);
+            }
+        }
+    });
+
+    // ─────────────────────────────────────────────────────────
+    // THEME MANAGER
     // ─────────────────────────────────────────────────────────
     const THEME_KEY = 'cyhbernews-theme';
     const htmlEl    = document.documentElement;
-
-    /**
-     * Devuelve true si el tema activo en este momento es oscuro,
-     * ya sea por preferencia explícita o por prefers-color-scheme.
-     */
     function isDarkThemeActive() {
         const explicit = htmlEl.getAttribute('data-theme');
         if (explicit === 'dark')  return true;
         if (explicit === 'light') return false;
         return window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
-
-    /**
-     * Actualiza el ícono del botón según el tema activo.
-     * Sun  → estamos en oscuro  (pulsar irá a claro)
-     * Moon → estamos en claro   (pulsar irá a oscuro)
-     */
     function syncThemeIcon() {
         if (!themeToggleBtn) return;
         themeToggleBtn.innerHTML = `<i data-lucide="${isDarkThemeActive() ? 'sun' : 'moon'}"></i>`;
         refreshIcons();
     }
-
-    /** Alterna entre claro y oscuro y persiste la elección. */
     function cycleTheme() {
         const next = isDarkThemeActive() ? 'light' : 'dark';
         htmlEl.setAttribute('data-theme', next);
         localStorage.setItem(THEME_KEY, next);
         syncThemeIcon();
     }
-
-    // Sincronizar ícono al cargar (el tema ya fue aplicado en <head>).
     syncThemeIcon();
-
-    // Resinoconizar si el usuario cambia la preferencia del SO mientras
-    // está en la página y no tiene tema explícito guardado.
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
         if (!htmlEl.hasAttribute('data-theme')) syncThemeIcon();
     });
-
-    if (themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', cycleTheme);
-    }
+    if (themeToggleBtn) themeToggleBtn.addEventListener('click', cycleTheme);
 
     // ─────────────────────────────────────────────────────────
-    // MÓDULO: TOAST
+    // UI HELPERS
     // ─────────────────────────────────────────────────────────
     let toastTimeout = null;
-
-    /**
-     * Muestra una notificación breve en la parte inferior de la pantalla.
-     * @param {string} message  Texto a mostrar.
-     * @param {string} icon     Nombre del ícono Lucide (default: 'check').
-     * @param {number} duration Milisegundos antes de ocultarse (default: 2400).
-     */
     function showToast(message, icon = 'check', duration = 2400) {
         if (!appToast) return;
         clearTimeout(toastTimeout);
         appToast.innerHTML = `<i data-lucide="${icon}"></i>${escapeHTML(message)}`;
         refreshIcons();
-        // Forzar reflow para que la transición se dispare siempre
         appToast.classList.remove('show');
         void appToast.offsetWidth;
         appToast.classList.add('show');
         toastTimeout = setTimeout(() => appToast.classList.remove('show'), duration);
     }
 
-    // ─────────────────────────────────────────────────────────
-    // MÓDULO: BACK TO TOP
-    // ─────────────────────────────────────────────────────────
-    const SCROLL_THRESHOLD = 380; // px antes de mostrar el botón
-
+    const SCROLL_THRESHOLD = 380;
     if (backToTopBtn) {
         window.addEventListener('scroll', () => {
             const shouldShow = window.scrollY > SCROLL_THRESHOLD;
             backToTopBtn.classList.toggle('visible', shouldShow);
         }, { passive: true });
-
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
-
-    // ─────────────────────────────────────────────────────────
-    // MÓDULO: SHARE
-    // Usa Web Share API si está disponible (iOS Safari, Chrome Android,
-    // Edge). En escritorio copia el URL al portapapeles como fallback.
-    // Delegamos el evento en newsGrid para cubrir cards renderizadas
-    // dinámicamente sin necesidad de re-bindear listeners.
-    // ─────────────────────────────────────────────────────────
-    newsGrid.addEventListener('click', async (e) => {
-        const btn = e.target.closest('.share-btn');
-        if (!btn) return;
-        // Evitar que el click navegue al enlace de la card
-        e.preventDefault();
-        e.stopPropagation();
-
-        const url   = btn.dataset.url;
-        const title = btn.dataset.title;
-
-        try {
-            if (navigator.share && navigator.canShare && navigator.canShare({ title, url })) {
-                await navigator.share({ title, url });
-                // No mostramos toast: el SO da su propio feedback.
-            } else {
-                await navigator.clipboard.writeText(url);
-                showToast('Enlace copiado al portapapeles', 'clipboard-check');
-            }
-        } catch (err) {
-            // AbortError = el usuario cerró el share sheet (no es un error real).
-            if (err.name !== 'AbortError') {
-                // Último recurso: selección manual
-                showToast('No se pudo copiar el enlace', 'alert-circle', 3000);
-            }
-        }
-    });
-
-    // ─────────────────────────────────────────────────────────
-    // HELPERS ORIGINALES (sin cambios)
-    // ─────────────────────────────────────────────────────────
-    function updateIOSTime() {
-        const timeEl = document.getElementById('current-time');
-        if (!timeEl) return;
-        const now = new Date();
-        timeEl.textContent =
-            now.getHours().toString().padStart(2, '0') + ':' +
-            now.getMinutes().toString().padStart(2, '0');
-    }
-    setInterval(updateIOSTime, 1000);
-    updateIOSTime();
 
     function refreshIcons() {
         if (typeof lucide !== 'undefined') lucide.createIcons();
     }
     refreshIcons();
 
-    const CHARSET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&!?';
+    const loaderOverlay = document.getElementById('loader-overlay');
+    const scrambleEl = document.getElementById('loader-scramble-title');
 
-    function scramble(targetId, finalText, onDone) {
-        const el = document.getElementById(targetId);
-        if (!el) return;
+    let scramblePromise = Promise.resolve();
 
-        const REVEAL_DELAY = 60;
-        const NOISE_FRAMES = 8;
+    // ─── Scramble Text Effect ───
+    function scrambleText(element, finalText, duration = 1500) {
+        return new Promise(resolve => {
+            const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?/~`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        const len = finalText.length;
+        const startTime = performance.now();
 
-        el.innerHTML = finalText
-            .split('')
-            .map((ch, i) => `<span class="scramble-char" data-i="${i}">${escapeHTML(ch)}</span>`)
-            .join('');
-
-        const spans = el.querySelectorAll('.scramble-char');
-        let resolved = 0;
-
-        spans.forEach((span, i) => {
-            const target = finalText[i];
-            let revealed = false;
-
-            const noiseId = setInterval(() => {
-                if (!revealed) {
-                    span.textContent = CHARSET[Math.floor(Math.random() * CHARSET.length)];
+        function update(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Each character resolves at a staggered time
+            let result = '';
+            for (let i = 0; i < len; i++) {
+                const charThreshold = i / len;
+                if (progress > charThreshold + 0.3) {
+                    result += finalText[i];
+                } else {
+                    result += chars[Math.floor(Math.random() * chars.length)];
                 }
-            }, 40);
-
-            setTimeout(() => {
-                let frame = 0;
-                const revealId = setInterval(() => {
-                    if (frame >= NOISE_FRAMES) {
-                        clearInterval(noiseId);
-                        clearInterval(revealId);
-                        span.textContent = target;
-                        span.classList.remove('scramble-char');
-                        revealed = true;
-                        resolved++;
-                        if (resolved === spans.length && typeof onDone === 'function') onDone();
-                    } else {
-                        span.textContent = CHARSET[Math.floor(Math.random() * CHARSET.length)];
-                        frame++;
-                    }
-                }, 40);
-            }, i * REVEAL_DELAY);
+            }
+            element.textContent = result;
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            } else {
+                element.textContent = finalText;
+                resolve();
+            }
+        }
+        requestAnimationFrame(update);
         });
     }
 
-    const loaderOverlay = document.getElementById('loader-overlay');
-    const loaderBar     = document.getElementById('loader-bar');
-    const statusText    = document.getElementById('loader-status-text');
-
-    const STATUS_STEPS = [
-        { pct: 20,  msg: 'Conectando...' },
-        { pct: 45,  msg: 'Obteniendo noticias...'  },
-        { pct: 70,  msg: 'Procesando...'       },
-        { pct: 90,  msg: 'Organizando...'    },
-        { pct: 100, msg: 'Listo.'                },
-    ];
-
-    function advanceLoader(step) {
-        if (!loaderBar || !statusText || step >= STATUS_STEPS.length) return;
-        loaderBar.style.width   = STATUS_STEPS[step].pct + '%';
-        statusText.textContent  = STATUS_STEPS[step].msg;
+    if (scrambleEl) {
+        scramblePromise = scrambleText(scrambleEl, 'cYHBernews', 1800);
     }
-
-    const MIN_LOADER_MS = 1600;
-    const loaderStart   = Date.now();
 
     function hideLoader() {
-        if (!loaderOverlay) return;
-        const elapsed   = Date.now() - loaderStart;
-        const remaining = Math.max(0, MIN_LOADER_MS - elapsed);
-        setTimeout(() => {
-            advanceLoader(4);
+        if (loaderOverlay) {
             setTimeout(() => {
                 loaderOverlay.classList.add('hide');
-            }, 450);
-        }, remaining);
-    }
-
-    scramble('loader-scramble-title', 'cYHBernews');
-    advanceLoader(0);
-    setTimeout(() => advanceLoader(1), 400);
-    setTimeout(() => advanceLoader(2), 800);
-    setTimeout(() => advanceLoader(3), 1200);
-
-    const headerTitle = document.getElementById('scramble-title');
-    if (headerTitle) {
-        headerTitle.style.cursor = 'default';
+            }, 500);
+        }
     }
 
     // ─────────────────────────────────────────────────────────
-    // CARGA Y FILTRADO (sin cambios)
+    // DATA LOADING & RENDERING
     // ─────────────────────────────────────────────────────────
     async function loadNews() {
         try {
             const response = await fetch(`noticias.json?v=${Date.now()}`);
-            if (!response.ok) throw new Error('Error al cargar noticias.');
+            if (!response.ok) throw new Error('Error loading news');
             const data = await response.json();
-            
-            // Filtrar noticias que no tengan resumen globalmente
             allNews = data.filter(news => news.resumen && news.resumen.trim() !== "");
-            
             allNews.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
-            updateOverview(allNews);
-            applyFilters();
+            await applyFilters();
         } catch (error) {
             console.error(error);
-            newsGrid.innerHTML = `<p class="error-msg">Error: No se pudieron cargar las noticias.</p>`;
+            if (newsGrid) newsGrid.innerHTML = `<p class="error-msg">Error loading news.</p>`;
         } finally {
+            await scramblePromise;
             hideLoader();
         }
     }
 
-    function updateOverview(news) {
-        if (totalCount) totalCount.textContent = news.length.toString();
-        if (latestDate) latestDate.textContent  = news[0] ? formatDate(news[0].fecha) : '-';
-        if (sourceCount) {
-            sourceCount.textContent = new Set(news.map(item => item.fuente).filter(Boolean)).size.toString();
-        }
-    }
-
-    function applyFilters() {
+    async function applyFilters() {
         state.visibleCount = PAGE_SIZE;
         currentResults = getFilteredNews();
-        renderNews();
+        await renderNews();
     }
 
     function getFilteredNews() {
         const query    = normalizeText(state.query);
-        const filtered = allNews.filter(news => {
+        let filtered = allNews.filter(news => {
             const matchesCategory = state.category === 'all' || news.categoria === state.category;
             const searchable      = normalizeText([
                 news.titulo,
@@ -323,340 +355,320 @@ document.addEventListener('DOMContentLoaded', () => {
             return matchesCategory && (!query || searchable.includes(query));
         });
 
-        return filtered.sort((a, b) => {
-            if (state.sort === 'oldest') return new Date(a.fecha) - new Date(b.fecha);
-            if (state.sort === 'source') return String(a.fuente).localeCompare(String(b.fuente), 'es');
-            return new Date(b.fecha) - new Date(a.fecha);
-        });
+        // Apply Action View Modes
+        if (state.action === 'liked') {
+            const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
+            filtered = filtered.filter(news => likedNews[getNewsId(news.enlace_original)]);
+        } else if (state.action === 'trending') {
+            const sevVal = { 'CRITICA': 4, 'ALTA': 3, 'MEDIA': 2, 'BAJA': 1 };
+            filtered.sort((a, b) => {
+                const valA = sevVal[a.severidad?.toUpperCase()] || 0;
+                const valB = sevVal[b.severidad?.toUpperCase()] || 0;
+                if (valA !== valB) return valB - valA;
+                return new Date(b.fecha) - new Date(a.fecha);
+            });
+        } else if (state.action === 'most-viewed') {
+            filtered.sort((a, b) => {
+                const idA = getNewsId(a.enlace_original);
+                const idB = getNewsId(b.enlace_original);
+                const vA = statsCache[idA]?.views || 0;
+                const vB = statsCache[idB]?.views || 0;
+                if (vA !== vB) return vB - vA;
+                return new Date(b.fecha) - new Date(a.fecha);
+            });
+        }
+        
+        return filtered;
     }
 
-    function renderNews() {
-        const newsToRender = currentResults.slice(0, state.visibleCount);
-
-        if (resultsLabel) {
-            const label = state.category === 'all' ? 'la actualidad' : state.category;
-            resultsLabel.textContent = `${currentResults.length} noticias en ${label}`;
-        }
-
+    async function renderNews() {
         if (currentResults.length === 0) {
-            newsGrid.innerHTML = `
+            if (heroSection) heroSection.innerHTML = '';
+            if (newsGrid) newsGrid.innerHTML = `
                 <div class="empty-state">
-                    <p class="empty-msg">No hay noticias para estos filtros.</p>
+                    <p>No se encontraron noticias con estos filtros.</p>
                     <button id="clear-filters-btn" class="clear-filters-btn">
-                        <i data-lucide="x-circle"></i> Limpiar búsqueda
+                        <i data-lucide="x-circle"></i> Limpiar filtros
                     </button>
                 </div>
             `;
             refreshIcons();
             const clearBtn = document.getElementById('clear-filters-btn');
-            if (clearBtn) {
-                clearBtn.addEventListener('click', () => {
-                    state.query = '';
-                    state.category = 'all';
-                    if (searchInput) searchInput.value = '';
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    const allBtn = document.querySelector('.ios-tab[data-category="all"]');
-                    if (allBtn) allBtn.classList.add('active');
-                    applyFilters();
-                    closeMenu();
-                });
-            }
+            if (clearBtn) clearBtn.addEventListener('click', clearFilters);
             updatePager();
             return;
         }
 
-        const [featured, ...rest] = newsToRender;
-        const groupedNews = groupByDay(rest);
+        const [featured, ...rest] = currentResults;
+        const newsToRender = rest.slice(0, state.visibleCount - 1);
+        
+        // Fetch stats for all items to be rendered
+        await fetchStatsForNews([featured, ...newsToRender]);
+        
+        // Render hero
+        if (heroSection) {
+            heroSection.innerHTML = renderHeroCard(featured);
+        }
 
-        newsGrid.innerHTML = `
-            <section class="featured-news" aria-label="Noticia destacada">
-                ${renderCard(featured, true)}
-            </section>
-            ${Object.entries(groupedNews).map(([day, items]) => `
-                <section class="news-day-group">
-                    <div class="day-heading">
-                        <span>${escapeHTML(day)}</span>
-                        <small>${items.length} ${items.length === 1 ? 'nota' : 'notas'}</small>
-                    </div>
-                    <div class="news-list">
-                        ${items.map(news => renderCard(news)).join('')}
-                    </div>
-                </section>
-            `).join('')}
-        `;
+        // Render grid
+        if (newsGrid) {
+            newsGrid.innerHTML = newsToRender.map(news => renderGridCard(news)).join('');
+        }
 
         refreshIcons();
         updatePager();
     }
 
-    function updatePager() {
-        if (!pager || !pagerStatus || !loadMoreButton) return;
+    function getBadgeHtml(severidad, isHero = false) {
+        if (!severidad) return '';
+        const sv = severidad.toUpperCase();
+        let icon = 'alert-circle';
+        let color = 'var(--accent)';
+        let text = sv;
 
-        const shown     = Math.min(state.visibleCount, currentResults.length);
-        const remaining = Math.max(0, currentResults.length - shown);
-
-        pager.hidden                 = currentResults.length <= PAGE_SIZE;
-        pagerStatus.textContent      = `Mostrando ${shown} de ${currentResults.length}`;
-        loadMoreButton.hidden        = remaining === 0;
-        loadMoreButton.disabled      = remaining === 0;
-        loadMoreButton.innerHTML     = `<i data-lucide="plus"></i> Cargar ${Math.min(PAGE_SIZE, remaining)} más`;
-        refreshIcons();
-    }
-
-    // ─────────────────────────────────────────────────────────
-    // NUEVO HELPER: TIEMPO DE LECTURA
-    // Velocidad media de lectura en español: ~200 palabras/minuto.
-    // ─────────────────────────────────────────────────────────
-    function estimateReadingTime(text) {
-        const words   = String(text || '').trim().split(/\s+/).filter(Boolean).length;
-        const minutes = Math.max(1, Math.round(words / 200));
-        return minutes === 1 ? '1 min' : `${minutes} min`;
-    }
-
-    // ─────────────────────────────────────────────────────────
-    // RENDERIZADO DE CARDS (modificado: + share btn, + reading time)
-    // ─────────────────────────────────────────────────────────
-    function renderCard(news, isFeatured = false) {
-        const title   = getCleanTitle(news);
-        const displayTitle = title;
-        const summary = getCleanSummary(news);
-        const readTime = estimateReadingTime(title + ' ' + summary);
-
-        // Debug: verificar fuente
-        if (!news.fuente) {
-            console.warn('News sin fuente:', news.id, news.titulo);
+        if (sv === 'CRITICA') {
+            icon = 'flame';
+            text = 'URGENTE';
+            color = '#e11d48';
+        } else if (sv === 'ALTA') {
+            icon = 'alert-triangle';
+            color = '#ea580c';
+        } else if (sv === 'MEDIA') {
+            icon = 'alert-circle';
+            color = '#ca8a04';
+        } else if (sv === 'BAJA') {
+            icon = 'info';
+            color = '#2563eb';
+        } else {
+            return '';
         }
 
+        const className = isHero ? 'hero-badge' : 'grid-badge';
+        return `<div class="${className}" style="background-color: ${color}"><i data-lucide="${icon}"></i> ${text}</div>`;
+    }
+
+    function renderHeroCard(news) {
+        if (!news) return '';
+        const id = getNewsId(news.enlace_original);
+        const title = getCleanTitle(news);
+        const summary = getCleanSummary(news);
+        const timeStr = getRelativeTime(news.fecha);
+        const initial = (news.fuente || 'G')[0].toUpperCase();
+        const badgeHtml = getBadgeHtml(news.severidad, true);
+        
+        const views = statsCache[id]?.views || 0;
+        const likes = statsCache[id]?.likes || 0;
+        const formatViews = views > 0 ? `${views} vistas` : 'Nuevo';
+
+        const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
+        const isLiked = !!likedNews[id];
+
         return `
-            <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer"
-               class="news-card ${isFeatured ? 'is-featured' : ''}">
-
-                ${news.url_imagen
-                    ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}"
-                           class="card-image" loading="lazy">`
-                    : ''
-                }
-
-                <!--
-                    NUEVO: Botón de compartir (posición absoluta sobre la card).
-                    El click se gestiona por delegación en newsGrid para no
-                    romper el flujo del <a> padre.
-                -->
-                <button class="share-btn"
-                        data-url="${escapeAttribute(news.enlace_original)}"
-                        data-title="${escapeAttribute(title)}"
-                        aria-label="Compartir: ${escapeAttribute(title)}"
-                        type="button">
-                    <i data-lucide="share-2"></i>
-                </button>
-
-                <div class="card-content">
-                    <div class="card-meta">
-                        <span>${escapeHTML(news.categoria || 'General')}</span>
-                        <span>${formatDate(news.fecha)}</span>
-                    </div>
-                    <h2>${escapeHTML(displayTitle)}</h2>
-                    <p>${escapeHTML(summary)}</p>
-                    <div class="card-footer">
-                        <div class="card-footer-left">
-                            <span class="reading-time">
-                                <i data-lucide="clock-3"></i>${escapeHTML(readTime)}
-                            </span>
-                            <span class="read-link">Abrir <i data-lucide="external-link"></i></span>
+            <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="hero-card" data-id="${id}">
+                ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy">` : ''}
+                <div class="hero-content">
+                    ${badgeHtml}
+                    <span class="hero-category">${escapeHTML(news.categoria || 'Actualidad')}</span>
+                    <h1 class="hero-title">${escapeHTML(title)}</h1>
+                    <p class="hero-desc">${escapeHTML(summary)}</p>
+                    <div class="hero-meta">
+                        <div class="hero-source">
+                            <div class="hero-source-avatar">${initial}</div>
+                            ${escapeHTML(news.fuente || 'Fuente desconocida')}
                         </div>
-                        <span class="card-source">${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
+                        &bull; ${formatViews} &bull; ${timeStr}
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 16px;">
+                        <button class="read-story-btn" style="margin-top: 0;">
+                            Leer historia completa <i data-lucide="arrow-right"></i>
+                        </button>
+                        <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="Me gusta" style="background: rgba(255,255,255,0.2);">
+                            <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
+                            <span class="like-count" style="font-size: 13px; margin-left: 4px; font-weight: bold;">${likes > 0 ? likes : ''}</span>
+                        </button>
+                        <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="Compartir" style="background: rgba(255,255,255,0.2);">
+                            <i data-lucide="share-2"></i>
+                        </button>
                     </div>
                 </div>
             </a>
         `;
     }
 
-    // ─────────────────────────────────────────────────────────
-    // HELPERS ORIGINALES (sin cambios)
-    // ─────────────────────────────────────────────────────────
-    function groupByDay(news) {
-        return news.reduce((groups, item) => {
-            const day = formatDate(item.fecha);
-            groups[day] = groups[day] || [];
-            groups[day].push(item);
-            return groups;
-        }, {});
+    function renderGridCard(news) {
+        const id = getNewsId(news.enlace_original);
+        const title = getCleanTitle(news);
+        const timeStr = getRelativeTime(news.fecha);
+        const initial = (news.fuente || 'N')[0].toUpperCase();
+        const badgeHtml = getBadgeHtml(news.severidad, false);
+        
+        const views = statsCache[id]?.views || 0;
+        const likes = statsCache[id]?.likes || 0;
+        const formatViews = views > 0 ? `${views} vistas` : 'Nuevo';
+
+        const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
+        const isLiked = !!likedNews[id];
+
+        return `
+            <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="news-card" data-id="${id}">
+                <div class="card-thumbnail">
+                    ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy">` : ''}
+                    ${badgeHtml}
+                    <div class="card-thumbnail-overlay">
+                        <div style="display: flex; gap: 8px;">
+                            <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="Me gusta">
+                                <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
+                                <span class="like-count" style="font-size: 12px; margin-left: 4px;">${likes > 0 ? likes : ''}</span>
+                            </button>
+                            <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="Compartir">
+                                <i data-lucide="share-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details">
+                    <div class="card-source-icon">${initial}</div>
+                    <div class="card-info">
+                        <h3 class="card-title">${escapeHTML(title)}</h3>
+                        <div class="card-meta-small">
+                            <span class="source">${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
+                            <div class="stats">${formatViews} &bull; ${timeStr}</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        `;
     }
 
+    function updatePager() {
+        if (!pager || !pagerStatus || !loadMoreButton) return;
+        const totalRest = Math.max(0, currentResults.length - 1);
+        const shown = Math.min(state.visibleCount - 1, totalRest);
+        const remaining = Math.max(0, totalRest - shown);
+
+        pager.hidden = currentResults.length <= PAGE_SIZE;
+        pagerStatus.textContent = `Mostrando ${shown} de ${totalRest}`;
+        loadMoreButton.hidden = remaining === 0;
+        loadMoreButton.disabled = remaining === 0;
+        refreshIcons();
+    }
+
+    // ─────────────────────────────────────────────────────────
+    // DATA HELPERS
+    // ─────────────────────────────────────────────────────────
     function getCleanTitle(news) {
-        const title = String(news.titulo || 'Sin título').replace(/^Tít[uú]lo:\s*/i, '').trim();
-        return title.split('\n')[0].trim().replace(/^["'“”]+|["'“”]+$/g, '');
+        return String(news.titulo || 'Sin título').replace(/^Tít[uú]lo:\s*/i, '').trim().split('\n')[0].trim().replace(/^["'“”]+|["'“”]+$/g, '');
     }
-
-    function getPunchyTitle(title) {
-        const firstSentence = String(title || '').split(/(?<=[.!?])\s+/)[0].trim();
-        const headline = firstSentence.split(/\s+(con|Esta|Este)\s+/i)[0].trim() || firstSentence;
-        const compact = headline.length > 82 ? `${headline.slice(0, 79).trim()}...` : headline;
-        return compact.replace(/^["'“”]+|["'“”]+$/g, '');
-    }
-
     function getCleanSummary(news) {
         const summary = String(news.resumen || '').replace(/^Res[uú]men:\s*/i, '').trim();
-        if (summary) return summary;
-        const titleParts = String(news.titulo || '').split('\n').slice(1).join(' ').trim();
-        return titleParts || 'Resumen no disponible por ahora.';
+        return summary || 'Resumen no disponible.';
     }
-
     function normalizeText(value) {
-        return String(value || '')
-            .normalize('NFD')
-            .replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase();
+        return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     }
-
     function escapeHTML(value) {
-        return String(value ?? '').replace(/[&<>"']/g, char => ({
-            '&':  '&amp;',
-            '<':  '&lt;',
-            '>':  '&gt;',
-            '"':  '&quot;',
-            "'": '&#039;',
-        }[char]));
+        return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[char]));
     }
-
     function escapeAttribute(value) {
         return escapeHTML(value).replace(/`/g, '&#096;');
     }
-
-    function formatDate(isoString) {
-        return new Date(isoString).toLocaleDateString('es-ES',
-            { year: 'numeric', month: 'short', day: 'numeric' });
+    function getRelativeTime(isoString) {
+        const diff = Date.now() - new Date(isoString).getTime();
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        if (hours < 1) return 'Hace un momento';
+        if (hours < 24) return `Hace ${hours} horas`;
+        const days = Math.floor(hours / 24);
+        if (days === 1) return 'Hace 1 día';
+        return `Hace ${days} días`;
     }
 
     // ─────────────────────────────────────────────────────────
-    // MENÚ (sin cambios en la lógica, se añade ⌘K más abajo)
+    // EVENTS
     // ─────────────────────────────────────────────────────────
-    // Toggle atómico simple
-    if (menuButton && newsMenu) {
-        menuButton.onclick = (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            const isShowing = newsMenu.classList.toggle('show');
-            menuButton.classList.toggle('active', isShowing);
-            menuButton.setAttribute('aria-expanded', isShowing);
-            menuButton.innerHTML = isShowing ? '<i data-lucide="x"></i>' : '<i data-lucide="menu"></i>';
-            refreshIcons();
-            console.log('Menu state:', isShowing);
-        };
-
-        // Cerrar al click fuera
-        document.onclick = (e) => {
-            if (!newsMenu.contains(e.target) && !menuButton.contains(e.target)) {
-                newsMenu.classList.remove('show');
-                menuButton.classList.remove('active');
-                menuButton.setAttribute('aria-expanded', 'false');
-                menuButton.innerHTML = '<i data-lucide="menu"></i>';
-                refreshIcons();
-            }
-        };
+    async function clearFilters() {
+        state.query = '';
+        state.category = 'all';
+        if (searchInput) searchInput.value = '';
+        syncCategoryUI('all');
+        await applyFilters();
     }
 
-    const closeMenu = () => {
-        if (newsMenu) {
-            newsMenu.classList.remove('show');
-            if (menuButton) {
-                menuButton.classList.remove('active');
-                menuButton.setAttribute('aria-expanded', 'false');
-                menuButton.innerHTML = '<i data-lucide="menu"></i>';
-                refreshIcons();
-            }
-        }
-    };
+    function syncCategoryUI(cat) {
+        filterPills.forEach(btn => btn.classList.toggle('active', btn.dataset.category === cat));
+        sidebarTopics.forEach(btn => btn.classList.toggle('active-topic', btn.dataset.category === cat));
+    }
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            state.category = button.getAttribute('data-category');
-            applyFilters();
-            closeMenu();
+    if (menuButton) {
+        menuButton.addEventListener('click', () => {
+            const isMobile = window.innerWidth <= 768;
+            if (isMobile) {
+                document.body.classList.toggle('sidebar-open');
+            } else {
+                document.body.classList.toggle('sidebar-closed');
+            }
         });
-    });
+    }
+
+    const handleCategoryClick = async (e) => {
+        const cat = e.currentTarget.dataset.category;
+        state.category = cat;
+        // Optionally reset action when a category is clicked
+        if (state.action !== 'home') {
+            state.action = 'home';
+            syncActionUI('home');
+        }
+        syncCategoryUI(cat);
+        await applyFilters();
+        if (window.innerWidth <= 768) document.body.classList.remove('sidebar-open');
+    };
+    filterPills.forEach(btn => btn.addEventListener('click', handleCategoryClick));
+    sidebarTopics.forEach(btn => btn.addEventListener('click', handleCategoryClick));
+
+    function syncActionUI(act) {
+        sidebarActions.forEach(btn => btn.classList.toggle('active', btn.dataset.action === act));
+    }
+
+    const handleActionClick = async (e) => {
+        e.preventDefault();
+        const act = e.currentTarget.dataset.action;
+        
+        if (['history', 'saved', 'watch-later'].includes(act)) {
+            showToast('Función próximamente', 'info');
+            return;
+        }
+        
+        state.action = act;
+        syncActionUI(act);
+        
+        // Reset category if switching views to give a fresh slate (optional)
+        if (act !== 'home' && state.category !== 'all') {
+            state.category = 'all';
+            syncCategoryUI('all');
+        }
+
+        await applyFilters();
+        if (window.innerWidth <= 768) document.body.classList.remove('sidebar-open');
+    };
+    sidebarActions.forEach(btn => btn.addEventListener('click', handleActionClick));
 
     if (searchInput) {
         let debounceTimer;
-        searchInput.addEventListener('input', event => {
+        searchInput.addEventListener('input', e => {
             clearTimeout(debounceTimer);
-            debounceTimer = setTimeout(() => {
-                state.query = event.target.value;
-                applyFilters();
+            debounceTimer = setTimeout(async () => {
+                state.query = e.target.value;
+                await applyFilters();
             }, 300);
-        });
-
-        searchInput.addEventListener('keydown', event => {
-            if (event.key === 'Enter') {
-                closeMenu();
-                searchInput.blur();
-            }
-        });
-
-        const searchIcon = searchInput.parentElement.querySelector('i[data-lucide="search"]');
-        if (searchIcon) {
-            searchIcon.style.cursor = 'pointer';
-            searchIcon.addEventListener('click', () => closeMenu());
-        }
-    }
-
-    if (sortSelect) {
-        sortSelect.addEventListener('change', event => {
-            state.sort = event.target.value;
-            applyFilters();
-            closeMenu();
         });
     }
 
     if (loadMoreButton) {
-        loadMoreButton.addEventListener('click', () => {
+        loadMoreButton.addEventListener('click', async () => {
             state.visibleCount += PAGE_SIZE;
-            renderNews();
+            await renderNews();
         });
     }
 
-    // ─────────────────────────────────────────────────────────
-    // NUEVO: ATAJOS DE TECLADO GLOBALES
-    //   ⌘K (Mac) / Ctrl+K (Win/Linux) → abrir búsqueda
-    //   Escape                          → cerrar menú (original, unificado aquí)
-    // ─────────────────────────────────────────────────────────
-    document.addEventListener('keydown', event => {
-        const isMac     = navigator.platform.toUpperCase().includes('MAC');
-        const modKey    = isMac ? event.metaKey : event.ctrlKey;
-
-        // Escape: cerrar menú
-        if (event.key === 'Escape' && newsMenu && newsMenu.classList.contains('show')) {
-            closeMenu();
-            menuButton?.focus();
-            return;
-        }
-
-        // ⌘K / Ctrl+K: abrir menú y enfocar búsqueda
-        if (modKey && event.key === 'k') {
-            // No interferir con atajos del navegador si el foco
-            // está en un input que no es el de búsqueda.
-            const focused = document.activeElement;
-            const isInInput = focused && focused !== searchInput &&
-                              (focused.tagName === 'INPUT' || focused.tagName === 'TEXTAREA');
-            if (isInInput) return;
-
-            event.preventDefault();
-            if (newsMenu && !newsMenu.classList.contains('show')) {
-                newsMenu.classList.add('show');
-                if (menuButton) menuButton.classList.add('active');
-            }
-            // Pequeño delay para que el menú termine de mostrarse
-            setTimeout(() => {
-                searchInput?.focus();
-                searchInput?.select();
-            }, 60);
-        }
-    });
-
-    // ─────────────────────────────────────────────────────────
-    // ARRANQUE
-    // ─────────────────────────────────────────────────────────
+    // Init
     loadNews();
 });

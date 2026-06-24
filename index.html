@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cYHBernews | Tu Periódico Tech Estático</title>
+    <title>cYHBernews | Tu Periódico Tech</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=7">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -15,12 +15,11 @@
         document.documentElement.setAttribute('data-theme', (t === 'light' || t === 'dark') ? t : 'dark');
     })();
     </script>
-
 </head>
 <body>
-
     <div id="loader-overlay">
         <div class="loader-inner">
+            <img src="favicon.svg" alt="cYHBernews" class="loader-logo" width="64" height="64">
             <div class="loader-title" id="loader-scramble-title">cYHBernews</div>
             <div class="loader-status">
                 <span class="loader-status-dot"></span>
@@ -32,94 +31,143 @@
         </div>
     </div>
 
-    <header class="ios-header">
-        <div class="ios-status-bar">
-            <span class="ios-time" id="current-time">09:41</span>
-            <div class="ios-icons">
-                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema" title="Cambiar tema (claro / oscuro)">
-                    <i data-lucide="moon"></i>
-                </button>
-                <i data-lucide="signal" class="ios-icon"></i>
-                <i data-lucide="wifi" class="ios-icon"></i>
-                <i data-lucide="battery" class="ios-icon"></i>
+    <!-- Top Navbar -->
+    <header id="top-nav" class="app-header">
+        <div class="header-left">
+            <button id="nav-menu-button" class="icon-btn" aria-label="Abrir menú">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="logo">
+                <img src="favicon.svg" alt="Logo" class="logo-icon-img">
+                <span class="logo-text">cYHBernews</span>
             </div>
         </div>
 
-        <div class="ios-nav-bar">
-            <div class="nav-title-row">
-                <h1 class="ios-title" id="scramble-title" aria-label="cYHBernews">cYHBernews</h1>
-                <button class="nav-menu-button" id="nav-menu-button" type="button" aria-label="Abrir herramientas" aria-expanded="false" aria-controls="news-menu">
-                    <i data-lucide="menu"></i>
+        <div class="header-center">
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <i data-lucide="search" class="search-icon-inside hide-mobile"></i>
+                    <input id="news-search" type="text" placeholder="Search headlines, topics, sources...">
+                </div>
+                <button class="search-btn" aria-label="Buscar">
+                    <i data-lucide="search"></i>
                 </button>
             </div>
+            <button class="mic-btn icon-btn" aria-label="Búsqueda por voz">
+                <i data-lucide="mic"></i>
+            </button>
+        </div>
 
-            <div class="nav-controls-row">
-                <nav class="ios-tabs" id="category-filters" aria-label="Categorías de noticias">
-                    <button class="ios-tab active" data-category="all">Actualidad</button>
-                    <button class="ios-tab" data-category="Ciberseguridad">Seguridad</button>
-                    <button class="ios-tab" data-category="IA">IA</button>
-                </nav>
-
-                <!-- SEARCH DROPDOWN — anclado al botón hamburguesa -->
-                <section class="news-menu" id="news-menu" aria-label="Herramientas de noticias">
-                    <div class="toolbar">
-                        <label class="search-box" for="news-search">
-                            <i data-lucide="search"></i>
-                            <input id="news-search" type="search" placeholder="Buscar por título, fuente o tema">
-                        </label>
-                        <label class="select-box" for="news-sort">
-                            <i data-lucide="arrow-up-down"></i>
-                            <select id="news-sort">
-                                <option value="newest">Más recientes</option>
-                                <option value="oldest">Más antiguas</option>
-                                <option value="source">Por fuente</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="results-row">
-                        <span id="results-label">Cargando noticias</span>
-                        <span class="menu-stats">
-                            <span id="source-count">0</span> fuentes &bull;
-                            <span id="total-count">0</span> noticias &bull;
-                            act. <span id="latest-date">-</span>
-                        </span>
-                    </div>
-                </section>
-            </div>
+        <div class="header-right">
+            <button class="icon-btn mobile-only-search" aria-label="Buscar">
+                <i data-lucide="search"></i>
+            </button>
+            <button class="icon-btn" aria-label="Tendencias">
+                <i data-lucide="flame"></i>
+            </button>
+            <button class="icon-btn notification-btn" aria-label="Notificaciones">
+                <i data-lucide="bell"></i>
+                <span class="badge">3</span>
+            </button>
+            <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">
+                <i data-lucide="moon"></i>
+            </button>
+            <div class="user-avatar">CN</div>
         </div>
     </header>
 
-    <main class="container">
-        <section id="news-grid" class="news-feed">
-            <div class="skeleton-card"></div>
-            <div class="skeleton-card"></div>
-            <div class="skeleton-card"></div>
-        </section>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="app-sidebar">
+            <div class="sidebar-section">
+                <a href="#" class="sidebar-item active" data-action="home">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="sidebar-item" data-action="trending">
+                    <i data-lucide="flame"></i>
+                    <span>Trending</span>
+                </a>
+                <a href="#" class="sidebar-item" data-action="most-viewed">
+                    <i data-lucide="trending-up"></i>
+                    <span>Most Viewed</span>
+                </a>
+            </div>
 
-        <div class="pager" id="news-pager" hidden>
-            <span id="pager-status">Mostrando noticias</span>
-            <button type="button" id="load-more-news">
-                <i data-lucide="plus"></i>
-                Cargar más
-            </button>
-        </div>
-    </main>
+            <div class="sidebar-section">
+                <div class="section-title">YOU &gt;</div>
+                <a href="#" class="sidebar-item" data-action="history">
+                    <i data-lucide="history"></i>
+                    <span>History</span>
+                </a>
+                <a href="#" class="sidebar-item" data-action="saved">
+                    <i data-lucide="bookmark"></i>
+                    <span>Saved</span>
+                </a>
+                <a href="#" class="sidebar-item" data-action="liked">
+                    <i data-lucide="thumbs-up"></i>
+                    <span>Liked</span>
+                </a>
+                <a href="#" class="sidebar-item" data-action="watch-later">
+                    <i data-lucide="clock"></i>
+                    <span>Watch Later</span>
+                </a>
+            </div>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2026 cYHBernews &mdash; <span class="footer-tag">Noticias de Ciberseguridad</span></p>
-            <a
-                href="https://github.com/DevCop95/dev101_bot"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-bot-btn"
-                aria-label="Crea tu propio bot — ver repositorio en GitHub"
-            >
-                <i data-lucide="bot"></i>
-                Crea tu propio bot
-            </a>
-        </div>
-    </footer>
+            <div class="sidebar-section" id="sidebar-topics">
+                <div class="section-title">TOPICS</div>
+                <a href="#" class="sidebar-item active-topic" data-category="all">
+                    <i data-lucide="rss"></i>
+                    <span>Actualidad</span>
+                </a>
+                <a href="#" class="sidebar-item" data-category="Ciberseguridad">
+                    <i data-lucide="shield"></i>
+                    <span>Ciberseguridad</span>
+                </a>
+                <a href="#" class="sidebar-item" data-category="IA">
+                    <i data-lucide="bot"></i>
+                    <span>IA</span>
+                </a>
+            </div>
+            
+            <footer class="sidebar-footer">
+                <p>&copy; 2026 cYHBernews</p>
+                <a href="https://github.com/DevCop95/dev101_bot" target="_blank" rel="noopener noreferrer">
+                    <i data-lucide="bot"></i> Crea tu bot
+                </a>
+            </footer>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="content" class="app-main">
+            <!-- Hero Section -->
+            <section id="hero-section" class="hero-section">
+                <div class="hero-skeleton"></div>
+            </section>
+
+            <!-- Category Pills -->
+            <div class="pills-container-wrapper">
+                <nav id="category-pills" class="category-pills">
+                    <button class="pill active" data-category="all">Actualidad</button>
+                    <button class="pill" data-category="Ciberseguridad">Ciberseguridad</button>
+                    <button class="pill" data-category="IA">IA</button>
+                </nav>
+            </div>
+
+            <!-- News Grid -->
+            <section id="news-grid" class="news-feed">
+                <!-- Cards will be injected here -->
+            </section>
+
+            <div class="pager" id="news-pager" hidden>
+                <span id="pager-status">Mostrando noticias</span>
+                <button type="button" id="load-more-news">
+                    <i data-lucide="plus"></i>
+                    Cargar más
+                </button>
+            </div>
+        </main>
+    </div>
 
     <button id="back-to-top" class="back-to-top" aria-label="Volver al inicio">
         <i data-lucide="chevron-up"></i>
@@ -127,6 +175,6 @@
 
     <div id="app-toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-    <script src="app.js?v=6"></script>
+    <script type="module" src="app.js?v=8"></script>
 </body>
 </html>
