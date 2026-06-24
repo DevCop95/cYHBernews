@@ -202,9 +202,9 @@ body.sidebar-closed .sidebar-item span {
 .sidebar-item svg { width: 22px; height: 22px; stroke-width: 1.5; flex-shrink: 0; }
 
 .sidebar-footer { padding: 16px 24px; font-size: 13px; color: var(--text-tertiary); display: flex; flex-direction: column; gap: 12px; }
-.sidebar-footer a { display: flex; align-items: center; gap: 6px; font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
+.sidebar-footer a { display: flex; align-items: center; justify-content: center; gap: 6px; font-weight: 500; color: var(--text-secondary); transition: color 0.2s; }
 .sidebar-footer a:hover { color: var(--text); }
-.sidebar-footer svg { width: 16px; height: 16px; }
+.sidebar-footer .footer-icon { width: 22px; height: 22px; flex-shrink: 0; }
 
 /* ── MAIN CONTENT ── */
 .app-main {
@@ -392,7 +392,7 @@ body.sidebar-closed .sidebar-item span {
   .app-sidebar .sidebar-footer { display: block !important; padding: 16px; }
   .sidebar-footer p { display: none; }
   .sidebar-footer .footer-link-text { display: none; }
-  .sidebar-footer .footer-icon { display: block; }
+  .sidebar-footer .footer-icon { display: block; width: 22px; height: 22px; margin: 0 auto; }
 
   .hero-card { aspect-ratio: auto; min-height: 400px; max-height: none; padding: 24px; }
   .hero-title { font-size: 24px; }
