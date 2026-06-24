@@ -1,5 +1,75 @@
 [
   {
+    "id": 802,
+    "fecha": "2026-06-24T06:43:44Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en API Keys de LLM",
+    "resumen": "Un estudio ha revelado que es posible filtrar las API Keys de plataformas de LLM como Anthropic, OpenAI y Gemini desde aplicaciones móviles de iPhone y Android, lo que podría permitir a atacantes acceder a servicios de inteligencia artificial y robar información confidencial. El estudio identificó 444 aplicaciones que utilizan LLM y encontró que 282 de ellas permiten hackear las API Keys de una u otra forma.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218325-ff260b4f4b01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/06/como-filtrar-las-api-keys-de-los-llms.html",
+    "fuente": "El Lado Del Mal",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Credential Access"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Obtain Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "arxiv.org",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://amzn.to/4ou7yuK",
+        "https://arxiv.org/pdf/2606.12212",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCScX2-2IxX3WUd7s0IuUEc54Gs81pZOZAc9PGxAsDtwGMW-A5xUR3rXOHs__rU9yv1CGOULFRkFxoJX4A7gFYHFEyJ0ume2QhtCWmexGU0fJUpp1yNpFWWxvZZOqWeJnYdiZY6Y5bBYKGmzBAHzOIktsOslhkoNekYYqw82VgZAF0jXs5x0_4/w640-h366/key2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKrNHlRW-Kwd0pteCMN2TSE-ncZ0iFvICTpU97LXN8mBNjQAC38HLftp_M2LtWM9OGxNQ6Nofh37a1nN111zupubXh4fN6UbUz-zgXc88tiby8AgUl4GfYMyiREvVIBDiYzlQGxGGm0gQnE81HjtNK-02gff7KX16lo3QfU0ukwbZ3Kr8G7R9x/w496-h640/key1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQqTAeOdNce98PXZJhWkoK9-eVEvboBJMvfFD-ktdkttn-gllF4XqeTW-S9vNsiSIsE1dY-APX2rEGr3JqmzQax8mqN4ZqQOUNYtt1BNPhvGcsjj3FdtPFkUI_1FwIiXJm7DbLXgKzH0PKCD4uxd3u9pNGxxRE1rNekGiN4TtGH_i4N8pjZJpD/w640-h176/key7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-A8R7gZIRteDDkjcwtrLRgNfkrBiAKNB6Cb-zYHVhL64LNbDkviiI7jAsvfCvlkOOUOCUYhj5lm65BavvUyQ0bTq_RuAS8aJZfhv_l976eBIq3VaPppsPmsp2fk8VpKkbLcYOZqD96zIjtrn0PrIW7KPEnZXXZXLz9oIMPKzE5u4vtvQmhkbF/w299-h400/hackingIA_2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAYeyftPTR44Ky0fT8JkKnjGZJvfARlIsxKfHePNyCdsbxNVNXTzF2GENNVh0u4J2m8XNbcLrjN6_eIywDOKu4KDwQpu5P6So6l96Q_hWTQKQZIO2iSvEUPi6nHdGgBZRhSMq8BF3MkRB0JW5-pRh64ijdSQbdxCwksGXLQJIr-h7vCTKCnx9M/w640-h176/key7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPrXfJJgnCFCtc8vVwkyDLbAGIHTcVR_rrcMvKFlvMRLY28pNMZ9r2zGele1nSAPyg-W2lnbiA_2tJr8G-W1DEkG-dPsslb0RszUM0PN1FIeNr9vq5-lEnUHQx1H-UCqvv7I_kK6XgZIhblDcGXqwWMjlUTBcZLvG-YzjHtDTUH8z0LxiYxHYd/w640-h350/key10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTGushyaadnXqwxqx6XOX1UIb7wbyDsjrmKci1_5cszgDXF6OgczKFStQBMmcTZaEfBihPrcfXY-lnrPCCzulPHnYW849t7ts0CouiObOCPDSAtAC5RlYsFnxLiqikqZsC7uBzniKrQkeG8tXGdjr2m6CZ8Q-4aKQ3i82aPTgCbIg1g24geKkO/w640-h330/key5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbpCJGMg7_qumW2bDLdcQfrLQNcCfNLmsF0mWiSL2m5JH7WZ3Ki52AnWEn3Ote5FmKivjsc9S8FsedkZF7atUO7px5-R6nZtUzf_2wQjPmzZeHZ3gGrm4IQ34HYO8ckMCtPdh5IDwjHu7Iklt6-sWsugUUScTDPl6UsMk7xpADXfRiHsA9Yl6k/w640-h366/Keys0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYov2tbOX_HfmGdaEzVNYmcnILQwrAq5WqNDmG1wjVr1bIRzIKVdP90uPBzcvbMT8AZm90i5GLS03wu5En_DiGTXVb7eVn-Z0CMe5oZoeLjyuWVeEuyyUrq-K3o8I4imY3I6fH_ty8L3dkE1mTZhTMrgo33Kon-4v-q3HXD4gviplk2vMHsbYI/w640-h518/key4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq7-jhbMpJFOUD3_bX40jgrn63sZH6PkPYOXfCh7H-tZ7ev6eNSIzOFIt6urAdftS5yOi_bgIe4NzdTXF6FFYR6j91zPjVeSTL6d_geCY6fO-gieqRN-wWjLr5WmO95omjltgr2y9pwsYcDo0bCIYVlaNwVdUJDKB9-Jg0J1bfuDFfBurn8kjI/w640-h212/key8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwMBBbTCdwmwFcYT8xp8BSMs43AY3ee8AoKP2Dp8AHFntCxTTM0Qpxkz2nUDo9N0RfFbaxG7YJq-vU56gv4mb2DOq_aN6Hi6ap8mWkB3IobmvPa8JtU5q3qdroKt1-Hv-Ye-jjofwYdDRVsSduvqAFgzj44IdJwVPaSSIEGVl6ditE1Eshog3s/w640-h144/key6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7wS205WQ233-p-CHbnnKoqbuAcwv0GQXXlml0GXeZaPGCVDzfEEwZKFajJ_2iBHn8OI-LV5xBm2Mez2u0gBF14JwWkEvxvWhQ0CQBKaPOygxLEPzFK8smdGUlXRB_Db79MCzIg7CftOwzkpGN1WikZEMFTo_r7_qIz8fL-QOhxl3nBdYMnuNC/w640-h176/key3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqH0_0Xi916ybmvN5IHU3z8VJsTg6Rha2SwVFZ3fAiUROGZMuiIPpVjaimR7DpMApEPiKq71jaZgEaEhXXBzfmXHQ_U19-e5m2sC397fMSjKmGek7vJ4kjP1LfTy6u3PYDADEOhI7RcsXvZiyeH5BWJDkOYm6nKzTEQJj4XK74n9PrEZHEZOxh/w640-h234/key9.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2016/08/revisar-la-configuracion-hsts-y-hpkp-en.html"
+      ]
+    }
+  },
+  {
     "id": 801,
     "fecha": "2026-06-24T02:49:58Z",
     "categoria": "IA",
@@ -2547,15 +2617,5 @@
     "fuente": "Bleeping Computer",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 702,
-    "fecha": "2026-06-19T10:19:49Z",
-    "categoria": "Ciberseguridad",
-    "titulo": "Alerta de Seguridad: CISA Advierte sobre Vulnerabilidad en Dispositivos Fortinet",
-    "resumen": "La Agencia de Ciberseguridad y Seguridad (CISA) ha emitido una advertencia urgente a los clientes de Fortinet para que tomen medidas inmediatas para proteger sus dispositivos tras la filtración FortiBleed, que expuso credenciales de más de 74.000 puertas de enlace de firewall y VPN.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NjQzODl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/cisa-urge-a-blindar-dispositivos-fortinet-tras-la-filtracion-fortibleed/?utm_source=rss&utm_medium=rss&utm_campaign=cisa-urge-a-blindar-dispositivos-fortinet-tras-la-filtracion-fortibleed",
-    "fuente": "Una al Día (Hispasec)"
   }
 ]
