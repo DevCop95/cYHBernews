@@ -1,5 +1,43 @@
 [
   {
+    "id": 821,
+    "fecha": "2026-06-24T16:58:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad MISP",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2020-8892) en versiones anteriores a 2.4.121 de MISP, con un CVSS Score de 8.1, que permite ataques de fuerza bruta a través del método HTTP PUT no bloqueado, lo que podría permitir accesos no autorizados. La vulnerabilidad afecta a la autenticación y podría ser explotada para obtener acceso no autorizado al sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-8892",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2020-8892"
+      ]
+    }
+  },
+  {
     "id": 820,
     "fecha": "2026-06-24T16:58:25Z",
     "categoria": "Ciberseguridad",
