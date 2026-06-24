@@ -1,5 +1,29 @@
 [
   {
+    "id": 807,
+    "fecha": "2026-06-24T11:18:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque a Cisco Unified CM",
+    "resumen": "Se ha detectado una explotación en ataques reales de la vulnerabilidad CVE-2026-20230 en Cisco Unified Communications Manager, que permite a un atacante sin autenticación escribir ficheros en el sistema y potencialmente escalar privilegios hasta root si WebDialer está habilitado. Esto representa un riesgo significativo para las organizaciones que utilizan este sistema y requiere una actualización urgente para mitigar el vector de ataque SSRF.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/explotan-en-ataques-un-fallo-critico-en-cisco-unified-cm-con-webdialer-habilitado-2/?utm_source=rss&utm_medium=rss&utm_campaign=explotan-en-ataques-un-fallo-critico-en-cisco-unified-cm-con-webdialer-habilitado-2",
+    "fuente": "Una al Día (Hispasec)",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/explotan-en-ataques-un-fallo-critico-en-cisco-unified-cm-con-webdialer-habilitado-2/"
+      ],
+      "cve": [
+        "CVE-2026-20230"
+      ]
+    }
+  },
+  {
     "id": 806,
     "fecha": "2026-06-24T06:44:23Z",
     "categoria": "Ciberseguridad",
