@@ -198,11 +198,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // Interceptar clic en la tarjeta para contar vista
-        const cardLink = e.target.closest('a.news-card, a.hero-card');
+        const cardLink = e.target.closest('.news-card, a.hero-card');
         if (cardLink) {
             const id = cardLink.dataset.id;
             if (id) {
-                // No esperamos a que termine para no bloquear la navegación
                 incrementView(id);
             }
         }
@@ -514,6 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderGridCard(news) {
         const id = getNewsId(news.enlace_original);
         const title = getCleanTitle(news);
+        const summary = getCleanSummary(news);
         const timeStr = getRelativeTime(news.fecha);
         const initial = (news.fuente || 'N')[0].toUpperCase();
         const badgeHtml = getBadgeHtml(news.severidad, false);
@@ -526,8 +526,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const isLiked = !!likedNews[id];
 
         return `
-            <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="news-card" data-id="${id}">
-                <div class="card-thumbnail">
+            <div class="news-card" data-id="${id}">
+                <div class="card-thumbnail card-preview-trigger" data-news-id="${id}">
                     ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy">` : ''}
                     ${badgeHtml}
                     <div class="card-thumbnail-overlay">
@@ -550,9 +550,12 @@ document.addEventListener('DOMContentLoaded', () => {
                             <span class="source">${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
                             <div class="stats">${formatViews} &bull; ${timeStr}</div>
                         </div>
+                        <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="card-read-more">
+                            Ver más <i data-lucide="arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-            </a>
+            </div>
         `;
     }
 
@@ -748,6 +751,136 @@ document.addEventListener('DOMContentLoaded', () => {
             appHeader.classList.remove('mobile-search-active');
         }
     });
+
+    // ─────────────────────────────────────────────────────────
+    // NEWS PREVIEW MODAL
+    // ─────────────────────────────────────────────────────────
+    const newsModal = document.getElementById('news-modal');
+    const modalBackdrop = newsModal ? newsModal.querySelector('.news-modal-backdrop') : null;
+    const modalCloseBtn = newsModal ? newsModal.querySelector('.news-modal-close') : null;
+    const modalImg = document.getElementById('modal-img');
+    const modalCategory = document.getElementById('modal-category');
+    const modalTitle = document.getElementById('modal-title');
+    const modalSummary = document.getElementById('modal-summary');
+    const modalAvatar = document.getElementById('modal-avatar');
+    const modalSourceName = document.getElementById('modal-source-name');
+    const modalTime = document.getElementById('modal-time');
+    const modalLikeBtn = document.getElementById('modal-like-btn');
+    const modalShareBtn = document.getElementById('modal-share-btn');
+    const modalReadBtn = document.getElementById('modal-read-btn');
+
+    let currentModalNews = null;
+
+    function openNewsModal(id) {
+        const news = allNews.find(n => getNewsId(n.enlace_original) === id);
+        if (!news || !newsModal) return;
+        currentModalNews = news;
+
+        const title = getCleanTitle(news);
+        const summary = getCleanSummary(news);
+        const initial = (news.fuente || 'N')[0].toUpperCase();
+        const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
+        const isLiked = !!likedNews[id];
+
+        if (news.url_imagen) {
+            modalImg.src = news.url_imagen;
+            modalImg.alt = title;
+            modalImg.parentElement.style.display = '';
+        } else {
+            modalImg.parentElement.style.display = 'none';
+        }
+
+        modalCategory.textContent = news.categoria || 'Actualidad';
+        modalTitle.textContent = title;
+        modalSummary.textContent = summary;
+        modalAvatar.textContent = initial;
+        modalSourceName.textContent = news.fuente || 'Fuente desconocida';
+        modalTime.textContent = getRelativeTime(news.fecha);
+
+        modalLikeBtn.dataset.id = id;
+        modalLikeBtn.dataset.title = title;
+        modalLikeBtn.classList.toggle('active', isLiked);
+        const likeSvg = modalLikeBtn.querySelector('svg');
+        if (likeSvg) likeSvg.setAttribute('fill', isLiked ? 'currentColor' : 'none');
+        const likeCount = modalLikeBtn.querySelector('.like-count');
+        const likes = statsCache[id]?.likes || 0;
+        if (likeCount) likeCount.textContent = likes > 0 ? likes : '';
+
+        modalShareBtn.dataset.url = news.enlace_original;
+        modalShareBtn.dataset.title = title;
+
+        modalReadBtn.href = news.enlace_original;
+
+        newsModal.classList.add('active');
+        newsModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        refreshIcons();
+    }
+
+    function closeNewsModal() {
+        if (!newsModal) return;
+        newsModal.classList.remove('active');
+        newsModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+        currentModalNews = null;
+    }
+
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.card-preview-trigger');
+        if (trigger) {
+            e.preventDefault();
+            e.stopPropagation();
+            const id = trigger.dataset.newsId;
+            if (id) openNewsModal(id);
+            return;
+        }
+    });
+
+    if (modalBackdrop) modalBackdrop.addEventListener('click', closeNewsModal);
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeNewsModal);
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && newsModal && newsModal.classList.contains('active')) {
+            closeNewsModal();
+        }
+    });
+
+    if (modalLikeBtn) {
+        modalLikeBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (currentModalNews) {
+                const id = getNewsId(currentModalNews.enlace_original);
+                await toggleLike(id, getCleanTitle(currentModalNews));
+                const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
+                const isLiked = !!likedNews[id];
+                modalLikeBtn.classList.toggle('active', isLiked);
+                const svg = modalLikeBtn.querySelector('svg');
+                if (svg) svg.setAttribute('fill', isLiked ? 'currentColor' : 'none');
+                const countSpan = modalLikeBtn.querySelector('.like-count');
+                const likes = statsCache[id]?.likes || 0;
+                if (countSpan) countSpan.textContent = likes > 0 ? likes : '';
+            }
+        });
+    }
+
+    if (modalShareBtn) {
+        modalShareBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const url = modalShareBtn.dataset.url;
+            const title = modalShareBtn.dataset.title;
+            try {
+                if (navigator.share && navigator.canShare && navigator.canShare({ title, url })) {
+                    await navigator.share({ title, url });
+                } else {
+                    await navigator.clipboard.writeText(url);
+                    showToast('Link copiado', 'clipboard-check');
+                }
+            } catch (err) {
+                if (err.name !== 'AbortError') showToast('Error al copiar', 'alert-circle');
+            }
+        });
+    }
 
     // Init
     loadNews();

@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="cYHBernews | Tu Periódico Tech">
     <meta name="twitter:description" content="Noticias de Ciberseguridad e Inteligencia Artificial. Mantente informado sobre amenazas, vulnerabilidades, herramientas de IA y tendencias tecnológicas.">
     <meta name="twitter:image" content="https://devcop95.github.io/cYHBernews/favicon.svg">
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=14">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -186,6 +186,43 @@
 
     <div id="app-toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-    <script type="module" src="app.js?v=8"></script>
+    <!-- News Preview Modal -->
+    <div id="news-modal" class="news-modal" role="dialog" aria-hidden="true">
+        <div class="news-modal-backdrop"></div>
+        <div class="news-modal-content">
+            <button class="news-modal-close" aria-label="Cerrar">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="news-modal-image">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="news-modal-body">
+                <span id="modal-category" class="modal-category"></span>
+                <h2 id="modal-title" class="modal-title"></h2>
+                <p id="modal-summary" class="modal-summary"></p>
+                <div class="modal-meta">
+                    <div class="modal-source">
+                        <div id="modal-avatar" class="modal-source-avatar"></div>
+                        <span id="modal-source-name"></span>
+                    </div>
+                    <span id="modal-time"></span>
+                </div>
+                <div class="modal-actions">
+                    <button id="modal-like-btn" class="modal-action-btn like-btn" aria-label="Me gusta">
+                        <i data-lucide="heart" fill="none"></i>
+                        <span class="like-count"></span>
+                    </button>
+                    <button id="modal-share-btn" class="modal-action-btn" aria-label="Compartir">
+                        <i data-lucide="share-2"></i>
+                    </button>
+                    <a id="modal-read-btn" href="#" target="_blank" rel="noopener noreferrer" class="modal-action-btn modal-read-full">
+                        Leer completa <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js?v=9"></script>
 </body>
 </html>

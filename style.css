@@ -403,9 +403,84 @@ body.sidebar-closed .sidebar-item span {
   body.sidebar-open .app-sidebar { transform: translateX(0); }
 }
 
+/* Card Read More */
+.card-read-more {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 13px; font-weight: 600; color: var(--accent);
+  margin-top: 4px; transition: gap 0.2s;
+}
+.card-read-more:hover { gap: 8px; }
+.card-read-more svg { width: 14px; height: 14px; }
+
 /* Toast & Back to Top */
 .toast { position: fixed; bottom: -60px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg); padding: 12px 24px; border-radius: 8px; font-weight: 500; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 10000; transition: bottom 0.3s var(--ease-spring); display: flex; align-items: center; gap: 8px; }
 .toast.show { bottom: 32px; }
 .back-to-top { position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px; border-radius: 50%; background: var(--surface-light); color: var(--text); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); opacity: 0; transform: translateY(20px); pointer-events: none; transition: all 0.3s var(--ease-spring); z-index: 90; }
 .back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
 .back-to-top:hover { background: var(--surface-hover); }
+
+/* ── NEWS MODAL ── */
+.news-modal {
+  position: fixed; inset: 0; z-index: 2000;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.news-modal.active { opacity: 1; visibility: visible; pointer-events: auto; }
+.news-modal-backdrop {
+  position: absolute; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(4px);
+}
+.news-modal-content {
+  position: relative; z-index: 1;
+  width: 90%; max-width: 560px; max-height: 90vh;
+  background: var(--surface); border-radius: 16px; overflow: hidden;
+  display: flex; flex-direction: column;
+  transform: translateY(20px); transition: transform 0.3s var(--ease-spring);
+}
+.news-modal.active .news-modal-content { transform: translateY(0); }
+.news-modal-close {
+  position: absolute; top: 12px; right: 12px; z-index: 2;
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(0,0,0,0.6); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  backdrop-filter: blur(4px); transition: background 0.2s;
+}
+.news-modal-close:hover { background: var(--accent); }
+.news-modal-close svg { width: 20px; height: 20px; }
+.news-modal-image {
+  width: 100%; aspect-ratio: 16/9; overflow: hidden; flex-shrink: 0;
+  background: var(--bg);
+}
+.news-modal-image img { width: 100%; height: 100%; object-fit: cover; }
+.news-modal-body { padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+.modal-category {
+  font-size: 12px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.modal-title {
+  font-family: var(--font-display); font-size: 22px; font-weight: 700;
+  line-height: 1.2; color: var(--text);
+}
+.modal-summary { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+.modal-meta { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--text-tertiary); }
+.modal-source { display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--text-secondary); }
+.modal-source-avatar {
+  width: 24px; height: 24px; border-radius: 50%; background: var(--surface-hover);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700; color: var(--text);
+}
+.modal-actions { display: flex; align-items: center; gap: 12px; margin-top: 8px; flex-wrap: wrap; }
+.modal-action-btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 10px 16px; border-radius: 20px;
+  background: var(--surface-light); color: var(--text);
+  font-size: 13px; font-weight: 600;
+  transition: background 0.2s;
+}
+.modal-action-btn:hover { background: var(--surface-hover); }
+.modal-action-btn.active { color: var(--accent); }
+.modal-action-btn svg { width: 18px; height: 18px; }
+.modal-read-full {
+  background: var(--accent); color: #fff; text-decoration: none;
+}
+.modal-read-full:hover { background: var(--accent-hover); }
