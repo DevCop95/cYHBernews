@@ -1,5 +1,43 @@
 [
   {
+    "id": 833,
+    "fecha": "2026-06-24T22:13:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque zero-day en Cisco SD-WAN",
+    "resumen": "Se han revelado detalles sobre cómo los atacantes explotaron la vulnerabilidad CVE-2026-20245 en Cisco Catalyst SD-WAN para crear cuentas root maliciosas en dispositivos objetivo, lo que les permitió obtener acceso de root en ataques de zero-day. Los vectores de ataque incluyeron la explotación de esta vulnerabilidad para establecer acceso no autorizado a los dispositivos de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials from Passwords"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20245"
+      ]
+    }
+  },
+  {
     "id": 832,
     "fecha": "2026-06-24T22:13:32Z",
     "categoria": "Ciberseguridad",
