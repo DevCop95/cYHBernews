@@ -1,5 +1,39 @@
 [
   {
+    "id": 805,
+    "fecha": "2026-06-24T06:44:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Xolis",
+    "resumen": "La empresa de tecnología sanitaria Xsolis ha sufrido una brecha de datos que ha afectado a 1,4 millones de personas debido a un ataque de phishing que permitió a los atacantes acceder a su red y comprometer datos sensibles. El incidente destaca la importancia de la seguridad cibernética en el sector de la salud, donde la protección de la información de los pacientes es crucial.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 804,
     "fecha": "2026-06-24T06:44:11Z",
     "categoria": "Ciberseguridad",
@@ -2610,40 +2644,6 @@
     "enlace_original": "https://www.darkreading.com/cybersecurity-operations/stressors-ai-changes-cybersecurity-teams",
     "fuente": "Dark Reading",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 705,
-    "fecha": "2026-06-19T14:25:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Botnet Popa vinculada a empresa israelí",
-    "resumen": "La botnet Popa, que ha estado activa durante cuatro años, ha sido vinculada a la empresa israelí Alarum Technologies Ltd, que opera la empresa de proxy residencial NetNut, y se ha utilizado para fraude publicitario, toma de cuentas y extracción masiva de datos a través de cajas de TV Android comprometidas. Los investigadores han identificado que la botnet ha forzado a millones de dispositivos a relatar tráfico de Internet para estos fines maliciosos.",
-    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NzkxNTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
-    "fuente": "Krebs on Security",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1219",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
     "iocs": {}
   }
 ]
