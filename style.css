@@ -324,15 +324,15 @@ body.sidebar-closed .sidebar-item span {
 
 /* Play/Share hover overlay */
 .card-thumbnail-overlay {
-  position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s;
+  position: absolute; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; z-index: 2;
 }
 .news-card:hover .card-thumbnail-overlay { opacity: 1; }
 .share-btn {
-  background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: none; cursor: pointer; backdrop-filter: blur(4px);
+  background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: none; cursor: pointer; backdrop-filter: blur(4px); position: relative; z-index: 3;
 }
 .share-btn:hover { background: var(--accent); }
 .share-btn.active { color: var(--accent); }
-.share-btn svg { width: 20px; height: 20px; }
+.share-btn svg { width: 20px; height: 20px; pointer-events: none; }
 
 .card-details { display: flex; gap: 12px; align-items: flex-start; }
 .card-source-icon {

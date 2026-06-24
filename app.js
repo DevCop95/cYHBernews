@@ -166,11 +166,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Interceptar clics en los enlaces para contar vistas y likes
     document.body.addEventListener('click', async (e) => {
+        // Interceptar Like (primero porque tiene prioridad)
+        const likeBtn = e.target.closest('.like-btn');
+        if (likeBtn) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            const id = likeBtn.dataset.id;
+            const title = likeBtn.dataset.title;
+            await toggleLike(id, title);
+            return;
+        }
+
         // Interceptar Share
         const shareBtn = e.target.closest('.share-btn:not(.like-btn)');
         if (shareBtn) {
             e.preventDefault();
             e.stopPropagation();
+            e.stopImmediatePropagation();
             const url   = shareBtn.dataset.url;
             const title = shareBtn.dataset.title;
             try {
@@ -183,17 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (err) {
                 if (err.name !== 'AbortError') showToast('Error al copiar', 'alert-circle');
             }
-            return;
-        }
-
-        // Interceptar Like
-        const likeBtn = e.target.closest('.like-btn');
-        if (likeBtn) {
-            e.preventDefault();
-            e.stopPropagation();
-            const id = likeBtn.dataset.id;
-            const title = likeBtn.dataset.title;
-            await toggleLike(id, title);
             return;
         }
 
@@ -826,6 +828,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.addEventListener('click', (e) => {
+        // No abrir modal si se hizo click en like o share
+        if (e.target.closest('.like-btn') || e.target.closest('.share-btn:not(.like-btn)')) return;
+        
         const trigger = e.target.closest('.card-preview-trigger');
         if (trigger) {
             e.preventDefault();
