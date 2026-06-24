@@ -1,5 +1,39 @@
 [
   {
+    "id": 829,
+    "fecha": "2026-06-24T22:13:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hacker \"Snoopy\" condenado",
+    "resumen": "Un joven de 21 años, conocido por el alias \"Snoopy\", ha sido condenado a 18 meses de prisión por su participación en el ataque cibernético a cuentas de DraftKings en noviembre de 2022, un incidente que pone de relieve la importancia de la seguridad de la autenticación y la protección de datos en la industria del juego en línea. El ataque probablemente involucró técnicas de phishing o explotación de vulnerabilidades para acceder a las cuentas.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 828,
     "fecha": "2026-06-24T19:41:09Z",
     "categoria": "Ciberseguridad",
