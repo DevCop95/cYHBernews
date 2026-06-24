@@ -1,5 +1,22 @@
 [
   {
+    "id": 813,
+    "fecha": "2026-06-24T11:42:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en MISP",
+    "resumen": "La vulnerabilidad CVE-2018-6926 (CVSS 7.2) en MISP 2.4.87 permite a los administradores del sitio inyectar comandos arbitrarios del sistema operativo en ciertos sistemas Red Hat Enterprise Linux y CentOS, aunque el impacto es limitado debido a que la opción solo está disponible para el administrador del sitio. El vector de ataque se enfoca en la inyección de comandos del sistema operativo a través de la opción del servidor en el archivo ServersController.php.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMDEzNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-6926",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2018-6926"
+      ]
+    }
+  },
+  {
     "id": 812,
     "fecha": "2026-06-24T11:42:23Z",
     "categoria": "Ciberseguridad",
