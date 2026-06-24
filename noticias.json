@@ -1,5 +1,39 @@
 [
   {
+    "id": 817,
+    "fecha": "2026-06-24T14:22:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en MacOS",
+    "resumen": "Se ha descubierto una brecha en MacOS que permite a los atacantes deshabilitar herramientas de seguridad y del navegador integrado sin necesidad de privilegios de administrador o exploits de kernel, lo que facilita ataques como phishing o malware. Esta vulnerabilidad puede ser explotada por atacantes para comprometer la seguridad de los sistemas MacOS.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/apple-macos-security-gap-users-disable-security-tools",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 816,
     "fecha": "2026-06-24T14:22:03Z",
     "categoria": "Ciberseguridad",
