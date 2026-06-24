@@ -276,31 +276,37 @@ document.addEventListener('DOMContentLoaded', () => {
     function scrambleText(element, finalText, duration = 1500) {
         return new Promise(resolve => {
             const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?/~`0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-        const len = finalText.length;
-        const startTime = performance.now();
+            const len = finalText.length;
+            const startTime = performance.now();
+            let lastUpdate = 0;
 
-        function update(now) {
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            // Each character resolves at a staggered time
-            let result = '';
-            for (let i = 0; i < len; i++) {
-                const charThreshold = i / len;
-                if (progress > charThreshold + 0.3) {
-                    result += finalText[i];
+            function update(now) {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Throttle DOM updates to ~25fps (every 40ms) to avoid lag/flicker
+                if (now - lastUpdate > 40) {
+                    let result = '';
+                    for (let i = 0; i < len; i++) {
+                        const charThreshold = (i / len) * 0.6; // Scale down so all finish before 1.0
+                        if (progress > charThreshold + 0.3) {
+                            result += finalText[i];
+                        } else {
+                            result += chars[Math.floor(Math.random() * chars.length)];
+                        }
+                    }
+                    element.textContent = result;
+                    lastUpdate = now;
+                }
+
+                if (progress < 1) {
+                    requestAnimationFrame(update);
                 } else {
-                    result += chars[Math.floor(Math.random() * chars.length)];
+                    element.textContent = finalText;
+                    resolve();
                 }
             }
-            element.textContent = result;
-            if (progress < 1) {
-                requestAnimationFrame(update);
-            } else {
-                element.textContent = finalText;
-                resolve();
-            }
-        }
-        requestAnimationFrame(update);
+            requestAnimationFrame(update);
         });
     }
 
