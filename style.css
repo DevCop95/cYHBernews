@@ -254,19 +254,23 @@ body.sidebar-closed .sidebar-item span {
   color: #fff; font-size: 11px; font-weight: 800; padding: 4px 8px; border-radius: 4px; display: flex; align-items: center; gap: 4px; letter-spacing: 0.5px;
 }
 .grid-badge svg { width: 12px; height: 12px; stroke-width: 2.5; }
-.hero-category { font-size: 14px; font-weight: 600; color: #ddd; letter-spacing: 0.5px; text-transform: uppercase; }
+.hero-category { font-size: 14px; font-weight: 600; color: #ddd; letter-spacing: 0.5px; text-transform: uppercase; text-shadow: 0 2px 6px rgba(0,0,0,0.8); }
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(32px, 5vw, 56px); font-weight: 700; line-height: 1.1; text-wrap: balance; letter-spacing: -1px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.9);
 }
 .hero-desc {
   font-size: 18px; color: #ccc; line-height: 1.5; font-weight: 400; max-width: 700px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.9);
 }
 .hero-meta {
   display: flex; align-items: center; gap: 12px; font-size: 14px; color: #aaa; margin-top: 8px; font-weight: 500;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
 }
 .hero-source {
   display: flex; align-items: center; gap: 8px; font-weight: 600; color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
 }
 .hero-source-avatar {
   width: 28px; height: 28px; background: #0f857e; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #fff; font-weight: 700;
