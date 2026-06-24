@@ -1,5 +1,43 @@
 [
   {
+    "id": 812,
+    "fecha": "2026-06-24T11:42:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Cisco Unified CM",
+    "resumen": "Se ha identificado una vulnerabilidad crítica (CVE-2026-20230) en Cisco Unified Communications Manager que permite a actores maliciosos realizar escrituras de archivos en el sistema y potencialmente obtener acceso de root, lo que ha comenzado a ser explotada después de que se publicó un proof-of-concept (PoC) que revela el vector de ataque. La vulnerabilidad se debe a una validación de entrada HTTP impropera y puede ser explotada de forma remota sin autenticación.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMDEzNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20230"
+      ]
+    }
+  },
+  {
     "id": 811,
     "fecha": "2026-06-24T11:18:41Z",
     "categoria": "Ciberseguridad",
