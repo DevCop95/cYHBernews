@@ -1,5 +1,46 @@
 [
   {
+    "id": 804,
+    "fecha": "2026-06-24T06:44:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en McAfee True Key",
+    "resumen": "Se ha identificado una vulnerabilidad de escalado de privilegios (CVE-2018-19908) en McAfee True Key 5.1.230.7, que permite a usuarios locales ejecutar código arbitrario mediante malware especialmente diseñado, con un CVSS Score de 8.8, clasificada como HIGH. Esta vulnerabilidad puede ser explotada para obtener acceso no autorizado y ejecutar código malicioso en sistemas que utilicen Microsoft Windows Client.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-19908",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Privileged File Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "5.1.230.7"
+      ],
+      "cve": [
+        "CVE-2018-19908"
+      ]
+    }
+  },
+  {
     "id": 803,
     "fecha": "2026-06-24T06:44:04Z",
     "categoria": "Ciberseguridad",
@@ -2603,19 +2644,6 @@
         "name": "Data Encrypted for Impact"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 704,
-    "fecha": "2026-06-19T14:25:45Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Amenazas AI: Nueva Era",
-    "resumen": "La gestión de amenazas está experimentando un cambio significativo con el uso de la inteligencia artificial (IA) para mejorar la eficiencia y reducir el tiempo de respuesta ante incidentes de seguridad, ya que los equipos de seguridad enfrentan desafíos con múltiples herramientas de seguridad que generan alertas redundantes y datos no procesados, lo que puede llevar a tiempos de respuesta prolongados y agotamiento de los analistas. El uso de la IA puede ayudar a integrar y analizar estos datos para mejorar la detección y respuesta a amenazas como phishing, malware y ataques de denegación de servicio (DDoS).",
-    "url_imagen": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4NzkxNDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/from-assistive-to-agentic-ai-shift.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
     "iocs": {}
   }
 ]
