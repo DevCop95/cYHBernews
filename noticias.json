@@ -1,5 +1,39 @@
 [
   {
+    "id": 830,
+    "fecha": "2026-06-24T22:13:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque a Cisco SD-WAN",
+    "resumen": "Investigadores creen que se utilizó \"rogue peering\" para conectarse a los dispositivos SD-WAN de la víctima y obtener privilegios de administrador y acceso de nivel raíz, explotando una vulnerabilidad que fue divulgada 2 meses después del ataque. El vector de ataque sugiere una sofisticación en la técnica de explotación, potencialmente permitiendo a los atacantes acceder a redes críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-hit-cisco-sd-wan-flaw-2-months-before-disclosure",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 829,
     "fecha": "2026-06-24T22:13:11Z",
     "categoria": "Ciberseguridad",
