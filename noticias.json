@@ -1,5 +1,22 @@
 [
   {
+    "id": 826,
+    "fecha": "2026-06-24T19:40:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en WordPress",
+    "resumen": "La versión del plugin Frontend File Manager & Sharing de WordPress anterior a 1.1.3 presenta una vulnerabilidad (CVE-2022-2356) con un CVSS Score de 8.8, permitiendo a usuarios subir archivos maliciosos al servidor sin restricciones de extensiones de archivo, lo que puede facilitar ataques de código malicioso. Esto afecta a los productos que utilizan el plugin, como mediajedi:user_private_files.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-2356",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-2356"
+      ]
+    }
+  },
+  {
     "id": 825,
     "fecha": "2026-06-24T19:40:36Z",
     "categoria": "IA",
