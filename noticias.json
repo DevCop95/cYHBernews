@@ -1,5 +1,47 @@
 [
   {
+    "id": 849,
+    "fecha": "2026-06-25T14:22:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "FortiBleed ataca FortiGate",
+    "resumen": "La campaña FortiBleed utiliza técnicas de fuerza bruta, ataques de diccionario y credential stuffing para robar credenciales de dispositivos Fortinet FortiGate expuestos a Internet, lo que puede permitir intrusiones en redes corporativas a gran escala. Es crucial priorizar la rotación de contraseñas y el refuerzo de la autenticación para mitigar este tipo de ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzOTczMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/fortibleed-pone-en-el-punto-de-mira-a-fortigate-para-robar-credenciales-a-gran-escala/?utm_source=rss&utm_medium=rss&utm_campaign=fortibleed-pone-en-el-punto-de-mira-a-fortigate-para-robar-credenciales-a-gran-escala",
+    "fuente": "Una al Día (Hispasec)",
+    "ttps": [
+      {
+        "id": "T1110.001",
+        "name": "Fuerza Bruta: Técnica de fuerza bruta"
+      },
+      {
+        "id": "T1110.002",
+        "name": "Ataque de diccionario: Técnica de ataque de diccionario"
+      },
+      {
+        "id": "T1110.003",
+        "name": "Credential Stuffing: Técnica de reutilización de credenciales"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Exploitation for Credential Access: Explotación para acceso a credenciales"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/fortibleed-pone-en-el-punto-de-mira-a-fortigate-para-robar-credenciales-a-gran-escala/"
+      ]
+    }
+  },
+  {
     "id": 848,
     "fecha": "2026-06-25T14:21:58Z",
     "categoria": "Ciberseguridad",
