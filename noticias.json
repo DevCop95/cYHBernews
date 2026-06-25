@@ -1,5 +1,22 @@
 [
   {
+    "id": 838,
+    "fecha": "2026-06-25T02:49:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache Avro",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2022-36124) con una puntuación CVSS de 7.5 en el SDK de Apache Avro para Rust, que puede provocar una falta de memoria en el sistema debido a un consumo excesivo de memoria por parte de un Lector, afectando a versiones anteriores a 0.14.0. La actualización a la versión 0.14.0 de apache-avro soluciona este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-36124",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-36124"
+      ]
+    }
+  },
+  {
     "id": 837,
     "fecha": "2026-06-25T01:06:14Z",
     "categoria": "Ciberseguridad",
