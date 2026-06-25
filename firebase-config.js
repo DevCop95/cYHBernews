@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getFirestore, doc, getDoc, setDoc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+import { initializeAppCheck, ReCaptchaV3Provider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app-check.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA3VP-eq3En0rD2fAXd_mi9E60rdTO_e1U",
@@ -16,18 +17,20 @@ const firebaseConfig = {
 let app = null;
 let db = null;
 let analytics = null;
+let appCheck = null;
 
 try {
-  // Solo inicializar si la key no es la de por defecto
-  if (firebaseConfig.apiKey !== "TU_API_KEY") {
-    app = initializeApp(firebaseConfig);
-    db = getFirestore(app);
-    analytics = getAnalytics(app);
-  } else {
-    console.warn("⚠️ Firebase no está configurado. Reemplaza las credenciales en firebase-config.js");
-  }
+  app = initializeApp(firebaseConfig);
+  db = getFirestore(app);
+  analytics = getAnalytics(app);
+  
+  // Inicialización de App Check para bloquear bots
+  appCheck = initializeAppCheck(app, {
+    provider: new ReCaptchaV3Provider('6Lc1eDMtAAAAACAMMwpxUm2pNziMKOrhYUoKTyFV'),
+    isTokenAutoRefreshEnabled: true
+  });
 } catch (error) {
   console.error("Error inicializando Firebase:", error);
 }
 
-export { db, doc, getDoc, setDoc, updateDoc, increment, analytics };
+export { db, doc, getDoc, setDoc, updateDoc, increment, analytics, appCheck };
