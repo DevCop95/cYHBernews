@@ -1,5 +1,39 @@
 [
   {
+    "id": 853,
+    "fecha": "2026-06-25T17:08:47Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Malware macOS evita análisis AI",
+    "resumen": "Se ha descubierto un nuevo malware para macOS llamado \"Gaslight\" que confunde las herramientas de análisis de malware asistidas por IA al ocultar cadenas de inyección de comandos y datos de depuración falsos dentro del ejecutable, lo que complica su detección y análisis. Este enfoque innovador de evasión utiliza técnicas de ofuscamiento para eludir la detección por parte de herramientas de seguridad que dependen de modelos de lenguaje y aprendizaje automático.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MDczMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Obfuscation"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Binary Padding"
+      },
+      {
+        "id": "T1497.002",
+        "name": "Software Packing"
+      },
+      {
+        "id": "T1497.003",
+        "name": "Steganography"
+      },
+      {
+        "id": "T1497.004",
+        "name": "Code Obfuscation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 852,
     "fecha": "2026-06-25T14:22:23Z",
     "categoria": "Ciberseguridad",
