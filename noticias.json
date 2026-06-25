@@ -1,5 +1,57 @@
 [
   {
+    "id": 842,
+    "fecha": "2026-06-25T06:44:25Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Santander AI Lab Abre Investigación de IA",
+    "resumen": "Santander AI Lab ha decidido abrir su investigación de IA, publicando código, benchmarks y licencia Apache 2.0 en GitHub, incluyendo el sistema Autoguardrails para proteger modelos de lenguaje, lo que supone un enfoque inusual en la industria. Autoguardrails se ha desplegado en Cloudflare Workers y se ejecuta en el Edge Global de Cloudflare, demostrando su capacidad para mejorar la seguridad de los servicios digitales con técnicas de Hacking de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219184-c3fc77f501c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNjk4NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/06/playground-de-santander-ai-lab.html",
+    "fuente": "El Lado Del Mal",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "developers.cloudflare.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.cloudflare.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com",
+        "www.santander.com"
+      ],
+      "url": [
+        "http://autoguardrails-demo.carluve.workers.dev",
+        "http://autoguardrails-demo.carluve.workers.dev/",
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://amzn.to/4ou7yuK",
+        "https://autoguardrails-demo.carluve.workers.dev/",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2Ch_RpklBKPOg7uEI9WIdVUWG2R7UdrvqaWjQptRY_DdMjpynK79e76x_XRSsX-4hu99jyE7xREwl3qlflUM6rAXfBML74p5AOxA-NjH3WN_HY2MuGfCBhudf42UawsE68C49A0qYP0__Q6cHRnSmWsA7OeQ45CsbanTmJdL8oQC1vyd0Rvkc/w640-h347/cf_auto_0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3Vikk-tmDmj_x7F8SV0Ocfo58YAirrC5orzwVil0DO0CeQgczsb0AMJ1nLeutM06_y7k0iWh1FvGvnFcNpAZFeax-FJ5lJnznWG4Wl6mVAkPVCX7f49NJj9DoHwgpXshB3jHMo59dybpmZHBXjhp42bU_MsGA2EMrapJRrPpbVaq-BwAv_sSJ/w640-h354/cf_auto4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTm993n3Q3yB9UvP4AN6cEuBB9Gq94vXVDG9XJ9I7pTjFXMISItd-6-NALwV2aAe9ze2LFdPJuqP4N073cRznnS0cWrmi2pJAzNbeJO_v3TlQhBc5LuRBkK8QfiBvxVugEPXh8EMl0jjCg4YkutIWHK3ve72x2FUIK1f-8Q574KruhHHtUBf8D/w640-h268/SantaderAI_3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtw8VrA7n2VZ0G5ooXLBM8UFAJXl-3UHJOmvyieVGG_ctldfAtlF3if-GvYR_po3mWru-ax8P-_tJauaX6N8auT6mjvSJdR2972L42ZwD6hEqLI2jF3FHXEqBXqA2PS-mL9knsLVdBd_NAJUalcVEVAo3k9iD__QKExmxaBw6C2TLEKrgmBbyg/w640-h416/SantanderAI_4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-A8R7gZIRteDDkjcwtrLRgNfkrBiAKNB6Cb-zYHVhL64LNbDkviiI7jAsvfCvlkOOUOCUYhj5lm65BavvUyQ0bTq_RuAS8aJZfhv_l976eBIq3VaPppsPmsp2fk8VpKkbLcYOZqD96zIjtrn0PrIW7KPEnZXXZXLz9oIMPKzE5u4vtvQmhkbF/w299-h400/hackingIA_2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHqOdSUMtq4kLZgjI5kjM8q-FMxi9pjEUIp-rL7DCIjgdnK7HWuu86dgJqFiVJ_ZWYwwAMfkWcVVLALjqAUEn1yVf9n1DJ-8hQd5wthyR8HdZxsqD43SwHQ9FuURH8uTD1KuWSZ_TCIyLN1v0rrIwAQ0FIM9R2h9a0JHkVeUmiVTNqDDdyJdqj/w640-h428/cf_playground.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ4ibQ9p_Ed1IajcdeDOza7mOqPkW57qzZoCf7yrnGfzkyGTJqlyGZD8Lq2GrgpPC7doQ8ZDeccIvb6BdA_2udjaDwC2HaSw_hm_5EQQkrE1mkmhmL1YQy9BwxvWYhIdMjYbLcdDZifWbAd6Ijt0MsR7QtCMo21-QM0uT8W6GXhsDpU9c_g8Ar/w640-h410/cf_auto3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilkj4GfRzWlA-3AGrrJFrF0fnzqVeR7KjzK_otXJco1BCdqyQGrQjW_yP8PYNjT4IMBSzoVqXGQzSDOQJ3o9xFRnaaJ0iPFGjjq6Vpti4ImIMRFBuKeaUVfSIQ2fy1CTtmLippeOnlb2d9ygW4c5BDIrOWymhgZ45r_4g9YZt674K9T6TpmoRB/w640-h250/cf_auto_2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinstRX8-Mlvawwl6oMitKZVFw0wFcL4mNG5FQ9sCZqvLL6OMgi7Ca5OzswN4mdUYzMoVbX4evl2eEX874SPlI4djZihMbqAs-DEvbz7F3n970FWcFfPl0qz-q-jsEb59iXp1QwGokY39cPXpEqiRGU5r21IjuXwiUE9C2Qz6Zf16WySbXZmEHz/w640-h442/SantaderAI_1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj22Kh2FOrVzIM8uyRAXcEgn_hXp0Kph03EDaXKx4ixyt7ScXmQQ8HDG5QHaPhgefNN_dZKj3xDWJ09WcQsNdQP3j6mltC-sCBJX5y5P_RLw6cox1WoJTDYVCcDlAM_0y68136go71TTfMoFbCjKZnSvsoFgbxIeJDN7KQbVZSImGXkVBfqarzR/w640-h128/SantaderAI_2.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNm7_aHgyKwL6vPxfXMqysRL0qh3V43GVAFoAi0XyKOrcgWQJOZAVhbVEQRosTicTPZLV0o9OIFLmyiaSg6gKd4KuzxOiQi4s1i5nupkFMrp0pQuFE35Gt75Q9ipok2BAn7yUXKvqkeY-uKS-vuCCAwaxxwm_z01UobQduDWCBElhnHD0PtPKV/w640-h386/Carlos_Luengo.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiKGHWOS5xr-lKD_XhVkWH8PWzlAE6WgIXb1ISg0sJe23CmYpLiz_bkhr1oTXiYAJ-Rm13mEQzUMEDuIk5JOBJ_v7ExJ80ExMq_N6MpyMLvMARG-jNk9h4_0bXJMlkxNKzXdoe9q63aqeKMNUUs63hKK0Xb-EiQBoKaVku5DrqdzC3Ri7T44tf/w640-h360/cf_auto1.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2025/03/adivina-adivinanza-esta-un-robot-con-ia.html",
+        "https://www.elladodelmal.com/2025/12/que-hacer-para-desplegar-inteligencia.html",
+        "https://www.santander.com/en/stories/santander-turns-its-ai-first-strategy-into-measurable-impact-and-extends-ai-access-to-all-185000-employees"
+      ]
+    }
+  },
+  {
     "id": 841,
     "fecha": "2026-06-25T06:44:18Z",
     "categoria": "Ciberseguridad",
