@@ -1,5 +1,22 @@
 [
   {
+    "id": 840,
+    "fecha": "2026-06-25T02:49:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad MISP CVE-2023-37306",
+    "resumen": "Se ha identificado una vulnerabilidad en MISP 2.4.172 (CVE-2023-37306) con una puntuación CVSS de 7.5, que permite a un atacante obtener información sensible debido a la mala gestión de extensiones de archivos de certificado en la sincronización del servidor. El vector de ataque se basa en el análisis de los mensajes de error generados por el sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-37306",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-37306"
+      ]
+    }
+  },
+  {
     "id": 839,
     "fecha": "2026-06-25T02:49:27Z",
     "categoria": "Ciberseguridad",
