@@ -1,5 +1,39 @@
 [
   {
+    "id": 836,
+    "fecha": "2026-06-25T01:06:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Extensión maliciosa Edge",
+    "resumen": "Una extensión maliciosa de Microsoft Edge llamada 'Edgecution' ha sido utilizada en un ataque de ransomware para escapar del sandbox del navegador y desplegar una backdoor basada en Python, aprovechando la funcionalidad de Native Messaging para comunicarse con el malware. El ataque demuestra un vector de ataque innovador que explota las vulnerabilidades en la seguridad de los navegadores y las extensiones.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 835,
     "fecha": "2026-06-25T01:06:00Z",
     "categoria": "IA",
