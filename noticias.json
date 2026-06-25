@@ -1,5 +1,39 @@
 [
   {
+    "id": 850,
+    "fecha": "2026-06-25T14:22:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenazas Cibernéticas",
+    "resumen": "Se han detectado varias amenazas cibernéticas, incluyendo proxyware en Smart TV, una vulnerabilidad de 24 años en la herramienta curl y foros de delincuencia cibernética que utilizan inteligencia artificial, lo que pone en riesgo la seguridad de los sistemas y la privacidad de los usuarios. Estas amenazas pueden ser aprovechadas a través de credenciales obsoletas, aplicaciones de confianza comprometidas y técnicas de phishing avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzOTczMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/threatsday-bulletin-smart-tv-proxyware.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking no se menciona explícitamente, pero se habla de \"credenciales obsoletas\" y \"aplicaciones de confianza comprometidas\", lo que se relaciona más con T1078 y T1190. Sin embargo, se menciona \"técnicas de phishing avanzadas\", que se relaciona con T1566."
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 849,
     "fecha": "2026-06-25T14:22:05Z",
     "categoria": "Ciberseguridad",
