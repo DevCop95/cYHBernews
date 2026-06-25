@@ -1,5 +1,43 @@
 [
   {
+    "id": 835,
+    "fecha": "2026-06-25T01:06:00Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Spyware con texto prohibido evita análisis AI",
+    "resumen": "Desarrolladores de malware están agregando texto sobre armas nucleares y biológicas a su spyware para evitar el análisis automático de la inteligencia artificial (IA), utilizando técnicas como comentarios de JavaScript y sustitución de caracteres para engañar a los sistemas de detección. Esto puede causar problemas en sistemas de detección que no aíslan claramente el contenido como datos no confiables, pero no evita la detección estática mediante reglas YARA, comprobaciones de entropía y otros métodos.",
+    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
+    "fuente": "Schneier on Security",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Obfuscation"
+      },
+      {
+        "id": "T1497.003",
+        "name": "Steganography"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Binary Padding"
+      },
+      {
+        "id": "T1497.002",
+        "name": "Software Packing"
+      },
+      {
+        "id": "T1480",
+        "name": "Execution Guardrails"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious"
+      ]
+    }
+  },
+  {
     "id": 834,
     "fecha": "2026-06-25T01:05:54Z",
     "categoria": "IA",
