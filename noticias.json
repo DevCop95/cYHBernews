@@ -1,5 +1,638 @@
 [
   {
+    "id": 840,
+    "fecha": "2026-06-25T02:49:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad MISP CVE-2023-37306",
+    "resumen": "Se ha identificado una vulnerabilidad en MISP 2.4.172 (CVE-2023-37306) con una puntuación CVSS de 7.5, que permite a un atacante obtener información sensible debido a la mala gestión de extensiones de archivos de certificado en la sincronización del servidor. El vector de ataque se basa en el análisis de los mensajes de error generados por el sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-37306",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-37306"
+      ]
+    }
+  },
+  {
+    "id": 839,
+    "fecha": "2026-06-25T02:49:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Disrupción de botnet Amadey",
+    "resumen": "El equipo de investigación de ESET colaboró en la Operación Endgame para interrumpir la botnet Amadey y el infostealer Stealc, proporcionando análisis técnico y seguimiento de infraestructura para desmantelar estas amenazas. La operación tuvo un impacto significativo en la reducción de la capacidad de ataque de estas herramientas maliciosas, que se utilizaban para realizar ataques de phishing y robo de información.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/eset-operacion-endgame-disrupcion-amadey-stealc/",
+    "fuente": "WeLiveSecurity",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 838,
+    "fecha": "2026-06-25T02:49:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache Avro",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2022-36124) con una puntuación CVSS de 7.5 en el SDK de Apache Avro para Rust, que puede provocar una falta de memoria en el sistema debido a un consumo excesivo de memoria por parte de un Lector, afectando a versiones anteriores a 0.14.0. La actualización a la versión 0.14.0 de apache-avro soluciona este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-36124",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-36124"
+      ]
+    }
+  },
+  {
+    "id": 837,
+    "fecha": "2026-06-25T01:06:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "CISOs Necesitan Código Ético",
+    "resumen": "Un experto en la industria aboga por un código de ética para Directores de Seguridad de la Información (CISOs) para prevenir prácticas de auto-interés que podrían comprometer la seguridad de la empresa y nacional, como kickbacks y empleos ficticios. Esto resalta la importancia de la integridad en la toma de decisiones de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ciso-code-of-ethics",
+    "fuente": "Dark Reading",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 836,
+    "fecha": "2026-06-25T01:06:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Extensión maliciosa Edge",
+    "resumen": "Una extensión maliciosa de Microsoft Edge llamada 'Edgecution' ha sido utilizada en un ataque de ransomware para escapar del sandbox del navegador y desplegar una backdoor basada en Python, aprovechando la funcionalidad de Native Messaging para comunicarse con el malware. El ataque demuestra un vector de ataque innovador que explota las vulnerabilidades en la seguridad de los navegadores y las extensiones.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 835,
+    "fecha": "2026-06-25T01:06:00Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Spyware con texto prohibido evita análisis AI",
+    "resumen": "Desarrolladores de malware están agregando texto sobre armas nucleares y biológicas a su spyware para evitar el análisis automático de la inteligencia artificial (IA), utilizando técnicas como comentarios de JavaScript y sustitución de caracteres para engañar a los sistemas de detección. Esto puede causar problemas en sistemas de detección que no aíslan claramente el contenido como datos no confiables, pero no evita la detección estática mediante reglas YARA, comprobaciones de entropía y otros métodos.",
+    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
+    "fuente": "Schneier on Security",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Obfuscation"
+      },
+      {
+        "id": "T1497.003",
+        "name": "Steganography"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Binary Padding"
+      },
+      {
+        "id": "T1497.002",
+        "name": "Software Packing"
+      },
+      {
+        "id": "T1480",
+        "name": "Execution Guardrails"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious"
+      ]
+    }
+  },
+  {
+    "id": 834,
+    "fecha": "2026-06-25T01:05:54Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Amenazas cibernéticas en la Copa Mundial",
+    "resumen": "La Copa Mundial de la FIFA 2026 enfrenta un aumento en las amenazas cibernéticas, incluyendo ciberdelincuencia persistente, ingeniería social y amenazas a la infraestructura, lo que plantea un desafío significativo para la seguridad de la información y la protección de los datos de los participantes y espectadores. Los vectores de ataque incluyen phishing y otros métodos de ingeniería social para explotar vulnerabilidades en la infraestructura de los estadios y sistemas de información.",
+    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/2026-fifa-world-cup-faces-surge-cyber-threats",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 833,
+    "fecha": "2026-06-24T22:13:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque zero-day en Cisco SD-WAN",
+    "resumen": "Se han revelado detalles sobre cómo los atacantes explotaron la vulnerabilidad CVE-2026-20245 en Cisco Catalyst SD-WAN para crear cuentas root maliciosas en dispositivos objetivo, lo que les permitió obtener acceso de root en ataques de zero-day. Los vectores de ataque incluyeron la explotación de esta vulnerabilidad para establecer acceso no autorizado a los dispositivos de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials from Passwords"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20245"
+      ]
+    }
+  },
+  {
+    "id": 832,
+    "fecha": "2026-06-24T22:13:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Vim",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros (CVE-2023-4734) con una puntuación CVSS de 7.8 en versiones de Vim anteriores a 9.0.1846, lo que podría permitir ataques de elevación de privilegios en sistemas que utilizan esta versión de Vim, incluyendo macOS. La vulnerabilidad se encuentra en el repositorio de GitHub de Vim.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-4734",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-4734"
+      ]
+    }
+  },
+  {
+    "id": 831,
+    "fecha": "2026-06-24T22:13:25Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Operaciones de ciberdelincuencia desmanteladas",
+    "resumen": "Microsoft y fuerzas del orden han desmantelado tres operaciones de \"ciberdelincuencia como servicio\" mediante el ataque a la infraestructura de malware, afectando más de 300 servidores y debilitando la cadena de suministro de ciberdelincuencia. Esto representa un enfoque integral para combatir el ciberdelito, afectando tanto a los actores como a la infraestructura subyacente.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/stealc-amadey-socgholish-malware-takedown-europol-microsoft",
+    "fuente": "The Record",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 830,
+    "fecha": "2026-06-24T22:13:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque a Cisco SD-WAN",
+    "resumen": "Investigadores creen que se utilizó \"rogue peering\" para conectarse a los dispositivos SD-WAN de la víctima y obtener privilegios de administrador y acceso de nivel raíz, explotando una vulnerabilidad que fue divulgada 2 meses después del ataque. El vector de ataque sugiere una sofisticación en la técnica de explotación, potencialmente permitiendo a los atacantes acceder a redes críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-hit-cisco-sd-wan-flaw-2-months-before-disclosure",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 829,
+    "fecha": "2026-06-24T22:13:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hacker \"Snoopy\" condenado",
+    "resumen": "Un joven de 21 años, conocido por el alias \"Snoopy\", ha sido condenado a 18 meses de prisión por su participación en el ataque cibernético a cuentas de DraftKings en noviembre de 2022, un incidente que pone de relieve la importancia de la seguridad de la autenticación y la protección de datos en la industria del juego en línea. El ataque probablemente involucró técnicas de phishing o explotación de vulnerabilidades para acceder a las cuentas.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 828,
+    "fecha": "2026-06-24T19:41:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Vim",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros (Integer Overflow) en el repositorio de GitHub de Vim, con un CVSS Score de 7.8, considerada como alta (HIGH), que afecta a versiones anteriores a 9.0.1532. Esta vulnerabilidad podría ser explotada para ejecutar código malicioso en sistemas que utilizan versiones no actualizadas de Vim.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-2610",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-2610"
+      ]
+    }
+  },
+  {
+    "id": 827,
+    "fecha": "2026-06-24T19:40:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Red de malware Amadey y StealC desmantelada",
+    "resumen": "Una operación conjunta de fuerzas del orden, en colaboración con empresas del sector privado como Bitdefender, Bitsight, ESET y Microsoft, ha logrado desmantelar la infraestructura criminal que alimentaba a los malware Amadey y StealC, recuperando 27 millones de credenciales robadas y afectando las campañas de ransomware, fraude financiero y ataques a infraestructuras críticas. La operación ha interrumpido las \"líneas de montaje\" utilizadas por los cibercriminales para lanzar estos ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se menciona que se recuperaron 27 millones de credenciales robadas)"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 826,
+    "fecha": "2026-06-24T19:40:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en WordPress",
+    "resumen": "La versión del plugin Frontend File Manager & Sharing de WordPress anterior a 1.1.3 presenta una vulnerabilidad (CVE-2022-2356) con un CVSS Score de 8.8, permitiendo a usuarios subir archivos maliciosos al servidor sin restricciones de extensiones de archivo, lo que puede facilitar ataques de código malicioso. Esto afecta a los productos que utilizan el plugin, como mediajedi:user_private_files.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-2356",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-2356"
+      ]
+    }
+  },
+  {
+    "id": 825,
+    "fecha": "2026-06-24T19:40:36Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Amenaza en la cadena de suministro de IA",
+    "resumen": "Se han detectado habilidades maliciosas en OpenClaw que pueden comprometer la seguridad de la cadena de suministro de inteligencia artificial (IA), incluyendo paquetes que contienen infostealers y otras amenazas que evaden controles de seguridad. Estas habilidades maliciosas pueden ser utilizadas para ataques de phishing o malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/malicious-openclaw-skills-clawhub-threaten-ai-supply-chain",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 824,
+    "fecha": "2026-06-24T19:40:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Lantronix EDS5000",
+    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) advirtió sobre la explotación activa de una vulnerabilidad crítica (CVE-2025-67038, puntuación CVSS: 9.8) en dispositivos Lantronix EDS5000 Series, que permite la inyección de código y podría resultar en la ejecución de código arbitrario, afectando a las agencias del Gobierno de EE. UU. SECTOR: Gobierno",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
+    "fuente": "The Hacker News",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-67038"
+      ]
+    }
+  },
+  {
+    "id": 823,
+    "fecha": "2026-06-24T16:58:51Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Adobe lidera en IA",
+    "resumen": "A pesar de la percepción de que Adobe estaba amenazada por la IA, la empresa ha logrado resultados históricos con ingresos récord de 6.620 millones de dólares en el segundo trimestre fiscal de 2026, gracias a su plataforma de IA generativa Firefly, que ha superado los 250 millones de dólares de ARR y sigue creciendo. La confianza de las empresas en Adobe y su enfoque en soluciones \"AI First\" han permitido que la empresa se posicione como líder en el sector.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218661-0322e4bc4c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/creiamos-que-adobe-estaba-amenazada-muerte-ia-resulta-que-pocas-empresas-que-esta-ganando-dinero-ella",
+    "fuente": "Xataka IA",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "blog.adobe.com",
+        "longyield.substack.com",
+        "news.adobe.com",
+        "petapixel.com",
+        "platform.instagram.com",
+        "www.creativebloq.com",
+        "www.google.com",
+        "www.investopedia.com",
+        "www.reddit.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blog.adobe.com/en/publish/2026/03/19/adobe-firefly-expands-video-image-creation-with-new-ai-capabilities-custom-models",
+        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/1024_2000.jpeg",
+        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/1366_2000.jpeg",
+        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/450_1000.jpeg",
+        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/650_1200.jpeg",
+        "https://i.blogs.es/5b223c/adobe/1024_2000.jpeg",
+        "https://i.blogs.es/fa749d/canva2/375_142.jpeg",
+        "https://longyield.substack.com/p/adobe-inc-ai-winner-or-disrupted",
+        "https://news.adobe.com/news/2026/03/leadership-update",
+        "https://petapixel.com/2025/05/20/if-you-have-adobe-creative-cloud-your-price-could-increase-next-month/",
+        "https://www.creativebloq.com/photography/photo-editing-software/after-25-loyal-years-adobes-price-hike-has-forced-me-to-say-goodbye",
+        "https://www.investopedia.com/articles/financial-analysis/062716/gaap-vs-nongaap-which-should-you-consider-evaluation.asp",
+        "https://www.wheresyoured.at/hatersguide-adobe/"
+      ]
+    }
+  },
+  {
+    "id": 822,
+    "fecha": "2026-06-24T16:58:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Operación Endgame desmantela malware",
+    "resumen": "La operación conjunta de Microsoft, Europol y socios internacionales ha desmantelado la infraestructura utilizada por las operaciones de malware Amadey y StealC, como parte de la Operación Endgame, que se centra en servicios cibercriminales y bandas de ransomware. El impacto real incluye la interrupción de los vectores de ataque de estos malware, reduciendo el riesgo de infecciones y robos de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/amadey-stealc-malware-operations-disrupted-in-operation-endgame-action/",
+    "fuente": "Bleeping Computer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 821,
+    "fecha": "2026-06-24T16:58:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad MISP",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2020-8892) en versiones anteriores a 2.4.121 de MISP, con un CVSS Score de 8.1, que permite ataques de fuerza bruta a través del método HTTP PUT no bloqueado, lo que podría permitir accesos no autorizados. La vulnerabilidad afecta a la autenticación y podría ser explotada para obtener acceso no autorizado al sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-8892",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2020-8892"
+      ]
+    }
+  },
+  {
+    "id": 820,
+    "fecha": "2026-06-24T16:58:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades críticas en Ubiquiti",
+    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de Estados Unidos (CISA) advierte sobre la explotación activa de vulnerabilidades de gravedad máxima en el sistema operativo UniFi OS de Ubiquiti y en servidores serie-a-ethernet de Lantronix, lo que permite a los atacantes aprovechar estas debilidades para llevar a cabo ataques. Estas vulnerabilidades pueden ser utilizadas como vectores de ataque para comprometer la seguridad de las redes.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-max-severity-ubiquiti-flaws-exploited-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 819,
+    "fecha": "2026-06-24T14:22:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque Ransomware a Bajaj Auto",
+    "resumen": "La empresa automotriz india Bajaj Auto ha sido afectada por un incidente de ransomware, del cual se enteró el martes por la mañana, y ha tomado medidas precautorias para contener su impacto. El vector de ataque no ha sido especificado, pero se trata de un incidente de seguridad que puede tener implicaciones significativas para la empresa y su infraestructura.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/indian-auto-giant-bajaj-auto-hit-by-ransomware",
+    "fuente": "The Record",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 818,
+    "fecha": "2026-06-24T14:22:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Adversarios Autónomos Avanzados",
+    "resumen": "La ciberseguridad enfrenta una nueva era de amenazas con la emergencia de adversarios autónomos avanzados que pueden operar a velocidades superiores a las capacidades humanas, lo que reduce significativamente el tiempo de respuesta y aumenta el riesgo de brechas de seguridad. Los vectores de ataque pueden incluir exploits de zero-day y malware avanzado, lo que requiere una respuesta inmediata y eficaz para mitigar el daño.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/dawn-of-apex-agentic-adversary.html",
+    "fuente": "The Hacker News",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 817,
+    "fecha": "2026-06-24T14:22:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en MacOS",
+    "resumen": "Se ha descubierto una brecha en MacOS que permite a los atacantes deshabilitar herramientas de seguridad y del navegador integrado sin necesidad de privilegios de administrador o exploits de kernel, lo que facilita ataques como phishing o malware. Esta vulnerabilidad puede ser explotada por atacantes para comprometer la seguridad de los sistemas MacOS.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/apple-macos-security-gap-users-disable-security-tools",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 816,
+    "fecha": "2026-06-24T14:22:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Debilidades en Cordyceps CI/CD",
+    "resumen": "Se ha identificado una nueva clase de debilidad en los flujos de trabajo de CI/CD que permite a los atacantes secuestrar flujos de trabajo y comprometer las cadenas de suministro de código abierto, afectando a más de 300 repositorios de GitHub. La vulnerabilidad, conocida como Cordyceps, puede permitir a los atacantes controlar completamente los repositorios de algunas de las organizaciones más grandes del mundo.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/cordyceps-cicd-flaws-expose-300-github.html",
+    "fuente": "The Hacker News",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 815,
+    "fecha": "2026-06-24T14:21:56Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataques de ingeniería social",
+    "resumen": "Los service desks se han convertido en un objetivo favorito para los atacantes que buscan restablecer contraseñas, cambiar la autenticación multifactor (MFA) y obtener acceso a cuentas corporativas, aprovechando técnicas de ingeniería social como el phishing y el engaño telefónico. Las organizaciones pueden defenderse implementando medidas de seguridad como la verificación de identidad y la conciencia sobre la seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/securing-the-service-desk-why-social-engineering-attacks-keep-succeeding/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing para ingeniería social no se menciona explícitamente, pero se puede inferir que el engaño telefónico se relaciona con T1598.001 - Engaño telefónico"
+      },
+      {
+        "id": "T1598.001",
+        "name": "Engaño telefónico"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556",
+        "name": "Modificación de la autenticación"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 814,
     "fecha": "2026-06-24T11:42:52Z",
     "categoria": "Ciberseguridad",
