@@ -1,5 +1,31 @@
 [
   {
+    "id": 848,
+    "fecha": "2026-06-25T14:21:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Contraseñas comprometidas",
+    "resumen": "Las contraseñas comprometidas siguen siendo una de las principales causas de brechas de seguridad, permitiendo a los ciberdelincuentes acceder a sistemas y redes sin necesidad de exploits sofisticados o malware avanzado, lo que destaca la importancia de la autenticación segura y la gestión de contraseñas. Los ciberdelincuentes aprovechan estas vulnerabilidades para iniciar ataques, como phishing o ataques de fuerza bruta, que pueden tener un impacto significativo en la seguridad de la información.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzOTczMTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-amenaza-silenciosa-que-sigue-abriendo-puertas-a-los-ciberdelincuentes/",
+    "fuente": "CyberSecurity News",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 847,
     "fecha": "2026-06-25T11:37:46Z",
     "categoria": "Ciberseguridad",
