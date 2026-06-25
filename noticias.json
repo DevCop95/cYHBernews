@@ -1,5 +1,39 @@
 [
   {
+    "id": 834,
+    "fecha": "2026-06-25T01:05:54Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Amenazas cibernéticas en la Copa Mundial",
+    "resumen": "La Copa Mundial de la FIFA 2026 enfrenta un aumento en las amenazas cibernéticas, incluyendo ciberdelincuencia persistente, ingeniería social y amenazas a la infraestructura, lo que plantea un desafío significativo para la seguridad de la información y la protección de los datos de los participantes y espectadores. Los vectores de ataque incluyen phishing y otros métodos de ingeniería social para explotar vulnerabilidades en la infraestructura de los estadios y sistemas de información.",
+    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/2026-fifa-world-cup-faces-surge-cyber-threats",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 833,
     "fecha": "2026-06-24T22:13:38Z",
     "categoria": "Ciberseguridad",
