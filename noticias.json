@@ -1,5 +1,29 @@
 [
   {
+    "id": 845,
+    "fecha": "2026-06-25T11:37:32Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque de inyección de prompts en LLMs",
+    "resumen": "Un estudio revela que los modelos de lenguaje grandes (LLMs) son vulnerables a ataques de inyección de prompts debido a la confusión de roles, lo que permite a los atacantes manipular el comportamiento del modelo a través de textos aparentemente inocuos. Esto plantea un desafío persistente para la defensa contra la inyección de prompts, ya que los límites entre roles son continuos y pueden ser explotados a escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557010061-315772f6efef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzODc0NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/interesting-paper-exploring-prompt-injection.html",
+    "fuente": "Schneier on Security",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arxiv.org",
+        "role-confusion.github.io",
+        "simonwillison.net"
+      ],
+      "url": [
+        "https://arxiv.org/abs/2603.12277",
+        "https://role-confusion.github.io/",
+        "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/"
+      ]
+    }
+  },
+  {
     "id": 844,
     "fecha": "2026-06-25T06:44:39Z",
     "categoria": "IA",
