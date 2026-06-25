@@ -1,5 +1,39 @@
 [
   {
+    "id": 847,
+    "fecha": "2026-06-25T11:37:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Mistic Backdoor: Nueva Amenaza",
+    "resumen": "Un nuevo backdoor llamado Mistic, también conocido como MLTBackdoor, ha sido identificado en campañas de ataques dirigidos a múltiples organizaciones en sectores como seguros, educación, TI y servicios profesionales desde abril de 2026, con posibles motivaciones financieras y vinculaciones a un Initial Access Broker (IAB). El backdoor se ha utilizado en campañas como ClickFix y ModeloRAT, lo que sugiere un enfoque sofisticado en la infiltración y el acceso a sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzODc0NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/new-mistic-backdoor-linked-to-kongtuke.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 846,
     "fecha": "2026-06-25T11:37:39Z",
     "categoria": "Ciberseguridad",
