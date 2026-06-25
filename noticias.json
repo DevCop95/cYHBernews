@@ -1,5 +1,39 @@
 [
   {
+    "id": 858,
+    "fecha": "2026-06-25T19:53:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque de phishing en Shop",
+    "resumen": "Actores maliciosos están abusando de la aplicación de seguimiento de pedidos Shop, de Shopify, para agregar recibos de compra falsos en los historiales de pedidos de los usuarios, con el fin de engañarlos y obtener datos sensibles o instalar software de acceso remoto a través de ataques de phishing de callback. Esto representa un vector de ataque significativo para la seguridad de los usuarios de la aplicación.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MTcxODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/order-tracking-app-shop-abused-to-push-callback-phishing-attacks/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 857,
     "fecha": "2026-06-25T19:53:00Z",
     "categoria": "IA",
