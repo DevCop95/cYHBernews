@@ -1,5 +1,43 @@
 [
   {
+    "id": 843,
+    "fecha": "2026-06-25T06:44:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Zero-Day en Cisco",
+    "resumen": "Una amenaza desconocida explotó una vulnerabilidad de alto riesgo (CVE-2026-20245) en Cisco Catalyst SD-WAN como un zero-day al menos dos meses antes de su divulgación pública, permitiendo a un atacante autenticado y local ejecutar comandos arbitrarios con privilegios elevados y obtener acceso root. El vector de ataque aprovecha una debilidad en la ejecución de comandos con privilegios elevados.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNjk4NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-zero-day-cve-2026.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20245"
+      ]
+    }
+  },
+  {
     "id": 842,
     "fecha": "2026-06-25T06:44:25Z",
     "categoria": "IA",
