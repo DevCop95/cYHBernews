@@ -1,5 +1,26 @@
 [
   {
+    "id": 870,
+    "fecha": "2026-06-26T11:42:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en bloqueador de anuncios",
+    "resumen": "Un bloqueador de anuncios para YouTube con más de 10 millones de instalaciones en Chrome presenta una vulnerabilidad que permite inyectar JavaScript desde un servidor remoto, lo que eleva el riesgo de ataques maliciosos, especialmente en entornos corporativos, aunque no hay pruebas de uso malicioso hasta el momento. La vulnerabilidad se debe a un mecanismo que permite la ejecución de código JavaScript sin necesidad de actualizar la extensión.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NzQxNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-popular-bloqueador-de-anuncios-en-chrome-expone-una-via-latente-para-inyectar-javascript/?utm_source=rss&utm_medium=rss&utm_campaign=un-popular-bloqueador-de-anuncios-en-chrome-expone-una-via-latente-para-inyectar-javascript",
+    "fuente": "Una al Día (Hispasec)",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/un-popular-bloqueador-de-anuncios-en-chrome-expone-una-via-latente-para-inyectar-javascript/"
+      ]
+    }
+  },
+  {
     "id": 869,
     "fecha": "2026-06-26T06:53:21Z",
     "categoria": "IA",
