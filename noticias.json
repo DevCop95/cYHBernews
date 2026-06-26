@@ -1,5 +1,39 @@
 [
   {
+    "id": 868,
+    "fecha": "2026-06-26T06:52:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Arrestan a grupo de SIM-swapping",
+    "resumen": "Las autoridades polacas han arrestado a cuatro miembros de un grupo de ciberdelincuencia organizada acusados de realizar ataques de SIM-swapping, lo que les permitió robar millones en criptomonedas mediante el acceso no autorizado a cuentas de correo electrónico y socios de telecomunicaciones. El vector de ataque incluyó el aprovechamiento de vulnerabilidades en los sistemas de seguridad de los proveedores de servicios de telecomunicaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NTY3NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/poland-busts-sim-swapping-gang-tied-to-millions-in-crypto-theft/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no se menciona, pero se puede inferir que el grupo utilizó técnicas de ingeniería social para obtener acceso no autorizado."
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 867,
     "fecha": "2026-06-26T06:52:36Z",
     "categoria": "IA",
