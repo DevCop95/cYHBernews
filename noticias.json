@@ -1,5 +1,46 @@
 [
   {
+    "id": 872,
+    "fecha": "2026-06-26T11:42:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Filtración de 1 millón de pasaportes",
+    "resumen": "Una base de datos con casi un millón de pasaportes de todo el mundo fue filtrada en línea después de que un sistema de verificación de identidad para dispensarios de cannabis, que utilizaba pasaportes como credenciales de alta valor, fue comprometido. Esto pone en riesgo la seguridad de los titulares de los pasaportes debido a la exposición de sus datos personales y credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NzQxNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/one-million-passports-leaked-online.html",
+    "fuente": "Schneier on Security",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Compromiso de credenciales de acceso"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1587",
+        "name": "Compromiso de datos personales"
+      },
+      {
+        "id": "T1081",
+        "name": "Credenciales en texto plano (se infiere que los pasaportes fueron almacenados de manera insegura)"
+      },
+      {
+        "id": "T1530",
+        "name": "Exposición de información a través de medios no seguros"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "cambridgeanalytica.org"
+      ],
+      "url": [
+        "https://cambridgeanalytica.org/data-breaches-scandals/passports-driver-licenses-exposed-public-internet-2026-51096/"
+      ]
+    }
+  },
+  {
     "id": 871,
     "fecha": "2026-06-26T11:42:39Z",
     "categoria": "IA",
