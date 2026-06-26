@@ -1,5 +1,43 @@
 [
   {
+    "id": 866,
+    "fecha": "2026-06-26T02:54:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en HP LaserJet Pro",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer (Buffer Overflow) y denegación de servicio (Denial of Service) en ciertos productos de impresión HP LaserJet Pro, con un puntaje CVSS de 8.8, que se puede explotar a través de la función de respaldo y restauración en el servicio web integrado. Los productos afectados incluyen los firmware hp:w1a76a_firmware, hp:w1a75a_firmware y hp:w1a77a_firmware.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-35176",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1202",
+        "name": "Exploitation for Denial of Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-35176"
+      ]
+    }
+  },
+  {
     "id": 865,
     "fecha": "2026-06-26T02:54:45Z",
     "categoria": "Ciberseguridad",
