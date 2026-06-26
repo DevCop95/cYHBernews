@@ -1,5 +1,39 @@
 [
   {
+    "id": 881,
+    "fecha": "2026-06-26T19:42:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "SharkLoader Malware Ataca",
+    "resumen": "Se ha descubierto una campaña de ciberataque que utiliza el malware SharkLoader, una familia de malware previamente desconocida, para desplegar Cobalt Strike Beacon en hosts comprometidos, afectando organizaciones gubernamentales y diplomáticas en Indonesia y Taiwán a través de ataques de tipo APT. El vector de ataque implica el uso de SharkLoader como cargador para facilitar la infección y el posterior despliegue de herramientas de ataque avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MDI5MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/new-sharkloader-malware-deploys-cobalt.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools (se menciona Cobalt Strike Beacon, que es una herramienta de acceso remoto)"
+      },
+      {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation (no se menciona explícitamente, pero Cobalt Strike Beacon puede utilizar WMI para su funcionamiento)"
+      },
+      {
+        "id": "T1625",
+        "name": "Endpoint Simulation (no se menciona explícitamente, pero SharkLoader puede simular un entorno de ejecución para el malware)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 880,
     "fecha": "2026-06-26T19:41:54Z",
     "categoria": "Ciberseguridad",
