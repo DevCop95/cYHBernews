@@ -1,5 +1,39 @@
 [
   {
+    "id": 876,
+    "fecha": "2026-06-26T16:58:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "APT china despliega backdoor TinyRCT",
+    "resumen": "Un actor de amenaza persistente avanzada (APT) de habla china ha desplegado un nuevo backdoor personalizado llamado TinyRCT como parte de ataques cibernéticos dirigidos a entidades gubernamentales y infraestructura crítica en el sudeste asiático, afectando especialmente a empresas estatales en los sectores energético y gubernamental. El actor, identificado como CL-STA-1062, ha sido detectado por Palo Alto Networks.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0OTMwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 875,
     "fecha": "2026-06-26T14:14:28Z",
     "categoria": "Ciberseguridad",
