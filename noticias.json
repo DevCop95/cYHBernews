@@ -1,5 +1,39 @@
 [
   {
+    "id": 883,
+    "fecha": "2026-06-26T22:08:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers rusos atacan claves de recuperación de Signal",
+    "resumen": "La campaña de phishing atribuida a servicios de inteligencia rusos ha evolucionado para robar claves de recuperación de backup de Signal, permitiendo a los atacantes acceder a mensajes históricos de las víctimas. El vector de ataque se centra en el engaño a usuarios para obtener acceso a sus claves de recuperación, lo que podría comprometer la privacidad y seguridad de las comunicaciones en Signal.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MTE3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-russian-hackers-now-target-signal-backup-recovery-keys/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 882,
     "fecha": "2026-06-26T19:42:06Z",
     "categoria": "IA",
