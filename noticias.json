@@ -1,5 +1,28 @@
 [
   {
+    "id": 877,
+    "fecha": "2026-06-26T16:58:18Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Meta prueba reconocimiento facial",
+    "resumen": "Meta está desarrollando un prototipo de reconocimiento facial para ser utilizado por la policía y el ejército, en colaboración con un proveedor del Pentágono, lo que podría permitir la identificación en tiempo real de individuos. Esto plantea preocupaciones sobre la privacidad digital y el potencial uso de esta tecnología para vigilancia masiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1770368787729-6a42187b668c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0OTMwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/meta-is-testing-facial-recognition-for-police-and-military.html",
+    "fuente": "Schneier on Security",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "futurism.com",
+        "gizmodo.com",
+        "www.wired.com"
+      ],
+      "url": [
+        "https://futurism.com/artificial-intelligence/ice-facial-surveillance-glasses",
+        "https://gizmodo.com/meta-is-testing-police-surveillance-tech-for-its-smart-glasses-2000771931"
+      ]
+    }
+  },
+  {
     "id": 876,
     "fecha": "2026-06-26T16:58:13Z",
     "categoria": "Ciberseguridad",
