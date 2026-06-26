@@ -1,5 +1,39 @@
 [
   {
+    "id": 884,
+    "fecha": "2026-06-26T22:08:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Amenaza a Signal por hackers rusos",
+    "resumen": "El FBI y CISA han actualizado su advertencia sobre ataques de phishing de inteligencia rusa dirigidos a cuentas de Signal, donde los operadores ahora intentan obtener las claves de recuperación de copia de seguridad de Signal, lo que les permitiría restaurar la copia de seguridad de la cuenta, leer el historial de mensajes privados y grupales y tomar el control de la cuenta. El ataque aprovecha la confianza en la aplicación de mensajería segura.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MTE3MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/fbi-warns-russian-intelligence-hackers.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise (no se menciona explícitamente, pero se puede inferir que es un tipo de ataque, aunque no es claro)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking (no se menciona explícitamente, pero se puede inferir que es un objetivo del ataque, aunque no es claro)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 883,
     "fecha": "2026-06-26T22:08:27Z",
     "categoria": "Ciberseguridad",
