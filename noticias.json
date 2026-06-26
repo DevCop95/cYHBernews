@@ -1,5 +1,39 @@
 [
   {
+    "id": 863,
+    "fecha": "2026-06-26T02:54:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Gamaredon: Nuevas Tácticas",
+    "resumen": "El grupo Gamaredon ha actualizado su conjunto de herramientas, utilizando túneles, workers y dead drops para ocultar su infraestructura de comando y control (C&C) y exfiltrar datos robados, según un análisis de ESET Research, lo que indica una creciente dependencia del grupo en servicios online legítimos para evadir la detección. Esto sugiere un vector de ataque más sofisticado, aprovechando la complejidad de la infraestructura en línea para realizar ataques de phishing, malware y ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/gamaredon-2025-infraestructura-avanzada-tuneles-workers-dead-drops/",
+    "fuente": "WeLiveSecurity",
+    "ttps": [
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1090",
+        "name": "Proxy"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 862,
     "fecha": "2026-06-26T02:54:24Z",
     "categoria": "IA",
