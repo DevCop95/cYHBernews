@@ -1,5 +1,39 @@
 [
   {
+    "id": 873,
+    "fecha": "2026-06-26T11:43:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña de phishing contra hoteles",
+    "resumen": "Una campaña de phishing activa ha estado objetivo a hoteles y organizaciones de hospitalidad en Europa y Asia desde abril de 2026, utilizando archivos ZIP con temas de fotos para descargar un implant de Node.js y acceder a máquinas de recepción, según Microsoft. El objetivo final de los operadores y la atribución a un actor de amenaza conocido aún no están claros.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NzQxODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/microsoft-warns-of-photo-zip-phishing.html",
+    "fuente": "The Hacker News",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 872,
     "fecha": "2026-06-26T11:42:46Z",
     "categoria": "Ciberseguridad",
