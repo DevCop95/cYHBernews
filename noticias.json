@@ -1,5 +1,39 @@
 [
   {
+    "id": 880,
+    "fecha": "2026-06-26T19:41:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque de cadena de suministro",
+    "resumen": "Los clientes de Polymarket perdieron un estimado de $3 millones después de que hackers inyectaron un script malicioso en el frontend de la plataforma, aprovechando una brecha en un proveedor de terceros. El ataque de cadena de suministro permitió a los atacantes acceder a la plataforma y realizar transacciones no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MDI5MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/polymarket-customers-lose-3-million-in-supply-chain-attack/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 879,
     "fecha": "2026-06-26T19:41:48Z",
     "categoria": "IA",
