@@ -1,5 +1,39 @@
 [
   {
+    "id": 865,
+    "fecha": "2026-06-26T02:54:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "APT Gamaredon actualiza arsenal",
+    "resumen": "El grupo APT Gamaredon, patrocinado por el estado ruso y asociado con el FSB, ha mejorado significativamente sus capacidades para cargar malware y ocultar servidores, lo que requiere nuevas estrategias de defensa contra sus ataques sofisticados. Esto implica un aumento en la complejidad de los vectores de ataque y la necesidad de actualizar las medidas de seguridad para contrarrestar estas nuevas amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/russia-apt-gamaredon-arsenal-defense",
+    "fuente": "Dark Reading",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Virtual Private Server (VPS)"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 864,
     "fecha": "2026-06-26T02:54:38Z",
     "categoria": "Ciberseguridad",
