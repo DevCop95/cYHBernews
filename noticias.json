@@ -1,5 +1,31 @@
 [
   {
+    "id": 891,
+    "fecha": "2026-06-27T02:44:17Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataque de phishing con OpenAI",
+    "resumen": "Actores maliciosos están creando inquilinos de OpenAI que imitan a empresas legítimas, invitando a empleados a unirse a ellos, con el objetivo de engañar a los objetivos para que proporcionen información sensible de la empresa en chats y proyectos. Esto representa un vector de ataque de phishing sofisticado que aprovecha la confianza en la marca OpenAI.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729971-c27157b0c580?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MjgyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cybersecurity-firms-targeted-by-fraudulent-openai-organization-invites/",
+    "fuente": "Bleeping Computer",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1586",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 890,
     "fecha": "2026-06-27T02:44:10Z",
     "categoria": "IA",
