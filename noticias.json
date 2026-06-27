@@ -1,5 +1,22 @@
 [
   {
+    "id": 910,
+    "fecha": "2026-06-27T15:43:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-53070 en Linux",
+    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux (CVE-2026-53070) relacionada con el protocolo SCTP, que podría provocar la caída de paquetes debido a un problema con la detección del nivel de recursividad en la función de transmisión de túneles UDP. La solución implica deshabilitar las interrupciones de software (BH) antes de llamar a `udp_tunnel_xmit_skb()` y `udp_tunnel6_xmit_skb()`.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/177971",
+    "fuente": "TG: CVE Notify",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-53070"
+      ]
+    }
+  },
+  {
     "id": 909,
     "fecha": "2026-06-27T15:43:30Z",
     "categoria": "Ciberseguridad",
