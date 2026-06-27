@@ -1,5 +1,43 @@
 [
   {
+    "id": 895,
+    "fecha": "2026-06-27T06:27:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Spring Data",
+    "resumen": "La vulnerabilidad CVE-2018-1274 (CVSS 7.5) en Spring Data Commons permite a un atacante remoto no autenticado provocar una denegación de servicio mediante el consumo de CPU y recursos, afectando versiones anteriores a 1.13.10 y 2.0.5. Los productos afectados incluyen spring_data_rest y spring_data_commons de varias empresas.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NDE2MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-1274",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "Denegación de Servicio de CPU"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2018-1274"
+      ]
+    }
+  },
+  {
     "id": 894,
     "fecha": "2026-06-27T06:27:03Z",
     "categoria": "Ciberseguridad",
