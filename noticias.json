@@ -1,5 +1,39 @@
 [
   {
+    "id": 918,
+    "fecha": "2026-06-27T19:14:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware Android alcanza 100K descargas",
+    "resumen": "Un malware de Android disfrazado como lector de documentos ha alcanzado 100.000 descargas en Google Play, aprovechando la confianza de los usuarios para infectar dispositivos y potencialmente realizar actividades maliciosas como phishing o robo de datos. El malware, conocido como Anatsa banker, utiliza técnicas de engaño para evadir la detección y comprometer la seguridad de los dispositivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2930",
+    "fuente": "TG: Android Malware",
+    "ttps": [
+      {
+        "id": "T1192",
+        "name": "Spearphishing via Aplicación"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1625",
+        "name": "Cryptographic Techniques"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 917,
     "fecha": "2026-06-27T19:14:14Z",
     "categoria": "Ciberseguridad",
