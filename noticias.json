@@ -1,5 +1,43 @@
 [
   {
+    "id": 904,
+    "fecha": "2026-06-27T13:24:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Spring Data Commons",
+    "resumen": "La vulnerabilidad CVE-2018-1259 (CVSS 7.5) en Spring Data Commons y XMLBeam permite a un atacante no autenticado acceder a archivos arbitrarios en el sistema a través de la expansión de referencias externas XML mal restringidas. Esto puede ser explotado mediante parámetros de petición especialmente manipulados en la carga útil de petición basada en proyección de Spring Data.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NjY2NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-1259",
+    "fuente": "NVD (NIST)",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2018-1259"
+      ]
+    }
+  },
+  {
     "id": 903,
     "fecha": "2026-06-27T13:23:59Z",
     "categoria": "IA",
