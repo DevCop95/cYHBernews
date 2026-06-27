@@ -1,5 +1,39 @@
 [
   {
+    "id": 896,
+    "fecha": "2026-06-27T06:27:18Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Rusia utiliza ingeniería social",
+    "resumen": "Ucrania informa que Rusia ha llevado a cabo una operación de ingeniería social a largo plazo, utilizando trabajadores de soporte técnico falsos para persuadir a las personas de entregar sus credenciales de aplicaciones de mensajería, lo que ha permitido a los atacantes acceder a cuentas prominentes. El vector de ataque se basa en el engaño y la manipulación de los usuarios para obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054730060-2cfb438ed96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NDE2Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russia-ukraine-social-engineering-messaging-accounts",
+    "fuente": "The Record",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing a través de canales de soporte técnico no es exacto, pero se puede considerar"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 895,
     "fecha": "2026-06-27T06:27:11Z",
     "categoria": "Ciberseguridad",
