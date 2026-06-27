@@ -1,5 +1,22 @@
 [
   {
+    "id": 917,
+    "fecha": "2026-06-27T19:14:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en YouTrack",
+    "resumen": "Se ha identificado una vulnerabilidad de tipo \"prototype pollution\" en la versión de YouTrack anterior a 2026.2.16593, específicamente en el componente \"websandbox bridge\", lo que podría permitir ataques de inyección de código malicioso. La vulnerabilidad CVE-2026-57926 afecta a usuarios que no han actualizado su software a la versión más reciente.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/177978",
+    "fuente": "TG: CVE Notify",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-57926"
+      ]
+    }
+  },
+  {
     "id": 916,
     "fecha": "2026-06-27T19:14:08Z",
     "categoria": "IA",
