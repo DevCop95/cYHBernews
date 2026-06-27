@@ -1,5 +1,39 @@
 [
   {
+    "id": 919,
+    "fecha": "2026-06-27T19:14:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad Path Traversal en WordPress",
+    "resumen": "Se ha detectado una vulnerabilidad de Path Traversal en el plugin WordPress OrderConvo 14, lo que permite a atacantes acceder a archivos del sistema fuera del directorio raíz del sitio web, potencialmente exponiendo información sensible. El vector de ataque implica la manipulación de rutas de archivos para acceder a directorios no autorizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52607",
+    "fuente": "Exploit-DB",
+    "ttps": [
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 918,
     "fecha": "2026-06-27T19:14:20Z",
     "categoria": "Ciberseguridad",
