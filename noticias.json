@@ -1,5 +1,39 @@
 [
   {
+    "id": 898,
+    "fecha": "2026-06-27T10:55:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulneración de LastPass",
+    "resumen": "Se ha producido una nueva vulneración de datos en LastPass, donde los usuarios han sido víctimas del robo de información, lo que supone un riesgo significativo para la privacidad y seguridad de los afectados. La noticia también menciona la colaboración de Microsoft en la desmantelación de una infraestructura importante de infostealer, un tipo de malware diseñado para robar información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NTc3MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
+    "fuente": "Wired Security",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 897,
     "fecha": "2026-06-27T10:55:25Z",
     "categoria": "IA",
