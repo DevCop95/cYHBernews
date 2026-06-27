@@ -1,5 +1,43 @@
 [
   {
+    "id": 912,
+    "fecha": "2026-06-27T15:43:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Explotación de 0-day en Firefox y Android",
+    "resumen": "Se ha descubierto una cadena de explotación completa desde el navegador hasta el kernel en dispositivos Android 17, aprovechando dos vulnerabilidades zero-day en Firefox antes de la versión 151.0.2 (CVE-2026-10702), lo que permite el rootear de dispositivos Android. El vector de ataque comienza con un exploit en el navegador Firefox y finaliza con la ejecución de código arbitrario en el kernel del sistema operativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2931",
+    "fuente": "TG: Android Malware",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Privilege Escalation (Explotación para Escalada de Privilegios)"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-10702"
+      ]
+    }
+  },
+  {
     "id": 911,
     "fecha": "2026-06-27T15:43:41Z",
     "categoria": "Ciberseguridad",
