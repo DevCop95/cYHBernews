@@ -1,5 +1,39 @@
 [
   {
+    "id": 922,
+    "fecha": "2026-06-27T21:59:33Z",
+    "categoria": "Tech",
+    "severidad": "MEDIA",
+    "titulo": "Código SmartLoader desenmascarado",
+    "resumen": "Un investigador ha logrado desenmascarar el código obfuscado de SmartLoader, un malware conocido, hasta llegar a un código fuente funcional, lo que podría revelar detalles sobre su funcionamiento y vectores de ataque, incluyendo posibles técnicas de evasión como el uso de Prometheus. Esto podría tener un impacto significativo en la ciberseguridad, ya que permitiría a los defensores desarrollar contramedidas más efectivas.",
+    "url_imagen": "https://images.unsplash.com/photo-1597931957399-211f0291bb35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9028",
+    "fuente": "TG: vx-underground",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion (no se menciona explícitamente, pero se infiere que el malware podría estar utilizando técnicas de evasión)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583",
+        "name": "Acquire Infrastructure (no se menciona explícitamente, pero se infiere que el malware podría necesitar infraestructura para funcionar)"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 921,
     "fecha": "2026-06-27T21:59:27Z",
     "categoria": "Ciberseguridad",
