@@ -1,5 +1,39 @@
 [
   {
+    "id": 913,
+    "fecha": "2026-06-27T15:43:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Inyección SQL ciega en WordPress",
+    "resumen": "Se ha descubierto una vulnerabilidad de inyección SQL ciega no autenticada en la versión 28.1.4 de WordPress Contest Gallery, lo que permite a atacantes extraer información sensible de la base de datos sin necesidad de credenciales de acceso. El vector de ataque se basa en la explotación de una vulnerabilidad de inyección SQL ciega, que puede ser utilizada para obtener información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52609",
+    "fuente": "Exploit-DB",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated SQL Injection"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no se aplica en este caso, pero T1055 si se aplica, por lo que se mantiene y se elimina T1589."
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 912,
     "fecha": "2026-06-27T15:43:47Z",
     "categoria": "Ciberseguridad",
