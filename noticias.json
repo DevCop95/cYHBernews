@@ -1,5 +1,22 @@
 [
   {
+    "id": 923,
+    "fecha": "2026-06-27T21:59:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en jackson-databind",
+    "resumen": "Se ha descubierto una vulnerabilidad en la biblioteca jackson-databind (CVE-2026-54514) que permite a un atacante realizar consultas DNS arbitrarias durante la deserialización de JSON no confiable, lo que podría ser utilizado para ataques de resolución de nombres de dominio o como vector de ataque para otros tipos de exploits. La vulnerabilidad se ha corregido en las versiones 2.18.8, 2.21.4 y 3.1.4.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/178041",
+    "fuente": "TG: CVE Notify",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-54514"
+      ]
+    }
+  },
+  {
     "id": 922,
     "fecha": "2026-06-27T21:59:33Z",
     "categoria": "Tech",
