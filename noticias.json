@@ -1,5 +1,22 @@
 [
   {
+    "id": 905,
+    "fecha": "2026-06-27T13:24:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Impresoras HP",
+    "resumen": "Se ha identificado una vulnerabilidad de alto riesgo (CVE-2022-24291, CVSS 7.5) en algunos dispositivos de impresión de HP, que podría permitir la divulgación de información, denegación de servicio o ejecución de código remota en los modelos LaserJet Pro M453-M454. Los productos afectados incluyen varios firmware de estos modelos.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NjY2NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-24291",
+    "fuente": "NVD (NIST)",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-24291"
+      ]
+    }
+  },
+  {
     "id": 904,
     "fecha": "2026-06-27T13:24:06Z",
     "categoria": "Ciberseguridad",
