@@ -1,5 +1,39 @@
 [
   {
+    "id": 894,
+    "fecha": "2026-06-27T06:27:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Turla: Nueva Malware",
+    "resumen": "El grupo de ciberespionaje ruso Turla ha desarrollado un nuevo malware llamado StockStay, que se suma a sus esfuerzos de espionaje contra Ucrania, según investigadores de inteligencia de amenazas de Google. Esto refleja la continua evolución de las tácticas de ataque de Turla, que busca explotar vulnerabilidades en la infraestructura de sus objetivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NDE2MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russia-turla-espionage-ukraine-stockstay-malware",
+    "fuente": "The Record",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Web Services"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Modify System Binary"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 893,
     "fecha": "2026-06-27T06:26:56Z",
     "categoria": "IA",
