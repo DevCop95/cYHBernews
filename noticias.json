@@ -1,5 +1,84 @@
 [
   {
+    "id": 897,
+    "fecha": "2026-06-27T10:55:25Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en Asistentes AI LLM-Based",
+    "resumen": "Los asistentes AI basados en LLM (Modelos de Lenguaje) presentan vulnerabilidades que pueden ser explotadas para realizar ataques como Jailbreak, Prompt Injection, Hallucinations y Unalignment, lo que puede permitir a los atacantes acceder a información confidencial y realizar acciones maliciosas. Estas vulnerabilidades pueden ser aprovechadas a través de técnicas como Footprinting y Fingerprinting para identificar la infraestructura y las protecciones de seguridad del asistente AI.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905916-1f9786324de9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NTc3MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/06/footprinting-fingerprinting-ai.html",
+    "fuente": "El Lado Del Mal",
+    "ttps": [
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1063",
+        "name": "Técnica de Fingerprinting"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Técnica de Manipulación de la interfaz de usuario (no se menciona explícitamente, pero se puede inferir que las vulnerabilidades pueden ser utilizadas para manipular la interfaz de usuario del asistente AI)"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/25-libro-hacking-aplicaciones-web-sql-injection.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://0xword.com/es/libros/97-hacking-web-applications-client-side-attacks.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJc56cw6M1KFok7EHsRg-hIpYEvFJxzKwW89sM8eN-Ii2m3DFPFtIqtBTF5kY-61YZlpO9lkvKNI6rhJj-7RTnhxG00APYMuJ6VFIkgYqbROV9QWrzAIiI3s9BDYvYZEKJ0Qb8sx1NMYaFg0z1NBHLRwhSXkDm7J5zq00q7Z2GwnNdxryzSikq/s1084/bot_ascii2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJc56cw6M1KFok7EHsRg-hIpYEvFJxzKwW89sM8eN-Ii2m3DFPFtIqtBTF5kY-61YZlpO9lkvKNI6rhJj-7RTnhxG00APYMuJ6VFIkgYqbROV9QWrzAIiI3s9BDYvYZEKJ0Qb8sx1NMYaFg0z1NBHLRwhSXkDm7J5zq00q7Z2GwnNdxryzSikq/w640-h390/bot_ascii2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSAxtL4EGAof6doNmZtg7Zi8ev4YLO7hPfP6MqfkJQizEfvV72LxZ__vKqChKv4P2vaH9_Q7VQvASJiute_vRA3C3zJfy29eHPHYkZI2okVj6WbHsS49nrfCG5y1dz-6e4bNMmhyphenhyphenk9NPJ0NmfMSmoz04V6Ov6BkJ1VuOb2jEXClOMbpCYxdImd/s1100/bot_cuento.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSAxtL4EGAof6doNmZtg7Zi8ev4YLO7hPfP6MqfkJQizEfvV72LxZ__vKqChKv4P2vaH9_Q7VQvASJiute_vRA3C3zJfy29eHPHYkZI2okVj6WbHsS49nrfCG5y1dz-6e4bNMmhyphenhyphenk9NPJ0NmfMSmoz04V6Ov6BkJ1VuOb2jEXClOMbpCYxdImd/w640-h628/bot_cuento.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqgevBnlaDq09tR0nkLCNjZYCbs5vkwnBjjtdKkQCWMxvy0f9MsIfVNrtjXVJYawxgZd-C3tyvQ-EjrVcrViQEuppuZlx_qFDs4plTYWofhwdMPx47kTb9VbA5kaIXUsyyTQ9pfAcKmoSrNExWzO4HRfeJgj1DKvIxddqC9qw-ZGFvgjcZ1nYH/s1114/bot_gpt.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqgevBnlaDq09tR0nkLCNjZYCbs5vkwnBjjtdKkQCWMxvy0f9MsIfVNrtjXVJYawxgZd-C3tyvQ-EjrVcrViQEuppuZlx_qFDs4plTYWofhwdMPx47kTb9VbA5kaIXUsyyTQ9pfAcKmoSrNExWzO4HRfeJgj1DKvIxddqC9qw-ZGFvgjcZ1nYH/w640-h226/bot_gpt.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2FdR6vu8yXR6WzYQiuwNium6Z-sapF-LXgMK7oZ2omoxSXddUv9EvUgWsIekcC7B9JvfIm7BmeOJWMwX5BnJCkJ-KBIHKPImrnGV3QeOa5gmSshcYJJkz4shsed5eLs7KAx2Fy53SsatvcDYXX8B-S1W3QSymg4C5q9E2VIP03LT9a8r7ME5Y/s1094/bot_tools.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2FdR6vu8yXR6WzYQiuwNium6Z-sapF-LXgMK7oZ2omoxSXddUv9EvUgWsIekcC7B9JvfIm7BmeOJWMwX5BnJCkJ-KBIHKPImrnGV3QeOa5gmSshcYJJkz4shsed5eLs7KAx2Fy53SsatvcDYXX8B-S1W3QSymg4C5q9E2VIP03LT9a8r7ME5Y/w640-h260/bot_tools.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJxNI-5EbP99FUa31Ydjwgxall7SHwQ3Fv-usWnkkpBLbb7oSM0ieOtIf6YgoFl04FNztpTIUusyHQUs-_w5AX3ampwwDUZjO1M2vmm6hroCL4YMRYv25YvlaoCpHbeoI7mW55FhgfsUGiXb-rzTjptzCTOr8BNLasmwDTlMLtHz_49r7Zm6MS/s940/Bot0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJxNI-5EbP99FUa31Ydjwgxall7SHwQ3Fv-usWnkkpBLbb7oSM0ieOtIf6YgoFl04FNztpTIUusyHQUs-_w5AX3ampwwDUZjO1M2vmm6hroCL4YMRYv25YvlaoCpHbeoI7mW55FhgfsUGiXb-rzTjptzCTOr8BNLasmwDTlMLtHz_49r7Zm6MS/w640-h440/Bot0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTQdjcUf4NDJEDdfxK3ylKvpAVobE8p2DrdgPsYeGq4EvExJruMPpHWyhKexvjJnH8ZJ7eOsFOA2YorCG7x41qM9x5QtG9xOW9r5M7mPY2DQZIB6T5KuN2kbJtfGqottGvbs96W93Hr_bqKTSOBAOcRZgREFEtLN8ylK3zkQEwDjg_eHLdbyqB/s1284/bot_allow.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTQdjcUf4NDJEDdfxK3ylKvpAVobE8p2DrdgPsYeGq4EvExJruMPpHWyhKexvjJnH8ZJ7eOsFOA2YorCG7x41qM9x5QtG9xOW9r5M7mPY2DQZIB6T5KuN2kbJtfGqottGvbs96W93Hr_bqKTSOBAOcRZgREFEtLN8ylK3zkQEwDjg_eHLdbyqB/w550-h640/bot_allow.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRIgDr5CrliJlIlGbojQXpAXoz2sawjVkl9RZ-VTRr6BQ_CC1AObGDlEDdGvP807FiKsqNh9eHdgXoj8ss8gnMvD8U_jwebss4RpoSVycidAP_lJHh6PPtnj7ZbsQJM5bhe44p9DQmES6O10Gg6NFaZDpeAcGp8tYeO6VI9aVCjWK6hg43S5N/s1112/bot_tools2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXRIgDr5CrliJlIlGbojQXpAXoz2sawjVkl9RZ-VTRr6BQ_CC1AObGDlEDdGvP807FiKsqNh9eHdgXoj8ss8gnMvD8U_jwebss4RpoSVycidAP_lJHh6PPtnj7ZbsQJM5bhe44p9DQmES6O10Gg6NFaZDpeAcGp8tYeO6VI9aVCjWK6hg43S5N/w640-h406/bot_tools2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaBXIQdi6499L8YBBgAI5NUTRM379GVjTGHGNQt4CwPzLe5KrWcaE8w0B5oRUkDI6iSHxnnJ3cD6fDgkJaomIFaYSgZFVJrg3G8D3GNTSu5u1m3dlT8TaBKKAF1vGt5mkpe3RUtmfy3qIv2QHBmh9T1LuYtdH5hj1SQw9e6X5FveP3uMNPpnPd/s636/Bot_time.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaBXIQdi6499L8YBBgAI5NUTRM379GVjTGHGNQt4CwPzLe5KrWcaE8w0B5oRUkDI6iSHxnnJ3cD6fDgkJaomIFaYSgZFVJrg3G8D3GNTSu5u1m3dlT8TaBKKAF1vGt5mkpe3RUtmfy3qIv2QHBmh9T1LuYtdH5hj1SQw9e6X5FveP3uMNPpnPd/w640-h300/Bot_time.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaiHjLXQOhC8aTX0hvV4TqFEFn7NrJn3dpM_EKh8_TtMe15a5f4opOb3yVQAADwlZBSyo1_BEeug_R3igjaP3Ie9_F-r44Gsw1UKpGatMkgAGt2rmE7MHZEqWtd030RV3WMVV4_wOQLf3SelVKfMPTMK3FoDfzP1q6lR7DQ5IB8q44hIHZjwXx/s1102/Bot_link.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaiHjLXQOhC8aTX0hvV4TqFEFn7NrJn3dpM_EKh8_TtMe15a5f4opOb3yVQAADwlZBSyo1_BEeug_R3igjaP3Ie9_F-r44Gsw1UKpGatMkgAGt2rmE7MHZEqWtd030RV3WMVV4_wOQLf3SelVKfMPTMK3FoDfzP1q6lR7DQ5IB8q44hIHZjwXx/w640-h326/Bot_link.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9jxocE_GdHUnTJrzh3EmwyqOXUJU3XRhdXswazuJMkjJXjSYirmi65CdCOBgF8Tqb-8MAUqzZjPIPvYr0u6L03MIf7n8iMEhhUSQreE1QZ10aJUpIR79WITKVhaID6sJiODEZXAbVpaewlM20iqPL2rbPLbqcRio-ivYcE5OAPFvv8kLmJDUX/s1066/bot_cat1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9jxocE_GdHUnTJrzh3EmwyqOXUJU3XRhdXswazuJMkjJXjSYirmi65CdCOBgF8Tqb-8MAUqzZjPIPvYr0u6L03MIf7n8iMEhhUSQreE1QZ10aJUpIR79WITKVhaID6sJiODEZXAbVpaewlM20iqPL2rbPLbqcRio-ivYcE5OAPFvv8kLmJDUX/w640-h314/bot_cat1.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2025/07/cat-attack-o-como-atacar-el.html",
+        "https://www.elladodelmal.com/2026/06/hacking-llm-assistants-just-for-fun.html"
+      ]
+    }
+  },
+  {
     "id": 896,
     "fecha": "2026-06-27T06:27:18Z",
     "categoria": "IA",
