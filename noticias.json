@@ -1,5 +1,18 @@
 [
   {
+    "id": 926,
+    "fecha": "2026-06-27T21:59:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en YAMCS",
+    "resumen": "Se ha identificado una falta de limitación de velocidad (No Rate Limiting) en la versión 5.12.7 de yamcs-core, lo que podría permitir ataques de denegación de servicio (DoS) o explotación de vulnerabilidades mediante técnicas de brute force. Esto podría afectar la disponibilidad y la integridad de los sistemas que utilizan esta versión de yamcs-core.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52605",
+    "fuente": "Exploit-DB",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 925,
     "fecha": "2026-06-27T21:59:49Z",
     "categoria": "Ciberseguridad",
