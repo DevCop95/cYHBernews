@@ -1,5 +1,22 @@
 [
   {
+    "id": 888,
+    "fecha": "2026-06-27T02:43:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Amazon Q Developer",
+    "resumen": "Se ha descubierto una vulnerabilidad de alta severidad (CVE-2026-12957, CVSS 8.5) en Amazon Q Developer que permite a un repositorio malicioso ejecutar comandos y robar credenciales de cloud de un desarrollador a través de la configuración de Model Context Protocol (MCP) servers. La vulnerabilidad ha sido parcheada por Amazon.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MjgyMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html",
+    "fuente": "The Hacker News",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-12957"
+      ]
+    }
+  },
+  {
     "id": 887,
     "fecha": "2026-06-27T02:43:52Z",
     "categoria": "Ciberseguridad",
