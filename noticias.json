@@ -1,5 +1,39 @@
 [
   {
+    "id": 911,
+    "fecha": "2026-06-27T15:43:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Brecha de seguridad en Tata Electronics",
+    "resumen": "Tata Electronics, subsidiaria del Grupo Tata, ha confirmado una brecha de seguridad que ha expuesto datos confidenciales, con el grupo World Leaks reclamando responsabilidad y alegando haber exfiltrado más de 200,000 archivos, totalizando aproximadamente 630 gigabytes de información sensible. El incidente pone de relieve la importancia de la ciberseguridad en la protección de la información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114027",
+    "fuente": "TG: Cyber Security Channel",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Compromiso de credenciales (No se menciona explícitamente, pero se infiere que los atacantes tuvieron acceso no autorizado)"
+      },
+      {
+        "id": "T1586",
+        "name": "Compromiso de datos (No se menciona explícitamente, pero se infiere que los atacantes exfiltraron datos)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 910,
     "fecha": "2026-06-27T15:43:35Z",
     "categoria": "Ciberseguridad",
