@@ -1,5 +1,43 @@
 [
   {
+    "id": 929,
+    "fecha": "2026-06-28T02:59:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-58057",
+    "resumen": "La versión de Flowise anterior a 3.1.3 presenta una vulnerabilidad (CVE-2026-58057) que permite a un usuario autenticado inyectar código arbitrario en el contexto del servidor Flowise mediante la configuración de un nodo MCP personalizado, aprovechando una comparación sensible a mayúsculas y minúsculas en la validación de variables de entorno. El ataque puede ser realizado a través de la variable de entorno 'node_options' en sistemas Windows, donde los nombres de variables de entorno son insensibles a mayúsculas y minúsculas.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MTU1NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/178084",
+    "fuente": "TG: CVE Notify",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58057"
+      ]
+    }
+  },
+  {
     "id": 928,
     "fecha": "2026-06-28T02:59:08Z",
     "categoria": "Ciberseguridad",
