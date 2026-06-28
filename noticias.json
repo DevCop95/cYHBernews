@@ -231,19 +231,6 @@
     "iocs": {}
   },
   {
-    "id": 926,
-    "fecha": "2026-06-27T21:59:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en YAMCS",
-    "resumen": "Se ha identificado una falta de limitación de velocidad (No Rate Limiting) en la versión 5.12.7 de yamcs-core, lo que podría permitir ataques de denegación de servicio (DoS) o explotación de vulnerabilidades mediante técnicas de brute force. Esto podría afectar la disponibilidad y la integridad de los sistemas que utilizan esta versión de yamcs-core.",
-    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52605",
-    "fuente": "Exploit-DB",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
     "id": 925,
     "fecha": "2026-06-27T21:59:49Z",
     "categoria": "Ciberseguridad",
@@ -650,40 +637,6 @@
         "CVE-2026-53070"
       ]
     }
-  },
-  {
-    "id": 909,
-    "fecha": "2026-06-27T15:43:30Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware SmartLoader",
-    "resumen": "Se ha descubierto una campaña de malware llamada SmartLoader, asociada con Rhadamanthys Stealer y StealC Stealer, que utiliza Lua obfuscado y contratos inteligentes de Polygon para la recuperación de información de comando y control. El malware presenta características avanzadas como pseudo-polimorfismo y uso de NTDLL para invocaciones de funciones WINAPI de bajo nivel.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9026",
-    "fuente": "TG: vx-underground",
-    "ttps": [
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion (no se menciona explícitamente, pero se puede inferir por el pseudo-polimorfismo)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1211",
-        "name": "Exploitation for Credential Access (no se menciona explícitamente, pero se puede inferir por la asociación con Rhadamanthys Stealer y StealC Stealer)"
-      },
-      {
-        "id": "T1047",
-        "name": "Windows Management Instrumentation (no se menciona explícitamente, pero se puede inferir por el uso de NTDLL para invocaciones de funciones WINAPI)"
-      },
-      {
-        "id": "T1102",
-        "name": "Web Service (se menciona el uso de contratos inteligentes de Polygon para la recuperación de información de comando y control)"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 908,
@@ -2697,44 +2650,6 @@
     "iocs": {}
   },
   {
-    "id": 833,
-    "fecha": "2026-06-24T22:13:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque zero-day en Cisco SD-WAN",
-    "resumen": "Se han revelado detalles sobre cómo los atacantes explotaron la vulnerabilidad CVE-2026-20245 en Cisco Catalyst SD-WAN para crear cuentas root maliciosas en dispositivos objetivo, lo que les permitió obtener acceso de root en ataques de zero-day. Los vectores de ataque incluyeron la explotación de esta vulnerabilidad para establecer acceso no autorizado a los dispositivos de red.",
-    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1136",
-        "name": "Create Account"
-      },
-      {
-        "id": "T1215",
-        "name": "Credentials from Passwords"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-20245"
-      ]
-    }
-  },
-  {
     "id": 832,
     "fecha": "2026-06-24T22:13:32Z",
     "categoria": "Ciberseguridad",
@@ -2831,23 +2746,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 828,
-    "fecha": "2026-06-24T19:41:09Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Vim",
-    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros (Integer Overflow) en el repositorio de GitHub de Vim, con un CVSS Score de 7.8, considerada como alta (HIGH), que afecta a versiones anteriores a 9.0.1532. Esta vulnerabilidad podría ser explotada para ejecutar código malicioso en sistemas que utilizan versiones no actualizadas de Vim.",
-    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-2610",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2023-2610"
-      ]
-    }
   },
   {
     "id": 827,
@@ -3372,30 +3270,6 @@
     "iocs": {}
   },
   {
-    "id": 807,
-    "fecha": "2026-06-24T11:18:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque a Cisco Unified CM",
-    "resumen": "Se ha detectado una explotación en ataques reales de la vulnerabilidad CVE-2026-20230 en Cisco Unified Communications Manager, que permite a un atacante sin autenticación escribir ficheros en el sistema y potencialmente escalar privilegios hasta root si WebDialer está habilitado. Esto representa un riesgo significativo para las organizaciones que utilizan este sistema y requiere una actualización urgente para mitigar el vector de ataque SSRF.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/explotan-en-ataques-un-fallo-critico-en-cisco-unified-cm-con-webdialer-habilitado-2/?utm_source=rss&utm_medium=rss&utm_campaign=explotan-en-ataques-un-fallo-critico-en-cisco-unified-cm-con-webdialer-habilitado-2",
-    "fuente": "Una al Día (Hispasec)",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/explotan-en-ataques-un-fallo-critico-en-cisco-unified-cm-con-webdialer-habilitado-2/"
-      ],
-      "cve": [
-        "CVE-2026-20230"
-      ]
-    }
-  },
-  {
     "id": 806,
     "fecha": "2026-06-24T06:44:23Z",
     "categoria": "Ciberseguridad",
@@ -3758,44 +3632,6 @@
     "iocs": {}
   },
   {
-    "id": 793,
-    "fecha": "2026-06-23T22:09:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-20230 explotada",
-    "resumen": "Se ha detectado la explotación de una vulnerabilidad de alta gravedad SSRF (Server-Side Request Forgery) en el servidor de Cisco Unified Communications Manager, identificada como CVE-2026-20230, lo que permite a los atacantes realizar ataques dirigidos a los sistemas de comunicaciones unificadas. Esta vulnerabilidad puede ser utilizada para acceder a recursos internos y realizar acciones no autorizadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1NTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploitation for Client Execution"
-      },
-      {
-        "id": "T1558.003",
-        "name": "Steal Application Access Token (NO, no es explícito, reemplazar)"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-20230"
-      ]
-    }
-  },
-  {
     "id": 792,
     "fecha": "2026-06-23T22:09:04Z",
     "categoria": "Ciberseguridad",
@@ -3948,40 +3784,6 @@
     }
   },
   {
-    "id": 785,
-    "fecha": "2026-06-23T17:14:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque FortiBleed",
-    "resumen": "Los actores de amenaza han desarrollado un sniffer basado en Golang para explotar 430,000 firewalls FortiGate, identificando 110 millones de credenciales en una campaña global en curso, lo que convierte los firewalls en herramientas de robo de credenciales. El ataque aprovecha vulnerabilidades en los firewalls para obtener acceso no autorizado a información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4NjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/fortibleed-attackers-firewalls-credentials-stealers",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1005",
-        "name": "Data from Local System"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 784,
     "fecha": "2026-06-23T17:14:13Z",
     "categoria": "Ciberseguridad",
@@ -4035,19 +3837,6 @@
         "name": "Email Collection"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 782,
-    "fecha": "2026-06-23T17:14:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Scattered Spider se rinde",
-    "resumen": "Dos miembros del grupo de ciberdelincuencia 'Scattered Spider' se declararon culpables de hackear los sistemas de Transport for London (TfL) en 2024, lo que pone de relieve la vulnerabilidad de infraestructuras críticas a ataques cibernéticos. El incidente resalta la importancia de la ciberseguridad en el sector de transporte público.",
-    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4NDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/scattered-spider-members-plead-guilty-to-hacking-transport-for-london/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
     "iocs": {}
   },
   {
@@ -4426,40 +4215,6 @@
     "enlace_original": "https://www.bleepingcomputer.com/news/security/jaredfromsubway-mev-bot-hacked-in-15-million-crypto-theft/",
     "fuente": "Bleeping Computer",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 764,
-    "fecha": "2026-06-22T22:44:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidades en Dify",
-    "resumen": "Se han descubierto cuatro vulnerabilidades en la plataforma Dify, que podrían permitir a atacantes leer conversaciones de inteligencia artificial (IA) de otras aplicaciones sin autenticación, afectando la privacidad de los datos de los clientes. Las vulnerabilidades, conocidas como DifyTap, fueron identificadas por Zafran Security y podrían ser explotadas para acceder a información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1213",
-        "name": "Exploitation for Credential Access"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      }
-    ],
     "iocs": {}
   },
   {
@@ -5557,19 +5312,6 @@
     "iocs": {}
   },
   {
-    "id": 723,
-    "fecha": "2026-06-19T22:01:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Gravity SMTP",
-    "resumen": "Se ha identificado una vulnerabilidad de divulgación de información no autenticada en el plugin Gravity SMTP de WordPress, que afecta a 100,000 sitios web, y está siendo explotada por actores maliciosos. Los atacantes pueden aprovechar esta vulnerabilidad para obtener información sensible, lo que podría facilitar ataques de phishing o malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MDY0ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-info-disclosure-bug-in-gravity-smtp-wordpress-plugin/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
     "id": 722,
     "fecha": "2026-06-19T19:44:07Z",
     "categoria": "Ciberseguridad",
@@ -5853,44 +5595,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 711,
-    "fecha": "2026-06-19T14:55:20Z",
-    "categoria": "IA",
-    "severidad": "CRITICA",
-    "titulo": "Spyware con texto prohibido evita análisis AI",
-    "resumen": "Desarrolladores de malware están incorporando texto sobre armas nucleares y biológicas en su spyware para evitar el análisis automático de modelos de lenguaje de IA, utilizando técnicas como comentarios de JavaScript y sustitución de caracteres para engañar a los sistemas de detección. Esto puede causar problemas en pipelines de análisis débiles, pero no evita la detección estática mediante reglas YARA, análisis de entropía y otros métodos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217911-a598ed4c4023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODA5MjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html",
-    "fuente": "Schneier on Security",
-    "ttps": [
-      {
-        "id": "T1497",
-        "name": "Obfuscación o Ofuscación"
-      },
-      {
-        "id": "T1497.002",
-        "name": "Ofuscación de código mediante comentarios y sustitución de caracteres"
-      },
-      {
-        "id": "T1480",
-        "name": "Análisis de evasión"
-      },
-      {
-        "id": "T1497.003",
-        "name": "Ofuscación de código mediante técnicas de codificación"
-      },
-      {
-        "id": "T1498",
-        "name": "Network Denial of Service"
-      }
-    ],
-    "iocs": {
-      "url": [
-        "https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious"
-      ]
-    }
   },
   {
     "id": 710,
