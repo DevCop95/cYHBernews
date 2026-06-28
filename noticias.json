@@ -1,5 +1,25 @@
 [
   {
+    "id": 928,
+    "fecha": "2026-06-28T02:59:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-58058 en Nmap",
+    "resumen": "La versión de Nmap hasta 7.99 presenta una vulnerabilidad (CVE-2026-58058) que permite a un atacante realizar lecturas fuera de límites y provocar un crash durante escaneos IPv6 raw, mediante el envío de respuestas IPv6 truncadas con encabezados de extensión manipulados. Esto puede ser explotado por un objetivo escaneado o un atacante en el camino que devuelve una respuesta IPv6 maliciosa.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MTU1NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/178085",
+    "fuente": "TG: CVE Notify",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "netutil.cc"
+      ],
+      "cve": [
+        "CVE-2026-58058"
+      ]
+    }
+  },
+  {
     "id": 927,
     "fecha": "2026-06-28T02:59:02Z",
     "categoria": "Ciberseguridad",
