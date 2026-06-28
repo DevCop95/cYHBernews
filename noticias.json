@@ -1,5 +1,40 @@
 [
   {
+    "id": 939,
+    "fecha": "2026-06-28T16:07:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos expone 14,2M logins",
+    "resumen": "Una brecha de datos en el sistema de correo electrónico de KDDI Corporation, un operador de telecomunicaciones japonés, ha expuesto hasta 14,2 millones de logins de correo electrónico de usuarios de seis proveedores de servicios de internet (ISPs), lo que puede permitir ataques de phishing y otros tipos de fraudes. El incidente afecta a cinco ISPs adicionales que utilizan el sistema de correo electrónico de KDDI.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2NjI4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:data breach exposes up to 14 2 million email logins at six isps",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1589",
+        "name": "Gather Victim Host Information"
+      },
+      {
+        "id": "T1590",
+        "name": "Gather Victim Org Information"
+      },
+      {
+        "id": "T1588",
+        "name": "Obtain Initial Access"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 938,
     "fecha": "2026-06-28T13:27:21Z",
     "categoria": "IA",
