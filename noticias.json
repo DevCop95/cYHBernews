@@ -1,5 +1,43 @@
 [
   {
+    "id": 930,
+    "fecha": "2026-06-28T02:59:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en RustDesk",
+    "resumen": "Se ha identificado la vulnerabilidad CVE-2026-58056 en RustDesk, que permite a un atacante inyectar entradas de teclado y mouse, y acceder a capturas de pantalla sin autorización, aprovechando que las banderas de capacidad no se limpian después de una sesión de transferencia de archivos. Esto permite a un atacante actuar fuera del alcance autorizado, representando un riesgo significativo para la seguridad de los sistemas que utilizan RustDesk.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MTU1NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/178083",
+    "fuente": "TG: CVE Notify",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1055",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1113",
+        "name": "Screen Capture"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation de Vulnerabilidades de Software"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58056"
+      ]
+    }
+  },
+  {
     "id": 929,
     "fecha": "2026-06-28T02:59:16Z",
     "categoria": "Ciberseguridad",
