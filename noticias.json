@@ -1,5 +1,23 @@
 [
   {
+    "id": 934,
+    "fecha": "2026-06-28T07:02:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-13482",
+    "resumen": "Se ha detectado una vulnerabilidad en skypilot-org skypilot versión 0.12.0, que afecta la función de codificación de nombres de usuario, permitiendo el uso de hashes débiles y posibles ataques remotos con complejidad alta y exploitabilidad difícil. La explotación ya es pública y puede ser utilizada por atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MzAxNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/178089",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-13482",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-13482"
+      ]
+    }
+  },
+  {
     "id": 933,
     "fecha": "2026-06-28T06:16:03Z",
     "categoria": "Ciberseguridad",
