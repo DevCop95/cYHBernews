@@ -1,5 +1,44 @@
 [
   {
+    "id": 940,
+    "fecha": "2026-06-28T21:59:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SQL en JoomCCK",
+    "resumen": "La extensión JoomCCK de Joomla expone una tarea de controlador frontal que construye sentencias SQL concatenando parámetros de solicitud de usuario sin escapar ni parametrizar, lo que permite ataques de inyección SQL. Esto puede permitir a atacantes ejecutar código malicioso en la base de datos del sitio web.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2ODM5Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/178298",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-49048",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated Input"
+      },
+      {
+        "id": "T1055.001",
+        "name": "Unrestricted File Upload no aplica, en su lugar:"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-49048"
+      ]
+    }
+  },
+  {
     "id": 939,
     "fecha": "2026-06-28T16:07:09Z",
     "categoria": "Ciberseguridad",
