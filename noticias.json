@@ -1598,40 +1598,6 @@
     "iocs": {}
   },
   {
-    "id": 883,
-    "fecha": "2026-06-26T22:08:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Hackers rusos atacan claves de recuperación de Signal",
-    "resumen": "La campaña de phishing atribuida a servicios de inteligencia rusos ha evolucionado para robar claves de recuperación de backup de Signal, permitiendo a los atacantes acceder a mensajes históricos de las víctimas. El vector de ataque se centra en el engaño a usuarios para obtener acceso a sus claves de recuperación, lo que podría comprometer la privacidad y seguridad de las comunicaciones en Signal.",
-    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MTE3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-russian-hackers-now-target-signal-backup-recovery-keys/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 882,
     "fecha": "2026-06-26T19:42:06Z",
     "categoria": "IA",
@@ -2362,53 +2328,6 @@
         "https://www.washingtonpost.com/technology/2026/06/04/inside-trump-backed-push-bring-ai-doctors-into-american-medicine/"
       ]
     }
-  },
-  {
-    "id": 854,
-    "fecha": "2026-06-25T17:08:53Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Extensión Adblock con capacidad de inyección de scripts",
-    "resumen": "Una extensión de bloqueo de anuncios para YouTube con más de 10 millones de instalaciones ha sido encontrada con la capacidad de ejecutar código JavaScript arbitrario, lo que podría permitir ataques de inyección de scripts y comprometer la seguridad de los usuarios. La extensión, llamada Adblock for YouTube, tiene una badge de \"Destacado\" en la Chrome Web Store y podría ser utilizada para realizar ataques de phishing o malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MDczMzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/chrome-ad-blocker-with-10m-installs.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 853,
-    "fecha": "2026-06-25T17:08:47Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Malware macOS evita análisis AI",
-    "resumen": "Se ha descubierto un nuevo malware para macOS llamado \"Gaslight\" que confunde las herramientas de análisis de malware asistidas por IA al ocultar cadenas de inyección de comandos y datos de depuración falsos dentro del ejecutable, lo que complica su detección y análisis. Este enfoque innovador de evasión utiliza técnicas de ofuscamiento para eludir la detección por parte de herramientas de seguridad que dependen de modelos de lenguaje y aprendizaje automático.",
-    "url_imagen": "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MDczMjd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1497",
-        "name": "Obfuscation"
-      },
-      {
-        "id": "T1497.001",
-        "name": "Binary Padding"
-      },
-      {
-        "id": "T1497.002",
-        "name": "Software Packing"
-      },
-      {
-        "id": "T1497.003",
-        "name": "Steganography"
-      },
-      {
-        "id": "T1497.004",
-        "name": "Code Obfuscation"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 852,
@@ -3478,40 +3397,6 @@
     "iocs": {}
   },
   {
-    "id": 808,
-    "fecha": "2026-06-24T11:18:19Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Backdoor Mistic vinculado a KongTuke",
-    "resumen": "Se ha detectado un nuevo backdoor llamado Mistic en ataques financieramente motivados que apuntan a organizaciones en sectores como seguros, educación, TI y servicios profesionales, con posible conexión a un acceso a ransomware a través de KongTuke. Los vectores de ataque incluyen el uso de este backdoor para obtener acceso no autorizado a sistemas y redes.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/stealthy-mistic-backdoor-linked-to-ransomware-access-broker-kongtuke/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1219",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1505.003",
-        "name": "Server Software Vulnerabilities (se infiere por el uso de backdoor y acceso a sistemas y redes)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 806,
     "fecha": "2026-06-24T06:44:23Z",
     "categoria": "Ciberseguridad",
@@ -3789,19 +3674,6 @@
     "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzNzF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/falsas-alertas-emergencia-brasil-acceso-indebido-defensa-civil/",
     "fuente": "WeLiveSecurity",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 796,
-    "fecha": "2026-06-23T22:09:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Infraestructura ciberscam incautada",
-    "resumen": "El Departamento de Justicia ha incautado una cuenta de computación en la nube utilizada por subsidiarias del grupo Huione, un conglomerado asiático del sureste que fue separado del sistema financiero estadounidense el año pasado, probablemente debido a actividades de ciberdelincuencia. La incautación puede haber interrumpido operaciones de phishing, malware o ransomware asociadas con la empresa.",
-    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1Njl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/feds-seize-alleged-cyber-scam-infrastructure-southeast-asia",
-    "fuente": "The Record",
     "ttps": [],
     "iocs": {}
   },
@@ -4115,40 +3987,6 @@
     }
   },
   {
-    "id": 780,
-    "fecha": "2026-06-23T14:46:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque cibernético en Londres",
-    "resumen": "Dos miembros del grupo Scattered Spider han admitido su culpabilidad en un ataque cibernético que afectó la red de Transport for London en 2024, causando interrupciones en los servicios de transporte público durante meses, lo que sugiere un posible vector de ataque a través de vulnerabilidades en la infraestructura de TI. El incidente resalta la importancia de la ciberseguridad en la protección de servicios críticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjU5OTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/guilty-plea-tfl-cyberattack-scattered-spider-members",
-    "fuente": "The Record",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 779,
     "fecha": "2026-06-23T14:46:29Z",
     "categoria": "Ciberseguridad",
@@ -4264,48 +4102,6 @@
     "iocs": {}
   },
   {
-    "id": 773,
-    "fecha": "2026-06-23T11:56:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Malware en npm como herramientas PostCSS",
-    "resumen": "Se ha detectado una campaña de cadena de suministro en npm que utiliza paquetes maliciosos disfrazados como herramientas de PostCSS para instalar un Remote Access Trojan (RAT) en sistemas Windows, aumentando el riesgo en entornos de desarrollo y CI/CD donde la instalación de dependencias puede exponer credenciales y tokens. El vector de ataque se aprovecha de la confianza en paquetes de npm para ejecutar código malicioso durante la instalación.",
-    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMTU4MTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/paquetes-maliciosos-en-npm-se-hacen-pasar-por-herramientas-de-postcss-para-instalar-un-rat-en-windows/?utm_source=rss&utm_medium=rss&utm_campaign=paquetes-maliciosos-en-npm-se-hacen-pasar-por-herramientas-de-postcss-para-instalar-un-rat-en-windows",
-    "fuente": "Una al Día (Hispasec)",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1204.002",
-        "name": "Malicious File"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se infiere que el paquete malicioso se ejecuta durante la instalación)"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1219",
-        "name": "Remote Access Tools (se menciona explícitamente el uso de un Remote Access Trojan)"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/paquetes-maliciosos-en-npm-se-hacen-pasar-por-herramientas-de-postcss-para-instalar-un-rat-en-windows/"
-      ]
-    }
-  },
-  {
     "id": 772,
     "fecha": "2026-06-23T06:48:18Z",
     "categoria": "Ciberseguridad",
@@ -4351,40 +4147,6 @@
         "CVE-2024-40766"
       ]
     }
-  },
-  {
-    "id": 769,
-    "fecha": "2026-06-23T06:47:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque de VBScript vía WhatsApp",
-    "resumen": "Una campaña de ataque utiliza mensajes directos de WhatsApp para distribuir archivos maliciosos de VBScript que instalan el software legítimo de gestión remota ManageEngine RMM, afectando a usuarios de WhatsApp Desktop y WhatsApp Web en varios países. El vector de ataque se basa en el envío de documentos falsos que ejecutan el código malicioso.",
-    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxOTcyNzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/whatsapp-vbscript-campaign-uses-fake.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 768,
@@ -4457,40 +4219,6 @@
     "enlace_original": "https://www.bleepingcomputer.com/news/security/jaredfromsubway-mev-bot-hacked-in-15-million-crypto-theft/",
     "fuente": "Bleeping Computer",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 763,
-    "fecha": "2026-06-22T22:44:05Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque de phishing en WhatsApp",
-    "resumen": "Un campaña de malware en curso está utilizando mensajes engañosos en WhatsApp para distribuir archivos VBScript, lo que permite el acceso remoto al sistema, afectando a usuarios en varios países a través de un vector de ataque de phishing. El ataque aprovecha la confianza en documentos empresariales falsos para infectar PCs.",
-    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/whatsapp-phishing-attack-uses-fake-business-docs-to-hack-pcs/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1219",
-        "name": "Remote Access Tools"
-      },
-      {
-        "id": "T1193",
-        "name": "Spearphishing via Service"
-      }
-    ],
     "iocs": {}
   },
   {
@@ -4592,40 +4320,6 @@
     "iocs": {}
   },
   {
-    "id": 758,
-    "fecha": "2026-06-22T20:39:46Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Campaña FortiBleed roba credenciales",
-    "resumen": "La campaña FortiBleed, de gran escala, utilizó sniffers personalizados para extraer secretos de autenticación de dispositivos FortiGate comprometidos y robar credenciales, afectando la seguridad de las redes que confían en estos firewalls. Los atacantes aprovecharon vulnerabilidades en los dispositivos Fortinet para instalar los sniffers y obtener acceso no autorizado.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217793-aa1fa7daa216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA3ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/fortibleed-campaign-used-custom-fortigate-sniffer-to-steal-credentials/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1552",
-        "name": "Unconventional Password Brute Forcing no aplica, en su lugar: T1110 - Brute Force no aplica, en su lugar: T1204 no aplica, en su lugar:"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 757,
     "fecha": "2026-06-22T16:48:17Z",
     "categoria": "IA",
@@ -4659,40 +4353,6 @@
         "https://www.theguardian.com/technology/2025/nov/19/tiktok-users-power-reduce-ai-content-on-feeds"
       ]
     }
-  },
-  {
-    "id": 756,
-    "fecha": "2026-06-22T16:48:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque cibernético en Brasil",
-    "resumen": "Un incidente de ciberseguridad sospechado ha desencadenado alertas de emergencia falsas en varias partes de Brasil, afectando el sistema de alertas de la Defensa Civil, que emite advertencias sobre amenazas inminentes como inundaciones y deslizamientos de tierra. El vector de ataque parece ser un acceso no autorizado al sistema de alertas, lo que ha generado al menos una docena de alertas falsas.",
-    "url_imagen": "https://images.unsplash.com/photo-1581092336206-b9e5146be6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4OTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/suspected-cyberattack-triggers-false-emergency-alerts-brazil",
-    "fuente": "The Record",
-    "ttps": [
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1565",
-        "name": "Data Manipulation"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 755,
@@ -4925,19 +4585,6 @@
     }
   },
   {
-    "id": 747,
-    "fecha": "2026-06-21T22:10:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Desarticulación de TA569",
-    "resumen": "La Operación Endgame ha desmantelado parte de la infraestructura de TA569, un grupo de ciberdelincuencia destacado, mediante una acción conjunta de autoridades de Alemania, Países Bajos, Estados Unidos y Canadá, impactando significativamente su capacidad para distribuir malware. Esto representa un golpe importante contra la ciberdelincuencia global, reduciendo el riesgo de ataques de malware y ransomware.",
-    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNzk4MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/endgame-desarticula-a-ta569-gigante-mundial-del-malware/",
-    "fuente": "CyberSecurity News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
     "id": 746,
     "fecha": "2026-06-21T22:10:06Z",
     "categoria": "IA",
@@ -5080,40 +4727,6 @@
         "CVE-2026-32208"
       ]
     }
-  },
-  {
-    "id": 741,
-    "fecha": "2026-06-21T16:27:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Botnet AryStinger infecta routers",
-    "resumen": "La botnet AryStinger, un malware no documentado previamente, ha comprometido más de 4.000 routers obsoletos de D-Link en todo el mundo, convirtiéndolos en proxies para tráfico malicioso, lo que puede facilitar ataques de phishing, DDoS y otros tipos de ciberdelincuencia. El vector de ataque aprovecha la falta de actualizaciones de seguridad en los dispositivos afectados.",
-    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNTkyNDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/arystinger-botnet-infected-thousands-of-d-link-routers-worldwide/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 740,
