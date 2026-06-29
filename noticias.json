@@ -1,5 +1,243 @@
 [
   {
+    "id": 970,
+    "fecha": "2026-06-29T19:51:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques de correo electrónico",
+    "resumen": "Los ataques de compromiso de correo electrónico empresarial (BEC) están evolucionando hacia la impersonación convincente en lugar del uso de malware, lo que los hace más difíciles de detectar para los empleados y las defensas de correo electrónico tradicionales, por lo que se requiere el uso de inteligencia artificial (IA) conductual para identificar amenazas sofisticadas y automatizar flujos de trabajo de respuesta. Esto puede ayudar a mejorar la seguridad contra ataques de phishing y otros tipos de amenazas de correo electrónico.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/webinar-why-business-email-compromise-attacks-keep-succeeding/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:webinar why business email compromise attacks keep succeeding",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 969,
+    "fecha": "2026-06-29T19:51:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques de Mustang Panda",
+    "resumen": "El grupo de espionaje alineado con China, Mustang Panda, está llevando a cabo dos campañas contra el gobierno indio y objetivos de energía hidroeléctrica, desplegando nuevo malware y utilizando el servicio de nube legítimo Zoho WorkDrive como canal de comando. Se han detectado compromisos activos en redes del gobierno indio, incluyendo máquinas utilizadas por personal administrativo senior.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:mustang panda uses zoho workdrive as command channel in indian government attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 968,
+    "fecha": "2026-06-29T19:51:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SimpleHelp explotada",
+    "resumen": "Se está explotando una vulnerabilidad crítica (CVE-2026-48558) en SimpleHelp para desplegar el malware Djinn Stealer, un ladrón de información cross-platform que afecta a Windows, macOS y Linux, representando un riesgo significativo para la seguridad de la información en múltiples plataformas. El vector de ataque aprovecha la vulnerabilidad para infiltrar sistemas y robar datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "cve:cve-2026-48558",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-48558"
+      ]
+    }
+  },
+  {
+    "id": 967,
+    "fecha": "2026-06-29T19:51:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques a sistemas de agua",
+    "resumen": "Actores estatales de Irán, Rusia y China están explotando vulnerabilidades como contraseñas débiles, PLCs expuestos y segmentación deficiente en sistemas de agua para sabotaje, sin necesidad de malware sofisticado. Estos ataques pueden tener impactos significativos en la infraestructura crítica y la seguridad pública.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/iran-russia-china-target-water-systems-sabotage",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:iran russia china target water systems for sabotage",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 966,
+    "fecha": "2026-06-29T19:51:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-58000",
+    "resumen": "Se ha descubierto una vulnerabilidad de inyección de comandos en luci-proto-openvpn versión 0.11.1, que permite a un usuario autenticado de LuCI con acceso a la configuración del protocolo OpenVPN ejecutar comandos arbitrarios como root mediante la inyección de metacaracteres de shell en el parámetro cl_meta. La vulnerabilidad ha sido corregida en el commit e4ff45e.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/179157",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-58000",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58000"
+      ]
+    }
+  },
+  {
+    "id": 965,
+    "fecha": "2026-06-29T19:51:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Malware con código \"vibe\"",
+    "resumen": "Un analista sospecha que un malware stager contiene código \"vibe\", caracterizado por comentarios descriptivos inusuales, lo que sugiere un enfoque poco común en la creación de malware. Esto podría indicar una nueva tendencia en la creación de malware, con posibles implicaciones para la detección y el análisis de amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9042",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:chat i don t want to jump to conclusions but i have a sneaking suspicion this malware stager was vibe coded histor",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 964,
+    "fecha": "2026-06-29T19:51:04Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Loop Engineering reemplaza a Prompt Engineering",
+    "resumen": "La técnica de \"loop engineering\" está reemplazando a la \"prompt engineering\" en la interacción con la IA, permitiendo a los usuarios diseñar sistemas de retroalimentación que mejoran la precisión y eficiencia de los resultados, aunque plantea desafíos en términos de costos y complejidad. El enfoque de \"loop engineering\" implica el diseño de bucles que permiten a la IA autoevaluarse y autocorregirse de forma autónoma.",
+    "url_imagen": "https://images.unsplash.com/photo-1696258686286-1191184126aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/moda-prompt-engineering-paso-se-lleva-loop-engineering",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la moda del prompt engineering ya pasó ahora lo que se lleva es el loop engineering",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "addyosmani.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://addyosmani.com/blog/loop-engineering/",
+        "https://i.blogs.es/33df39/developer-copia-2/1024_2000.jpeg",
+        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/1024_2000.jpeg",
+        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/1366_2000.jpeg",
+        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/450_1000.jpeg",
+        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/650_1200.jpeg",
+        "https://i.blogs.es/465004/immich-android-tv-javipas3/1024_682.jpeg",
+        "https://i.blogs.es/465004/immich-android-tv-javipas3/500_333.jpeg",
+        "https://i.blogs.es/465004/immich-android-tv-javipas3/840_560.jpeg",
+        "https://unsplash.com/es/fotos/mujer-con-camisa-negra-sentada-al-lado-de-un-monitor-de-computadora-de-pantalla-plana-negra-Im_cQ6hQo10"
+      ]
+    }
+  },
+  {
+    "id": 963,
+    "fecha": "2026-06-29T19:51:00Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Corte Suprema: Historiales de ubicación protegidos",
+    "resumen": "La Corte Suprema de EE. UU. dictaminó que los historiales de ubicación de los teléfonos celulares están protegidos por la Cuarta Enmienda, lo que significa que la policía debe obtener una orden judicial para solicitar datos de geovallado relacionados con teléfonos celulares individuales, reforzando la privacidad digital. Esto impacta directamente en la forma en que se pueden obtener y utilizar estos datos en investigaciones, limitando el acceso sin autorización judicial.",
+    "url_imagen": "https://images.unsplash.com/photo-1564707944519-7a116ef3841c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/supreme-court-geofencing-ruling-fourth-amendment",
+    "fuente": "The Record",
+    "dedup_key": "txt:justices rule that cellphone location histories are protected by the fourth amendment",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 962,
+    "fecha": "2026-06-29T19:50:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Debilidades en claves RSA",
+    "resumen": "Investigadores han descubierto una nueva clase de claves RSA débiles que contienen muchos ceros, lo que las hace vulnerables a ataques de factorización, y se han encontrado ejemplos de estas claves en el wild, incluyendo certificados emitidos a grandes organizaciones y hosts SSH que utilizan software específico. Estas vulnerabilidades podrían ser el resultado de implementaciones criptográficas fallidas o, especulativamente, de una puerta trasera deliberadamente diseñada.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/factoring-rsa-keys-with-many-zeros.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:factoring rsa keys with many zeros",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "blog.trailofbits.com",
+        "www.schneier.com"
+      ],
+      "url": [
+        "https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/"
+      ]
+    }
+  },
+  {
+    "id": 961,
+    "fecha": "2026-06-29T19:50:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extensión maliciosa en Chrome",
+    "resumen": "Se ha detectado una extensión maliciosa de Chrome que se hacía pasar por el motor de búsqueda de IA Perplexity, interceptando y registrando las búsquedas y la entrada en la barra de direcciones de los usuarios, enviando la información a un servidor controlado por el atacante antes de redirigir a los resultados reales. La extensión fue eliminada de la tienda de Chrome después de una notificación responsable por parte de Microsoft.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:malicious perplexity chrome extension intercepted searches and address bar input",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Spearphishing via Aplicación"
+      },
+      {
+        "id": "T1056.001",
+        "name": "Keylogging: Captura de entrada de teclado"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 960,
     "fecha": "2026-06-29T15:39:26Z",
     "categoria": "Ciberseguridad",
