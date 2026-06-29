@@ -1,5 +1,296 @@
 [
   {
+    "id": 952,
+    "fecha": "2026-06-29T10:49:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-6734",
+    "resumen": "La vulnerabilidad CVE-2026-6734 (CVSS 7.5) en undici permite el enrutamiento de solicitudes entre orígenes, lo que puede causar la exposición de credenciales y datos de solicitud, así como la degradación silenciosa de HTTPS a HTTP. Los usuarios afectados son aplicaciones que utilizan Socks5ProxyAgent y realizan solicitudes a más de un origen.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-6734",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-6734",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-6734"
+      ]
+    }
+  },
+  {
+    "id": 951,
+    "fecha": "2026-06-29T10:49:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Paquetes npm y Go comprometidos",
+    "resumen": "Investigadores de ciberseguridad han descubierto paquetes npm y Go comprometidos que despliegan un robo de información basado en Python en hosts Windows, Linux y macOS, evitando los caminos de ejecución comunes de npm a través de scripts de ciclo de vida. El ataque aprovecha la compatibilidad con las medidas de seguridad de npm v12.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hijacked npm and go packages use vs code tasks to deploy python infostealer",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 950,
+    "fecha": "2026-06-29T10:49:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware de Vendor Comprometido",
+    "resumen": "Un archivo sospechoso enviado por un proveedor a una empresa importante contiene malware de alto riesgo con características avanzadas, incluyendo código position independent, secciones extra, extracción de segmentos y compresión ASPack 2, así como capacidades anti-VM y autodestrucción, lo que sugiere una posible comprometición del proveedor o una operación maliciosa deliberada. El malware puede haber infectado a la empresa si se ejecutó el archivo, por lo que se recomienda tomar medidas de seguridad inmediatas.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9033",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:get dm hey smelly i work for kind of important place vendor sent us weird file its sus af what do u",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Defacement: Malware"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1497.003",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 949,
+    "fecha": "2026-06-29T10:49:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en qSnapper",
+    "resumen": "Se ha identificado una vulnerabilidad de tipo time-to-check-time-of-use (CVE-2026-41045) en la autenticación de polkit en qSnapper, versión anterior a 1.3.3, que permite a un atacante local bypassar la autenticación y operar como usuario root. La vulnerabilidad tiene un CVSS Score de 8.1, clasificada como HIGH.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-41045",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-41045",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-41045"
+      ]
+    }
+  },
+  {
+    "id": 948,
+    "fecha": "2026-06-29T10:48:31Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "IA: EEUU actúa contra pérdida laboral",
+    "resumen": "La llegada de la IA podría destruir millones de puestos de trabajo en EEUU, lo que ha llevado a la creación de RAISE US, una organización sin ánimo de lucro que busca formar a empleados en perfiles con futuro en la economía de la IA, con el apoyo de empresas como Amazon, Microsoft y Anthropic. El objetivo es armonizar la evolución de la carrera de la IA sin dejar atrás a las personas, con una meta presupuestaria de 1.000 millones de dólares.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218534-156f33c28f8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/eeuu-se-ha-dado-cuenta-que-millones-trabajadores-no-tienen-futuro-ia-se-ha-puesto-manos-a-obra",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:eeuu se ha dado cuenta de que millones de trabajadores no tienen futuro por la ia y se ha puesto manos a la obra",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "fortune.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.designrush.com",
+        "www.goldmansachs.com",
+        "www.theregreview.org",
+        "www.wsj.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://fortune.com/2025/05/28/anthropic-ceo-warning-ai-job-loss/",
+        "https://i.blogs.es/228e3b/hack-capital-uv5_bsypfum-unsplash/375_142.jpeg",
+        "https://i.blogs.es/4b925c/shamin-haky-rik-i9rxpao-unsplash/1024_2000.jpeg",
+        "https://i.blogs.es/861b22/sap-y-los-programadores/1024_682.jpeg",
+        "https://i.blogs.es/861b22/sap-y-los-programadores/500_333.jpeg",
+        "https://i.blogs.es/861b22/sap-y-los-programadores/840_560.jpeg",
+        "https://unsplash.com/es/fotos/dos-hombres-trabajando-en-computadoras-en-una-oficina-RIk-i9rXPao",
+        "https://www.brookings.edu/articles/ai-labor-displacement-and-the-limits-of-worker-retraining/",
+        "https://www.designrush.com/agency/ai-companies/trends/ai-job-displacement-statistics",
+        "https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-global-workforce",
+        "https://www.raiseus.ai/news/release",
+        "https://www.theregreview.org/2025/11/01/seminar-post-pandemic-reforms-to-unemployment-insurance/",
+        "https://www.wsj.com/lifestyle/careers/the-new-push-to-ready-millions-for-ai-career-upheaval-dfb04cc5"
+      ]
+    }
+  },
+  {
+    "id": 947,
+    "fecha": "2026-06-29T10:48:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft retira 119 extensiones maliciosas",
+    "resumen": "Microsoft ha desactivado una operación de extensiones maliciosas en la tienda de Edge Add-ons que ocultaba su carga útil dentro de archivos de imagen y fuente comunes, y luego se activaba días después de la instalación para robar credenciales y ejecutar fraude publicitario, utilizando una técnica conocida como steganografía. Las 119 extensiones retiradas están vinculadas a un solo actor amenazante que ha estado activo desde al menos 2021.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/microsoft-removes-119-edge-extensions.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft removes 119 edge extensions that hid malware in images and fonts",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Steganografía en archivos de imagen"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credential Data from Local System"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 946,
+    "fecha": "2026-06-29T10:48:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Venta de datos de asistentes a eventos",
+    "resumen": "La venta de datos de asistentes a eventos se está llevando a cabo mediante el uso de Agentes IA, Web Scrapping y Data Enrich, lo que permite a los vendedores de datos obtener información valiosa sobre los asistentes a eventos sin necesidad de vulnerabilidades o hacking, afectando la privacidad y seguridad de los asistentes. Los vectores de ataque incluyen el registro en eventos y la extracción de datos a través de plataformas de networking.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/06/el-negocio-de-la-venta-de-datos-de-los_02013726864.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:el negocio de la venta de datos de los asistentes a eventos agentic ai web scrapping data enrich spam",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1615",
+        "name": "Web Scraping (similar a T1059, pero se enfoca en la extracción de datos de sitios web)"
+      },
+      {
+        "id": "T1583",
+        "name": "Acquire Infrastructure (no se menciona explícitamente, pero se puede inferir que se utiliza para obtener acceso a plataformas de networking y eventos)"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDjF1GBOnDN2Wpx9au5QttbnKFq1OwZ_6FU_zUQSdHht8ady1Yuz_AmKAKeD04G6zRMNZvZhUA4FF6DIAMpMPtvhPgrJ6PtBjQReGicPdttiT7wNd5HEshK0Td2w2i_sBe22TlWvJ6zPJRDr5qjemWB256a3bs_UANn0Ieo_DunuC9PVFu3_kX/s1174/eventos3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDjF1GBOnDN2Wpx9au5QttbnKFq1OwZ_6FU_zUQSdHht8ady1Yuz_AmKAKeD04G6zRMNZvZhUA4FF6DIAMpMPtvhPgrJ6PtBjQReGicPdttiT7wNd5HEshK0Td2w2i_sBe22TlWvJ6zPJRDr5qjemWB256a3bs_UANn0Ieo_DunuC9PVFu3_kX/w640-h456/eventos3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ8ZvyRbxuJYX1Qxant6URpWJyLje3PfhH1iW2xfJXUbnHvYYQEfUDhIhNGJvFZZ3oY9PjyBA8pvzzoGJPJDRrsXx3Lhw2lHqTucoWNCQjvBAGtjUCeAm5GovF8-HvnAJOZD0NIsFETpMeyKz8-siNC0tl6wymvMHJF7D3xPQbg_F9Vj2EbybJ/w640-h374/eventos7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSHCqBPd93cdCn51g71YWc3cxFA14_SPr0CTjWbw5kT9TG8IO8p5Uxd04HmA2ldHr8IWuwuP0RiLMnrY1kOlJYwZfvM5laEXjFb4IU2cIl7Vwogm6u2LygHpHBV44RRGAqWaBK8BGVoSTmU9qSFuPx7BRur-uxwk3JXntZOarPoslWH-oC4BTE/s1552/eventos1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSHCqBPd93cdCn51g71YWc3cxFA14_SPr0CTjWbw5kT9TG8IO8p5Uxd04HmA2ldHr8IWuwuP0RiLMnrY1kOlJYwZfvM5laEXjFb4IU2cIl7Vwogm6u2LygHpHBV44RRGAqWaBK8BGVoSTmU9qSFuPx7BRur-uxwk3JXntZOarPoslWH-oC4BTE/w490-h640/eventos1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmmLlflxJ_ET7kwxaVS-qosijt1tM9az3gW3HP2PG4pHLdaOgcWt2WbdEArmiHAC9D2otg7AMPzeKN9sPfgUMUh2kuJ7AFfDMV5mNwU8O-DzH0mfb6DQmS0GN4n7PH-_U6J512Lms8ZlV0eWPgYA2jLcqotaQPnNmBNVDdPygK0zriVtdq9Nk/s1668/Evento13.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmmLlflxJ_ET7kwxaVS-qosijt1tM9az3gW3HP2PG4pHLdaOgcWt2WbdEArmiHAC9D2otg7AMPzeKN9sPfgUMUh2kuJ7AFfDMV5mNwU8O-DzH0mfb6DQmS0GN4n7PH-_U6J512Lms8ZlV0eWPgYA2jLcqotaQPnNmBNVDdPygK0zriVtdq9Nk/w640-h342/Evento13.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoNtonRKcpY3VPwbysgBE70cxAKJJmyVMsAl0JG9YGQHXHB4uQ6VbELbftCdvSSoeO1LaxTJYfr44NkrGoyUQbMks0qZDVwMQF6G0iGl1w2URtQLh5r7gMydYGFoORAv5FV4um1qwBee9LljsUwlUzDbiARO9AFL1sK_hJ-l9pPAFxhyphenhyphenCrcel-/s2646/Eventos6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoNtonRKcpY3VPwbysgBE70cxAKJJmyVMsAl0JG9YGQHXHB4uQ6VbELbftCdvSSoeO1LaxTJYfr44NkrGoyUQbMks0qZDVwMQF6G0iGl1w2URtQLh5r7gMydYGFoORAv5FV4um1qwBee9LljsUwlUzDbiARO9AFL1sK_hJ-l9pPAFxhyphenhyphenCrcel-/w640-h360/Eventos6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9yU-kV05MvlC9pcHJgKDF-etDVRnAcqfMSsfMimKKiC6AF20ckRslQC6qJtI_-QnU92a2B-ATtyAKnlbauJIFipI9_4mzd8v_kt5V455siPposeaFvc9Q9yM61fZrFbyUzTbT3L8myIJ8ybAFtxjATNR1Uw5a_Sxx2qdQgB_vokGTzFHDt2dn/s1718/Evento2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9yU-kV05MvlC9pcHJgKDF-etDVRnAcqfMSsfMimKKiC6AF20ckRslQC6qJtI_-QnU92a2B-ATtyAKnlbauJIFipI9_4mzd8v_kt5V455siPposeaFvc9Q9yM61fZrFbyUzTbT3L8myIJ8ybAFtxjATNR1Uw5a_Sxx2qdQgB_vokGTzFHDt2dn/w640-h352/Evento2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitAHBHIA3LhCCv598FbgVzO5xJ74NkryQdurZElvGXK4dcX41-HxmeHFoOhCo7TIDZYHtI1PNstk27CAPnZ7eYqE5qYi3OdwLAfrtLc5NBKjwjGvJF2SCQf0dJ7aAa5_mnGNfRsReY7_r0n5NX1zpQp8Lu0sF-jgCKes1BYD3yIea95E6vyQfL/s1535/Eventos0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitAHBHIA3LhCCv598FbgVzO5xJ74NkryQdurZElvGXK4dcX41-HxmeHFoOhCo7TIDZYHtI1PNstk27CAPnZ7eYqE5qYi3OdwLAfrtLc5NBKjwjGvJF2SCQf0dJ7aAa5_mnGNfRsReY7_r0n5NX1zpQp8Lu0sF-jgCKes1BYD3yIea95E6vyQfL/w640-h356/Eventos0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW8ybcgdYApRodPC3QJpqYONHmH06oWYUyl_F31fJVDRV9tNY5FXVpWH1Zn_CeBL3ZrZcA4MS28Ox2l9wF7BncFCZKyeZ3UjJ9G0yeDe0S61vUTKEwcU0yA-ZWMkkaDkomxNTF8N7Asuk8JejfQ9CvBcFEvUIymI9ov2ZF23tG5-PGrn7BTzda/s986/eventos5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW8ybcgdYApRodPC3QJpqYONHmH06oWYUyl_F31fJVDRV9tNY5FXVpWH1Zn_CeBL3ZrZcA4MS28Ox2l9wF7BncFCZKyeZ3UjJ9G0yeDe0S61vUTKEwcU0yA-ZWMkkaDkomxNTF8N7Asuk8JejfQ9CvBcFEvUIymI9ov2ZF23tG5-PGrn7BTzda/w640-h240/eventos5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjry__5IsN5-_o-Pz25qbJjnh5hxHKb_uD4Buov7bQB56R4BKg58YOWZblHl9g_arvmezwmMZ8-JArp8NaBRF9ohCr_HhD3VBt1N2Rm7oCD6ZQ8wIm5ZL1Wx2wEaVACsv34vIOOCy7CcKLTX2lJ5v9eVMJ73834HxpeEqQI47LjXtvdzt0GNgyQ/s1874/evntos4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjry__5IsN5-_o-Pz25qbJjnh5hxHKb_uD4Buov7bQB56R4BKg58YOWZblHl9g_arvmezwmMZ8-JArp8NaBRF9ohCr_HhD3VBt1N2Rm7oCD6ZQ8wIm5ZL1Wx2wEaVACsv34vIOOCy7CcKLTX2lJ5v9eVMJ73834HxpeEqQI47LjXtvdzt0GNgyQ/w640-h506/evntos4.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2022/04/do-not-sell-my-information-e-mail-phone.html"
+      ],
+      "email": [
+        "chemaalonso@mypublicinbox.email"
+      ]
+    }
+  },
+  {
+    "id": 945,
+    "fecha": "2026-06-29T10:48:12Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Estafas en redes sociales",
+    "resumen": "Las redes sociales se han convertido en un punto de entrada para fraudes sofisticados que aprovechan la cercanía y la confianza de plataformas como Instagram, Facebook o WhatsApp, utilizando técnicas como la IA, cuentas robadas y falsas ofertas para elevar el riesgo de estafas. Los ataques pueden incluir phishing, malware y ransomware, aprovechando la falta de conciencia sobre la seguridad en línea de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/las-estafas-en-redes-sociales-se-industrializan-la-ia-las-cuentas-robadas-y-las-falsas-ofertas-elevan-el-riesgo/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:las estafas en redes sociales se industrializan la ia las cuentas robadas y las falsas ofertas elevan el riesgo",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1193",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 944,
     "fecha": "2026-06-29T04:15:45Z",
     "categoria": "Ciberseguridad",
