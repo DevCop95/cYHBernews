@@ -1,5 +1,41 @@
 [
   {
+    "id": 944,
+    "fecha": "2026-06-29T04:15:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL Injection",
+    "resumen": "Se ha descubierto una vulnerabilidad de inyección SQL (CVE-2026-13526) en el sistema de programación de clases y exámenes de SourceCodester 1.0, que afecta la función desconocida del archivo /edit_class.php, permitiendo la manipulación remota del argumento ID. La explotación de esta vulnerabilidad puede ser iniciada de forma remota y el exploit ya ha sido publicado.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDY1NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/178323",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-13526",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-13526"
+      ]
+    }
+  },
+  {
+    "id": 943,
+    "fecha": "2026-06-29T04:15:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Locutus",
+    "resumen": "Se ha identificado una vulnerabilidad de contaminación de prototipos (CVE-2026-25521) en las versiones de Locutus desde la 2.0.12 hasta antes de la 2.0.39, que permite contaminar Object.prototype a través de una entrada manipulada utilizando String.prototype, con un CVSS Score de 8.8 (HIGH). La vulnerabilidad ha sido corregida en la versión 2.0.39.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDY1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-25521",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-25521",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-25521"
+      ]
+    }
+  },
+  {
     "id": 942,
     "fecha": "2026-06-29T03:27:50Z",
     "categoria": "IA",
