@@ -1,5 +1,167 @@
 [
   {
+    "id": 960,
+    "fecha": "2026-06-29T15:39:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Criptografía Post-Cuántica",
+    "resumen": "La criptografía de clave pública actual, como la criptografía de curva elíptica y RSA, puede ser rota por computadoras cuánticas en el futuro, comprometiendo la confidencialidad de los datos cifrados, incluyendo credenciales. La creciente capacidad de la hardware cuántica obligará a las organizaciones a adoptar criptografía post-cuántica para proteger sus datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/why-post-quantum-cryptography-starts.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:why post quantum cryptography starts with credentials",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 959,
+    "fecha": "2026-06-29T15:39:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Sitios web DCloud Uni-App en estafas",
+    "resumen": "Se ha descubierto que más de 236,000 sitios web utilizan plantillas de estafas de inversión construidas con el framework DCloud Uni-App, un marco de desarrollo de aplicaciones de código abierto y multiplataforma legítimo, para poder realizar estafas de criptomonedas, operaciones de phishing y ataques de drenaje de billeteras. Los vectores de ataque incluyen sitios web de intercambio de criptomonedas falsos, operaciones de \"pig-butchering\" multilingües y redes de phishing de WhatsApp.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/236000-dcloud-uni-app-sites-used-in.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:236 000 dcloud uni app sites used in crypto scams phishing and wallet drainers",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing de Mensajes"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing de Redes Sociales"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 958,
+    "fecha": "2026-06-29T15:39:08Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Problema de identidad en AI",
+    "resumen": "Los agentes de IA pueden acceder a datos, desencadenar flujos de trabajo y tomar acciones en sistemas empresariales, lo que los convierte en objetivos atractivos para ataques, ya que su identidad y privilegios pueden ser explotados por atacantes. La gobernanza de estas identidades privilegiadas se está convirtiendo en esencial para la seguridad empresarial.",
+    "url_imagen": "https://images.unsplash.com/photo-1696258686263-9f42a5e34371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/agentic-ai-has-an-identity-problem-and-attackers-know-it/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:agentic ai has an identity problem and attackers know it",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 957,
+    "fecha": "2026-06-29T15:39:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2024-54013",
+    "resumen": "Se ha identificado una vulnerabilidad de seguridad en el componente del servidor web de los productos de Hanwha Vision, que podría permitir el acceso no autorizado a funciones protegidas bajo ciertas condiciones, con un CVSS Score de 8.8 (HIGH). La vulnerabilidad afecta a varios modelos de firmware y el fabricante ha lanzado una actualización de firmware para solucionar el problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-54013",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-54013",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-54013"
+      ]
+    }
+  },
+  {
+    "id": 956,
+    "fecha": "2026-06-29T15:38:58Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA cuestiona diagnóstico médico",
+    "resumen": "Un desarrollador utilizó el modelo de IA Claude Opus 4.8 para analizar una resonancia magnética y obtuvo un diagnóstico contradictorio con el informe médico original, lo que plantea dudas sobre la confiabilidad de la IA en la interpretación de imágenes médicas y la necesidad de mejorar la calidad de la información proporcionada por los modelos de IA. El caso destaca la importancia de la validación y la verificación de los resultados de la IA en el ámbito médico.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054730201-4b6463484e3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/alguien-uso-opus-4-8-analizara-resonancia-magnetica-que-siguio-confirma-que-no-nos-podemos-fiar-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:alguien usó opus 4 8 para que analizara una resonancia magnética lo que siguió confirma que no nos podemos fiar de la ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "news.ycombinator.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://antoine.fi/mri-analysis-using-claude-code-opus",
+        "https://i.blogs.es/4cd7b2/mamografia/375_142.jpg",
+        "https://i.blogs.es/c07182/mri-ia-medicina-incertidumbre/1024_2000.jpeg",
+        "https://i.blogs.es/cbfaa4/angel/375_142.jpeg",
+        "https://news.ycombinator.com/item?id=48709877",
+        "https://news.ycombinator.com/item?id=48714295",
+        "https://unsplash.com/es/fotos/los-medicos-examinan-una-radiografia-del-craneo-en-una-habitacion-luminosa-vCSXxfKkL-w",
+        "https://www.worksinprogress.news/p/why-ai-isnt-replacing-radiologists"
+      ]
+    }
+  },
+  {
+    "id": 955,
+    "fecha": "2026-06-29T15:38:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google Advierte sobre Riesgos de Seguridad",
+    "resumen": "El personal de seguridad de Google advierte que los datos de búsqueda podrían ser vulnerables a ataques si las reglas de la Unión Europea cambian, permitiendo el acceso a sistemas de Google Search y Android, lo que podría exponer a los usuarios a riesgos de privacidad y posibles ataques de phishing o explotación de vulnerabilidades. Esto podría tener un impacto significativo en la seguridad de los datos de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/top-google-security-staff-warn-search-data-could-be-hacked-thanks-to-eu-plans/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:top google security staff warn search data could be hacked if eu rules change",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 954,
+    "fecha": "2026-06-29T15:38:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Dron disarma sospechoso",
+    "resumen": "Un dron de la oficina del sheriff del condado de Sacramento ha sido utilizado para disarmar a un sospechoso armado en una casa, utilizando un imán de alta potencia para retirar el cuchillo de la mano del sospechoso. Este incidente demuestra el potencial de la tecnología de drones en la respuesta policial y el manejo de situaciones de alto riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/robot-police-officers.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:robot police officers",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.instagram.com",
+        "yro.slashdot.org"
+      ],
+      "url": [
+        "https://yro.slashdot.org/story/26/06/27/0635220/california-sheriff-says-their-drone-disarmed-a-suspect-shares-video-on-instagram"
+      ]
+    }
+  },
+  {
+    "id": 953,
+    "fecha": "2026-06-29T15:38:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "EE.UU. ofrece $10M por hackers",
+    "resumen": "El Departamento de Estado de EE.UU. ofrece hasta $10 millones por información que ayude a identificar o localizar a miembros de los grupos de hackers UNC5792 y UNC4221, vinculados a los servicios de inteligencia y militares de Rusia, que han estado objetivo a usuarios de WhatsApp y Signal. Estos grupos han sido identificados como una amenaza a la seguridad nacional y la privacidad digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/us-offers-10-million-for-hackers-targeting-whatsapp-signal-users/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:u s offers 10 million for hackers targeting whatsapp signal users",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 952,
     "fecha": "2026-06-29T10:49:28Z",
     "categoria": "Ciberseguridad",
