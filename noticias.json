@@ -1,5 +1,209 @@
 [
   {
+    "id": 980,
+    "fecha": "2026-06-29T22:07:11Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Gamaredon amplía ataques a Ucrania",
+    "resumen": "El grupo de amenazas persistentes avanzadas (APT) ruso Gamaredon ha expandido su arsenal de malware y ha abusado de servicios en la nube como parte de su continua campaña cibernética contra Ucrania, utilizando principalmente campañas de spear-phishing como vector de ataque. Los objetivos primarios de estas campañas han sido identificados en 35 incidentes distintos, principalmente en la segunda mitad del año.",
+    "url_imagen": "https://images.unsplash.com/photo-1702368198474-cd5b48e4fdb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/gamaredon-expands-ukraine-attacks-with.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:gamaredon expands ukraine attacks with new malware and cloud service abuse",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 979,
+    "fecha": "2026-06-29T22:07:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2025-26595",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer (buffer overflow) en X.Org y Xwayland, con un CVSS Score de 7.8, clasificada como alta (HIGH), que podría permitir a un atacante ejecutar código arbitrario. La falla se encuentra en la función XkbVModMaskText(), que no verifica los límites del búfer al copiar nombres de modificadores virtuales.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-26595",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-26595",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "x.org"
+      ],
+      "cve": [
+        "CVE-2025-26595"
+      ]
+    }
+  },
+  {
+    "id": 978,
+    "fecha": "2026-06-29T22:07:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades en Linux Kernel",
+    "resumen": "Se ha descubierto una nueva vulnerabilidad en el kernel de Linux, conocida como DirtyClone, que permite a un atacante local escalar privilegios y potencialmente tomar el control del sistema, lo que resalta la importancia de mantener actualizados los parches de seguridad y monitorear los sistemas para detectar posibles exploits. La semana también ha visto un aumento en la actividad de malware que utiliza técnicas de inteligencia artificial (IA) para evadir la detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/weekly-recap-linux-kernel-flaws-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap linux kernel flaws ai malware tricks turla backdoor infostealers and more",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 977,
+    "fecha": "2026-06-29T22:06:54Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Brecha en NAIC por zero-day",
+    "resumen": "La Asociación Nacional de Comisionados de Seguros (NAIC) informa que el grupo de extorsión ShinyHunters robó solo datos públicamente disponibles, registros obsoletos y archivos de configuración después de explotar una vulnerabilidad zero-day en un servidor Oracle PeopleSoft. El impacto parece limitado, pero destaca la importancia de parchear vulnerabilidades zero-day en sistemas críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/naic-says-public-data-stolen-in-shinyhunters-peoplesoft-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:naic says public data stolen in shinyhunters peoplesoft breach",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 976,
+    "fecha": "2026-06-29T22:06:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Apache Tomcat",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-55957) en Apache Tomcat que permite a atacantes autenticarse sin proporcionar la contraseña correcta cuando se utiliza JNDIRealm con GSSAPI. La vulnerabilidad afecta varias versiones de Apache Tomcat, y se recomienda actualizar a versiones más recientes para solucionar el problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/179341",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-55957",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-55957"
+      ]
+    }
+  },
+  {
+    "id": 975,
+    "fecha": "2026-06-29T22:06:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Código Malware Disfrazado",
+    "resumen": "Un código fuente de trampa (cheat) se distribuye como malware, que descarga un software de acceso remoto (RAT) después de una serie de eventos de construcción y descifrado en Visual Studio, utilizando un script en VBS para descifrar un script en PowerShell (.ps1). El vector de ataque implica la ingeniería social, donde los usuarios son atraídos con la promesa de \"malware gratuito\" y luego descargan el código malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9041",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:get more dms more free malware yay smelly someone says this cheat src code is malware download look ins",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.youtube.com"
+      ]
+    }
+  },
+  {
+    "id": 974,
+    "fecha": "2026-06-29T22:06:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad HIGH en X.Org",
+    "resumen": "Se ha identificado una falla de use-after-free (CVE-2025-26594) con un CVSS Score de 7.8 en X.Org y Xwayland, lo que permite un posible ataque de ejecución de código arbitrario debido a la referencia a memoria liberada. Los productos afectados incluyen x.org:x_server, tigervnc:tigervnc, redhat:enterprise_linux y x.org:xwayland.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA3OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-26594",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-26594",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "x.org"
+      ],
+      "cve": [
+        "CVE-2025-26594"
+      ]
+    }
+  },
+  {
+    "id": 973,
+    "fecha": "2026-06-29T22:06:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Contratistas de Meta engañan a chatbots",
+    "resumen": "Contratistas de Meta se hicieron pasar por menores de edad para interactuar con chatbots rivales como Gemini y ChatGPT, evaluando sus respuestas a temas de alto riesgo como suicidio, sexo y drogas, lo que plantea preocupaciones sobre la seguridad y la moderación de contenido en modelos de lenguaje. Esto podría tener implicaciones en la forma en que se diseñan y se entrenan los modelos de lenguaje para manejar temas sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA3OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/meta-contractors-pretending-to-be-teens-chatbot-testing/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:meta contractors posed as teens to prompt rival chatbots about suicide sex and drugs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 972,
+    "fecha": "2026-06-29T22:06:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Automatización en Reconocimiento de Host",
+    "resumen": "Se presenta una técnica de automatización para el método de reconocimiento de host utilizando favicon.ico, lo que puede mejorar la eficiencia en pruebas de penetración (pentest) al automatizar el proceso de recopilación de información sobre los objetivos. Esto puede ser particularmente útil en la fase de reconocimiento de un ataque, donde la automatización puede ayudar a identificar vectores de ataque potenciales de manera más rápida.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA3ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33110",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:adding some automation to the favicon ico method of host recon mon jun 29th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 971,
+    "fecha": "2026-06-29T22:06:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Breach en Nissan por zero-day de Oracle",
+    "resumen": "Nissan informa de una brecha de datos que afecta a empleados actuales y anteriores debido a la explotación de una vulnerabilidad zero-day en Oracle PeopleSoft por parte de actores maliciosos, posiblemente vinculados al grupo de extorsión ShinyHunters. La brecha de datos se produjo a través de ataques que aprovecharon la vulnerabilidad en el sistema de gestión de recursos humanos de la empresa.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/nissan-discloses-employee-data-breach-linked-to-oracle-zero-day-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:nissan discloses employee data breach linked to oracle zero day attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 970,
     "fecha": "2026-06-29T19:51:39Z",
     "categoria": "Ciberseguridad",
