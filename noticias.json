@@ -1,5 +1,33 @@
 [
   {
+    "id": 942,
+    "fecha": "2026-06-29T03:27:50Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ataque de cadena de suministro en Mastra AI",
+    "resumen": "Microsoft ha atribuido un ataque de cadena de suministro en el ecosistema de Mastra AI a Sapphire Sleet, un grupo norcoreano también conocido como BlueNoroff, que comprometió más de 140 paquetes npm para plantar dependencias maliciosas en proyectos de desarrolladores. El ataque sigue un patrón de ataques de Corea del Norte (DPRK) contra pipelines de desarrollo de Web3 y AI.",
+    "url_imagen": "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDM2NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114030",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:microsoft ties mastra ai npm supply chain attack to north korea microsoft attributed a supply chain attack on the mas",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 941,
+    "fecha": "2026-06-29T03:27:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en PTC Windchill",
+    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) agregó una vulnerabilidad de ejecución de código remoto (RCE) crítica en PTC Windchill a su catálogo de Vulnerabilidades Conocidas Explotadas (KEV), debido a evidencia de explotación activa, lo que permite ataques de shell web. La vulnerabilidad afecta el software de gestión de datos de productos (PDM) y gestión del ciclo de vida de productos (PLM) de PTC.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDM2NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cisa adds exploited ptc windchill rce flaw to kev as web shell attacks continue",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 940,
     "fecha": "2026-06-28T21:59:37Z",
     "categoria": "Ciberseguridad",
@@ -5170,19 +5198,6 @@
         "https://www.irongate.es/"
       ]
     }
-  },
-  {
-    "id": 737,
-    "fecha": "2026-06-20T16:15:05Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Ataque de cadena de suministro Mastra AI",
-    "resumen": "Microsoft ha atribuido un reciente ataque de cadena de suministro Mastra AI, que comprometió más de 140 paquetes npm, al grupo de hackers norcoreano Sapphire Sleet, también conocido como BlueNoroff, lo que sugiere un vector de ataque sofisticado y una posible amenaza a la seguridad de la cadena de suministro de software. El ataque puede tener un impacto significativo en la industria del software y la seguridad de los sistemas que dependen de estos paquetes.",
-    "url_imagen": "https://images.unsplash.com/photo-1752451399417-eb6e072269bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5NzIxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/microsoft-links-mastra-ai-supply-chain-attack-to-north-korean-hackers/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 736,
