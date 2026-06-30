@@ -1,5 +1,218 @@
 [
   {
+    "id": 995,
+    "fecha": "2026-06-30T11:43:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-53916 en Apache ActiveMQ",
+    "resumen": "Se ha identificado una vulnerabilidad de asignación de memoria con valores de tamaño excesivo (CVE-2026-53916) en Apache ActiveMQ, que permite a un cliente no autenticado agotar la memoria del broker a través de una conexión STOMP NIO, afectando versiones anteriores a 5.19.8 y 6.2.7. Se recomienda actualizar a la versión 6.2.7 o 5.19.8 para solucionar el problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk4MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/180719",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-53916",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1588",
+        "name": "Obtain Capabilities (no es directamente aplicable, pero se podría considerar que el atacante obtiene la capacidad de agotar la memoria del broker)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-53916"
+      ]
+    }
+  },
+  {
+    "id": 994,
+    "fecha": "2026-06-30T11:42:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Amazon Q",
+    "resumen": "Una vulnerabilidad en la extensión Amazon Q permite a adversarios ejecutar código arbitrario y robar credenciales de cloud, destacando el creciente riesgo de MCP (Multi-Cloud Persistence). Los atacantes pueden plantar un repositorio malicioso para explotar esta vulnerabilidad y obtener acceso no autorizado a credenciales de cloud.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/amazon-q-vs-extension-flaw-leads-cloud-credential-theft",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:amazon q vs extension flaw leads to cloud credential theft",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 993,
+    "fecha": "2026-06-30T11:42:41Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque BioShocking engaña a navegadores AI",
+    "resumen": "La técnica BioShocking, desarrollada por la firma de seguridad LayerX, logra engañar a navegadores y asistentes AI, incluyendo ChatGPT Atlas de OpenAI, Comet de Perplexity y la extensión de navegador Claude de Anthropic, para que revelen credenciales de usuario, demostrando una vulnerabilidad en la seguridad de estos sistemas. El ataque aprovecha la capacidad de convencer al navegador AI de que está participando en un juego, lo que lleva a la exposición de información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218603-1fc7cca58d6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/new-bioshocking-attack-tricks-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new bioshocking attack tricks ai browsers into leaking user credentials",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 992,
+    "fecha": "2026-06-30T11:42:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Protección de bots en Teams",
+    "resumen": "Microsoft ha introducido una nueva política de administrador en Teams que permite a los organizadores prevenir que bots de terceros se unan a reuniones sin aprobación, mejorando la seguridad y reduciendo el riesgo de ataques de phishing o malware. Esta medida puede ayudar a mitigar vulnerabilidades en la seguridad de las reuniones en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/mircosoft-adds-smarter-bot-protection-to-teams-meetings/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft adds smarter bot protection to teams meetings",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 991,
+    "fecha": "2026-06-30T11:42:24Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "GLM-5.2: El modelo chino que rivaliza con Mythos",
+    "resumen": "El modelo de lenguaje GLM-5.2, desarrollado por la startup china Zhipu.ai, ha demostrado un rendimiento comparable al de los mejores modelos de empresas de EEUU, incluyendo Claude Opus 4.8 y GPT-5.5, en materia de ciberseguridad, lo que plantea preocupaciones sobre su potencial uso como herramienta para encontrar vulnerabilidades y explotar sistemas. Dos empresas de ciberseguridad independientes, Semgrep y Graphistry, han confirmado que GLM-5.2 es capaz de encadenar exploits de manera similar a un atacante de élite humano.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905673-a81786aaa609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/creadores-modelo-chino-glm-5-2-afirman-que-igual-peligroso-que-mythos-eso-plantea-momento-sputnik-para-ia-china",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:tenemos un mythos en casa los expertos ya afirman que el modelo chino glm 5 2 es tan peligroso como el de anthropic",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "k.sina.com.cn",
+        "platform.instagram.com",
+        "qz.com",
+        "techcrunch.com",
+        "www.360.cn",
+        "www.axios.com",
+        "www.graphistry.com",
+        "www.reuters.com",
+        "www.theregister.com",
+        "www.xataka.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3b0939/dario/375_142.jpeg",
+        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/1024_2000.jpeg",
+        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/1366_2000.jpeg",
+        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/450_1000.jpeg",
+        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/650_1200.jpeg",
+        "https://i.blogs.es/ca0810/zai-glm/1024_2000.jpeg",
+        "https://i.blogs.es/fb354b/bomba-atomica/375_142.jpeg",
+        "https://k.sina.com.cn/article_5953189932_162d6782c06704i3g6.html",
+        "https://qz.com/china-360-security-ai-vulnerability-tool-anthropic-mythos-062426",
+        "https://sakana.ai/fugu-release/",
+        "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
+        "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
+        "https://www.360.cn/",
+        "https://www.axios.com/2026/06/25/china-glm-52-open-source-hackers",
+        "https://www.graphistry.com/blog/glm-5-2-cybersecurity-open-model",
+        "https://www.reuters.com/article/us-usa-china-blacklist-idUSKBN22Y2QR/",
+        "https://www.reuters.com/legal/litigation/chinas-360-says-it-has-developed-tools-match-anthropics-mythos-2026-06-24/",
+        "https://www.theregister.com/security/2026/06/26/chinese-cybersecurity-company-claims-its-built-a-better-than-mythos-bug-finder/5262642"
+      ]
+    }
+  },
+  {
+    "id": 990,
+    "fecha": "2026-06-30T11:42:19Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ropa para evadir reconocimiento facial",
+    "resumen": "Un investigador ha desarrollado camisetas gráficas que pueden confundir las redes neuronales utilizadas en cámaras de vigilancia con reconocimiento facial, potencialmente permitiendo a los individuos evitar la detección. Esto se logra mediante patrones y diseños que interferen con los algoritmos de aprendizaje automático (ML) utilizados en los sistemas de reconocimiento facial.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/clothes-invisible-facial-recognition",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:can clothes make you invisible to facial recognition",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 989,
+    "fecha": "2026-06-30T11:42:13Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en AirDrop y Quick Share",
+    "resumen": "Se han descubierto seis vulnerabilidades de seguridad en AirDrop y Quick Share, permitiendo a atacantes cercanos provocar fallos y eludir comprobaciones de seguridad en dispositivos Mac o iPhone configurados para recibir archivos de cualquier persona, sin necesidad de conexión previa o interacción del usuario. Los ataques pueden realizarse mediante un laptop dentro del rango inalámbrico, aprovechando estas vulnerabilidades para causar fallos en el servicio de intercambio de archivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/airdrop-and-quick-share-flaws-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:airdrop and quick share flaws let nearby attackers trigger crashes and bypass checks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 988,
+    "fecha": "2026-06-30T11:42:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha de datos en Aflac",
+    "resumen": "La empresa de seguros Aflac ha informado sobre una brecha de datos después de que atacantes comprometieron los sistemas de su filial en Japón, robando información personal y de cuentas bancarias, lo que supone un riesgo significativo para la privacidad y seguridad de los clientes. El incidente destaca la importancia de la seguridad cibernética en la industria de los seguros.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/insurance-giant-aflac-discloses-data-breach-after-subsidiary-hack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:insurance giant aflac discloses data breach after subsidiary hack",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Compromiso de credenciales de acceso"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1589",
+        "name": "Gather Action no se menciona, pero se puede inferir que los atacantes tuvieron acceso a información personal y de cuentas bancarias, lo que sugiere:"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 987,
     "fecha": "2026-06-30T06:53:40Z",
     "categoria": "Ciberseguridad",
