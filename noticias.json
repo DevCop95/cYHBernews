@@ -1,5 +1,224 @@
 [
   {
+    "id": 1004,
+    "fecha": "2026-06-30T14:11:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad XSS en SYSGUARD 6001",
+    "resumen": "Se ha identificado una vulnerabilidad de cross-site scripting (XSS) almacenada en el producto SYSGUARD 6001 de Eksagate, afectando versiones desde 2.0.2 hasta 6.1.4.0, lo que permite a atacantes inyectar código malicioso en páginas web generadas por el sistema. El proveedor ha confirmado que el producto no es compatible, lo que puede complicar la aplicación de parches de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/180845",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-8403",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "6.1.4.0"
+      ],
+      "cve": [
+        "CVE-2026-8403"
+      ]
+    }
+  },
+  {
+    "id": 1003,
+    "fecha": "2026-06-30T14:10:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "NIST Reduce Análisis de CVE",
+    "resumen": "El Instituto Nacional de Estándares y Tecnología (NIST) ha reducido el número de Common Vulnerabilities and Exposures (CVE) seleccionadas para análisis en profundidad, lo que ha generado resultados mixtos en cuanto a la cobertura y precisión de las vulnerabilidades, según investigadores. Esto puede impactar la capacidad de los equipos de seguridad para identificar y mitigar vulnerabilidades de manera efectiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/nist-enrichment-reductions-cve-coverage-accuracy",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:nist enrichment reductions impact cve coverage accuracy",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1002,
+    "fecha": "2026-06-30T14:10:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Kali Linux 2026.2 Lanzada",
+    "resumen": "La versión 2026.2 de Kali Linux incluye 9 nuevas herramientas y mejoras significativas en Kali NetHunter, lo que puede impactar en la capacidad de los profesionales de seguridad para realizar pruebas de penetración y análisis de vulnerabilidades. Los nuevos tools y actualizaciones de NetHunter pueden ser utilizados para identificar y explotar vulnerabilidades en sistemas y redes.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/linux/kali-linux-20262-released-with-9-new-tools-nethunter-updates/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:kali linux 2026 2 released with 9 new tools nethunter updates",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1001,
+    "fecha": "2026-06-30T14:10:00Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades de desbordamiento de memoria",
+    "resumen": "Se han identificado múltiples vulnerabilidades de desbordamiento de memoria (CVE-2026-8655) en NetScaler ADC y NetScaler Gateway, que pueden causar comportamiento impredecible o erróneo y denegación de servicio (DoS) si se configura como equilibrador de carga (LB) de tipo Oracle, proxy DNS o resolutor recursivo DNS. Estas vulnerabilidades pueden ser explotadas para afectar la disponibilidad y la integridad de los servicios.",
+    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/180847",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-8655",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8655"
+      ]
+    }
+  },
+  {
+    "id": 1000,
+    "fecha": "2026-06-30T14:09:54Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Eclipse con IA",
+    "resumen": "Un desarrollador ha creado una aplicación con IA para encontrar el lugar más cercano para ver el eclipse solar, utilizando modelos de lenguaje como ChatGPT y GLM-5.2, y plataformas como Claude Code, para planificar y desarrollar la aplicación de manera eficiente. La aplicación utiliza fuentes de datos astronómicas y APIs para determinar las mejores ubicaciones para ver el eclipse.",
+    "url_imagen": "https://images.unsplash.com/photo-1739036868260-c26b292cd85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/queria-saber-lugar-cercano-para-ir-a-ver-eclipse-asi-que-he-programado-aplicacion-ia-para-buscarlo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:quería saber el lugar más cercano para ir a ver el eclipse así que he programado una aplicación con ia para buscarlo",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "eclipse.javipas.com",
+        "javipas.com",
+        "opale.imcce.fr",
+        "platform.instagram.com",
+        "project-osrm.org",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://aa.usno.navy.mil/",
+        "https://eclipse.javipas.com/app/",
+        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/1024_2000.jpeg",
+        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/1366_2000.jpeg",
+        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/450_1000.jpeg",
+        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/650_1200.jpeg",
+        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/1024_2000.jpeg",
+        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/1366_2000.jpeg",
+        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/450_1000.jpeg",
+        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/650_1200.jpeg",
+        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/1024_2000.jpeg",
+        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/1366_2000.jpeg",
+        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/450_1000.jpeg",
+        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/650_1200.jpeg",
+        "https://i.blogs.es/3c3c6a/eclipse-glm-2/1024_2000.jpeg",
+        "https://i.blogs.es/3c3c6a/eclipse-glm-2/1366_2000.jpeg",
+        "https://i.blogs.es/3c3c6a/eclipse-glm-2/450_1000.jpeg",
+        "https://i.blogs.es/3c3c6a/eclipse-glm-2/650_1200.jpeg",
+        "https://i.blogs.es/465004/immich-android-tv-javipas3/375_142.jpeg",
+        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/1024_2000.jpeg",
+        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/1366_2000.jpeg",
+        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/450_1000.jpeg",
+        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/650_1200.jpeg",
+        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/1024_2000.jpeg",
+        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/1366_2000.jpeg",
+        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/450_1000.jpeg",
+        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/650_1200.jpeg",
+        "https://i.blogs.es/9264c1/eclipse-1/1024_2000.jpeg",
+        "https://i.blogs.es/9264c1/eclipse-1/1366_2000.jpeg",
+        "https://i.blogs.es/9264c1/eclipse-1/450_1000.jpeg",
+        "https://i.blogs.es/9264c1/eclipse-1/650_1200.jpeg",
+        "https://i.blogs.es/b39fc9/mapa-eclipse/1024_2000.jpeg",
+        "https://i.blogs.es/bde429/refactorizar/1024_2000.jpeg",
+        "https://i.blogs.es/bde429/refactorizar/1366_2000.jpeg",
+        "https://i.blogs.es/bde429/refactorizar/450_1000.jpeg",
+        "https://i.blogs.es/bde429/refactorizar/650_1200.jpeg",
+        "https://i.blogs.es/c83ee2/eclipse-barcelona/1024_2000.jpeg",
+        "https://i.blogs.es/c83ee2/eclipse-barcelona/1366_2000.jpeg",
+        "https://i.blogs.es/c83ee2/eclipse-barcelona/450_1000.jpeg",
+        "https://i.blogs.es/c83ee2/eclipse-barcelona/650_1200.jpeg",
+        "https://javipas.com/2026/06/29/donde-ver-el-eclipse-mi-app-para-probar-glm-5-2-a-tope/",
+        "https://opale.imcce.fr/",
+        "https://project-osrm.org/"
+      ]
+    }
+  },
+  {
+    "id": 999,
+    "fecha": "2026-06-30T14:09:49Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vigilancia AI Avanzada",
+    "resumen": "La inteligencia artificial (IA) está revolucionando la vigilancia por video, permitiendo búsquedas en lenguaje natural y análisis avanzados de comportamientos en grandes cantidades de footage. Esto abre nuevas posibilidades para la vigilancia masiva, permitiendo a los oficiales de inteligencia buscar patrones y comportamientos específicos de manera eficiente.",
+    "url_imagen": "https://images.unsplash.com/photo-1767966783202-c5659292bd39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/the-realities-of-ai-video-surveillance.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:the realities of ai video surveillance",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.schneier.com"
+      ],
+      "url": [
+        "https://archive.ph/s6mES"
+      ]
+    }
+  },
+  {
+    "id": 998,
+    "fecha": "2026-06-30T14:09:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Desastre Silencioso en Seguridad",
+    "resumen": "Los flujos de trabajo generados por IA pueden suponer un riesgo significativo para la seguridad, ya que la automatización puede funcionar correctamente pero sin que nadie comprenda completamente su funcionamiento interno, lo que puede facilitar ataques como phishing o exploits de vulnerabilidades desconocidas. Esto puede afectar la seguridad de los sistemas y datos, especialmente en entornos donde se confía en la automatización para procesos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-generated-workflows-silent-security-disaster",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai generated workflows are a silent security disaster",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 997,
+    "fecha": "2026-06-30T14:09:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Riesgo cibernético FIFA 2026",
+    "resumen": "Según Check Point Research, la infraestructura de fraude dirigida a la Copa Mundial de la FIFA 2026 ya había sido construida y desplegada parcialmente antes del inicio del evento, con actividad de actores amenazantes preplanificada en al menos tres sectores y diez idiomas. El informe de amenazas cibernéticas de la Copa Mundial de la FIFA 2026 de Check Point Exposure Management destaca el riesgo cibernético asociado con el evento.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/what-numbers-say-about-fifa-2026-cyber.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:what the numbers say about fifa 2026 cyber risk",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 996,
+    "fecha": "2026-06-30T14:09:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Ataques BEC: Amenaza Coordinada",
+    "resumen": "Los ataques de Business Email Compromise (BEC) son operaciones coordinadas que involucran cuentas comprometidas, investigación financiera y redes de extracción de efectivo, y se planifican y ejecutan a través de foros subterráneos. Estos ataques representan una amenaza significativa para las organizaciones, con vectores de ataque que incluyen phishing y compromiso de cuentas.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/lessons-from-the-underground-how-to-combat-business-email-compromise/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:lessons from the underground how to combat business email compromise",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1056",
+        "name": "Input Capture (se infiere por el compromiso de cuentas)"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning (se infiere por la investigación financiera)"
+      },
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities (se infiere por la planificación y ejecución a través de foros subterráneos)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 995,
     "fecha": "2026-06-30T11:43:31Z",
     "categoria": "Ciberseguridad",
