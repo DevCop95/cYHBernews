@@ -1,5 +1,65 @@
 [
   {
+    "id": 987,
+    "fecha": "2026-06-30T06:53:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware gratuito en Reddit",
+    "resumen": "Un usuario ha reportado obtener malware de forma gratuita a través de la plataforma Reddit, lo que sugiere un posible vector de ataque a través de la ingeniería social o descargas maliciosas. El impacto real depende del tipo de malware y la cantidad de usuarios afectados, pero puede incluir robo de datos, ransomware o exploits de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MDI0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9043",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:omg i got free malware from reddit",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 986,
+    "fecha": "2026-06-30T06:53:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en libssh2",
+    "resumen": "La vulnerabilidad CVE-2026-55200 en libssh2 permite la ejecución remota de código a través de paquetes SSH manipulados, afectando a aplicaciones que utilizan esta biblioteca para soporte SSH-2, y se corrige con comprobaciones de límites adicionales en el código. El vector de ataque implica el envío de paquetes SSH maliciosos para explotar el fallo.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MDI0MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-fallo-critico-en-libssh2-permite-ejecutar-codigo-remoto-con-paquetes-ssh-manipulados/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-critico-en-libssh2-permite-ejecutar-codigo-remoto-con-paquetes-ssh-manipulados",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-55200",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/un-fallo-critico-en-libssh2-permite-ejecutar-codigo-remoto-con-paquetes-ssh-manipulados/"
+      ],
+      "cve": [
+        "CVE-2026-55200"
+      ]
+    }
+  },
+  {
     "id": 985,
     "fecha": "2026-06-30T02:54:24Z",
     "categoria": "Ciberseguridad",
