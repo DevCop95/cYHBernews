@@ -1,5 +1,201 @@
 [
   {
+    "id": 1017,
+    "fecha": "2026-06-30T19:49:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "RustDuck: Botnet de DDoS",
+    "resumen": "La nueva familia de malware RustDuck, escrita en Rust, está secuestrando routers domésticos, cámaras IP, cajas Android y servidores mal seguros para construir una red de bots destinada a realizar ataques de denegación de servicio (DDoS) contra sitios web y servicios en línea. Los investigadores de QiAnXin's XLab han estado rastreando esta amenaza desde febrero de 2026 y destacan su capacidad para evolucionar rápidamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:rustduck botnet rebuilds in rust to hijack routers and servers for ddos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1016,
+    "fecha": "2026-06-30T19:49:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware Blackfield exige rescate",
+    "resumen": "El grupo de ransomware Blackfield ha exigido un rescate de $2 millones a Nidec Corporation, un gran fabricante japonés de componentes electrónicos para aplicaciones automotrices y de computación, después de un ataque de ransomware que probablemente involucró técnicas de phishing o explotación de vulnerabilidades. El impacto real incluye la posible pérdida de datos confidenciales y la interrupción de operaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/blackfield-ransomware-asks-nidec-corporation-for-2-million-ransom/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:blackfield ransomware asks nidec corporation for 2 million ransom",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1015,
+    "fecha": "2026-06-30T19:49:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en Orkes Conductor",
+    "resumen": "Se ha identificado una vulnerabilidad de ejecución remota de código (RCE) no autenticada en Orkes Conductor versiones 3.21.21 a 3.30.2, que permite a atacantes remotos ejecutar comandos del sistema operativo arbitrarios mediante la submisión de definiciones de flujo de trabajo en línea que contienen expresiones maliciosas de JavaScript o Python. Los atacantes pueden explotar evaluadores de GraalVM no aislados configurados con HostAccess.ALL o allowAllAccess(true) a través de tipos de tareas INLINE, LAMBDA, DO_WHILE y SWITCH para invocar comandos del sistema arbitrarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/181469",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-58138",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58138"
+      ]
+    }
+  },
+  {
+    "id": 1014,
+    "fecha": "2026-06-30T19:49:02Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Malware Avanzado con AI",
+    "resumen": "El uso de inteligencia artificial (AI) está facilitando la creación de malware multi-etapas y multi-lenguaje, lo que dificulta su detección por parte de los sistemas de seguridad tradicionales, como los antivirus y los sistemas de análisis estático. La introducción intencional de dependencias y la utilización de múltiples lenguajes de programación, como Lua, Node JS, Java y Python, están haciendo que los análisis de seguridad sean más complejos y propensos a errores.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501220374-9f4b2a3a60c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9049",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:tl dr really effective malware multi staged multiple programming languages use as many dependencies as possible ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1013,
+    "fecha": "2026-06-30T19:48:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Angular",
+    "resumen": "Se ha identificado una vulnerabilidad de denegación de servicio (CVE-2024-21490) en el paquete Angular, con un CVSS Score de 7.5, que afecta a versiones desde 1.3.0, permitiendo un ataque de retroceso catastrófico debido a una expresión regular mal implementada en la directiva ng-srcset. Dado que el paquete está en fin de vida (EOL), los usuarios deben migrar a @angular/core para evitar esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-21490",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-21490",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.npmjs.com"
+      ],
+      "url": [
+        "https://www.npmjs.com/package/@angular/core"
+      ],
+      "cve": [
+        "CVE-2024-21490"
+      ]
+    }
+  },
+  {
+    "id": 1012,
+    "fecha": "2026-06-30T19:48:53Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ford corrige fallos de IA",
+    "resumen": "Ford ha identificado que su inversión en automatización con inteligencia artificial (IA) no resolvió los problemas de fiabilidad en su cadena de producción, lo que llevó a un aumento en las llamadas a revisión de sus vehículos, por lo que la compañía ha decidido contratar de nuevo a ingenieros veteranos para supervisar y corregir el trabajo de la IA. Esto ha resultado en una mejora significativa en la calidad de sus productos, con una reducción de 41 problemas por cada 100 vehículos respecto al año anterior.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218385-55bc3a95be94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/movilidad/ford-ha-comprobado-que-ia-tiene-problema-calidad-su-solucion-volver-a-contratar-a-viejos-empleados",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:ford ha comprobado que la ia tiene un problema de calidad su solución volver a contratar a viejos empleados",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "eu.usatoday.com",
+        "platform.instagram.com",
+        "www.bloomberg.com",
+        "www.carscoops.com",
+        "www.detroitnews.com",
+        "www.foxbusiness.com",
+        "www.fromtheroad.ford.com",
+        "www.jdpower.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://eu.usatoday.com/story/cars/recalls/2026/06/20/car-recall-leaders-2026-ford-stellantis/90611355007/",
+        "https://i.blogs.es/010e16/ford/375_142.jpeg",
+        "https://i.blogs.es/1ea7f3/revisar-los-errores-de-la-ia/1024_682.jpeg",
+        "https://i.blogs.es/1ea7f3/revisar-los-errores-de-la-ia/500_333.jpeg",
+        "https://i.blogs.es/1ea7f3/revisar-los-errores-de-la-ia/840_560.jpeg",
+        "https://i.blogs.es/bf4b05/ceo-ford/1024_2000.jpeg",
+        "https://www.bloomberg.com/news/articles/2026-06-25/ford-has-been-rehiring-quality-inspectors-after-ai-fell-short",
+        "https://www.carscoops.com/2026/06/farley-ford-jd-power-quality/",
+        "https://www.detroitnews.com/story/business/autos/ford/2026/04/29/ford-first-quarter-earnings-tariff-refund-trump-guidance-wall-street/89856352007/",
+        "https://www.foxbusiness.com/markets/ford-shatters-decade-old-recall-record-152-safety-alerts-issued-year-alone-across-multiple-models",
+        "https://www.fromtheroad.ford.com/us/en/articles/2026/ford-tops-jd-power-initial-quality-study",
+        "https://www.jdpower.com/business/press-releases/2026-us-initial-quality-study-iqs",
+        "https://www.reuters.com/business/autos-transportation/ford-recall-more-than-355000-trucks-over-instrument-panel-issue-nhtsa-says-2025-08-27/"
+      ]
+    }
+  },
+  {
+    "id": 1011,
+    "fecha": "2026-06-30T19:48:48Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "CIA: IA como \"armas nucleares digitales\"",
+    "resumen": "El director de la CIA, John Ratcliffe, destacó que las capacidades de inteligencia artificial (IA) son comparables a \"armas nucleares digitales\", resaltando su impacto potencial en la seguridad nacional y la necesidad de una estrategia tecnológica adaptada. Esto implica un enfoque renovado en la agencia hacia el desarrollo y la implementación de tecnologías de IA para contrarrestar amenazas emergentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217749-bbd8061155f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cia-chief-ratcliffe-highlights-major-shifts-in-agencys-tech-approach",
+    "fuente": "The Record",
+    "dedup_key": "txt:cia chief highlights major shifts in agency s tech approach",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1010,
+    "fecha": "2026-06-30T19:48:43Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataque a agentes AI con descripciones tóxicas",
+    "resumen": "Investigadores de Microsoft han descubierto que descripciones de herramientas envenenadas pueden hacer que agentes autónomos de IA revelen datos confidenciales sin violar ninguna regla de seguridad, lo que dificulta la detección del ataque. Esto permite a los atacantes obtener acceso a datos de la empresa sin disparar alarmas de seguridad en configuraciones predeterminadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054730060-2cfb438ed96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft warns poisoned mcp tool descriptions can make ai agents leak data",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1552",
+        "name": "Unconventional Password Brute Force no se aplica, pero se puede considerar T1552.001 - T1552 no aplica, pero se puede considerar T1190 como la técnica más cercana."
+      },
+      {
+        "id": "T1061",
+        "name": "Técnica no especificada (no se menciona explícitamente una técnica específica, pero se puede inferir que se está utilizando una forma de evasión de seguridad)"
+      },
+      {
+        "id": "T1482",
+        "name": "Técnica no especificada (no se menciona explícitamente una técnica específica, pero se puede inferir que se está utilizando una forma de manip"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1009,
     "fecha": "2026-06-30T17:04:58Z",
     "categoria": "Ciberseguridad",
