@@ -1,5 +1,111 @@
 [
   {
+    "id": 1009,
+    "fecha": "2026-06-30T17:04:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Samsung Members",
+    "resumen": "Se ha identificado una vulnerabilidad de validación de entrada impropera (CVE-2026-21037) en versiones anteriores a 5.8.01.5 de Samsung Members, permitiendo a atacantes locales acceder a URLs arbitrarias y lanzar actividades arbitrarias con privilegios de Samsung Members. Esto puede ser explotado para realizar ataques de phishing o malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/181301",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-21037",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "5.8.01.5"
+      ],
+      "cve": [
+        "CVE-2026-21037"
+      ]
+    }
+  },
+  {
+    "id": 1008,
+    "fecha": "2026-06-30T17:04:53Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Aplicaciones iOS de IA expuestas",
+    "resumen": "Investigadores descubrieron que 282 aplicaciones de chatbot de IA para iPhone, casi dos tercios de las 444 analizadas, exponen claves de API y acceso a proxies de IA a través de su tráfico de red, permitiendo a atacantes enviar solicitudes de modelo en la cuenta del desarrollador. El vector de ataque incluye la exposición de claves de API en texto plano, tokens reutilizables y servidores backend sin autenticación.",
+    "url_imagen": "https://images.unsplash.com/photo-1761223976379-04c361d3068a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/282-ios-apps-found-leaking-llm-api-keys.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:282 ios ai apps leak api keys and open ai proxy access in network traffic study",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1007,
+    "fecha": "2026-06-30T17:04:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad BlueHammer explotada",
+    "resumen": "La vulnerabilidad de escalada de privilegios BlueHammer en Microsoft Defender está siendo explotada por grupos de ransomware, lo que supone un riesgo significativo para la seguridad de los sistemas que utilizan este software, especialmente aquellos que no han aplicado las actualizaciones de seguridad pertinentes. El vector de ataque aprovecha la vulnerabilidad para obtener acceso no autorizado y ejecutar código malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa windows bluehammer flaw now exploited by ransomware gangs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1006,
+    "fecha": "2026-06-30T17:04:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-11769 en Grafana Operator",
+    "resumen": "Se ha descubierto una vulnerabilidad de path traversal/privilege escalation en el Grafana Operator, que permite a un atacante obtener el token de servicio de cuenta de Kubernetes del operador de Grafana, afectando versiones <= 5.23. La actualización a la versión 5.24.0 o la implementación de una ValidatingAdmissionPolicy pueden mitigar el problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/181303",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-11769",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "admissionregistration.k8s.io",
+        "grafana.integreatly.org"
+      ],
+      "cve": [
+        "CVE-2026-11769"
+      ]
+    }
+  },
+  {
+    "id": 1005,
+    "fecha": "2026-06-30T17:02:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Clipper Crypto Silencioso",
+    "resumen": "Investigadores de ciberseguridad han detectado una campaña activa de extensión de navegador que roba criptomonedas reemplazando direcciones de billetera de manera sigilosa cuando los usuarios incautos inician una transacción, utilizando una extensión falsa de Google Notes. La campaña, denominada Silent Swap por McAfee Labs, se distribuye a través de instaladores no firmados en variantes .NET y Golang.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mzg5NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/silent-swap-crypto-clipper-uses-fake.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:silent swap crypto clipper uses fake google notes extension to replace wallet addresses",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1187",
+        "name": "Forced Authentication (no se menciona explícitamente, pero se infiere que la extensión falsa reemplaza direcciones de billetera, lo que podría requerir autenticación forzada)"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion (no se menciona explícitamente, pero se infiere que la campaña utiliza una extensión falsa para evadir la detección)"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process (se menciona que la extensión falsa reemplaza direcciones de billetera, lo"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1004,
     "fecha": "2026-06-30T14:11:22Z",
     "categoria": "Ciberseguridad",
