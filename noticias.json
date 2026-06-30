@@ -1,5 +1,132 @@
 [
   {
+    "id": 985,
+    "fecha": "2026-06-30T02:54:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en X.Org y Xwayland",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer (CVE-2025-26596) en X.Org y Xwayland, con un CVSS Score de 7.8, que puede ser explotada para causar un desbordamiento de búfer en el búfer debido a un cálculo incorrecto de longitud en XkbSizeKeySyms(). Los productos afectados incluyen x.org:xwayland, x.org:x_server, redhat:enterprise_linux y tigervnc:tigervnc.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3ODgwNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-26596",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-26596",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "x.org"
+      ],
+      "cve": [
+        "CVE-2025-26596"
+      ]
+    }
+  },
+  {
+    "id": 984,
+    "fecha": "2026-06-30T02:54:17Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ataque Phishing en Colombia",
+    "resumen": "Un ataque de phishing dirigido a funcionarios del gobierno en Colombia utiliza un archivo HTML con un archivo ZIP oculto en base64 para intentar engañar a las víctimas, lo que sugiere una técnica de ataque sofisticada y dirigida. El vector de ataque implica el envío de un enlace malicioso que, al ser abierto, muestra una página de phishing que parece legítima.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027214993-52de23be5a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3ODgwNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9040",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:get dm government ppl in colombia getting weird file lolwtf send link look inside phishing page looks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 983,
+    "fecha": "2026-06-30T02:54:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en runc",
+    "resumen": "Se ha descubierto una vulnerabilidad en la herramienta runc, con un CVSS Score de 8.6, que permite a un atacante escapar de un contenedor y acceder al sistema de archivos del host, lo que podría permitir la sobrescritura de archivos binarios y escapes completos de contenedores. La vulnerabilidad afecta a versiones de runc anteriores a la 1.1.12.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3ODgwNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-21626",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-21626",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-21626"
+      ]
+    }
+  },
+  {
+    "id": 982,
+    "fecha": "2026-06-30T02:54:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenazas de ciberseguridad",
+    "resumen": "El Stormcast de ISC SANS educa sobre las últimas amenazas de ciberseguridad, incluyendo exploits de vulnerabilidades y ataques de phishing, proporcionando contexto y recomendaciones para la protección de sistemas. Los expertos analizan los vectores de ataque y ofrecen consejos para mejorar la seguridad en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3ODgwNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33112",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for tuesday june 30th 2026 https isc sans edu podcastdetail 9988 tue jun 30th",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/9988,"
+      ]
+    }
+  },
+  {
+    "id": 981,
+    "fecha": "2026-06-30T02:54:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en sistemas gubernamentales",
+    "resumen": "Se han descubierto varias vulnerabilidades críticas en sistemas gubernamentales indios, incluyendo una que permitiría a un atacante tomar el control de un portal gubernamental nacional, exponiendo datos privados. El vector de ataque podría haber sido explotado por cualquier persona con acceso a la plataforma, lo que supone un riesgo significativo para la seguridad de la información.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3ODgwNDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/vulnerabilities-private-data-indian-government-systems",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:vulnerabilities expose private data in indian government systems",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 980,
     "fecha": "2026-06-29T22:07:11Z",
     "categoria": "IA",
