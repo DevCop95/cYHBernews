@@ -1,5 +1,188 @@
 [
   {
+    "id": 1025,
+    "fecha": "2026-06-30T22:14:04Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque a endpoints de IA expuestos",
+    "resumen": "Los atacantes están aprovechando endpoints de IA expuestos para llevar a cabo operaciones ofensivas, sin necesidad de autenticación especial, solo necesitan conocer la ubicación del endpoint. Esto representa un vector de ataque significativo, ya que los endpoints de IA pueden ser utilizados para lanzar ataques de phishing, malware y otros tipos de campañas maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/attackers-hijack-exposed-ai-endpoints-power-offensive-ops",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:attackers hijack exposed ai endpoints to power offensive ops",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1024,
+    "fecha": "2026-06-30T22:14:00Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en agentes de codificación AI",
+    "resumen": "La investigación de Adversa AI ha descubierto una vulnerabilidad en agentes de codificación AI de código abierto, permitiendo a atacantes bypassar la comprobación de seguridad GuardFall mediante una técnica de inyección de shell que ha sido pública durante décadas, afectando a 10 de 11 agentes populares testeado. Esto permite a los atacantes ejecutar comandos peligrosos, poniendo en riesgo la seguridad de los sistemas que los utilizan.",
+    "url_imagen": "https://images.unsplash.com/photo-1777449425442-adc413f3d873?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/guardfall-exposes-open-source-ai-coding.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:guardfall exposes open source ai coding agents to decades old shell injection risks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1023,
+    "fecha": "2026-06-30T22:13:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft acelera seguridad cuántica",
+    "resumen": "Microsoft está acelerando su hoja de ruta de seguridad cuántica debido a los avances en computación cuántica que requieren reemplazar los estándares de cifrado actuales antes de lo esperado, lo que puede mitigar riesgos de ataques cuánticos a la seguridad de la información. Esto implica un impacto significativo en la seguridad de los sistemas y redes, ya que los algoritmos cuánticos pueden potencialmente comprometer la seguridad de los datos cifrados con tecnologías actuales.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-accelerates-quantum-safe-roadmap-as-risks-grow/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft accelerates quantum safe roadmap as risks grow",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1022,
+    "fecha": "2026-06-30T22:13:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha en Klue afecta firmas de ciberseguridad",
+    "resumen": "La plataforma de inteligencia de mercado Klue fue comprometida, permitiendo a los atacantes acceder a los entornos de Salesforce de varios clientes, incluidas empresas de ciberseguridad como HackerOne, Huntress y Snyk, destacando el riesgo de la cadena de suministro de SaaS. La brecha inicial en Klue se extendió a múltiples firmas de ciberseguridad, subrayando la importancia de la seguridad en la cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114031",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:from last week klue breach cascades into multiple cybersecurity firms attackers breached market intelligence platfor",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1021,
+    "fecha": "2026-06-30T22:13:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en GitHub Enterprise",
+    "resumen": "Se identificó una vulnerabilidad de autorización en GitHub Enterprise Server (CVE-2026-9132) que permitía a un usuario autenticado leer código fuente de repositorios privados a los que no tenía acceso, aprovechando una falta de verificación en el endpoint de descripción de pull request de Copilot. La explotación requería una cuenta autenticada con acceso de lectura a al menos un repositorio.",
+    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/181574",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9132",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Known Vulnerabilities"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Remote Services (no se ajusta perfectamente, pero se menciona la explotación de una vulnerabilidad en un endpoint de descripción de pull request)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9132"
+      ]
+    }
+  },
+  {
+    "id": 1020,
+    "fecha": "2026-06-30T22:13:38Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agentjacking: Amenaza a Agentes AI",
+    "resumen": "Se ha demostrado una nueva técnica de ataque llamada \"agentjacking\" que explota la incapacidad de los agentes de inteligencia artificial (IA) para distinguir entre contenido e instrucciones, permitiendo a los atacantes manipular y controlar estos agentes a gran escala. Esto puede tener un impacto significativo en la seguridad de los sistemas que dependen de la automatización y la codificación asistida por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1678957949479-b1e876bee3f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/fake-bug-report-hijacks-ai-coding-agents",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:fake bug report hijacks ai coding agents at scale",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1019,
+    "fecha": "2026-06-30T22:13:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Explotación de Langflow RCE",
+    "resumen": "La vulnerabilidad CVE-2026-33017 en Langflow está siendo explotada por actores maliciosos para desplegar un minero de Monero en puntos finales de aplicaciones de inteligencia artificial (AI) expuestos, aprovechando la vulnerabilidad de ejecución de código remoto (RCE) no autenticada con una puntuación CVSS de 9.3. Los actores amenazantes están escaneando y objetivo puntos finales expuestos de AI para llevar a cabo estos ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-33017",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Virtual Private Server (VPS) no se menciona explícitamente, pero se puede inferir que los actores maliciosos están utilizando recursos para desplegar el minero de Monero, por lo que se reemplaza con:"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-33017"
+      ]
+    }
+  },
+  {
+    "id": 1018,
+    "fecha": "2026-06-30T22:13:28Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataque BioShocking manipula navegadores AI",
+    "resumen": "El ataque BioShocking es una técnica de inyección de comandos que engaña a los navegadores con IA para que ignoren las barreras de seguridad y realicen acciones riesgosas, considerándolas parte de un escenario ficticio. Esto podría permitir el robo de datos y otros ataques maliciosos, aprovechando la capacidad de los modelos de lenguaje para interpretar comandos ambiguos.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729925-7069f7790e4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new bioshocking attack manipulates ai browser into data theft",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal Application Access Token"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1017,
     "fecha": "2026-06-30T19:49:17Z",
     "categoria": "Ciberseguridad",
