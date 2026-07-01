@@ -1,5 +1,241 @@
 [
   {
+    "id": 1036,
+    "fecha": "2026-07-01T07:17:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad UltraVNC",
+    "resumen": "Se ha descubierto la vulnerabilidad CVE-2026-7839 en UltraVNC repeater, que utiliza una contraseña predeterminada y hardcoded \"adminadmi2\" para el servidor de administración HTTP, permitiendo a atacantes remotos autenticarse como administradores y obtener control total de la configuración. El ataque puede realizarse a través del puerto HTTP predeterminado (TCP 80) sin limitaciones de velocidad ni bloqueo.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/182164",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-7839",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "1.8.2.2"
+      ],
+      "cve": [
+        "CVE-2026-7839"
+      ]
+    }
+  },
+  {
+    "id": 1035,
+    "fecha": "2026-07-01T07:17:46Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Phishing en hoteles EU y Asia",
+    "resumen": "Campañas de phishing similares han sido detectadas por Microsoft y Trend Micro, utilizando archivos zip maliciosos para propagar malware a través de ingeniería social y ofuscación, incluyendo el abuso de blockchain. Los atacantes logran persistencia en las organizaciones de hospitalidad de la UE y Asia.",
+    "url_imagen": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/phishers-persistence-eu-asia-hospitality-orgs",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:phishers gain persistence at eu asia hospitality orgs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1034,
+    "fecha": "2026-07-01T07:17:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "ClickFix: Malware a través de API",
+    "resumen": "Un investigador ha analizado 3,000 payloads de ClickFix, revelando que el malware se entrega a través de servidores API que asignan el mismo malware con diferentes disfraces a cada visitante, y se ha descubierto un nuevo método de entrega diseñado para evadir el escaneo de scripts de Windows. Esto indica una evolución en las tácticas de entrega de malware, aumentando el riesgo de infecciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/researcher-analyzes-3000-live-clickfix.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researcher analyzes 3 000 live clickfix payloads exposing api driven malware delivery",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1033,
+    "fecha": "2026-07-01T07:17:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Paquetes PyPI maliciosos atacan servidores de bots de Telegram",
+    "resumen": "Una campaña de ataque activa desde noviembre pasado ha estado dirigida a desarrolladores de Python que construyen bots de Telegram, utilizando versiones trojanizadas de Pyrogram que permiten a los atacantes leer archivos arbitrarios en servidores comprometidos, lo que puede permitir el control de los servidores de bots de Telegram. Los paquetes maliciosos en PyPI son el vector de ataque principal en esta campaña.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-pypi-packages-give-hackers-control-of-telegram-bot-servers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:malicious pypi packages give hackers control of telegram bot servers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1032,
+    "fecha": "2026-07-01T07:16:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Phishing contra Metamask",
+    "resumen": "Un correo electrónico de phishing dirigido a usuarios de Metamask, una cartera de criptomonedas, intenta engañar a los usuarios para obtener sus credenciales, aprovechando su popularidad como un objetivo atractivo para los ciberdelincuentes. El vector de ataque es un correo electrónico malicioso que busca explotar la confianza de los usuarios en la plataforma.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33118",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:why ask credentials if there are secret codes x3f wed jul 1st",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1598",
+        "name": "Obfuscated Files or Information (no se menciona explícitamente, pero se puede inferir que el correo electrónico intenta engañar a los usuarios)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1031,
+    "fecha": "2026-07-01T07:16:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Grupo chino ataca sistemas críticos",
+    "resumen": "Un grupo vinculado a China ha comprometido al menos 10 organizaciones regionales en el sudeste asiático, incluyendo dos entidades estatales, y ha desplegado una nueva backdoor para mantener acceso no autorizado, lo que supone un riesgo significativo para la seguridad de los sistemas críticos en la región. Los vectores de ataque no se han especificado, pero el uso de una nueva backdoor sugiere una estrategia de persistencia y evasión.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/china-linked-group-targets-southeast-asia-critical-systems",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:china linked group targets southeast asia critical systems",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Application Access Token: Local"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1030,
+    "fecha": "2026-07-01T07:16:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque de Azure CLI",
+    "resumen": "Un ataque automatizado de \"password spray\" dirigido a la interfaz de línea de comandos de Azure (CLI) ha comprometido al menos 78 cuentas de Microsoft en más de 81 millones de intentos, originándose desde una dirección IPv6 controlada por LSHIY LLC. El ataque aprovecha la falta de autenticación multifactor para realizar intentos de acceso masivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:azure cli password spray hits at least 78 microsoft accounts in 81m attempts",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no es aplicable en este caso, en su lugar se puede considerar T1566 - Phishing, pero como no hay suficiente información sobre el tipo de phishing, se puede considerar T1110 como la técnica más relevante para el \"password spray\". Sin embargo, se puede inferir que el ataque también involucra T1557 - Forced Authentication, pero como no hay suficiente información, se puede considerar T1550 como la técnica más cercana."
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1029,
+    "fecha": "2026-07-01T07:16:37Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "IA acelera la ciberseguridad",
+    "resumen": "La velocidad de la Inteligencia Artificial (IA) ha cambiado la forma en que se aborda la ciberseguridad, haciendo que el síndrome del impostor sea menos relevante debido a la constante necesidad de aprender y adaptarse a nuevas tecnologías y amenazas. La IA ha introducido conceptos como el \"Threat Modeling\" para \"Agentic AI\" y el \"Internet Agéntico\", lo que ha modificado el enfoque de la seguridad hacia la orquestación y gestión de agentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905916-1f9786324de9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/la-velocidad-mato-al-impostor.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:la velocidad mató al impostor",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "es.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvXMFz9Zli9zeZ4vp13EEXYFgeh2Lk3navTyAYrFsDTzfq03A2JovUnis6PXoNuRk0wTGGpkRKj2Zx2dCcA-fhNZQl1LoNhueZwKVTinTQlSzS4P1Wrq-u4RHeIzQ3LW6NqBcsj6nHVWS5VwgLc5M-Y4mUP_lVkmOW-PnLqLifOQAaoRoOKea-/s800/impostor0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvXMFz9Zli9zeZ4vp13EEXYFgeh2Lk3navTyAYrFsDTzfq03A2JovUnis6PXoNuRk0wTGGpkRKj2Zx2dCcA-fhNZQl1LoNhueZwKVTinTQlSzS4P1Wrq-u4RHeIzQ3LW6NqBcsj6nHVWS5VwgLc5M-Y4mUP_lVkmOW-PnLqLifOQAaoRoOKea-/w640-h372/impostor0.jpg",
+        "https://elladodelmal.com"
+      ]
+    }
+  },
+  {
+    "id": 1028,
+    "fecha": "2026-07-01T07:16:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Correo electrónico: objetivo ciberdelictivo",
+    "resumen": "La cuenta de correo electrónico es un objetivo clave para los ciberdelincuentes debido a que puede servir como un sistema de identidad, permitiendo a los atacantes acceder a información confidencial y realizar ataques como phishing o ransomware. El acceso no autorizado a la bandeja de entrada puede tener un impacto significativo en la seguridad de la información personal y empresarial.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAxOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/por-que-ciberdelincuentes-quieren-acceder-cuenta-correo-electronico/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:por qué tu cuenta de correo electrónico es un objetivo clave para los ciberdelincuentes",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1027,
     "fecha": "2026-07-01T02:59:22Z",
     "categoria": "Ciberseguridad",
