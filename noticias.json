@@ -1,5 +1,209 @@
 [
   {
+    "id": 1052,
+    "fecha": "2026-07-01T14:37:16Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Riesgos de compartir contraseñas de ChatGPT",
+    "resumen": "Compartir contraseñas de servicios de IA como ChatGPT o Claude puede llevar a problemas de privacidad y personalización, ya que estos servicios almacenan información sensible y personalizada de los usuarios, y su uso compartido puede generar conflictos de datos y respuestas inapropiadas. Las empresas que ofrecen estos servicios prohíben expresamente la compartición de credenciales y advierten sobre la responsabilidad de las actividades realizadas con la cuenta.",
+    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/compartir-contrasena-chatgpt-claude-no-como-compartir-netflix-hay-gente-aprendiendolo-malas",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:compartir la contraseña de chatgpt o claude no es como compartir la de netflix hay gente aprendiéndolo por las malas",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "openai.com",
+        "platform.instagram.com",
+        "www.anthropic.com",
+        "www.wsj.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/5c8a04/magnific__quiero-que-cojas-la-img5-y-cambies-el-llavero-en-f__63702/1024_2000.jpeg",
+        "https://i.blogs.es/77fa3e/pexels-tima-miroshnichenko-5711017/1024_682.jpeg",
+        "https://i.blogs.es/77fa3e/pexels-tima-miroshnichenko-5711017/500_333.jpeg",
+        "https://i.blogs.es/77fa3e/pexels-tima-miroshnichenko-5711017/840_560.jpeg",
+        "https://openai.com/es-ES/policies/row-terms-of-use/",
+        "https://www.anthropic.com/legal/consumer-terms",
+        "https://www.wsj.com/tech/ai/ai-chatbot-account-sharing-privacy-0df9b6cd"
+      ]
+    }
+  },
+  {
+    "id": 1051,
+    "fecha": "2026-07-01T14:37:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brechas de datos en Japón",
+    "resumen": "Empresas japonesas como Aflac y Sapporo han notificado recientemente al público sobre brechas de datos, lo que sugiere posibles incidentes de seguridad que podrían haber expuesto información confidencial. Los vectores de ataque no se han especificado, pero es probable que se hayan utilizado técnicas como phishing o exploits de vulnerabilidades conocidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/japan-cyber-breaches-aflac-sapporo-nidec-kddi",
+    "fuente": "The Record",
+    "dedup_key": "txt:japanese insurer brewer manufacturer and telecom disclose cyber breaches",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1050,
+    "fecha": "2026-07-01T14:37:06Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ransomware AI en navegadores",
+    "resumen": "Investigadores de ciberseguridad han detectado un nuevo malware generado con DeepSeek que combina conceptos de malware de navegador con capacidades reales del navegador Chromium para crear una técnica de ransomware que se ejecuta completamente dentro del navegador en dispositivos Windows y Android. Este es el primer caso documentado de un modelo de inteligencia artificial (AI) utilizado para crear un ransomware que aprovecha la API de Chromium.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ai-generated-browser-ransomware-abuses.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai generated browser ransomware abuses chromium api on windows and android",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1049,
+    "fecha": "2026-07-01T14:37:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques a Oracle E-Business",
+    "resumen": "Se han detectado más de 900 instancias de Oracle E-Business Suite (EBS) expuestas en línea, lo que las hace vulnerables a ataques que explotan una falla de seguridad crítica. Estos ataques pueden aprovecharse de la falta de parches de seguridad o configuraciones inseguras para comprometer los sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/over-900-oracle-e-business-instances-exposed-to-ongoing-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:over 900 oracle e business instances exposed to ongoing attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1048,
+    "fecha": "2026-07-01T14:36:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Google Chrome",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-13973) en la implementación de la interfaz de usuario (UI) de Google Chrome, que permite a un atacante remoto realizar spoofing de UI a través de una página HTML maliciosa, siempre y cuando el usuario realice gestos específicos en la UI. La gravedad de la vulnerabilidad se considera media según Chromium.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/182674",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-13973",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-13973"
+      ]
+    }
+  },
+  {
+    "id": 1047,
+    "fecha": "2026-07-01T14:36:51Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Corea del Sur invierte en IA y chips",
+    "resumen": "Corea del Sur ha anunciado un plan de inversión de un billón de dólares en la producción de chips de memoria y en la industria de la \"IA física\", que incluye la creación de robots y sistemas autónomos, con el objetivo de convertirse en un líder en la era de la IA. El plan incluye la inversión de 585.000 millones de dólares en nuevas plantas de fabricación de semiconductores y la creación de centros de datos de IA a gran escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/corea-sur-tiene-plan-para-dominar-chips-memoria-robotica-uno-billon-dolares",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:corea del sur tiene un plan para dominar en chips de memoria y en robótica uno de un billón de dólares",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arstechnica.com",
+        "platform.instagram.com",
+        "www.chosun.com",
+        "www.cnbc.com",
+        "www.koreaherald.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/",
+        "https://i.blogs.es/7d9b08/atlas/1024_2000.jpeg",
+        "https://i.blogs.es/98bccf/jensen-huang-china/375_142.jpeg",
+        "https://www.chosun.com/english/industry-en/2026/06/29/FVFRJHGFABF37PZDZACVLIJWZQ/",
+        "https://www.cnbc.com/2026/06/05/south-korea-labor-minister-calls-on-tech-firms-to-share-excess-ai-profits-with-suppliers-staff.html",
+        "https://www.koreaherald.com/article/10791707",
+        "https://www.koreaherald.com/article/10793367"
+      ]
+    }
+  },
+  {
+    "id": 1046,
+    "fecha": "2026-07-01T14:36:46Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "EE.UU. levanta controles de exportación de IA de Anthropic",
+    "resumen": "El gobierno de EE.UU. ha levantado los controles de exportación sobre ciertos modelos de IA de ciberseguridad de Anthropic después de que la empresa llegara a acuerdos con el gobierno, lo que puede permitir una mayor disponibilidad de estas tecnologías avanzadas de seguridad. Los modelos de IA de Anthropic pueden ser utilizados para mejorar la detección de amenazas y la respuesta a incidentes de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217778-367e9cdb0e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/us-lifts-export-controls-anthropic-cyber-models",
+    "fuente": "The Record",
+    "dedup_key": "txt:us lifts export controls on anthropic s frontier cybersecurity ai models",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1045,
+    "fecha": "2026-07-01T14:36:41Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Inteligencia de Amenazas",
+    "resumen": "La planificación anticipada y la inteligencia de amenazas son clave para defender contra amenazas cibernéticas y garantizar la seguridad digital en eventos, evitando incidentes de seguridad como ataques de phishing o ransomware. La inteligencia de amenazas ayuda a identificar vectores de ataque potenciales y a implementar medidas de seguridad efectivas.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338938900-a15304523070?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/safe-events-threat-intel-digital-security",
+    "fuente": "Dark Reading (Fallback)",
+    "dedup_key": "txt:safe events start with threat intel and digital security",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1044,
+    "fecha": "2026-07-01T14:36:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en LoadMaster",
+    "resumen": "Se han detectado intentos de explotación activos de la vulnerabilidad CVE-2026-8037, una falla de inyección de comandos del sistema operativo en Progress Kemp LoadMaster, que podría permitir la ejecución remota de código (RCE) sin autenticación previa. La vulnerabilidad tiene un puntaje CVSS de 9.6 y se considera crítica.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-8037",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8037"
+      ]
+    }
+  },
+  {
+    "id": 1043,
+    "fecha": "2026-07-01T14:36:30Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Mejorando Inteligencia de Amenazas",
+    "resumen": "La integración de Criminal IP con OpenCTI enriquece los indicadores de amenazas con puntuaciones de riesgo, inteligencia de infraestructura y análisis de phishing, mejorando así la inteligencia de amenazas. Esto permite a los equipos de seguridad tener una visión más completa y precisa de las amenazas potenciales, facilitando la toma de decisiones informadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY1OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/turning-indicators-into-intelligence-in-opencti-with-criminal-ip/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:turning indicators into intelligence in opencti with criminal ip",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1042,
     "fecha": "2026-07-01T11:58:32Z",
     "categoria": "Ciberseguridad",
