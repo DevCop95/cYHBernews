@@ -1,5 +1,130 @@
 [
   {
+    "id": 1058,
+    "fecha": "2026-07-01T17:10:57Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Flaws críticas en editor AI",
+    "resumen": "Se han descubierto dos vulnerabilidades en Cursor, un editor de código AI, que permiten a un atacante ejecutar comandos arbitrarios en el sistema de un desarrollador a través de una inyección de prompts, escapando del sandbox de seguridad sin necesidad de interacción del usuario. Las vulnerabilidades, identificadas como CVE-2026-50548 y CVE-2026-50549, tienen una calificación de severidad de 9,8 y 9,3, respectivamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1775994121052-7e653711f72c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-50548,cve-2026-50549",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-50548",
+        "CVE-2026-50549"
+      ]
+    }
+  },
+  {
+    "id": 1057,
+    "fecha": "2026-07-01T17:10:52Z",
+    "categoria": "Tech",
+    "severidad": "CRITICA",
+    "titulo": "Fuga de datos en Google Chrome",
+    "resumen": "Se ha identificado una vulnerabilidad de fuga de información lateral (side-channel) en el componente WebAudio de Google Chrome, afectando versiones anteriores a 150.0.7871.47, permitiendo a un atacante remoto obtener datos de origen cruzado a través de una página HTML maliciosa. La gravedad de la vulnerabilidad CVE-2026-14071 se clasifica como baja.",
+    "url_imagen": "https://images.unsplash.com/photo-1669050716322-7edb22a623d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/183404",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14071",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14071"
+      ]
+    }
+  },
+  {
+    "id": 1056,
+    "fecha": "2026-07-01T17:10:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque masivo a Microsoft 365",
+    "resumen": "Un campaña de ataque de \"password-spraying\" ha generado más de 81 millones de intentos de inicio de sesión en entornos de Microsoft 365 en un período de dos semanas, lo que sugiere un esfuerzo coordinado para explotar vulnerabilidades de autenticación. Los ataques pueden aprovecharse de contraseñas débiles o reutilizadas, poniendo en riesgo la seguridad de los datos y sistemas de las organizaciones afectadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-365-accounts-with-81-million-login-attempts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers target microsoft 365 accounts with 81 million login attempts",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1055,
+    "fecha": "2026-07-01T17:10:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Google Chrome Android",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-14129) en la implementación de PreviewTab en Google Chrome para Android, versión anterior a 150.0.7871.47, que permite a un atacante remoto realizar spoofing de interfaz de usuario (UI) a través de una página HTML maliciosa, siempre y cuando el usuario realice gestos de interfaz específicos. El nivel de gravedad de esta vulnerabilidad es clasificado como bajo por Chromium.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/183405",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14129",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14129"
+      ]
+    }
+  },
+  {
+    "id": 1054,
+    "fecha": "2026-07-01T17:10:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2025-26597",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer en X.Org y Xwayland, con un CVSS Score de 7.8, que puede ser explotada si se llama a la función XkbChangeTypesOfKey() con un grupo 0 y luego con un valor de grupos distinto de cero, lo que puede provocar un desbordamiento de búfer debido a un tamaño incorrecto de las acciones de teclas. Los productos afectados incluyen tigervnc, xwayland, x_server y redhat enterprise_linux.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-26597",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-26597",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "x.org"
+      ],
+      "cve": [
+        "CVE-2025-26597"
+      ]
+    }
+  },
+  {
+    "id": 1053,
+    "fecha": "2026-07-01T17:10:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ousaban Trojan ataca bancos ibéricos",
+    "resumen": "El trojan bancario brasileño Ousaban se dirige a usuarios de Windows en España y Portugal a través de correos electrónicos de phishing que contienen archivos PDF falsos, con el objetivo de robar credenciales de acceso a cuentas bancarias. El ataque utiliza técnicas de evasión como ocultar su carga útil real dentro de una imagen.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ousaban-banking-trojan-targets-iberian.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ousaban banking trojan targets iberian bank users with fake pdf lures",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1193",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1052,
     "fecha": "2026-07-01T14:37:16Z",
     "categoria": "IA",
