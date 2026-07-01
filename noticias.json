@@ -1,5 +1,185 @@
 [
   {
+    "id": 1072,
+    "fecha": "2026-07-01T22:15:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Jodit Editor",
+    "resumen": "Se ha descubierto una vulnerabilidad de polución de prototipo (Prototype Pollution) en el editor Jodit, que permite a un atacante inyectar propiedades no esperadas, eludir lógica de seguridad o causar denegación de servicio, afectando versiones anteriores a 4.12.26. La vulnerabilidad se debe a la falta de filtrado de claves que mutan el prototipo en la función Jodit.modules.Helpers.set().",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/184168",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-55886",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-55886"
+      ]
+    }
+  },
+  {
+    "id": 1071,
+    "fecha": "2026-07-01T22:15:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2025-5914",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros en la librería libarchive, específicamente en la función archive_read_format_rar_seek_data(), que puede provocar una condición de doble liberación y permitir la ejecución de código arbitrario o una denegación de servicio. La vulnerabilidad afecta productos como libarchive y sistemas de Red Hat, con un CVSS Score de 7.8 (HIGH).",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-5914",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-5914",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-5914"
+      ]
+    }
+  },
+  {
+    "id": 1070,
+    "fecha": "2026-07-01T22:15:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "ClickFix, técnica de entrega de malware",
+    "resumen": "La técnica de ingeniería social ClickFix se ha convertido en la norma para la entrega de malware, según investigadores, lo que indica un aumento en el uso de tácticas de phishing y engaño para infectar sistemas. Esto sugiere que los atacantes están aprovechando la vulnerabilidad humana como vector de ataque principal.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/winner-dominant-malware-delivery-clickfix",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:and the winner in dominant malware delivery clickfix",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1069,
+    "fecha": "2026-07-01T22:15:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Acceso no autorizado a Kubota",
+    "resumen": "La empresa Kubota North America Corporation informó que hackers tuvieron acceso no autorizado a algunos de sus sistemas de red durante más de un mes a principios de este año, lo que podría haber permitido la extracción de datos confidenciales o la instalación de malware. El vector de ataque no se especificó, pero la duración del acceso sugiere una posible falta de monitoreo y respuesta adecuados a incidentes de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/kubota-says-hackers-had-month-long-access-to-network-systems/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:kubota says hackers had month long access to network systems",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1068,
+    "fecha": "2026-07-01T22:15:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Wildfly Elytron",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2025-23368) con un puntaje CVSS de 8.1 en la integración de Wildfly Elytron, que permite ataques de fuerza bruta debido a la falta de medidas para limitar intentos fallidos de autenticación, afectando productos como redhat:wildfly_core y redhat:jboss_enterprise_application_platform. Esto aumenta el riesgo de acceso no autorizado a través de la interfaz de línea de comandos.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-23368",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-23368",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-23368"
+      ]
+    }
+  },
+  {
+    "id": 1067,
+    "fecha": "2026-07-01T22:15:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sospechoso de Scattered Spider extraditado",
+    "resumen": "Un sospechoso de 19 años ha sido extraditado a EE. UU. por su presunta participación en incidentes de seguridad, incluyendo una brecha de datos en una tienda de joyería de lujo en 2025, en lo que parece ser una operación relacionada con el grupo de hackers conocido como Scattered Spider. Los detalles del caso sugieren un posible enfoque en ataques dirigidos a sectores de lujo y retail.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/teen-suspect-in-scattered-spider-hacks-extradited-to-us",
+    "fuente": "The Record",
+    "dedup_key": "txt:teen suspect in scattered spider hacks is extradited to us",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1066,
+    "fecha": "2026-07-01T22:15:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campañas de Phishing Adaptativas",
+    "resumen": "Las campañas de phishing ahora se adaptan automáticamente al dispositivo y sistema operativo (OS) de la víctima, aumentando las tasas de compromiso y rentabilidad de las campañas, mediante el uso de datos de user-agent para entregar payloads específicos para cada OS. Esto permite a los atacantes optimizar sus ataques y aumentar su eficacia.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/phishing-campaigns-auto-adapt-victims-device-os",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:crafty phishing campaigns auto adapt to victim s device os",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Source (se infiere que se utiliza algún tipo de entrega de payload específico para cada OS)"
+      },
+      {
+        "id": "T1583",
+        "name": "Acquire Infrastructure (se infiere que se utiliza algún tipo de infraestructura para entregar los payloads)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1065,
+    "fecha": "2026-07-01T22:15:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Argo CD",
+    "resumen": "Se ha descubierto una vulnerabilidad sin parche en el componente repo-server de Argo CD, que permite a un atacante no autenticado ejecutar código si tiene acceso a la red interna del componente, lo que podría llevar a la toma completa de un clúster de Kubernetes. La vulnerabilidad, encontrada por Synacktiv, no tiene un CVE asignado y no hay una solución disponible.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:unpatched argo cd repo server flaw could let attackers take over kubernetes clusters",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1064,
+    "fecha": "2026-07-01T22:15:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Campaña FortiBleed vinculada a Lynx",
+    "resumen": "La campaña de robo de credenciales FortiBleed ha sido vinculada a las operaciones de ransomware INC y Lynx, lo que sugiere que las credenciales de Fortinet robadas se utilizarían para futuras intrusiones en redes, potencialmente a través de ataques de phishing o explotación de vulnerabilidades. El impacto real podría ser la comprometición de redes y sistemas protegidos por dispositivos Fortinet.",
+    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fortibleed credential theft campaign linked to lynx ransomware",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1063,
     "fecha": "2026-07-01T19:48:03Z",
     "categoria": "Ciberseguridad",
