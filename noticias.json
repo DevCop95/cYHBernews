@@ -1,5 +1,121 @@
 [
   {
+    "id": 1063,
+    "fecha": "2026-07-01T19:48:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-58451 en Horde IMP",
+    "resumen": "La versión de Horde IMP anterior a 7.0.1 contiene una vulnerabilidad de travesía de directorios en lib/Compose.php, permitiendo a atacantes autenticados leer archivos arbitrarios del sistema de archivos del servidor mediante la inclusión de secuencias de travesía en URLs de img src, y también es explotable sin autenticación a través de ataques CSRF contra sesiones autenticadas activas. Esto puede llevar a la exfiltración de archivos sensibles a través de correo electrónico.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/183969",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-58451",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58451"
+      ]
+    }
+  },
+  {
+    "id": 1062,
+    "fecha": "2026-07-01T19:47:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque VEIL#DROP con PureLogs",
+    "resumen": "La cadena de entrega de malware VEIL#DROP utiliza ingeniería social y páginas de Blogger para distribuir el robo de información PureLogs, iniciando con payloads iniciales a través de spear-phishing o compromiso de drive-by. El impacto real incluye el robo de información confidencial, con vectores de ataque que aprovechan la falta de conciencia del usuario y la vulnerabilidad de plataformas en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/veildrop-malware-chain-uses-blogger.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:veil drop malware chain uses blogger platform to deliver purelogs stealer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1061,
+    "fecha": "2026-07-01T19:47:48Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Amenaza de cadena de suministro AI",
+    "resumen": "Los modelos de lenguaje (LLMs) generan dominios web falsos de marcas legítimas, lo que permite a los atacantes registrarlos para actividades maliciosas, creando un vector de ataque difícil de detectar. Esto representa una nueva amenaza en la cadena de suministro, aprovechando la capacidad de los LLMs para \"hallucinar\" información.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218347-64853a917fd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/phantom-squatting-ai-driven-supply-chain-threat",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:phantom squatting an emerging ai driven supply chain threat",
+    "ttps": [
+      {
+        "id": "T1586.001",
+        "name": "Masquerading: Domain Name"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1060,
+    "fecha": "2026-07-01T19:47:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberataque con AsyncRAT",
+    "resumen": "Desconocidos actores de amenaza están utilizando la herramienta de acceso remoto ScreenConnect para desplegar y ejecutar AsyncRAT, un malware de acceso remoto, a través de sitios web falsificados que ofrecen software popular como OBS Studio y Bandicam. El ataque se lleva a cabo mediante la distribución de archivos de instalación maliciosos que se disfrazan como software legítimo.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/seo-poisoned-software-sites-abuse.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:seo poisoned software sites abuse screenconnect to deploy asyncrat",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero AsyncRAT se ejecuta en el sistema, lo que podría implicar el uso de un ejecutable firmado)"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools (se menciona explícitamente el uso de AsyncRAT, un malware de acceso remoto)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1059,
+    "fecha": "2026-07-01T19:47:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Brecha en HSIN de DHS",
+    "resumen": "La plataforma de intercambio de información Homeland Security Information Network (HSIN) ha sido comprometida por hackers, lo que ha llevado a una investigación por parte del Departamento de Seguridad Nacional (DHS), afectando la seguridad de la información compartida entre socios federales, estatales, locales y del sector privado. El vector de ataque no ha sido divulgado, pero se considera un incidente de seguridad grave.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/dhs-confirms-hackers-breached-hsin-info-sharing-platform/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:dhs confirms hackers breached hsin info sharing platform",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1058,
     "fecha": "2026-07-01T17:10:57Z",
     "categoria": "IA",
