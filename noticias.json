@@ -1,5 +1,37 @@
 [
   {
+    "id": 1027,
+    "fecha": "2026-07-01T02:59:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-57963",
+    "resumen": "La vulnerabilidad CVE-2026-57963 permite a un atacante inyectar contenido arbitrario con estilos, enlaces de phishing y CSS que manipula la interfaz de usuario del chat, a través de mensajes de chat HTML enviados vía Matrix o XMPP, afectando a usuarios de Thunderbird, que ha sido parcheada en las versiones 152.0.1 y 140.12.1. El impacto incluye posibles ataques de phishing y manipulación de la interfaz de usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NzQ3NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/182106",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-57963",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-57963"
+      ]
+    }
+  },
+  {
+    "id": 1026,
+    "fecha": "2026-07-01T02:59:10Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Acceso a Claude Fable restaurado",
+    "resumen": "Anthropic ha confirmado que el Departamento de Comercio ha levantado los controles de exportación sobre los dos modelos más potentes de Claude, Fable 5 y Mythos 5, lo que permitirá restaurar el acceso a estos modelos el miércoles. Esto impacta en el acceso a tecnologías de inteligencia artificial avanzadas, específicamente en modelos de lenguaje como Fable y Mythos.",
+    "url_imagen": "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NzQ3NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-to-restore-claude-fable-access-on-wednesday/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anthropic to restore claude fable access on wednesday",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1025,
     "fecha": "2026-06-30T22:14:04Z",
     "categoria": "IA",
