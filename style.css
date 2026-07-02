@@ -224,9 +224,7 @@ body.sidebar-closed .sidebar-item span {
 .hero-card {
   position: relative;
   width: 100%;
-  aspect-ratio: 21/9;
-  min-height: 360px;
-  max-height: 500px;
+  min-height: 420px;
   border-radius: 16px;
   overflow: hidden;
   display: flex;
@@ -266,12 +264,10 @@ body.sidebar-closed .sidebar-item span {
   font-family: var(--font-display);
   font-size: clamp(28px, 4vw, 48px); font-weight: 700; line-height: 1.1; letter-spacing: -1px;
   text-shadow: 0 4px 8px rgba(0,0,0,1), 0 0 20px rgba(0,0,0,0.8);
-  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
 .hero-desc {
   font-size: 16px; color: #ccc; line-height: 1.5; font-weight: 400; max-width: 700px;
   text-shadow: 0 2px 6px rgba(0,0,0,1), 0 0 16px rgba(0,0,0,0.8);
-  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
 .hero-meta {
   display: flex; align-items: center; gap: 12px; font-size: 14px; color: #aaa; margin-top: 8px; font-weight: 500;
@@ -398,7 +394,7 @@ body.sidebar-closed .sidebar-item span {
   .sidebar-footer .footer-link-text { display: none; }
   .sidebar-footer .footer-icon { display: block; width: 22px; height: 22px; margin: 0 auto; }
 
-  .hero-card { aspect-ratio: auto; min-height: 400px; max-height: none; padding: 24px; }
+  .hero-card { min-height: 400px; padding: 24px; }
   .hero-title { font-size: 24px; }
   .hero-desc { font-size: 14px; }
   .hero-card .hero-content > div:last-child { gap: 8px; }
