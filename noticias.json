@@ -1,5 +1,143 @@
 [
   {
+    "id": 1078,
+    "fecha": "2026-07-02T02:50:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad jsPDF",
+    "resumen": "Se ha identificado una vulnerabilidad de inclusión de archivos locales (local file inclusion) en la biblioteca jsPDF para Node.js, con un CVSS Score de 7.5, que permite a un atacante acceder a contenido de archivos arbitrarios en el sistema de archivos local a través de métodos como `loadFile`, `addImage`, `html` y `addFont`. La vulnerabilidad ha sido corregida en la versión 4.0.0 de jsPDF.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA2MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-68428",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-68428",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-68428"
+      ]
+    }
+  },
+  {
+    "id": 1077,
+    "fecha": "2026-07-02T02:50:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Google Chrome",
+    "resumen": "Se ha identificado una vulnerabilidad de tipo \"Type Confusion\" en el motor V8 de Google Chrome, con el identificador CVE-2026-14431, que permite a un atacante remoto ejecutar código arbitrario dentro de una sandbox a través de una página HTML maliciosa. La gravedad de la vulnerabilidad se considera alta según la clasificación de seguridad de Chromium.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/184301",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14431",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14431"
+      ]
+    }
+  },
+  {
+    "id": 1076,
+    "fecha": "2026-07-02T02:49:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Seguridad de correo electrónico insuficiente",
+    "resumen": "Los ataques de phishing modernos, compromiso de correo electrónico empresarial y toma de cuentas explotan identidades confiables y flujos de trabajo legítimos, dificultando su detección por parte de las defensas tradicionales de correo electrónico, por lo que se requiere el uso de IA conductual para automatizar la detección y respuesta. Esto se debe a que los ataques cada vez más sofisticados pueden evadir las medidas de seguridad tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/webinar-why-traditional-email-security-is-no-longer-enough/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:webinar why traditional email security is no longer enough",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1075,
+    "fecha": "2026-07-02T02:49:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Google Chrome",
+    "resumen": "Se ha identificado una vulnerabilidad \"use after free\" en el motor V8 de Google Chrome, permitiendo a un atacante remoto ejecutar código arbitrario dentro de un sandbox a través de una página HTML maliciosa, afectando versiones anteriores a 150.0.7871.46. La gravedad de la vulnerabilidad CVE-2026-14432 se clasifica como \"Media\" según la seguridad de Chromium.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/184302",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14432",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14432"
+      ]
+    }
+  },
+  {
+    "id": 1074,
+    "fecha": "2026-07-02T02:49:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware ChocoPoC ataca investigadores",
+    "resumen": "Se ha descubierto un malware llamado ChocoPoC que se disfraza como exploits de proof-of-concept (PoC) en GitHub, entregando un troyano de acceso remoto (RAT) basado en Python que puede ejecutar comandos y robar datos sensibles, apuntando principalmente a investigadores de ciberseguridad a través de phishing y descargas de código malicioso. El vector de ataque incluye la explotación de la confianza en repositorios de código abierto como GitHub.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-chocopoc-malware-targets-researchers-via-trojanized-poc-exploits/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new chocopoc malware targets researchers via trojanized poc exploits",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1073,
+    "fecha": "2026-07-02T02:49:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware vía sitios falsos de DocuSign",
+    "resumen": "Se ha detectado una campaña de malware que utiliza sitios web falsos que imitan a DocuSign para distribuir malware, con casos identificados en Brasil y potencial para expandirse a otros países de Latinoamérica a través de técnicas adaptables. Los vectores de ataque incluyen phishing y suplantación de sitios web confiables para engañar a las víctimas.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/estafas-enganos/sitios-falsos-docusign-distribuyen-malware-latinoamerica/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:sitios falsos de docusign se utilizan para distribuir malware",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise (se infiere por la mención de sitios web falsos)"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing: Spearphishing Attachment (no se menciona explícitamente, pero se puede inferir que el phishing puede incluir archivos o enlaces maliciosos)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1072,
     "fecha": "2026-07-01T22:15:58Z",
     "categoria": "Ciberseguridad",
