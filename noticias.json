@@ -1,5 +1,150 @@
 [
   {
+    "id": 1118,
+    "fecha": "2026-07-02T22:03:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Asterisk",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2022-37325) con una puntuación CVSS de 7.5 en Sangoma Asterisk, que puede provocar un bloqueo debido a un mensaje de configuración entrante malformado en la versión hasta 16.28.0, 17.x y 18.x hasta 18.14.0, y 19.x hasta 19.6.0. El vector de ataque se relaciona con mensajes de configuración entrantes con formato incorrecto en el componente ooh323c.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-37325",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-37325",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-37325"
+      ]
+    }
+  },
+  {
+    "id": 1117,
+    "fecha": "2026-07-02T22:03:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Actores FortiBleed Colaboran con Inc y Lynx",
+    "resumen": "Los actores detrás del exploit FortiBleed están colaborando con los grupos de ransomware Inc y Lynx, aprovechando el acceso a miles de firewalls Fortinet para monetizarlo, y también están explotando una vulnerabilidad zero-day en Nextcloud. Esto aumenta el riesgo de ataques de ransomware y brechas de datos en organizaciones vulnerables.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/fortibleed-actors-inc-lynx-ransomware-gangs",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:fortibleed actors collaborating with inc lynx ransomware gangs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1116,
+    "fecha": "2026-07-02T22:03:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware explota Citrix Bleed 2",
+    "resumen": "Grupos de ransomware, como el asociado con Anubis, están explotando la vulnerabilidad Citrix Bleed 2 (CVE-2025-5777) para obtener acceso inicial, utilizando herramientas de gestión remota legítimas y credenciales para procedimientos de lateralidad. El ataque aprovecha debilidades en la cadena de suministro y credenciales para expandirse.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2025-5777",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-5777"
+      ]
+    }
+  },
+  {
+    "id": 1115,
+    "fecha": "2026-07-02T22:03:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-58460",
+    "resumen": "La biblioteca react-native-receive-sharing-intent contiene una vulnerabilidad de path traversal (CVE-2026-58460) que permite a una aplicación maliciosa co-residente escribir archivos fuera del directorio de caché intencionado, lo que puede llevar a la sobrescritura de archivos arbitrarios en el directorio de datos privados de la aplicación, incluyendo bases de datos y configuraciones. El ataque se puede realizar mediante un intent explícito ACTION_SEND malicioso a la actividad share-receiver exportada de la aplicación consumidora.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/185648",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-58460",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58460"
+      ]
+    }
+  },
+  {
+    "id": 1114,
+    "fecha": "2026-07-02T22:03:38Z",
+    "categoria": "Tech",
+    "severidad": "MEDIA",
+    "titulo": "FBI Incauta Netnut",
+    "resumen": "La FBI ha incautado el dominio netnut-dot-com por su presunta relación con la botnet Popa, aunque el sitio web oficial de Netnut sigue en línea en netnut-dot-io, lo que plantea dudas sobre si el dominio incautado era un comando y control (C2) real de la botnet o una medida para interrumpir las operaciones de la botnet. El impacto real de esta incautación en la operación de la botnet Popa y la infraestructura de Netnut es incierto.",
+    "url_imagen": "https://images.unsplash.com/photo-1600176842064-635fe81d2441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9069",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:me raises hand hi i have a stupid question the fbi seized netnut dot com because its part of the popa botnet but",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1113,
+    "fecha": "2026-07-02T22:03:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Apple ajusta política de parches",
+    "resumen": "Apple ha decidido reducir los ciclos de parches para mantenerse al día con los ataques que utilizan inteligencia artificial (AI) para reducir el tiempo de explotación de vulnerabilidades, lo que puede impactar la seguridad de sus dispositivos. Esto se debe a que los atacantes están utilizando AI para aprovechar las vulnerabilidades de manera más rápida y eficiente.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/apple-patch-policy-ai",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:apple reverses age old patch policy to keep up with ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1112,
+    "fecha": "2026-07-02T22:03:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "FBI incauta plataforma NetNut",
+    "resumen": "El FBI ha incautado cientos de dominios asociados con NetNut, un servicio de proxy residencial utilizado por la red botnet Popa, que comprende al menos dos millones de dispositivos comprometidos por software malicioso sin consentimiento de las víctimas, afectando la privacidad digital y la seguridad en línea. La acción se llevó a cabo después de que varias firmas de seguridad conectaron NetNut con la red botnet Popa.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:fbi seizes netnut proxy platform popa botnet",
+    "ttps": [
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking (se menciona la red botnet Popa, que comprende dispositivos comprometidos para realizar actividades maliciosas)"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1111,
+    "fecha": "2026-07-02T22:03:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Google Desactiva Red NetNut",
+    "resumen": "Google ha degradado significativamente la red NetNut, una de las redes más grandes que convierte dispositivos domésticos en relés alquilados para el tráfico de otros, reduciendo su pool de dispositivos utilizables en millones, en colaboración con el FBI y otros. La red NetNut, también conocida como Popa, se utilizaba para ataques de tipo proxy y potencialmente para actividades maliciosas como phishing y DDoS.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/google-disrupts-netnut-residential.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google disrupts netnut residential proxy network spanning 2 million home devices",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1110,
     "fecha": "2026-07-02T19:18:47Z",
     "categoria": "Ciberseguridad",
