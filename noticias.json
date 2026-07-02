@@ -1,5 +1,108 @@
 [
   {
+    "id": 1110,
+    "fecha": "2026-07-02T19:18:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en OpenSSH",
+    "resumen": "Se ha identificado una vulnerabilidad en OpenSSH (CVE-2026-35385) con una puntuación CVSS de 7.5, considerada de alto riesgo, que permite la instalación de archivos con permisos setuid o setgid al descargar archivos mediante scp como root sin preservar los modos, lo que puede llevar a resultados inesperados y potenciales ataques de elevación de privilegios. La vulnerabilidad afecta a versiones de OpenSSH anteriores a la 10.3.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-35385",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-35385",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-35385"
+      ]
+    }
+  },
+  {
+    "id": 1109,
+    "fecha": "2026-07-02T19:18:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Google Chrome",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-14415) en la implementación de V8 en Google Chrome, que permite a un atacante remoto potencialmente explotar la corrupción de memoria heap a través de una página HTML maliciosa, siempre y cuando el usuario realice gestos de interfaz de usuario específicos. La gravedad de la vulnerabilidad se considera baja según la clasificación de seguridad de Chromium.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/185481",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14415",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14415"
+      ]
+    }
+  },
+  {
+    "id": 1108,
+    "fecha": "2026-07-02T19:18:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en PraisonAI",
+    "resumen": "La versión de PraisonAI antes de 0.1.7 presenta una vulnerabilidad (CVE-2026-58653) que permite a un atacante crear problemas que hacen referencia a proyectos de otros espacios de trabajo, causando contaminación de datos entre inquilinos en la agregación de estadísticas de proyectos sin restricciones de espacio de trabajo. Esto se debe a la falta de validación del parámetro project_id en los cuerpos de las solicitudes de creación y actualización de problemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/185483",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-58653",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58653"
+      ]
+    }
+  },
+  {
+    "id": 1107,
+    "fecha": "2026-07-02T19:18:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Amenaza a acuerdo EU-US de transferencia de datos",
+    "resumen": "La decisión del Tribunal Supremo y la posterior carta de Max Schrems, fundador de noyb, plantean una amenaza al Marco de Privacidad de Datos EU-EE.UU. (DPF), que permite la transferencia de datos personales de la UE a empresas estadounidenses, debido a preocupaciones sobre la privacidad y la seguridad de los datos. Esto podría afectar la compliance con el Reglamento General de Protección de Datos (GDPR) y tener un impacto significativo en las empresas que transfieren datos entre la UE y EE.UU.",
+    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/supreme-court-decision-threatens-eu-us-data-sharing",
+    "fuente": "The Record",
+    "dedup_key": "txt:supreme court decision threatens eu us data transfer agreement",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1106,
+    "fecha": "2026-07-02T19:18:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ransomware se disfraza como Interpol",
+    "resumen": "Una campaña de ransomware utiliza ingeniería social básica para engañar a pequeñas empresas, afectando a varias regiones, incluyendo EE. UU., Europa, Medio Oriente y otras, con un vector de ataque que aprovecha la confianza en la organización internacional. El impacto real puede ser significativo, ya que las pequeñas empresas pueden ser particularmente vulnerables a este tipo de ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk4ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-use-interpol-lure-target-small-businesses",
+    "fuente": "Dark Reading (Fallback)",
+    "dedup_key": "txt:ransomware thugs masquerade as interpol to entice small biz",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1105,
     "fecha": "2026-07-02T16:47:30Z",
     "categoria": "Ciberseguridad",
