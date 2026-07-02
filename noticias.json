@@ -1,5 +1,192 @@
 [
   {
+    "id": 1092,
+    "fecha": "2026-07-02T11:32:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Opera lanza Paste Protect",
+    "resumen": "Opera ha introducido Paste Protect, una característica de seguridad diseñada para bloquear ataques de estilo ClickFix que engañan a los usuarios para que ejecuten comandos maliciosos a través de ingeniería social, mitigando el riesgo de ataques de phishing y ejecución de código malicioso. Esta función se enfoca en prevenir la ejecución de comandos no deseados a través de la manipulación del portapapeles.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/opera-rolls-out-paste-protect-feature-to-fight-clickfix-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:opera rolls out paste protect feature to fight clickfix attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1091,
+    "fecha": "2026-07-02T11:32:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Aumento de ciberataques en España",
+    "resumen": "El Instituto Nacional de Ciberseguridad (INCIBE) reportó un aumento del 26% en incidentes de ciberseguridad en 2025, con 122.223 incidentes gestionados y 237.028 sistemas vulnerables detectados, lo que supone un riesgo significativo para la seguridad digital en España. Los sectores más afectados incluyen la banca y el transporte, con un 34% de los incidentes en el sector bancario.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/ciberseguridad-en-espana-alerta-por-el-aumento-de-ataques-y-el-burnout-entre-los-cisos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:ciberseguridad en españa alerta por el aumento de ataques y el burnout entre los cisos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1090,
+    "fecha": "2026-07-02T11:32:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-9834 en plugin WP",
+    "resumen": "La versión del plugin \"The WP Database Backup\" para WordPress hasta la 7.11 es vulnerable a inyección de comandos del sistema operativo (OS Command Injection) a través del parámetro `wp_db_exclude_table`, lo que permite a atacantes autenticados con acceso de administrador ejecutar comandos arbitrarios en el servidor. Esto se debe a la concatenación directa de valores proporcionados por el usuario en la cadena de comandos `mysqldump` sin la debida escapada.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/184455",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9834",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9834"
+      ]
+    }
+  },
+  {
+    "id": 1089,
+    "fecha": "2026-07-02T11:32:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ciberseguridad: Misión en expansión",
+    "resumen": "La ciberseguridad está experimentando una expansión de su misión, donde problemas como la desinformación, la seguridad en las redes sociales para menores, las regulaciones antimonopolio y la lucha contra el tráfico de personas se están reframando como cuestiones de ciberseguridad, lo que puede llevar a soluciones unidimensionales y opacas. Esto puede erosionar la confianza pública y la legitimidad política al otorgar poder normativo a los expertos en ciberseguridad para tomar decisiones sin considerar otros factores importantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/cybersecurity-mission-creep-in-the-us.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:cybersecurity mission creep in the us",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "papers.ssrn.com"
+      ],
+      "url": [
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4588977"
+      ]
+    }
+  },
+  {
+    "id": 1088,
+    "fecha": "2026-07-02T11:31:56Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataque de Ransomware Automatizado por Agente IA",
+    "resumen": "Un equipo de investigación de seguridad de Sysdig ha detectado lo que cree es el primer ataque de ransomware completamente automatizado por un agente de IA, que utilizó un modelo de lenguaje para infiltrarse, robar credenciales, moverse por la red y finalmente cifrar y borrar una base de datos de producción. El ataque, atribuido a un operador conocido como JADEPUFFER, demuestra un nuevo nivel de sofisticación en los ataques de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai agent exploits langflow rce to automate database ransomware attack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1087,
+    "fecha": "2026-07-02T11:31:50Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA en Modelado de Amenazas",
+    "resumen": "Se presenta un enfoque híbrido para el modelado de amenazas utilizando IA generativa, reglas deterministas y supervisión humana, destacando la importancia de determinar cuándo delegar en la IA y cuándo utilizar reglas estables o intervención humana. El modelo se aplica a la identificación de riesgos y mitigaciones en fases tempranas del diseño de sistemas, mejorando la reproducibilidad y reduciendo la dependencia de la experiencia especializada.",
+    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/ia-generativa-reglas-deterministas-e.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:ia generativa reglas deterministas e intervención humana lo que aprendí modelando amenazas con un pipeline híbrido",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.blogger.com",
+        "www.campusciberseguridad.com",
+        "www.slideshare.net"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5-w4CjRYuiA9cve6WBCYrQASMcW-sc2a00lOTS-4QZ7W_8d_1jNSoUcDB02w1LVNQHJmoLtNRcNo4D4NHzkbX8IkiPl-uRzIuOmsnP_ddYQeCN33TqQrV6VTrmXeXPk5nOYS9l21K44xjzQ17mHPERvc15MbcFbZZfTtG3RFKk9YEXxPt6Rq1/w640-h416/master0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6g1sXj-vW5Knr0a9OVVVaebrhnMDo7tv552nBve_xV_du7XEbXt9Jsh7V5Ygyf2Sr2hwKMaDlGlvnslSd9Lj-Qgwc6O216xNxbrfeZkU6k2w8TrNcsrEzmhaYJyBLiEDEdtSD0zisUuxTlR9ocnCooa3uZqv2qTcUxeGaV4KnOSnNeFYx3goG/s1482/modelado0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6g1sXj-vW5Knr0a9OVVVaebrhnMDo7tv552nBve_xV_du7XEbXt9Jsh7V5Ygyf2Sr2hwKMaDlGlvnslSd9Lj-Qgwc6O216xNxbrfeZkU6k2w8TrNcsrEzmhaYJyBLiEDEdtSD0zisUuxTlR9ocnCooa3uZqv2qTcUxeGaV4KnOSnNeFYx3goG/w640-h324/modelado0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEj8as8qzpb5moMs2WDxHdy5oqCGem3eQyL4s4cySLl4ckeg313cc71s5k86hMUS2SsqXjxzi5mB9GA_J3EZEFpwpmwiESdjqjTQlBwglOcfvzB9Bp-dQfhnFJ09RM43dfMq1iUDIbaZ_uyd5mcnFats_vhN1FplN4UG6ZyUh2Erjr4jxRqIbI/s846/fig1_dfd_entrada.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEj8as8qzpb5moMs2WDxHdy5oqCGem3eQyL4s4cySLl4ckeg313cc71s5k86hMUS2SsqXjxzi5mB9GA_J3EZEFpwpmwiESdjqjTQlBwglOcfvzB9Bp-dQfhnFJ09RM43dfMq1iUDIbaZ_uyd5mcnFats_vhN1FplN4UG6ZyUh2Erjr4jxRqIbI/w640-h256/fig1_dfd_entrada.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzYZPwFxyglBiCU1FMks8fgIudn8dTWLnMnyjK3eJWaphE_6667JPEDUbVtrld4Ch7nPBQ9_4-y-UOl0bM6C-w5vFAZuHOBsUoOmC_glJ6l_MyblDkxu3ISzwYi3o-3zvie5RHNQxlAqT5Em91_H1P27xqQD9MoMNjxgkpYX4nQ92_-66OXVSR/s1914/fig3_extraccion_inicial.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzYZPwFxyglBiCU1FMks8fgIudn8dTWLnMnyjK3eJWaphE_6667JPEDUbVtrld4Ch7nPBQ9_4-y-UOl0bM6C-w5vFAZuHOBsUoOmC_glJ6l_MyblDkxu3ISzwYi3o-3zvie5RHNQxlAqT5Em91_H1P27xqQD9MoMNjxgkpYX4nQ92_-66OXVSR/w640-h342/fig3_extraccion_inicial.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCzs9b0FEA2mTsZaxmFa7Gzk3oZuxVdhRg6Q9nDCLiQ0TfyFMnOQ8AY_FzCfFFiORHPXtPaSPb14tQFIRI7__655edO9LfO1pCXPZ_FCyluyN9eh6oyIAIdIv947rBViDqZ4tVT0x_TMwsNktdZ5SBj358N5D_5KO9J9r8Bp4c0uMQq0Ga2SbP/s1100/fig2_pipeline.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCzs9b0FEA2mTsZaxmFa7Gzk3oZuxVdhRg6Q9nDCLiQ0TfyFMnOQ8AY_FzCfFFiORHPXtPaSPb14tQFIRI7__655edO9LfO1pCXPZ_FCyluyN9eh6oyIAIdIv947rBViDqZ4tVT0x_TMwsNktdZ5SBj358N5D_5KO9J9r8Bp4c0uMQq0Ga2SbP/w640-h320/fig2_pipeline.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinqbt6Iq61XFGYICDpPOfv0HfdMmGL01xK_DlV3x3PEk9IjtbbsK3Cl5YfUS-Q91rEvWRgEa0FzeIDTllHx_IPBMMTqtnyJ6i16-L2sNBwxYqNWm0Kvx0Uq9w7iQkwIseiAoBaOC4-PZQXliXqTQYCZf-rjYQwYKamosmm298K52RpEFXRbRRs/s1928/Tabla.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinqbt6Iq61XFGYICDpPOfv0HfdMmGL01xK_DlV3x3PEk9IjtbbsK3Cl5YfUS-Q91rEvWRgEa0FzeIDTllHx_IPBMMTqtnyJ6i16-L2sNBwxYqNWm0Kvx0Uq9w7iQkwIseiAoBaOC4-PZQXliXqTQYCZf-rjYQwYKamosmm298K52RpEFXRbRRs/w640-h116/Tabla.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix8dYQGHJvKhRftYCqYjkuQ3IQYW2b3bDBamptNpsFUYqiDy56KntgGF-nn3P794sqsjhk0-y4NbVIFsE0qC-x8ac2U_iGuFOeqeFMWwzeXfQgZLaf9I_OP65GQloSh7JRNefMz2x_7YNFWsEZGnBotMrAM_GtuBe1t3bEgliju-rOA5zd7F54/w640-h528/MatiasDanielAdes.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjF7OsvkQ_0OBpFpL-1orPt8MrXcHGmMbH0gkkrXX84q91_pzFkjZ1g_OL3TV1tnZCAEa0vp7o1wdDofuT5R7aT7LhKSYJi0rG0kQOY0T2fGkLOYbOT97J8FLHTUIvEjOvlsMsa3BhXXoc6IRpYM8tYOrBNYa_SSxmEBZhvlz8EcdEUgwsEHLs/s1833/fig4_correccion_hitl.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjF7OsvkQ_0OBpFpL-1orPt8MrXcHGmMbH0gkkrXX84q91_pzFkjZ1g_OL3TV1tnZCAEa0vp7o1wdDofuT5R7aT7LhKSYJi0rG0kQOY0T2fGkLOYbOT97J8FLHTUIvEjOvlsMsa3BhXXoc6IRpYM8tYOrBNYa_SSxmEBZhvlz8EcdEUgwsEHLs/w640-h298/fig4_correccion_hitl.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyivW5f9id3RP4xam4OVDLSOA2Lpb49G2-AJ8XR4MshGvhUWWddBJgZFl0M7q82Z6PwD9pDz8w4cIqjPobEfXOf-gfqdPQwdND0SwqAVcVi4xQzBLtr74STRJpgQA9sfLYq3QdtZ-DgmYHyPbehPHVt3Y2YWyOWhIwCWoTCYyPj6hdOg__3_1l/s880/fig5_informe_final.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyivW5f9id3RP4xam4OVDLSOA2Lpb49G2-AJ8XR4MshGvhUWWddBJgZFl0M7q82Z6PwD9pDz8w4cIqjPobEfXOf-gfqdPQwdND0SwqAVcVi4xQzBLtr74STRJpgQA9sfLYq3QdtZ-DgmYHyPbehPHVt3Y2YWyOWhIwCWoTCYyPj6hdOg__3_1l/w490-h640/fig5_informe_final.png",
+        "https://elladodelmal.com",
+        "https://www.blogger.com/video.g?token=AD6v5dyOqeYGkOVE2IDR6MYClwTedG0oAefRUovH7_RzDY8dWeA5-xJqI2ADoAkq1YQ_57uFjLWLA3VwVAc",
+        "https://www.campusciberseguridad.com/masters/master-en-inteligencia-artificial-aplicada-ciberseguridad/?utm_source=chema+w26&amp;utm_medium=chema+w26",
+        "https://www.slideshare.net/slideshow/embed_code/key/1heHl0pU4yUQUM",
+        "https://www.slideshare.net/slideshow/modelando-de-amenazas-automatizado-con-inteligencia-artificial-validacion-humana-y-nucleo-determinista/288353595"
+      ]
+    }
+  },
+  {
+    "id": 1086,
+    "fecha": "2026-07-02T11:31:39Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware IA en navegadores",
+    "resumen": "Se ha detectado un malware que utiliza un modelo de IA para conectar riesgos de navegación con técnicas de ransomware, logrando el objetivo sin explotar vulnerabilidades conocidas, lo que representa un nuevo vector de ataque en el ámbito de la ciberseguridad. Esto sugiere un aumento en la complejidad y sofisticación de los ataques cibernéticos asistidos por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/alerta-por-el-primer-ransomware-nativo-del-navegador-asistido-por-ia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:alerta por el primer ransomware nativo del navegador asistido por ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1085,
     "fecha": "2026-07-02T06:38:24Z",
     "categoria": "Ciberseguridad",
