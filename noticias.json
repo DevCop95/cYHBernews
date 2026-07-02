@@ -1,5 +1,136 @@
 [
   {
+    "id": 1105,
+    "fecha": "2026-07-02T16:47:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Colección Malware VXUG",
+    "resumen": "La colección de malware VXUG ha crecido significativamente, con 233,151 archivos y 38,212 subdirectorios, lo que hace inviable su representación como HTML estático debido a su tamaño y complejidad. Esto plantea desafíos para la gestión y visualización de la colección, especialmente considerando su tamaño comprimido de 13.1TB.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9065",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:hello i continue to receive requests to make the malware collection static html like it was from 2019 2023 while",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1104,
+    "fecha": "2026-07-02T16:47:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Handlebars",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección de código JavaScript en la versión 4.7.8 y anteriores de Handlebars, permitiendo a un atacante ejecutar código arbitrario al influir en nombres de archivos de plantillas o argumentos de la CLI, con un CVSS Score de 8.2 (HIGH). La versión 4.7.9 corrige el problema, y se ofrecen soluciones alternativas como la validación de entradas y el uso de un entorno aislado.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-33941",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-33941",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-33941"
+      ]
+    }
+  },
+  {
+    "id": 1103,
+    "fecha": "2026-07-02T16:47:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas de ciberseguridad",
+    "resumen": "El podcast ISC Stormcast del 1 de julio de 2026 analiza las últimas amenazas de ciberseguridad, incluyendo vulnerabilidades y ataques como phishing y exploits de zero-day, que pueden afectar la seguridad de redes y sistemas. Los expertos discuten los vectores de ataque y brindan recomendaciones para protegerse contra estas amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33116",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for wednesday july 1st 2026 https isc sans edu podcastdetail 9990 wed jul 1st",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/9990,"
+      ]
+    }
+  },
+  {
+    "id": 1102,
+    "fecha": "2026-07-02T16:47:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques ConsentFix y ClickFix",
+    "resumen": "Los ataques ConsentFix y ClickFix permiten a los atacantes robar tokens de Microsoft 365 en cuestión de segundos mediante la utilización de prompts falsos y flujos OAuth, lo que permite bypass a la autenticación multifactor (MFA). Estos ataques explotan debilidades en la configuración de seguridad de los flujos de autorización, permitiendo a los atacantes acceder a cuentas de Microsoft 365 sin autorización.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/consentfix-and-clickfix-how-microsoft-365-accounts-are-hijacked-in-3-seconds/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:consentfix and clickfix how microsoft 365 accounts are hijacked in 3 seconds",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1101,
+    "fecha": "2026-07-02T16:47:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad \"DirtyClone\" en Kernel Linux",
+    "resumen": "La vulnerabilidad \"DirtyClone\" en el kernel de Linux permite obtener acceso de root debido a la falta de separación entre la caché de páginas utilizada para ejecutables y archivos, y los datos de paquetes procesados a través de rutas de copia cero, lo que permite ataques de elevación de privilegios. Esto puede ser explotado a través de vectores de ataque como zero-day y ataques de tipo exploit.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114032",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:dirtyclone linux kernel vulnerability leads to root access at a high level the vulnerabilities exist because the k",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1100,
+    "fecha": "2026-07-02T16:47:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Strapi CVE-2022-32114",
+    "resumen": "Se ha identificado una vulnerabilidad de carga de archivos sin restricciones en Strapi v4.1.12, permitiendo a atacantes ejecutar código arbitrario a través de un archivo diseñado, con un CVSS Score de 8.8, clasificada como HIGH. El vector de ataque se enfoca en la función Add New Assets, lo que podría permitir la ejecución remota de código malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-32114",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-32114",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-32114"
+      ]
+    }
+  },
+  {
+    "id": 1099,
+    "fecha": "2026-07-02T16:46:56Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Debilidades en AI y Seguridad",
+    "resumen": "Se han identificado varias vulnerabilidades en diferentes sistemas, incluyendo la posibilidad de secuestrar recursos de cómputo de IA, una falla en el correo electrónico de Apple y el ransomware BlueHammer, que explotan debilidades en permisos, controles y sistemas abiertos. Estas brechas de seguridad se deben a pequeñas fallas en la configuración y permisos, que pueden ser aprovechadas por atacantes para infiltrarse en los sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1761740533449-b8d4385e60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/threatsday-ai-compute-hijacking-apple.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday ai compute hijacking apple email flaw bluehammer ransomware 14 stories",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1098,
     "fecha": "2026-07-02T13:49:32Z",
     "categoria": "Ciberseguridad",
@@ -2768,24 +2899,6 @@
     "iocs": {
       "cve": [
         "CVE-2024-21626"
-      ]
-    }
-  },
-  {
-    "id": 982,
-    "fecha": "2026-06-30T02:54:05Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Amenazas de ciberseguridad",
-    "resumen": "El Stormcast de ISC SANS educa sobre las últimas amenazas de ciberseguridad, incluyendo exploits de vulnerabilidades y ataques de phishing, proporcionando contexto y recomendaciones para la protección de sistemas. Los expertos analizan los vectores de ataque y ofrecen consejos para mejorar la seguridad en línea.",
-    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3ODgwNDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33112",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:isc stormcast for tuesday june 30th 2026 https isc sans edu podcastdetail 9988 tue jun 30th",
-    "ttps": [],
-    "iocs": {
-      "url": [
-        "https://isc.sans.edu/podcastdetail/9988,"
       ]
     }
   },
