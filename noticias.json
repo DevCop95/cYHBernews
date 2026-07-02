@@ -1,5 +1,207 @@
 [
   {
+    "id": 1085,
+    "fecha": "2026-07-02T06:38:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Authlib",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-28498) en la biblioteca Python Authlib, que permite a un atacante eludir las protecciones de integridad de los tokens de ID de OpenID Connect (OIDC) al suministrar un token de ID falsificado con un algoritmo criptográfico no compatible, lo que viola los principios de diseño criptográfico y las especificaciones de OIDC. La vulnerabilidad ha sido parcheada en la versión 1.6.9 de Authlib.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQzMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-28498",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-28498",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-28498"
+      ]
+    }
+  },
+  {
+    "id": 1084,
+    "fecha": "2026-07-02T06:38:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Plugin LMS de WordPress",
+    "resumen": "Se ha descubierto una vulnerabilidad de Insecure Direct Object Reference (IDOR) en el plugin \"The Academy LMS\" para WordPress, que permite a atacantes no autenticados acceder a información detallada del currículum de cursos privados, borradores, programados o protegidos por contraseña, mediante la enumeración de IDs de cursos a través del endpoint REST API '/topics'. La vulnerabilidad afecta versiones hasta y incluyendo la 3.8.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/184432",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-5348",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-5348"
+      ]
+    }
+  },
+  {
+    "id": 1083,
+    "fecha": "2026-07-02T06:38:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Image Optimizer",
+    "resumen": "La versión 1.7.4 del plugin Image Optimizer para WordPress presenta una vulnerabilidad de eliminación de archivos arbitrarios (CVE-2026-5821) debido a una validación de ruta insuficiente, permitiendo a atacantes autenticados con acceso de nivel Autor eliminar archivos arbitrarios en el servidor. Esto puede provocar denegación de servicio, pérdida de datos o degradación de la seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/184433",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-5821",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-5821"
+      ]
+    }
+  },
+  {
+    "id": 1082,
+    "fecha": "2026-07-02T06:38:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en libssh",
+    "resumen": "Se ha descubierto una vulnerabilidad en libssh (CVE-2025-14821) con una puntuación CVSS de 7.8, que permite ataques de \"man-in-the-middle\" locales, degradación de la seguridad de las conexiones SSH y manipulación de la información de hosts de confianza, afectando la confidencialidad, integridad y disponibilidad de las comunicaciones SSH en sistemas Windows debido a una configuración predeterminada insegura. La vulnerabilidad se explota a través de la carga automática de archivos de configuración desde el directorio C:\\etc, que puede ser creado y modificado por usuarios locales no privilegiados.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-14821",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-14821",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-14821"
+      ]
+    }
+  },
+  {
+    "id": 1081,
+    "fecha": "2026-07-02T06:38:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en SharePoint",
+    "resumen": "Se ha detectado una vulnerabilidad de ejecución de código remoto (RCE) en Microsoft SharePoint Server, identificada como CVE-2026-45659, con una puntuación CVSS de 8.8, que se está explotando activamente y ha sido agregada al catálogo de vulnerabilidades conocidas explotadas (KEV) de la Agencia de Ciberseguridad y Seguridad de Infraestructura de EE. UU. (CISA). La vulnerabilidad se debe a la deserialización de datos no confiables, lo que permite la ejecución de código remoto.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-45659",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-45659"
+      ]
+    }
+  },
+  {
+    "id": 1080,
+    "fecha": "2026-07-02T06:37:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Medtronic",
+    "resumen": "La empresa de dispositivos médicos Medtronic notificó a sus clientes afectados por una brecha de datos que expuso sus datos personales a un tercero no autorizado, lo que puede tener implicaciones de seguridad y privacidad para los usuarios de sus dispositivos. La brecha se atribuye a los atacantes conocidos como ShinyHunters.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyNzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/medtronic-notifies-customers-impacted-by-shinyhunters-data-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:medtronic notifies customers impacted by shinyhunters data breach",
+    "ttps": [
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no se menciona, pero se puede inferir que los atacantes utilizaron algún método para obtener acceso no autorizado."
+      },
+      {
+        "id": "T1552",
+        "name": "Unconventional Passwords no se menciona."
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1079,
+    "fecha": "2026-07-02T06:37:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware en fondos de pantalla de Steam",
+    "resumen": "Kaspersky ha detectado una campaña de distribución de malware que se esconde en fondos de pantalla descargados desde Steam Workshop y Wallpaper Engine, lo que podría afectar a los usuarios de la plataforma de juegos en línea. El malware se propaga a través de la descarga de fondos de pantalla infectados, lo que puede permitir a los atacantes acceder a sistemas y datos personales.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/detectan-malware-oculto-en-fondos-de-pantalla-descargados-desde-steam/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:detectan malware oculto en fondos de pantalla descargados desde steam",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1078,
     "fecha": "2026-07-02T02:50:18Z",
     "categoria": "Ciberseguridad",
