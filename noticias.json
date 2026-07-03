@@ -1,5 +1,55 @@
 [
   {
+    "id": 1143,
+    "fecha": "2026-07-03T22:47:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache ZooKeeper",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-24308) en Apache ZooKeeper que permite la exposición de información sensible en el archivo de registro del cliente debido al manejo inadecuado de valores de configuración, afectando a versiones 3.8.5 y 3.9.4. La actualización a las versiones 3.8.6 o 3.9.5 corrige este problema de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMTg4MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-24308",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-24308",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-24308"
+      ]
+    }
+  },
+  {
+    "id": 1142,
+    "fecha": "2026-07-03T22:46:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad \"Bad Epoll\" en Linux",
+    "resumen": "La vulnerabilidad \"Bad Epoll\" (CVE-2026-46242) en el núcleo de Linux permite a usuarios no privilegiados obtener acceso de root, afectando a escritorios, servidores Linux y dispositivos Android, con un vector de ataque que aprovecha una debilidad en el código del kernel. Un modelo de inteligencia artificial (AI) de Anthropic había detectado previamente una vulnerabilidad diferente en la misma sección de código.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMTg4MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-46242",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-46242"
+      ]
+    }
+  },
+  {
+    "id": 1141,
+    "fecha": "2026-07-03T22:46:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Red de proxy NetNut desmantelada",
+    "resumen": "Una operación conjunta que involucra a Google ha desmantelado la red de proxy NetNut, que proporcionaba acceso a millones de dispositivos Android comprometidos, incluyendo smart TVs y cajas de streaming, cortando así la conexión a aproximadamente 2 millones de dispositivos infectados. Esto representa un golpe significativo contra la infraestructura de ataques de tipo botnet y ransomware que dependen de redes de proxy para ocultar sus actividades.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMTg4MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/netnut-proxy-network-disrupted-2-million-infected-devices-cut-off/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:netnut proxy network disrupted 2 million infected devices cut off",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1140,
     "fecha": "2026-07-03T22:01:51Z",
     "categoria": "Ciberseguridad",
