@@ -1,5 +1,33 @@
 [
   {
+    "id": 1140,
+    "fecha": "2026-07-03T22:01:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Desarrollo de Malware",
+    "resumen": "El desarrollo de malware y la ingeniería inversa de malware en Windows comienzan con la comprensión de los conceptos de archivos y extensiones de archivos, incluyendo cómo se manejan las extensiones de archivos en el registro de Windows y cómo se utilizan para la entrega de payloads. La comprensión de los diferentes tipos de archivos y cómo se ejecutan en Windows es fundamental para entender los mecanismos de entrega de malware y los métodos de evasión.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMTYxMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9075",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:honestly if you re wanting to get into malware development and malware reverse engineering specifically in regards",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1139,
+    "fecha": "2026-07-03T22:01:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades en FatFs",
+    "resumen": "Se han descubierto siete vulnerabilidades en FatFs, una biblioteca de sistema de archivos pequeña que permite a los dispositivos leer y escribir formatos FAT y exFAT, utilizados en millones de dispositivos embebidos, incluyendo cámaras de seguridad, drones y controladores industriales, lo que podría permitir ataques de código arbitrario y ejecución de malware. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para acceder a dispositivos no parcheados.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMTYxMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:unpatched flaws disclosed in filesystem bundled into millions of embedded devices",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1138,
     "fecha": "2026-07-03T19:12:57Z",
     "categoria": "IA",
