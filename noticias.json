@@ -1,5 +1,154 @@
 [
   {
+    "id": 1123,
+    "fecha": "2026-07-03T02:32:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS en weDocs para WordPress",
+    "resumen": "Se ha descubierto una vulnerabilidad de Cross-Site Scripting (XSS) almacenada en el plugin weDocs para WordPress, que utiliza inteligencia artificial (IA) para la base de conocimiento y el chatbot, debido a una insuficiente sanitización de entradas y escapada de salidas en el atributo 'connectorWidth' de los bloques, permitiendo a atacantes autenticados con acceso de contribuidor o superior inyectar scripts web arbitrarios en páginas. Esto afecta todas las versiones hasta la 2.3.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/185682",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-12734",
+    "ttps": [
+      {
+        "id": "T1064",
+        "name": "Cross-Site Scripting (XSS)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-12734"
+      ]
+    }
+  },
+  {
+    "id": 1122,
+    "fecha": "2026-07-03T02:32:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en urllib3",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-21441) en la biblioteca urllib3 de Python, que puede permitir a un servidor malicioso desencadenar un consumo excesivo de recursos en el cliente a través de una \"bomba de descompresión\" en respuestas de redirección HTTP, afectando a aplicaciones que transmiten contenido de fuentes no confiables con 'preload_content=False'. La actualización a urllib3 v2.6.3 o la deshabilitación de redirecciones puede mitigar este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-21441",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-21441",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-21441"
+      ]
+    }
+  },
+  {
+    "id": 1121,
+    "fecha": "2026-07-03T02:32:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en AR para WordPress",
+    "resumen": "La vulnerabilidad CVE-2026-14327 en el plugin AR para WordPress permite a atacantes no autenticados leer contenido de archivos arbitrarios en el servidor a través de Directory Traversal, utilizando el parámetro 'file' y explotando handlers AJAX accesibles públicamente. El ataque requiere obtener un nonce y una clave de cifrado válidos, lo cual es factible en instalaciones predeterminadas sin licencia.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/185684",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14327",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14327"
+      ]
+    }
+  },
+  {
+    "id": 1120,
+    "fecha": "2026-07-03T02:32:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Eclipse Mosquitto",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2021-34432) con una puntuación CVSS de 7.5, considerada de alto riesgo, en versiones 2.07 y anteriores de Eclipse Mosquitto, que puede causar un bloqueo del servidor si un cliente intenta enviar un paquete PUBLISH con una longitud de tema igual a 0. Esto podría ser utilizado como vector de ataque para realizar un denial of service (DoS).",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-34432",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-34432",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "TCP Flood no se aplica, pero se puede inferir un ataque de Denegación de Servicio (DoS) similar, aunque no es exactamente un flood de TCP, se ajusta más a:"
+      },
+      {
+        "id": "T1498.002",
+        "name": "No se aplica, pero se puede considerar un ataque de:"
+      },
+      {
+        "id": "T1498.003",
+        "name": "No se aplica, pero se puede considerar un ataque de Denegación de Servicio (DoS) similar a:"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2021-34432"
+      ]
+    }
+  },
+  {
+    "id": 1119,
+    "fecha": "2026-07-03T02:32:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ciberdelito en Australia",
+    "resumen": "La implementación de salvaguardas institucionales mejoradas y regulaciones más estrictas en Australia ha transferido la carga de protección y reducción de riesgos a las pequeñas y medianas empresas (SMBs), lo que puede aumentar su vulnerabilidad a ataques cibernéticos como phishing, malware y ransomware. Esto resalta la necesidad de que las SMBs inviertan en herramientas de seguridad como firewalls, EDR y SIEM para cumplir con la compliance y protegerse contra incidentes de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-analytics/aussies-face-reduced-cybercrime-risk-pressure-shifts-smbs",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:aussies face reduced cybercrime risk as pressure shifts to smbs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1118,
     "fecha": "2026-07-02T22:03:57Z",
     "categoria": "Ciberseguridad",
@@ -4695,40 +4844,6 @@
         "CVE-2026-6450"
       ]
     }
-  },
-  {
-    "id": 919,
-    "fecha": "2026-06-27T19:14:26Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad Path Traversal en WordPress",
-    "resumen": "Se ha detectado una vulnerabilidad de Path Traversal en el plugin WordPress OrderConvo 14, lo que permite a atacantes acceder a archivos del sistema fuera del directorio raíz del sitio web, potencialmente exponiendo información sensible. El vector de ataque implica la manipulación de rutas de archivos para acceder a directorios no autorizados.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52607",
-    "fuente": "Exploit-DB",
-    "ttps": [
-      {
-        "id": "T1005",
-        "name": "Data from Local System"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1083",
-        "name": "File and Directory Discovery"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 918,
