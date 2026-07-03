@@ -1,5 +1,137 @@
 [
   {
+    "id": 1128,
+    "fecha": "2026-07-03T06:28:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache Airflow",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2023-33234) en el proveedor de Kubernetes de Apache Airflow, que permite la ejecución de código arbitrario mediante la modificación de la imagen y los recursos del sidecar xcom a través de la conexión de Airflow, requiriendo permisos elevados (Op o Admin) para su explotación. La actualización a la versión 7.0.0 del proveedor elimina la vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-33234",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-33234",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-33234"
+      ]
+    }
+  },
+  {
+    "id": 1127,
+    "fecha": "2026-07-03T06:28:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-9725",
+    "resumen": "La vulnerabilidad CVE-2026-9725 en el plugin Printcart Web to Print Product Designer para WooCommerce en WordPress permite la eliminación arbitraria de archivos debido a una insuficiente validación de rutas en la función store_design_data(), lo que puede permitir la ejecución remota de código. Un atacante no autenticado puede explotar esta vulnerabilidad mediante el endpoint nbd_check_use_logged_in para obtener un nonce y eliminar archivos arbitrarios en el servidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/185742",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9725",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9725"
+      ]
+    }
+  },
+  {
+    "id": 1126,
+    "fecha": "2026-07-03T06:27:47Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Satélite con IA analiza imágenes",
+    "resumen": "La NASA y LoftOrbital han desarrollado NAVI-Orbital, un software que utiliza modelos de visión y lenguaje como Gemma 3 para que los satélites puedan analizar y describir lo que ven sin necesidad de enviar imágenes a la Tierra, lo que reduce el tiempo y el costo de análisis. Esto permite aplicaciones civiles y militares, como la detección de vertidos de petróleo o el seguimiento de objetivos militares.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwNjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/espacio/nasa-ha-conseguido-que-satelite-entienda-que-ve-mandar-foto-a-tierra",
+    "fuente": "Xataka IA (Fallback)",
+    "dedup_key": "txt:la nasa ha conseguido que un satélite entienda lo que ve sin mandar ni una foto a la tierra",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arxiv.org",
+        "www.datacamp.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://arxiv.org/abs/2606.18271",
+        "https://i.blogs.es/0eaf82/spatial_density_of_known_satellites_and_objects_around_earth/375_142.jpeg",
+        "https://i.blogs.es/fe51c0/satelite-con-ia/1024_2000.jpeg",
+        "https://www.datacamp.com/es/blog/edge-ai"
+      ]
+    }
+  },
+  {
+    "id": 1125,
+    "fecha": "2026-07-03T06:27:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Spyware en teléfono de eurodiputado",
+    "resumen": "Se ha detectado el spyware Pegasus en el teléfono de Stelios Kouloglou, un ex miembro del comité del Parlamento Europeo que investigaba abusos de spyware comercial, lo que sugiere un posible ataque dirigido contra él. El vector de ataque fue el software Pegasus, un spyware de alto nivel utilizado para infiltrar dispositivos móviles.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/pegasus-spyware-european-parliament-pega-committee-member",
+    "fuente": "The Record",
+    "dedup_key": "txt:spyware found on phone of european parliament member probing it",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise (se infiere por el uso de spyware para infiltrar dispositivos móviles)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging (es una característica común de spyware como Pegasus)"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1124,
+    "fecha": "2026-07-03T06:27:27Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Fallos críticos duplicados por IA",
+    "resumen": "El informe 'Under Pressure: 2026 Exposure Gap Report' de Check Point revela que la proporción de brechas críticas se ha duplicado en el último año, aumentando el riesgo de colapso digital, aunque solo una fracción requiere acción inmediata. La integración de la IA en los sistemas empresariales puede ser un factor contribuyente a este aumento en vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-duplica-los-fallos-criticos-en-las-empresas-y-agrava-el-riesgo-de-colapso-digital/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia duplica los fallos críticos en las empresas y agrava el riesgo de colapso digital",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1123,
     "fecha": "2026-07-03T02:32:40Z",
     "categoria": "Ciberseguridad",
