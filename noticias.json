@@ -1,5 +1,54 @@
 [
   {
+    "id": 1137,
+    "fecha": "2026-07-03T16:22:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Paquetes npm maliciosos de Corea del Norte",
+    "resumen": "Actores maliciosos con vínculos a Corea del Norte han creado paquetes npm maliciosos que imitan herramientas de polyfill de Rollup para facilitar el acceso remoto y el robo de datos, afectando a desarrolladores que utilizan estas herramientas legítimas. Los paquetes \"rollup-packages-polyfill-core\" y \"rollup-runtime-polyfill-core\" se disfrazan como el proyecto legítimo \"rollup-plugin-polyfill-node\".",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwOTU3NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:north korea linked npm packages mimic rollup polyfills to steal developer secrets",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1136,
+    "fecha": "2026-07-03T16:22:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "PhaaS ARToken expone toolkit de phishing",
+    "resumen": "La plataforma de phishing-as-a-service (PhaaS) ARToken, afiliada a EvilTokens, ha sido descubierta con una herramienta extensa para comprometer cuentas de Microsoft 365 a través de ataques de phishing, lo que supone un riesgo significativo para la seguridad de los usuarios de este servicio. Los vectores de ataque incluyen técnicas de ingeniería social y exploits de vulnerabilidades en la autenticación de Microsoft 365.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwOTU3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/artoken-phaas-exposes-eviltokens-microsoft-365-phishing-toolkit/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:artoken phaas exposes eviltokens microsoft 365 phishing toolkit",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Phase Transition: Phishing"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1135,
     "fecha": "2026-07-03T13:53:31Z",
     "categoria": "IA",
