@@ -1,5 +1,40 @@
 [
   {
+    "id": 1132,
+    "fecha": "2026-07-03T11:29:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vigilancia de vehículos sin matrículas",
+    "resumen": "La empresa Flock ofrece una tecnología de \"huella de vehículo\" que permite a los agentes de la ley recopilar y buscar datos sobre los vehículos, incluyendo detalles como calcomanías, estantes y matrículas temporales, incluso sin información completa de la matrícula. Esto puede utilizarse para construir casos más fuertes con menos información inicial y localizar múltiples vehículos que se mueven juntos.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNzgxNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/flock-cameras-can-surveil-cars-without-license-plates.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:flock cameras can surveil cars without license plates",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "amp.newsobserver.com"
+      ],
+      "url": [
+        "https://amp.newsobserver.com/news/politics-government/article315990932.html"
+      ]
+    }
+  },
+  {
+    "id": 1131,
+    "fecha": "2026-07-03T11:28:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Pérdida de teléfono: riesgos de fraude",
+    "resumen": "La pérdida o robo de un teléfono móvil puede exponer a los usuarios a riesgos de fraude y robo de datos, especialmente si no se toman medidas de seguridad adecuadas, como bloquear el dispositivo y cambiar contraseñas de cuentas sensibles. Los vectores de ataque pueden incluir acceso no autorizado a cuentas bancarias y otros servicios en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNzgxMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/telefono-perdido-como-actuar-para-evitar-fraudes-y-robos-de-datos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:teléfono perdido cómo actuar para evitar fraudes y robos de datos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1130,
     "fecha": "2026-07-03T07:03:37Z",
     "categoria": "IA",
