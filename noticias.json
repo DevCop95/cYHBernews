@@ -1,5 +1,90 @@
 [
   {
+    "id": 1135,
+    "fecha": "2026-07-03T13:53:31Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Anthropic Desarrolla Chip de IA Propio",
+    "resumen": "Anthropic está en negociaciones con Samsung para desarrollar un chip de IA propio, con el objetivo de reducir su dependencia de terceros y mejorar su competitividad en el mercado de la inteligencia artificial. Esta decisión se produce después de que OpenAI presentara su propio chip de inferencia, \"Jalapeño\", lo que podría dejar a Anthropic en desventaja si no sigue el mismo camino.",
+    "url_imagen": "https://images.unsplash.com/photo-1689443111384-1cf214df988a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwODY4MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-esta-preparando-justo-unico-que-le-faltaba-para-reforzar-su-liderazgo-ia-chip-propio",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:anthropic ya está preparando justo lo único que le faltaba para reforzar su liderazgo ia un chip propio",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "investor.nvidia.com",
+        "nvidianews.nvidia.com",
+        "openai.com",
+        "platform.instagram.com",
+        "www.reuters.com",
+        "www.theinformation.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/bfde93/oblea-anthropic/1024_2000.jpeg",
+        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/1024_2000.png",
+        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/1366_2000.png",
+        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/450_1000.png",
+        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/650_1200.png",
+        "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-and-Samsung-Build-AI-Factory-to-Transform-Global-Intelligent-Manufacturing/default.aspx",
+        "https://nvidianews.nvidia.com/news/samsung-ai-factory",
+        "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+        "https://www.reuters.com/business/anthropic-weighs-building-it-own-ai-chips-sources-say-2026-04-09/",
+        "https://www.theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip"
+      ]
+    }
+  },
+  {
+    "id": 1134,
+    "fecha": "2026-07-03T13:53:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "LLMs Chinos Amplían la Brecha",
+    "resumen": "Dos nuevos modelos de lenguaje de empresas chinas compiten con los modelos líderes y de vanguardia de EE. UU., lo que podría ampliar la brecha entre atacantes y defensores en el ámbito de la ciberseguridad, especialmente en cuanto a la detección y mitigación de ataques basados en inteligencia artificial. Esto plantea preocupaciones para los defensores cibernéticos, ya que los modelos de lenguaje avanzados pueden ser utilizados para crear ataques más sofisticados, como phishing y malware personalizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwODY4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/chinese-llms-broaden-gap-between-attackers-and-defenders",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:chinese llms broaden the gap between attackers amp defenders",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1133,
+    "fecha": "2026-07-03T13:53:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques de Armored Likho",
+    "resumen": "El actor de amenaza desconocido previamente \"Armored Likho\" ha sido identificado como responsable de ataques cibernéticos dirigidos a agencias gubernamentales y al sector eléctrico en Rusia, Brasil y Kazajistán, utilizando el stealer \"BusySnake\" para realizar campañas de espionaje cibernético y motivadas financieramente. Los ataques combinan espionaje cibernético dirigido con campañas financieras que apuntan a individuos privados.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwODY3OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/armored-likho-targets-government.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:armored likho targets government agencies power sector with busysnake stealer",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Spearphishing via Correo Electrónico (no se menciona explícitamente, pero se puede inferir que se utilizan técnicas de phishing para distribuir el stealer)"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Client Application (se puede inferir que el stealer \"BusySnake\" se utiliza para explotar aplicaciones cliente)"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging (el stealer \"BusySnake\" puede incluir funcionalidades de keylogging para robar información)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1132,
     "fecha": "2026-07-03T11:29:06Z",
     "categoria": "Ciberseguridad",
