@@ -1,5 +1,23 @@
 [
   {
+    "id": 1158,
+    "fecha": "2026-07-04T19:03:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-33810",
+    "resumen": "Se ha identificado una vulnerabilidad en el lenguaje de programación Go (golang:go) con un CVSS Score de 8.2, clasificada como alta, que afecta la validación de cadenas de certificados cuando se utilizan restricciones DNS con nombres de servidor alternativos (SAN) wildcard que tienen una casing diferente a la restricción, lo que podría permitir ataques de suplantación de identidad. Esta vulnerabilidad solo afecta la validación de cadenas de certificados de confianza emitidas por una autoridad de certificación raíz (root CA) en el conjunto de certificados raíz del sistema o en el almacén de certificados del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxOTE4Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-33810",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-33810",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-33810"
+      ]
+    }
+  },
+  {
     "id": 1157,
     "fecha": "2026-07-04T15:58:11Z",
     "categoria": "IA",
