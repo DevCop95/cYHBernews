@@ -1,5 +1,57 @@
 [
   {
+    "id": 1157,
+    "fecha": "2026-07-04T15:58:11Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-14630 en ForceInjection AI",
+    "resumen": "Se ha descubierto una vulnerabilidad en ForceInjection AI-fundermentals 2.0/3.0, específicamente en la función get_conversation_history, que permite el uso de un hash débil y puede ser explotada de forma remota con un alto grado de complejidad. La explotación puede ser difícil, pero el exploit ha sido divulgado públicamente y se recomienda instalar un parche para abordar este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330389517-e414cbea868c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxODA2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/186061",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14630",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "f57277fdd9ba373ace72d83c272023ec67f720d6"
+      ],
+      "cve": [
+        "CVE-2026-14630"
+      ]
+    }
+  },
+  {
+    "id": 1156,
+    "fecha": "2026-07-04T15:58:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Entidad gubernamental paga $1M",
+    "resumen": "Una entidad gubernamental de EE. UU. pagó aproximadamente $1 millón para evitar la fuga de archivos robados, según un estudio de caso de Rakesh Krishnan para Ransom-ISAC, basado en un chat de negociación filtrado y el rastro de blockchain que dejó el pago, lo que sugiere un posible caso de extorsión por robo de datos en lugar de un ataque de ransomware tradicional.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxODA2ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:u s government entity paid kairos 1 million in data theft extortion case",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no se menciona, pero se puede inferir T1490 -  no se menciona, pero se puede inferir"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1155,
     "fecha": "2026-07-04T13:15:00Z",
     "categoria": "Ciberseguridad",
