@@ -1,5 +1,23 @@
 [
   {
+    "id": 1147,
+    "fecha": "2026-07-04T04:49:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache ZooKeeper",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-24281) en Apache ZooKeeper que permite a los atacantes suplantar servidores o clientes mediante la falsificación de registros DNS inversos (PTR) y la presentación de un certificado válido, aunque el atacante debe tener un certificado de confianza para ZKTrustManager. La actualización a la versión 3.8.6 o 3.9.5 corrige este problema al introducir una opción para deshabilitar la búsqueda de DNS inverso.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNDA1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-24281",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-24281",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-24281"
+      ]
+    }
+  },
+  {
     "id": 1146,
     "fecha": "2026-07-04T02:30:14Z",
     "categoria": "Ciberseguridad",
