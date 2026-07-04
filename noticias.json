@@ -1,5 +1,126 @@
 [
   {
+    "id": 1155,
+    "fecha": "2026-07-04T13:15:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "EE.UU. ofrece $10M por info sobre hackers",
+    "resumen": "El Departamento de Estado de EE.UU. ofrece una recompensa de $10 millones por información sobre los grupos UNC5792 y UNC4221, vinculados a Rusia, que han estado detrás de ataques a cuentas de Signal y WhatsApp de funcionarios gubernamentales mediante phishing y abuso de características legítimas de \"dispositivos vinculados\". Los objetivos principales fueron funcionarios que trabajan en políticas relacionadas con Ucrania.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114033",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:us offers 10m for info on russia linked hackers behind signal and whatsapp attacks the state department announced a",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking (no se menciona explícitamente, pero se infiere por \"dispositivos vinculados\" y abuso de características legítimas)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "File and Directory Discovery (no se menciona explícitamente, pero se infiere que los atacantes necesitarían explorar las cuentas y dispositivos de los funcionarios para llevar a cabo el ataque)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1154,
+    "fecha": "2026-07-04T13:14:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-53362 en Linux",
+    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux (CVE-2026-53362) que permitía a un usuario no privilegiado provocar una corrupción de memoria a través de un socket UDPv6 utilizando MSG_MORE y MSG_SPLICE_PAGES, debido a un error en la contabilidad de la longitud de los fragmentos (fraggap) en la ruta de asignación de páginas. El vector de ataque se basa en la explotación de este error para escribir más allá del final de un skb, lo que podría llevar a una ejecución de código arbitrario.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/186054",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-53362",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-53362"
+      ]
+    }
+  },
+  {
+    "id": 1153,
+    "fecha": "2026-07-04T13:14:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Kernel de Linux",
+    "resumen": "Se ha identificado una vulnerabilidad de alto riesgo (CVSS 7.1) en el kernel de Linux, específicamente en el módulo cls_u32, que podría permitir un ataque de slab-out-of-bounds debido a la falta de validación de valores negativos en skb_header_pointer(), lo que se ha resuelto utilizando skb_header_pointer_careful(). La vulnerabilidad se ha designado como CVE-2026-23204.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-23204",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-23204",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-23204"
+      ]
+    }
+  },
+  {
+    "id": 1152,
+    "fecha": "2026-07-04T13:14:41Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "TOTO invierte en chips de 1 nm",
+    "resumen": "La empresa japonesa TOTO, conocida por sus inodoros inteligentes, invertirá 495 millones de dólares en cinco años para escalar su negocio de fabricación de componentes cerámicos de alta precisión para semiconductores, con el objetivo de apoyar tecnologías de fabricación de próxima generación en el rango de un nanómetro, lo que permitirá la miniaturización necesaria para la tecnología de IA y centros de datos. Esta inversión se enmarca dentro del esfuerzo de Japón por reforzar su cadena de suministro doméstica de semiconductores.",
+    "url_imagen": "https://images.unsplash.com/photo-1772217360642-0f7a7b1b77d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/gran-tapado-ia-mayor-fabricante-wc-inteligentes-japon-va-a-gastar-500-millones-chips-futuro",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el gran tapado de la ia es el mayor fabricante de wc inteligentes de japón va a gastar 500 millones en los chips del futuro",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "asia.nikkei.com",
+        "finance.biggo.com",
+        "platform.instagram.com",
+        "totobymio.com",
+        "unsplash.com",
+        "www.businesswire.com",
+        "www.trendforce.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://asia.nikkei.com/business/tech/semiconductors/how-toilet-maker-toto-turned-its-ceramics-know-how-into-an-ai-play",
+        "https://asia.nikkei.com/business/tech/semiconductors/japan-s-toto-to-invest-495m-in-chip-materials-targeting-1-nm-era",
+        "https://finance.biggo.com/news/6dCf2p0BoQmpnl366vWO",
+        "https://i.blogs.es/01d34d/iaaaa/375_142.jpeg",
+        "https://i.blogs.es/43d8e7/totito/1024_2000.jpeg",
+        "https://totobymio.com/producto/wc-rp-suspendido-toto/",
+        "https://unsplash.com/es/@omilaev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        "https://www.businesswire.com/news/home/20260217852087/en/Palliser-Capital-Publishes-Value-Enhancement-Plan-for-TOTO",
+        "https://www.trendforce.com/presscenter/news/20230105-11526.html"
+      ]
+    }
+  },
+  {
+    "id": 1151,
+    "fecha": "2026-07-04T13:14:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque PolinRider: 108 paquetes maliciosos",
+    "resumen": "Actores de amenaza norcoreanos han publicado 108 paquetes y extensiones maliciosas en plataformas como npm, Packagist, Go y Google Chrome, como parte de la campaña PolinRider, que sigue activa y comprometiendo cuentas de mantenedores para distribuir malware. Los vectores de ataque incluyen la publicación de paquetes maliciosos en repositorios de código abierto y la comprometión de cuentas de desarrolladores.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:north korean hackers publish 108 malicious packages and extensions in polinrider campaign",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1150,
     "fecha": "2026-07-04T10:51:56Z",
     "categoria": "Ciberseguridad",
@@ -4587,20 +4708,6 @@
         "https://yro.slashdot.org/story/26/06/27/0635220/california-sheriff-says-their-drone-disarmed-a-suspect-shares-video-on-instagram"
       ]
     }
-  },
-  {
-    "id": 953,
-    "fecha": "2026-06-29T15:38:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "EE.UU. ofrece $10M por hackers",
-    "resumen": "El Departamento de Estado de EE.UU. ofrece hasta $10 millones por información que ayude a identificar o localizar a miembros de los grupos de hackers UNC5792 y UNC4221, vinculados a los servicios de inteligencia y militares de Rusia, que han estado objetivo a usuarios de WhatsApp y Signal. Estos grupos han sido identificados como una amenaza a la seguridad nacional y la privacidad digital.",
-    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/us-offers-10-million-for-hackers-targeting-whatsapp-signal-users/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:u s offers 10 million for hackers targeting whatsapp signal users",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 952,
