@@ -1,5 +1,81 @@
 [
   {
+    "id": 1150,
+    "fecha": "2026-07-04T10:51:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-14623",
+    "resumen": "Se ha identificado una vulnerabilidad en el proyecto omec amf versión 2.1.1, que afecta la función RRCInactiveTransitionReport del componente NGAP Message Handler, permitiendo un ataque de denegación de servicio (DoS) remoto. La explotación de esta vulnerabilidad ya ha sido divulgada públicamente y puede ser utilizada por atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNjIzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/186002",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14623",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "34bc6724acc97dba1f8691e586da95b042cb612d"
+      ],
+      "cve": [
+        "CVE-2026-14623"
+      ]
+    }
+  },
+  {
+    "id": 1149,
+    "fecha": "2026-07-04T10:51:50Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "ChatGPT Codex: Agente de Programación",
+    "resumen": "ChatGPT Codex es un agente de programación que utiliza modelos de GPT especializados en programación para escribir código, analizar proyectos y ejecutar pruebas de forma autónoma, permitiendo a los usuarios trabajar de manera más eficiente en proyectos de programación. Esto puede tener un impacto significativo en la productividad y la calidad del código, pero también plantea desafíos en términos de seguridad y privacidad de los datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNjIzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/basics/chatgpt-codex-que-que-puedes-hacer-como-utilizarlo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:chatgpt codex qué es qué puedes hacer con él y cómo utilizarlo",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "chatgpt.com",
+        "es.wikipedia.org",
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://chatgpt.com/codex/cloud",
+        "https://chatgpt.com/es-ES/codex/",
+        "https://i.blogs.es/3c305f/modo-bloqueo/375_142.jpeg",
+        "https://i.blogs.es/86c90a/chatgpt-codex/1024_2000.jpeg",
+        "https://i.blogs.es/a98c39/dar-la-mano/375_142.jpeg",
+        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/1024_2000.png",
+        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/1366_2000.png",
+        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/450_1000.png",
+        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/650_1200.png"
+      ]
+    }
+  },
+  {
+    "id": 1148,
+    "fecha": "2026-07-04T10:51:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fallo en \"Hide My Email\" de Apple",
+    "resumen": "El servicio \"Hide My Email\" de Apple, diseñado para ocultar direcciones de correo electrónico reales, ha fallado en su propósito, lo que podría exponer a los usuarios a ataques de phishing y spam. Esto resalta la importancia de la seguridad de la información de contacto en servicios en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNjIzMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-roundup-apples-hide-my-email-service-fails-to-hide-your-email/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:security roundup apple s hide my email service fails to hide your email",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1147,
     "fecha": "2026-07-04T04:49:00Z",
     "categoria": "Ciberseguridad",
