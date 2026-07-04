@@ -1,5 +1,41 @@
 [
   {
+    "id": 1160,
+    "fecha": "2026-07-04T21:55:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL Injection",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-14654) en el script de carrito de compras \"Simple and Nice Shopping Cart\" de SourceCodester, que permite una inyección SQL remota a través de la manipulación del argumento \"user_id\" en el archivo /admin/girlsproductdeletequery.php. El exploit es de acceso público y puede ser utilizado por atacantes para explotar la vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMDIxNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/186097",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14654",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14654"
+      ]
+    }
+  },
+  {
+    "id": 1159,
+    "fecha": "2026-07-04T21:55:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en blackbox_exporter",
+    "resumen": "Se ha descubierto una vulnerabilidad de control de acceso en la interfaz de prueba de blackbox_exporter v0.23.0, que permite a los atacantes detectar puertos y servicios en la intranet, así como descargar recursos, aunque se puede configurar la autenticación para mitigar el problema. La vulnerabilidad tiene un puntaje CVSS de 7.5, clasificada como alta.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMDIxMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-26735",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-26735",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-26735"
+      ]
+    }
+  },
+  {
     "id": 1158,
     "fecha": "2026-07-04T19:03:58Z",
     "categoria": "Ciberseguridad",
