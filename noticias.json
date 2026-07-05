@@ -1,5 +1,79 @@
 [
   {
+    "id": 1169,
+    "fecha": "2026-07-05T19:10:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en AIL Framework",
+    "resumen": "La vulnerabilidad CVE-2026-59510 en el marco de trabajo AIL permite a un atacante autenticado acceder a archivos fuera del directorio de almacenamiento de PDF mediante secuencias de travesía relativas o componentes de ruta absoluta, lo que podría revelar datos sensibles. La vulnerabilidad se debe a una falla en la verificación de rutas en la función PDF.get_filepath() y se soluciona con la canonicalización de la ruta resultante y la verificación de su ubicación.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyNzg2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/188397",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-59510",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "14c618fce4d1df02358717c48ea903706abecdf2"
+      ],
+      "cve": [
+        "CVE-2026-59510"
+      ]
+    }
+  },
+  {
+    "id": 1168,
+    "fecha": "2026-07-05T19:10:06Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ladrones apuntan a centros de datos de IA",
+    "resumen": "Los ladrones de mercancías han encontrado una oportunidad de negocio en los centros de datos de IA, robando material valioso como cable de cobre y otros suministros, con pérdidas que alcanzan millones de dólares. Los robos han ocurrido en Illinois y otros lugares, aprovechando la creciente demanda de infraestructura de centros de datos para la inteligencia artificial.",
+    "url_imagen": "https://images.unsplash.com/photo-1689443111384-1cf214df988a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyNzg2MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/mayoria-se-opone-a-centros-datos-ia-hay-grupo-entusiasmado-ellos-ladrones-mercancias",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:mientras la mayoría se opone a los centros de datos de ia hay un grupo entusiasmado con ellos los ladrones de mercancías",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "futurism.com",
+        "platform.instagram.com",
+        "www.bbc.com",
+        "www.businessinsider.com",
+        "www.outsideonline.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://futurism.com/artificial-intelligence/data-center-steal-millions-cargo",
+        "https://i.blogs.es/44d339/magnific_quiero-que-edites-la-img5_1seionqr4r/1024_2000.jpeg",
+        "https://i.blogs.es/5dd223/gemini_generated_image_j6ldfsj6ldfsj6ld/375_142.png",
+        "https://www.bbc.com/news/articles/cy8gy7lv448o",
+        "https://www.businessinsider.com/cargo-thieves-stole-million-of-data-center-supplies-sheriff-says-2026-6",
+        "https://www.outsideonline.com/outdoor-adventure/exploration-survival/nike-train-heist/",
+        "https://www.thecanadianpressnews.ca/business/ai-demand-and-tactics-drive-surge-in-cargo-theft-costing-consumers-more/article_0d6543c8-f73e-5495-abcc-67d2855114ec.html"
+      ]
+    }
+  },
+  {
     "id": 1167,
     "fecha": "2026-07-05T13:21:54Z",
     "categoria": "Ciberseguridad",
