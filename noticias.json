@@ -1,5 +1,84 @@
 [
   {
+    "id": 1163,
+    "fecha": "2026-07-05T02:39:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware con BUN y C2",
+    "resumen": "Un analista de seguridad informa haber deobfuscado un archivo .exe que contenía código JavaScript malicioso (BUN) y haber encontrado la configuración de comando y control (C2), lo que permitió identificar la fuente de descarga de malware adicional, aunque Cloudflare parece haber neutralizado la amenaza. El análisis revela la complejidad de las técnicas de ocultación y distribución de malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMTkxODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9088",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:literally shaking screaming crying throwing up the exe is bundled with bun some javascript bullshit i deobfu",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1102",
+        "name": "Web Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1162,
+    "fecha": "2026-07-05T02:39:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CSRF en Spiceworks",
+    "resumen": "Se ha identificado una vulnerabilidad de tipo CSRF (Cross-Site Request Forgery) con un CVSS Score de 8.8 en versiones de Spiceworks anteriores a 7.5.00107, lo que permite una escalada de privilegios a través de la función \"/settings/v1/users\". Esta vulnerabilidad puede ser explotada por atacantes para obtener acceso no autorizado a sistemas y datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMTkxODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-23451",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-23451",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2020-23451"
+      ]
+    }
+  },
+  {
+    "id": 1161,
+    "fecha": "2026-07-05T02:39:35Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Meta: Inversión en IA no rinde",
+    "resumen": "Mark Zuckerberg ha expresado su insatisfacción con el ritmo de avances en la inteligencia artificial (IA) agéntica en Meta, a pesar de una inversión de más de 14.000 millones de dólares el año pasado, lo que pone en duda la efectividad de la estrategia de la empresa en este campo. La reestructuración de la empresa, que incluyó despidos y reasignaciones, se llevó a cabo para financiar inversiones en infraestructuras de IA y capitalizar las mejoras en eficiencia derivadas del trabajo asistido por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMTkxNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/servicios/mark-zuckerberg-no-esta-contento-se-ha-hecho-saber-a-su-equipo-tememos-no-ser-suficientemente-rapidos-para-adaptarnos",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:mark zuckerberg no está contento y se lo ha hecho saber a su equipo tememos no ser lo suficientemente rápidos para adaptarnos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "finance.yahoo.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://finance.yahoo.com/technology/ai/articles/exclusive-zuckerberg-says-ai-agent-201123441.html",
+        "https://i.blogs.es/36c420/iaaaa/1024_2000.jpeg",
+        "https://unsplash.com/es/fotos/una-persona-escribiendo-en-una-computadora-portatil-sobre-una-mesa-adrO5seSbBE"
+      ]
+    }
+  },
+  {
     "id": 1160,
     "fecha": "2026-07-04T21:55:40Z",
     "categoria": "Ciberseguridad",
