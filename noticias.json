@@ -1,5 +1,92 @@
 [
   {
+    "id": 1165,
+    "fecha": "2026-07-05T06:37:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque de phishing con GTA 6",
+    "resumen": "Un anuncio engañoso ofrece una versión beta gratuita de \"Grand Theft Auto 6\" que, en realidad, contiene malware oculto en un archivo .exe dentro de un archivo .rar, representando un vector de ataque de phishing que puede infectar sistemas con malware. El impacto real puede incluir la pérdida de datos, el control no autorizado del sistema y otros daños relacionados con la seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMzM0MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9087",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:chat today is a good day look at this grand theft auto 6 beta for free advertisement that fell onto my lap it d",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el archivo .exe es ejecutado por el usuario, por lo que se ajusta más a T1204."
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1164,
+    "fecha": "2026-07-05T06:36:52Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Proxy para reducir costos en tokens de IA",
+    "resumen": "Se presenta \"pxpipe\", un proxy que permite insertar prompts y contexto en imágenes para reducir los costos en tokens de modelos de lenguaje como Claude, lo que puede ayudar a mitigar la brecha entre empresas y ciudadanos con acceso a modelos de IA de vanguardia y aquellos con limitaciones presupuestarias. Esto puede ser especialmente útil en aplicaciones que requieren el uso de modelos de lenguaje avanzados, como agentes de IA para pruebas de penetración.",
+    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMzM0MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/pxpipe-un-proxy-para-insertar-e-prompts.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:pxpipe un proxy para insertar e prompts y el contexto en imagenes y ahorrar muchos costes en tokens de claude u otros",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blog.cloudflare.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.blogger.com",
+        "www.cloudflare.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDgBci4fabmJTmkhhC1Xl493yvq2INUoXLUtCOMSZwzjfBAZscb_hMuUzAyqAt4bg0YxuxRJgKXJad-MGneuZnn76I20w7whZHjn8HoGArrHPSsZHs_zL3ooawrFDZN3ssEk_-YGpPPDAn5TZrLLcNg9oNmoGp_jnUr8OKEgrU2QKOUs5D5YyI/w640-h198/BLOG-3331_image1.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJxPqMGXc2tLDH6d_OzF3kp9J2HyqQLwfGjIKzW4L4_t96gjxeNJKF0l7SEzBbnXFH5fz8gbIr6OSMxZ2zuXyW-gFkVSbEQDpCsd9XJgA_jJIRSicZu0tDKdH0HdD52Aa3_OhJkNGtjDPoGUhMn-qzCamHBp33bD3878EhVwqOALmnBdczRFDP/s1573/pxpie1.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJxPqMGXc2tLDH6d_OzF3kp9J2HyqQLwfGjIKzW4L4_t96gjxeNJKF0l7SEzBbnXFH5fz8gbIr6OSMxZ2zuXyW-gFkVSbEQDpCsd9XJgA_jJIRSicZu0tDKdH0HdD52Aa3_OhJkNGtjDPoGUhMn-qzCamHBp33bD3878EhVwqOALmnBdczRFDP/w640-h508/pxpie1.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpAc1LgpbE6OZfG0UbTaTBNAmeMvqs653uwcCdOG49Fud_67le6A29D8n3s2b_UuvEZ93uUW21-yiGwv-xpqUfF6fYGomdsMSs4NAlQm3ivDj2QQ-EQ4EWrTsR8qU-mi1tcCwThE6eDnVWhjvVZYhtCyJjazxwQu9GWeARZX2MOhzontZy9mns/w640-h616/AI_Gateway.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiB0REvk_s-S87pGgdcQ7BxhysTaHnJQIknsYjJSeVui2GG3oZMHWE49Dk3uM-hR0X6ehBv4mFbrGoxl1fl2Glg9d6K5qUnQUzBBnB5QT8A_UJzRKBWmfvKdTfI_lluHGn5cDGXQ1bC8pWhbkHYGcQkRQI6mAgRHWGSdVRpZkCU0m1cmWGP8zYM/w520-h640/pxpipe_github.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRmYv2xbQACWFWZJse4T1UCrSzD-RzREyx64tsj0C5s5AVvuaGt8Ck41n8LcZQaDjHOfIww8g8_A82nFHd1pK_omnhGmahONhBckOkH3wYWjyBFi67QsOKZxLy-chTmI0TfwzT1kDIgyWAuMuX-5Aq6XVLFMMF8C7G453iBavbLLVxfDtY8zbl/w640-h358/IA_Costes.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilnnIGXxqu2nswPNUS8xBz-q3L_fZwFiGlxIXmZkwpAxn33QB6GQ5KhQ7NbYvZznDcFgQJqOOvYiBU9uq2HemuUkn8xYx3WF3EzFjvARnz2kxhisKzYHDk8aSivNmYuWOJN3VpW3ih62KZm7Ab3NI3nCULRH1Fjv9ayW_efVoCwHmmv-Odt4Eo/w640-h382/pxpipe0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisghUjUWE8fcwwq3CNO5JLUqlTUJXcs4O0l4kdSODRerR0Jtv2FKSvA3igWco8PGIZrMk_xnzHRXrEoAZ6wD8vYVjX2nyDd_-4tJzHusYntKz3QKoyr2is3SxId-pXHcZ0fj5XXRgxknwdmgPzYWL8bb0hMDpyu9yqszaII_tnFPL4iP76eNXp/w596-h640/fable2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3qU00XyirSJ5OC_iHLVRhx_lGOh0VpvbRSHHs5XBr_GtyqatFf1I_75bskljiqp-mSjDckHTDTPvB57spB_rmMA4vGN_hp9H0L3QIuNd0bZJ4SxhPMTx6mVhiKtyVaeipN9TcVf6YP2See0ux8y5CtWSm5-64-_NmJR9-H3ybRh3hPbyLfqZI/w568-h640/fable1.jpg",
+        "https://elladodelmal.com",
+        "https://www.blogger.com/video.g?token=AD6v5dyFhkk0s7gVgQbtI1dI9tnr7uFr9cUUhXCw4lvag2EV7DzJqQ6NzVXJPPTw6gqsy-fTGlXO44BJ_lc",
+        "https://www.blogger.com/video.g?token=AD6v5dz63pULUTrvIaVNEwu17fSi6LukBngD3_fNdAbp_Ndxe3NouJ8evpM1Ve5Kp3rXyBpk6uwLHt0-JX0",
+        "https://www.elladodelmal.com/2026/05/como-optimizar-el-gasto-en-ia-con.html",
+        "https://www.elladodelmal.com/2026/06/como-filtrar-las-api-keys-de-los-llms.html",
+        "https://www.elladodelmal.com/2026/06/weaponinzing-token-consumption-en-llm.html"
+      ]
+    }
+  },
+  {
     "id": 1163,
     "fecha": "2026-07-05T02:39:46Z",
     "categoria": "Ciberseguridad",
