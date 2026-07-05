@@ -1,5 +1,44 @@
 [
   {
+    "id": 1167,
+    "fecha": "2026-07-05T13:21:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL Injection",
+    "resumen": "Se ha detectado una vulnerabilidad de seguridad (CVE-2026-14746) en el archivo /addprojectrent.php de code-projects Real State Services 1.0, que permite una inyección de código SQL a través de la manipulación del argumento \"amen\", y puede ser iniciada de forma remota. La explotación de esta vulnerabilidad ha sido divulgada públicamente, lo que la hace potencialmente explotable por atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyNTc3MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/187862",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14746",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1055",
+        "name": "Unintended Proxy or Intermediary"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14746"
+      ]
+    }
+  },
+  {
     "id": 1166,
     "fecha": "2026-07-05T11:01:53Z",
     "categoria": "Ciberseguridad",
