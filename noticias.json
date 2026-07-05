@@ -1,5 +1,44 @@
 [
   {
+    "id": 1166,
+    "fecha": "2026-07-05T11:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-14736",
+    "resumen": "Se ha descubierto una vulnerabilidad en Ruijie RG-UAC versión 1.0-R1.8.2.p5, que permite la subida de archivos sin restricciones a través de la manipulación del argumento upload_image en el archivo user_auth_commit.php, lo que puede ser explotado de forma remota. La explotación ya ha sido publicada y podría ser utilizada por atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyNDkzMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/187855",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14736",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1525",
+        "name": "Upload Malicious Content"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14736"
+      ]
+    }
+  },
+  {
     "id": 1165,
     "fecha": "2026-07-05T06:37:01Z",
     "categoria": "Ciberseguridad",
