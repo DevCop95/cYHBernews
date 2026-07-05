@@ -1,5 +1,83 @@
 [
   {
+    "id": 1171,
+    "fecha": "2026-07-05T21:57:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL en Timetabling System",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2026-14770) en el sistema de programación de clases y exámenes SourceCodester Class and Exam Timetabling System 1.0, que permite inyección de código SQL a través de la manipulación del argumento ID en el archivo /edit_room.php, permitiendo ataques remotos. La explotación de esta vulnerabilidad ya es pública y puede ser utilizada por atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyODg2NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/188402",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14770",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated Input"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14770"
+      ]
+    }
+  },
+  {
+    "id": 1170,
+    "fecha": "2026-07-05T21:57:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2018-5354",
+    "resumen": "La vulnerabilidad CVE-2018-5354 en el módulo GINA/CP personalizado de ANIXIS Password Reset Client permite a atacantes remotos ejecutar código y escalar privilegios mediante suplantación de identidad, especialmente cuando el cliente está configurado para usar HTTP sin autenticación del servidor. La explotación puede ocurrir a través de un ataque de suplantación de identidad y, en algunos casos, mediante RDP si no se aplica la autenticación a nivel de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyODg2NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-5354",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-5354",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2018-5354"
+      ]
+    }
+  },
+  {
     "id": 1169,
     "fecha": "2026-07-05T19:10:13Z",
     "categoria": "Ciberseguridad",
