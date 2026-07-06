@@ -1,5 +1,83 @@
 [
   {
+    "id": 1173,
+    "fecha": "2026-07-06T02:44:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Mojo::JSON",
+    "resumen": "La versión de Mojo::JSON anterior a 9.47 para Perl permite el agotamiento de memoria a través de una recursividad ilimitada en el decodificador puro de Perl, lo que puede causar un denial of service si se decodifica un documento JSON no confiable. El vector de ataque se produce a través de la decodificación de un JSON con una estructura anidada profunda, que puede consumir memoria excesiva en el proceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMDU4ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/188421",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14803",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "Exploitation for Resource Hijacking (Agotamiento de recursos)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14803"
+      ]
+    }
+  },
+  {
+    "id": 1172,
+    "fecha": "2026-07-06T02:44:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2017-15683",
+    "resumen": "La vulnerabilidad CVE-2017-15683, con una puntuación CVSS de 8.6, permite a un atacante no autenticado crear un sitio con XML especialmente diseñado para recuperar archivos del sistema operativo fuera de banda en Crafter CMS Crafter Studio versión 3.0.1. Esto representa un riesgo significativo de exposición de datos y acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMDU4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-15683",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-15683",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1565",
+        "name": "Data Manipulation"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2017-15683"
+      ]
+    }
+  },
+  {
     "id": 1171,
     "fecha": "2026-07-05T21:57:34Z",
     "categoria": "Ciberseguridad",
