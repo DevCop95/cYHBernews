@@ -1,5 +1,182 @@
 [
   {
+    "id": 1194,
+    "fecha": "2026-07-06T22:10:39Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Navegadores de IA: Riesgo de Seguridad",
+    "resumen": "Los navegadores agénticos, como ChatGPT Atlas, presentan un riesgo de seguridad debido a su capacidad para interpretar y ejecutar acciones en la web, lo que los hace vulnerables a técnicas como el prompt injection, permitiendo a los atacantes alterar su comportamiento y ejecutar acciones no autorizadas. La investigación de la Universidad de Washington encontró que cuatro de los siete navegadores agénticos populares analizados abrían vías de riesgo relevantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218534-156f33c28f8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNzU4NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/navegadores-ia-llegaron-promesa-cambiarlo-todo-no-solo-no-han-hecho-peligro",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:los navegadores de ia llegaron con la promesa de cambiarlo todo no solo no lo han hecho son un peligro",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "developer.mozilla.org",
+        "franziroesner.com",
+        "openai.com",
+        "platform.instagram.com",
+        "www.datacamp.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/",
+        "https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy",
+        "https://franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf",
+        "https://i.blogs.es/602196/suplantacion-nombres-usuario-whatsaapp-1/375_142.jpeg",
+        "https://i.blogs.es/fec3a6/navegadores-con-ia-amenaza-de-seguridad-1/1024_2000.jpeg",
+        "https://openai.com/es-ES/index/introducing-chatgpt-atlas/",
+        "https://www.datacamp.com/blog/prompt-injection-attack?utm_cid=23552157100&utm_aid=188237542530&utm_campaign=230119_1-ps-other~dsa-tofu~ai_2-b2c_3-emea_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na&utm_loc=1005493-&utm_mtd=-c&utm_kw=&utm_source=google&utm_medium=paid_search&utm_content=ps-other~emea-en~dsa~tofu~blog~artificial-intelligence&gad_source=1&gad_campaignid=23552157100&gbraid=0AAAAADQ9WsEILdTkPRgQ0UZqPSdf1wM9H&gclid=CjwKCAjwpK3SBhASEiwAtV1SPAgkw0hJBAB2GQxIBRfDwrGKuH78rqV4Oh40UleWP23-kPHHtILQEhoCBGkQAvD_BwE",
+        "https://www.perplexity.ai/comet"
+      ]
+    }
+  },
+  {
+    "id": 1193,
+    "fecha": "2026-07-06T22:10:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Agencia canadiense informa hackeo a grupos criminales",
+    "resumen": "La Agencia de Seguridad de las Comunicaciones de Canadá informó que realizó operaciones ofensivas contra tres grupos criminales en 2025, incluyendo un grupo de ransomware-as-a-service, un grupo extremista en línea extranjero y traficantes de drogas, demostrando capacidades de ciberseguridad ofensiva. Los vectores de ataque no se especifican, pero el uso de técnicas de hacking sugiere una posible explotación de vulnerabilidades o ingeniería social.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNzU4MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/canada-cse-2025-cyber-operations-ransomware-drugs-extremism",
+    "fuente": "The Record",
+    "dedup_key": "txt:canadian spy agency reports hacking three criminal groups in 2025",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Manipulate Other Application Data"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1622",
+        "name": "Taint Shared Content"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1192,
+    "fecha": "2026-07-06T22:10:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "BusySnake ataca infraestructura",
+    "resumen": "El grupo de amenazas \"Armored Likho\" ha obtenido acceso a agencias gubernamentales y entidades de energía eléctrica en Rusia, Brasil y Kazajistán mediante el infostealer \"BusySnake\", lo que supone un riesgo significativo para la seguridad de la infraestructura crítica. El vector de ataque no se especifica, pero el impacto potencial es alto debido a la naturaleza sensible de los objetivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNzU4Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/busysnake-infostealer-critical-infrastructure-networks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:busysnake infostealer slithers into critical infrastructure networks",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Infraestructura de energía y servicios públicos"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unconventional Password Brute Forcing no se menciona explícitamente pero se puede inferir T1005 - Data from Local System"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1191,
+    "fecha": "2026-07-06T22:10:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad KVM Linux",
+    "resumen": "Se ha descubierto una vulnerabilidad de uso después de liberación (use-after-free) en el hipervisor KVM de Linux, conocida como \"Januscape\" (CVE-2026-53359), que permite a una máquina virtual invitada corromper el estado de la memoria sombreada del kernel del host, afectando sistemas Intel y AMD x86. Un exploit de prueba ha demostrado que puede provocar un panic en el host.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNzU4MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-53359",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1482",
+        "name": "Data Encrypted or Destroyed for Impact"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-53359"
+      ]
+    }
+  },
+  {
+    "id": 1190,
+    "fecha": "2026-07-06T22:10:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Phishing como entrevistas laborales",
+    "resumen": "Una campaña de phishing se hace pasar por más de 30 marcas conocidas, incluyendo Adobe, Netflix, Coca-Cola y OpenAI, para robar credenciales de cuentas de Google de profesionales de marketing a través de entrevistas laborales falsas. El ataque utiliza técnicas de ingeniería social para engañar a las víctimas y obtener acceso a sus cuentas de Google.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNzU4MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/phishing-poses-as-big-brand-job-interview-to-steal-google-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:phishing poses as big brand job interview to steal google accounts",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing for Credentials"
+      },
+      {
+        "id": "T1598.002",
+        "name": "Phishing via Fake Website o T1598.003 - Phishing via Search Engine Optimization (no se menciona explícitamente, pero se puede inferir que se utilizan técnicas de phishing para obtener credenciales)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1189,
     "fecha": "2026-07-06T19:50:13Z",
     "categoria": "IA",
