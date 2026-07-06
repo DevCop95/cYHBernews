@@ -1,5 +1,140 @@
 [
   {
+    "id": 1185,
+    "fecha": "2026-07-06T17:39:47Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "China regula IA antropomórfica",
+    "resumen": "El gobierno chino ha publicado las Medidas Provisionales para la Administración de Servicios de Interacción Antropomórfica con IA, que regulan el uso de IA diseñada para parecer una persona, lo que ha llevado a empresas como Doubao y Qwen a desactivar sus agentes de IA personalizados. Esta regulación se centra en los sistemas que simulan interacciones humanas, excluyendo asistentes para trabajar, estudiar, investigar o atender al cliente.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298826-5f787e536299?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/china-acaba-regular-algo-que-realmente-importa-que-ia-acabe-siendo-nuestra-amiga-nuestra-novia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:china acaba de regular algo que realmente importa que la ia acabe siendo nuestra amiga o nuestra novia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "chatgpt.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.cac.gov.cn",
+        "www.reddit.com",
+        "www.scmp.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/edn-20260210-1#:~:text=In%202025%2C%2063.8%25%20of%20young,those%20aged%2016%2D74",
+        "https://i.blogs.es/08ebc4/brooks-leibee-lcy_xxoqq7w-unsplash/375_142.jpeg",
+        "https://i.blogs.es/1e99c2/robot-nina-amistad-ia/1024_2000.jpeg",
+        "https://i.blogs.es/fe9f8a/usando-movil/375_142.jpeg",
+        "https://unsplash.com/es/fotos/foto-de-la-nina-que-pone-la-mano-izquierda-en-un-robot-digital-blanco-0E_vhMVqL9g",
+        "https://www.cac.gov.cn/2026-04/10/c_1777558395284407.htm?utm_source=chatgpt.com",
+        "https://www.scmp.com/tech/big-tech/article/3359482/bytedance-and-alibaba-disable-humanlike-ai-custom-agents-new-rules-loom"
+      ]
+    }
+  },
+  {
+    "id": 1184,
+    "fecha": "2026-07-06T17:39:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque cibernético en plataforma de anime",
+    "resumen": "Un estudiante japonés fue arrestado por explotar una vulnerabilidad en una plataforma de streaming de anime por suscripción, lo que permitió cancelar fraudulentamente más de 46,000 suscripciones de usuarios, afectando la disponibilidad del servicio. El ataque aprovechó una debilidad en la plataforma para realizar la cancelación masiva de suscripciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/japanese-teen-arrested-over-attack-disrupted-streaming-service",
+    "fuente": "The Record",
+    "dedup_key": "txt:japanese teen arrested over cyberattack that disrupted anime streaming service",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1492",
+        "name": "Stored Data Manipulation no aplica en este caso, ya que se menciona la cancelación de suscripciones, pero no se especifica que se haya modificado o manipulado datos almacenados."
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1183,
+    "fecha": "2026-07-06T17:39:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "RCS y DNS: El Registro NAPTR",
+    "resumen": "El protocolo RCS (Rich Communication Services) ha ganado popularidad en el último año, gracias a actualizaciones en iOS y Android, y ofrece funcionalidades de seguridad como cifrado de extremo a extremo y firma digital, mejorando la seguridad en comparación con el protocolo SMS tradicional. El uso de RCS se basa en infraestructura de red IP moderna y utiliza protocolos como SIP para establecer conexiones y transportar mensajes.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33124",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:rcs and dns the naptr record mon jul 6th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1182,
+    "fecha": "2026-07-06T17:39:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenaza en Gitea Docker",
+    "resumen": "Actores maliciosos están intentando explotar la vulnerabilidad CVE-2026-20896 en imágenes de Docker de Gitea, una falla crítica con un puntaje CVSS de 9.8 que permite a clientes no autenticados elevar sus privilegios. El vector de ataque se basa en la confianza del encabezado \"X-WEBAUTH-USER\" desde cualquier dirección IP, lo que facilita el acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-20896",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material (no se menciona explícitamente, pero se puede inferir que se está utilizando la información del encabezado \"X-WEBAUTH-USER\" para autenticar)"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Authentication Data (no se menciona explícitamente, pero se puede inferir que se está intentando obtener acceso no autorizado mediante la explotación de la vulnerabilidad)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20896"
+      ]
+    }
+  },
+  {
+    "id": 1181,
+    "fecha": "2026-07-06T17:39:25Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Seguridad en riesgo con IA",
+    "resumen": "La integración de la inteligencia artificial (IA) en el desarrollo de software reduce la fricción entre la idea y la aplicación desplegable, pero también elimina momentos críticos para la toma de decisiones de seguridad, aumentando el riesgo de vulnerabilidades y ataques de seguridad. Esto plantea un desafío significativo para la implementación de medidas de seguridad efectivas en el proceso de desarrollo de software acelerado por la IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/software-is-now-written-at-the-speed-of-thought-security-isnt/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:software is now written at the speed of thought security isn t",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1180,
     "fecha": "2026-07-06T12:42:36Z",
     "categoria": "Ciberseguridad",
