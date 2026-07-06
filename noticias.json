@@ -1,5 +1,83 @@
 [
   {
+    "id": 1180,
+    "fecha": "2026-07-06T12:42:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad GPAC CVE-2025-15668",
+    "resumen": "Se ha identificado una vulnerabilidad en GPAC hasta la versión b40ce70f5, que afecta la función sgpd_del_entry y puede provocar un desbordamiento de buffer basado en heap, requiriendo acceso local para su explotación. Un exploit público está disponible, por lo que se recomienda aplicar el parche f29f955f2a3b5e8e507caad3e52319f961bf37bf para corregir esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/188565",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2025-15668",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "f29f955f2a3b5e8e507caad3e52319f961bf37bf"
+      ],
+      "cve": [
+        "CVE-2025-15668"
+      ]
+    }
+  },
+  {
+    "id": 1179,
+    "fecha": "2026-07-06T12:42:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Francia abandona cifrado no seguro",
+    "resumen": "Francia dejará de certificar productos de seguridad que carezcan de cifrado resistente a ataques cuánticos, lo que obligará a organismos gubernamentales y operadores críticos a migrar a sistemas más seguros, con un plazo para que las empresas solo compren productos seguros cuánticamente para 2030. Esto representa un cambio significativo en la política de ciberseguridad del país, con el objetivo de proteger la infraestructura crítica y los datos sensibles contra posibles ataques cuánticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/france-to-stop-certifying-non-quantum-safe-encryption.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:france to stop certifying non quantum safe encryption",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.reuters.com"
+      ],
+      "url": [
+        "https://www.reuters.com/legal/litigation/france-stop-certifying-products-without-quantum-safe-encryption-2026-06-16/"
+      ]
+    }
+  },
+  {
+    "id": 1178,
+    "fecha": "2026-07-06T12:42:24Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Evaluación de Plataformas AI SOC",
+    "resumen": "La evaluación de plataformas de Seguridad de Operaciones (SOC) con Inteligencia Artificial (AI) requiere considerar seis capacidades clave que distinguen a los líderes de las soluciones de AI agregadas, incluyendo la integración de SIEM, SOAR y capacidades de detección, triage, investigación y respuesta autónomas. Esto es crucial para mejorar los resultados de seguridad y diferenciar entre productos con etiquetas similares pero funcionalidades muy diferentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330300409-f6c1ae5f64cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/how-to-evaluate-ai-soc-platform-in-2026.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:how to evaluate an ai soc platform in 2026 6 capabilities that separate leaders from bolt on ai solutions",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1177,
+    "fecha": "2026-07-06T12:42:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Opera GX",
+    "resumen": "Un fallo en Opera GX permitía la instalación de mods sin permiso, lo que podía ser utilizado por sitios web maliciosos para extraer datos de páginas visitadas, pero ya ha sido corregido en versiones posteriores a 130.0.5847.89, exigiendo interacción explícita del usuario. La vulnerabilidad afectaba la privacidad de los usuarios al navegar.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/opera-gx-corrige-un-fallo-que-permitia-instalar-mods-sin-permiso-y-filtrar-datos-al-navegar/?utm_source=rss&utm_medium=rss&utm_campaign=opera-gx-corrige-un-fallo-que-permitia-instalar-mods-sin-permiso-y-filtrar-datos-al-navegar",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:opera gx corrige un fallo que permitía instalar mods sin permiso y filtrar datos al navegar",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/opera-gx-corrige-un-fallo-que-permitia-instalar-mods-sin-permiso-y-filtrar-datos-al-navegar/"
+      ]
+    }
+  },
+  {
     "id": 1176,
     "fecha": "2026-07-06T07:08:12Z",
     "categoria": "Ciberseguridad",
