@@ -1,5 +1,130 @@
 [
   {
+    "id": 1176,
+    "fecha": "2026-07-06T07:08:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "SkillCloak Evade Scanners",
+    "resumen": "Investigadores de la Universidad de Ciencia y Tecnología de Hong Kong descubrieron que los escáneres estáticos pueden ser engañados por habilidades maliciosas de agentes de codificación de IA mediante técnicas de empaquetado autoextraíble, permitiendo que el malware pase desapercibido en más del 90% de los casos. Se desarrolló un verificador en tiempo de ejecución para detectar la mayoría de estos ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMjE2OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:skillcloak lets malicious ai agent skills evade static scanners with self extracting packing",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218.001",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el empaquetado autoextraíble podría estar relacionado con la ejecución de archivos maliciosos."
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1175,
+    "fecha": "2026-07-06T07:08:07Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Anthropic Refuerza Seguridad en Fable",
+    "resumen": "Anthropic ha relanzado Fable con mejoras en la seguridad para prevenir técnicas de Jailbreak que permiten a los usuarios explotar capacidades avanzadas, y ha iniciado un programa de Bug Bounty en HackerONE para identificar y corregir vulnerabilidades de seguridad. Esto se debe a que un Jailbreak anterior llevó a que Fable fuera prohibido para evitar su uso por parte de \"malos actores\".",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905450-a26e6c964239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMjE2ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/anthropic-cyber-jailbreak-bug-bounty.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:anthropic cyber jailbreak bug bounty severity framework para fable o mythos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "bugcrowd.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "hackerone.com",
+        "mypublicinbox.com",
+        "www.anthropic.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://0xword.com/es/libros/255-bug-hunter.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9i_i-xHSj0JvW2VCQT60I9qwEWJFVAD-zVF4_3cqSfblEgVyxNL_bBFenYC9hJbo8yFJuSnqlGj4LzB5faEzT05qOfvajG65MIvK9pfPMP_qdKMigEKc-BDxodXj5dmu00uQanb4qZOTxZJH-z7mVTQSDp5-LJIvjzuN36E5PsV9H6q7zuW6B/w486-h640/Fable5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTiqC9XywA4H6y7gs0BPm2qflhW-UQ8SucQBRrggUtKLSGjcvyLYdW166amLCp0NClFJ5AAgSgZNmUua_PqOsPso0DCx8BCoChurpPFDKCMmrHCU1MGkrE0ihySinCDOoTYOz82c-AKZXANxFkJHHv-6NC20JnqrzXL_e6f0STEq7rJDV1yyWg/w640-h378/Atlas3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW81jUfXraYD6hxh4tL2Aw0ELbM-P08mjUvicUk317CWafOWn6DCBWNYikIfIV99zDOaKQeWZJBUtxL_vNHrcppL-RVqt027eStt7Sl0LQ9JHXgs-OHFT6EwTrzHBIsm8d63fEbDly2KN8DGCbUkC6TPdrQuRO69FlHcl-HAsBok3NZm8RTtdF/w640-h346/e6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmJmH82usXWHXvioX8zM91iGyLnMKiXWGW6MzsBN9gaeRsSwIA5w1PyCcakyB7EJAPg0sW_QnqrG3wYKy2i4CKzU-3Ad-Piu3cNmfCpI5f3vh3OQJZdcmyEmeBdbJ8Yi-3nEUBy70p2pYhLGUe7Zp3RQWb1RzYnH0BMB1droK_6f6YBb8F1RCg/w640-h413/Fable2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6zU-gS4y5MogC-9KmrxzhTTrkiInOR9LXwJMPnfJ11JWzarAxTHZeRKCd873R1Mez0AUW6PiXUGa4y-xV7VOUI36BbTuEFOLZYEpQZZl9wTqIjyjVZmVUThfZJkVatg4MkIkESt46zvdPkUXkvRXTlBBozrqgdxXZLKfI19g5zQgZrO-7H_HP/w640-h402/Fable0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxkr6NJpYgLX3xK3CVSvpYZQreF9Tsym0F5th_KagvdfqdQvlexws_6jSTICHIZIrye4NVevI9vglf7jqeNAUqZmxNXeGUuFnVmxzE_YIcla7V2xVhpCWOAI7rGTlTN5IsWvFp_XJdNV_sxg8R0VXoe42Gb-rtnYHx6qcwV_-aQ6VDu1cIIMlc/w306-h400/BugHunter1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOj5uBNUPH4lyGSMXLZhmwynfhtEej6_H9csNF_SQxclUAoD8ykj4pg1ayolqdpV_kzE2VK_sOGLGz3doRUN_mT4HaJmc2cs721pV5G-PuAVauD77JktN33tMUmJx9_ktoPW3Pv02fGx7EN4dxp_n_OuVeB5A4AjG9lDkAhz5InD1VZQJaQbNi/w640-h590/Fable4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLlvIAHxPeFIJovHTipbBElijBJHup27Hs2t1E-E-Kq3UPbRoSM2Ex3xcurSVBdVt79HhaLq4UoWzUbSk8rECmn3PcM8yqUx6jfIjpPREpnqpoAGGmcHfByRzO-eL25V2ClBrplKv7IBOo9euZ1Wo82scxm4ZdlsvimZAfFAS0ItIhEiezlios/w616-h640/Fable3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv5mqKsbWnR2adX4bjGmJGXEbM0KuIC8BI1S7mM51C8temhzgGGcpN7eCqm-gwS8X5LSR0h30fmogrhf59Gd87_cDfQt0Ol5vL4V-qq_4LjO40D2b9GlLsVG532ByNJ0sPTEML6HHERsgcwEdWftN6C42iGzvJKaMkLH6xYQanLMssX0Xk_Ps4/w640-h306/fable1.jpg",
+        "https://bugcrowd.com/engagements/openai",
+        "https://elladodelmal.com",
+        "https://hackerone.com/anthropic-cyber-jailbreak/",
+        "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+        "https://www.elladodelmal.com/2026/05/exploitbench-un-benchmark-para-medir.html",
+        "https://www.elladodelmal.com/2026/05/exploitgym-mythos-gpt-55-gemini-pro-en.html",
+        "https://www.elladodelmal.com/2026/06/weaponinzing-token-consumption-en-llm.html",
+        "https://www.elladodelmal.com/2026/07/pxpipe-un-proxy-para-insertar-e-prompts.html"
+      ]
+    }
+  },
+  {
+    "id": 1174,
+    "fecha": "2026-07-06T07:08:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberataques en Mundial 2026",
+    "resumen": "El Mundial 2026 ha generado un aumento significativo en intentos de estafa y fraude, principalmente a través de phishing relacionado con viajes y hoteles, así como la compra de entradas falsas, afectando tanto a aficionados como a empresas. Los vectores de ataque incluyen phishing y estafas en línea, aprovechando la expectación y la falta de precaución de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMjE2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-mundial-2026-dispara-los-ciberataques-contra-empresas-y-aficionados/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el mundial 2026 dispara los ciberataques contra empresas y aficionados",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication (no se menciona explícitamente, pero se puede inferir que se intenta obtener información de autenticación)"
+      },
+      {
+        "id": "T1625",
+        "name": "Impersonation (se menciona la compra de entradas falsas, lo que implica suplantación de identidad)"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning (no se menciona explícitamente, pero se puede inferir que se realizan intentos de exploración para encontrar vulnerabilidades, aunque no es claro)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1173,
     "fecha": "2026-07-06T02:44:40Z",
     "categoria": "Ciberseguridad",
