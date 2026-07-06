@@ -1,5 +1,122 @@
 [
   {
+    "id": 1189,
+    "fecha": "2026-07-06T19:50:13Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Prototipo de móvil con IA de Musk",
+    "resumen": "SpaceX ha mostrado a inversores un prototipo de dispositivo móvil con tecnología de IA, diseñado para cambiar la forma en que interactuamos con la inteligencia artificial, aunque Musk ha negado el rumor posteriormente. El dispositivo correría sobre un sistema operativo propio e integraría la tecnología de xAI, con un SoC fabricado por Qualcomm.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330135557-191a3532228e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNjc0MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/moviles/idea-hacer-movil-hace-que-quiera-morirme-dijo-musk-dos-anos-despues-esta-dentrisimo-su-prototipo-movil-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la idea de hacer un móvil hace que quiera morirme dijo musk dos años después está dentrísimo con su prototipo de móvil con ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.flickr.com",
+        "www.reuters.com",
+        "www.wsj.com",
+        "www.xataka.com",
+        "www.xatakamovil.com"
+      ],
+      "url": [
+        "https://i.blogs.es/bc9fb3/humane-rabbit/375_142.jpeg",
+        "https://i.blogs.es/f62eb0/musk-starlink/1024_2000.jpeg",
+        "https://www.flickr.com/people/88975472@N03",
+        "https://www.reuters.com/business/media-telecom/musk-denies-wsj-report-that-spacex-showed-ai-handset-prototype-before-ipo-2026-07-01/",
+        "https://www.reuters.com/business/media-telecom/musks-spacex-targets-us-consumers-with-starlink-mobile-service-push-ft-reports-2026-06-26/",
+        "https://www.reuters.com/business/media-telecom/starlink-fuels-spacex-growth-with-potential-phone-more-internet-services-2026-02-05/",
+        "https://www.wsj.com/tech/ai/spacex-showed-investors-prototype-of-elon-musks-new-ai-device-b445c57b",
+        "https://www.xatakamovil.com/conectividad/starlink-prepara-su-propio-movil-internet-satelite-reuters"
+      ]
+    }
+  },
+  {
+    "id": 1188,
+    "fecha": "2026-07-06T19:50:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en dispositivo médico",
+    "resumen": "Un fabricante de dispositivos médicos informó una brecha de datos que afectó a casi 4 millones de personas, con acceso a información como números de Seguridad Social y datos relacionados con la salud, aunque no hay evidencia de que la información haya sido publicada o expuesta en internet. La brecha puede tener un impacto significativo en la privacidad digital y la seguridad de los datos personales de los afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNjc0MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/medical-device-maker-notifies-nearly-4-million-of-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:major medical device manufacturer notifies nearly 4 million of breach",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1187,
+    "fecha": "2026-07-06T19:50:03Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Ataque Ransomware LLM-Driven",
+    "resumen": "Un actor de amenaza \"agentic\" ha explotado con éxito una vulnerabilidad en Langflow para robar datos de un servidor de base de datos de producción y cifrar otros sistemas, utilizando un modelo de lenguaje grande (LLM) para llevar a cabo el ataque, lo que representa un nuevo vector de ataque que combina inteligencia artificial con técnicas de ransomware. El impacto real incluye la pérdida de datos confidenciales y la interrupción de servicios críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1649000373264-a19c7f3936dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNjc0MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:jadepuffer the first complete llm driven ransomware attack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1186,
+    "fecha": "2026-07-06T19:49:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers iraníes atacan a Israel",
+    "resumen": "Un grupo de hackers iraníes vinculado al Ministerio de Inteligencia y Seguridad de Irán (MOIS) ha estado utilizando un nuevo framework de comando y control (C2) modular llamado Cavern para atacar a organizaciones israelíes, principalmente proveedores de servicios de TI y sectores gubernamentales, mediante una campaña de ataques dirigidos. El vector de ataque incluye la explotación de vulnerabilidades en la infraestructura de los objetivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNjczOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/iran-linked-hackers-use-new-cavern-c2.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:iran linked hackers use new cavern c2 framework to target israeli organizations",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1185,
     "fecha": "2026-07-06T17:39:47Z",
     "categoria": "IA",
