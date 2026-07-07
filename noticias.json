@@ -1,5 +1,173 @@
 [
   {
+    "id": 1215,
+    "fecha": "2026-07-07T17:09:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Nagios XI",
+    "resumen": "La versión xi-5.7.5 de Nagios XI presenta una vulnerabilidad de inyección de comandos del sistema operativo (CVE-2021-25296) con un puntaje CVSS de 8.8, lo que permite a un atacante autenticado ejecutar comandos arbitrarios en el servidor de Nagios XI a través de una petición HTTP maliciosa. El vector de ataque se encuentra en el archivo windowswmi.inc.php debido a un saneamiento inapropiado de la entrada de usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-25296",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-25296",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1132",
+        "name": "Data Encoding"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2021-25296"
+      ]
+    }
+  },
+  {
+    "id": 1214,
+    "fecha": "2026-07-07T17:09:38Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Qwen de Alibaba lidera descargas",
+    "resumen": "El modelo de IA Qwen de Alibaba es el más descargado del mundo, con cerca de un millón de descargas diarias, aunque la empresa aún no genera ingresos significativos con esta tecnología, lo que preocupa a los inversores. La estrategia de Alibaba se centra en ofrecer modelos de IA abiertos para ganar popularidad y mercado, pero aún no ha logrado traducir esto en beneficios financieros.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442135732-00cab8f454e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/modelo-ia-qwen-alibaba-nueva-joya-corona-unico-problema-que-no-ganan-dinero",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el modelo de ia qwen de alibaba es la nueva joya de la corona el único problema es que no ganan dinero con él",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "news.aibase.com",
+        "pandaily.com",
+        "platform.instagram.com",
+        "www.bloomberg.com",
+        "www.nytimes.com",
+        "www.reuters.com",
+        "www.scmp.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://en.ara.cat/economy/jack-ma-returns-he-reappears-at-chinese-government-event-after-being-missing-for-five-years_1_5288061.html",
+        "https://i.blogs.es/6a02eb/qwen/1024_2000.jpeg",
+        "https://i.blogs.es/6a02eb/qwen/1366_2000.jpeg",
+        "https://i.blogs.es/6a02eb/qwen/450_1000.jpeg",
+        "https://i.blogs.es/6a02eb/qwen/650_1200.jpeg",
+        "https://i.blogs.es/8fef63/f412fa02-b8c1-40f6-ac4c-13b2144b6eac/375_142.jpeg",
+        "https://i.blogs.es/ce09f2/qwen-alibaba-modelos-ia-abiertos/1024_2000.jpeg",
+        "https://news.aibase.com/news/24462",
+        "https://pandaily.com/alibaba-approves-qwen-lead-lin-junyang-s-resignation-cto-zhou-jingren-assumes-control-deep-mind-s-zhou-hao-joins",
+        "https://www.bloomberg.com/news/articles/2026-04-02/alibaba-unveils-third-closed-source-ai-model-in-focus-on-profit",
+        "https://www.nytimes.com/2026/07/06/business/alibaba-ai-qwen.html",
+        "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+        "https://www.scmp.com/tech/big-tech/article/3345471/alibaba-recruits-google-deepmind-contributor-join-qwen-ai-team-sources-say?module=top_story&pgtype=section"
+      ]
+    }
+  },
+  {
+    "id": 1213,
+    "fecha": "2026-07-07T17:09:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad GitLost",
+    "resumen": "La vulnerabilidad GitLost permite a un atacante no autenticado crear un Issue en un repositorio público de GitHub y luego extraer datos de forma silenciosa desde repositorios privados de la misma organización, aprovechando las Agentic Workflows. Esto representa un vector de ataque significativo para la privacidad y seguridad de los datos almacenados en GitHub.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxNzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/gitlost-leaks-private-data-github-agentic-workflows",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:gitlost flaw leaks private data from github s agentic workflows",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1212,
+    "fecha": "2026-07-07T17:09:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque a M365 vía Device-Code Flow",
+    "resumen": "Se ha detectado una campaña de phishing que aprovecha el flujo de código de dispositivo de Microsoft para apuntar a cuentas de Microsoft 365, utilizando engaños de colaboración para llevar a los usuarios a la experiencia de inicio de sesión de dispositivo legítima de Microsoft, sin necesidad de una página de contraseña falsa. El ataque se ha observado desde finales de junio de 2026 hasta principios de julio.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:debull tooling abuses microsoft device code flow to target m365 accounts",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1211,
+    "fecha": "2026-07-07T17:09:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Arresto de hacktivista pro-Rusia",
+    "resumen": "La Policía Nacional de España ha arrestado a un hombre sospechoso de ser miembro activo de los grupos hacktivistas pro-rusos CyberArmy of Russia Reborn (CARR) y Z-Pentest, lo que puede indicar una amenaza potencial a la ciberseguridad en la región. El arresto puede haber interrumpido posibles ataques de phishing, DDoS o explotación de vulnerabilidades zero-day dirigidos contra objetivos españoles o internacionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/spain-arrests-suspected-member-of-pro-russian-hacktivist-groups/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:spain arrests suspected member of pro russian hacktivist groups",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1210,
     "fecha": "2026-07-07T14:22:01Z",
     "categoria": "IA",
