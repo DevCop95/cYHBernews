@@ -1,5 +1,145 @@
 [
   {
+    "id": 1224,
+    "fecha": "2026-07-07T22:08:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ejecución Remota de Código en MCPJam",
+    "resumen": "Se ha identificado una vulnerabilidad de ejecución remota de código (RCE) en MCPJam Inspector, lo que permite a atacantes ejecutar código arbitrario en el sistema afectado a través de una explotación remota. Esto podría tener un impacto significativo en la seguridad de los sistemas que utilizan esta herramienta, ya que los atacantes podrían aprovechar esta vulnerabilidad para obtener acceso no autorizado y realizar acciones maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NjIxMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52625",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps mcpjam inspector remote code execution",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1223,
+    "fecha": "2026-07-07T22:08:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Dialogflow CX",
+    "resumen": "Una vulnerabilidad crítica en Dialogflow CX de Google permitía a un atacante con derechos de edición en un agente habilitado para Code Block comprometer otros agentes habilitados para Code Block en el mismo proyecto de Google Cloud, permitiéndoles leer conversaciones en vivo, robar datos y enviar mensajes maliciosos. La firma de seguridad Varonis descubrió esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NjIxMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:rogue agent flaw could have let attackers hijack google dialogflow cx chatbots",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Application Access Token"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1222,
+    "fecha": "2026-07-07T22:08:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Breach en Accenture",
+    "resumen": "La empresa de servicios de TI Accenture ha confirmado una brecha de seguridad después de que un actor de amenaza ofreciera 35 GB de código fuente y otros datos robados para su venta, lo que sugiere un posible ataque de ransomware o exfiltración de datos. El vector de ataque no se ha especificado, pero la brecha puede tener un impacto significativo en la seguridad de los clientes de Accenture.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NjIxMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:accenture confirms breach after hacker offers stolen data for sale",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1221,
+    "fecha": "2026-07-07T22:08:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Credenciales robadas, arma favorita",
+    "resumen": "El robo y abuso de credenciales sigue siendo una táctica efectiva para los ciberdelincuentes, con técnicas como el descifrado de contraseñas y el uso de cuentas legítimas comprometidas como los métodos más probables de ataque. Esto resalta la importancia de implementar medidas de seguridad robustas para proteger las credenciales y prevenir el acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NjIxMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/las-credenciales-robadas-siguen-siendo-el-arma-favorita-de-los-ciberdelincuentes/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:las credenciales robadas siguen siendo el arma favorita de los ciberdelincuentes",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Valid Accounts: Local Account"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1220,
     "fecha": "2026-07-07T19:49:27Z",
     "categoria": "Ciberseguridad",
