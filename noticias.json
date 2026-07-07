@@ -1,5 +1,86 @@
 [
   {
+    "id": 1202,
+    "fecha": "2026-07-07T06:42:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware WatchBeam.exe",
+    "resumen": "Se ha detectado el malware WatchBeam.exe, que se caracteriza por ser extremadamente activo y ruidoso, creando múltiples procesos de cmd.exe de manera sospechosa, lo que sugiere un posible vector de ataque para ejecutar comandos maliciosos en el sistema infectado. El comportamiento de WatchBeam.exe indica una posible técnica de evasión de detección y persistencia en el sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MDY1NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9101",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:i want to give a big shoutout to watchbeam exe watchbeam is the loudest malware i ve ever seen when i say runs",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "Ejecución de Comando"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Técnica de Evasión de Detección"
+      },
+      {
+        "id": "T1569",
+        "name": "Técnica de Persistencia"
+      },
+      {
+        "id": "T1106",
+        "name": "Comando y Control Nativo del Sistema Operativo"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1201,
+    "fecha": "2026-07-07T06:42:21Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Avance en IA: Claude desarrolla mecanismo de acceso consciente",
+    "resumen": "Anthropic ha identificado un espacio interno en el modelo de lenguaje Claude, llamado J-space, que permite representar conceptos antes de escribirlos, lo que sugiere un mecanismo de acceso consciente emergente durante el proceso de entrenamiento. Esto abre una grieta en la comprensión de la \"caja negra\" de la inteligencia artificial generativa, permitiendo observar patrones internos ligados a palabras que el modelo podría usar después.",
+    "url_imagen": "https://images.unsplash.com/photo-1767966783202-c5659292bd39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MDY1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/claude-ha-desarrollado-mecanismo-para-acceso-consciente-anthropic-acaba-abrir-grieta-caja-negra-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:claude ha desarrollado un mecanismo para el acceso consciente anthropic acaba de abrir una grieta en la caja negra de la ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/0fd5c9/claude-estudio/1024_2000.jpeg",
+        "https://i.blogs.es/56b122/j-lens2/1024_2000.jpeg",
+        "https://i.blogs.es/56b122/j-lens2/1366_2000.jpeg",
+        "https://i.blogs.es/56b122/j-lens2/450_1000.jpeg",
+        "https://i.blogs.es/56b122/j-lens2/650_1200.jpeg",
+        "https://i.blogs.es/bfde93/oblea-anthropic/375_142.jpeg",
+        "https://i.blogs.es/c1b908/j-lens1/1024_2000.jpeg",
+        "https://i.blogs.es/c1b908/j-lens1/1366_2000.jpeg",
+        "https://i.blogs.es/c1b908/j-lens1/450_1000.jpeg",
+        "https://i.blogs.es/c1b908/j-lens1/650_1200.jpeg",
+        "https://transformer-circuits.pub/2026/workspace/index.html"
+      ]
+    }
+  },
+  {
+    "id": 1200,
+    "fecha": "2026-07-07T06:42:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Medios ucranianos objetivo prioritario",
+    "resumen": "Funcionarios de seguridad ucranianos informan de ataques no reportados previamente contra organizaciones de medios de comunicación, indicando un aumento en las actividades de hacking por parte de Rusia, lo que sugiere un enfoque en la industria mediática como objetivo prioritario. Estos ataques pueden incluir técnicas como phishing o exploits de vulnerabilidades para comprometer la seguridad de los medios de comunicación.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MDY1MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ukraine-media-organizations-priority-hacking-targets-russia",
+    "fuente": "The Record",
+    "dedup_key": "txt:ukrainian media outlets now among priority targets for russian hackers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1199,
     "fecha": "2026-07-07T02:40:26Z",
     "categoria": "IA",
