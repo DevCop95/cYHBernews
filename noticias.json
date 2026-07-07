@@ -1,5 +1,130 @@
 [
   {
+    "id": 1210,
+    "fecha": "2026-07-07T14:22:01Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Centros de datos en EEUU usan generadores",
+    "resumen": "Debido a la ola de calor, el secretario de energía de EEUU ordenó a los centros de datos activar sus generadores de respaldo para aliviar la presión sobre la red eléctrica, lo que puede tener implicaciones en la ciberseguridad y el consumo de energía. Esto destaca la dependencia de la infraestructura crítica en la generación de energía y la necesidad de soluciones sostenibles y seguras.",
+    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MzQxMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/energia/solucion-eeuu-su-red-electrica-aguante-ola-calor-dejar-que-centros-datos-contaminen-limite",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la solución de eeuu para que su red eléctrica aguante la ola de calor dejar que los centros de datos contaminen sin límite",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "insideclimatenews.org",
+        "platform.instagram.com",
+        "www.bbc.com",
+        "www.cnn.com",
+        "www.datacentermap.com",
+        "www.generac.com",
+        "www.nytimes.com",
+        "www.techradar.com",
+        "www.washingtonpost.com",
+        "www.wvtf.org",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/33e2fa/centro-de-datos/375_142.jpeg",
+        "https://i.blogs.es/549ffb/colossussite/1024_682.jpeg",
+        "https://i.blogs.es/549ffb/colossussite/500_333.jpeg",
+        "https://i.blogs.es/549ffb/colossussite/840_560.jpeg",
+        "https://i.blogs.es/aed4e5/generador-diesel-centro-datos/1024_2000.jpeg",
+        "https://insideclimatenews.org/news/12112025/data-center-diesel-generators-noise-pollution/",
+        "https://www.bbc.com/news/videos/cd0mpgvzzy5o",
+        "https://www.cnn.com/2026/07/02/weather/heat-data-centers-electricity-generators",
+        "https://www.datacentermap.com/usa/new-york/",
+        "https://www.generac.com/industrial/industry-expertise/data-centers/",
+        "https://www.nytimes.com/2026/07/02/business/energy-environment/electric-grid-data-centers-pjm.html",
+        "https://www.techradar.com/pro/us-energy-dept-tells-data-centers-to-use-backup-generators-during-heatwave-to-free-up-power-for-ac-usage",
+        "https://www.washingtonpost.com/business/2026/05/28/data-centers-boom-virginians-breathe-exhaust-10000-diesel-generators/",
+        "https://www.wvtf.org/news/2026-02-10/data-center-backup-generators-pose-growing-threat-to-air-quality"
+      ]
+    }
+  },
+  {
+    "id": 1209,
+    "fecha": "2026-07-07T14:21:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Compromiso cibernético del Reino Unido",
+    "resumen": "A pesar de la llamada ministerial, solo unas pocas empresas líderes se han unido al compromiso cibernético del Reino Unido, incluyendo Aviva, el London Stock Exchange Group y Marks & Spencer, que sufrió una ciberataque costoso el año pasado. Esto destaca la necesidad de mayor conciencia y acción en materia de ciberseguridad en el sector empresarial.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MzQxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/uk-cyber-pledge-draws-limited-partners-despite-ministerial-appeal",
+    "fuente": "The Record",
+    "dedup_key": "txt:uk cyber pledge draws only a handful of top firms despite ministerial appeal",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1208,
+    "fecha": "2026-07-07T14:21:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Alertas de Seguridad",
+    "resumen": "El Stormcast de ISC informa sobre las últimas amenazas de seguridad, incluyendo vulnerabilidades y exploits, con un enfoque en la protección contra ataques de phishing y ransomware. Los profesionales de la seguridad deben estar atentos a los últimos vectores de ataque y tendencias en el panorama de la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MzQxMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33126",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for tuesday july 7th 2026 https isc sans edu podcastdetail 9996 tue jul 7th",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/9996,"
+      ]
+    }
+  },
+  {
+    "id": 1207,
+    "fecha": "2026-07-07T14:21:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "FBI rastrea a hacker con ID de dispositivo",
+    "resumen": "La FBI utilizó un ID de dispositivo persistente de Windows para rastrear a un presunto hacker de Scattered Spider, vinculándolo a un incidente de seguridad en una tienda de joyería de lujo, gracias a registros de Microsoft que conectaron el ID con cuentas en línea asociadas al sospechoso. El caso demuestra cómo los datos de dispositivos pueden ser utilizados para identificar a atacantes en incidentes de ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MzQxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/court-filing-reveals-windows-device-id.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:court filing reveals windows device id helped fbi trace alleged scattered spider hacker",
+    "ttps": [
+      {
+        "id": "T1033",
+        "name": "Identificador de Dispositivo para Rastreo"
+      },
+      {
+        "id": "T1217",
+        "name": "Identificador de Sesión"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1056",
+        "name": "Identificación de Dispositivos y Sesiones"
+      },
+      {
+        "id": "T1114.001",
+        "name": "Email para Phishing (No se menciona explícitamente, pero se puede inferir que se utilizó para obtener acceso a cuentas en línea)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1206,
+    "fecha": "2026-07-07T14:21:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque en GitHub Actions",
+    "resumen": "Los atacantes pueden evadir los escáneres de seguridad tradicionales de CI mediante cadenas de ataques en GitHub Actions, lo que significa que pasar una escaneo no garantiza una tubería segura, y las organizaciones deben mejorar la gobernanza de sus flujos de trabajo CI/CD. Esto puede permitir ataques como phishing o inyección de malware en las tuberías de entrega continua.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MzQxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/the-github-actions-attack-pattern-your-ci-security-scanners-miss/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:the github actions attack pattern your ci security scanners miss",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1205,
     "fecha": "2026-07-07T11:43:34Z",
     "categoria": "IA",
@@ -10592,23 +10717,6 @@
     "fuente": "The Hacker News",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 772,
-    "fecha": "2026-06-23T06:48:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Alertas de Seguridad",
-    "resumen": "El ISC Stormcast del 23 de junio de 2026 presenta un resumen de las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques cibernéticos como phishing y exploits de zero-day. Los sectores afectados incluyen finanzas, gobierno y tecnología, con un enfoque en la protección contra malware y ransomware.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxOTcyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33098",
-    "fuente": "SANS ISC",
-    "ttps": [],
-    "iocs": {
-      "url": [
-        "https://isc.sans.edu/podcastdetail/9982,"
-      ]
-    }
   },
   {
     "id": 771,
