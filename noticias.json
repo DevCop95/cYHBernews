@@ -1,5 +1,121 @@
 [
   {
+    "id": 1220,
+    "fecha": "2026-07-07T19:49:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Nagios XI",
+    "resumen": "La versión xi-5.7.5 de Nagios XI presenta una vulnerabilidad de inyección de comandos del sistema operativo (CVE-2021-25297) con un CVSS Score de 8.8, permitiendo a un atacante autenticado ejecutar comandos arbitrarios en el servidor a través de una petición HTTP maliciosa. La vulnerabilidad se debe a un saneamiento inapropiado de la entrada de usuario en el archivo switch.inc.php.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-25297",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-25297",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1131",
+        "name": "Input Validation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2021-25297"
+      ]
+    }
+  },
+  {
+    "id": 1219,
+    "fecha": "2026-07-07T19:49:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Registro DNS NIMLOC detectado",
+    "resumen": "Se ha detectado el uso de registros DNS NIMLOC, un tipo de registro menos común que puede ser utilizado para fines de comunicación y resolución de nombres, y que ha sido identificado por herramientas como Zeek en los registros de DNS. Esto puede tener implicaciones en la ciberseguridad, ya que la comprensión de estos registros puede ayudar a identificar posibles vectores de ataque, como el uso de registros DNS no estándar para eludir la detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33128",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:more odd dns records nimloc tue jul 7th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1218,
+    "fecha": "2026-07-07T19:49:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware RedWing en Telegram",
+    "resumen": "Se ha descubierto una nueva operación de malware Android llamada RedWing, que se ofrece como un servicio de fraude bancario listo para usar a través de Telegram, permitiendo a criminales de baja habilidad tomar el control de un teléfono víctima, robar sus credenciales bancarias y capturar códigos de un solo uso que protegen sus cuentas. La operación parece ser una variante del herramienta de malware rentable Oblivion.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:redwing maas packages android bank fraud as a telegram rental service",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1056.001",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1217,
+    "fecha": "2026-07-07T19:49:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware LONGLEASH de hackers chinos",
+    "resumen": "Los hackers chinos identificados como 'UAT-7810' están desarrollando activamente el malware LONGLEASH para expandir su red Operational Relay Box (ORB) comprometiendo dispositivos de red con acceso a Internet, principalmente routers Ruckus sin parches. Esto permite a los atacantes ampliar su capacidad de lanzar ataques desde una red de relés operativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/chinese-hackers-develop-longleash-malware-to-expand-orb-network/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:chinese hackers develop longleash malware to expand orb network",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1216,
+    "fecha": "2026-07-07T19:49:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Google desmantela redes proxy maliciosas",
+    "resumen": "Google, en colaboración con el FBI y otras organizaciones, ha iniciado acciones contra la red de proxies residenciales NetNut, también conocida como Popa, como parte de su esfuerzo por desmantelar redes de proxies maliciosas que pueden ser utilizadas para ataques de phishing, DDoS y otros tipos de ciberdelincuencia. Esta acción sigue a la interrupción de la red de proxies IPIDEA en enero de 2026, demostrando el compromiso de Google con la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/google-continua-desmantelando-redes-proxy-residenciales-maliciosas/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:google continúa desmantelando redes proxy residenciales maliciosas",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1215,
     "fecha": "2026-07-07T17:09:43Z",
     "categoria": "Ciberseguridad",
@@ -2857,20 +2973,6 @@
         "name": "Phishing"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1111,
-    "fecha": "2026-07-02T22:03:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Google Desactiva Red NetNut",
-    "resumen": "Google ha degradado significativamente la red NetNut, una de las redes más grandes que convierte dispositivos domésticos en relés alquilados para el tráfico de otros, reduciendo su pool de dispositivos utilizables en millones, en colaboración con el FBI y otros. La red NetNut, también conocida como Popa, se utilizaba para ataques de tipo proxy y potencialmente para actividades maliciosas como phishing y DDoS.",
-    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/google-disrupts-netnut-residential.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:google disrupts netnut residential proxy network spanning 2 million home devices",
-    "ttps": [],
     "iocs": {}
   },
   {
