@@ -1,5 +1,117 @@
 [
   {
+    "id": 1199,
+    "fecha": "2026-07-07T02:40:26Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Nueva reCAPTCHA con códigos QR",
+    "resumen": "Google ha introducido una nueva función de reCAPTCHA que utiliza códigos QR para verificar la presencia humana y la integridad del dispositivo, como medida para contrarrestar la capacidad de la IA para superar los desafíos visuales tradicionales. Esta función, llamada \"Verificación móvil\", está en fase experimental y requiere que los usuarios escaneen un código QR con su móvil para acceder a ciertos sitios web.",
+    "url_imagen": "https://images.unsplash.com/photo-1555255707-c07966088b7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/seleccionar-todos-semaforos-no-suficiente-para-demostrar-que-no-eres-robot-ahora-hay-que-escanear-codigos-qr",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:seleccionar todos los semáforos ya no es suficiente para demostrar que no eres un robot ahora hay que escanear códigos qr",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "1.0.1.1"
+      ],
+      "domain": [
+        "cloud.google.com",
+        "cybernews.com",
+        "platform.instagram.com",
+        "reclaimthenet.org",
+        "support.google.com",
+        "www.reddit.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://cybernews.com/privacy/google-qr-code-recaptcha-requires-approved-phone/?__cf_chl_rt_tk=V7XLlA_2RfA5IAxavW3qFmYv8jS0FmzsME3JnF8t85o-1783324263-1.0.1.1-tee2InVZTUEoCs7zWDVMWOwqE_BwxhA0kgep4KvUUHI",
+        "https://i.blogs.es/3781b0/recaptchaqr/1024_2000.jpeg",
+        "https://i.blogs.es/5dceac/captcha1/1024_682.jpeg",
+        "https://i.blogs.es/5dceac/captcha1/500_333.jpeg",
+        "https://i.blogs.es/5dceac/captcha1/840_560.jpeg",
+        "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users"
+      ]
+    }
+  },
+  {
+    "id": 1198,
+    "fecha": "2026-07-07T02:40:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque a BONK cryptocurrency",
+    "resumen": "BonkDAO ha sido víctima de una \"propuesta de gobernanza maliciosa\" en la que atacantes con una gran cantidad de BONK han votado para transferir $20 millones en criptomonedas a sus propias carteras, aprovechando su influencia en la gobernanza de la criptomoneda. El ataque explota la falta de controles adecuados en el mecanismo de votación de la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/attackers-vote-themselves-20-million-bonk-crypto",
+    "fuente": "The Record",
+    "dedup_key": "txt:attackers vote themselves 20 million in bonk cryptocurrency",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1197,
+    "fecha": "2026-07-07T02:40:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Vulnerabilidad NetScaler atacada",
+    "resumen": "La vulnerabilidad de divulgación de memoria en los productos NetScaler de Citrix está siendo explotada por atacantes después de que investigadores publicaron una prueba de concepto (PoC), lo que permite a los atacantes potencialmente acceder a información confidencial. El vector de ataque se basa en la explotación de esta vulnerabilidad para obtener acceso no autorizado a los sistemas afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/citrixbleed-ing-again-netscaler-vulnerability-under-attack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:citrixbleed ing again netscaler vulnerability under attack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1196,
+    "fecha": "2026-07-07T02:40:10Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas en dispositivos y AI",
+    "resumen": "Se han identificado vulnerabilidades en dispositivos domésticos que pueden ser utilizados como botnets de proxy, y se han detectado casos de ransomware en navegadores, además de fallos en la confianza de los sistemas de inteligencia artificial (AI) que pueden ser explotados. Los vectores de ataque incluyen dependencias de código sucio y la confianza excesiva en instrucciones no verificadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937659-9a2cc59a8a69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/monday-recap-proxy-botnets-browser.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap proxy botnets browser ransomware ai agent tricks fake poc malware and more",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1195,
+    "fecha": "2026-07-07T02:40:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques de EtherRAT vía Microsoft Teams",
+    "resumen": "Actores maliciosos están utilizando llamadas de voz en Microsoft Teams para impersonar al personal de soporte de TI y engañar a empleados para que instalen el malware EtherRAT, lo que les da acceso inicial a redes corporativas a través de un vector de ataque de ingeniería social. El impacto real puede incluir el robo de datos y la propagación de malware dentro de la red.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fake it support calls on microsoft teams push etherrat malware",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1192",
+        "name": "Spearphishing via Service - no se menciona explícitamente, pero se puede inferir una técnica similar a través de la impersonación del personal de soporte de TI."
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services - no se menciona explícitamente, pero se puede inferir que los atacantes utilizan el malware EtherRAT para explotar servicios remotos."
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise no se menciona, pero se puede inferir que el malware EtherRAT se instala en"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1194,
     "fecha": "2026-07-06T22:10:39Z",
     "categoria": "IA",
