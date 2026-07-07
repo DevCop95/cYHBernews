@@ -1,5 +1,102 @@
 [
   {
+    "id": 1205,
+    "fecha": "2026-07-07T11:43:34Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Google demanda a estafadores chinos por uso de Gemini",
+    "resumen": "Google está demandando a una red de ciberdelincuentes china que utilizaba el modelo de lenguaje Gemini para automatizar estafas de phishing, ofreciendo servicios de phishing como servicio a través de Telegram y creando sitios web falsos que imitan a Google, YouTube y agencias gubernamentales. El grupo ofrecía cerca de 300 plantillas de estafas y Google ha trabajado con operadores de telecomunicaciones para bloquear mensajes de texto maliciosos y reducir los intentos de phishing exitosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MjQ2MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/google-is-suing-chinese-scammers-who-are-using-gemini.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:google is suing chinese scammers who are using gemini",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1586",
+        "name": "Creación de Sitios Web Falsos"
+      },
+      {
+        "id": "T1586.001",
+        "name": "Sitios Web Falsos para Phishing"
+      },
+      {
+        "id": "T1056",
+        "name": "Creación de Servicios Maliciosos (como servicio de phishing)"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "arstechnica.com",
+        "www.digitaltrends.com"
+      ],
+      "url": [
+        "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams/",
+        "https://www.digitaltrends.com/phones/scammers-used-gemini-ai-to-power-a-massive-phishing-operation-and-google-just-sued-them/"
+      ]
+    }
+  },
+  {
+    "id": 1204,
+    "fecha": "2026-07-07T11:43:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers chinos atacan universidades",
+    "resumen": "Un grupo de amenazas sospechado de estar alineado con China ha sido observado explotando vulnerabilidades en el software de webmail Roundcube, específicamente la CVE-2024-42009 con una puntuación CVSS de 9.3, para extraer credenciales de departamentos de física e ingeniería de universidades en EE. UU. y Canadá. El ataque aprovecha fallos de seguridad críticos, ahora parcheados, en la solución de correo electrónico de código abierto.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MjQ2MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2024-42009",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1190.001",
+        "name": "Exploit Public-Facing Application: Web Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Unsecured Credentials: Credentials In Files"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-42009"
+      ]
+    }
+  },
+  {
+    "id": 1203,
+    "fecha": "2026-07-07T11:43:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Windows: Copia de seguridad de configuración",
+    "resumen": "Microsoft habilitará por defecto la herramienta de copia de seguridad y restauración de configuración de Windows en sistemas empresariales que utilicen Microsoft Entra después de actualizar a Windows 11 26H2, mejorando la resiliencia y la recuperación en caso de incidentes de seguridad. Esto puede reducir el impacto de ataques de ransomware y otros incidentes que afectan la configuración del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MjQ2MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-windows-backup-for-organizations-by-default/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft to enable windows settings backup by default for orgs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1202,
     "fecha": "2026-07-07T06:42:27Z",
     "categoria": "Ciberseguridad",
