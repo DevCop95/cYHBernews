@@ -1,5 +1,133 @@
 [
   {
+    "id": 1244,
+    "fecha": "2026-07-08T19:18:38Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "GPT-Live: Avance en IA de ChatGPT",
+    "resumen": "OpenAI ha lanzado GPT-Live, una actualización del modo de voz de ChatGPT que permite una interacción más natural y fluida, con la capacidad de escuchar, pausar y responder de manera más humana, gracias a su arquitectura full-duplex que procesa la conversación de forma continua. Esto reduce la rigidez de los turnos tradicionales y permite una experiencia de conversación más expresiva y natural.",
+    "url_imagen": "https://images.unsplash.com/photo-1767716134895-296cbd7aec1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/openai-acaba-lanzar-gpt-live-modo-voz-chatgpt-ha-aprendido-a-escuchar-callarse-responder-mejor",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:openai acaba de lanzar gpt live el modo de voz de chatgpt ha aprendido a escuchar callarse y responder mejor",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "chatgpt.com",
+        "platform.instagram.com",
+        "www.xataka.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "http://ChatGPT.com",
+        "https://i.blogs.es/333ff2/chatgpt-voice-3/1024_2000.jpeg",
+        "https://i.blogs.es/333ff2/chatgpt-voice-3/1366_2000.jpeg",
+        "https://i.blogs.es/333ff2/chatgpt-voice-3/450_1000.jpeg",
+        "https://i.blogs.es/333ff2/chatgpt-voice-3/650_1200.jpeg",
+        "https://i.blogs.es/69ff5c/chatgpt-voice-1/1024_2000.png",
+        "https://i.blogs.es/ce09f2/qwen-alibaba-modelos-ia-abiertos/375_142.jpeg"
+      ]
+    }
+  },
+  {
+    "id": 1243,
+    "fecha": "2026-07-08T19:18:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sitios web gubernamentales hackeados",
+    "resumen": "Estafadores están tomando el control de sitios web gubernamentales para subir anuncios de contenido \"filtrado\" de OnlyFans, lo que lleva a que miles de denuncias de derechos de autor por parte de creadores de contenido para adultos ayuden a evitar enlaces maliciosos, posiblemente relacionados con phishing o malware. Los sitios web gubernamentales comprometidos pueden desaparecer temporalmente debido a las denuncias de derechos de autor.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/onlyfans-creators-dmca-hacked-government-websites/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:onlyfans models are accidentally making hacked government websites disappear",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1242,
+    "fecha": "2026-07-08T19:18:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Espionaje chino en Taiwan",
+    "resumen": "Dos empresarios taiwaneses han sido acusados por su presunta participación en una campaña de espionaje china, que involucraba el alquiler de cuentas en la aplicación de mensajería LINE a espías chinos, lo que representa un vector de ataque de phishing y espionaje. El incidente destaca la importancia de la seguridad en aplicaciones de mensajería y la necesidad de medidas de autenticación y autorización robustas.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/taiwan-charges-businessmen-china-cyber-espionage-campaign",
+    "fuente": "The Record",
+    "dedup_key": "txt:taiwan charges two businessmen over alleged role in chinese espionage campaign",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1241,
+    "fecha": "2026-07-08T19:18:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque de Vidar Infostealer",
+    "resumen": "Un grupo con motivaciones financieras está utilizando una campaña de malvertising que ofrece software crackeado o pirateado para entregar un combo de malware que roba datos y mina criptomonedas, afectando principalmente a pequeñas y medianas empresas (SMBs). El ataque aprovecha la vulnerabilidad de los usuarios que buscan software gratuito o pirateado, exponiéndolos a la pérdida de datos y al cryptomining.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/vidar-infostealer-smb-malvertising-campaign",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:vidar infostealer hammers smbs via malvertising campaign",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se puede inferir que el ataque utiliza algún tipo de ejecución de binarios firmados para entregar el malware)"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1240,
+    "fecha": "2026-07-08T19:18:15Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Agentes AI desencadenan reglas de seguridad",
+    "resumen": "Se ha detectado que agentes de codificación AI como Claude Code, Cursor y OpenAI Codex activan reglas de seguridad de endpoint diseñadas para capturar a atacantes, debido a su comportamiento similar al de intrusos, aunque no son maliciosos. Estos agentes realizan acciones como descifrar credenciales del navegador y listar contenido en el almacén de credenciales de Windows, lo que desencadena alertas de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027214993-52de23be5a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai coding agents found triggering endpoint security rules built to catch attackers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1239,
     "fecha": "2026-07-08T16:27:25Z",
     "categoria": "IA",
