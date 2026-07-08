@@ -1,5 +1,132 @@
 [
   {
+    "id": 1228,
+    "fecha": "2026-07-08T02:13:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en ProtonVPN",
+    "resumen": "Se ha detectado una vulnerabilidad de ruta de servicio no citada (Unquoted Service Path) en la versión 4.4.1 de ProtonVPN, lo que podría permitir a un atacante local ejecutar código malicioso con privilegios elevados. Esta vulnerabilidad puede ser explotada a través de un ataque de tipo privilege escalation.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NzY4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52624",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:local protonvpn v4 4 1 unquoted service path",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1574",
+        "name": "Hijack Execution Flow"
+      },
+      {
+        "id": "T1574.002",
+        "name": "Unquoted Service Path"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1227,
+    "fecha": "2026-07-08T02:13:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Nagios XI",
+    "resumen": "La versión xi-5.7.5 de Nagios XI presenta una vulnerabilidad de inyección de comandos del Sistema Operativo (CVE-2021-25298) con un CVSS Score de 8.8, lo que permite a un atacante autenticado ejecutar comandos arbitrarios en el servidor mediante una petición HTTP maliciosa. La vulnerabilidad se encuentra en el archivo cloud-vm.inc.php debido a un saneamiento inapropiado de la entrada de usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NzY4MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-25298",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-25298",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2021-25298"
+      ]
+    }
+  },
+  {
+    "id": 1226,
+    "fecha": "2026-07-08T02:13:31Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "China estudia restricciones a IA avanzada",
+    "resumen": "Las autoridades chinas están estudiando posibles restricciones al acceso exterior a sus modelos de IA más avanzados, incluidos algunos que todavía no se han lanzado, con el fin de proteger la seguridad nacional y prevenir filtraciones de tecnología propietaria. Esto podría tener implicaciones significativas para la industria de la IA a nivel global, ya que la IA desarrollada en China ha ganado terreno fuera del país gracias a su combinación de costes bajos y capacidades avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217911-a598ed4c4023?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NzY4MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/eeuu-enseno-que-acceso-a-ia-avanzada-puede-cortarse-china-estudia-reuters-europa-mira-fuera",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:eeuu enseñó que el acceso a la ia avanzada puede cortarse china estudia lo mismo según reuters y europa mira desde fuera",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "baijiahao.baidu.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.reuters.com",
+        "www.theatlantic.com",
+        "www.xataka.com",
+        "xueqiu.com"
+      ],
+      "url": [
+        "https://baijiahao.baidu.com/s?id=1868858849939646643&wfr=spider&for=pc",
+        "https://digital-strategy.ec.europa.eu/en/news/commission-proposes-tech-sovereignty-package-strengthen-europes-digital-autonomy-and-resilience",
+        "https://i.blogs.es/4c79e4/bandera-china/1024_2000.jpeg",
+        "https://i.blogs.es/4c79e4/bandera-china/1366_2000.jpeg",
+        "https://i.blogs.es/4c79e4/bandera-china/450_1000.jpeg",
+        "https://i.blogs.es/4c79e4/bandera-china/650_1200.jpeg",
+        "https://i.blogs.es/5c04ed/china-restringe-su-ia-concepto/1024_2000.jpeg",
+        "https://i.blogs.es/644cf3/samsung-memorias/375_142.jpeg",
+        "https://unsplash.com/es/fotos/una-bandera-roja-y-amarilla-en-un-poste-6hHyo_w0D1c",
+        "https://www.reuters.com/business/eu-targets-big-tech-dependence-with-made-in-europe-drive-2026-06-03/",
+        "https://www.reuters.com/world/beijing-is-looking-curbing-overseas-access-chinas-top-ai-models-sources-say-2026-07-07/",
+        "https://www.theatlantic.com/technology/2026/07/glm-5-2-china-cheap-ai-agents/687828/",
+        "https://xueqiu.com/4444712785/396415455"
+      ]
+    }
+  },
+  {
+    "id": 1225,
+    "fecha": "2026-07-08T02:13:23Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Riesgo de IA en WhatsApp",
+    "resumen": "La integración de la inteligencia artificial (IA) en WhatsApp plantea riesgos significativos relacionados con la privacidad y seguridad de los datos de los usuarios, ya que la IA puede procesar y almacenar información confidencial compartida a través de la aplicación. El vector de ataque principal es la exposición de datos personales y confidenciales a través de la interacción con el asistente de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1696258686454-60082b2c33e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NzY4MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-mayor-riesgo-de-la-ia-en-whatsapp-es-todo-lo-que-le-cuentas/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el mayor riesgo de la ia en whatsapp es todo lo que le cuentas",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1224,
     "fecha": "2026-07-07T22:08:57Z",
     "categoria": "Ciberseguridad",
