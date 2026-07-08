@@ -1,5 +1,61 @@
 [
   {
+    "id": 1237,
+    "fecha": "2026-07-08T13:52:58Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Amenaza AI: Ciberataques Autónomos",
+    "resumen": "Las agencias de seguridad nacional de los \"Five Eyes\" han advertido sobre el aumento de los riesgos cibernéticos asociados con los modelos de inteligencia artificial (IA), que pueden hackear sistemas y redes de manera autónoma, ampliando la brecha entre habilidad y capacidad para realizar daño. La creciente disponibilidad de herramientas de ataque preescritas y la capacidad de los modelos de IA para actuar con poca dirección están aumentando el número de posibles atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MTg3Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/cybersecurity-and-the-gap-between-skill-and-ability.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:cybersecurity and the gap between skill and ability",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.theguardian.com",
+        "www.veracode.com",
+        "www.washingtonpost.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "https://www.nsa.gov/Press-Room/News-Highlights/Article/Article/4523810/five-eyes-cyber-security-agencies-statement/",
+        "https://www.theguardian.com/commentisfree/2026/jun/29/cyber-attacks-ai",
+        "https://www.theguardian.com/technology/2026/jun/22/anthropic-claude-fable-ai-model-artificial-intelligence-national-security",
+        "https://www.veracode.com/blog/25-years-later-reflecting-on-l0phts-1998-congress-testimonial-and-the-evolution-of-cybersecurity/",
+        "https://www.washingtonpost.com/sf/business/2015/06/22/net-of-insecurity-part-3/"
+      ]
+    }
+  },
+  {
+    "id": 1236,
+    "fecha": "2026-07-08T13:52:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Startup de ciberseguridad con líderes dudosos",
+    "resumen": "Una startup de ciberseguridad que ofrece millones de dólares por vulnerabilidades de zero-day en software popular está dirigida por teóricos de la conspiración de extrema derecha y delincuentes convictos, quienes anteriormente operaron compañías de inteligencia falsas y una plataforma de lobby basada en IA bajo nombres supuestos. Esto plantea preocupaciones sobre la posible explotación de vulnerabilidades de seguridad para fines maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MTg3NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:felons fraudsters flog offensive cybersecurity startup",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1235,
+    "fecha": "2026-07-08T13:52:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Commits Verificados",
+    "resumen": "Investigaciones recientes han revelado que los commits verificados en GitHub pueden ser reescritos en nuevos hashes sin romper las firmas, lo que permite a un atacante crear un commit idéntico con la misma fecha, autor y archivos, pero con un hash diferente, y aún así obtener la verificación de GitHub. Esto puede tener implicaciones de seguridad en la integridad de los proyectos de software que dependen de la autenticidad de los commits.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MTg3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/github-verified-commits-can-be.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:github verified commits can be rewritten into new hashes without breaking signatures",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1234,
     "fecha": "2026-07-08T11:00:26Z",
     "categoria": "IA",
