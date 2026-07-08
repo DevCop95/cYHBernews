@@ -1,5 +1,103 @@
 [
   {
+    "id": 1248,
+    "fecha": "2026-07-08T22:02:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque cibernético a suministro de agua",
+    "resumen": "Un simulacro secreto realizado por aseguradoras exploró el escenario de un ataque cibernético masivo por parte de los hackers chinos \"Volt Typhoon\" al sistema de suministro de agua de EE. UU., revelando un escenario de pesadilla con posibles consecuencias como roturas de tuberías de agua y evacuaciones de hospitales. El ataque podría aprovechar vulnerabilidades en la infraestructura crítica, como sistemas de control SCADA, para causar daños significativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/what-happens-if-china-hacks-the-us-water-supply-war-game-volt-typhoon/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:what happens if china hacks the us water supply i went to a secret war game to find out",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T0800",
+        "name": "Lateral Movement"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1247,
+    "fecha": "2026-07-08T22:01:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Demanda contra Intellexa por Predator",
+    "resumen": "Ciudadanos griegos han presentado una demanda contra Intellexa debido al uso del spyware Predator, que fue descubierto en 2022 en decenas de teléfonos, lo que llevó a la renuncia del jefe del servicio de inteligencia griego y del jefe de gabinete del primer ministro. El escándalo pone de relieve la vulnerabilidad a ataques de spyware y la necesidad de medidas de ciberseguridad efectivas.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/greek-victims-file-lawsuit-against-intellexa-spyware",
+    "fuente": "The Record",
+    "dedup_key": "txt:greek victims file lawsuit against intellexa over predator spyware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1246,
+    "fecha": "2026-07-08T22:01:51Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque AI en AWS en 72 horas",
+    "resumen": "Un atacante solitario utilizó técnicas de inteligencia artificial (AI) para explotar debilidades en la nube de Amazon Web Services (AWS) y obtener credenciales robadas, logrando comprometer el entorno de una gran empresa cliente de Amazon en solo 72 horas. El ataque combinó flujos de trabajo de AI, vulnerabilidades en la nube y credenciales robadas para llevar a cabo el ataque de extorsión.",
+    "url_imagen": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/lone-attacker-ai-breach-aws-cloud-environment",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:lone attacker uses ai to breach aws cloud environment in 72 hours",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1245,
+    "fecha": "2026-07-08T22:01:45Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ciberataques a Pymes con Malware IA",
+    "resumen": "Se ha detectado un aumento significativo en ciberataques dirigidos a pequeñas y medianas empresas (pymes) que utilizan malware disfrazado de Inteligencia Artificial (IA), con más de 33.300 ataques detectados entre enero y abril de 2026. Estos ataques aprovechan la creciente confianza en la IA para infiltrarse en sistemas de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218504-81ed5eb52cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/se-multiplican-por-cinco-los-ciberataques-a-pymes-con-malware-disfrazado-de-ia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:se multiplican por cinco los ciberataques a pymes con malware disfrazado de ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1244,
     "fecha": "2026-07-08T19:18:38Z",
     "categoria": "IA",
