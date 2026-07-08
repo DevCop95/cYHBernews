@@ -1,5 +1,93 @@
 [
   {
+    "id": 1232,
+    "fecha": "2026-07-08T08:20:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Simulador de Pila de Memoria",
+    "resumen": "Un simulador de pila de memoria puede ayudar a entender cómo los programas almacenan datos temporales, como variables locales y direcciones de retorno, y cómo los atacantes pueden aprovecharse de una pila que crece demasiado o se sobrescribe con datos inesperados para hijackear el flujo de ejecución de un programa. Los vectores de ataque pueden incluir técnicas de desbordamiento de pila o inyección de código malicioso para alterar el flujo de ejecución.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0OTg4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33138",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:my stack simulator wed jul 8th",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Privilege Escalation"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1231,
+    "fecha": "2026-07-08T08:20:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad GhostLock en Linux",
+    "resumen": "La vulnerabilidad GhostLock (CVE-2026-43499), una falla de 15 años en el núcleo de Linux, permite a cualquier usuario conectado obtener control total de raíz en una máquina no parcheada, sin necesidad de permisos especiales ni configuraciones inusuales. Esto afecta a la mayoría de las distribuciones de Linux, que han incluido el código vulnerable por defecto desde 2011.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0OTg4MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-43499",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-43499"
+      ]
+    }
+  },
+  {
+    "id": 1230,
+    "fecha": "2026-07-08T08:20:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad crítica en UniFi OS",
+    "resumen": "Ubiquiti ha emitido actualizaciones de seguridad para parchear siete vulnerabilidades críticas en UniFi OS, incluyendo una falla de gravedad máxima que puede ser explotada en ataques de inyección de comandos, lo que podría permitir a los atacantes ejecutar código arbitrario en el sistema. Esto representa un vector de ataque significativo que podría comprometer la seguridad de las redes que utilizan UniFi OS.",
+    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0OTg4MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ubiquiti warns of new max severity unifi os vulnerability",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1229,
     "fecha": "2026-07-08T05:46:54Z",
     "categoria": "Tech",
