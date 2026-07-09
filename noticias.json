@@ -1,5 +1,88 @@
 [
   {
+    "id": 1259,
+    "fecha": "2026-07-09T11:53:33Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Phishing con IA: Mayor sofisticación",
+    "resumen": "El phishing se está refinando con el uso de la Inteligencia Artificial (IA), lo que dificulta la detección de estafas para los usuarios comunes, incluyendo llamadas y videollamadas con voces y vídeos clonados de familiares, aumentando el riesgo de ataques exitosos. La IA permite a los atacantes crear estafas más sofisticadas y personalizadas, lo que puede llevar a una mayor tasa de éxito en los ataques de phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009285-b55f562641b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1OTgwMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/daniel-pua-jefe-seguridad-magnific-usuario-a-pie-deberia-estar-preocupado-porque-phishing-se-esta-refinando-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:daniel púa jefe de seguridad en magnific el usuario de a pie debería estar preocupado porque el phishing se está refinando con ia",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1599",
+        "name": "Strategic Web Compromise (no se menciona explícitamente, pero se puede inferir que el phishing puede incluir la comprometición de sitios web)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.magnific.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/7e4bd8/magnific_has-cortado-la-pantalla-d_iajs5oj3uk/1024_2000.jpeg",
+        "https://i.blogs.es/b493c9/troll-estafadores/1024_391.jpeg",
+        "https://i.blogs.es/b493c9/troll-estafadores/1366_521.jpeg",
+        "https://i.blogs.es/b493c9/troll-estafadores/650_247.jpeg",
+        "https://i.blogs.es/ca0810/zai-glm/375_142.jpeg",
+        "https://www.magnific.com/app"
+      ]
+    }
+  },
+  {
+    "id": 1258,
+    "fecha": "2026-07-09T11:53:25Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA: Cambio en el lenguaje humano",
+    "resumen": "El uso creciente de modelos de lenguaje grandes podría influir en la forma en que los humanos se comunican, adoptando patrones lingüísticos y comportamientos de estos modelos, lo que podría afectar no solo la comunicación, sino también la forma en que pensamos sobre nosotros mismos y el mundo que nos rodea. Esto podría llevar a una erosión de la cortesía, un lenguaje más limitado y una mayor confirmación de sesgos.",
+    "url_imagen": "https://images.unsplash.com/photo-1781444504263-231cc860f263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1OTgwMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/the-language-of-ai-could-change-how-humans-speak.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:the language of ai could change how humans speak",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "aclanthology.org",
+        "www.article19.org",
+        "www.psychologytoday.com",
+        "www.researchgate.net",
+        "www.sciencedirect.com",
+        "www.theguardian.com",
+        "www.zdnet.com"
+      ],
+      "url": [
+        "https://aclanthology.org/2025.findings-acl.195.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/39328400/",
+        "https://www.article19.org/resources/algorithmic-people-pleasers-are-ai-chatbots-telling-you-what-you-want-to-hear/",
+        "https://www.psychologytoday.com/us/blog/urban-survival/202507/the-emerging-problem-of-ai-psychosis",
+        "https://www.researchgate.net/figure/Percent-of-Network-prime-time-programs-featuring-crime_fig1_267199589",
+        "https://www.sciencedirect.com/science/article/pii/S0306457325000214",
+        "https://www.theguardian.com/commentisfree/2026/apr/14/ai-language-human-speech",
+        "https://www.zdnet.com/article/this-app-will-pay-you-30day-to-record-your-phone-calls-for-ai-but-is-it-worth-it/"
+      ]
+    }
+  },
+  {
     "id": 1257,
     "fecha": "2026-07-09T10:35:56Z",
     "categoria": "IA",
