@@ -1,5 +1,143 @@
 [
   {
+    "id": 1273,
+    "fecha": "2026-07-09T19:38:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Sistema de Gestión",
+    "resumen": "Se ha identificado una vulnerabilidad de Control de Acceso Incorrecto (CVE-2020-25514) con un puntaje CVSS de 8.4 en el Sistema de Gestión de Bibliotecas Simple Library Management System versión 1.0, permitiendo el acceso no autorizado a través del panel de inicio de sesión. Esto puede ser explotado a través de un ataque de acceso no autorizado al sitio web.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-25514",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-25514",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Alternate Authentication Material"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "http://(site"
+      ],
+      "cve": [
+        "CVE-2020-25514"
+      ]
+    }
+  },
+  {
+    "id": 1272,
+    "fecha": "2026-07-09T19:38:07Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "China apuesta por chips de IA nacionales",
+    "resumen": "Las Big Tech chinas están invirtiendo en fabricantes de chips nacionales para reducir su dependencia de Nvidia y otros proveedores extranjeros, con un aumento del 30% anual en la inversión en aceleradores de IA nacionales. Esto se debe a los problemas burocráticos y las restricciones de exportación impuestas por EEUU, lo que ha llevado a las empresas chinas a buscar alternativas nacionales para el entrenamiento de modelos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1770745778460-9d9f1a7e8632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/big-tech-chinas-tienen-plan-mayor-apuesta-su-historia-a-fabricantes-chips-nacionales",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:las big tech chinas tienen un plan la mayor apuesta de su historia a las fabricantes de chips nacionales",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.bloomberg.com",
+        "www.businesstimes.com",
+        "www.swfte.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/604826/fabrica-tsmc/1024_682.jpeg",
+        "https://i.blogs.es/604826/fabrica-tsmc/500_333.jpeg",
+        "https://i.blogs.es/604826/fabrica-tsmc/840_560.jpeg",
+        "https://i.blogs.es/a462a7/original/1024_2000.jpeg",
+        "https://i.blogs.es/ba5dee/obleadechips/375_142.jpeg",
+        "https://i.blogs.es/da2519/fabricacionchip/375_142.jpeg",
+        "https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout",
+        "https://www.businesstimes.com.sg/companies-markets/chinese-firms-leave-nvidia-local-ai-suppliers-survey-shows",
+        "https://www.swfte.com/blog/glm-5-open-source-model-huawei-2026"
+      ]
+    }
+  },
+  {
+    "id": 1271,
+    "fecha": "2026-07-09T19:38:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "UE demanda a estados por ley de ciberseguridad",
+    "resumen": "La Unión Europea ha iniciado acciones legales contra Irlanda, España, Francia y los Países Bajos por no implementar la Directiva NIS2, que establece medidas de ciberseguridad para infraestructuras críticas, más de 20 meses después del plazo establecido. Esto puede aumentar el riesgo de brechas de seguridad y ataques cibernéticos en sectores críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/eu-cyber-filing-ireland-spain-france-netherlands-nis2",
+    "fuente": "The Record",
+    "dedup_key": "txt:eu takes member states to court over unimplemented cybersecurity law",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1270,
+    "fecha": "2026-07-09T19:37:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques a GitHub con cuentas dormidas",
+    "resumen": "Los laboratorios de seguridad de Datadog han detectado varias campañas que utilizan cuentas de GitHub inactivas y tokens de OAuth comprometidos para enumerar organizaciones, repositorios y cuentas de usuario corporativas a través de la API de GitHub, lo que permite a los atacantes mezclarse con el tráfico legítimo y mapear las estructuras organizativas de las empresas. Los atacantes utilizan herramientas de scraping automatizadas con agentes de usuario personalizados o legítimos para llevar a cabo estos ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:dormant github accounts help attackers blend in while mapping corporate orgs",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1582",
+        "name": "Dynamic Resolution"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking no se menciona explícitamente, pero se puede inferir que se está utilizando T1556.001 - Token Manipulation (OAuth)"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning no se menciona explícitamente, pero se puede inferir que se está utilizando T1595.002 - Scanning for Open Source Repositories"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1269,
+    "fecha": "2026-07-09T19:37:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft prevé más actualizaciones de seguridad",
+    "resumen": "Microsoft anticipa un aumento en las actualizaciones de seguridad de Windows debido al uso creciente de inteligencia artificial (IA) para detectar vulnerabilidades en su base de código, lo que puede revelar más CVE y exploits potenciales. Esto implica un enfoque proactivo en ciberseguridad, utilizando herramientas de IA para identificar y parchear vulnerabilidades antes de que sean explotadas por ataques como phishing o ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft expects more windows security updates from ai discovered flaws",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1268,
     "fecha": "2026-07-09T17:19:48Z",
     "categoria": "Ciberseguridad",
