@@ -1,5 +1,151 @@
 [
   {
+    "id": 1254,
+    "fecha": "2026-07-09T06:44:16Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agentes AI vulnerables a código malicioso",
+    "resumen": "Un ataque de \"Friendly Fire\" puede engañar a agentes AI de codificación como Claude Code de Anthropic y Codex de OpenAI para que ejecuten código malicioso en lugar de detectarlo, aprovechando su modo autónomo de aprobación. Esto podría permitir a atacantes ejecutar código dañino en máquinas propias.",
+    "url_imagen": "https://images.unsplash.com/photo-1770171323762-7b9a517a7094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1Nzk0NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:top ai agents built to catch malicious code can be tricked into running it",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1253,
+    "fecha": "2026-07-09T06:44:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad zero-day en Defender",
+    "resumen": "Microsoft ha lanzado una actualización de seguridad para corregir una vulnerabilidad zero-day conocida como \"RoguePlanet\" en Microsoft Defender, que podría ser explotada por atacantes antes de que se aplicara el parche. La vulnerabilidad fue divulgada después del Patch Tuesday de junio de 2026.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1Nzk0NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft patches rogueplanet defender zero day vulnerability",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1252,
+    "fecha": "2026-07-09T06:44:07Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Plan Europeo de Ciberseguridad e IA",
+    "resumen": "La Unión Europea ha lanzado un plan de acción para abordar los desafíos de ciberseguridad y inteligencia artificial, enfocándose en medidas de seguridad para modelos de IA y evaluación de riesgos asociados a su uso, incluyendo vulnerabilidades como Jailbreak, Misalignment, Hallucination o BIAS. El plan busca proteger los servicios digitales y garantizar la seguridad en el uso de la IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1767950467836-ef59566126c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1Nzk0NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/plan-de-accion-europeo-sobre.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:plan de acción europeo sobre ciberseguridad e inteligencia artificial",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.blogger.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com",
+        "www.plexicus.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0Lxg-6ILDu5HwbhJ1xNalH-C7eUpvLYOZdsVBS6HANve1ziCfNYOqfSJxBFGEN0RnbB2jWyaEP8yS__1vr_pwVA9RFnPWc83cZWzTleLLXY0M1fbqOXI2DzDJsoHJkrKecYcH1m2hz0EcsgdQoNSvJpCdoTfIiwEg07MKAYI0-iwjbt3ObSvL/w640-h414/eu6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7RiD34Pi9AAqzrNcDc2-iiRDIdDI18GFrt6U3jmoe5A_QL4PZ8adkOYKKViB6LiDV2lC2ODmvUP1HbQrWzYEIjt1E1O_7j4TS01sZb-NxTThQ-vWWV_fWllRFhZiJIG1juz8MdPkCZ3wvvxvetyvn-VqB81WbIsc6JZ758zovmeJlaHKx5VTw/w640-h450/eu3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkLsuv3YJv19AtHZdf_jRVFJEV2i7Uhw9QVMGY3RkFFKj3csDSoGbVwOA2rQ2pyEKPEfmp7CLSY5fqftXPq8Krp5jHS25nWapeR19bntywmmLOXV08MI6uz7cweLFV1_U_v92gFhJqCDu88ynFnblZvYb8hfF8bgJWYvBQRmPMkpWMEiqjqrXg/w640-h408/eu4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiL01m31uyASA0IbEel0Pt33IXh0v0TMMYAguLT7z6JBYflW1ns3UNaFBgHyNPd6wFY0GyeQm5p5jKc7rfGHEgLvULFxRo-XjIhjOUBeDfJnhdgt1yN-T_JDCNfnvp_rA32oxk1EfClqqUJyiYCKCoBGKf04xkLm6k4ET4GKMXyEO4wHm52MZ_Z/w640-h350/Eu0c%CC%A7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPKmkHctAQsplGpIZLE5LjmdrYnabbuJ8xHgowbMtHb7E_19reo7rTp6z4KitV0BRUeJllGaZ_hQoiVLk-fFUGLPzjy211KCI4FdYjtj6jlKJLwnjcMyHQGVn3RV57x_EF40w7bDtCGFJRqxmvtyQ4S0EFkmH7TsnZlIIwn_fWZG5s4tMqQiMs/w640-h542/eu1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKhUok5P-mmqrDQXLcnSJnoMvUpk5sdoOGt3mmB9Qy8RGsUht9yurvq8sth2Ddi4D7zNzORdtp3PR7_lXq504IY40_MZB4c773cHNYDcAAo1RxRONPOvdI39gD-mOOuIfb0uX-iauia9kTEDCTC3IazIfN63hxcrKxGqdTJ_oBDsN1IU1bkT6n/w640-h386/eu5.jpg",
+        "https://digital-strategy.ec.europa.eu/en/library/factsheet-action-plan-cybersecurity-and-artificial-intelligence",
+        "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+        "https://digital-strategy.ec.europa.eu/es/policies/contents-code-gpai",
+        "https://digital-strategy.ec.europa.eu/es/policies/cyber-resilience-act",
+        "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1544",
+        "https://ec.europa.eu/commission/presscorner/detail/es/ip_26_1544",
+        "https://elladodelmal.com",
+        "https://www.blogger.com/video.g?token=AD6v5dzfhRmE308WXFXz03pKdNaH1fqIE6zDbicQcMqnlb7p4iXQHwh7I4z1hKr-eYwqxJfvjT7oTIK8QQ4",
+        "https://www.elladodelmal.com/2026/06/la-orden-ejecutiva-de-la-casa-blanca.html",
+        "https://www.plexicus.com/"
+      ]
+    }
+  },
+  {
+    "id": 1251,
+    "fecha": "2026-07-09T06:44:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Amenazas cibernéticas en 2026",
+    "resumen": "El informe de amenazas de ESET revela una visión general del panorama de amenazas del primer semestre de 2026, destacando tendencias y patrones de ataques cibernéticos detectados a través de la telemetría de ESET y el análisis de expertos en detección e investigación de amenazas. Los datos proporcionan una perspectiva valiosa sobre los vectores de ataque y las amenazas emergentes en el espacio cibernético.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1Nzk0NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/informes/eset-threat-report-informe-de-amenazas-primer-semestre-2026/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:eset threat report informe de amenazas del primer semestre de 2026",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1250,
+    "fecha": "2026-07-09T06:43:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberataques a universidades",
+    "resumen": "El grupo de ciberespionaje UNK_MassTraction, probablemente alineado con los intereses de China, ha explotado vulnerabilidades en servidores de correo Roundcube para atacar universidades en Estados Unidos y Canadá, dirigidos a profesores, administradores y científicos. Los ataques, detectados por Proofpoint, se han estado llevando a cabo desde mayo y aprovechan fallos en la seguridad de Roundcube para infiltrarse en los sistemas universitarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1Nzk0Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/ciberespias-explotan-fallos-en-roundcube-para-atacar-universidades/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:ciberespías explotan fallos en roundcube para atacar universidades",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1249,
     "fecha": "2026-07-09T02:32:19Z",
     "categoria": "Ciberseguridad",
