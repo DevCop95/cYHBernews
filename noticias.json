@@ -1,5 +1,124 @@
 [
   {
+    "id": 1263,
+    "fecha": "2026-07-09T14:47:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque Ransomware a Empresa Forestal",
+    "resumen": "La empresa forestal estatal letona Latvijas Valsts Mezi (LVM) sufrió un ataque de ransomware por parte de un grupo extranjero con motivaciones financieras, lo que ha requerido semanas de restauración de sistemas. El incidente resalta la vulnerabilidad de las empresas estatales a ataques cibernéticos motivados por ganancias financieras.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/latvia-state-owned-foresty-company-lvm-ransomware",
+    "fuente": "The Record",
+    "dedup_key": "txt:latvian forestry company still restoring systems weeks after ransomware attack",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1262,
+    "fecha": "2026-07-09T14:47:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ciberguerra: Negocios necesitan planes",
+    "resumen": "La ciberguerra moderna puede afectar a empresas más allá del campo de batalla, como muestra el caso de una empresa ucraniana de software de impuestos, por lo que las empresas deben tener planes de protección contra ataques cibernéticos como phishing, malware y ransomware. El impacto real puede incluir brechas de datos y pérdidas financieras significativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/businesses-wartime-cybersecurity-gameplans",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:as global conflicts go digital businesses need wartime gameplans",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1261,
+    "fecha": "2026-07-09T14:47:45Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataques AI en minutos",
+    "resumen": "Los ataques impulsados por inteligencia artificial (IA) han acelerado significativamente, permitiendo a los atacantes realizar tareas en minutos que antes tomaban días, utilizando modelos como Mythos para crear cebo personalizado y saltar entre objetivos antes de que los equipos de seguridad puedan responder. Esto supone un desafío para las herramientas y procedimientos de seguridad tradicionales, diseñados para enfrentar ataques a velocidad humana.",
+    "url_imagen": "https://images.unsplash.com/photo-1660165458059-57cfb6cc87e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ai-attacks-move-in-minutes-join-this.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai attacks move in minutes join this webinar on building a defense that keeps up",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Initial Access: Spearphishing Attachment no se menciona explícitamente, pero se puede inferir que el cebo personalizado se utiliza para el acceso inicial, aunque no se especifica si es a través de un archivo adjunto o no. Sin embargo, se menciona \"cebo personalizado\" lo que se relaciona con T1190."
+      },
+      {
+        "id": "T1556",
+        "name": "Initial Access"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Execution through API no se menciona explícitamente, pero se puede inferir que el uso de modelos de IA podría involucrar la ejecución a través de API, aunque no es claro."
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1260,
+    "fecha": "2026-07-09T14:47:38Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Forg365: Phishing con IA",
+    "resumen": "La plataforma Forg365 utiliza técnicas de phishing-as-a-service (PhaaS) y AI para generar señuelos personalizados y robar cuentas de Microsoft 365, combinando ataques de adversary-in-the-middle (AiTM) y métodos de código de dispositivo. Esto representa un vector de ataque avanzado que aprovecha la inteligencia artificial para aumentar la efectividad de los ataques de phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new forg365 phishing platform uses ai to target microsoft 365 accounts",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking (por el ataque de adversary-in-the-middle, AiTM)"
+      },
+      {
+        "id": "T1625",
+        "name": "Identity Theft (robar cuentas de Microsoft 365)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1259,
     "fecha": "2026-07-09T11:53:33Z",
     "categoria": "IA",
