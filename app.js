@@ -15,8 +15,259 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadMoreButton = document.getElementById('load-more-news');
     const menuButton    = document.getElementById('nav-menu-button');
     const themeToggleBtn = document.getElementById('theme-toggle');
+    const langToggleBtn  = document.getElementById('lang-toggle');
     const backToTopBtn   = document.getElementById('back-to-top');
     const appToast       = document.getElementById('app-toast');
+
+    // ─────────────────────────────────────────────────────────
+    // TRANSLATION ENGINE & DICTIONARY
+    // ─────────────────────────────────────────────────────────
+    const LANG_KEY = 'cyhbernews-lang';
+    let currentLang = localStorage.getItem(LANG_KEY) || 'es';
+    document.documentElement.setAttribute('lang', currentLang);
+
+    const translations = {
+        es: {
+            title: "cYHBernews | Tu Periódico Tech",
+            loaderStatus: "Cargando noticias...",
+            ariaOpenMenu: "Abrir menú",
+            ariaCloseSearch: "Cerrar búsqueda",
+            searchPlaceholder: "Buscar titulares, temas, fuentes...",
+            ariaClearSearch: "Borrar búsqueda",
+            ariaSearch: "Buscar",
+            ariaTrending: "Tendencias",
+            ariaThemeToggle: "Cambiar tema",
+            ariaLangToggle: "Cambiar idioma",
+            sidebarHome: "Inicio",
+            sidebarTrending: "Tendencias",
+            sidebarMostViewed: "Más Visto",
+            sidebarYou: "TÚ >",
+            sidebarHistory: "Historial",
+            sidebarSaved: "Guardados",
+            sidebarLiked: "Me gusta",
+            sidebarWatchLater: "Ver más tarde",
+            sidebarTopics: "TEMAS",
+            sidebarAll: "Actualidad",
+            sidebarCyber: "Ciberseguridad",
+            sidebarAI: "IA",
+            footerBot: "Crea tu bot",
+            pillAll: "Actualidad",
+            pillCyber: "Ciberseguridad",
+            pillAI: "IA",
+            pagerStatus: "Mostrando {shown} de {total}",
+            loadMore: "Cargar más",
+            ariaBackToTop: "Volver al inicio",
+            ariaClose: "Cerrar",
+            ariaLike: "Me gusta",
+            ariaShare: "Compartir",
+            modalRead: "Leer completa",
+            
+            'Like removido': 'Like removido',
+            '¡Te gustó esta noticia!': '¡Te gustó esta noticia!',
+            'Error de conexión': 'Error de conexión',
+            'Link copiado': 'Link copiado',
+            'Error al copiar': 'Error al copiar',
+            'Función próximamente': 'Función próximamente',
+            views: "vistas",
+            new: "Nuevo",
+            emptyState: "No se encontraron noticias con estos filtros.",
+            clearFilters: "Limpiar filtros",
+            readFullStory: "Leer historia completa",
+            
+            agoMoment: "Hace un momento",
+            agoHours: "Hace {n} horas",
+            agoDay: "Hace 1 día",
+            agoDays: "Hace {n} días",
+            
+            CRITICA: "URGENTE",
+            ALTA: "ALTA",
+            MEDIA: "MEDIA",
+            BAJA: "BAJA",
+            
+            Ciberseguridad: "Ciberseguridad",
+            IA: "IA",
+            Actualidad: "Actualidad",
+            unknownSource: "Fuente desconocida",
+            errorLoading: "Error cargando noticias."
+        },
+        en: {
+            title: "cYHBernews | Your Tech News",
+            loaderStatus: "Loading news...",
+            ariaOpenMenu: "Open menu",
+            ariaCloseSearch: "Close search",
+            searchPlaceholder: "Search headlines, topics, sources...",
+            ariaClearSearch: "Clear search",
+            ariaSearch: "Search",
+            ariaTrending: "Trending",
+            ariaThemeToggle: "Change theme",
+            ariaLangToggle: "Change language",
+            sidebarHome: "Home",
+            sidebarTrending: "Trending",
+            sidebarMostViewed: "Most Viewed",
+            sidebarYou: "YOU >",
+            sidebarHistory: "History",
+            sidebarSaved: "Saved",
+            sidebarLiked: "Liked",
+            sidebarWatchLater: "Watch Later",
+            sidebarTopics: "TOPICS",
+            sidebarAll: "All News",
+            sidebarCyber: "Cybersecurity",
+            sidebarAI: "AI",
+            footerBot: "Create your bot",
+            pillAll: "All News",
+            pillCyber: "Cybersecurity",
+            pillAI: "AI",
+            pagerStatus: "Showing {shown} of {total}",
+            loadMore: "Load more",
+            ariaBackToTop: "Back to top",
+            ariaClose: "Close",
+            ariaLike: "Like",
+            ariaShare: "Share",
+            modalRead: "Read full",
+            
+            'Like removido': 'Like removed',
+            '¡Te gustó esta noticia!': 'You liked this article!',
+            'Error de conexión': 'Connection error',
+            'Link copiado': 'Link copied',
+            'Error al copiar': 'Error copying',
+            'Función próximamente': 'Feature coming soon',
+            views: "views",
+            new: "New",
+            emptyState: "No news found with these filters.",
+            clearFilters: "Clear filters",
+            readFullStory: "Read full story",
+            
+            agoMoment: "Just now",
+            agoHours: "{n} hours ago",
+            agoDay: "1 day ago",
+            agoDays: "{n} days ago",
+            
+            CRITICA: "CRITICAL",
+            ALTA: "HIGH",
+            MEDIA: "MEDIUM",
+            BAJA: "LOW",
+            
+            Ciberseguridad: "Cybersecurity",
+            IA: "AI",
+            Actualidad: "All News",
+            unknownSource: "Unknown source",
+            errorLoading: "Error loading news."
+        }
+    };
+
+    const CACHE_KEY = 'cyhbernews-trans-cache';
+    let translationCache = {};
+    try {
+        translationCache = JSON.parse(sessionStorage.getItem(CACHE_KEY) || '{}');
+    } catch(e) {
+        console.warn("Could not read sessionStorage cache", e);
+    }
+
+    function saveTranslationCache() {
+        try {
+            sessionStorage.setItem(CACHE_KEY, JSON.stringify(translationCache));
+        } catch(e) {
+            console.warn("Could not save translation cache to sessionStorage", e);
+        }
+    }
+
+    async function translateText(text, targetLang) {
+        if (!text || targetLang === 'es') return text;
+        const trimmed = text.trim();
+        if (!trimmed) return text;
+        if (translationCache[trimmed]) {
+            return translationCache[trimmed];
+        }
+        try {
+            const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=en&dt=t&q=${encodeURIComponent(trimmed)}`;
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 4000);
+            const res = await fetch(url, { signal: controller.signal });
+            clearTimeout(timeoutId);
+            if (!res.ok) throw new Error('Translation API error');
+            const data = await res.json();
+            if (data && data[0]) {
+                const translated = data[0].map(item => item[0]).join('');
+                translationCache[trimmed] = translated;
+                saveTranslationCache();
+                return translated;
+            }
+            return text;
+        } catch (e) {
+            console.warn('Translation failed for text:', trimmed, e);
+            return text;
+        }
+    }
+
+    async function translateNewsItem(news, targetLang) {
+        if (targetLang === 'es') {
+            return {
+                title: getCleanTitle(news),
+                summary: getCleanSummary(news),
+                category: translations['es'][news.categoria] || news.categoria || 'Actualidad',
+                fuente: news.fuente || translations['es']['unknownSource']
+            };
+        }
+        
+        const origTitle = getCleanTitle(news);
+        const origSummary = getCleanSummary(news);
+        const origCategory = news.categoria || 'Actualidad';
+        const origSource = news.fuente || 'Fuente desconocida';
+        
+        const combined = `${origTitle} ||| ${origSummary}`;
+        const translatedCombined = await translateText(combined, 'en');
+        
+        let title = origTitle;
+        let summary = origSummary;
+        
+        if (translatedCombined && translatedCombined.includes('|||')) {
+            const parts = translatedCombined.split(/\|\|\|/);
+            title = parts[0] ? parts[0].trim() : origTitle;
+            summary = parts[1] ? parts[1].trim() : origSummary;
+        } else if (translatedCombined) {
+            const altParts = translatedCombined.split(/\s*\|\|\|\s*/);
+            title = altParts[0] ? altParts[0].trim() : origTitle;
+            summary = altParts[1] ? altParts[1].trim() : origSummary;
+        }
+        
+        let fuente = origSource;
+        if (origSource === 'Fuente desconocida') {
+            fuente = translations['en']['unknownSource'];
+        }
+        const category = translations['en'][origCategory] || origCategory;
+        return { title, summary, category, fuente };
+    }
+
+    function updateStaticTranslations() {
+        document.title = translations[currentLang].title;
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[currentLang][key]) {
+                if (el.children.length === 0) {
+                    el.textContent = translations[currentLang][key];
+                } else {
+                    for (let node of el.childNodes) {
+                        if (node.nodeType === Node.TEXT_NODE) {
+                            node.textContent = translations[currentLang][key];
+                            break;
+                        }
+                    }
+                }
+            }
+        });
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[currentLang][key]) {
+                el.placeholder = translations[currentLang][key];
+            }
+        });
+        document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+            const key = el.getAttribute('data-i18n-aria');
+            if (translations[currentLang][key]) {
+                el.setAttribute('aria-label', translations[currentLang][key]);
+            }
+        });
+    }
 
     let allNews = [];
     let currentResults = [];
@@ -244,7 +495,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function showToast(message, icon = 'check', duration = 2400) {
         if (!appToast) return;
         clearTimeout(toastTimeout);
-        appToast.innerHTML = `<i data-lucide="${icon}"></i>${escapeHTML(message)}`;
+        const translatedMsg = translations[currentLang][message] || message;
+        appToast.innerHTML = `<i data-lucide="${icon}"></i>${escapeHTML(translatedMsg)}`;
         refreshIcons();
         appToast.classList.remove('show');
         void appToast.offsetWidth;
@@ -346,7 +598,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error(error);
             setLoaderProgress(100);
-            if (newsGrid) newsGrid.innerHTML = `<p class="error-msg">Error loading news.</p>`;
+            if (newsGrid) newsGrid.innerHTML = `<p class="error-msg">${translations[currentLang].errorLoading}</p>`;
         } finally {
             await scramblePromise;
             hideLoader();
@@ -363,12 +615,26 @@ document.addEventListener('DOMContentLoaded', () => {
         const query    = normalizeText(state.query);
         let filtered = allNews.filter(news => {
             const matchesCategory = state.category === 'all' || news.categoria === state.category;
-            const searchable      = normalizeText([
+            
+            let searchStrings = [
                 news.titulo,
                 news.resumen,
                 news.fuente,
-                news.categoria,
-            ].join(' '));
+                news.categoria
+            ];
+
+            if (currentLang === 'en') {
+                const title = getCleanTitle(news);
+                const summary = getCleanSummary(news);
+                const combined = `${title} ||| ${summary}`;
+                if (translationCache[combined]) {
+                    searchStrings.push(translationCache[combined]);
+                }
+                searchStrings.push(translations['en'][news.categoria] || '');
+                searchStrings.push(news.fuente === 'Fuente desconocida' ? translations['en']['unknownSource'] : '');
+            }
+
+            const searchable = normalizeText(searchStrings.join(' '));
             return matchesCategory && (!query || searchable.includes(query));
         });
 
@@ -403,9 +669,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (heroSection) heroSection.innerHTML = '';
             if (newsGrid) newsGrid.innerHTML = `
                 <div class="empty-state">
-                    <p>No se encontraron noticias con estos filtros.</p>
+                    <p>${translations[currentLang].emptyState}</p>
                     <button id="clear-filters-btn" class="clear-filters-btn">
-                        <i data-lucide="x-circle"></i> Limpiar filtros
+                        <i data-lucide="x-circle"></i> ${translations[currentLang].clearFilters}
                     </button>
                 </div>
             `;
@@ -418,22 +684,81 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const [featured, ...rest] = currentResults;
         const newsToRender = rest.slice(0, state.visibleCount - 1);
+
+        // Translate the news items in parallel
+        const allItemsToTranslate = [featured, ...newsToRender].filter(Boolean);
+        const translatedItemsMap = new Map();
         
-        // Fetch stats for all items to be rendered
-        await fetchStatsForNews([featured, ...newsToRender]);
+        try {
+            const translatedList = await Promise.all(
+                allItemsToTranslate.map(async (news) => {
+                    const id = getNewsId(news.enlace_original);
+                    const trans = await translateNewsItem(news, currentLang);
+                    return { id, trans };
+                })
+            );
+            translatedList.forEach(item => {
+                translatedItemsMap.set(item.id, item.trans);
+            });
+        } catch (err) {
+            console.error("Error translating news list", err);
+        }
         
         // Render hero
-        if (heroSection) {
-            heroSection.innerHTML = renderHeroCard(featured);
+        if (heroSection && featured) {
+            const id = getNewsId(featured.enlace_original);
+            const trans = translatedItemsMap.get(id) || {
+                title: getCleanTitle(featured),
+                summary: getCleanSummary(featured),
+                category: translations[currentLang][featured.categoria] || featured.categoria || 'Actualidad',
+                fuente: featured.fuente || translations[currentLang]['unknownSource']
+            };
+            heroSection.innerHTML = renderHeroCard(featured, trans);
+        } else if (heroSection) {
+            heroSection.innerHTML = '';
         }
 
         // Render grid
         if (newsGrid) {
-            newsGrid.innerHTML = newsToRender.map(news => renderGridCard(news)).join('');
+            newsGrid.innerHTML = newsToRender.map(news => {
+                const id = getNewsId(news.enlace_original);
+                const trans = translatedItemsMap.get(id) || {
+                    title: getCleanTitle(news),
+                    summary: getCleanSummary(news),
+                    category: translations[currentLang][news.categoria] || news.categoria || 'Actualidad',
+                    fuente: news.fuente || translations[currentLang]['unknownSource']
+                };
+                return renderGridCard(news, trans);
+            }).join('');
         }
 
         refreshIcons();
         updatePager();
+
+        // Fetch stats for all items to be rendered in the background (non-blocking)
+        fetchStatsForNews([featured, ...newsToRender].filter(Boolean)).then(() => {
+            [featured, ...newsToRender].forEach(news => {
+                if (!news) return;
+                const id = getNewsId(news.enlace_original);
+                const stats = statsCache[id];
+                if (!stats) return;
+
+                const formatViews = stats.views > 0 ? `${stats.views} ${translations[currentLang].views}` : translations[currentLang].new;
+
+                // Update views display in DOM
+                document.querySelectorAll(`.views-display[data-news-id="${id}"]`).forEach(el => {
+                    el.textContent = formatViews;
+                });
+
+                // Update likes count in DOM if needed
+                document.querySelectorAll(`.like-btn[data-id="${id}"]`).forEach(btn => {
+                    const countSpan = btn.querySelector('.like-count');
+                    if (countSpan) {
+                        countSpan.textContent = stats.likes > 0 ? stats.likes : '';
+                    }
+                });
+            });
+        }).catch(err => console.warn("Failed to update stats dynamically:", err));
     }
 
     function getBadgeHtml(severidad, isHero = false) {
@@ -441,11 +766,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const sv = severidad.toUpperCase();
         let icon = 'alert-circle';
         let color = 'var(--accent)';
-        let text = sv;
+        let text = translations[currentLang][sv] || sv;
 
         if (sv === 'CRITICA') {
             icon = 'flame';
-            text = 'URGENTE';
             color = '#e11d48';
         } else if (sv === 'ALTA') {
             icon = 'alert-triangle';
@@ -464,18 +788,20 @@ document.addEventListener('DOMContentLoaded', () => {
         return `<div class="${className}" style="background-color: ${color}"><i data-lucide="${icon}"></i> ${text}</div>`;
     }
 
-    function renderHeroCard(news) {
+    function renderHeroCard(news, trans) {
         if (!news) return '';
         const id = getNewsId(news.enlace_original);
-        const title = getCleanTitle(news);
-        const summary = getCleanSummary(news);
+        const title = trans ? trans.title : getCleanTitle(news);
+        const summary = trans ? trans.summary : getCleanSummary(news);
+        const category = trans ? trans.category : (news.categoria || 'Actualidad');
+        const fuente = trans ? trans.fuente : (news.fuente || 'Fuente desconocida');
         const timeStr = getRelativeTime(news.fecha);
-        const initial = (news.fuente || 'G')[0].toUpperCase();
+        const initial = (fuente || 'G')[0].toUpperCase();
         const badgeHtml = getBadgeHtml(news.severidad, true);
         
         const views = statsCache[id]?.views || 0;
         const likes = statsCache[id]?.likes || 0;
-        const formatViews = views > 0 ? `${views} vistas` : 'Nuevo';
+        const formatViews = views > 0 ? `${views} ${translations[currentLang].views}` : translations[currentLang].new;
 
         const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
         const isLiked = !!likedNews[id];
@@ -485,25 +811,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy">` : ''}
                 <div class="hero-content">
                     ${badgeHtml}
-                    <span class="hero-category">${escapeHTML(news.categoria || 'Actualidad')}</span>
+                    <span class="hero-category">${escapeHTML(category)}</span>
                     <h1 class="hero-title">${escapeHTML(title)}</h1>
                     <p class="hero-desc">${escapeHTML(summary)}</p>
                     <div class="hero-meta">
                         <div class="hero-source">
                             <div class="hero-source-avatar">${initial}</div>
-                            ${escapeHTML(news.fuente || 'Fuente desconocida')}
+                            ${escapeHTML(fuente)}
                         </div>
-                        &bull; ${formatViews} &bull; ${timeStr}
+                        &bull; <span class="views-display" data-news-id="${id}">${formatViews}</span> &bull; ${timeStr}
                     </div>
                     <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 16px;">
                         <button class="read-story-btn" style="margin-top: 0;">
-                            Leer historia completa <i data-lucide="arrow-right"></i>
+                            ${translations[currentLang].readFullStory} <i data-lucide="arrow-right"></i>
                         </button>
-                        <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="Me gusta" style="background: rgba(255,255,255,0.2);">
+                        <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="${translations[currentLang].ariaLike}" style="background: rgba(255,255,255,0.2);">
                             <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
                             <span class="like-count" style="font-size: 13px; margin-left: 4px; font-weight: bold;">${likes > 0 ? likes : ''}</span>
                         </button>
-                        <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="Compartir" style="background: rgba(255,255,255,0.2);">
+                        <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="${translations[currentLang].ariaShare}" style="background: rgba(255,255,255,0.2);">
                             <i data-lucide="share-2"></i>
                         </button>
                     </div>
@@ -512,17 +838,18 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    function renderGridCard(news) {
+    function renderGridCard(news, trans) {
         const id = getNewsId(news.enlace_original);
-        const title = getCleanTitle(news);
-        const summary = getCleanSummary(news);
+        const title = trans ? trans.title : getCleanTitle(news);
+        const category = trans ? trans.category : (news.categoria || 'Actualidad');
+        const fuente = trans ? trans.fuente : (news.fuente || 'Fuente desconocida');
         const timeStr = getRelativeTime(news.fecha);
-        const initial = (news.fuente || 'N')[0].toUpperCase();
+        const initial = (fuente || 'N')[0].toUpperCase();
         const badgeHtml = getBadgeHtml(news.severidad, false);
         
         const views = statsCache[id]?.views || 0;
         const likes = statsCache[id]?.likes || 0;
-        const formatViews = views > 0 ? `${views} vistas` : 'Nuevo';
+        const formatViews = views > 0 ? `${views} ${translations[currentLang].views}` : translations[currentLang].new;
 
         const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
         const isLiked = !!likedNews[id];
@@ -534,11 +861,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${badgeHtml}
                     <div class="card-thumbnail-overlay">
                         <div style="display: flex; gap: 8px;">
-                            <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="Me gusta">
+                            <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="${translations[currentLang].ariaLike}">
                                 <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
                                 <span class="like-count" style="font-size: 12px; margin-left: 4px;">${likes > 0 ? likes : ''}</span>
                             </button>
-                            <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="Compartir">
+                            <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="${translations[currentLang].ariaShare}">
                                 <i data-lucide="share-2"></i>
                             </button>
                         </div>
@@ -549,11 +876,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="card-info">
                         <h3 class="card-title">${escapeHTML(title)}</h3>
                         <div class="card-meta-small">
-                            <span class="source">${escapeHTML(news.fuente || 'Fuente desconocida')}</span>
-                            <div class="stats">${formatViews} &bull; ${timeStr}</div>
+                            <span class="source">${escapeHTML(fuente)}</span>
+                            <div class="stats"><span class="views-display" data-news-id="${id}">${formatViews}</span> &bull; ${timeStr}</div>
                         </div>
                         <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="card-read-more">
-                            Ver más <i data-lucide="arrow-right"></i>
+                            ${currentLang === 'es' ? 'Ver más' : 'Read more'} <i data-lucide="arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -568,7 +895,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const remaining = Math.max(0, totalRest - shown);
 
         pager.hidden = currentResults.length <= PAGE_SIZE;
-        pagerStatus.textContent = `Mostrando ${shown} de ${totalRest}`;
+        pagerStatus.textContent = translations[currentLang].pagerStatus
+            .replace('{shown}', shown)
+            .replace('{total}', totalRest);
         loadMoreButton.hidden = remaining === 0;
         loadMoreButton.disabled = remaining === 0;
         refreshIcons();
@@ -596,11 +925,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function getRelativeTime(isoString) {
         const diff = Date.now() - new Date(isoString).getTime();
         const hours = Math.floor(diff / (1000 * 60 * 60));
-        if (hours < 1) return 'Hace un momento';
-        if (hours < 24) return `Hace ${hours} horas`;
+        if (hours < 1) return translations[currentLang].agoMoment;
+        if (hours < 24) return translations[currentLang].agoHours.replace('{n}', hours);
         const days = Math.floor(hours / 24);
-        if (days === 1) return 'Hace 1 día';
-        return `Hace ${days} días`;
+        if (days === 1) return translations[currentLang].agoDay;
+        return translations[currentLang].agoDays.replace('{n}', days);
     }
 
     // ─────────────────────────────────────────────────────────
@@ -772,15 +1101,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalReadBtn = document.getElementById('modal-read-btn');
 
     let currentModalNews = null;
+    let lastFocusedElement = null;
 
-    function openNewsModal(id) {
+    async function openNewsModal(id, triggerElement) {
+        lastFocusedElement = triggerElement || document.activeElement;
         const news = allNews.find(n => getNewsId(n.enlace_original) === id);
         if (!news || !newsModal) return;
         currentModalNews = news;
 
-        const title = getCleanTitle(news);
-        const summary = getCleanSummary(news);
-        const initial = (news.fuente || 'N')[0].toUpperCase();
+        const trans = await translateNewsItem(news, currentLang);
+        const title = trans.title;
+        const summary = trans.summary;
+        const category = trans.category;
+        const fuente = trans.fuente;
+        const initial = (fuente || 'N')[0].toUpperCase();
         const likedNews = JSON.parse(localStorage.getItem('likedNews') || '{}');
         const isLiked = !!likedNews[id];
 
@@ -792,11 +1126,11 @@ document.addEventListener('DOMContentLoaded', () => {
             modalImg.parentElement.style.display = 'none';
         }
 
-        modalCategory.textContent = news.categoria || 'Actualidad';
+        modalCategory.textContent = category;
         modalTitle.textContent = title;
         modalSummary.textContent = summary;
         modalAvatar.textContent = initial;
-        modalSourceName.textContent = news.fuente || 'Fuente desconocida';
+        modalSourceName.textContent = fuente;
         modalTime.textContent = getRelativeTime(news.fecha);
 
         modalLikeBtn.dataset.id = id;
@@ -816,6 +1150,8 @@ document.addEventListener('DOMContentLoaded', () => {
         newsModal.classList.add('active');
         newsModal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+        
+        if (modalCloseBtn) modalCloseBtn.focus();
         refreshIcons();
     }
 
@@ -825,9 +1161,15 @@ document.addEventListener('DOMContentLoaded', () => {
         newsModal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
         currentModalNews = null;
+        
+        if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+            lastFocusedElement.focus();
+        } else if (modalCloseBtn) {
+            modalCloseBtn.blur();
+        }
     }
 
-    document.addEventListener('click', (e) => {
+    document.addEventListener('click', async (e) => {
         // No abrir modal si se hizo click en like o share
         if (e.target.closest('.like-btn') || e.target.closest('.share-btn:not(.like-btn)')) return;
         
@@ -836,7 +1178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             e.stopPropagation();
             const id = trigger.dataset.newsId;
-            if (id) openNewsModal(id);
+            if (id) await openNewsModal(id, trigger);
             return;
         }
     });
@@ -888,5 +1230,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Init
+    updateStaticTranslations();
+    
+    async function toggleLanguage() {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        localStorage.setItem(LANG_KEY, currentLang);
+        document.documentElement.setAttribute('lang', currentLang);
+        
+        if (loaderOverlay) {
+            loaderOverlay.classList.remove('hide');
+            setLoaderProgress(30);
+        }
+        
+        updateStaticTranslations();
+        
+        if (loaderOverlay) setLoaderProgress(60);
+        
+        await applyFilters();
+        
+        if (loaderOverlay) {
+            setLoaderProgress(100);
+            hideLoader();
+        }
+        
+        showToast(currentLang === 'es' ? 'Idioma cambiado a Español' : 'Language changed to English', 'languages');
+    }
+
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', toggleLanguage);
+    }
+
     loadNews();
 });

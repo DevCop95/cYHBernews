@@ -24,11 +24,20 @@ try {
   db = getFirestore(app);
   analytics = getAnalytics(app);
   
-  // Inicialización de App Check para bloquear bots
-  appCheck = initializeAppCheck(app, {
-    provider: new ReCaptchaV3Provider('6Lc1eDMtAAAAACAMMwpxUm2pNziMKOrhYUoKTyFV'),
-    isTokenAutoRefreshEnabled: true
-  });
+  const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
+  if (!isLocalhost) {
+    // Inicialización de App Check para bloquear bots en producción
+    appCheck = initializeAppCheck(app, {
+      provider: new ReCaptchaV3Provider('6Lc1eDMtAAAAACAMMwpxUm2pNziMKOrhYUoKTyFV'),
+      isTokenAutoRefreshEnabled: true
+    });
+  } else {
+    // Por defecto, desactivamos App Check en localhost para que Firestore funcione sin registrar tokens de depuración.
+    // Si necesitas probar App Check localmente, descomenta la línea de abajo y registra el token generado en la consola de Firebase:
+    // self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+    console.log("[Firebase Config] App Check omitido en localhost para desarrollo local.");
+  }
 } catch (error) {
   console.error("Error inicializando Firebase:", error);
 }

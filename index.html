@@ -35,7 +35,7 @@
             <div class="loader-title" id="loader-scramble-title">cYHBernews</div>
             <div class="loader-status">
                 <span class="loader-status-dot"></span>
-                <span id="loader-status-text">Cargando noticias...</span>
+                <span id="loader-status-text" data-i18n="loaderStatus">Cargando noticias...</span>
             </div>
             <div class="loader-bar-track">
                 <div class="loader-bar-fill" id="loader-bar"></div>
@@ -46,7 +46,7 @@
     <!-- Top Navbar -->
     <header id="top-nav" class="app-header">
         <div class="header-left">
-            <button id="nav-menu-button" class="icon-btn" aria-label="Abrir menú">
+            <button id="nav-menu-button" class="icon-btn" aria-label="Abrir menú" data-i18n-aria="ariaOpenMenu">
                 <i data-lucide="menu"></i>
             </button>
             <div class="logo">
@@ -56,31 +56,34 @@
         </div>
 
         <div class="header-center">
-            <button class="icon-btn mobile-close-search" aria-label="Cerrar búsqueda">
+            <button class="icon-btn mobile-close-search" aria-label="Cerrar búsqueda" data-i18n-aria="ariaCloseSearch">
                 <i data-lucide="arrow-left"></i>
             </button>
             <div class="search-bar">
                 <div class="search-input-wrapper">
                     <i data-lucide="search" class="search-icon-inside hide-mobile"></i>
-                    <input id="news-search" type="text" placeholder="Search headlines, topics, sources...">
-                    <button id="clear-search" class="clear-search-btn" aria-label="Borrar búsqueda" style="display: none;">
+                    <input id="news-search" type="text" placeholder="Search headlines, topics, sources..." data-i18n-placeholder="searchPlaceholder">
+                    <button id="clear-search" class="clear-search-btn" aria-label="Borrar búsqueda" data-i18n-aria="ariaClearSearch" style="display: none;">
                         <i data-lucide="x" style="width: 18px; height: 18px;"></i>
                     </button>
                 </div>
-                <button class="search-btn" aria-label="Buscar">
+                <button class="search-btn" aria-label="Buscar" data-i18n-aria="ariaSearch">
                     <i data-lucide="search"></i>
                 </button>
             </div>
         </div>
 
         <div class="header-right">
-            <button class="icon-btn mobile-only-search" aria-label="Buscar">
+            <button class="icon-btn mobile-only-search" aria-label="Buscar" data-i18n-aria="ariaSearch">
                 <i data-lucide="search"></i>
             </button>
-            <button class="icon-btn" aria-label="Tendencias">
+            <button class="icon-btn" aria-label="Tendencias" data-i18n-aria="ariaTrending">
                 <i data-lucide="flame"></i>
             </button>
-            <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema">
+            <button id="lang-toggle" class="icon-btn" aria-label="Cambiar idioma" data-i18n-aria="ariaLangToggle">
+                <i data-lucide="languages"></i>
+            </button>
+            <button id="theme-toggle" class="icon-btn" aria-label="Cambiar tema" data-i18n-aria="ariaThemeToggle">
                 <i data-lucide="moon"></i>
             </button>
         </div>
@@ -92,51 +95,51 @@
             <div class="sidebar-section">
                 <a href="#" class="sidebar-item active" data-action="home">
                     <i data-lucide="home"></i>
-                    <span>Home</span>
+                    <span data-i18n="sidebarHome">Home</span>
                 </a>
                 <a href="#" class="sidebar-item" data-action="trending">
                     <i data-lucide="flame"></i>
-                    <span>Trending</span>
+                    <span data-i18n="sidebarTrending">Trending</span>
                 </a>
                 <a href="#" class="sidebar-item" data-action="most-viewed">
                     <i data-lucide="trending-up"></i>
-                    <span>Most Viewed</span>
+                    <span data-i18n="sidebarMostViewed">Most Viewed</span>
                 </a>
             </div>
 
             <div class="sidebar-section">
-                <div class="section-title">YOU &gt;</div>
+                <div class="section-title" data-i18n="sidebarYou">YOU &gt;</div>
                 <a href="#" class="sidebar-item" data-action="history">
                     <i data-lucide="history"></i>
-                    <span>History</span>
+                    <span data-i18n="sidebarHistory">History</span>
                 </a>
                 <a href="#" class="sidebar-item" data-action="saved">
                     <i data-lucide="bookmark"></i>
-                    <span>Saved</span>
+                    <span data-i18n="sidebarSaved">Saved</span>
                 </a>
                 <a href="#" class="sidebar-item" data-action="liked">
                     <i data-lucide="thumbs-up"></i>
-                    <span>Liked</span>
+                    <span data-i18n="sidebarLiked">Liked</span>
                 </a>
                 <a href="#" class="sidebar-item" data-action="watch-later">
                     <i data-lucide="clock"></i>
-                    <span>Watch Later</span>
+                    <span data-i18n="sidebarWatchLater">Watch Later</span>
                 </a>
             </div>
 
             <div class="sidebar-section" id="sidebar-topics">
-                <div class="section-title">TOPICS</div>
+                <div class="section-title" data-i18n="sidebarTopics">TOPICS</div>
                 <a href="#" class="sidebar-item active-topic" data-category="all">
                     <i data-lucide="rss"></i>
-                    <span>Actualidad</span>
+                    <span data-i18n="sidebarAll">Actualidad</span>
                 </a>
                 <a href="#" class="sidebar-item" data-category="Ciberseguridad">
                     <i data-lucide="shield"></i>
-                    <span>Ciberseguridad</span>
+                    <span data-i18n="sidebarCyber">Ciberseguridad</span>
                 </a>
                 <a href="#" class="sidebar-item" data-category="IA">
                     <i data-lucide="bot"></i>
-                    <span>IA</span>
+                    <span data-i18n="sidebarAI">IA</span>
                 </a>
             </div>
             
@@ -144,7 +147,7 @@
                 <p>&copy; 2026 cYHBernews</p>
                 <a href="https://github.com/DevCop95/dev101_bot" target="_blank" rel="noopener noreferrer" title="Crea tu bot">
                     <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    <span class="footer-link-text">Crea tu bot</span>
+                    <span class="footer-link-text" data-i18n="footerBot">Crea tu bot</span>
                 </a>
             </footer>
         </aside>
@@ -159,9 +162,9 @@
             <!-- Category Pills -->
             <div class="pills-container-wrapper">
                 <nav id="category-pills" class="category-pills">
-                    <button class="pill active" data-category="all">Actualidad</button>
-                    <button class="pill" data-category="Ciberseguridad">Ciberseguridad</button>
-                    <button class="pill" data-category="IA">IA</button>
+                    <button class="pill active" data-category="all" data-i18n="pillAll">Actualidad</button>
+                    <button class="pill" data-category="Ciberseguridad" data-i18n="pillCyber">Ciberseguridad</button>
+                    <button class="pill" data-category="IA" data-i18n="pillAI">IA</button>
                 </nav>
             </div>
 
@@ -171,16 +174,16 @@
             </section>
 
             <div class="pager" id="news-pager" hidden>
-                <span id="pager-status">Mostrando noticias</span>
+                <span id="pager-status" data-i18n="pagerStatus">Mostrando noticias</span>
                 <button type="button" id="load-more-news">
                     <i data-lucide="plus"></i>
-                    Cargar más
+                    <span data-i18n="loadMore">Cargar más</span>
                 </button>
             </div>
         </main>
     </div>
 
-    <button id="back-to-top" class="back-to-top" aria-label="Volver al inicio">
+    <button id="back-to-top" class="back-to-top" aria-label="Volver al inicio" data-i18n-aria="ariaBackToTop">
         <i data-lucide="chevron-up"></i>
     </button>
 
@@ -190,7 +193,7 @@
     <div id="news-modal" class="news-modal" role="dialog" aria-hidden="true">
         <div class="news-modal-backdrop"></div>
         <div class="news-modal-content">
-            <button class="news-modal-close" aria-label="Cerrar">
+            <button class="news-modal-close" aria-label="Cerrar" data-i18n-aria="ariaClose">
                 <i data-lucide="x"></i>
             </button>
             <div class="news-modal-image">
@@ -208,15 +211,15 @@
                     <span id="modal-time"></span>
                 </div>
                 <div class="modal-actions">
-                    <button id="modal-like-btn" class="modal-action-btn like-btn" aria-label="Me gusta">
+                    <button id="modal-like-btn" class="modal-action-btn like-btn" aria-label="Me gusta" data-i18n-aria="ariaLike">
                         <i data-lucide="heart" fill="none"></i>
                         <span class="like-count"></span>
                     </button>
-                    <button id="modal-share-btn" class="modal-action-btn" aria-label="Compartir">
+                    <button id="modal-share-btn" class="modal-action-btn" aria-label="Compartir" data-i18n-aria="ariaShare">
                         <i data-lucide="share-2"></i>
                     </button>
                     <a id="modal-read-btn" href="#" target="_blank" rel="noopener noreferrer" class="modal-action-btn modal-read-full">
-                        Leer completa <i data-lucide="arrow-right"></i>
+                        <span data-i18n="modalRead">Leer completa</span> <i data-lucide="arrow-right"></i>
                     </a>
                 </div>
             </div>
