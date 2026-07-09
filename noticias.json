@@ -1,5 +1,93 @@
 [
   {
+    "id": 1276,
+    "fecha": "2026-07-09T22:18:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS en Bagisto",
+    "resumen": "Se ha identificado una vulnerabilidad de cross-site scripting (XSS) almacenada en versiones de Bagisto anteriores a 2.4.4, permitiendo a atacantes no autenticados ejecutar JavaScript arbitrario en navegadores de administradores mediante la inyección de plantillas en el registro de cuentas de cliente. La explotación se logra a través de la falta del directivo v-pre de Vue.js en el template create.blade.php, lo que permite a Vue.js evaluar expresiones de plantilla almacenadas como JavaScript en vivo cuando un administrador abre la página de Crear Orden para el cliente afectado.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MzU0OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/194436",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-60120",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated Web Logon"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-60120"
+      ]
+    }
+  },
+  {
+    "id": 1275,
+    "fecha": "2026-07-09T22:18:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Irán amplía objetivos cibernéticos",
+    "resumen": "Irán ha expandido su enfoque de ciberataques más allá de la infraestructura crítica, lo que significa que cualquier empresa con vulnerabilidades expuestas a Internet puede ser objetivo de múltiples amenazas, incluyendo posibles ataques de phishing, malware y ransomware. Esto subraya la importancia de una postura de seguridad proactiva y continua vigilancia.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MzU0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/iran-cyber-crosshairs-beyond-critical-infrastructure",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:iran s cyber crosshairs focus beyond critical infrastructure",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1274,
+    "fecha": "2026-07-09T22:18:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "GigaWiper: Backdoor Windows con wipe de disco",
+    "resumen": "Se ha descubierto GigaWiper, un backdoor de Windows que combina tres herramientas destructivas: un wiper de disco, un sobreescritor de la unidad de Windows y un ransomware falso que cifra archivos sin guardar la clave, permitiendo a los operadores elegir el método de ataque. El backdoor ofrece estos métodos como comandos, lo que facilita la ejecución de ataques personalizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MzU0ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new gigawiper windows backdoor bundles disk wiping fake ransomware and spyware",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1491",
+        "name": "Defacement"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el backdoor se ejecuta en el sistema, por lo que se puede considerar T1055 - Privileged File or Directory Discovery o T1543 - Create or Modify System Process, pero la información no es lo suficientemente clara."
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1273,
     "fecha": "2026-07-09T19:38:12Z",
     "categoria": "Ciberseguridad",
