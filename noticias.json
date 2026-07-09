@@ -1,5 +1,142 @@
 [
   {
+    "id": 1268,
+    "fecha": "2026-07-09T17:19:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-61474 en MISP",
+    "resumen": "Se ha identificado una vulnerabilidad de autorización en el endpoint de creación de atributos de MISP, permitiendo a un usuario autenticado con permisos para agregar atributos, asociar un atributo con un grupo de intercambio sin la autorización correspondiente, lo que podría llevar a un bypass de control de acceso y exponer relaciones de grupos de intercambio restringidos. La actualización corrige la lógica de autorización para verificar los permisos del grupo de intercambio siempre que se proporcione un sharing_group_id no vacío.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/194007",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-61474",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1068.001",
+        "name": "Exploitation of Vulnerability"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials in Files (No se menciona explícitamente, pero se infiere que se podría obtener acceso no autorizado a información restringida)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-61474"
+      ]
+    }
+  },
+  {
+    "id": 1267,
+    "fecha": "2026-07-09T17:19:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "NSA revive TAO",
+    "resumen": "La NSA ha cambiado el nombre de su Oficina de Operaciones de Redes de Computadora (CNO) a Tailored Access Operations (TAO), un nombre que evoca nostalgia en la comunidad digital por su origen en la década de 1990 y su asociación con operaciones de hacking de élite. El cambio de nombre puede reflejar un enfoque renovado en las capacidades de acceso avanzado y operaciones cibernéticas ofensivas de la unidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/nsa-revives-tao-name-for-elite-hacking-unit",
+    "fuente": "The Record",
+    "dedup_key": "txt:nsa revives tailored access operations name for elite hacking unit",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1266,
+    "fecha": "2026-07-09T17:19:35Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Puertas de AI: Acceso ilimitado",
+    "resumen": "Un incidente de criptominería ha puesto de relieve cómo las puertas de enlace de IA (AI gateways) pueden proporcionar a los atacantes acceso a modelos de IA, infraestructura en la nube y datos de gestión de identidad y acceso (IAM), lo que puede permitir ataques de mayor alcance. Los vectores de ataque pueden incluir exploits de vulnerabilidades en los modelos de IA o en la infraestructura subyacente.",
+    "url_imagen": "https://images.unsplash.com/photo-1674544362969-a4269ef0ea69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-gateways-keys-kingdom",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai gateways offer attackers the keys to the kingdom",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1582",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1265,
+    "fecha": "2026-07-09T17:19:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "npm 12: Scripts de instalación deshabilitados",
+    "resumen": "La versión 12 de npm deshabilita los scripts de instalación por defecto para reducir el riesgo en la cadena de suministro, cambiando el comportamiento de \"allowScripts\" a opt-in, lo que mitiga el riesgo de ataques de suplantación de identidad y malware. Esto afecta a los desarrolladores y proyectos que dependen de npm para la gestión de dependencias.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:npm 12 disables install scripts by default to reduce supply chain risk",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1264,
+    "fecha": "2026-07-09T17:19:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Grupo Helix ataca SharePoint",
+    "resumen": "Un nuevo grupo de extorsión de datos llamado Helix utiliza tácticas de enfoque de identidad como vishing, phishing de código de dispositivo y abuso de autenticación de múltiples factores (MFA) para robar datos de entornos de SharePoint, lo que representa un riesgo significativo para la seguridad de la información. Los ataques de Helix aprovechan vulnerabilidades en la autenticación y el acceso a datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new helix vishing group emerges in sharepoint data theft attacks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Vishing"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1550.004",
+        "name": "Abuse de Autenticación de Múltiples Factores (MFA)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1263,
     "fecha": "2026-07-09T14:47:56Z",
     "categoria": "Ciberseguridad",
