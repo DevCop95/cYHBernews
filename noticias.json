@@ -1,5 +1,61 @@
 [
   {
+    "id": 1305,
+    "fecha": "2026-07-10T21:57:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2019-14749",
+    "resumen": "Se ha detectado una vulnerabilidad de inyección CSV en osTicket, que permite a atacantes inyectar fórmulas maliciosas en hojas de cálculo exportadas, afectando a usuarios que acceden a estas hojas de cálculo con aplicaciones como Excel o OpenOffice Calc. La vulnerabilidad se encuentra en versiones anteriores a 1.10.7 y 1.12.x anteriores a 1.12.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MjA2NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2019-14749",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2019-14749",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2019-14749"
+      ]
+    }
+  },
+  {
+    "id": 1304,
+    "fecha": "2026-07-10T21:57:16Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Reorganización de OpenAI",
+    "resumen": "OpenAI está reorganizando sus productos de IA, concentrando funciones en una sola marca y retirando Atlas el 9 de agosto de 2026, lo que obliga a los usuarios a adaptarse a una nueva experiencia de escritorio y a entender qué aplicación conviene abrir para cada tarea. La nueva aplicación de ChatGPT reúne Chat, Work y Codex en un mismo entorno, cada uno con un enfoque distinto en tareas como conversar, investigar y desarrollar software.",
+    "url_imagen": "https://images.unsplash.com/photo-1782155789201-b6d7ea3704c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MjA2MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/openai-queria-simplificar-sus-productos-ia-ha-terminado-ensalada-chatgpt-atlas-codex",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:openai quería simplificar sus productos de ia ha terminado con una ensalada de chatgpt atlas y codex",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "chromewebstore.google.com",
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/1960e7/sol-gpt-5-6-openai/375_142.jpeg",
+        "https://i.blogs.es/9f1dd3/openai-portada/1024_2000.jpeg"
+      ]
+    }
+  },
+  {
+    "id": 1303,
+    "fecha": "2026-07-10T21:57:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Unión Europea aprueba ley de escaneo de CSAM",
+    "resumen": "La ley conocida como Chat Control 2.0, aprobada en el Parlamento Europeo, permite a empresas como Google, Meta y Microsoft escanear los mensajes de los usuarios para detectar contenido de abuso sexual infantil (CSAM), lo que puede tener implicaciones en la privacidad digital y la seguridad en línea. El escaneo puede realizarse mediante herramientas de inteligencia artificial (IA) y algoritmos de detección de patrones para identificar contenido sospechoso.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MjA2MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/chat-control-2-csam-scans-european-parliament-passage",
+    "fuente": "The Record",
+    "dedup_key": "txt:europe revives law allowing big tech to scan for csam",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1302,
     "fecha": "2026-07-10T19:21:35Z",
     "categoria": "Ciberseguridad",
