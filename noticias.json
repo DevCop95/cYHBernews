@@ -1,5 +1,189 @@
 [
   {
+    "id": 1287,
+    "fecha": "2026-07-10T11:47:09Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Meta AI crea imágenes sin permiso",
+    "resumen": "Meta AI ha lanzado una función que permite a los usuarios crear imágenes con las caras de otras personas sin permiso, utilizando sus fotos de Instagram como referencia, lo que abre la puerta a posibles abusos y usos poco éticos. Los usuarios pueden evitar que se creen imágenes con su cara desactivando los permisos de Instagram o configurando sus ajustes de privacidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1781209443149-dd12a52cc358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/basics/meta-ai-crea-imagenes-tu-cara-permiso-usando-tus-fotos-instagram-como-funciona-dos-modos-evitarlo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:meta ai puede crear imágenes con tu cara sin permiso usando tus fotos de instagram cómo funciona y dos modos de evitarlo",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/209c67/meta-ai/1024_2000.jpeg",
+        "https://i.blogs.es/211574/desactiva/1024_2000.jpeg",
+        "https://i.blogs.es/211574/desactiva/1366_2000.jpeg",
+        "https://i.blogs.es/211574/desactiva/450_1000.jpeg",
+        "https://i.blogs.es/211574/desactiva/650_1200.jpeg",
+        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/1024_2000.png",
+        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/1366_2000.png",
+        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/450_1000.png",
+        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/650_1200.png",
+        "https://i.blogs.es/e9a7bb/meta-ai/375_142.jpeg"
+      ]
+    }
+  },
+  {
+    "id": 1286,
+    "fecha": "2026-07-10T11:47:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque de phishing evasivo",
+    "resumen": "Un nuevo método de ataque de phishing utiliza \"comment stuffing\" en archivos HTML adjuntos para evadir la detección basada en IA, lo que representa un desafío para los sistemas de seguridad que confían en algoritmos de aprendizaje automático para detectar amenazas. Este enfoque inusual puede ser un vector de ataque efectivo contra las medidas de seguridad tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33144",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:comment stuffing in an html phishing attachment as a mechanism for evading ai based detection x3f fri jul 10th",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Sandbox Evasion"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1285,
+    "fecha": "2026-07-10T11:46:59Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vigilancia AI: Amenaza a la Libertad",
+    "resumen": "La implementación de sistemas de vigilancia basados en IA con reconocimiento facial y seguimiento digital puede tener efectos desalentadores en las libertades personales y la democracia, ya que permite la identificación y sanción inmediata de infractores, y su uso se está expandiendo en todo el mundo, incluyendo América del Norte, América del Sur, Europa, Asia y África. La combinación de IA, bases de datos masivas y aplicación personalizada de la ley puede llevar a una sociedad de vigilancia totalitaria, como ya se está viendo en China.",
+    "url_imagen": "https://images.unsplash.com/photo-1782088545589-46e4ece8190e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/ai-surveillance-and-social-progress.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:ai surveillance and social progress",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "bookanalysis.com",
+        "notechforice.com",
+        "slate.com",
+        "time.com",
+        "www.bbc.com",
+        "www.biometricupdate.com",
+        "www.cambridge.org",
+        "www.cnn.com",
+        "www.lemonde.fr",
+        "www.lgbtqnation.com",
+        "www.motherjones.com",
+        "www.npr.org",
+        "www.nytimes.com",
+        "www.schneier.com",
+        "www.theafricareport.com",
+        "www.theguardian.com",
+        "www.theregister.com",
+        "www.visiontimes.com"
+      ],
+      "url": [
+        "https://bookanalysis.com/1984/telescreen/",
+        "https://notechforice.com/wp-content/uploads/2026/06/Tech-Behind-ICE-Oligarchs-Immigration-Enforcement-and-the-Threat-to-Democracy.pdf",
+        "https://nsarchive.gwu.edu/briefing-book/intelligence/2020-06-25/spying-americans-new-release-infamous-huston-plan",
+        "https://slate.com/technology/2023/12/ai-mass-spying-internet-surveillance.html",
+        "https://time.com/collections/davos-2019/5502592/china-social-credit-score/",
+        "https://www.alsur.lat/sites/default/files/2025-11/Facial%20recognition%20and%20surveillance-1.pdf",
+        "https://www.bbc.com/news/world-us-canada-48218827",
+        "https://www.biometricupdate.com/202510/facial-recognition-strengthens-security-for-asias-expanding-rail-metro-sector-panel",
+        "https://www.cambridge.org/core/books/chilling-effects/22383D541B3BC45C9145E85DA4824E10#fndtn-metrics",
+        "https://www.cnn.com/2025/12/04/china/china-ai-censorship-surveillance-report-intl-hnk",
+        "https://www.lemonde.fr/en/pixels/article/2025/09/01/the-discreet-rise-of-facial-recognition-around-the-world_6744911_13.html",
+        "https://www.lgbtqnation.com/2026/01/publishers-are-stepping-back-from-lgbtq-books-amid-bans-the-current-gop-president/",
+        "https://www.motherjones.com/politics/2025/04/clearview-ai-immigration-ice-fbi-surveillance-facial-recognition-hoan-ton-that-hal-lambert-trump/",
+        "https://www.npr.org/2018/10/31/662696776/what-its-like-to-be-on-the-blacklist-in-chinas-new-social-credit-system",
+        "https://www.nytimes.com/2018/07/08/business/china-surveillance-technology.html",
+        "https://www.theafricareport.com/420018/facial-recognition-ai-driven-surveillance-how-china-is-exporting-its-toolkit-to-africa/",
+        "https://www.theguardian.com/commentisfree/2026/jul/06/ai-surveillance-policy",
+        "https://www.theguardian.com/technology/artificialintelligenceai",
+        "https://www.theregister.com/software/2024/09/16/oracle-cloud-ai-will-enable-mass-surveillance-says-ellison/516672",
+        "https://www.visiontimes.com/2026/05/05/chinas-cameras-catch-minor-offenses-but-miss-missing-persons-french-report-says.html"
+      ],
+      "md5": [
+        "22383D541B3BC45C9145E85DA4824E10"
+      ]
+    }
+  },
+  {
+    "id": 1284,
+    "fecha": "2026-07-10T11:46:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque \"Ill Bloom\" drena $3.1M",
+    "resumen": "La vulnerabilidad \"Ill Bloom\" en el software de wallets de criptomonedas permite a los atacantes explotar la debilidad en la generación de frases de recuperación, lo que les permite acceder y drenar fondos de las cuentas, con un impacto real de $3.1 millones en una sola oleada coordinada. Los atacantes pueden trabajar con la frase de recuperación débilmente generada para tomar el control de los fondos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers exploit ill bloom vulnerability to drain 3 1 million from cryptocurrency wallets",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Credential Access"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Obtain Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1283,
+    "fecha": "2026-07-10T11:46:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ex negociador de ransomware condenado",
+    "resumen": "Un ex empleado de la empresa de respuesta a incidentes de ciberseguridad DigitalMint ha sido condenado a 70 meses de prisión por participar en ataques de ransomware BlackCat (ALPHV) contra empresas estadounidenses, lo que pone de relieve la amenaza interna y la importancia de la evaluación de confianza en el sector de la ciberseguridad. Los ataques de ransomware como BlackCat suelen utilizar técnicas de phishing y explotación de vulnerabilidades para infiltrarse en las redes de las víctimas.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/us-ransomware-negotiator-gets-4-years-in-prison-for-blackcat-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:former ransomware negotiator gets 4 years for blackcat attacks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1282,
     "fecha": "2026-07-10T06:40:28Z",
     "categoria": "Ciberseguridad",
