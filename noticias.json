@@ -1,5 +1,96 @@
 [
   {
+    "id": 1302,
+    "fecha": "2026-07-10T19:21:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Condenas por Ryuk y Blackcat/AlphV",
+    "resumen": "Un operador de Ryuk ha admitido su culpabilidad en un tribunal federal de Oregón por conspiración y fraude informático, mientras que un conspirador de Blackcat/AlphV ha recibido una sentencia de 70 meses en una corte federal de Florida por ayudar a extorsionar a múltiples víctimas mediante ransomware. Estos casos destacan el impacto de la justicia en la lucha contra el ransomware y la importancia de la cooperación internacional para desmantelar estas redes criminales.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced",
+    "fuente": "The Record",
+    "dedup_key": "txt:ryuk operator pleads guilty blackcat alphv conspirator gets nearly 6 year sentence",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1301,
+    "fecha": "2026-07-10T19:21:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques cibernéticos en salud aumentan",
+    "resumen": "Los ciberataques contra hospitales y clínicas aumentaron modestamente en el primer semestre de 2026, mientras que los ataques contra proveedores de servicios y otros negocios de salud más que se duplicaron, lo que indica un cambio en los vectores de ataque hacia la cadena de suministro de la industria de la salud. Esto sugiere un aumento en la exposición a riesgos de seguridad para la industria en general.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/cybercriminals-healthcare-businesses-attacks-surge",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cybercriminals flock to healthcare businesses as attacks surge",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1300,
+    "fecha": "2026-07-10T19:21:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Amenaza de seguridad en ShareFile",
+    "resumen": "Progress Software ha ordenado a los clientes de ShareFile que desactiven los servidores de Windows que ejecutan sus Storage Zone Controllers debido a una \"creíble amenaza de seguridad externa\", lo que ha llevado a la empresa a deshabilitar temporalmente el acceso a las cuentas afectadas como medida de precaución. La amenaza específica no ha sido divulgada, pero se está investigando con equipos de seguridad internos y externos.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:urgent progress tells sharefile customers to shut down storage zone controllers over security threat",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1299,
+    "fecha": "2026-07-10T19:21:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ryuk Ransomware: Condena en EE. UU.",
+    "resumen": "Un hombre armenio de 34 años se declaró culpable de hackear empresas estadounidenses y desplegar el ransomware Ryuk para cifrar sus sistemas, enfrentando hasta 15 años de prisión. El caso destaca la persistente amenaza del ransomware y la importancia de la cooperación internacional en la lucha contra el cibercrimen.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-pleads-guilty-in-the-us-faces-15-years-in-prison/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ryuk ransomware member pleads guilty in the us faces 15 years in prison",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1298,
+    "fecha": "2026-07-10T19:21:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vodafone bloquea 640M ciberamenazas",
+    "resumen": "El servicio Vodafone Secure Net bloqueó 640 millones de ciberamenazas en un mes, un 38% más que el máximo anterior, lo que indica un aumento significativo en los intentos de ataques cibernéticos, como phishing, malware y ransomware, en la red fija. Esto destaca la importancia de los servicios de protección integrados en la red para prevenir brechas de seguridad y proteger a los clientes de amenazas emergentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/vodafone-secure-net-bloquea-640-millones-de-ciberamenazas-en-un-mes/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:vodafone secure net bloquea 640 millones de ciberamenazas en un mes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1297,
     "fecha": "2026-07-10T16:52:43Z",
     "categoria": "IA",
