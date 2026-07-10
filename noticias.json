@@ -1,5 +1,146 @@
 [
   {
+    "id": 1292,
+    "fecha": "2026-07-10T14:12:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campañas de espionaje contra policía paquistaní",
+    "resumen": "China e India llevaron a cabo campañas de espionaje separadas contra la misma fuerza policial paquistaní, en algunos casos comprometiendo los mismos sistemas, entre febrero de 2024 y abril de 2026, enfocándose en la fuerza responsable de la provincia suroeste del país, donde ha habido una insurgencia separatista de larga data. Los vectores de ataque no se especifican, pero el incidente sugiere una posible vulnerabilidad en la seguridad de la información de la fuerza policial.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/china-india-ran-separate-spy-campaigns-against-same-police-force",
+    "fuente": "The Record",
+    "dedup_key": "txt:china india ran separate spying campaigns against same pakistani police force",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1552",
+        "name": "Unconventional Password Brute Force"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1291,
+    "fecha": "2026-07-10T14:12:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en BitLocker",
+    "resumen": "Se han descubierto vulnerabilidades en el wrapper de seguridad BitLocker de Microsoft, lo que pone en riesgo a organizaciones y posiblemente a cajeros automáticos (ATMs) de sufrir compromisos de seguridad, permitiendo potenciales ataques de explotación. Estas vulnerabilidades podrían ser utilizadas por atacantes para obtener acceso no autorizado a sistemas y datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:fresh atm crypto software bugs jackpot or bust",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1290,
+    "fecha": "2026-07-10T14:11:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nuevo RAT MODBEACON utiliza gRPC",
+    "resumen": "El grupo de ciberdelincuencia chino Silver Fox ha sido vinculado a un nuevo troyano de acceso remoto (RAT) llamado MODBEACON, que utiliza gRPC Streaming para enviar tráfico de comando y control (C2) cifrado, lo que dificulta su detección. El vector de ataque incluye técnicas de SEO poisoning y la propagación de malware a través de instaladores falsificados.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new modbeacon rat uses grpc streaming for encrypted c2 traffic",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1289,
+    "fecha": "2026-07-10T14:11:50Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agente AI en tu directorio",
+    "resumen": "Los agentes de IA están acelerando el crecimiento de identidades no humanas, lo que dificulta que las organizaciones comprendan qué existe, quién es el propietario y a qué puede acceder, ampliando la superficie de ataque de la empresa. Se requiere una mayor visibilidad y gobernanza de identidades para mitigar este riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027214993-52de23be5a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/the-replicant-in-your-directory-ai-agents-and-the-identity-security-gap/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:the replicant in your directory ai agents and the identity security gap",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1288,
+    "fecha": "2026-07-10T14:11:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "SDK malicioso en npm roba claves cripto",
+    "resumen": "Un atacante distribuyó una versión maliciosa del SDK @injectivelabs/sdk-ts en npm, que roba frases semilla y claves privadas al generar o importar wallets, afectando a usuarios que instalaron la versión 1.20.21. Se recomienda actuar como si las credenciales ya estuvieran comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-sdk-de-injective-en-npm-distribuye-un-ladron-de-claves-para-criptowallets/?utm_source=rss&utm_medium=rss&utm_campaign=un-sdk-de-injective-en-npm-distribuye-un-ladron-de-claves-para-criptowallets",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:un sdk de injective en npm distribuye un ladrón de claves para criptowallets",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogger"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/un-sdk-de-injective-en-npm-distribuye-un-ladron-de-claves-para-criptowallets/"
+      ]
+    }
+  },
+  {
     "id": 1287,
     "fecha": "2026-07-10T11:47:09Z",
     "categoria": "IA",
