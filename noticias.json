@@ -1,5 +1,61 @@
 [
   {
+    "id": 1282,
+    "fecha": "2026-07-10T06:40:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Sistema de Gestión de Bibliotecas",
+    "resumen": "Se ha identificado una vulnerabilidad de permisos no seguros (CVE-2020-25515) con un CVSS Score de 7.8, considerada como alta, en el Sistema de Gestión de Bibliotecas Simple Library Management System versión 1.0, que permite el acceso no autorizado a través de la página de libros nuevos. El vector de ataque se encuentra en la URL http://(site)/lms/index.php?page=books.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NjU2Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-25515",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-25515",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1585",
+        "name": "Verify Security Controls (no se menciona explícitamente, pero se infiere que el atacante podría verificar los controles de seguridad para explotar la vulnerabilidad)"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "http://(site"
+      ],
+      "cve": [
+        "CVE-2020-25515"
+      ]
+    }
+  },
+  {
+    "id": 1281,
+    "fecha": "2026-07-10T06:40:22Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agentes AI: Nueva Identidad",
+    "resumen": "Los agentes de inteligencia artificial (AI) requieren un enfoque fundamentalmente diferente para su gestión, ya que no pueden ser tratados como cuentas de servicio o tokens de API, lo que supone un desafío para la mayoría de las organizaciones. Esto implica reconsiderar la autenticación, autorización y gestión de identidades en entornos que incorporan agentes autónomos y modelos de lenguaje avanzados.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448582395-27fc57293f1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NjU2MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/identity-access-management-security/ai-agents-new-kind-identity-most-organizations-not-ready",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai agents are a new kind of identity amp most organizations aren t ready",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1280,
     "fecha": "2026-07-10T02:34:35Z",
     "categoria": "Ciberseguridad",
