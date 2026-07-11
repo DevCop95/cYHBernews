@@ -1,5 +1,96 @@
 [
   {
+    "id": 1310,
+    "fecha": "2026-07-11T02:11:06Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Meta contamina agua",
+    "resumen": "Un centro de datos de Meta en Cheyenne, Wyoming, ha sido encontrado contaminando el agua con bacterias potencialmente mortales, específicamente Cupriavidus gilardii, lo que ha llevado a las autoridades a prohibir el vertido de residuos en la red de agua potable. La contaminación se detectó durante pruebas rutinarias de contaminación fecal y se desconoce el origen exacto del patógeno dentro de las instalaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/no-que-centro-datos-meta-consuma-mucha-poca-agua-que-esta-contaminandola",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:no es que un centro de datos de meta consuma mucha o poca agua es que está contaminándola",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "datacenters.atmeta.com",
+        "futurism.com",
+        "platform.instagram.com",
+        "www.sciencedirect.com",
+        "www.theguardian.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://datacenters.atmeta.com/2024/07/hello-cheyenne/",
+        "https://futurism.com/health-medicine/meta-ai-data-center-pathogen-bacteria-water",
+        "https://i.blogs.es/44d339/magnific_quiero-que-edites-la-img5_1seionqr4r/375_142.jpeg",
+        "https://i.blogs.es/6efc0d/meta-contaminacion/1024_2000.jpeg",
+        "https://www.sciencedirect.com/science/article/pii/S1201971226000780",
+        "https://www.theguardian.com/us-news/2026/jul/08/meta-datacenter-ai-wyoming-water"
+      ]
+    }
+  },
+  {
+    "id": 1309,
+    "fecha": "2026-07-11T02:11:00Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "OpenAI avanza con GPT-5.6",
+    "resumen": "OpenAI busca consolidar su posición en el mercado de la IA con GPT-5.6 y ChatGPT Work, siguiendo la tendencia iniciada por Anthropic con Claude Cowork, con el objetivo de integrar la IA como un compañero de trabajo autónomo y eficiente. Esto podría tener un impacto significativo en la automatización de tareas y la colaboración humana-máquina en diversas industrias.",
+    "url_imagen": "https://images.unsplash.com/photo-1761740533449-b8d4385e60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/gpt-56-y-chatgpt-work-openai-apuesta",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:gpt 5 6 y chatgpt work openai apuesta por convertir la ia en un compañero de trabajo autónomo",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1308,
+    "fecha": "2026-07-11T02:10:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Cámaras de matrículas en el punto de mira",
+    "resumen": "Expertos consideran que la necesidad de una orden judicial para búsquedas en cámaras de matrículas (ALPR) limitaría radicalmente su uso en redes de cámaras y cambiaría la forma en que se realiza la policía moderna, afectando la privacidad digital y la seguridad. Esto podría impactar la forma en que se realizan las investigaciones y el seguimiento de vehículos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/license-plate-cameras-may-be-next-target-after-supreme-court-reins-in-location-tracking",
+    "fuente": "The Record",
+    "dedup_key": "txt:license plate cameras may be next target after supreme court reins in location tracking",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1307,
+    "fecha": "2026-07-11T02:10:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Squidbleed",
+    "resumen": "Se ha descubierto una vulnerabilidad de 29 años en el proxy Squid, conocida como \"Squidbleed\", que permite la fuga de solicitudes HTTP. Esta vulnerabilidad puede ser explotada por atacantes para obtener información confidencial, destacando la importancia de actualizar y parchear los sistemas para prevenir ataques de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/friday-squid-blogging-squidbleed-vulnerability.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:friday squid blogging squidbleed vulnerability",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.schneier.com"
+      ]
+    }
+  },
+  {
+    "id": 1306,
+    "fecha": "2026-07-11T02:10:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en U-Boot",
+    "resumen": "Se han descubierto seis vulnerabilidades en el cargador de arranque U-Boot que podrían permitir a los atacantes ejecutar código malicioso durante el arranque del dispositivo, lo que podría habilitar ataques de firmware sigilosos que comprometan las protecciones de seguridad e instalen malware persistente. Los vectores de ataque incluyen la ejecución de código arbitrario durante el proceso de arranque, lo que podría tener un impacto significativo en la seguridad de los dispositivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new u boot flaws could enable stealthy firmware attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1305,
     "fecha": "2026-07-10T21:57:21Z",
     "categoria": "Ciberseguridad",
@@ -13525,23 +13616,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 754,
-    "fecha": "2026-06-22T16:47:55Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad Squidbleed",
-    "resumen": "Se ha descubierto una vulnerabilidad de lectura excesiva de memoria (heap over-read) en el proxy web Squid, conocida como Squidbleed, que puede filtrar solicitudes HTTP en texto plano de otros usuarios, incluyendo credenciales o tokens de sesión, a cualquier persona autorizada a enviar tráfico a través del mismo proxy. La vulnerabilidad se debe a un cambio en el análisis de FTP realizado en 1997 y sigue presente en la configuración predeterminada de Squid.",
-    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "calif.io"
-      ]
-    }
   },
   {
     "id": 753,
