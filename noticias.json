@@ -1,5 +1,146 @@
 [
   {
+    "id": 1330,
+    "fecha": "2026-07-11T18:55:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-10660 en Bluetooth",
+    "resumen": "Se ha descubierto una vulnerabilidad en el cliente GATT de Bluetooth BAP Broadcast Assistant que permite escrituras fuera de límites y corrupción de datos entre conexiones debido a un búfer compartido entre instancias de conexión, lo que puede ser explotado por un atacante malicioso o un dispositivo comprometido a través de BLE. La vulnerabilidad afecta versiones de Zephyr anteriores a v4.4.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/196012",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-10660",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-10660"
+      ]
+    }
+  },
+  {
+    "id": 1329,
+    "fecha": "2026-07-11T18:55:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ejecución Remota de Código en Krayin CRM",
+    "resumen": "Se ha descubierto una vulnerabilidad de ejecución remota de código (RCE) en la versión 2.2.x de Krayin CRM, que permite a atacantes autenticados ejecutar código arbitrario en el sistema, potencialmente llevando a una comprometición total del sistema. El vector de ataque requiere autenticación, lo que sugiere que los atacantes necesitan credenciales válidas para explotar esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52629",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps krayin crm v2 2 x authenticated remote code execution",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1210.001",
+        "name": "Exploitation of Remote Services: Remote Code Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1328,
+    "fecha": "2026-07-11T18:55:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en EspoCRM",
+    "resumen": "La versión 5.8.5 de EspoCRM contiene una vulnerabilidad de autenticación (CVE-2020-37094) con un CVSS Score de 8.1, que permite a los atacantes acceder a cuentas de usuario manipulando encabezados de autorización, lo que puede llevar a acceso no autorizado a información y privilegios de usuarios administrativos. Los atacantes pueden decodificar y modificar tokens de autorización para explotar esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-37094",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-37094",
+    "ttps": [
+      {
+        "id": "T1550",
+        "name": "Use of Alternate Authentication Material"
+      },
+      {
+        "id": "T1550.002",
+        "name": "Forge Authentication Tokens"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2020-37094"
+      ]
+    }
+  },
+  {
+    "id": 1327,
+    "fecha": "2026-07-11T18:55:25Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Linux descubierta por IA",
+    "resumen": "Un modelo de inteligencia artificial (IA) ha detectado una vulnerabilidad de tipo \"root bug\" en el código de Linux que había pasado desapercibida durante 15 años, lo que podría permitir a un atacante obtener acceso de superusuario en sistemas afectados. La detección de esta vulnerabilidad subraya el potencial de la IA en la identificación de fallos de seguridad complejos que podrían ser difíciles de detectar para los humanos.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009875-436f71457475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:ai found a root bug in linux that everyone missed for 15 years",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1326,
+    "fecha": "2026-07-11T18:55:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Jscrambler 8.14.0 infectado",
+    "resumen": "La versión 8.14.0 del paquete npm jscrambler contiene un hook de preinstalación malicioso que descarga y ejecuta un infostealer nativo durante la instalación, afectando a sistemas Windows, macOS y Linux. La simple instalación de esta versión es suficiente para ejecutar el malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:compromised jscrambler 8 14 0 npm release drops rust infostealer during install",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1325,
     "fecha": "2026-07-11T15:51:17Z",
     "categoria": "Tech",
