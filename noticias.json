@@ -1,5 +1,144 @@
 [
   {
+    "id": 1321,
+    "fecha": "2026-07-11T10:12:00Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en plugin AI de WordPress",
+    "resumen": "La vulnerabilidad CVE-2026-1359 afecta al plugin Genolve de WordPress, permitiendo a atacantes autenticados con acceso de nivel Colaborador o superior modificar opciones arbitrarias del sitio web, incluyendo la habilitación del registro de usuarios y la configuración del rol predeterminado a administrador, lo que puede resultar en escalada de privilegios. El vector de ataque se aprovecha de la falta de verificación de capacidades en la función genolve_setOpt().",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218504-81ed5eb52cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/195988",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-1359",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-1359"
+      ]
+    }
+  },
+  {
+    "id": 1320,
+    "fecha": "2026-07-11T10:11:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en osTicket",
+    "resumen": "La vulnerabilidad CVE-2018-7195, con una puntuación CVSS de 8.1, permite a atacantes remotos restablecer contraseñas arbitrarias en versiones de osTicket anteriores a la 1.10.2, aprovechando el acceso de invitado y adivinando un número de 6 dígitos. Esto puede ser utilizado para realizar ataques de phishing o tomar el control de cuentas.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-7195",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-7195",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1187",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2018-7195"
+      ]
+    }
+  },
+  {
+    "id": 1319,
+    "fecha": "2026-07-11T10:11:49Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Meta AI utiliza fotos de Instagram sin permiso",
+    "resumen": "Meta ha activado por defecto la opción de utilizar fotos de Instagram públicas para entrenar su modelo de IA, Muse Image, sin pedir permiso a los usuarios, lo que genera preocupaciones sobre la privacidad y el uso de datos personales. Los usuarios pueden desactivar esta opción manualmente, pero es importante destacar que el modelo tiene salvaguardas para evitar la creación de contenido delicado.",
+    "url_imagen": "https://images.unsplash.com/photo-1767955006100-cf73d990599f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/privacidad/meta-acaba-convertir-tus-fotos-instagram-materia-prima-para-su-ia-pedirte-permiso-como-desactivarlo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:meta acaba de convertir tus fotos de instagram en materia prima para su ia sin pedirte permiso cómo desactivarlo",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.nytimes.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3cf7e7/meta/375_142.jpeg",
+        "https://i.blogs.es/b7aa01/instagram-metaai/1024_2000.jpeg",
+        "https://i.blogs.es/cad723/instagram-metaai-02/1024_2000.jpeg",
+        "https://i.blogs.es/cad723/instagram-metaai-02/1366_2000.jpeg",
+        "https://i.blogs.es/cad723/instagram-metaai-02/450_1000.jpeg",
+        "https://i.blogs.es/cad723/instagram-metaai-02/650_1200.jpeg",
+        "https://i.blogs.es/d4d05e/instagram-metaai-01/1024_2000.jpeg",
+        "https://i.blogs.es/d4d05e/instagram-metaai-01/1366_2000.jpeg",
+        "https://i.blogs.es/d4d05e/instagram-metaai-01/450_1000.jpeg",
+        "https://i.blogs.es/d4d05e/instagram-metaai-01/650_1200.jpeg",
+        "https://www.nytimes.com/2026/07/08/technology/meta-instagram-ai.html"
+      ]
+    }
+  },
+  {
+    "id": 1318,
+    "fecha": "2026-07-11T10:11:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Wireshark 4.6.7: Correcciones de vulnerabilidades",
+    "resumen": "La versión 4.6.7 de Wireshark corrige 12 vulnerabilidades y 16 errores, mejorando la seguridad y estabilidad de la herramienta de análisis de protocolos de red. Estas correcciones son cruciales para prevenir posibles ataques que exploten las vulnerabilidades existentes en versiones anteriores.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33146",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:wireshark 4 6 7 released sat jul 11th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1317,
+    "fecha": "2026-07-11T10:11:37Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ghostcommit engaña a AI",
+    "resumen": "La técnica \"Ghostcommit\" oculta inyecciones de comandos en imágenes PNG para engañar a agentes de IA, como CodeRabbit y Bugbot, y potencialmente robar secretos de repositorios, demostrando una vulnerabilidad en la revisión de código automatizada. Los atacantes pueden utilizar esta técnica para extraer información confidencial de los repositorios, como claves de acceso y contraseñas almacenadas en archivos .env.",
+    "url_imagen": "https://images.unsplash.com/photo-1756908992154-c8a89f5e517f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ2OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ghostcommit hides prompt injection in images to fool ai agents steal secrets",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se menciona el robo de claves de acceso y contraseñas almacenadas en archivos .env)"
+      },
+      {
+        "id": "T1497.001",
+        "name": "No se ajusta perfectamente, pero se podría considerar como una forma de T1497.001 - Virtualization/Sandbox Evasion (engañar a agentes de IA)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1316,
     "fecha": "2026-07-11T07:47:58Z",
     "categoria": "Ciberseguridad",
