@@ -1,5 +1,58 @@
 [
   {
+    "id": 1332,
+    "fecha": "2026-07-11T21:44:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad crítica en Gitea",
+    "resumen": "Se ha identificado una vulnerabilidad crítica en la imagen de Docker oficial de Gitea que permite a los atacantes suplantar a cualquier usuario, incluidos administradores, a través de un bypass de autenticación. Los hackers están explotando activamente esta vulnerabilidad, lo que puede tener un impacto significativo en la seguridad de los servicios de Git autoalojados.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDYyNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers exploit critical auth bypass in gitea docker image",
+    "ttps": [
+      {
+        "id": "T1550",
+        "name": "Use of Alternate Authentication Material"
+      },
+      {
+        "id": "T1550.004",
+        "name": "Session Hijacking"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1331,
+    "fecha": "2026-07-11T21:43:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Sudo",
+    "resumen": "Se ha identificado una vulnerabilidad de escalada de privilegios (CVE-2026-35535) en Sudo con una puntuación CVSS de 7.4, considerada como alta, que puede ser explotada si falla una llamada a setuid, setgid o setgroups durante la caída de privilegios antes de ejecutar el mailer. Esta vulnerabilidad afecta versiones de Sudo hasta la 1.9.17p2 y puede permitir a un atacante elevar sus privilegios en sistemas que utilizan Sudo, incluyendo productos de Siemens como SINEC OS.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDYyMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-35535",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-35535",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-35535"
+      ]
+    }
+  },
+  {
     "id": 1330,
     "fecha": "2026-07-11T18:55:40Z",
     "categoria": "Ciberseguridad",
