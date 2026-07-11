@@ -1,5 +1,66 @@
 [
   {
+    "id": 1312,
+    "fecha": "2026-07-11T05:36:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad XSS en Plugin WordPress",
+    "resumen": "La vulnerabilidad CVE-2026-9738 afecta al plugin \"The Print, PDF, Email by PrintFriendly\" para WordPress, permitiendo a atacantes autenticados con acceso de administrador inyectar scripts web arbitrarios en páginas debido a una falta de sanitización de entrada y escape de salida en el parámetro 'content_position_css'. Esto puede ejecutar código malicioso cuando un usuario accede a una página infectada.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NDgxNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/195965",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9738",
+    "ttps": [
+      {
+        "id": "T1061",
+        "name": "Cross-Platform"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated Remote Access no aplica, en su lugar:"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9738"
+      ]
+    }
+  },
+  {
+    "id": 1311,
+    "fecha": "2026-07-11T05:36:01Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "GPT-5.6: Nuevas Funcionalidades",
+    "resumen": "La nueva versión de GPT, GPT-5.6, presenta tres variantes diferentes: Sol, Terra y Luna, cada una con características y capacidades únicas, incluyendo mejoras en programación, investigación científica y ciberseguridad. Estas mejoras pueden tener un impacto significativo en la forma en que se utilizan los modelos de lenguaje en diversas aplicaciones y sectores.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NDgxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/basics/gpt-5-6-novedades-todo-que-cambia-chatgpt-nueva-version-su-modelo-inteligencia-artificial",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:gpt 5 6 novedades y todo lo que cambia en chatgpt con la nueva versión de su modelo de inteligencia artificial",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/aee970/gpt/1024_2000.jpeg"
+      ]
+    }
+  },
+  {
     "id": 1310,
     "fecha": "2026-07-11T02:11:06Z",
     "categoria": "IA",
@@ -5906,24 +5967,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-28498"
-      ]
-    }
-  },
-  {
-    "id": 1084,
-    "fecha": "2026-07-02T06:38:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Plugin LMS de WordPress",
-    "resumen": "Se ha descubierto una vulnerabilidad de Insecure Direct Object Reference (IDOR) en el plugin \"The Academy LMS\" para WordPress, que permite a atacantes no autenticados acceder a información detallada del currículum de cursos privados, borradores, programados o protegidos por contraseña, mediante la enumeración de IDs de cursos a través del endpoint REST API '/topics'. La vulnerabilidad afecta versiones hasta y incluyendo la 3.8.1.",
-    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/184432",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-5348",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-5348"
       ]
     }
   },
