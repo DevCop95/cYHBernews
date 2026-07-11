@@ -1,5 +1,158 @@
 [
   {
+    "id": 1316,
+    "fecha": "2026-07-11T07:47:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en W3 Total Cache",
+    "resumen": "La versión 2.9.4 del plugin W3 Total Cache para WordPress presenta una vulnerabilidad de Directory Traversal (CVE-2026-9282) que permite a atacantes no autenticados leer contenido de archivos arbitrarios en el servidor, lo que puede incluir información sensible, siempre y cuando se active el modo de minimización manual y se proporcione un nombre de archivo de minimización con formato manual.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/195987",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9282",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9282"
+      ]
+    }
+  },
+  {
+    "id": 1315,
+    "fecha": "2026-07-11T07:47:51Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "GPT-5.6: El mejor modelo de IA",
+    "resumen": "OpenAI ha lanzado GPT-5.6, una familia de modelos de IA que incluye tres variantes: Sol, Terra y Luna, siendo Sol el más potente y probablemente el mejor modelo de IA del mundo, según pruebas internas y estudios independientes. Sin embargo, su capacidad avanzada puede hacer que sea innecesario para la mayoría de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/gpt-5-6-probablemente-sea-mejor-modelo-ia-mundo-precisamente-eso-mayoria-no-necesita",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:gpt 5 6 probablemente sea el mejor modelo de ia del mundo y precisamente por eso la mayoría no lo necesita",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arcprize.org",
+        "openai.com",
+        "platform.instagram.com",
+        "www.xataka.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "https://arcprize.org/results/openai-gpt-5-6",
+        "https://artificialanalysis.ai/",
+        "https://i.blogs.es/1960e7/sol-gpt-5-6-openai/1024_2000.jpeg",
+        "https://i.blogs.es/1e540d/artificial/1024_2000.jpeg",
+        "https://i.blogs.es/1e540d/artificial/1366_2000.jpeg",
+        "https://i.blogs.es/1e540d/artificial/450_1000.jpeg",
+        "https://i.blogs.es/1e540d/artificial/650_1200.jpeg",
+        "https://i.blogs.es/265404/rio2/375_142.jpeg",
+        "https://i.blogs.es/4e26b0/robot-pizarra/375_142.jpeg",
+        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/1024_2000.png",
+        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/1366_2000.png",
+        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/450_1000.png",
+        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/650_1200.png",
+        "https://i.blogs.es/ba34bd/gpt-5-6/1024_2000.jpeg",
+        "https://i.blogs.es/ba34bd/gpt-5-6/1366_2000.jpeg",
+        "https://i.blogs.es/ba34bd/gpt-5-6/450_1000.jpeg",
+        "https://i.blogs.es/ba34bd/gpt-5-6/650_1200.jpeg",
+        "https://openai.com/index/gpt-5-6/"
+      ]
+    }
+  },
+  {
+    "id": 1314,
+    "fecha": "2026-07-11T07:47:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad crítica en Zimbra",
+    "resumen": "Se ha descubierto una vulnerabilidad de stored cross-site scripting (XSS) en el Classic Web Client de Zimbra, que permite la ejecución de código arbitrario a través de correos electrónicos especialmente diseñados, lo que podría permitir la ejecución de scripts maliciosos en la sesión del usuario. La vulnerabilidad aún no tiene un identificador CVE asignado.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:critical zimbra flaw could let crafted emails run malicious code in user sessions",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Spearphishing Attachment no se menciona explícitamente, pero se puede inferir que se utiliza un correo electrónico especialmente diseñado para explotar la vulnerabilidad, lo que se relaciona con la técnica de T1566 - Phishing, específicamente:"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1313,
+    "fecha": "2026-07-11T07:47:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SYNAPTIC Sentinel v0.3.22",
+    "resumen": "SYNAPTIC Sentinel es un auditor de seguridad de código abierto que se integra en Visual Studio Code, revisando el código, dependencias y configuración sin enviar datos fuera de la máquina, utilizando modelos de IA para identificar vulnerabilidades y ofrecer recomendaciones de seguridad. El uso de SYNAPTIC Sentinel puede ayudar a los desarrolladores a identificar y mitigar riesgos de seguridad en sus proyectos, especialmente aquellos que utilizan asistentes de IA para generar código.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/synaptic-sentinel-v0322-el-auditor-de.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "cve:cve-2026-41242,cve-2026-48068",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "deepwiki.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "marketplace.visualstudio.com",
+        "mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0xgLZMlNBevXRAK2QGVIE2HuBjJ0iJwACEd5Fals3n4JB_UvqaOcyfBc5ybiUMkkPtHDDWf5EiY2qvDw6vXjFtLCY1Th4vYA61M2DP9kCmp3cbbf74pfC5QpVVoK0pIOt7rZRLq3moAVx4cZBvxm1dIVKYRf56y9sQn4-rztlmwVAjqNhwJDN/s2692/Sentinel4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0xgLZMlNBevXRAK2QGVIE2HuBjJ0iJwACEd5Fals3n4JB_UvqaOcyfBc5ybiUMkkPtHDDWf5EiY2qvDw6vXjFtLCY1Th4vYA61M2DP9kCmp3cbbf74pfC5QpVVoK0pIOt7rZRLq3moAVx4cZBvxm1dIVKYRf56y9sQn4-rztlmwVAjqNhwJDN/w640-h342/Sentinel4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXrz31YOKEycxxxPtr1LiBwrsZhIP0EJ6Jv7YBJgfiIBxNu7eVG_ui-nNcJQgoFsAo_a5ad6CK2M6Qw63o3wUPYk7pnzAht9MBePcM3g_PW_xPgr6TgSD_xq9sEaISk8r4WAms4p-JYJzdnYNvKmYTamSDYPJdL96bihKa3Shsz8IQE0B8UTj2/w640-h436/Sentinel0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgruNScbm-cX3WfBhTjd8u9xsKa6FE9tohxRkOgr4S4k3M_Y6ln2jmOeErVDdnr1uO3qJjCRemH91I8-mMegc_ZcgTZBXMa_nTTxOd6gEBsP232dpkT05h9vztiknVbIiSQqjraYPlc1f4YWyDRJZgPF3mIlG7ZFYKbEqtBijwDIrviZ415qQYW/s2694/sentinel3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgruNScbm-cX3WfBhTjd8u9xsKa6FE9tohxRkOgr4S4k3M_Y6ln2jmOeErVDdnr1uO3qJjCRemH91I8-mMegc_ZcgTZBXMa_nTTxOd6gEBsP232dpkT05h9vztiknVbIiSQqjraYPlc1f4YWyDRJZgPF3mIlG7ZFYKbEqtBijwDIrviZ415qQYW/w640-h344/sentinel3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvttjooUqDKC1IpRhRwTTwm9PkSHDZQTvTPyaG-iTSjG2RSDHNtNyA08Rgn034kqz1QO4uvRDS1UCC4t6c4bzQoARVI1kUpM3UT4e6Qc0h5flF_PIxVXWwr_6x6taOXCr3QI1JMNrGpsaU7uCZjlCxmjnMz_UMWhgymV4AJiGsZjkA5lduTTTX/s2726/sentinel1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvttjooUqDKC1IpRhRwTTwm9PkSHDZQTvTPyaG-iTSjG2RSDHNtNyA08Rgn034kqz1QO4uvRDS1UCC4t6c4bzQoARVI1kUpM3UT4e6Qc0h5flF_PIxVXWwr_6x6taOXCr3QI1JMNrGpsaU7uCZjlCxmjnMz_UMWhgymV4AJiGsZjkA5lduTTTX/w640-h344/sentinel1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2GtbwAeJQd2d8g_sw4DM7VEYQUBv84iwsOJKFMpT4TZJh1kVaKJtOFyW3VCKmfPhhiDLcUrVbHQmf1AuKcBpR-6ivqj-eNyjS3nu6MdxzRcAC168LHMlUEiUQYCfW8TX_gD9_dkyRLmBvu_rwiOlIyWO1Ir-JeLY5JOxlWVJswBGzPH-wyqZD/w640-h464/sentinel8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6hDgAXReqyqSFjBXhsIKoOXqcS7vcZGZ-O1NjnKnVR69DbQK4Sp7KBw3r1ksj504FkSUHR0YF8SdAQXGLCFUsg9xWmnckNRIbQS7dKAn5fbiHWqQhHMQV3yDSibfBvR-RzFiVGC6waBDNw9bnwEi9xidtYRaqn7ZBPLTf2MX10s_PghA2brxA/s2690/Sentinel5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6hDgAXReqyqSFjBXhsIKoOXqcS7vcZGZ-O1NjnKnVR69DbQK4Sp7KBw3r1ksj504FkSUHR0YF8SdAQXGLCFUsg9xWmnckNRIbQS7dKAn5fbiHWqQhHMQV3yDSibfBvR-RzFiVGC6waBDNw9bnwEi9xidtYRaqn7ZBPLTf2MX10s_PghA2brxA/w640-h344/Sentinel5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8WmawgPTuJUI5Ay5yG51HuODkDTSc6bW2rgibmKUjmlfZu9IMSk0MvqHhVK5_wg9mzeCNJWbsrTabSx4jinxmVoXlAYJDTPZG2QABPOdHgSUdq9olBd5zMaupTrWVzJl9YL2jQ2SfXj_XJTGSUC3bUrTbifwRrwrq4Kf2RrwhfiRSlp6XEIuP/s2698/Sentinel2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8WmawgPTuJUI5Ay5yG51HuODkDTSc6bW2rgibmKUjmlfZu9IMSk0MvqHhVK5_wg9mzeCNJWbsrTabSx4jinxmVoXlAYJDTPZG2QABPOdHgSUdq9olBd5zMaupTrWVzJl9YL2jQ2SfXj_XJTGSUC3bUrTbifwRrwrq4Kf2RrwhfiRSlp6XEIuP/w640-h344/Sentinel2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoyt0GnOs8bxWrR3MIwi-PJprtdOlFHSbOu4PMzPC9bPRKc2SPmALCYqCJtRlnGOU4PIyUnUwNHBC9gkM-bmgzeYKCGZ6LEgOVvS5y19Li0Cx1Kdalwi9Rmud_xJM7V4hbQYQY8VyqFxwn-JYIUGgpY31Z9hKvIHcQSNT3hJPJePY750jPHSU/w640-h350/Saulo_Flores.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiudQltvag5X5ibyRWXs1WJJJfQgXk6RAq6bb_O20ac8TMEH7jCqCULdN08sfwVMNRCyjf171qu2GG9Y91qOI3rAnafMTzTcLMt9iXFxk5WatIaBT_H9VSyKzvZ7ntGRFg-03-Cm6IF4U9aEgz4c8SiUN_l1NmLi5Y4MozynGOFCLPalAswKN_d/w640-h368/sentinel9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZJG2hEqfwOvyxt7MHwsGfR1JspNiJHivaS-UeLzhufXylbNmGb6Gtb2FltdtVQdMN-WVxmSUAPy5VtFjmTg2GYp8QBoJVLLrq8MCCWnglqiRrR_h0kK48vju6sVN30YfX6oH_4oHCV9cKsApE618nrkwOirnNbXNzaFD1Y78XiqQ6mAA1xP-c/s2696/Sentinel6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZJG2hEqfwOvyxt7MHwsGfR1JspNiJHivaS-UeLzhufXylbNmGb6Gtb2FltdtVQdMN-WVxmSUAPy5VtFjmTg2GYp8QBoJVLLrq8MCCWnglqiRrR_h0kK48vju6sVN30YfX6oH_4oHCV9cKsApE618nrkwOirnNbXNzaFD1Y78XiqQ6mAA1xP-c/w640-h342/Sentinel6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcKQ9N14OXiChOGrjwDBXsDoXV_ZHYWroHvE12X6MOeq5NHRG5GFatRk1AGpfDFXaYNkZTSLdUpd-AuZKXLOSaq42yECFNNCA2aAHGSJKR_qL-E4HzW_bupYEcUgdscu-uovSzY2mC0SeEFoorRWEx_4IyBJBsHvEaD_LCuzKNKo-Vc6sL0Egq/s2834/Sentinel7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcKQ9N14OXiChOGrjwDBXsDoXV_ZHYWroHvE12X6MOeq5NHRG5GFatRk1AGpfDFXaYNkZTSLdUpd-AuZKXLOSaq42yECFNNCA2aAHGSJKR_qL-E4HzW_bupYEcUgdscu-uovSzY2mC0SeEFoorRWEx_4IyBJBsHvEaD_LCuzKNKo-Vc6sL0Egq/w640-h342/Sentinel7.jpg",
+        "https://deepwiki.com/golab-arch/synaptic-sentinel",
+        "https://elladodelmal.com",
+        "https://golab.cl/sentinel.html",
+        "https://marketplace.visualstudio.com/items?itemName=RealGoLab.synaptic-sentinel"
+      ],
+      "cve": [
+        "CVE-2026-41242",
+        "CVE-2026-48068"
+      ]
+    }
+  },
+  {
     "id": 1312,
     "fecha": "2026-07-11T05:36:08Z",
     "categoria": "Ciberseguridad",
