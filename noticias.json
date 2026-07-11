@@ -1,5 +1,62 @@
 [
   {
+    "id": 1325,
+    "fecha": "2026-07-11T15:51:17Z",
+    "categoria": "Tech",
+    "severidad": "CRITICA",
+    "titulo": "Regreso de GoldPickaxe",
+    "resumen": "El malware GoldPickaxe ha regresado, poniendo en riesgo la información biométrica de los usuarios, similar a cómo se protege la información financiera, mediante ataques de phishing y explotación de vulnerabilidades en dispositivos móviles. Esto resalta la importancia de la seguridad de la información biométrica en la era digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1643000296927-f4f1c8722b7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3ODUwNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2934",
+    "fuente": "TG: Android Malware",
+    "dedup_key": "txt:goldpickaxe returns when your biometric information is as important as your money https zimperium com blog goldpic",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "zimperium.com"
+      ],
+      "url": [
+        "https://zimperium.com/blog/goldpic...",
+        "https://zimperium.com/blog/goldpickaxe-returns-when-your-biometric-information-is-as-important-as-your-money"
+      ]
+    }
+  },
+  {
+    "id": 1324,
+    "fecha": "2026-07-11T15:51:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Alerta global sobre CMS vulnerables",
+    "resumen": "El Centro de Seguridad Cibernética de Australia (ACSC) emitió una alerta sobre una campaña de explotación global que aprovecha vulnerabilidades en plataformas de gestión de contenido (CMS) y plugins, lo que podría permitir ataques de phishing, inyección de malware y acceso no autorizado a sistemas. Los vectores de ataque incluyen la explotación de vulnerabilidades conocidas en CMS y plugins desactualizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3ODUwNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:australia warns of global campaign targeting vulnerable cms platforms",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1323,
     "fecha": "2026-07-11T13:08:52Z",
     "categoria": "Ciberseguridad",
