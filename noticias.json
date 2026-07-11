@@ -1,5 +1,58 @@
 [
   {
+    "id": 1323,
+    "fecha": "2026-07-11T13:08:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Medtronic",
+    "resumen": "La empresa de tecnología médica Medtronic ha sufrido una brecha de datos que ha afectado a 3,8 millones de personas, con acceso a información personal y médica, incluyendo nombres, fechas de nacimiento, números de Seguridad Social y detalles de salud, presumiblemente por el grupo ShinyHunters, quienes podrían haber recibido un pago de rescate. Los afectados recibirán monitoreo de crédito y restauración de identidad durante 24 meses.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NzUzMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114036",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:medtronic data breach hits 3 8 million people shinyhunters suspected of ransom payment medtronic confirmed that shi",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1322,
+    "fecha": "2026-07-11T13:08:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SSL Stripping en EMC RecoverPoint",
+    "resumen": "La vulnerabilidad CVE-2016-6650, con una puntuación CVSS de 7.5, afecta a versiones anteriores a 5.0 de EMC RecoverPoint y EMC RecoverPoint para máquinas virtuales, permitiendo a atacantes explotarla mediante SSL Stripping para comprometer el sistema. Los productos afectados incluyen Dell RecoverPoint para máquinas virtuales y EMC RecoverPoint.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NzUzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2016-6650",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2016-6650",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1587",
+        "name": "Forge Web Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2016-6650"
+      ]
+    }
+  },
+  {
     "id": 1321,
     "fecha": "2026-07-11T10:12:00Z",
     "categoria": "IA",
@@ -3621,20 +3674,6 @@
     }
   },
   {
-    "id": 1188,
-    "fecha": "2026-07-06T19:50:07Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha de datos en dispositivo médico",
-    "resumen": "Un fabricante de dispositivos médicos informó una brecha de datos que afectó a casi 4 millones de personas, con acceso a información como números de Seguridad Social y datos relacionados con la salud, aunque no hay evidencia de que la información haya sido publicada o expuesta en internet. La brecha puede tener un impacto significativo en la privacidad digital y la seguridad de los datos personales de los afectados.",
-    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNjc0MDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/medical-device-maker-notifies-nearly-4-million-of-breach",
-    "fuente": "The Record",
-    "dedup_key": "txt:major medical device manufacturer notifies nearly 4 million of breach",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
     "id": 1187,
     "fecha": "2026-07-06T19:50:03Z",
     "categoria": "IA",
@@ -6357,41 +6396,6 @@
         "CVE-2026-45659"
       ]
     }
-  },
-  {
-    "id": 1080,
-    "fecha": "2026-07-02T06:37:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha de datos en Medtronic",
-    "resumen": "La empresa de dispositivos médicos Medtronic notificó a sus clientes afectados por una brecha de datos que expuso sus datos personales a un tercero no autorizado, lo que puede tener implicaciones de seguridad y privacidad para los usuarios de sus dispositivos. La brecha se atribuye a los atacantes conocidos como ShinyHunters.",
-    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyNzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/medtronic-notifies-customers-impacted-by-shinyhunters-data-breach/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:medtronic notifies customers impacted by shinyhunters data breach",
-    "ttps": [
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise no se menciona, pero se puede inferir que los atacantes utilizaron algún método para obtener acceso no autorizado."
-      },
-      {
-        "id": "T1552",
-        "name": "Unconventional Passwords no se menciona."
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 1079,
