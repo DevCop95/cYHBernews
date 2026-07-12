@@ -1,5 +1,97 @@
 [
   {
+    "id": 1348,
+    "fecha": "2026-07-12T18:59:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-10668",
+    "resumen": "Se ha identificado una vulnerabilidad de denegación de servicio (DoS) en el controlador USB de Nuvoton NuMaker HSUSBD, que puede ser explotada por un atacante físico o adjacente para bloquear el punto de control USB de un dispositivo, impidiendo su enumeración y respuesta en el bus USB. La vulnerabilidad se debe a que el controlador arma el estado de control de datos de entrada de manera incondicional, lo que puede causar que el controlador quede fuera de sincronización si un host cancela una transferencia en vuelo y luego envía un nuevo paquete de configuración.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4ODI3NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/196067",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-10668",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (no se menciona explícitamente, pero se infiere que el controlador podría quedar vulnerable a ataques debido a su configuración)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-10668"
+      ]
+    }
+  },
+  {
+    "id": 1347,
+    "fecha": "2026-07-12T18:59:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Alertas de Seguridad",
+    "resumen": "El ISC Stormcast del 10 de julio de 2026 informa sobre las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques cibernéticos, como phishing y malware. Los profesionales de la seguridad deben estar al tanto de estas alertas para proteger sus sistemas y redes contra posibles ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4ODI3NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33142",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for friday july 10th 2026 https isc sans edu podcastdetail 10002 fri jul 10th",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/10002,"
+      ]
+    }
+  },
+  {
+    "id": 1346,
+    "fecha": "2026-07-12T18:58:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña de espionaje cibernética",
+    "resumen": "Investigadores de ciberseguridad han revelado detalles de una campaña de espionaje cibernética sostenida contra varias organizaciones de aplicación de la ley paquistaníes, llevada a cabo por actores amenazantes sospechosos de estar alineados con China e India, que comprometió servidores que almacenan datos policiales y de ciudadanos, incluyendo información criminal. Los vectores de ataque incluyeron el portal de la Policía de Balochistan, lo que sugiere una posible explotación de vulnerabilidades en aplicaciones web.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4ODI3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers weaponize balochistan police portal in multi group espionage campaigns",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1345,
     "fecha": "2026-07-12T15:55:28Z",
     "categoria": "Ciberseguridad",
@@ -3690,24 +3782,6 @@
     "iocs": {}
   },
   {
-    "id": 1208,
-    "fecha": "2026-07-07T14:21:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Alertas de Seguridad",
-    "resumen": "El Stormcast de ISC informa sobre las últimas amenazas de seguridad, incluyendo vulnerabilidades y exploits, con un enfoque en la protección contra ataques de phishing y ransomware. Los profesionales de la seguridad deben estar atentos a los últimos vectores de ataque y tendencias en el panorama de la ciberseguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MzQxMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33126",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:isc stormcast for tuesday july 7th 2026 https isc sans edu podcastdetail 9996 tue jul 7th",
-    "ttps": [],
-    "iocs": {
-      "url": [
-        "https://isc.sans.edu/podcastdetail/9996,"
-      ]
-    }
-  },
-  {
     "id": 1207,
     "fecha": "2026-07-07T14:21:47Z",
     "categoria": "Ciberseguridad",
@@ -7282,41 +7356,6 @@
     "fuente": "The Hacker News",
     "dedup_key": "txt:unpatched argo cd repo server flaw could let attackers take over kubernetes clusters",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1064,
-    "fecha": "2026-07-01T22:15:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Campaña FortiBleed vinculada a Lynx",
-    "resumen": "La campaña de robo de credenciales FortiBleed ha sido vinculada a las operaciones de ransomware INC y Lynx, lo que sugiere que las credenciales de Fortinet robadas se utilizarían para futuras intrusiones en redes, potencialmente a través de ataques de phishing o explotación de vulnerabilidades. El impacto real podría ser la comprometición de redes y sistemas protegidos por dispositivos Fortinet.",
-    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:fortibleed credential theft campaign linked to lynx ransomware",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
     "iocs": {}
   },
   {
