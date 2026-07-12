@@ -1,5 +1,98 @@
 [
   {
+    "id": 1345,
+    "fecha": "2026-07-12T15:55:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "FortiBleed: Ataque de recolección de credenciales",
+    "resumen": "La operación FortiBleed, que utiliza una herramienta basada en Golang para interceptar tráfico de autenticación en dispositivos Fortinet, ha sido vinculada a los grupos de ransomware INC y Lynx, con ataques que han comprometido más de 400 dispositivos y desplegado ransomware en 12 de ellos, aprovechando una posible zero-day en Nextcloud. Los ataques han afectado a aproximadamente 19,000 dispositivos Fortinet, con 354 dispositivos completamente comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NzE3Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114037",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:fortibleed credential harvesting op tied to inc and lynx ransomware groups researchers linked fortibleed a golang ba",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1344,
+    "fecha": "2026-07-12T15:55:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL Injection",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2026-15502) en AojiaoZero Antaris 1.0, específicamente en la función _rewardPurchase del archivo /ipn.php del componente PayPal IPN Payment Handler, que permite inyección de código SQL (SQL Injection) a través de la manipulación del argumento item_number, permitiendo ataques remotos. La vulnerabilidad puede ser explotada desde una ubicación remota, lo que la hace particularmente peligrosa.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NzE3MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/196060",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-15502",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-15502"
+      ]
+    }
+  },
+  {
+    "id": 1343,
+    "fecha": "2026-07-12T15:55:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache Log4j",
+    "resumen": "Se ha identificado una vulnerabilidad en Apache Log4j (CVE-2026-34481) con una puntuación CVSS de 7.5, que puede causar que los sistemas de procesamiento de registros posteriores rechacen o fallen al indexar registros afectados debido a la producción de salida JSON inválida cuando se encuentran valores de punto flotante no finitos. Un atacante puede explotar esta vulnerabilidad si la aplicación utiliza JsonTemplateLayout y registra un mensaje con un valor de punto flotante controlado por el atacante.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NzE3MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-34481",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-34481,cve-2026-49844",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "logger.info",
+        "logging.apache.org"
+      ],
+      "url": [
+        "https://logging.apache.org/log4j/2.x/manual/json-template-layout.html"
+      ],
+      "cve": [
+        "CVE-2026-34481",
+        "CVE-2026-49844"
+      ]
+    }
+  },
+  {
+    "id": 1342,
+    "fecha": "2026-07-12T15:55:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware RedHook explota Wireless ADB",
+    "resumen": "Una nueva versión del malware RedHook para Android utiliza el mecanismo de depuración inalámbrica de Android (Wireless ADB) para obtener acceso de shell sin necesidad de conexión a un ordenador, lo que permite a los atacantes ejecutar comandos con privilegios elevados en el dispositivo infectado. Este vector de ataque aprovecha una característica legítima de Android para facilitar el acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NzE3MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:redhook android malware now uses wireless adb for shell access",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1072",
+        "name": "Software Deployment Tools (Wireless ADB se utiliza como herramienta de depuración y despliegue)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1341,
     "fecha": "2026-07-12T13:10:02Z",
     "categoria": "Ciberseguridad",
@@ -6102,20 +6195,6 @@
         "CVE-2022-37325"
       ]
     }
-  },
-  {
-    "id": 1117,
-    "fecha": "2026-07-02T22:03:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Actores FortiBleed Colaboran con Inc y Lynx",
-    "resumen": "Los actores detrás del exploit FortiBleed están colaborando con los grupos de ransomware Inc y Lynx, aprovechando el acceso a miles de firewalls Fortinet para monetizarlo, y también están explotando una vulnerabilidad zero-day en Nextcloud. Esto aumenta el riesgo de ataques de ransomware y brechas de datos en organizaciones vulnerables.",
-    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/threat-intelligence/fortibleed-actors-inc-lynx-ransomware-gangs",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:fortibleed actors collaborating with inc lynx ransomware gangs",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 1116,
