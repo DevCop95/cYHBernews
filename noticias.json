@@ -1,5 +1,19 @@
 [
   {
+    "id": 1333,
+    "fecha": "2026-07-12T02:20:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware se autodestruye por error",
+    "resumen": "Un malware intentó ejecutarse con privilegios de administrador, pero falló al no verificar sus propias privilegios antes, lo que llevó a su autodestrucción al asumir que no tenía acceso de administrador, destacando la importancia de la gestión de privilegios en la seguridad. Este incidente ilustra la necesidad de implementar controles de acceso y privilegios adecuados para prevenir ataques de malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MjI4NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9129",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:malware tries to run as admin fails already running as admin didn t check privileges before self terminat",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1332,
     "fecha": "2026-07-11T21:44:03Z",
     "categoria": "Ciberseguridad",
