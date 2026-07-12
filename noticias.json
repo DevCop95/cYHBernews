@@ -1,5 +1,62 @@
 [
   {
+    "id": 1341,
+    "fecha": "2026-07-12T13:10:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad LuCI CVE-2026-61876",
+    "resumen": "La versión de LuCI presenta una vulnerabilidad que no codifica adecuadamente los nombres de host de los alquileres DHCPv6 antes de mostrarlos en las tablas de estado, permitiendo a atacantes en la red adjunta inyectar marcado HTML a través de etiquetas de script en el nombre de dominio completo del cliente DHCPv6. Esto puede ejecutar scripts en el navegador del administrador cuando se visualizan las páginas de alquileres DHCP.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NjE4MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/196058",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-61876",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1055",
+        "name": "Social Engineering"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-61876"
+      ]
+    }
+  },
+  {
+    "id": 1340,
+    "fecha": "2026-07-12T13:09:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad PE en Prisma Access",
+    "resumen": "Se ha identificado una vulnerabilidad de escalada de privilegios (PE) en la aplicación Prisma Access Agent de Palo Alto Networks en dispositivos Linux, permitiendo a un usuario local ejecutar código con privilegios elevados, con un CVSS Score de 7.8 (HIGH). La vulnerabilidad afecta específicamente a la versión de Linux del agente, sin impactar en las versiones de Windows, macOS, iOS, Android o ChromeOS.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NjE3OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-0271",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-0271",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-0271"
+      ]
+    }
+  },
+  {
     "id": 1339,
     "fecha": "2026-07-12T10:22:53Z",
     "categoria": "Ciberseguridad",
