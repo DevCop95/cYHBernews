@@ -1,5 +1,47 @@
 [
   {
+    "id": 1339,
+    "fecha": "2026-07-12T10:22:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL en TOKO-ONLINE-ROTI",
+    "resumen": "Se identificó una vulnerabilidad (CVE-2026-15489) en la aplicación TOKO-ONLINE-ROTI de RafyMrX, que permite la inyección de código SQL a través de la manipulación del argumento \"Username\" en el archivo proses/login.php, lo que puede ser explotada de forma remota. La explotación es pública y puede ser utilizada por atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NTE3NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/196033",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-15489",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Unconventional Password Authentication"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "ddfe1cd587be0a0b5135d8b6e85cce2ec3aece99"
+      ],
+      "cve": [
+        "CVE-2026-15489"
+      ]
+    }
+  },
+  {
     "id": 1338,
     "fecha": "2026-07-12T08:09:19Z",
     "categoria": "Ciberseguridad",
