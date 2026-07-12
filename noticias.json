@@ -1,5 +1,80 @@
 [
   {
+    "id": 1338,
+    "fecha": "2026-07-12T08:09:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en TRENDnet TEW-821DAP",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2026-15484) en el dispositivo TRENDnet TEW-821DAP versión 1.12B01, que afecta la función sub_41EC14 del archivo /goform/tools_nslookup, permitiendo un desbordamiento de buffer a través de una manipulación remota. La vulnerabilidad solo afecta productos que ya no reciben soporte del fabricante.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NDM3NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/196028",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-15484",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-15484"
+      ]
+    }
+  },
+  {
+    "id": 1337,
+    "fecha": "2026-07-12T08:09:13Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Apple demanda a OpenAI por robo de secretos",
+    "resumen": "Apple ha presentado una demanda contra OpenAI por el presunto robo de secretos comerciales de hardware y violación de contrato, alegando que antiguos empleados de Apple, como Chang Liu y Tang Tan, accedieron a información confidencial de la empresa después de unirse a OpenAI. La demanda destaca la posible vulnerabilidad en la seguridad de Apple y el uso no autorizado de información confidencial por parte de OpenAI.",
+    "url_imagen": "https://images.unsplash.com/photo-1646583288948-24548aedffd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4NDM3NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/historica-demanda-apple-a-openai-lol-tengo-acceso-mensaje-ingeniero-que-destapo-escandalo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:apple demanda a openai por robar secretos comerciales lol tengo acceso el mensaje del ingeniero que destapó el escándalo",
+    "ttps": [
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (Se menciona el acceso a información confidencial por parte de antiguos empleados)"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1135",
+        "name": "Network Device Authentication (No se menciona explícitamente, pero se infiere que podría haber habido un acceso no autorizado a la red de Apple)"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "9to5mac.com",
+        "platform.instagram.com",
+        "storage.courtlistener.com",
+        "techcrunch.com",
+        "www.applesfera.com",
+        "www.axios.com",
+        "www.cnbc.com",
+        "www.linkedin.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+        "https://i.blogs.es/495f8a/chatgpt/375_142.jpeg",
+        "https://i.blogs.es/f0cd18/juicio/1024_2000.jpeg",
+        "https://storage.courtlistener.com/recap/gov.uscourts.cand.474095/gov.uscourts.cand.474095.1.0.pdf",
+        "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/",
+        "https://www.applesfera.com/apple-1/apple-fuera-serie-este-seria-final-temporada-intenso-adios-a-jefes-ia-diseno-al-padre-iphone-air",
+        "https://www.axios.com/2026/07/10/apple-sues-openai-trade-secret-theft",
+        "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html"
+      ]
+    }
+  },
+  {
     "id": 1336,
     "fecha": "2026-07-12T05:53:07Z",
     "categoria": "Ciberseguridad",
