@@ -1,5 +1,107 @@
 [
   {
+    "id": 1365,
+    "fecha": "2026-07-13T19:18:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Sunny WebBox",
+    "resumen": "La vulnerabilidad CVE-2019-13529, con una puntuación CVSS de 8.8, permite a atacantes remotos realizar acciones con permisos de usuario en la versión 1.6 y anteriores del firmware de Sunny WebBox, mediante el envío de enlaces maliciosos a operadores autenticados. El uso de direcciones IP para mantener la comunicación después del inicio de sesión facilita la explotación de esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NzAzMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2019-13529",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2019-13529",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1091",
+        "name": "Replication Through Removable Media no aplica, en su lugar T1210 - Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2019-13529"
+      ]
+    }
+  },
+  {
+    "id": 1364,
+    "fecha": "2026-07-13T19:18:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sanciones a VPN utilizada por grupos de ransomware",
+    "resumen": "El Departamento del Tesoro de EE. UU. ha impuesto sanciones a First VPN Service (1VPNS) y su administrador ucraniano por facilitar actividades de grupos de ransomware, mientras que un hombre bielorruso también fue sancionado por desarrollar \"cryptors\" de malware. Esto puede afectar la infraestructura de apoyo a operaciones de ransomware y otros ataques cibernéticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NzAzMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups",
+    "fuente": "The Record",
+    "dedup_key": "txt:vpn service favored by ransomware groups is sanctioned by us",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1363,
+    "fecha": "2026-07-13T19:18:29Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Equipos \"Yellow\" definen futuro de seguridad AI",
+    "resumen": "Los \"Yellow Teams\" están desarrollando herramientas de defensa y ataque para probar el potencial de la inteligencia artificial (IA) en ciberseguridad, evaluando tanto sus capacidades de protección como sus vulnerabilidades potenciales. Esto implica simular ataques y defensas para entender mejor cómo la IA puede ser utilizada y protegida en el contexto de la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NzAzMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/yellow-teams-defining-future-ai-security",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:yellow teams are defining the future of ai security",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1362,
+    "fecha": "2026-07-13T19:18:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware CrashStealer ataca macOS",
+    "resumen": "Se ha detectado un nuevo malware llamado CrashStealer que se disfraza como la herramienta de informes de errores de Apple para robar credenciales, datos de keychain y carteras de criptomonedas en sistemas macOS. El malware utiliza un vector de ataque de ingeniería social para engañar a los usuarios y obtener acceso no autorizado a información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NzAzMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new crashstealer malware poses as apple crash reporting tool",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1057",
+        "name": "Input Capture (robar credenciales y datos de keychain)"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Data from Local System (acceso a carteras de criptomonedas en el sistema local)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1361,
     "fecha": "2026-07-13T17:10:25Z",
     "categoria": "Ciberseguridad",
