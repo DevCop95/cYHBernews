@@ -1,5 +1,101 @@
 [
   {
+    "id": 1352,
+    "fecha": "2026-07-13T06:11:33Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Escaneos de servidores MCP y credenciales AI",
+    "resumen": "Se han detectado escaneos dirigidos a servidores MCP y credenciales de asistentes de inteligencia artificial (AI), lo que sugiere un posible intento de explotar vulnerabilidades o obtener acceso no autorizado a sistemas que utilizan tecnologías de IA. Los vectores de ataque pueden incluir phishing o exploits de vulnerabilidades conocidas para obtener credenciales de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1752451399417-eb6e072269bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5MjMwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33150",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:someone is scanning for your mcp servers and ai assistant credentials mon jul 13th",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1351,
+    "fecha": "2026-07-13T06:11:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberseguridad en Computación Cuántica",
+    "resumen": "La computación cuántica en la nube, como Quantum Computing as a Service (QCaaS), plantea riesgos de seguridad y privacidad al delegar circuitos, algoritmos y parámetros de ejecución a proveedores externos, lo que podría revelar información sensible sobre los datos y el conocimiento encapsulado en el algoritmo. Esto destaca la necesidad de considerar la seguridad y la privacidad en la computación cuántica delegada, especialmente en modelos de consumo como QCaaS.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5MjMwODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:blind quantum computing 1",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "en.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrqYeXTfyv8C9B-LA7jqVH6ttgvjY7_K2gWSjNxOlUmqY4K6rUmea6BvAH5J8A2aMsY3lVugKp4njiJCFME2C40oMM5jj2Xpc9IkdwQaM7ZvSCYo6q3MT7idVL9tSxpXAYMQB1oBh0Jj5cv59Z5b6xc-p1W_q-WbYWSQ4WvX6m3DVmu8VCFTbx/w640-h394/BQ2.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKMlpZveXekGBdrFePpAi0Zol8SUippMJRfT1aBJPK9X8eU_aQ2rbNx8p2CYpRVrvZ7WAHd364LDTAGfs7gPt08to5rw9e3ViNDPR50SHP0MlsIQq_TufFzqQYYK3bHxv47PDWJ8j5Oyqc5fKekQG6ThhdHxS8lRYgUISKDiDEnTiLakZq9hnu/s940/BlindQuantumComputing.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKMlpZveXekGBdrFePpAi0Zol8SUippMJRfT1aBJPK9X8eU_aQ2rbNx8p2CYpRVrvZ7WAHd364LDTAGfs7gPt08to5rw9e3ViNDPR50SHP0MlsIQq_TufFzqQYYK3bHxv47PDWJ8j5Oyqc5fKekQG6ThhdHxS8lRYgUISKDiDEnTiLakZq9hnu/w640-h358/BlindQuantumComputing.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitjqOxQZOtva9Jj1mWziHizfHpjqRZc29830s7KTHFdeUhZkz_QoXCuLdfmKWSZIZIPkI64qpCfjePERlR2e57fD1hrZpZMkTVe7P-nzrVRJIkPgi2KIGx9ZLJUldz7TgPl4IHxUBeRSBgynCwhsD4-74xYi3GOAzPLC_nlDMD1OXG04XEdK0e/s1644/Jose_Antonio_Castellano_Prado.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitjqOxQZOtva9Jj1mWziHizfHpjqRZc29830s7KTHFdeUhZkz_QoXCuLdfmKWSZIZIPkI64qpCfjePERlR2e57fD1hrZpZMkTVe7P-nzrVRJIkPgi2KIGx9ZLJUldz7TgPl4IHxUBeRSBgynCwhsD4-74xYi3GOAzPLC_nlDMD1OXG04XEdK0e/w640-h453/Jose_Antonio_Castellano_Prado.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhHu91XY8NjQJmTVFsy5QF11ksO-Dv8CMHDnEpf3SFo3TVWOki_wl-iBQWAS-2ziusJkodKkRTpI785LlqD3oo65hgXI0nsM69DKNDggzOO2DOV7J-90V4YvTcvViTRimJyHDg3uCyR6mL71s1BzDx4JIbqjY2tgBZn580JucwsreoundIDBRP/s2728/BlindQ1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhHu91XY8NjQJmTVFsy5QF11ksO-Dv8CMHDnEpf3SFo3TVWOki_wl-iBQWAS-2ziusJkodKkRTpI785LlqD3oo65hgXI0nsM69DKNDggzOO2DOV7J-90V4YvTcvViTRimJyHDg3uCyR6mL71s1BzDx4JIbqjY2tgBZn580JucwsreoundIDBRP/w640-h198/BlindQ1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2018/06/quantum-cryptography-una-comunicacion.html",
+        "https://www.elladodelmal.com/2022/12/quantum-computing-cybersecurity.html",
+        "https://www.elladodelmal.com/2023/01/factorizacion-de-rsa-con-un-optimizador.html",
+        "https://www.elladodelmal.com/2025/04/hamming-quasi-cyclic-hqc-kem-nuevo-key.html",
+        "https://www.elladodelmal.com/2025/05/frodokem-un-key-encapsulation-mechanism.html",
+        "https://www.elladodelmal.com/2025/08/la-gran-busqueda-de-numeros-primos-de.html",
+        "https://www.elladodelmal.com/2025/09/como-acelerar-los-algoritmos-de.html",
+        "https://www.elladodelmal.com/2025/10/premio-nobel-en-fisica-2025-el-trabajo.html",
+        "https://www.elladodelmal.com/2025/10/un-reloj-atomico-optico-del-mit-con.html",
+        "https://www.elladodelmal.com/2025/11/algoritmo-cuantico-de-grover-un.html",
+        "https://www.elladodelmal.com/2025/11/cuanto-del-trafico-en-internet-funciona.html",
+        "https://www.elladodelmal.com/2025/12/bitcoin-vs-quantum-computers-hora-de.html",
+        "https://www.elladodelmal.com/2025/12/dyber-hardware-accelerated-post-quantum.html",
+        "https://www.elladodelmal.com/2025/12/el-white-paper-de-mastercard-que-urge.html",
+        "https://www.elladodelmal.com/2025/12/quantum-sensors-cuando-lo-invisible-se.html",
+        "https://www.elladodelmal.com/2026/01/como-ser-quantum-safe-y-desplegar-post.html",
+        "https://www.elladodelmal.com/2026/02/quantum-gps-navegacion-con-gps.html",
+        "https://www.elladodelmal.com/2026/03/alaniz-cipher-un-cifrado-simetrico.html",
+        "https://www.elladodelmal.com/2026/03/como-comprobar-si-un-web-site-is.html",
+        "https://www.elladodelmal.com/2026/03/quantum-y-post-quantum-computing-para.html",
+        "https://www.elladodelmal.com/2026/05/los-papers-academicos-de-los-algoritmos.html"
+      ]
+    }
+  },
+  {
     "id": 1350,
     "fecha": "2026-07-13T02:22:31Z",
     "categoria": "Tech",
