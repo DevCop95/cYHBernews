@@ -26,9 +26,11 @@ Puedes ver la página en vivo aquí:
 
 ## 📁 Estructura del Proyecto
 - `index.html`: Estructura principal y componentes UI.
-- `app.js`: Lógica de filtrado, búsqueda, gestión de estado y animaciones.
+- `app.js`: Orquestador — estado, carga de datos, filtros y eventos.
+- `js/`: Módulos ES — `utils.js`, `i18n.js`, `ui.js`, `stats.js`, `render.js`, `modal.js`.
 - `style.css`: Estilos, animaciones de fondo y adaptabilidad móvil.
-- `noticias.json`: Base de datos estática de artículos.
+- `noticias.json`: Base de datos estática de artículos (fuente de verdad que escribe el bot).
+- `data/`: Archivos derivados que consume el frontend — `noticias-recientes.json` (últimos días), `archivo-YYYY-MM.json` (histórico mensual, cargado en segundo plano) e `index.json` (manifiesto con versionado por hash). Se regeneran con `scripts/split-news.js` vía GitHub Actions en cada push del bot.
 
 ---
 *Desarrollado con enfoque en la experiencia de usuario y el rendimiento estático.*
