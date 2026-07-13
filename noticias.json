@@ -1,5 +1,62 @@
 [
   {
+    "id": 1354,
+    "fecha": "2026-07-13T11:57:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Phishing en Microsoft 365",
+    "resumen": "Un servidor mal configurado ha revelado tres campañas de phishing activas que utilizan Evilginx y el abuso del flujo OAuth Device Code para burlar el acceso a Microsoft 365, destacando la importancia de implementar medidas de seguridad adicionales como passkeys y FIDO2. Estas campañas de phishing explotan la vulnerabilidad en la configuración del servidor y el flujo de autenticación de Device Code para obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NDM4MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-servidor-mal-configurado-destapa-tres-campanas-de-phishing-que-burlan-el-acceso-a-microsoft-365/?utm_source=rss&utm_medium=rss&utm_campaign=un-servidor-mal-configurado-destapa-tres-campanas-de-phishing-que-burlan-el-acceso-a-microsoft-365",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:un servidor mal configurado destapa tres campañas de phishing que burlan el acceso a microsoft 365",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1187",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1556.003",
+        "name": "OAuth Access Token"
+      },
+      {
+        "id": "T1114.001",
+        "name": "Email Collection: Contact Information"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/un-servidor-mal-configurado-destapa-tres-campanas-de-phishing-que-burlan-el-acceso-a-microsoft-365/"
+      ]
+    }
+  },
+  {
+    "id": 1353,
+    "fecha": "2026-07-13T11:57:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ciberataques en España",
+    "resumen": "Según Check Point Research, en junio de 2026, España registró un promedio de 2.105 ciberataques semanales, mientras que a nivel global se reportaron 2.270 ataques por semana, lo que indica un aumento significativo en la actividad maliciosa en línea. Los vectores de ataque no se especifican, pero es probable que incluyan técnicas como phishing, malware y ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NDM4MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/espana-registra-una-media-de-2-105-ciberataques-semanales-en-junio/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:españa registra una media de 2 105 ciberataques semanales en junio",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1352,
     "fecha": "2026-07-13T06:11:33Z",
     "categoria": "IA",
