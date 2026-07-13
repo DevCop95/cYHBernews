@@ -1,5 +1,44 @@
 [
   {
+    "id": 1350,
+    "fecha": "2026-07-13T02:22:31Z",
+    "categoria": "Tech",
+    "severidad": "CRITICA",
+    "titulo": "Bypass mTLS en Android",
+    "resumen": "Se ha descubierto una técnica para bypassar la autenticación mutua de transporte (mTLS) en dispositivos Android utilizando la herramienta de inyección de código Frida, lo que permite a los atacantes interceptar y modificar el tráfico de red cifrado, potencialmente exponiendo datos sensibles a través de ataques de intermediario (Man-in-the-Middle, MitM). Esta vulnerabilidad puede ser explotada a través de la inyección de código en aplicaciones que utilizan mTLS para la autenticación y el cifrado de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624953587687-daf255b6b80a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5MDkzNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2935",
+    "fuente": "TG: Android Malware",
+    "dedup_key": "txt:how to bypass mtls on android with frida https kiratliygt medium com how to bypass mtls on android with frida 45c5e",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Valid Accounts: Local Accounts"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "kiratliygt.medium.com"
+      ]
+    }
+  },
+  {
     "id": 1349,
     "fecha": "2026-07-12T21:43:37Z",
     "categoria": "Ciberseguridad",
