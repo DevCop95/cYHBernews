@@ -1,5 +1,42 @@
 [
   {
+    "id": 1367,
+    "fecha": "2026-07-13T21:52:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sanciones a Rusia por ciberataques",
+    "resumen": "El Reino Unido y la Unión Europea han impuesto sanciones conjuntas a individuos y entidades rusas por ciberataques y campañas de desinformación en la región, lo que destaca la continuación de la amenaza cibernética rusa debido a la debilidad en la seguridad. Los vectores de ataque incluyen probablemente técnicas de phishing y exploits de vulnerabilidades conocidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5Nzk1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/weak-security-fuel-russian-cyberattacks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:weak security continues to fuel russian cyberattacks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1366,
+    "fecha": "2026-07-13T21:52:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque cibernético a Nihon Kotsu",
+    "resumen": "Nihon Kotsu, el mayor operador de taxis de Japón, sufrió un ataque cibernético que comprometió sus sistemas, lo que llevó a la empresa a desactivar parte de su infraestructura para contener el daño. El incidente puede tener un impacto significativo en la operación diaria de la empresa y potencialmente afectar la privacidad de los clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5Nzk1MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/japans-largest-taxi-operator-shuts-systems-after-cyberattack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:japan s largest taxi operator shuts systems after cyberattack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1365,
     "fecha": "2026-07-13T19:18:40Z",
     "categoria": "Ciberseguridad",
