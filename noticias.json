@@ -1,5 +1,75 @@
 [
   {
+    "id": 1359,
+    "fecha": "2026-07-13T16:09:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Fuga de datos en CISA",
+    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura (CISA) ha publicado un informe post-mortem sobre una fuga de datos en la que un contratista publicó decenas de credenciales internas, incluyendo claves de AWS Govcloud, en un repositorio público de GitHub durante casi seis meses antes de ser notificado por KrebsOnSecurity, lo que destaca brechas en la respuesta inicial de la agencia. Esto proporciona lecciones importantes para todos los equipos de seguridad sobre la importancia de la vigilancia y la respuesta oportuna a incidentes de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NTg5OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:lessons learned from cisa s recent github leak",
+    "ttps": [
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities: Code Obfuscation no se aplica en este caso, pero se puede inferir que el contratista utilizó un repositorio público para almacenar credenciales sensibles."
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials: Credenciales no seguras"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1556",
+        "name": "Invalidated Credentials: No se aplica directamente, pero se puede inferir que las credenciales expuestas podrían haber sido invalidadas después de la notificación."
+      },
+      {
+        "id": "T1056",
+        "name": "Input Capture: No se aplica directamente, pero se puede inferir que el atacante podría haber capturado las credenciales al publicarlas en un repositorio público."
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1358,
+    "fecha": "2026-07-13T16:09:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades RCE en Joomla",
+    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de Estados Unidos (CISA) advierte que atacantes están explotando vulnerabilidades en las extensiones iCagenda y Balbooa Forms para Joomla, permitiendo la ejecución remota de código a través de cargas de archivos arbitrarios. Estas vulnerabilidades pueden ser utilizadas para realizar ataques de ejecución remota de código (RCE) y comprometer sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NTg5OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-actively-exploited-rce-flaws-in-joomla-extensions/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa warns of actively exploited rce flaws in joomla extensions",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1357,
     "fecha": "2026-07-13T14:34:32Z",
     "categoria": "Ciberseguridad",
