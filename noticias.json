@@ -1,5 +1,75 @@
 [
   {
+    "id": 1375,
+    "fecha": "2026-07-14T07:54:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Robo de datos en Salesforce",
+    "resumen": "Atacantes asociados con el grupo ShinyHunters han estado accediendo a entornos de Salesforce de empresas durante un año sin explotar vulnerabilidades, utilizando en su lugar las conexiones de OAuth existentes para obtener acceso a través de aplicaciones y proveedores de terceros. El ataque aprovecha la confianza previamente establecida por la organización, lo que permite a los atacantes moverse dentro del entorno de Salesforce sin ser detectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMTU2OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft maps year long shinyhunters linked salesforce data theft across three paths",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Exploitar la confianza de un proveedor de terceros"
+      },
+      {
+        "id": "T1550",
+        "name": "Utilizar credenciales de OAuth existentes"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Exploitar la confianza de un proveedor de terceros no es correcto, en su lugar es T1552 - Exploitar la confianza de un proveedor de terceros, pero en este caso es más preciso T1190 - Exploitación de credenciales de aplicación y T1550 no existe, en su lugar es T1552, por lo que la respuesta correcta es:"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1374,
+    "fecha": "2026-07-14T07:54:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Códigos QR Maliciosos",
+    "resumen": "Los ciberdelincuentes están utilizando códigos QR construidos con caracteres de texto para esconder enlaces maliciosos y eludir soluciones de seguridad basadas en el análisis de imágenes o enlaces, lo que representa un nuevo vector de ataque de phishing. Esta técnica puede ser particularmente efectiva en dispositivos móviles y sistemas que no están preparados para analizar códigos QR de texto.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMTU2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/los-ciberdelincuentes-esconden-enlaces-maliciosos-en-codigos-qr-este-verano/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:los ciberdelincuentes esconden enlaces maliciosos en códigos qr este verano",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Code Obfuscation"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1373,
     "fecha": "2026-07-14T05:25:01Z",
     "categoria": "Ciberseguridad",
