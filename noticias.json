@@ -1,5 +1,80 @@
 [
   {
+    "id": 1388,
+    "fecha": "2026-07-14T19:12:10Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Descubrimiento de \"consciencia\" en IA",
+    "resumen": "Anthropic ha identificado un espacio de trabajo global llamado J-Space en su modelo de lenguaje Claude, donde se analiza y manipula conceptos antes de generar respuestas, lo que sugiere una forma de \"consciencia\" en la IA. Sin embargo, la propia Anthropic reconoce que este espacio no es esencial para la mayoría de las funciones del modelo y que Claude puede seguir funcionando sin él, aunque con algunas limitaciones cognitivas.",
+    "url_imagen": "https://images.unsplash.com/photo-1750365919878-2735d30fa3d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNTYzMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-asegura-haber-encontrado-consciencia-claude-datos-cuentan-otra-historia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:anthropic asegura haber encontrado la consciencia de claude aunque los datos cuentan otra historia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.tomshardware.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/1d48c3/palasturbina/375_142.jpeg",
+        "https://i.blogs.es/cbc261/consciencia-ia/1024_2000.jpeg",
+        "https://transformer-circuits.pub/2026/workspace/index.html",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-it-can-read-claudes-thoughts-as-detailed-in-new-research-paper-models-observed-to-have-a-global-workspace-revealing-more-of-what-makes-llms-tick"
+      ]
+    }
+  },
+  {
+    "id": 1387,
+    "fecha": "2026-07-14T19:12:00Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "LabubaRAT se disfraza como software NVIDIA",
+    "resumen": "Se ha descubierto un troyano de acceso remoto (RAT) basado en Rust llamado LabubaRAT, que se disfraza como software de NVIDIA para evadir la detección en entornos de Windows, permitiendo a los atacantes crear una base de operaciones reutilizable para actividades maliciosas. El vector de ataque implica la suplantación de software legítimo de NVIDIA para infiltrarse en los sistemas objetivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNTYzMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/labubarat-masquerades-as-nvidia.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:labubarat masquerades as nvidia software to control windows hosts",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1386,
+    "fecha": "2026-07-14T19:11:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Actualización de seguridad de Windows 10",
+    "resumen": "Microsoft ha lanzado la actualización de seguridad extendida KB5099539 para Windows 10, que incluye las actualizaciones de seguridad de Patch Tuesday de julio de 2026 para 570 vulnerabilidades, junto con arreglos de seguridad adicionales. Esta actualización aborda múltiples vulnerabilidades, incluyendo posibles vectores de ataque para exploits y malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNTYzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5099539-extended-security-update/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft releases windows 10 kb5099539 extended security update",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1385,
     "fecha": "2026-07-14T16:10:51Z",
     "categoria": "IA",
