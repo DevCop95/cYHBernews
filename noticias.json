@@ -1,5 +1,33 @@
 [
   {
+    "id": 1377,
+    "fecha": "2026-07-14T10:41:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en xAI Grok Build",
+    "resumen": "La herramienta de línea de comandos Grok Build de xAI subía repositorios Git completos, incluyendo la historia de commits, a un bucket de almacenamiento de Google Cloud, en lugar de solo los archivos necesarios para una tarea de codificación, lo que representa un riesgo de exposición de datos. Un investigador demostró esta vulnerabilidad en la versión 0.2.93, interceptando una subida y extrayendo archivos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMjU2ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:grok build uploads entire git repositories to xai storage not just files it reads",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1376,
+    "fecha": "2026-07-14T10:41:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Webs de viajes españolas vulnerables",
+    "resumen": "Un estudio de Proofpoint revela que el 30% de los sitios de viajes online españoles carecen de medidas de seguridad del correo electrónico sólidas, como DMARC, lo que los hace vulnerables a ciberestafas y ataques de phishing. Esto pone en riesgo la seguridad de los usuarios que interactúan con estas plataformas.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMjU2Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/casi-un-tercio-de-las-webs-de-viajes-espanolas-son-vulnerables-al-fraude-por-email/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:casi un tercio de las webs de viajes españolas son vulnerables al fraude por email",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1375,
     "fecha": "2026-07-14T07:54:56Z",
     "categoria": "Ciberseguridad",
