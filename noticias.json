@@ -1,5 +1,114 @@
 [
   {
+    "id": 1370,
+    "fecha": "2026-07-14T02:02:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2014-5287",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección de script Bash (CVSS 8.8) en la versión 7.1-16 y anteriores de Kemp Load Master, debido a un fallo en el saneamiento de la entrada en la Interfaz de Usuario Web (WUI), lo que permite ataques de inyección de comandos. Los productos afectados incluyen el progress:loadmaster.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5OTQ1NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2014-5287",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2014-5287",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1072",
+        "name": "Software Deployment Tools"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2014-5287"
+      ]
+    }
+  },
+  {
+    "id": 1369,
+    "fecha": "2026-07-14T02:02:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "GigaWiper: Ataque modular",
+    "resumen": "GigaWiper es un implant modular que combina funcionalidades de backdoor y wiper, permitiendo a los actores de amenaza elegir su propio ataque destructivo, lo que maximiza el impacto y minimiza la carga operativa. Esto sugiere un vector de ataque flexible y potencialmente peligroso, capaz de adaptarse a diferentes objetivos y entornos.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5OTQ1Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/gigawiper-threat-actors-choose-their-own-destructive-attack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:gigawiper lets threat actors choose their own destructive attack",
+    "ttps": [
+      {
+        "id": "T1215",
+        "name": "Credential Dumping no se menciona, pero se habla de funcionalidades de backdoor, lo que implica acceso no autorizado."
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools no se menciona explícitamente, pero se habla de funcionalidades de backdoor."
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1368,
+    "fecha": "2026-07-14T02:02:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware en paquete npm Jscrambler",
+    "resumen": "Un actor malicioso publicó una versión modificada del paquete npm de Jscrambler, que incluye un malware de robo de información (infostealer), y que ha sido descargado casi 1.500 veces, lo que podría permitir ataques de phishing o robo de datos sensibles a través de la explotación de esta vulnerabilidad. El vector de ataque se centra en la cadena de suministro de software, aprovechando la confianza en paquetes de npm.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5OTQ1MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers backdoor jscrambler npm package with infostealer malware",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1367,
     "fecha": "2026-07-13T21:52:09Z",
     "categoria": "Ciberseguridad",
