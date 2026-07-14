@@ -1,5 +1,66 @@
 [
   {
+    "id": 1380,
+    "fecha": "2026-07-14T13:23:37Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Meta en la carrera de IA",
+    "resumen": "A pesar de los desafíos actuales, Meta podría recortar posiciones en la carrera de la inteligencia artificial gracias a su combinación de datos, talento y cómputo, lo que le permitiría competir con empresas como OpenAI y Anthropic. Su modelo de lenguaje, Muse Spark, aunque decepcionante, es solo el comienzo de sus esfuerzos en IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1715869428589-366729e7fdcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMzU0MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/nadie-apostaria-hoy-meta-carrera-superinteligencia-juega-ventaja-que-pensamos-para-ganarla",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nadie apostaría hoy por meta en la carrera de la superinteligencia pero juega con más ventaja de la que pensamos para ganarla",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "newsletter.semianalysis.com",
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/c518fb/magnific_pon-el-logo-de-meta-en-la_bmmtf85oqr/1024_2000.jpeg",
+        "https://i.blogs.es/e9c71d/meta/375_142.jpeg",
+        "https://i.blogs.es/edf101/instagram-meta-ai/375_142.jpeg",
+        "https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence"
+      ]
+    }
+  },
+  {
+    "id": 1379,
+    "fecha": "2026-07-14T13:23:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en red de FIFA",
+    "resumen": "Se ha descubierto una vulnerabilidad en la red de FIFA que permitía el acceso a personas con acceso mínimo, lo que podría haber permitido ataques de tipo phishing o exploits de zero-day. El impacto real de esta vulnerabilidad depende del nivel de acceso y la información confidencial almacenada en la red.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMzU0MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/vulnerability-in-fifas-network.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:vulnerability in fifa s network",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "bobdahacker.com"
+      ],
+      "url": [
+        "https://bobdahacker.com/blog/fifa-hack"
+      ]
+    }
+  },
+  {
+    "id": 1378,
+    "fecha": "2026-07-14T13:23:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft adopta passkeys por defecto",
+    "resumen": "Microsoft implementará passkeys como método de autenticación predeterminado para su servicio de identidad empresarial Entra ID a partir de septiembre de 2026, lo que puede reducir la dependencia de contraseñas y mejorar la seguridad contra ataques de phishing y credenciales robadas. Esto impactará la forma en que las empresas gestionan la autenticación de sus usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMzU0MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-entra-id-gets-passkeys-default-authentication-starting-september/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft entra id gets passkeys default authentication starting september",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1377,
     "fecha": "2026-07-14T10:41:24Z",
     "categoria": "Ciberseguridad",
@@ -16087,19 +16148,6 @@
         "https://z.ai/blog/glm-5.2"
       ]
     }
-  },
-  {
-    "id": 725,
-    "fecha": "2026-06-19T22:01:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en FIFA",
-    "resumen": "Una vulnerabilidad en el sistema de acceso Entra de FIFA permitía a un atacante tomar el control remoto de las transmisiones en vivo de la Copa Mundial, lo que podría haber permitido ataques como phishing o inyección de malware. El vector de ataque se basaba en la falta de controles de acceso adecuados en el sistema de FIFA.",
-    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MDY0OTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 724,
