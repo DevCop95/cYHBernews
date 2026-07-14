@@ -1,5 +1,129 @@
 [
   {
+    "id": 1373,
+    "fecha": "2026-07-14T05:25:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extensión ModHeader retirada",
+    "resumen": "La extensión ModHeader, con 1,6 millones de instalaciones en Chrome y Edge, ha sido retirada por Google y Microsoft después de que investigadores descubrieran un colector de historial de navegación oculto, aunque estaba inactivo debido a una lista de permitidos vacía. No hay evidencia de que se hayan recopilado o enviado datos de navegación.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMDY3MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/google-and-microsoft-pull-modheader.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google and microsoft pull modheader with 1 6 million installs after dormant collector found",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1372,
+    "fecha": "2026-07-14T05:24:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cargos por plataforma de spoofing",
+    "resumen": "Las autoridades del Reino Unido han cargado a cinco personas por su presunta conexión con la plataforma de spoofing de llamadas \"Russian Coms\", utilizada para realizar más de 1,8 millones de llamadas de estafa, lo que representa un vector de ataque significativo para el phishing y el fraude telefónico. El caso destaca la lucha contra el crimen cibernético y la importancia de la cooperación internacional para combatir este tipo de delitos.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMDY2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:uk charges suspects linked to russian coms call spoofing platform",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing for Information (no se menciona explícitamente, pero se puede inferir que se buscaba obtener información confidencial)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1589",
+        "name": "Gather Victim Host Information (no se menciona explícitamente, pero se puede inferir que se recopiló información sobre los usuarios objetivo)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1371,
+    "fecha": "2026-07-14T05:24:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cómputo Cuántico Ciego",
+    "resumen": "El Blind Quantum Computing (BQC) permite ocultar las operaciones de cómputo cuántico al servidor, utilizando técnicas como la computación cuántica basada en medidas (MBQC) para transformar operaciones en instrucciones de medida que solo el cliente puede interpretar. Esto se ilustra con un ejemplo de ocultación de una puerta Hadamard (H), donde la presencia de la puerta H se oculta al servidor y se convierte en una instrucción de medida que solo el cliente puede entender.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMDY2ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/blind-quantum-computing-2.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:blind quantum computing 2",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "arxiv.org",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "es.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://arxiv.org/pdf/0807.4154",
+        "https://arxiv.org/pdf/1311.2263",
+        "https://arxiv.org/pdf/1809.00185",
+        "https://arxiv.org/pdf/2306.05195",
+        "https://arxiv.org/pdf/2607.05650",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-d5OypEC3f2MABf5H68l3tjVVfl9Cg_YBEubdIUmeTKC9UhW4QiCLsl2wRbZQQOYbUisjlslz6CxBj4s2xAphZDDw7s3muDr8vI2Mgj725Gf-9fIXoH5e6jl5hie-BjHBViY7rK1pdXrbYGRR4Lb5GwxiXCuaMNJnbQDnp3lj9H4lCSq6hLqm/s940/BlindQuantum_0_2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-d5OypEC3f2MABf5H68l3tjVVfl9Cg_YBEubdIUmeTKC9UhW4QiCLsl2wRbZQQOYbUisjlslz6CxBj4s2xAphZDDw7s3muDr8vI2Mgj725Gf-9fIXoH5e6jl5hie-BjHBViY7rK1pdXrbYGRR4Lb5GwxiXCuaMNJnbQDnp3lj9H4lCSq6hLqm/w640-h358/BlindQuantum_0_2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDG8Rd0cgQw1CMMbr9nJQ4jZBqyOjoauOU9GUmwzqlqZmlxTX8mkOMwmWVH-38nXPcOs2eOgn5ejnSEibXWTSBI0mwQpDsuDA_DgVzhz9_tA77J6EK2bESFuUMnpD4GLygeH1bHieTSAItVuQwEdLKbFRhcNeUVTR_WxiMRQ9ZzapdL0CxT_wN/s2638/BQC9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDG8Rd0cgQw1CMMbr9nJQ4jZBqyOjoauOU9GUmwzqlqZmlxTX8mkOMwmWVH-38nXPcOs2eOgn5ejnSEibXWTSBI0mwQpDsuDA_DgVzhz9_tA77J6EK2bESFuUMnpD4GLygeH1bHieTSAItVuQwEdLKbFRhcNeUVTR_WxiMRQ9ZzapdL0CxT_wN/w640-h194/BQC9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOpXq8iDIK3EZjHNQG06_iLggdrT_XVNzXKbeE5zs9Y6fMJSCL4p-osQqhG7nNtcKdAGvx-Wjp60OcO_ot5rXFcDEzQcNhWgVCeaJapNsRlu98l-2nj8wYnhNsspikXwx419J-674wclrftogkw4DjNpK7kbahkH9V4oV12PTXzxJk2Oe84gnQ/w510-h640/BQC11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhASq-nfF2WCxs_2s458flBLHcn2vTniRYjBWe40PTR4lVgmhlvh9GYOFvGhlFGD8gRGm_695LYGctIkOOFeBcuONWn9s529eSozeJumP7nEAj_L8R2DM8_dAX0oMzQrcI7h1Jszd9Uqr8pR0-6f9s4xqkb2IOJ0T9cAd7QkcyDE4xgDCz3h6-e/w496-h640/BQC12.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIurtMTzeuQN_sCV987O27USYXJYe269ez6CimIA_LMQfcAcokknmY9LQdWVao4tsSXL1kHMWD-iGq8ANzMG52H3fEHLJo0cbX7OeBrWbuGTK05hCumNYVHiwA8zlCd8T5wfsdLA3Da6b3wdiFCZZ2lpOz3fRSUcbY-9MLKfo_pTMj5cpe_R3c/w520-h640/BQC15.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXeJI6pCKTlAtJxB_fWZlLKa2AHJPde9Fp6D6dfv17KPnxD3PdQ1P3WdO3NDOiYuBoCMGnHJ_WnVcnD2kPt3_SjNj3AYLc5HkRLttSPfbqU1GZKZ0oBs-yPuzYncQqgq3qNwZUrRr0v14upfA4xKirnmLWRCK0sTBOYDPuP_W554BaXp1yNQbV/w640-h584/BQC10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitjqOxQZOtva9Jj1mWziHizfHpjqRZc29830s7KTHFdeUhZkz_QoXCuLdfmKWSZIZIPkI64qpCfjePERlR2e57fD1hrZpZMkTVe7P-nzrVRJIkPgi2KIGx9ZLJUldz7TgPl4IHxUBeRSBgynCwhsD4-74xYi3GOAzPLC_nlDMD1OXG04XEdK0e/s1644/Jose_Antonio_Castellano_Prado.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitjqOxQZOtva9Jj1mWziHizfHpjqRZc29830s7KTHFdeUhZkz_QoXCuLdfmKWSZIZIPkI64qpCfjePERlR2e57fD1hrZpZMkTVe7P-nzrVRJIkPgi2KIGx9ZLJUldz7TgPl4IHxUBeRSBgynCwhsD4-74xYi3GOAzPLC_nlDMD1OXG04XEdK0e/w640-h453/Jose_Antonio_Castellano_Prado.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD_NyGrrfRZCWqLdMKtjGIY8RfWR5odRIwaDhFeS0VXqGb0R9oeuQaQ8PX0u-DO4mgV9tJ9gaklZdPNu9gbdM9EAHmNPX7m1jviIw68dqdTZqccP_T9mhzddLgxElYm3NFnw8-YSN14DC3dbwS4PDKO8bsfJ23Rl6LX1lhcMeopFZJmKCW21oG/w530-h640/BQC13.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRP57JUxRonmlZGGM9gj9_hfP5z9gJzMlAFINTwKI14pSjTRHJ7vI6L86o8EZBk6KYteEGuvMG7yxsUpPOVbQEEMLTmQxulHMtxw8jJAtfkmDuIjEiJhhQUDFrX7P0D7koxhWiVX9wjD5rEG6TCgZBdQDzqG0bJ-AuRMZ7PDtR7Ioj09py8fjV/s2898/BQC7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRP57JUxRonmlZGGM9gj9_hfP5z9gJzMlAFINTwKI14pSjTRHJ7vI6L86o8EZBk6KYteEGuvMG7yxsUpPOVbQEEMLTmQxulHMtxw8jJAtfkmDuIjEiJhhQUDFrX7P0D7koxhWiVX9wjD5rEG6TCgZBdQDzqG0bJ-AuRMZ7PDtR7Ioj09py8fjV/w640-h242/BQC7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdQPRphX8j8GBIT7bw1S1hReKeTxPEH3ShziN2hcNkRAOb8pkRK1_YV86ZL7gGHAma4wGsAtzyx01wg9xEq9O7DIIxQqoxDLKsmWe8m_TC-iKJuekeB4bimLGgSMgG81CjBOQg2wmJ11yPbuqUJuEL6rNLPQ1YwB6l0xGvOrJClxdLF5Nn2mS0/s2100/BQC8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdQPRphX8j8GBIT7bw1S1hReKeTxPEH3ShziN2hcNkRAOb8pkRK1_YV86ZL7gGHAma4wGsAtzyx01wg9xEq9O7DIIxQqoxDLKsmWe8m_TC-iKJuekeB4bimLGgSMgG81CjBOQg2wmJ11yPbuqUJuEL6rNLPQ1YwB6l0xGvOrJClxdLF5Nn2mS0/w640-h208/BQC8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2018/06/quantum-cryptography-una-comunicacion.html",
+        "https://www.elladodelmal.com/2022/12/quantum-computing-cybersecurity.html",
+        "https://www.elladodelmal.com/2023/01/factorizacion-de-rsa-con-un-optimizador.html",
+        "https://www.elladodelmal.com/2025/04/hamming-quasi-cyclic-hqc-kem-nuevo-key.html",
+        "https://www.elladodelmal.com/2025/05/frodokem-un-key-encapsulation-mechanism.html",
+        "https://www.elladodelmal.com/2025/08/la-gran-busqueda-de-numeros-primos-de.html",
+        "https://www.elladodelmal.com/2025/09/como-acelerar-los-algoritmos-de.html",
+        "https://www.elladodelmal.com/2025/10/premio-nobel-en-fisica-2025-el-trabajo.html",
+        "https://www.elladodelmal.com/2025/10/un-reloj-atomico-optico-del-mit-con.html",
+        "https://www.elladodelmal.com/2025/11/algoritmo-cuantico-de-grover-un.html",
+        "https://www.elladodelmal.com/2025/11/cuanto-del-trafico-en-internet-funciona.html",
+        "https://www.elladodelmal.com/2025/12/bitcoin-vs-quantum-computers-hora-de.html",
+        "https://www.elladodelmal.com/2025/12/dyber-hardware-accelerated-post-quantum.html",
+        "https://www.elladodelmal.com/2025/12/el-white-paper-de-mastercard-que-urge.html",
+        "https://www.elladodelmal.com/2025/12/quantum-sensors-cuando-lo-invisible-se.html",
+        "https://www.elladodelmal.com/2026/01/como-ser-quantum-safe-y-desplegar-post.html",
+        "https://www.elladodelmal.com/2026/02/quantum-gps-navegacion-con-gps.html",
+        "https://www.elladodelmal.com/2026/03/alaniz-cipher-un-cifrado-simetrico.html",
+        "https://www.elladodelmal.com/2026/03/como-comprobar-si-un-web-site-is.html",
+        "https://www.elladodelmal.com/2026/05/los-papers-academicos-de-los-algoritmos.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html"
+      ]
+    }
+  },
+  {
     "id": 1370,
     "fecha": "2026-07-14T02:02:24Z",
     "categoria": "Ciberseguridad",
