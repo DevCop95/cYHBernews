@@ -1,5 +1,140 @@
 [
   {
+    "id": 1385,
+    "fecha": "2026-07-14T16:10:51Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Túnel de Castellana con IA",
+    "resumen": "El nuevo túnel de la Castellana en Madrid incorporará tecnología basada en inteligencia artificial (IA) para vigilar y gestionar en tiempo real el tráfico, permitiendo detectar incidencias y controlar velocidades de vehículos. Esta infraestructura de 675 metros de longitud estará lista para su uso en diciembre.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217963-67e30c290e6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNDU0NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/movilidad/madrid-va-a-abrir-tunel-que-vigila-trafico-ia-tiempo-real-asi-funcionara-nuevo-subterraneo-castellana",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:madrid va a abrir un túnel que vigila el tráfico con ia en tiempo real así funcionará el nuevo subterráneo de la castellana",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/688b87/tunel/375_142.jpeg",
+        "https://i.blogs.es/9e9694/tunel-castellana/1024_2000.jpeg",
+        "https://i.blogs.es/b41d18/tunel/375_142.png",
+        "https://i.blogs.es/e8014d/noruega/375_142.jpeg",
+        "https://www.20minutos.es/madrid/asi-funcionara-tunel-inteligente-ia-castellana-capaz-detectar-incidencias-controlar-velocidades-vehiculos_7012101_0.html",
+        "https://www.abc.es/espana/madrid/luz-final-tunel-finaliza-excavacion-castellana-ia-20260707140718-nt.html",
+        "https://www.elmundo.es/madrid/2026/07/08/6a4d41a0e85ece605b8b45a1.html",
+        "https://www.larazon.es/madrid/finaliza-excavacion-tunel-castellana-que-contara-vigilar-seguridad_202607076a4ce5f6c48a78681b7857b3.html"
+      ]
+    }
+  },
+  {
+    "id": 1384,
+    "fecha": "2026-07-14T16:10:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cámaras hackeadas por Rusia",
+    "resumen": "Funcionarios de inteligencia holandeses informan que al menos una agencia rusa está comprometiendo cámaras conectadas a Internet en Europa para espiar logística militar y personal ucraniano, lo que supone un riesgo significativo para la seguridad de la información y la privacidad digital. Los vectores de ataque incluyen la explotación de vulnerabilidades en dispositivos de IoT, como cámaras de seguridad, para obtener acceso no autorizado a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNDU0NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russian-intelligence-compromising-cameras-nato-ukraine-netherlands",
+    "fuente": "The Record",
+    "dedup_key": "txt:nato logistics ukrainian troops are top subjects of russian camera hacks advisory says",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1383,
+    "fecha": "2026-07-14T16:10:38Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "IA Avanzada sin Regulación",
+    "resumen": "Modelos de inteligencia artificial (IA) de vanguardia se están desplegando con mayor autonomía y menos supervisión humana, lo que plantea preocupaciones sobre la necesidad de regulación y transparencia en su uso. Varios gobiernos estatales están intentando legislar la transparencia en el uso de la IA, pero aún no existe un marco regulatorio claro.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNDU0Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/frontier-ai-genie-out-of-bottle-where-rulebook",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:frontier ai the genie s out of the bottle but where s the rulebook",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1382,
+    "fecha": "2026-07-14T16:10:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en RabbitMQ",
+    "resumen": "Se han descubierto dos fallos relacionados con el control de acceso en el servicio de mensajería RabbitMQ que podrían permitir a los atacantes filtrar secretos de cliente OAuth y exponer la infraestructura de mensajería empresarial a riesgos de apropiación, así como saltarse los límites entre inquilinos. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para acceder a información confidencial y comprometer la seguridad de la infraestructura de mensajería.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNDU0MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/rabbitmq-flaws-could-leak-oauth-secrets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:rabbitmq flaws could leak oauth secrets and expose cross tenant queue metadata",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1381,
+    "fecha": "2026-07-14T16:10:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad UEFI Secure Boot",
+    "resumen": "Se han descubierto 11 cargadores UEFI shim antiguos firmados por Microsoft que permiten eludir UEFI Secure Boot en equipos que confían en Microsoft Corporation UEFI CA 2011, lo que puede permitir ataques de bootkit o malware. Microsoft ha distribuido revocaciones en DBX para mitigar la vulnerabilidad, y se recomienda actualizar los componentes a versiones modernas con SBAT para evitar problemas de arranque.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNDU0Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/once-shims-antiguos-firmados-por-microsoft-abren-la-puerta-a-saltarse-uefi-secure-boot-en-linux/?utm_source=rss&utm_medium=rss&utm_campaign=once-shims-antiguos-firmados-por-microsoft-abren-la-puerta-a-saltarse-uefi-secure-boot-en-linux",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:once shims antiguos firmados por microsoft abren la puerta a saltarse uefi secure boot en linux",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bypass User Account Control: Bootkit"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/once-shims-antiguos-firmados-por-microsoft-abren-la-puerta-a-saltarse-uefi-secure-boot-en-linux/"
+      ]
+    }
+  },
+  {
     "id": 1380,
     "fecha": "2026-07-14T13:23:37Z",
     "categoria": "IA",
