@@ -1,5 +1,68 @@
 [
   {
+    "id": 1391,
+    "fecha": "2026-07-14T21:54:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Rusos acusados de hosting bulletproof",
+    "resumen": "Se ha desclasificado una acusación en EE. UU. contra presuntos operadores de un servicio de hosting bulletproof ruso, quienes enfrentan múltiples cargos por brindar infraestructura y soporte técnico a cibercriminales a través de las empresas Media Land y ML Cloud, con sede en San Petersburgo. Esto puede tener un impacto significativo en la lucha contra el cibercrimen, ya que los servicios de hosting bulletproof suelen ser utilizados para alojar malware, ransomware y otros tipos de ataques cibernéticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNjYwNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/us-unseals-indictment-russians-bulletproof-hosting",
+    "fuente": "The Record",
+    "dedup_key": "txt:us unseals indictment against alleged operators of russian bulletproof hosting service",
+    "ttps": [
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities: Hosting"
+      },
+      {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Hosting - Infrastructure as a Service (IaaS)"
+      },
+      {
+        "id": "T1587.002",
+        "name": "Develop Capabilities: Hosting - Software as a Service (SaaS)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1490.001",
+        "name": "Inhibit System Recovery - Ransomware"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1390,
+    "fecha": "2026-07-14T21:54:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades Wi-Fi 6 GHz",
+    "resumen": "Se han descubierto vulnerabilidades en los sistemas de Coordinación de Frecuencia Automatizada (AFC) de Wi-Fi 6 GHz que, al confiar en datos del lado del cliente, permiten ataques de suplantación de ubicación y otros que pueden interrumpir el tráfico. Estos ataques pueden tener un impacto significativo en sistemas críticos que dependen de la conectividad Wi-Fi.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNjYwNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/perimeter/6-ghz-wi-fi-flaws-disrupt-critical-systems",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:6 ghz wi fi flaws could disrupt critical systems",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1389,
+    "fecha": "2026-07-14T21:54:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft parchea 622 vulnerabilidades",
+    "resumen": "Microsoft ha lanzado su mayor actualización de seguridad de la historia, corrigiendo 622 vulnerabilidades, incluyendo dos zero-day que están siendo explotadas activamente por atacantes. Los parches abordan vulnerabilidades en productos de Microsoft, incluyendo CVEs que podrían ser utilizadas para ataques de día cero.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNjYwNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft patches record 622 flaws including two zero days under active attack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1388,
     "fecha": "2026-07-14T19:12:10Z",
     "categoria": "IA",
