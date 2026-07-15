@@ -1,5 +1,95 @@
 [
   {
+    "id": 1396,
+    "fecha": "2026-07-15T01:59:37Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Microsoft reevalúa compartir datos con Big Tech",
+    "resumen": "Satya Nadella, CEO de Microsoft, expresa su preocupación por la forma en que las empresas de Big Tech utilizan los datos de Microsoft para beneficiarse en la era de la IA, destacando la necesidad de proteger el conocimiento institucional valioso y evitar la concentración de valor en unos pocos modelos de IA. Esto implica un cambio en la estrategia de Microsoft para salvaguardar su información y evitar que otros se beneficien de ella sin compensación adecuada.",
+    "url_imagen": "https://images.unsplash.com/photo-1779787819289-e292176abf69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwODA3Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/informacion-poder-microsoft-ha-llegado-a-conclusion-se-ha-cansado-regalarla-a-big-tech-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la información es poder y microsoft ha llegado a una conclusión se ha cansado de regalarla a las big tech de la ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.forbes.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/0801ff/bill-gates/375_142.jpeg",
+        "https://i.blogs.es/75bb11/satya-nadella-y-el-capital-de-tokens/375_142.jpeg",
+        "https://i.blogs.es/7bd424/nadella/1024_2000.jpeg",
+        "https://i.blogs.es/9adb1e/bill-gates-invento-el-trabajo-de-oficina/375_142.jpeg",
+        "https://i.blogs.es/9d148c/futuro-del-empleo-con-la-ia/1024_682.jpeg",
+        "https://i.blogs.es/9d148c/futuro-del-empleo-con-la-ia/500_333.jpeg",
+        "https://i.blogs.es/9d148c/futuro-del-empleo-con-la-ia/840_560.jpeg",
+        "https://www.forbes.com/sites/sandycarter/2026/06/14/microsoft-ceo-nadella-argues-learning-loops-beat-picking-a-model/"
+      ]
+    }
+  },
+  {
+    "id": 1395,
+    "fecha": "2026-07-15T01:59:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha de datos de terapia",
+    "resumen": "La policía finlandesa ha emitido una orden de búsqueda para el hacker responsable de una masiva brecha de datos de terapia, con el abogado del acusado indicando que su cliente se encuentra fuera de Finlandia, lo que sugiere un posible esfuerzo para evadir la justicia. La brecha de datos expuso información confidencial de pacientes de terapia, destacando la importancia de la ciberseguridad en el sector de la salud.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwODA3NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/finland-issues-wanted-notice-for-hacker-vastaamo-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:finland issues wanted notice for hacker behind massive psychotherapy data breach",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1394,
+    "fecha": "2026-07-15T01:59:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Actualización DShield SIEM",
+    "resumen": "Se ha realizado una actualización en el sistema de información y gestión de eventos de seguridad (SIEM) DShield, que incorpora la versión 8.19.15 del stack ELK, así como nuevos paneles de control y registros. Esta actualización sigue a la última realizada en septiembre de 2025, que incluyó ajustes menores.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwODA3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33156",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:recent dshield siem update tue jul 14th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1393,
+    "fecha": "2026-07-15T01:59:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Parches de Microsoft",
+    "resumen": "Microsoft ha emitido parches para 622 vulnerabilidades CVE, incluyendo tres zero-days, y más de 60 vulnerabilidades críticas que requieren una atención inmediata para evitar posibles ataques. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para acceder a sistemas sin autorización.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwODA3NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/records-broken-patch-tuesday-raises-triage-stakes",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:records are made to be broken patch tuesday raises triage stakes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1392,
+    "fecha": "2026-07-15T01:59:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en SAP NetWeaver",
+    "resumen": "Se ha identificado una vulnerabilidad de escritura fuera de límites (CVE-2026-44747) con una puntuación CVSS de 9.9 en SAP NetWeaver Application Server ABAP, que permite a un atacante autenticado explotar errores lógicos en la gestión de memoria y causar una corrupción de memoria, lo que podría exponer o modificar datos. La vulnerabilidad ha sido parcheada por SAP como parte de sus actualizaciones de seguridad de julio de 2026.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwODA3NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-44747",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-44747"
+      ]
+    }
+  },
+  {
     "id": 1391,
     "fecha": "2026-07-14T21:54:21Z",
     "categoria": "Ciberseguridad",
