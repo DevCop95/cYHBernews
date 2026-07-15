@@ -1,5 +1,41 @@
 [
   {
+    "id": 1399,
+    "fecha": "2026-07-15T07:59:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cargos contra operadores de BPH rusa",
+    "resumen": "Los fiscales federales estadounidenses han presentado cargos contra tres nacionales rusos por proporcionar servicios de hosting de bulletproof (BPH) a bandas de ransomware que causaron daños por más de $62 millones en todo el mundo, lo que sugiere un vector de ataque significativo a través de la infraestructura de BPH. Esto resalta la conexión entre los servicios de BPH y el ransomware, destacando la importancia de la colaboración internacional para combatir estas amenazas cibernéticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMDIzOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/us-charges-alleged-russian-bulletproof-hosting-service-operators/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:us charges alleged operators of russian bulletproof hosting service",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1398,
+    "fecha": "2026-07-15T07:59:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques contra SonicWall SMA1000",
+    "resumen": "SonicWall ha detectado la explotación activa de dos vulnerabilidades zero-day en su producto SMA1000, una crítica sin autenticación y otra de inyección de código tras iniciar sesión, y ha publicado hotfixes para mitigar estos ataques. Las agencias federales de EE UU deben aplicar las correcciones antes del 17 de julio de 2026 para evitar dejar de usar los equipos afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMDIzODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/sonicwall-publica-hotfixes-tras-detectar-ataques-reales-contra-dos-zero-days-en-sma1000/?utm_source=rss&utm_medium=rss&utm_campaign=sonicwall-publica-hotfixes-tras-detectar-ataques-reales-contra-dos-zero-days-en-sma1000",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:sonicwall publica hotfixes tras detectar ataques reales contra dos zero days en sma1000",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/sonicwall-publica-hotfixes-tras-detectar-ataques-reales-contra-dos-zero-days-en-sma1000/"
+      ]
+    }
+  },
+  {
     "id": 1397,
     "fecha": "2026-07-15T05:25:54Z",
     "categoria": "IA",
