@@ -1,5 +1,103 @@
 [
   {
+    "id": 1405,
+    "fecha": "2026-07-15T13:26:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Exploit de cursor de 2 clics",
+    "resumen": "Un exploit de cursor de 2 clics permite a actores maliciosos acceder a entornos de desarrollo y robar secretos y código fuente, aprovechando vulnerabilidades simples y conocidas. El ataque puede ser iniciado a través de técnicas de phishing o explotación de vulnerabilidades en el navegador, permitiendo a los atacantes tomar el control del entorno de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMjIwMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/2-click-cursor-exploit-dev-environment-takeover",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:2 click cursor exploit enables dev environment takeover",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1404,
+    "fecha": "2026-07-15T13:26:34Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Debilidad AI en SASE",
+    "resumen": "La seguridad de acceso seguro (SASE) tiene un punto ciego en cuanto a la inteligencia artificial (AI), ya que la inspección de paquetes ya no es suficiente para abordar las nuevas amenazas que surgen con el uso de herramientas de AI generativas, extensiones de navegador no autorizadas y agentes autónomos en los flujos de trabajo empresariales. Esto representa un desafío para la seguridad de la información, ya que los empleados comparten propiedad intelectual en aplicaciones de SaaS y navegadores.",
+    "url_imagen": "https://images.unsplash.com/photo-1689443111384-1cf214df988a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMjE5OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/sase-has-ai-blind-spot-inspecting.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:sase has an ai blind spot inspecting packets is no longer enough",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1403,
+    "fecha": "2026-07-15T13:26:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA alerta sobre vulnerabilidades en SharePoint",
+    "resumen": "La Agencia de Ciberseguridad y Seguridad de Infraestructura de EE. UU. (CISA) advirtió que atacantes están explotando activamente tres vulnerabilidades para hackear instancias de SharePoint Server en premisas expuestas a Internet, lo que requiere una actualización urgente para evitar ataques. Los administradores deben aplicar parches para mitigar el riesgo de explotación de estas vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMjE5ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-patch-actively-exploited-sharepoint-flaws/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa warns admins to patch actively exploited sharepoint flaws",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1402,
+    "fecha": "2026-07-15T13:26:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "UEFI Shims Vulnerables",
+    "resumen": "Investigadores de ESET descubrieron 11 shim bootloaders UEFI vulnerables firmados por Microsoft, que permiten a los atacantes eludir UEFI Secure Boot explotando vulnerabilidades de hasta una década de antigüedad. Esto representa un riesgo significativo para la seguridad de los sistemas, ya que permite la carga de código malicioso en sistemas protegidos por Secure Boot.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMjE5ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/vulnerable-uefi-shims-bypass-secure-boot/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:los uefi shims olvidados socavan secure boot",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bypass User Account Control: Bootloader"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion: Eludir UEFI Secure Boot"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1401,
     "fecha": "2026-07-15T10:44:52Z",
     "categoria": "Ciberseguridad",
