@@ -1,5 +1,33 @@
 [
   {
+    "id": 1407,
+    "fecha": "2026-07-15T16:16:34Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Claude",
+    "resumen": "Se ha descubierto una falla en Claude que permite enviar automáticamente prompts maliciosos a agentes de IA, lo que, combinado con la vulnerabilidad \"PromptFiction\", podría haber permitido un ataque de extremo a extremo en un sistema objetivo. La vulnerabilidad \"PromptFiction\" ya ha sido corregida.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMzIxOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/claude-flaw-malicious-prompts-ai-agents",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:claude flaw automatically sends malicious prompts to ai agents",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1406,
+    "fecha": "2026-07-15T16:16:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft parchea 570 fallos de seguridad",
+    "resumen": "Microsoft ha lanzado actualizaciones de software para solucionar al menos 570 vulnerabilidades de seguridad en sus sistemas operativos Windows y otros software, casi triple que el número de vulnerabilidades solucionadas en su anterior lanzamiento de Patch Tuesday, gracias en parte a la ayuda de la inteligencia artificial (IA) en la detección de vulnerabilidades. Esto refleja un aumento significativo en la identificación de vulnerabilidades, lo que puede indicar una mayor exposición a ataques cibernéticos si no se aplican los parches adecuadamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMzIxOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:microsoft patches a record 570 security flaws",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1405,
     "fecha": "2026-07-15T13:26:40Z",
     "categoria": "Ciberseguridad",
