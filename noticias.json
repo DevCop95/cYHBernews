@@ -1,5 +1,98 @@
 [
   {
+    "id": 1415,
+    "fecha": "2026-07-15T21:55:21Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "China lanza superclúster de IA",
+    "resumen": "China ha lanzado el Dawning 8000, un superclúster de inteligencia artificial que integra 100.000 tarjetas de cálculo desarrolladas en el país, con el desafío de lograr que trabajen juntos de manera eficiente y superar los retos de escalabilidad y complejidad. El proyecto busca reducir la dependencia de tecnologías extranjeras y fortalecer la capacidad nacional en computación de alto rendimiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905462-56e7b9f722f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNTI1MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/china-acaba-reunir-100-000-aceleradores-nacionales-supercluster-desafio-trabajen-juntos-eficiencia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:china acaba de reunir 100 000 aceleradores nacionales en un superclúster el desafío ahora es que trabajen juntos con eficiencia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "docs.nvidia.com",
+        "platform.instagram.com",
+        "www.chinadaily.com.cn",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://docs.nvidia.com/multi-node-nvlink-systems/multi-node-tuning-guide/nccl.html",
+        "https://i.blogs.es/1e9bf8/supercluster-chino-2/1024_2000.jpeg",
+        "https://i.blogs.es/c518fb/magnific_pon-el-logo-de-meta-en-la_bmmtf85oqr/375_142.jpeg",
+        "https://public-inspection.federalregister.gov/2019-13245.pdf?1561121121=",
+        "https://www.chinadaily.com.cn/a/202607/10/WS6a508b1da310986e2b4649a7.html"
+      ]
+    }
+  },
+  {
+    "id": 1414,
+    "fecha": "2026-07-15T21:55:15Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Gold Eagle: Inteligencia AI contra vulnerabilidades",
+    "resumen": "El programa Gold Eagle utiliza inteligencia artificial (AI) para detectar, priorizar y parchear vulnerabilidades de ciberseguridad de manera rápida, permitiendo a la industria, operadores de infraestructura crítica y el gobierno mejorar su postura de seguridad. El uso de AI en este contexto puede reducir el tiempo de respuesta a vulnerabilidades como zero-days y exploits.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNTI1MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/gold-eagle-cybersecurity-vulnerabilities-clearinghouse",
+    "fuente": "The Record",
+    "dedup_key": "txt:trump administration unveils ai supported clearinghouse for cyber vulnerabilities",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1413,
+    "fecha": "2026-07-15T21:55:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "OkoBot Malware Ataca Wallets",
+    "resumen": "El marco de malware OkoBot, activo desde abril de 2025, incluye un módulo que engaña a los propietarios de wallets de hardware Ledger y Trezor para que revelen su frase de recuperación a través de phishing, aprovechando la confianza en el software de escritorio legítimo de los wallets. El ataque se ejecuta en máquinas Windows infectadas, donde la solicitud maliciosa parece provenir del propio software del wallet.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNTI1MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/okobot-malware-framework-injects-seed.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:okobot malware framework injects seed phrase phishing into ledger and trezor apps",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1412,
+    "fecha": "2026-07-15T21:55:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica en Zoom",
+    "resumen": "Se ha detectado una vulnerabilidad crítica en el cliente de escritorio y kit de desarrollo de software de Zoom para Windows, que podría ser explotada por un atacante no autenticado para tomar el control de cuentas, lo que supone un riesgo significativo de seguridad. El vector de ataque podría incluir técnicas de phishing o exploits de día cero para aprovechar esta debilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNTI1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:zoom warns of critical account takeover vulnerability",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1411,
+    "fecha": "2026-07-15T21:54:58Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "IA: Nuevos riesgos en marketplaces",
+    "resumen": "El auge de los agentes de IA está impulsando el desarrollo de marketplaces que permiten a empresas y usuarios incorporar funciones desarrolladas por terceros, lo que crea un nuevo vector de ataque para ciberdelincuentes que pueden aprovechar vulnerabilidades en estas capacidades adicionales. Esto puede aumentar el riesgo de ataques de malware, phishing y otros tipos de ciberdelitos que aprovechan la falta de control sobre las funcionalidades de terceros.",
+    "url_imagen": "https://images.unsplash.com/photo-1767955006100-cf73d990599f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNTI0OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-tambien-tiene-su-propia-app-store-y-los-ciberdelincuentes-ya-estan-dentro/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia también tiene su propia app store y los ciberdelincuentes ya están dentro",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1410,
     "fecha": "2026-07-15T19:04:29Z",
     "categoria": "IA",
