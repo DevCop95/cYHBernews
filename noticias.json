@@ -1,5 +1,62 @@
 [
   {
+    "id": 1410,
+    "fecha": "2026-07-15T19:04:29Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Centros de datos: pocos empleos",
+    "resumen": "Los centros de datos consumen mucha electricidad, contaminan el aire y el agua, y generan pocos empleos estables a pesar de las promesas de creación de empleo. En Cedar Rapids, Iowa, dos proyectos de centros de datos de QTS y Google van a generar solo 61 puestos de trabajo permanentes a cambio de incentivos de más de 580 millones de dólares en impuestos y tasas municipales.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054730060-2cfb438ed96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNDIyNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/argumento-creacion-empleo-ha-sido-gran-baza-para-levantar-centros-datos-estaria-bien-fuera-cierto",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el argumento de la creación de empleo ha sido la gran baza para levantar centros de datos estaría bien si fuera cierto",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "futurism.com",
+        "platform.instagram.com",
+        "publications.turnerandtownsend.com",
+        "www.economicdevelopmentcr.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://futurism.com/future-society/data-center-economics-job-labor-construction-ai",
+        "https://i.blogs.es/cc3a0b/magnific_genial-ahora-quiero-que-s_onsp0eiynm/1024_2000.jpeg",
+        "https://i.blogs.es/f615ae/centros-de-datos-parque/375_142.png",
+        "https://publications.turnerandtownsend.com/global-construction-market-intelligence-2026/",
+        "https://www.economicdevelopmentcr.com/data-centers"
+      ]
+    }
+  },
+  {
+    "id": 1409,
+    "fecha": "2026-07-15T19:04:21Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "TuxBot v3: Botnet IoT con IA",
+    "resumen": "Investigadores de ciberseguridad han descubierto un marco de botnet de Internet de las cosas (IoT) llamado TuxBot v3 Evolution, que muestra signos de haber sido desarrollado con la asistencia de un modelo de lenguaje grande (LLM), aunque con resultados no muy exitosos, incluyendo un aviso de seguridad que el desarrollador ignoró. El vector de ataque implica el uso de código generado por IA para crear botnets IoT, lo que plantea preocupaciones sobre la posible automatización de ataques de ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218221-1da14c0f365e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNDIyNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:tuxbot v3 evolution shows signs of llm assisted iot botnet development",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1408,
+    "fecha": "2026-07-15T19:04:15Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Gemini CLI de Google abusada",
+    "resumen": "Un actor de amenaza ruso, conocido como \"bandcampro\", ha utilizado la herramienta de línea de comandos (CLI) de Google Gemini, una herramienta de inteligencia artificial (IA) de código abierto, como un agente de hacking y para operar una botnet de malware a pequeña escala, lo que supone un riesgo para la seguridad de los sistemas informáticos. El abuso de herramientas de IA como Gemini CLI destaca la importancia de monitorear y controlar el uso de estas tecnologías para prevenir ataques cibernéticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1770220742903-f113513d0194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNDIyNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-gemini-cli-abused-as-a-hacking-agent-malware-botnet-operator/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google gemini cli abused as a hacking agent malware botnet operator",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1407,
     "fecha": "2026-07-15T16:16:34Z",
     "categoria": "IA",
