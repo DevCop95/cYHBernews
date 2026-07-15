@@ -1,5 +1,54 @@
 [
   {
+    "id": 1401,
+    "fecha": "2026-07-15T10:44:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Nigeria Refuerza Ciberseguridad",
+    "resumen": "Nigeria ha avanzado en la implementación de reglas que obligan a las organizaciones a revelar ciberataques, uniendo esfuerzos con otras naciones para lograr una mayor transparencia en la ciberseguridad, lo que podría ayudar a combatir el aumento de los beneficios de los cibercriminales a través de ataques como phishing, ransomware y exploits de vulnerabilidades. Esto se enmarca en un contexto de creciente preocupación por la seguridad digital en la región.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMTIyOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/nigeria-cybersecurity-efforts-cybercriminals-profits",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:nigeria deepens cybersecurity efforts as cybercriminals see more profits",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1400,
+    "fecha": "2026-07-15T10:44:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware en paquetes npm de AsyncAPI",
+    "resumen": "Se han detectado cuatro paquetes npm comprometidos en el namespace @asyncapi que distribuyen un cargador de botnet de múltiples etapas, afectando a los paquetes @asyncapi/generator-helpers, @asyncapi/generator-components, @asyncapi/generator y @asyncapi/specs, lo que podría permitir ataques de malware y ransomware a través de la cadena de suministro de software. Los vectores de ataque incluyen la inyección de malware en paquetes de npm, lo que puede afectar a los desarrolladores y usuarios que los utilizan.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxMTIyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/compromised-asyncapi-npm-packages.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:compromised asyncapi npm packages deliver multi stage botnet malware",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking: Cargador de Botnet de Múltiples Etapas"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1399,
     "fecha": "2026-07-15T07:59:52Z",
     "categoria": "Ciberseguridad",
