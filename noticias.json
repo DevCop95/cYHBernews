@@ -1,5 +1,19 @@
 [
   {
+    "id": 1397,
+    "fecha": "2026-07-15T05:25:54Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Claude for Chrome",
+    "resumen": "Se ha descubierto una vulnerabilidad en Claude for Chrome que permite a extensiones maliciosas desencadenar tareas en Gmail, Google Doc y Calendar, siempre y cuando la extensión pueda ejecutar un script en claude.ai. La vulnerabilidad requiere una extensión rogue que ya pueda ejecutar scripts en claude.ai, similar a la vulnerabilidad ClaudeBleed.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330389090-3df48ad9c975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwOTMxNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/claude-for-chrome-flaw-lets-other.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers say claude for chrome flaw lets rogue extensions trigger gmail reads",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1396,
     "fecha": "2026-07-15T01:59:37Z",
     "categoria": "IA",
