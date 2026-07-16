@@ -1,5 +1,93 @@
 [
   {
+    "id": 1426,
+    "fecha": "2026-07-16T13:40:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Artemis Java",
+    "resumen": "La versión de Artemis Java Test Sandbox anterior a 1.11.2 presenta una vulnerabilidad de escape de sandbox (CVE-2024-23681) con un CVSS Score de 8.2, permitiendo a un atacante ejecutar código Java arbitrario al cargar librerías no de confianza mediante System.load o System.loadLibrary. Esto puede ser explotado para ejecutar código malicioso en sistemas que ejecutan el código supuestamente aislado.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMDkyMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-23681",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-23681",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-23681"
+      ]
+    }
+  },
+  {
+    "id": 1425,
+    "fecha": "2026-07-16T13:40:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware TELEPUZ ataca",
+    "resumen": "Se ha detectado un nuevo malware modular llamado TELEPUZ que se propaga a través de sitios web infectados con engaños de ClickFix desde finales de abril de 2026, permitiendo a los atacantes robar datos y ejecutar comandos en los sistemas infectados. El malware es ligero y modular, con un número limitado de dominios de comando y control (C2) actualmente, pero con un potencial de expansión.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMDkyMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-telepuz-malware-spreads-via.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new telepuz malware spreads via clickfix to steal data and run commands",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1424,
+    "fecha": "2026-07-16T13:40:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Miembros de Scattered Spider condenados",
+    "resumen": "Dos miembros destacados del colectivo cibercriminal Scattered Spider fueron condenados a cinco años y seis meses de prisión por el hackeo de Transport for London (TfL) en 2024, lo que pone de relieve la efectividad de las acciones legales contra el cibercrimen. El ataque afectó la infraestructura de TfL, demostrando la importancia de la ciberseguridad en el sector de transporte.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMDkyMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/scattered-spider-members-behind-transport-for-london-hack-get-five-years-in-prison/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:scattered spider members behind tfl hack get five years in prison",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1423,
     "fecha": "2026-07-16T10:54:54Z",
     "categoria": "Ciberseguridad",
@@ -15973,28 +16061,6 @@
         "https://www.sciencedirect.com/science/article/pii/S2666389925002788#sec3"
       ]
     }
-  },
-  {
-    "id": 784,
-    "fecha": "2026-06-23T17:14:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Scattered Spider se rinde",
-    "resumen": "Dos miembros clave del grupo de cibercrimen Scattered Spider se declararon culpables de cargos criminales relacionados con un ciberataque en agosto de 2024 que afectó a Transport for London, la entidad responsable de la red de transporte público en el área del Gran Londres. El ataque, que probablemente involucró técnicas de phishing o exploits de vulnerabilidades, demostró la capacidad del grupo para lanzar ataques significativos contra infraestructuras críticas.",
-    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4NTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
-    "fuente": "Krebs on Security",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 783,
