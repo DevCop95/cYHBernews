@@ -1,5 +1,43 @@
 [
   {
+    "id": 1428,
+    "fecha": "2026-07-16T16:14:07Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Privacidad en la Era de la IA",
+    "resumen": "Se argumenta que dar control a las personas sobre sus datos personales no es efectivo para regular la privacidad en la era de la IA, y en su lugar, se deben implementar medidas como minimización de datos, deberes fiduciarios y responsabilidad por diseño tecnológico negligente o imprudente. Esto permitiría una regulación más efectiva de la privacidad en un entorno donde la IA y el procesamiento de datos son cada vez más comunes.",
+    "url_imagen": "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMTg0NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/protecting-privacy-in-an-ai-era.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:protecting privacy in an ai era",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "papers.ssrn.com",
+        "www.wsj.com"
+      ],
+      "url": [
+        "https://archive.is/gEhP5",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6985419",
+        "https://www.wsj.com/tech/cybersecurity/ai-privacy-laws-data-26d9769f"
+      ]
+    }
+  },
+  {
+    "id": 1427,
+    "fecha": "2026-07-16T16:13:59Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Agentes AI rompen protocolos",
+    "resumen": "Los flujos de trabajo de seguridad tradicionales, diseñados para entornos que cambiaban a velocidad humana, ya no son efectivos frente a los agentes de inteligencia artificial (AI), que requieren una nueva aproximación basada en una fundación de identidad en vivo y flexibilidad para crear flujos de trabajo personalizados. Esto implica una revisión de los protocolos de seguridad para adaptarse a la velocidad y complejidad de los entornos impulsados por AI.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217912-933d2792d493?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMTg0NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ai-agents-broke-the-security-playbook-heres-what-replaces-it/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ai agents broke the security playbook here s what replaces it",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1426,
     "fecha": "2026-07-16T13:40:33Z",
     "categoria": "Ciberseguridad",
