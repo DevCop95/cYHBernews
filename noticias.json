@@ -1,5 +1,108 @@
 [
   {
+    "id": 1419,
+    "fecha": "2026-07-16T08:05:13Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "ChatGPT en WhatsApp",
+    "resumen": "Se ha vuelto a habilitar el acceso a ChatGPT en WhatsApp para usuarios europeos, permitiendo interactuar con la inteligencia artificial de OpenAI a través de un número de teléfono específico, sin necesidad de registro previo. El uso de ChatGPT en WhatsApp puede tener implicaciones de seguridad, como la exposición a posibles vulnerabilidades en la comunicación o la recopilación de datos por parte de la IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1767950467836-ef59566126c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxODkxMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/basics/como-usar-chatgpt-whatsapp-vuelve-a-estar-disponible-union-europea",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:cómo usar chatgpt en whatsapp ahora que vuelve a estar disponible en la unión europea",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/2dbf6a/captura-2026-07-13-a-las-16.03.00/1024_2000.png",
+        "https://i.blogs.es/2dbf6a/captura-2026-07-13-a-las-16.03.00/1366_2000.png",
+        "https://i.blogs.es/2dbf6a/captura-2026-07-13-a-las-16.03.00/450_1000.png",
+        "https://i.blogs.es/2dbf6a/captura-2026-07-13-a-las-16.03.00/650_1200.png",
+        "https://i.blogs.es/8beed3/captura-2026-07-13-a-las-16.01.54/1024_2000.png",
+        "https://i.blogs.es/8beed3/captura-2026-07-13-a-las-16.01.54/1366_2000.png",
+        "https://i.blogs.es/8beed3/captura-2026-07-13-a-las-16.01.54/450_1000.png",
+        "https://i.blogs.es/8beed3/captura-2026-07-13-a-las-16.01.54/650_1200.png",
+        "https://i.blogs.es/dd36ca/chatgpt-whatsapp/1024_2000.jpeg",
+        "https://i.blogs.es/de46a1/eustella/375_142.jpeg"
+      ]
+    }
+  },
+  {
+    "id": 1418,
+    "fecha": "2026-07-16T08:05:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Desmantelada red de fraude cibernético",
+    "resumen": "La policía española ha desmantelado una red de fraude cibernético que operaba en España, con un valor estimado de €140M, mediante ataques cibernéticos y lavado de dinero a través de redes financieras complejas. Los hackers ibéricos llevaron a cabo una variedad de ataques, incluyendo posibles técnicas de phishing, malware y explotación de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxODkxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/police-disrupt-140m-euro-cyber-fraud-ring-spain",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:police disrupt a 140m cyber fraud ring in spain",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1417,
+    "fecha": "2026-07-16T08:04:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nuevo libro sobre ciberseguridad",
+    "resumen": "El libro \"Ciberseguridad: Cómo defenderse en una guerra continua\" de Rafa López \"Cibercapitan\" ofrece una visión práctica y estratégica para entender cómo proteger una organización en la era digital, abordando temas como gobernanza, cumplimiento, capacidades técnicas y automatización. El libro está dirigido a profesionales, estudiantes y responsables de TI que buscan ordenar el complejo panorama de la ciberseguridad actual.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxODkxMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/el-nuevo-libro-de-ciberseguridad-como.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:el nuevo libro de ciberseguridad cómo defenderse en una guerra continua escrito por rafa lópez cibercapitan en 0xword",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.0xword.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com",
+        "https://0xword.com/es/14_0xword-brain",
+        "https://0xword.com/es/6-libros",
+        "https://0xword.com/es/libros/257-ciberseguridad-como-defenderse-en-una-guerra-continua.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBfmCtpaVM16Z5dGJIH2AJ1mkJ77RpPvPskpwnyj_YZASxG3czol_hV_2aENSfhuX9omIwQpUOcxrs1Fw-GclhkaKwmx1kqU5-bBfSc_ZrrXTiC2AHqfVFAJi3Cr5YW0hYrdYE/s640/TRansferencias.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBfmCtpaVM16Z5dGJIH2AJ1mkJ77RpPvPskpwnyj_YZASxG3czol_hV_2aENSfhuX9omIwQpUOcxrs1Fw-GclhkaKwmx1kqU5-bBfSc_ZrrXTiC2AHqfVFAJi3Cr5YW0hYrdYE/s940/TRansferencias.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGKQCPJDpeSahg2pWfpuZB0lkgesNRNhDquXWn15nT3-s-Oqo9B5nCmjZuSsRmIt1Nyfq9nwl-1vVPnj0YwP5fAufTGOwOWmRWHO49M4TpA_si8t3bVGjnZ2UoUBccRqSO6Yk-Iruai8Yc8AIu6WDl_LQSsra07jwRuSomDxEjaQaq2RCKfY29/w640-h448/Ciberseguridad2.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUt3-XxxHZEvCuUl_3-pBHdMm6PKP-p8in8IsoL17jsxZhBeoARztVMm8jjOGVM8vG6j7YMPeijpj2InyAlyK-R_-Uep2g_qIyx0eVZUt8NUnhYV7MaHzV_wl0tS57vvak5HSS/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1JfmmOi4SJn06Uz83hyslQYP7RxNKZrMgEMlhvcVWhYeC2H5Og1Z8lhvgzZeq_W9EuIxt6YGgv1_dlD4SGpQo18S_xL65n9HRu8vjd8fHC8JEIeyRS28N0rHFFqsAu_LaqRvPXS270HyuFvdBlG0uHRMBd58JaKnq4JGLW0QEDP8ckxgjOA/w640-h292/MyPublicInbox_OxWord_libro.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2bDR39l6Tv3Fz1Cx0CpKpNXCj-U_umHqkLduJ30D_NrWzPlUmK_XI4Sg4g1drJNL84s2EmVNueKGWo-7rHozSkS19yZIVfEUIJMJ7X4zqku1GnBgevY_BofTR0l6ZSyVhHuW2/s640/mpi2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyDCcb0ziQW2yxBhxIql5ucc93uWChu8dPK6fxrK6qsRj_CEXR9h90v4UT07UHy6NMr78dceFPz9nMbhkE4CP17dRdHG9MKNGO9c_aWUgkU0iI5K8qIEm9AEQNJVu2H0ChC186zy3YzwDmCmGRMSKhQ6DYzrKXAX7R1Es8CpmEUs6-jR2yH38I/w640-h384/Ciberseguridad0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEQloOZ8ZyN0xyre8L8Xctxq3-3pnjmPEuyn9jNreMZvtGHcQixLEQw5A6koAafdxhtFe_Fuxo9NxDetMFTRxnCNb56ydsvOWRJ0TjTr3HXICnWfyQlnxgSV-W7P81BuO3HgDgwWItRrhUBsx8smrU-DgmLfQ-yysvwH9iX1WWkR03Zkq2UA/w269-h400/Canjear_Tempos_0xWord.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ64nW81dc0MIWtGqWbLsnwjTibO8L7eLmYjGk66v3N-Xhci-kQdo0xl4ftSI8PxaAJU3f28DCV4eeyjtB3IyM9s3yZI4Ruz7GEBhfKjrj9IPkPLrBWMctsTMY8YaEnPm1YDsfdBIUxL3W8Wg5o6J_TbBDZPmFVLyH5X8ttHa2r_LILkJ3c5Uk/w466-h640/ciberseguridad1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbKLPCtplxzKQXZ2SSX9FbMO-yLFtDJir8LjicqQH8LF2tD9PhGWHaX9ENqw9EauPFKnLi7BrOwJ_OUMW08tIv_sponh0TpprxYo6rqrfhPEPqsmo53_Z76LmMA3FSPkDh9B9R-r0bzd-7b44-_RdTSXf-qjPXeCdIVbDxN5Bn1FDtKQhZIqrm/w640-h550/Cibercapitan.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvJyiSKr4FFIDZUFzpSPDVYoDHbqIPJU3AFh9QXf-yOw5lWx5qO99Nzy3qhEc_oNW15NSiIXB4BsFkwVI-FFooaGKV3zEdgJOpd4jJHf_u4MyCqmH2C3ovUN_xjpAEV_qB8LHA/s640/0xWordMPI.jpg",
+        "https://elladodelmal.com",
+        "https://www.0xWord.com"
+      ]
+    }
+  },
+  {
     "id": 1416,
     "fecha": "2026-07-16T02:09:03Z",
     "categoria": "Ciberseguridad",
