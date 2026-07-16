@@ -1,5 +1,50 @@
 [
   {
+    "id": 1430,
+    "fecha": "2026-07-16T19:02:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Netflix Lemur",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2023-30797) con un puntaje CVSS de 7.5 en Netflix Lemur, que genera credenciales predeterminadas con valores insuficientemente aleatorios, permitiendo a un atacante adivinar las credenciales y acceder a recursos gestionados por Lemur. La versión afectada es anterior a 1.3.2.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMjg1Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-30797",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-30797",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-30797"
+      ]
+    }
+  },
+  {
+    "id": 1429,
+    "fecha": "2026-07-16T19:02:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "23andMe paga $18M por brecha de datos",
+    "resumen": "La empresa de pruebas genéticas 23andMe ha acordado pagar $18 millones para resolver reclamos de una coalición de 43 fiscales generales que alegan que no protegió adecuadamente los datos genéticos de sus clientes, lo que podría tener implicaciones significativas en la privacidad digital y la seguridad de la información sensible. El incidente destaca la importancia de la protección de datos en el sector de la salud y la necesidad de cumplir con regulaciones como la GDPR y la HIPAA.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMjg1NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/23andme-to-pay-18-million-in-new-genetics-data-breach-settlement/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:23andme to pay 18 million in new genetics data breach settlement",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1428,
     "fecha": "2026-07-16T16:14:07Z",
     "categoria": "IA",
