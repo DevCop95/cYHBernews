@@ -1,5 +1,23 @@
 [
   {
+    "id": 1416,
+    "fecha": "2026-07-16T02:09:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en zlib 1.2.8",
+    "resumen": "La vulnerabilidad CVE-2016-9840, con una puntuación CVSS de 8.8, afecta a la biblioteca zlib 1.2.8, permitiendo a los atacantes aprovechar una aritmética de puntero incorrecta en el archivo Inftrees.c, lo que podría tener un impacto no especificado en productos que la utilizan, como opensuse y boost. El vector de ataque depende del contexto y podría ser explotado por atacantes que buscan aprovechar debilidades en la biblioteca.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNjc3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2016-9840",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2016-9840",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2016-9840"
+      ]
+    }
+  },
+  {
     "id": 1415,
     "fecha": "2026-07-15T21:55:21Z",
     "categoria": "IA",
