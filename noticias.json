@@ -1,5 +1,149 @@
 [
   {
+    "id": 1434,
+    "fecha": "2026-07-16T22:00:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS en Starlette",
+    "resumen": "Se ha identificado la vulnerabilidad CVE-2023-30798 con un score CVSS de 7.5, que permite a un atacante remoto y no autenticado causar un denial of service (DoS) en el servicio HTTP de Starlette, un framework de Python, debido al uso de MultipartParser antes de la versión 0.25.0. Esto puede resultar en un consumo excesivo de memoria y la interrupción del servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMzkyMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-30798",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-30798",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "TCP Flood"
+      },
+      {
+        "id": "T1498.002",
+        "name": "UDP Flood"
+      },
+      {
+        "id": "T1498.003",
+        "name": "HTTP Flood"
+      },
+      {
+        "id": "T1498.004",
+        "name": "DNS Flood"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-30798"
+      ]
+    }
+  },
+  {
+    "id": 1433,
+    "fecha": "2026-07-16T22:00:12Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Phishing evita filtros AI",
+    "resumen": "Más de 1 millón de correos electrónicos utilizan texto oculto para engañar a los filtros de seguridad de inteligencia artificial (IA) y modelos de lenguaje (LLMs), permitiendo que ataques de phishing lleguen a los buzones de correo. Esto aprovecha la debilidad de la IA en la detección de \"text salting\", una técnica que incluye texto no visible para evitar la detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258533-d0597f86ce62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMzkyMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/1m-emails-hidden-text-dupe-ai-security-filters",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:1m emails use hidden text to dupe ai security filters",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion (no se menciona explícitamente, pero se puede inferir que se trata de evasión de detección)"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Sandbox Evasion (no se menciona explícitamente, pero se puede inferir que se trata de evasión de detección en sandbox)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1432,
+    "fecha": "2026-07-16T22:00:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware ClickLock ataca macOS",
+    "resumen": "Un nuevo malware de robo de información llamado ClickLock para macOS fuerza a los usuarios a ingresar su contraseña de inicio de sesión al terminar todos los procesos visibles, aprovechando la necesidad del usuario de recuperar el acceso al sistema. Esto representa un vector de ataque significativo, ya que el malware puede capturar contraseñas de manera efectiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMzkyMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new clicklock macos malware traps users into revealing login password",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1057",
+        "name": "Input Capture, ya que el malware puede capturar contraseñas de manera efectiva."
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools no se menciona explícitamente, pero se puede inferir que el malware puede permitir el acceso remoto al sistema una vez que se obtiene la contraseña. Sin embargo, no hay suficiente información para confirmar esto, por lo que se descarta. En su lugar, se puede considerar:"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1431,
+    "fecha": "2026-07-16T21:59:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Suplantación de IDs OAuth evita detección",
+    "resumen": "La empresa de ciberseguridad Proofpoint ha detectado una técnica de evasión que utiliza la suplantación de identificadores de cliente de OAuth para eludir los mecanismos de detección de Microsoft Entra, lo que representa un desafío para los sistemas de seguridad tradicionales. Esta técnica permite a los atacantes realizar campañas a gran escala contra Microsoft Entra, producto diseñado para gestionar identidades y accesos en la nube.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMzkxOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-suplantacion-de-ids-de-cliente-oauth-desafia-los-sistemas-de-deteccion-de-microsoft-entra/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la suplantación de ids de cliente oauth desafía los sistemas de detección de microsoft entra",
+    "ttps": [
+      {
+        "id": "T1556",
+        "name": "Session Hijacking"
+      },
+      {
+        "id": "T1556.003",
+        "name": "OAuth Access Token Manipulation"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1586",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1430,
     "fecha": "2026-07-16T19:02:58Z",
     "categoria": "Ciberseguridad",
