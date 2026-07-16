@@ -1,5 +1,107 @@
 [
   {
+    "id": 1423,
+    "fecha": "2026-07-16T10:54:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad zlib CVE-2016-9842",
+    "resumen": "La función inflateMark en zlib 1.2.8 presenta una vulnerabilidad (CVE-2016-9842) con una puntuación CVSS de 8.8, permitiendo a los atacantes un impacto no especificado a través de cambios a la izquierda de enteros negativos, afectando productos como Debian Linux, OpenSUSE y zlib. Los vectores de ataque pueden implicar explotación de esta debilidad en entornos que utilizan zlib.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxOTkyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2016-9842",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2016-9842",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2016-9842"
+      ]
+    }
+  },
+  {
+    "id": 1422,
+    "fecha": "2026-07-16T10:54:47Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA detecta vulnerabilidades",
+    "resumen": "La inteligencia artificial (IA) está revolucionando la seguridad ofensiva al detectar vulnerabilidades y generar payloads, pero la verificación humana sigue siendo crucial para probar y validar los hallazgos. Las herramientas asistidas por IA pueden analizar código, resumir superficies de ataque y ejecutar flujos de trabajo de prueba de manera rápida y eficiente.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217963-67e30c290e6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxOTkyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ai-can-find-bugs-but-human-knowledge.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai can find bugs but human knowledge still proves them",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1421,
+    "fecha": "2026-07-16T10:54:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers rusos trojanizan apps",
+    "resumen": "Un actor de amenaza ruso motivado financieramente, identificado como UAT-11795, está utilizando software trojanizado para robar credenciales y criptomonedas mediante la implementación de una nueva puerta trasera llamada Starland RAT, aprovechando aplicaciones como WebEx y Zoom. El ataque aprovecha la confianza en aplicaciones de videoconferencia para infiltrarse en sistemas y obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxOTkyODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:russian hackers trojanize webex zoom apps to push starland malware",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que se está utilizando un software trojanizado, lo que se relaciona con T1204."
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials no se menciona explícitamente, pero se puede inferir que se están robando credenciales."
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools se menciona la implementación de una nueva puerta trasera llamada Starland RAT, lo que se relaciona con esta técnica."
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1420,
+    "fecha": "2026-07-16T10:54:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware \"The Gentlemen\" evoluciona",
+    "resumen": "El grupo de ransomware \"The Gentlemen\" ha expandido sus operaciones mediante el uso de un nuevo backdoor personalizado, lo que les permite facilitar la recopilación de datos y mejorar sus tácticas de ataque, aumentando el riesgo de infecciones de ransomware y brechas de datos. Los vectores de ataque incluyen la explotación de vulnerabilidades y el uso de técnicas de ingeniería social para infiltrarse en sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxOTkyNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-grupo-de-ransomware-the-gentlemen-expande-sus-operaciones-con-nuevo-malware/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el grupo de ransomware the gentlemen expande sus operaciones con nuevo malware",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1419,
     "fecha": "2026-07-16T08:05:13Z",
     "categoria": "IA",
