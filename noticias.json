@@ -1,5 +1,149 @@
 [
   {
+    "id": 1461,
+    "fecha": "2026-07-17T21:47:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en rust-openssl",
+    "resumen": "Se ha identificado una vulnerabilidad en la biblioteca rust-openssl, específicamente en la función aes::unwrap_key(), que puede causar una escritura fuera de límites debido a una condición de aserción incorrecta, lo que puede ser explotado para realizar ataques de corrupción de memoria. La vulnerabilidad, identificada como CVE-2026-41678 con un puntaje CVSS de 8.1, ha sido corregida en la versión 0.10.78.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMjQ4NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-41678",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-41678",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-41678"
+      ]
+    }
+  },
+  {
+    "id": 1460,
+    "fecha": "2026-07-17T21:47:48Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Kimi K3 lidera Frontend Code Arena",
+    "resumen": "El modelo de inteligencia artificial chino Kimi K3, con 2,8 billones de parámetros, se ha colocado en el primer lugar de Frontend Code Arena, superando a modelos como Claude Fable 5 y GPT-5.6 Sol xHigh, lo que indica su capacidad para generar aplicaciones web con una experiencia de usuario cuidada y funcionalidad efectiva. Esto refleja el avance del ecosistema tecnológico chino en el desarrollo de modelos de IA avanzados.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298921-97bfd882ca90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMjQ4Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/nuevo-modelo-chino-kimi-k3-numero-uno-frontend-code-arena-esta-desatando-locura-internet",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el nuevo modelo chino kimi k3 ya es número uno en frontend code arena y está desatando una locura en internet",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "kimi.com",
+        "platform.instagram.com",
+        "www.kimi.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://artificialanalysis.ai/articles/kimi-k3-achieves-3-in-the-artificial-analysis-intelligence-index-comparable-to-opus-4-8-and-gpt-5-5",
+        "https://i.blogs.es/0b2868/demis-hassabis/375_142.jpeg",
+        "https://i.blogs.es/0d5ef6/kimi-k3/1024_2000.jpeg",
+        "https://i.blogs.es/1a47bb/kimi-k3-arena/1024_2000.jpeg",
+        "https://i.blogs.es/1a47bb/kimi-k3-arena/1366_2000.jpeg",
+        "https://i.blogs.es/1a47bb/kimi-k3-arena/450_1000.jpeg",
+        "https://i.blogs.es/1a47bb/kimi-k3-arena/650_1200.jpeg",
+        "https://i.blogs.es/918ecb/kimi-k3-macos/1024_2000.jpeg",
+        "https://i.blogs.es/918ecb/kimi-k3-macos/1366_2000.jpeg",
+        "https://i.blogs.es/918ecb/kimi-k3-macos/450_1000.jpeg",
+        "https://i.blogs.es/918ecb/kimi-k3-macos/650_1200.jpeg",
+        "https://i.blogs.es/cc03a9/kimi-proyectos-34-1-/1024_2000.jpeg",
+        "https://i.blogs.es/cc03a9/kimi-proyectos-34-1-/1366_2000.jpeg",
+        "https://i.blogs.es/cc03a9/kimi-proyectos-34-1-/450_1000.jpeg",
+        "https://i.blogs.es/cc03a9/kimi-proyectos-34-1-/650_1200.jpeg",
+        "https://platform.kimi.ai/docs/guide/kimi-k3-quickstart",
+        "https://www.kimi.com/",
+        "https://www.kimi.com/blog/kimi-k3",
+        "https://www.vals.ai/home"
+      ]
+    }
+  },
+  {
+    "id": 1459,
+    "fecha": "2026-07-17T21:47:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware explota vulnerabilidades zero-day en SonicWall",
+    "resumen": "Se han identificado dos vulnerabilidades zero-day en los dispositivos de acceso móvil SonicWall SMA que, cuando se combinan, permiten a los actores de amenazas obtener capacidades de nivel raíz, lo que facilita el ataque de ransomware. Los vectores de ataque aprovechan estas debilidades para comprometer la seguridad de la red.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMjQ4NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/inc-ransomware-exploits-sonicwall-sma-zero-days",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:inc ransomware exploits sonicwall sma zero days",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1458,
+    "fecha": "2026-07-17T21:47:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad wp2shell en WordPress",
+    "resumen": "Se ha descubierto una vulnerabilidad en el núcleo de WordPress, conocida como wp2shell, que permite a atacantes no autenticados ejecutar código en sitios web de WordPress a través de una solicitud HTTP anónima, afectando versiones 6.9 y 7.0 hasta la actualización a 6.9.5 y 7.0.2.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMjQ4NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new wp2shell wordpress core flaw lets unauthenticated attackers run code",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1457,
+    "fecha": "2026-07-17T21:47:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Incidentes cibernéticos en Abbott",
+    "resumen": "Abbott Laboratories investiga dos incidentes de ciberseguridad separados después de confirmar acceso no autorizado a sistemas internos de Exact Sciences en su negocio de Diagnóstico de Cáncer, y también investiga una reclamación separada de que atacantes comprometieron su portal LabCentral y robaron datos de la empresa. Los incidentes pueden implicar ataques de extorsión y robo de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMjQ4NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/abbott-laboratories-probes-two-cyber-incidents-amid-extortion-claims/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:abbott laboratories probes two cyber incidents amid extortion claims",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1456,
     "fecha": "2026-07-17T19:00:46Z",
     "categoria": "IA",
