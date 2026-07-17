@@ -1,5 +1,146 @@
 [
   {
+    "id": 1453,
+    "fecha": "2026-07-17T16:11:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad KNX CVE-2023-4346",
+    "resumen": "La vulnerabilidad CVE-2023-4346 (CVSS 7.5) afecta a dispositivos KNX con autorización de conexión y Opción 1, permitiendo a atacantes bloquear dispositivos y limitar el acceso de usuarios legítimos a través de redes o acceso físico. Los dispositivos pueden ser configurados con una clave BCU, pero su restablecimiento puede ser imposible sin la contraseña actual, lo que facilita el bloqueo por parte de atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMDQ2OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-4346",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-4346",
+    "ttps": [
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1490.001",
+        "name": "Block System Recovery"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials from Passwords"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-4346"
+      ]
+    }
+  },
+  {
+    "id": 1452,
+    "fecha": "2026-07-17T16:11:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Alertas de Seguridad",
+    "resumen": "El ISC Stormcast del 17 de julio de 2026 presenta un resumen de las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques emergentes, con un enfoque en la conciencia situacional para profesionales de ciberseguridad. Los temas abordados incluyen exploits de día cero, malware y técnicas de ataque avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMDQ2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33162",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for friday july 17th 2026 https isc sans edu podcastdetail 10012 fri jul 17th",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/10012,"
+      ]
+    }
+  },
+  {
+    "id": 1451,
+    "fecha": "2026-07-17T16:11:25Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Google contra ataques AI",
+    "resumen": "Google Cloud integra capacidades de Wiz en una plataforma de defensa agente para automatizar la detección y remediación de amenazas contra ataques de inteligencia artificial (AI), mejorando la seguridad contra ataques avanzados. La plataforma de defensa agente utiliza capacidades de automatización y aprendizaje automático (ML) para detectar y responder a amenazas de manera proactiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1779787819289-e292176abf69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMDQ2ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/google-bets-agentic-defense-strategy-outpace-attackers",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:google bets agentic defense strategy can outpace attackers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1450,
+    "fecha": "2026-07-17T16:11:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware Oculto en Imágenes SVG",
+    "resumen": "Actores de amenazas norcoreanos han utilizado esteganografía en archivos de imagen SVG para ocultar cargas maliciosas en una campaña que utiliza anuncios de empleo falsos y desafíos de codificación, entregando un payload de cuatro etapas alineado con OTTERCOOKIE, que incluye un ladrón de credenciales de navegador y billetera de criptomonedas, un ladrón de archivos y otros componentes maliciosos. El ataque se ejecuta a través de la ejecución de proyectos de codificación falsos, lo que permite a los atacantes obtener acceso a sistemas y datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMDQ2ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fake coding tests deliver ottercookie aligned malware hidden in svg flag images",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1449,
+    "fecha": "2026-07-17T16:11:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Ernst & Young",
+    "resumen": "Ernst & Young notifica a sus clientes sobre una brecha de datos causada por la comprometición de un sistema de tickets de soporte de terceros utilizado por su personal de TI, lo que puede haber expuesto información confidencial a través de un vector de ataque no especificado. La empresa está investigando el incidente y notificando a los afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMDQ2NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ernst young discloses data breach after support system hack",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unprivileged Cloud or Container Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1448,
     "fecha": "2026-07-17T13:18:45Z",
     "categoria": "Ciberseguridad",
@@ -2600,24 +2741,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-10668"
-      ]
-    }
-  },
-  {
-    "id": 1347,
-    "fecha": "2026-07-12T18:59:02Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Alertas de Seguridad",
-    "resumen": "El ISC Stormcast del 10 de julio de 2026 informa sobre las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques cibernéticos, como phishing y malware. Los profesionales de la seguridad deben estar al tanto de estas alertas para proteger sus sistemas y redes contra posibles ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4ODI3NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33142",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:isc stormcast for friday july 10th 2026 https isc sans edu podcastdetail 10002 fri jul 10th",
-    "ttps": [],
-    "iocs": {
-      "url": [
-        "https://isc.sans.edu/podcastdetail/10002,"
       ]
     }
   },
