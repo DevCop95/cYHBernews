@@ -1,5 +1,110 @@
 [
   {
+    "id": 1443,
+    "fecha": "2026-07-17T10:42:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de salto de directorio",
+    "resumen": "Se ha identificado una vulnerabilidad de salto de directorio (CVE-2025-67030) con un CVSS Score de 8.8 en el método extractFile de org.codehaus.plexus.util.Expand en plexus-utils, lo que permite a un atacante ejecutar código arbitrario mediante la explotación de esta vulnerabilidad en versiones anteriores a 6d780b3378829318ba5c2d29547e0012d5b29642. El vector de ataque implica la ejecución de código malicioso a través de la manipulación de la función extractFile.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyODQ5NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-67030",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-67030",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "6d780b3378829318ba5c2d29547e0012d5b29642"
+      ],
+      "cve": [
+        "CVE-2025-67030"
+      ]
+    }
+  },
+  {
+    "id": 1442,
+    "fecha": "2026-07-17T10:42:45Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Aplicaciones AI \"Nudify\" bajo escrutinio",
+    "resumen": "La Oficina del Fiscal de la Ciudad de San Francisco ha enviado cartas de cesar y desistir a Apple y Google para que eliminen 13 aplicaciones de \"intercambio de rostros\" que utilizan inteligencia artificial (IA) y que se utilizan principalmente para acosar a mujeres y niñas. Estas aplicaciones pueden ser consideradas un vector de ataque para el acoso y la violación de la privacidad digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1767716134895-296cbd7aec1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyODQ5NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/san-francisco-demands-apple-and-google-delete-ai-nudify-apps-from-app-stores/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:san francisco demands apple and google delete ai nudify apps from app stores",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1441,
+    "fecha": "2026-07-17T10:42:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "ACR Stealer Roba Tokens de Navegador",
+    "resumen": "El malware ACR Stealer, en circulación desde 2024, roba contraseñas de navegadores guardadas, tokens de sesión en vivo, PDFs, documentos de Microsoft 365 y archivos de carpetas sincronizadas de OneDrive y SharePoint, aprovechando la ejecución de comandos en la caja de ejecución (Run) de Windows. Los atacantes utilizan técnicas de ingeniería social, como ClickFix, para infiltrarse en las redes empresariales.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyODQ5NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/acr-stealer-uses-clickfix-lures-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:acr stealer uses clickfix lures to steal browser tokens and microsoft 365 files",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1440,
+    "fecha": "2026-07-17T10:42:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Informe Ciberseguridad 2026",
+    "resumen": "El informe de ESET revela el estado actual de la ciberseguridad en empresas latinoamericanas, destacando percepciones y preparación de las organizaciones frente a amenazas como phishing, ransomware y ataques de zero-day. La encuesta proporciona una visión general del panorama de ciberseguridad en la región.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyODQ5NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/informes/eset-security-report-2026-ciberseguridad-empresas-latinoamerica/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:eset security report 2026 el estado de la ciberseguridad en las empresas de latinoamérica",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1439,
     "fecha": "2026-07-17T05:37:31Z",
     "categoria": "Ciberseguridad",
