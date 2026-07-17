@@ -1,5 +1,109 @@
 [
   {
+    "id": 1448,
+    "fecha": "2026-07-17T13:18:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en kernel de Linux",
+    "resumen": "Se ha identificado una vulnerabilidad en el kernel de Linux (CVE-2024-58093) con una puntuación CVSS de 7.8, considerada como alta, que afecta la gestión de estados de enlace en la interfaz PCI/ASPM, lo que podría provocar problemas de memoria y posibles ataques de use-after-free. La vulnerabilidad se produce al eliminar funciones del bus correspondiente a un enlace determinado, lo que puede llevar a la liberación prematura o tardía de recursos, causando errores de segmentación de memoria (GPF) especialmente durante la desconexión en caliente de dispositivos PCIe.",
+    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyOTQzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-58093",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-58093",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-58093"
+      ]
+    }
+  },
+  {
+    "id": 1447,
+    "fecha": "2026-07-17T13:18:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Sistema de Cifrado de Voz de Alan Turing",
+    "resumen": "Se ha descubierto un sistema de cifrado de voz portátil llamado \"Delilah\" desarrollado por Alan Turing entre 1943 y 1945, que forma parte de una caché de documentos de la época de la guerra conocidos como los \"papeles Bayley\". El sistema Delilah es un ejemplo temprano de tecnología de cifrado de voz, y su descubrimiento proporciona una visión única en la historia de la criptografía y la seguridad de la comunicación.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyOTQzMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/details-of-alan-turings-voice-encryption-system.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:details of alan turing s voice encryption system",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "spectrum.ieee.org",
+        "www.bonhams.com"
+      ],
+      "url": [
+        "https://spectrum.ieee.org/alan-turings-delilah",
+        "https://www.bonhams.com/auction/28322/lot/45/turing-alan-the-delilah-project-the-papers-of-alan-turing-and-donald-bayley-relating-to-the-delilah-project/"
+      ]
+    }
+  },
+  {
+    "id": 1446,
+    "fecha": "2026-07-17T13:18:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Gold Eagle: Brecha de Seguridad",
+    "resumen": "La Casa Blanca ha lanzado Gold Eagle para coordinar la respuesta a vulnerabilidades en un mundo con nuevas tecnologías de Inteligencia Artificial (IA), pero aún existen dudas sobre su implementación y cómo abordará las brechas de seguridad en un entorno cada vez más complejo. La efectividad de Gold Eagle dependerá de su capacidad para abordar las vulnerabilidades de manera proactiva y coordinada, especialmente en relación con ataques cibernéticos y exploits de zero-day.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyOTQzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/gold-eagle-clearinghouse-targets-security-gap",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:gold eagle clearinghouse targets security gap but how is unclear",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1445,
+    "fecha": "2026-07-17T13:18:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "UE ordena a Google abrir Android",
+    "resumen": "La Comisión Europea ordenó a Google que permita a asistentes de IA rivales acceder a la cámara, micrófono y pantalla de Android, así como a utilizar una palabra de activación con la pantalla apagada y controlar otras aplicaciones en segundo plano, otorgando las mismas capacidades que tiene Gemini. Esto debe implementarse en la próxima versión mayor de Android, Android 18, antes del 1 de agosto de 2027.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyOTQzMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/eu-orders-google-to-open-android-mic.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:e u orders google to open android mic camera and screen to rival ai assistants",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1444,
+    "fecha": "2026-07-17T13:18:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Zero-day LegacyHive en Windows",
+    "resumen": "Un investigador de seguridad ha publicado un exploit zero-day llamado LegacyHive que permite a los atacantes escalar privilegios en sistemas Windows actualizados, otorgándoles privilegios de administrador. El vector de ataque aprovecha una vulnerabilidad en el sistema operativo para conceder acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyOTQzMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-windows-legacyhive-zero-day-exploit-grants-hackers-admin-access/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new windows legacyhive zero day gives hackers admin privileges",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1443,
     "fecha": "2026-07-17T10:42:51Z",
     "categoria": "Ciberseguridad",
