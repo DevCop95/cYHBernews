@@ -1,5 +1,97 @@
 [
   {
+    "id": 1438,
+    "fecha": "2026-07-17T02:12:07Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Advertencia de Demis Hassabis sobre IA",
+    "resumen": "Demis Hassabis, cofundador y consejero delegado de Google DeepMind, advierte que la aceleración en el desarrollo de la inteligencia artificial (IA) puede llevar a perder el control de esta tecnología, destacando la necesidad de mecanismos para contener sus riesgos. La industria de la IA está experimentando un crecimiento explosivo, con grandes inversiones en chips, servidores y centros de datos, lo que aumenta la complejidad y el potencial de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyNTQzMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/nadie-sabe-certeza-que-va-a-ocurrir-demis-hassabis-premio-nobel-advierte-riesgo-perder-control-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nadie sabe con certeza qué va a ocurrir demis hassabis premio nobel advierte del riesgo de perder el control de la ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blog.google/authors/demis-hassabis/",
+        "https://i.blogs.es/0b2868/demis-hassabis/1024_2000.jpeg",
+        "https://i.blogs.es/2680c6/demis-hassabis-mensaje/1024_2000.png",
+        "https://i.blogs.es/2680c6/demis-hassabis-mensaje/1366_2000.png",
+        "https://i.blogs.es/2680c6/demis-hassabis-mensaje/450_1000.png",
+        "https://i.blogs.es/2680c6/demis-hassabis-mensaje/650_1200.png",
+        "https://i.blogs.es/f90252/destacada/375_142.jpeg",
+        "https://youtu.be/dgBLVm2L1P4?si=Z5Bw_QRon2IWM2_x&t=2373"
+      ]
+    }
+  },
+  {
+    "id": 1437,
+    "fecha": "2026-07-17T02:12:00Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "IA Agentic: Riesgos sin precedentes",
+    "resumen": "La IA agentic plantea riesgos significativos para las organizaciones, obligando a replantear la seguridad y considerar nuevos vectores de ataque, más allá de los tradicionales ataques cibernéticos. Esto requiere una evaluación exhaustiva de la seguridad de la IA y su impacto en la infraestructura de la organización.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937659-9a2cc59a8a69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyNTQzMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/agentic-ai-untamable-ask-the-right-security-questions",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:agentic ai is untamable ask the right security questions",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1436,
+    "fecha": "2026-07-17T02:11:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque Ransomware a Fairlife",
+    "resumen": "Un ataque de ransomware ha afectado a Fairlife, una subsidiaria de Coca-Cola, interrumpiendo operaciones y suspendiendo temporalmente la producción de productos lácteos en Estados Unidos. El incidente de seguridad ha tenido un impacto significativo en la cadena de suministro de la empresa, destacando la importancia de la ciberseguridad en la industria alimentaria.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyNTQzMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:coca cola says fairlife ransomware attack halts us dairy production",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1435,
+    "fecha": "2026-07-17T02:11:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ransomware en España",
+    "resumen": "El informe anual \"State of Ransomware\" de Sophos revela que ocho de cada diez ataques de ransomware en España se originan a partir de identidades comprometidas, destacando la importancia de la seguridad de la identidad en la prevención de estos ataques. Los vectores de ataque se centran en la explotación de credenciales débiles o comprometidas, lo que subraya la necesidad de implementar medidas de autenticación robustas y monitoreo de identidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyNTQzMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/ocho-de-cada-diez-ataques-de-ransomware-en-espana-se-originan-a-partir-de-identidades-comprometidas/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:ocho de cada diez ataques de ransomware en españa se originan a partir de identidades comprometidas",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Valid Accounts: Use of Known Credentials"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1612",
+        "name": "Exploitation of Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1434,
     "fecha": "2026-07-16T22:00:21Z",
     "categoria": "Ciberseguridad",
