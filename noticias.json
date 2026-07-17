@@ -1,5 +1,68 @@
 [
   {
+    "id": 1456,
+    "fecha": "2026-07-17T19:00:46Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Amenaza AI por confianza ciega",
+    "resumen": "Los modelos de IA que interpretan y ejecutan comandos sin supervisión crítica eliminan la vigilancia de ciberseguridad, lo que puede permitir ataques como phishing o inyección de malware a través de la falta de validación de inputs. Esto puede tener un impacto significativo en la seguridad de la información, ya que los modelos de IA pueden ser utilizados para automatizar tareas sin la debida supervisión.",
+    "url_imagen": "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMTQ4NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/real-ai-threat-blind-trust",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:the real ai threat is blind trust",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1455,
+    "fecha": "2026-07-17T19:00:40Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Botnet NadMesh ataca servicios AI",
+    "resumen": "La botnet NadMesh, escrita en Go, busca servicios AI expuestos para obtener claves de AWS y tokens de Kubernetes, con un total de 3,811 claves únicas obtenidas según su propio panel de control, aprovechando herramientas como ComfyUI, Ollama y Gradio que no están adecuadamente protegidas. El ataque utiliza un harvester de Shodan para identificar objetivos vulnerables.",
+    "url_imagen": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMTQ4NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new nadmesh botnet hunts exposed ai services for cloud keys and kubernetes tokens",
+    "ttps": [
+      {
+        "id": "T1589",
+        "name": "Gather Actionable Information"
+      },
+      {
+        "id": "T1589.001",
+        "name": "Gather Victim Host Information"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1454,
+    "fecha": "2026-07-17T19:00:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad HollowByte",
+    "resumen": "La vulnerabilidad HollowByte permite a atacantes no autenticados desencadenar una condición de denegación de servicio (DoS) en servidores OpenSSL mediante una carga maliciosa de solo 11 bytes, lo que puede provocar un aumento significativo en el consumo de memoria del servidor. El vector de ataque es un paquete malicioso que explota la vulnerabilidad en OpenSSL.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMTQ4MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hollowbyte ddos flaw bloats openssl server memory with 11 byte payload",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1453,
     "fecha": "2026-07-17T16:11:37Z",
     "categoria": "Ciberseguridad",
