@@ -1,5 +1,33 @@
 [
   {
+    "id": 1466,
+    "fecha": "2026-07-18T07:41:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Joomla Page Builder CK",
+    "resumen": "Se ha detectado una vulnerabilidad de carga de archivos arbitrarios en Joomla Page Builder CK versión 3.5.10, lo que permite a atacantes subir archivos maliciosos al servidor, potencialmente llevando a ataques de ejecución remota de código. El vector de ataque se basa en la falta de validación adecuada de los archivos subidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNjA1MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52626",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps joomla page builder ck 3 5 10 arbitrary file upload",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1465,
+    "fecha": "2026-07-18T07:41:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackeo a Asociación del Fútbol Argentino",
+    "resumen": "La Asociación del Fútbol Argentino sufrió un ciberataque en el que una de sus cuentas institucionales fue utilizada sin autorización para difundir mensajes a periodistas, lo que sugiere un posible incidente de seguridad relacionado con phishing o acceso no autorizado a cuentas. El incidente ocurrió durante la Copa del Mundo, lo que podría indicar un intento de explotar la visibilidad mediática del evento.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNjA0OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/cibercrimen/ciberataque-afa-correos-no-autorizados-mundial-2026/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:un hackeo mundial el ciberataque a la asociación del fútbol argentino",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1464,
     "fecha": "2026-07-18T05:20:07Z",
     "categoria": "Ciberseguridad",
