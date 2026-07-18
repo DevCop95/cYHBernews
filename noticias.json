@@ -1,5 +1,54 @@
 [
   {
+    "id": 1468,
+    "fecha": "2026-07-18T10:15:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques de inyección de comandos evitados",
+    "resumen": "Los ataques de \"context bombing\" engañan a los agentes de IA maliciosos para que se detengan antes de causar daño, evitando así posibles incidentes de seguridad. Esto representa una técnica efectiva para contrarrestar las tácticas de los agentes autónomos maliciosos que intentan explotar vulnerabilidades en sistemas de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNjk3Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/prompt-injection-attacks-are-thwarting-ai-hacking-agents/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:prompt injection attacks are thwarting ai hacking agents",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1467,
+    "fecha": "2026-07-18T10:15:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware 2.0: DragonForce",
+    "resumen": "DragonForce evoluciona de una banda de ransomware a una plataforma criminal que permite a múltiples grupos lanzar ataques bajo sus propias marcas, potenciando el cibercrimen organizado con un nuevo modelo de negocio. Esto podría aumentar la frecuencia y variedad de ataques de ransomware, afectando a diversas organizaciones a través de vectores de ataque como phishing y exploits de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNjk3MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/cibercrimen/dragonforce-de-banda-a-cartel-ransomware-2026/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:de banda a plataforma criminal dragonforce redefine el negocio del ransomware en 2026",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Payload Delivery (Entrega de carga útil, en este caso, a través de phishing y exploits)"
+      },
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities (Desarrollo de capacidades, en este caso, la evolución de DragonForce como plataforma)"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1466,
     "fecha": "2026-07-18T07:41:40Z",
     "categoria": "Ciberseguridad",
