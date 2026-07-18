@@ -1,5 +1,54 @@
 [
   {
+    "id": 1470,
+    "fecha": "2026-07-18T13:04:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware en Steam",
+    "resumen": "Un juego llamado BlockBlasters en Steam resultó ser malware, utilizado para drenar criptomonedas, incluyendo un incidente notorio que afectó a un paciente con cáncer terminal. El malware se disfrazó de un juego legítimo para llevar a cabo ataques de criptojacking.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNzk4NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9156",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:maybe a year ago i don t remember a game appeared on steam called blockblasters blockblasters was actually malware",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion no se menciona explícitamente, pero se puede inferir T1496 como una forma de criptojacking que implica el uso de recursos del sistema para minar criptomonedas."
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking se menciona como criptojacking, pero también se puede considerar como T1496, por lo que se puede reemplazar con T1496 y agregar T1497 no es necesario, en su lugar se puede agregar"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1469,
+    "fecha": "2026-07-18T13:04:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Seguimiento de períodos vulnerado",
+    "resumen": "Las aplicaciones de seguimiento de períodos pueden estar recopilando y compartiendo datos personales sin consentimiento, lo que plantea preocupaciones sobre la privacidad digital y la seguridad de los usuarios, mientras que ciberespías rusos se enfocan en ataques a la infraestructura y se descubren brechas de seguridad en generadores de música AI.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNzk4NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-news-this-week-your-period-tracker-is-probably-spying-on-you/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:your period tracker is probably spying on you",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1468,
     "fecha": "2026-07-18T10:15:28Z",
     "categoria": "Ciberseguridad",
