@@ -1,5 +1,19 @@
 [
   {
+    "id": 1464,
+    "fecha": "2026-07-18T05:20:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en Langflow",
+    "resumen": "Se ha detectado una vulnerabilidad de ejecución de código remoto (RCE) en la versión 1.9.0 de Langflow, lo que permite a un atacante ejecutar código arbitrario en el sistema afectado, potencialmente a través de un vector de ataque como un exploit específico. Esto podría tener un impacto significativo en la seguridad de los sistemas que utilizan Langflow, especialmente si se utiliza en entornos de desarrollo o producción de aplicaciones web.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNTIwMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52627",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps langflow 1 9 0 rce",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1463,
     "fecha": "2026-07-18T02:01:55Z",
     "categoria": "Ciberseguridad",
