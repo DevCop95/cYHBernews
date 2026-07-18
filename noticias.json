@@ -1,5 +1,58 @@
 [
   {
+    "id": 1474,
+    "fecha": "2026-07-18T21:45:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña FortiBleed vinculada a INC y Lynx",
+    "resumen": "La campaña FortiBleed ha sido rastreada hasta las operaciones de ransomware INC y Lynx, donde una vulnerabilidad en Nextcloud parece haber sido utilizada como parte de su flujo de trabajo operativo para expandirse o acceder a infraestructuras después de una compromisión inicial. Esto sugiere un vector de ataque que combina explotación de vulnerabilidades con tácticas de ransomware para maximizar el impacto.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0MTExMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114040",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:fortibleed campaign traced to inc and lynx ransomware operations the nextcloud issue appears to have been used as pa",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1473,
+    "fecha": "2026-07-18T21:45:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-34963",
+    "resumen": "Se ha identificado una vulnerabilidad de seguridad en la versión de barebox anterior a 2026.04.0, con un CVSS Score de 8.4, que permite a un atacante ejecutar código en el contexto del bootloader mediante un EFI PE binario malicioso, aprovechando un desbordamiento de pila o lectura fuera de límites en la memoria del heap. Los vectores de ataque incluyen TFTP, USB, tarjetas SD y arranque en red.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0MTExMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-34963",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-34963",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Unintended Proxy"
+      },
+      {
+        "id": "T1072",
+        "name": "Software Deployment Tools"
+      },
+      {
+        "id": "T1091",
+        "name": "Replication Through Removable Media"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-34963"
+      ]
+    }
+  },
+  {
     "id": 1472,
     "fecha": "2026-07-18T18:56:35Z",
     "categoria": "Ciberseguridad",
