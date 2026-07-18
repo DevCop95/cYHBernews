@@ -1,5 +1,44 @@
 [
   {
+    "id": 1471,
+    "fecha": "2026-07-18T15:51:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-16123",
+    "resumen": "Se ha identificado una debilidad en nextlevelbuilder GoClaw hasta la versión 3.13.2, que afecta la función ToolsInvokeHandler.ServeHTTP y causa una falta de autorización, permitiendo ataques remotos. La explotación de esta vulnerabilidad ya está disponible públicamente y podría ser utilizada para lanzar ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzODk5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/206257",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-16123",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material (no se menciona explícitamente, pero se infiere que la falta de autorización podría permitir a un atacante utilizar credenciales no autorizadas)"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-16123"
+      ]
+    }
+  },
+  {
     "id": 1470,
     "fecha": "2026-07-18T13:04:30Z",
     "categoria": "Ciberseguridad",
