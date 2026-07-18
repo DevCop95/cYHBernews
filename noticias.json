@@ -1,5 +1,75 @@
 [
   {
+    "id": 1463,
+    "fecha": "2026-07-18T02:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenaza Malware",
+    "resumen": "El malware representa una amenaza significativa para la ciberseguridad, permitiendo a los atacantes acceder, controlar o dañar sistemas informáticos a través de vectores de ataque como phishing, exploits de vulnerabilidades y descargas de software malicioso. El impacto puede variar desde el robo de datos hasta la parálisis de servicios críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNDAxMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9154",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:malware",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1462,
+    "fecha": "2026-07-18T02:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Proxies Residenciales \"Limpios\" para Carding",
+    "resumen": "Los ciberdelincuentes buscan proxies residenciales \"limpios\" para combinarlos con huellas digitales de navegador, perfiles de dispositivo y otros señales de identidad para evadir sistemas de detección de fraude modernos, ya que los proxies residenciales ya no son efectivos por sí solos para el carding. Esto indica un aumento en la sofisticación de los ataques de phishing y fraude en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNDAxMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/inside-the-search-for-clean-residential-proxies-for-carding/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:inside the search for clean residential proxies for carding",
+    "ttps": [
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning (no se menciona explícitamente, pero se infiere que los ciberdelincuentes necesitan escanear y buscar proxies residenciales \"limpios\")"
+      },
+      {
+        "id": "T1615",
+        "name": "Compromise of Client Application (no se menciona explícitamente, pero se infiere que los ciberdelincuentes"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1461,
     "fecha": "2026-07-17T21:47:53Z",
     "categoria": "Ciberseguridad",
