@@ -1,5 +1,58 @@
 [
   {
+    "id": 1477,
+    "fecha": "2026-07-19T05:46:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque de cadena de suministro en Vite",
+    "resumen": "Investigadores de ciberseguridad han descubierto siete paquetes npm maliciosos que apuntan a la herramienta Vite, utilizando una infraestructura de comando y control (C2) basada en blockchain para entregar un software malicioso de acceso remoto (RAT). El ataque, denominado ViteVenom, es una expansión de la campaña ChainVeil, que utiliza una infraestructura C2 de cuatro niveles sin precedentes que abarca blockchain como Tron.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NDAwMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:seven malicious vite npm packages use blockchain c2 to deliver a rat",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1476,
+    "fecha": "2026-07-19T05:46:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-16215",
+    "resumen": "Se ha descubierto una vulnerabilidad de seguridad en geex-arts django-jet versión 1.0.8, que afecta la función de revocación de credenciales OAuth, permitiendo una manipulación remota que conduce a una falta de autorización. La explotación de esta vulnerabilidad ya ha sido publicada y puede ser utilizada para ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NDAwMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/206326",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-16215",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (no se menciona explícitamente, pero se infiere que la vulnerabilidad afecta la función de revocación de credenciales OAuth)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-16215"
+      ]
+    }
+  },
+  {
     "id": 1475,
     "fecha": "2026-07-19T02:12:56Z",
     "categoria": "IA",
