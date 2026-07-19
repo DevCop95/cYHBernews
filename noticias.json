@@ -1,5 +1,122 @@
 [
   {
+    "id": 1479,
+    "fecha": "2026-07-19T08:09:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Grupo GoldenEyeDog vinculado a brecha",
+    "resumen": "Investigadores de ciberseguridad han atribuido el incidente de seguridad de DigiCert en abril de 2026 a un grupo de amenazas llamado CylindricalCanine, un subgrupo de GoldenEyeDog, conocido por atacar a los sectores de juegos y apuestas, y se cree que ha robado certificados de firma de código. El grupo utiliza tácticas avanzadas para infiltrarse en las redes de sus objetivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NDg1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:goldeneyedog subgroup linked to digicert breach and code signing certificate theft",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials: Certificates"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1478,
+    "fecha": "2026-07-19T08:08:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Blind Quantum Computing",
+    "resumen": "La Computación Cuántica como Servicio (QCaaS) requiere un entorno de privacidad para proteger los algoritmos que se ejecutan en la nube, lo que se logra a través de tecnologías como Blind Quantum Computing (BQC), que proporciona un límite criptográfico para la computación cuántica delegada, mejorando la seguridad en servicios cloud. Las soluciones actuales basadas en Post-Quantum Cryptography (PQC) y Trusted Execution Environments (TEE) son prácticas y necesarias, pero siguen requiriendo un cierto grado de confianza en el proveedor.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NDg1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/blind-quantum-computing-y-4.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:blind quantum computing y 4",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "arxiv.org",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.linkedin.com",
+        "www.mypublicinbox.com",
+        "www.researchgate.net"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://arxiv.org/pdf/0807.4154",
+        "https://arxiv.org/pdf/2206.13330",
+        "https://arxiv.org/pdf/2305.02936",
+        "https://arxiv.org/pdf/2306.05195",
+        "https://arxiv.org/pdf/2407.09310",
+        "https://arxiv.org/pdf/2410.24133",
+        "https://arxiv.org/pdf/2503.09099",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL_X-mEVlRmPjMH6IHJxljYVaxR8PR4lOJZQi8G-fqWvrXQXJKrm5O8e1uAtFBPm3aGHoUptcvBCAjPbRgX9Ez0JWT7nHpDYyKDvahB4xjdL0oI6tIlRZNNKe94ya2Qzqpu1ZX6hRHsa0V4KpEsHXSR1tu4qw2R8_GIFH16dlWJC78Ojnx_ssS/w628-h640/BQC_42.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXeJI6pCKTlAtJxB_fWZlLKa2AHJPde9Fp6D6dfv17KPnxD3PdQ1P3WdO3NDOiYuBoCMGnHJ_WnVcnD2kPt3_SjNj3AYLc5HkRLttSPfbqU1GZKZ0oBs-yPuzYncQqgq3qNwZUrRr0v14upfA4xKirnmLWRCK0sTBOYDPuP_W554BaXp1yNQbV/w640-h584/BQC10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW8iN2_2qudtyXi200QqSY9hb9s8SSLDm5oREy9WdN7igveMTXsn_5kd9FnALE8SiU8cF40-P-NFhG-7FnHkvprKFVo-PXsAEs62YUhi48uAHhHsYziHsBWK0NbliJhbkq2dXhZfzwbX7Cqo-p6vrPsBpcHJ0brvIwSlqUuc-S5CN_CCL56dzz/s1922/BQC_24.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW8iN2_2qudtyXi200QqSY9hb9s8SSLDm5oREy9WdN7igveMTXsn_5kd9FnALE8SiU8cF40-P-NFhG-7FnHkvprKFVo-PXsAEs62YUhi48uAHhHsYziHsBWK0NbliJhbkq2dXhZfzwbX7Cqo-p6vrPsBpcHJ0brvIwSlqUuc-S5CN_CCL56dzz/w640-h428/BQC_24.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihD6AQkUZofisQi4sGwRwbmdeRXsiKWR_zpERVPgVfOf0MkRDVQPajtqQPndnKjeT425J2lIl5am8jw51cW50TGwb7B7moZrns10cbHmx8zB4AhrhqRCpq3XJ3ZD3nzglJJTUZeKbznKYitFRYaT2_hu8uhPsXy1yNQSlIbvCOIknbuJ4xqb5G/s940/BQC_40.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihD6AQkUZofisQi4sGwRwbmdeRXsiKWR_zpERVPgVfOf0MkRDVQPajtqQPndnKjeT425J2lIl5am8jw51cW50TGwb7B7moZrns10cbHmx8zB4AhrhqRCpq3XJ3ZD3nzglJJTUZeKbznKYitFRYaT2_hu8uhPsXy1yNQSlIbvCOIknbuJ4xqb5G/w640-h358/BQC_40.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitjqOxQZOtva9Jj1mWziHizfHpjqRZc29830s7KTHFdeUhZkz_QoXCuLdfmKWSZIZIPkI64qpCfjePERlR2e57fD1hrZpZMkTVe7P-nzrVRJIkPgi2KIGx9ZLJUldz7TgPl4IHxUBeRSBgynCwhsD4-74xYi3GOAzPLC_nlDMD1OXG04XEdK0e/s1644/Jose_Antonio_Castellano_Prado.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitjqOxQZOtva9Jj1mWziHizfHpjqRZc29830s7KTHFdeUhZkz_QoXCuLdfmKWSZIZIPkI64qpCfjePERlR2e57fD1hrZpZMkTVe7P-nzrVRJIkPgi2KIGx9ZLJUldz7TgPl4IHxUBeRSBgynCwhsD4-74xYi3GOAzPLC_nlDMD1OXG04XEdK0e/w640-h453/Jose_Antonio_Castellano_Prado.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9Z_FJTi9SB2BrsUq8Bm0prhkAx5DxuTCxPqsQ29c2Fd8IJu9FlQAYfd8d__2ES-B0EdsrEi1J4oLeQqsy1TipfHs4Bxo2n2a7hjETfIvScbwSS4iYxIwFfqqUcycoCxVEvxoYGtQ1Fiycp6kXlxShE_5pQlrTP05sOAH-WHGETI6PKtQ3ypXz/w640-h486/BQC_43.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD_NyGrrfRZCWqLdMKtjGIY8RfWR5odRIwaDhFeS0VXqGb0R9oeuQaQ8PX0u-DO4mgV9tJ9gaklZdPNu9gbdM9EAHmNPX7m1jviIw68dqdTZqccP_T9mhzddLgxElYm3NFnw8-YSN14DC3dbwS4PDKO8bsfJ23Rl6LX1lhcMeopFZJmKCW21oG/w530-h640/BQC13.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjonM6IQev6AzSJaNGkDnrI6wKqaGJZjc1YUPaOtykxXBLNoK3DWFhpKT46843SosbJjMJ3B86qABvlxgHK3FgwN-Qp_3MpuMiOpI9L8yM5enS5xQrAgZ093V4Zb2J4X1lKLoODRcTwJipHTT_7ETpqR7Yv6acRWmGdhVovE_UCgXR3U1EgHt0Q/w640-h384/q0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrDewCmBeqdusNqujrQ9on_66px3UzUv7OOrm_KWiM-pIqDu4WE24n98BRhCiioWOzadHlLleq-MJwleVJ5T2YXj6DWM7ihqTB3w67FOGB6F3FzpgCn3g9chsHaqqEWICk44zj74KiVKDkfql7Zhw-_UVWhYHRxZyvhAtZPFuCGGli9iibuj7I/s1542/BQC_41.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrDewCmBeqdusNqujrQ9on_66px3UzUv7OOrm_KWiM-pIqDu4WE24n98BRhCiioWOzadHlLleq-MJwleVJ5T2YXj6DWM7ihqTB3w67FOGB6F3FzpgCn3g9chsHaqqEWICk44zj74KiVKDkfql7Zhw-_UVWhYHRxZyvhAtZPFuCGGli9iibuj7I/w492-h640/BQC_41.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://digibuo.uniovi.es/dspace/bitstream/handle/10651/71437/TFG_NachoTu%C3%B1onRubio%202.pdf",
+        "https://elladodelmal.com",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.elladodelmal.com/2018/06/quantum-cryptography-una-comunicacion.html",
+        "https://www.elladodelmal.com/2022/12/quantum-computing-cybersecurity.html",
+        "https://www.elladodelmal.com/2023/01/factorizacion-de-rsa-con-un-optimizador.html",
+        "https://www.elladodelmal.com/2025/04/hamming-quasi-cyclic-hqc-kem-nuevo-key.html",
+        "https://www.elladodelmal.com/2025/05/frodokem-un-key-encapsulation-mechanism.html",
+        "https://www.elladodelmal.com/2025/08/la-gran-busqueda-de-numeros-primos-de.html",
+        "https://www.elladodelmal.com/2025/09/como-acelerar-los-algoritmos-de.html",
+        "https://www.elladodelmal.com/2025/10/premio-nobel-en-fisica-2025-el-trabajo.html",
+        "https://www.elladodelmal.com/2025/10/un-reloj-atomico-optico-del-mit-con.html",
+        "https://www.elladodelmal.com/2025/11/algoritmo-cuantico-de-grover-un.html",
+        "https://www.elladodelmal.com/2025/11/cuanto-del-trafico-en-internet-funciona.html",
+        "https://www.elladodelmal.com/2025/12/bitcoin-vs-quantum-computers-hora-de.html",
+        "https://www.elladodelmal.com/2025/12/dyber-hardware-accelerated-post-quantum.html",
+        "https://www.elladodelmal.com/2025/12/el-white-paper-de-mastercard-que-urge.html",
+        "https://www.elladodelmal.com/2025/12/quantum-sensors-cuando-lo-invisible-se.html",
+        "https://www.elladodelmal.com/2026/01/como-ser-quantum-safe-y-desplegar-post.html",
+        "https://www.elladodelmal.com/2026/02/quantum-gps-navegacion-con-gps.html",
+        "https://www.elladodelmal.com/2026/03/alaniz-cipher-un-cifrado-simetrico.html",
+        "https://www.elladodelmal.com/2026/03/como-comprobar-si-un-web-site-is.html",
+        "https://www.elladodelmal.com/2026/05/los-papers-academicos-de-los-algoritmos.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-2.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-3.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-y-4.html",
+        "https://www.researchgate.net/publication/386883366_Post-Quantum_Algorithms_on_ARM_Trusted_Execution_Environment_TEE_findings_of_this_industrial_challenge"
+      ]
+    }
+  },
+  {
     "id": 1477,
     "fecha": "2026-07-19T05:46:59Z",
     "categoria": "Ciberseguridad",
