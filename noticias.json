@@ -1,5 +1,93 @@
 [
   {
+    "id": 1493,
+    "fecha": "2026-07-19T21:47:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades RCE en WordPress",
+    "resumen": "Se han publicado exploits para las vulnerabilidades de ejecución de código remoto (RCE) \"wp2shell\" en WordPress Core, lo que permite a los atacantes ejecutar código arbitrario en sitios web vulnerables, por lo que es crucial aplicar parches de seguridad de inmediato para prevenir ataques de ransomware y otros tipos de malware. Los administradores deben actualizar sus sitios web lo antes posible para evitar la explotación de estas vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0OTc2MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/wordpress-core-wp2shell-rce-flaws-get-public-exploits-patch-now/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:wordpress core wp2shell rce flaws get public exploits patch now",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1492,
+    "fecha": "2026-07-19T21:47:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Keras",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-12484) en la versión 3.15.0 de keras-team/keras que permite la deserialización insegura de datos PyTorch pickle controlados por un atacante a través del método `keras.layers.TorchModuleWrapper.from_config`, lo que puede conducir a la ejecución arbitraria de código si se procesan configuraciones de capas Keras no confiables. La vulnerabilidad se debe a la falta de prácticas de deserialización seguras a menos que se active explícitamente el modo seguro de Keras.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0OTc2MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/206777",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-12484",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-12484"
+      ]
+    }
+  },
+  {
+    "id": 1491,
+    "fecha": "2026-07-19T21:46:57Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ciberataques con IA: 91% de empresas temen",
+    "resumen": "El 91% de las empresas teme ser víctimas de ciberataques impulsados por inteligencia artificial, lo que refleja una creciente preocupación por la seguridad digital ante el aumento de las amenazas. Las organizaciones deben incrementar sus medidas de protección para contrarrestar el crecimiento de ataques como phishing, malware y ransomware que pueden ser potenciados por la IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1764336312138-14a5368a6cd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0OTc2MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-91-de-las-empresas-teme-los-ciberataques-impulsados-por-inteligencia-artificial/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el 91 de las empresas teme los ciberataques impulsados por inteligencia artificial",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1490,
     "fecha": "2026-07-19T18:59:13Z",
     "categoria": "IA",
