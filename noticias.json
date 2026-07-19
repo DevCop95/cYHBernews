@@ -1,5 +1,66 @@
 [
   {
+    "id": 1484,
+    "fecha": "2026-07-19T13:06:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-63836 en Linux",
+    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux, específicamente en el módulo batman-adv, que podría provocar una división por cero debido a un error en la aritmética de 32 bits sin firmar en la función batadv_tp_update_cwnd(). El error se produce cuando el valor de cwnd es máximo, lo que causa un desbordamiento y una división por cero. La solución implica simplificar la ecuación para evitar el desbordamiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NjY0MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/206427",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-63836",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-63836"
+      ]
+    }
+  },
+  {
+    "id": 1483,
+    "fecha": "2026-07-19T13:06:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en RustDesk Server Pro",
+    "resumen": "Se ha identificado una vulnerabilidad de transmisión en texto claro de información sensible en RustDesk Server Pro, con un CVSS Score de 7.5, que permite ataques de sniffing en los módulos de API de sincronización de libreta de direcciones, afectando versiones hasta la 1.7.5. La vulnerabilidad se asocia con la gestión de la sincronización de latidos y rutinas de programa, permitiendo el acceso no autorizado a información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NjY0MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-30796",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-30796",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-30796"
+      ]
+    }
+  },
+  {
+    "id": 1482,
+    "fecha": "2026-07-19T13:06:38Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Meta: 20 meses para adaptar infraestructura a agentes IA",
+    "resumen": "La infraestructura de Meta, construida durante 20 años para humanos, puede colapsar debido al crecimiento explosivo de los agentes de IA, que se han multiplicado por 30 en seis meses, lo que plantea desafíos en capacidad, identidad y velocidad. El vicepresidente de ingeniería de Meta, Barak Yagour, advierte que la empresa tiene solo 20 meses para reconstruir su infraestructura y adaptarla a un mundo donde humanos y agentes colaboran a gran escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1689443111384-1cf214df988a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NjYzOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/meta-avisa-llevamos-20-anos-construyendo-infraestructura-para-humanos-quizas-tengamos-20-meses-para-reconstruirlo-para-agentes",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:meta avisa llevamos 20 años construyendo infraestructura para humanos quizás tengamos 20 meses para reconstruirla para los agentes",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "venturebeat.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3aeba0/cafeteria-robot/375_142.jpeg",
+        "https://i.blogs.es/4b6129/meta-agentes/1024_2000.jpeg",
+        "https://venturebeat.com/data/we-have-maybe-20-months-to-rebuild-for-ai-agents-metas-infrastructure-vp-tells-vb-transform-2026"
+      ]
+    }
+  },
+  {
     "id": 1481,
     "fecha": "2026-07-19T10:23:13Z",
     "categoria": "Ciberseguridad",
