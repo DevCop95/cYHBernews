@@ -1,5 +1,37 @@
 [
   {
+    "id": 1481,
+    "fecha": "2026-07-19T10:23:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Carrera por Autonomía Militar",
+    "resumen": "Las fuerzas militares están bajo presión para desplegar capacidades autónomas a un ritmo sin precedentes, con nuevas inversiones y estrategias de defensa en los Estados Unidos, Reino Unido y la OTAN, lo que plantea desafíos para la infraestructura de información de confianza. La adopción de tecnologías de inteligencia artificial (IA) y aprendizaje automático (ML) en sistemas autónomos militares aumenta la necesidad de garantizar la seguridad y confiabilidad de la información.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NTY1OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/the-race-to-field-military-autonomy-is.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:the race to field military autonomy is on can trusted information infrastructure keep pace",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1480,
+    "fecha": "2026-07-19T10:23:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Linux CVE-2026-53372",
+    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux (CVE-2026-53372) relacionada con la gestión de PASID en iommu/vt-d, que podría permitir la pérdida de páginas sucias en dominios anidados con seguimiento de suciedad configurado. El vector de ataque se centra en la falta de soporte para seguimiento de suciedad en dominios anidados adjuntos a PASID.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NTY1ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/206347",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-53372",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-53372"
+      ]
+    }
+  },
+  {
     "id": 1479,
     "fecha": "2026-07-19T08:09:01Z",
     "categoria": "Ciberseguridad",
