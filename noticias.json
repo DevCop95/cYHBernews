@@ -1,5 +1,146 @@
 [
   {
+    "id": 1489,
+    "fecha": "2026-07-19T15:54:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-63874 en Linux",
+    "resumen": "Se ha resuelto una vulnerabilidad de carrera en el núcleo de Linux, específicamente en el módulo MCTP USB, que podría permitir la reprogramación de trabajos pendientes después de una parada, lo que podría llevar a una situación de carrera entre la finalización de una operación USB y la cancelación de un trabajo de reintentos. La solución implica el uso de un nuevo bloqueo para asegurar la secuencia entre la parada y la cancelación de trabajos pendientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NzY0NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/206469",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-63874",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-63874"
+      ]
+    }
+  },
+  {
+    "id": 1488,
+    "fecha": "2026-07-19T15:53:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en OpenShift Router",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-46579) en el OpenShift Router con un CVSS Score de 7.4, que permite a un atacante no autenticado enviar solicitudes HTTP con encabezados `X-SSL-Client-` manipulados, lo que puede permitir eludir la autenticación de TLS mutua en los backends que confían en estos encabezados. Esto puede permitir al atacante suplantar identidades de certificados de cliente.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NzY0MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-46579",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-46579",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-46579"
+      ]
+    }
+  },
+  {
+    "id": 1487,
+    "fecha": "2026-07-19T15:53:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en Hikvision",
+    "resumen": "Se han detectado escaneos de internet a gran escala que buscan explotar vulnerabilidades en la API de Seguridad Inteligente de Hikvision, lo que podría permitir ataques de ciberseguridad contra cámaras de vigilancia. Los vectores de ataque incluyen exploits de vulnerabilidades conocidas y desconocidas en los dispositivos de Hikvision.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NzY0MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33164",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:scans for hikvision intelligent security api sun jul 19th",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no se menciona explícitamente, pero se puede inferir que los atacantes buscan explotar vulnerabilidades, por lo que se puede considerar:"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1486,
+    "fecha": "2026-07-19T15:53:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "UAC-0145 Infecta Dispositivos Ucranianos",
+    "resumen": "Actores de amenaza patrocinados por el estado ruso, específicamente UAC-0145, están utilizando la estrategia ClickFix para engañar a objetivos ucranianos y infectar sus dispositivos con malware que roba datos, aprovechando técnicas de ingeniería social como CAPTCHAs para bypassar medidas de seguridad. El vector de ataque implica el autoinfectado de los dispositivos por parte de los usuarios, lo que resalta la importancia de la conciencia sobre la seguridad en el ciberespacio.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NzY0MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/uac-0145-uses-clickfix-captchas-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:uac 0145 uses clickfix captchas to infect ukrainian devices wih malware",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1189",
+        "name": "Crear o modificar sistema de cuenta"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1485,
+    "fecha": "2026-07-19T15:53:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque a agencias gubernamentales rusas",
+    "resumen": "Un actor de amenaza avanzado está explotando el mecanismo de actualización del software ViPNet para atacar a organizaciones rusas, incluidas agencias gubernamentales, lo que sugiere un vector de ataque dirigido a través de la cadena de suministro. El ataque aprovecha la confianza en el software legítimo para infiltrarse en los sistemas objetivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ0NzY0MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-abuse-vipnet-software-to-target-russian-govt-agencies/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers abuse vipnet software to target russian govt agencies",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1484,
     "fecha": "2026-07-19T13:06:50Z",
     "categoria": "Ciberseguridad",
