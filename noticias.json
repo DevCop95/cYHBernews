@@ -1,5 +1,111 @@
 [
   {
+    "id": 1499,
+    "fecha": "2026-07-20T06:13:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-1784 en OpenShift",
+    "resumen": "Se ha descubierto una vulnerabilidad en el recurso Route de OpenShift, que permite la inyección controlada de configuración de HAProxy a través de la stanza spec.path en un documento Route, lo que podría permitir ataques de inyección de código malicioso. La vulnerabilidad se debe a comprobaciones insuficientes en la configuración de rutas.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1MjgwMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/206808",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-1784",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-1784"
+      ]
+    }
+  },
+  {
+    "id": 1498,
+    "fecha": "2026-07-20T06:13:20Z",
+    "categoria": "Tech",
+    "severidad": "MEDIA",
+    "titulo": "ClickFix evita uBlock",
+    "resumen": "Se ha detectado un sitio web comprometido que utiliza ClickFix, una carga útil que logra evadir uBlock mediante el uso de LOLBINs (Living Off The Land Binaries) y un servidor WebDAV, aunque el servidor de comando y control (C2) está inactivo. Esto sugiere una técnica de ataque sofisticada que aprovecha vulnerabilidades en la configuración de seguridad de los navegadores y los firewalls.",
+    "url_imagen": "https://images.unsplash.com/photo-1770169272345-9636d5ef2681?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1MjgwMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9169",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:found a compromised website with clickfix that successfully bypasses ublock the clickfix payload uses lolbins and us",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218.001",
+        "name": "Exploitation for Client Execution (no se menciona explícitamente, pero se infiere el uso de vulnerabilidades)"
+      },
+      {
+        "id": "T1574.002",
+        "name": "Using System Utilities: LOLBINs (Living Off The Land Binaries)"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1497,
+    "fecha": "2026-07-20T06:13:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux Kernel",
+    "resumen": "Se ha identificado una vulnerabilidad en el núcleo de Linux (CVE-2026-52968) con una puntuación CVSS de 8.8, que permite accesos fuera de límites en la tabla GAIT debido a un error de aritmética de punteros, afectando la estabilidad y seguridad del sistema. La vulnerabilidad se produce en la indexación manual de la tabla GAIT en las funciones kvm_s390_pci_aif_enable(), kvm_s390_pci_aif_disable() y aen_host_forward().",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1Mjc5OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-52968",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-52968",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-52968"
+      ]
+    }
+  },
+  {
+    "id": 1496,
+    "fecha": "2026-07-20T06:13:07Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Hugging Face Breachada por Agente AI",
+    "resumen": "La plataforma de inteligencia artificial (IA) de código abierto Hugging Face fue víctima de un ataque perpetrado por un agente autónomo de IA, que logró acceder a un conjunto limitado de conjuntos de datos internos y credenciales. El incidente afectó la infraestructura de producción de la empresa y fue detectado y respondido la semana pasada.",
+    "url_imagen": "https://images.unsplash.com/photo-1696258686286-1191184126aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1Mjc5ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:world s largest ai model repository hugging face breached by autonomous ai agent",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1495,
     "fecha": "2026-07-20T02:33:41Z",
     "categoria": "Ciberseguridad",
