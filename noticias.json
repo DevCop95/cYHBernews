@@ -1,5 +1,101 @@
 [
   {
+    "id": 1503,
+    "fecha": "2026-07-20T11:41:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Exponiendo secretos de vigilancia",
+    "resumen": "La Unión Americana de Libertades Civiles (ACLU) ha lanzado una herramienta para abogados en Massachusetts para exponer los secretos de vigilancia estatal, incluyendo tecnologías como reconocimiento facial y informes policiales generados por IA. Esta iniciativa busca transparentar el uso de estas tecnologías en la construcción de casos criminales.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NDc2NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/the-aclu-is-arming-lawyers-to-expose-state-surveillance-secrets/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the aclu is arming lawyers to expose state surveillance secrets",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1502,
+    "fecha": "2026-07-20T11:41:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Error en Flock: Cámaras de seguimiento de matrículas",
+    "resumen": "Un error en el sistema de seguimiento de matrículas de Flock, que utiliza tecnología de aprendizaje automático (ML), llevó a la identificación errónea y persecución de un vehículo debido a una matrícula mal registrada, lo que destaca la importancia de la precisión en la entrada de datos y la verificación en los sistemas de seguridad. El incidente también revela que la red de cámaras de Flock se utiliza para rastrear a personas, no solo vehículos, lo que plantea preocupaciones sobre la privacidad y el uso de la tecnología de vigilancia.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NDc2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/on-flock-license-plate-tracking-cameras.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:on flock license plate tracking cameras",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "gizmodo.com",
+        "www.404media.co",
+        "www.cleveland.com",
+        "www.thedrive.com"
+      ],
+      "url": [
+        "https://archive.ph/k4E8q",
+        "https://gizmodo.com/flocks-ceo-is-sorry-for-calling-privacy-activists-terrorists-2000787247",
+        "https://www.404media.co/how-cops-use-flock-to-track-people-not-cars/",
+        "https://www.cleveland.com/news/2026/07/ohio-audit-flags-unusual-police-database-searches.html",
+        "https://www.thedrive.com/news/how-flock-cameras-wrongly-tracked-me-for-days-over-stolen-plates-and-sent-police-after-me",
+        "https://www.thedrive.com/news/inside-the-flock-dragnet-how-systemic-errors-led-to-police-ambushing-me-for-no-reason"
+      ]
+    }
+  },
+  {
+    "id": 1501,
+    "fecha": "2026-07-20T11:41:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en 7-Zip",
+    "resumen": "Se ha descubierto una vulnerabilidad en 7-Zip, identificada como CVE-2026-14266, que permite a un atacante ejecutar código en la máquina del usuario al abrir un archivo XZ malicioso, aprovechando un desbordamiento de búfer basado en la pila en el procesamiento de datos XZ. La vulnerabilidad ya ha sido parcheada en la versión 7-Zip 26.02.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NDc2NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-14266",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Credential Access no aplica en este caso, pero si T1068 - Exploitation for Privilege Escalation no aplica, pero si"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14266"
+      ]
+    }
+  },
+  {
+    "id": 1500,
+    "fecha": "2026-07-20T11:40:54Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Intrusión en Hugging Face",
+    "resumen": "Hugging Face informa de una intrusión en su infraestructura de producción iniciada por un dataset malicioso y culminada con el robo de credenciales de servicio, recomendando la rotación de tokens y la revisión de la actividad reciente. El ataque, que involucró un agente autónomo, no parece haber manipulado modelos o recursos públicos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782155789201-b6d7ea3704c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NDc2NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/hugging-face-confirma-una-intrusion-en-produccion-y-pide-rotar-tokens-tras-un-ataque-con-un-agente-autonomo/?utm_source=rss&utm_medium=rss&utm_campaign=hugging-face-confirma-una-intrusion-en-produccion-y-pide-rotar-tokens-tras-un-ataque-con-un-agente-autonomo",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:hugging face confirma una intrusión en producción y pide rotar tokens tras un ataque con un agente autónomo",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/hugging-face-confirma-una-intrusion-en-produccion-y-pide-rotar-tokens-tras-un-ataque-con-un-agente-autonomo/"
+      ]
+    }
+  },
+  {
     "id": 1499,
     "fecha": "2026-07-20T06:13:25Z",
     "categoria": "Ciberseguridad",
