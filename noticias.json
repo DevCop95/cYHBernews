@@ -1,5 +1,72 @@
 [
   {
+    "id": 1506,
+    "fecha": "2026-07-20T13:56:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad jsPDF CVE-2026-25755",
+    "resumen": "La librería jsPDF presenta una vulnerabilidad de inyección de objetos PDF arbitrarios a través del método `addJS`, permitiendo a atacantes ejecutar acciones maliciosas o alterar la estructura del documento, con un CVSS Score de 8.1 (HIGH). La vulnerabilidad ha sido corregida en la versión 4.2.0 de jsPDF.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NTU3OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-25755",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-25755",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-25755"
+      ]
+    }
+  },
+  {
+    "id": 1505,
+    "fecha": "2026-07-20T13:56:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Código extranjero en apps para tropas EE.UU.",
+    "resumen": "Un análisis reveló que más de una de cada ocho aplicaciones diseñadas para militares estadounidenses contienen código extranjero, incluyendo de empresas en países considerados adversarios como China y Rusia, lo que plantea riesgos de seguridad y posibles vectores de ataque a través de malware o espionaje. Esto podría comprometer la seguridad de la información y la privacidad de los militares estadounidenses.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NTU3ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/apps-marketed-to-us-troops-are-shipping-chinese-and-russian-code/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:apps marketed to us troops are shipping chinese and russian code",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1504,
+    "fecha": "2026-07-20T13:56:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha de datos en proveedor de software",
+    "resumen": "Craneware, proveedor de software para más de 2.000 hospitales en EE. UU., informó que detectó un acceso no autorizado a una parte de su entorno de datos, lo que resultó en el robo de datos de empleados y clientes, y ha contratado a investigadores forenses externos para analizar el incidente. El incidente puede tener implicaciones de seguridad y privacidad para la industria de la salud.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NTU3ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/software-provider-for-us-hospitals-customer-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:software provider to more than 2 000 us hospitals says hackers stole employee and customer data",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1503,
     "fecha": "2026-07-20T11:41:12Z",
     "categoria": "Ciberseguridad",
