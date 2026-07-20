@@ -1,5 +1,170 @@
 [
   {
+    "id": 1511,
+    "fecha": "2026-07-20T16:21:50Z",
+    "categoria": "Tech",
+    "severidad": "MEDIA",
+    "titulo": "Macro Maliciosa en Libre Office",
+    "resumen": "Se ha detectado una macro maliciosa en Libre Office que contiene shellcode crudo y se conecta a una dirección IP específica (192.168.45.246:443) para posiblemente descargar más malware o establecer una conexión C2 (Comando y Control). El malware se distribuyó a través de un sitio web en vivo, lo que sugiere un posible ataque de drive-by download o phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1584947113973-cb90c09ff5da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NjQ1MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9174",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:get dm is this malware look inside malicious libre office macro looks funny tho raw shellcode 2 0 1",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1193",
+        "name": "Spearphishing Attachment (no se menciona explícitamente, pero se puede inferir que el malware se distribuyó a través de un sitio web en vivo o posible phishing)"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1510,
+    "fecha": "2026-07-20T16:21:44Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA: Productividad empresarial retrasada",
+    "resumen": "La implementación de la IA en las empresas podría tardar más en mostrar sus beneficios en términos de productividad debido a factores como el sabotaje, siguiendo una tendencia similar a la observada con la introducción de los ordenadores personales en la década de 1980, conocida como la \"curva en J\". Esto sugiere que los primeros indicios de impacto podrían verse alrededor de 2030, con el pico de rendimiento proyectado para 2034.",
+    "url_imagen": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NjQ1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/ordenadores-tardaron-15-anos-mejorar-productividad-empresas-ia-puede-tardar-motivo-sabotaje",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:los ordenadores tardaron 15 años en mejorar la productividad de las empresas la ia puede tardar más por un motivo el sabotaje",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "finvaulta.com",
+        "fortune.com",
+        "go.writer.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.apollo.com",
+        "www.atlantafed.org",
+        "www.bloomberglinea.com",
+        "www.infobae.com",
+        "www.linkedin.com",
+        "www.walkme.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://finvaulta.com/research/goldman-sachs/innovation-to-productivity-boom-ict-ai-2026-07-01",
+        "https://fortune.com/2026/07/14/goldman-ai-productivity-reality-check-worker-sabotage/",
+        "https://go.writer.com/hubfs/pdfs/ai-adoption-survey-2026-wpi.pdf?hsLang=en",
+        "https://i.blogs.es/009451/bill-gates/1024_682.jpeg",
+        "https://i.blogs.es/009451/bill-gates/500_333.jpeg",
+        "https://i.blogs.es/009451/bill-gates/840_560.jpeg",
+        "https://i.blogs.es/d65d3b/flipsnack-6qnipep6v_4-unsplash/375_142.jpeg",
+        "https://i.blogs.es/dfae2f/flipsnack-yqstew_jsta-unsplash/1024_2000.jpeg",
+        "https://unsplash.com/es/fotos/un-hombre-con-auriculares-sentado-frente-a-una-computadora-YqsTew_jSTA",
+        "https://www.apollo.com/wealth/insights-news/insights/daily-spark/a-slower-ai-payoff-would-be-everyones-problem",
+        "https://www.atlantafed.org/research-and-data/publications/policy-hub-macroblog/2026/05/06/how-much-firms-spending-on-ai-and-what-will-happen-to-headcounts",
+        "https://www.bloomberglinea.com/mercados/goldman-sachs-cree-que-la-ia-creara-superempresas-y-ampliara-la-brecha-en-el-mercado/",
+        "https://www.infobae.com/tecno/2026/04/09/trabajadores-de-la-generacion-z-sabotean-la-ia-de-sus-empresas-por-temor-a-que-les-quiten-sus-empleos/",
+        "https://www.library.hbs.edu/working-knowledge/why-employees-resist-ai-and-how-companies-can-win-them-over",
+        "https://www.walkme.com/news-releases/enterprises-lose-51-workdays-per-employee-to-technology-friction-annually-despite-record-ai-investment-walkme-global-study-of-3750-finds/"
+      ]
+    }
+  },
+  {
+    "id": 1509,
+    "fecha": "2026-07-20T16:21:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers en sistema de capacitación",
+    "resumen": "Desconocidos hackers comprometieron un sistema de educación en línea utilizado por la academia diplomática de Corea del Sur, robando información personal de ex empleados y actuales del Ministerio de Asuntos Exteriores, con un acceso no autorizado durante 9 meses. El incidente de seguridad sugiere un posible ataque de tipo APT (Advanced Persistent Threat) con implicaciones significativas para la privacidad y seguridad de la información.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NjQ0OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/south-korea-cyberattack-foreign-ministry",
+    "fuente": "The Record",
+    "dedup_key": "txt:hackers were inside south korea s diplomat training system for 9 months",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1508,
+    "fecha": "2026-07-20T16:21:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware HollowGraph en Microsoft 365",
+    "resumen": "El malware HollowGraph utiliza un calendario de Microsoft 365 como canal de comando, ocultando instrucciones y archivos robados como archivos adjuntos en eventos de calendario fechados en 2050, lo que permite eludir la detección al disfrazar la actividad como tráfico legítimo de Microsoft Graph API. Esto representa un vector de ataque sofisticado que aprovecha la confianza en servicios de productividad en la nube.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NjQ0OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hollowgraph malware hides c2 and stolen files in microsoft 365 events dated 2050",
+    "ttps": [
+      {
+        "id": "T1197",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1507,
+    "fecha": "2026-07-20T16:21:26Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Evaluación de SOC de IA",
+    "resumen": "La elección de una plataforma de SOC de IA requiere una comprensión profunda de su rendimiento en el entorno específico de la organización, más allá de la evaluación inicial. Un marco práctico para evaluar soluciones de SOC de IA incluye la validación de la precisión, los modelos de operación, la confiabilidad a largo plazo y la preparación para la producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NjQ0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/an-ai-soc-evaluation-guide-for-security-leaders/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:an ai soc evaluation guide for security leaders",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1506,
     "fecha": "2026-07-20T13:56:35Z",
     "categoria": "Ciberseguridad",
