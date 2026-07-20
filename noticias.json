@@ -1,5 +1,142 @@
 [
   {
+    "id": 1516,
+    "fecha": "2026-07-20T19:39:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad WooCommerce",
+    "resumen": "La versión del plugin WooCommerce de WordPress anterior a 8.6 presenta una vulnerabilidad (CVE-2024-1310) que permite a usuarios con roles de contribuidor o superior acceder a productos que no deberían ver, incluyendo productos privados, borradores y eliminados. Esto puede ser explotado para obtener información confidencial a través de un ataque de información no autorizada.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NzYzNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/207972",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2024-1310",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1582",
+        "name": "Exploitation of Configuration Weakness"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-1310"
+      ]
+    }
+  },
+  {
+    "id": 1515,
+    "fecha": "2026-07-20T19:39:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware con C2 extraño",
+    "resumen": "Se ha identificado un malware con un comando y control (C2) denominado \"bukkakegrandma\", lo que sugiere una posible campaña de ataque con un vector de ataque no especificado, aunque es probable que se utilice para exfiltrar datos o realizar actividades maliciosas. El impacto real depende de la propagación y el objetivo del malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NzYzNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9175",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:this malwares c2 is bukkakegrandma",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1514,
+    "fecha": "2026-07-20T19:38:53Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "IA: Estándares para colaboración",
+    "resumen": "Se están desarrollando iniciativas para establecer estándares que permitan a los agentes de IA colaborar y acceder a herramientas de manera estandarizada, sin necesidad de integraciones personalizadas, lo que podría mejorar la interoperabilidad y el desempeño de los sistemas de IA. Esto podría tener un impacto significativo en la forma en que se desarrollan y se implementan las soluciones de IA en el futuro.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501220374-9f4b2a3a60c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NzYzMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/la-web-de-ia-empieza-a-tomar-forma",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:la web de ia empieza a tomar forma los estándares que permitirán la colaboración entre agentes inteligentes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1513,
+    "fecha": "2026-07-20T19:38:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Fuga de datos nuclear sin riesgo",
+    "resumen": "Funcionarios indios informan que los documentos filtrados presuntamente por el grupo cibercriminial World Leaks desde la central nuclear de Kudankulam no contienen información relacionada con la seguridad o la seguridad nuclear, lo que sugiere que no hay un impacto significativo en la seguridad del planta. El incidente puede ser considerado como un intento de phishing o una campaña de desinformación.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NzYzMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/india-nuclear-plant-kudankulam-world-leaks-documents",
+    "fuente": "The Record",
+    "dedup_key": "txt:india says allegedly leaked nuclear plant files pose no safety risk",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1482",
+        "name": "Obfuscated Files or Information (no se menciona explícitamente, pero se infiere que podría ser una campaña de desinformación)"
+      },
+      {
+        "id": "T1344",
+        "name": "Pre-OS Boot (no se menciona explícitamente, pero no hay evidencia de que se haya utilizado)"
+      },
+      {
+        "id": "T1586",
+        "name": "Masquerading (no se menciona explícitamente, pero se infiere que podría ser una campaña de desinformación)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1512,
+    "fecha": "2026-07-20T19:38:41Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Kit de Phishing con IA expuesto",
+    "resumen": "Un operador de malware dejó su servidor de entrega abierto, lo que permitió a Rapid7 obtener una herramienta de phishing asistida por IA que incluye 1.048 archivos con plantillas de cebo, pruebas de suplantación de nombres de archivo, experimentos de ejecución y droppers, utilizados en una campaña de malware que entrega un infostealer a usuarios de Windows en México a través de un sitio web falso de búsqueda de identificación gubernamental utilizando WebDAV. La exposición de esta herramienta proporciona una visión detallada de las tácticas y técnicas utilizadas por los atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1660165458059-57cfb6cc87e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1NzYzMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/exposed-server-reveals-ai-assisted.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:exposed server reveals ai assisted phishing toolkit behind webdav malware campaign",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1567.002",
+        "name": "Exfiltration Over Alternative Protocol (WebDAV)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1511,
     "fecha": "2026-07-20T16:21:50Z",
     "categoria": "Tech",
