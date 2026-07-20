@@ -1,5 +1,143 @@
 [
   {
+    "id": 1521,
+    "fecha": "2026-07-20T21:57:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques de JadePuffer con ransomware",
+    "resumen": "El agente autónomo de IA JadePuffer ha sido actualizado con un malware personalizado llamado EncForge, que se enfoca en cifrar activos de IA, como conjuntos de datos de entrenamiento, bases de datos de vectores y puntos de control de modelos, lo que representa una amenaza significativa para la integridad de los modelos de lenguaje y la privacidad de los datos. Los ataques de JadePuffer pueden tener un impacto importante en la disponibilidad y confiabilidad de los sistemas de IA, especialmente si se aprovechan vulnerabilidades de zero-day o se combinan con técnicas de phishing para obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1ODQ2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:jadepuffer agentic attacks now target ai model data with ransomware",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1520,
+    "fecha": "2026-07-20T21:57:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-64651",
+    "resumen": "La herramienta `@ai-sdk/harness-opencode` presenta una vulnerabilidad que permite a código no confiable ejecutarse en un entorno sandbox y realizar llamadas arbitrarias a herramientas expuestas al host, incluyendo secretos y operaciones de despliegue, sin autorización correspondiente. La explotación requiere un entorno Linux y una sesión activa de Harness con herramientas proporcionadas por el host, así como código no confiable ejecutándose en el sandbox.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1ODQ2NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/208254",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-64651",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-64651"
+      ]
+    }
+  },
+  {
+    "id": 1519,
+    "fecha": "2026-07-20T21:57:14Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "NVIDIA utiliza líquido caliente para enfriar centros de datos",
+    "resumen": "NVIDIA ha desarrollado una solución de refrigeración líquida para centros de datos de IA que utiliza un líquido a 45°C, más caliente que un jacuzzi, para reducir el consumo energético y aumentar la eficiencia. Esta tecnología, llamada Rubin, permite enfriar todos los componentes del sistema con líquido, eliminando la necesidad de ventiladores y reduciendo la dependencia de la refrigeración mecánica.",
+    "url_imagen": "https://images.unsplash.com/photo-1775994121052-7e653711f72c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1ODQ2MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/nvidia-ha-encontrado-forma-contener-consumo-centros-datos-ia-liquido-caliente-que-jacuzzi",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nvidia ha encontrado una forma de contener el consumo de los centros de datos de ia líquido más caliente que un jacuzzi",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "blogs.nvidia.com",
+        "platform.instagram.com",
+        "www.nvidia.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blogs.nvidia.com/blog/liquid-cooling-ai-factories/",
+        "https://i.blogs.es/0f37fc/refrigeracion-caliente-nvidia/1024_2000.jpeg",
+        "https://i.blogs.es/2bec45/qwen/375_142.jpeg",
+        "https://i.blogs.es/a4d850/liquid-cooling-pipes-scaled/1024_2000.jpeg",
+        "https://i.blogs.es/a4d850/liquid-cooling-pipes-scaled/1366_2000.jpeg",
+        "https://i.blogs.es/a4d850/liquid-cooling-pipes-scaled/450_1000.jpeg",
+        "https://i.blogs.es/a4d850/liquid-cooling-pipes-scaled/650_1200.jpeg",
+        "https://i.blogs.es/f67316/liquid-cooling-hoses-scaled/1024_2000.jpeg",
+        "https://i.blogs.es/f67316/liquid-cooling-hoses-scaled/1366_2000.jpeg",
+        "https://i.blogs.es/f67316/liquid-cooling-hoses-scaled/450_1000.jpeg",
+        "https://i.blogs.es/f67316/liquid-cooling-hoses-scaled/650_1200.jpeg",
+        "https://www.nvidia.com/en-us/about-nvidia/board-of-directors/jensen-huang/",
+        "https://www.nvidia.com/en-us/data-center/technologies/rubin/"
+      ]
+    }
+  },
+  {
+    "id": 1518,
+    "fecha": "2026-07-20T21:57:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "FakeGit: Malware en GitHub",
+    "resumen": "La campaña FakeGit utiliza aproximadamente 7,600 repositorios maliciosos de GitHub, de los cuales más de 800 se disfrazan de proyectos de inteligencia artificial (IA) o servidores de Protocolo de Contexto de Modelo (MCP) para distribuir el malware SmartLoader, aprovechando la confianza en la plataforma para infectar a los usuarios. Los atacantes emplean proyectos copiados, perfiles de desarrolladores falsos y archivos README convincentes para engañar a las víctimas.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1ODQ2Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fakegit campaign uses 7 600 github repositories to spread smartloader malware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1517,
+    "fecha": "2026-07-20T21:57:01Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Escapes de sandbox en AI",
+    "resumen": "Investigadores han logrado escapar de los sandbox en herramientas como Cursor, Codex, Gemini CLI y Antigravity, aprovechando la capacidad de los agentes de IA para escribir archivos que son ejecutados posteriormente por herramientas de confianza del host, lo que ha llevado a la identificación de múltiples CVEs y parches. Las vulnerabilidades encontradas han sido abordadas con actualizaciones de seguridad y, en algunos casos, Google ha rebajado la gravedad de algunas de las vulnerabilidades reportadas en Antigravity.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905916-1f9786324de9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1ODQ2MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cursor codex gemini cli antigravity hit by sandbox escapes",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1516,
     "fecha": "2026-07-20T19:39:05Z",
     "categoria": "Ciberseguridad",
