@@ -1,5 +1,160 @@
 [
   {
+    "id": 1535,
+    "fecha": "2026-07-21T11:04:09Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "EEUU vs IA china: Plan para frenar competitividad",
+    "resumen": "El gobierno de EEUU considera vetar modelos de IA de empresas chinas, como Kimi K3, debido a su creciente competitividad, lo que podría debilitar la competitividad de EEUU en el sector de la IA, y se han planteado hacer responsables a las empresas de EEUU por brechas de seguridad al utilizar modelos chinos.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905559-f76f2718ddc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MzE4NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/podria-debilitar-competitividad-eeuu-kimi-k3-obliga-a-trump-a-retomar-su-plan-para-frenar-ia-china",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:podría debilitar la competitividad de eeuu kimi k3 obliga a trump a retomar su plan para frenar la ia china",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.axios.com",
+        "www.businessinsider.com",
+        "www.cnbc.com",
+        "www.reuters.com",
+        "www.washingtonpost.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/27d929/mano-china-eeuu-veto/1024_2000.jpeg",
+        "https://i.blogs.es/b8840b/kimi-k3/375_142.jpeg",
+        "https://i.blogs.es/ede613/silicon/1024_682.jpg",
+        "https://i.blogs.es/ede613/silicon/500_333.jpg",
+        "https://i.blogs.es/ede613/silicon/840_560.jpg",
+        "https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi",
+        "https://www.businessinsider.com/coinbase-ceo-brian-armstrong-low-ai-spend-maintain-token-usage-2026-6",
+        "https://www.cnbc.com/2026/07/08/chinese-ai-models-probe-us-lawmakers.html",
+        "https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/",
+        "https://www.washingtonpost.com/opinions/2026/07/20/open-model-ai-is-good-competition-anthropic-openai/"
+      ]
+    }
+  },
+  {
+    "id": 1534,
+    "fecha": "2026-07-21T11:04:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en alarmas de vehículos",
+    "resumen": "Investigadores han descubierto que millones de vehículos en los Estados Unidos tienen un dispositivo de alarma vulnerable a hacking, lo que permite a atacantes desbloquear, rastrear y deshabilitar los vehículos, destacando la necesidad de parchear esta vulnerabilidad de inmediato. Los dispositivos, instalados por concesionarios, pueden ser explotados a través de ataques de tipo phishing o exploits de día cero.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MzE4NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/a-device-hidden-in-cars-across-the-us-leaves-them-vulnerable-to-hacking-and-paralysis-patch-it-now/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:a device hidden in cars across the us leaves them vulnerable to hacking and paralysis patch it now",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution (se puede inferir que el exploit de día cero es un tipo de explotación)"
+      },
+      {
+        "id": "T1552",
+        "name": "Unconventional Password Brute Force (no se menciona explícitamente, pero se puede inferir que el atacante puede desbloquear el vehículo)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1533,
+    "fecha": "2026-07-21T11:03:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ivanti utiliza LLMs para remediar vulnerabilidades",
+    "resumen": "Ivanti está explorando el uso de modelos de lenguaje grandes (LLMs) para automatizar la remediación de vulnerabilidades, con resultados prometedores en las primeras etapas, aunque aún quedan dudas sobre el costo y la viabilidad de la intervención humana en el proceso. La efectividad de los LLMs en la detección y remediación de vulnerabilidades podría mejorar la postura de seguridad de las organizaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MzE4Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/remediating-vulnerabilities-llms-ivanti-automation",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:remediating vulnerabilities with llms inside ivanti s automation push",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1532,
+    "fecha": "2026-07-21T11:03:53Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware ENCFORGE ataca modelos AI",
+    "resumen": "El nuevo ransomware ENCFORGE, compilado en Go, está diseñado para cifrar archivos de modelos de inteligencia artificial, incluyendo pesos de modelos, índices de vectores, conjuntos de datos de entrenamiento y otros archivos de infraestructura de AI, en un ataque de ejecución remota de código (RCE) contra servidores Langflow. El operador JADEPUFFER, que utiliza agentes de inteligencia artificial, ha sido vinculado a este ataque y a otro similar reciente.",
+    "url_imagen": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MzE4MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new encforge ransomware targets ai model files in langflow rce attack",
+    "ttps": [
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1559",
+        "name": "Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1531,
+    "fecha": "2026-07-21T11:03:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad VPN de Palo Alto explotada",
+    "resumen": "La pandilla de ransomware Qilin está explotando una vulnerabilidad crítica en PAN-OS GlobalProtect para omitir la autenticación y comprometer redes de víctimas, según la empresa de ciberseguridad Arctic Wolf. Esto representa un vector de ataque significativo para las organizaciones que utilizan soluciones de VPN de Palo Alto.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MzE4Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-globalprotect-vpn-bug-now-exploited-in-ransomware-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:critical palo alto vpn bug now exploited by qilin ransomware gang",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1550.002",
+        "name": "Use Alternate Authentication Material: Pass the Hash"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1530,
     "fecha": "2026-07-21T08:19:39Z",
     "categoria": "IA",
