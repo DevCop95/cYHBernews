@@ -1,5 +1,71 @@
 [
   {
+    "id": 1530,
+    "fecha": "2026-07-21T08:19:39Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA: Pérdida de humildad intelectual",
+    "resumen": "Un estudio revela que el acceso a la IA, incluso cuando proporciona respuestas erróneas, lleva a las personas a dejar de reconocer los límites de su propio conocimiento, lo que puede tener implicaciones significativas en la toma de decisiones y la evaluación de la información. Esto se debe a la pérdida de la \"suspensión del juicio\", la capacidad de frenar antes de responder cuando no se tiene certeza.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MjE5Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/cuando-ia-se-equivoca-nosotros-seguimos-confiando-estudio-revela-que-no-sabemos-decir-no-se",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:cuando la ia se equivoca nosotros seguimos confiando un estudio revela que ya no sabemos decir no lo sé",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "osf.io",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.theregister.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/1a17dd/50d4849ddd677b149ac0115ecb9ff6e8/375_142.jpeg",
+        "https://i.blogs.es/2bec45/qwen/375_142.jpeg",
+        "https://i.blogs.es/7a41aa/ia-debate/1024_2000.jpeg",
+        "https://osf.io/preprints/psyarxiv/5y6m4_v1",
+        "https://unsplash.com/es/@mainermedia",
+        "https://unsplash.com/es/fotos/una-persona-sosteniendo-un-telefono-celular-en-la-mano-Aj7cDaR6QXs",
+        "https://www.theregister.com/ai-and-ml/2026/07/19/using-ai-makes-people-less-likely-to-admit-they-dont-know-something/5274567"
+      ],
+      "md5": [
+        "50d4849ddd677b149ac0115ecb9ff6e8"
+      ]
+    }
+  },
+  {
+    "id": 1529,
+    "fecha": "2026-07-21T08:19:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque a sitios WordPress",
+    "resumen": "Un exploit que combina las vulnerabilidades CVE-2026-60137 y CVE-2026-63030 está siendo utilizado para intentar tomar el control remoto de millones de sitios web que utilizan WordPress, representando una de las superficies de ataque más grandes en Internet. Los atacantes están aprovechando estas vulnerabilidades a solo tres días de su divulgación.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MjE5NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+    "fuente": "Dark Reading",
+    "dedup_key": "cve:cve-2026-60137,cve-2026-63030",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-60137",
+        "CVE-2026-63030"
+      ]
+    }
+  },
+  {
     "id": 1528,
     "fecha": "2026-07-21T05:46:07Z",
     "categoria": "Ciberseguridad",
