@@ -1,5 +1,93 @@
 [
   {
+    "id": 1524,
+    "fecha": "2026-07-21T02:12:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Cámaras IP hackeadas por inteligencia rusa",
+    "resumen": "Los servicios de inteligencia rusos han comprometido cámaras de seguridad conectadas a Internet en Europa y Ucrania para espiar rutas de transporte militar, envíos de armas y ubicaciones de tropas ucranianas, según un informe de ciberseguridad publicado por los servicios de inteligencia neerlandeses AIVD y MIVD. El vector de ataque aprovecha la falta de seguridad en las cámaras IP para obtener información sensible sobre logística militar.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1OTk5Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/russian-intelligence-hacks-ip-cameras.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:russian intelligence hacks ip cameras to spy on military logistics across nato states and ukraine",
+    "ttps": [
+      {
+        "id": "T1134",
+        "name": "Access Token Manipulation no se menciona, sin embargo, se puede inferir que se utilizó:"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1523,
+    "fecha": "2026-07-21T02:12:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en libtiff",
+    "resumen": "Se ha identificado una vulnerabilidad de denegación de servicio (CVE-2023-52355) en la biblioteca libtiff, con un CVSS Score de 7.5, que puede ser explotada a través de un archivo TIFF malicioso para causar un fallo de falta de memoria en la API TIFFRasterScanlineSize64(). Un atacante remoto podría aprovechar esta vulnerabilidad para provocar una denegación de servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1OTk5MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-52355",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-52355",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-52355"
+      ]
+    }
+  },
+  {
+    "id": 1522,
+    "fecha": "2026-07-21T02:11:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Estée Lauder",
+    "resumen": "La empresa de cosméticos Estée Lauder ha sufrido una brecha de datos después de que hackers explotaran una vulnerabilidad en Oracle E-Business Suite, utilizada para operaciones de recursos humanos. El incidente pone de relieve la importancia de parchear vulnerabilidades conocidas en software empresarial para prevenir ataques de este tipo.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1OTk5MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/est-e-lauder-discloses-data-breach-via-oracle-e-business-flaw/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:estée lauder discloses data breach via oracle e business flaw",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1200",
+        "name": "Exploitation for Client Execution (no se menciona explícitamente, pero se infiere que se explotó una vulnerabilidad)"
+      },
+      {
+        "id": "T1585",
+        "name": "Establish Accounts (no se menciona explícitamente, pero se infiere que los atacantes podrían haber creado cuentas para acceder a los sistemas)"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material (no se menciona explícitamente, pero se infiere que los atacantes podrían haber utilizado credenciales para acceder a los sistemas)"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1521,
     "fecha": "2026-07-20T21:57:26Z",
     "categoria": "Ciberseguridad",
