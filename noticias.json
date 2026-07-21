@@ -1,5 +1,139 @@
 [
   {
+    "id": 1544,
+    "fecha": "2026-07-21T16:20:13Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Anthropic paga $1.5 mil millones",
+    "resumen": "La empresa Anthropic ha alcanzado un acuerdo de $1.5 mil millones con un grupo de autores y editoriales que la denunciaron por utilizar sus libros sin permiso para entrenar a su modelo de IA, Claude, después de descargar más de 7 millones de ejemplares desde portales digitales sin autorización. El acuerdo pone fin a un juicio que sentó un precedente importante para la industria de la IA y los derechos de autor.",
+    "url_imagen": "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NTA4MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-fue-acusada-robar-libros-para-entrenar-sus-modelos-ia-su-solucion-ha-sido-sencilla-pagar",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:anthropic fue acusada de robar libros para entrenar sus modelos de ia su solución ha sido sencilla pagar",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "techcrunch.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/0f37fc/refrigeracion-caliente-nvidia/375_142.jpeg",
+        "https://i.blogs.es/7a41aa/ia-debate/375_142.jpeg",
+        "https://i.blogs.es/dbeea0/original/1024_2000.jpeg",
+        "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/",
+        "https://www.reuters.com/world/us-judge-approves-anthropics-15-billion-settlement-copyright-lawsuit-2026-07-20/"
+      ]
+    }
+  },
+  {
+    "id": 1543,
+    "fecha": "2026-07-21T16:20:05Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Malware ataca infraestructura AI",
+    "resumen": "Un nuevo tipo de malware puede infiltrarse profundamente en sistemas de codificación de IA para robar datos y credenciales de acceso, y también puede activar un \"interruptor de muerte\" para destruir archivos y bloquear a los usuarios legítimos. Este malware aprovecha los puntos ciegos de los sistemas de seguridad para llevar a cabo sus ataques, lo que lo hace particularmente peligroso.",
+    "url_imagen": "https://images.unsplash.com/photo-1770220742903-f113513d0194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NTA4MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/a-sneaky-hacking-tool-targeting-ai-infrastructure-is-lurking-in-victims-blind-spots/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:a sneaky hacking tool targeting ai infrastructure is lurking in victims blind spots",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1542,
+    "fecha": "2026-07-21T16:20:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Detección de Portal Captivo",
+    "resumen": "Se ha detectado tráfico irregular relacionado con la detección de portales captivos, específicamente a través de la URL \"http://detectportal.firefox.com\", lo que sugiere una actividad de reconocimiento de redes en lugar de un ataque directo. Este tráfico puede ser utilizado por herramientas como las de Mozilla Firefox para detectar la presencia de portales captivos, que son páginas web que se muestran cuando un dispositivo se conecta a una red Wi-Fi que requiere autenticación.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NTA4MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33172",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:captive portal detection tue jul 21st",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Network Scanning"
+      },
+      {
+        "id": "T1189.001",
+        "name": "Network Scanning: TCP Connect Scan (no se menciona explícitamente, pero se infiere que se está realizando un escaneo de red para detectar portales captivos)"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1595.002",
+        "name": "Active Scanning: Network Mapping (no se menciona explícitamente, pero se infiere que se está realizando un mapeo de la red para detectar portales captivos)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "detectportal.firefox.co",
+        "detectportal.firefox.com"
+      ],
+      "url": [
+        "http://detectportal.firefox.co&#xd;"
+      ]
+    }
+  },
+  {
+    "id": 1541,
+    "fecha": "2026-07-21T16:19:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Lecciones de Code Red",
+    "resumen": "El gusano Code Red, que surgió hace 25 años, ofrece lecciones valiosas sobre la seguridad en la era de la inteligencia artificial (IA), ayudando a las organizaciones a navegar los riesgos asociados con la IA. La experiencia con Code Red y otros ataques puede informar estrategias de seguridad para mitigar vulnerabilidades y ataques en entornos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NTA3OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/25-years-after-code-red-what-the-worm-era-can-teach-us-about-ai-security-2",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:25 years after code red what the worm era can teach us about ai security",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1540,
+    "fecha": "2026-07-21T16:19:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cierre de brechas de identidad",
+    "resumen": "Los ataques a infraestructuras críticas a menudo comienzan con credenciales robadas, dispositivos comprometidos o cuentas de confianza, por lo que es crucial implementar un enfoque de Zero Trust que verifique tanto las identidades de los usuarios como la confiabilidad de los dispositivos antes de conceder acceso a sistemas críticos. Esto puede ayudar a prevenir ataques como phishing y malware que aprovechan vulnerabilidades de autenticación.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NTA3OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gaps-in-critical-infrastructure-security/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:closing the identity gaps in critical infrastructure security",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1539,
     "fecha": "2026-07-21T13:29:00Z",
     "categoria": "Ciberseguridad",
