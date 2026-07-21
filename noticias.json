@@ -1,5 +1,126 @@
 [
   {
+    "id": 1548,
+    "fecha": "2026-07-21T19:13:26Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA de Google absorbe tráfico web",
+    "resumen": "La integración de la IA de Google, específicamente con Gemini en el Modo IA, está cambiando la forma en que los usuarios interactúan con el buscador, aumentando el tiempo de permanencia en la plataforma y reduciendo la necesidad de salir de ella para visitar otros sitios web, lo que puede tener un impacto significativo en la visibilidad y el tráfico de otros sitios web. Esto se debe a que los usuarios pasan más tiempo en Modo IA y escriben consultas más largas, lo que reduce la necesidad de clics en enlaces externos.",
+    "url_imagen": "https://images.unsplash.com/photo-1696258686286-1191184126aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NjEyMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/esta-diezmando-trafico-busqueda-asi-como-ia-google-esta-absorbiendo-al-resto-internet",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:está diezmando el tráfico de búsqueda así es como la ia de google está absorbiendo al resto de internet",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "blog.cloudflare.com",
+        "platform.instagram.com",
+        "wikimediafoundation.org",
+        "www.growth-memo.com",
+        "www.nytimes.com",
+        "www.seroundtable.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blog.google/products-and-platforms/products/search/ai-search-driving-more-queries-higher-quality-clicks/",
+        "https://i.blogs.es/64625e/clickhere/375_142.jpeg",
+        "https://i.blogs.es/941484/sub/1024_682.jpeg",
+        "https://i.blogs.es/941484/sub/500_333.jpeg",
+        "https://i.blogs.es/941484/sub/840_560.jpeg",
+        "https://i.blogs.es/d4af22/google-buscador-ai-overviews/1024_2000.jpeg",
+        "https://wikimediafoundation.org/news/2025/10/17/new-user-trends-on-wikipedia/",
+        "https://www.growth-memo.com/p/what-our-ai-mode-user-behavior-study",
+        "https://www.nytimes.com/2026/05/20/business/media/vox-media-james-murdoch-sale.html",
+        "https://www.nytimes.com/2026/07/20/technology/google-ai-open-web.html?unlocked_article_code=1.zFA.7A4y.kcG9Q_Hnu0C-&smid=bs-share",
+        "https://www.seroundtable.com/pew-google-ai-overviews-39808.html"
+      ]
+    }
+  },
+  {
+    "id": 1547,
+    "fecha": "2026-07-21T19:13:20Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ataque AI: Jailbreaks ofensivos",
+    "resumen": "Un actor ruso, \"Trim\", ha desmantelado modelos de inteligencia artificial (IA) de vanguardia y los ha integrado con herramientas de seguridad ofensiva, creando una plataforma de ataque avanzada. Esto permite a los atacantes potencialmente explotar vulnerabilidades y lanzar ataques más sofisticados, como phishing o ataques de malware, utilizando la capacidad de procesamiento de lenguaje natural de los modelos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905673-a81786aaa609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NjEyMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/hacker-ai-jailbreaks-offensive-attack-platform",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:hacker turns ai jailbreaks into offensive attack platform",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Virtual Private Server (no se menciona explícitamente, pero se puede inferir que los atacantes necesitan infraestructura para alojar sus herramientas de ataque avanzadas, aunque no es claro si es un VPS específicamente)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1546,
+    "fecha": "2026-07-21T19:13:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en AWS Kiro",
+    "resumen": "Una página web con texto oculto podía hacer que Kiro, la IDE de codificación de AWS, reescribiera su propio archivo de configuración y ejecutara código de un atacante en la máquina de un desarrollador, sin requerir aprobación, lo que permitía la ejecución remota de código. La vulnerabilidad ha sido parcheada por AWS.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NjExOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/aws-kiro-flaw-let-poisoned-web-page.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:aws kiro flaw let a poisoned web page rewrite its config and run code",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1545,
+    "fecha": "2026-07-21T19:13:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque de Anubis a Fairlife",
+    "resumen": "El grupo de ransomware Anubis ha reclamado la responsabilidad del ciberataque a Fairlife, una subsidiaria de productos lácteos de Coca-Cola, amenazando con publicar datos corporativos supuestamente robados a menos que la empresa pague un rescate. El ataque pone en riesgo la privacidad y seguridad de la información de la empresa y sus clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NjExODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/anubis-ransomware-claims-coca-cola-fairlife-attack-threatens-data-leak/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anubis ransomware claims coca cola fairlife attack threatens data leak",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Code Obfuscation (no se menciona explícitamente, pero se infiere que el grupo de ransomware utiliza técnicas de cifrado)"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1615",
+        "name": "Compromise Sensitive Information (se menciona que el grupo de ransomware ha robado datos corporativos)"
+      },
+      {
+        "id": "T1590",
+        "name": "Gather Victim Identity Information (se menciona que el grupo de ransomware ha obtenido información de la empresa y sus clientes)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1544,
     "fecha": "2026-07-21T16:20:13Z",
     "categoria": "IA",
