@@ -1,5 +1,114 @@
 [
   {
+    "id": 1539,
+    "fecha": "2026-07-21T13:29:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackeo del sitio web presidencial",
+    "resumen": "El sitio web del presidente de Kenia fue hackeado, exponiendo una demanda de rescate en bitcoin y amenazando con publicar información confidencial a menos que se pagara el rescate, lo que sugiere un ataque de ransomware con un vector de ataque basado en phishing o explotación de vulnerabilidades. El incidente pone de relieve la importancia de la ciberseguridad en la protección de la información gubernamental.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDA1NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/kenya-probes-hack-of-presidents-website-after-ransom-demand",
+    "fuente": "The Record",
+    "dedup_key": "txt:kenya probes hack of president s website after bitcoin ransom demand",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1538,
+    "fecha": "2026-07-21T13:28:37Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "MIT Implementa Vigilancia AI",
+    "resumen": "El Instituto de Tecnología de Massachusetts (MIT) está invirtiendo más de $3 millones en la instalación de más de 500 cámaras de vigilancia con inteligencia artificial (IA) en edificios académicos, residencias y áreas al aire libre, con capacidades de clasificación de rostros y objetos en tiempo real, incluyendo detección de movimiento y reconocimiento facial. Estas cámaras, parte de la línea Wisenet AI de Hanwha, utilizarán algoritmos de aprendizaje profundo y serán monitoreadas con el software Ai-RGUS.",
+    "url_imagen": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDA1MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/mit-to-become-hotbed-of-ai-video-surveillance.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:mit to become hotbed of ai video surveillance",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "airgus.com",
+        "hanwhavisionamerica.com",
+        "thetech.com"
+      ],
+      "url": [
+        "https://airgus.com/",
+        "https://hanwhavisionamerica.com/technologies/intelligent-video-audio-technologies/ai-technology/",
+        "https://thetech.com/2026/04/16/ai-surveillance-cameras"
+      ]
+    }
+  },
+  {
+    "id": 1537,
+    "fecha": "2026-07-21T13:28:32Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Riesgo en código AI",
+    "resumen": "El código generado por IA introduce un promedio de 15 vulnerabilidades por base de código, pero el riesgo real depende más de la combinación del framework utilizado que del modelo de IA empleado. Esto implica que la elección del framework puede ser un vector de ataque crítico en la seguridad de la codificación.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDA1MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/choose-wisely-ai-generated-coding-risk-varies",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:choose wisely ai generated coding risk varies a lot",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1536,
+    "fecha": "2026-07-21T13:28:27Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque AI en Android",
+    "resumen": "Investigadores han demostrado que aplicaciones Android con permisos para dibujar sobre otras ventanas y escribir en almacenamiento compartido pueden enviar instrucciones a agentes AI, permitiendo la ejecución de código en PCs anfitriones a través de texto invisible en la pantalla. Se han identificado vulnerabilidades en cinco frameworks de agentes móviles de código abierto, incluyendo AppAgent y AppAgentX.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NDA1MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/open-source-android-ai-agents-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:open source android ai agents could let invisible screen text run code on host pcs",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1625",
+        "name": "Graphical User Interface"
+      },
+      {
+        "id": "T1192",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1535,
     "fecha": "2026-07-21T11:04:09Z",
     "categoria": "IA",
