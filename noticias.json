@@ -1,5 +1,135 @@
 [
   {
+    "id": 1528,
+    "fecha": "2026-07-21T05:46:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad por exposición",
+    "resumen": "El enfoque inicial en la cantidad de nuevas vulnerabilidades (CVE) descubiertas por Mythos de Anthropic ha desviado la atención de la ventana de exposición, que podría ser el verdadero riesgo para los programas de seguridad, ya que la velocidad de descubrimiento y explotación de vulnerabilidades puede superar la capacidad de respuesta de los equipos de seguridad. La ventana de exposición se refiere al período de tiempo durante el cual un sistema o red es vulnerable a un ataque antes de que se pueda aplicar un parche o mitigación.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MTI3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/mythos-didnt-break-your-security.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:mythos didn t break your security program your exposure window could",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1527,
+    "fecha": "2026-07-21T05:46:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque off-chain a Ostium",
+    "resumen": "Un atacante ha robado $23.75 millones en criptomonedas de la plataforma de trading Ostium, explotando una vulnerabilidad en la infraestructura off-chain utilizada para alimentar precios en el protocolo, lo que sugiere un vector de ataque dirigido a la cadena de suministro de datos. El incidente resalta la importancia de la seguridad en la infraestructura off-chain y la necesidad de proteger los sistemas que alimentan los protocolos de trading.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MTI3NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-steal-237-million-in-crypto-from-ostium-in-off-chain-attack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers steal 23 7 million in crypto from ostium in off chain attack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1069",
+        "name": "Permission Groups Discovery"
+      },
+      {
+        "id": "T1582",
+        "name": "Exploit Trust in External System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1526,
+    "fecha": "2026-07-21T05:45:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS en plugin WordPress",
+    "resumen": "Se ha identificado una vulnerabilidad de Cross-Site Scripting (XSS) almacenada en el plugin \"The Essential Addons for Elementor\" para WordPress, que afecta versiones hasta 6.6.11, permitiendo a atacantes autenticados con acceso de contribuidor o superior inyectar scripts web arbitrarios en páginas. El vector de ataque se aprovecha de la falta de saneamiento de entrada y escape de salida en la configuración de color global de progreso de lectura.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MTI3NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/208433",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-15156",
+    "ttps": [
+      {
+        "id": "T1061",
+        "name": "Cross-Site Scripting (XSS)"
+      },
+      {
+        "id": "T1061.001",
+        "name": "Stored XSS"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1139",
+        "name": "Access Token Manipulation no aplica en este caso, se reemplaza por:"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-15156"
+      ]
+    }
+  },
+  {
+    "id": 1525,
+    "fecha": "2026-07-21T05:45:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Curso de Quantum y Post-Quantum Computing",
+    "resumen": "Se anuncia la tercera edición del Curso de Especialización en Quantum y Post-Quantum Computing para Ciberseguridad, que se llevará a cabo en noviembre de 2026 de manera online, cubriendo temas avanzados en ciberseguridad y computación cuántica. El curso, impartido por expertos en el campo, busca proporcionar una formación práctica y teórica en quantum y post-quantum computing aplicado a la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MTI3NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/iii-edicion-del-programa-de.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:iii edición del programa de especialización de quantum y post quantum computing para ciberseguridad noviembre 2026",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "apps.apple.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "play.google.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwylhxPltfgDV588mCWF2-M0nK89j0ZyoqLlvefT1Pi6V15PCZ6E-1iHpMAvo8gxIvMf71lMcPNIV526ggSfVh48eXj618sHd4cHizzx2maa7wWCqOATlCShiFwH97xQQLv-ooKlTYqp66SXC4brXAjsCDRObDdzXmE2Rp4kVcKMG-WyIl-vMK/w640-h356/q5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidE2gVKKXzJAO6a7WB1cexUgqR0Hfkj_dIMy2N7U-pq0CZXS6VnomC0HZiUWaS3lamBIUkKqKgXr_rvWxuaDMBsHxhObDHaXekmDBIabvtnP00rlTpvlG0d8tzWmWP4OG7A_5TOVOaqkSXlWHuJ76YFYQ64k4Vhyphenhyphen6UKMz2_2FFr3jrBS2iVXUj/s16000/q6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKcoX9yllc7op3RFxRAldx0W0rr2Xb2PEJ83zoUM4MJoCInSLwkirjkPvvcC40kRRAhXee5dXIYRtmZc-gucfVZ7xKvl08PVtJ54QGpsn99hhWaDNBIZ-OC9uJIVpiQYiD_pwvfdSDvkMwil4lxgslyDZwSA4UnvhIop5GRC6sERUxQz6hRavP/w640-h432/q4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjonM6IQev6AzSJaNGkDnrI6wKqaGJZjc1YUPaOtykxXBLNoK3DWFhpKT46843SosbJjMJ3B86qABvlxgHK3FgwN-Qp_3MpuMiOpI9L8yM5enS5xQrAgZ093V4Zb2J4X1lKLoODRcTwJipHTT_7ETpqR7Yv6acRWmGdhVovE_UCgXR3U1EgHt0Q/w640-h384/q0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://elladodelmal.com",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html"
+      ]
+    }
+  },
+  {
     "id": 1524,
     "fecha": "2026-07-21T02:12:07Z",
     "categoria": "Ciberseguridad",
@@ -5312,24 +5442,6 @@
     }
   },
   {
-    "id": 1321,
-    "fecha": "2026-07-11T10:12:00Z",
-    "categoria": "IA",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en plugin AI de WordPress",
-    "resumen": "La vulnerabilidad CVE-2026-1359 afecta al plugin Genolve de WordPress, permitiendo a atacantes autenticados con acceso de nivel Colaborador o superior modificar opciones arbitrarias del sitio web, incluyendo la habilitación del registro de usuarios y la configuración del rol predeterminado a administrador, lo que puede resultar en escalada de privilegios. El vector de ataque se aprovecha de la falta de verificación de capacidades en la función genolve_setOpt().",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218504-81ed5eb52cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/195988",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-1359",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-1359"
-      ]
-    }
-  },
-  {
     "id": 1320,
     "fecha": "2026-07-11T10:11:54Z",
     "categoria": "Ciberseguridad",
@@ -5600,45 +5712,6 @@
       "cve": [
         "CVE-2026-41242",
         "CVE-2026-48068"
-      ]
-    }
-  },
-  {
-    "id": 1312,
-    "fecha": "2026-07-11T05:36:08Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad XSS en Plugin WordPress",
-    "resumen": "La vulnerabilidad CVE-2026-9738 afecta al plugin \"The Print, PDF, Email by PrintFriendly\" para WordPress, permitiendo a atacantes autenticados con acceso de administrador inyectar scripts web arbitrarios en páginas debido a una falta de sanitización de entrada y escape de salida en el parámetro 'content_position_css'. Esto puede ejecutar código malicioso cuando un usuario accede a una página infectada.",
-    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NDgxNjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/195965",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-9738",
-    "ttps": [
-      {
-        "id": "T1061",
-        "name": "Cross-Platform"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1055",
-        "name": "Unauthenticated Remote Access no aplica, en su lugar:"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-9738"
       ]
     }
   },
