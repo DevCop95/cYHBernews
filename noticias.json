@@ -1,5 +1,33 @@
 [
   {
+    "id": 1550,
+    "fecha": "2026-07-21T22:00:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "LLMs y Vulnerabilidades",
+    "resumen": "Los modelos de lenguaje grande (LLMs) más recientes presentan altas tasas de falsos positivos y no consideran el contexto de las escaneadas, lo que genera más trabajo para los profesionales de seguridad de aplicaciones (AppSec). Esto se debe a que los LLMs no pueden priorizar eficazmente las vulnerabilidades, lo que puede llevar a una mayor carga de trabajo para identificar y mitigar las amenazas reales.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NzEyNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/finding-and-prioritizing-vulnerabilities-no-easy-task",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:using llms to find and prioritize vulnerabilities is no easy task",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1549,
+    "fecha": "2026-07-21T22:00:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Hide My Email",
+    "resumen": "Apple ha corregido una vulnerabilidad en su servicio Hide My Email que permitía exponer las direcciones de correo electrónico reales de los usuarios en los registros de correo, lo que comprometía la privacidad garantizada por la función. La vulnerabilidad fue reportada por Tyler Murphy y corregida por Apple el 3 de julio de 2026.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2NzEyNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/apple-fixes-hide-my-email-bug-that.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:apple fixes hide my email bug that exposed real addresses in mail logs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1548,
     "fecha": "2026-07-21T19:13:26Z",
     "categoria": "IA",
@@ -10742,20 +10770,6 @@
         "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/650_1200.png"
       ]
     }
-  },
-  {
-    "id": 1148,
-    "fecha": "2026-07-04T10:51:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Fallo en \"Hide My Email\" de Apple",
-    "resumen": "El servicio \"Hide My Email\" de Apple, diseñado para ocultar direcciones de correo electrónico reales, ha fallado en su propósito, lo que podría exponer a los usuarios a ataques de phishing y spam. Esto resalta la importancia de la seguridad de la información de contacto en servicios en línea.",
-    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNjIzMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/security-roundup-apples-hide-my-email-service-fails-to-hide-your-email/",
-    "fuente": "Wired Security",
-    "dedup_key": "txt:security roundup apple s hide my email service fails to hide your email",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 1147,
