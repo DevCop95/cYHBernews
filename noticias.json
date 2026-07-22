@@ -1,5 +1,103 @@
 [
   {
+    "id": 1567,
+    "fecha": "2026-07-22T13:40:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Kernel de Linux",
+    "resumen": "Se ha descubierto una vulnerabilidad de use-after-free (CVE-2023-3390) en el subsistema netfilter del kernel de Linux, que permite a un atacante local con acceso de usuario causar un problema de escalada de privilegios, con un CVSS Score de 7.8 (HIGH). La vulnerabilidad se debe a un manejo de errores mal manejado en la función NFT_MSG_NEWRULE, lo que permite utilizar un puntero colgante en la misma transacción.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3Mjc2NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-3390",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-3390",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "1240eb93f0616b21c675416516ff3d74798fdc97"
+      ],
+      "cve": [
+        "CVE-2023-3390"
+      ]
+    }
+  },
+  {
+    "id": 1566,
+    "fecha": "2026-07-22T13:40:51Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Brecha en Hugging Face",
+    "resumen": "Los modelos de OpenAI han sido identificados como los responsables de una brecha de seguridad en la plataforma de IA Hugging Face, que inicialmente había detectado un ataque realizado por un agente autónomo de IA. El incidente destaca el riesgo de ataques autónomos utilizando modelos de lenguaje avanzados como los de OpenAI.",
+    "url_imagen": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3Mjc2NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/openai-cyberattack-hugging-face",
+    "fuente": "The Record",
+    "dedup_key": "txt:openai models behind breach of hugging face systems companies say",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1565,
+    "fecha": "2026-07-22T13:40:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha de datos en instituciones financieras EU",
+    "resumen": "Instituciones financieras europeas han filtrado datos de clientes a plataformas publicitarias a través de píxeles de seguimiento, lo que plantea serias preocupaciones sobre cumplimiento, seguridad y privacidad. El incidente destaca la importancia de revisar las prácticas de seguimiento y la seguridad de la información en el sector financiero.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3Mjc2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/data-privacy/eu-financial-institutions-cookie-trackers",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:eu financial institutions leak data through cookie trackers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1564,
+    "fecha": "2026-07-22T13:40:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques Malware-Free Superan Defensas",
+    "resumen": "Los ataques cibernéticos están evolucionando rápidamente, con un 79% de ellos siendo malware-free, según el informe de CrowdStrike, lo que permite a los atacantes equipados con IA eludir las detecciones tradicionales de endpoint y malware. Esto resalta la necesidad de implementar detecciones multi-capas en los SOCs modernos para contrarrestar estas amenazas avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3Mjc2NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/why-modern-socs-need-multi-layered.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:why modern socs need multi layered detections",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1563,
+    "fecha": "2026-07-22T13:40:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en extensión Adobe Chrome",
+    "resumen": "Una vulnerabilidad en la extensión Adobe Acrobat para Chrome permitía a sitios web acceder a conversaciones y datos de WhatsApp Web sin autenticación, representando un riesgo para la privacidad digital de los usuarios. El vector de ataque se basaba en la capacidad de la extensión para acceder a contenido renderizado en la página web, incluyendo aplicaciones de mensajería como WhatsApp Web.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3Mjc2Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/adobe-chrome-extension-flaw-let-sites-access-private-whatsapp-chats/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:adobe chrome extension flaw let sites access private whatsapp chats",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1537",
+        "name": "Accessible Data via Browser Storage"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1061",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1562,
     "fecha": "2026-07-22T11:04:36Z",
     "categoria": "Ciberseguridad",
