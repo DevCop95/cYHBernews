@@ -1,5 +1,41 @@
 [
   {
+    "id": 1557,
+    "fecha": "2026-07-22T05:45:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en grub2",
+    "resumen": "Se ha identificado una falla de escritura fuera de los límites en el controlador del sistema de archivos NTFS de grub2, permitiendo a un atacante ejecutar código arbitrario y eludir la protección de arranque seguro a través de una imagen del sistema de archivos NTFS especialmente manipulada. Esto puede corromper los metadatos del montón de grub y, en algunas circunstancias, dañar los metadatos del montón del firmware UEFI.",
+    "url_imagen": "https://images.unsplash.com/photo-1631864031821-320cf314b3ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2OTkxMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-4692",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-4692",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-4692"
+      ]
+    }
+  },
+  {
+    "id": 1556,
+    "fecha": "2026-07-22T05:45:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Alerta de Seguridad",
+    "resumen": "El podcast ISC Stormcast del 22 de julio de 2026 analiza las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques de phishing, y proporciona recomendaciones para proteger contra estas amenazas. Los vectores de ataque incluyen exploits de zero-day y malware, afectando a todos los sectores.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2OTkxMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33174",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for wednesday july 22nd 2026 https isc sans edu podcastdetail 10018 wed jul 22nd",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/10018,"
+      ]
+    }
+  },
+  {
     "id": 1555,
     "fecha": "2026-07-22T02:10:05Z",
     "categoria": "IA",
@@ -18935,23 +18971,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 806,
-    "fecha": "2026-06-24T06:44:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Alerta de Seguridad",
-    "resumen": "El ISC Stormcast del 24 de junio de 2026 informa sobre las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques de phishing, y proporciona recomendaciones para proteger los sistemas contra estas amenazas. Los vectores de ataque incluyen exploits de zero-day y malware, lo que requiere una actualización inmediata de los sistemas de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0NjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33100",
-    "fuente": "SANS ISC",
-    "ttps": [],
-    "iocs": {
-      "url": [
-        "https://isc.sans.edu/podcastdetail/9984,"
-      ]
-    }
   },
   {
     "id": 805,
