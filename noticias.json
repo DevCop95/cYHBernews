@@ -1,5 +1,61 @@
 [
   {
+    "id": 1562,
+    "fecha": "2026-07-22T11:04:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Robo de identidad por phishing",
+    "resumen": "Un caso de robo de identidad se produjo después de que la víctima proporcionó un código de autenticación de dos factores a un estafador, lo que permitió al atacante tomar el control de su dirección de correo electrónico, destacando la importancia de la seguridad de las cuentas de correo electrónico como punto de fallo crítico en la protección de la identidad en línea. El ataque se inició con un mensaje de texto engañoso que manipuló a la víctima para que revelara información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3MTgyNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/first-person-identity-theft-story.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:first person identity theft story",
+    "ttps": [
+      {
+        "id": "T1626",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1626.002",
+        "name": "Spearphishing via SMS"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556",
+        "name": "Session Hijacking"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "tech.yahoo.com"
+      ],
+      "url": [
+        "https://tech.yahoo.com/cybersecurity/articles/stranger-used-one-text-message-140003797.html"
+      ]
+    }
+  },
+  {
+    "id": 1561,
+    "fecha": "2026-07-22T11:04:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Fin de actualizaciones de seguridad para Exchange",
+    "resumen": "Microsoft dejará de proporcionar actualizaciones de seguridad para Exchange 2016 y 2019 a través del programa de Actualizaciones de Seguridad Extendidas (ESU) en octubre, lo que podría exponer a los sistemas a vulnerabilidades y ataques de seguridad como exploits y ransomware. Esto afectará a los clientes que no migren a versiones más recientes o no adopten medidas de seguridad alternativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3MTgyNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft to stop exchange 2016 2019 security updates in october",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1560,
     "fecha": "2026-07-22T08:20:25Z",
     "categoria": "Ciberseguridad",
