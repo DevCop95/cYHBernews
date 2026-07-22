@@ -1,5 +1,123 @@
 [
   {
+    "id": 1560,
+    "fecha": "2026-07-22T08:20:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Breach en Chick-fil-A",
+    "resumen": "La cadena de restaurantes de comida rápida estadounidense Chick-fil-A ha sufrido una brecha de datos después de una serie de ataques de credential stuffing, lo que ha permitido a los atacantes acceder a cuentas de clientes. El ataque aprovecha la reutilización de credenciales en diferentes plataformas, resaltando la importancia de la autenticación de dos factores y la gestión de contraseñas.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3MDg0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/chick-fil-a-discloses-data-breach-after-credential-stuffing-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:chick fil a discloses data breach after credential stuffing attacks",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1557.001",
+        "name": "Use of Stolen or Fake Identity (Credential Stuffing)"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise no se menciona, pero se puede inferir que el ataque aprovecha la reutilización de credenciales, por lo que se puede considerar:"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1557.001",
+        "name": "Use of Stolen or Fake Identity (Credential Stuffing)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1559,
+    "fecha": "2026-07-22T08:20:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en WordPress",
+    "resumen": "Se ha identificado una cadena crítica en WordPress Core, conocida como wp2shell, que permite la ejecución remota de código sin autenticación y la instalación de webshells persistentes, lo que ya se está explotando de forma activa. Las versiones 7.0.2, 6.9.5 y 6.8.6 de WordPress incluyen la corrección para esta vulnerabilidad, por lo que se recomienda revisar los servidores expuestos a Internet para detectar signos de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3MDg0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/una-cadena-critica-en-wordpress-facilita-la-instalacion-de-webshells-sin-contrasena/?utm_source=rss&utm_medium=rss&utm_campaign=una-cadena-critica-en-wordpress-facilita-la-instalacion-de-webshells-sin-contrasena",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:una cadena crítica en wordpress facilita la instalación de webshells sin contraseña",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Web Services"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/una-cadena-critica-en-wordpress-facilita-la-instalacion-de-webshells-sin-contrasena/"
+      ]
+    }
+  },
+  {
+    "id": 1558,
+    "fecha": "2026-07-22T08:20:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "MyPublicGPT: Huella digital en GSE",
+    "resumen": "MyPublicGPT es un servicio que proporciona a los usuarios una visión de su huella digital en los motores de búsqueda generativos basados en IA, permitiéndoles conocer qué información se encuentra disponible sobre ellos en estos sistemas. El servicio se está implementando en fases para los Perfiles Públicos en MyPublicInbox, permitiendo a los usuarios solicitar informes sobre su presencia en los Generative Search Engines (GSE).",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3MDg0MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/mypublicgpt-tu-huella-digital-en-los.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:mypublicgpt tu huella digital en los generative search engines basados en ia dentro de mypublicinbox",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6sYQoZwEyNzVaUf0obxCPflIbSuhDgXLrBB5IRKeDg3w-YnCVvBug6oP06Z53y5eQUWaq10v1mtsKILspNU5KDC-UdxZsEKf9F_dWbB6c3kKvDHgb-Mynygm5A22a7FI4kb3ywjE-41sViBIcFMM77wz3RU3ZKC65D-6wa_ZLdYhlB4QSTBlO/w640-h294/Playbook7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLFiDevcPoBWGgEEXRUKDs_owDktDRtiSZnIQ53DphEQ9FGscQ3e7iLIZWIY8qmISCyO9dGixF749Lhvi_lGNkkb14s9diPpDap3YWrRzsGhHNi54hA0gAwzoFdoz7KAHMazTwRDAjqVAvMI9EY907ev0-NtpZHTthyphenhyphen6IGRgyATCxPVPw22Xe8/w640-h352/Playbook_11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLmNZyBupL-zUFx3zMQG0Q5qPwDJJWmb4b_KLvhfzSML-nFsrSqxYRSFnZPXXcJ5J1fYkOAEI5DQwvDEtESfv7cPqpfs2zNiPLTYTQRrHhwPyhhzlK-8CalI6lWy-XiWtZB3RfjsG5pzNKF2SIoqcGNepRFrDP6Kz5V8LxhXf1OI7aJ1nDi_fv/w640-h338/Playbook5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf7P_4w9BAlnoXLbp3S1_SpsJ1ZGI0lTfx_gkIZ6AmUdev0-188VPPtaQKzaAFGzzIPJu3teehZ5ctdiV3N6qLGPeUru11F3-LhX3U8HNiULLtssBsM0al2DMPJuvLlRlwoiKCZ5T_Jh7JjyY05VovQ1HO6pjo0MJG7pDNMVMu2VQXzPX7T8Lu/w393-h400/Playbook2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqPxQgkV-OI_7pqQOxRgH5Xnm4br7epDLEiNcDLG4r-RLjbNU3dP7LzXY-Tul-TQW8T_3YJI6ub4hnKXdIl72HhkKqWQcwpqthFmHKILLhJ-u_huKOQlhO5jMaPJZJgajvZ6qvD8e9r9qUCxD1ItsIZIglwsu1R0RCwxs9B2WeuBB-NevvV0vc/w640-h484/Playbook4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuLREUiVU5WEOjfeVjtbMNn-qo6tZCCBvtxMmV5mfAajSYaMfvLel6EgnQXly4GNXQecQGoENmChQVf66ACv0acqVMquGlxUXxc0r1eUR8guMSJABr0GMkjswENdmM1YRmbnK5rmJlPTRGj9Nj51lsNko5CmQ1De3b3FWVl5TdT8TqHynt81UF/w640-h476/Playbook6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7JXXCMJ12NDub9ME1nH3YrZKhbu_lt80S85w5lUDzRiKPS7i58vY4gYRiXuLQ9DVJponWg0kTk-IMmLOd1wfEH_LbA_c6e-1kFgeeEVeWpG5T_n5MqvZ0AyU6PHg2k1G4wgcn43qAyyrMdBEdPKt1zKo8_GPt47W7bR2vKwYZ9HsG-kK-0eUv/w640-h488/Playbook3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTjkFBeW6FwJZaRF8t6awrTvQMjCGrM_VOI8f6L7MKOybUJqqoGU6weGBrL1uLf_fyW4_E0DXRhET4s9-6xfV5o7uBf0aNWDHWW8vTsknlCiozYeUjsC-8e3XfcSzu8n96ZqB9WTnaiFYS7o0IeU3AvMNeG0OotwOpicox7mt_YVJiRqU1bomv/w640-h410/PlayBook0.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2025/07/sobre-ser-consejero-de-europa-press-y.html"
+      ]
+    }
+  },
+  {
     "id": 1557,
     "fecha": "2026-07-22T05:45:27Z",
     "categoria": "Ciberseguridad",
@@ -18517,23 +18635,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 826,
-    "fecha": "2026-06-24T19:40:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en WordPress",
-    "resumen": "La versión del plugin Frontend File Manager & Sharing de WordPress anterior a 1.1.3 presenta una vulnerabilidad (CVE-2022-2356) con un CVSS Score de 8.8, permitiendo a usuarios subir archivos maliciosos al servidor sin restricciones de extensiones de archivo, lo que puede facilitar ataques de código malicioso. Esto afecta a los productos que utilizan el plugin, como mediajedi:user_private_files.",
-    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-2356",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2022-2356"
-      ]
-    }
   },
   {
     "id": 825,
