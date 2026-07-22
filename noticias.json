@@ -1,5 +1,111 @@
 [
   {
+    "id": 1574,
+    "fecha": "2026-07-22T19:07:29Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Z.AI lanza centro de datos con chips chinos",
+    "resumen": "La startup china Z.AI ha construido un centro de datos de 1 gigavatio de potencia que funcionará exclusivamente con semiconductores fabricados en China, lo que supone un hito en la estrategia de Pekín para reducir su dependencia tecnológica de Washington en la carrera por la IA. El centro de datos está diseñado para entrenar y desplegar la familia de modelos GLM de la compañía, y ya ha empezado a operar de forma parcial.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905450-a26e6c964239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NDcyNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/startup-china-ia-que-lanzo-sorprendente-modelo-glm-5-2-acaba-alcanzar-otro-hito-crear-su-propio-centro-datos",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la startup china de ia que lanzó el sorprendente modelo glm 5 2 acaba de alcanzar otro hito crear su propio centro de datos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.bloomberg.com",
+        "www.scmp.com",
+        "www.tomshardware.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3e8cfb/openai-sandbox/375_142.jpeg",
+        "https://i.blogs.es/d4af22/google-buscador-ai-overviews/375_142.jpeg",
+        "https://i.blogs.es/ff9c2c/zai-glm-centro-datos/1024_2000.jpeg",
+        "https://unsplash.com/es/@ismailenesayhan",
+        "https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai",
+        "https://www.scmp.com/tech/big-tech/article/3361374/zai-shares-surge-37-firm-builds-giant-data-centre-powered-chinese-chips",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/z-ai-powers-up-1gw-ai-data-center-built-entirely-on-chinese-chips"
+      ]
+    }
+  },
+  {
+    "id": 1573,
+    "fecha": "2026-07-22T19:07:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Ubuntu snap-confine",
+    "resumen": "Se ha descubierto una vulnerabilidad de escalada de privilegios locales (LPE) en snap-confine, identificada como CVE-2026-8933, que permite a un usuario no privilegiado obtener acceso root y control total del entorno objetivo, afectando instalaciones predeterminadas de Ubuntu Desktop 24.04, 25.10 y 26.04. El vector de ataque es local, lo que significa que un atacante necesita acceso inicial al sistema para explotar la vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NDcyNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-8933",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Known Vulnerabilities"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Identity Token"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials from Password Stores (No se menciona explícitamente, pero se infiere que el atacante necesita credenciales iniciales para acceder al sistema y luego explotar la vulnerabilidad para obtener acceso root)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8933"
+      ]
+    }
+  },
+  {
+    "id": 1572,
+    "fecha": "2026-07-22T19:07:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque Ransomware a Stadler Rail",
+    "resumen": "La empresa suiza de fabricación de vehículos ferroviarios Stadler Rail sufrió un ataque cibernético por parte del grupo de ransomware Everest, que exigió un rescate de $12.3 millones después de comprometer una plataforma de intercambio de datos compartida con uno de sus proveedores. El ataque pone de relieve la importancia de la seguridad de la cadena de suministro y la protección contra el ransomware en la industria del transporte.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NDcyMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/swiss-rail-giant-stadler-rejects-123m-ransom-demand-after-cyberattack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:swiss rail giant stadler rejects 12 3m ransom demand after cyberattack",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1588.001",
+        "name": "Obtain Capabilities: Tool (se infiere que el grupo de ransomware utilizó herramientas para llevar a cabo el ataque)"
+      },
+      {
+        "id": "T1615",
+        "name": "Compromise Sensitive Information (se infiere que el atacante obtuvo acceso a información confidencial de la empresa)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1571,
     "fecha": "2026-07-22T16:18:13Z",
     "categoria": "Ciberseguridad",
