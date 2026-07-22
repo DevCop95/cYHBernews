@@ -1,5 +1,103 @@
 [
   {
+    "id": 1578,
+    "fecha": "2026-07-22T22:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Protecciones CISA 2015 renovadas",
+    "resumen": "Se ha aprobado una renovación de 10 años de la ley de intercambio de información de ciberseguridad conocida como CISA 2015, como parte de la ley de autorización de defensa del fiscal 2027 de la Cámara de Representantes, lo que extiende las protecciones para el intercambio de información sobre amenazas cibernéticas. Esto refuerza la colaboración entre el gobierno y el sector privado para combatir las amenazas cibernéticas, incluyendo ataques de phishing, malware y ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NTc2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cisa-2015-extension-passes-house-ndaa",
+    "fuente": "The Record",
+    "dedup_key": "txt:extension of cisa 2015 info sharing protections passes as part of house s defense bill",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1577,
+    "fecha": "2026-07-22T22:01:34Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Amenaza AI: Malware se disfraza",
+    "resumen": "El malware Sandworm_Mode explota herramientas y flujos de trabajo de confianza de IA para hacer que la actividad maliciosa sea prácticamente indistinguible de la actividad normal, lo que representa un nuevo vector de ataque que aprovecha la creciente dependencia de la IA en los entornos de trabajo. Esto plantea un desafío significativo para la detección y respuesta a incidentes de seguridad, ya que los ataques pueden ser más difíciles de identificar.",
+    "url_imagen": "https://images.unsplash.com/photo-1739036868260-c26b292cd85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NTc2OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/attackers-live-off-ai-toolchain",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:attackers are learning to live off the ai toolchain",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Virtualización/Sandbox Evasion"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1576,
+    "fecha": "2026-07-22T22:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "GitHub reduce recompensas de Bug Bounty",
+    "resumen": "GitHub reducirá las recompensas públicas de su programa de bug bounty en al menos un 50% en todos los niveles de gravedad, pasando de $20,000-$30,000+ a $10,000 para hallazgos críticos, mientras que su programa VIP pagará $30,000 o más. Los informes presentados antes del 27 de julio de 2026 mantendrán los términos de pago anteriores.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NTc2ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/github-cuts-public-bug-bounty-payouts.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:github cuts public bug bounty payouts moves top rewards to vip tier",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1575,
+    "fecha": "2026-07-22T22:01:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque cibernético causa $13M en fraudes",
+    "resumen": "La empresa fintech Upbound Group informó que actores maliciosos robaron datos de sus sistemas y los utilizaron para crear $13 millones en arrendamientos fraudulentos de Acima, lo que indica un incidente de seguridad grave con impacto financiero significativo. El ataque aprovechó posiblemente vulnerabilidades en la seguridad de la información de la empresa para obtener acceso no autorizado a datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NTc2ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/upbound-says-hack-caused-13-million-in-fraudulent-acima-leases/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:upbound says hack caused 13 million in fraudulent acima leases",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (no se menciona explícitamente, pero se infiere que hubo una vulnerabilidad en la seguridad de la información)"
+      },
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities (no se menciona explícitamente, pero se infiere que los actores maliciosos desarrollaron capacidades para aprovechar las vulnerabilidades)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1574,
     "fecha": "2026-07-22T19:07:29Z",
     "categoria": "IA",
