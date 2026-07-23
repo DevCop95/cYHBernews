@@ -1,5 +1,58 @@
 [
   {
+    "id": 1604,
+    "fecha": "2026-07-23T19:08:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2017-16879",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer basado en pila en la función _nc_write_entry de ncurses, que permite a los atacantes provocar una denegación de servicio o posiblemente ejecutar código arbitrario mediante un archivo terminfo manipulado, con un CVSS Score de 7.8 (HIGH). La vulnerabilidad afecta a la versión 6.0 de ncurses.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MzM2ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-16879",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-16879",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2017-16879"
+      ]
+    }
+  },
+  {
+    "id": 1603,
+    "fecha": "2026-07-23T19:07:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers rusos explotan vulnerabilidad Zimbra",
+    "resumen": "El grupo de hackers patrocinado por el estado ruso conocido como Laundry Bear o Void Blizzard está explotando una vulnerabilidad de zero-click en servidores de correo electrónico Zimbra para robar correos electrónicos, combinando ataques de phishing con la explotación de esta vulnerabilidad, que ya ha sido parcheada. Los ataques afectan a organizaciones que utilizan Zimbra Collaboration, y el CISA ha emitido una advertencia sobre esta amenaza.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MzM2Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-zimbra-zero-click-flaw-for-email-theft/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:russian hackers exploit zimbra zero click flaw for email theft",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Payload Delivery"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1602,
     "fecha": "2026-07-23T16:23:28Z",
     "categoria": "Ciberseguridad",
