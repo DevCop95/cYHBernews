@@ -1,5 +1,72 @@
 [
   {
+    "id": 1581,
+    "fecha": "2026-07-23T02:21:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Python-Multipart",
+    "resumen": "Se ha identificado una vulnerabilidad de salto de ruta (CVE-2026-24486) en la biblioteca Python-Multipart, que permite a un atacante escribir archivos subidos en ubicaciones arbitrarias del sistema de archivos, con un CVSS Score de 8.6 (HIGH), y se puede mitigar actualizando a la versión 0.0.22 o evitando el uso de 'UPLOAD_KEEP_FILENAME=True'.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NzMzMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-24486",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-24486",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-24486"
+      ]
+    }
+  },
+  {
+    "id": 1580,
+    "fecha": "2026-07-23T02:21:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques OT iraníes contra agencias federales",
+    "resumen": "Se han observado incidentes que incluyen interacciones maliciosas con archivos de proyectos y manipulación de datos en interfaces de máquina humana (HMI) y sistemas de supervisión y adquisición de datos (SCADA), lo que sugiere un vector de ataque dirigido a sistemas de control industrial. Estos ataques están vinculados a actores iraníes y representan una amenaza significativa para la infraestructura crítica.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NzMyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/federal-agencies-broaden-alert-on-iran-linked-ot-attacks",
+    "fuente": "The Record",
+    "dedup_key": "txt:federal agencies broaden alert on iran linked ot attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1579,
+    "fecha": "2026-07-23T02:21:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque de Ransomware",
+    "resumen": "Un ataque de ransomware ha afectado a una empresa de alimentos y logística en Japón, interrumpiendo el suministro de alimentos congelados a miles de clientes, incluyendo franquicias importantes como Kentucky Fried Chicken, lo que pone en riesgo la cadena de suministro. El ataque aprovecha vulnerabilidades en la infraestructura de la empresa, permitiendo a los atacantes desencriptar y exigir un rescate.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3NzMyOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-attack-japanese-frozen-food-chain",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ransomware attack puts a chill on japanese frozen food chain",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1565",
+        "name": "Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1578,
     "fecha": "2026-07-22T22:01:39Z",
     "categoria": "Ciberseguridad",
@@ -20975,40 +21042,6 @@
     "enlace_original": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
     "fuente": "Wired Security",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 731,
-    "fecha": "2026-06-20T02:55:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque de Ransomware",
-    "resumen": "Un grupo de ransomware ha reclamado responsabilidad por un ciberataque que ha interrumpido las operaciones de cosecha y molienda de Mackay Sugar, una productora de azúcar australiana, lo que ha llevado a la empresa a trabajar urgentemente para restaurar sus operaciones y verificar la veracidad de las reclamaciones. El vector de ataque no ha sido divulgado, pero se sospecha que el grupo de ransomware ha utilizado técnicas de phishing o explotación de vulnerabilidades para infiltrarse en los sistemas de la empresa.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/mackay-sugar-cyberattack-claimed-gentlemen",
-    "fuente": "The Record",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
     "iocs": {}
   },
   {
