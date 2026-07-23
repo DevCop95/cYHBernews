@@ -1,5 +1,123 @@
 [
   {
+    "id": 1602,
+    "fecha": "2026-07-23T16:23:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-0596",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección de comandos en mlflow/mlflow con una puntuación CVSS de 7.8, que permite la ejecución de comandos arbitrarios si el 'model_uri' contiene metacaracteres de shell, lo que puede conducir a la escalada de privilegios. La vulnerabilidad se produce al servir un modelo con 'enable_mlserver=True' y afecta a la última versión de mlflow/mlflow.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MjM4MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-0596",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-0596",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1559",
+        "name": "Interacting with Web Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-0596"
+      ]
+    }
+  },
+  {
+    "id": 1601,
+    "fecha": "2026-07-23T16:23:24Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Google acapara TPUs para AGI",
+    "resumen": "Google prioriza el uso de sus Unidades de Procesamiento Tensorial (TPUs) para desarrollar Inteligencia Artificial General (AGI), reservándolos para su propio uso en lugar de venderlos a terceros, lo que refleja la importancia estratégica de la AGI para la empresa. Esto indica un cambio en la estrategia de negocio de la nube, donde la demanda de chips especializados para la IA está impulsando la toma de decisiones sobre la asignación de recursos.",
+    "url_imagen": "https://images.unsplash.com/photo-1763110305836-17790330be78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MjM4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/google-tiene-chips-sobra-para-vender-prefiere-quedarselos-para-no-quedarse-atras-carrera-agi",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:google tiene chips de sobra para vender prefiere quedárselos para no quedarse atrás en la carrera de la agi",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "static.poder360.com.br",
+        "www.cnbc.com",
+        "www.theregister.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q2-2026/",
+        "https://i.blogs.es/457cc3/original/1024_2000.jpeg",
+        "https://i.blogs.es/894584/tsmc/375_142.jpeg",
+        "https://static.poder360.com.br/uploads/2026/07/alphabet-earnings-2-trimestre-release-1.pdf",
+        "https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html",
+        "https://www.theregister.com/ai-and-ml/2026/07/23/google-is-hoarding-tpus-to-chase-artificial-general-intelligence/5276755"
+      ]
+    }
+  },
+  {
+    "id": 1600,
+    "fecha": "2026-07-23T16:23:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha de datos en Origin Energy",
+    "resumen": "La empresa de energía australiana Origin Energy ha confirmado una brecha de datos que ha comprometido información de clientes, y actualmente está investigando el alcance del incidente para determinar el número de afectados. El vector de ataque no ha sido divulgado, pero se trata de un incidente de seguridad que puede tener implicaciones significativas para la privacidad digital de los clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MjM3OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/australia-origin-energy-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:major australian energy supplier confirms customer data compromised",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1599,
+    "fecha": "2026-07-23T16:23:11Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Claude Cowork",
+    "resumen": "Se ha descubierto una vulnerabilidad de escape de sandbox en Claude Cowork de Anthropic, que permite a un agente AI escapar de su máquina virtual (VM) Linux y acceder a archivos en cualquier lugar de un sistema Mac. Esta vulnerabilidad podría permitir a un atacante leer o escribir archivos en el sistema, potencialmente comprometiendo la seguridad de los datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258533-d0597f86ce62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MjM3OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/claude-cowork-flaw-could-let-ai-agent.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:claude cowork flaw could let ai agent escape its vm and access mac files",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1537",
+        "name": "Transfer de Archivos"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (no se menciona explícitamente pero se infiere que podría ocurrir debido a la capacidad de leer o escribir archivos en el sistema)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1598,
     "fecha": "2026-07-23T13:46:44Z",
     "categoria": "Ciberseguridad",
