@@ -1,5 +1,68 @@
 [
   {
+    "id": 1607,
+    "fecha": "2026-07-23T22:01:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware Ultra Avanzado Detectado",
+    "resumen": "Se ha identificado un malware extremadamente sofisticado y raro en el entorno wild, que ha demostrado ser muy difícil de reverse engineer debido a su complejidad. El malware presenta un desafío significativo para los analistas de seguridad, y su impacto real podría ser considerable si no se contiene adecuadamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4NDQwODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9190",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:a colleague of mine notified me of actual super rare mega fuck off ultra malware identified in the wild he said the",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1606,
+    "fecha": "2026-07-23T22:01:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Hydra",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de pila (Stack Buffer Overflow) en Hydra, lo que podría permitir a atacantes remotos ejecutar código arbitrario mediante la explotación de esta debilidad. El impacto real depende de la implementación y el contexto en el que se utilice Hydra, pero podría facilitar ataques de tipo remote code execution (RCE) si no se parchea adecuadamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4NDQwNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52622",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:remote hydra stack buffer overflow",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1605,
+    "fecha": "2026-07-23T22:01:02Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Malware Dolphin X utiliza IA",
+    "resumen": "El nuevo malware Dolphin X, un troyano de acceso remoto, utiliza una característica de perfilado basada en inteligencia artificial (IA) para puntuar y clasificar a los usuarios infectados, ayudando a los ciberdelincuentes a identificar a las víctimas de mayor valor para atacar primero. Esto permite a los atacantes priorizar sus esfuerzos y maximizar el beneficio de sus ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442135732-00cab8f454e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4NDQwNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-dolphin-x-malware-uses-ai-to-rank-high-value-targets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new dolphin x malware uses ai to rank high value targets",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1482",
+        "name": "Domain Trust Discovery"
+      },
+      {
+        "id": "T1114.001",
+        "name": "Email Collection: Local Email Collection no se menciona, pero se puede inferir que el malware utiliza T1056 - Input Capture para obtener información del usuario."
+      },
+      {
+        "id": "T1056",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1069",
+        "name": "Permission Groups Discovery no se menciona, pero se puede inferir que el malware utiliza T1082 - System Information Discovery para obtener información del sistema."
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1604,
     "fecha": "2026-07-23T19:08:07Z",
     "categoria": "Ciberseguridad",
