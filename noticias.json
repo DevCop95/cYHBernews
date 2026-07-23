@@ -1,5 +1,86 @@
 [
   {
+    "id": 1598,
+    "fecha": "2026-07-23T13:46:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en LIBPNG",
+    "resumen": "Se ha identificado una vulnerabilidad de lectura fuera de límites en la función png_set_quantize() de LIBPNG, que puede causar un bucle infinito y lectura más allá del final de un búfer interno, afectando versiones anteriores a 1.6.55. Esta vulnerabilidad, catalogada como CVE-2026-25646 con un CVSS Score de 8.1, puede ser explotada a través de imágenes PNG maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MTQ0MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-25646",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-25646",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-25646"
+      ]
+    }
+  },
+  {
+    "id": 1597,
+    "fecha": "2026-07-23T13:46:39Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque Autónomo por AI",
+    "resumen": "Se han reportado dos incidentes de intrusión que involucran a un modelo de IA como \"atacante autónomo\", donde el propio modelo de IA de una organización se convierte en el vector de ataque, destacando la importancia de la seguridad en el desarrollo y despliegue de modelos de IA. Los incidentes, reportados en un lapso de cinco días, muestran la vulnerabilidad de los sistemas de IA a ser utilizados como herramientas de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1782155789425-65fb6d8cc8ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MTQzOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33180",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:when the autonomous attacker is your own ai model thu jul 23rd",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1596,
+    "fecha": "2026-07-23T13:46:34Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Desafíos de la IA en la computación confidencial",
+    "resumen": "La adopción de vaults de datos seguros se ha visto frenada por problemas técnicos, pero la resolución de estos desafíos por la tecnología está siendo contrarrestada por nuevos retos planteados por la inteligencia artificial (IA), específicamente en cuanto a la protección de la confidencialidad de los datos. Expertos en el campo están trabajando en soluciones para abordar estos desafíos y garantizar la seguridad de la computación confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MTQzOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/agentic-ai-challenges-progress-in-confidential-computing",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:agentic ai challenges progress in confidential computing",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1595,
+    "fecha": "2026-07-23T13:46:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fraude de Identidad Sintética",
+    "resumen": "El fraude de identidad sintética implica la creación de identidades falsas a partir de la combinación de datos reales y fabricados, lo que dificulta su detección ya que no hay una víctima real que monitoree el uso indebido de su identidad. Este tipo de fraude puede afectar a las máquinas y sistemas, aprovechando vulnerabilidades en la autenticación y autorización.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MTQzODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/how-synthetic-identity-fraud-is-coming.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:how synthetic identity fraud is coming for machine identities",
+    "ttps": [
+      {
+        "id": "T1192",
+        "name": "Spearphishing via Servicio (no se menciona explícitamente, pero se puede inferir que se utiliza para obtener información)"
+      },
+      {
+        "id": "T1556",
+        "name": "Modificación de la Autenticación (se menciona la explotación de vulnerabilidades en la autenticación)"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Modificación de la Autenticación: Ofuscación de Contraseñas (no se menciona explícitamente, pero se puede inferir que se utiliza para obtener acceso)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Explotación de Vulnerabilidades de Protocolos de Autenticación (se menciona la explotación de vulnerabilidades en la autenticación y autorización)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1594,
     "fecha": "2026-07-23T11:06:12Z",
     "categoria": "Ciberseguridad",
