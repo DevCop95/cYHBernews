@@ -1,5 +1,111 @@
 [
   {
+    "id": 1594,
+    "fecha": "2026-07-23T11:06:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Pillow",
+    "resumen": "Se ha identificado una vulnerabilidad de escritura fuera de límites (CVE-2026-25990) en la librería Pillow de Python, que puede ser explotada al cargar imágenes PSD manipuladas, con un CVSS Score de 7.5, considerada como alta. La vulnerabilidad está corregida en la versión 12.1.1 de Pillow.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MDQ3NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-25990",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-25990",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-25990"
+      ]
+    }
+  },
+  {
+    "id": 1593,
+    "fecha": "2026-07-23T11:06:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cifrado de extremo a extremo bajo escrutinio",
+    "resumen": "Un nuevo artículo analiza la controversia actual sobre el cifrado de extremo a extremo (E2EE), destacando cinco escenarios técnicos distintos con implicaciones diferentes para el acceso legítimo, y advierte que limitar el E2EE tendría consecuencias graves para la ciberseguridad, el comercio y las operaciones gubernamentales. El artículo cuestiona las propuestas gubernamentales para restringir el E2EE, señalando que las lecciones aprendidas en el pasado sobre el problema del país menos confiable y la \"edad de oro de la vigilancia\" siguen siendo relevantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MDQ3NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/end-to-end-encryption-and-going-dark.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:end to end encryption and going dark",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "papers.ssrn.com"
+      ],
+      "url": [
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6959699"
+      ]
+    }
+  },
+  {
+    "id": 1592,
+    "fecha": "2026-07-23T11:06:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en Passkey",
+    "resumen": "Investigadores han encontrado fallos explotables en la implementación de passkeys por parte de Microsoft, lo que podría permitir a atacantes suplantar a usuarios con privilegios, aprovechando vulnerabilidades en el manejo de passkeys. Estos hallazgos resaltan que ataques tradicionales como el phishing o el robo de credenciales pueden seguir siendo efectivos contra sistemas que utilizan passkeys.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MDQ3NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/identity-access-management-security/flaws-passkeys-implementation-old-attacks-work",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:flaws in passkey implementation show old attacks still work",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1589",
+        "name": "Credentials in Files"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1591,
+    "fecha": "2026-07-23T11:05:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RefluXFS en Linux",
+    "resumen": "La vulnerabilidad RefluXFS (CVE-2026-64600) permite a un usuario local no privilegiado sobrescribir archivos propiedad de root en un sistema de archivos XFS y obtener acceso persistente de root, afectando instalaciones predeterminadas de Red Hat Enterprise Linux y derivados. El vector de ataque aprovecha una condición de carrera en el núcleo de Linux.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MDQ3NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/nine-year-old-refluxfs-linux-flaw-gives.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-64600",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-64600"
+      ]
+    }
+  },
+  {
+    "id": 1590,
+    "fecha": "2026-07-23T11:05:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques web crecen 32%",
+    "resumen": "Los ataques al vector web han aumentado un 32% en el primer semestre de 2026, según un informe de Transparent Edge, con un enfoque creciente hacia el sector B2B, lo que sugiere un cambio en los vectores de ataque y una mayor necesidad de medidas de seguridad en este sector. El informe se basa en datos de una red que sostiene más de 20.000 sitios y aplicaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MDQ3NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/los-ataques-al-vector-web-crecen-un-32-en-el-primer-semestre-de-2026-y-se-redistribuyen-hacia-el-b2b/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:los ataques al vector web crecen un 32 en el primer semestre de 2026 y se redistribuyen hacia el b2b",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1589,
     "fecha": "2026-07-23T08:23:22Z",
     "categoria": "IA",
