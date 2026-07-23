@@ -1,5 +1,84 @@
 [
   {
+    "id": 1584,
+    "fecha": "2026-07-23T05:49:53Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "ASML sube precios de equipos EUV",
+    "resumen": "ASML, proveedor exclusivo de equipos de litografía ultravioleta extrema (EUV) para la fabricación de chips avanzados, planea aumentar los precios de sus máquinas, lo que podría impactar a clientes como TSMC, Nvidia y Apple, y afectar la producción de chips para la inteligencia artificial (IA). Los planes incluyen un aumento del 10% en el precio de los equipos DUV y una posible subida en los sistemas EUV de baja apertura numérica (Low-NA).",
+    "url_imagen": "https://images.unsplash.com/photo-1679403766665-67ed6cd2df30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3ODU3OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/asml-vende-maquinas-importantes-industria-chip-ahora-todo-apunta-a-que-seran-caras",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:si creías que los precios de tus componentes no podían subir más asml tiene malas noticias para ti",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.bloomberg.com",
+        "www.theinformation.com",
+        "www.tomshardware.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/7137a0/memoria/375_142.jpeg",
+        "https://i.blogs.es/75e1d2/asml-destacada/1024_2000.jpeg",
+        "https://i.blogs.es/7f2489/tsmc2nm/375_142.jpeg",
+        "https://www.bloomberg.com/news/articles/2026-07-15/asml-raises-full-year-outlook-as-ai-boosts-demand-at-chipmakers",
+        "https://www.theinformation.com/articles/asml-plans-price-increases-chipmaking-equipment-despite-tsmc-resistance",
+        "https://www.tomshardware.com/tech-industry/semiconductors/asmls-planned-low-na-euv-machine-price-hikes-reportedly-frustrate-tsmc-lithography-machine-maker-comes-knocking-to-make-bank-on-tsmcs-profitable-fabs-potentially-costing-the-taiwanese-chipmaker-billions"
+      ]
+    }
+  },
+  {
+    "id": 1583,
+    "fecha": "2026-07-23T05:49:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware de vigilancia en app falsa",
+    "resumen": "Una aplicación maliciosa distribuye malware de espionaje de cuatro etapas para Android a través de sitios falsos de Google Play, explotando el miedo de los civiles durante ataques con misiles iraníes, utilizando técnicas de phishing para infiltrarse en dispositivos. El malware puede permitir a los atacantes acceder a información confidencial y realizar vigilancia sin el conocimiento de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3ODU3ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/mobile-security/fake-bahrain-alert-apps-android-surveillance-malware",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:fake bahrain alert app deploys android surveillance malware",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1417",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1582,
+    "fecha": "2026-07-23T05:49:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Pymes vulnerables a ciberamenazas",
+    "resumen": "Las pequeñas y medianas empresas (pymes) siguen siendo vulnerables a ciberamenazas debido a la falta de cierre de brechas de seguridad conocidas, a pesar de que la inteligencia artificial (IA) está cambiando la ciberdelincuencia. La preparación cibernética de las pymes debe enfocarse en abordar estas vulnerabilidades básicas para reducir el riesgo de ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3ODU3Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/pymes-seguridad-empieza-por-lo-basico/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:las pymes ante las ciberamenazas empezar por lo esencial",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1581,
     "fecha": "2026-07-23T02:21:44Z",
     "categoria": "Ciberseguridad",
