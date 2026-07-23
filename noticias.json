@@ -1,5 +1,149 @@
 [
   {
+    "id": 1589,
+    "fecha": "2026-07-23T08:23:22Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA refuta conjetura matemática",
+    "resumen": "Un matemático de Harvard utilizó el modelo de lenguaje Fable 5, desarrollado por Anthropic, para refutar la conjetura de Jacobi, una teoría matemática que llevaba casi 90 años sin demostrarse. La conjetura planteaba que un determinado tipo de función matemática también podría funcionar a la inversa, pero gracias a la ayuda de la IA, se ha demostrado que esto no es posible.",
+    "url_imagen": "https://images.unsplash.com/photo-1678957949479-b1e876bee3f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3OTUwMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/verdad-necesitamos-matematicos-fable-5-ayuda-a-refutar-conjetura-casi-siglo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:de verdad necesitamos tantos matemáticos fable 5 ayuda a refutar una conjetura de casi un siglo",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "es.wikipedia.org",
+        "ivanfesenko.org",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.newscientist.com",
+        "www.qmul.ac.uk",
+        "www.xataka.com",
+        "www.york.ac.uk"
+      ],
+      "url": [
+        "https://alpo.ge/",
+        "https://i.blogs.es/038305/feynman/1024_682.jpeg",
+        "https://i.blogs.es/038305/feynman/500_333.jpeg",
+        "https://i.blogs.es/038305/feynman/840_560.jpeg",
+        "https://i.blogs.es/746fde/estudiantes-matematicas/375_142.jpeg",
+        "https://i.blogs.es/ce5364/matematicas-ia/1024_2000.jpeg",
+        "https://i.blogs.es/d16027/captura-de-pantalla-2026-07-21-a-las-12.42.06/1024_2000.png",
+        "https://i.blogs.es/d16027/captura-de-pantalla-2026-07-21-a-las-12.42.06/1366_2000.png",
+        "https://i.blogs.es/d16027/captura-de-pantalla-2026-07-21-a-las-12.42.06/450_1000.png",
+        "https://i.blogs.es/d16027/captura-de-pantalla-2026-07-21-a-las-12.42.06/650_1200.png",
+        "https://ivanfesenko.org/",
+        "https://unsplash.com/es/fotos/estudiante-escribiendo-ecuaciones-complejas-en-una-pizarra-bdB7uddLq5o",
+        "https://www.newscientist.com/article/2580374-ais-solution-to-87-year-old-riddle-takes-mathematicians-by-surprise/",
+        "https://www.qmul.ac.uk/maths/profiles/sahaa.html",
+        "https://www.york.ac.uk/maths/people/chris-bowman/"
+      ]
+    }
+  },
+  {
+    "id": 1588,
+    "fecha": "2026-07-23T08:23:17Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Substack contra IA",
+    "resumen": "Substack incorpora herramientas para detectar contenido generado con IA, sumándose a la tendencia de empresas como Meta, YouTube y TikTok en la lucha contra la generación de contenido sintético. Esto refleja un esfuerzo por mantener la confianza digital y autenticidad en la información compartida en sus plataformas.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905439-3562f088758d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3OTQ5OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/substack-apuesta-por-detectar-contenido",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:substack apuesta por detectar contenido generado con ia y abre un nuevo frente en la economía de la confianza digital",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1587,
+    "fecha": "2026-07-23T08:23:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Trojan Brasileño Ataca Portugal",
+    "resumen": "Un troyano bancario brasileño se está propagando activamente en Portugal, aprovechando que las empresas portuguesas comparten el mismo idioma nativo que los hackers brasileños, lo que las convierte en objetivos fáciles. El ataque puede aprovecharse de la confianza y la familiaridad con el idioma para realizar phishing y otros tipos de ataques dirigidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3OTQ5OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/brazilian-banking-trojan-spreading-portugal",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:brazilian banking trojan actively spreading in portugal",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "File Deletion (no se menciona explícitamente, pero es común en ataques de troyanos)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1586,
+    "fecha": "2026-07-23T08:23:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en SmartConsole",
+    "resumen": "Check Point ha lanzado actualizaciones de seguridad para abordar múltiples vulnerabilidades en productos de gestión de seguridad y Multi-Domain Management (MDSM), incluyendo una falla crítica (CVE-2026-16232, CVSS score: 9.3) que permite un bypass de autenticación en el proceso de inicio de sesión de SmartConsole, permitiendo acceso de administrador completo. Esta vulnerabilidad está siendo explotada activamente en el wild.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3OTQ5ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-16232",
+    "ttps": [
+      {
+        "id": "T1550",
+        "name": "Use of Known Vulnerabilities"
+      },
+      {
+        "id": "T1550.002",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-16232"
+      ]
+    }
+  },
+  {
+    "id": 1585,
+    "fecha": "2026-07-23T08:22:58Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ransomware más efectivo con IA",
+    "resumen": "El informe \"Ransomware en la era de la IA 2026\" de Proofpoint revela que la IA aumenta significativamente la efectividad del ransomware, ayudando a los atacantes a crear campañas de phishing y ataques más precisos, lo que afecta a la mitad de los ataques de ransomware en España. La integración de la IA en el ransomware representa un vector de ataque más sofisticado y peligroso.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3OTQ5Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/uno-de-cada-dos-ataques-de-ransomware-en-espana-es-mas-efectivo-por-el-uso-de-ia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:uno de cada dos ataques de ransomware en españa es más efectivo por el uso de ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1584,
     "fecha": "2026-07-23T05:49:53Z",
     "categoria": "IA",
