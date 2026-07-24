@@ -1,5 +1,128 @@
 [
   {
+    "id": 1614,
+    "fecha": "2026-07-24T08:19:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Totolink N300RT",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-7219) en el router Totolink N300RT versión 3.4.0-B20250430, que permite un desbordamiento de buffer al manipular el argumento \"entry_name\" en el archivo /boafrm/formIpQoS, lo que puede ser explotado de forma remota. Un exploit ya ha sido publicado y puede ser utilizado por atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4ODExNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/219516",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-7219",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-7219"
+      ]
+    }
+  },
+  {
+    "id": 1613,
+    "fecha": "2026-07-24T08:19:08Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Brechas de seguridad AI en Europa",
+    "resumen": "La capa de seguridad de la IA y las salvaguardas para muchos productos de IA no protegen de manera uniforme contra ataques de jailbreaking y acciones inseguras en todos los idiomas, lo que expone vulnerabilidades en la seguridad de la IA en entornos multilingües. Esto puede permitir a los atacantes explotar debilidades en la seguridad de la IA, especialmente en regiones con múltiples idiomas como Europa.",
+    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4ODExNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/europes-multilingual-reality-exposes-ai-security-gaps",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:europe s multilingual reality exposes ai security gaps",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1612,
+    "fecha": "2026-07-24T08:19:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque UAC-0099 con plugin falso",
+    "resumen": "El equipo de respuesta a emergencias informáticas de Ucrania (CERT-UA) ha alertado sobre una nueva campaña que utiliza un programa malicioso disfrazado como un plugin de Notepad++ para comprometer sistemas Windows, atribuyendo la actividad al grupo UAC-0099, que previamente ha explotado vulnerabilidades en software como WinRAR. El ataque entrega el malware MATCHBOIL.V2.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4ODExNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/fake-notepad-plugin-delivers.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fake notepad plugin delivers matchboil v2 in uac 0099 attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1611,
+    "fecha": "2026-07-24T08:18:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ransomware Clop ataca Windchill",
+    "resumen": "El grupo de ransomware Clop está explotando instancias expuestas a Internet de PTC Windchill y FlexPLM en una nueva campaña de extorsión por robo de datos, utilizando técnicas de phishing y ataques dirigidos para obtener acceso no autorizado. El impacto puede ser significativo, ya que puede llevar a la pérdida de datos confidenciales y la interrupción de operaciones críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4ODExMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-windchill-flexplm-in-data-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:clop ransomware targets windchill flexplm in data theft attacks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1610,
     "fecha": "2026-07-24T05:45:56Z",
     "categoria": "Ciberseguridad",
