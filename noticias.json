@@ -1,5 +1,152 @@
 [
   {
+    "id": 1621,
+    "fecha": "2026-07-24T13:27:10Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "EEUU acusa a China de plagiar IA",
+    "resumen": "La Administración de EEUU ha acusado a China de plagiar los modelos de lenguaje de Anthropic para desarrollar su modelo Kimi K3, lo que ha generado preocupaciones sobre la seguridad y la propiedad intelectual en el sector de la inteligencia artificial. La acusación se basa en la supuesta construcción de una plataforma interna por parte de Moonshot AI para hacer consultas masivas a modelos de EEUU y transferir sus capacidades a Kimi K3.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905462-56e7b9f722f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTk2MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/eeuu-esta-acusando-a-china-plagiar-modelos-anthropic-tenemos-tres-problemas-esa-acusacion",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:eeuu está acusando a china de plagiar los modelos de anthropic tenemos tres problemas con esa acusación",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.cnbc.com",
+        "www.lefigaro.fr",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3d4590/mythos-rendimiento/1024_682.jpeg",
+        "https://i.blogs.es/3d4590/mythos-rendimiento/500_333.jpeg",
+        "https://i.blogs.es/3d4590/mythos-rendimiento/840_560.jpeg",
+        "https://i.blogs.es/541841/captura-de-pantalla-2026-07-24-a-las-14.48.21/1024_2000.png",
+        "https://i.blogs.es/541841/captura-de-pantalla-2026-07-24-a-las-14.48.21/1366_2000.png",
+        "https://i.blogs.es/541841/captura-de-pantalla-2026-07-24-a-las-14.48.21/450_1000.png",
+        "https://i.blogs.es/541841/captura-de-pantalla-2026-07-24-a-las-14.48.21/650_1200.png",
+        "https://i.blogs.es/78362a/casa-blanca-destilacion-kimi-k3-china-eeuu/1024_2000.jpeg",
+        "https://i.blogs.es/7b8f72/ballmer-amodei/375_142.jpeg",
+        "https://www.cnbc.com/2026/07/21/bessent-china-ai-sanctions.html",
+        "https://www.lefigaro.fr/secteur/high-tech/la-maison-blanche-accuse-l-ia-chinoise-kimi-d-avoir-siphonne-le-savoir-faire-d-anthropic-20260722"
+      ]
+    }
+  },
+  {
+    "id": 1620,
+    "fecha": "2026-07-24T13:27:03Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Coeficiente Genio para IA",
+    "resumen": "Se propone un nuevo métrico, el Coeficiente Genio, para medir la capacidad de los modelos de lenguaje de IA para entender el contexto y las intenciones detrás de una solicitud, ya que la brecha entre lo que se solicita y lo que se entiende puede llevar a resultados inesperados. Esto es especialmente importante con el aumento de los agentes de IA proactivos que pueden tomar acciones en el mundo real sin supervisión.",
+    "url_imagen": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTk2MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/why-ai-needs-a-genie-coefficient.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:why ai needs a genie coefficient",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "books.google.com",
+        "en.wikipedia.org",
+        "metarationality.com",
+        "metr.org",
+        "ourworldindata.org",
+        "simonwillison.net",
+        "spectrum.ieee.org",
+        "taubench.com",
+        "www.cna.org",
+        "www.fastly.com",
+        "www.lesswrong.com",
+        "www.schneier.com",
+        "www.theguardian.com"
+      ],
+      "url": [
+        "https://metarationality.com/purpose-of-meaning",
+        "https://metarationality.com/reasonable-reference",
+        "https://metr.org/blog/2026-06-26-gpt-5-6-sol/",
+        "https://ourworldindata.org/what-is-the-gini-coefficient",
+        "https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/",
+        "https://spectrum.ieee.org/ai-agent-benchmark",
+        "https://spectrum.ieee.org/ai-agents-safety",
+        "https://spectrum.ieee.org/prompt-injection-attack",
+        "https://spectrum.ieee.org/tag/agentic-ai",
+        "https://spectrum.ieee.org/tag/alexa",
+        "https://spectrum.ieee.org/tag/siri",
+        "https://spectrum.ieee.org/tag/terry-winograd",
+        "https://taubench.com/",
+        "https://www.cna.org/analyses/2022/09/goodharts-law",
+        "https://www.fastly.com/blog/using-gini-coefficient-plan-edge-capacity",
+        "https://www.law.cornell.edu/wex/mens_rea",
+        "https://www.lesswrong.com/posts/qJYMbrabcQqCZ7iqm/impossiblebench-measuring-reward-hacking-in-llm-coding-1",
+        "https://www.theguardian.com/commentisfree/2026/jun/16/anthropic-fable-ai"
+      ]
+    }
+  },
+  {
+    "id": 1619,
+    "fecha": "2026-07-24T13:26:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fuga de datos en app de oración vaticana",
+    "resumen": "Una API con vulnerabilidades expone información personal de más de 700.000 usuarios en todo el mundo, incluyendo nombres, direcciones de correo electrónico, ubicación y estado del sitio, lo que puede ser fácilmente accesado por cualquier persona con un navegador. El vector de ataque es un endpoint de API poroso que no requiere autenticación, lo que facilita el acceso no autorizado a la información sensible de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTk2MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/vatican-official-prayer-app-leaks-700k-pii",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:vatican s official prayer app leaks 700k global users pii",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se infiere que las credenciales o información sensible no están adecuadamente protegidas debido a la falta de autenticación en el endpoint de API)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1618,
+    "fecha": "2026-07-24T13:26:52Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en ChatGPT",
+    "resumen": "Se ha descubierto una vulnerabilidad crítica en ChatGPT Workspace Agents de OpenAI, conocida como AgentForger, que permitía a un atacante desplegar un agente de inteligencia artificial (IA) autónomo dentro de una organización víctima a través de un enlace de phishing. La vulnerabilidad ha sido corregida por OpenAI a partir del 8 de junio.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557010061-315772f6efef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTk2MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:chatgpt agentforger flaw could deploy rogue workspace agents via a phishing link",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1617,
+    "fecha": "2026-07-24T13:26:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Europol retira 4,340 URLs",
+    "resumen": "Europol ha identificado y marcado para su eliminación 4,340 URLs en el marco de una operación contra contenido en línea relacionado con \"The Com\", una red de grupos extremistas nihilistas violentos, en un esfuerzo por combatir el extremismo en línea y prevenir posibles ataques. La operación se centra en la eliminación de contenido que promueva la violencia y el extremismo, reduciendo así los vectores de ataque y la radicalización en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTk2MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/europol-flags-4-340-urls-for-removal-in-the-com-crackdown/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:europol flags 4 340 urls for removal in the com crackdown",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1616,
     "fecha": "2026-07-24T10:59:30Z",
     "categoria": "Ciberseguridad",
