@@ -1,5 +1,124 @@
 [
   {
+    "id": 1626,
+    "fecha": "2026-07-24T16:33:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en jackson-databind",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2021-20190) en versiones anteriores a 2.9.10.7 de jackson-databind, que afecta la confidencialidad, integridad y disponibilidad de los datos debido a una mala gestión de la interacción entre gadgets de serialización y escritura. Los productos afectados incluyen netapp:active_iq_unified_manager, fasterxml:jackson-databind y netapp:oncommand_api_services.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MTA4Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-20190",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-20190",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "2.9.10.7"
+      ],
+      "cve": [
+        "CVE-2021-20190"
+      ]
+    }
+  },
+  {
+    "id": 1625,
+    "fecha": "2026-07-24T16:33:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques \"Wrench\" contra titulares de criptomonedas",
+    "resumen": "Los ataques de \"Wrench\" que involucran tácticas de fuerza bruta como invasiones a hogares y secuestros contra titulares de criptomonedas están en aumento, según investigadores, lo que representa un vector de ataque físico contra la seguridad de activos digitales. Estos ataques aprovechan la falta de anonimato en transacciones de criptomonedas para localizar y explotar a los titulares.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MTA4MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/wrench-attacks-against-cryptocurrency-holders",
+    "fuente": "The Record",
+    "dedup_key": "txt:wrench attacks against crypto holders appear to be on the rise",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1624,
+    "fecha": "2026-07-24T16:33:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Azure Automation",
+    "resumen": "Una configuración predeterminada en Azure Automation permitía a atacantes tomar el control de la identidad de otro inquilino (tenant) y acceder a datos, credenciales y cargas de trabajo en la nube de otros inquilinos, aprovechando una cadena de fallos en el código y una configuración pública por defecto. La vulnerabilidad ha sido abordada por Microsoft.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MTA4Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:default azure automation setting enables cross tenant identity takeover",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Modify System Binary"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1623,
+    "fecha": "2026-07-24T16:33:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Phishing Kit de BlueNoroff",
+    "resumen": "El grupo de actores de amenazas norcoreanos BlueNoroff ha sido descubierto operando un kit de phishing activo que imita plataformas de videoconferencia como Zoom y Microsoft Teams, con el fin de entregar malware y perfilizar criptomonedas antes de la entrega del malware, utilizando técnicas de ingeniería social y abuso de confianza. Los ataques aprovechan dominios typosquatted y contactos de la industria comprometidos para aumentar la credibilidad de los correos electrónicos de phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MTA4MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/bluenoroff-zoom-phishing-kit-profiles.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:bluenoroff zoom phishing kit profiles crypto wallets before malware delivery",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing: Spearphishing Attachment no se menciona explícitamente, pero se puede inferir T1566.001 - Spearphishing Attachment no es claro, pero se puede considerar T1566.002 - Spearphishing via Service"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1622,
+    "fecha": "2026-07-24T16:33:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Baja masiva de Microsoft 365",
+    "resumen": "Un error en el sistema de mantenimiento de red automatizado de Microsoft causó una interrupción masiva al eliminar rutas IP de más dispositivos de los previstos, afectando servicios de Azure y Microsoft 365. El incidente se originó debido a un bug en el sistema de mantenimiento, lo que llevó a una falla en la conectividad.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MTA4MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-massive-microsoft-365-outage-on-maintenance-bug/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft blames massive microsoft 365 outage on maintenance bug",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1621,
     "fecha": "2026-07-24T13:27:10Z",
     "categoria": "IA",
