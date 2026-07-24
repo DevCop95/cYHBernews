@@ -1,5 +1,75 @@
 [
   {
+    "id": 1628,
+    "fecha": "2026-07-24T19:18:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Phishing Fantasma Evita Detección",
+    "resumen": "El \"Ghost Phishing\" permite que las páginas de phishing permanezcan ocultas hasta que el navegador del usuario las descifra y renderiza, evitando así la detección en análisis de seguridad estáticos. Herramientas como ANY.RUN ofrecen visibilidad a nivel de navegador para detectar contenido de phishing descifrado y cambios en el DOM en tiempo de ejecución.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MjA3MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114045",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:what if the phishing page that steals access never appears in the security scan you trust ghost phishing can keep",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion (se menciona evasión de detección en análisis de seguridad estáticos)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583",
+        "name": "Acquire Infrastructure (no se menciona explícitamente, pero se infiere que el atacante necesita infraestructura para alojar la página de phishing)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1627,
+    "fecha": "2026-07-24T19:18:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Certighost",
+    "resumen": "La vulnerabilidad Certighost permite a usuarios de Active Directory con bajos privilegios obtener un certificado para un Controlador de Dominio y autenticarse como esa máquina, lo que puede llevar a la obtención del secreto krbtgt a través de DCSync. El exploit publicado aprovecha una debilidad en la emisión de certificados para Domain Controllers.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MjA3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:certighost exploit lets low privileged active directory users impersonate a domain controller",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Session Hijacking no se menciona explícitamente, pero se puede inferir una técnica relacionada con la autenticación."
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Kerberos Tickets no se menciona explícitamente, pero se puede inferir una técnica relacionada con la obtención de secretos de autenticación."
+      },
+      {
+        "id": "T1208",
+        "name": "Lateral Movement no se menciona explícitamente, pero se puede inferir una técnica relacionada con el movimiento dentro de la red."
+      },
+      {
+        "id": "T1484",
+        "name": "Domain Policy Modification no se menciona explícitamente, pero se puede inferir una técnica relacionada con la modificación de políticas de dominio."
+      },
+      {
+        "id": "T1552.004",
+        "name": "DCShadow no se menciona explícitamente, pero se puede inferir una técnica relacionada con la autenticación y el acceso a controladores de domin"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1626,
     "fecha": "2026-07-24T16:33:58Z",
     "categoria": "Ciberseguridad",
