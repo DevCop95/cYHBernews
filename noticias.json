@@ -1,5 +1,58 @@
 [
   {
+    "id": 1616,
+    "fecha": "2026-07-24T10:59:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en ncurses",
+    "resumen": "Se ha identificado una vulnerabilidad de denegación de servicio (CVE-2017-13728) con una puntuación CVSS de 7.5, considerada como alta, en la versión 6.0 de ncurses debido a un bucle infinito en la función next_char, lo que permite un ataque remoto con entrada especialmente manipulada. Esto podría afectar la disponibilidad de sistemas que utilizan esta biblioteca.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTA3NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-13728",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-13728",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2017-13728"
+      ]
+    }
+  },
+  {
+    "id": 1615,
+    "fecha": "2026-07-24T10:59:22Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ataque AI en Ministerio Finanzas Tailandia",
+    "resumen": "Un atacante utilizó el agente de IA Hermes para realizar una explotación post-inicio de sesión en el Ministerio de Finanzas de Tailandia, aprovechando la capacidad del agente para ejecutar comandos de alto riesgo sin permiso, y recopilar información sensible en la red del ministerio. El ataque aprovechó la configuración insegura del agente y la falta de controles de seguridad en la red del ministerio.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219345-06ea2bf3eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTA3NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/hacker-runs-hermes-ai-agent-unattended.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hacker runs hermes ai agent unattended for post exploitation at thai finance ministry",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1069",
+        "name": "Permission Groups Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se infiere por la configuración insegura del agente y la falta de controles de seguridad)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1614,
     "fecha": "2026-07-24T08:19:17Z",
     "categoria": "Ciberseguridad",
