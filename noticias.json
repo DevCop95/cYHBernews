@@ -1,5 +1,65 @@
 [
   {
+    "id": 1610,
+    "fecha": "2026-07-24T05:45:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware con anti-VM avanzado",
+    "resumen": "Un malware recientemente analizado presenta una característica anti-VM (Máquina Virtual) sofisticada, que evita la detección por herramientas como RecordedFuture Triage, AnyRun y VirusTotal, mediante el uso de un algoritmo de entropía basado en la recopilación y procesamiento de datos. El malware logra engañar a los sistemas de detección mediante la generación de datos ficticios y decoy.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4NzE5NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9191",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:this super ultra mega rare fuck off ultra malware my colleague sent me has a really fancy schmancy anti vm feature i",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Sandbox Evasion"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1480",
+        "name": "Execution Guardrails"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "gist.github.com"
+      ],
+      "md5": [
+        "b8accc6e05d956889e0282e1926a6feb"
+      ]
+    }
+  },
+  {
+    "id": 1609,
+    "fecha": "2026-07-24T05:45:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en ncurses 6.0",
+    "resumen": "Se ha identificado una vulnerabilidad de desreferencia de puntero NULL en la función _nc_parse_entry de ncurses 6.0, con un CVSS Score de 7.5, que podría permitir un ataque de denegación de servicio remoto si se procesan datos terminfo no confiables. La vulnerabilidad, catalogada como CVE-2017-11113, afecta la integridad de la librería terminfo.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4NzE5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-11113",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-11113",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2017-11113"
+      ]
+    }
+  },
+  {
     "id": 1608,
     "fecha": "2026-07-24T02:13:04Z",
     "categoria": "Ciberseguridad",
