@@ -1,5 +1,60 @@
 [
   {
+    "id": 1636,
+    "fecha": "2026-07-25T08:00:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en ncurses",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2022-29458) con un CVSS Score de 7.1, clasificada como alta, en versiones de ncurses anteriores al parche 20220416, que puede permitir lecturas fuera de límites y violaciones de segmentación en la biblioteca terminfo. Los productos afectados incluyen Debian Linux, macOS y la propia biblioteca ncurses.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NjY0Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-29458",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-29458",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-29458"
+      ]
+    }
+  },
+  {
+    "id": 1635,
+    "fecha": "2026-07-25T08:00:35Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Empresas tecnológicas defienden IA abierta",
+    "resumen": "25 empresas tecnológicas, incluyendo Nvidia, Microsoft y Meta, han firmado una carta abierta al gobierno estadounidense para pedir que no restrinja los modelos de IA de pesos abiertos, argumentando que esto podría frenar la competencia y la innovación, y que la transparencia de los modelos abiertos es esencial para la seguridad. La carta resalta que depender exclusivamente de modelos cerrados no es seguro, ya que están sujetos a fallos o ataques que pueden pasar desapercibidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NjY0MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/servicios/depender-unicamente-modelos-cerrados-no-seguro-25-empresas-tecnologicas-salen-defensa-ia-open-source",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:depender únicamente de modelos cerrados no es seguro 25 empresas tecnológicas salen en defensa de la ia abierta",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3e8cfb/openai-sandbox/375_142.jpeg",
+        "https://i.blogs.es/669e3b/gemini_generated_image_j3krkdj3krkdj3kr/1024_2000.jpeg"
+      ]
+    }
+  },
+  {
+    "id": 1634,
+    "fecha": "2026-07-25T08:00:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en NodeBB",
+    "resumen": "Se han descubierto ocho vulnerabilidades de seguridad en NodeBB, que podrían exponer el acceso de administrador y chats privados, y que han sido detectadas por agentes de pentesting de IA de Aikido Security. Todas las versiones anteriores a 4.14.0 están afectadas, pero NodeBB ha publicado una actualización de seguridad en la versión 4.14.2.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NjY0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/nodebb-patches-eight-ai-found-flaws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:nodebb patches eight ai found flaws exposing admin access and private chats",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1633,
     "fecha": "2026-07-25T05:39:43Z",
     "categoria": "Ciberseguridad",
