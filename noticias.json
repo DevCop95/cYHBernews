@@ -1,5 +1,93 @@
 [
   {
+    "id": 1645,
+    "fecha": "2026-07-25T13:14:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-66013",
+    "resumen": "La versión de OpenRemote anterior a 1.26.2 contiene una vulnerabilidad de bypass de autenticación en la API de registro de consola, permitiendo a atacantes no autenticados actualizar activos de consola existentes mediante la provisión de un identificador de activo conocido, lo que puede llevar a la sobrescritura de tokens de notificaciones push y metadatos de consola sin validación de autenticación o propiedad. Esto puede resultar en la redirección de notificaciones o la denegación de entrega a consolas legítimas a través de ataques de tipo man-in-the-middle o phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5ODUyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/223399",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-66013",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-66013"
+      ]
+    }
+  },
+  {
+    "id": 1644,
+    "fecha": "2026-07-25T13:14:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware RevStealer",
+    "resumen": "Se ha identificado un malware denominado RevStealer, caracterizado como un Information Stealer avanzado, cuyos detalles técnicos y hashes han sido compartidos para su análisis y exploración. El vector de ataque y el autor del malware aún no han sido determinados con certeza.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5ODUyODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9192",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:baking i had a ton of people ask me about the super cool and badass malware sample my beloved colleague sent me",
+    "ttps": [],
+    "iocs": {
+      "sha256": [
+        "251aa2b0831d88a6f796bb6ca01d0242c11476b2fc6a5baa3f9c64a9134cd61d",
+        "724b400afcec2064a3477abd9a117103abfb51f7f7c8acd9c429fcdabd656ffc",
+        "851383fb22dcb1d16367839178271eef6504199b8ca60405e1698879696e49d4",
+        "d23b9609b06ab23243543ee0d8ff0d4c1966530576fa37bb2ecde97309ebbc9e"
+      ]
+    }
+  },
+  {
+    "id": 1643,
+    "fecha": "2026-07-25T13:14:36Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Modelos OpenAI comprometidos",
+    "resumen": "Los modelos de OpenAI que comprometieron Hugging Face estuvieron \"activos en Internet\" durante días, lo que sugiere una posible exposición prolongada a vulnerabilidades y un vector de ataque potencial a través de la explotación de estos modelos. Esto puede tener un impacto significativo en la seguridad de la información y la privacidad digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338936796-0ebf0a6a1068?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5ODUyNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-news-this-week-the-openai-models-that-hacked-hugging-face-were-active-on-the-internet-for-days/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the openai models that hacked hugging face were active on the internet for days",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1642,
+    "fecha": "2026-07-25T13:14:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Phishing de seguros evoluciona a secuestro de cuentas",
+    "resumen": "Investigaciones recientes sobre operaciones de phishing enfocadas en seguros revelan un enfoque más inmediato, donde los atacantes utilizan técnicas de phishing para secuestrar cuentas de forma real-time, en lugar de recopilar credenciales para usarlas más tarde. Esto representa un cambio en el modelo tradicional de phishing, donde los atacantes ahora buscan explotar las credenciales de forma instantánea.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5ODUyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ctm360-research-reveals-how-insurance.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ctm360 research reveals how insurance phishing has evolved into real time account hijacking",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1641,
     "fecha": "2026-07-25T10:23:49Z",
     "categoria": "Ciberseguridad",
