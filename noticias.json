@@ -1,5 +1,58 @@
 [
   {
+    "id": 1650,
+    "fecha": "2026-07-25T19:00:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Kernel de Linux",
+    "resumen": "Se ha identificado una vulnerabilidad de alto impacto (CVSS 7.8) en el kernel de Linux, específicamente en el componente eventpoll, que puede provocar un uso después de la liberación (use-after-free) debido a un error en la gestión del recuento de referencias y el mutex. La vulnerabilidad puede ser explotada si un atacante elimina su referencia al objeto ep mientras otro usuario sigue utilizando el mutex, lo que podría llevar a una situación en la que el objeto se libera mientras aún se está utilizando.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwMDYwNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-38349",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-38349",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-38349"
+      ]
+    }
+  },
+  {
+    "id": 1649,
+    "fecha": "2026-07-25T19:00:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Estafas de extorsión por correo electrónico",
+    "resumen": "Actores maliciosos están utilizando direcciones de correo electrónico expuestas en filtraciones de datos publicadas por el grupo de extorsión ShinyHunters para enviar correos electrónicos de extorsión sexual, exigiendo $2,000 en Bitcoin. Los ataques aprovechan la información personal expuesta para llevar a cabo campañas de phishing y extorsión.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwMDYwMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/shinyhunters-data-leaks-fuel-2-000-sextortion-email-scam/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:shinyhunters data leaks fuel 2 000 sextortion email scam",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise (no se menciona, por lo que no se incluye)"
+      },
+      {
+        "id": "T1615",
+        "name": "Compromiso de credenciales (no se menciona explícitamente, pero se puede inferir que se utiliza información expuesta en filtraciones de datos)"
+      },
+      {
+        "id": "T1621",
+        "name": "Credenciales compradas (no se menciona explícitamente, pero se puede inferir que se utiliza información expuesta en filtraciones de datos)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1648,
     "fecha": "2026-07-25T16:00:42Z",
     "categoria": "Ciberseguridad",
@@ -132,24 +185,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1641,
-    "fecha": "2026-07-25T10:23:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en kernel de Linux",
-    "resumen": "Se ha identificado y resuelto la vulnerabilidad CVE-2024-42132 en el kernel de Linux, con un CVSS Score de 7.1, clasificada como alta, que podría permitir la configuración de identificadores mayores que HCI_CONN_HANDLE_MAX, lo que genera advertencias de activación de Syzbot. La vulnerabilidad se debe a un error en la validación de identificadores en el código del protocolo Bluetooth.",
-    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NzUwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-42132",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2024-42132",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2024-42132"
-      ]
-    }
   },
   {
     "id": 1640,
@@ -2067,27 +2102,6 @@
     "iocs": {}
   },
   {
-    "id": 1567,
-    "fecha": "2026-07-22T13:40:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Kernel de Linux",
-    "resumen": "Se ha descubierto una vulnerabilidad de use-after-free (CVE-2023-3390) en el subsistema netfilter del kernel de Linux, que permite a un atacante local con acceso de usuario causar un problema de escalada de privilegios, con un CVSS Score de 7.8 (HIGH). La vulnerabilidad se debe a un manejo de errores mal manejado en la función NFT_MSG_NEWRULE, lo que permite utilizar un puntero colgante en la misma transacción.",
-    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3Mjc2NTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-3390",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2023-3390",
-    "ttps": [],
-    "iocs": {
-      "sha1": [
-        "1240eb93f0616b21c675416516ff3d74798fdc97"
-      ],
-      "cve": [
-        "CVE-2023-3390"
-      ]
-    }
-  },
-  {
     "id": 1566,
     "fecha": "2026-07-22T13:40:51Z",
     "categoria": "IA",
@@ -3953,24 +3967,6 @@
     "iocs": {}
   },
   {
-    "id": 1497,
-    "fecha": "2026-07-20T06:13:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad Linux Kernel",
-    "resumen": "Se ha identificado una vulnerabilidad en el núcleo de Linux (CVE-2026-52968) con una puntuación CVSS de 8.8, que permite accesos fuera de límites en la tabla GAIT debido a un error de aritmética de punteros, afectando la estabilidad y seguridad del sistema. La vulnerabilidad se produce en la indexación manual de la tabla GAIT en las funciones kvm_s390_pci_aif_enable(), kvm_s390_pci_aif_disable() y aen_host_forward().",
-    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1Mjc5OTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-52968",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-52968",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-52968"
-      ]
-    }
-  },
-  {
     "id": 1496,
     "fecha": "2026-07-20T06:13:07Z",
     "categoria": "IA",
@@ -5244,24 +5240,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1448,
-    "fecha": "2026-07-17T13:18:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en kernel de Linux",
-    "resumen": "Se ha identificado una vulnerabilidad en el kernel de Linux (CVE-2024-58093) con una puntuación CVSS de 7.8, considerada como alta, que afecta la gestión de estados de enlace en la interfaz PCI/ASPM, lo que podría provocar problemas de memoria y posibles ataques de use-after-free. La vulnerabilidad se produce al eliminar funciones del bus correspondiente a un enlace determinado, lo que puede llevar a la liberación prematura o tardía de recursos, causando errores de segmentación de memoria (GPF) especialmente durante la desconexión en caliente de dispositivos PCIe.",
-    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyOTQzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-58093",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2024-58093",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2024-58093"
-      ]
-    }
   },
   {
     "id": 1447,
@@ -13104,24 +13082,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-53362"
-      ]
-    }
-  },
-  {
-    "id": 1153,
-    "fecha": "2026-07-04T13:14:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Kernel de Linux",
-    "resumen": "Se ha identificado una vulnerabilidad de alto riesgo (CVSS 7.1) en el kernel de Linux, específicamente en el módulo cls_u32, que podría permitir un ataque de slab-out-of-bounds debido a la falta de validación de valores negativos en skb_header_pointer(), lo que se ha resuelto utilizando skb_header_pointer_careful(). La vulnerabilidad se ha designado como CVE-2026-23204.",
-    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4ODh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-23204",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-23204",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-23204"
       ]
     }
   },
