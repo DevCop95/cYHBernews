@@ -1,5 +1,40 @@
 [
   {
+    "id": 1633,
+    "fecha": "2026-07-25T05:39:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Golden Chickens: Nuevas Familias Malware",
+    "resumen": "Los actores detrás del ecosistema de malware-as-a-service (MaaS) Golden Chickens han resurgido con cuatro nuevas familias de malware, incluyendo TinyEgg, ChonkyChicken y variantes, lo que indica una continua evolución y persistencia de la amenaza a pesar de las revelaciones públicas sobre su funcionamiento interno. Estas nuevas familias de malware pueden ser utilizadas para ataques dirigidos y campañas de phishing, representando un riesgo significativo para la seguridad de la información.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NTc5ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/golden-chickens-resurfaces-with-four.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:golden chickens resurfaces with four new malware families and modular implants",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1588",
+        "name": "Obtain Capabilities"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1632,
     "fecha": "2026-07-25T02:11:56Z",
     "categoria": "IA",
