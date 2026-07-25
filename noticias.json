@@ -1,5 +1,155 @@
 [
   {
+    "id": 1641,
+    "fecha": "2026-07-25T10:23:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en kernel de Linux",
+    "resumen": "Se ha identificado y resuelto la vulnerabilidad CVE-2024-42132 en el kernel de Linux, con un CVSS Score de 7.1, clasificada como alta, que podría permitir la configuración de identificadores mayores que HCI_CONN_HANDLE_MAX, lo que genera advertencias de activación de Syzbot. La vulnerabilidad se debe a un error en la validación de identificadores en el código del protocolo Bluetooth.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NzUwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-42132",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-42132",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-42132"
+      ]
+    }
+  },
+  {
+    "id": 1640,
+    "fecha": "2026-07-25T10:23:44Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "España apuesta por IA soberana",
+    "resumen": "El Estado español ha invertido en Sherpa.ai, una empresa vasca especializada en IA y privacidad de datos, con el objetivo de desarrollar una inteligencia artificial \"soberana\" que permita entrenar y utilizar grandes modelos de lenguaje sin comprometer la seguridad de los datos de los clientes. La ronda de financiación de 18 millones de dólares también contó con la participación de fondos de capital riesgo como Forgepoint Capital y Mundi Ventures.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937633-890b1429bc4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NzUwMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/espana-quiere-tener-su-propia-ia-soberana-primer-paso-se-llama-sherpa-ai-estado-accionista",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:españa quiere tener su propia ia soberana el primer paso se llama sherpa ai y el estado ya es accionista",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.expansion.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/a92f8d/samsung-mistral/375_142.jpeg",
+        "https://i.blogs.es/d33514/sherpa/1024_2000.jpeg",
+        "https://www.eleconomista.es/tecnologia/noticias/13995353/07/26/la-sepi-digital-invierte-en-sherpaai-para-reforzar-la-soberania-en-ia.html",
+        "https://www.elmundo.es/economia/empresas/2026/07/06/6a47e30cfc6c8398728b45c8.html",
+        "https://www.expansion.com/expansion-empleo/emprendedores/2026/07/06/6a4b3b78468aeb854d8b457c.html"
+      ]
+    }
+  },
+  {
+    "id": 1639,
+    "fecha": "2026-07-25T10:23:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad RCE en GitLab",
+    "resumen": "Un investigador de seguridad ha publicado un proof-of-concept (PoC) que explota una vulnerabilidad de ejecución de comandos remotos (RCE) en servidores GitLab 18.11.3 no parcheados, permitiendo a usuarios autenticados ejecutar comandos como git sin necesidad de derechos de administrador. La explotación se logra mediante la creación de dos notebooks Jupyter personalizados y la solicitud de su diff.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NzUwMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/researcher-publishes-gitlab-rce-poc.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researcher publishes gitlab rce poc letting authenticated users run commands as git",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1638,
+    "fecha": "2026-07-25T10:23:32Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Caída global de ChatGPT",
+    "resumen": "Se ha confirmado una interrupción global del servicio de ChatGPT, el chatbot de inteligencia artificial de OpenAI, afectando su conectividad en todo el mundo. La causa de la interrupción no se ha especificado, pero puede afectar a los usuarios que dependen de esta herramienta para diversas tareas y aplicaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027215032-f0c4292318ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NzUwMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai confirms chatgpt is down worldwide",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1637,
+    "fecha": "2026-07-25T10:23:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cloudflare Turnstile & Precursor",
+    "resumen": "Cloudflare introduce Turnstile y Precursor, herramientas de protección contra bots que permiten detectar y gestionar el tráfico de bots en sitios web sin utilizar captchas cognitivos, reduciendo gastos de egress y computo en servicios cloud. Estas herramientas están disponibles en el plan profesional de Cloudflare, que cuesta 20 USD al mes en planes anuales.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5NzUwMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/cloudflare-turnstile-precursor-como.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cloudflare turnstile precursor cómo detectar bots y humanos sin usar captchas cognitivos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blog.cloudflare.com",
+        "blogger.googleusercontent.com",
+        "developers.cloudflare.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.blogger.com",
+        "www.cloudflare.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com",
+        "www.seguridadapple.com",
+        "www.zendalibros.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg25rR-sZxFf5_rgaG_DHbXql0WLvh3nKJuVg3-7SBttMwFh55yNLgOEEHUjKTbJV1lpnenvBvHHxaTX8g6qd_hFHQD8jIhZOQEZBYQ_AN9J_D5RpDEJFRW7fAkzxYp4he3lEef6qDmV5oldV72IxUJKgG7R3VWhW9jyKWANJRP_Add2PFFqo98/w640-h306/Turnstile.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7tRqWx-Vh2gG6PrElXrMux5s4DZvt2pIIM3QPLqJSvctKKHmr8Ea40CVOooYYXGI4vmKqTTLEDBVcS0cNrAgMDIEcxaxXaDsIqt5-17ZG9ZAh9R3BisQJrxRfbMikYpxWOKUNLcRZVwAW9De4r3rISJlg822GsSiBhaSxnoMdCwIw8hHZkDFj/w400-h286/precursor7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIcHXad5TEa18R4VF0-w3OgDHvE77tB3xoirNiAbfv9CRaZfJyAaC6Mk1ttx_fCHh-KQaTzp9QRmBaFmVkvDDw8lw-7yjQpL3Cvxr9mGLJglooIHJ1143UNqTUwxab1oUadbfKzHyOLm81SaMMmzuUmVr3MJh47ynjG-zgJgTw5Rj66gfKOZQF/w640-h484/precursor5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSV17NUQBq6IONrBFDLM4eVRU6aWpap3rgVKjau0zGJ4x0qfzXenoKtLX4WiGWmFnl8H1c1HhbAfd4mhx7NruMF4J8DQSdxyjxjNcEGu-351CbnjbbzvtD62FfSygWUXflK5mAY1_sPBiCu2Xej46p7k5B1caLOZZkQPidaNVp8-hWGpeZ3geL/w640-h324/precursor6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggwQCsvgmg9bPf8BYWKzw9y3Z_nr_jZSiAL6v4xrCc4lwmuT0yO85gdrfciZ6aR9UuY93QCfid2Jsw-8U3cavcJxdZJq-3NLKUwYbO2SU0SoC64bUQLdYf3edvByv_V0WlXcPUKjzNR3pOz7KzlR0JmFpTcmfkRdr6L0nzgf5sn6-yYRRG8ogC/w640-h400/precursor0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_AutQcbf8obasy_QXR-zdw5z7icJ980t0aReqJUlNsS44vgNnsELDj9AZHbnFJPuway7D1aEZWC520uNtpXOO9y7DkWtZY7e7vLQjFhxZIaoOqZkzGoARpHH5jnWd5Aqvu767dijf922LldgQxT9_pYU7B6H2M7Vzyhil8pZKdNDdMZhHJQRH/s1832/precursor4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_AutQcbf8obasy_QXR-zdw5z7icJ980t0aReqJUlNsS44vgNnsELDj9AZHbnFJPuway7D1aEZWC520uNtpXOO9y7DkWtZY7e7vLQjFhxZIaoOqZkzGoARpHH5jnWd5Aqvu767dijf922LldgQxT9_pYU7B6H2M7Vzyhil8pZKdNDdMZhHJQRH/w640-h364/precursor4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbkCfFaRbFs_zyAv05L_Pt57EwYoTmsro-9f52HcsoSa0I-Ez-YQNvqN0lD8veBsvPBT-nSDP6sSETMvzOjZsDyF94cE9KMICE1alHVjZYlktpSMAji9Evhxc0eRXjrSjI58PvRbO3p8op_zip8OVRRVSjwxh3wSyu7MEG_BNP-vz4y_QFpgXE/w524-h640/precursor3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4a8QT6GfikwgOGBQOdVA3LeLZ0uUGyN_pa3Hdf3K7CFznfbPgYw4P_Kvn9XYKH15jkMOoI7uBFmOfThNuyDz0h2BDMEuziPGEX-dV45AodPhyphenhyphenxogVRwSQDIskesIjjFU4c0_9vvL2xPqEXV6y375g_-17CgmUA6r_f91sI0yR8PsuX1yN1tA0/w640-h226/Turnstile2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijgGvaY2MCfskslgukq8TXOudflXC6JA2z-ZVkPvvaE53P4lfxoEq-UKxVNN2UWmjR8Xjh13HdBNAuLCxkZOafHV29QlbxiJDRNS5w1PhsF0AT-xIQeWLyzsq-CcZYUfZfEw0EAuitOGYFAsIgji_BnE3DNxY1AvIp6OI5TVfbus3m9e8W9eRK/w640-h370/AILabirynth0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjESHMGGEvfYH6w_YOaHHD7ixeBi3EPN5megO8h9R1inVJlKFNN_YzDbHemrPD_e_CdTzShd2f6KM96Nm7XrAve3ZZN_sbzaNIh_88JtDYcNpUZXbSPph2-MKjA3mJ4C4SQsqVN7XrE7N87KH5-fG2XhpH5RSqbHrnBlbzpv2yqRCKUjP-mh6-K/w640-h460/Turnstile.webp",
+        "https://elladodelmal.com",
+        "https://www.blogger.com/video.g?token=AD6v5dxIpuf61Yo0gdPJHP8ZPNq1j2HPDdYDIS5N7UxUL9qt_gkLTbepprpmtso9_f-Qmo22poG30ZS6ndk",
+        "https://www.blogger.com/video.g?token=AD6v5dxoQtRzMn-el6HDp3JDHuxktx7gvEnTRMa70dEO6Q2RrdB5h2FXN1WmDE7uT2734etlEwQRIVxLrC4",
+        "https://www.elladodelmal.com/2025/03/tu-website-con-smart-honeypots-contra.html",
+        "https://www.elladodelmal.com/2025/09/cloudflare-radar-bots-verificados.html",
+        "https://www.elladodelmal.com/2025/10/perplexity-comet-indirect-prompt.html",
+        "https://www.elladodelmal.com/2025/11/prompt-injection-en-chatgpt-atlas-con.html",
+        "https://www.elladodelmal.com/2026/06/captchas-cognitivos-para-humanos-y.html",
+        "https://www.zendalibros.com/la-inteligencia-artificial-de-los-conciertos-de-bruce-springsteen-que-sube-los-precios-y-los-scalpers/"
+      ]
+    }
+  },
+  {
     "id": 1636,
     "fecha": "2026-07-25T08:00:39Z",
     "categoria": "Ciberseguridad",
