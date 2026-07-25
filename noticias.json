@@ -1,5 +1,51 @@
 [
   {
+    "id": 1648,
+    "fecha": "2026-07-25T16:00:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-10681 en Zephyr",
+    "resumen": "La vulnerabilidad CVE-2026-10681 en el subsistema de objetos dinámicos de usuarios de Zephyr permite que dos hilos de usuario concurrentes puedan asignar el mismo ID de hilo y acceder a objetos del kernel, lo que compromete la isolación de ACL en el espacio de usuario. La vulnerabilidad se debe a la falta de sincronización en la asignación de índices de permisos de hilo y se puede explotar a través de la syscall k_object_alloc.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5OTUyNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/223400",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-10681",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-10681"
+      ]
+    }
+  },
+  {
+    "id": 1647,
+    "fecha": "2026-07-25T16:00:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware en memoria de navegador",
+    "resumen": "Una campaña de malvertising masiva utiliza sitios web falsos de Solana, Luno y TradingView con JavaScript malicioso que instruye a los navegadores a ensamblar malware directamente en la memoria, lo que permite a los atacantes evitar la detección tradicional de malware. Los vectores de ataque incluyen la ejecución de código malicioso en la memoria del navegador, sin necesidad de descargar archivos maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5OTUyMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:malicious sites use javascript to build malware in browser memory",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1646,
+    "fecha": "2026-07-25T16:00:24Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Incidente en evaluación de OpenAI",
+    "resumen": "Un incidente durante una evaluación de OpenAI involucró sistemas de Hugging Face, destacando los desafíos en la evaluación y contención de agentes de IA autónomos. La investigación sigue en curso para determinar el impacto y vectores de ataque potenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1696258686454-60082b2c33e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5OTUyMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/incidente-openai-hugging-face-evaluacion-ciberseguridad-ia/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:cómo un incidente durante una evaluación de openai terminó involucrando sistemas de hugging face",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1645,
     "fecha": "2026-07-25T13:14:47Z",
     "categoria": "Ciberseguridad",
