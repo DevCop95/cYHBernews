@@ -1,5 +1,79 @@
 [
   {
+    "id": 1652,
+    "fecha": "2026-07-25T21:50:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-4878",
+    "resumen": "Se ha descubierto una vulnerabilidad en la biblioteca libcap que permite a un usuario local no privilegiado explotar una condición de carrera de tipo Time-of-check-to-time-of-use (TOCTOU) en la función `cap_set_file()`, lo que puede llevar a una escalada de privilegios al inyectar o eliminar capacidades de ejecutables no intencionados. El vector de ataque implica acceso de escritura a un directorio padre y la capacidad de redirigir actualizaciones de capacidades de archivo a un archivo controlado por el atacante.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwMTYyNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/223405",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-4878",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1558.003",
+        "name": "Create or Modify System Process: File Deletion"
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass UAC"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-4878"
+      ]
+    }
+  },
+  {
+    "id": 1651,
+    "fecha": "2026-07-25T21:50:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Malvertising con SourTrade",
+    "resumen": "La campaña de malvertising SourTrade utiliza un enfoque innovador, haciendo que los navegadores de los usuarios construyan el ejecutable malicioso de Windows ellos mismos, utilizando el runtime legítimo de Bun como base, en lugar de servir un archivo malicioso completo desde una URL fija. Esto permite a los atacantes evadir la detección y entrega de malware de manera más efectiva, aprovechando la confianza en el runtime legítimo para infiltrar a los usuarios, especialmente a los traders minoristas que son objetivo de esta campaña.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwMTYyNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:malvertising sends malware in pieces then makes the browser build the executable",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el uso del runtime legítimo de Bun como base para construir el ejecutable malicioso podría estar relacionado con esta técnica."
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1650,
     "fecha": "2026-07-25T19:00:46Z",
     "categoria": "Ciberseguridad",
