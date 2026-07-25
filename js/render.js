@@ -64,16 +64,18 @@ export function renderHeroCard(news, trans) {
                     </div>
                     &bull; <span class="views-display" data-news-id="${id}">${formatViews}</span> &bull; ${timeStr}
                 </div>
-                <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: 16px;">
-                    <button class="read-story-btn" style="margin-top: 0;">
+                <div class="hero-actions">
+                    <button class="read-story-btn">
                         ${t('readFullStory')} <i data-lucide="arrow-right"></i>
                     </button>
-                    <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaLike')}" style="background: rgba(255,255,255,0.2);">
+                    <button class="share-btn action-btn hero-action-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaLike')}">
                         <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
-                        <span class="like-count" style="font-size: 13px; margin-left: 4px; font-weight: bold;">${likes > 0 ? likes : ''}</span>
+                        <span class="action-label">${t('ariaLike')}</span>
+                        <span class="like-count">${likes > 0 ? likes : ''}</span>
                     </button>
-                    <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaShare')}" style="background: rgba(255,255,255,0.2);">
+                    <button class="share-btn action-btn hero-action-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaShare')}">
                         <i data-lucide="share-2"></i>
+                        <span class="action-label">${t('ariaShare')}</span>
                     </button>
                 </div>
             </div>
@@ -102,10 +104,10 @@ export function renderGridCard(news, trans) {
                 ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy">` : ''}
                 ${badgeHtml}
                 <div class="card-thumbnail-overlay">
-                    <div style="display: flex; gap: 8px;">
+                    <div class="card-actions">
                         <button class="share-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaLike')}">
                             <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
-                            <span class="like-count" style="font-size: 12px; margin-left: 4px;">${likes > 0 ? likes : ''}</span>
+                            <span class="like-count">${likes > 0 ? likes : ''}</span>
                         </button>
                         <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaShare')}">
                             <i data-lucide="share-2"></i>

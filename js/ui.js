@@ -141,7 +141,7 @@ function scrambleText(element, finalText, duration = 1500) {
 export function initLoader() {
     const scrambleEl = document.getElementById('loader-scramble-title');
     if (scrambleEl) {
-        scramblePromise = scrambleText(scrambleEl, 'cYHBernews', 1800);
+        scramblePromise = scrambleText(scrambleEl, 'cYHBernews', 550);
     }
 }
 
@@ -156,8 +156,6 @@ export function showLoader() {
 export async function hideLoader() {
     await scramblePromise;
     if (loaderOverlay) {
-        setTimeout(() => {
-            loaderOverlay.classList.add('hide');
-        }, 500);
+        loaderOverlay.classList.add('hide');
     }
 }
