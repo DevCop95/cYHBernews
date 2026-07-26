@@ -1,5 +1,112 @@
 [
   {
+    "id": 1656,
+    "fecha": "2026-07-26T05:56:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-63720",
+    "resumen": "La versión anterior a 0.70.0 de datamodel-code-generator contiene una vulnerabilidad de inyección de código que permite a los atacantes controlar la ejecución remota de código mediante la provisión de un valor customBasePath malicioso con expresiones Python. Esto puede llevar a la ejecución de código arbitrario cuando se importa el módulo generado.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwNDUzODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/223419",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-63720",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-63720"
+      ]
+    }
+  },
+  {
+    "id": 1655,
+    "fecha": "2026-07-26T05:56:19Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Ataques de Inyección de Datos de Agente",
+    "resumen": "Se ha descubierto una variante de los ataques de Indirect Prompt Injection, llamada Agent Data Injection, que permite a los atacantes inyectar instrucciones maliciosas en fuentes de datos externas que son procesadas por agentes de IA, lo que puede provocar un desalineamiento en el comportamiento del agente. Esto puede ser utilizado para realizar ataques de phishing, malware o ransomware, entre otros, aprovechando la confianza en la información procesada por el agente IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219074-943fc738e5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwNDUzNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/agent-data-injection-attacks.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:agent data injection attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "arxiv.org",
+        "blackhat.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/25-libro-hacking-aplicaciones-web-sql-injection.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://arxiv.org/pdf/2607.05120",
+        "https://blackhat.com/presentations/bh-dc-10/Alonso_Chema/Blackhat-DC-2010-Alonso-Connection-String-Parameter-Pollution-wp.pdf",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWbxrD_fAnOvSEU_Gf3eVpbChN1SVFzr0tw7nii9EFXxAxMPaxN3UwEjJabhoe67UM2_j4-6fLmVrOPC0F-7T3V2ZGiUISolxFAv8BrtpaEePu7cyCLpniaqdTfbN9SUqbITxEVRBmLXSMLZ-RvsQUr3AqiG2xMh48JI-rxwBs8l69TF7Ehe-u/w640-h316/ADI_3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqEq6K8ywTv0wsD5c21zQEgelUWIiV1H32CKLjC8zHc5W-kySEYTRheM33M9U44pTn0kLpl5Nm_-beSI1wVZ0b5-sA4YRvDiZmhMrqnV8hZhrKSlYqMS_Gy6L68lGjeitOWGMqfKtvCh57De4MWncoztlrKBjV0qVCX2nPwhu8ZZVAyQiS1qTc/w496-h640/ADI_1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhADz1MvwuStR9dgS1ivv5poBlUJD7OmmmtvAcTErJFUMfplhFeS8qtHsz5AtMU-7c05MXpJ5SPNfPGMyhUtzcvNRIrclDUREB-QtUJNZagDvz4WDyu_5Z5OW3J93NAQRrejkDUpzdHP69L-tEy_fkf3lhB6yJHLC4ADwMOfzBzavNPuPJA2zq6/w640-h386/ADI_5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBB9wanSnbIJB1S8Jbme6Rkt6ilw4mfHS8pRtOACEGKheUlu_EiGvLGsBewWwoCjJLvdOqLmBcoYo2-CSY-mGs_2RatKjbFi06GEiFpdn-U7TOvtEHCUxUQ8mG94bYUzzRY2Fh8_dFdZceAc15mw9pKYK6985oKtm-Qh7elUWPBPAxh8TWaiCu/w640-h396/ADI_6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiam33z_R0dmhaY9UIojqjORuiTj66GF43TUBZstwwYFOXZPX5CMsN749TQfIsTnLoKQKafrt9SGCsrDc52JKmkIOMsGgYFGUN0e8y3fD0thjOPMfLOsOM-MjvqM2xmOAds0z7v6nU94vGHH3km_1fkdIlojXD1ZR-90y1061r_d5tuXwfa32WN/w640-h400/ADI_4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipCIiWyGl4f_YzMK_F-6OyBNYIAmN5V5flbjHyxBwQCuTEGpneY2EN62RzMYEWNV2iSS9O27PXNTWzYNQmHJy7O8Un1ISBBKm8UbV-ORkL-rNqeIoFijAO5rmi1ef92L3qt_i_91yYFZlQ95oTLS-6FQi7eZBIkYoOfDaRGVlNfWEULRx38FSk/w640-h346/ADI_9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixCuK2M-rD9qQa4ZJmQtM15-6MxrXFYNcBK-7d3YTBs_s7g2GmSIGQAD3FUbgMqhYARCSkU2HkT3es2zAeXJY3yMqNE4FngZREWLL6r7q3XV05fJ76C0og2m-5RgCFYjg-fJfv4PlfktTrl7ZQPZqw6Ae17DKsi75JpiLVpB222fGjrSErra4J/w640-h528/ADI_2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZGWyMD7vn6ZaYYTzQULxyPhZa4eQITeqOU8ZJVpKDam1V4bOab-2Uz0ybz4eA39M9CgFuU7h2gRBI6Pr1lT9LpUlc1EDUjLklmdbNTUxpUBTAEE02up8f5XWeHNaAPo8W2pWTSwGviDeefXR7HbpvduY9AkdVgbrEE_BoIFw-pe8xx1VrA0-D/w640-h346/ADI_0.jpg",
+        "https://elladodelmal.com"
+      ]
+    }
+  },
+  {
     "id": 1654,
     "fecha": "2026-07-26T02:23:09Z",
     "categoria": "Ciberseguridad",
