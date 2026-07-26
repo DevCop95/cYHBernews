@@ -1,5 +1,61 @@
 [
   {
+    "id": 1654,
+    "fecha": "2026-07-26T02:23:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-17432",
+    "resumen": "Se ha detectado una vulnerabilidad en el hermes-agent 2026.6.5 de NousResearch, que afecta la funcionalidad de autorización del SimpleX Gateway, permitiendo accesos no autorizados a través de la manipulación del argumento contactId, con un nivel de complejidad alto y una explotación difícil, aunque el exploit ya es público. La aplicación de un parche, identificado como 490c486ff65b766d9de0fe0e6f26e1778aaa8fb3, se recomienda para resolver este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwMzI1ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/223414",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-17432",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "490c486ff65b766d9de0fe0e6f26e1778aaa8fb3"
+      ],
+      "cve": [
+        "CVE-2026-17432"
+      ]
+    }
+  },
+  {
+    "id": 1653,
+    "fecha": "2026-07-26T02:23:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques ClickFix en Steam",
+    "resumen": "Los foros de discusión de Steam están siendo utilizados para ataques ClickFix que se disfrazan de soluciones para problemas de juegos y computadoras, pero en realidad infectan dispositivos con el cryptominer XMRig, aprovechando la confianza de los jugadores para distribuir malware. Los vectores de ataque incluyen enlaces maliciosos y archivos descargables que, una vez ejecutados, instalan el software malicioso en los dispositivos de las víctimas.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwMzI1ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:steam forum clickfix attacks infect gamers with xmrig cryptominers",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1193",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el malware se ejecuta en el dispositivo, por lo que se reemplaza con:"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1652,
     "fecha": "2026-07-25T21:50:48Z",
     "categoria": "Ciberseguridad",
