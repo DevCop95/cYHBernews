@@ -1,5 +1,89 @@
 [
   {
+    "id": 1661,
+    "fecha": "2026-07-26T15:58:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Phishing con enlace malicioso",
+    "resumen": "Se ha detectado un intento de phishing mediante un mensaje directo (DM) que incluye un enlace a un sitio web de torrents, que a su vez ofrece un archivo ejecutable (EXE) disfrazado de un archivo de video, lo que podría contener malware o ransomware. El vector de ataque es clásico, similar a los utilizados en plataformas como LimeWire en el pasado, y aprovecha la curiosidad del usuario para infectar su sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwODE1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9195",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:get dm hey smelly look at this sends link look inside torrent website the odyssey 2160phd 2026 engsub",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1660,
+    "fecha": "2026-07-26T15:58:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en ESAFENET CDG",
+    "resumen": "Se han detectado vulnerabilidades de seguridad básicas como inyección SQL y XSS en el sistema de gestión de documentos ESAFENET CDG, que ofrece soluciones de gestión de documentos seguros y prevención de fugas de datos, principalmente dirigidas al mercado chino. Estas vulnerabilidades, incluyendo contraseñas predeterminadas, pueden ser explotadas por atacantes para acceder a la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwODE1MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33184",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:scans for esafenet cdg 3 document management system weak logins sun jul 26th",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1659,
+    "fecha": "2026-07-26T15:58:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Defensas contra ataques de cadena de suministro",
+    "resumen": "GitHub y PyPI han implementado un mecanismo basado en tiempo en la herramienta de gestión de dependencias Dependabot para proteger contra ataques de cadena de suministro y limitar su impacto, reduciendo el riesgo de explotación de vulnerabilidades en dependencias de proyectos. Esto fortalece la seguridad de los proyectos que utilizan Dependabot para gestionar sus dependencias.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwODE0OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:github pypi add time absed defenses against supply chain attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1658,
     "fecha": "2026-07-26T13:09:48Z",
     "categoria": "IA",
