@@ -1,5 +1,79 @@
 [
   {
+    "id": 1666,
+    "fecha": "2026-07-26T21:55:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque DNS en hoteles",
+    "resumen": "Los hackers están modificando la configuración DNS en dispositivos Wi-Fi de hoteles y centros de conferencias para redirigir a los usuarios a páginas de inicio de sesión falsas de Microsoft 365, lo que puede llevar a la pérdida de credenciales y acceso no autorizado a cuentas. El vector de ataque se basa en el phishing y la manipulación de DNS, aprovechando la confianza de los usuarios en la conexión Wi-Fi pública.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxMDI5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-hijack-hotel-wi-fi-dns-to-steal-microsoft-365-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers hijack hotel wi fi dns to steal microsoft 365 accounts",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1557.001",
+        "name": "Phishing: Spearphishing via Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1665,
+    "fecha": "2026-07-26T21:55:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Microsoft Edge",
+    "resumen": "Se ha identificado la vulnerabilidad CVE-2026-57990 en Microsoft Edge basado en Chromium, que permite a un atacante no autorizado acceder a archivos o directorios y divulgar información a través de la red. El vector de ataque aprovecha la configuración de acceso a archivos y directorios, permitiendo a los atacantes externos obtener información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxMDI5MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/223447",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-57990",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1061",
+        "name": "Credential Access no se menciona explícitamente, pero se puede inferir que el atacante puede obtener información confidencial, por lo que se puede considerar T1189 - Forced Authentication, pero como no hay suficiente información se puede considerar"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication no es la técnica correcta, se puede considerar T1213 - Exploitation for Credential Access no es la técnica correcta, se puede considerar"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-57990"
+      ]
+    }
+  },
+  {
     "id": 1664,
     "fecha": "2026-07-26T19:03:37Z",
     "categoria": "Ciberseguridad",
@@ -22906,23 +22980,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-47645"
-      ]
-    }
-  },
-  {
-    "id": 742,
-    "fecha": "2026-06-21T19:24:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad XSS en Microsoft Edge",
-    "resumen": "Se ha identificado una vulnerabilidad de cross-site scripting (XSS) en Microsoft Edge basado en Chromium, con un CVSS Score de 8.8, que permite a un atacante autorizado realizar spoofing en la red. La vulnerabilidad se debe a la neutralización inadecuada de la entrada durante la generación de páginas web.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-32208",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-32208"
       ]
     }
   },
