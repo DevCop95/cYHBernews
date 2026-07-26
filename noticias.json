@@ -1,5 +1,35 @@
 [
   {
+    "id": 1658,
+    "fecha": "2026-07-26T13:09:48Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Contraataque al \"prompt injection\"",
+    "resumen": "La técnica de \"context bombing\" permite detener a un agente de IA atacante colocando texto diseñado para activar sus mecanismos de rechazo, aprovechando los temas prohibidos en los grandes modelos de lenguaje. Esto puede ser utilizado para parar ataques de \"prompt injection\" que esconden instrucciones maliciosas en correos, invitaciones de calendario o páginas web.",
+    "url_imagen": "https://images.unsplash.com/photo-1782088545589-46e4ece8190e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwNzEzODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/prompt-injection-tiene-su-propio-contraataque-inyectar-falsas-instrucciones-tambien-a-hackers",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el prompt injection ya tiene su propio contraataque inyectar falsas instrucciones también a los hackers",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "agentic.tracebit.com",
+        "arstechnica.com",
+        "platform.instagram.com",
+        "www.euronews.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://agentic.tracebit.com/context-bombs/",
+        "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/",
+        "https://i.blogs.es/847715/kimik3china/375_142.jpeg",
+        "https://i.blogs.es/c97359/original/1024_2000.jpeg",
+        "https://i.blogs.es/ce5364/matematicas-ia/375_142.jpeg",
+        "https://www.euronews.com/next/2026/07/21/could-banned-topics-be-the-secret-to-stopping-ai-hackers"
+      ]
+    }
+  },
+  {
     "id": 1657,
     "fecha": "2026-07-26T08:23:13Z",
     "categoria": "IA",
