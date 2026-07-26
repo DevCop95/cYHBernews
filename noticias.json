@@ -1,5 +1,55 @@
 [
   {
+    "id": 1664,
+    "fecha": "2026-07-26T19:03:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Análisis de malware",
+    "resumen": "Un experto en malware ha cambiado temporalmente su enfoque de desarrollo de malware a defensa contra malware, estudiando herramientas como YARA y analizando muestras de malware encontradas en la wild para mejorar su comprensión de las tácticas ofensivas. Esto le permite abordar el análisis de malware de manera ciega, sin influencia de investigaciones previas.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwOTI2MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9197",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:the reason many of you are seeing me discuss malware reverse engineering lately is because i ve temporarily shifted m",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1663,
+    "fecha": "2026-07-26T19:03:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en HBS 3 Hybrid Backup Sync",
+    "resumen": "Se ha identificado una vulnerabilidad de control externo de nombre o ruta de archivo (CVE-2025-62842) en HBS 3 Hybrid Backup Sync con un CVSS Score de 7.8, permitiendo a un atacante leer o modificar archivos si tiene acceso a la red local. La vulnerabilidad ha sido corregida en la versión 26.2.0.938 y posteriores de HBS 3 Hybrid Backup Sync.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwOTI2MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-62842",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-62842",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-62842"
+      ]
+    }
+  },
+  {
+    "id": 1662,
+    "fecha": "2026-07-26T19:03:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Alertas de Seguridad",
+    "resumen": "El podcast ISC Stormcast del 24 de julio de 2026 analiza las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques de phishing, y proporciona recomendaciones para mejorar la postura de seguridad. Los expertos discuten sobre las tendencias actuales en el panorama de la ciberseguridad, como exploits de zero-day y malware avanzado.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwOTI2MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33182",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for friday july 24th 2026 https isc sans edu podcastdetail 10022 fri jul 24th",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/10022,"
+      ]
+    }
+  },
+  {
     "id": 1661,
     "fecha": "2026-07-26T15:58:26Z",
     "categoria": "Ciberseguridad",
@@ -5517,24 +5567,6 @@
     "iocs": {
       "cve": [
         "CVE-2023-4346"
-      ]
-    }
-  },
-  {
-    "id": 1452,
-    "fecha": "2026-07-17T16:11:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Alertas de Seguridad",
-    "resumen": "El ISC Stormcast del 17 de julio de 2026 presenta un resumen de las últimas amenazas de seguridad, incluyendo vulnerabilidades y ataques emergentes, con un enfoque en la conciencia situacional para profesionales de ciberseguridad. Los temas abordados incluyen exploits de día cero, malware y técnicas de ataque avanzadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMDQ2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33162",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:isc stormcast for friday july 17th 2026 https isc sans edu podcastdetail 10012 fri jul 17th",
-    "ttps": [],
-    "iocs": {
-      "url": [
-        "https://isc.sans.edu/podcastdetail/10012,"
       ]
     }
   },
