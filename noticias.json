@@ -1,5 +1,109 @@
 [
   {
+    "id": 1695,
+    "fecha": "2026-07-27T22:02:17Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "1Password y Anthropic unen fuerzas",
+    "resumen": "1Password y Anthropic han presentado un marco de \"zero-exposure\" que permite a los agentes de IA Claude acceder a credenciales sin exponer los valores raw, utilizando un broker de autenticación para proporcionar sesiones autenticadas sin revelar los secretos. Esto senta las bases para patrones similares en otras pilas de agentes autónomos que se integran con políticas de credenciales empresariales.",
+    "url_imagen": "https://images.unsplash.com/photo-1770220742903-f113513d0194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODk3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114046",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:1password partners with anthropic to give claude access to your credentials 1password and anthropic unveiled a zero",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1694,
+    "fecha": "2026-07-27T22:02:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS en Pivotick",
+    "resumen": "Se ha identificado una vulnerabilidad de cross-site scripting (XSS) en el componente de lista de propiedades de la barra lateral de Pivotick, que permite a un atacante ejecutar JavaScript malicioso en el contexto de la aplicación si un usuario hace clic en un enlace generado con un esquema de URL no validado. La explotación exitosa podría permitir al atacante acceder a información disponible en la sesión del navegador de la víctima o realizar acciones con los privilegios de la víctima.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODk3MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/225195",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-66825",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1537",
+        "name": "Accessible Data"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-66825"
+      ]
+    }
+  },
+  {
+    "id": 1693,
+    "fecha": "2026-07-27T22:02:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "VPNs obsoletas en agencias federales",
+    "resumen": "El senador Ron Wyden, miembro del Comité de Inteligencia, solicita a CISA, OMB y NIST que lideren un esfuerzo federal para eliminar VPNs obsoletas de las agencias gubernamentales de EE. UU., lo que podría mitigar vulnerabilidades de seguridad como ataques de phishing y exploits de zero-day. Esto se debe a que las VPNs desactualizadas pueden ser un vector de ataque significativo para la ciberseguridad de la administración pública.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODk3MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/federal-purge-outdated-vpns-wyden-letter",
+    "fuente": "The Record",
+    "dedup_key": "txt:outdated vpns should be purged from federal agencies senator says",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1692,
+    "fecha": "2026-07-27T22:02:00Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Alianza de IA Segura de NVIDIA",
+    "resumen": "NVIDIA ha formado la Open Secure AI Alliance con 36 organizaciones para desarrollar y compartir tecnologías, técnicas y herramientas abiertas para garantizar la seguridad de software y agentes de inteligencia artificial (IA), incluyendo el marco NOOA open-source. La alianza abarca empresas de nube, seguridad, software empresarial y AI, con el objetivo de mejorar la seguridad de la IA y reducir los riesgos asociados.",
+    "url_imagen": "https://images.unsplash.com/photo-1781643565886-31cb0e88084d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODk3MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:nvidia forms 37 member open secure ai alliance and open sources nooa framework",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1691,
+    "fecha": "2026-07-27T22:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Botnet Dysphoria ataca 200k dispositivos",
+    "resumen": "La botnet Dysphoria ha comprometido alrededor de 200,000 dispositivos en todo el mundo, utilizandolos para lanzar ataques de denegación de servicio distribuidos (DDoS) y operaciones de retransmisión de tráfico. Los dispositivos comprometidos pueden ser utilizados para realizar ataques de gran escala, afectando la disponibilidad de servicios en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODk3MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-dysphoria-ddos-botnet-spreads-to-200k-devices-worldwide/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new dysphoria ddos botnet spreads to 200k devices worldwide",
+    "ttps": [
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1490.001",
+        "name": "Distributed Denial of Service (DDoS)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1690,
     "fecha": "2026-07-27T19:20:32Z",
     "categoria": "Ciberseguridad",
