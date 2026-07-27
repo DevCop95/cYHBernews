@@ -1,5 +1,138 @@
 [
   {
+    "id": 1690,
+    "fecha": "2026-07-27T19:20:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware ClickLock ataca macOS",
+    "resumen": "El malware ClickLock, documentado por Group-IB, secuestra a los usuarios de macOS hasta que ingresan su contraseña, utilizando un diálogo de contraseña falso y matando el Finder y Terminal cada 210 ms hasta obtener la información solicitada, afectando alrededor de 100 usuarios en 33 países desde mayo. El malware se propaga a través de un engaño de \"verificación humana de Cloudflare\" llamado ClickFix, que ejecuta un comando de Terminal malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODAwMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114047",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:clicklock macos malware hostage takes users until they type their password group ib documented clicklock a macos ste",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1057",
+        "name": "Process Discovery (el malware mata el Finder y Terminal cada 210 ms, lo que implica que tiene capacidad para descubrir y manipular procesos)"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1689,
+    "fecha": "2026-07-27T19:20:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Espionaje con spyware",
+    "resumen": "Un tribunal del Reino Unido rechazó la solicitud de inmunidad de funcionarios de Bahrein acusados de utilizar spyware para acceder a información confidencial, interceptar comunicaciones y realizar vigilancia a través de micrófonos y cámaras de computadoras. El caso implica un ataque cibernético con técnicas de espionaje avanzadas, destacando la importancia de la ciberseguridad en la protección de la privacidad digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODAwMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/uk-court-rejects-bahrain-immunity-claim-spyware-case",
+    "fuente": "The Record",
+    "dedup_key": "txt:uk court rejects bahrain immunity claim in spyware case",
+    "ttps": [
+      {
+        "id": "T1056",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1120",
+        "name": "Peripheral Device Discovery"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1615",
+        "name": "Compromised Credentials (no se menciona explícitamente, pero se infiere que se utilizó para acceder a información confidencial)"
+      },
+      {
+        "id": "T1641",
+        "name": "Execution with Unspecified Tactic (no se ajusta perfectamente, pero se puede inferir que se utilizó para realizar vigilancia a través de micrófonos y cámaras de computadoras, aunque la técnica más específica sería T1056)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1688,
+    "fecha": "2026-07-27T19:20:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Herramientas de seguridad autónomas en duda",
+    "resumen": "La confianza en las herramientas de seguridad autónomas está disminuyendo, ya que los adversarios pueden aprovecharse de las reglas y configuraciones preestablecidas para evadir la detección, lo que cuestiona la efectividad de estas soluciones de seguridad. Esto sugiere que los atacantes no necesitan exploits de zero-day para infiltrarse, sino que pueden utilizar la información pública y la configuración de las herramientas de seguridad para su beneficio.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODAwMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/adversaries-do-not-need-zero-day-they-read-your-rulebook",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:adversaries don t need a zero day they read your rulebook",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1687,
+    "fecha": "2026-07-27T19:20:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Botnet Dysphoria adopta C2 blockchain",
+    "resumen": "La botnet Dysphoria, que afecta dispositivos IoT, ha incorporado servicios de nombres basados en blockchain y relés de dispositivos infectados para dificultar su interrupción, después de una operación policial contra la infraestructura de JackSkid en marzo. Esta nueva arquitectura hace que la botnet sea más resistente a los intentos de desmantelamiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODAwMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:dysphoria iot botnet adds blockchain c2 and victim relays after jackskid disruption",
+    "ttps": [
+      {
+        "id": "T1495",
+        "name": "Controlled Data Collection"
+      },
+      {
+        "id": "T1574",
+        "name": "Secure Communication Between Controller and Victim"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtual Private Servers (VPS)"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1686,
+    "fecha": "2026-07-27T19:20:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Estafa en App Store: $1.8M en Bitcoin",
+    "resumen": "Tres personas demandan a Apple después de perder aproximadamente $1.8 millones en Bitcoin debido a una aplicación de billetera de criptomonedas falsa llamada Sparrow Wallet, que fue descargada desde la App Store, lo que sugiere una posible falla en la verificación de aplicaciones y un vector de ataque de phishing o malware. El incidente destaca la importancia de la seguridad en las tiendas de aplicaciones y la necesidad de una verificación más estricta de las aplicaciones antes de su publicación.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxODAwMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/apple/apple-sued-over-fake-app-store-crypto-wallet-app-stealing-18m-in-bitcoin/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:apple sued over fake app store crypto wallet app stealing 1 8m in bitcoin",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1685,
     "fecha": "2026-07-27T16:55:09Z",
     "categoria": "Ciberseguridad",
@@ -6709,41 +6842,6 @@
       {
         "id": "T1204",
         "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1432,
-    "fecha": "2026-07-16T22:00:05Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Malware ClickLock ataca macOS",
-    "resumen": "Un nuevo malware de robo de información llamado ClickLock para macOS fuerza a los usuarios a ingresar su contraseña de inicio de sesión al terminar todos los procesos visibles, aprovechando la necesidad del usuario de recuperar el acceso al sistema. Esto representa un vector de ataque significativo, ya que el malware puede capturar contraseñas de manera efectiva.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyMzkyMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-clicklock-macos-malware-traps-users-into-revealing-login-password/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:new clicklock macos malware traps users into revealing login password",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1057",
-        "name": "Input Capture, ya que el malware puede capturar contraseñas de manera efectiva."
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1219",
-        "name": "Remote Access Tools no se menciona explícitamente, pero se puede inferir que el malware puede permitir el acceso remoto al sistema una vez que se obtiene la contraseña. Sin embargo, no hay suficiente información para confirmar esto, por lo que se descarta. En su lugar, se puede considerar:"
       }
     ],
     "iocs": {}
