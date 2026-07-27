@@ -1,5 +1,112 @@
 [
   {
+    "id": 1673,
+    "fecha": "2026-07-27T06:24:52Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Samsung Invierte en IA Soberana",
+    "resumen": "Samsung planea invertir cientos de millones de euros en la startup francesa Mistral, que se enfoca en la creación de modelos de IA soberanos, es decir, modelos de IA que no dependen de gobiernos o países extranjeros. Esto se produce en un contexto de creciente interés por la \"IA soberana\" después de que la administración Trump bloqueara el acceso a modelos de IA de Anthropic y OpenAI.",
+    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxMzM0OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/mistral-esta-muy-lejos-carrera-ia-a-samsung-eso-le-importa-bien-poco-planea-invertir-fortuna-ella",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:mistral está muy lejos en la carrera de la ia a samsung eso le importa bien poco y planea invertir una fortuna en ella",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "biz.chosun.com",
+        "investors.micron.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.euractiv.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://archive.is/YGRif#selection-1799.0-1905.314",
+        "https://artificialanalysis.ai/models/mistral-medium-3-5",
+        "https://biz.chosun.com/en/en-it/2026/04/05/6MAVU2LTRRCUBEDPOGDUIDG7FM/",
+        "https://i.blogs.es/791b43/captura-de-pantalla-2026-07-24-a-las-13.43.36/1024_2000.png",
+        "https://i.blogs.es/791b43/captura-de-pantalla-2026-07-24-a-las-13.43.36/1366_2000.png",
+        "https://i.blogs.es/791b43/captura-de-pantalla-2026-07-24-a-las-13.43.36/450_1000.png",
+        "https://i.blogs.es/791b43/captura-de-pantalla-2026-07-24-a-las-13.43.36/650_1200.png",
+        "https://i.blogs.es/a8badf/mistral/375_142.jpeg",
+        "https://i.blogs.es/a92f8d/samsung-mistral/1024_2000.jpeg",
+        "https://investors.micron.com/news-releases/news-release-details/micron-and-anthropic-announce-strategic-agreement-scale-next",
+        "https://unsplash.com/es/fotos/edificio-de-la-ciudad-en-blanco-y-negro-durante-el-dia-34uOaL1He4w",
+        "https://www.euractiv.com/news/microsoft-strikes-multi-billion-dollar-deal-for-mistrals-ai-compute/"
+      ]
+    }
+  },
+  {
+    "id": 1672,
+    "fecha": "2026-07-27T06:24:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Portal RaaS DevMan centraliza ataques",
+    "resumen": "El esquema de ransomware-as-a-service (RaaS) DevMan mantiene una plataforma web dedicada que permite a los afiliados construir payloads, supervisar ganancias y gestionar aspectos relacionados con las víctimas, centralizando así la operación de ataques de ransomware. La plataforma, rastreada por la empresa de ciberseguridad suiza PRODAFT bajo el nombre de Funky Mantis, combina generación de payloads, finanzas y gestión de víctimas.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxMzM0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/devman-raas-portal-centralizes-payload.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:devman raas portal centralizes payload builds victim management and affiliate payouts",
+    "ttps": [
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities"
+      },
+      {
+        "id": "T1587.001",
+        "name": "Malware"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1671,
+    "fecha": "2026-07-27T06:24:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware MecchaChameleon",
+    "resumen": "Un analista de seguridad informática ha descubierto y analizado el malware MecchaChameleon, que se propaga a través de un mapa personalizado malicioso y utiliza una carga útil de C# con dependencias para el acceso remoto a máquinas, posiblemente relacionado con PureRAT. El malware fue fácil de reverse engineer debido a su estructura y técnicas de ofuscamiento ineficaces.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxMzM0ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9203",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:also apparently meccha chameleon people follow me on telegram hello mecchachameleon malware people living inside my",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se infiere que el malware utiliza dependencias de C# para ejecutarse)"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion (no se menciona explícitamente, pero se infiere que el malware intenta evadir la detección)"
+      },
+      {
+        "id": "T1140",
+        "name": "Deobfuscate/Decode Files"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1670,
     "fecha": "2026-07-27T02:30:42Z",
     "categoria": "Ciberseguridad",
