@@ -1,5 +1,189 @@
 [
   {
+    "id": 1680,
+    "fecha": "2026-07-27T12:17:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque AI a Ministerio de Finanzas",
+    "resumen": "Investigadores descubrieron que hackers utilizaron un agente autónomo de inteligencia artificial (AI) para llevar a cabo una campaña de ciber-espionaje contra el Ministerio de Finanzas de Tailandia, lo que supone un nuevo vector de ataque que aprovecha la autonomía de la IA para infiltrarse en sistemas gubernamentales. El uso de agentes autónomos de IA en ataques cibernéticos plantea un desafío significativo para la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNTQ2NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/thailand-hackers-ai-finance-ministry",
+    "fuente": "The Record",
+    "dedup_key": "txt:hackers used autonomous ai agent to spy on thailand s finance ministry",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1679,
+    "fecha": "2026-07-27T12:17:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Spring Boot",
+    "resumen": "La exposición del endpoint \"/actuator/heapdump\" en Spring Boot puede permitir a atacantes obtener información de depuración que incluye datos sensibles como API keys y contraseñas de bases de datos, lo que representa un riesgo significativo de seguridad. Esto puede ser explotado mediante ataques de tipo \"information disclosure\" o \"data exposure\" para obtener acceso no autorizado a sistemas backend.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNTQ2Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33188",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:java spring boot heapdump scans mon jul 27th",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1678,
+    "fecha": "2026-07-27T12:17:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Van de vigilancia móvil",
+    "resumen": "La empresa israelí Cognyte vende un vehículo de vigilancia móvil equipado con tecnología de simulación de torre de telefonía móvil, conocida como FalcoNet, que permite a las autoridades policiales rastrear y monitorear teléfonos móviles en un área determinada, similar a la tecnología Stingray. Esta tecnología puede ser utilizada para la vigilancia masiva y el seguimiento de sospechosos, así como de personas inocentes en el área de cobertura.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNTQ2MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/cognyte-sells-a-mobile-cell-surveillance-van.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:cognyte sells a mobile cell surveillance van",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1616",
+        "name": "Interceptación de comunicaciones inalámbricas"
+      },
+      {
+        "id": "T1119",
+        "name": "Interceptación de comunicaciones"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.forbes.com"
+      ],
+      "url": [
+        "https://www.forbes.com/sites/thomasbrewster/2026/07/13/israels-palantir-rival-is-selling-1-million-spy-vans-to-us-cops/"
+      ]
+    }
+  },
+  {
+    "id": 1677,
+    "fecha": "2026-07-27T12:17:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cruciferra Crypter Evita Detección",
+    "resumen": "El grupo de ciberdelincuencia vinculado a China, conocido por utilizar señuelos de phishing relacionados con impuestos, ha sido observado utilizando un servicio de crypter sofisticado llamado Cruciferra, que emplea técnicas de BYOVD (Bring Your Own Vulnerable Driver) y Process Ghosting para ocultar malware Windows. Esto permite a los atacantes entregar una variedad de payloads remotos sin ser detectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNTQ2Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/cruciferra-crypter-uses-byovd-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cruciferra crypter uses byovd and process ghosting to hide windows malware",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1218.005",
+        "name": "Credentials in Files (no se menciona explícitamente, pero se puede inferir que se utiliza T1218.005 debido a la mención de técnicas de evasión y entrega de payloads)"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Bring Your Own Vulnerable Driver (BYOVD)"
+      },
+      {
+        "id": "T1497.003",
+        "name": "Process Ghosting"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1676,
+    "fecha": "2026-07-27T12:17:00Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Despliegue de Zero Trust para Agentes IA",
+    "resumen": "El despliegue de agentes IA en Cloudflare requiere la implementación de controles externos y verificados de forma continua, siguiendo el principio de Zero Trust, debido a la falta de una frontera fiable que distinga entre instrucciones legítimas y maliciosas en los modelos de lenguaje. Esto implica recorrer siete dimensiones de control, como identidad, acceso y segmentación, para avanzar hacia un estadio de madurez óptimo en la seguridad de los agentes IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNTQ2MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo desplegar zero trust para agentes ia en cloudflare 1",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "cdn.prod.website-files.com",
+        "code.claude.com",
+        "developers.cloudflare.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "genai.owasp.org",
+        "learn.microsoft.com",
+        "mypublicinbox.com",
+        "platform.claude.com",
+        "www.cloudflare.com",
+        "www.elladodelmal.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDv1uBoinWCk6UIs738qNBuPRqhqcxnTv2eQyABnz3SQwc-sdI_iwCKAZTTgzhOzbF17-ITFSWf624QQDqFOT6pFACcqapjXzLaLV1R8Q_9K9bgM1XOJ_Ib6Gi5ENAPYIDRI21TGevSKz5FP2R3I7V6g0Q4hBcgfHYlWNd2V_xIogV0IUq-nyC/w640-h408/ZT11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbepi5PKue5ffZvl_7d3lh61CuVhFFZVN1-ep_yJFEY1DkjqD0KNo6LfIgKWxvm-J7oOMstzndO4iZDXf9-Y6xVvrlkwg2TgOQLCzV6F4x4s7KMbngJFjLSnBilb0T1fk6NqCNl7-2adCNl7t_J4hyphenhyphenscsIM_7JeBP8TUn3cFbnLqjpeG8ddiOR/w640-h248/ZT2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt4MctsFQX4BOBFRt04PqBMliyvmUouucnvlAJz3xv_f2QEtcFgOMJw1-SiTsbCu84XHQDXidfvui_akZYS0QUDFz8wmP-mXXOMluUcqSaQM27cO4UXgT9gZn9OZ4vpZo_pFd1xqwTIrdpZqOP-cR8rGOUNHouuA5zBM5RhyphenhyphenjBoLHthi8wC-U8/w640-h280/ZT3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy22RFKV0r7V2BceUo2kGnN5_RJWP5YCb1VLzr-b_8bvOii0X8ZpMhPkhpmSwbkNo-XJ2Ab3AnUBk7vzAoGvl6lWjIlbaESYwrN7FKgLKC44xxm7q-fUTsjyO05xizP9MA-64G6FR3Rty__2DcleYdbpJJrpHzPlKCqgfrYtwJse0k2KFPHBn6/w640-h462/ZT7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMVtBgvpmRxdpGGTg9YP07wfWbluxGdTUrs0TuM_xObNAuuL5ZerlUNN77Yhcp9oDok-76GqeTf7AUWjxfUInjiCZXsXLPWek1LZ_MTXnhdLdZNVWa0bn9teaaMRBc1ayr1rQTjetm0WRsWJgV8ZTZMaVpy3BaNio8SAVQn0VcQcbDQpwFoG2v/w640-h188/ZT5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXUe9cTpxS57tauwr5mPBOP-Bee4RRH4752zMAIqE3AK5-hAae-rmS8lVRnw6U13nnsRsnLq1hRQs6WT8ZVPW0KPKXt6FEFbwfMJYChPVET2-y38QdIWxk0uGZOk2MmSmsFOk3omXn8Oegp3BzPQN3lIuyAFZpqlCKhJzO8DTrOTqd2lE-f7Cs/w626-h640/ZT9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic0sJBSrwCb5N8Ecd0JkkPvdxF2b3Jsnnsc1RWQ8VntdbF3y75kdhGlvLl6B6ootpW8gnGbGpBre6XCr5Fwt-Ajp2HDl01VXjOVZp4z7UiSX-XjrZK8R1VLf8w8a02L7QqQL2jFP2Ed_-WxvLtQ6KdD8ULqYQ7xMTm4jI9FcY9n4XA8QcLxA7W/w640-h372/ZT8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipL5cNSwemYtNGufBoG8yqNrmfTqU63-wZrgz42Ef33Xa5KwwEQ7lBQo3fLYspU-WjwAOK9msQA3BCePVxMtcJ0hlvJaSxVijfNz9XxpB8BSZ_C7zFaBXaek6GIYn5dMnQz_8UDR12keR1SZd9AW541wYFSBRk2JlrLSz0dGFU6ns0RgnllXbL/w640-h404/ZT10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM_ZyyqgoKziGKdraQ385RU1I1ukTztLSFAOaSUsZ8ksPUgQCpTWCSDysw0cDQ6q8VCgLJEptJDsmyXKjRUiEnGasa7TKqRIqdJW1ws38QadfKczE9mjrz2w_5Lvduck0_XlSkWKtpBI3zWofsZX7u050aiAAh-elyvUn8hU9ZerPM-cJWAtxh/w640-h516/juanluiscuenca.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ-TqCrW2QhW3-2EVMK451QM9gGqevtAwOcXEh_P3NrLM0kbQqj2scHGDFUm2SdXBWcDKZ4M5t-8pjMNuYC6JMArO-0sMGsfNyRD8wKcXhHbE6tm2vd2Y67T80wEHilJ21HHQchu-mEk436fA7dgk9xFui5EPlY0l1qMt0RJ6WQpnoW83WSSDJ/s940/ZT0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ-TqCrW2QhW3-2EVMK451QM9gGqevtAwOcXEh_P3NrLM0kbQqj2scHGDFUm2SdXBWcDKZ4M5t-8pjMNuYC6JMArO-0sMGsfNyRD8wKcXhHbE6tm2vd2Y67T80wEHilJ21HHQchu-mEk436fA7dgk9xFui5EPlY0l1qMt0RJ6WQpnoW83WSSDJ/w640-h408/ZT0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuUFaBbJof-zd_VrxzaGNfuTUx2GF0hgSJT6wuktAfcZMo9T5RI84x51UrcMzwAct5x1q4UlqtcdkFIDJtzn9NdAejCcsUHeMxVmnPe8OeURr0DpZlvavHzp0lUPafkVqItDC0jCiv2IGLhJk5TZzzQZa94149KQ9HUSs0JDLMTdQz-3kQAWbg/w640-h114/zt1.jpg",
+        "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a1611a04085d7cd3dadc924_Claude-eBook-Zero-Trust-for-AI-Agents-05182026.pdf",
+        "https://code.claude.com/docs/en/agent-sdk/overview",
+        "https://elladodelmal.com",
+        "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "https://platform.claude.com/docs/en/managed-agents/overview",
+        "https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf",
+        "https://www.cisa.gov/sites/default/files/publications/NSTAC%20Report%20to%20the%20President%20on%20Zero%20Trust%20and%20Trusted%20Identity%20Management.pdf",
+        "https://www.elladodelmal.com/2026/06/despliegue-zero-trust-para-agentes-ia.html"
+      ]
+    }
+  },
+  {
     "id": 1675,
     "fecha": "2026-07-27T07:23:01Z",
     "categoria": "Ciberseguridad",
