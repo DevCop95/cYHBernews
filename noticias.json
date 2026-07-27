@@ -1,5 +1,157 @@
 [
   {
+    "id": 1685,
+    "fecha": "2026-07-27T16:55:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "AgentBaiting: Malware AI",
+    "resumen": "Investigadores descubrieron aproximadamente 7,600 repositorios maliciosos que utilizan perfiles falsos, incluyendo 800 que se hacen pasar por habilidades de IA o servidores MCP, para distribuir el malware SmartLoader, que inyecta StealC para robar sesiones de navegador, tokens y credenciales de API. El malware se disfrazaba en archivos ZIP como instaladores y logró más de 14 millones de descargas antes de ser retirado.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNzEzMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114048",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:agentbaiting 800 fake ai skills and mcp servers seed smartloader malware island researchers uncovered 7 600 malicio",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1684,
+    "fecha": "2026-07-27T16:55:03Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA China: Ventaja en Eficiencia",
+    "resumen": "El CEO de DeepSeek destaca que la eficiencia de los modelos de IA chinos, como el uso de cuatro chips de Huawei equivalentes a uno de Nvidia, puede ser una ventaja estratégica en la carrera de la inteligencia artificial, aunque la capacidad de cómputo sigue siendo un cuello de botella. La industria china de IA enfrenta desafíos en términos de capacidad de cómputo, pero empresas como DeepSeek y Kimi ofrecen alternativas a las soluciones de IA estadounidenses.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNzEzMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/cuatro-chips-huawei-uno-nvidia-ceo-deepseek-explica-como-ha-transformado-escasez-chips-su-coartada-estrategica",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:cuatro chips de huawei por uno de nvidia el ceo de deepseek explica cómo ha transformado la escasez de chips en su coartada estratégica",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "finance.yahoo.com",
+        "hellochinatech.com",
+        "platform.instagram.com",
+        "www.businessinsider.com",
+        "www.geopolitechs.org",
+        "www.scmp.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://finance.yahoo.com/technology/ai/articles/white-house-accuses-moonshot-violating-163307373.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cucGVycGxleGl0eS5haS8&guce_referrer_sig=AQAAALmUkLYPupLVvQkhCnYPIppkRebmP0XmyUPHfBrugVHSA2-P2dljFpDI7AsOmPF5QJ5t5L-ULCl2WZ_EHpvhl9OpJYQL36fDU9QLBG30Pxy9Eb0pHr8NmMKe0lZOEJleLUl1PD1Wae83pLKfbu07Sxsz0AiSNnB4EAnT_gors1GY",
+        "https://hellochinatech.com/p/deepseek-liang-wenfeng-transcript",
+        "https://i.blogs.es/0ab8ef/deepseek/375_142.jpeg",
+        "https://i.blogs.es/6df73c/587c68dd-061c-4e1e-88ad-497454294f81/1024_2000.png",
+        "https://i.blogs.es/86b5e1/dario_amodei/375_142.jpeg",
+        "https://i.blogs.es/894584/tsmc/1024_391.jpeg",
+        "https://i.blogs.es/894584/tsmc/1366_521.jpeg",
+        "https://i.blogs.es/894584/tsmc/650_247.jpeg",
+        "https://www.businessinsider.com/white-house-kimi-k3-moonshot-ai-distillation-2026-7",
+        "https://www.geopolitechs.org/p/deepseek-founder-liang-wenfeng-in",
+        "https://www.scmp.com/tech/tech-trends/article/3361731/low-profile-high-ai-ambition-what-leaked-comments-reveal-about-deepseeks-liang-wenfeng?module=top_story&pgtype=section"
+      ]
+    }
+  },
+  {
+    "id": 1683,
+    "fecha": "2026-07-27T16:54:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña de phishing en Telegram",
+    "resumen": "Se ha descubierto una campaña de phishing altamente personalizada que utilizó Telegram para intentar secuestrar la cuenta de un activista bielorruso exiliado, así como usuarios en Rusia y Kazajistán, lo que sugiere un vector de ataque dirigido a individuos específicos. La campaña demuestra la creciente sofisticación de los ataques de phishing que aprovechan plataformas de mensajería instantánea.",
+    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNzEyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/telegram-belarus-activist-russia-cyberattack",
+    "fuente": "The Record",
+    "dedup_key": "txt:telegram phishing campaign targeted exiled belarusian activist russians and kazakhstanis",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1682,
+    "fecha": "2026-07-27T16:54:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Exploit público para vBulletin",
+    "resumen": "Se ha publicado un exploit que permite la ejecución de código en servidores de foros vBulletin sin autenticación, afectando versiones 6.2.1 y anteriores, y 6.1.6 y anteriores, lo que permite a un atacante ejecutar código en el servidor sin necesidad de cuenta, acceso administrativo o interacción de otro usuario. El vector de ataque se basa en la ejecución de código en la función eval() de PHP a través de una solicitud no autenticada.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNzEyOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:public exploit released for patched vbulletin pre auth code execution flaw",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1072",
+        "name": "Software Deployment Tools - No se aplica en este caso"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1681,
+    "fecha": "2026-07-27T16:54:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque Ransomware en Fairlife",
+    "resumen": "La empresa The Coca-Cola Company ha confirmado el robo de datos en su filial láctea Fairlife debido a un ataque de ransomware ocurrido a principios de este mes, lo que pone de relieve la importancia de la ciberseguridad en la protección de datos sensibles. El ataque demuestra cómo el ransomware puede ser utilizado como vector de ataque para el robo de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUxNzEyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/coca-cola-confirms-data-theft-in-fairlife-ransomware-attack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:coca cola confirms data theft in fairlife ransomware attack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1680,
     "fecha": "2026-07-27T12:17:22Z",
     "categoria": "Ciberseguridad",
@@ -6449,20 +6601,6 @@
     "enlace_original": "https://www.darkreading.com/cybersecurity-operations/agentic-ai-untamable-ask-the-right-security-questions",
     "fuente": "Dark Reading",
     "dedup_key": "txt:agentic ai is untamable ask the right security questions",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1436,
-    "fecha": "2026-07-17T02:11:55Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque Ransomware a Fairlife",
-    "resumen": "Un ataque de ransomware ha afectado a Fairlife, una subsidiaria de Coca-Cola, interrumpiendo operaciones y suspendiendo temporalmente la producción de productos lácteos en Estados Unidos. El incidente de seguridad ha tenido un impacto significativo en la cadena de suministro de la empresa, destacando la importancia de la ciberseguridad en la industria alimentaria.",
-    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQyNTQzMTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/coca-cola-says-fairlife-ransomware-attack-halts-us-dairy-production/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:coca cola says fairlife ransomware attack halts us dairy production",
     "ttps": [],
     "iocs": {}
   },
