@@ -1,5 +1,97 @@
 [
   {
+    "id": 1709,
+    "fecha": "2026-07-28T11:13:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-65624 en cowboy",
+    "resumen": "Se ha descubierto una vulnerabilidad de asignación de recursos sin límites ni control en la biblioteca cowboy, que permite a un atacante remoto no autenticado agotar la memoria del proceso de conexión a través de HTTP/1.1, lo que puede llevar a condiciones de memoria insuficiente en la máquina virtual Erlang. La vulnerabilidad se debe a que el manejo de cabeceras en cowboy_http no cuenta con un límite efectivo para el número total de líneas de cabecera o el tamaño total del bloque de cabecera.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMzcyMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/225410",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-65624",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "Exploitation for Resource Exhaustion"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1069",
+        "name": "Permission Groups Discovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-65624"
+      ]
+    }
+  },
+  {
+    "id": 1708,
+    "fecha": "2026-07-28T11:13:22Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Studio de Spotify: IA Personalizada",
+    "resumen": "Studio es una aplicación de inteligencia artificial desarrollada por Spotify Labs que combina el historial de reproducción del usuario con búsquedas basadas en IA y herramientas de productividad para generar contenido de audio personalizado, utilizando agentes de IA para realizar tareas como crear podcasts personalizados y resúmenes de audios. La aplicación, actualmente en estado de vista previa de investigación, está disponible para usuarios seleccionados de Spotify Premium.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMzcyMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/basics/studio-by-spotify-labs-que-que-puedes-hacer-este-agente-ia-quien-puede-acceder-a-ella",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:studio by spotify labs qué es qué puedes hacer con este agente de ia y quién puede acceder a ella",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/176a61/image/1024_2000.png",
+        "https://i.blogs.es/176a61/image/1366_2000.png",
+        "https://i.blogs.es/176a61/image/450_1000.png",
+        "https://i.blogs.es/176a61/image/650_1200.png",
+        "https://i.blogs.es/333fa3/studio/1024_2000.jpeg",
+        "https://i.blogs.es/dd17a8/tu-spotify/375_142.jpeg",
+        "https://i.blogs.es/e6ad63/captura-de-pantalla-2026-07-28-a-las-11.56.27/1024_2000.png",
+        "https://i.blogs.es/e6ad63/captura-de-pantalla-2026-07-28-a-las-11.56.27/1366_2000.png",
+        "https://i.blogs.es/e6ad63/captura-de-pantalla-2026-07-28-a-las-11.56.27/450_1000.png",
+        "https://i.blogs.es/e6ad63/captura-de-pantalla-2026-07-28-a-las-11.56.27/650_1200.png",
+        "https://i.blogs.es/e7bd3a/estadisticas-de-escucha/375_142.jpeg"
+      ]
+    }
+  },
+  {
+    "id": 1707,
+    "fecha": "2026-07-28T11:13:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vigilancia de matrículas con Axon",
+    "resumen": "Los gobiernos están reemplazando sistemas de vigilancia de matrículas como Flock por Axon, pero esto no necesariamente reduce la pérdida de privacidad de los ciudadanos, ya que Axon también puede recopilar detalles personales más allá de los números de matrícula. El cambio de proveedor no mitiga el riesgo de vigilancia masiva y potencial infracción de la privacidad digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMzcxOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/axon-is-another-license-plate-surveillance-company.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:axon is another license plate surveillance company",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.jalopnik.com"
+      ],
+      "url": [
+        "https://www.jalopnik.com/2215173/flock-cameras-replaced-by-axon-difference/"
+      ]
+    }
+  },
+  {
     "id": 1706,
     "fecha": "2026-07-28T08:26:16Z",
     "categoria": "IA",
