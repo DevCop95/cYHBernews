@@ -1,5 +1,71 @@
 [
   {
+    "id": 1722,
+    "fecha": "2026-07-28T21:59:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL Injection en Ellucian",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección de SQL (CVE-2026-6881) en la funcionalidad de informes de donaciones de Ellucian Advance Web y Legacy Advance, que permite a un atacante autenticado extraer información sensible de las bases de datos mediante una consulta SQL maliciosa en el campo de crédito de clase. Esta vulnerabilidad afecta a todas las versiones de Advance Web y Legacy Advance.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNzU5Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/226643",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-6881",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Unconventional Password Authentication (no se menciona explícitamente, pero se infiere que el atacante necesita autenticación)"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-6881"
+      ]
+    }
+  },
+  {
+    "id": 1721,
+    "fecha": "2026-07-28T21:59:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque DNS a CubePilot",
+    "resumen": "La empresa australiana CubePilot, especializada en controladores de vuelo para drones, sufrió un ataque de DNS hijacking que interceptó el tráfico de red, causando una grave interrupción operativa. El ataque aprovechó una vulnerabilidad en el sistema de nombres de dominio (DNS) para redirigir el tráfico hacia servidores maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNzU5Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cubepilot-drone-software-dev-hit-by-dns-hijacking-to-intercept-traffic/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cubepilot drone software dev hit by dns hijacking to intercept traffic",
+    "ttps": [
+      {
+        "id": "T1185",
+        "name": "Domain Trust Discovery no se menciona, pero se puede inferir que el ataque utilizó una técnica de manipulación de DNS, por lo que se puede considerar:"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1720,
     "fecha": "2026-07-28T19:16:17Z",
     "categoria": "Ciberseguridad",
