@@ -1,5 +1,86 @@
 [
   {
+    "id": 1706,
+    "fecha": "2026-07-28T08:26:16Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agentes AI en la sombra",
+    "resumen": "Los agentes AI en la sombra se están propagando rápidamente en plataformas empresariales, a menudo sin visibilidad para IT o seguridad, lo que puede crear riesgos de seguridad debido a permisos no gestionados y acciones autónomas. Es crucial descubrir, evaluar y gobernar estos agentes AI para mitigar posibles amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMjcxNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/shadow-ai-agents-are-multiplying-heres-how-to-find-and-secure-them/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:shadow ai agents are multiplying here s how to find and secure them",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1705,
+    "fecha": "2026-07-28T08:26:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SQL en Chaty Pro",
+    "resumen": "La versión 3.5.5 del plugin Chaty Pro para WordPress presenta una vulnerabilidad de inyección SQL ciega basada en tiempo autenticada (Authenticated Time-Based Blind SQL Injection) debido a la concatenación directa de parámetros en consultas SQL sin validación adecuada, permitiendo a atacantes autenticados con acceso de nivel suscriptor o superior inyectar comandos SQL arbitrarios y potencialmente extraer contenido sensible de la base de datos. La verificación de nonce se realiza después de la ejecución de la consulta SQL, lo que no ofrece protección contra la inyección.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMjcxNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/225373",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-6251",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated Remote Access"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-6251"
+      ]
+    }
+  },
+  {
+    "id": 1704,
+    "fecha": "2026-07-28T08:26:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Injector de Payload AutoIT",
+    "resumen": "El lenguaje AutoIT sigue siendo ampliamente utilizado en el ecosistema de malware debido a su facilidad de uso y potencia, permitiendo a actores maliciosos inyectar payloads en procesos remotos con facilidad. Esto representa un vector de ataque significativo para la ciberseguridad, ya que puede ser utilizado para distribuir malware y ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMjcxNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33192",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:autoit payload injector tue jul 28th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1703,
+    "fecha": "2026-07-28T08:25:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft Lanza Modelo AI de Ciberseguridad",
+    "resumen": "Microsoft ha lanzado un nuevo modelo de inteligencia artificial (IA) de ciberseguridad dentro de MDASH, su plataforma de identificación y remediación de vulnerabilidades, logrando una precisión del 95,95% en CyberGym con un costo 50% menor que su configuración anterior. El modelo MAI-Cyber-1-Flash, combinado con GPT-5.4, ofrece una solución más eficiente y efectiva para la detección de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMjcxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft says new cybersecurity ai model helps mdash hit 95 95 at half the cost",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1702,
     "fecha": "2026-07-28T05:43:11Z",
     "categoria": "Ciberseguridad",
