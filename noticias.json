@@ -1,5 +1,107 @@
 [
   {
+    "id": 1720,
+    "fecha": "2026-07-28T19:16:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad iOS CVE-2026-64733",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-64733) en iOS y otros sistemas operativos de Apple que permite a una aplicación realizar un \"fingerprinting\" del usuario, lo que ha sido solucionado con mejoras en la protección de datos en las versiones iOS 26.6, iPadOS 26.6, macOS Tahoe 26.6, tvOS 26.6, visionOS 26.6 y watchOS 26.6. El vector de ataque implica la capacidad de una aplicación para recopilar datos del usuario sin su consentimiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNjYxNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/226373",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-64733",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1056",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1417",
+        "name": "Input Injection"
+      },
+      {
+        "id": "T1625",
+        "name": "Identity Theft"
+      },
+      {
+        "id": "T1640",
+        "name": "Detection Evasion"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-64733"
+      ]
+    }
+  },
+  {
+    "id": 1719,
+    "fecha": "2026-07-28T19:16:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Active Directory",
+    "resumen": "Se ha identificado una vulnerabilidad de alta gravedad en los certificados de Microsoft Active Directory, conocida como \"Certighost\", que permite a un actor malicioso escalar privilegios y comprometer el entorno de AD, lo que podría tener un impacto significativo en la seguridad de la infraestructura. La vulnerabilidad ha sido parcheada por Microsoft, pero es crucial aplicar el parche para evitar ataques de escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNjYxNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:certighost flaw haunts microsoft active directory certificates",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Kerberos Tickets"
+      },
+      {
+        "id": "T1208",
+        "name": "Access Token Manipulation"
+      },
+      {
+        "id": "T1484",
+        "name": "Domain Policy Modification"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1718,
+    "fecha": "2026-07-28T19:16:03Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Claude AI supera esquema de prueba post-cuántico",
+    "resumen": "La IA Claude de Anthropic ha logrado derivar un ataque de recuperación de clave de extremo a extremo contra HAWK-256, explotando una simetría previamente no utilizada en la retícula detrás del esquema de firma, y ha encontrado un ataque más rápido en 7 rondas de AES-128, logrando una aceleración de 200 a 800 veces. Esto se logró utilizando Claude Mythos Preview, lo que demuestra una posible vulnerabilidad en la criptografía post-cuántica y en el algoritmo de cifrado AES.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501220374-9f4b2a3a60c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNjYxNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:claude ai just cracked a post quantum test scheme and found a faster 7 round aes attack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1717,
+    "fecha": "2026-07-28T19:15:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Guía para aislar sistemas críticos",
+    "resumen": "El gobierno de EE. UU. y Australia han publicado una guía que recomienda a las organizaciones de infraestructura crítica prepararse para aislar sistemas de tecnología operacional vitales en caso de un ciberataque o otras interrupciones importantes, con el fin de minimizar el impacto y prevenir la propagación de amenazas como malware o ransomware a través de vectores de ataque como phishing o exploits de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNjYxNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-shares-advice-on-isolating-vital-systems-during-cyberattacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa shares advice on isolating vital systems during cyberattacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1716,
     "fecha": "2026-07-28T16:38:18Z",
     "categoria": "Ciberseguridad",
