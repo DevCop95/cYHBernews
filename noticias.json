@@ -1,5 +1,137 @@
 [
   {
+    "id": 1716,
+    "fecha": "2026-07-28T16:38:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-8164",
+    "resumen": "Se ha identificado una vulnerabilidad de \"Uncontrolled Search Path Element\" en el cliente de escritorio ArkSigner, que permite el secuestro del orden de búsqueda, afectando versiones desde v2.2.16.10 hasta 17062026. Esta vulnerabilidad puede ser explotada para realizar ataques de Search Order Hijacking.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNTY2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/225882",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-8164",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1574.001",
+        "name": "Search Order Hijacking"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8164"
+      ]
+    }
+  },
+  {
+    "id": 1715,
+    "fecha": "2026-07-28T16:38:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Incidente cibernético en Bank of Baroda",
+    "resumen": "El Bank of Baroda de la India ha confirmado un incidente cibernético después de que hackers reclamaron el robo de datos, lo que ocurrió tras la comprometición de la cuenta de correo electrónico de un empleado, permitiendo el acceso no autorizado a \"ciertos datos\". El incidente puede tener implicaciones de seguridad significativas, especialmente si se trata de información sensible de clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNTY2OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/india-bank-of-baroda-reports-cybersecurity-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:india s bank of baroda confirms cyber incident after hackers claim data theft",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1714,
+    "fecha": "2026-07-28T16:38:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Tengu Botnet: Reboot por Watchdog",
+    "resumen": "El botnet Tengu, derivado de Mirai, utiliza el watchdog de hardware de dispositivos Linux comprometidos para reiniciar el sistema cuando se elimina su proceso principal, permitiéndole relanzarse a través de otros mecanismos de persistencia. Los atacantes utilizan fuerza bruta de credenciales Telnet para infectar los dispositivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNTY2ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/tengu-botnet-reboots-compromised-linux.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:tengu botnet reboots compromised linux devices when defenders kill its process",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking (no se menciona explícitamente, pero se puede inferir que el botnet utiliza recursos del sistema para relanzarse)"
+      },
+      {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Watchdog Timer (se menciona el uso del watchdog de hardware)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1713,
+    "fecha": "2026-07-28T16:37:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Amenazas a SSO",
+    "resumen": "Los sistemas de inicio de sesión único (SSO) son vulnerables a ataques de credenciales modernos, lo que puede proporcionar a los atacantes acceso a múltiples aplicaciones y servicios empresariales, por lo que es crucial implementar contraseñas más seguras, autenticación multifactor (MFA) resistente a phishing y endurecimiento de identidad para proteger estos entornos. Los vectores de ataque incluyen phishing y ataques de credenciales, por lo que es esencial fortalecer la seguridad de los sistemas SSO.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNTY2ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/is-your-sso-protected-against-modern-credential-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:is your sso protected against modern credential attacks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal Application Access Token"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1712,
     "fecha": "2026-07-28T13:54:25Z",
     "categoria": "Ciberseguridad",
