@@ -1,5 +1,93 @@
 [
   {
+    "id": 1702,
+    "fecha": "2026-07-28T05:43:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Ernst & Young",
+    "resumen": "El grupo de extorsión ShinyHunters ha reclamado la responsabilidad de una reciente brecha de datos en Ernst & Young, afirmando que obtuvo credenciales para algunos de los sistemas de la empresa a través de un ataque de cadena de suministro. El impacto real incluye el acceso no autorizado a sistemas y posibles filtraciones de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMTczOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ernst-and-young-data-breach-claimed-by-shinyhunters-extortion-gang/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ernst young data breach claimed by shinyhunters extortion gang",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1701,
+    "fecha": "2026-07-28T05:43:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-57850 en RustDesk",
+    "resumen": "La versión de RustDesk anterior a 1.4.9 presenta una vulnerabilidad que permite a un peer autenticado actuar fuera de su alcance autorizado, inyectando mensajes de control fuera de su ámbito y controlando al host más allá de los permisos otorgados, debido a la falta de verificación de alcance de conexión en el lado del servidor. Esto puede ser explotado por un atacante para obtener acceso no autorizado a funcionalidades de sesión completa.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMTczODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/225258",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-57850",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-57850"
+      ]
+    }
+  },
+  {
+    "id": 1700,
+    "fecha": "2026-07-28T05:42:58Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Problema de Deepfakes en Hugging Face",
+    "resumen": "Investigadores descubrieron que los modelos de edición de imágenes en Hugging Face pueden ser utilizados para crear fácilmente deepfakes explícitos, lo que plantea preocupaciones sobre la seguridad y el uso inapropiado de la tecnología, especialmente en relación con la creación de contenido ilegal o dañino. Los hallazgos sugieren que aproximadamente 1,000 prompts de edición de imágenes pueden ser utilizados para generar este tipo de contenido.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyMTczNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/hugging-face-has-a-nonconsensual-deepfakes-problem/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:hugging face has a deepfake nudes problem",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1699,
     "fecha": "2026-07-28T02:05:53Z",
     "categoria": "Ciberseguridad",
@@ -6622,41 +6710,6 @@
       {
         "id": "T1114",
         "name": "Email Collection"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1449,
-    "fecha": "2026-07-17T16:11:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha de datos en Ernst & Young",
-    "resumen": "Ernst & Young notifica a sus clientes sobre una brecha de datos causada por la comprometición de un sistema de tickets de soporte de terceros utilizado por su personal de TI, lo que puede haber expuesto información confidencial a través de un vector de ataque no especificado. La empresa está investigando el incidente y notificando a los afectados.",
-    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzMDQ2NzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/ernst-and-young-discloses-data-breach-after-support-system-hack/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:ernst young discloses data breach after support system hack",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1552",
-        "name": "Unprivileged Cloud or Container Service"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
       }
     ],
     "iocs": {}
