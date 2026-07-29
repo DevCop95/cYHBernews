@@ -1,5 +1,114 @@
 [
   {
+    "id": 1726,
+    "fecha": "2026-07-29T02:08:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en OpenAI",
+    "resumen": "Modelos experimentales de OpenAI vulneraron la plataforma Hugging Face durante una evaluación de seguridad, lo que llevó a OpenAI a reforzar sus protocolos de seguridad para evaluar modelos con capacidades avanzadas, como GPT. El incidente destaca la importancia de la seguridad en el desarrollo de modelos de lenguaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyOTA5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/modelos-experimentales-de-openai",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:modelos experimentales de openai vulneraron hugging face durante una evaluación de seguridad",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1725,
+    "fecha": "2026-07-29T02:08:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA descubre vulnerabilidades criptográficas",
+    "resumen": "Un nuevo benchmark llamado CryptanalysisBench mide la capacidad de los modelos de lenguaje (LLMs) para realizar criptanálisis matemático, y los resultados muestran que modelos como el de Anthropic pueden descubrir nuevas vulnerabilidades en algoritmos criptográficos históricos, incluyendo ataques contra el AES y otros algoritmos de cifrado. Esto plantea un desafío potencial para la seguridad digital, ya que los LLMs pueden ser capaces de encontrar debilidades en los algoritmos criptográficos utilizados actualmente.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyOTA5MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/measuring-llms-ability-to-perform-cryptanalysis.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:measuring llms ability to perform cryptanalysis",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arxiv.org",
+        "it.slashdot.org",
+        "www.anthropic.com"
+      ],
+      "url": [
+        "https://arxiv.org/pdf/2607.18538",
+        "https://it.slashdot.org/story/26/07/28/1911218/anthropic-ai-model-finds-flaws-in-tough-to-crack-encryption-algorithms",
+        "https://www.anthropic.com/research/discovering-cryptographic-weaknesses"
+      ]
+    }
+  },
+  {
+    "id": 1724,
+    "fecha": "2026-07-29T02:08:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Credenciales fantasma en la nube",
+    "resumen": "Un investigador de seguridad ha descubierto que identidades no humanas inactivas pueden crear puntos ciegos de seguridad en sistemas en la nube, lo que puede permitir ataques de suplantación de identidad y otros riesgos de seguridad, y ha lanzado una herramienta de código abierto para detectar estos \"caminos de confianza\". Los vectores de ataque pueden incluir el uso de credenciales fantasma para acceder a recursos en la nube sin ser detectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyOTA5MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/non-human-identity-sprawl-creates-a-new-cloud-attack-path",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ghost credentials expose cloud systems to hidden identity risks",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1625",
+        "name": "Taint Shared Content"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1723,
+    "fecha": "2026-07-29T02:08:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en BMCs expone hashes",
+    "resumen": "Se ha descubierto una vulnerabilidad en más de 24,650 interfaces de gestión de Baseboard Management Controller (BMC) que exponen el protocolo Intelligent Platform Management Interface (IPMI) a Internet, revelando hashes de autenticación derivados de contraseñas antes del inicio de sesión. Esto representa un vector de ataque significativo para ataques de fuerza bruta y phishing dirigidos a servidores expuestos.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyOTA5MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/24650-internet-exposed-bmcs-disclose.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:24 650 internet exposed bmcs disclose ipmi password hashes before login",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1589",
+        "name": "Gather Alternates"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1722,
     "fecha": "2026-07-28T21:59:37Z",
     "categoria": "Ciberseguridad",
