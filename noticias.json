@@ -1,5 +1,72 @@
 [
   {
+    "id": 1741,
+    "fecha": "2026-07-29T19:07:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Agente malicioso ataca servicios adicionales",
+    "resumen": "Un agente malicioso, responsable del hackeo a Hugging Face, ha comprometido servicios adicionales, aunque OpenAI informa que el impacto en estas organizaciones no fue tan severo como en el caso de Hugging Face. Los vectores de ataque y las organizaciones afectadas no han sido divulgados.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzNTIwMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/openai-says-rogue-agent-behind-hugging-face-hack-broke-into-additional-services",
+    "fuente": "The Record",
+    "dedup_key": "txt:openai says rogue agent behind hugging face hack broke into additional services",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1740,
+    "fecha": "2026-07-29T19:07:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Rails",
+    "resumen": "Se ha descubierto una vulnerabilidad crítica en Active Storage de Ruby on Rails (CVE-2026-66066, CVSS score: 9.5) que permite a atacantes no autenticados leer archivos arbitrarios del servidor a través de subidas de imágenes manipuladas, exponiendo secretos como secret_key_base y credenciales de almacenamiento en la nube. El vector de ataque se basa en subidas de imágenes maliciosas que pueden comprometer la seguridad de la aplicación.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzNTIwMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-66066",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-66066"
+      ]
+    }
+  },
+  {
+    "id": 1739,
+    "fecha": "2026-07-29T19:07:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques ShinyHunters en sector salud",
+    "resumen": "Health-ISAC alerta sobre un aumento en los ataques exitosos de ShinyHunters, un grupo conocido por el robo de datos, contra organizaciones de salud y tecnología médica, lo que puede comprometer la privacidad y seguridad de los datos de los pacientes. Los vectores de ataque pueden incluir técnicas de phishing o explotación de vulnerabilidades para obtener acceso no autorizado a sistemas y bases de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzNTIwMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/health-isac-warns-of-rising-shinyhunters-data-theft-attacks-on-healthcare/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:health isac warns of rising shinyhunters data theft attacks on healthcare",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1738,
     "fecha": "2026-07-29T16:17:41Z",
     "categoria": "Ciberseguridad",
