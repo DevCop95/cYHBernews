@@ -1,5 +1,87 @@
 [
   {
+    "id": 1734,
+    "fecha": "2026-07-29T11:21:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Secure Boot de Microsoft",
+    "resumen": "Se ha descubierto una vulnerabilidad de larga duración en Microsoft Secure Boot, que ha permitido a atacantes bypassar la protección durante 13 de sus 14 años de existencia, utilizando imágenes de firmware defectuosas conocidas como shims, que pueden ser utilizadas para circumvenir la protección UEFI. La vulnerabilidad se debe a la falta de revocación de estas imágenes firmadas por Microsoft después de que se descubrieron vulnerabilidades en ellas.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzMjQwNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/long-lived-vulnerability-in-microsoft-secure-boot.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:long lived vulnerability in microsoft secure boot",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arstechnica.com",
+        "en.wikipedia.org"
+      ],
+      "url": [
+        "https://arstechnica.com/security/2026/07/microsoft-secure-boot-has-been-broken-for-most-of-its-existence/"
+      ]
+    }
+  },
+  {
+    "id": 1733,
+    "fecha": "2026-07-29T11:21:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Cargos contra fundador de Telegram",
+    "resumen": "El Servicio Federal de Seguridad de la Federación Rusa (FSB) ha acusado al fundador de Telegram, Pavel Durov, de presuntamente facilitar actividades terroristas y no eliminar información prohibida, violando la ley rusa, lo que podría tener implicaciones en la privacidad digital y la ciberseguridad de los usuarios de la plataforma. Los cargos se centran en la falta de eliminación de canales, chats y bots que promueven contenido prohibido.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzMjQwNzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/russia-charges-telegram-founder-pavel.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:russia charges telegram founder pavel durov with aiding terrorist activity",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1732,
+    "fecha": "2026-07-29T11:21:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Gitea",
+    "resumen": "La vulnerabilidad CVE-2026-60004 permite la ejecución remota de comandos en servidores Gitea si un atacante tiene permisos de escritura en un repositorio, pudiendo explotar hooks de Git para acceder al servidor. La corrección requiere actualizar a Gitea 1.27.1 y auditar el uso de hooks de Git y permisos de colaboradores.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzMjQwNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-fallo-critico-en-gitea-permite-ejecutar-comandos-en-el-servidor-mediante-hooks-de-git/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-critico-en-gitea-permite-ejecutar-comandos-en-el-servidor-mediante-hooks-de-git",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-60004",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/un-fallo-critico-en-gitea-permite-ejecutar-comandos-en-el-servidor-mediante-hooks-de-git/"
+      ],
+      "cve": [
+        "CVE-2026-60004"
+      ]
+    }
+  },
+  {
     "id": 1731,
     "fecha": "2026-07-29T08:32:02Z",
     "categoria": "Ciberseguridad",
@@ -10389,41 +10471,6 @@
     "fuente": "TG: vx-underground",
     "dedup_key": "txt:malware tries to run as admin fails already running as admin didn t check privileges before self terminat",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1332,
-    "fecha": "2026-07-11T21:44:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad crítica en Gitea",
-    "resumen": "Se ha identificado una vulnerabilidad crítica en la imagen de Docker oficial de Gitea que permite a los atacantes suplantar a cualquier usuario, incluidos administradores, a través de un bypass de autenticación. Los hackers están explotando activamente esta vulnerabilidad, lo que puede tener un impacto significativo en la seguridad de los servicios de Git autoalojados.",
-    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM4MDYyNDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:hackers exploit critical auth bypass in gitea docker image",
-    "ttps": [
-      {
-        "id": "T1550",
-        "name": "Use of Alternate Authentication Material"
-      },
-      {
-        "id": "T1550.004",
-        "name": "Session Hijacking"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1133",
-        "name": "External Remote Services"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
     "iocs": {}
   },
   {
