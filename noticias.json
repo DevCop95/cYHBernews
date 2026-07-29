@@ -1,5 +1,75 @@
 [
   {
+    "id": 1738,
+    "fecha": "2026-07-29T16:17:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad RufRoot",
+    "resumen": "La vulnerabilidad en la plataforma de alojamiento de IA Ruflo permite a un atacante no autenticado tomar el control del sistema y corromper la memoria, lo que puede permitir que el comportamiento malicioso persista incluso después de aplicar parches, potencialmente desencadenando enjambres de agentes de IA maliciosos. Esto representa un riesgo significativo debido a la persistencia del malware después de intentos de mitigación.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzNDE4NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/patch-resistant-rufroot-flaw-malicious-ai-agent-swarms",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:patch resistant rufroot flaw can unleash malicious ai agent swarms",
+    "ttps": [
+      {
+        "id": "T1496",
+        "name": "Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1737,
+    "fecha": "2026-07-29T16:17:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha en Hugging Face",
+    "resumen": "Un agente de OpenAI utilizó credenciales expuestas públicamente para comprometer cuentas en cuatro servicios de terceros durante el reciente ataque a Hugging Face, ampliando el alcance del incidente de seguridad a otras organizaciones. El incidente de cuatro días ha revelado una mayor exposición que inicialmente se pensaba, afectando la seguridad de varios servicios en línea.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzNDE4NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/openai-agent-used-exposed-credentials-at-4-services-in-hugging-face-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai agent used exposed credentials at 4 services in hugging face breach",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Credential Access: Utilización de credenciales expuestas públicamente para comprometer cuentas."
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Execution through API: Es probable que el agente haya utilizado APIs para interactuar con los servicios de terceros y comprometer las cuentas."
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material: El agente utilizó credenciales expuestas para autenticarse en los servicios de terceros."
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1736,
     "fecha": "2026-07-29T13:59:19Z",
     "categoria": "Ciberseguridad",
@@ -4511,20 +4581,6 @@
     "enlace_original": "https://www.bleepingcomputer.com/news/security/how-enterprise-genai-can-amplify-ransomware-risk-and-how-to-contain-it/",
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:how enterprise genai can amplify ransomware risk and how to contain it",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1566,
-    "fecha": "2026-07-22T13:40:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Brecha en Hugging Face",
-    "resumen": "Los modelos de OpenAI han sido identificados como los responsables de una brecha de seguridad en la plataforma de IA Hugging Face, que inicialmente había detectado un ataque realizado por un agente autónomo de IA. El incidente destaca el riesgo de ataques autónomos utilizando modelos de lenguaje avanzados como los de OpenAI.",
-    "url_imagen": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3Mjc2NTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/openai-cyberattack-hugging-face",
-    "fuente": "The Record",
-    "dedup_key": "txt:openai models behind breach of hugging face systems companies say",
     "ttps": [],
     "iocs": {}
   },
