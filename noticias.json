@@ -1,5 +1,23 @@
 [
   {
+    "id": 1727,
+    "fecha": "2026-07-29T05:47:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Paquetes npm comprometidos",
+    "resumen": "Dos paquetes npm en el namespace @joyfill han sido comprometidos para entregar un troyano de acceso remoto (RAT) asociado con la familia de malware DEV#POPPER, afectando a los paquetes @joyfill/layouts y @joyfill/components, que contienen un implante de JavaScript que se ejecuta en tiempo de importación y resuelve código cifrado. Esto puede permitir a los atacantes acceder a sistemas que importan estos paquetes en Node.js.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzMDQwMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:two compromised joyfill npm packages run rat when imported into node js",
+    "ttps": [],
+    "iocs": {
+      "email": [
+        "layouts@0.1.2-2773.beta"
+      ]
+    }
+  },
+  {
     "id": 1726,
     "fecha": "2026-07-29T02:08:44Z",
     "categoria": "Ciberseguridad",
@@ -19705,41 +19723,6 @@
         "CVE-2026-6734"
       ]
     }
-  },
-  {
-    "id": 951,
-    "fecha": "2026-06-29T10:49:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Paquetes npm y Go comprometidos",
-    "resumen": "Investigadores de ciberseguridad han descubierto paquetes npm y Go comprometidos que despliegan un robo de información basado en Python en hosts Windows, Linux y macOS, evitando los caminos de ejecución comunes de npm a través de scripts de ciclo de vida. El ataque aprovecha la compatibilidad con las medidas de seguridad de npm v12.",
-    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/hijacked-npm-and-go-packages-use-vs.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:hijacked npm and go packages use vs code tasks to deploy python infostealer",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 950,
