@@ -1,5 +1,37 @@
 [
   {
+    "id": 1736,
+    "fecha": "2026-07-29T13:59:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SQL en VeloCloud",
+    "resumen": "La vulnerabilidad CVE-2020-3973 (CVSS 8.8) en VeloCloud Orchestrator permite a un actor malicioso con acceso a la plataforma realizar inyecciones SQL ciegas, lo que podría llevar a la obtención no autorizada de datos. El vector de ataque se basa en la falta de comprobación de entrada adecuada en la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzMzM1NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-3973",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-3973",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2020-3973"
+      ]
+    }
+  },
+  {
+    "id": 1735,
+    "fecha": "2026-07-29T13:59:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Exploit Timelines Colapsan",
+    "resumen": "La inteligencia artificial (AI) está comprimiendo los tiempos de explotación de vulnerabilidades, lo que plantea la necesidad de revisar y ajustar los planes de gestión de vulnerabilidades para hacer frente a los nuevos desafíos de seguridad. La pregunta clave no es si el plan debe cambiar, sino identificar qué partes del enfoque actual están fallando.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzMzM1NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/mythos-asks-right-question-it-doesnt.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:mythos asks the right question it doesn t answer it",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1734,
     "fecha": "2026-07-29T11:21:19Z",
     "categoria": "Ciberseguridad",
