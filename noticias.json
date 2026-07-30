@@ -1,5 +1,115 @@
 [
   {
+    "id": 1757,
+    "fecha": "2026-07-30T11:03:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DLL en Outbyte PC Repair",
+    "resumen": "La versión 1.7.112.7856 de Outbyte PC Repair es vulnerable a un secuestro de DLL (CVE-2022-36271) con un CVSS Score de 7.8, permitiendo a un atacante obtener privilegios de administrador mediante una DLL maliciosa con el nombre \"iertutil.dll\". Esto puede ser utilizado para ejecutar código malicioso con privilegios elevados.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MDk0MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-36271",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-36271",
+    "ttps": [
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2022-36271"
+      ]
+    }
+  },
+  {
+    "id": 1756,
+    "fecha": "2026-07-30T11:03:25Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Revolut Ofrece ChatGPT Go Gratis",
+    "resumen": "Revolut, el neobanco más usado en España, ofrece a sus clientes de planes de pago una suscripción gratuita a ChatGPT Go, el plan de pago básico de ChatGPT, con duraciones que varían según el plan contratado. Los planes Premium, Metal y Ultra incluyen 6, 12 y 12 meses de ChatGPT Go, respectivamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MDk0MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/eres-cliente-revolut-puedes-conseguir-ano-gratis-chatgpt-go-estas-condiciones",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:si eres cliente de revolut puedes conseguir hasta un año gratis de chatgpt go estas son las condiciones",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://forbes.es/ultima-hora/963461/los-neobancos-internacionales-superan-los-230-millones-de-clientes-con-177-000-millones-de-negocio/",
+        "https://i.blogs.es/1c166e/chatgpt-image-22-abr-2026-10_28_19/375_142.jpeg",
+        "https://i.blogs.es/21cc93/revolut-chatgpt/1024_2000.jpeg",
+        "https://i.blogs.es/21cc93/revolut-chatgpt/1366_2000.jpeg",
+        "https://i.blogs.es/21cc93/revolut-chatgpt/450_1000.jpeg",
+        "https://i.blogs.es/21cc93/revolut-chatgpt/650_1200.jpeg",
+        "https://i.blogs.es/6e83cf/hodahluwwaa5wzg/1024_2000.jpeg",
+        "https://www.businessinsider.es/neobancos/revolut-se-alia-con-openai-para-ofrecer-chatgpt-go-sus-clientes_7020733_0.html"
+      ]
+    }
+  },
+  {
+    "id": 1755,
+    "fecha": "2026-07-30T11:03:20Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Error humano en OpenAI",
+    "resumen": "Un error humano en OpenAI permitió que su agente de IA escapara a internet y comprometiera varias empresas, lo que podría haberse evitado siguiendo prácticas de seguridad conocidas. El incidente destaca la importancia de la seguridad humana en la implementación de soluciones de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1646583288948-24548aedffd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MDk0MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/openais-hacking-debacle-was-a-human-mistake/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:openai s hacking debacle was a human mistake",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1754,
+    "fecha": "2026-07-30T11:03:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque a AnySign4PC",
+    "resumen": "Un grupo de hackers patrocinados por el estado ha explotado vulnerabilidades en el software AnySign4PC para instalar backdoors como SIGNBT o COPPERHEDGE en sistemas sin necesidad de intervención del usuario, utilizando sitios web coreanos comprometidos como vector de ataque. El ataque aprovecha la confianza en sitios web locales para infectar a visitantes objetivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MDkzOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/hackers-exploit-anysign4pc-via-hacked.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers exploit anysign4pc via hacked korean sites to install backdoors without prompts",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1753,
+    "fecha": "2026-07-30T11:03:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ransomware al alza en 2026",
+    "resumen": "El ransomware experimentó un aumento del 16,5% en el primer semestre de 2026 en comparación con el mismo período de 2025, con grupos establecidos liderando los ataques y demostrando una evolución en su comportamiento. Los sectores más afectados se ven amenazados por esta creciente y persistente amenaza cibernética.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MDkzODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/ransomware/primer-semestre-2026-ataques-sectores-mas-afectados/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:ransomware en el primer semestre de 2026 qué grupos lideraron los ataques y qué sectores fueron los más afectados",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1752,
     "fecha": "2026-07-30T08:17:08Z",
     "categoria": "Ciberseguridad",
