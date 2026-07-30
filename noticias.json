@@ -1,5 +1,33 @@
 [
   {
+    "id": 1759,
+    "fecha": "2026-07-30T13:48:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques de cadena de suministro",
+    "resumen": "Un grupo de hackers vinculado a Corea del Norte ha sido identificado como responsable de varios ataques de alto perfil contra bibliotecas de software de código abierto utilizadas por desarrolladores en todo el mundo, lo que puede tener un impacto significativo en la seguridad de la cadena de suministro de software. Los ataques pueden haber utilizado técnicas de phishing o exploits de vulnerabilidades para comprometer los proyectos de código abierto.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MTkyOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/north-korea-hackers-amazon-malware",
+    "fuente": "The Record",
+    "dedup_key": "txt:north korean hackers behind major open source supply chain attacks amazon says",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1758,
+    "fecha": "2026-07-30T13:48:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Microsoft Copilot",
+    "resumen": "Se ha descubierto una vulnerabilidad en Microsoft 365 Copilot que permite copiar instrucciones ocultas en nuevos documentos de Word, lo que podría permitir la manipulación de informes y la propagación de instrucciones maliciosas. La técnica, reportada por Håkon Måløy, aprovecha la capacidad de Copilot para reescribir figuras en un informe y copiar las instrucciones ocultas en el archivo final.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MTkyODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/microsoft-copilot-for-word-can-copy.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft copilot for word can copy hidden prompts into new documents",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1757,
     "fecha": "2026-07-30T11:03:30Z",
     "categoria": "Ciberseguridad",
@@ -25269,44 +25297,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-56082"
-      ]
-    }
-  },
-  {
-    "id": 743,
-    "fecha": "2026-06-21T19:24:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Microsoft 365 Copilot",
-    "resumen": "Se ha identificado una vulnerabilidad de redirección de URL a sitios no confiables (open redirect) en Microsoft 365 Copilot's Business Chat, con un CVSS Score de 8.8, que permite a un atacante no autorizado elevar privilegios en una red. El vector de ataque aprovecha la función de chat de negocios para redirigir a usuarios a sitios maliciosos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217910-8f7e911ff0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk4ODN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-47645",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-47645"
       ]
     }
   },
