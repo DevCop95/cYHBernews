@@ -1,5 +1,79 @@
 [
   {
+    "id": 1746,
+    "fecha": "2026-07-30T01:58:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bot de SSH para minería",
+    "resumen": "Un bot de SSH realiza reconocimiento de hardware antes de desplegar un miner para optimizar su rendimiento, lo que sugiere un enfoque sofisticado en la explotación de recursos de cómputo, posiblemente a través de técnicas de phishing o ataques de fuerza bruta para obtener acceso inicial. El vector de ataque implica el uso de vulnerabilidades en protocolos de acceso remoto para infectar sistemas y desplegar malware de minería.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzNzY3MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33198",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:reconnaissance first an ssh bot that sizes up your hardware before deploying a miner x5b guest diary x5d thu jul 30th",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1745,
+    "fecha": "2026-07-30T01:58:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Ruflo MCP",
+    "resumen": "Se ha identificado una vulnerabilidad de gravedad máxima en Ruflo, un agente meta-harness de código abierto para Anthropic Claude Code y OpenAI Codex, que permite la ejecución remota de código sin autenticación y la inyección de malware en la memoria de la IA. La vulnerabilidad, rastreada como CVE-2026-59726, afecta a todas las versiones del proyecto antes de la 3.16.3.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzNzY3MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-59726",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Privileged File System Modification"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-59726"
+      ]
+    }
+  },
+  {
     "id": 1744,
     "fecha": "2026-07-29T21:56:27Z",
     "categoria": "Ciberseguridad",
