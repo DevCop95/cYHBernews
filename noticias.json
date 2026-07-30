@@ -1,5 +1,153 @@
 [
   {
+    "id": 1764,
+    "fecha": "2026-07-30T16:23:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Lazarus Group comparte herramientas",
+    "resumen": "Las agencias surcoreanas alertan que el grupo Lazarus de Corea del Norte está compartiendo herramientas y infraestructura de ciberataque con hackers de ransomware que apuntan a organizaciones surcoreanas, lo que indica una creciente colaboración entre los hackers respaldados por Pyongyang y el ecosistema del ransomware. Esto sugiere un vector de ataque más amplio y complejo para las organizaciones surcoreanas.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0Mjg2MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/north-korea-hackers-ransomware",
+    "fuente": "The Record",
+    "dedup_key": "txt:north korea s lazarus group sharing tools with ransomware hackers south korean agencies warn",
+    "ttps": [
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities"
+      },
+      {
+        "id": "T1587.001",
+        "name": "Develop Capabilities: Malware"
+      },
+      {
+        "id": "T1588",
+        "name": "Obtain Capabilities"
+      },
+      {
+        "id": "T1588.001",
+        "name": "Obtain Capabilities: Tool"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1763,
+    "fecha": "2026-07-30T16:23:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciudadano estadounidense procesado por borrar datos de su teléfono",
+    "resumen": "Un ciudadano estadounidense está siendo procesado por utilizar una función de \"duress password\" en su teléfono con GrapheneOS, un sistema operativo personalizado de Android, que borra los datos del dispositivo cuando se ingresa un código específico, lo que impidió a los funcionarios de la frontera acceder a su información. La función de GrapheneOS plantea interrogantes sobre los derechos constitucionales en la frontera y la privacidad digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0Mjg2MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/american-being-prosecuted-for-wiping-his-phone-before-handing-it-over-to-border-officials.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:american being prosecuted for wiping his phone before handing it over to border officials",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "boingboing.net",
+        "gizmodo.com",
+        "techcrunch.com",
+        "www.pcmag.com",
+        "www.theguardian.com"
+      ],
+      "url": [
+        "https://boingboing.net/2026/07/25/grapheneos-duress-password-border-search.html",
+        "https://gizmodo.com/a-feature-that-makes-your-phone-data-self-destruct-in-authorities-hands-may-soon-have-its-day-in-court-2000790831",
+        "https://techcrunch.com/2026/07/24/us-accuses-american-of-allegedly-wiping-his-phone-using-a-duress-password-during-border-search/",
+        "https://www.pcmag.com/news/grapheneos-defends-data-wiping-function-that-blocked-us-border-search",
+        "https://www.theguardian.com/us-news/2026/jul/23/cop-city-protester-phone"
+      ]
+    }
+  },
+  {
+    "id": 1762,
+    "fecha": "2026-07-30T16:23:28Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Claude Mythos: Riesgos y Realidad",
+    "resumen": "El modelo de lenguaje Claude Mythos de Anthropic plantea riesgos potenciales para la ciberseguridad, y es importante que los equipos de seguridad evalúen su impacto y vectores de ataque potenciales. La adopción de Claude Mythos puede tener implicaciones significativas en la seguridad de la información y la privacidad digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905673-a81786aaa609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0Mjg2MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/claude-mythos-hype-vs-reality",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:claude mythos hype vs reality what security teams need to know",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1761,
+    "fecha": "2026-07-30T16:23:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Amenazas cibernéticas con IA",
+    "resumen": "Se han detectado diversas amenazas cibernéticas, incluyendo ataques con IA, 370 vulnerabilidades en Chrome y ataques a SonicWall, que aprovechan la confianza del usuario en pantallas de inicio de sesión, guías de instalación y servicios familiares. Los vectores de ataque incluyen credenciales reutilizadas, sistemas expuestos y rutas de explotación que deberían haber sido más seguras.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0Mjg2MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/threatsday-ai-powered-hacking-370.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday ai powered hacking 370 chrome flaws sonicwall attacks dns hijacking 22 more stories",
+    "ttps": [
+      {
+        "id": "T1557.001",
+        "name": "Exploitation for Credential Access: Credential Reuse"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials: Credenciales reutilizadas"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1760,
+    "fecha": "2026-07-30T16:23:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques de vishing en Microsoft Teams",
+    "resumen": "Actores maliciosos están utilizando técnicas de vishing en Microsoft Teams, haciéndose pasar por personal de soporte de TI para obtener acceso remoto a dispositivos corporativos y desplegar el ransomware Chaos en organizaciones norteamericanas, lo que representa un vector de ataque significativo para la ciberseguridad de estas empresas. Los ataques aprovechan la confianza en las comunicaciones internas para infiltrarse y causar daños.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0Mjg1OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft teams vishing attacks lead to chaos ransomware attacks",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1589",
+        "name": "Phishing (en este caso, vishing)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools (los atacantes utilizan herramientas de acceso remoto para desplegar el ransomware)"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1759,
     "fecha": "2026-07-30T13:48:10Z",
     "categoria": "Ciberseguridad",
@@ -23070,40 +23218,6 @@
     "enlace_original": "https://www.darkreading.com/cybersecurity-analytics/europe-evolves-ransomware-favorite-region",
     "fuente": "Dark Reading",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 850,
-    "fecha": "2026-06-25T14:22:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Amenazas Cibernéticas",
-    "resumen": "Se han detectado varias amenazas cibernéticas, incluyendo proxyware en Smart TV, una vulnerabilidad de 24 años en la herramienta curl y foros de delincuencia cibernética que utilizan inteligencia artificial, lo que pone en riesgo la seguridad de los sistemas y la privacidad de los usuarios. Estas amenazas pueden ser aprovechadas a través de credenciales obsoletas, aplicaciones de confianza comprometidas y técnicas de phishing avanzadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzOTczMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/threatsday-bulletin-smart-tv-proxyware.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1556",
-        "name": "Session Hijacking no se menciona explícitamente, pero se habla de \"credenciales obsoletas\" y \"aplicaciones de confianza comprometidas\", lo que se relaciona más con T1078 y T1190. Sin embargo, se menciona \"técnicas de phishing avanzadas\", que se relaciona con T1566."
-      }
-    ],
     "iocs": {}
   },
   {
