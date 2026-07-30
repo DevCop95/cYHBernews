@@ -1,5 +1,174 @@
 [
   {
+    "id": 1752,
+    "fecha": "2026-07-30T08:17:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Kernel de Linux",
+    "resumen": "Se ha identificado una vulnerabilidad de uso de memoria previamente liberada (CVE-2022-1055) en el Kernel de Linux, con un CVSS Score de 7.8, que podría permitir a un atacante local alcanzar una escalada de privilegios a través de la función tc_new_tfilter, requiriendo espacios de nombres de usuarios no privilegiados. La actualización del commit 04c2a47ffb13c29778e2a14e414ad4cb5a5db4b5 es recomendada para mitigar esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzOTk0Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-1055",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-1055",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "04c2a47ffb13c29778e2a14e414ad4cb5a5db4b5"
+      ],
+      "cve": [
+        "CVE-2022-1055"
+      ]
+    }
+  },
+  {
+    "id": 1751,
+    "fecha": "2026-07-30T08:17:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers rusos explotan fallo OWA",
+    "resumen": "Actores de amenaza rusos están explotando una vulnerabilidad en Microsoft Outlook Web Access (OWA) para mantener acceso a buzones de correo electrónico después de la rotación de credenciales, afectando a entidades gubernamentales y sectores como telecomunicaciones, finanzas y aerospacial. La actividad, iniciada el 22 de julio de 2026, permite a los atacantes mantener acceso no autorizado a pesar de los esfuerzos de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzOTk0MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/russian-hackers-exploit-microsoft-owa.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:russian hackers exploit microsoft owa flaw to keep mailbox access after credential rotation",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Valid Accounts: Local Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1750,
+    "fecha": "2026-07-30T08:16:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Zero-day en Cisco Secure FMC",
+    "resumen": "Se ha identificado y explotado activamente el CVE-2026-20316 en Cisco Secure Firewall Management Center, permitiendo accesos no autenticados mediante credenciales estáticas de una cuenta de bajo privilegio. Cisco ha distribuido hotfixes y recomienda revisar logs y reducir la exposición del interfaz de gestión para mitigar el riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzOTk0MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-zero-day-en-cisco-secure-fmc-abre-la-puerta-a-accesos-con-credenciales-estaticas/?utm_source=rss&utm_medium=rss&utm_campaign=un-zero-day-en-cisco-secure-fmc-abre-la-puerta-a-accesos-con-credenciales-estaticas",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-20316",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1550.002",
+        "name": "Use Alternate Authentication Material: Pass the Hash"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/un-zero-day-en-cisco-secure-fmc-abre-la-puerta-a-accesos-con-credenciales-estaticas/"
+      ],
+      "cve": [
+        "CVE-2026-20316"
+      ]
+    }
+  },
+  {
+    "id": 1749,
+    "fecha": "2026-07-30T08:16:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "MyThreatIntel: Inteligencia de Amenazas",
+    "resumen": "La plataforma MyThreatIntel ofrece una solución para el análisis de inteligencia de amenazas, recopilando y organizando información de diversas fuentes como Data Leak Sites, bases de datos de vulnerabilidades y repositorios de IoCs, para ayudar a los analistas a responder rápidamente a preguntas concretas sobre actores, infraestructura y amenazas. Esto facilita la identificación de indicadores de compromiso y la toma de decisiones informadas en entornos de SOC, DFIR y Threat Hunting.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUzOTk0MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/mythreatintel-plataforma-de-threat.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:mythreatintel plataforma de threat intelligence desde la experiencia en dfir y respuesta a incidentes",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "cve.org",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "mythreatintel.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com",
+        "https://0xword.com/libros/162-open-source-intelligence-osint-investigar-personas-e-identidades-en-internet.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5NPEtztUfkA9FOjbFc5xmzeo0CzuBhFAUrdQ0n2foZpps873SFKBztSdFDMFbDyUFi9MXoZ4WXESLVIOaIOHqjbAcKTEWsbf1U5RRq_CR61b2I-dr1tQKqRsA9vv4zqb8X9oIZHU3beou5Uv6aKrEXqrppWuMzcrI4-K2-8dkoVSm7f_lihp3/s3242/TI7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5NPEtztUfkA9FOjbFc5xmzeo0CzuBhFAUrdQ0n2foZpps873SFKBztSdFDMFbDyUFi9MXoZ4WXESLVIOaIOHqjbAcKTEWsbf1U5RRq_CR61b2I-dr1tQKqRsA9vv4zqb8X9oIZHU3beou5Uv6aKrEXqrppWuMzcrI4-K2-8dkoVSm7f_lihp3/w640-h308/TI7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoZxWmYcdxec9_BQ4LKyd7Zn7EvzVdI-zLWymJPNQqJz1Qj_7epzOa9REAh50KHufXXHQeuuQUXnD6AkkurTgC0YNLiwwcuCq_UXhC5805TNlCxmnbdrqYeJ3fBDiJZavD52yEODhCJNk5LtvsE8O7bXq_S8x1JWdjZ6oab-WGY-LEUAlhtHH/s2590/TI14.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHoZxWmYcdxec9_BQ4LKyd7Zn7EvzVdI-zLWymJPNQqJz1Qj_7epzOa9REAh50KHufXXHQeuuQUXnD6AkkurTgC0YNLiwwcuCq_UXhC5805TNlCxmnbdrqYeJ3fBDiJZavD52yEODhCJNk5LtvsE8O7bXq_S8x1JWdjZ6oab-WGY-LEUAlhtHH/w640-h308/TI14.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqHOLgy9C8IDvnuKctfearFVngcRbp5bH7IgJyzjQYW_PdueN8-CUYx-sWETbdRH08kFCce5L14YItBpz_2VxQawBPHd_ukLXGTl6OQ1vU01bfLeXA3T6vcrIi4fHWRp4HXoIDsEJvAw2knZl6-EWkyQo-BbdMnD-dfm3NDOai8QnxkBgbtLku/s3176/TI5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqHOLgy9C8IDvnuKctfearFVngcRbp5bH7IgJyzjQYW_PdueN8-CUYx-sWETbdRH08kFCce5L14YItBpz_2VxQawBPHd_ukLXGTl6OQ1vU01bfLeXA3T6vcrIi4fHWRp4HXoIDsEJvAw2knZl6-EWkyQo-BbdMnD-dfm3NDOai8QnxkBgbtLku/w640-h308/TI5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh38pUKszS7JSFQwg23LhHruS_zPmoORHgxC3vJvS2zEhGFMjGl666tB9i-k3TXr_rqPtL1jrH3apFlkTcvl1j9wr9IY2lf9Nj0JlIY-byoAi6uFatSjhwg9U3EaNuAm4eLAmNwXK0SHzGHVy5IoYP_eLBJwYFe-ib-kR7GPKD8AI_En5UCXfKW/w640-h590/Manuel_Martinez.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMQQ4OLQCyPie4cjvDbFOx3WSlEMbgdD-E1r7LhaoSqD_BWtUeL8fnvO1NrNJwDKrHW6zgqLkAGSqSXdacBQE6rb7IgLqTn5xWZu7xWosquOh2FWDGf_l1d0ULqgxESlQiXDnhIl4KEQskbgZq_oQRr9v8u0S-XmW4YyJ9YUlhk5bFgJHehC4J/s3102/TI2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMQQ4OLQCyPie4cjvDbFOx3WSlEMbgdD-E1r7LhaoSqD_BWtUeL8fnvO1NrNJwDKrHW6zgqLkAGSqSXdacBQE6rb7IgLqTn5xWZu7xWosquOh2FWDGf_l1d0ULqgxESlQiXDnhIl4KEQskbgZq_oQRr9v8u0S-XmW4YyJ9YUlhk5bFgJHehC4J/w640-h306/TI2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZEWqGE5j4vdoQPMTlvGGiNd7ML5GGaGLgZlJIlBbRrvh4rmHadNKxOPIeQkVhONXho8aazbRNqD649c6-76pGA_i8Phn9v0zn5FuNSwIw9EhXAjl1p3e-rgi-jZB_-F3XqkUmwoSdwOVOnZnYjkzosxAvexFyxuHPC4_Jj0a-UQ49k8mgF3Mk/s2596/TI13.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZEWqGE5j4vdoQPMTlvGGiNd7ML5GGaGLgZlJIlBbRrvh4rmHadNKxOPIeQkVhONXho8aazbRNqD649c6-76pGA_i8Phn9v0zn5FuNSwIw9EhXAjl1p3e-rgi-jZB_-F3XqkUmwoSdwOVOnZnYjkzosxAvexFyxuHPC4_Jj0a-UQ49k8mgF3Mk/w640-h306/TI13.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjS2SsPEW3STVTl4lm7i3qMaaUa-hCXQ_ovrSdIOGjs7VCvhjUYfwzStl-aBkVhwMWsHqSK7o_23u9lz-Isdjjult0ZLakphLTBN1TsjGkZIq7lPYzXqd8TP0P5AnrzQzWUPGu2itrZM-efDo0BHEK97DhhMfUkNg0Jy1niwxZ8rn67cAiS4A/s3096/TI3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmjS2SsPEW3STVTl4lm7i3qMaaUa-hCXQ_ovrSdIOGjs7VCvhjUYfwzStl-aBkVhwMWsHqSK7o_23u9lz-Isdjjult0ZLakphLTBN1TsjGkZIq7lPYzXqd8TP0P5AnrzQzWUPGu2itrZM-efDo0BHEK97DhhMfUkNg0Jy1niwxZ8rn67cAiS4A/w640-h350/TI3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi59QcDByFEcYUJTXPKdD0etAKYbiAHggAsjP6GubJJF0YUsathDFk_F83eQcQmOJgbZDqYlGjA70f0KQpPwVGdi_2Euft_Z37N5VcNoOn61jpWW9xVuunyxEcFIqG1kkC0X2DUqUqxySpIkxt1YH2JVW2rKMFq0PfC6MHKfgOgnkN3wtnC2Mr_/s3054/TI8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi59QcDByFEcYUJTXPKdD0etAKYbiAHggAsjP6GubJJF0YUsathDFk_F83eQcQmOJgbZDqYlGjA70f0KQpPwVGdi_2Euft_Z37N5VcNoOn61jpWW9xVuunyxEcFIqG1kkC0X2DUqUqxySpIkxt1YH2JVW2rKMFq0PfC6MHKfgOgnkN3wtnC2Mr_/w640-h374/TI8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5NEHhLAxa0mJFlht8mc6TrRYe-bU-bH1TXQmMNBXFkNt-StjC-CuuKHpCStMShoo1iLU1hWWsQzWKsqUNUrBKJHAug9VUnWxe_GfZ8SdDTKtPiNiVQkwdIH4tpDX0ElDj8uBJ0K6Xcbw_qFgGJRopqNaUOiOdFbyPTTxgx4SnZUDZqb5GSg/w304-h400/open-source-intelligence-osint-investigar-personas-e-identidades-en-internet.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKGomfpnddC5XjBrAd4VSVN5Z1ffund942L1KbYc1tW0apiq-onx4x3SXJ1faM2peB4MwxM_6wvWCYblfgBHF4u4kCFzlpXLLzBGeql8t3f4VRS7L0shV-FaYH1G1konJti6tilnS3c_Ts_hLwSakZ9Ks49S-ElwKf8s-Mey3HDn9DTwLmmoL6/s2474/TI11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKGomfpnddC5XjBrAd4VSVN5Z1ffund942L1KbYc1tW0apiq-onx4x3SXJ1faM2peB4MwxM_6wvWCYblfgBHF4u4kCFzlpXLLzBGeql8t3f4VRS7L0shV-FaYH1G1konJti6tilnS3c_Ts_hLwSakZ9Ks49S-ElwKf8s-Mey3HDn9DTwLmmoL6/w640-h374/TI11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaitat8mL5d5Z_P4qTZAH9alOeTbelpu_7OLGgN26-vCzFHSbrabd5BBGtVXISZYRcjwrtvtxqlbIavLd166kgX2rMdFwqpaCc6B0GoXvry8uBap7wCbg3ZaaM2O4EgXDQBhtMgW9NnROLI9I5ArVr16OIGm9G8PvnENbBzS9NAp_xXWSZUeAG/s2588/TI12.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaitat8mL5d5Z_P4qTZAH9alOeTbelpu_7OLGgN26-vCzFHSbrabd5BBGtVXISZYRcjwrtvtxqlbIavLd166kgX2rMdFwqpaCc6B0GoXvry8uBap7wCbg3ZaaM2O4EgXDQBhtMgW9NnROLI9I5ArVr16OIGm9G8PvnENbBzS9NAp_xXWSZUeAG/w640-h310/TI12.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifNV1Am6BP2QYNlrXvTN3aaSUAb_kPhFto7SkKk6h0_UytRaUm12LoJ9BDAd1IE_izCrX1qA33sv2BBnuL_HhRnIomrZwspOqLfCiOwoSCATNE9VqZkknnUKxlv_VjzHfg_PxHrE5pEaMCATY6i-6BH5cfX3R7pSVakf6Ia1uzckRwwN0cEzkA/w640-h376/JavierMartiSanz.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj16lBWw-wxc5y73GnGNNgrY0_7uzwArWl5_ko1ltcHC8loyXujtsnMT0GY4oyWiTu-ImxsOiVPp5GNIteoZouCmdG69rG8II9oXHmz0HkX0dFEOpqfOHmfjOh2B66-j0cPfbjtIvb5rXOYyGVwjVWgdkiXIUR6fAg-JJ6JRGRcMhTQhO0nXxz7/s940/T0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj16lBWw-wxc5y73GnGNNgrY0_7uzwArWl5_ko1ltcHC8loyXujtsnMT0GY4oyWiTu-ImxsOiVPp5GNIteoZouCmdG69rG8II9oXHmz0HkX0dFEOpqfOHmfjOh2B66-j0cPfbjtIvb5rXOYyGVwjVWgdkiXIUR6fAg-JJ6JRGRcMhTQhO0nXxz7/w640-h344/T0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJoN9vynqd3ta6BILxtH_2sxMMuQDM4YkCJqxJPzn8lZrGodAuKurh3pQIf1m6SgIhzLQ9B3Q5IPE7bi3ePVqf3Oct-x5mj0Wb5FnrdXbivPjf6jQ2fSV5vFhV5O26Z7nmnRdBORSaMfg70rGvhy-vZUR76dMDPgpPssE3ghbQOfqBMuvQ7pAR/s2646/TI10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJoN9vynqd3ta6BILxtH_2sxMMuQDM4YkCJqxJPzn8lZrGodAuKurh3pQIf1m6SgIhzLQ9B3Q5IPE7bi3ePVqf3Oct-x5mj0Wb5FnrdXbivPjf6jQ2fSV5vFhV5O26Z7nmnRdBORSaMfg70rGvhy-vZUR76dMDPgpPssE3ghbQOfqBMuvQ7pAR/w640-h344/TI10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMNOsvtU2MntR-4J8I54qgPriKV48I6BOZ1IpZF5EoXMVmrDateHPNwfO7n1GuhZd1xJE9vvGOhVE3irW31RjYA_v0kCtvL0NbXLTDeESEPkLh8l2SnDhzuOTfxdnhWLCPYQuusy42Q0JGOUkQYEG7PfwLGIXYf_jsI3XlxqyUcLlmrcpZ2dzO/s2842/TI6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMNOsvtU2MntR-4J8I54qgPriKV48I6BOZ1IpZF5EoXMVmrDateHPNwfO7n1GuhZd1xJE9vvGOhVE3irW31RjYA_v0kCtvL0NbXLTDeESEPkLh8l2SnDhzuOTfxdnhWLCPYQuusy42Q0JGOUkQYEG7PfwLGIXYf_jsI3XlxqyUcLlmrcpZ2dzO/w640-h364/TI6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjja5dplgcEW2f5_-drMIay3dGKsWWX3TB2Y2vALOuqBgrCGJXuhLhf3PVVs17_JAtSYxdG6dtlPoFpNljwJqi_wz-T2NY3Y9ZoOYmvuCdX9glqKo9b2yk12mVU-WPJWwW4Xukkvl6wl-tniZ7gKjjfBgcgHawn4HkKtAmdXiTuhPQjSk95zbmp/s2754/TI15.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjja5dplgcEW2f5_-drMIay3dGKsWWX3TB2Y2vALOuqBgrCGJXuhLhf3PVVs17_JAtSYxdG6dtlPoFpNljwJqi_wz-T2NY3Y9ZoOYmvuCdX9glqKo9b2yk12mVU-WPJWwW4Xukkvl6wl-tniZ7gKjjfBgcgHawn4HkKtAmdXiTuhPQjSk95zbmp/w640-h302/TI15.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwEIq9nAR-MjmcXZI5nT4xup91lRtE4Ic2Ir5fe87MaxHEmhsy-_4DAMuEsk-Kq9TJzt_H93K7tNUkhrEzG_evcprIU18e5vb9hKKnh3IPiVtUFn13bbmdWc6W-BKqgJRxNPHDxf0sx01pMnRxMJ4Blnmqbn5EsOaMiACPY3nO6E8wzGXlzFFE/s3182/TI4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwEIq9nAR-MjmcXZI5nT4xup91lRtE4Ic2Ir5fe87MaxHEmhsy-_4DAMuEsk-Kq9TJzt_H93K7tNUkhrEzG_evcprIU18e5vb9hKKnh3IPiVtUFn13bbmdWc6W-BKqgJRxNPHDxf0sx01pMnRxMJ4Blnmqbn5EsOaMiACPY3nO6E8wzGXlzFFE/w640-h306/TI4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyBuqplA66RhwLfCMxdBjuynACZNEKBlOuU03TUCcw6LKujCuocFK1FW4SUmUdw2oYoT6O8jS1sclrOPL6nanInS6bbRBOifgMohn7Mg7noluH9QnyaSpjlmsUz_NZY0bDScdw6xixPXf2nKzq_izldXDPCkYfFRgrwCXPt55KBFr5EisDVCi3/s2648/TI9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyBuqplA66RhwLfCMxdBjuynACZNEKBlOuU03TUCcw6LKujCuocFK1FW4SUmUdw2oYoT6O8jS1sclrOPL6nanInS6bbRBOifgMohn7Mg7noluH9QnyaSpjlmsUz_NZY0bDScdw6xixPXf2nKzq_izldXDPCkYfFRgrwCXPt55KBFr5EisDVCi3/w640-h304/TI9.jpg",
+        "https://elladodelmal.com",
+        "https://mythreatintel.com/",
+        "https://mythreatintel.secureit.es/"
+      ]
+    }
+  },
+  {
     "id": 1748,
     "fecha": "2026-07-30T05:35:54Z",
     "categoria": "Ciberseguridad",
@@ -2737,24 +2906,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1650,
-    "fecha": "2026-07-25T19:00:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Kernel de Linux",
-    "resumen": "Se ha identificado una vulnerabilidad de alto impacto (CVSS 7.8) en el kernel de Linux, específicamente en el componente eventpoll, que puede provocar un uso después de la liberación (use-after-free) debido a un error en la gestión del recuento de referencias y el mutex. La vulnerabilidad puede ser explotada si un atacante elimina su referencia al objeto ep mientras otro usuario sigue utilizando el mutex, lo que podría llevar a una situación en la que el objeto se libera mientras aún se está utilizando.",
-    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUwMDYwNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-38349",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2025-38349",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2025-38349"
-      ]
-    }
   },
   {
     "id": 1649,
