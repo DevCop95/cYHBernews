@@ -1,5 +1,124 @@
 [
   {
+    "id": 1769,
+    "fecha": "2026-07-30T19:18:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux Kernel",
+    "resumen": "Se ha identificado una vulnerabilidad de tipo \"Use After Free\" (CVE-2023-1281) en el núcleo de Linux, específicamente en el filtro de índice de control de tráfico (tcindex), que permite la escalada de privilegios locales, permitiendo a un atacante elevar sus privilegios a root. La vulnerabilidad afecta versiones del núcleo de Linux desde la 4.14 hasta antes del commit ee059170b1f7e94e55fa6cadee544e176a6e59c2.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MzkxMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-1281",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-1281",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "ee059170b1f7e94e55fa6cadee544e176a6e59c2"
+      ],
+      "cve": [
+        "CVE-2023-1281"
+      ]
+    }
+  },
+  {
+    "id": 1768,
+    "fecha": "2026-07-30T19:18:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Chrome aumenta parches",
+    "resumen": "Debido a la detección de vulnerabilidades asistida por IA, Google ha aumentado su calendario de parches para Chrome, pasando a realizar actualizaciones más frecuentes, como dos veces a la semana, para abordar las vulnerabilidades identificadas de manera más eficiente. Esto se debe a que las herramientas de IA han permitido descubrir más bugs en un corto período, como se vio en las actualizaciones de junio que corrigieron más errores que las 23 actualizaciones anteriores combinadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MzkxMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/chrome-needs-twice-a-week-patching-thanks-to-ai-bug-hunting-for-now/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:chrome needs twice a week patching thanks to ai bug hunting",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1767,
+    "fecha": "2026-07-30T19:18:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Extorsión cibernética en Reino Unido",
+    "resumen": "Ciberdelincuentes han robado más de 600,000 piezas de datos del Departamento de Educación del Reino Unido, incluyendo nombres, direcciones de correo electrónico y números de teléfono, con el fin de extorsionar a la entidad. El ataque pone en riesgo la privacidad y seguridad de la información personal de los afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MzkxMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/united-kingdom-ransomware-education",
+    "fuente": "The Record",
+    "dedup_key": "txt:cyber extortionists steal data from uk department for education",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T0865",
+        "name": "Data from Information Repositories"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1615",
+        "name": "Compromise Sensitive Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1766,
+    "fecha": "2026-07-30T19:18:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Dispositivos de streaming TV comprometidos",
+    "resumen": "Expertos en seguridad han descubierto que dispositivos de streaming TV genéricos no solo ponen en riesgo la conexión a Internet del usuario, sino que también se hacen pasar por teléfonos móviles para hacer clic en anuncios en sitios web generados por IA, como parte de una operación para defraudar a comerciantes y redes publicitarias en línea. Esto representa un vector de ataque significativo para la ciberseguridad, aprovechando la falta de seguridad en estos dispositivos para llevar a cabo actividades maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MzkwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:read this before you buy that tv streaming stick",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1765,
+    "fecha": "2026-07-30T19:18:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Azure Cosmos DB",
+    "resumen": "Una vulnerabilidad recientemente parcheada en Azure Cosmos DB permitía a un atacante escapar del sandbox de consultas Gremlin y obtener acceso de lectura y escritura total a bases de datos en diferentes inquilinos de clientes, según Wiz, quien identificó la cadena de explotación como \"CosmosEscape\". La cadena de explotación comenzaba con una consulta maliciosa contra una base de datos Gremlin controlada por el atacante.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0MzkwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/azure-cosmos-db-flaw-exposed-platform.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:azure cosmos db flaw exposed platform wide key that could access any database",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Alternate Authentication Material"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1764,
     "fecha": "2026-07-30T16:23:38Z",
     "categoria": "Ciberseguridad",
