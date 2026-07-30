@@ -1,5 +1,130 @@
 [
   {
+    "id": 1774,
+    "fecha": "2026-07-30T22:07:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en kernel de Linux",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2021-27365) en el kernel de Linux, con un CVSS Score de 7.8, que permite a un usuario sin privilegios enviar mensajes de Netlink maliciosos asociados con iSCSI, lo que podría aprovecharse para ataques de denegación de servicio o ejecución de código arbitrario. La vulnerabilidad afecta versiones del kernel de Linux hasta 5.11.3.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0NDkyNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-27365",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-27365",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2021-27365"
+      ]
+    }
+  },
+  {
+    "id": 1773,
+    "fecha": "2026-07-30T22:07:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brecha de datos en Analog Devices",
+    "resumen": "Analog Devices, un líder en la fabricación de chips semiconductores, ha informado una brecha de datos en la que se exfiltraron datos de sus redes, aunque el alcance del incidente aún está bajo investigación. El ataque ocurrió a principios del verano y se desconocen los vectores de ataque y el tipo de datos comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0NDkyNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/analog-devices-semiconductor-company-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:semiconductor chip titan analog devices reports data breach",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1772,
+    "fecha": "2026-07-30T22:07:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques cibernéticos a utilities de agua",
+    "resumen": "Un actor apoyado por Irán ha lanzado ataques cibernéticos contra más de 30 sistemas de agua comunitarios en Minnesota, destacando los crecientes riesgos cibernéticos para la infraestructura crítica de EE. UU., lo que pone de relieve la necesidad de mejorar la seguridad cibernética en el sector. Los vectores de ataque no se han especificado, pero es probable que incluyan técnicas de phishing o exploits de vulnerabilidades conocidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0NDkyNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/minnesota-water-utility-attacks-expose-sector-cyber-risks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:minnesota water utility attacks expose sector s cyber risks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1771,
+    "fecha": "2026-07-30T22:07:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware macOS de Corea del Norte",
+    "resumen": "Un grupo de actores de amenazas vinculados a Corea del Norte ha lanzado una campaña de malvertising para macOS, que utiliza actualizaciones falsas para entregar malware que roba criptomonedas, como parte de la campaña Contagious Interview, aprovechando la confianza del usuario con pantallas de actualización falsas. El ataque utiliza técnicas de engaño para instalar malware en los sistemas de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0NDkyNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:dprk linked macos malvertising uses fake updates to deliver crypto stealing malware",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise (se menciona malvertising, lo que implica una posible comprometión del sistema a través de la navegación web)"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se infiere que se utilizan actualizaciones falsas para entregar malware)"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Valid Accounts: Local Accounts (no se menciona explícitamente, pero se infiere que el malware necesita ejecutarse en el sistema del usuario)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1770,
+    "fecha": "2026-07-30T22:07:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en TeamCity",
+    "resumen": "Se ha identificado una vulnerabilidad crítica de bypass de autenticación en TeamCity On-Premises que podría ser explotada para lograr ejecución de código remoto (RCE), permitiendo a los atacantes acceder y controlar sistemas sin autorización. La vulnerabilidad puede ser explotada a través de un ataque de red, lo que la convierte en un vector de ataque significativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0NDkyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:jetbrains warns of critical teamcity remote code execution flaw",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1550.002",
+        "name": "Pass the Hash"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1769,
     "fecha": "2026-07-30T19:18:35Z",
     "categoria": "Ciberseguridad",
