@@ -1,5 +1,153 @@
 [
   {
+    "id": 1803,
+    "fecha": "2026-07-31T19:17:39Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Opus 5 de Anthropic Mejora Resistencia",
+    "resumen": "El modelo Opus 5 de Anthropic ha demostrado una mayor resistencia a la inyección de comandos maliciosos (prompt injection) en comparación con versiones anteriores y otros modelos de lenguaje, como GPT 5.6, reduciendo la probabilidad de éxito de un ataque dentro de 15 intentos a solo el 2.0%. Esto sugiere un avance significativo en la seguridad de los modelos de lenguaje, aunque se reconoce que prevenir completamente la inyección de comandos sigue siendo un desafío.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298921-97bfd882ca90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MjU0NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/anthropics-opus-5-is-better-at-resisting-prompt-injection.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:anthropic s opus 5 is better at resisting prompt injection",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "llm-attacks.org",
+        "www-cdn.anthropic.com"
+      ],
+      "url": [
+        "https://llm-attacks.org/",
+        "https://www-cdn.anthropic.com/c5fbac3f0b1280a933ebd26d3cb8bb9f5bdeaf48/Claude%20Opus%205%20System%20Card.pdf#page=73"
+      ],
+      "sha1": [
+        "c5fbac3f0b1280a933ebd26d3cb8bb9f5bdeaf48"
+      ]
+    }
+  },
+  {
+    "id": 1802,
+    "fecha": "2026-07-31T19:17:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "CISA Actualiza Pautas SBOM",
+    "resumen": "La Agencia de Seguridad y Protección de Infraestructura de Ciberseguridad (CISA) ha emitido nuevas pautas para el Suministro de Información de Componentes de Software (SBOM), que incluyen una couple de docenas de cambios en los campos de SBOM para hacerlos más comprehensivos, aunque algunos argumentan que el marco carece de mejoras reales en la gestión de riesgos. Estos cambios pueden impactar la forma en que las organizaciones abordan la gestión de vulnerabilidades y el cumplimiento de la seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MjU0NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/cisa-issues-fresh-sbom-guidance",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cisa issues fresh sbom guidance did they get it right",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1801,
+    "fecha": "2026-07-31T19:17:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque de phishing con Matryoshka",
+    "resumen": "Se ha descubierto un marco de carga basado en Go llamado HollowFrame y una familia de malware en Rust llamada Matryoshka, que se despliega a través de un ataque de spear-phishing dirigido a una firma de abogados, utilizando un enlace a un archivo cifrado que contiene un acceso directo de Windows (LNK) para iniciar la cadena de intrusión. El ataque implica una secuencia de múltiples etapas que permiten la instalación del malware Matryoshka.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MjU0NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/hollowframe-loader-deploys-matryoshka.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hollowframe loader deploys matryoshka backdoor in spear phishing attack on law firm",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1800,
+    "fecha": "2026-07-31T19:17:24Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "GPT 5.6 más eficiente",
+    "resumen": "OpenAI ha reducido los costos de dos modelos GPT-5.6, disminuyendo el precio de la API de Luna un 80% y el de Terra un 20%, lo que refleja avances en la eficiencia de sus modelos. Esto puede impactar la adopción de soluciones de IA en diversas industrias al hacerlas más accesibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1772217360642-0f7a7b1b77d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MjU0NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-new-gpt-56-models-are-becoming-more-cost-efficient/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai says its new gpt 5 6 models are becoming more cost efficient",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1799,
+    "fecha": "2026-07-31T19:17:18Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Zero Trust para Agentes IA",
+    "resumen": "El despliegue de Agentes IA en Cloudflare requiere la implementación de controles externos y verificados de forma continua, siguiendo el principio de Zero Trust, para proteger contra ataques maliciosos que puedan explotar la falta de distinción entre instrucciones legítimas y maliciosas en los modelos de lenguaje. Se presentan siete dimensiones de control para avanzar hacia un estadio de madurez óptimo en la seguridad de los Agentes IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MjU0Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo desplegar zero trust para agentes ia en cloudflare 1",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "cdn.prod.website-files.com",
+        "code.claude.com",
+        "developers.cloudflare.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "genai.owasp.org",
+        "learn.microsoft.com",
+        "mypublicinbox.com",
+        "platform.claude.com",
+        "www.cloudflare.com",
+        "www.elladodelmal.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDv1uBoinWCk6UIs738qNBuPRqhqcxnTv2eQyABnz3SQwc-sdI_iwCKAZTTgzhOzbF17-ITFSWf624QQDqFOT6pFACcqapjXzLaLV1R8Q_9K9bgM1XOJ_Ib6Gi5ENAPYIDRI21TGevSKz5FP2R3I7V6g0Q4hBcgfHYlWNd2V_xIogV0IUq-nyC/w640-h408/ZT11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbepi5PKue5ffZvl_7d3lh61CuVhFFZVN1-ep_yJFEY1DkjqD0KNo6LfIgKWxvm-J7oOMstzndO4iZDXf9-Y6xVvrlkwg2TgOQLCzV6F4x4s7KMbngJFjLSnBilb0T1fk6NqCNl7-2adCNl7t_J4hyphenhyphenscsIM_7JeBP8TUn3cFbnLqjpeG8ddiOR/w640-h248/ZT2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt4MctsFQX4BOBFRt04PqBMliyvmUouucnvlAJz3xv_f2QEtcFgOMJw1-SiTsbCu84XHQDXidfvui_akZYS0QUDFz8wmP-mXXOMluUcqSaQM27cO4UXgT9gZn9OZ4vpZo_pFd1xqwTIrdpZqOP-cR8rGOUNHouuA5zBM5RhyphenhyphenjBoLHthi8wC-U8/w640-h280/ZT3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy22RFKV0r7V2BceUo2kGnN5_RJWP5YCb1VLzr-b_8bvOii0X8ZpMhPkhpmSwbkNo-XJ2Ab3AnUBk7vzAoGvl6lWjIlbaESYwrN7FKgLKC44xxm7q-fUTsjyO05xizP9MA-64G6FR3Rty__2DcleYdbpJJrpHzPlKCqgfrYtwJse0k2KFPHBn6/w640-h462/ZT7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMVtBgvpmRxdpGGTg9YP07wfWbluxGdTUrs0TuM_xObNAuuL5ZerlUNN77Yhcp9oDok-76GqeTf7AUWjxfUInjiCZXsXLPWek1LZ_MTXnhdLdZNVWa0bn9teaaMRBc1ayr1rQTjetm0WRsWJgV8ZTZMaVpy3BaNio8SAVQn0VcQcbDQpwFoG2v/w640-h188/ZT5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXUe9cTpxS57tauwr5mPBOP-Bee4RRH4752zMAIqE3AK5-hAae-rmS8lVRnw6U13nnsRsnLq1hRQs6WT8ZVPW0KPKXt6FEFbwfMJYChPVET2-y38QdIWxk0uGZOk2MmSmsFOk3omXn8Oegp3BzPQN3lIuyAFZpqlCKhJzO8DTrOTqd2lE-f7Cs/w626-h640/ZT9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic0sJBSrwCb5N8Ecd0JkkPvdxF2b3Jsnnsc1RWQ8VntdbF3y75kdhGlvLl6B6ootpW8gnGbGpBre6XCr5Fwt-Ajp2HDl01VXjOVZp4z7UiSX-XjrZK8R1VLf8w8a02L7QqQL2jFP2Ed_-WxvLtQ6KdD8ULqYQ7xMTm4jI9FcY9n4XA8QcLxA7W/w640-h372/ZT8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipL5cNSwemYtNGufBoG8yqNrmfTqU63-wZrgz42Ef33Xa5KwwEQ7lBQo3fLYspU-WjwAOK9msQA3BCePVxMtcJ0hlvJaSxVijfNz9XxpB8BSZ_C7zFaBXaek6GIYn5dMnQz_8UDR12keR1SZd9AW541wYFSBRk2JlrLSz0dGFU6ns0RgnllXbL/w640-h404/ZT10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM_ZyyqgoKziGKdraQ385RU1I1ukTztLSFAOaSUsZ8ksPUgQCpTWCSDysw0cDQ6q8VCgLJEptJDsmyXKjRUiEnGasa7TKqRIqdJW1ws38QadfKczE9mjrz2w_5Lvduck0_XlSkWKtpBI3zWofsZX7u050aiAAh-elyvUn8hU9ZerPM-cJWAtxh/w640-h516/juanluiscuenca.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ-TqCrW2QhW3-2EVMK451QM9gGqevtAwOcXEh_P3NrLM0kbQqj2scHGDFUm2SdXBWcDKZ4M5t-8pjMNuYC6JMArO-0sMGsfNyRD8wKcXhHbE6tm2vd2Y67T80wEHilJ21HHQchu-mEk436fA7dgk9xFui5EPlY0l1qMt0RJ6WQpnoW83WSSDJ/s940/ZT0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ-TqCrW2QhW3-2EVMK451QM9gGqevtAwOcXEh_P3NrLM0kbQqj2scHGDFUm2SdXBWcDKZ4M5t-8pjMNuYC6JMArO-0sMGsfNyRD8wKcXhHbE6tm2vd2Y67T80wEHilJ21HHQchu-mEk436fA7dgk9xFui5EPlY0l1qMt0RJ6WQpnoW83WSSDJ/w640-h408/ZT0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuUFaBbJof-zd_VrxzaGNfuTUx2GF0hgSJT6wuktAfcZMo9T5RI84x51UrcMzwAct5x1q4UlqtcdkFIDJtzn9NdAejCcsUHeMxVmnPe8OeURr0DpZlvavHzp0lUPafkVqItDC0jCiv2IGLhJk5TZzzQZa94149KQ9HUSs0JDLMTdQz-3kQAWbg/w640-h114/zt1.jpg",
+        "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a1611a04085d7cd3dadc924_Claude-eBook-Zero-Trust-for-AI-Agents-05182026.pdf",
+        "https://code.claude.com/docs/en/agent-sdk/overview",
+        "https://elladodelmal.com",
+        "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "https://platform.claude.com/docs/en/managed-agents/overview",
+        "https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf",
+        "https://www.cisa.gov/sites/default/files/publications/NSTAC%20Report%20to%20the%20President%20on%20Zero%20Trust%20and%20Trusted%20Identity%20Management.pdf",
+        "https://www.elladodelmal.com/2026/06/despliegue-zero-trust-para-agentes-ia.html",
+        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes_01099167063.html"
+      ]
+    }
+  },
+  {
     "id": 1798,
     "fecha": "2026-07-31T16:42:00Z",
     "categoria": "Ciberseguridad",
@@ -12383,48 +12531,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-9282"
-      ]
-    }
-  },
-  {
-    "id": 1315,
-    "fecha": "2026-07-11T07:47:51Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "GPT-5.6: El mejor modelo de IA",
-    "resumen": "OpenAI ha lanzado GPT-5.6, una familia de modelos de IA que incluye tres variantes: Sol, Terra y Luna, siendo Sol el más potente y probablemente el mejor modelo de IA del mundo, según pruebas internas y estudios independientes. Sin embargo, su capacidad avanzada puede hacer que sea innecesario para la mayoría de los usuarios.",
-    "url_imagen": "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/gpt-5-6-probablemente-sea-mejor-modelo-ia-mundo-precisamente-eso-mayoria-no-necesita",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:gpt 5 6 probablemente sea el mejor modelo de ia del mundo y precisamente por eso la mayoría no lo necesita",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "arcprize.org",
-        "openai.com",
-        "platform.instagram.com",
-        "www.xataka.com",
-        "www.youtube.com"
-      ],
-      "url": [
-        "https://arcprize.org/results/openai-gpt-5-6",
-        "https://artificialanalysis.ai/",
-        "https://i.blogs.es/1960e7/sol-gpt-5-6-openai/1024_2000.jpeg",
-        "https://i.blogs.es/1e540d/artificial/1024_2000.jpeg",
-        "https://i.blogs.es/1e540d/artificial/1366_2000.jpeg",
-        "https://i.blogs.es/1e540d/artificial/450_1000.jpeg",
-        "https://i.blogs.es/1e540d/artificial/650_1200.jpeg",
-        "https://i.blogs.es/265404/rio2/375_142.jpeg",
-        "https://i.blogs.es/4e26b0/robot-pizarra/375_142.jpeg",
-        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/1024_2000.png",
-        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/1366_2000.png",
-        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/450_1000.png",
-        "https://i.blogs.es/ae229e/captura-de-pantalla-2026-07-10-a-las-9.01.45/650_1200.png",
-        "https://i.blogs.es/ba34bd/gpt-5-6/1024_2000.jpeg",
-        "https://i.blogs.es/ba34bd/gpt-5-6/1366_2000.jpeg",
-        "https://i.blogs.es/ba34bd/gpt-5-6/450_1000.jpeg",
-        "https://i.blogs.es/ba34bd/gpt-5-6/650_1200.jpeg",
-        "https://openai.com/index/gpt-5-6/"
       ]
     }
   },
