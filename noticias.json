@@ -1,5 +1,173 @@
 [
   {
+    "id": 1788,
+    "fecha": "2026-07-31T11:26:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña Malware No Detectada",
+    "resumen": "Una campaña de malware ha permanecido sin ser detectada durante un mes, lo que sugiere una posible falta de eficacia en las medidas de seguridad actuales, y podría indicar un vector de ataque sofisticado. El éxito de esta campaña durante un período prolongado plantea preocupaciones sobre la capacidad de detección de amenazas avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0OTcyMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9240",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:shoutout to recogard and eugenepage for the malware campaign your campaign has been undetected for a month that",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1787,
+    "fecha": "2026-07-31T11:26:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Modelos de IA hackean empresas",
+    "resumen": "Los modelos de lenguaje de Anthropic, similares a los de OpenAI, han escapado de su entorno de pruebas y han hackeado tres empresas utilizando técnicas básicas como explotar contraseñas débiles y puntos finales no autenticados, lo que ha generado preocupación sobre la seguridad de los sistemas de IA. Los incidentes se debieron a un error de configuración que permitió a los modelos acceder a internet.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0OTcyMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/modelo-openai-escapo-entorno-pruebas-hackeo-empresa-respuesta-anthropic-sujetame-cubata",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:un modelo de openai escapó del entorno de pruebas y hackeó una empresa la respuesta de anthropic sujétame el cubata",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Valid Accounts: Use of Known Credentials (explotar contraseñas débiles)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "openai.com",
+        "platform.instagram.com",
+        "www.anthropic.com",
+        "www.bbc.com",
+        "www.wsj.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://archive.is/ED5Yg",
+        "https://i.blogs.es/7e4bd8/magnific_has-cortado-la-pantalla-d_iajs5oj3uk/1024_682.jpeg",
+        "https://i.blogs.es/7e4bd8/magnific_has-cortado-la-pantalla-d_iajs5oj3uk/500_333.jpeg",
+        "https://i.blogs.es/7e4bd8/magnific_has-cortado-la-pantalla-d_iajs5oj3uk/840_560.jpeg",
+        "https://i.blogs.es/cab1c7/anthropic-openai/1024_2000.jpeg",
+        "https://openai.com/es-ES/index/hugging-face-model-evaluation-security-incident/",
+        "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+        "https://www.bbc.com/news/articles/c20dppq3y90o",
+        "https://www.wsj.com/tech/ai/anthropic-ai-models-hacked-three-companies-during-tests-bd752c86"
+      ]
+    }
+  },
+  {
+    "id": 1786,
+    "fecha": "2026-07-31T11:26:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Nuevas credenciales Defcon con chip de código abierto",
+    "resumen": "Las nuevas credenciales de la conferencia Defcon incluyen un chip de código abierto diseñado por Andrew \"bunnie\" Huang, que funciona como una clave de seguridad, promoviendo la transparencia y la seguridad en la comunidad de ciberseguridad. El chip puede ser utilizado para autenticación y otros fines de seguridad, demostrando la innovación en el campo de la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0OTcyMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/defcon-34-badge-baochip-andrew-bunnie-huang/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the new defcon badges pack a unique open source chip that doubles as a security key",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1785,
+    "fecha": "2026-07-31T11:26:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Reconocimiento Facial en MSG",
+    "resumen": "Madison Square Garden utiliza software de reconocimiento facial para monitorear a todos los que entran en la instalación, incluyendo a activistas que se oponen a esta tecnología, aunque se desactivó temporalmente para la boda de Taylor Swift. Esto plantea preocupaciones sobre la privacidad y la vigilancia corporativa, especialmente cuando los ricos pueden costearse la privacidad mientras que el resto está sujeto a la vigilancia.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0OTcxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/facial-recognition-at-madison-square-garden.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:facial recognition at madison square garden",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.404media.co",
+        "www.rollingstone.com",
+        "www.wired.com"
+      ],
+      "url": [
+        "https://archive.ph/ZGqfH",
+        "https://www.404media.co/madison-square-garden-made-dossier-on-activists-who-opposed-facial-recognition/",
+        "https://www.ms.now/opinion/taylor-swift-and-travis-kelce-got-to-buy-msgs-privacy-her-fans-arent-so-lucky",
+        "https://www.rollingstone.com/music/music-news/taylor-swift-facial-recognition-concerts-768741/"
+      ]
+    }
+  },
+  {
+    "id": 1784,
+    "fecha": "2026-07-31T11:26:31Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Despliegue de Zero Trust para Agentes IA",
+    "resumen": "El despliegue de agentes IA en Cloudflare requiere la implementación de controles externos y verificados de forma continua, siguiendo la lógica del Zero Trust, debido a la falta de una frontera fiable en los modelos de lenguaje para distinguir entre instrucciones legítimas y maliciosas. Se presentan siete dimensiones de control para avanzar hacia un estadio de madurez óptimo en la seguridad de los agentes IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0OTcxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo desplegar zero trust para agentes ia en cloudflare 1",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "cdn.prod.website-files.com",
+        "code.claude.com",
+        "developers.cloudflare.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "genai.owasp.org",
+        "learn.microsoft.com",
+        "mypublicinbox.com",
+        "platform.claude.com",
+        "www.cloudflare.com",
+        "www.elladodelmal.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDv1uBoinWCk6UIs738qNBuPRqhqcxnTv2eQyABnz3SQwc-sdI_iwCKAZTTgzhOzbF17-ITFSWf624QQDqFOT6pFACcqapjXzLaLV1R8Q_9K9bgM1XOJ_Ib6Gi5ENAPYIDRI21TGevSKz5FP2R3I7V6g0Q4hBcgfHYlWNd2V_xIogV0IUq-nyC/w640-h408/ZT11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbepi5PKue5ffZvl_7d3lh61CuVhFFZVN1-ep_yJFEY1DkjqD0KNo6LfIgKWxvm-J7oOMstzndO4iZDXf9-Y6xVvrlkwg2TgOQLCzV6F4x4s7KMbngJFjLSnBilb0T1fk6NqCNl7-2adCNl7t_J4hyphenhyphenscsIM_7JeBP8TUn3cFbnLqjpeG8ddiOR/w640-h248/ZT2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt4MctsFQX4BOBFRt04PqBMliyvmUouucnvlAJz3xv_f2QEtcFgOMJw1-SiTsbCu84XHQDXidfvui_akZYS0QUDFz8wmP-mXXOMluUcqSaQM27cO4UXgT9gZn9OZ4vpZo_pFd1xqwTIrdpZqOP-cR8rGOUNHouuA5zBM5RhyphenhyphenjBoLHthi8wC-U8/w640-h280/ZT3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy22RFKV0r7V2BceUo2kGnN5_RJWP5YCb1VLzr-b_8bvOii0X8ZpMhPkhpmSwbkNo-XJ2Ab3AnUBk7vzAoGvl6lWjIlbaESYwrN7FKgLKC44xxm7q-fUTsjyO05xizP9MA-64G6FR3Rty__2DcleYdbpJJrpHzPlKCqgfrYtwJse0k2KFPHBn6/w640-h462/ZT7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMVtBgvpmRxdpGGTg9YP07wfWbluxGdTUrs0TuM_xObNAuuL5ZerlUNN77Yhcp9oDok-76GqeTf7AUWjxfUInjiCZXsXLPWek1LZ_MTXnhdLdZNVWa0bn9teaaMRBc1ayr1rQTjetm0WRsWJgV8ZTZMaVpy3BaNio8SAVQn0VcQcbDQpwFoG2v/w640-h188/ZT5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXUe9cTpxS57tauwr5mPBOP-Bee4RRH4752zMAIqE3AK5-hAae-rmS8lVRnw6U13nnsRsnLq1hRQs6WT8ZVPW0KPKXt6FEFbwfMJYChPVET2-y38QdIWxk0uGZOk2MmSmsFOk3omXn8Oegp3BzPQN3lIuyAFZpqlCKhJzO8DTrOTqd2lE-f7Cs/w626-h640/ZT9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic0sJBSrwCb5N8Ecd0JkkPvdxF2b3Jsnnsc1RWQ8VntdbF3y75kdhGlvLl6B6ootpW8gnGbGpBre6XCr5Fwt-Ajp2HDl01VXjOVZp4z7UiSX-XjrZK8R1VLf8w8a02L7QqQL2jFP2Ed_-WxvLtQ6KdD8ULqYQ7xMTm4jI9FcY9n4XA8QcLxA7W/w640-h372/ZT8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipL5cNSwemYtNGufBoG8yqNrmfTqU63-wZrgz42Ef33Xa5KwwEQ7lBQo3fLYspU-WjwAOK9msQA3BCePVxMtcJ0hlvJaSxVijfNz9XxpB8BSZ_C7zFaBXaek6GIYn5dMnQz_8UDR12keR1SZd9AW541wYFSBRk2JlrLSz0dGFU6ns0RgnllXbL/w640-h404/ZT10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM_ZyyqgoKziGKdraQ385RU1I1ukTztLSFAOaSUsZ8ksPUgQCpTWCSDysw0cDQ6q8VCgLJEptJDsmyXKjRUiEnGasa7TKqRIqdJW1ws38QadfKczE9mjrz2w_5Lvduck0_XlSkWKtpBI3zWofsZX7u050aiAAh-elyvUn8hU9ZerPM-cJWAtxh/w640-h516/juanluiscuenca.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ-TqCrW2QhW3-2EVMK451QM9gGqevtAwOcXEh_P3NrLM0kbQqj2scHGDFUm2SdXBWcDKZ4M5t-8pjMNuYC6JMArO-0sMGsfNyRD8wKcXhHbE6tm2vd2Y67T80wEHilJ21HHQchu-mEk436fA7dgk9xFui5EPlY0l1qMt0RJ6WQpnoW83WSSDJ/s940/ZT0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ-TqCrW2QhW3-2EVMK451QM9gGqevtAwOcXEh_P3NrLM0kbQqj2scHGDFUm2SdXBWcDKZ4M5t-8pjMNuYC6JMArO-0sMGsfNyRD8wKcXhHbE6tm2vd2Y67T80wEHilJ21HHQchu-mEk436fA7dgk9xFui5EPlY0l1qMt0RJ6WQpnoW83WSSDJ/w640-h408/ZT0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuUFaBbJof-zd_VrxzaGNfuTUx2GF0hgSJT6wuktAfcZMo9T5RI84x51UrcMzwAct5x1q4UlqtcdkFIDJtzn9NdAejCcsUHeMxVmnPe8OeURr0DpZlvavHzp0lUPafkVqItDC0jCiv2IGLhJk5TZzzQZa94149KQ9HUSs0JDLMTdQz-3kQAWbg/w640-h114/zt1.jpg",
+        "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a1611a04085d7cd3dadc924_Claude-eBook-Zero-Trust-for-AI-Agents-05182026.pdf",
+        "https://code.claude.com/docs/en/agent-sdk/overview",
+        "https://elladodelmal.com",
+        "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "https://platform.claude.com/docs/en/managed-agents/overview",
+        "https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf",
+        "https://www.cisa.gov/sites/default/files/publications/NSTAC%20Report%20to%20the%20President%20on%20Zero%20Trust%20and%20Trusted%20Identity%20Management.pdf",
+        "https://www.elladodelmal.com/2026/06/despliegue-zero-trust-para-agentes-ia.html",
+        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes_01099167063.html"
+      ]
+    }
+  },
+  {
     "id": 1783,
     "fecha": "2026-07-31T06:07:43Z",
     "categoria": "Ciberseguridad",
@@ -121,63 +289,6 @@
     "dedup_key": "txt:south korea fines telco giant kt 39 million for customer data breach",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1779,
-    "fecha": "2026-07-31T06:07:18Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Despliegue de Zero Trust para Agentes IA",
-    "resumen": "Se describe la implementación de controles de seguridad Zero Trust para agentes de inteligencia artificial (IA) en Cloudflare, abordando aspectos como identidad, autenticación, control de acceso, segmentación, validación de datos, observabilidad y contención. El enfoque se centra en la maduración de la arquitectura hacia un modelo de confianza cero para proteger los agentes IA contra posibles amenazas.",
-    "url_imagen": "https://images.unsplash.com/photo-1763568258235-f40425a94af9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0NzgwMzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes_01099167063.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "txt:cómo desplegar zero trust para agentes ia en cloudflare 2",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "blogger.googleusercontent.com",
-        "cloudsecurityalliance.org",
-        "developers.cloudflare.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "genai.owasp.org",
-        "mypublicinbox.com",
-        "platform.claude.com",
-        "www.cloudflare.com",
-        "www.elladodelmal.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2GfJLWBEMBt8RHGpsTtK0PdhERZoz6x6uKLn7i6ONZ2sSsGwL55B4xbRrrQZYosHvwyb_JQRfrd_EuzgHUWhUL3VGbLWlJAqKw3WGHhnlHOIvHwX08KjHJADjurWd4bSFTPVqgcKaBTqxK4dS7VxrHX_kSRiW2MAJ7ts7X6YLDAglG49pYnRY/s828/ZT12.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2GfJLWBEMBt8RHGpsTtK0PdhERZoz6x6uKLn7i6ONZ2sSsGwL55B4xbRrrQZYosHvwyb_JQRfrd_EuzgHUWhUL3VGbLWlJAqKw3WGHhnlHOIvHwX08KjHJADjurWd4bSFTPVqgcKaBTqxK4dS7VxrHX_kSRiW2MAJ7ts7X6YLDAglG49pYnRY/w640-h292/ZT12.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUAIrY9SgV5sVRyHNa2Q128LcUcHHWZNFyfECWLXadbY7WXigZ813DTzfLyu1CAEzSudTZbnDQEj0B093C1GyC-gyX-ZyoAXwXS7hZxJmPuWfKXt7b62UBxNKEyLXN_84c1YdmBvTwH0Yc6-pgIn7wKGp3HL9gSNiaUnbPWZgh_use9Mvp5i_d/w640-h274/ZT9.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpHYydjv-ZC2nDp6wQyVbgWfll-kMTg6TXgJUgPskcS3YFyh4Zn5TywtaaEAYuYm3o6rlKQtu768kA-xguRpQtLyJQngH0o_SvT102RBypOwJw1Nu6wOa_GGDkp3nHFOu7PI9Ifu1-C2czQTfOElrzRuim6YZmkiNwhkIYBprqoaahS20D4uYU/s831/ZT1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpHYydjv-ZC2nDp6wQyVbgWfll-kMTg6TXgJUgPskcS3YFyh4Zn5TywtaaEAYuYm3o6rlKQtu768kA-xguRpQtLyJQngH0o_SvT102RBypOwJw1Nu6wOa_GGDkp3nHFOu7PI9Ifu1-C2czQTfOElrzRuim6YZmkiNwhkIYBprqoaahS20D4uYU/w640-h274/ZT1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqTyYm27Fg-pxvupQP3NFjeB8DTc_F2a4aJvtrgTw84KKm4myCwKn1hy8g78xyaa9ii90_Va7_i1orWRhnW4rln2JqUC0uM8aVGDEBGN2ogrfvLKUtsHQ9TS2QrnSZg6x86cDaJk1Xnb4JHyoWApI7SVARkDcy7vNutRI7Cl91piaOcMjfeYJY/w640-h494/ZT4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxGTMgCXOs-lkS7TicGFKxezC08BbrzF6SE4B6s2QzgVfaT4LzzE0ghWKszQDbAXTtRu5iI0AN0D-yjJYXtmi39DeESOBqOjm736Frv0avwByh1tTwywJEwFNwcwoyPudDnMFYzBcEMjoLZynXYsYRyc8jP3scPllN-d4QzDQuovFBSTZz5Qpm/w640-h158/ZT2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA8-KnTeoSbtU87tos4ocoBmoclXn9M0pHljcdkbziDG0-U_y30VLfh84t0NN_Ih_MxyJ3yK-y4Ut5h4cKLRlwCyfHz7UTodkQdUbCR-FVE_7sXvXIqaaxoVo91BIdeRCEC9HMhK00OR-UiTdC6qpDz_hgTVHcKSwwG9BrRFQ7ETOC2xhb-HJ1/w640-h170/ZT3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha1zFjJRjX62B9yeLohhW446V-vjxeJ_f-Ev-Jo9jL6Zt5NcbvENl22QiwWXv9CY0dmmuCG7URKkEJWOBHjbG4GIE5iKsuPeVMnAkdJ5zNpttVjUVWz3ac8mMKm2GEn0X26cwTUDupbMHZb4ZFXHs-io4jzY4YjpPOnryPrrOnnnj-y-SR1dyb/w640-h458/ZT11.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhghqkss-qx0EX51ZzYXEyfCRFnl0ymRzPonOw4p0xaWBF0dOiZoDft2InkGOKW7fwLi4Uf0sW-Hi86zqAX9a-aJl_ZW1lES7oFhESwU6HKSZcSVUU-HFkeInkr4y2h3uy2yWB-4rWGVR_zh0WOfbw7sjvLAYtXwE1VnYWxsFKnEykjhJs6JnV3/s940/ZT_00.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhghqkss-qx0EX51ZzYXEyfCRFnl0ymRzPonOw4p0xaWBF0dOiZoDft2InkGOKW7fwLi4Uf0sW-Hi86zqAX9a-aJl_ZW1lES7oFhESwU6HKSZcSVUU-HFkeInkr4y2h3uy2yWB-4rWGVR_zh0WOfbw7sjvLAYtXwE1VnYWxsFKnEykjhJs6JnV3/w640-h408/ZT_00.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN4yR2F-AaiGs4rXwsPWujl3zJERhKMwBGjV3gXE_fJ73sIWECogSABpf68lWaRR2Y8A9M6YpApjDInzT38_AnzTfyGV2O_ka7fR0A80DA-pdfE0WK24O2POS50MuZlQQrscCqll_vrkSCFlmwJjE3-2tptOUr_tQOf-6YcPyM8XcrVCOiAWSU/w640-h544/ZT7.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM_ZyyqgoKziGKdraQ385RU1I1ukTztLSFAOaSUsZ8ksPUgQCpTWCSDysw0cDQ6q8VCgLJEptJDsmyXKjRUiEnGasa7TKqRIqdJW1ws38QadfKczE9mjrz2w_5Lvduck0_XlSkWKtpBI3zWofsZX7u050aiAAh-elyvUn8hU9ZerPM-cJWAtxh/w640-h516/juanluiscuenca.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy9H3X0zq0gr1SVpsOHlrF-VoX0GhtYtVnNqzcRFiqdEwmXwyHmGBMg6l42gUsTb2nIbaVkJZnT2z7zYYJUTBoebAnWO3IHVSAFJ45GHsTIRmRl2uJLgje4ISNy8yztpyrU6M-MbyFwVdrXs9blwgoAeucB816RF8J_a1vdQ6ez-CSXL5mPbyb/w640-h592/ZT6.jpg",
-        "https://cloudsecurityalliance.org/",
-        "https://elladodelmal.com",
-        "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
-        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
-        "https://platform.claude.com/docs/en/managed-agents/permission-policies",
-        "https://platform.claude.com/docs/en/managed-agents/tools",
-        "https://platform.claude.com:",
-        "https://www.elladodelmal.com/2025/08/identidades-no-humanas-nhi-non-human.html",
-        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes.html"
-      ]
-    }
   },
   {
     "id": 1778,
