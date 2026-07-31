@@ -1,5 +1,121 @@
 [
   {
+    "id": 1798,
+    "fecha": "2026-07-31T16:42:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Windows 11",
+    "resumen": "Se ha identificado una vulnerabilidad en Windows 11 que causa que el UI (interfaz de usuario) crashe, lo que puede dejar elementos visuales atascados en la pantalla, como el botón \"Copiar\", debido a un problema de memoria. Esto puede ser un problema de estabilidad y productividad para los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MTYxMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9233",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:i m a big fan of windows 11 one of my favorite features which really boosts productivity is the ui crashes explo",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1797,
+    "fecha": "2026-07-31T16:41:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Inventario de Certificados",
+    "resumen": "La creación de un inventario de certificados y claves es una medida crucial para los equipos de seguridad, ya que permite el control y la gestión efectiva de los certificados y claves, reduciendo el riesgo de ataques de phishing y malware. Esto es especialmente importante en entornos donde la autenticidad y la confiabilidad de los sistemas y datos son fundamentales.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MTYxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/morning-after-we-pull-root-of-trust-nobody-owns-it",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:the morning after we pull a root of trust nobody owns it",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1796,
+    "fecha": "2026-07-31T16:41:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Cajas Android TV comprometidas",
+    "resumen": "Se ha descubierto que algunas cajas Android TV baratas vienen con aplicaciones que modifican su identidad de hardware para imitar teléfonos de marcas como Samsung, Huawei, Xiaomi o Vivo, y luego hacen clic en anuncios en sitios web operados por los mismos actores, convirtiendo las conexiones de banda ancha de los propietarios en proxies. La operación, denominada Fuyao, ha sido atribuida a Zhejiang Fengwo IoT Technology Co., Ltd., una empresa china fundada en 2019.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MTYxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/cheap-android-tv-boxes-pose-as-phones.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cheap android tv boxes pose as phones and turn owners broadband into proxies",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que se está utilizando un proxy, por lo que se puede considerar:"
+      },
+      {
+        "id": "T1090",
+        "name": "Proxy"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1795,
+    "fecha": "2026-07-31T16:41:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas AI y Malware Adaptativo",
+    "resumen": "Los atacantes están adaptando técnicas establecidas a plataformas de inteligencia artificial (AI) y tecnologías emergentes, lo que ha llevado a un aumento en habilidades maliciosas de AI y malware adaptable, incluyendo ataques de phishing y ransomware diseñados para evadir software de seguridad. El informe de amenazas de ESET destaca la creciente preocupación por la integración de AI en la ciberdelincuencia.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MTYxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:eset tracks rise in malicious ai skills and adaptable malware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1794,
+    "fecha": "2026-07-31T16:41:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Bootcamp de Ciberseguridad",
+    "resumen": "Se anuncia un bootcamp de ciberseguridad defensiva y ofensiva en HackBySecurity, que incluye más de 100 horas de sesiones online en directo, con acceso a retos de ciberseguridad, cursos de scripting con Bash y Python, y un curso de Metasploit. El bootcamp también ofrece una sesión de orientación, un año de tutorización y derecho a examen, así como libros y recursos adicionales para los alumnos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MTYwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/07/bootcamp-de-ciberseguridad-defensiva-y.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:bootcamp de ciberseguridad defensiva y ofensiva en hackbysecurity",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "academy.hackbysecurity.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/236-the-art-of-pentesting.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://academy.hackbysecurity.com/",
+        "https://academy.hackbysecurity.com/curso/40/bootcamp-de-ciberseguridad-defensiva-y-ofensiva",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqyV8DKuYHCJH1x-UEh4J02ctqr_usOeFAfLO3PA6mFNCq3f5e1i1RYFc3J7yjL8nQRWRTaC0eacTrPWQQWuYknVM92tvPwK1TfdIZGd3OECcq12XWf9G7lnMZgxRrXW8IMxryKvr7sq_7YHSrs8emxh7pOw5qJEbBJEM09nTUv94ycLMfulHt/w640-h594/Bootcamp2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisHfbrPsUW3jVRxO2o3kfdLhoiDCuCQEa9XhyphenhyphenzGwUS82HQgniQDuFyM8IHwGedXuLOXzSFsyx9Ntu_T5PnhbmgInZR3yFYC7TRMs8LuCa8n4sqYR6xjjqKce6htSWW-zuiiRcwo6Yk5OEjHWPwXqtxR7nCzDHuaV_ThDVAEVY8xP8LbVJLn17e/w318-h400/Bootcamp4.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja6dpXHexIe0bc189aP-z4csAhly2JvM4lQNqMgcZA7Sm_X3i7eKs-_iCymjTafFcjZpXWqqfRj3IoOBBf9rcvZQ4Mud7Ob3zhHkWge_kSwWQFd-OtNjDlCn2RkcnvZAWpueLNUNMGjw1nBYk5r7bKNNN71PFtyuUKHZ4Jx6xBSBV6tgLpt5BU/w301-h400/art2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgS1VKlsgOptVbzRuMcXxoPBU5YTlLQya9jHbDnfNXvdi85O0XgY1t0TekN-vVJW32pg4zlKL_3SvBoYNkFsNnQ1nwulSho4Y61sxOxcGEyELD6dNkfuZPswXiL9Pu2SQftOM4/w640-h380/MiguelAngelMartin.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjruXkALr6RtCtlOLKZ-BE1o3ryuaxwM2awC7Zc9Jc16rzXbASIgvoejLuCcvKiCHN_W2_l2XtzzmN7AUE0ia9Gpx226oOtzYhqWx1o4S5dIq9y2_tB8xO0nDSWF6pVSQP0652bLsCLMfamk9_kMCOOsqAyWf_AVQauONcnGEnywfQKGsuBZ7cS/w640-h428/bootcamp1.jpg",
+        "https://elladodelmal.com"
+      ]
+    }
+  },
+  {
     "id": 1793,
     "fecha": "2026-07-31T13:53:49Z",
     "categoria": "Ciberseguridad",
