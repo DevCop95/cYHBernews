@@ -1,5 +1,125 @@
 [
   {
+    "id": 1808,
+    "fecha": "2026-07-31T22:00:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-68770 en sentence-transformers",
+    "resumen": "La biblioteca sentence-transformers contiene una vulnerabilidad de bypass de control de seguridad (CVE-2026-68770) que permite a los atacantes ejecutar código arbitrario explotando una falla lógica en la función import_module_class, lo que permite la ejecución de código malicioso al cargar un modelo con SentenceTransformer. Los atacantes pueden influir en el contenido de un directorio de modelos en disco para colocar archivos Python maliciosos, lo que lleva a la ejecución de código en el momento de la carga del modelo.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MzUyNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/232184",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-68770",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-68770"
+      ]
+    }
+  },
+  {
+    "id": 1807,
+    "fecha": "2026-07-31T22:00:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en OpenStack",
+    "resumen": "La vulnerabilidad CVE-2013-0335, con una puntuación CVSS de 7.6, permite a usuarios remotos autenticados acceder y eliminar máquinas virtuales en OpenStack Compute (Nova) mediante el token VNC, afectando versiones como Grizzly, Folsom y Essex. El vector de ataque aprovecha la autenticación oportunista para acceder a máquinas virtuales que comparten el mismo puerto VNC.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MzUyNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2013-0335",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2013-0335",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Known Vulnerabilities"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2013-0335"
+      ]
+    }
+  },
+  {
+    "id": 1806,
+    "fecha": "2026-07-31T22:00:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques a sistemas de agua",
+    "resumen": "La Agencia de Seguridad Cibernética y de Infraestructura (CISA) emitió una alerta pública sobre un aumento en los ataques a sistemas de agua, recomendando a las instalaciones eliminar los controladores lógicos programables (PLCs) y otra tecnología de operación (OT) expuesta públicamente de internet lo antes posible. Esto se debe a incidentes recientes en Minnesota que están siendo investigados, lo que sugiere un vector de ataque a través de la exposición de sistemas OT a internet.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MzUyMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cisa-warns-of-spike-in-water-system-attacks",
+    "fuente": "The Record",
+    "dedup_key": "txt:cisa warns of spike in attacks on water systems as minnesota incidents probed",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1805,
+    "fecha": "2026-07-31T22:00:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberataques a gobiernos de Asia Central",
+    "resumen": "Un actor de amenaza de habla china es sospechoso de estar detrás de una serie de ciberataques dirigidos a organizaciones gubernamentales en Asia Central, incluyendo países como Afganistán, Kirguistán, Tayikistán, Uzbekistán, Kazajistán y la República Árabe Siria, desde enero de 2025, utilizando herramientas como OctLurk y SilkLurk. Los ataques han afectado a sectores como la salud, la investigación y oficinas gubernamentales.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MzUyMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/suspected-chinese-speaking-hackers.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:suspected chinese speaking hackers target central asian governments with octlurk and silklurk",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1804,
+    "fecha": "2026-07-31T22:00:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Arch Linux deshabilita adopción de paquetes AUR",
+    "resumen": "El proyecto Arch Linux ha deshabilitado temporalmente la adopción de paquetes en el Arch User Repository (AUR) debido a un aumento en las tomas maliciosas de paquetes existentes, lo que podría permitir la propagación de malware. Esto afecta la seguridad de los usuarios de Arch Linux, ya que los paquetes comprometidos podrían ser utilizados como vector de ataque para infectar sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MzUyMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/arch-linux-disables-aur-package-adoption-to-stop-malware-flood/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:arch linux disables aur package adoption to stop malware flood",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1803,
     "fecha": "2026-07-31T19:17:39Z",
     "categoria": "IA",
@@ -21129,20 +21249,6 @@
         "CVE-2026-48558"
       ]
     }
-  },
-  {
-    "id": 967,
-    "fecha": "2026-06-29T19:51:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataques a sistemas de agua",
-    "resumen": "Actores estatales de Irán, Rusia y China están explotando vulnerabilidades como contraseñas débiles, PLCs expuestos y segmentación deficiente en sistemas de agua para sabotaje, sin necesidad de malware sofisticado. Estos ataques pueden tener impactos significativos en la infraestructura crítica y la seguridad pública.",
-    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2ODB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/ics-ot-security/iran-russia-china-target-water-systems-sabotage",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:iran russia china target water systems for sabotage",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 966,
