@@ -1,5 +1,54 @@
 [
   {
+    "id": 1832,
+    "fecha": "2026-08-01T19:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware: Diversión en la complejidad",
+    "resumen": "Un desarrollador de malware comparte su perspectiva sobre la creación de software malicioso, destacando la complejidad y el tiempo invertido en crear códigos convolutos para realizar tareas simples, lo que sugiere una motivación en la ingeniería social y el desafío técnico. Esto puede indicar un vector de ataque psicológico y técnico en la creación de malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2MTA5MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9248",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:i like writing malware because instead of making useful and productive software you spend an absurd amount of time",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1831,
+    "fecha": "2026-08-01T19:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Coldcard",
+    "resumen": "Una vulnerabilidad en el firmware de la cartera de hardware Coldcard permitió a un atacante drenar 1,082.65 BTC (aproximadamente $70.2 millones) en 41 minutos, aprovechando un error de integración de firmware de marzo de 2021 que utilizó un generador de números pseudoaleatorios determinista (PRNG) en lugar de un generador de números aleatorios verdaderos. El ataque se llevó a cabo mediante la explotación de esta vulnerabilidad, lo que permitió al atacante acceder a 1,196 direcciones de Bitcoin.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2MTA5MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:coldcard hardware wallet flaw linked to 70 million bitcoin theft in 41 minutes",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1830,
     "fecha": "2026-08-01T15:57:47Z",
     "categoria": "Ciberseguridad",
