@@ -1,5 +1,83 @@
 [
   {
+    "id": 1834,
+    "fecha": "2026-08-01T21:52:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2025-11393",
+    "resumen": "Se ha descubierto una vulnerabilidad en el componente runtimes-inventory-rhel8-operator, donde un proxy interno mal configurado permite a un usuario estándar dentro del clúster enviar comandos no autorizados a la plataforma de administración, potencialmente llevando a cambios no autorizados en la configuración o estado del clúster. El vector de ataque aprovecha la exposición de credenciales administrativas del clúster a través del proxy.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2MjExNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/232463",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2025-11393",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Kerberos Tickets (No se menciona explícitamente, pero se infiere que podría ocurrir debido a la exposición de credenciales administrativas)"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-11393"
+      ]
+    }
+  },
+  {
+    "id": 1833,
+    "fecha": "2026-08-01T21:52:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en NetScaler ADC",
+    "resumen": "Se ha identificado una vulnerabilidad crítica (CVE-2023-4966) con un puntaje CVSS de 9.4 en NetScaler ADC y NetScaler Gateway, que permite la divulgación de información confidencial cuando se configura como Gateway o servidor virtual AAA, afectando la seguridad de los servidores virtuales VPN, ICA Proxy, CVPN y RDP Proxy. Esta vulnerabilidad puede ser explotada para obtener acceso no autorizado a información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2MjExNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-4966",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-4966",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-4966"
+      ]
+    }
+  },
+  {
     "id": 1832,
     "fecha": "2026-08-01T19:01:52Z",
     "categoria": "Ciberseguridad",
