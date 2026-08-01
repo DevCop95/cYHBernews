@@ -1,5 +1,168 @@
 [
   {
+    "id": 1825,
+    "fecha": "2026-08-01T10:38:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SQL en CubeWP Framework",
+    "resumen": "La versión del plugin CubeWP Framework para WordPress hasta la 1.1.30 es vulnerable a inyección de SQL (SQL Injection) debido a la insuficiente sanitización de entradas en la función AJAX cubewp_remove_relation(), permitiendo a atacantes autenticados con acceso de suscriptor o superior realizar inyecciones de SQL. El vector de ataque se aprovecha de la falta de preparación de consultas SQL seguras con $wpdb->prepare() y la neutralización de la protección contra inyección de SQL proporcionada por wp_magic_quotes().",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1ODA2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/232383",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-6453",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Unsecured Credentials (no se menciona explícitamente pero se infiere claramente que se aprovechan credenciales de acceso de suscriptor o superior)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-6453"
+      ]
+    }
+  },
+  {
+    "id": 1824,
+    "fecha": "2026-08-01T10:37:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware \"FunkyStar\" en GitHub",
+    "resumen": "Se ha detectado un malware denominado \"FunkyStar\" en GitHub, que se disfraza como un proyecto legítimo pero contiene código malicioso en .NET, con referencias internas a \"ProcessAlpha\" y \"ProcessBeta\", y no ha eliminado los metadatos, lo que facilita su identificación. El malware se propaga a través de enlaces en plataformas de mensajería y redes sociales, y su descarga y ejecución pueden tener impactos significativos en la seguridad de los sistemas afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1ODA2Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9247",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:get dm smelly is this goop malware i found it on x links github download look inside net goop",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion no se menciona explícitamente, pero se puede inferir que el malware se disfraza como un proyecto legítimo, lo que se relaciona con T1497, pero no es claro, así que no lo incluiré."
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1823,
+    "fecha": "2026-08-01T10:37:52Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Zuckerberg cuestiona IA benevolente",
+    "resumen": "Mark Zuckerberg expresa escepticismo sobre la posibilidad de crear una superinteligencia benevolente que esté alineada con todos, destacando el riesgo de centralización de la IA en manos de pocos grupos poderosos y defendiendo la IA abierta como alternativa. Esto plantea desafíos en términos de seguridad y alineación de la IA con los valores humanos, especialmente en un contexto donde empresas como OpenAI y Anthropic promueven enfoques más cerrados y controlados.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937804-e6b9e0c683f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1ODA2NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/mark-zuckerberg-literalmente-imposible-tener-unica-superinteligencia-benevolente-que-este-alineada-todos-a-vez",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:mark zuckerberg es literalmente imposible tener una única superinteligencia benevolente que esté alineada con todos a la vez",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "darioamodei.com",
+        "finance.yahoo.com",
+        "openai.com",
+        "platform.instagram.com",
+        "www.axios.com",
+        "www.ft.com",
+        "www.nytimes.com",
+        "www.wsj.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://darioamodei.com/post/the-urgency-of-interpretability",
+        "https://finance.yahoo.com/markets/stocks/articles/spill-meta-meta-145-billion-212807169.html",
+        "https://i.blogs.es/7e4bd8/magnific_has-cortado-la-pantalla-d_iajs5oj3uk/375_142.jpeg",
+        "https://i.blogs.es/847715/kimik3china/1024_682.jpeg",
+        "https://i.blogs.es/847715/kimik3china/500_333.jpeg",
+        "https://i.blogs.es/847715/kimik3china/840_560.jpeg",
+        "https://i.blogs.es/e12c0b/mark-zuckerberg/1024_2000.jpeg",
+        "https://openai.com/es-ES/index/advancing-independent-research-ai-alignment/",
+        "https://www.axios.com/2026/06/10/anthropic-ceo-government-block-dangerous-ai",
+        "https://www.ft.com/content/af4fa147-7fdd-42eb-8eb2-3f624a89a4e4?syn-25a6b1a6=1",
+        "https://www.nytimes.com/2026/07/28/technology/mark-zuckerberg-meta-ai.html",
+        "https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868?mod=tech_lead_story"
+      ]
+    }
+  },
+  {
+    "id": 1822,
+    "fecha": "2026-08-01T10:37:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques cibernéticos a sistemas de agua",
+    "resumen": "Sistemas de agua de 7 estados han sido afectados por ataques cibernéticos que se cree están relacionados con Irán, destacando la vulnerabilidad de la infraestructura crítica ante amenazas externas. Además, el FBI está explorando el uso de tecnologías basadas en IA para detectar futuros delitos.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1ODA2Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:7 states water systems hit by cyberattacks likely tied to iran",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1821,
+    "fecha": "2026-08-01T10:37:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque a Adform",
+    "resumen": "Atacantes modificaron un archivo JavaScript de Adform para reescribir direcciones de wallets de criptomonedas en el lado del navegador, afectando a sitios de clientes que utilizaban el script, con un vector de ataque basado en el reemplazo de direcciones de wallets de Bitcoin. El incidente fue detectado y mitigado el 27 de julio de 2026.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1ODA2NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/hackers-poison-adform-script-to-swap.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers poison adform script to swap crypto wallet addresses across customer sites",
+    "ttps": [
+      {
+        "id": "T1496",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1060",
+        "name": "Registry Run Keys / Startup Folder (NO APLICA DIRECTAMENTE, se reemplaza por)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1820,
     "fecha": "2026-08-01T08:13:10Z",
     "categoria": "Ciberseguridad",
