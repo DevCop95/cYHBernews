@@ -1,5 +1,120 @@
 [
   {
+    "id": 1820,
+    "fecha": "2026-08-01T08:13:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux CVE-2021-27364",
+    "resumen": "Se ha detectado una vulnerabilidad en el kernel de Linux (hasta la versión 5.11.3) con un CVSS Score de 7.1, considerada como alta, que permite a un usuario sin privilegios crear mensajes Netlink, afectando el archivo drivers/scsi/scsi_transport_iscsi.c. Esto podría ser utilizado como vector de ataque para explotar la vulnerabilidad y potencialmente comprometer la seguridad del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NzE5OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-27364",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-27364",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2021-27364"
+      ]
+    }
+  },
+  {
+    "id": 1819,
+    "fecha": "2026-08-01T08:13:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Campañas de Phishing contra Proveedores de IA",
+    "resumen": "Se han detectado campañas de phishing que impersonan servicios de IA como ChatGPT, aprovechando el miedo a perder acceso a información o servicios para engañar a las víctimas. Estas campañas representan un vector de ataque significativo contra proveedores de soluciones de inteligencia artificial.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NzE5ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33206",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:phishing campaigns targeting ai solutions providers sat aug 1st",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing: Social Engineering (se menciona que se aprovecha el miedo para engañar a las víctimas)"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing for Credentials (se infiere que el objetivo es obtener información confidencial)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1818,
+    "fecha": "2026-08-01T08:12:57Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque autónomo con DeepSeek AI",
+    "resumen": "Un actor de amenaza de habla china está utilizando el modelo de IA DeepSeek y el agente de código abierto Hermes para realizar ataques cibernéticos autónomos contra servidores expuestos con un mínimo de intervención humana, lo que aumenta el riesgo de brechas de datos y compromiso de sistemas. Los vectores de ataque incluyen la explotación de vulnerabilidades en servidores no actualizados o mal configurados.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557010061-315772f6efef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NzE5Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hacker uses deepseek ai to autonomously attack vulnerable servers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1817,
+    "fecha": "2026-08-01T08:12:51Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ética en IA acelera innovación",
+    "resumen": "La implementación de ética por diseño en la inteligencia artificial (IA) no es un obstáculo para la innovación, sino una condición necesaria para innovar con seguridad, evitando problemas como el sesgo y garantizando la transparencia en los modelos de IA. La plataforma RAIGHT.ai busca demostrar esto con una plataforma práctica para la ética en IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NzE5NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/la-etica-como-safety-net-por-que-la-ia.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:la ética como safety net por qué la ia responsable acelera la innovación y no la frena",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "en.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.aiaaic.org",
+        "www.mypublicinbox.com",
+        "www.odiseia.org"
+      ],
+      "url": [
+        "http://RAIGHT.ai",
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "http://raight.ai/",
+        "https://0xWord.com",
+        "https://RAIGHT.ai",
+        "https://airisk.mit.edu/",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2IsHIPP6vSb1pZiUf8_qyiVJSiAIRmbnux73l_pL8vWFTx1mjNuGqzBhxTMEwIk5yxBjLuAMeVJOT86xvIVfhdmtbSuVvImn8TZNdxCfuyilECt2DW2Fb8Ct2WsXmqQhir2Or8yds0U8kANqoFtUDwXyO_mrslGkAAFfqr8JcfoP5iKeFDF4f/w640-h318/raight4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWCyfcbp4GD1W7Vv0bNH4h3JdJOT7rh90ROqDpQ5Y84EOz6ASIwUpny9EpphYSQDWb-nq-sB8dq4RvCohsuwG6rvWYQZDBIAAp8LYhA2ZqZca4j_HQUMsYTE12Jpmh7IvG_B2SMc92M3WCpxSz8x68_qTclgc0sPSGzi3DLpp2QdfnXSPtmjR9/w640-h316/Raight3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoNIzGKp6_XVuMutiuarnxQcMxtQrPqeEIfxRJUw1Fa6s3vdxkiVIMbqzCFVOZH96kbdQ1s5uFXIuaogG8JauxFWz4gFC_Ha2ktqBAGwdiCzS-QloMCWcuMOoeftjgvhCiMN73aLJYt0geCzoYoJqlT_dBZiUyWc2rdk5MQlI2uUQ3sOxd8x2d/w640-h314/raight1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisQLKB3-UzzfIc9neYMrNBqeqQCzfvbkKjKqwJ5wt22tYk8O6PNSPwQ9S6-Gcq2TDNUHAgvzUUQNHT0p-BTu1pSmrPCx75MywPaER5qEmWA32kk-kkR0dp2KzFbXHq1FqcMgstWYwzAG5bJL3nFdK4Y5ghyphenhyphenpIbYXhdt9_GJdSXlv7Rs1wFzbAK/w628-h640/RichardBenjamins.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4qAhDqm47wr63BD1R0W9lXXYQfqerdOXLxR-DD529lJn2UONKwPyMeCF2vEKiZURKyRts95IsTnkheUbV_IVQ42yTXbBtmV_3IX1j0TfQ8RFQgNZWjen0zs5ss7iDSfdbpq7CByB_ALAyctJjbSTQX_W2D7wfoCQkmzmr0ITA22MLl-XUugsL/w640-h320/raight2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmL7iQ6_uN437OpSol3-wZxSSkFfceYg8ZglpWWRdyuZ7rEOp_lSKV3Paclxp_yI1_weXszJFoMKlkykYjib9rNYQAnDL2Tm7sgpgbQA5i08lO7U8i2JYux7mhRQaDGWvYWHyggBKEIAV7mdlRis71jBnDGmgDr4eIY8CI2kKwwtl-BtOlhu0z/s800/raight0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmL7iQ6_uN437OpSol3-wZxSSkFfceYg8ZglpWWRdyuZ7rEOp_lSKV3Paclxp_yI1_weXszJFoMKlkykYjib9rNYQAnDL2Tm7sgpgbQA5i08lO7U8i2JYux7mhRQaDGWvYWHyggBKEIAV7mdlRis71jBnDGmgDr4eIY8CI2kKwwtl-BtOlhu0z/w640-h586/raight0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtMIAAI47SjnnRA6r-uEAcqEvBjWkVZw_BHkmmfYiEgZ41Hp1mjtiqY6TGdI7RiqYLRXHLRf2_W0VWnB_Ow5h-pL6YzflGw3KxXSSQV6RT0ZgJG9fPXmiJWrMJ7vbBkA5A6xpP-mgq30ERnZlc_1IN6zqYb3wWMGuqbN5gfmGWB4S43nH_-wWm/w640-h530/raight6.jpg",
+        "https://elladodelmal.com",
+        "https://oecd.ai/en/incidents",
+        "https://raight.ai",
+        "https://raight.ai/contact",
+        "https://www.aiaaic.org/",
+        "https://www.odiseia.org/en"
+      ]
+    }
+  },
+  {
     "id": 1816,
     "fecha": "2026-08-01T05:51:47Z",
     "categoria": "Ciberseguridad",
