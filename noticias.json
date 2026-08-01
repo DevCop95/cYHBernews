@@ -1,5 +1,132 @@
 [
   {
+    "id": 1816,
+    "fecha": "2026-08-01T05:51:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-58048 en cPanel",
+    "resumen": "La vulnerabilidad CVE-2026-58048 permite la ejecución de SQL en contexto de root al renombrar bases de datos en cPanel debido a una preservación inadecuada del modo SQL, lo que podría ser explotado para ataques de inyección de SQL. El vector de ataque se centra en la manipulación de la funcionalidad de renombramiento de bases de datos en cPanel.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NjM1MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/232317",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-58048",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated SQL Interface"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58048"
+      ]
+    }
+  },
+  {
+    "id": 1815,
+    "fecha": "2026-08-01T05:51:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache Tomcat",
+    "resumen": "La vulnerabilidad CVE-2017-12615, con una puntuación CVSS de 8.1, permite la ejecución de código arbitrario en servidores Apache Tomcat que ejecutan versiones 7.0.0 a 7.0.79 en Windows con HTTP PUT habilitado, permitiendo a atacantes subir y ejecutar archivos JSP maliciosos. Los productos afectados incluyen Apache Tomcat y varios productos de NetApp y Red Hat.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NjM1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-12615",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-12615",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1491",
+        "name": "Defacement"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2017-12615"
+      ]
+    }
+  },
+  {
+    "id": 1814,
+    "fecha": "2026-08-01T05:51:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades 4G/5G",
+    "resumen": "Investigadores han descubierto 84 vulnerabilidades en núcleos de redes 4G y 5G, incluyendo una falla de secuestro de sesión que podría permitir a un atacante apoderarse de una sesión de red de un usuario, lo que podría provocar ataques de denegación de servicio (DoS) y secuestro de sesión. Estas vulnerabilidades podrían ser explotadas para comprometer la seguridad de las redes móviles.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NjM0OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/researchers-report-84-flaws-in-4g-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers report 84 flaws in 4g and 5g cores including a session hijacking flaw",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1813,
+    "fecha": "2026-08-01T05:51:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque de cadena de suministro en Adform",
+    "resumen": "La empresa de publicidad en línea Adform sufrió un ataque de cadena de suministro que distribuyó scripts para robar criptomonedas a sitios web que utilizan su plataforma de publicidad, reemplazando direcciones de billetera copiadas al portapapeles de los visitantes con direcciones controladas por el atacante. El ataque aprovechó la confianza en la plataforma de Adform para llevar a cabo el robo de criptomonedas a través de un método de suplantación de direcciones de billetera.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NjM0ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:online ad firm adform s script compromised to steal cryptocurrency",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1491",
+        "name": "Defacement"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1812,
     "fecha": "2026-08-01T02:24:48Z",
     "categoria": "Ciberseguridad",
