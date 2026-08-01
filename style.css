@@ -375,7 +375,9 @@ body.sidebar-closed .sidebar-item span {
 #load-more-news:hover { transform: translateY(-2px); }
 
 /* Responsive */
-@media (max-width: 1024px) {
+/* Rail colapsado: solo tablet/desktop pequeño. Por debajo de 769px el sidebar
+   es un drawer completo, así que estas reglas no deben alcanzarlo. */
+@media (min-width: 769px) and (max-width: 1024px) {
   body:not(.sidebar-closed) .app-sidebar { width: var(--sidebar-collapsed-width); }
   body:not(.sidebar-closed) .sidebar-section .section-title { display: none; }
   body:not(.sidebar-closed) .sidebar-footer { display: none; }
@@ -384,6 +386,9 @@ body.sidebar-closed .sidebar-item span {
 }
 
 .mobile-close-search { display: none; }
+
+/* Scrim del drawer móvil (oculto por defecto en desktop) */
+.sidebar-scrim { display: none; }
 
 @media (max-width: 768px) {
   .app-main { padding: 16px; }
@@ -403,19 +408,61 @@ body.sidebar-closed .sidebar-item span {
   .app-header.mobile-search-active .mobile-close-search { display: flex; margin-right: 8px; }
   .app-header.mobile-search-active .mic-btn { display: none; }
   
-  .app-sidebar .sidebar-footer { display: block !important; padding: 16px; }
-  .sidebar-footer p { display: none; }
-  .sidebar-footer .footer-link-text { display: none; }
-  .sidebar-footer .footer-icon { display: block; width: 22px; height: 22px; margin: 0 auto; }
-
   .hero-card { min-height: 340px; padding: 22px; }
   .hero-content, .hero-desc { max-width: 100%; }
   .hero-title { font-size: 24px; }
   .hero-desc { font-size: 14px; }
   .hero-card .hero-content > div:last-child { gap: 8px; }
   .hero-card .read-story-btn { font-size: 13px; padding: 10px 16px; }
-  .app-sidebar { position: fixed; left: 0; top: var(--header-height); bottom: 0; z-index: 900; transform: translateX(-100%); width: var(--sidebar-width); }
+  /* ── SIDEBAR COMO DRAWER OFF-CANVAS ── */
+  .app-sidebar {
+    position: fixed; left: 0; top: var(--header-height); bottom: 0;
+    z-index: 900;
+    width: min(82vw, var(--sidebar-width));
+    min-height: 0;
+    transform: translateX(-100%);
+    transition: transform var(--dur-normal) var(--ease-spring);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    background: var(--bg);
+    border-right: 1px solid var(--border-light);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.35);
+    padding-bottom: 16px;
+  }
   body.sidebar-open .app-sidebar { transform: translateX(0); }
+  /* Bloquea el scroll del fondo mientras el drawer está abierto */
+  body.sidebar-open { overflow: hidden; }
+
+  /* El body puede arrastrar .sidebar-closed desde una sesión en desktop:
+     forzamos siempre el layout completo del drawer en móvil. */
+  body.sidebar-closed .app-sidebar { width: min(82vw, var(--sidebar-width)); }
+  body.sidebar-closed .sidebar-section .section-title { display: block; }
+  body.sidebar-closed .sidebar-footer { display: flex; }
+  body.sidebar-closed .sidebar-item,
+  .sidebar-item {
+    flex-direction: row; align-items: center; text-align: left;
+    gap: 18px; padding: 12px 20px; margin: 0 8px; font-size: 15px;
+  }
+  body.sidebar-closed .sidebar-item span,
+  .sidebar-item span { width: auto; padding: 0; }
+  .section-title { padding: 8px 20px; }
+
+  .app-sidebar .sidebar-footer { display: flex; padding: 16px 20px; }
+  .sidebar-footer p { display: block; }
+  .sidebar-footer .footer-link-text { display: inline; }
+  .sidebar-footer .footer-icon { width: 20px; height: 20px; margin: 0; }
+
+  /* Fondo oscurecido detrás del drawer */
+  .sidebar-scrim {
+    display: block;
+    position: fixed; inset: var(--header-height) 0 0 0;
+    z-index: 890;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0; visibility: hidden;
+    transition: opacity var(--dur-normal), visibility var(--dur-normal);
+  }
+  body.sidebar-open .sidebar-scrim { opacity: 1; visibility: visible; }
 }
 
 /* Card Read More */

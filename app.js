@@ -359,6 +359,12 @@ function main() {
         });
     }
 
+    // Al pasar de móvil a escritorio el drawer quedaría "abierto" sin verse,
+    // y reaparecería solo al volver a móvil. Limpiamos el estado.
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) document.body.classList.remove('sidebar-open');
+    });
+
     const handleCategoryClick = async (e) => {
         const cat = e.currentTarget.dataset.category;
         state.category = cat;
