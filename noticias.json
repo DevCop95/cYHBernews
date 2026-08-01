@@ -1,5 +1,90 @@
 [
   {
+    "id": 1812,
+    "fecha": "2026-08-01T02:24:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-54787 en sigstore-go",
+    "resumen": "La biblioteca sigstore-go para Go presenta una vulnerabilidad (CVE-2026-54787) que permite a un atacante con material de clave expirada firmar bundles aceptados, debido a la falta de verificación de la marca de tiempo de firma contra la ventana de validez de una ExpiringKey. La versión 1.2.1 corrige este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NTEwODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/232245",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-54787",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-54787"
+      ]
+    }
+  },
+  {
+    "id": 1811,
+    "fecha": "2026-08-01T02:24:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux Kernel",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2021-20322) en el kernel de Linux que permite a un atacante remoto escanear puertos UDP abiertos y omitir la aleatorización del puerto de origen UDP, afectando la confidencialidad y posiblemente la integridad de los sistemas que dependen de esta funcionalidad. La vulnerabilidad se encuentra en la funcionalidad de procesamiento de errores ICMP y tiene un CVSS Score de 7.4, clasificada como HIGH.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NTEwODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-20322",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-20322",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2021-20322"
+      ]
+    }
+  },
+  {
+    "id": 1810,
+    "fecha": "2026-08-01T02:24:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Chrome corrige 1,442 fallos de seguridad",
+    "resumen": "Google ha corregido un total de 1,442 fallos de seguridad en las últimas versiones de Chrome (149, 150 y 151), superando el número total de fallos corregidos en las 23 actualizaciones anteriores combinadas, lo que indica un esfuerzo significativo para abordar vulnerabilidades como zero-day y exploits potenciales. Los vectores de ataque pueden incluir phishing, malware y ataques de día cero, destacando la importancia de mantener el navegador actualizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NTEwNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/three-recent-chrome-releases-fix-1442.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:three recent chrome releases fix 1 442 flaws more than prior 23 updates combined",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1809,
+    "fecha": "2026-08-01T02:24:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Amgen",
+    "resumen": "La empresa farmacéutica Amgen informó que sufrió una brecha de datos en la que actores maliciosos robaron información corporativa y de salud de pacientes almacenada en varios sistemas en la nube operados por proveedores de servicios de terceros, lo que podría comprometer la privacidad digital de los pacientes y la propiedad intelectual de la empresa. La brecha se produjo a través de un ataque a los sistemas en la nube de terceros, lo que resalta la importancia de la seguridad de la cadena de suministro y la protección de datos en la nube.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1NTEwNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/amgen-says-cloud-data-breach-exposed-patient-health-proprietary-info/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:amgen says cloud data breach exposed patient health proprietary info",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1531",
+        "name": "Account Access Removal"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1808,
     "fecha": "2026-07-31T22:00:51Z",
     "categoria": "Ciberseguridad",
