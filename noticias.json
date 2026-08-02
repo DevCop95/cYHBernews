@@ -1,5 +1,58 @@
 [
   {
+    "id": 1842,
+    "fecha": "2026-08-02T15:57:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-0631 en TP-Link",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección de comandos del sistema operativo (OS) en el firmware de TP-Link Archer BE230 v1.2, que permite a un atacante autenticado adyacente ejecutar código arbitrario y obtener control administrativo total del dispositivo, comprometiendo la integridad de la configuración, la seguridad de la red y la disponibilidad del servicio. La explotación exitosa de esta vulnerabilidad, con un CVSS Score de 8.0, podría tener graves consecuencias en la seguridad de la red.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2ODYyNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-0631",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-0631",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1489",
+        "name": "Service Stop"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-0631"
+      ]
+    }
+  },
+  {
+    "id": 1841,
+    "fecha": "2026-08-02T15:57:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Chrome bloqueará extensiones maliciosas",
+    "resumen": "Google está desarrollando una nueva característica de seguridad en Chrome que bloqueará por defecto las extensiones instaladas por política que intenten secuestrar la página de nueva pestaña o cambiar el motor de búsqueda predeterminado, mitigando así ataques de phishing y malware. Esto impactará la seguridad de los usuarios al reducir la superficie de ataque de extensiones maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2ODYyMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/google/google-chrome-may-soon-block-new-tab-hijacker-extensions-by-default/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google chrome may soon block new tab hijacker extensions by default",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1840,
     "fecha": "2026-08-02T13:10:34Z",
     "categoria": "Ciberseguridad",
