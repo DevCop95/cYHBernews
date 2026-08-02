@@ -1,5 +1,23 @@
 [
   {
+    "id": 1843,
+    "fecha": "2026-08-02T19:03:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Apache Traffic Server",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-58184) en el plugin header_rewrite de Apache Traffic Server, que puede causar un crash o corrupción de memoria durante operaciones de cookies y coincidencia de condiciones CIDR, afectando versiones desde 8.0.0 hasta 10.1.3. Se recomienda actualizar a la versión 9.2.15 o 10.1.4 para solucionar el problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2OTczODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-58184",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-58184",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58184"
+      ]
+    }
+  },
+  {
     "id": 1842,
     "fecha": "2026-08-02T15:57:25Z",
     "categoria": "Ciberseguridad",
