@@ -1,5 +1,44 @@
 [
   {
+    "id": 1838,
+    "fecha": "2026-08-02T08:14:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS en http-proxy-middleware",
+    "resumen": "La versión del paquete http-proxy-middleware anterior a la 2.0.7, 3.0.0 y 3.0.3 es vulnerable a un ataque de denegación de servicio (DoS) debido a un error UnhandledPromiseRejection, permitiendo a un atacante bloquear el servidor Node.js mediante solicitudes específicas. El impacto es alto, con un CVSS Score de 7.5, y puede ser explotado mediante solicitudes maliciosas a rutas específicas.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2NTg0NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-21536",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-21536",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "Direct Network Flood"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-21536"
+      ]
+    }
+  },
+  {
     "id": 1837,
     "fecha": "2026-08-02T05:52:11Z",
     "categoria": "Ciberseguridad",
