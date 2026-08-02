@@ -1,5 +1,44 @@
 [
   {
+    "id": 1835,
+    "fecha": "2026-08-02T02:21:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en WooCommerce",
+    "resumen": "La vulnerabilidad CVE-2026-8457 en el plugin WooCommerce - Social Login para WordPress permite un bypass de autenticación debido a la falta de verificación de la firma JWT y la exposición de un nonce de seguridad, lo que permite a atacantes no autenticados iniciar sesión como cualquier usuario existente, incluidos administradores. El ataque se puede llevar a cabo mediante la creación de un token id_token falsificado que contenga la dirección de correo electrónico del usuario objetivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2MzcyOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/232468",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-8457",
+    "ttps": [
+      {
+        "id": "T1550",
+        "name": "Use of Known Vulnerabilities"
+      },
+      {
+        "id": "T1550.002",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1135",
+        "name": "Identify Web Application Flaws"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8457"
+      ]
+    }
+  },
+  {
     "id": 1834,
     "fecha": "2026-08-01T21:52:34Z",
     "categoria": "Ciberseguridad",
