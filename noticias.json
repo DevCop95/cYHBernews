@@ -1,5 +1,58 @@
 [
   {
+    "id": 1837,
+    "fecha": "2026-08-02T05:52:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en WatchGuard Mobile VPN",
+    "resumen": "Se ha identificado una vulnerabilidad de escalada de privilegios local (CVE-2024-4944) en el cliente WatchGuard Mobile VPN con SSL en Windows, permitiendo a un usuario local ejecutar comandos arbitrarios con privilegios elevados, con un CVSS Score de 7.8 (HIGH). Esto representa un riesgo significativo para la seguridad de los sistemas que utilizan este software.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2NDk5MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-4944",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-4944",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-4944"
+      ]
+    }
+  },
+  {
+    "id": 1836,
+    "fecha": "2026-08-02T05:52:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "AMOS Stealer Infección",
+    "resumen": "Se ha detectado una infección de malware tipo stealer conocido como Atomic MacOS (AMOS) que afecta a sistemas MacOS, permitiendo a los atacantes acceder a información confidencial. El vector de ataque puede incluir técnicas de phishing o explotación de vulnerabilidades para infectar los sistemas y robar datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2NDk5MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33208",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:atomic macos amos stealer infection sun aug 2nd",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation of Client Application Vulnerability"
+      },
+      {
+        "id": "T1056",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1835,
     "fecha": "2026-08-02T02:21:30Z",
     "categoria": "Ciberseguridad",
