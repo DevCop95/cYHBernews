@@ -1,5 +1,159 @@
 [
   {
+    "id": 1865,
+    "fecha": "2026-08-03T22:04:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en wallet de Bitcoin",
+    "resumen": "Una empresa fabricante de wallets de hardware para Bitcoin ha destruido parte de su inventario después de que ladrones aprovecharan una vulnerabilidad en el firmware para robar más de $88 millones a los clientes, lo que pone de relieve la importancia de la seguridad en los dispositivos de almacenamiento de criptomonedas. La vulnerabilidad en el firmware permitió a los atacantes acceder a los fondos de los clientes, demostrando un vector de ataque crítico en la seguridad de las criptomonedas.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3OTQ2NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/bitcoin-theft-coldcard-cyberattack",
+    "fuente": "The Record",
+    "dedup_key": "txt:bitcoin hardware wallet maker destroys some inventory after more than 88 million stolen",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1864,
+    "fecha": "2026-08-03T22:04:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Herramienta contra AI deepfakes",
+    "resumen": "Investigadores han desarrollado una herramienta para rastrear videos generados por IA hasta su fuente original, con el objetivo de promover la colaboración industrial en medidas de protección mejoradas contra el uso malicioso de la IA. Esto puede ayudar a mitigar ataques de phishing y desinformación que utilizan videos manipulados.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3OTQ2NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/new-tool-advances-ai-generated-video-detection",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:new tool traces ai videos back to their source",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1863,
+    "fecha": "2026-08-03T22:04:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "INC Ransomware: Amenaza Dominante",
+    "resumen": "La operación de ransomware INC ha surgido como una amenaza dominante al explotar las recientes vulnerabilidades en los dispositivos VPN SonicWall Secure Mobile Access (SMA) 1000, afectando a múltiples víctimas que han sido listadas en su sitio de filtración de datos. El vector de ataque se centra en la explotación de las vulnerabilidades en los dispositivos SMA 1000 para obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3OTQ2NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/inc-ransomware-emerges-as-dominant.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:inc ransomware emerges as dominant actor exploiting sonicwall sma 1000 flaws",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material no se menciona explícitamente, pero se puede inferir que el acceso no autorizado se logra mediante la explotación de vulnerabilidades, no mediante el uso de credenciales alternativas."
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1862,
+    "fecha": "2026-08-03T22:04:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware en imágenes de caché",
+    "resumen": "Un nuevo servicio de carga maliciosa llamado DOUBLECUP utiliza ataques ClickFix para ocultar código malicioso en imágenes PNG almacenadas en la caché del navegador, entregando CountLoader y un nuevo troyano de acceso remoto llamado DeviceManager a dispositivos Windows y macOS. El vector de ataque aprovecha la caché del navegador para evadir la detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3OTQ2NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new doublecup clickfix service hides malware in browser cache images",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1861,
+    "fecha": "2026-08-03T22:03:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Estafas en vacaciones",
+    "resumen": "Los expertos de Kaspersky han detectado estafas que imitan a operadores móviles a través de páginas web fraudulentas, dirigidas a personas que buscan contratar conexiones móviles o adquirir tarjetas SIM durante la temporada turística, lo que puede llevar a phishing y pérdida de datos personales. Los ciberdelincuentes aprovechan la alta demanda de servicios de telefonía móvil y conexión a Internet en este período.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3OTQ2Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/cuidado-en-vacaciones-detectan-fraudes-que-suplantan-operadores-moviles/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:cuidado en vacaciones detectan fraudes que suplantan operadores móviles",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication no se menciona, pero se puede inferir una técnica de"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1860,
     "fecha": "2026-08-03T19:25:08Z",
     "categoria": "Ciberseguridad",
