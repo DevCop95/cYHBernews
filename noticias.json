@@ -1,5 +1,58 @@
 [
   {
+    "id": 1845,
+    "fecha": "2026-08-03T02:24:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en WooCommerce",
+    "resumen": "La vulnerabilidad CVE-2026-15414 (CVSS 8.8) en el plugin Subscriptions for WooCommerce de WordPress permite la escalada de privilegios a través de la función `save_meta_boxes()` que no valida adecuadamente los roles de usuario, permitiendo a atacantes autenticados con acceso de Contribuidor o superior escalar sus privilegios a Administrador. La explotación exitosa requiere que el plugin Subscriptions for WooCommerce Pro esté activo.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3MjM4NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-15414",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-15414",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1134",
+        "name": "Access Token Manipulation"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Authentication Data no aplica, en su lugar se puede considerar: T1068.001 - Privilege Escalation no aplica, en su lugar se puede considerar: T1068 - Exploitation for Privilege Escalation ya está incluido, por lo que se puede considerar: T1204 - User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-15414"
+      ]
+    }
+  },
+  {
+    "id": 1844,
+    "fecha": "2026-08-03T02:23:56Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Astra: Nuevo modelo AI de OpenAI",
+    "resumen": "OpenAI ha presentado Astra, un modelo de inteligencia artificial diseñado para abordar tareas complejas y de larga duración, después de que una versión interna del modelo resolvió 10 problemas matemáticos y de ciencias de la computación teórica de larga data. Astra promete avanzar en la capacidad de la IA para resolver problemas complejos en áreas como las matemáticas y la ciencia de la computación.",
+    "url_imagen": "https://images.unsplash.com/photo-1781444504263-231cc860f263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3MjM4MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-teases-astra-its-next-major-ai-model-after-it-solves-10-long-standing-math-problems/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai teases astra its next major ai model after it solves 10 long standing math problems",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1843,
     "fecha": "2026-08-02T19:03:04Z",
     "categoria": "Ciberseguridad",
