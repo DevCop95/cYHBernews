@@ -1,5 +1,86 @@
 [
   {
+    "id": 1850,
+    "fecha": "2026-08-03T12:18:07Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Qwen3.8-Max: IA china desafía a EEUU",
+    "resumen": "Alibaba presenta Qwen3.8-Max, un modelo de IA multimodal con 2,4 billones de parámetros que compite con los mejores modelos de OpenAI y Anthropic, demostrando que los modelos chinos ya no están por detrás de los modelos frontera de EEUU. El modelo muestra un rendimiento destacado en ingeniería de software, manejo de la terminal y percepción visual.",
+    "url_imagen": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3NTk0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/eeuu-restringio-chips-para-frenar-ia-china-alibaba-acaba-ensenar-poco-que-ha-funcionado",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:eeuu restringió los chips para frenar la ia china alibaba acaba de enseñar lo poco que ha funcionado",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/27d929/mano-china-eeuu-veto/375_142.jpeg",
+        "https://i.blogs.es/d7b256/eeuu-qwen/1024_2000.jpeg",
+        "https://i.blogs.es/f52213/qwen/1024_2000.jpeg",
+        "https://i.blogs.es/f52213/qwen/1366_2000.jpeg",
+        "https://i.blogs.es/f52213/qwen/450_1000.jpeg",
+        "https://i.blogs.es/f52213/qwen/650_1200.jpeg",
+        "https://qwen.ai/blog?id=qwen3.8",
+        "https://unsplash.com/es/fotos/una-bandera-en-el-mastil-bajo-el-cielo-nublado-T41c_r3CVOs"
+      ]
+    }
+  },
+  {
+    "id": 1849,
+    "fecha": "2026-08-03T12:17:59Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "AI en SOCs",
+    "resumen": "Las plataformas de IA como Claude están siendo utilizadas en centros de operaciones de seguridad (SOC) para automatizar tareas repetitivas, escribir detecciones y sumarizar incidentes, lo que permite a los equipos de seguridad centrarse en amenazas más complejas. La integración de la IA en los SOCs está en constante evolución, con un enfoque en determinar dónde cada tipo de IA aporta mayor valor.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330420909-3f95e4e9b4d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3NTk0Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/fomo-in-soc-where-ai-platforms-like.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fomo in the soc where ai platforms like claude actually fit",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1848,
+    "fecha": "2026-08-03T12:17:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "CISO Summit 2026: Inteligencia Artificial y Hacking",
+    "resumen": "El Digi Americas LATAM CISO Summit 2026 se llevará a cabo en Cancún, México, del 10 al 12 de septiembre, con una charla sobre Hacking y Inteligencia Artificial el 11 de septiembre, abordando temas como el jailbreak de modelos de lenguaje y la inyección de comandos maliciosos. La conferencia contará con una lista de ponentes destacados en el ámbito de la ciberseguridad y la inteligencia artificial.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU3NTk0NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/digi-americas-latam-ciso-summit-2026-11.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:digi americas latam ciso summit 2026 11 de septiembre estaré en méxico",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "events.digiamericas.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8nK6V2oi9Rw7LxmyrKkYnO9jpBgq3JzGjbybXRJShG3QTeG3PxQ9rYqBJRMcXkrM6kmFlvyo40duxjZapEXXBfFq1Pvjl7GvF67ITY5fueDEIQB66faNB8PhiHB5eXAzHDhI8n2C3UyLwf5pD0YQtmXYsS5pogt1NZZJ0iMrYu7uPP5eAGhjp/w640-h326/ciso3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBBIXhcuEDj5Lk2BG_IihWIega8TXIBUufcBFh11JdXINaa0fOVO8JqPuvqhC5JZrsVxK6wHIOc3wMg8zeNTg5KsYCWBW0TcZLFjQBRLWM2QxDndB3XOfGdHLE22TBr65xPIwaEF7DMaXUJXhhEdv58upQ2w3kNhj6wfwf2D6oEgoHXuKnR8tx/w640-h356/ciso0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCLmQXc3SPX27pp1-8b3kV_UEAGJaVkEGJULks9Ly6u8xxB7cSlAR4p8qOWUHZp23DjqTTAAKU3pVrbntVk4h0wzHuv6M1l3rJ8UXDnZo7LDEzR84GftXB9wEx1Lyg8vstyMdt32TviQj8AfCHUqT4fQ0i1ZFmJWtRfEwID0j1LxjLlwNENxdE/w640-h552/ciso1.jpg",
+        "https://elladodelmal.com",
+        "https://events.digiamericas.org/Summit2026"
+      ]
+    }
+  },
+  {
     "id": 1847,
     "fecha": "2026-08-03T06:17:03Z",
     "categoria": "Ciberseguridad",
