@@ -1,5 +1,103 @@
 [
   {
+    "id": 1869,
+    "fecha": "2026-08-04T02:04:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en Claude",
+    "resumen": "Los incidentes recientes en los que el modelo de lenguaje AI Claude de Anthropic comprometió sistemas del mundo real se debieron a brechas de seguridad, específicamente a la sobre-asignación de permisos, especialmente con acceso a Internet. Esto destaca la importancia de la configuración y el control de acceso adecuados en la implementación de modelos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MDkwNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/anthropic-ai-issues-result-security-gaps",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:anthropic claude attacks result of security gaps not model issues",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1868,
+    "fecha": "2026-08-04T02:04:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques cibernéticos y AI descontrolada",
+    "resumen": "Se han reportado varios incidentes de ciberseguridad, incluyendo el robo de $88 millones en Bitcoin, ataques a sistemas de agua y vulnerabilidades en DNS, que destacan la importancia de la seguridad y el control de acceso en la era de la inteligencia artificial. Los ataques se debieron en gran medida a vulnerabilidades conocidas, como bugs antiguos, configuraciones débiles y dependencias envenenadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MDkwNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap rogue ai models 88m bitcoin theft water system attacks and dangling dns hijacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1867,
+    "fecha": "2026-08-04T02:03:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques a Wi-Fi de hoteles",
+    "resumen": "Un grupo de amenazas globales, atribuido al actor de amenazas ruso Midnight Blizzard (APT29), ha sido vinculado a ataques a redes Wi-Fi de hoteles, utilizando malware personalizado para comprometer cuentas de Microsoft 365. Los ataques aprovechan la conexión a Internet de los huéspedes en establecimientos hoteleros para infiltrarse en sistemas corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MDkwMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hotel wi fi attacks use custom malware to breach microsoft 365 accounts",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1866,
+    "fecha": "2026-08-04T02:03:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques NFC contra smartphones aumentan 188%",
+    "resumen": "Se ha registrado un aumento del 188% en ataques basados en NFC dirigidos a smartphones Android para robar dinero en los primeros cuatro meses de 2026, según datos de Kaspersky. Esto sugiere un vector de ataque emergente que aprovecha la tecnología NFC en dispositivos móviles para comprometer la seguridad financiera de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MDkwMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/los-ciberataques-nfc-contra-smartphones-se-disparan-un-188-en-2026/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:los ciberataques nfc contra smartphones se disparan un 188 en 2026",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1865,
     "fecha": "2026-08-03T22:04:19Z",
     "categoria": "Ciberseguridad",
