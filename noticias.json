@@ -1,5 +1,112 @@
 [
   {
+    "id": 1876,
+    "fecha": "2026-08-04T08:29:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Google Chrome",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento del búfer de la pila en WebRTC en versiones de Google Chrome anteriores a 103.0.5060.114, con un CVSS Score de 8.8, permitiendo a un atacante remoto potencialmente explotar la corrupción de la pila a través de una página HTML diseñada. Esto afecta productos como Google Chrome, paquetes de Fedora y WebKitGTK.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MzIxODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-2294",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-2294",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-2294"
+      ]
+    }
+  },
+  {
+    "id": 1875,
+    "fecha": "2026-08-04T08:29:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "IA detecta vulnerabilidades masivamente",
+    "resumen": "La IA ha mejorado significativamente la detección de vulnerabilidades en el software, lo que ha llevado a un aumento en el número de vulnerabilidades corregidas en proyectos como Microsoft, Oracle, Chrome y Firefox, pero esto ha generado un nuevo desafío: la capacidad de los humanos para comprobar, corregir, priorizar e instalar parches no puede seguir el ritmo de la detección automatizada. Los vectores de ataque incluyen la explotación de vulnerabilidades \"zero day\" y la sobrecarga de los equipos de seguridad con un gran número de vulnerabilidades potenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MzIxNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/ia-ha-resuelto-uno-grandes-problemas-ciberseguridad-encontrar-fallos-ahora-tenemos-otro-mucho-mayor",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la ia ha resuelto uno de los grandes problemas de la ciberseguridad encontrar fallos ahora tenemos otro mucho mayor",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "blog.mozilla.org",
+        "platform.instagram.com",
+        "techcrunch.com",
+        "unsplash.com",
+        "www.theregister.com",
+        "www.wired.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blog.google/security/chrome-stronger-with-every-update/",
+        "https://blog.mozilla.org/en/firefox/privacy-security/ai-security-zero-day-vulnerabilities/",
+        "https://i.blogs.es/367f37/software-parches-ia/1024_2000.jpeg",
+        "https://i.blogs.es/cab1c7/anthropic-openai/375_142.jpeg",
+        "https://i.blogs.es/f776b7/1024_2000/375_142.jpg",
+        "https://techcrunch.com/2026/07/30/google-says-it-fixed-more-chrome-bugs-in-june-than-over-the-past-two-years-thanks-to-ai/",
+        "https://unsplash.com/es/fotos/pantalla-del-portatil-mostrando-codigo-colorido-8qEB0fTe9Vw",
+        "https://www.theregister.com/security/2026/07/14/patchpocalypse-now-microsoft-tops-last-months-record-with-622-patch-tuesday-cves/5271434",
+        "https://www.theregister.com/security/2026/07/23/oracle-drops-1449-security-patches-like-its-the-new-normal/5277114"
+      ]
+    }
+  },
+  {
+    "id": 1874,
+    "fecha": "2026-08-04T08:29:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Aumento 1,500% en Phishing",
+    "resumen": "Se ha observado un aumento significativo del 1,500% en ataques de phishing mediante códigos de dispositivo en 2026, mientras que el vishing ha duplicado su frecuencia, permitiendo a los atacantes evadir controles de seguridad establecidos y minimizar las evidencias que dejan atrás. Esto sugiere una evolución en las técnicas de ingeniería social que explotan vulnerabilidades humanas más que tecnológicas.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MzIxNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-analytics/device-code-phishing-vishing-doubles",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:device code phishing up 1 500 in 2026 vishing doubles",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Vishing"
+      },
+      {
+        "id": "T1597",
+        "name": "Search for Vulnerabilities"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing for Information"
+      },
+      {
+        "id": "T1061",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1873,
+    "fecha": "2026-08-04T08:29:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad N-able N-central",
+    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) agregó una vulnerabilidad de gravedad alta en N-able N-central a su catálogo de Vulnerabilidades Conocidas Explotadas (KEV) después de informes de explotación activa, afectando a clientes debido a un caso de parcheado incompleto para CVE-2026-18556. La vulnerabilidad, rastreada como CVE-2026-18577, tiene un puntaje CVSS de 8.2 y permite la explotación en el wild.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4MzIxNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-18556,cve-2026-18577",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-18556",
+        "CVE-2026-18577"
+      ]
+    }
+  },
+  {
     "id": 1872,
     "fecha": "2026-08-04T05:43:26Z",
     "categoria": "Ciberseguridad",
@@ -19852,24 +19959,6 @@
     }
   },
   {
-    "id": 1109,
-    "fecha": "2026-07-02T19:18:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Google Chrome",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-14415) en la implementación de V8 en Google Chrome, que permite a un atacante remoto potencialmente explotar la corrupción de memoria heap a través de una página HTML maliciosa, siempre y cuando el usuario realice gestos de interfaz de usuario específicos. La gravedad de la vulnerabilidad se considera baja según la clasificación de seguridad de Chromium.",
-    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5MjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/185481",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14415",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14415"
-      ]
-    }
-  },
-  {
     "id": 1108,
     "fecha": "2026-07-02T19:18:34Z",
     "categoria": "Ciberseguridad",
@@ -20558,24 +20647,6 @@
     }
   },
   {
-    "id": 1077,
-    "fecha": "2026-07-02T02:50:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Google Chrome",
-    "resumen": "Se ha identificado una vulnerabilidad de tipo \"Type Confusion\" en el motor V8 de Google Chrome, con el identificador CVE-2026-14431, que permite a un atacante remoto ejecutar código arbitrario dentro de una sandbox a través de una página HTML maliciosa. La gravedad de la vulnerabilidad se considera alta según la clasificación de seguridad de Chromium.",
-    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/184301",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14431",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14431"
-      ]
-    }
-  },
-  {
     "id": 1076,
     "fecha": "2026-07-02T02:49:57Z",
     "categoria": "Ciberseguridad",
@@ -20588,24 +20659,6 @@
     "dedup_key": "txt:webinar why traditional email security is no longer enough",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1075,
-    "fecha": "2026-07-02T02:49:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Google Chrome",
-    "resumen": "Se ha identificado una vulnerabilidad \"use after free\" en el motor V8 de Google Chrome, permitiendo a un atacante remoto ejecutar código arbitrario dentro de un sandbox a través de una página HTML maliciosa, afectando versiones anteriores a 150.0.7871.46. La gravedad de la vulnerabilidad CVE-2026-14432 se clasifica como \"Media\" según la seguridad de Chromium.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/184302",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14432",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14432"
-      ]
-    }
   },
   {
     "id": 1074,
@@ -21135,24 +21188,6 @@
     "dedup_key": "txt:over 900 oracle e business instances exposed to ongoing attacks",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1048,
-    "fecha": "2026-07-01T14:36:57Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Google Chrome",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-13973) en la implementación de la interfaz de usuario (UI) de Google Chrome, que permite a un atacante remoto realizar spoofing de UI a través de una página HTML maliciosa, siempre y cuando el usuario realice gestos específicos en la UI. La gravedad de la vulnerabilidad se considera media según Chromium.",
-    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/182674",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-13973",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-13973"
-      ]
-    }
   },
   {
     "id": 1047,
