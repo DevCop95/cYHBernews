@@ -1,5 +1,117 @@
 [
   {
+    "id": 1884,
+    "fecha": "2026-08-04T16:49:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Armas láser en el ejército USA",
+    "resumen": "El Pentágono está a punto de firmar un contrato para adquirir \"Láseres de Alta Energía Duradera\" (Enduring High Energy Lasers) para contrarrestar la creciente amenaza de drones, lo que incorporaría oficialmente las armas de energía dirigida al arsenal del ejército. Esto marca un avance significativo en la adopción de tecnologías de defensa avanzadas para abordar vulnerabilidades en la seguridad nacional.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NjIxNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/landmark-deal-would-officially-add-laser-weapons-to-us-army-arsenal/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:landmark deal would officially add laser weapons to us army arsenal",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1883,
+    "fecha": "2026-08-04T16:49:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Caza de vulnerabilidades en herramientas de diagnóstico",
+    "resumen": "Se ha detectado una botnet que busca explotar vulnerabilidades en URLs asociadas con herramientas de diagnóstico, lo que podría permitir ataques de malware o ransomware a través de vectores de ataque como phishing o exploits de zero-day. El impacto real podría ser la compromisión de sistemas críticos y la pérdida de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NjIxNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33214",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:botnet hunting for vulnerabilities in diagnostic tools tue aug 4th",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1882,
+    "fecha": "2026-08-04T16:49:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en tl;dv",
+    "resumen": "Una mala configuración en Google Firebase permite a los usuarios de tl;dv, una herramienta de reuniones con IA, consultar información de reuniones de otros usuarios y potencialmente unirse a llamadas, lo que podría permitir a los atacantes espiar llamadas de video gubernamentales y corporativas. El vector de ataque se basa en la explotación de la configuración incorrecta de Firebase, lo que permite el acceso no autorizado a información de reuniones.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NjIxNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/ai-notetaker-spy-government-corporate-video-calls",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai notetaker lets hackers spy on government corporate video calls",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1881,
+    "fecha": "2026-08-04T16:49:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Gusano npm Keyv afecta cientos de paquetes",
+    "resumen": "Un gusano de npm que roba credenciales, inicialmente detectado en keyv@6.0.0, se ha propagado a cientos de paquetes en múltiples organizaciones, infectando al menos 868 paquetes y plantando código malicioso, incluyendo hooks para VS Code. El gusano aprovecha vulnerabilidades en la cadena de suministro de npm, afectando a múltiples namespaces y organizaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NjIxNDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:keyv linked npm worm poisons hundreds of packages plants claude code and vs code hooks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1880,
+    "fecha": "2026-08-04T16:48:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque ChainDrop en npm",
+    "resumen": "Un malware auto-propagante llamado 'ChainDrop' ha comprometido más de 1.300 paquetes con un total de 2.000 millones de descargas mensuales en el registro de Node Package Manager (npm), afectando potencialmente a miles de proyectos y aplicaciones que dependen de estos paquetes. El ataque aprovecha la cadena de suministro de npm, permitiendo a los atacantes distribuir malware a través de paquetes infectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NjIxMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:massive chaindrop npm supply chain attack infects hundreds of packages",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1879,
     "fecha": "2026-08-04T13:59:33Z",
     "categoria": "Ciberseguridad",
