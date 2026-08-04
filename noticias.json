@@ -1,5 +1,31 @@
 [
   {
+    "id": 1877,
+    "fecha": "2026-08-04T11:20:30Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Chats de Claude expuestos en Google",
+    "resumen": "Debido a una configuración de privacidad, algunos chats de Claude, incluyendo información personal y claves de criptomonedas, son accesibles públicamente a través de Google, lo que supone un riesgo para la privacidad de los usuarios. La empresa Anthropic atribuye el problema a la configuración de los usuarios, quienes pueden compartir enlaces de conversaciones públicamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937633-890b1429bc4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NDI0MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/some-claude-chats-are-searchable-on-google.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:some claude chats are searchable on google",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "futurism.com",
+        "support.claude.com",
+        "www.404media.co"
+      ],
+      "url": [
+        "https://archive.ph/sl7rU",
+        "https://futurism.com/artificial-intelligence/claude-chats-publicly-accessible",
+        "https://support.claude.com/en/articles/10593882-share-and-unshare-chats",
+        "https://www.404media.co/tons-of-peoples-claude-chats-and-creations-are-exposed-on-google/"
+      ]
+    }
+  },
+  {
     "id": 1876,
     "fecha": "2026-08-04T08:29:41Z",
     "categoria": "Ciberseguridad",
