@@ -1,5 +1,151 @@
 [
   {
+    "id": 1889,
+    "fecha": "2026-08-04T19:25:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Quarkus CVE-2023-4853",
+    "resumen": "Se ha identificado una vulnerabilidad en Quarkus (CVE-2023-4853) con una puntuación CVSS de 8.1, que permite a un atacante eludir la política de seguridad HTTP y acceder no autorizado a endpoints, potencialmente causando una Denegación de Servicio. La falla se debe a una mala sanitización de permutaciones de caracteres en las solicitudes HTTP.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NzE1MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-4853",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-4853",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-4853"
+      ]
+    }
+  },
+  {
+    "id": 1888,
+    "fecha": "2026-08-04T19:25:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fraude en examen universitario con IA",
+    "resumen": "La Universidad Nacional Autónoma de México (UNAM) implementó un sistema de vigilancia basado en inteligencia artificial (IA) para evitar trampas en su examen de admisión en línea, pero miles de estudiantes lograron burlar el sistema utilizando modelos de IA como ChatGPT y otros métodos, lo que resultó en un escándalo académico con un aumento significativo en los resultados de aprobación. Los estudiantes esquivaron los controles colocando monitores fuera del encuadre de la cámara, escondiendo auriculares y utilizando programas capaces de resolver el test automáticamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NzE1MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/universidad-mexico-uso-ia-para-evitar-trampas-que-paso-fue-justamente-contrario",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:una universidad de méxico usó ia para evitar trampas lo que pasó fue justamente lo contrario",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Client Application Vulnerabilities no se menciona explícitamente, pero se puede inferir que los estudiantes utilizaron programas capaces de resolver el test automáticamente, lo que se relaciona con la técnica T1556 - Modify System Configuration, pero no es exacto."
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion no se menciona explícitamente, pero se puede inferir que los estudiantes esquivaron los controles utilizando monitores fuera del encuadre de la cámara y escondiendo auriculares, lo que se relaciona con la evasión de la vigilancia, pero no es exacto."
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "arstechnica.com",
+        "edition.cnn.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.lemonde.fr",
+        "www.nytimes.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/",
+        "https://edition.cnn.com/2026/08/02/americas/mexican-university-unam-ai-cheating-scandal-intl-latam",
+        "https://i.blogs.es/367f37/software-parches-ia/375_142.jpeg",
+        "https://i.blogs.es/d7b256/eeuu-qwen/375_142.jpeg",
+        "https://i.blogs.es/dff625/ben-mullins-oxv3bzr7jxi-unsplash/1024_2000.jpeg",
+        "https://unsplash.com/es/@benmullins",
+        "https://www.lemonde.fr/en/international/article/2026/08/01/mexican-candidates-forced-to-retake-university-entrance-exam-after-suspicions-of-ai-driven-cheating_6756069_4.html",
+        "https://www.nytimes.com/2026/07/31/world/americas/unam-college-entrance-exam-mexico.html"
+      ]
+    }
+  },
+  {
+    "id": 1887,
+    "fecha": "2026-08-04T19:24:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberataques iraníes a sistemas de agua en EE. UU.",
+    "resumen": "Se han detectado ciberataques atribuidos a Irán contra sistemas de agua en al menos siete estados de EE. UU., incluyendo Minnesota, aunque no se han reportado daños significativos hasta el momento. Los ataques parecen ser parte de una campaña dirigida contra infraestructuras críticas en el país.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NzE0OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/iran-cyberattacks-against-minnesota-water-systems.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:iran cyberattacks against minnesota water systems",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "news.slashdot.org",
+        "thehill.com",
+        "www.nytimes.com",
+        "www.washingtonpost.com"
+      ],
+      "url": [
+        "https://news.slashdot.org/story/26/07/31/209200/hackers-targeted-municipal-water-systems-in-7-states-this-week-fbi-says",
+        "https://thehill.com/policy/technology/6001284-minnesota-water-facilities-cyberattack-investigation-us-iran/amp/",
+        "https://www.nytimes.com/2026/07/30/us/politics/minnesota-water-cyberattack-iran.html",
+        "https://www.nytimes.com/2026/08/01/us/politics/iran-cyberattack-water-systems.html?unlocked_article_code=1.2FA.xPwI.F0C0GgLEjGZc&amp;smid=nytcore-ios-share",
+        "https://www.washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities/"
+      ]
+    }
+  },
+  {
+    "id": 1886,
+    "fecha": "2026-08-04T19:24:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque RMM Smoke#Screen",
+    "resumen": "Los ataques utilizan ingeniería social diversa y payloads rotativos para entregar ScreenConnect, permitiendo acceso remoto persistente a redes comprometidas, lo que expone el modus operandi de los actores de amenaza. Los vectores de ataque incluyen phishing y social engineering para inicializar la intrusión.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NzE0OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/latest-rmm-fueled-phishing-attack-exposes-threat-actor-playbook",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:smoke screen rmm takeover gambit exposes threat actor playbook",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services (no se menciona explícitamente, pero se habla de \"acceso remoto persistente\")"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1885,
+    "fecha": "2026-08-04T19:24:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "XCSSET ataca a devs de macOS",
+    "resumen": "Una nueva variante del malware XCSSET está atacando a miles de usuarios de macOS a través de proyectos de Xcode comprometidos y repositorios de GitHub, lo que supone un riesgo significativo para los desarrolladores que utilizan estas herramientas. El vector de ataque se centra en la explotación de vulnerabilidades en proyectos de Xcode y la propagación a través de repositorios de GitHub.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4NzE0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-xcsset-variant-targets-macos-devs-via-compromised-xcode-projects/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new xcsset variant targets macos devs via compromised xcode projects",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1884,
     "fecha": "2026-08-04T16:49:16Z",
     "categoria": "Ciberseguridad",
