@@ -1,5 +1,165 @@
 [
   {
+    "id": 1894,
+    "fecha": "2026-08-04T22:07:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en controlador Intel",
+    "resumen": "La vulnerabilidad CVE-2015-2291, con una puntuación CVSS de 7.8, permite a usuarios locales provocar una denegación de servicio o ejecutar código arbitrario con privilegios kernel en versiones anteriores a 1.3.1.0 de los controladores IQVW32.sys y IQVW64.sys para Windows, mediante llamadas IOCTL manipuladas. Esto afecta a los controladores de diagnósticos de Intel Ethernet para Windows.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4ODEyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2015-2291",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2015-2291",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "1.3.1.0"
+      ],
+      "cve": [
+        "CVE-2015-2291"
+      ]
+    }
+  },
+  {
+    "id": 1893,
+    "fecha": "2026-08-04T22:07:45Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "DeepSeek lanza modelo de IA 100x más barato",
+    "resumen": "DeepSeek ha lanzado su modelo de IA V4-Flash, que es 100 veces más barato que el modelo Claude Fable 5 de Anthropic, con un coste de apenas 0,03 dólares por completar el Intelligence Index, lo que lo convierte en la opción más económica del mercado para completar tareas de IA. El modelo cuenta con una ventana de contexto de un millón de tokens y 284.000 millones de parámetros totales, lo que lo hace muy eficiente en términos de coste.",
+    "url_imagen": "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4ODEyNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/deepseek-ha-lanzado-modelo-ia-100-veces-barato-que-fable-5-truco-esta-que-no-cuenta",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:deepseek ha lanzado un modelo de ia 100 veces más barato que fable 5 el truco está en lo que no cuenta",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.forbes.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://artificialanalysis.ai/models/deepseek-v4-flash#price-cost",
+        "https://i.blogs.es/290ce2/coste/1024_2000.png",
+        "https://i.blogs.es/290ce2/coste/1366_2000.png",
+        "https://i.blogs.es/290ce2/coste/450_1000.png",
+        "https://i.blogs.es/290ce2/coste/650_1200.png",
+        "https://i.blogs.es/367f37/software-parches-ia/375_142.jpeg",
+        "https://i.blogs.es/c59127/original/1024_2000.jpeg",
+        "https://unsplash.com/es/@solenfeyissa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        "https://www.forbes.com/sites/rachelwells/2026/08/03/new-deepseek-ai-model-105x-cheaper-than-fable-5-what-it-costs-workers/",
+        "https://www.reuters.com/business/retail-consumer/deepseeks-new-ai-model-is-by-far-cheapest-well-known-models-run-research-firm-2026-08-03/"
+      ]
+    }
+  },
+  {
+    "id": 1892,
+    "fecha": "2026-08-04T22:07:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Estafas en Camboya usan ChatGPT",
+    "resumen": "Centros de estafas en Camboya utilizaron ChatGPT para atraer a ciudadanos indios y realizar fraudes de inversión, lo que llevó a OpenAI a prohibir varias cuentas asociadas con estas operaciones de estafa y tráfico humano. Los ataques se llevaron a cabo a través de técnicas de phishing y manipulación, aprovechando la capacidad de generación de texto de ChatGPT para crear contenido engañoso.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4ODEyNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/openai-chatgpt-cambodia-scam-centers-disruption",
+    "fuente": "The Record",
+    "dedup_key": "txt:openai cambodian scam centers used chatgpt to lure indian nationals conduct investment fraud",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing: Social Engineering (no se menciona explícitamente, pero se infiere que se utilizó manipulación)"
+      },
+      {
+        "id": "T1586.001",
+        "name": "Social Engineering: Pretexting (no se menciona explícitamente, pero se infiere que se utilizó pretexting para atraer a las víctimas)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1891,
+    "fecha": "2026-08-04T22:07:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Phishing contra Microsoft 365",
+    "resumen": "La plataforma de phishing como servicio (PhaaS) \"The Greatness\" ha ampliado sus capacidades para incluir ataques de \"adversario en el medio\" y phishing de código de dispositivo, dirigidos a robar credenciales de Microsoft 365, utilizando técnicas de spoofing de RingCentral. Los ataques aprovechan la confianza en servicios de comunicación para engañar a los usuarios y obtener acceso no autorizado a cuentas de Microsoft 365.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4ODEyNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/phishing-service-spoofs-ringcentral-to-steal-microsoft-365-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:phishing service spoofs ringcentral to steal microsoft 365 accounts",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1192",
+        "name": "Spearphishing via Otro Medio"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1890,
+    "fecha": "2026-08-04T22:07:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Phishing crece 94% en un año",
+    "resumen": "El phishing sigue aumentando, con un crecimiento del 94% interanual, y representa el 49% del contenido malicioso bloqueado, según el informe de Infobip, que analiza miles de millones de interacciones globales y destaca el avance de las estafas con IA como factor clave. Los ciberdelincuentes están utilizando técnicas avanzadas, incluyendo el uso de IA, para llevar a cabo ataques de phishing más efectivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU4ODEyNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-phishing-crece-un-94-en-un-ano-ante-el-avance-de-las-estafas-con-ia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el phishing crece un 94 en un año ante el avance de las estafas con ia",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1556",
+        "name": "Initial Access (se infiere por el objetivo de los ataques de phishing de obtener acceso inicial)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1586",
+        "name": "Modify System Binary (no se menciona explícitamente, pero se puede inferir que el uso de IA podría estar relacionado con técnicas de modificación de sistemas)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1889,
     "fecha": "2026-08-04T19:25:11Z",
     "categoria": "Ciberseguridad",
@@ -13834,49 +13994,6 @@
     "dedup_key": "txt:lidl discloses online shop breach after service provider hack",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1354,
-    "fecha": "2026-07-13T11:57:16Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Phishing en Microsoft 365",
-    "resumen": "Un servidor mal configurado ha revelado tres campañas de phishing activas que utilizan Evilginx y el abuso del flujo OAuth Device Code para burlar el acceso a Microsoft 365, destacando la importancia de implementar medidas de seguridad adicionales como passkeys y FIDO2. Estas campañas de phishing explotan la vulnerabilidad en la configuración del servidor y el flujo de autenticación de Device Code para obtener acceso no autorizado.",
-    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM5NDM4MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/un-servidor-mal-configurado-destapa-tres-campanas-de-phishing-que-burlan-el-acceso-a-microsoft-365/?utm_source=rss&utm_medium=rss&utm_campaign=un-servidor-mal-configurado-destapa-tres-campanas-de-phishing-que-burlan-el-acceso-a-microsoft-365",
-    "fuente": "Una al Día (Hispasec)",
-    "dedup_key": "txt:un servidor mal configurado destapa tres campañas de phishing que burlan el acceso a microsoft 365",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1187",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1556.003",
-        "name": "OAuth Access Token"
-      },
-      {
-        "id": "T1114.001",
-        "name": "Email Collection: Contact Information"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/un-servidor-mal-configurado-destapa-tres-campanas-de-phishing-que-burlan-el-acceso-a-microsoft-365/"
-      ]
-    }
   },
   {
     "id": 1353,
