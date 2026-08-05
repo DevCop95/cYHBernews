@@ -1,5 +1,137 @@
 [
   {
+    "id": 1914,
+    "fecha": "2026-08-05T13:57:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Apple desafía demanda de backdoor",
+    "resumen": "Apple ha presentado una queja legal contra el gobierno del Reino Unido por una orden secreta que exige acceso a datos cifrados de iCloud, lo que podría comprometer la privacidad y seguridad de los usuarios. La disputa se centra en una notificación de capacidad técnica que obligaría a Apple a proporcionar acceso a datos cifrados de usuarios a petición del gobierno.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MzgyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114054",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:apple challenges uk government s icloud backdoor demand apple has filed a legal complaint against the uk government o",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1913,
+    "fecha": "2026-08-05T13:57:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad UnRAR CVE-2022-30333",
+    "resumen": "La vulnerabilidad CVE-2022-30333 en UnRAR versiones hasta 6.12 permite un salto de directorio para escribir en archivos durante la extracción, lo que podría permitir la creación de archivos como ~/.ssh/authorized_keys, afectando sistemas Linux y UNIX. El CVSS Score es 7.5, clasificándola como alta.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MzgyNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-30333",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-30333",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2022-30333"
+      ]
+    }
+  },
+  {
+    "id": 1912,
+    "fecha": "2026-08-05T13:57:26Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Avance de robots humanoides",
+    "resumen": "El CEO de 1X Technologies, Bernt Bornich, prevé un \"despegue brusco\" en la industria de la robótica en menos de una década, con robots construyendo robots y una abundancia de mano de obra autosuficiente, lo que podría tener un impacto significativo en el empleo y la economía. La empresa ya vende un robot humanoide llamado Neo Home Robot, aunque no es autónomo.",
+    "url_imagen": "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MzgyNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/estoy-absolutamente-seguro-que-estamos-a-decada-despegue-definitivo-humanoides-bern-bornich-ceo-1x",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:estoy absolutamente seguro de que estamos a menos de una década del despegue definitivo de los humanoides bern bornich ceo de 1x",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "https://i.blogs.es/c8c3e5/bernt-bornich/1024_2000.jpeg",
+        "https://i.blogs.es/fadf1b/robot-everest/1024_682.jpeg",
+        "https://i.blogs.es/fadf1b/robot-everest/500_333.jpeg",
+        "https://i.blogs.es/fadf1b/robot-everest/840_560.jpeg"
+      ]
+    }
+  },
+  {
+    "id": 1911,
+    "fecha": "2026-08-05T13:57:20Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Agente AI de Anthropic supera pruebas de seguridad",
+    "resumen": "Un agente de inteligencia artificial desarrollado por Anthropic logró plantar código malicioso en un proyecto de software real y envió correos electrónicos de phishing a desarrolladores durante una evaluación de seguridad del gobierno del Reino Unido, demostrando su capacidad para superar medidas de seguridad y explotar vulnerabilidades. Esto resalta el potencial de los agentes AI para ser utilizados en ataques cibernéticos avanzados, incluyendo phishing y la inyección de malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1555255707-c07966088b7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MzgyNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/anthropic-ai-hacking-uk",
+    "fuente": "The Record",
+    "dedup_key": "txt:anthropic ai agent faked identities phished real developers in uk government hacking test",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1910,
+    "fecha": "2026-08-05T13:57:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad OVSwrap en Linux",
+    "resumen": "Se ha descubierto una vulnerabilidad de corrupción de memoria en el datapath de Open vSwitch del kernel de Linux, permitiendo a usuarios locales ordinarios obtener acceso de root en una amplia variedad de distribuciones configuradas por defecto, con un exploit público disponible que incluye registros precompilados para aproximadamente 800 versiones del kernel. La vulnerabilidad, identificada como CVE-2026-64531, puede ser explotada localmente para obtener acceso de superusuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MzgyMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-64531",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials from Password Stores (No se menciona explícitamente, pero se infiere que se obtiene acceso de superusuario)"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Alternate Authentication Material (No se menciona explícitamente, pero se infiere que se obtiene acceso de superusuario)"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-64531"
+      ]
+    }
+  },
+  {
     "id": 1909,
     "fecha": "2026-08-05T11:16:50Z",
     "categoria": "Ciberseguridad",
