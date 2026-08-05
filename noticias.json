@@ -1,5 +1,159 @@
 [
   {
+    "id": 1923,
+    "fecha": "2026-08-05T19:23:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques cibernéticos a sistemas de agua",
+    "resumen": "Se han reportado ataques cibernéticos a las tecnologías de operación de utilities de agua en al menos 12 estados, ampliando el alcance de una campaña atribuida a hackers iraníes, lo que plantea riesgos significativos para la infraestructura crítica. Los vectores de ataque no se han especificado, pero el impacto potencial en la seguridad y la salud pública es considerable.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NTc4MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/iran-cyberattacks-water-treatment",
+    "fuente": "The Record",
+    "dedup_key": "txt:cyberattacks on water systems expand to 12 states as south dakota georgia announce incidents",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1922,
+    "fecha": "2026-08-05T19:23:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque de npm Worm",
+    "resumen": "Un paquete comprometido de npm, conocido como keyv/cacheable, ha sido descubierto y se ha determinado que revocar el token de npm puede activar el payload, lo que sugiere un vector de ataque sofisticado que explota la cadena de suministro, afectando a los sistemas de construcción y potencialmente a otros componentes de la infraestructura de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NTc3OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33218",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:don t revoke that token yet inside the keyv cacheable npm worm wed aug 5th",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process (se infiere por la explotación del token de npm)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1921,
+    "fecha": "2026-08-05T19:23:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades en Google APK",
+    "resumen": "Se han identificado y corregido fallos en el APK de Google para Python que permitían a un atacante explotar la confianza entre dos agentes de IA con diferentes niveles de privilegios, lo que podría comprometer la cadena de suministro a través de la automatización. Los vectores de ataque se centraban en la explotación de la frontera de confianza entre agentes para desencadenar acciones automatizadas no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NTc3OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/flaws-google-apk-python-agent-to-agent-attack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:flaws in google apk for python unlock agent to agent attack",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Authentication Data (No se menciona explícitamente, pero se puede inferir que se intenta obtener acceso no autorizado)"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1920,
+    "fecha": "2026-08-05T19:23:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware macOS en 250 dominios",
+    "resumen": "Una operación de ClickFix que abarca más de 250 dominios utiliza técnicas de fingerprinting del navegador para ocultar malware de macOS, mostrando solo a los visitantes seleccionados una página maliciosa con una oferta de descarga de software falso, lo que dificulta su detección por parte de crawlers y sandboxes. Microsoft Threat Intelligence ha estado monitoreando esta infraestructura durante semanas.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NTc3ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/over-250-clickfix-domains-use-browser.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:over 250 clickfix domains use browser fingerprinting to hide macos malware lures",
+    "ttps": [
+      {
+        "id": "T1183",
+        "name": "Técnica de evasión de detección de malware mediante fingerprinting del navegador"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1497",
+        "name": "Simulación de una página web legítima para engañar a los visitantes."
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1919,
+    "fecha": "2026-08-05T19:23:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque de phishing explota vulnerabilidad COLDCARD",
+    "resumen": "Una campaña de phishing está aprovechando los temores sobre la reciente vulnerabilidad del monedero COLDCARD y el robo de $88.6 millones en Bitcoin para engañar a los usuarios y hacer que instalen el software de acceso remoto ScreenConnect, permitiendo a los atacantes acceso no autorizado a los sistemas. El vector de ataque es el phishing, que aprovecha la ansiedad de los usuarios sobre la seguridad de sus activos digitales.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NTc3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/coldcard-security-audit-phishing-attack-installs-remote-access-tool/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:coldcard security audit phishing attack installs remote access tool",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services (se menciona el acceso remoto a través de ScreenConnect)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1918,
     "fecha": "2026-08-05T16:28:48Z",
     "categoria": "Ciberseguridad",
@@ -2657,20 +2811,6 @@
         "https://www.wsj.com/tech/ai/mark-zuckerberg-says-u-s-should-accelerate-ai-development-not-restrict-it-3bbe0868?mod=tech_lead_story"
       ]
     }
-  },
-  {
-    "id": 1822,
-    "fecha": "2026-08-01T10:37:47Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataques cibernéticos a sistemas de agua",
-    "resumen": "Sistemas de agua de 7 estados han sido afectados por ataques cibernéticos que se cree están relacionados con Irán, destacando la vulnerabilidad de la infraestructura crítica ante amenazas externas. Además, el FBI está explorando el uso de tecnologías basadas en IA para detectar futuros delitos.",
-    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1ODA2Njd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/security-news-this-week-7-states-water-systems-hit-by-cyberattacks-likely-tied-to-iran/",
-    "fuente": "Wired Security",
-    "dedup_key": "txt:7 states water systems hit by cyberattacks likely tied to iran",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 1821,
