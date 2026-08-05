@@ -1,5 +1,134 @@
 [
   {
+    "id": 1928,
+    "fecha": "2026-08-05T22:08:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Telcos chinas en EE.UU.",
+    "resumen": "Empresas de telecomunicaciones chinas mantienen una presencia profunda en la infraestructura de internet en EE.UU., a pesar de sus vínculos con campañas de hacking chinas anteriores, según un informe de un comité de la Cámara de Representantes, lo que plantea riesgos potenciales de seguridad cibernética. Esto sugiere que estas empresas podrían seguir siendo vectores de ataque para actividades de ciberespionaje o sabotaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Njc3MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/chinese-hackers-telecoms-house",
+    "fuente": "The Record",
+    "dedup_key": "txt:chinese telcos maintain deep us presence despite salt typhoon links house committee says",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1927,
+    "fecha": "2026-08-05T22:08:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenaza CSS en buzones",
+    "resumen": "Investigadores alertan que CSS, originalmente utilizado para diseño, ahora puede ser utilizado para exfiltrar datos de webmail, aprovechando vulnerabilidades en algunos proveedores que no están preparados para contrarrestar este tipo de ataques. El impacto real incluye el riesgo de brechas de datos y la necesidad de actualizaciones de seguridad para proteger la privacidad de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Njc2OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/css-hidden-threat-lurking-inbox",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:css the hidden threat lurking in your inbox",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1926,
+    "fecha": "2026-08-05T22:08:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "OpenAI Desmantela Red de Estafas",
+    "resumen": "OpenAI ha desmantelado una red de estafas con base en Camboya que utilizaba su chatbot de inteligencia artificial generativa ChatGPT para facilitar diversas estafas de inversión, romance, juegos de azar y suplantación de autoridades. La red, probablemente originaria del sudeste asiático y operando desde la ciudad de Poipet, fue desactivada al prohibir una serie de cuentas de ChatGPT coordinadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Njc2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/openai-disrupts-poipet-scam-network.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai disrupts poipet scam network using chatgpt across multiple fraud schemes",
+    "ttps": [
+      {
+        "id": "T1586.001",
+        "name": "Masquerading: Prependizaje de modelos de lenguaje para engaño"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning: Es probable que la red de estafas haya realizado algún tipo de exploración activa para identificar y explotar vulnerabilidades en los usuarios de ChatGPT."
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise: No se menciona explícitamente, pero se puede inferir que la red de estafas podría haber utilizado técnicas de compromiso de navegadores para infectar dispositivos de las víctimas."
+      },
+      {
+        "id": "T1556",
+        "name": "Initial Access: La red de estafas utilizó cuentas de ChatGPT para obtener acceso inicial a las víctimas y comenzar sus"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1925,
+    "fecha": "2026-08-05T22:08:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque a Snowflake: robo de datos",
+    "resumen": "Un hombre canadiense se declaró culpable de acceder a cuentas de empresas en el proveedor de almacenamiento en la nube Snowflake y robar datos de al menos 165 organizaciones, con el objetivo de extorsionar a las víctimas por millones de dólares, lo que pone de relieve la importancia de la seguridad en la nube y la protección de datos contra ataques de phishing y malware. El ataque aprovechó vulnerabilidades en la configuración de seguridad de las cuentas de las empresas para obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Njc2ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/canadian-pleads-guilty-to-snowflake-cloud-data-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:canadian pleads guilty to snowflake cloud data theft attacks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1924,
+    "fecha": "2026-08-05T22:07:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ciberataques en verano",
+    "resumen": "La combinación de la reducción de personal y la implementación de soluciones de IA durante el verano puede elevar el riesgo de ciberataques, especialmente en sectores con alta actividad estacional como el turismo y la logística, donde los ciberdelincuentes pueden aprovecharse de la menor vigilancia y los cambios operativos. Los vectores de ataque pueden incluir phishing, malware y ataques de denegación de servicio (DDoS) dirigidos a infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Njc2Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-y-la-reduccion-de-personal-elevan-el-riesgo-de-ciberataques-en-verano/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia y la reducción de personal elevan el riesgo de ciberataques en verano",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1923,
     "fecha": "2026-08-05T19:23:22Z",
     "categoria": "Ciberseguridad",
