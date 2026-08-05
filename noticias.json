@@ -1,5 +1,111 @@
 [
   {
+    "id": 1909,
+    "fecha": "2026-08-05T11:16:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Zimbra",
+    "resumen": "La vulnerabilidad CVE-2022-27924, con una puntuación CVSS de 7.5, permite a un atacante no autenticado inyectar comandos arbitrarios de memcache en instancias de Zimbra Collaboration, lo que puede causar sobreescritura de entradas arbitrarias en la caché. Esto afecta las versiones 8.8.15 y 9.0 de Zimbra Collaboration.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Mjg2MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-27924",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-27924",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-27924"
+      ]
+    }
+  },
+  {
+    "id": 1908,
+    "fecha": "2026-08-05T11:16:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades en Dispositivos Anti-Robo de Autos",
+    "resumen": "Un equipo de investigadores de seguridad de la Universidad de California en San Diego descubrió que el sistema de alarma de autos KARR Security System, instalado en más de 2 millones de vehículos en los EE. UU., presenta vulnerabilidades que permiten a cualquier atacante dentro del rango de Bluetooth enviar comandos de radio para desbloquear silenciosamente el auto, apagar la alarma, hacer sonar la bocina o incluso deshabilitar el encendido, dejando al conductor varado. El vector de ataque es a través de la conexión Bluetooth.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Mjg2MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/vulnerabilities-in-car-anti-theft-device.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:vulnerabilities in car anti theft device",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "Interceptación de Comunicaciones Bluetooth"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.wired.com"
+      ]
+    }
+  },
+  {
+    "id": 1907,
+    "fecha": "2026-08-05T11:16:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Extensiones maliciosas en Open VSX",
+    "resumen": "Se han detectado 77 extensiones maliciosas en el mercado Open VSX que imitan herramientas de desarrollo legítimas, exfiltrando información sobre los sistemas y entornos de desarrollo en los que se instalaron, aprovechando la confianza de los desarrolladores para recopilar datos sensibles. Las extensiones fueron subidas entre el 26 de julio y el 1 de agosto de 2026 y han sido eliminadas del repositorio.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Mjg1OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/open-vsx-removes-77-malicious-evil-twin.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:open vsx removes 77 malicious evil twin extensions exfiltrating developer data",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1906,
+    "fecha": "2026-08-05T11:16:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware en Steam",
+    "resumen": "Un cibercriminal distribuyó malware a través de videojuegos en Steam, infectando más de 8.000 equipos, lo que destaca los límites de los controles de seguridad en plataformas confiables y la necesidad de verificar los archivos descargados. El vector de ataque aprovechó la confianza en plataformas oficiales para propagar el malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Mjg1OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/fbi-arresto-malware-steam-juegos-infectados/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:un arresto del fbi demuestra que ni steam ni las plataformas oficiales son infalibles",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1905,
     "fecha": "2026-08-05T08:28:45Z",
     "categoria": "Ciberseguridad",
@@ -11467,41 +11573,6 @@
     }
   },
   {
-    "id": 1470,
-    "fecha": "2026-07-18T13:04:30Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware en Steam",
-    "resumen": "Un juego llamado BlockBlasters en Steam resultó ser malware, utilizado para drenar criptomonedas, incluyendo un incidente notorio que afectó a un paciente con cáncer terminal. El malware se disfrazó de un juego legítimo para llevar a cabo ataques de criptojacking.",
-    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQzNzk4NzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9156",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:maybe a year ago i don t remember a game appeared on steam called blockblasters blockblasters was actually malware",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1496",
-        "name": "Resource Hijacking"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion no se menciona explícitamente, pero se puede inferir T1496 como una forma de criptojacking que implica el uso de recursos del sistema para minar criptomonedas."
-      },
-      {
-        "id": "T1496",
-        "name": "Resource Hijacking se menciona como criptojacking, pero también se puede considerar como T1496, por lo que se puede reemplazar con T1496 y agregar T1497 no es necesario, en su lugar se puede agregar"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 1469,
     "fecha": "2026-07-18T13:04:23Z",
     "categoria": "Ciberseguridad",
@@ -15239,41 +15310,6 @@
         "CVE-2026-9282"
       ]
     }
-  },
-  {
-    "id": 1314,
-    "fecha": "2026-07-11T07:47:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad crítica en Zimbra",
-    "resumen": "Se ha descubierto una vulnerabilidad de stored cross-site scripting (XSS) en el Classic Web Client de Zimbra, que permite la ejecución de código arbitrario a través de correos electrónicos especialmente diseñados, lo que podría permitir la ejecución de scripts maliciosos en la sesión del usuario. La vulnerabilidad aún no tiene un identificador CVE asignado.",
-    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:critical zimbra flaw could let crafted emails run malicious code in user sessions",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Spearphishing Attachment no se menciona explícitamente, pero se puede inferir que se utiliza un correo electrónico especialmente diseñado para explotar la vulnerabilidad, lo que se relaciona con la técnica de T1566 - Phishing, específicamente:"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1059.007",
-        "name": "JavaScript"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 1313,
