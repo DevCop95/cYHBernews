@@ -1,5 +1,111 @@
 [
   {
+    "id": 1902,
+    "fecha": "2026-08-05T05:41:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-18898",
+    "resumen": "Se ha descubierto una vulnerabilidad en el dispositivo UTT HiPER 1200GW versión v2.5.3-170306, que permite un desbordamiento de buffer en la pila debido a la manipulación del argumento timestart en la función strcpy del archivo /goform/ConfigAdvideo, lo que puede ser explotado de forma remota. La explotación ya ha sido publicada y puede ser utilizada para ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MDg1MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/237051",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-18898",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-18898"
+      ]
+    }
+  },
+  {
+    "id": 1901,
+    "fecha": "2026-08-05T05:41:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Carga masiva de malware en VXUG",
+    "resumen": "Se ha subido un gran cantidad de malware, aproximadamente 150,000, a la plataforma VXUG, lo que puede ser utilizado para análisis y estudios de seguridad, pero también plantea riesgos de exposición a amenazas cibernéticas. La carga de este malware puede ser utilizada para mejorar las herramientas de seguridad y la detección de amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MDg1MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9257",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:hi more malware has been uploaded to vxug it s like 150 000 malwares or something i also uploaded more malware an",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1900,
+    "fecha": "2026-08-05T05:41:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad WinRAR CVE-2023-38831",
+    "resumen": "La vulnerabilidad CVE-2023-38831 en WinRAR (versión anterior a 6.23) permite la ejecución de código arbitrario cuando un usuario intenta ver un archivo dentro de un archivo ZIP malicioso, lo que se ha explotado activamente entre abril y octubre de 2023. El vector de ataque se basa en la inclusión de una carpeta con el mismo nombre que un archivo benigno en el archivo ZIP, permitiendo el procesamiento de contenido ejecutable.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MDg1MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-38831",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-38831",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-38831"
+      ]
+    }
+  },
+  {
+    "id": 1899,
+    "fecha": "2026-08-05T05:41:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades en Omada ZTP",
+    "resumen": "TP-Link ha parcheado 15 vulnerabilidades en el mecanismo de provisionamiento sin intervención (ZTP) de sus dispositivos de red Omada, que podrían ser encadenadas con fallos previamente divulgados para lograr la ejecución remota de código (RCE), permitiendo a los atacantes infiltrarse en las redes. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para obtener acceso no autorizado a la red.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5MDg1MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/tp-link-patches-omada-ztp-flaws-allowing-hackers-to-breach-networks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:tp link patches omada ztp flaws allowing hackers to breach networks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1898,
     "fecha": "2026-08-05T02:03:31Z",
     "categoria": "Ciberseguridad",
