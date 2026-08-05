@@ -1,5 +1,98 @@
 [
   {
+    "id": 1918,
+    "fecha": "2026-08-05T16:28:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Aplicación falsa de defensa civil",
+    "resumen": "Se ha descubierto una aplicación falsa que se hace pasar por la aplicación oficial de defensa civil de Bahrein, con posibles intenciones maliciosas como phishing o malware. El análisis técnico revela detalles sobre la estructura y el comportamiento de la aplicación, incluyendo vectores de ataque potenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NDczMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2943",
+    "fuente": "TG: Android Malware",
+    "dedup_key": "txt:octagon technical analysis of a fake bahrain civil defense application https labs k7computing com index php octago",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "labs.k7computing.com"
+      ],
+      "url": [
+        "https://labs.k7computing.com/index.php/octago...",
+        "https://labs.k7computing.com/index.php/octagon-technical-analysis-of-a-fake-bahrain-civil-defense-application/"
+      ]
+    }
+  },
+  {
+    "id": 1917,
+    "fecha": "2026-08-05T16:28:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en IBM WebSphere",
+    "resumen": "Se ha identificado una vulnerabilidad de ejecución de código remoto (RCE) en IBM WebSphere Application Server - Liberty, afectando versiones 17.0.0.3 a 26.0.0.8 con la característica collectiveController-1.0 habilitada, permitiendo a atacantes ejecutar código arbitrario de manera remota. El vector de ataque se basa en la explotación de esta vulnerabilidad, catalogada como CVE-2026-14976.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NDczMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/237755",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-14976",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "17.0.0.3",
+        "26.0.0.8"
+      ],
+      "cve": [
+        "CVE-2026-14976"
+      ]
+    }
+  },
+  {
+    "id": 1916,
+    "fecha": "2026-08-05T16:28:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en De Bijenkorf",
+    "resumen": "La cadena de lujo holandesa De Bijenkorf informó que los datos de sus clientes podrían haber sido expuestos debido a un incidente cibernético que afectó a uno de sus proveedores de logística de terceros, lo que sugiere un posible vector de ataque a través de la cadena de suministro. El incidente puede tener un impacto significativo en la privacidad digital de los clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NDczMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/de-bijenkorf-luxury-retailer-third-party-cyber-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:dutch retailer de bijenkorf warns customer data may be exposed after cyber incident",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1915,
+    "fecha": "2026-08-05T16:28:29Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Acceso ilegal a modelos de lenguaje AI",
+    "resumen": "Investigadores de ciberseguridad han descubierto servicios que ofrecen acceso ilegal a modelos de lenguaje de inteligencia artificial (AI) en foros y plataformas de mensajería clandestinos, incluyendo \"Poison Claude\", que afirma ofrecer acceso a modelos de Anthropic, lo que plantea riesgos de seguridad y privacidad. Los operadores de estos servicios pueden tener acceso a todos los prompts de los clientes, lo que aumenta el riesgo de ataques de phishing y otros vectores de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219345-06ea2bf3eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5NDczMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:poison claude sells discounted claude access while its operator sees every customer prompt",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1056",
+        "name": "Input Capture"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1914,
     "fecha": "2026-08-05T13:57:37Z",
     "categoria": "Ciberseguridad",
