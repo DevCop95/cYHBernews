@@ -1,5 +1,122 @@
 [
   {
+    "id": 1948,
+    "fecha": "2026-08-06T11:17:48Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Nvidia invierte en IA fotónica",
+    "resumen": "Nvidia ha invertido 4.000 millones en tecnologías de inteligencia artificial, incluyendo la plataforma Vera Rubin y la tecnología de óptica coempaquetada (CPO), que busca mejorar la velocidad y densidad de los chips de cómputo para centros de datos de nueva generación. La CPO integra componentes fotónicos directamente en el chip de cómputo, permitiendo una mayor velocidad y eficiencia en la transmisión de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937804-e6b9e0c683f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMTUwNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/componentes/nvidia-gasto-4-000-millones-para-cambiar-paradigma-ia-acaba-activar-su-plan-para-seguir-liderando-sector",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nvidia gastó 4 000 millones para cambiar el paradigma de la ia acaba de activar su plan para seguir liderando el sector",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.chaincatcher.com",
+        "www.xataka.com",
+        "xenospectrum.com"
+      ],
+      "url": [
+        "https://i.blogs.es/7fc453/china/375_142.jpeg",
+        "https://i.blogs.es/8085ff/laura-ockel-qox9ksvpqcm-unsplash/1024_2000.jpeg",
+        "https://i.blogs.es/bfd1e8/imec-ap/375_142.jpeg",
+        "https://i.blogs.es/f48a2d/fotonica/1024_682.jpeg",
+        "https://i.blogs.es/f48a2d/fotonica/500_333.jpeg",
+        "https://i.blogs.es/f48a2d/fotonica/840_560.jpeg",
+        "https://unsplash.com/es/fotos/patron-cuadrado-rosa-verde-y-azul-qOx9KsvpqcM",
+        "https://www.chaincatcher.com/en/article/2279962",
+        "https://xenospectrum.com/en/lumentum-inp-ai-optics-shortage/"
+      ]
+    }
+  },
+  {
+    "id": 1947,
+    "fecha": "2026-08-06T11:17:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "DHS busca chats de Signal",
+    "resumen": "El Departamento de Seguridad Nacional (DHS) está intentando acceder a chats de Signal de manifestantes, lo que ha generado una demanda por violación de derechos de libre expresión, y plantea preocupaciones sobre la privacidad digital y el acceso a comunicaciones cifradas. El DHS busca obtener acceso a estos chats como parte de una investigación, utilizando métodos que podrían considerarse como una vulneración de la privacidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMTUwNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/dhs-wants-protesters-signal-group-chats/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:dhs wants protesters signal group chats",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1946,
+    "fecha": "2026-08-06T11:17:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque SSH en 22 segundos",
+    "resumen": "Un análisis detallado de actores automatizados que utilizan SSH para comprometer sistemas en un plazo extremadamente corto, demostrando la velocidad a la que pueden establecer una persistencia maliciosa, destacando la importancia de la seguridad proactiva y la monitorización constante de los intentos de login. Los actores pueden moverse desde el login hasta la persistencia en menos de 22 segundos, lo que subraya la necesidad de implementar medidas de seguridad robustas para prevenir ataques de este tipo.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMTUwNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33220",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:22 seconds to compromise how automated ssh actors move from login to persistence before you can blink x5b guest diary x5d thu aug 6th",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Stealthy Malware (se infiere la capacidad de establecer persistencia maliciosa)"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1945,
+    "fecha": "2026-08-06T11:17:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ropa adversaria engaña sistemas de reconocimiento facial",
+    "resumen": "Se están desarrollando ropa y patrones diseñados para confundir a los sistemas de reconocimiento facial, aunque su eficacia es cuestionable y puede ser considerada como \"teatro de seguridad\" sin pruebas exhaustivas. Estos productos pueden ser vistos como una forma de resistencia visible contra la vigilancia, pero no deben ser considerados como una solución segura contra el reconocimiento facial.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMTUwNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/adversarial-clothing-designed-to-fool-facial-recognition-systems.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:adversarial clothing designed to fool facial recognition systems",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.theguardian.com"
+      ],
+      "url": [
+        "https://www.theguardian.com/fashion/2026/jul/17/adversarial-clothing-are-garments-designed-to-confuse-facial-recognition-systems-about-to-go-mainstream"
+      ]
+    }
+  },
+  {
+    "id": 1944,
+    "fecha": "2026-08-06T11:17:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades en TP-Link",
+    "resumen": "Se han identificado 15 vulnerabilidades en dispositivos TP-Link que ponen en riesgo la provisión de confianza cero, destacando los peligros inherentes a la configuración automática de dispositivos de red. Estas vulnerabilidades podrían permitir ataques de tipo zero-day, afectando la seguridad de la red.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMTUwNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/15-tp-link-bugs-risks-zero-trust-provisioning",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:15 tp link bugs expose risks in zero trust provisioning",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1943,
     "fecha": "2026-08-06T08:27:25Z",
     "categoria": "Ciberseguridad",
