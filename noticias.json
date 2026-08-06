@@ -1,5 +1,125 @@
 [
   {
+    "id": 1938,
+    "fecha": "2026-08-06T05:43:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en navegador de OpenAI",
+    "resumen": "Investigadores de la firma de seguridad Zenity descubrieron más de una docena de fallos en navegadores de IA, permitiendo el secuestro del navegador de OpenAI para spam a contactos de WhatsApp, e incluso realizar una compra no autorizada en Amazon a través de Atlas. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para comprometer la privacidad y seguridad de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5OTUwMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/openais-browser-could-be-hijacked-to-spam-your-whatsapp-contacts/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:openai s browser could be hijacked to spam your whatsapp contacts",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Application Access Token"
+      },
+      {
+        "id": "T1557.001",
+        "name": "Phishing: Spearphishing Attachment no es aplicable en este caso, pero T1557 - Phishing es relevante"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1937,
+    "fecha": "2026-08-06T05:43:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Navegadores AI",
+    "resumen": "Se ha descubierto una vulnerabilidad de zero-click en navegadores AI que permite a atacantes tomar el control de agentes a través de instrucciones maliciosas ocultas en el contenido suministrado, lo que representa un riesgo significativo para la seguridad de los usuarios. El vector de ataque se basa en la ejecución de código malicioso sin la necesidad de interacción del usuario, lo que la hace particularmente peligrosa.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5OTUwMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-browsers-zero-click-agent-hijacking",
+    "fuente": "Dark Reading (Fallback)",
+    "dedup_key": "txt:ai browsers vulnerable to pleasefix zero click agent hijacking",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1936,
+    "fecha": "2026-08-06T05:43:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades críticas en Veeam y Terraform",
+    "resumen": "Se han parcheado 11 vulnerabilidades en Terraform MCP Server, Veeam Service Provider Console y Django, incluyendo una falla no autenticada en Veeam con una calificación de 9,5 en la escala CVSS y una falla cross-tenant en HashiCorp's MCP server con una calificación de 10,0. Estas vulnerabilidades podrían permitir el acceso no autorizado a credenciales y tokens de Terraform.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5OTUwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/veeam-terraform-mcp-django-patch.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:veeam terraform mcp django patch critical flaws led by cvss 10 0 cross tenant bug",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1935,
+    "fecha": "2026-08-06T05:43:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque a base de datos Oracle",
+    "resumen": "Hackers explotaron una vulnerabilidad de inyección de SQL para instalar una herramienta de post-explotación dentro de una base de datos Oracle, lo que les permitió comprometer una red corporativa. El ataque aprovechó una vulnerabilidad para acceder a la base de datos y luego utilizarla como punto de entrada para el malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5OTUwMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-run-khunt-post-exploitation-toolkit-from-oracle-database/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers run khunt post exploitation toolkit from oracle database",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Unconventional Password Brute Force (no se menciona explícitamente, pero se infiere que hubo un acceso no autorizado)"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1934,
+    "fecha": "2026-08-06T05:43:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fallo en COLDCARD expone bitcoin",
+    "resumen": "Un defecto en el firmware de COLDCARD degradó la aleatoriedad al generar frases semilla, lo que permitió un robo de 1.082,65 BTC en 41 minutos mediante barridos masivos de direcciones de Bitcoin. Las semillas creadas con versiones vulnerables deben considerarse expuestas y requieren migración de fondos.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5OTUwMTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-fallo-en-las-semillas-de-coldcard-se-vincula-a-un-robo-de-mas-de-1-000-bitcoin-en-41-minutos/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-en-las-semillas-de-coldcard-se-vincula-a-un-robo-de-mas-de-1-000-bitcoin-en-41-minutos",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:un fallo en las semillas de coldcard se vincula a un robo de más de 1 000 bitcoin en 41 minutos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/un-fallo-en-las-semillas-de-coldcard-se-vincula-a-un-robo-de-mas-de-1-000-bitcoin-en-41-minutos/"
+      ]
+    }
+  },
+  {
     "id": 1933,
     "fecha": "2026-08-06T02:07:27Z",
     "categoria": "IA",
