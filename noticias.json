@@ -1,5 +1,100 @@
 [
   {
+    "id": 1958,
+    "fecha": "2026-08-06T23:54:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque cibernético en puertos de Carolina del Norte",
+    "resumen": "Un ataque cibernético ha afectado los sistemas de TI de North Carolina Ports, obligando a la transición a procesos manuales, con la Guardia Costera y funcionarios estatales investigando el incidente para determinar el vector de ataque y el impacto real. El ataque ha sido contenido, pero se desconoce la naturaleza exacta del ataque y si involucra malware, ransomware o técnicas de phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjA0NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cyberattack-north-carolina-ports",
+    "fuente": "The Record",
+    "dedup_key": "txt:cyberattack on north carolina ports contained as coast guard state officials investigate",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1957,
+    "fecha": "2026-08-06T23:54:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brecha de coordinación",
+    "resumen": "La lucha contra el ciberdelito continúa debido a que los actores amenazantes han adaptado sus estrategias para evadir los mecanismos disuasivos, mientras que las fuerzas del orden siguen operando en silos, lo que permite a los atacantes mantener una ventaja en la ciberseguridad. Esto se debe a la falta de coordinación efectiva entre las agencias de seguridad y la necesidad de una respuesta más integrada para combatir el ciberdelito.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjA0NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/coordination-gap-attackers-outpacing-law-enforcement",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:the coordination gap how attackers are outpacing law enforcement",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1956,
+    "fecha": "2026-08-06T23:54:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Zapscape en KVM",
+    "resumen": "Se ha descubierto una nueva vulnerabilidad en el kernel de Linux, conocida como Zapscape, que permite a un atacante con privilegios de kernel dentro de una máquina virtual (VM) L1 escapar de la isolación KVM y ejecutar código en el host, afectando la unidad de gestión de memoria (MMU) de sombra de KVM/x86. La vulnerabilidad, trackeada como CVE-2026-64561, puede ser explotada cuando la virtualización anidada está expuesta a invitados no confiables.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjA0NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-64561",
+    "ttps": [
+      {
+        "id": "T1211",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Known Vulnerabilities"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-64561"
+      ]
+    }
+  },
+  {
+    "id": 1955,
+    "fecha": "2026-08-06T23:54:14Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Actualización de ChatGPT",
+    "resumen": "OpenAI lanza una versión más confiable de ChatGPT, GPT-5.6 Sol, para usuarios Plus y Pro, mientras que los usuarios gratuitos obtienen chats de texto ilimitados con GPT-5.6 Luna, mejorando la experiencia del modelo de lenguaje. Esto puede tener un impacto en la ciberseguridad al potencialmente aumentar la efectividad de ataques de phishing o ingeniería social que utilicen la IA para generar contenido persuasivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330389517-e414cbea868c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjA0NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-rolls-out-a-major-chatgpt-upgrade-even-if-you-dont-pay-for-it/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai rolls out a major chatgpt upgrade even if you don t pay for it",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1954,
+    "fecha": "2026-08-06T23:54:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Aumento 81% estafas online",
+    "resumen": "Se ha registrado un aumento del 81% en las estafas por falsas tiendas online en España, lo que indica un incremento en los ataques de phishing y engaño a través de plataformas en línea, afectando la seguridad digital de los ciudadanos. Los atacantes están aprovechando la confianza en partes confiables para llevar a cabo estas estafas.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjA0NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/espana-registra-un-aumento-del-81-en-las-estafas-por-falsas-tiendas-online/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:españa registra un aumento del 81 en las estafas por falsas tiendas online",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1953,
     "fecha": "2026-08-06T13:54:50Z",
     "categoria": "Ciberseguridad",
@@ -4663,29 +4758,6 @@
     "fuente": "The Record",
     "dedup_key": "txt:semiconductor chip titan analog devices reports data breach",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1772,
-    "fecha": "2026-07-30T22:07:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataques cibernéticos a utilities de agua",
-    "resumen": "Un actor apoyado por Irán ha lanzado ataques cibernéticos contra más de 30 sistemas de agua comunitarios en Minnesota, destacando los crecientes riesgos cibernéticos para la infraestructura crítica de EE. UU., lo que pone de relieve la necesidad de mejorar la seguridad cibernética en el sector. Los vectores de ataque no se han especificado, pero es probable que incluyan técnicas de phishing o exploits de vulnerabilidades conocidas.",
-    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU0NDkyNjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/ics-ot-security/minnesota-water-utility-attacks-expose-sector-cyber-risks",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:minnesota water utility attacks expose sector s cyber risks",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
     "iocs": {}
   },
   {
