@@ -1,5 +1,175 @@
 [
   {
+    "id": 1953,
+    "fecha": "2026-08-06T13:54:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CSRF en Hubzilla",
+    "resumen": "Se ha detectado una vulnerabilidad de cross-site request forgery (CSRF) en el endpoint de autorización OAuth2 de Hubzilla 11.2.1, que permite a atacantes no autenticados registrar aplicaciones OAuth2 arbitrarias bajo la cuenta de un usuario autenticado. Los atacantes pueden crear un formulario HTML malicioso que envía automáticamente parámetros OAuth2 elegidos por el atacante, lo que permite la interceptación de códigos de autorización OAuth2 futuros.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMjQ0OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/238692",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-70556",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1185",
+        "name": "Pre-OS Boot: Bootkit"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-70556"
+      ]
+    }
+  },
+  {
+    "id": 1952,
+    "fecha": "2026-08-06T13:54:44Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA sustituye trabajos en China",
+    "resumen": "La implementación de la inteligencia artificial (IA) en ciudades chinas ha comenzado a reemplazar a trabajadores en varios sectores, como los taxistas, cuyos ingresos han disminuido significativamente desde la introducción de vehículos autónomos. Esto muestra el impacto real de la IA en el mercado laboral, donde la automatización puede reducir la necesidad de mano de obra humana en ciertas industrias.",
+    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMjQ0ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/magnet/pregunta-ia-te-va-a-quitar-trabajo-muchos-trabajadores-china-conocen-respuesta-peor-forma",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:si la pregunta es si la ia te va a quitar el trabajo muchos trabajadores de china ya conocen la respuesta de la peor forma",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "commons.wikimedia.org",
+        "platform.instagram.com",
+        "www.cnbc.com",
+        "www.rawpixel.com",
+        "www.reuters.com",
+        "www.theguardian.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://commons.wikimedia.org/wiki/User:User3204",
+        "https://i.blogs.es/3d4d11/satya-nadella/375_142.jpeg",
+        "https://i.blogs.es/609e26/guangzhou_yellow_taxi/1024_2000.jpeg",
+        "https://i.blogs.es/609e26/guangzhou_yellow_taxi/1366_2000.jpeg",
+        "https://i.blogs.es/609e26/guangzhou_yellow_taxi/450_1000.jpeg",
+        "https://i.blogs.es/609e26/guangzhou_yellow_taxi/650_1200.jpeg",
+        "https://i.blogs.es/8dfef6/ia/375_142.jpeg",
+        "https://i.blogs.es/de3f38/image-from-rawpixel-id-6111650-original/1024_2000.jpeg",
+        "https://www.cnbc.com/2024/07/11/chinas-robotaxi-push-sparks-concerns-about-job-security-for-drivers.html",
+        "https://www.rawpixel.com/image/6111650/chinese-factory-workers-china-october-2015",
+        "https://www.reuters.com/business/world-at-work/china-pins-hopes-society-wide-ai-push-add-jobs-rejuvenate-economy-2026-03-10/",
+        "https://www.theguardian.com/technology/2026/apr/01/system-malfunction-causes-robotaxis-to-stall-in-the-middle-of-the-road-in-china",
+        "https://www.theguardian.com/world/2026/jul/31/china-ai-jobs-workers-labour-market-technology"
+      ]
+    }
+  },
+  {
+    "id": 1951,
+    "fecha": "2026-08-06T13:54:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Técnicas de hacking AI más peligrosas",
+    "resumen": "Un investigador de seguridad descubrió que la combinación de inteligencia artificial (AI) con la experiencia humana puede ser extremadamente efectiva en técnicas de hacking, destacando la importancia de la intervención humana en los ataques cibernéticos. Esto sugiere que los vectores de ataque más efectivos pueden surgir de la colaboración entre la AI y los expertos en seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMjQ0Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/the-most-dangerous-ai-hacking-techniques-still-have-human-input/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the most dangerous ai hacking techniques still have humans in the loop",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1950,
+    "fecha": "2026-08-06T13:54:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "PLCs de Rockwell expuestas en línea",
+    "resumen": "Se han detectado más de 4.400 controladores lógicos programables (PLCs) de Rockwell Automation expuestos en línea, con 22 de ellos ubicados en ciudades que han sufrido recientes ciberataques en utilities de agua en EE. UU., lo que sugiere un posible vector de ataque a través de la exposición de dispositivos industriales. Los dispositivos expuestos podrían ser vulnerables a ataques de ciberseguridad, como exploits de día cero o malware dirigido a sistemas de control industrial.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMjQ0NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/over-4400-rockwell-plcs-exposed-online.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:over 4 400 rockwell plcs exposed online 22 found in water attack cities",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1505",
+        "name": "Compromiso de Dispositivos de Red"
+      },
+      {
+        "id": "T1552",
+        "name": "Exploit de Dispositivos de Red (posible malware dirigido a sistemas de control industrial)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1949,
+    "fecha": "2026-08-06T13:54:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Inyección SQL en Oracle",
+    "resumen": "Una cadena de intrusión observada en ataques reales muestra cómo una inyección SQL en Oracle Database puede terminar en ejecución de comandos en Windows con privilegios de SYSTEM, aprovechando la capacidad de Oracle para cargar y compilar Java dentro del motor de la base de datos. Esto amplía la superficie de ataque y permite a los atacantes ejecutar comandos con altos privilegios en el sistema operativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMjQ0Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/una-inyeccion-sql-en-oracle-se-convierte-en-ejecucion-como-system-en-windows-con-java-dentro-de-la-base-de-datos/?utm_source=rss&utm_medium=rss&utm_campaign=una-inyeccion-sql-en-oracle-se-convierte-en-ejecucion-como-system-en-windows-con-java-dentro-de-la-base-de-datos",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:una inyección sql en oracle se convierte en ejecución como system en windows con java dentro de la base de datos",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/una-inyeccion-sql-en-oracle-se-convierte-en-ejecucion-como-system-en-windows-con-java-dentro-de-la-base-de-datos/"
+      ]
+    }
+  },
+  {
     "id": 1948,
     "fecha": "2026-08-06T11:17:48Z",
     "categoria": "IA",
@@ -3784,20 +3954,6 @@
         "CVE-2013-0335"
       ]
     }
-  },
-  {
-    "id": 1806,
-    "fecha": "2026-07-31T22:00:39Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataques a sistemas de agua",
-    "resumen": "La Agencia de Seguridad Cibernética y de Infraestructura (CISA) emitió una alerta pública sobre un aumento en los ataques a sistemas de agua, recomendando a las instalaciones eliminar los controladores lógicos programables (PLCs) y otra tecnología de operación (OT) expuesta públicamente de internet lo antes posible. Esto se debe a incidentes recientes en Minnesota que están siendo investigados, lo que sugiere un vector de ataque a través de la exposición de sistemas OT a internet.",
-    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU1MzUyMzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/cisa-warns-of-spike-in-water-system-attacks",
-    "fuente": "The Record",
-    "dedup_key": "txt:cisa warns of spike in attacks on water systems as minnesota incidents probed",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 1805,
