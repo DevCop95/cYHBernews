@@ -1,5 +1,107 @@
 [
   {
+    "id": 1974,
+    "fecha": "2026-08-07T09:56:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Kernel de Linux",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2021-3483) en el controlador Nosy del kernel de Linux, que permite el uso de memoria previamente liberada, afectando la confidencialidad, integridad y disponibilidad del sistema, con un CVSS Score de 7.8 (HIGH). Las versiones del kernel anteriores a 5.12-rc6 están afectadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwOTY2MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-3483",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-3483",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2021-3483"
+      ]
+    }
+  },
+  {
+    "id": 1973,
+    "fecha": "2026-08-07T09:56:54Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ato: Dispositivo de IA para Mayores",
+    "resumen": "Ato es un dispositivo de IA diseñado para personas mayores que no se han adaptado a la tecnología, permitiéndoles comunicarse de forma sencilla a través de la voz sin necesidad de pantallas ni configuraciones complejas. El dispositivo busca combatir la soledad y el aislamiento en este sector de la población.",
+    "url_imagen": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwOTY2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/empezo-como-experimento-para-su-abuelo-hoy-se-trata-uno-dispositivos-ia-curiosos-para-personas-mayores-asi-ato",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:empezó como un experimento para su abuelo y hoy se trata de uno de los dispositivos de ia más curiosos para personas mayores así es ato",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.infobae.com",
+        "www.tiktok.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://heyato.ai/es",
+        "https://i.blogs.es/26d130/captura-de-pantalla-2026-08-05-a-las-17.05.49/1024_2000.png",
+        "https://i.blogs.es/c8c3e5/bernt-bornich/375_142.jpeg",
+        "https://i.blogs.es/f6c44d/66db12e54dda07c2a46b294b157554a3a4338646-8192x4736/1024_2000.jpeg",
+        "https://i.blogs.es/f6c44d/66db12e54dda07c2a46b294b157554a3a4338646-8192x4736/1366_2000.jpeg",
+        "https://i.blogs.es/f6c44d/66db12e54dda07c2a46b294b157554a3a4338646-8192x4736/450_1000.jpeg",
+        "https://i.blogs.es/f6c44d/66db12e54dda07c2a46b294b157554a3a4338646-8192x4736/650_1200.jpeg",
+        "https://www.infobae.com/generacion-silver/2026/01/09/el-joven-que-desarrollo-un-dispositivo-para-combatir-la-soledad-de-su-abuelo-hoy-trabaja-desde-silicon-valley-en-marzo-sale-a-la-venta/",
+        "https://www.tiktok.com/@todonoticias/video/7477240882127752503?"
+      ],
+      "sha1": [
+        "66db12e54dda07c2a46b294b157554a3a4338646"
+      ]
+    }
+  },
+  {
+    "id": 1972,
+    "fecha": "2026-08-07T09:56:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Atuin: Forensics de Shell Linux",
+    "resumen": "El sistema de historial de comandos en shells de Linux, como bash, presenta limitaciones en cuanto a la capacidad de registro y análisis forense, lo que puede ser abordado con herramientas como Atuin, que ofrece una forma más avanzada y segura de registrar y analizar la actividad en la shell. Esto es particularmente relevante en entornos de ciberseguridad, donde la capacidad de rastrear y analizar actividades sospechosas es crucial.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwOTY2MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33226",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:linux shell forensic let x3f s dive into atuin x21 fri aug 7th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1971,
+    "fecha": "2026-08-07T09:56:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque TONTOU evita mitigaciones Spectre v2",
+    "resumen": "Investigadores han descubierto una forma de evadir las mitigaciones recientes para los ataques de ejecución especulativa de lado de canal Spectre v2, desarrollando un exploit que puede filtrar secretos, incluyendo hashes de contraseñas de Linux, a través de un ataque de CPU. El vector de ataque aprovecha la vulnerabilidad para acceder a información confidencial en máquinas Linux.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwOTY2MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-tontou-cpu-attack-bypasses-spectre-v2-fixes-leaks-linux-password-hashes/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new tontou cpu attack bypasses spectre v2 fixes leaks linux password hashes",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se menciona el acceso a hashes de contraseñas)"
+      },
+      {
+        "id": "T1069",
+        "name": "Permission Groups Discovery (no se menciona explícitamente, pero se puede inferir que el ataque necesita conocer los permisos y grupos para acceder a la información confidencial, aunque esto es un poco ambiguo y podría no ser considerado como una TTP clara en este contexto)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1970,
     "fecha": "2026-08-07T07:07:37Z",
     "categoria": "Ciberseguridad",
