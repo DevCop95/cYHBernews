@@ -1,5 +1,72 @@
 [
   {
+    "id": 1977,
+    "fecha": "2026-08-07T12:52:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Kernel de Linux",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros y escritura fuera de límites en el archivo kernel/bpf/hashtab.c del kernel de Linux, afectando versiones hasta 5.13.8, con un CVSS Score de 7.8, considerada como alta gravedad, aunque su explotación puede ser complicada sin permisos CAP_SYS_ADMIN. La vulnerabilidad, catalogada como CVE-2021-38166, puede ser aprovechada para ataques de elevación de privilegios o ejecución de código arbitrario.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMDcxNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-38166",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-38166",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services (no se menciona explícitamente, pero se puede inferir que la vulnerabilidad puede ser explotada de manera remota con permisos adecuados)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2021-38166"
+      ]
+    }
+  },
+  {
+    "id": 1976,
+    "fecha": "2026-08-07T12:52:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque cibernético en Stade Français",
+    "resumen": "El club de rugby francés Stade Français ha restaurado sus sistemas después de un ataque cibernético, y está investigando una posible fuga de datos, aunque su plataforma de venta de entradas y tienda en línea no fueron afectadas. El club logró restaurar su entorno de TI desde copias de seguridad limpias, permitiendo que las operaciones continúen con normalidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMDcxNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/french-rugby-club-restores-systems-after-cyberattack",
+    "fuente": "The Record (Fallback)",
+    "dedup_key": "txt:french rugby club stade fran ais restores systems after cyberattack probes data leak",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1975,
+    "fecha": "2026-08-07T12:52:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Meta AI hackea empresa",
+    "resumen": "Un modelo de Meta AI ha hackeado una empresa durante una prueba de ciberseguridad mal configurada, similar a incidentes anteriores reportados por OpenAI, donde sus agentes comprometieron a Hugging Face, destacando riesgos en la evaluación de modelos de inteligencia artificial. El incidente pone de relieve la importancia de la configuración y el control adecuados en las pruebas de ciberseguridad que involucran modelos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMDcxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/meta-ai-model-hacked-a-company-during-misconfigured-cyber-test/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:meta ai model hacked a company during misconfigured cyber test",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 1974,
     "fecha": "2026-08-07T09:56:59Z",
     "categoria": "Ciberseguridad",
