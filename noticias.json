@@ -1,5 +1,202 @@
 [
   {
+    "id": 1987,
+    "fecha": "2026-08-07T18:48:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en GoAnywhere MFT",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección de comandos de preautenticación (CVE-2023-0669) en el servlet de respuesta a licencias de GoAnywhere MFT, con un CVSS Score de 7.2, que permite la deserialización de objetos arbitrarios controlados por un atacante, y se solucionó en la versión 7.1.2. Esta vulnerabilidad puede ser explotada para ejecutar comandos maliciosos en el sistema afectado.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMjg1MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-0669",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-0669",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-0669"
+      ]
+    }
+  },
+  {
+    "id": 1986,
+    "fecha": "2026-08-07T18:48:46Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA crea virus sintéticos",
+    "resumen": "Un equipo de investigadores de Stanford y el Arc Institute ha utilizado modelos genómicos de IA para diseñar y sintetizar genomas de bacteriófagos, logrando crear 16 virus funcionales que pueden infectar y destruir cepas específicas de E. coli, sin ser capaces de infectar humanos, animales o plantas. Estos virus sintéticos no existían previamente en la naturaleza y demuestran el potencial de la IA en la creación de sistemas biológicos funcionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMjg1MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/ia-ha-creado-virus-que-naturaleza-no-habia-creado-antes-todo-buenas-noticias",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la ia ha creado un virus que la naturaleza no había creado antes son sobre todo buenas noticias",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arcinstitute.org",
+        "platform.instagram.com",
+        "www.biorxiv.org",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://arcinstitute.org/news/hie-king-first-synthetic-phage",
+        "https://i.blogs.es/7d3c99/ecoli/1024_2000.jpeg",
+        "https://i.blogs.es/b98054/pexels-photo-4031501/375_142.jpeg",
+        "https://www.biorxiv.org/content/10.1101/2025.09.12.675911v1"
+      ]
+    }
+  },
+  {
+    "id": 1985,
+    "fecha": "2026-08-07T18:48:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Parches AI fallan en la mitad",
+    "resumen": "Un estudio sobre más de 6,000 parches encontró que incluso los parches que funcionan pueden introducir nuevos bugs, romper otras funcionalidades o ser vulnerables a bypass, lo que plantea preocupaciones sobre la confiabilidad de los parches generados por inteligencia artificial (IA). Esto puede tener un impacto significativo en la ciberseguridad, ya que los parches defectuosos pueden dejar sistemas vulnerables a ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMjg1MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/ai-generated-patches-fail-half-time",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai generated patches fail half the time",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1984,
+    "fecha": "2026-08-07T18:48:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques de correo y pago",
+    "resumen": "Se han identificado dos cadenas de ataques en el primer semestre de 2026, una de las cuales utilizó inbox de negocios comprometidos y manipulación del navegador para una campaña de malware bancario, mientras que la otra utilizó el secuestro del portapapeles (clipboard hijacking) para redirigir pagos de criptomonedas. Estos ataques demuestran la persistencia de técnicas de phishing y malware para el robo financiero.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMjg1MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/real-emails-hijacked-payments-two-h1-2026-attack-chains/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:real emails hijacked payments two h1 2026 attack chains",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion no se menciona, pero si se menciona el secuestro del portapapeles, que se relaciona con: T1115 - Clipboard Data"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1983,
+    "fecha": "2026-08-07T18:48:29Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Computación Cuántica en Fusión Nuclear",
+    "resumen": "La fusión nuclear, considerada el \"santo grial\" de la energía, enfrenta desafíos significativos, incluyendo el desarrollo de combustibles adecuados, y ahora se explora el uso de computación cuántica y inteligencia artificial para superar estos obstáculos, con colaboraciones entre el Departamento de Energía de EE.UU., la Cleveland Clinic e IBM. Estos esfuerzos buscan aprovechar la capacidad de los ordenadores cuánticos y la IA para simular y optimizar procesos complejos en la fusión nuclear.",
+    "url_imagen": "https://images.unsplash.com/photo-1679403766680-9aa2b959417d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMjg1MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/computacion-cuantica-y-fusion-nuclear.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:computación cuántica y fusión nuclear la receta para fabricar un sol en la tierra",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "arxiv.org",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "en.wikipedia.org",
+        "es.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "newsroom.ibm.com",
+        "quantum.cloud.ibm.com",
+        "www.elladodelmal.com",
+        "www.ibm.com",
+        "www.mypublicinbox.com",
+        "www.theregister.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://arxiv.org/pdf/2606.30402",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0zj5mPmeW5MZdUhtEp-wI5i_i125j97Cl8bL961Hu75nyzQXfjyUxbqf5u3EiuLorymVVhUMbTz2zCFa-hrEg1NFhtPXjUbfNeJR73qTQNv-vCfuGSFcirfgO7YX073x4B9_rOiBQKT-J298Z7Cw4t-LeMj4wzC4hAPW7VKxgS56FFiFo5XMQ/w640-h312/q1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDRUYf6nSSQZbsswLwwZdiTvINcxgiiOAjhbkzVFcZ8zKrOIr-BGxZL5ThZjWR5r8mAjJjVtCJMOqD7iiEjBTk6gKAnlBUxwbvTvwl7hImh-KDU9uawBR91h-rfaHuZhiumZOox8DkPJaeinsIhs1H_G78zcF7RTGAB9lTU5v-d3zMLW5Hpxxf/w640-h384/q2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGKTyHDyDvNuDpgrPDHFloOALZho6qcyh7ctnxPIktcRVse-xaLR4aw2QXlAZbCzhIelVqbW4kvbR-NAd_aVRMgGWT4hyphenhyphen8GGV0YuIX3vs-AEDtH2Je2Pn3JYV-2GEQEHeFj6cvR7cgJHetoGcrLsC7m0hyphenhyphenD2WW4POeZkpZxj64btL7kiZWvRWr/w496-h640/q7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcmpAYM5KbljKnbeMNlz8oaFrte2MPGkLcr99dic7egd0A-QtlTnj-2OJ9H5cMFlXLMmUC0EcHPH3jesKUIAF_fCCQ5qTQWIkteQn0bi7SQvLG84aLoe8JrpslY0rxGT-UEypNMNWkjku_c3frTgWFSqiD7MWubvIZLZnPtFnbTRrWxWV4APPC/w400-h358/q5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpesat0oJlsh14JXylmIU9r1zqw8WMajkV6Ohxawgo-Uastkt70kK_cNTjSfweITh3YYJH3SLdOzb5DbD_cOUEsL6z4VIp3cLOcUJP87cu47LJoNmcW0B61fKY92k0tDEIfgccPOs4b3jtdwwZ8UT7-BESIMmBcm-xRRzk1KsX91E1iPSDTg0x/w640-h372/q0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvuAimoCgW2WYM7DzeaTs1l9aFZ0HMJhUI61Ek5h2bSmSXdLrG81LGBHsCwoO3lTJo2LvWCE-xZCi4AtnlxZ7_pjDuaw_Qmkli3UBkZp_kQG4DykJm_bwo7hKJZVDiyb8-Oqf2CyDA5KD9tBdrHxI8BBF0YEp1mU_aoYrjI2WAK3YA1EQutcbs/s1412/q3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvuAimoCgW2WYM7DzeaTs1l9aFZ0HMJhUI61Ek5h2bSmSXdLrG81LGBHsCwoO3lTJo2LvWCE-xZCi4AtnlxZ7_pjDuaw_Qmkli3UBkZp_kQG4DykJm_bwo7hKJZVDiyb8-Oqf2CyDA5KD9tBdrHxI8BBF0YEp1mU_aoYrjI2WAK3YA1EQutcbs/w640-h350/q3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibeP6akpt1X7dBGePWSJ3HJm7wj59IJAk4XQxAGedDGi0FYWOlwITG7W3DJj84HGdtpd7TB4Ju_QYKkLo6lUCc9RANNQYwAdQVLS427M6qeHGMzZLmN97N_Eqn31xFLLyxHLx94uZwT_jCic8U6t0lTgKyF5p9aIWLE6gaP-WDHXBlsPQCNP0e/w640-h354/q6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicTIi5zFkBzVrxqDiwknO8SPpFSnoAQn_jCCX6doYsEdzRdUcODP_dK0K0Ndw8vXVLIlQzdEqc_oU0frptPwNYQN-NGeFDtYZ8O3uugPXS82oN7PpZOpuoWvXS7g2Ywsiue8dfHGIv_Ivebl8YAtzmkE3uGWJ9kMg95i6Vvp6DSadIrreHsBBh/w640-h372/q4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIoA-Qjo8Scebz12sKmVQnmufZNAZsmVs4x8WiGsyARk1aUnKd-aX7_ptHXHaduSJ45pfQOEZ_heKE7r2xQ8NW0xCjLOcNzWC_ldIVf-oGShZ-neijW84b2-7ufCTAezRVXji9JISVmIdPe1BVsTXJuMT8-vEOIifxE9-5UCTVoLCgMoHUZavH/w640-h508/DanielRomeroRuiz.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjonM6IQev6AzSJaNGkDnrI6wKqaGJZjc1YUPaOtykxXBLNoK3DWFhpKT46843SosbJjMJ3B86qABvlxgHK3FgwN-Qp_3MpuMiOpI9L8yM5enS5xQrAgZ093V4Zb2J4X1lKLoODRcTwJipHTT_7ETpqR7Yv6acRWmGdhVovE_UCgXR3U1EgHt0Q/w640-h384/q0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://elladodelmal.com",
+        "https://newsroom.ibm.com/2026-07-06-oak-ridge-national-lab,-cleveland-clinic,-and-ibm-achieve-first-known-computations-of-fusion-materials-on-a-quantum-computer",
+        "https://quantum.cloud.ibm.com/learning/en/courses/quantum-diagonalization-algorithms/sqd-overview",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.elladodelmal.com/2018/06/quantum-cryptography-una-comunicacion.html",
+        "https://www.elladodelmal.com/2022/12/quantum-computing-cybersecurity.html",
+        "https://www.elladodelmal.com/2023/01/factorizacion-de-rsa-con-un-optimizador.html",
+        "https://www.elladodelmal.com/2025/04/hamming-quasi-cyclic-hqc-kem-nuevo-key.html",
+        "https://www.elladodelmal.com/2025/05/frodokem-un-key-encapsulation-mechanism.html",
+        "https://www.elladodelmal.com/2025/08/la-gran-busqueda-de-numeros-primos-de.html",
+        "https://www.elladodelmal.com/2025/09/como-acelerar-los-algoritmos-de.html",
+        "https://www.elladodelmal.com/2025/10/premio-nobel-en-fisica-2025-el-trabajo.html",
+        "https://www.elladodelmal.com/2025/10/un-reloj-atomico-optico-del-mit-con.html",
+        "https://www.elladodelmal.com/2025/11/algoritmo-cuantico-de-grover-un.html",
+        "https://www.elladodelmal.com/2025/11/cuanto-del-trafico-en-internet-funciona.html",
+        "https://www.elladodelmal.com/2025/12/bitcoin-vs-quantum-computers-hora-de.html",
+        "https://www.elladodelmal.com/2025/12/dyber-hardware-accelerated-post-quantum.html",
+        "https://www.elladodelmal.com/2025/12/el-white-paper-de-mastercard-que-urge.html",
+        "https://www.elladodelmal.com/2025/12/quantum-sensors-cuando-lo-invisible-se.html",
+        "https://www.elladodelmal.com/2026/01/como-ser-quantum-safe-y-desplegar-post.html",
+        "https://www.elladodelmal.com/2026/02/quantum-gps-navegacion-con-gps.html",
+        "https://www.elladodelmal.com/2026/03/alaniz-cipher-un-cifrado-simetrico.html",
+        "https://www.elladodelmal.com/2026/03/como-comprobar-si-un-web-site-is.html",
+        "https://www.elladodelmal.com/2026/05/los-papers-academicos-de-los-algoritmos.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-2.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-3.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-y-4.html",
+        "https://www.elladodelmal.com/2026/07/iii-edicion-del-programa-de.html",
+        "https://www.ibm.com/quantum/blog/cleveland-clinic-riken-chemistry",
+        "https://www.ibm.com/quantum/blog/molten-salts-fusion-quantum",
+        "https://www.theregister.com/science/2026/07/06/boffins-bet-on-quantum-computers-ai-su"
+      ]
+    }
+  },
+  {
     "id": 1982,
     "fecha": "2026-08-07T15:52:14Z",
     "categoria": "Ciberseguridad",
