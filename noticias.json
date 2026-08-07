@@ -1,5 +1,133 @@
 [
   {
+    "id": 1962,
+    "fecha": "2026-08-07T02:26:28Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA supera a humanos en matemáticas",
+    "resumen": "Los modelos de IA han demostrado capacidad para resolver problemas matemáticos complejos que han resistido soluciones humanas durante décadas, planteando la posibilidad de que pronto la IA resuelva un problema importante sin que los humanos puedan comprender o explicar el proceso. Esto genera un debate entre matemáticos sobre el futuro de la resolución de problemas matemáticos y el papel de la IA en este campo.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905450-a26e6c964239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjk1ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/estamos-cerca-que-ia-resuelva-problema-humanos-no-puedan-explicarlo-matematicos-opinan-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:estamos cerca que la ia resuelva un problema y los humanos no puedan explicarlo los matemáticos opinan sobre la ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "chatgpt.com",
+        "gowers.wordpress.com",
+        "lean-lang.org",
+        "openai.com",
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.daniellitt.com",
+        "www.nature.com",
+        "www.nytimes.com",
+        "www.understandingai.org",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://gowers.wordpress.com/2026/07/26/thoughts-about-the-leiden-declaration/",
+        "https://i.blogs.es/038305/feynman/1024_682.jpeg",
+        "https://i.blogs.es/038305/feynman/500_333.jpeg",
+        "https://i.blogs.es/038305/feynman/840_560.jpeg",
+        "https://i.blogs.es/746fde/estudiantes-matematicas/375_142.jpeg",
+        "https://i.blogs.es/effeb1/mates-e-ia/1024_2000.jpeg",
+        "https://lean-lang.org/",
+        "https://leidendeclaration.ai/",
+        "https://openai.com/index/first-proof-submissions/",
+        "https://unsplash.com/es/fotos/nino-de-pie-frente-a-una-pizarra-cubierta-de-ecuaciones-V1yA4dDTXg8",
+        "https://www.daniellitt.com/blog/2026/2/20/mathematics-in-the-library-of-babel",
+        "https://www.nature.com/articles/s42256-026-01269-x?utm_source=chatgpt.com",
+        "https://www.nytimes.com/2024/07/23/technology/ai-chatbots-chatgpt-math.html",
+        "https://www.understandingai.org/p/mathematicians-are-grappling-with?hide_intro_popup=true"
+      ]
+    }
+  },
+  {
+    "id": 1961,
+    "fecha": "2026-08-07T02:26:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en smartwatch",
+    "resumen": "Investigadores de seguridad demostraron cómo podrían rastrear y escuchar a un reportero de WIRED utilizando vulnerabilidades en un smartwatch para niños, destacando la inseguridad en la cadena de suministro de dispositivos GPS habilitados. Esto pone de relieve el riesgo de ataques de vigilancia y escucha no autorizados a través de dispositivos inteligentes personales.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjk1ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/hackers-stalked-me-by-hijacking-a-smartwatch-for-kids/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:hackers stalked me by hijacking a smartwatch for kids",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1960,
+    "fecha": "2026-08-07T02:26:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en ChatGPT",
+    "resumen": "Un investigador ha demostrado una cadena de ataques de proof-of-concept que permite influir en el sandbox aislado de ChatGPT, similar a un control de mando y control (C2), durante una sesión en Black Hat USA 2026, lo que plantea preocupaciones sobre la seguridad de los modelos de lenguaje. El ataque podría permitir a un atacante tener control sobre el comportamiento de ChatGPT, lo que podría tener implicaciones significativas para la seguridad de la información.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjk1Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/researcher-claims-control-chatgpt-secure-sandbox",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:researcher claims control of chatgpt secure sandbox",
+    "ttps": [
+      {
+        "id": "T1215",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1215.001",
+        "name": "Exploitation of API"
+      },
+      {
+        "id": "T1572",
+        "name": "Protocol Tunneling"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1559",
+        "name": "Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1959,
+    "fecha": "2026-08-07T02:26:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque ClickFix roba criptomonedas",
+    "resumen": "Un malware basado en Go, distribuido a través de ataques ClickFix, está robando activos de criptomonedas, contraseñas almacenadas en navegadores, datos de Apple Keychain y credenciales en caché de usuarios de macOS. El ataque aprovecha vulnerabilidades en macOS para instalar un infostealer y realizar robos de criptomonedas.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNjk1NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:clickfix attack pushes macos infostealer for crypto theft attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1056",
+        "name": "Keychain"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1958,
     "fecha": "2026-08-06T23:54:29Z",
     "categoria": "Ciberseguridad",
@@ -8810,20 +8938,6 @@
         "name": "User Execution"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1618,
-    "fecha": "2026-07-24T13:26:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en ChatGPT",
-    "resumen": "Se ha descubierto una vulnerabilidad crítica en ChatGPT Workspace Agents de OpenAI, conocida como AgentForger, que permitía a un atacante desplegar un agente de inteligencia artificial (IA) autónomo dentro de una organización víctima a través de un enlace de phishing. La vulnerabilidad ha sido corregida por OpenAI a partir del 8 de junio.",
-    "url_imagen": "https://images.unsplash.com/photo-1675557010061-315772f6efef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTk2MTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:chatgpt agentforger flaw could deploy rogue workspace agents via a phishing link",
-    "ttps": [],
     "iocs": {}
   },
   {
