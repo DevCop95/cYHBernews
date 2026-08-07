@@ -1,5 +1,88 @@
 [
   {
+    "id": 1965,
+    "fecha": "2026-08-07T04:51:04Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Centros de datos consumen 23% de energía",
+    "resumen": "El consumo de energía de los centros de datos en Irlanda se ha multiplicado por cinco entre 2015 y 2023, alcanzando un 23% del total de energía consumida en 2025, lo que plantea desafíos en términos de suministro y sostenibilidad. Esto puede tener implicaciones significativas en la seguridad y la gestión de la energía en el sector de la tecnología.",
+    "url_imagen": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNzgyNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/energia/pais-europa-esta-descubriendo-que-significa-llenarlo-todo-centros-datos-entregarles-23-tu-energia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:un país de europa está descubriendo lo que significa llenarlo todo de centros de datos entregarles el 23 de tu energía",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.greenpeace.de",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3e7190/original/1024_2000.jpeg",
+        "https://i.blogs.es/44d339/magnific_quiero-que-edites-la-img5_1seionqr4r/375_142.jpeg",
+        "https://i.blogs.es/4839b2/ove-vw/375_142.jpeg",
+        "https://i.blogs.es/d5c685/captura-de-pantalla-2026-08-06-a-las-10.22.47/1024_2000.png",
+        "https://i.blogs.es/d5c685/captura-de-pantalla-2026-08-06-a-las-10.22.47/1366_2000.png",
+        "https://i.blogs.es/d5c685/captura-de-pantalla-2026-08-06-a-las-10.22.47/450_1000.png",
+        "https://i.blogs.es/d5c685/captura-de-pantalla-2026-08-06-a-las-10.22.47/650_1200.png",
+        "https://i.blogs.es/f9c40c/centros-de-datos/1024_682.jpeg",
+        "https://i.blogs.es/f9c40c/centros-de-datos/500_333.jpeg",
+        "https://i.blogs.es/f9c40c/centros-de-datos/840_560.jpeg",
+        "https://www.greenpeace.de/publikationen/20250514-greenpeace-studie-umweltauswirkungen-ki-eng.pdf",
+        "https://www.rte.ie/news/business/2026/0707/1582175-cso-data-centre-energy-figures/"
+      ]
+    }
+  },
+  {
+    "id": 1964,
+    "fecha": "2026-08-07T04:50:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cisco parchea 12 vulnerabilidades",
+    "resumen": "Cisco ha lanzado actualizaciones para abordar múltiples vulnerabilidades de seguridad críticas que afectan el software Catalyst SD-WAN y IOS XE, incluyendo tres con una puntuación CVSS de 9,8, lo que indica un alto riesgo de explotación. Las vulnerabilidades afectan el software Cisco Catalyst SD-WAN y Cisco IOS XE, independientemente de la configuración del dispositivo, y podrían ser explotadas a través de ataques de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNzgyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cisco patches 12 sd wan and ios xe flaws including three 9 8 cvss score bugs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1963,
+    "fecha": "2026-08-07T04:50:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques cibernéticos a fondos de inversión",
+    "resumen": "Un reciente aumento de ataques cibernéticos dirigidos a fondos de inversión, empresas de capital privado y otras organizaciones financieras ha sido vinculado al grupo de extorsión UNC6671, asociado a los actores de amenaza BlackFile. Estos ataques pueden implicar técnicas de phishing, malware y ransomware para obtener acceso no autorizado y exigir rescates.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwNzgyNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hedge-fund-cyberattacks-tied-to-blackfile-linked-unc6671-extortion-group/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hedge fund cyberattacks tied to blackfile linked unc6671 extortion group",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 1962,
     "fecha": "2026-08-07T02:26:28Z",
     "categoria": "IA",
