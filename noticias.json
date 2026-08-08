@@ -1,5 +1,67 @@
 [
   {
+    "id": 2004,
+    "fecha": "2026-08-08T12:37:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux Kernel",
+    "resumen": "Se ha descubierto una vulnerabilidad de escritura de memoria fuera de los límites (CVE-2024-0646) en el kernel de Linux, específicamente en la funcionalidad de Transport Layer Security, que podría permitir a un usuario local elevar sus privilegios en el sistema o causar una falla. La vulnerabilidad se explota a través de la llamada a la función splice con un socket ktls como destino.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxOTI2MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-0646",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-0646",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-0646"
+      ]
+    }
+  },
+  {
+    "id": 2003,
+    "fecha": "2026-08-08T12:37:06Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Google pierde terreno en IA",
+    "resumen": "Expertos de SemiAnalysis consideran que Google ha perdido su posición de vanguardia en IA, destacando la salida de figuras clave como Jeff Dean y Oriol Vinyals, y el rendimiento decepcionante de sus modelos Gemini, lo que sugiere que la probabilidad de que Google logre un modelo de IA competitivo es baja. El declive de Gemini y la pérdida de talento en áreas como el aprendizaje por refuerzo son factores clave en esta evaluación.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338938900-a15304523070?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxOTI2Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/deepmind-no-laboratorio-frontera-expertos-semianalysis-creen-que-google-ganara-ia-gemini-pierda",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:deepmind ya no es un laboratorio frontera los expertos de semianalysis creen que google ganará la ia aunque gemini pierda",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "newsletter.semianalysis.com",
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://flic.kr/p/2iiqyXj",
+        "https://i.blogs.es/3162a2/demis-hassabis/1024_682.jpeg",
+        "https://i.blogs.es/3162a2/demis-hassabis/500_333.jpeg",
+        "https://i.blogs.es/3162a2/demis-hassabis/840_560.jpeg",
+        "https://i.blogs.es/46009f/1366_2000/375_142.jpg",
+        "https://i.blogs.es/4f1232/demis-hassabis-google/375_142.jpeg",
+        "https://i.blogs.es/813232/sundar-pichai-google-ia-gemini/1024_2000.jpeg",
+        "https://newsletter.semianalysis.com/p/gemini-is-cooked-but-gcp-is-cooking"
+      ]
+    }
+  },
+  {
+    "id": 2002,
+    "fecha": "2026-08-08T12:36:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques CSS comprometen defensas webmail",
+    "resumen": "Investigaciones recientes han descubierto que el contenido dentro de un correo electrónico puede escapar de su límite de mensaje y interferir con la interfaz de webmail, permitiendo la captura de contraseñas, toma de control de cuentas de terceros y filtración de tokens. Estos ataques pueden afectar a proveedores de correo electrónico como Outlook, Gmail y Yahoo Mail, aprovechando vulnerabilidades en la implementación de CSS para comprometer la seguridad de los usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxOTI2MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/new-css-attacks-can-break-webmail.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new css attacks can break webmail defenses to steal passwords and tokens",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2001,
     "fecha": "2026-08-08T09:32:38Z",
     "categoria": "Ciberseguridad",
@@ -853,34 +915,6 @@
     "iocs": {
       "cve": [
         "CVE-2021-33033"
-      ]
-    }
-  },
-  {
-    "id": 1969,
-    "fecha": "2026-08-07T07:07:32Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Google pierde terreno en IA",
-    "resumen": "Google, que adquirió DeepMind en 2014 con el objetivo de \"resolver la inteligencia\" a través de la ciencia, ahora enfrenta un cambio significativo con la salida de Demis Hassabis como CEO de DeepMind y la partida de Jeff Dean, \"padre\" de Google Brain, para fundar una startup centrada en el descubrimiento científico con IA, lo que sugiere que Google está perdiendo terreno en la carrera de la IA. Esto se debe a que empresas como OpenAI y Anthropic han encontrado éxito en la aplicación práctica de la IA, mientras que el enfoque científico de DeepMind, aunque innovador, no ha generado los mismos ingresos.",
-    "url_imagen": "https://images.unsplash.com/photo-1749006590475-4592a5dbf99f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwODY0NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/google-fue-unica-tecnologica-que-aposto-realmente-ia-basada-ciencia-ahora-sabe-que-va-perdiendo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:google fue la única tecnológica que apostó realmente por una ia basada en la ciencia ahora sabe que va perdiendo",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
-        "https://flic.kr/p/2rzdYG4",
-        "https://i.blogs.es/3162a2/demis-hassabis/375_142.jpeg",
-        "https://i.blogs.es/4f1232/demis-hassabis-google/1024_2000.jpeg",
-        "https://i.blogs.es/70ea60/google-anthropic/1024_682.jpeg",
-        "https://i.blogs.es/70ea60/google-anthropic/500_333.jpeg",
-        "https://i.blogs.es/70ea60/google-anthropic/840_560.jpeg"
       ]
     }
   },
