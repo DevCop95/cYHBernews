@@ -1,5 +1,23 @@
 [
   {
+    "id": 1998,
+    "fecha": "2026-08-08T06:42:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux Kernel",
+    "resumen": "Se ha descubierto una vulnerabilidad de indexación de matrices en el subsistema netfilter del kernel de Linux (CVE-2023-42753, CVSS 7.0), que permite a un atacante local potencialmente bloquear el sistema o aumentar sus privilegios mediante la manipulación de un búfer de memoria fuera de límites. La vulnerabilidad se debe a una macro faltante que provoca un error de cálculo del desplazamiento de la matriz.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxNzEzNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-42753",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-42753",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-42753"
+      ]
+    }
+  },
+  {
     "id": 1997,
     "fecha": "2026-08-08T04:08:15Z",
     "categoria": "Ciberseguridad",
