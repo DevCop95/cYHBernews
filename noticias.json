@@ -1,5 +1,106 @@
 [
   {
+    "id": 2007,
+    "fecha": "2026-08-08T15:24:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux Kernel",
+    "resumen": "Se ha identificado una falla de use-after-free (CVE-2023-6531) en el kernel de Linux con un CVSS Score de 7.0, considerada de alto riesgo, que puede ser explotada debido a un problema en la eliminación de ejecución de SKB por parte del recolector de basura de Unix. Esto podría permitir ataques de ejecución de código arbitrario en sistemas que utilizan el kernel de Linux.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMDI2NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-6531",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-6531",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1055",
+        "name": "Privileged File System Modification"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-6531"
+      ]
+    }
+  },
+  {
+    "id": 2006,
+    "fecha": "2026-08-08T15:24:06Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Imágenes IA indistinguibles",
+    "resumen": "La velocidad de avance de los modelos de IA generativa de imágenes y vídeo hace que sea prácticamente imposible distinguir entre contenido real y generado, según Daniel Púa, jefe de seguridad en Magnific, lo que plantea desafíos significativos para la seguridad y la confianza en la información visual. Los últimos modelos de vídeo están muy cerca de ser indistinguibles, y se estima que en un año y pico, el vídeo también será indistinguible.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMDI2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/daniel-pua-jefe-seguridad-magnific-ninguna-persona-a-primera-vista-podria-estar-100-segura-ia-no-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:daniel púa jefe de seguridad en magnific ninguna persona a primera vista podría estar 100 segura de si es ia o no es ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "c2pa.org",
+        "platform.instagram.com",
+        "www.magnific.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://c2pa.org/",
+        "https://i.blogs.es/d81e6b/magnific_el-fondo-tiene-como-un-po_lwsprhtswo/1024_2000.jpeg",
+        "https://i.blogs.es/e31c7e/burg/375_142.jpeg",
+        "https://www.magnific.com/app"
+      ]
+    }
+  },
+  {
+    "id": 2005,
+    "fecha": "2026-08-08T15:23:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha en TrueConf",
+    "resumen": "El grupo de hacktivistas Head Mare ha explotado vulnerabilidades en servidores de videoconferencia TrueConf no parcheados para reemplazar los instaladores de clientes con versiones maliciosas que entregan backdoors, permitiendo el acceso no autorizado a sistemas. Los ataques aprovechan la falta de actualizaciones de seguridad en los servidores para infectar a los clientes con malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMDI2Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-breach-trueconf-to-trojanize-client-installers-with-backdoors/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers breach trueconf to trojanize client installers with backdoors",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials from Password Stores (no se menciona explícitamente, pero se infiere que se obtienen credenciales para acceso no autorizado)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Server Software Component (se explotan vulnerabilidades en servidores de videoconferencia)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2004,
     "fecha": "2026-08-08T12:37:12Z",
     "categoria": "Ciberseguridad",
