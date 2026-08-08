@@ -1,5 +1,26 @@
 [
   {
+    "id": 1997,
+    "fecha": "2026-08-08T04:08:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux Kernel",
+    "resumen": "Se ha detectado una vulnerabilidad de use-after-free en el sistema de eventos de rendimiento del núcleo de Linux, identificada como CVE-2023-2235, con una puntuación CVSS de 7.8, que puede ser explotada para lograr una escalada de privilegios locales. La vulnerabilidad se debe a una falta de verificación en la función perf_group_detach, lo que permite el uso de un puntero colgante después de la eliminación de un evento.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxNjIwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-2235",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-2235",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "fd0815f632c24878e325821943edccc7fde947a2"
+      ],
+      "cve": [
+        "CVE-2023-2235"
+      ]
+    }
+  },
+  {
     "id": 1996,
     "fecha": "2026-08-08T01:14:02Z",
     "categoria": "Ciberseguridad",
