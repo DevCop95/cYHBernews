@@ -1,5 +1,132 @@
 [
   {
+    "id": 2010,
+    "fecha": "2026-08-08T18:30:04Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Despliegue de Zero Trust para Agentes IA",
+    "resumen": "Se describe la implementación de modelos de Zero Trust para agentes de Inteligencia Artificial (IA) utilizando tecnologías de Cloudflare, enfocándose en la validación de entrada y salida de datos para prevenir ataques como la inyección de instrucciones maliciosas y la exfiltración de datos, siguiendo principios como el ASI01- Agent Goal Hijack de OWASP. Esto es crucial para proteger la integridad de los agentes IA y prevenir el secuestro de objetivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330300716-63c167c5efac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMTM4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/como-desplegar-zero-trust-para-agentes.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo desplegar zero trust para agentes ia en cloudflare 3",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "cdn.prod.website-files.com",
+        "claude.com",
+        "developers.cloudflare.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "genai.owasp.org",
+        "mypublicinbox.com",
+        "platform.claude.com",
+        "www.cloudflare.com",
+        "www.elladodelmal.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/25-libro-hacking-aplicaciones-web-sql-injection.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglI2_slpVdnojxJLiMaN14hdTMHixE_8QgJ3Qjf1y6owUR2LXZW1GXgaraBraQNxDFmQpYu37NrDpyQAxkN0cmZ8YLsgmvGt1JCHTGynrswP9jx0TtCJIpRidWxWSn-alvYfGXTwvCfez3YrcS2Y4U25Kmw_oQDuDEo-djWRSDSrwdDJ_QrMfE/w640-h484/agente4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4U5uKhTi6uMZLv4y4oPixxqahdGCDuNuoh8X08q9rpOtAMX4MyYAY5O8lUmSHeE8TxHiKdSSfEUefkzPXKsKtfJiFThdpu11Sdy6HQRCdxyM4qPOynvfxfmn1sD8YyNYSjT4-bNbxC2rurmoGjqW0XBHl2Ir8n3jPCMA-bxzpfkIIuZxorzEq/w640-h272/Agente8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-V3VZVk-U_ocTPehBRqSwg5X7ozdutPsaMPf8HMcfj9rk0IwZmThnljq0FhVQ5BDxK6_ElsUJfpmz2SjwGKcm4sagUYo-PC5GwN00ykBv76I81yRYYXhN4wD5AkkZGgT13KGwKpkXsT0E3cD0sX3g1urwZMx4XErTlIGAEDRuocV4eGv1zGu/s940/Agent0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-V3VZVk-U_ocTPehBRqSwg5X7ozdutPsaMPf8HMcfj9rk0IwZmThnljq0FhVQ5BDxK6_ElsUJfpmz2SjwGKcm4sagUYo-PC5GwN00ykBv76I81yRYYXhN4wD5AkkZGgT13KGwKpkXsT0E3cD0sX3g1urwZMx4XErTlIGAEDRuocV4eGv1zGu/w640-h382/Agent0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhucGqwWWdG4OimtBeyg3niJjMxq1-OPvlTJjBpi4z3lAwz1FpcbtogtwDpYSGP69BCbEhkuO-NbsfZYy9JgwGAgPhOWTiejLZ4wrFO5GRCgA_r-db5sdLORwnmaz8P1JcqNDGoDMb5hBYNZbDngYKpn7CYtEzEZcMXjJj88ovpKqsBP4tCxZB1/w640-h490/zero4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihUp5TQgvtLiwdBEuCaOVryzXYvWVY2IAVpCDvlIuSpeKDJSH2tO4Md2YtBlxxeei43yoBT7bBWZ71_XJaCNT9k52l9bmN84TdzkhXVkmRTnhjDtRYqKEkHsZ1x9oR4gX-TVm_0HoQk6T-jBUXiFDjY_VA0LrPbiZOBuhDFs7QokAE-nyZzhN3/w640-h540/agent1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDnC9fR_yUZ8BymA25VaaYAMl0WhuHUg0PROspZwRXpKMVfss0qV1rTwETdeTEQGmOxxh52Az5gvXJGu30pPt15PS3ybVfvQGJzMV7tWUZ53vxkomSZnvq7XA4Wf-ik4M84sJTcjhT3ubPEmDSa9IDKt_Ctyizh-FDvAI1Ofzdrf5svV81bB0I/w640-h496/agentic3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM_ZyyqgoKziGKdraQ385RU1I1ukTztLSFAOaSUsZ8ksPUgQCpTWCSDysw0cDQ6q8VCgLJEptJDsmyXKjRUiEnGasa7TKqRIqdJW1ws38QadfKczE9mjrz2w_5Lvduck0_XlSkWKtpBI3zWofsZX7u050aiAAh-elyvUn8hU9ZerPM-cJWAtxh/w640-h516/juanluiscuenca.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_StKNJ74YNzJlfnSE7cK1Q2J92KTKRJuRnK1ZdedH4XhVK6BOZetZu5r4N0_f2L6Qa8JZzm6b2ca85UJCLKqeqKOGmq1YKpTtdOj9LylxWmCwo_CUI-RQmMxshvB7R05u0eytuZfPAjazUGurU4a9Q_G38fUGCIvZpW23o5C-ac8Nh-r5yBEN/w640-h186/zero1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjaKXr73wKoxhdYXROgfeAL_N56txxxh1REHgWxjT-7Q9__HXlhGRoISgXVlPV-y3QwfSX0LmiBdj4UfouCRshK8qp82qvYKKWiqwnF-GQxGLmElYnzZGBA2ulvZSBwvnbG7LqHpstkUCIoBFqdvT0lH7zyi8ukgyDG4gSFMa2yHdBdgH3S-55o/w640-h500/agente9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh6M73RzFllISqv4W4cm5-SAGcel9UFeI8kf4IXime_8gDx9oxcRkjOcFz4OYXNHO4IGSnoltkaOwrYuhDNkfjGpBQJIS1ahSDy70fxoLjQqOUACExKJkVS95tKFqTKy41afy8Gbe4jEIBkCOBztNK1dp-TyDw1qrurxit9Ot8AKuOjnkTIW2K/w640-h294/agente6.jpg",
+        "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a1611a04085d7cd3dadc924_Claude-eBook-Zero-Trust-for-AI-Agents-05182026.pdf",
+        "https://claude.com/blog/zero-trust-for-ai-agents",
+        "https://elladodelmal.com",
+        "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+        "https://platform.claude.com/docs/en/managed-agents/overview",
+        "https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf",
+        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes.html",
+        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes_01099167063.html",
+        "https://www.elladodelmal.com/2026/08/como-desplegar-zero-trust-para-agentes_0480428510.html"
+      ]
+    }
+  },
+  {
+    "id": 2009,
+    "fecha": "2026-08-08T18:29:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Código Malicioso en Archivo VBS",
+    "resumen": "Un archivo VBS de 23,000 líneas con codificación XOR por caracter ha sido identificado en un correo electrónico sospechoso, intentando infectar a personas en oficinas, lo que sugiere un posible ataque de malware dirigido. El uso de codificación XOR indica una técnica para evadir la detección por parte de herramientas de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMTM3OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9268",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:be me get email smelly is this malware someone sent this to our offices at work its trying to infect",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1027.002",
+        "name": "Software Packing"
+      },
+      {
+        "id": "T1193",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2008,
+    "fecha": "2026-08-08T18:29:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad zero-day en Metabase",
+    "resumen": "Se ha detectado una vulnerabilidad de gravedad máxima (CVSS score: 10.0) en el software de inteligencia empresarial y visualización de datos Metabase, que permite a un atacante remoto no autenticado inyectar SQL arbitrario en la base de datos de la aplicación, lo que permite obtener acceso de administrador sin autenticación. La vulnerabilidad ya ha sido explotada en el wild como un zero-day.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMTM3OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:metabase zero day exploited in wild allows admin access without authentication",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated SQL Injection (no existe en el framework, pero se puede inferir como) T1055 - T1055 no existe, pero se puede relacionar con T1190, por lo que se puede considerar T1190 como la técnica más cercana. Sin embargo, la técnica más adecuada sería T1068, ya que se refiere a la explotación de vulnerabilidades para escalar privilegios."
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2007,
     "fecha": "2026-08-08T15:24:11Z",
     "categoria": "Ciberseguridad",
@@ -347,74 +474,6 @@
     "iocs": {}
   },
   {
-    "id": 1993,
-    "fecha": "2026-08-08T01:13:43Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Despliegue de Zero Trust para Agentes IA",
-    "resumen": "El despliegue de Zero Trust para agentes IA en Cloudflare requiere una configuración cuidadosa de modelos y políticas de seguridad, incluyendo la gobernanza, para garantizar la protección de los datos y sistemas. La falta de gobernanza puede llevar a la degradación de los controles de seguridad, lo que puede resultar en vulnerabilidades y riesgos para la organización.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218511-768944e2c325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxNTE2MjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/08/como-desplegar-zero-trust-para-agentes_0480428510.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "txt:cómo desplegar zero trust para agentes ia en cloudflare y 4",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "blog.cloudflare.com",
-        "blogger.googleusercontent.com",
-        "cdn.prod.website-files.com",
-        "code.claude.com",
-        "developers.cloudflare.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "genai.owasp.org",
-        "learn.microsoft.com",
-        "mypublicinbox.com",
-        "platform.claude.com",
-        "training.cloudsecurityalliance.org",
-        "www.elladodelmal.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgifi-pbE1YPZzf29VRKorh_vilUi1ZFpL8pwtKXRkfVC_fJ1q68qA21YoTmn-_VICOWze50YJSo-OBvvTRhAlbdcFeo1HFCQHypBPvn4-z5gnf2Jm4E_plxEDH59dR0PantvhfEsM8bmrRjWQGrKNh1a9gX77X5nDr0MDzLs3MCSNTaiyWtE_0/w640-h58/agent1.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglTYrfeq_3QIiNArIVIgsxmKy46NSubHxE33P7ZMvEjvZnypUwelijyXe3ggKd8uc5F9WTZ_PNkEJrfB13z_UTI4zME63q_XxfkHMCKrf1vcCdITjUwTWshS_oqzQBCNqGAGlFUdsSpwz3Ss9vc7Rt4BKVYcJfMWvoQ6vgzXRYGp3yZOOnEzPE/w542-h640/agente4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyiKmaPZr5JdZUvRIIP_DkDUPrs4Dspjf4zQG0JAnS1ZX7EHe53O30GKkC1fYE_jo7F9uALrvcHmcLmXUQe5xWQ_83N6oeNG_B142RFEgAO4YmYLWh6GzykZLaBJcy4Vi1FEarCsT8rkVrCgfyjfpRo8lFtFAX6AmQpIvR4wVs-o-jnG207CtA/w640-h298/agente5.webp",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1BIirgFr3iK0_tztl3endXyLvyeb40z6M4ephvWB7qiSZVgbvovlDINYzAmHztTpNAFXW5-EQqh9zautYb4bLoWqURHNBmaXmnyuP5wHn_RFe8_CQLfDMwJ3fxVurxh-AWvIOd8icN37JPtany0kHi1gPoes2dxGu4krBu_JARZ5r6Secwz20/s940/Agente0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1BIirgFr3iK0_tztl3endXyLvyeb40z6M4ephvWB7qiSZVgbvovlDINYzAmHztTpNAFXW5-EQqh9zautYb4bLoWqURHNBmaXmnyuP5wHn_RFe8_CQLfDMwJ3fxVurxh-AWvIOd8icN37JPtany0kHi1gPoes2dxGu4krBu_JARZ5r6Secwz20/w640-h430/Agente0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY6seknpMsUSHDkJ_Z3Y-WUiNhW_UCWYPrkV5XhTBllPE2bU0uZ7vX-0Emb2Mv-xoFPc7m-H7Xa91mgjNu0Dqlj3_YzyunuX563uHQqCd1bYTpuYQ76NHmsB4m4UcfMR2V0t3B-iqkDHbN-YHw1niUDKIB6qB2SJFrWU4HFp-K26sDJUi7ZGEG/w640-h290/agente4.webp",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimqfAQZH3LdjV2z-ToMMNUD6tY8cnaglF9lSwoqWEhC-IcWwNkDOoBzD4I9ZBOaQF7VZdKP5YHQU3A_RhjfPee_yM3K36z2y22VrKw1Rq5Ka6ZeYIPvXQsa8YIwzSzEPLPPk8DozwcJqAoffFrXHJe5iOEC7k3AWaT0aaOABqlbZINNsI31Pdk/w640-h372/agente3.webp",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjM_ZyyqgoKziGKdraQ385RU1I1ukTztLSFAOaSUsZ8ksPUgQCpTWCSDysw0cDQ6q8VCgLJEptJDsmyXKjRUiEnGasa7TKqRIqdJW1ws38QadfKczE9mjrz2w_5Lvduck0_XlSkWKtpBI3zWofsZX7u050aiAAh-elyvUn8hU9ZerPM-cJWAtxh/w640-h516/juanluiscuenca.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjff-mVGPpCLOAYRbHAJTtLdToCh9VUUKCKibyDYHHbgbdv2PZgdsswQ71soVNrD3XnRxgofZkDgh01W93YsJXhlRt4Ppji6T1qK318aaXGpeob41HLXYK8hAmFcRGeDXm1twpnAl14T5CocRkhREvvkPnf6FRZ7rdibFiFyF5omB8OMuWlPJfQ/w640-h196/agente2.jpg",
-        "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a1611a04085d7cd3dadc924_Claude-eBook-Zero-Trust-for-AI-Agents-05182026.pdf",
-        "https://code.claude.com/docs/en/agent-sdk/hooks",
-        "https://code.claude.com/docs/en/agent-sdk/overview",
-        "https://code.claude.com/docs/en/permissions",
-        "https://code.claude.com:",
-        "https://elladodelmal.com",
-        "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
-        "https://genai.owasp.org/resource/top-10-2025-de-riesgos-y-mitigaciones-para-llms-y-aplicaciones-de-ia-generativa/",
-        "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
-        "https://nvlpubs.nist.gov:",
-        "https://platform.claude.com/docs/en/managed-agents/overview",
-        "https://platform.claude.com/docs/en/managed-agents/permission-policies",
-        "https://platform.claude.com/docs/en/managed-agents/quickstart",
-        "https://platform.claude.com/docs/en/managed-agents/tools",
-        "https://platform.claude.com:",
-        "https://training.cloudsecurityalliance.org/page/zero-trust-training",
-        "https://www.cisa.gov/sites/default/files/2023-04/zero_trust_maturity_model_v2_508.pdf",
-        "https://www.cisa.gov/sites/default/files/publications/NSTAC%20Report%20to%20the%20President%20on%20Zero%20Trust%20and%20Trusted%20Identity%20Management.pdf",
-        "https://www.cisa.gov:",
-        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes.html",
-        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes_01099167063.html",
-        "https://www.elladodelmal.com/2026/08/como-desplegar-zero-trust-para-agentes.html"
-      ]
-    }
-  },
-  {
     "id": 1992,
     "fecha": "2026-08-07T21:34:25Z",
     "categoria": "IA",
@@ -476,41 +535,6 @@
     "fuente": "The Hacker News",
     "dedup_key": "txt:nearly 800 malicious npm packages deliver cross platform rat and infostealer",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1989,
-    "fecha": "2026-08-07T21:34:08Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque zero-day en Metabase",
-    "resumen": "Se ha explotado una vulnerabilidad crítica de inyección de SQL (SQLi) en Metabase, permitiendo ataques de robo de datos en instancias de clientes, afectando a Framework y Tally, mediante técnicas de zero-day que aprovechan la falta de parches disponibles. Los ataques aprovechan esta vulnerabilidad para acceder a datos sensibles sin autorización.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYxMzg0NDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:metabase sqli zero day exploited in customer data theft attacks",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1055",
-        "name": "Unconventional Password Authentication (no se menciona explícitamente, pero se infiere que se accede a datos sin autorización)"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
     "iocs": {}
   },
   {
