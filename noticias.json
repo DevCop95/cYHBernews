@@ -1,5 +1,93 @@
 [
   {
+    "id": 2013,
+    "fecha": "2026-08-08T21:24:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en D-Link DWR-M961",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de buffer (buffer overflow) en los dispositivos D-Link DWR-M961 con versión de hardware C1 y software 1.1.2_C1_202602110044, específicamente en la interfaz quicksetup.cgi, permitiendo a un atacante remoto ejecutar comandos arbitrarios o causar que el dispositivo se bloquee mediante la escritura de cadenas de texto excesivamente largas en los campos test4, ssid2 y username. La vulnerabilidad se ha catalogado como CVE-2026-71958.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMjQyOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241106",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-71958",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-71958"
+      ]
+    }
+  },
+  {
+    "id": 2012,
+    "fecha": "2026-08-08T21:24:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "N-able lanza hotfix para N-central",
+    "resumen": "N-able ha lanzado un hotfix para N-central debido a la explotación de una vulnerabilidad de seguridad recientemente divulgada en el producto de Remote Monitoring and Management (RMM), que permite a los atacantes alcanzar y persistir en sistemas gestionados. El hotfix forma parte de la investigación en curso y busca expandir las protecciones contra las técnicas de ataque en evolución de los actores de amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMjQyODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/n-central-attackers-reach-managed.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:n able issues n central hotfix 2 as attackers reach managed systems and persist",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2011,
+    "fecha": "2026-08-08T21:24:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque zero-day en Metabase",
+    "resumen": "Se ha explotado una vulnerabilidad crítica de inyección de SQL (SQLi) en Metabase a través de un ataque zero-day, lo que ha permitido a los atacantes robar datos de clientes en instancias de Framework y Tally. Los vectores de ataque incluyen la explotación de esta vulnerabilidad para acceder a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMjQyODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:metabase sqli zero day exploited in customer data theft attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services (no se ajusta perfectamente, pero se menciona la explotación de una vulnerabilidad en un servicio)"
+      },
+      {
+        "id": "T1055",
+        "name": "Unconventional Password Brute Force (no se menciona explícitamente, pero se podría inferir que hubo acceso no autorizado)"
+      },
+      {
+        "id": "T1530",
+        "name": "Data from Local System (no se ajusta perfectamente, pero se menciona el robo de datos de clientes)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2010,
     "fecha": "2026-08-08T18:30:04Z",
     "categoria": "IA",
@@ -87,41 +175,6 @@
       {
         "id": "T1566.001",
         "name": "Spearphishing Attachment"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 2008,
-    "fecha": "2026-08-08T18:29:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad zero-day en Metabase",
-    "resumen": "Se ha detectado una vulnerabilidad de gravedad máxima (CVSS score: 10.0) en el software de inteligencia empresarial y visualización de datos Metabase, que permite a un atacante remoto no autenticado inyectar SQL arbitrario en la base de datos de la aplicación, lo que permite obtener acceso de administrador sin autenticación. La vulnerabilidad ya ha sido explotada en el wild como un zero-day.",
-    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMTM3OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:metabase zero day exploited in wild allows admin access without authentication",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1055",
-        "name": "Unauthenticated SQL Injection (no existe en el framework, pero se puede inferir como) T1055 - T1055 no existe, pero se puede relacionar con T1190, por lo que se puede considerar T1190 como la técnica más cercana. Sin embargo, la técnica más adecuada sería T1068, ya que se refiere a la explotación de vulnerabilidades para escalar privilegios."
       }
     ],
     "iocs": {}
