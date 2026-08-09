@@ -1,5 +1,51 @@
 [
   {
+    "id": 2027,
+    "fecha": "2026-08-09T18:32:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en ExcelLexBot",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2026-19360) en la versión 0.0.3 de ExcelLexBot, que afecta la función ExcelLexBotS3TriggerFunction del componente Lambda Function Handler, permitiendo una mala gestión de privilegios a través de una manipulación remota. La vulnerabilidad solo afecta productos que ya no son soportados por el mantenedor.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMDAzNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241218",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19360",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19360"
+      ]
+    }
+  },
+  {
+    "id": 2026,
+    "fecha": "2026-08-09T18:32:27Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "México, fábrica de IA",
+    "resumen": "México se ha consolidado como el segundo mayor exportador mundial de componentes esenciales para la inteligencia artificial, solo superado por China, aunque el país no utiliza la IA de manera efectiva en sus procesos productivos, lo que representa una desventaja para capitalizar esta industria. La escasa adopción de la IA en México se refleja en que solo uno de cada cinco pequeños negocios la utiliza, y el país no figura en el top 20 de países que más la usan.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937633-890b1429bc4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMDAzNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/componentes/mexico-se-ha-convertido-gran-fabrica-para-ia-solo-china-le-supera",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:méxico se ha convertido en la gran fábrica para la ia solo china le supera",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.worldbank.org",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/c554a8/mexiii/1024_2000.jpeg",
+        "https://i.blogs.es/d3e276/china-chips/375_142.jpeg",
+        "https://unsplash.com/es/@briankost?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        "https://unsplash.com/es/@justinecz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        "https://www.worldbank.org/en/publication/wdr2026"
+      ]
+    }
+  },
+  {
     "id": 2025,
     "fecha": "2026-08-09T15:25:41Z",
     "categoria": "Ciberseguridad",
