@@ -1,5 +1,61 @@
 [
   {
+    "id": 2015,
+    "fecha": "2026-08-09T01:18:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Linux: CVE-2024-1086",
+    "resumen": "Se ha descubierto una vulnerabilidad de \"use after free\" en el componente netfilter: nf_tables del kernel de Linux, con un CVSS Score de 7.8, que puede ser explotada para una escalada de privilegios local a través de la función nft_verdict_init() y nf_hook_slow(). Los productos de NetApp como h700s_firmware, h500s_firmware y h300s_firmware están afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMzgzMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-1086",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-1086",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "f342de4e2f33e0e39165d8639387aa6c19dff660"
+      ],
+      "cve": [
+        "CVE-2024-1086"
+      ]
+    }
+  },
+  {
+    "id": 2014,
+    "fecha": "2026-08-09T01:18:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Zero-Day en Metabase",
+    "resumen": "Se ha detectado una vulnerabilidad de gravedad máxima (CVSS score: 10.0) en el software de inteligencia empresarial y visualización de datos Metabase, que permite a un atacante remoto no autenticado inyectar SQL arbitrario en la base de datos de la aplicación, lo que permite obtener acceso de administrador sin autenticación. La vulnerabilidad ya ha sido explotada en el wild como un zero-day.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMzgyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:metabase zero day exploited in wild allows admin access without authentication",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated SQL Injection (inyectar SQL arbitrario en la base de datos)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2013,
     "fecha": "2026-08-08T21:24:51Z",
     "categoria": "Ciberseguridad",
@@ -50,41 +106,6 @@
     "fuente": "The Hacker News",
     "dedup_key": "txt:n able issues n central hotfix 2 as attackers reach managed systems and persist",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 2011,
-    "fecha": "2026-08-08T21:24:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque zero-day en Metabase",
-    "resumen": "Se ha explotado una vulnerabilidad crítica de inyección de SQL (SQLi) en Metabase a través de un ataque zero-day, lo que ha permitido a los atacantes robar datos de clientes en instancias de Framework y Tally. Los vectores de ataque incluyen la explotación de esta vulnerabilidad para acceder a información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMjQyODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:metabase sqli zero day exploited in customer data theft attacks",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services (no se ajusta perfectamente, pero se menciona la explotación de una vulnerabilidad en un servicio)"
-      },
-      {
-        "id": "T1055",
-        "name": "Unconventional Password Brute Force (no se menciona explícitamente, pero se podría inferir que hubo acceso no autorizado)"
-      },
-      {
-        "id": "T1530",
-        "name": "Data from Local System (no se ajusta perfectamente, pero se menciona el robo de datos de clientes)"
-      }
-    ],
     "iocs": {}
   },
   {
