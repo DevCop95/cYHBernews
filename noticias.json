@@ -1,5 +1,79 @@
 [
   {
+    "id": 2029,
+    "fecha": "2026-08-09T21:26:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques de Vishing de UNC6671",
+    "resumen": "El grupo de extorsión de datos UNC6671 ha lanzado una serie de ataques de vishing dirigidos a empleados de empresas de servicios financieros, equity privada y servicios profesionales, con el objetivo de robar datos de SaaS, utilizando técnicas de ingeniería social como hacerse pasar por personal del help desk de IT. Los ataques se llevan a cabo a través de llamadas telefónicas a los teléfonos personales de los empleados, aprovechando la confianza para obtener acceso a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMTA3OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/unc6671-vishing-attacks-target-personal.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:unc6671 vishing attacks target personal phones to steal saas data",
+    "ttps": [
+      {
+        "id": "T1621",
+        "name": "Impersonación de personal de soporte técnico"
+      },
+      {
+        "id": "T1598",
+        "name": "Phishing de voz (Vishing)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1558",
+        "name": "Manipulación de la confianza del usuario"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2028,
+    "fecha": "2026-08-09T21:26:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en NocteDefensor LudusMCP",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-19367) en la versión 1.0.24 de NocteDefensor LudusMCP, que afecta la funcionalidad de lectura de rangos de configuración, permitiendo un ataque de falsificación de solicitudes en el lado del servidor (server-side request forgery) a través de la manipulación del argumento Source, iniciado de forma remota. La vulnerabilidad fue reportada al proyecto, pero aún no ha recibido respuesta.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMTA3ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241245",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19367",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1202",
+        "name": "Indirect Command Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19367"
+      ]
+    }
+  },
+  {
     "id": 2027,
     "fecha": "2026-08-09T18:32:32Z",
     "categoria": "Ciberseguridad",
