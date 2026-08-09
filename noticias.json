@@ -1,5 +1,44 @@
 [
   {
+    "id": 2017,
+    "fecha": "2026-08-09T04:14:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-19328",
+    "resumen": "Se ha descubierto una vulnerabilidad en la versión 0.1.0 de aktsmm skill-ninja-mcp-server, específicamente en la función getInstalledSkills/installSkill/updateAgentsMd/uninstallSkill, que permite un ataque de path traversal mediante la manipulación del argumento workspacePath, requiriendo acceso local. Se recomienda actualizar a la versión 0.1.1 para abordar este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyNDg4ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241129",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19328",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "855b46739e0f6e8388f17f9d0066ac4298a3965d"
+      ],
+      "cve": [
+        "CVE-2026-19328"
+      ]
+    }
+  },
+  {
+    "id": 2016,
+    "fecha": "2026-08-09T04:14:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Undertow",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2024-7885) en Undertow con una puntuación CVSS de 7.5, que permite la reutilización de instancias de StringBuilder en múltiples solicitudes, lo que podría provocar una fuga de información entre solicitudes o respuestas. Esta vulnerabilidad afecta principalmente a productos de Red Hat, como Data Grid, Apache Camel y Keycloak, y puede resultar en errores, terminación de la conexión y exposición no deseada de datos en entornos de solicitudes múltiples.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyNDg4ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-7885",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-7885",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-7885"
+      ]
+    }
+  },
+  {
     "id": 2015,
     "fecha": "2026-08-09T01:18:21Z",
     "categoria": "Ciberseguridad",
