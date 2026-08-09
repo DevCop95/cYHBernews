@@ -1,5 +1,121 @@
 [
   {
+    "id": 2020,
+    "fecha": "2026-08-09T06:47:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-19337",
+    "resumen": "Se ha identificado una vulnerabilidad en adenot mcp-google-search hasta la versión 0.3.1, que puede permitir un ataque de falsificación de solicitudes en el lado del servidor (server-side request forgery) mediante la manipulación del argumento \"url\" en la función \"read_webpage\" del archivo src/index.ts. La ejecución del ataque se restringe a la ejecución local.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyNTgwNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241174",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19337",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1202",
+        "name": "Indirect Command Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1557.001",
+        "name": "Phishing: Spearphishing Attachment no aplica en este caso, pero si T1189 - Forced Authentication"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "f071d491b685011ca04e8ab8d586fc65f86bcee1"
+      ],
+      "cve": [
+        "CVE-2026-19337"
+      ]
+    }
+  },
+  {
+    "id": 2019,
+    "fecha": "2026-08-09T06:47:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2024-6594",
+    "resumen": "La vulnerabilidad CVE-2024-6594 en el WatchGuard Single Sign-On Client para Windows permite a un atacante con acceso de red crear una condición de denegación de servicio (DoS) al emitir comandos malformados, afectando la disponibilidad del servicio de inicio de sesión único. La vulnerabilidad se debe a un manejo inadecuado de condiciones excepcionales y tiene un CVSS Score de 7.5, considerada como alta.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyNTgwMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-6594",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-6594",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1482",
+        "name": "Domain Trust Discovery (no se menciona explícitamente, pero se infiere que el atacante necesita conocer la configuración de la red y el servicio de inicio de sesión único para emitir comandos malformados)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-6594"
+      ]
+    }
+  },
+  {
+    "id": 2018,
+    "fecha": "2026-08-09T06:47:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque zero-day en Metabase",
+    "resumen": "Se ha explotado una vulnerabilidad crítica de inyección de SQL (SQLi) en Metabase para realizar ataques de robo de datos en instancias de clientes, afectando a Framework y Tally, mediante un ataque zero-day que aprovecha la falta de parche para la vulnerabilidad. Los ataques aprovechan la vulnerabilidad para acceder a datos confidenciales de los clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyNTgwMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:metabase sqli zero day exploited in customer data theft attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1055",
+        "name": "Unconventional Password Authentication (no se menciona explícitamente, pero se infiere que se aprovecha la vulnerabilidad para acceder a datos confidenciales, lo que podría incluir autenticación no convencional)"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise (no se menciona explícitamente, pero se infiere que se aprovecha la vulnerabilidad para acceder a datos confidenciales de los clientes, lo que podría incluir compromiso"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2017,
     "fecha": "2026-08-09T04:14:47Z",
     "categoria": "Ciberseguridad",
@@ -58,41 +174,6 @@
         "CVE-2024-1086"
       ]
     }
-  },
-  {
-    "id": 2014,
-    "fecha": "2026-08-09T01:18:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad Zero-Day en Metabase",
-    "resumen": "Se ha detectado una vulnerabilidad de gravedad máxima (CVSS score: 10.0) en el software de inteligencia empresarial y visualización de datos Metabase, que permite a un atacante remoto no autenticado inyectar SQL arbitrario en la base de datos de la aplicación, lo que permite obtener acceso de administrador sin autenticación. La vulnerabilidad ya ha sido explotada en el wild como un zero-day.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyMzgyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:metabase zero day exploited in wild allows admin access without authentication",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1055",
-        "name": "Unauthenticated SQL Injection (inyectar SQL arbitrario en la base de datos)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 2013,
