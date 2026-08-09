@@ -1,5 +1,40 @@
 [
   {
+    "id": 2021,
+    "fecha": "2026-08-09T09:34:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Zero-Day en Metabase",
+    "resumen": "Se ha detectado una vulnerabilidad de gravedad máxima (CVSS score: 10.0) en el software de inteligencia empresarial y visualización de datos Metabase, que permite a un atacante remoto no autenticado inyectar SQL arbitrario en la base de datos de la aplicación, lo que permite obtener acceso de administrador sin autenticación. La vulnerabilidad ya ha sido explotada en el wild como un zero-day.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyNjgwNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:metabase zero day exploited in wild allows admin access without authentication",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2020,
     "fecha": "2026-08-09T06:47:23Z",
     "categoria": "Ciberseguridad",
@@ -79,41 +114,6 @@
         "CVE-2024-6594"
       ]
     }
-  },
-  {
-    "id": 2018,
-    "fecha": "2026-08-09T06:47:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque zero-day en Metabase",
-    "resumen": "Se ha explotado una vulnerabilidad crítica de inyección de SQL (SQLi) en Metabase para realizar ataques de robo de datos en instancias de clientes, afectando a Framework y Tally, mediante un ataque zero-day que aprovecha la falta de parche para la vulnerabilidad. Los ataques aprovechan la vulnerabilidad para acceder a datos confidenciales de los clientes.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYyNTgwMzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/framework-tally-disclose-metabase-data-theft-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:metabase sqli zero day exploited in customer data theft attacks",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1055",
-        "name": "Unconventional Password Authentication (no se menciona explícitamente, pero se infiere que se aprovecha la vulnerabilidad para acceder a datos confidenciales, lo que podría incluir autenticación no convencional)"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise (no se menciona explícitamente, pero se infiere que se aprovecha la vulnerabilidad para acceder a datos confidenciales de los clientes, lo que podría incluir compromiso"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 2017,
