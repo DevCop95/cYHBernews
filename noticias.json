@@ -1,5 +1,132 @@
 [
   {
+    "id": 2044,
+    "fecha": "2026-08-10T12:57:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Nexxt Solutions",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-31847) con un score CVSS de 8.8 en el firmware de Nexxt Solutions Nebula 300+, que permite la habilitación remota del servicio Telnet a través de un endpoint oculto, aumentando la superficie de ataque y permitiendo un posible compromiso del dispositivo. El vector de ataque se basa en la explotación de esta funcionalidad oculta en el endpoint /goform/setSysTools.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNjY2MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-31847",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-31847",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1072",
+        "name": "Software Deployment Tools (no se menciona explícitamente, pero se infiere que el atacante utiliza la funcionalidad del firmware para habilitar Telnet)"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services (se menciona la habilitación remota del servicio Telnet)"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.01.01.37"
+      ],
+      "cve": [
+        "CVE-2026-31847"
+      ]
+    }
+  },
+  {
+    "id": 2043,
+    "fecha": "2026-08-10T12:56:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Nueva Zelanda sanciona a hackers rusos",
+    "resumen": "Nueva Zelanda ha impuesto sanciones a hackers rusos, empresas de tecnología y organizaciones vinculadas al Kremlin por su participación en el apoyo a la guerra de Moscú contra Ucrania, lo que puede afectar la ciberseguridad y la propaganda en línea. Las sanciones pueden limitar el acceso a herramientas y recursos de ciberataque para estos grupos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNjY2MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/new-zealand-russian-hackers-sanctions",
+    "fuente": "The Record",
+    "dedup_key": "txt:new zealand sanctions russian hackers propaganda groups over ukraine war",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2042,
+    "fecha": "2026-08-10T12:56:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Biblioteca de cifrado post-cuántico para Python",
+    "resumen": "Se ha implementado una biblioteca de cifrado post-cuántico para Python, que incluye soporte para ML-KEM y ML-DSA, primitivas de establecimiento de claves y firmas digitales estándar de NIST, lo que permite a los desarrolladores mejorar la seguridad criptográfica de sus sistemas de manera proactiva. Esto permite a los sistemas ser criptográficamente ágiles, lo que es beneficioso para la seguridad a largo plazo.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNjY2MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/python-now-has-a-post-quantum-encryption-library.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:python now has a post quantum encryption library",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "blog.trailofbits.com"
+      ],
+      "url": [
+        "https://blog.trailofbits.com/2026/06/30/shipping-post-quantum-cryptography-to-python/",
+        "https://www.sovereign.tech/"
+      ]
+    }
+  },
+  {
+    "id": 2041,
+    "fecha": "2026-08-10T12:56:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques a Passkey",
+    "resumen": "Investigaciones recientes han demostrado tres métodos para eludir las protecciones de passkey, incluyendo el reuso de material de autenticación firmado expuesto por Windows, el abuso de sistemas de passkey sincronizados en la nube desde malware ya presente en la máquina de la víctima, y el uso de ataques de phishing resistente a MFA. Estos ataques pueden recuperar claves privadas sincronizadas o eludir la autenticación de múltiplo factor (MFA) resistente a phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNjY2MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new passkey attacks can recover synced private keys or bypass phishing resistant mfa",
+    "ttps": [
+      {
+        "id": "T1556.003",
+        "name": "Utilizar credenciales de acceso para obtener acceso inicial (no se menciona explícitamente, pero se infiere claramente el uso de credenciales)"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication (no se menciona explícitamente, pero se infiere claramente el abuso de sistemas de passkey sincronizados)"
+      },
+      {
+        "id": "T1625",
+        "name": "Abuso de control de cuentas (no se menciona explícitamente, pero se infiere claramente el abuso de sistemas de passkey sincronizados)"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      },
+      {
+        "id": "T1621",
+        "name": "Phishing (ataques de phishing resistente a MFA)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2040,
+    "fecha": "2026-08-10T12:56:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "LexisNexis detiene servicios",
+    "resumen": "LexisNexis ha desactivado temporalmente sus servicios Diligence, Metabase API y Newsdesk debido a actividad sospechosa en servidores gestionados por un proveedor tercero, lo que puede indicar una posible brecha de seguridad. El impacto real aún no se ha determinado, pero el vector de ataque parece estar relacionado con la infraestructura del proveedor tercero.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNjY2MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/lexisnexis-shuts-down-services-after-suspicious-activity-on-servers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:lexisnexis shuts down services after suspicious activity on servers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2039,
     "fecha": "2026-08-10T10:13:07Z",
     "categoria": "Ciberseguridad",
