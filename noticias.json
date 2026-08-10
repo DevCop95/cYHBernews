@@ -1,5 +1,37 @@
 [
   {
+    "id": 2036,
+    "fecha": "2026-08-10T07:22:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-72522 en libexpat",
+    "resumen": "Se ha identificado una vulnerabilidad de lectura fuera de límites (out-of-bounds read) en la biblioteca libexpat, versión 2.8.3 o anterior, que puede provocar un bucle infinito debido a un error en el procesamiento de Unicode, específicamente en la igualación de surrogates bajos y altos en las funciones _toUtf16. Esta vulnerabilidad puede ser explotada a través de ataques de denegación de servicio (DoS).",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNDY1MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241270",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-72522",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-72522"
+      ]
+    }
+  },
+  {
+    "id": 2035,
+    "fecha": "2026-08-10T07:22:07Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Astra de OpenAI: Pausa por avance ciberseguridad",
+    "resumen": "OpenAI ha pausado algunas actividades internas relacionadas con su próximo modelo de inteligencia artificial Astra después de descubrir que había logrado avances significativos en codificación agente y ciberseguridad, lo que ha llevado a la implementación de controles de seguridad para modelos de mayor capacidad. Esto sugiere que Astra podría tener implicaciones importantes en la ciberseguridad, potencialmente ampliando los vectores de ataque o mejorando las capacidades de defensa.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501220374-9f4b2a3a60c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNDY1Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/openais-next-ai-model-astra-shows-cyber.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai s next ai model astra shows cyber performance strong enough to trigger pause",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2034,
     "fecha": "2026-08-10T04:26:23Z",
     "categoria": "Ciberseguridad",
