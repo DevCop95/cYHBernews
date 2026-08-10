@@ -1,5 +1,169 @@
 [
   {
+    "id": 2049,
+    "fecha": "2026-08-10T15:56:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad NATS-Server",
+    "resumen": "Se ha identificado una vulnerabilidad de alto impacto (CVE-2026-33216, CVSS 8.6) en NATS-Server, que expone contraseñas de MQTT a través de puntos finales de monitoreo si se utilizan códigos de usuario/contraseñas, afectando la seguridad de las implementaciones de mensajería en la nube y del borde. La corrección se incluye en las versiones 2.11.15 y 2.12.6, y se recomienda proteger los puntos finales de monitoreo.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNzczNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-33216",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-33216",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "nats.io"
+      ],
+      "cve": [
+        "CVE-2026-33216"
+      ]
+    }
+  },
+  {
+    "id": 2048,
+    "fecha": "2026-08-10T15:56:04Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Inversión récord en IA",
+    "resumen": "Las empresas tecnológicas Alphabet, Microsoft, Amazon y Meta invertirán un total de 760.000 millones de dólares en inteligencia artificial (IA) en 2026, superando con creces la inversión en proyectos de infraestructura y tecnología de gran escala, lo que refleja la importancia creciente de la IA en el sector tecnológico. Esta inversión puede tener un impacto significativo en el desarrollo de modelos de lenguaje y herramientas de IA, como GPT y Gemini.",
+    "url_imagen": "https://images.unsplash.com/photo-1767716134895-296cbd7aec1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNzczNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/gasto-ia-se-ha-salido-escala-nivel-este-ano-tres-empresas-gastaran-equivalente-a-tres-misiones-apolo-a-luna",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el gasto en ia se ha salido de la escala nivel este año tres empresas gastarán el equivalente a tres misiones apolo a la luna",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "es.wikipedia.org",
+        "platform.instagram.com",
+        "www.planetary.org",
+        "www.statista.com",
+        "www.wionews.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/813232/sundar-pichai-google-ia-gemini/375_142.jpeg",
+        "https://i.blogs.es/888e21/reward-hacking/1024_682.jpeg",
+        "https://i.blogs.es/888e21/reward-hacking/500_333.jpeg",
+        "https://i.blogs.es/888e21/reward-hacking/840_560.jpeg",
+        "https://i.blogs.es/af4127/original/1024_2000.jpeg",
+        "https://i.blogs.es/d3e276/china-chips/375_142.jpeg",
+        "https://i.blogs.es/d76e49/35046/1024_2000.jpeg",
+        "https://i.blogs.es/d76e49/35046/1366_2000.jpeg",
+        "https://i.blogs.es/d76e49/35046/450_1000.jpeg",
+        "https://i.blogs.es/d76e49/35046/650_1200.jpeg",
+        "https://www.planetary.org/press-releases/apollo-cost-analysis",
+        "https://www.statista.com/chart/35046/capital-expenditure-of-meta-alphabet-amazon-and-microsoft/",
+        "https://www.wionews.com/world/big-tech-will-spend-740-billion-on-ai-this-year-up-77-in-twelve-months-1786294608443"
+      ]
+    }
+  },
+  {
+    "id": 2047,
+    "fecha": "2026-08-10T15:55:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers rusos atacan a trabajadores IT ucranianos",
+    "resumen": "Los hackers militares rusos, vinculados al grupo Sandworm y la agencia de inteligencia GRU, están realizando un ataque de phishing disfrazándose de reclutadores para targeting a trabajadores IT ucranianos desde al menos mayo, según informes de CERT-UA. El vector de ataque implica el engaño de los trabajadores para obtener acceso a sistemas sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNzczNTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers",
+    "fuente": "The Record",
+    "dedup_key": "txt:russian military hackers pose as recruiters to target ukrainian it workers",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material (no se menciona explícitamente, pero se puede inferir que se busca obtener credenciales de acceso)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2046,
+    "fecha": "2026-08-10T15:55:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Kimsuky Desarrolla AI Offline",
+    "resumen": "El grupo de hackers estatales norcoreano Kimsuky ha comenzado a ejecutar inteligencia artificial (IA) de forma offline en sus propios servidores, conectando herramientas de búsqueda de documentos a archivos en su posesión, con el fin de mejorar sus ataques de phishing y automatizar el desarrollo de malware. Esto sugiere un aumento en la sofisticación de sus capacidades de ciberataque, potencialmente ampliando sus vectores de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNzczNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/kimsuky-builds-offline-ai-stack-that.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:kimsuky builds offline ai stack to boost phishing and automate malware development",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process (no se menciona explícitamente, pero se puede inferir que el desarrollo de malware y la automatización pueden incluir la modificación de procesos de autenticación)"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning (no se menciona explícitamente, pero se puede inferir que el uso de herramientas de búsqueda de documentos puede incluir el escaneo activo de sistemas o archivos)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2045,
+    "fecha": "2026-08-10T15:55:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades SonicWall SMA1000 explotadas",
+    "resumen": "La Agencia de Seguridad de Infraestructura Cibernética (CISA) ha confirmado que grupos de ransomware están explotando dos vulnerabilidades recientemente parcheadas en SonicWall SMA1000, incluyendo una falla de máximo nivel de gravedad de falsificación de solicitud de servidor (SSRF) que permite a los atacantes acceder a sistemas vulnerables. Esto representa un vector de ataque crítico para las organizaciones que no han aplicado los parches de seguridad correspondientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNzczNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-sonicwall-sma1000-flaws-now-exploited-by-ransomware-gangs/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa sonicwall sma1000 flaws now exploited by ransomware gangs",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2044,
     "fecha": "2026-08-10T12:57:02Z",
     "categoria": "Ciberseguridad",
