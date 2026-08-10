@@ -1,5 +1,41 @@
 [
   {
+    "id": 2034,
+    "fecha": "2026-08-10T04:26:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Python",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-3087) en la función `shutil.unpack_archive()` de Python, que permite la extracción de archivos fuera del directorio destino en sistemas Windows si se proporciona un archivo ZIP con una ruta absoluta que incluye una unidad (por ejemplo, `C:\\\\...`), lo que podría ser explotado para ataques de escritura de archivos arbitrarios. La vulnerabilidad afecta solo a sistemas Windows y tiene un puntaje CVSS de 7.5, clasificada como alta.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMzU5ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-3087",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-3087",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-3087"
+      ]
+    }
+  },
+  {
+    "id": 2033,
+    "fecha": "2026-08-10T04:26:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en GStreamer",
+    "resumen": "Se han descubierto múltiples vulnerabilidades de desbordamiento de enteros en el demuxer ASF de GStreamer, que pueden permitir la lectura fuera de límites de la memoria heap y causar fallos de aplicación, denegación de servicio o divulgación limitada de información al procesar archivos multimedia no confiables. Los vectores de ataque incluyen la manipulación de valores de longitud y tamaño controlados por atacantes en archivos ASF, WMV o WMA maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMzU5Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241269",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19389",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19389"
+      ]
+    }
+  },
+  {
     "id": 2032,
     "fecha": "2026-08-10T01:20:39Z",
     "categoria": "Ciberseguridad",
