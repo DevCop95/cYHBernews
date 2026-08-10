@@ -1,5 +1,77 @@
 [
   {
+    "id": 2032,
+    "fecha": "2026-08-10T01:20:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Datos sensibles en correos \"No Reply\"",
+    "resumen": "Investigadores de seguridad compraron dominios baratos como noreply.net y configuraron servicios de escucha de correos electrónicos, recibiendo información confidencial de cientos de empresas que envían datos sensibles a estas direcciones, lo que pone en riesgo la seguridad de la información corporativa a través de un vector de ataque de phishing potencial. Esto destaca la falta de conciencia sobre la seguridad de la información en la comunicación empresarial.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMjQ4Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/sensitive-info-goes-into-no-reply-emails-constantly-this-guy-sees-it-all/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:sensitive info goes into no reply emails constantly this guy sees it all",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      },
+      {
+        "id": "T1586",
+        "name": "Phishing: Acquire Infrastructure"
+      },
+      {
+        "id": "T1586.001",
+        "name": "Phishing: Acquire Infrastructure - Domain Registration"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "deleteduser.com",
+        "noreply.net"
+      ]
+    }
+  },
+  {
+    "id": 2031,
+    "fecha": "2026-08-10T01:20:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Libro de Malware Básico",
+    "resumen": "Un autor está creando un libro titulado \"Malware for Noobs\" que busca proporcionar material de nivel básico sobre malware, lo que podría potencialmente aumentar el conocimiento y la conciencia sobre este tipo de amenazas, pero también plantea riesgos si cae en manos de actores maliciosos. El contenido del libro se desarrollará a través de publicaciones en un blog.",
+    "url_imagen": "https://images.unsplash.com/photo-1581092336206-b9e5146be6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMjQ4MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9278",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:i ve had so many people talk to me about looking for entry level material for malware i ve decided to give writing a",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2030,
+    "fecha": "2026-08-10T01:20:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-10849",
+    "resumen": "Se ha identificado una vulnerabilidad de escritura fuera de límites en el cliente de gestión de dispositivos hawkBit, que puede ser explotada por un servidor de actualización malicioso para corromper la memoria del heap y causar un denegación de servicio. La vulnerabilidad se debe a que el búfer de respuesta HTTP no reserva espacio para un carácter de terminación NUL, lo que permite que el carácter de terminación se escriba fuera del límite del búfer.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzMjQ4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-10849",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-10849",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-10849"
+      ]
+    }
+  },
+  {
     "id": 2029,
     "fecha": "2026-08-09T21:26:30Z",
     "categoria": "Ciberseguridad",
