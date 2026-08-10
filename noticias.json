@@ -1,5 +1,134 @@
 [
   {
+    "id": 2059,
+    "fecha": "2026-08-10T21:36:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ejecución Remota de Código en OrkesConductor",
+    "resumen": "Se ha identificado una vulnerabilidad de ejecución remota de código (RCE) no autenticada en OrkesConductor versión 3.30.2, lo que permite a atacantes ejecutar código arbitrario sin autenticación previa, representando un riesgo significativo para la seguridad de los sistemas que lo implementan. El vector de ataque es remoto y no requiere autenticación, lo que facilita su explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzOTc4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52633",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps orkesconductor 3 30 2 unauthenticated remote code execution",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1559",
+        "name": "Privilege Escalation (no se menciona explícitamente, pero se infiere que el atacante puede ejecutar código arbitrario, lo que podría permitirle escalar privilegios)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2058,
+    "fecha": "2026-08-10T21:36:38Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Meta Lanza IA Offline",
+    "resumen": "Meta presenta Muse Glimmer, un modelo de IA de 30.000 millones de parámetros diseñado para ejecutarse en equipos locales, trabajar en flujos agénticos y soportar múltiples idiomas, con el objetivo de competir con OpenAI y Google en el campo de la inteligencia artificial. El modelo se lanzará con licencia Apache 2.0, permitiendo el acceso a sus pesos y fomentando el desarrollo de aplicaciones locales de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1767716134807-646b08712f6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzOTc3OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/meta-quiere-plantar-cara-a-openai-google-arma-muy-particular-ia-potente-que-funciona-offline-tu-ordenador",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:meta quiere plantar cara a openai y google con un arma muy particular una ia potente que funciona offline en tu ordenador",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "about.fb.com",
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/",
+        "https://i.blogs.es/29b042/prueba-meta-modelo/1024_2000.png",
+        "https://i.blogs.es/29b042/prueba-meta-modelo/1366_2000.png",
+        "https://i.blogs.es/29b042/prueba-meta-modelo/450_1000.png",
+        "https://i.blogs.es/29b042/prueba-meta-modelo/650_1200.png",
+        "https://i.blogs.es/31adda/meta-logo-1/1024_2000.jpeg",
+        "https://i.blogs.es/ff296e/original/375_142.jpeg",
+        "https://lmstudio.ai",
+        "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model"
+      ]
+    }
+  },
+  {
+    "id": 2057,
+    "fecha": "2026-08-10T21:36:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Alerta por ransomware Gunra",
+    "resumen": "El grupo de ransomware Gunra está explotando vulnerabilidades en firewalls de marcas populares para infiltrarse en organizaciones de infraestructura crítica, según advertencias del FBI y el gobierno de Corea del Sur. Los vectores de ataque incluyen la explotación de vulnerabilidades en firewalls, lo que pone en riesgo la seguridad de la infraestructura crítica.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzOTc3OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ransomware-south-korea-fbi-gunra",
+    "fuente": "The Record",
+    "dedup_key": "txt:fbi south korea warn of gunra ransomware gang targeting critical infrastructure",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2056,
+    "fecha": "2026-08-10T21:36:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Nueva amenaza ransomware StormEncryptor",
+    "resumen": "El grupo de amenazas Storm-1175, vinculado a China, ha desplegado un nuevo tipo de ransomware llamado StormEncryptor, probablemente a través de una vulnerabilidad en N-central, lo que supone un cambio en su modus operandi respecto al uso previo del ransomware Medusa. StormEncryptor está escrito en C++ y agrega la extensión .encrypted a los archivos afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzOTc3ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:china linked hackers deploy new stormencryptor ransomware likely via n central flaw",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2055,
+    "fecha": "2026-08-10T21:36:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque de cadena de suministro en BdThemes",
+    "resumen": "Un actor malicioso comprometió la infraestructura de BdThemes, un desarrollador de herramientas de diseño web de WordPress, y modificó un flujo JSON remoto para crear cuentas de administrador fraudulentas, permitiendo el acceso no autorizado a sitios web. El ataque aprovecha la confianza en la cadena de suministro para crear un vector de ataque silencioso y potencialmente devastador.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzOTc3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/bdthemes-plugins-supply-chain-hack-creates-rogue-wordpress-admins/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:bdthemes plugins supply chain hack creates rogue wordpress admins",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Authentication Data"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2054,
     "fecha": "2026-08-10T18:50:59Z",
     "categoria": "IA",
