@@ -1,5 +1,122 @@
 [
   {
+    "id": 2039,
+    "fecha": "2026-08-10T10:13:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en DEEBOT PRO",
+    "resumen": "Se ha identificado la vulnerabilidad CVE-2026-66411 en los modelos DEEBOT PRO M1 y DEEBOT PRO K1VAC, que afecta la implementación del algoritmo de autenticación en las comunicaciones Websocket, permitiendo a un atacante no autenticado conectarse y operar el robot. Esto representa un riesgo significativo de seguridad, ya que un atacante podría aprovechar esta vulnerabilidad para controlar el dispositivo de manera remota.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNTY3ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/241358",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-66411",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution no aplica en este caso, pero se puede considerar"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal Application Access Token no aplica directamente, pero se puede considerar"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-66411"
+      ]
+    }
+  },
+  {
+    "id": 2038,
+    "fecha": "2026-08-10T10:13:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad LoadMaster explotada",
+    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) advirtió que los hackers están explotando una vulnerabilidad de inyección de comandos de gravedad crítica en Progress Kemp LoadMaster, lo que permite a los atacantes ejecutar comandos arbitrarios en el sistema afectado. Esta explotación activa puede tener un impacto significativo en la seguridad de los sistemas que utilizan LoadMaster.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNTY3ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-progress-loadmaster-flaw-exploited-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:critical progress loadmaster flaw now actively exploited in attacks",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2037,
+    "fecha": "2026-08-10T10:12:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Extensiones maliciosas en VS Code",
+    "resumen": "Dos extensiones de Visual Studio Code (VS Code) se han identificado como maliciosas, haciéndose pasar por herramientas de Solidity para robar criptomonedas y credenciales, incluyendo claves de API y datos de carteras cripto del navegador, mediante una instalación que expone a los usuarios a estos riesgos. El incidente resalta el riesgo de la cadena de suministro en tiendas de extensiones.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzNTY3NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/dos-extensiones-maliciosas-de-vs-code-se-hacen-pasar-por-herramientas-de-solidity-para-robar-criptomonedas-y-credenciales/?utm_source=rss&utm_medium=rss&utm_campaign=dos-extensiones-maliciosas-de-vs-code-se-hacen-pasar-por-herramientas-de-solidity-para-robar-criptomonedas-y-credenciales",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:dos extensiones maliciosas de vs code se hacen pasar por herramientas de solidity para robar criptomonedas y credenciales",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/dos-extensiones-maliciosas-de-vs-code-se-hacen-pasar-por-herramientas-de-solidity-para-robar-criptomonedas-y-credenciales/"
+      ]
+    }
+  },
+  {
     "id": 2036,
     "fecha": "2026-08-10T07:22:14Z",
     "categoria": "Ciberseguridad",
@@ -24959,45 +25076,6 @@
     "dedup_key": "txt:safe events start with threat intel and digital security",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1044,
-    "fecha": "2026-07-01T14:36:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad RCE en LoadMaster",
-    "resumen": "Se han detectado intentos de explotación activos de la vulnerabilidad CVE-2026-8037, una falla de inyección de comandos del sistema operativo en Progress Kemp LoadMaster, que podría permitir la ejecución remota de código (RCE) sin autenticación previa. La vulnerabilidad tiene un puntaje CVSS de 9.6 y se considera crítica.",
-    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-8037",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-8037"
-      ]
-    }
   },
   {
     "id": 1043,
