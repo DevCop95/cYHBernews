@@ -1,5 +1,83 @@
 [
   {
+    "id": 2094,
+    "fecha": "2026-08-11T21:41:15Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Escasez de memoria para IA",
+    "resumen": "La demanda de memoria DRAM y HBM para la inteligencia artificial (IA) ha superado la capacidad de producción prevista para 2027, lo que ha llevado a que Samsung, SK hynix y Micron asignen toda su capacidad de producción para el próximo año, afectando no solo a los centros de datos, sino también a productos de consumo que requieren memoria. La HBM, utilizada especialmente en aceleradores de IA, está absorbiendo una parte creciente de los recursos de fabricación disponibles, restringiendo la oferta de productos DRAM que no son HBM.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0ODQ0NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/componentes/2027-siquiera-ha-comenzado-ia-ha-hecho-suyas-todo-apunta-a-que-dram-hbm-ano-se-han-vendido",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el 2027 ni siquiera ha comenzado y la ia ya ha hecho de las suyas todo apunta a que la dram y hbm del año ya se han vendido",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.digitimes.com",
+        "www.micron.com",
+        "www.trendforce.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/11c124/micron-memoria/1024_2000.jpeg",
+        "https://i.blogs.es/d8e58e/memorias-copia-2/375_142.jpeg",
+        "https://www.digitimes.com.tw/tech/dt/n/shwnws.asp?CnlID=1&id=0000763847_DVY7YHX65GMLYZ6UQEEMP",
+        "https://www.micron.com/products/memory/hbm",
+        "https://www.trendforce.com/presscenter/news/20260602-13074.html"
+      ]
+    }
+  },
+  {
+    "id": 2093,
+    "fecha": "2026-08-11T21:41:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware Gunra explota fallos Fortinet",
+    "resumen": "El grupo de ransomware Gunra, que opera bajo el modelo ransomware-as-a-service, está aprovechando vulnerabilidades en firewalls y dispositivos VPN de Fortinet, así como código filtrado de Conti, para bypassar la autenticación multifactor (MFA) y atacar infraestructuras críticas. Los ataques aprovechan fallos conocidos y código malicioso existente para infiltrarse en sistemas vulnerables.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0ODQ0Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/gunra-ransomware-gang-fortinet-flaws-bypasses-mfa",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:gunra ransomware gang exploits fortinet flaws bypasses mfa",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Modify System Binary (posible inferencia por código filtrado de Conti)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2092,
+    "fecha": "2026-08-11T21:41:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques multidominio",
+    "resumen": "Los entornos de trabajo digitales enfrentan un reto significativo para frenar ataques multidominio debido a la insuficiencia de las defensas aisladas, lo que requiere una estrategia de seguridad unificada para detección, respuesta y visibilidad. Los expertos de Proofpoint destacan la necesidad de una protección integral para abordar las ciberamenazas cada vez más sofisticadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0ODQ0NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/defensas-aisladas-seguridad-insuficiente-el-reto-de-frenar-ataques-multidominio/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:defensas aisladas seguridad insuficiente el reto de frenar ataques multidominio",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2091,
     "fecha": "2026-08-11T18:56:16Z",
     "categoria": "Ciberseguridad",
