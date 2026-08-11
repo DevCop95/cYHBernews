@@ -1,5 +1,151 @@
 [
   {
+    "id": 2091,
+    "fecha": "2026-08-11T18:56:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en InsydeH2O",
+    "resumen": "Se ha detectado una vulnerabilidad de alto impacto (CVSS 8.2) en el componente AhciBusDxe de InsydeH2O, que afecta versiones anteriores a 05.16.25, 05.26.25, 05.35.25, 05.43.25 y 05.51.25, permitiendo un posible ataque en el modo SMM (System Management Mode) debido a la falta de validación del puntero del buffer asignado. La vulnerabilidad puede ser explotada a través de un ataque dirigido a la rama SMM.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NzQ1NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-45969",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-45969",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1542",
+        "name": "Pre-OS Boot: System Firmware"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2021-45969"
+      ]
+    }
+  },
+  {
+    "id": 2090,
+    "fecha": "2026-08-11T18:56:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques cibernéticos en gobiernos locales",
+    "resumen": "Varios gobiernos locales en California, Oklahoma, Wisconsin y Texas están recuperándose de ataques cibernéticos disruptivos que han afectado operaciones gubernamentales, posiblemente mediante técnicas de ransomware o ataques de denegación de servicio (DDoS). Los vectores de ataque no se han especificado, pero es probable que se hayan utilizado tácticas como phishing o explotación de vulnerabilidades para infiltrarse en los sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NzQ1NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cyberattacks-ransomware-local-governments",
+    "fuente": "The Record",
+    "dedup_key": "txt:local governments in four states dealing with cyberattacks that have shut down services",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2089,
+    "fecha": "2026-08-11T18:56:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Parches de Seguridad de Microsoft",
+    "resumen": "Microsoft ha lanzado parches para 418 vulnerabilidades, incluyendo 62 críticas, 1 explotada en la wild y 2 zero-days públicamente divulgadas, abordando problemas de escalada de privilegios en Windows, manipulación de contenedores y ejecución remota de código en QUIC y DNS Server. Los vectores de ataque incluyen exploits de día cero y vulnerabilidades críticas en protocolos de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NzQ1NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33236",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:microsoft patch tuesday august 2026 tue aug 11th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2088,
+    "fecha": "2026-08-11T18:56:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña de ingeniería social de UAC-0145",
+    "resumen": "El equipo de respuesta a emergencias informáticas de Ucrania (CERT-UA) ha descubierto una campaña de ingeniería social atribuida a actores de amenazas estatales rusos, que se hacen pasar por reclutadores para engañar a trabajadores de TI en Ucrania y trickarlos para que instalen malware, incluyendo una VPN que puede ejecutar comandos. La campaña ha sido vinculada a UAC-0145, un subgrupo dentro de Sandworm (también conocido como APT44).",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NzQ1NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:sandworm linked uac 0145 uses fake job interviews to push vpn that can run commands",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2087,
+    "fecha": "2026-08-11T18:55:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque Wi-Fi en vuelo Delta",
+    "resumen": "Se investiga un ataque de desautenticación de Wi-Fi (deauth attack) en un vuelo de Delta que transportaba asistentes a la convención de hackers DEF CON, lo que sugiere un posible intento de comprometer la seguridad de la red a bordo. El incidente puede tener implicaciones para la seguridad de la aviación y la protección de la privacidad digital de los pasajeros.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NzQ1NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/delta-probes-wi-fi-deauth-attack-on-flight-carrying-def-con-attendees/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:delta probes wi fi deauth attack on flight carrying def con attendees",
+    "ttps": [
+      {
+        "id": "T1491",
+        "name": "Defacement"
+      },
+      {
+        "id": "T1491.001",
+        "name": "Wi-Fi Deauthentication Attack"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2086,
     "fecha": "2026-08-11T15:56:51Z",
     "categoria": "IA",
@@ -17513,20 +17659,6 @@
     "enlace_original": "https://isc.sans.edu/diary/rss/33156",
     "fuente": "SANS ISC",
     "dedup_key": "txt:recent dshield siem update tue jul 14th",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1393,
-    "fecha": "2026-07-15T01:59:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Parches de Microsoft",
-    "resumen": "Microsoft ha emitido parches para 622 vulnerabilidades CVE, incluyendo tres zero-days, y más de 60 vulnerabilidades críticas que requieren una atención inmediata para evitar posibles ataques. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para acceder a sistemas sin autorización.",
-    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwODA3NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/records-broken-patch-tuesday-raises-triage-stakes",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:records are made to be broken patch tuesday raises triage stakes",
     "ttps": [],
     "iocs": {}
   },
