@@ -1,5 +1,155 @@
 [
   {
+    "id": 2074,
+    "fecha": "2026-08-11T06:58:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-8158",
+    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de buffer (buffer overflow) en el Signed Video Framework, que podría causar la caída de aplicaciones que utilizan este marco, aunque no afecta la funcionalidad de video firmado en dispositivos AXIS OS. El vector de ataque se limita a herramientas de validación de contenido firmado.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MzE1MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/243268",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-8158",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8158"
+      ]
+    }
+  },
+  {
+    "id": 2073,
+    "fecha": "2026-08-11T06:58:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Elevation of Privilege en Edge",
+    "resumen": "Se ha identificado una vulnerabilidad de elevación de privilegios (CVE-2023-36741) en Microsoft Edge basado en Chromium, con un puntaje CVSS de 8.3, considerada de alto riesgo, que podría permitir a un atacante elevar sus privilegios en el sistema. La vulnerabilidad afecta a los productos Microsoft Edge (Chromium-based).",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MzE1MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-36741",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-36741",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-36741"
+      ]
+    }
+  },
+  {
+    "id": 2072,
+    "fecha": "2026-08-11T06:58:29Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "SpaceX apunta a 10 GW de IA en 2027",
+    "resumen": "SpaceX aspira a aumentar su capacidad de cómputo para IA en 6-8 GW durante 2027, lo que permitiría superar los 10 GW acumulados al final del año, con un coste estimado de entre 300.000 y 500.000 millones de dólares de inversión, según un análisis de SemiAnalysis que considera factible este objetivo debido a la capacidad de la empresa para priorizar la velocidad y sortear obstáculos de manera efectiva. La empresa ha demostrado su capacidad para construir infraestructura de IA a gran escala de manera rápida, como se ha visto en proyectos como Colossus.",
+    "url_imagen": "https://images.unsplash.com/photo-1785981254669-6877ddef798b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MzE1MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/spacex-quiere-desplegar-10-gw-ia-apenas-ano-semianalysis-ha-hecho-cuentas-dice-que-no-locura",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:spacex quiere desplegar 10 gw de ia en apenas un año semianalysis ha hecho las cuentas y dice que no es una locura",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "newsletter.semianalysis.com",
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/0265e8/azure/1024_2000.png",
+        "https://i.blogs.es/0265e8/azure/1366_2000.png",
+        "https://i.blogs.es/0265e8/azure/450_1000.png",
+        "https://i.blogs.es/0265e8/azure/650_1200.png",
+        "https://i.blogs.es/1d388a/ingresos-por-mw/1024_2000.png",
+        "https://i.blogs.es/1d388a/ingresos-por-mw/1366_2000.png",
+        "https://i.blogs.es/1d388a/ingresos-por-mw/450_1000.png",
+        "https://i.blogs.es/1d388a/ingresos-por-mw/650_1200.png",
+        "https://i.blogs.es/e29bbd/colossus-2-10gw/1024_2000.jpeg",
+        "https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real",
+        "https://x.ai/colossus"
+      ]
+    }
+  },
+  {
+    "id": 2071,
+    "fecha": "2026-08-11T06:58:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Amenazas en la era de la IA",
+    "resumen": "La inteligencia artificial (IA) está facilitando y acelerando ataques de phishing, robo de credenciales y ingeniería social, lo que hace que los métodos tradicionales de autenticación como contraseñas, MFA, reputación de IP y geolocalización sean más fáciles de eludir, por lo que las organizaciones están incorporando la confianza en dispositivos a sus estrategias de Zero Trust. Esto se debe a que la IA puede generar ataques más sofisticados y personalizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MzE1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/when-credentials-are-no-longer-enough-device-trust-in-the-ai-era/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:when credentials are no longer enough device trust in the ai era",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Forge Identity Provider Tokens (no se menciona explícitamente, pero se infiere que el robo de credenciales puede estar relacionado con esto)"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning (no se menciona explícitamente, pero se infiere que la ingeniería social puede involucrar el escaneo activo para recopilar información)"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2070,
+    "fecha": "2026-08-11T06:58:16Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "LLMs Consumen Contenido Web",
+    "resumen": "Los Modelos de Lenguaje (LLMs) están consumiendo contenido web para entrenar sus modelos, con más del 75% de los crawlers buscando datos para entrenamiento y inferencia, según AI Insights de Cloudflare. Esto incluye textos de blogs, webs y foros, que son valiosos para entrenar modelos cultos y refinados.",
+    "url_imagen": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MzE0OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/los-six-seven-large-slang-bro-models.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:los six seven large slang bro models",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "radar.cloudflare.com",
+        "www.elladodelmal.com",
+        "www.lavanguardia.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSRipsEkOpALdMtfApxo0ZzxG0ir1yz3huLGNEWPowLmbcRX_LL6iGOgJc5fmrP60Gibo362fOg_bu_apR3AohTozjqkyCjkU3xxanD5qEn0V3pcuIxhqU12hwjmQGjLGYNvHZ6Hplk6MmU1MGTqXMCCdOqQ6U-hXqbh67CK9DWmJQ_iGCNpov/s940/bro0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSRipsEkOpALdMtfApxo0ZzxG0ir1yz3huLGNEWPowLmbcRX_LL6iGOgJc5fmrP60Gibo362fOg_bu_apR3AohTozjqkyCjkU3xxanD5qEn0V3pcuIxhqU12hwjmQGjLGYNvHZ6Hplk6MmU1MGTqXMCCdOqQ6U-hXqbh67CK9DWmJQ_iGCNpov/w640-h350/bro0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYYGMPoiGYA1GQYTVTe7KNdCsiGnD3YNjO078YdxGDsWyjPqqEmwPITEWaP53v7Ul4FayEAApMB-W7y3Y89xgl8lvr8Y6zy5z2wH6c-NDZ8Ogei82ufdHsqysN5zquRtgFS78mNpPXcMz_AWzVQx1jbTZThoxBcOJC_RyAT7VabeO4W0-zK_Qz/w640-h476/Bro6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrsXJLTaD8o_m_CKu4QKAAigV7YHb7PhQBJaNiI_hPK6Q7wLMt525-plmQVmynav_LoeQUAbcW1DreyzOT-btei6owOe97dFtUUlKFaz9BH4VUnOevO2JekOTG5eTCPEXEGJ5h2wHWCP0hxtMNvhbPAAFz8f9dUTp68FBjcDtlkQ7kTD699KKS/s1320/Bro5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrsXJLTaD8o_m_CKu4QKAAigV7YHb7PhQBJaNiI_hPK6Q7wLMt525-plmQVmynav_LoeQUAbcW1DreyzOT-btei6owOe97dFtUUlKFaz9BH4VUnOevO2JekOTG5eTCPEXEGJ5h2wHWCP0hxtMNvhbPAAFz8f9dUTp68FBjcDtlkQ7kTD699KKS/w560-h640/Bro5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_-H43c0SV9UnFu38naYDGYjKc1y_GaFgFnIBR6iwBiZPIuqDpMAGO8dciO08xOWy-iZtkLi2Ni7Yp4D-A9XYCP9DiAgijXjaV9Ffe7_hb-2j20MbbLN6R9Df3eq4lQBHvpsRmsvPCXPQ_stI8SblmoEiCideacpQwt0ZI_aB1INA9myNHcdne/s886/Bro1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_-H43c0SV9UnFu38naYDGYjKc1y_GaFgFnIBR6iwBiZPIuqDpMAGO8dciO08xOWy-iZtkLi2Ni7Yp4D-A9XYCP9DiAgijXjaV9Ffe7_hb-2j20MbbLN6R9Df3eq4lQBHvpsRmsvPCXPQ_stI8SblmoEiCideacpQwt0ZI_aB1INA9myNHcdne/w640-h322/Bro1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcFanfS5OjGrzL5vlP-KviniHOHm1P0EZYRFlVaTE4TuoAyBoEZ4JhP9zBYSwKP7JH-87qOa6jvf09DRQAIbuXTHzq8rYiGyYTAl_d2NT28Q7O3lRFJRCsHkCl80ic0gUy-UE26HThS_4PepWpzzkGhWSq_Y8cWSrmynwEbjxZ2Mz_Vuhxch1P/w640-h368/Bro4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2kB73_IRlYtUv1-Y-tv9D73fVEG6zgALGiGQTHwdeGJR_erFyEpBUAR4wMJGl4UxdFqYfYSpGFqiey9ND4Bp8CbEo9N1wnh1wMCKQ6Qv6dAarMDIhd7AV1l_31J2phYjtrL9pBy5lIwG43rT95t5-pIU_oImCAA1W4eB9u3t5xZfgCz82nT-T/w640-h570/Bro3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKEYGBmsKsP6dsevl-5ijTrE26gO8khjej9V1Jiu7o9q16-dXk0LulOOmLio-GfLVQQNUTPkWYmPibJbdYnJ004SgkUtVBpGZwKXHIcrgss1-sLUXaHXsoqh5GWHv2SevHS3RN3zertqaXLMwIBThFp4uirrisin6zwaOr_U9gaegq1TQwtCh4/s1568/Bro2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKEYGBmsKsP6dsevl-5ijTrE26gO8khjej9V1Jiu7o9q16-dXk0LulOOmLio-GfLVQQNUTPkWYmPibJbdYnJ004SgkUtVBpGZwKXHIcrgss1-sLUXaHXsoqh5GWHv2SevHS3RN3zertqaXLMwIBThFp4uirrisin6zwaOr_U9gaegq1TQwtCh4/w500-h640/Bro2.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2024/12/investigando-fotografias-y-personas-con.html",
+        "https://www.lavanguardia.com/neo/ia/20260728/11601806/millones-libros-antiguos-son-destruidos-empresas-ia-mejores-datos-entrenamiento-estanteria.html"
+      ]
+    }
+  },
+  {
     "id": 2069,
     "fecha": "2026-08-11T04:15:58Z",
     "categoria": "Ciberseguridad",
