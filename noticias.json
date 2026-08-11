@@ -1,5 +1,96 @@
 [
   {
+    "id": 2064,
+    "fecha": "2026-08-11T01:18:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ciberseguridad en sistemas de agua",
+    "resumen": "Se ha presentado un proyecto de ley para asignar $300 millones anuales para mejorar la ciberseguridad en el sector de agua y aguas residuales, con el objetivo de proteger estos sistemas críticos de posibles ataques cibernéticos. El proyecto de ley busca fortalecer la seguridad de los sistemas de agua y aguas residuales contra amenazas como el malware y los ataques de phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MTExMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/senate-water-cybersecurity-legislation",
+    "fuente": "The Record",
+    "dedup_key": "txt:senate democrats introduce bill to distribute 300 million annually to shore up water system cybersecurity",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2063,
+    "fecha": "2026-08-11T01:18:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "GhostJacking: Vulnerabilidad en Agentes AI",
+    "resumen": "La investigación revela que los atacantes pueden explotar las alertas de seguridad y eventos bloqueados para manipular y secuestrar agentes de inteligencia artificial (AI), lo que pone en riesgo la gobernanza de identidad en entornos de IA. Esto podría permitir a los atacantes aprovecharse de las vulnerabilidades en la gestión de identidad y acceso para llevar a cabo ataques de phishing, malware o incluso ataques de negación de servicio (DDoS).",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MTExMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ghostjacking-identity-governance-gaps-ai-agents",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ghostjacking exposes identity governance gaps in ai agents",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1192",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2062,
+    "fecha": "2026-08-11T01:18:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques de seguridad masivos",
+    "resumen": "Se han detectado vulnerabilidades de día cero (zero-day) en Metabase y ataques en la cadena de suministro (supply-chain) de MCP, así como backdoors en routers, lo que pone en riesgo la seguridad de los sistemas. Estos ataques aprovechan acciones comunes como clonar un repositorio o confiar en configuraciones predeterminadas, lo que subraya la importancia de la vigilancia y la seguridad proactiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MTExMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/weekly-recap-ai-goes-rogue-metabase-0.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap ai goes rogue metabase 0 day mcp supply chain attacks and router backdoors",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2061,
+    "fecha": "2026-08-11T01:18:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brecha en planta energética polaca",
+    "resumen": "Hackers comprometieron una planta de energía en Polonia que suministra calor a unos 50.000 residentes, utilizando un nombre de punto de acceso privado (APN) para acceder a una red de tecnología operativa (OT). El ataque demuestra la vulnerabilidad de las infraestructuras críticas a través de vectores de ataque no convencionales, como la explotación de redes privadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MTExMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-breached-a-small-polish-energy-plant-via-private-apn-last-year/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers breached a small polish energy plant via private apn last year",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2060,
+    "fecha": "2026-08-11T01:18:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA Ofensiva Amenaza Confianza Digital",
+    "resumen": "La confianza digital se ha convertido en un desafío defensivo clave para las empresas debido al aumento de la inteligencia artificial ofensiva, lo que puede comprometer la seguridad de la información y la privacidad digital a través de ataques como phishing y malware. El informe anual de Seguridad de IA 2026 de Check Point Research destaca la importancia de abordar esta amenaza emergente.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MTExMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-ofensiva-convierte-la-confianza-digital-en-el-nuevo-campo-de-batalla-de-la-ciberseguridad/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia ofensiva convierte la confianza digital en el nuevo campo de batalla de la ciberseguridad",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2059,
     "fecha": "2026-08-10T21:36:44Z",
     "categoria": "Ciberseguridad",
