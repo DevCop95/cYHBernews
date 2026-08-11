@@ -1,5 +1,100 @@
 [
   {
+    "id": 2081,
+    "fecha": "2026-08-11T12:53:07Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Claude agrega marca invisible a textos generados",
+    "resumen": "Anthropic, la empresa detrás de Claude, implementará una marca invisible en los textos generados por su modelo de lenguaje para cumplir con la Ley de la IA europea, aunque esta marca no garantiza que el texto haya sido escrito por Claude, solo que ha sido procesado por sus modelos de IA. Esto puede generar confusiones sobre la autoría real de los textos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782155789425-65fb6d8cc8ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NTI3ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/claude-va-a-dejar-marca-invisible-todo-que-escriba-problema-que-siquiera-demuestra-que-haya-escrito-claude",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:claude va a dejar una marca invisible en todo lo que escriba el problema es que ni siquiera demuestra que lo haya escrito claude",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "hardcoresoftware.learningbyshipping.com",
+        "platform.instagram.com",
+        "support.claude.com",
+        "www.nytimes.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://hardcoresoftware.learningbyshipping.com/p/060-iloveyou",
+        "https://i.blogs.es/d81e6b/magnific_el-fondo-tiene-como-un-po_lwsprhtswo/375_142.jpeg",
+        "https://i.blogs.es/e31c7e/burg/1024_682.jpeg",
+        "https://i.blogs.es/e31c7e/burg/500_333.jpeg",
+        "https://i.blogs.es/e31c7e/burg/840_560.jpeg",
+        "https://i.blogs.es/e614a6/ia-claude-marca-agua-textos/1024_2000.jpeg",
+        "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+        "https://www.nytimes.com/1999/03/07/business/microsoft-will-alter-its-software-in-response-to-privacy-concerns.html"
+      ]
+    }
+  },
+  {
+    "id": 2080,
+    "fecha": "2026-08-11T12:53:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Zoom",
+    "resumen": "Una vulnerabilidad en la función de compartición de pantalla de Zoom permitió a cualquier participante en una llamada tomar el control de otros dispositivos, y fue descubierta utilizando una herramienta de inteligencia artificial (AI) que necesitó menos de 20 intentos para encontrar la falla, la cual ya ha sido corregida. La vulnerabilidad podría haber sido explotada a través de un ataque de tipo \"hijacking\" permitiendo a un atacante acceder y controlar dispositivos ajenos en una llamada.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NTI3ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:a zoom screen sharing bug let anyone take over other devices on a call",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2079,
+    "fecha": "2026-08-11T12:52:55Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Inteligencia Artificial en Apoyo Militar",
+    "resumen": "La investigación empírica \"Black Box Warfare\" analiza el impacto de la inteligencia artificial (IA) en la toma de decisiones militares, revelando una aversión algorítmica en escenarios de alto daño colateral, pero también muestra que la integración de características de \"IA explicable\" puede reducir esta aversión y promover evaluaciones más reflexivas de las recomendaciones algorítmicas. Esto sugiere que la confianza en la IA militar es dinámica y depende de factores como las predisposiciones individuales y las características de la interfaz.",
+    "url_imagen": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NTI3NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/ai-for-military-support.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:ai for military support",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "journals.sagepub.com"
+      ],
+      "url": [
+        "https://journals.sagepub.com/doi/10.1177/00220027261463443"
+      ]
+    }
+  },
+  {
+    "id": 2078,
+    "fecha": "2026-08-11T12:52:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Tarjeta SIM Maliciosa",
+    "resumen": "Una tarjeta SIM maliciosa puede ejecutar código de atacante dentro de los módems detrás de los dispositivos IoT celulares, permitiendo a los atacantes tomar el control total de dispositivos como cargadores de vehículos eléctricos, routers industriales y unidades de telemática de vehículos. Investigadores encontraron esta vulnerabilidad en 26 dispositivos celulares y módulos celulares.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NTI3Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/a-malicious-sim-card-can-run-attacker.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:a malicious sim card can run attacker code inside the modems behind cellular iot devices",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2077,
+    "fecha": "2026-08-11T12:52:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SharePoint explotada",
+    "resumen": "La vulnerabilidad de ejecución de código remoto en Microsoft SharePoint, catalogada como de alta severidad, está siendo activamente explotada por grupos de ransomware desde principios de julio, según confirmación de CISA. Esto representa un vector de ataque significativo para organizaciones que utilizan este software, poniendo en riesgo la integridad de sus datos y sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0NTI3NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa microsoft sharepoint flaw now exploited in ransomware attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2076,
     "fecha": "2026-08-11T09:56:12Z",
     "categoria": "Ciberseguridad",
@@ -16918,29 +17013,6 @@
     "fuente": "The Hacker News",
     "dedup_key": "txt:okobot malware framework injects seed phrase phishing into ledger and trezor apps",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1412,
-    "fecha": "2026-07-15T21:55:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad crítica en Zoom",
-    "resumen": "Se ha detectado una vulnerabilidad crítica en el cliente de escritorio y kit de desarrollo de software de Zoom para Windows, que podría ser explotada por un atacante no autenticado para tomar el control de cuentas, lo que supone un riesgo significativo de seguridad. El vector de ataque podría incluir técnicas de phishing o exploits de día cero para aprovechar esta debilidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNTI1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:zoom warns of critical account takeover vulnerability",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
     "iocs": {}
   },
   {
