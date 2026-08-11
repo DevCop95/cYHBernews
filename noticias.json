@@ -1,5 +1,114 @@
 [
   {
+    "id": 2069,
+    "fecha": "2026-08-11T04:15:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en ASUS GPU Tweak III",
+    "resumen": "Se ha identificado una vulnerabilidad de tipo \"Untrusted Pointer Dereference\" (CVE-2026-8917) en las herramientas ASUS GPU Tweak III, GPUTweakII, AI Suite3 y VGAdll, que permite a un atacante local escribir un valor específico en una dirección de memoria arbitraria, lo que podría llevar a una escalada de privilegios. La vulnerabilidad se explota a través de una falla en IOCTL.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MjE3NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/243219",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-8917",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1558.003",
+        "name": "Elevación de privilegios a través de IOCTL (no hay una técnica específica para IOCTL, pero se puede relacionar con la elevación de privilegios)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8917"
+      ]
+    }
+  },
+  {
+    "id": 2068,
+    "fecha": "2026-08-11T04:15:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Libro de malware para principiantes",
+    "resumen": "Un autor anónimo ha publicado un borrador de introducción para un libro titulado \"Malware 4 Noobs\", que parece ser una guía para principiantes sobre malware, aunque el contenido real y el impacto potencial aún no están claros. El libro podría ser un recurso para aquellos interesados en aprender sobre malware, pero también plantea preocupaciones sobre la posible difusión de conocimientos maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MjE3NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9281",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:i sat down and did some schizo ranting for my attempt at a book i might name malware 4 noobs no idea yet here is",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "malwaresourcecode.com"
+      ],
+      "url": [
+        "https://malwaresourcecode.com/home/my-projects/write-ups/part-i-malware-4-noobs-version-0"
+      ]
+    }
+  },
+  {
+    "id": 2067,
+    "fecha": "2026-08-11T04:15:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Elevation of Privilege en ASP.NET",
+    "resumen": "Se ha identificado una vulnerabilidad de elevación de privilegios en ASP.NET (CVE-2023-36899) con un puntaje CVSS de 8.8, considerada como alta, que podría permitir a un atacante elevar sus privilegios en el sistema. La vulnerabilidad afecta a productos que utilizan el .NET Framework de Microsoft.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MjE3NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-36899",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-36899",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "asp.net"
+      ],
+      "cve": [
+        "CVE-2023-36899"
+      ]
+    }
+  },
+  {
+    "id": 2066,
+    "fecha": "2026-08-11T04:15:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques a sistemas de agua",
+    "resumen": "Se han detectado ataques a sistemas de agua en una docena de estados, apuntando a PLCs (Controladores Lógicos Programables) mal seguros y expuestos a Internet, lo que sugiere una posible vulnerabilidad en la infraestructura crítica. Los ataques parecen tener un patrón de origen sospechoso, posiblemente relacionado con Irán.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MjE3NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/multistate-water-system-attacks-widen-iran-suspected",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:multistate water system attacks widen iran suspected",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2065,
+    "fecha": "2026-08-11T04:15:35Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "ChatGPT 5.6 Cyber lanzado",
+    "resumen": "OpenAI ha desarrollado el modelo \"GPT 5.6 Cyber\" para investigación de vulnerabilidades, pruebas de penetración, respuesta a incidentes y remediación, dirigido a usuarios aprobados. Este modelo puede tener un impacto significativo en la ciberseguridad, permitiendo a los equipos de seguridad identificar y abordar vulnerabilidades de manera más efectiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1763110305836-17790330be78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY0MjE3MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/openai-releases-chatgpt-56-cyber-but-its-only-for-approved-users/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai releases chatgpt 5 6 cyber but it s only for approved users",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2064,
     "fecha": "2026-08-11T01:18:40Z",
     "categoria": "Ciberseguridad",
@@ -2862,41 +2971,6 @@
     "fuente": "Wired Security",
     "dedup_key": "txt:the most dangerous ai hacking techniques still have humans in the loop",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1950,
-    "fecha": "2026-08-06T13:54:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "PLCs de Rockwell expuestas en línea",
-    "resumen": "Se han detectado más de 4.400 controladores lógicos programables (PLCs) de Rockwell Automation expuestos en línea, con 22 de ellos ubicados en ciudades que han sufrido recientes ciberataques en utilities de agua en EE. UU., lo que sugiere un posible vector de ataque a través de la exposición de dispositivos industriales. Los dispositivos expuestos podrían ser vulnerables a ataques de ciberseguridad, como exploits de día cero o malware dirigido a sistemas de control industrial.",
-    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYwMjQ0NzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/08/over-4400-rockwell-plcs-exposed-online.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:over 4 400 rockwell plcs exposed online 22 found in water attack cities",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1505",
-        "name": "Compromiso de Dispositivos de Red"
-      },
-      {
-        "id": "T1552",
-        "name": "Exploit de Dispositivos de Red (posible malware dirigido a sistemas de control industrial)"
-      }
-    ],
     "iocs": {}
   },
   {
