@@ -1,5 +1,142 @@
 [
   {
+    "id": 2131,
+    "fecha": "2026-08-12T21:41:10Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA Claude avanza en matemáticas",
+    "resumen": "El modelo de lenguaje Claude, desarrollado por Anthropic, ha logrado un avance significativo en la resolución de un resultado derivado de la hipótesis de Riemann, aumentando el límite conocido del 41,6% al 67,2%. Aunque no ha resuelto la hipótesis en sí, este logro demuestra el potencial de la inteligencia artificial en la resolución de problemas matemáticos complejos.",
+    "url_imagen": "https://images.unsplash.com/photo-1767955006100-cf73d990599f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NzA4NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/claude-no-ha-resuelto-hipotesis-riemann-inquietante-que-consiguio-intentaba",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:claude no ha resuelto la hipótesis de riemann lo inquietante es lo que consiguió mientras lo intentaba",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www-cdn.anthropic.com",
+        "www.anthropic.com",
+        "www.claymath.org",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/821ebd/kasparov-deep-blue/375_142.jpeg",
+        "https://i.blogs.es/effeb1/mates-e-ia/1024_682.jpeg",
+        "https://i.blogs.es/effeb1/mates-e-ia/500_333.jpeg",
+        "https://i.blogs.es/effeb1/mates-e-ia/840_560.jpeg",
+        "https://i.blogs.es/f955ca/anthropic-claude-riemann/1024_2000.jpeg",
+        "https://www-cdn.anthropic.com/23455459f8832d06bb175cc0f88d019aed962ef8.pdf",
+        "https://www-cdn.anthropic.com/564f962e60643842f5fcb4a17c9dbc8f608f1c37.pdf",
+        "https://www-cdn.anthropic.com/d7f3ecf1d01392d887f8bc974ca187e2a121b1ed.pdf",
+        "https://www.anthropic.com/research/riemann-zeta",
+        "https://www.claymath.org/millennium-problems/"
+      ],
+      "sha1": [
+        "23455459f8832d06bb175cc0f88d019aed962ef8",
+        "564f962e60643842f5fcb4a17c9dbc8f608f1c37",
+        "d7f3ecf1d01392d887f8bc974ca187e2a121b1ed"
+      ]
+    }
+  },
+  {
+    "id": 2130,
+    "fecha": "2026-08-12T21:41:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Agencia CISA ordena parchear bug de Microsoft",
+    "resumen": "La Agencia de Ciberseguridad y Seguridad de Infraestructura (CISA) ha ordenado a las agencias federales que parcheen una vulnerabilidad de Microsoft que ha sido explotada por hackers norcoreanos en una campaña de ataques, aprovechando el proceso de solicitud de empleo. El bug fue identificado por investigadores después de analizar la campaña de ataques de largo plazo.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NzA4NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cisa-gives-federal-agencies-two-weeks-to-patch-dprk-microsoft-bug",
+    "fuente": "The Record",
+    "dedup_key": "txt:cisa gives federal agencies two weeks to patch microsoft bug exploited in dprk campaign",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2129,
+    "fecha": "2026-08-12T21:40:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Campaña de robo de datos en Salesforce",
+    "resumen": "La campaña \"City-Forum\" ha estado activa desde al menos marzo de 2025, utilizando herramientas personalizadas para robar datos de organizaciones en múltiples sectores, lo que sugiere un enfoque sofisticado y persistente en el ataque. Los vectores de ataque no se especifican, pero el objetivo en plataformas como Salesforce y ServiceNow indica un interés en la explotación de vulnerabilidades en aplicaciones de gestión de relaciones con clientes y servicios.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NzA4NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/long-running-data-theft-campaign-salesforce-servicenow",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:long running data theft campaign targeting salesforce servicenow",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1587",
+        "name": "Develop Capabilities"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1137",
+        "name": "Application Window Discovery"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2128,
+    "fecha": "2026-08-12T21:40:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Debilidad en APIs de IA",
+    "resumen": "Una reciente vulnerabilidad en las APIs de OpenAI, Anthropic y Google permite a investigadores recuperar razonamiento interno y secretos de registros de sesión, incluyendo claves de API y contraseñas, debido a un fallo en la forma en que se transmiten objetos de razonamiento entre llamadas a la API. La debilidad afecta a objetos de razonamiento cifrados utilizados por las APIs de razonamiento de los proveedores.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NzA4NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai anthropic google api flaw let weaker ai models decode stronger models reasoning",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se menciona que se pueden recuperar claves de API y contraseñas)"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1061",
+        "name": "Credential Access (se menciona que se pueden recuperar claves de API y contraseñas)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2127,
+    "fecha": "2026-08-12T21:40:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Riesgos de agentes de IA",
+    "resumen": "Check Point alerta sobre el creciente riesgo de los agentes autónomos de IA tras tres brechas de seguridad en 14 días, destacando la velocidad exponencial a la que evolucionan las capacidades y riesgos asociados. Esto resalta la necesidad de una mayor vigilancia y medidas de seguridad para contrarrestar los vectores de ataque potenciales que aprovechan la IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NzA4NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/alertan-de-los-riesgos-de-los-agentes-de-ia-tras-tres-brechas-en-14-dias/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:alertan de los riesgos de los agentes de ia tras tres brechas en 14 días",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2126,
     "fecha": "2026-08-12T18:56:04Z",
     "categoria": "IA",
@@ -18887,41 +19024,6 @@
     "fuente": "CyberSecurity News",
     "dedup_key": "txt:casi un tercio de las webs de viajes españolas son vulnerables al fraude por email",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1375,
-    "fecha": "2026-07-14T07:54:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Robo de datos en Salesforce",
-    "resumen": "Atacantes asociados con el grupo ShinyHunters han estado accediendo a entornos de Salesforce de empresas durante un año sin explotar vulnerabilidades, utilizando en su lugar las conexiones de OAuth existentes para obtener acceso a través de aplicaciones y proveedores de terceros. El ataque aprovecha la confianza previamente establecida por la organización, lo que permite a los atacantes moverse dentro del entorno de Salesforce sin ser detectados.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwMTU2OTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/microsoft-maps-year-long-shinyhunters.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:microsoft maps year long shinyhunters linked salesforce data theft across three paths",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1552",
-        "name": "Exploitar la confianza de un proveedor de terceros"
-      },
-      {
-        "id": "T1550",
-        "name": "Utilizar credenciales de OAuth existentes"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1552.001",
-        "name": "Exploitar la confianza de un proveedor de terceros no es correcto, en su lugar es T1552 - Exploitar la confianza de un proveedor de terceros, pero en este caso es más preciso T1190 - Exploitación de credenciales de aplicación y T1550 no existe, en su lugar es T1552, por lo que la respuesta correcta es:"
-      }
-    ],
     "iocs": {}
   },
   {
