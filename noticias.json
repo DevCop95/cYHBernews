@@ -1,5 +1,117 @@
 [
   {
+    "id": 2126,
+    "fecha": "2026-08-12T18:56:04Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Robos violentos de hardware AI",
+    "resumen": "Expertos informan que organizaciones criminales están llegando a extremos violentos para robar servidores y equipo destinado a centros de datos, especialmente aquellos relacionados con hardware AI como NVIDIA GPUs, en busca de aprovechar su valor en el mercado negro. Estos incidentes ponen de relieve la creciente demanda de hardware especializado para la inteligencia artificial y la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NjA5NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/the-worst-ive-ever-seen-cargo-thieves-are-turning-violent-in-pursuit-of-ai-hardware/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the worst i ve ever seen cargo thefts have turned violent in pursuit of ai hardware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2125,
+    "fecha": "2026-08-12T18:55:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers utilizan ingeniería social",
+    "resumen": "Los hackers están utilizando técnicas de ingeniería social, contraseñas filtradas y sitios web de redes sociales falsificados para acceder a cuentas y robar contenido explícito, que luego venden en línea, según un aviso del FBI. Los vectores de ataque incluyen phishing y spoofing, lo que pone en riesgo la privacidad digital de los individuos.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NjA5NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/social-engineering-hackers-explicit-photos-fbi-alert",
+    "fuente": "The Record",
+    "dedup_key": "txt:fbi hackers using social engineering to breach accounts and steal explicit content",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Sitio Web Falsificado (Spoofing)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Credential Access: Password Guessing (Contraseñas filtradas)"
+      },
+      {
+        "id": "T1590",
+        "name": "Collect Data: Email (Robo de contenido explícito)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2124,
+    "fecha": "2026-08-12T18:55:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Enfoque de \"Agente de Confianza\" de Walmart",
+    "resumen": "Walmart implementa un enfoque de \"Agente de Confianza\" para mejorar la seguridad a través de ejercicios de purple teaming colaborativos, donde los equipos rojos y azules trabajan juntos para construir confianza y mejorar la detección de amenazas. Este enfoque permite una mayor eficacia en la identificación y mitigación de vulnerabilidades, mejorando la postura de seguridad de la empresa.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NjA5NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/walmart-trusted-agent-approach-purple-teaming",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:walmart s quot trusted agent quot approach to purple teaming",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2123,
+    "fecha": "2026-08-12T18:55:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Lazarus explota zero-day en Windows",
+    "resumen": "El grupo de amenazas norcoreano Lazarus Group ha explotado una vulnerabilidad zero-day en Microsoft Windows para entregar una nueva puerta trasera a empresas de defensa y aerospaciales en Francia, Alemania, Brasil e India, como parte de la Operación Dream Job, una campaña de espionaje cibernético de largo alcance. El vector de ataque aprovecha una debilidad recién parcheada en Windows para obtener acceso SYSTEM y desplegar la puerta trasera.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NjA5NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:lazarus exploits windows zero day to gain system access and deploy backdoor",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Server Software Vulnerability"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2122,
+    "fecha": "2026-08-12T18:55:42Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "IA en empresas",
+    "resumen": "La adopción de la IA generativa ha llevado a las empresas a cambiar su enfoque de prohibición a implementación de políticas de uso, buscando aprovechar sus beneficios sin comprometer la seguridad. Esto implica establecer reglas claras para el uso de herramientas como ChatGPT y otros modelos de lenguaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338936743-0a0261d61f56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NjA5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/inteligencia-artificial-empresas-implementacion-politicas-uso/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:inteligencia artificial en las empresas de la prohibición a la implementación de políticas de uso",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2121,
     "fecha": "2026-08-12T15:55:14Z",
     "categoria": "Ciberseguridad",
