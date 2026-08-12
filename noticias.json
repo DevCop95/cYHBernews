@@ -1,5 +1,155 @@
 [
   {
+    "id": 2121,
+    "fecha": "2026-08-12T15:55:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brechas en ACRO del Reino Unido",
+    "resumen": "La oficina de registros criminales del Reino Unido, ACRO, sufrió tres intrusiones no detectadas durante dos años debido a alertas de antivirus no leídas y un sistema de gestión de contenido sin parches, lo que expuso a la organización a brechas de datos. Los vectores de ataque incluyeron la falta de actualización del sistema y la negligencia en la revisión de alertas de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NTAxMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/uk-criminal-records-office-acro-data-breaches",
+    "fuente": "The Record",
+    "dedup_key": "txt:three intrusions at uk criminal records office went undetected for two years",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1200",
+        "name": "Exploit for Client Application no se menciona, pero se puede inferir que la falta de parches en el sistema de gestión de contenido podría haber sido explotada, lo que se relaciona con:"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2120,
+    "fecha": "2026-08-12T15:55:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware ataca Ministerio de Justicia",
+    "resumen": "Un ataque de ransomware ha afectado al Ministerio de Justicia de Colombia, justo días antes de la transición presidencial, lo que refleja el aumento de la actividad maliciosa dirigida a infraestructuras críticas y organizaciones gubernamentales en el país y en toda América Latina, potencialmente a través de vectores de ataque como phishing o explotación de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NTAxMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ransomware-hits-colombian-justice-ministry-presidential-transition",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ransomware hits colombian justice ministry days before presidential transition",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2119,
+    "fecha": "2026-08-12T15:55:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft parchea 398 vulnerabilidades",
+    "resumen": "Microsoft ha lanzado actualizaciones para solucionar al menos 398 vulnerabilidades de seguridad en sus sistemas operativos Windows y software soportado, incluyendo una debilidad que ya está siendo explotada activamente y dos otras que fueron detalladas públicamente antes de hoy. Estas vulnerabilidades podrían ser utilizadas como vectores de ataque para exploits, phishing o malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NTAxMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:microsoft plugs nearly 400 security holes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2118,
+    "fecha": "2026-08-12T15:55:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extensiones VPN de Chrome interceptan tráfico",
+    "resumen": "Se han detectado 737 extensiones VPN y proxy en la Chrome Web Store que interceptan el tráfico del navegador y lo redirigen a través de una infraestructura de proxy, principalmente dirigidas a usuarios de habla rusa que buscan acceder a servicios bloqueados, con un total de 75,486 instalaciones y 274 extensiones que imitan a 66 legítimas. Los vectores de ataque incluyen el uso de extensiones maliciosas que se hacen pasar por legítimas para interceptar el tráfico del navegador.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NTAxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/737-chrome-vpn-extensions-caught.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:737 chrome vpn extensions caught routing traffic through proxies check if you have one",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtual Private Server"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no aplica, en su lugar: T1189 no aplica, en su lugar:"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2117,
+    "fecha": "2026-08-12T15:54:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberdelincuentes roban fotos íntimas",
+    "resumen": "El FBI alerta que ciberdelincuentes están objetivo cuentas en línea de adultos y niños para robar imágenes o videos explícitos, utilizando técnicas como phishing y ataques de ingeniería social para acceder a las cuentas. El impacto puede ser grave, ya que los atacantes pueden utilizar el material robado para extorsionar a las víctimas.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NTAwOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-warns-of-hackers-targeting-online-accounts-to-steal-explicit-photos/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fbi hackers target online accounts to steal nude photos",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1558",
+        "name": "Steal or Manipulate Other Account Information"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1597",
+        "name": "Search for Vulnerable Software"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2116,
     "fecha": "2026-08-12T12:58:07Z",
     "categoria": "Ciberseguridad",
@@ -18325,20 +18475,6 @@
     "enlace_original": "https://www.darkreading.com/perimeter/6-ghz-wi-fi-flaws-disrupt-critical-systems",
     "fuente": "Dark Reading",
     "dedup_key": "txt:6 ghz wi fi flaws could disrupt critical systems",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1389,
-    "fecha": "2026-07-14T21:54:09Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Microsoft parchea 622 vulnerabilidades",
-    "resumen": "Microsoft ha lanzado su mayor actualización de seguridad de la historia, corrigiendo 622 vulnerabilidades, incluyendo dos zero-day que están siendo explotadas activamente por atacantes. Los parches abordan vulnerabilidades en productos de Microsoft, incluyendo CVEs que podrían ser utilizadas para ataques de día cero.",
-    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQwNjYwNTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:microsoft patches record 622 flaws including two zero days under active attack",
     "ttps": [],
     "iocs": {}
   },
