@@ -1,5 +1,143 @@
 [
   {
+    "id": 2109,
+    "fecha": "2026-08-12T07:17:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad SSRF en Apache Gravitino",
+    "resumen": "Se ha identificado una vulnerabilidad de SSRF (Server-Side Request Forgery) en Apache Gravitino 1.2.1, lo que permite a atacantes realizar solicitudes no autorizadas a servidores internos, potencialmente exponiendo información confidencial o permitiendo el acceso no autorizado a recursos internos. El vector de ataque implica la manipulación de solicitudes HTTP para engañar al servidor y acceder a recursos no autorizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MTkwNTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52641",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps apache gravitino 1 2 1 ssrf",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2108,
+    "fecha": "2026-08-12T07:17:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS en Cisco ASA",
+    "resumen": "La vulnerabilidad CVE-2018-0228 (CVSS 8.6) en Cisco Adaptive Security Appliance (ASA) permite a un atacante remoto no autenticado provocar una condición de denegación de servicio (DoS) enviando paquetes de IP maliciosos, lo que puede agotar los recursos de la CPU y retrasar el tráfico del dispositivo. La vulnerabilidad afecta a varias versiones de Cisco ASA y Firepower Threat Defense (FTD) Software en diferentes productos de Cisco.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MTkwNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-0228",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-0228",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "Direct Network Flood"
+      },
+      {
+        "id": "T1498.002",
+        "name": "Reflection Amplification"
+      },
+      {
+        "id": "T1498.003",
+        "name": "Protocol Abuse"
+      },
+      {
+        "id": "T1498.004",
+        "name": "Resource Exhaustion"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2018-0228"
+      ]
+    }
+  },
+  {
+    "id": 2107,
+    "fecha": "2026-08-12T07:17:29Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Alibaba cambia estrategia de IA",
+    "resumen": "Alibaba planea cobrar a los grandes usuarios comerciales de su próximo modelo de IA, Qwen3.8-Max, una parte de los ingresos generados mediante su uso, introduciendo una condición nueva para las empresas que superen cierto volumen de negocio con el modelo. Esto marca un cambio en la estrategia de la empresa, que hasta ahora ofrecía sus modelos abiertos de forma gratuita.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MTkwNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/modelos-abiertos-ia-china-siempre-han-presumido-ser-absoluto-chollo-habia-gato-encerrado",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:los modelos abiertos de ia de china siempre han presumido de ser un absoluto chollo había gato encerrado",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "opensource.org",
+        "platform.instagram.com",
+        "thenextweb.com",
+        "unsplash.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/0bdd27/china-ia/1024_2000.jpeg",
+        "https://i.blogs.es/888e21/reward-hacking/375_142.jpeg",
+        "https://opensource.org/osd",
+        "https://thenextweb.com/news/alibaba-charge-big-users-open-source-qwen",
+        "https://unsplash.com/es/fotos/hombre-sentado-usando-gadget-en-la-habitacion-G1N9kDHqBrQ",
+        "https://unsplash.com/es/fotos/una-bandera-roja-y-blanca-YrP6DNh_Ma0",
+        "https://www.reuters.com/business/retail-consumer/alibaba-plans-charge-big-users-its-next-open-source-ai-model-sources-say-2026-08-07/"
+      ]
+    }
+  },
+  {
+    "id": 2106,
+    "fecha": "2026-08-12T07:17:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas de ciberseguridad",
+    "resumen": "El ISC Stormcast del 12 de agosto de 2026 analiza las últimas amenazas de ciberseguridad, incluyendo vulnerabilidades y exploits de zero-day, así como técnicas de phishing y malware. Los expertos discuten los vectores de ataque y las medidas de mitigación para proteger contra estas amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MTkwNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33238",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:isc stormcast for wednesday august 12th 2026 https isc sans edu podcastdetail 10048 wed aug 12th",
+    "ttps": [],
+    "iocs": {
+      "url": [
+        "https://isc.sans.edu/podcastdetail/10048,"
+      ]
+    }
+  },
+  {
+    "id": 2105,
+    "fecha": "2026-08-12T07:17:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Sandworm ataca a IT con VPN trojanizada",
+    "resumen": "El grupo de amenazas rusas Sandworm ha estado objetivo a administradores de sistemas y profesionales de TI a través de ofertas de trabajo falsas, distribuyendo un cliente VPN WireGuard trojanizado, lo que permite a los atacantes acceder a redes y sistemas confidenciales. El vector de ataque se basa en el ingenio social y la explotación de la confianza en herramientas de seguridad como WireGuard.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MTkwMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/sandworm-hackers-target-it-pros-with-trojanized-wireguard-vpn-client/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:sandworm hackers target it pros with trojanized wireguard vpn client",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process (no se menciona explícitamente, pero se infiere que el acceso a redes y sistemas confidenciales implica modificar el proceso de autenticación)"
+      },
+      {
+        "id": "T1620",
+        "name": "Reflective Control (no se menciona explícitamente, pero se infiere que el acceso a redes y sistemas confidenciales implica control remoto)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2104,
     "fecha": "2026-08-12T04:44:23Z",
     "categoria": "IA",
@@ -24073,24 +24211,6 @@
     "iocs": {}
   },
   {
-    "id": 1162,
-    "fecha": "2026-07-05T02:39:40Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CSRF en Spiceworks",
-    "resumen": "Se ha identificado una vulnerabilidad de tipo CSRF (Cross-Site Request Forgery) con un CVSS Score de 8.8 en versiones de Spiceworks anteriores a 7.5.00107, lo que permite una escalada de privilegios a través de la función \"/settings/v1/users\". Esta vulnerabilidad puede ser explotada por atacantes para obtener acceso no autorizado a sistemas y datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMTkxODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-23451",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2020-23451",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2020-23451"
-      ]
-    }
-  },
-  {
     "id": 1161,
     "fecha": "2026-07-05T02:39:35Z",
     "categoria": "IA",
@@ -25355,24 +25475,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-33941"
-      ]
-    }
-  },
-  {
-    "id": 1103,
-    "fecha": "2026-07-02T16:47:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Amenazas de ciberseguridad",
-    "resumen": "El podcast ISC Stormcast del 1 de julio de 2026 analiza las últimas amenazas de ciberseguridad, incluyendo vulnerabilidades y ataques como phishing y exploits de zero-day, que pueden afectar la seguridad de redes y sistemas. Los expertos discuten los vectores de ataque y brindan recomendaciones para protegerse contra estas amenazas.",
-    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33116",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:isc stormcast for wednesday july 1st 2026 https isc sans edu podcastdetail 9990 wed jul 1st",
-    "ttps": [],
-    "iocs": {
-      "url": [
-        "https://isc.sans.edu/podcastdetail/9990,"
       ]
     }
   },
