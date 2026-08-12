@@ -1,5 +1,160 @@
 [
   {
+    "id": 2116,
+    "fecha": "2026-08-12T12:58:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Dispositivo pequeño hackea Boeing 737",
+    "resumen": "Investigadores de seguridad descubrieron que un dispositivo del tamaño de una moneda puede ser utilizado para abrir una escotilla en el exterior de un avión Boeing 737 y, en menos de 60 segundos, conectarse al sistema de autopilotaje para redirigir su ruta o sabotear su plan de vuelo, lo que representa una grave vulnerabilidad en la seguridad aérea. El vector de ataque implica el acceso físico al avión y la explotación de una vulnerabilidad desconocida en el sistema de control del avión.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1Mzk0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/this-coin-sized-device-can-hack-a-boeing-737/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:this coin sized device can hack a boeing 737",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1215",
+        "name": "Credentials (no se menciona explícitamente, pero se puede inferir que se obtienen credenciales o acceso no autorizado al sistema de control del avión)"
+      },
+      {
+        "id": "T1055",
+        "name": "Unconventional Password Authentication (no se menciona explícitamente, pero se puede inferir que se utiliza un método no convencional para autenticarse en el sistema de control del avión)"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1529",
+        "name": "System Shutdown/Reboot"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2115,
+    "fecha": "2026-08-12T12:58:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft lanza parches masivos",
+    "resumen": "Microsoft ha lanzado una actualización de parches que incluye aproximadamente cinco veces el volumen de parches que solía enviar en un mes típico, gracias a la adopción de la detección de vulnerabilidades asistida por IA, lo que ha permitido identificar y solucionar una gran cantidad de bugs de manera más eficiente. Esto refleja el impacto de la IA en la ciberseguridad, permitiendo una detección más rápida y efectiva de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1Mzk0ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/microsoft-massive-patch-tuesday-releases-continue-ai",
+    "fuente": "The Record",
+    "dedup_key": "txt:microsoft s massive patch tuesday releases continue as ai reshapes bug discovery",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2114,
+    "fecha": "2026-08-12T12:57:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Inyecciones de prompt para defensa",
+    "resumen": "Investigadores de Tracebit han descubierto que las inyecciones de prompt pueden utilizarse para detener ataques de agentes de hacking de IA, al dirigir a los modelos de lenguaje (LLM) a realizar acciones prohibidas por sus guardrails de seguridad, lo que provoca su cierre. Esta técnica, llamada \"context bombing\", puede ser efectiva contra LLM con guardrails, pero puede no funcionar contra modelos locales sin restricciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1Mzk0Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/prompt-injections-for-defense.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:prompt injections for defense",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "agentic.tracebit.com",
+        "arstechnica.com",
+        "tracebit.com"
+      ],
+      "url": [
+        "https://agentic.tracebit.com/context-bombs/",
+        "https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/",
+        "https://tracebit.com/"
+      ]
+    }
+  },
+  {
+    "id": 2113,
+    "fecha": "2026-08-12T12:57:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque a SharePoint",
+    "resumen": "Hackers están utilizando un exploit de prueba de concepto (PoC) para una vulnerabilidad crítica en Microsoft SharePoint, publicado por la empresa de ciberseguridad Rapid7, lo que permite ataques potencialmente efectivos contra sistemas vulnerables. El vector de ataque aprovecha una debilidad en el software de SharePoint, permitiendo a los atacantes explotar la vulnerabilidad para obtener acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1Mzk0NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/hackers-leverage-new-microsoft-sharepoint-exploit-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers leverage new microsoft sharepoint exploit in attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2112,
+    "fecha": "2026-08-12T12:57:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque a VMware vCenter",
+    "resumen": "La vulnerabilidad crítica CVE-2026-59310 en VMware vCenter se está explotando activamente para instalar acceso remoto persistente mediante ejecución remota de código y herramientas como reverse_ssh, afectando sistemas expuestos a internet. La aplicación de las actualizaciones de VMSA-2026-0006.1 es la única mitigación efectiva conocida hasta el momento.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1Mzk0NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/atacantes-explotan-un-fallo-critico-en-vmware-vcenter-para-instalar-acceso-remoto-persistente/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-explotan-un-fallo-critico-en-vmware-vcenter-para-instalar-acceso-remoto-persistente",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-59310",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1210.001",
+        "name": "Exploitation of Remote Services: Remote Code Execution"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol"
+      },
+      {
+        "id": "T1572",
+        "name": "Protocol Tunneling"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/atacantes-explotan-un-fallo-critico-en-vmware-vcenter-para-instalar-acceso-remoto-persistente/"
+      ],
+      "cve": [
+        "CVE-2026-59310"
+      ]
+    }
+  },
+  {
     "id": 2111,
     "fecha": "2026-08-12T09:57:08Z",
     "categoria": "Ciberseguridad",
