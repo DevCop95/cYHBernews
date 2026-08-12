@@ -1,5 +1,114 @@
 [
   {
+    "id": 2104,
+    "fecha": "2026-08-12T04:44:23Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Zuckerberg promete IA ética",
+    "resumen": "Mark Zuckerberg, CEO de Meta, ha publicado un manifiesto en el que promete desarrollar una superinteligencia artificial (IA) que beneficie a todos, no solo a las empresas, y que se centre en crear \"superpoderes\" para las personas, en lugar de automatizar trabajos existentes. Sin embargo, su trayectoria y la de Meta hacen cuestionar la sinceridad de sus intenciones, especialmente en cuanto a la privacidad y la seguridad de los datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1696272440000-0808a203c852?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MDk4NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/mark-zuckerberg-se-ha-propuesto-ser-unico-ceo-no-apocaliptico-humanista-ia-otra-cosa-que-le-creamos",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:mark zuckerberg se ha propuesto ser el único ceo no apocalíptico y humanista de la ia otra cosa es que le creamos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "spyglass.org",
+        "www.404media.co",
+        "www.meta.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/25a98a/mark-zuckerberg-meta-ia-abierta-creerle-es-dificil/1024_2000.jpeg",
+        "https://i.blogs.es/df6b2a/qwen1/375_142.jpeg",
+        "https://i.blogs.es/fe11ae/minimax-h3-2/1024_682.jpeg",
+        "https://i.blogs.es/fe11ae/minimax-h3-2/500_333.jpeg",
+        "https://i.blogs.es/fe11ae/minimax-h3-2/840_560.jpeg",
+        "https://spyglass.org/meta-open-ai-muse-glimmer/",
+        "https://www.404media.co/mark-zuckerberg-posts-deranged-6-500-word-essay-about-giving-everyone-ai-superintelligence/",
+        "https://www.meta.com/thefutureisforeveryone/"
+      ]
+    }
+  },
+  {
+    "id": 2103,
+    "fecha": "2026-08-12T04:44:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Actualizaciones de Seguridad de Microsoft",
+    "resumen": "Microsoft ha lanzado sus actualizaciones de seguridad de agosto, que incluyen una gran cantidad de CVEs, por lo que los expertos en seguridad recomiendan priorizar las actualizaciones críticas en lugar de centrarse en la cantidad total de vulnerabilidades. Los administradores de sistemas deben enfocarse en parchear las vulnerabilidades más críticas y explotables, como zero-days y exploits de día cero, para minimizar el riesgo de ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MDk4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/microsofts-patch-tuesday-deluge-continues",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:microsoft s patch tuesday deluge continues with august updates",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2102,
+    "fecha": "2026-08-12T04:44:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Kimwolf v7: Botnet Android con DDoS",
+    "resumen": "La versión v7 de la botnet Kimwolf/AISURU para Android e IoT ha sido descubierta con mejoras significativas para aumentar su resistencia operativa y realizar ataques de denegación de servicio distribuidos (DDoS) que imitan tráfico de navegación legítimo mediante HTTP/2. Esta nueva versión puede hacer que el tráfico de DDoS se parezca a tráfico de navegación legítimo, lo que la hace más difícil de detectar.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MDk4NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/kimwolf-v7-android-botnet-makes-http2.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:kimwolf v7 android botnet makes http 2 ddos traffic look like legitimate browsing",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "DDoS Inundación de tráfico de red"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583",
+        "name": "Acquire Infrastructure: No se menciona explícitamente, pero se puede inferir que se utiliza para la infraestructura necesaria para realizar los ataques DDoS, aunque no es lo suficientemente claro como para incluirlo."
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning: No se menciona explícitamente, pero se puede inferir que se utiliza para identificar dispositivos vulnerables, aunque no es lo suficientemente claro como para incluirlo."
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2101,
+    "fecha": "2026-08-12T04:44:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware DeadLock utiliza blockchain",
+    "resumen": "El operativo de ransomware DeadLock utiliza una infraestructura descentralizada que se basa en servicios respaldados por blockchain para proteger su comunicación con las víctimas y la actividad de filtración de datos, lo que dificulta el desmantelamiento de su infraestructura. Esto representa un nuevo vector de ataque que aprovecha la tecnología blockchain para mantener la persistencia y resistir los esfuerzos de takedown.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MDk4NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/deadlock-ransomware-uses-blockchain-to-resist-infrastructure-takedown/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:deadlock ransomware uses blockchain to resist infrastructure takedown",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2100,
+    "fecha": "2026-08-12T04:44:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Ataques NatJack contra NAT",
+    "resumen": "Una investigación de Synack revela una nueva clase de ataques llamada NatJack, que aprovecha supuestos de confianza en implementaciones de traducción de direcciones de red (NAT) para comprometer la seguridad. Estos ataques pueden tener un impacto significativo en la seguridad de redes que confían en NAT para protegerse contra accesos no autorizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1MDk4NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/una-investigacion-revela-una-nueva-clase-de-ataques-que-pone-en-cuestion-la-seguridad-de-nat/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:una investigación revela una nueva clase de ataques que pone en cuestión la seguridad de nat",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2099,
     "fecha": "2026-08-12T01:26:52Z",
     "categoria": "IA",
@@ -13657,20 +13766,6 @@
         "https://tech.yahoo.com/cybersecurity/articles/stranger-used-one-text-message-140003797.html"
       ]
     }
-  },
-  {
-    "id": 1561,
-    "fecha": "2026-07-22T11:04:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Fin de actualizaciones de seguridad para Exchange",
-    "resumen": "Microsoft dejará de proporcionar actualizaciones de seguridad para Exchange 2016 y 2019 a través del programa de Actualizaciones de Seguridad Extendidas (ESU) en octubre, lo que podría exponer a los sistemas a vulnerabilidades y ataques de seguridad como exploits y ransomware. Esto afectará a los clientes que no migren a versiones más recientes o no adopten medidas de seguridad alternativas.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3MTgyNzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:microsoft to stop exchange 2016 2019 security updates in october",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 1560,
