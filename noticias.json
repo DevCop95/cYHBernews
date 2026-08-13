@@ -1,5 +1,122 @@
 [
   {
+    "id": 2165,
+    "fecha": "2026-08-13T21:39:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA lidera ataques cibernéticos",
+    "resumen": "La inteligencia artificial (IA) ha evolucionado de asistir a los atacantes a operar los ataques por sí misma, según el informe anual 'Seguridad de IA 2026' de Check Point Research, lo que cambia las reglas del juego en ciberseguridad y plantea nuevos desafíos para la defensa contra ataques como phishing, malware y ransomware. Esto implica un aumento en la sofisticación y autonomía de los ataques, lo que puede afectar a todos los sectores.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NTcxOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-ya-actua-y-no-solo-asiste-cambia-las-reglas-del-juego-en-ciberseguridad/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia ya actúa y no solo asiste cambia las reglas del juego en ciberseguridad",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2164,
+    "fecha": "2026-08-13T21:39:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en IBM DataPower Gateway",
+    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-7366) en IBM DataPower Gateway que permite una condición de carrera, lo que resulta en una contaminación de valores de X-Client-IP entre solicitudes concurrentes, permitiendo el spoofing de IP y la divulgación de direcciones IP de otros clientes. Esto puede ser explotado a través de un ataque de concurrencia, afectando la integridad y confidencialidad de los datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NTcxOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/249979",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-7366",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "11.0.0.0",
+        "11.0.0.1"
+      ],
+      "cve": [
+        "CVE-2026-7366"
+      ]
+    }
+  },
+  {
+    "id": 2163,
+    "fecha": "2026-08-13T21:39:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en Blocksy Companion",
+    "resumen": "Se ha identificado una vulnerabilidad de ejecución de código remoto (RCE) en la versión 2.1.46 del plugin Blocksy Companion, lo que permite a atacantes potencialmente ejecutar código malicioso en servidores vulnerables a través de vectores de ataque como inyección de código. Esto representa un riesgo significativo para la seguridad de los sitios web que utilizan este plugin.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NTcxODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52640",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps blocksy companion 2 1 46 rce",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2162,
+    "fecha": "2026-08-13T21:39:39Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Mistral abre a modelos IA chinos",
+    "resumen": "La empresa francesa Mistral, aspirante a líder europeo en inteligencia artificial, ha iniciado la integración de modelos de IA desarrollados fuera del continente, comenzando con el modelo GLM-5.2 de la empresa china Z.ai, con el objetivo de ampliar la elección de modelos sin fragmentar la infraestructura de ejecución. Esto forma parte de su estrategia de soberanía tecnológica, que se centra en el control sobre los modelos utilizados, la elección de la ubicación de la ejecución de la inteligencia y la capacidad de cómputo.",
+    "url_imagen": "https://images.unsplash.com/photo-1750365919878-2735d30fa3d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NTcxNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/mistral-quiere-ser-campeon-europeo-ia-para-conseguirlo-ha-empezado-a-servir-modelos-chinos",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:mistral quiere ser el campeón europeo de la ia para conseguirlo ha empezado a servir modelos chinos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "huggingface.co",
+        "platform.instagram.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "http://Z.ai",
+        "https://docs.mistral.ai/models/zai-glm-5-2",
+        "https://huggingface.co/zai-org/GLM-5.2",
+        "https://i.blogs.es/4bc4f8/grok/375_142.jpeg",
+        "https://i.blogs.es/ae9967/mistral-ai/1024_2000.jpeg",
+        "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/",
+        "https://mistral.ai/news/regional-inference-open-models-new-compute/",
+        "https://mistral.ai/products/aicloud/",
+        "https://www.reuters.com/world/china/zhipu-ai-ramps-up-overseas-expansion-strategy-ahead-ipo-2025-04-23/"
+      ]
+    }
+  },
+  {
+    "id": 2161,
+    "fecha": "2026-08-13T21:39:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "IA: Nueva brecha de seguridad",
+    "resumen": "La adopción de herramientas de IA generativa está creando una nueva superficie de ataque para las empresas, que no pueden protegerlas adecuadamente debido a la velocidad de implementación. El 100% de las empresas analizadas están expuestas a esta nueva brecha de seguridad, lo que aumenta el riesgo de ataques cibernéticos y brechas de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NTcxNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-abre-una-nueva-brecha-de-seguridad-el-100-de-las-empresas-analizadas-esta-expuesto/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia abre una nueva brecha de seguridad el 100 de las empresas analizadas está expuesto",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2160,
     "fecha": "2026-08-13T18:57:00Z",
     "categoria": "Ciberseguridad",
