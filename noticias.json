@@ -1,5 +1,180 @@
 [
   {
+    "id": 2146,
+    "fecha": "2026-08-13T09:59:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Oracle WebLogic",
+    "resumen": "Se ha identificado una vulnerabilidad de alto impacto (CVSS 7.5) en el componente Oracle WebLogic Server, que permite a un atacante no autenticado comprometer el servidor a través de la red utilizando el protocolo T3, lo que puede resultar en la toma de control del servidor. La vulnerabilidad afecta versiones específicas de Oracle WebLogic Server, incluyendo 10.3.6.0.0, 12.1.3.0.0, 12.2.1.1.0 y 12.2.1.2.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MTUxNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-10271",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-10271",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.1.3.0",
+        "12.2.1.1",
+        "12.2.1.2"
+      ],
+      "cve": [
+        "CVE-2017-10271"
+      ]
+    }
+  },
+  {
+    "id": 2145,
+    "fecha": "2026-08-13T09:59:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Abuso de bases de datos gubernamentales",
+    "resumen": "Funcionarios de la Oficina de Aduanas y Protección Fronteriza (CBP) han sido acusados de utilizar bases de datos gubernamentales para espiar a ex parejas, personas de interés romántico y colegas, lo que supone un grave abuso de confianza y una vulnerabilidad en la privacidad digital. Los registros obtenidos muestran cientos de denuncias de este tipo de mal uso de herramientas internas.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MTUxNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/cbp-workers-allegedly-used-government-databases-to-spy-on-exes-crushes-and-colleagues/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:cbp workers allegedly used government databases to spy on exes crushes and colleagues",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2144,
+    "fecha": "2026-08-13T09:58:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque Malicioso en PyPI",
+    "resumen": "Se han descubierto dos versiones maliciosas de LiteLLM en PyPI que contenían código para robar credenciales, capaz de capturar claves de nube, claves SSH, tokens de Kubernetes, contraseñas de bases de datos y otros secretos, afectando potencialmente a más de 2,100 organizaciones. El ataque, relacionado con la vulnerabilidad de Trivy, permitió a los atacantes capturar alrededor de 434,000 archivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MTUxMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/malicious-litellm-releases-tied-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:malicious litellm releases tied to trivy hack may have exposed 2 100 organizations",
+    "ttps": [
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Application Access Token"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2143,
+    "fecha": "2026-08-13T09:58:52Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Claude Mythos ataca PQC HAWK y AES",
+    "resumen": "El modelo de IA Claude Mythos Preview ha demostrado ser capaz de debilitar los algoritmos criptográficos PQC HAWK y AES mediante nuevos ataques, lo que plantea preocupaciones sobre la seguridad de los sistemas criptográficos actuales y futuros. Los ataques identificados por Claude Mythos Preview podrían potencialmente comprometer la seguridad de las comunicaciones en línea, incluyendo transacciones financieras y datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MTUxMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/claude-mythos-preview-debilita-los.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:claude mythos preview debilita los algoritmos criptográficos pqc hawk y aes con nuevos ataques",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "arxiv.org",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "es.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "wesselvanwoerden.com",
+        "www.anthropic.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://0xword.com/es/libros/36-libro-cifrado-comunicaciones-rsa.html",
+        "https://arxiv.org/pdf/2607.18538",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8sIPCpfAzBfbclSF_rqMh07fBoKnAJtQrMLfTezL6bTPHURxZhfz8BN53oEknot7vxWe6HEoVrg2sxTnSGaBmQr2z_v_A2V9Apg0J1s33M07sMwoG7__-4YicgWKzmwSrI1IPAp7uzhIQtSw3niPnnXuGmw9Rzas5n_hhrTufVZetCy8pbaqB/s1436/cripto2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8sIPCpfAzBfbclSF_rqMh07fBoKnAJtQrMLfTezL6bTPHURxZhfz8BN53oEknot7vxWe6HEoVrg2sxTnSGaBmQr2z_v_A2V9Apg0J1s33M07sMwoG7__-4YicgWKzmwSrI1IPAp7uzhIQtSw3niPnnXuGmw9Rzas5n_hhrTufVZetCy8pbaqB/w640-h394/cripto2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLwy48KSgNzbXDGTk2hnpr_X0ZnQegabIK0sgV3_KUFaHPGy9lsgXT27gdHlDKCs_zzbguDE8kEVMlO7sinPkfiY5R_48KVNeGMRm9hchHS6FF2QPwDYKYH-G8moOkFT6dqOIdp4e405NGeFXvJ-n37HYc5ACLBpDzFYOvGx7FpWMoKoD_SXns/w464-h640/cripto6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ8OBNFAFY5vTZKfzG4_3VmiVMkCuvCZwk6gTN1MTuEH_JN5fhbII3KytkOoHtG1ydgpI5G27KYUcpCkd39GWg3joOjXViAxegnLRgK1NnR3tG6OBbac52AYlSAxZOXg874BREK1dE9gCefSUyrhrrQa9cL3Ai3dovsuYfV0x4QLs54zmig-Za/w640-h468/cripto5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_dZsZ-H1xXws_fvjtuA9fv7QTUWzvBD-UUr9CaL6zcAc7jMtBA1FBs0NHgwsCEpBoDMd_gNCTsd7JiPbgXmKOH5PajkNt7MJDXi5FzeEm1CEeBHgMlHUmsF-O7_x9JtUEbO8LptoLlNhtRA8y__BmRBgLoJF_JaeTBAwTwtX76Sn4p1GMEfAa/w640-h424/cripto3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaLxYxgzrKsKBwDeriBe7Y751yiDaaF74kCf6kbqIO4PNHK9obhDnK4quEkaTkwJV9OLHHtiA2aV7pcuNBBjNhddNw78MPHLMnTlXbgYXkgouF7GR53Xi6XnfaeElaH2EDjHXStVPlzzc_SybI9uNf116j6jvuhyosb8LO6IgEdWO8FoDRMYY-/w640-h400/cripto4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7Gdm0lCc8xJ9no5BhrM5mlmKAq6fkdSSwFdGqHjIIZhzzNGPcrwDFhArvfss-WZzyXPC5hoI6B6uHOoZD2SWTlnQPX_5uQ7ZtPEpBmRPk73Mc30EoAlro7C2l42qlSubqHDnVV2TrLoss_pe1SuwkEClwnbLsSrtxTG4u93uz-7HKJWycA5yn/w640-h476/cripto1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV0aD2IBu3_cD4rMKA6nZ4DTtv0rdd5S69W3vTS8i2RYVHgf8srC_LX-DmmwCTYiSe43HR-sxS9-lfYZcmsHEtMqMrflxtCmX7uA3rYMQzIiLhTNkCroAGytOeZCnYNUQUwnTMjSSaDjttB8sSf2p66TLV51zvhKxC66q1F39zjxx41UMpziWQ/w640-h422/crypto0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2Aeg_8HBA3MGZZFqJq-k-UEJrF3vb-vMLlEWP2sMf3Oi4sDUIbP66CZNWtbUe1mLr79o02XdOZWoX3SrCsJpkGv3kUVVNqYugkPiQCRkY0vjbfxkKulmiizszBqf6UGo0TW81K8zteKeDWyHzdXCkZKPuxTKMuD04osTnWbMSaZvPYUNS6ZRw/w640-h350/quantum0.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEZQNA7SNx0pvhuyg0adLP3R28OOmXkHsAXTLz780V9Fa98-IQ-FsQNvDOijnoa0wipW3IAGB2VUZX8pchXDpOf9_PdnrrgbAnK8sPdvVe5X4R-REdBdnJFvTtbHs0mIObEFSu/w303-h400/LibroRSA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIoA-Qjo8Scebz12sKmVQnmufZNAZsmVs4x8WiGsyARk1aUnKd-aX7_ptHXHaduSJ45pfQOEZ_heKE7r2xQ8NW0xCjLOcNzWC_ldIVf-oGShZ-neijW84b2-7ufCTAezRVXji9JISVmIdPe1BVsTXJuMT8-vEOIifxE9-5UCTVoLCgMoHUZavH/w640-h508/DanielRomeroRuiz.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjonM6IQev6AzSJaNGkDnrI6wKqaGJZjc1YUPaOtykxXBLNoK3DWFhpKT46843SosbJjMJ3B86qABvlxgHK3FgwN-Qp_3MpuMiOpI9L8yM5enS5xQrAgZ093V4Zb2J4X1lKLoODRcTwJipHTT_7ETpqR7Yv6acRWmGdhVovE_UCgXR3U1EgHt0Q/w640-h384/q0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://csrc.nist.gov/csrc/media/Projects/pqc-dig-sig/documents/round-1/spec-files/hawk-spec-web.pdf",
+        "https://elladodelmal.com",
+        "https://ir.cwi.nl/pub/33366/33366.pdf",
+        "https://wesselvanwoerden.com/publication/ducas-2023-hawk/hawk.pdf",
+        "https://www.anthropic.com/research/discovering-cryptographic-weaknesses",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.elladodelmal.com/2018/06/quantum-cryptography-una-comunicacion.html",
+        "https://www.elladodelmal.com/2022/12/quantum-computing-cybersecurity.html",
+        "https://www.elladodelmal.com/2023/01/factorizacion-de-rsa-con-un-optimizador.html",
+        "https://www.elladodelmal.com/2025/04/hamming-quasi-cyclic-hqc-kem-nuevo-key.html",
+        "https://www.elladodelmal.com/2025/05/frodokem-un-key-encapsulation-mechanism.html",
+        "https://www.elladodelmal.com/2025/08/la-gran-busqueda-de-numeros-primos-de.html",
+        "https://www.elladodelmal.com/2025/09/como-acelerar-los-algoritmos-de.html",
+        "https://www.elladodelmal.com/2025/10/premio-nobel-en-fisica-2025-el-trabajo.html",
+        "https://www.elladodelmal.com/2025/10/un-reloj-atomico-optico-del-mit-con.html",
+        "https://www.elladodelmal.com/2025/11/algoritmo-cuantico-de-grover-un.html",
+        "https://www.elladodelmal.com/2025/11/cuanto-del-trafico-en-internet-funciona.html",
+        "https://www.elladodelmal.com/2025/12/bitcoin-vs-quantum-computers-hora-de.html",
+        "https://www.elladodelmal.com/2025/12/dyber-hardware-accelerated-post-quantum.html",
+        "https://www.elladodelmal.com/2025/12/el-white-paper-de-mastercard-que-urge.html",
+        "https://www.elladodelmal.com/2025/12/quantum-sensors-cuando-lo-invisible-se.html",
+        "https://www.elladodelmal.com/2026/01/como-ser-quantum-safe-y-desplegar-post.html",
+        "https://www.elladodelmal.com/2026/02/quantum-gps-navegacion-con-gps.html",
+        "https://www.elladodelmal.com/2026/03/alaniz-cipher-un-cifrado-simetrico.html",
+        "https://www.elladodelmal.com/2026/03/como-comprobar-si-un-web-site-is.html",
+        "https://www.elladodelmal.com/2026/05/el-impacto-de-mythos-en-concreto-y-la.html",
+        "https://www.elladodelmal.com/2026/05/los-papers-academicos-de-los-algoritmos.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-2.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-3.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-y-4.html",
+        "https://www.elladodelmal.com/2026/07/iii-edicion-del-programa-de.html",
+        "https://www.elladodelmal.com/2026/08/computacion-cuantica-y-fusion-nuclear.html"
+      ]
+    }
+  },
+  {
     "id": 2142,
     "fecha": "2026-08-13T07:19:33Z",
     "categoria": "Ciberseguridad",
