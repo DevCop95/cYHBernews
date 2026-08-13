@@ -1,5 +1,55 @@
 [
   {
+    "id": 2138,
+    "fecha": "2026-08-13T04:47:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ransomware: Reencuentro",
+    "resumen": "Un individuo que solía interactuar con grupos de ransomware en línea por diversión, ha reanudado el contacto después de un paréntesis, encontrando un entorno cambiado y posiblemente más sofisticado. Esto sugiere una posible evolución en las tácticas y operaciones de estos grupos, lo que podría tener implicaciones para la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1OTY0NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9287",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:be me hehe bored hehe suddenly remember the good ol days talking to ransomware groups online for fun stoppe",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2137,
+    "fecha": "2026-08-13T04:47:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS en Cisco ASA y FTD",
+    "resumen": "Se han identificado múltiples vulnerabilidades en la característica Application Layer Protocol de Cisco Adaptive Security Appliance (ASA) y Cisco Firepower Threat Defense (FTD) Software, que podrían permitir a un atacante remoto no autenticado provocar una denegación de servicio (DoS) a través de una recarga del dispositivo afectado, debido a errores de lógica durante la inspección de tráfico. Las vulnerabilidades, identificadas como CVE-2018-0240 con un CVSS Score de 8.6, afectan a varias versiones de software de Cisco y podrían ser explotadas mediante el envío de tráfico malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1OTY0NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-0240",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-0240",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2018-0240"
+      ]
+    }
+  },
+  {
+    "id": 2136,
+    "fecha": "2026-08-13T04:47:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Adobe",
+    "resumen": "Adobe ha lanzado actualizaciones para abordar múltiples vulnerabilidades de seguridad críticas en ColdFusion, Commerce y Campaign Classic, que podrían permitir la ejecución de código arbitrario y escalada de privilegios si se explotan con éxito, incluyendo una vulnerabilidad de inyección de comandos del sistema operativo con una puntuación CVSS de 10.0. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para obtener acceso no autorizado y control sobre los sistemas afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1OTY0NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-48362",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-48362"
+      ]
+    }
+  },
+  {
     "id": 2135,
     "fecha": "2026-08-13T01:28:43Z",
     "categoria": "Ciberseguridad",
