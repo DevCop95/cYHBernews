@@ -1,5 +1,111 @@
 [
   {
+    "id": 2135,
+    "fecha": "2026-08-13T01:28:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad TLS en Cisco ASA",
+    "resumen": "Una vulnerabilidad en la biblioteca TLS de Cisco Adaptive Security Appliance (ASA) Software y Cisco Firepower Threat Defense (FTD) Software permite a un atacante remoto no autenticado desencadenar una recarga del dispositivo afectado a través de un mensaje TLS malicioso, lo que resulta en una denegación de servicio (DoS) debido a una validación insuficiente de entradas. La explotación de esta vulnerabilidad (CVE-2018-0231, CVSS 8.6) podría provocar un cierre inesperado del dispositivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1ODQ1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-0231",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-0231",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2018-0231"
+      ]
+    }
+  },
+  {
+    "id": 2134,
+    "fecha": "2026-08-13T01:28:38Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Inferencia de IA supera al entrenamiento",
+    "resumen": "La inferencia de IA se está convirtiendo en un componente clave en el sector de la inteligencia artificial, con un gasto en infraestructura que superará al de entrenamiento en 2026, alcanzando un 55% del presupuesto de IaaS, según un informe de Gartner. Esto refleja un cambio de paradigma en el sector, donde la capacidad de procesar y aplicar modelos de IA de manera eficiente se vuelve más importante que el entrenamiento en sí mismo.",
+    "url_imagen": "https://images.unsplash.com/photo-1750365919878-2735d30fa3d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1ODQ1MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/inferencia-ia-gasta-que-entrenamiento-cambio-paradigma-sector-malo-para-ti",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la inferencia de ia ya gasta más que el entrenamiento es un cambio de paradigma del sector y malo para ti",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "developer.nvidia.com",
+        "introl.com",
+        "platform.instagram.com",
+        "www.gartner.com",
+        "www.ictbusiness.biz",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://developer.nvidia.com/blog/nvidia-data-center-gpu-manager-cluster-administration/",
+        "https://i.blogs.es/1f9842/altman/1024_682.jpeg",
+        "https://i.blogs.es/1f9842/altman/500_333.jpeg",
+        "https://i.blogs.es/1f9842/altman/840_560.jpeg",
+        "https://i.blogs.es/3b7892/centro-de-datos/375_142.jpeg",
+        "https://i.blogs.es/7c97a8/apple-store/375_142.jpeg",
+        "https://i.blogs.es/a3fe44/bots-ia-llevandoselo-todo-internet/1024_391.jpeg",
+        "https://i.blogs.es/a3fe44/bots-ia-llevandoselo-todo-internet/1366_521.jpeg",
+        "https://i.blogs.es/a3fe44/bots-ia-llevandoselo-todo-internet/650_247.jpeg",
+        "https://i.blogs.es/be468a/almacen/375_142.jpeg",
+        "https://i.blogs.es/f1bf72/gemini_generated_image_8rmv638rmv638rmv-1-/1024_2000.jpeg",
+        "https://introl.com/blog/ai-inference-vs-training-infrastructure-economics-diverging-2025",
+        "https://www.gartner.com/en/newsroom/press-releases/2026-08-10-gartner-forecasts-worldwide-artificial-intelligence-optimized-iaas-spending-to-grow-96-percent-in-2026",
+        "https://www.ictbusiness.biz/analysis/ai-optimized-iaas-to-become-the-next-growth-engine-for-ai-infrastructure"
+      ]
+    }
+  },
+  {
+    "id": 2133,
+    "fecha": "2026-08-13T01:28:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Defensas Empresariales Efectivas",
+    "resumen": "Los ataques silenciosos están superando las defensas empresariales, según el informe Blue Report 2026 de Picus Labs, que analiza más de 338 millones de simulaciones de ataques reales en entornos de producción de clientes. Las defensas están teniendo uno de sus mejores años, pero los atacantes están ganando al evitar ser detectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1ODQ1MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/enterprise-defenses-recovered-at-edge.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:enterprise defenses recovered at the edge and collapsed inside",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2132,
+    "fecha": "2026-08-13T01:28:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Alerta sobre páginas grises",
+    "resumen": "Kaspersky ha detectado un aumento en el uso de \"páginas grises\", sitios web engañosos que manipulan a los usuarios para que entreguen dinero y datos personales de manera voluntaria, operando fuera de los marcos tradicionales de fraude y phishing. Estas páginas han sido identificadas en varias regiones de Europa, representando un nuevo vector de ataque para la ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1ODQ1MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/advierten-sobre-el-uso-de-paginas-grises-en-europa-para-estafar-a-usuarios/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:advierten sobre el uso de páginas grises en europa para estafar a usuarios",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2131,
     "fecha": "2026-08-12T21:41:10Z",
     "categoria": "IA",
