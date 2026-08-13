@@ -1,5 +1,114 @@
 [
   {
+    "id": 2142,
+    "fecha": "2026-08-13T07:19:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en plugin WordPress",
+    "resumen": "La vulnerabilidad CVE-2026-3835 en el plugin \"Prevent Direct Access – Protect WordPress Files\" para WordPress permite el acceso no autorizado a archivos protegidos debido a una validación insuficiente de tokens en el método `get_advance_file_by_url()`, lo que permite a atacantes no autenticados descargar archivos protegidos mediante el uso de caracteres comodín SQL.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MDU1NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/248504",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-3835",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "2.8.8.8"
+      ],
+      "cve": [
+        "CVE-2026-3835"
+      ]
+    }
+  },
+  {
+    "id": 2141,
+    "fecha": "2026-08-13T07:19:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware por likes",
+    "resumen": "Un nuevo tipo de ataque de malware se ha detectado, donde los usuarios son engañados para dar \"me gustá\" (likes) a contenido malicioso, lo que desencadena la descarga de malware en sus dispositivos, aprovechando la interacción social para propagar la infección. El vector de ataque se basa en el phishing y la ingeniería social, aprovechando la confianza del usuario en las redes sociales.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MDU1Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9285",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:1 like 1 malware",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning no es aplicable en este caso, pero se puede inferir que se utiliza la interacción social para propagar la infección, lo que se relaciona con la técnica de"
+      },
+      {
+        "id": "T1627",
+        "name": "Social Engineering no es aplicable directamente, pero se puede inferir que se utiliza la ingeniería social, por lo que se puede considerar la técnica"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2140,
+    "fecha": "2026-08-13T07:19:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS en FirePOWER",
+    "resumen": "La vulnerabilidad CVE-2017-6632 en el software FirePOWER System de Cisco permite a un atacante no autenticado causar una denegación de servicio (DoS) mediante el envío de paquetes TCP maliciosos, afectando a versiones 5.3.0 a 6.2.2. El éxito de la explotación depende de la configuración del registro de políticas SSL.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MDU1NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-6632",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-6632",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "TCP Flood"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1588",
+        "name": "Obtain Capabilities (no se menciona explícitamente, pero se infiere que el atacante necesita conocer la configuración del registro de políticas SSL)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2017-6632"
+      ]
+    }
+  },
+  {
+    "id": 2139,
+    "fecha": "2026-08-13T07:19:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en eID belga",
+    "resumen": "La infraestructura de autenticación del sistema de identificación electrónica (eID) de Bélgica ha sido comprometida debido a vulnerabilidades graves en una extensión de navegador crucial, permitiendo posibles ataques de ejecución remota de código (RCE) y poniendo en riesgo la seguridad de las cuentas de los ciudadanos. Esto destaca problemas más amplios con las extensiones de navegador en general, que pueden ser explotadas por atacantes para llevar a cabo ataques de phishing, malware o ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MDU1NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/belgium-eid-authentication-citizen-accounts-rce",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:belgium s eid authentication opens citizen accounts to rce",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2138,
     "fecha": "2026-08-13T04:47:55Z",
     "categoria": "Ciberseguridad",
@@ -15570,45 +15679,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1526,
-    "fecha": "2026-07-21T05:45:57Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad XSS en plugin WordPress",
-    "resumen": "Se ha identificado una vulnerabilidad de Cross-Site Scripting (XSS) almacenada en el plugin \"The Essential Addons for Elementor\" para WordPress, que afecta versiones hasta 6.6.11, permitiendo a atacantes autenticados con acceso de contribuidor o superior inyectar scripts web arbitrarios en páginas. El vector de ataque se aprovecha de la falta de saneamiento de entrada y escape de salida en la configuración de color global de progreso de lectura.",
-    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ2MTI3NTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/208433",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-15156",
-    "ttps": [
-      {
-        "id": "T1061",
-        "name": "Cross-Site Scripting (XSS)"
-      },
-      {
-        "id": "T1061.001",
-        "name": "Stored XSS"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1139",
-        "name": "Access Token Manipulation no aplica en este caso, se reemplaza por:"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-15156"
-      ]
-    }
   },
   {
     "id": 1525,
