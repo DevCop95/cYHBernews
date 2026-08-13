@@ -1,5 +1,192 @@
 [
   {
+    "id": 2160,
+    "fecha": "2026-08-13T18:57:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ingeniería inversa de navegador anti-detección",
+    "resumen": "Un analista ha realizado ingeniería inversa en un navegador anti-detección (Stealth) para comprender cómo funcionan sus hooks, identificando técnicas de masking como Multilogin, Mimic, Canvas y WebGL, y ha desarrollado un detector para este tipo de navegadores, que pueden ser utilizados para evadir sistemas de detección de bots y fraudes en línea. El análisis destaca la importancia de proteger a los usuarios reales y evitar el envío de datos personales al extranjero.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NDc0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22918",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "txt:i reverse engineered an anti detect stealth browser to find out exactly how their hooks work i wrote a detailed br",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1497.001",
+        "name": "Sandboxed Execution"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "https://trustsig.eu/blog/multilogin-mimic-canvas-webgl-masking/"
+      ]
+    }
+  },
+  {
+    "id": 2159,
+    "fecha": "2026-08-13T18:56:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS en Cisco Firepower",
+    "resumen": "La vulnerabilidad CVE-2017-6625 (CVSS 7.1) en Cisco Firepower Threat Defense y Cisco ASA with FirePOWER Module permite a un atacante remoto causar una condición de denegación de servicio (DoS) al enviar paquetes maliciosos que explotan un manejo inapropiado de la política SSL. Esto puede hacer que el sistema deje de inspeccionar y procesar paquetes, afectando la seguridad de la red.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NDc0MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-6625",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2017-6625",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2017-6625"
+      ]
+    }
+  },
+  {
+    "id": 2158,
+    "fecha": "2026-08-13T18:56:49Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Gemini supera 1.000M usuarios",
+    "resumen": "Gemini, el modelo de lenguaje de Google, ha alcanzado 1.000 millones de usuarios activos mensuales, lo que lo convierte en el producto de la empresa que más rápido ha crecido en la historia, aunque la mayoría de los usuarios pueden no ser conscientes de que lo están utilizando debido a su integración en el ecosistema de Google, incluyendo Android y la sustitución de Google Assistant.",
+    "url_imagen": "https://images.unsplash.com/photo-1770169272345-9636d5ef2681?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NDc0MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/gemini-tiene-1-000-millones-usuarios-al-mes-pregunta-cuantos-saben-que-estan-usando",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:gemini ya tiene 1 000 millones de usuarios al mes la pregunta es cuántos saben que lo están usando",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "cdn.openai.com",
+        "commandlinux.com",
+        "cryptobriefing.com",
+        "finance.yahoo.com",
+        "gs.statcounter.com",
+        "platform.instagram.com",
+        "techcrunch.com",
+        "www.androidpure.com",
+        "www.forbes.com",
+        "www.reuters.com",
+        "www.xataka.com",
+        "www.xatakandroid.com"
+      ],
+      "url": [
+        "https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/",
+        "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
+        "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+        "https://cryptobriefing.com/alphabet-capex-205-billion-ai-spending-2026/",
+        "https://finance.yahoo.com/sectors/technology/article/meta-microsoft-amazon-and-alphabet-are-about-to-spend-a-shocking-amount-of-money-to-dominate-the-ai-era-115359575.html",
+        "https://gs.statcounter.com/os-market-share/mobile/worldwide/",
+        "https://i.blogs.es/01d632/portada-cementerio-google/375_142.jpeg",
+        "https://i.blogs.es/6e7e3e/gemini_ampliada_1350x900/1024_2000.png",
+        "https://techcrunch.com/2025/05/20/googles-gemini-ai-app-has-400m-monthly-active-users/",
+        "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
+        "https://www.androidpure.com/google-gemini-1-billion-monthly-users/",
+        "https://www.forbes.com/sites/antoniopequenoiv/2026/08/11/gemini-becomes-googles-fastest-growing-product-ever-after-hitting-1-billion-monthly-users/",
+        "https://www.reuters.com/technology/chatgpt-app-hits-1-billion-monthly-active-users-record-time-data-shows-2026-06-02/",
+        "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000012/googexhibit991q42025.htm",
+        "https://www.xatakandroid.com/aplicaciones-android/app-gemini-para-android-esta-aqui-asi-puedes-probar-ia-avanzada-google-tu-movil",
+        "https://www.xatakandroid.com/aplicaciones-android/google-assistant-llega-a-su-fin-probamos-gemini-esto-todo-que-da-sucesor-asistente-android"
+      ]
+    }
+  },
+  {
+    "id": 2157,
+    "fecha": "2026-08-13T18:56:43Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Problemas de IA y Capitalismo",
+    "resumen": "El desarrollo de la IA se enfrenta a desafíos tecnológicos, como la falta de contexto y la tendencia a proporcionar respuestas confiadas sin evidencia, pero también a problemas relacionados con el capitalismo, como la explotación y la falta de regulación, que pueden afectar su impacto en la sociedad. La integración de la IA en la sociedad requiere una discusión urgente sobre cómo abordar estos problemas y hacer cambios estructurales en los sistemas sociales y económicos.",
+    "url_imagen": "https://images.unsplash.com/photo-1674544362969-a4269ef0ea69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NDc0MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/separating-ais-technological-problems-from-its-capitalism-problems.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:separating ai s technological problems from its capitalism problems",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "apnews.com",
+        "garymarcus.substack.com",
+        "open.substack.com",
+        "taipology.substack.com",
+        "wwnorton.com",
+        "www.barrons.com",
+        "www.bloomberg.com",
+        "www.democracyrenovator.com",
+        "www.nytimes.com",
+        "www.pewresearch.org",
+        "www.politico.com",
+        "www.reuters.com",
+        "www.schneier.com",
+        "www.science.org",
+        "www.sciencedirect.com",
+        "www.statesman.com",
+        "www.techforgood.net",
+        "www.theguardian.com",
+        "www.tomshardware.com",
+        "www.wsj.com"
+      ],
+      "url": [
+        "https://apnews.com/article/trump-ai-openai-gpt56-sol-cybersecurity-mythos-065d5398baac7f16c8265c2cb8ba2baa",
+        "https://betterwithout.ai/fear-AI-power",
+        "https://garymarcus.substack.com/p/china-has-all-but-caught-up-the-us?r=6x5gs&amp;utm_medium=ios&amp;triedRedirect=true",
+        "https://mitpress.mit.edu/9780262049948/rewiring-democracy/",
+        "https://news.mit.edu/2026/better-method-identifying-overconfident-large-language-models-0319",
+        "https://open.substack.com/pub/garymarcus/p/china-has-all-but-caught-up-the-us",
+        "https://taipology.substack.com/p/china-closes-the-ai-gap",
+        "https://unsloth.ai/docs/models/glm-5.2",
+        "https://wwnorton.com/books/9780393866667",
+        "https://www.barrons.com/news/china-s-moonshot-ai-chases-deepseek-moment-with-much-hyped-model-79ed3105",
+        "https://www.bloomberg.com/news/articles/2026-04-27/why-china-s-deepseek-qwen-and-moonshot-are-a-worry-for-us-ai-rivals",
+        "https://www.brookings.edu/articles/how-public-ai-can-strengthen-democracy/",
+        "https://www.democracyrenovator.com/p/rewiring-democracy-now-switzerland",
+        "https://www.nytimes.com/2021/03/30/podcasts/ezra-klein-podcast-ted-chiang-transcript.html",
+        "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/",
+        "https://www.politico.com/news/magazine/2023/06/29/ai-pay-americans-data-00103648",
+        "https://www.reuters.com/business/anthropic-says-ai-labs-need-coordinated-plan-halt-development-if-risks-rise-2026-06-04/",
+        "https://www.science.org/doi/10.1126/science.aec8352",
+        "https://www.sciencedirect.com/science/article/pii/S2949823626000668",
+        "https://www.statesman.com/news/politics/state/article/james-talarico-calls-ai-dividends-help-22377208.php",
+        "https://www.techforgood.net/thoughtleadership/mitigating-ais-environmental-impact-a-path-to-sustainable-innovation",
+        "https://www.techpolicy.press/separating-ais-technological-problems-from-its-capitalism-problems/",
+        "https://www.theguardian.com/commentisfree/2026/jul/09/ai-datacenter-company-politics",
+        "https://www.theguardian.com/commentisfree/2026/jun/08/bernie-sanders-ai-sovereign-wealth-fund-plan",
+        "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-house-passes-bill-to-stop-chinese-companies-from-accessing-export-controlled-american-ai-chips-using-offshore-rental-loophole-remote-access-security-access-act-effectively-extends-export-controls-to-the-cloud",
+        "https://www.wsj.com/tech/ai/chinas-xi-touts-open-source-ai-and-takes-a-swipe-at-u-s-dominance-1eaa5cfe",
+        "https://www.wsj.com/tech/ai/openai-anthropic-ipo-finances-04b3cfb9?mod=hp_lead_pos1"
+      ],
+      "md5": [
+        "065d5398baac7f16c8265c2cb8ba2baa"
+      ]
+    }
+  },
+  {
+    "id": 2156,
+    "fecha": "2026-08-13T18:56:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Grupo Jewelbug ataca correo electrónico gubernamental",
+    "resumen": "El grupo de hackers Jewelbug ha estado realizando operaciones de espionaje dirigidas a gobiernos y militares, mientras también se involucra en estafas de criptomonedas, aprovechando posibles vulnerabilidades en la seguridad de la webmail gubernamental. Los ataques pueden incluir técnicas de phishing o explotación de vulnerabilidades zero-day para obtener acceso no autorizado a sistemas sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2NDczOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-breach-govt-webmail-while-running-parallel-crypto-fraud/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers breach govt webmail while running parallel crypto fraud",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2155,
     "fecha": "2026-08-13T15:54:50Z",
     "categoria": "Ciberseguridad",
