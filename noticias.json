@@ -1,5 +1,108 @@
 [
   {
+    "id": 2155,
+    "fecha": "2026-08-13T15:54:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-19734",
+    "resumen": "La vulnerabilidad CVE-2026-19734 en Roskus Prospero Flow CRM permite a usuarios autenticados acceder y modificar datos sensibles de productos de otras empresas, incluyendo precios, costos y códigos de barras, debido a una falta de autorización y autenticación en el componente de gestión de productos. Esto se debe a que el controlador de actualización de productos no extendía el controlador principal y no realizaba comprobaciones de autenticación en el endpoint de lectura.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MzY0OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/249215",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19734",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Alternate Authentication Material"
+      },
+      {
+        "id": "T1134",
+        "name": "Access Token Manipulation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19734"
+      ]
+    }
+  },
+  {
+    "id": 2154,
+    "fecha": "2026-08-13T15:54:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SSL VPN en Cisco ASA",
+    "resumen": "Se ha identificado una vulnerabilidad de alta gravedad (CVSS 7.5) en la característica SSL VPN de Cisco Adaptive Security Appliance (ASA), que permite a un atacante no autenticado establecer una conexión SSL VPN y omitir pasos de verificación de certificados SSL. Esto se debe a la verificación incorrecta del certificado de cliente SSL, lo que podría permitir a un atacante explotar la vulnerabilidad y establecer una conexión SSL VPN sin una clave privada y un par de certificados adecuado.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MzY0ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-0227",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-0227",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2018-0227"
+      ]
+    }
+  },
+  {
+    "id": 2153,
+    "fecha": "2026-08-13T15:54:38Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Nvidia rompe dinámica de financiación circular",
+    "resumen": "Nvidia ha anunciado un plan de financiación de 500.000 millones de dólares con dinero de terceros, rompiendo con la dinámica de financiación circular que había sostenido a la industria de la IA hasta ahora, y permitiendo a los clientes acceder a centros de datos y clústeres de GPU sin necesidad de efectivo o calificación crediticia. Esto puede tener un impacto significativo en la demanda de GPUs y las valoraciones del sector.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218390-6b59431c9284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MzY0Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/ahora-toda-industria-ia-se-ha-financiado-a-forma-circular-nvidia-acaba-romper-esa-dinamica",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:hasta ahora toda la industria ia se ha financiado a sí misma de forma circular nvidia acaba de romper con esa dinámica",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "nvidianews.nvidia.com",
+        "platform.instagram.com",
+        "www.bloomberg.com",
+        "www.cnbc.com",
+        "www.ft.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3ef3dc/taylor-vick-m5tzztfcofs-unsplash2/375_142.jpeg",
+        "https://i.blogs.es/cb2b24/jensen/1024_2000.jpeg",
+        "https://i.blogs.es/f1bf72/gemini_generated_image_8rmv638rmv638rmv-1-/375_142.jpeg",
+        "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital",
+        "https://www.bloomberg.com/news/articles/2026-08-10/nvidia-to-team-with-wall-street-on-500-billion-package-ft-says",
+        "https://www.cnbc.com/2026/08/11/nvidia-ai-funding-jensen-huang-china-risk.html",
+        "https://www.ft.com/content/98a8fd17-15b6-4f67-9cb4-825722b11348?syn-25a6b1a6=1"
+      ]
+    }
+  },
+  {
+    "id": 2152,
+    "fecha": "2026-08-13T15:54:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha de datos en Trezor",
+    "resumen": "La empresa de monederos hardware Trezor ha informado sobre una brecha de datos que afecta a casi 14,000 clientes debido a un ataque a su proveedor de envíos y socio logístico, ShipMonk. El incidente de seguridad puede tener implicaciones para la privacidad y seguridad de los clientes de Trezor, ya que los atacantes pueden tener acceso a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MzY0NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/trezor-discloses-data-breach-affecting-nearly-14-000-customers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:trezor discloses data breach affecting nearly 14 000 customers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2151,
     "fecha": "2026-08-13T12:59:15Z",
     "categoria": "IA",
