@@ -1,5 +1,149 @@
 [
   {
+    "id": 2151,
+    "fecha": "2026-08-13T12:59:15Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Grok 4.6: Nuevo rival en IA",
+    "resumen": "El modelo de lenguaje Grok 4.6 ha alcanzado una puntuación de 61 puntos en el Intelligence Index, comparable a modelos como GPT-5.6 Sol y Claude Fable 5, lo que lo convierte en un serio competidor en el mercado de la inteligencia artificial, con la ventaja adicional de ser más asequible en términos de costo. Esto plantea un desafío para otros modelos de IA en términos de relación calidad-precio.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258533-d0597f86ce62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MjU5NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/grok-4-6-acaba-entrar-club-mejores-modelos-mundo-ha-hecho-compitiendo-precio",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:grok 4 6 acaba de entrar en el club de los mejores modelos del mundo y lo ha hecho compitiendo en precio",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://artificialanalysis.ai/articles/grok-4-6-benchmarks-and-analysis",
+        "https://i.blogs.es/27757d/grok-elon-musk/1024_2000.jpeg",
+        "https://i.blogs.es/279849/documento/1024_682.jpeg",
+        "https://i.blogs.es/279849/documento/500_333.jpeg",
+        "https://i.blogs.es/279849/documento/840_560.jpeg",
+        "https://i.blogs.es/b24b96/captura-de-pantalla-2026-08-13-a-las-11.57.15/1024_2000.jpeg",
+        "https://i.blogs.es/b24b96/captura-de-pantalla-2026-08-13-a-las-11.57.15/1366_2000.jpeg",
+        "https://i.blogs.es/b24b96/captura-de-pantalla-2026-08-13-a-las-11.57.15/450_1000.jpeg",
+        "https://i.blogs.es/b24b96/captura-de-pantalla-2026-08-13-a-las-11.57.15/650_1200.jpeg",
+        "https://i.blogs.es/ce69ab/grog-5-6-intelligence/1024_2000.jpeg",
+        "https://i.blogs.es/ce69ab/grog-5-6-intelligence/1366_2000.jpeg",
+        "https://i.blogs.es/ce69ab/grog-5-6-intelligence/450_1000.jpeg",
+        "https://i.blogs.es/ce69ab/grog-5-6-intelligence/650_1200.jpeg",
+        "https://x.ai/news/grok-4-6"
+      ]
+    }
+  },
+  {
+    "id": 2150,
+    "fecha": "2026-08-13T12:59:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Alemania amplía poderes cibernéticos",
+    "resumen": "El gabinete alemán ha aprobado una legislación que permitiría a sus agencias de inteligencia realizar hacks a sistemas extranjeros, sabotear las cadenas de suministro de adversarios y proporcionar información falsa a extremistas dentro de Alemania, lo que representa la mayor reforma de las leyes de espionaje del país desde la posguerra. Esto podría tener un impacto significativo en la ciberseguridad y el espionaje internacional, con posibles vectores de ataque que incluyen phishing, malware y ataques de sabotaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MjU5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/germany-spy-agency-powers",
+    "fuente": "The Record",
+    "dedup_key": "txt:germany moves to give spy agencies hacking and sabotage powers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2149,
+    "fecha": "2026-08-13T12:59:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "APT \"Jewelbug\" combina espionaje y robo",
+    "resumen": "Investigadores descubrieron que actores de amenazas contratados (hackers-for-hire) están realizando espionaje cibernético y robos financieros motivados por criptomonedas desde el mismo panel web, lo que sugiere una convergencia de objetivos entre el espionaje estatal y el beneficio económico. Los vectores de ataque incluyen técnicas de ingeniería social y explotación de vulnerabilidades para acceder a sistemas y redes objetivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MjU5NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/jewelbug-apt-state-espionage-cryptocurrency-theft",
+    "fuente": "Dark Reading (Fallback)",
+    "dedup_key": "txt:jewelbug apt balances state espionage amp amp cryptocurrency theft",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1586",
+        "name": "Modificación de Proceso (no se menciona explícitamente, pero se infiere que los atacantes necesitan realizar acciones en los sistemas y redes objetivo, lo que podría implicar la modificación de procesos)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2148,
+    "fecha": "2026-08-13T12:58:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "WhatsApp lanza alerta de estafas",
+    "resumen": "WhatsApp ha implementado una función de \"Alerta de estafas\" que utiliza un modelo de aprendizaje automático (machine learning) local para advertir a los usuarios sobre posibles mensajes de phishing o estafas. Esta característica utiliza inteligencia artificial (IA) para identificar patrones sospechosos y proteger a los usuarios contra ataques de ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MjU5Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/whatsapp-rolls-out-new-feature-that-flags-potential-scam-messages/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:whatsapp rolls out new feature that flags potential scam messages",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2147,
+    "fecha": "2026-08-13T12:58:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bypass crítico en SharePoint",
+    "resumen": "Se está explotando activamente el CVE-2026-55040, un fallo crítico en Microsoft SharePoint Server que permite saltarse la autenticación, después de la publicación de un proof of concept (PoC), lo que requiere la aplicación de los parches de julio de 2026 para mitigar el riesgo. La explotación puede permitir a los atacantes acceder sin autorización, por lo que es crucial reducir la exposición y revisar indicios de suplantación y actividad administrativa anómala.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2MjU5MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-bypass-critico-en-sharepoint-tras-publicarse-un-poc/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-aprovechan-un-bypass-critico-en-sharepoint-tras-publicarse-un-poc",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-55040",
+    "ttps": [
+      {
+        "id": "T1550",
+        "name": "Use of Alternate Authentication Material"
+      },
+      {
+        "id": "T1550.004",
+        "name": "Session Hijacking"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/atacantes-aprovechan-un-bypass-critico-en-sharepoint-tras-publicarse-un-poc/"
+      ],
+      "cve": [
+        "CVE-2026-55040"
+      ]
+    }
+  },
+  {
     "id": 2146,
     "fecha": "2026-08-13T09:59:09Z",
     "categoria": "Ciberseguridad",
