@@ -1,5 +1,121 @@
 [
   {
+    "id": 2180,
+    "fecha": "2026-08-14T15:45:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Brecha en autoridad fiscal francesa",
+    "resumen": "Las autoridades francesas confirmaron una brecha de seguridad en la Dirección General de Finanzas Públicas a fines de junio, después de que un hacker afirmó haber accedido a información de 600,000 víctimas, aparentemente mediante el robo o mal uso de identidades. El incidente está siendo investigado por las autoridades.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MjIzNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/french-tax-authority-dgfip-confirms-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:france investigates tax authority breach after hacker claims 600 000 victims",
+    "ttps": [
+      {
+        "id": "T1589",
+        "name": "Drive-by Compromise (NO se menciona explícitamente, pero se infiere que podría haber sido utilizado para el robo de identidades)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials (se infiere que las credenciales podrían haber sido robadas o mal utilizadas)"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2179,
+    "fecha": "2026-08-14T15:45:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad macOS explotada",
+    "resumen": "Hackers están explotando una vulnerabilidad de autenticación en macOS Screen Sharing para desplegar un minero de Monero, aprovechando código de explotación público disponible. La vulnerabilidad permite a los atacantes acceder a sistemas macOS sin autenticación, lo que facilita la instalación de malware como el minero de criptomonedas.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MjIzNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-macos-screen-sharing-flaw-to-deploy-monero-miner/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers exploit macos screen sharing flaw to deploy monero miner",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools (no se menciona explícitamente, pero se infiere que los atacantes pueden acceder e instalar malware)"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking (se menciona el despliegue de un minero de Monero, lo que implica el uso de recursos del sistema para minar criptomonedas)"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2178,
+    "fecha": "2026-08-14T15:45:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en GeoServer",
+    "resumen": "La vulnerabilidad CVE-2024-36401 en GeoServer se explota activamente, permitiendo la ejecución remota de código sin autenticación y el control del servidor, por lo que es crucial actualizar a versiones corregidas o aplicar mitigaciones para reducir la exposición a Internet. Los administradores de servicios cartográficos con OSGeo deben tomar medidas inmediatas para protegerse contra esta amenaza.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MjIzMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-geoserver-se-explota-activamente-y-permite-tomar-el-control-del-servidor-2/?utm_source=rss&utm_medium=rss&utm_campaign=una-vulnerabilidad-critica-en-geoserver-se-explota-activamente-y-permite-tomar-el-control-del-servidor-2",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2024-36401",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-geoserver-se-explota-activamente-y-permite-tomar-el-control-del-servidor-2/"
+      ],
+      "cve": [
+        "CVE-2024-36401"
+      ]
+    }
+  },
+  {
     "id": 2177,
     "fecha": "2026-08-14T12:55:02Z",
     "categoria": "IA",
@@ -29019,45 +29135,6 @@
     "dedup_key": "txt:fake bug report hijacks ai coding agents at scale",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1019,
-    "fecha": "2026-06-30T22:13:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Explotación de Langflow RCE",
-    "resumen": "La vulnerabilidad CVE-2026-33017 en Langflow está siendo explotada por actores maliciosos para desplegar un minero de Monero en puntos finales de aplicaciones de inteligencia artificial (AI) expuestos, aprovechando la vulnerabilidad de ejecución de código remoto (RCE) no autenticada con una puntuación CVSS de 9.3. Los actores amenazantes están escaneando y objetivo puntos finales expuestos de AI para llevar a cabo estos ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-33017",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1496",
-        "name": "Resource Hijacking"
-      },
-      {
-        "id": "T1583.001",
-        "name": "Acquire Infrastructure: Virtual Private Server (VPS) no se menciona explícitamente, pero se puede inferir que los actores maliciosos están utilizando recursos para desplegar el minero de Monero, por lo que se reemplaza con:"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-33017"
-      ]
-    }
   },
   {
     "id": 1018,
