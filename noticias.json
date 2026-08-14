@@ -1,5 +1,72 @@
 [
   {
+    "id": 2183,
+    "fecha": "2026-08-14T18:46:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Apache Airflow",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-68076) en Apache Airflow que permite a un usuario autenticado de un equipo acceder a las credenciales de otro equipo en modo multi-equipo, lo que podría permitir la autenticación externa con las credenciales de otro equipo. La explotación requiere que se cumplan varias condiciones, incluyendo la habilitación de `[core] multi_team` y la configuración de secretos de equipo como variables de entorno en el proceso del servidor de API.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MzMxNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/250902",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-68076",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-68076"
+      ]
+    }
+  },
+  {
+    "id": 2182,
+    "fecha": "2026-08-14T18:46:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "NIST explora AI para contrarrestar vulnerabilidades",
+    "resumen": "El aumento en la detección de vulnerabilidades gracias a la investigación y escaneo mejorados por IA está llevando al Instituto Nacional de Estándares y Tecnología (NIST) a considerar el uso de IA como posible solución para abordar este problema. Esto se debe a la creciente \"tsunami de bugs\" identificados mediante técnicas de investigación y escaneo mejoradas por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MzMxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/ai-driven-bug-tsunami-nist-looks-to-ai",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:amid ai driven bug tsunami nist looks to ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2181,
+    "fecha": "2026-08-14T18:45:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Arrestos por fraude bancario",
+    "resumen": "Se han arrestado a cuatro ciberdelincuentes en Brasil y se han acusado a tres más en Europa por explotar una vulnerabilidad en un proveedor de servicios, lo que les permitió retirar fondos de las cuentas bancarias de clientes de Commerzbank, causando un fraude de €30M. El ataque aprovechó una debilidad en la cadena de suministro del proveedor de servicios, lo que destaca la importancia de la seguridad en los terceros proveedores.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MzMxNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-arrested-over-30m-bank-fraud-exploiting-service-provider-flaw/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers arrested over 30m bank fraud exploiting service provider flaw",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2180,
     "fecha": "2026-08-14T15:45:49Z",
     "categoria": "Ciberseguridad",
