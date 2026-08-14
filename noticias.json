@@ -1,5 +1,85 @@
 [
   {
+    "id": 2175,
+    "fecha": "2026-08-14T09:55:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en TOTOLINK A800R",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-19815) en el modelo TOTOLINK A800R, específicamente en la función setParentalRules del archivo /cgi-bin/cstecgi.cgi, que puede ser explotada a través de un desbordamiento de buffer en la pila al manipular el argumento urlKeyword, permitiendo ataques remotos. Un exploit ya ha sido publicado, lo que facilita su explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MDEzMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/250382",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19815",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19815"
+      ]
+    }
+  },
+  {
+    "id": 2174,
+    "fecha": "2026-08-14T09:55:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hacking con IA en CONVEX 2026",
+    "resumen": "La conferencia CONVEX 2026 abordó el tema de hacking con inteligencia artificial (IA), destacando la importancia de aplicar Zero Trust a agentes IA y conocer las formas de hacking a sistemas IA, incluyendo técnicas como prompt injection y hallucinations. La charla también tocó la relación entre IA y ciberseguridad, resaltando la necesidad de hacking y pentesting con IA para proteger contra ataques orquestados y vulnerabilidades en algoritmos como HAWK y AES.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MDEzMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/convex-2026-hacking-with-ai.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:convex 2026 hacking with the ai",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN9fY1_2fGj7OJicjCU5MQfIshJoLj8EE6CwfmxwtZm2ZRGZ-KZvxIWNDQBSC6xuMOGzIQQpxdAegPOtR21xnR4054kistuBG7_TN0ZIYzhtZH3a9gHfuxBwdr7Ia7WZbPhcMvKRi1kD7YFtinw60OFV9Q_13GkOFTxXK1i26ERWBiOp_50pxd/w640-h386/convex0.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2026/06/como-matar-con-un-plan-realista-mi.html",
+        "https://www.elladodelmal.com/2026/07/como-desplegar-zero-trust-para-agentes.html",
+        "https://www.elladodelmal.com/2026/07/openai-gpt56-sol-queria-sacar-buenas.html",
+        "https://www.elladodelmal.com/2026/08/ataques-orquestados-con-enjambres-de.html",
+        "https://www.elladodelmal.com/2026/08/claude-mythos-preview-debilita-los.html"
+      ]
+    }
+  },
+  {
     "id": 2173,
     "fecha": "2026-08-14T07:17:06Z",
     "categoria": "Ciberseguridad",
