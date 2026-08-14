@@ -1,5 +1,62 @@
 [
   {
+    "id": 2170,
+    "fecha": "2026-08-14T04:45:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Akira deshabilita EDR en modo seguro",
+    "resumen": "Un afiliado del ransomware Akira deshabilitó la solución de detección y respuesta de punto final (EDR) en un sistema comprometido reiniciando la máquina en modo seguro con conectividad de red, lo que permitió el robo de datos aunque no logró cifrarlos. El vector de ataque aprovechó la capacidad de evasión de la EDR en modo seguro, destacando la importancia de la seguridad en este modo.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2ODI3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/akira-hackers-disable-edr-with-safe-mode-steal-data-but-fail-to-encrypt/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:akira hackers disable edr with safe mode steal data but fail to encrypt",
+    "ttps": [
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation de vulnerabilidades de hardware o firmware no se aplica, pero se puede considerar T1562.001 como la técnica más relevante en este caso."
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1112",
+        "name": "Modify Registry"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2169,
+    "fecha": "2026-08-14T04:44:58Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Claude Code: Contenedor seguro",
+    "resumen": "Se ha identificado que ejecutar Claude Code en modo de permisos saltados directamente en la máquina host expone claves SSH locales, credenciales de API y archivos de repositorio a riesgos de inyección de comandos, por lo que se recomienda ejecutarlo en un contenedor seguro con firewall de salida para reducir un 99% las vulnerabilidades. La ejecución en un contenedor sandboxed con firewall de egress permite limitar el acceso a solo el directorio del proyecto montado en caso de una sesión comprometida.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2ODI2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22929",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "txt:run claude code in a secure container with 99 fewer vulnerabilities https www minimus io post claude code containe",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.minimus.io"
+      ],
+      "url": [
+        "https://www.minimus.io/post/claude-code-containe...",
+        "https://www.minimus.io/post/claude-code-container-cves"
+      ]
+    }
+  },
+  {
     "id": 2168,
     "fecha": "2026-08-14T01:27:35Z",
     "categoria": "Ciberseguridad",
