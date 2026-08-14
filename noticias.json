@@ -1,5 +1,86 @@
 [
   {
+    "id": 2187,
+    "fecha": "2026-08-14T21:20:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Cockpit CMS",
+    "resumen": "Se ha descubierto una vulnerabilidad de inyección de comandos (CVE-2026-73680) en la integración de FFmpeg en Cockpit CMS versión 2.14.0 y anteriores, que permite a usuarios autenticados con permisos de subida de archivos ejecutar comandos arbitrarios mediante la subida de un archivo de video con un nombre de archivo que contiene metacaracteres de shell. La falta de saneamiento del nombre del archivo permite la inyección de metacaracteres de shell, lo que puede escapar del contexto del comando FFmpeg y ejecutarse como usuario del servidor web.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NDI0NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/251417",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-73680",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1035",
+        "name": "Service Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-73680"
+      ]
+    }
+  },
+  {
+    "id": 2186,
+    "fecha": "2026-08-14T21:20:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Arrestos por hackeo bancario",
+    "resumen": "La investigación de un hackeo bancario ha llevado a la detención de siete sospechosos en Alemania y Brasil, acusados de fraude, en una operación conjunta entre la agencia federal de policía alemana (BKA) y la policía federal brasileña. Los arrestos sugieren un esfuerzo internacional para combatir el cibercrimen financiero, posiblemente relacionado con técnicas de phishing o malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NDI0NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/investigation-into-banking-hack-leads-to-arrests-germany-brazil",
+    "fuente": "The Record",
+    "dedup_key": "txt:investigation of banking hack leads to arrests in germany brazil",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2185,
+    "fecha": "2026-08-14T21:20:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Seguridad en banca con IA",
+    "resumen": "Un CISO de un banco global comparte su visión sobre la transición de roles técnicos a liderazgo estratégico y cómo la IA está cambiando las capacidades defensivas y las tácticas adversarias en el sector bancario. La entrevista destaca la importancia de ejecutivos de seguridad con conocimientos empresariales en la lucha contra amenazas avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NDI0MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/mission-driven-security-inside-global-bank-defense",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:mission driven security inside a global bank s defense",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2184,
+    "fecha": "2026-08-14T21:20:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques a Google Workspace",
+    "resumen": "Los ataques a Google Workspace no siempre comienzan con phishing, ya que los tokens de OAuth robados pueden proporcionar otra vía de acceso a Gmail, Drive y sistemas conectados, lo que requiere defensas que cubran toda la cadena de ataques. Las organizaciones deben reevaluar sus estrategias de seguridad para protegerse contra estas amenazas en la era de la IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NDI0MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/the-modern-attack-chain-rethinking-google-workspace-security-in-the-age-of-ai/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:the modern attack chain rethinking google workspace security in the age of ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2183,
     "fecha": "2026-08-14T18:46:10Z",
     "categoria": "Ciberseguridad",
