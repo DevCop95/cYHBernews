@@ -1,5 +1,51 @@
 [
   {
+    "id": 2173,
+    "fecha": "2026-08-14T07:17:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad zero-day en Windows",
+    "resumen": "Microsoft ha lanzado parches de seguridad para abordar una vulnerabilidad zero-day en Windows conocida como \"LegacyHive\", que fue divulgada después del Patch Tuesday de julio de 2026, y que podría permitir ataques de elevación de privilegios en sistemas operativos Windows. La vulnerabilidad se considera crítica y su explotación podría tener un impacto significativo en la seguridad de los sistemas afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2OTE4MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-legacyhive-windows-zero-day-vulnerability/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft patches legacyhive windows zero day vulnerability",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2172,
+    "fecha": "2026-08-14T07:17:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-19617",
+    "resumen": "Se ha descubierto una vulnerabilidad en libdm que permite a un atacante remoto crear una configuración maliciosa de metadatos de Logical Volume Manager (LVM) con estructuras anidadas profundamente, lo que puede causar una recursividad no controlada en el parser de archivos de configuración de libdm, agotando la pila y haciendo que cualquier comando LVM que lea los metadatos se bloquee, resultando en un ataque de Denial of Service (DoS) en los sistemas afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2OTE4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/250372",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19617",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19617"
+      ]
+    }
+  },
+  {
+    "id": 2171,
+    "fecha": "2026-08-14T07:16:52Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Ataque a Hugging Face",
+    "resumen": "El incidente de intrusión en Hugging Face, relacionado con modelos de OpenAI, destaca la importancia de la supervisión humana en la seguridad de los modelos de lenguaje, ya que los ataques autónomos pueden explotar vulnerabilidades sin intervención humana directa. Esto subraya la necesidad de una combinación efectiva de tecnología y supervisión humana para prevenir y responder a incidentes de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330300716-63c167c5efac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY2OTE4MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/black-hat-usa-2026-hugging-face-openai-responsabilidad-humana/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:black hat usa 2026 lo que la intrusión en hugging face nos dice sobre la responsabilidad humana",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2170,
     "fecha": "2026-08-14T04:45:04Z",
     "categoria": "Ciberseguridad",
