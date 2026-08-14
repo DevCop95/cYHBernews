@@ -1,5 +1,54 @@
 [
   {
+    "id": 2177,
+    "fecha": "2026-08-14T12:55:02Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Adquisición de Oasis por Cyera",
+    "resumen": "La adquisición de Oasis por $1 mil millones busca converger la seguridad de datos y la identidad en un solo plano de control para agentes autónomos, redefiniendo el acceso privilegiado en función del contexto empresarial en lugar de roles estáticos, con un enfoque en el control de agentes de IA. Esto permitirá una gestión más efectiva de la seguridad y el acceso a los datos, utilizando la inteligencia artificial para tomar decisiones basadas en el contexto.",
+    "url_imagen": "https://images.unsplash.com/photo-1767716134807-646b08712f6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MTIxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/identity-access-management-security/cyera-oasis-security-acquisition-ai-agent-control",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cyera s oasis security buy is all about ai agent control",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2176,
+    "fecha": "2026-08-14T12:54:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque Ransomware a Shell",
+    "resumen": "La empresa petrolera Shell investiga un incidente de seguridad después de que el grupo de ransomware Clop reclamara el robo de 89GB de datos, lo que sugiere un posible ataque de phishing o explotación de vulnerabilidades para obtener acceso no autorizado. El impacto real aún se desconoce, pero podría incluir brechas de datos y pérdida de confidencialidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3MTIwOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/shell-investigates-potential-incident-after-clop-data-theft-claims/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:shell investigates potential incident after clop data theft claims",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2175,
     "fecha": "2026-08-14T09:55:36Z",
     "categoria": "Ciberseguridad",
