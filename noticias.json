@@ -1,5 +1,111 @@
 [
   {
+    "id": 2192,
+    "fecha": "2026-08-15T00:57:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware disfrazado como herramienta",
+    "resumen": "Un actor amenazante está distribuyendo malware disfrazado como una herramienta de ingeniería inversa para comprometer a investigadores de seguridad, lo que representa un riesgo significativo para la comunidad de ciberseguridad. El vector de ataque se centra en la confianza que los investigadores tienen en herramientas de ingeniería inversa, lo que puede llevar a una comprometición de sistemas y datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NTU0NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9299",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:looks like christmas came early this year boys we got ourselves a threat actor distributing malware masquerading as",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Misuse of Tools"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2191,
+    "fecha": "2026-08-15T00:57:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "GLM-5.3: Mejoras en ciberseguridad",
+    "resumen": "El modelo de lenguaje GLM-5.3, desarrollado por Z.ai, ha demostrado una mejora significativa en ciberseguridad después de un entrenamiento avanzado, superando a su predecesor GLM-5.2 en la detección y explotación de vulnerabilidades. Los resultados muestran un aumento en la capacidad del modelo para reproducir y explotar vulnerabilidades, lo que sugiere un avance en la aplicación de la inteligencia artificial en ciberseguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NTU0NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/z-ai-entreno-glm-5-3-para-programar-mejor-modelo-aprendio-paso-a-ser-mucho-mejor-ciberseguridad",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:z ai entrenó glm 5 3 para programar mejor el modelo aprendió de paso a ser mucho mejor en ciberseguridad",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "huggingface.co",
+        "platform.instagram.com",
+        "www.aisi.gov.uk",
+        "www.xataka.com"
+      ],
+      "url": [
+        "http://Z.ai",
+        "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+        "https://i.blogs.es/942f27/apple-china/375_142.jpeg",
+        "https://i.blogs.es/c2f737/glm-5/1024_2000.jpeg",
+        "https://www.aisi.gov.uk/blog/how-far-behind-the-frontier-are-leading-open-weight-models-on-cyber",
+        "https://z.ai/blog/glm-5.3"
+      ]
+    }
+  },
+  {
+    "id": 2190,
+    "fecha": "2026-08-15T00:57:31Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Huella de IA en textos",
+    "resumen": "Anthropic, la empresa detrás de Claude, ha implementado una huella invisible de IA para marcar los textos generados por su modelo de lenguaje, con el objetivo de cumplir con las regulaciones europeas y abordar la creciente preocupación sobre la autenticidad de los contenidos generados por IA. Esto plantea desafíos en la detección de la autoría real de los textos y la posible elusión de estas medidas de rastreo.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218003-3c89682cfb3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NTU0NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/claude-empieza-a-marcar-sus-textos",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:claude empieza a marcar sus textos con una huella invisible de ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2189,
+    "fecha": "2026-08-15T00:57:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en gobierno escocés",
+    "resumen": "La oficina del fiscal del gobierno escocés ha sufrido una brecha de datos potencialmente amplia debido a un incidente de seguridad relacionado con un proveedor de servicios de terceros, lo que podría afectar a otras agencias gubernamentales que también utilizan sus servicios. El impacto real y los vectores de ataque aún no se han divulgado, pero se considera un incidente de seguridad grave.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NTU0NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/scottish-govt-data-breach-prosecutors-office",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:scottish govt suffers potentially widening data breach at prosecutor s office",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2188,
+    "fecha": "2026-08-15T00:57:20Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Anthropic marca texto AI",
+    "resumen": "Anthropic planea implementar un sistema de watermarks para identificar texto generado por su modelo de lenguaje Claude, lo que podría facilitar la detección de contenido AI-generated y mitigar posibles ataques de phishing o desinformación. Esto podría tener un impacto significativo en la ciberseguridad, ya que permitiría a los sistemas de seguridad identificar y bloquear contenido malicioso generado por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219184-c3fc77f501c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NTU0NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/how-anthropic-plans-to-watermark-claudes-ai-generated-text/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:how anthropic plans to watermark claude s ai generated text",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2187,
     "fecha": "2026-08-14T21:20:48Z",
     "categoria": "Ciberseguridad",
