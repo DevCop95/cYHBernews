@@ -1,5 +1,26 @@
 [
   {
+    "id": 2206,
+    "fecha": "2026-08-15T21:16:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en pkp-lib",
+    "resumen": "Se ha identificado una debilidad en la biblioteca pkp-lib (versiones 3.3.0, 3.4.0 y 3.5.0) que afecta la función setData en el archivo APIProfileForm.php, permitiendo una manipulación remota del argumento apiKey y llevando a una insuficiente entropía, con una complejidad de ataque alta y dificultad de explotación. La aplicación de la revisión 529b5df878e571ccc727647f7748eafc1466b041 es recomendada para resolver este problema.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4Mjg1Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/252786",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19906",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "529b5df878e571ccc727647f7748eafc1466b041"
+      ],
+      "cve": [
+        "CVE-2026-19906"
+      ]
+    }
+  },
+  {
     "id": 2205,
     "fecha": "2026-08-15T18:20:49Z",
     "categoria": "Ciberseguridad",
