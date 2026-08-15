@@ -1,5 +1,93 @@
 [
   {
+    "id": 2204,
+    "fecha": "2026-08-15T15:15:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Open Source Point of Sale",
+    "resumen": "Se ha detectado una vulnerabilidad (CVE-2026-19895) en la versión 3.4.2 de Open Source Point of Sale, que afecta la función de inicio de sesión y permite ataques de autenticación excesiva de manera remota, aunque se considera de complejidad alta y difícil de explotar. La vulnerabilidad ya tiene un exploit público disponible.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4MDY5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/252770",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19895",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19895"
+      ]
+    }
+  },
+  {
+    "id": 2203,
+    "fecha": "2026-08-15T15:15:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad XSS en LuCI DHCPv6",
+    "resumen": "Se ha identificado una vulnerabilidad de Cross-Site Scripting (XSS) almacenada en el módulo de DHCPv6 de LuCI, que permite a un atacante inyectar código malicioso a través del nombre de host de un lease, afectando la seguridad de los dispositivos conectados a la red. El vector de ataque se basa en la falta de validación y saneamiento adecuados de los datos de entrada en el nombre de host.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4MDY5MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52637",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:dos luci dhcpv6 lease hostname stored cross site scripting",
+    "ttps": [
+      {
+        "id": "T1061",
+        "name": "Cross Site Scripting (XSS)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Unauthenticated Input"
+      },
+      {
+        "id": "T1055.001",
+        "name": "Unrestricted Input"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2202,
+    "fecha": "2026-08-15T15:15:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Botnet Evooo1Bot ataca routers",
+    "resumen": "Un nuevo malware basado en Mirai, llamado Evooo1Bot, está atacando dispositivos de enrutamiento expuestos a Internet, convirtiéndolos en nodos de retransmisión de tráfico SOCKS5, lo que puede ser utilizado para ataques de phishing, DDoS y otros tipos de malware. El vector de ataque se enfoca en dispositivos con vulnerabilidades no parcheadas, aprovechando la falta de seguridad en los routers.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4MDY5MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-evooo1bot-linux-botnet-turns-routers-into-traffic-relay-nodes/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new evooo1bot linux botnet turns routers into traffic relay nodes",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Compromise Web Service"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2201,
     "fecha": "2026-08-15T12:27:59Z",
     "categoria": "Ciberseguridad",
