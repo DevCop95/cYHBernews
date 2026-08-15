@@ -1,5 +1,92 @@
 [
   {
+    "id": 2200,
+    "fecha": "2026-08-15T09:20:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en WordPress",
+    "resumen": "La vulnerabilidad CVE-2026-15826 en el plugin User Profile Builder de WordPress permite a atacantes no autenticados tomar el control total del sitio web al explotar un bypass de autenticación mediante confusión de tipos en versiones hasta 3.16.4. Esto se debe a una falla en la función wppb_log_in_user() que permite a un atacante autenticarse como el administrador del sitio (ID de usuario 1) al proporcionar un nombre de usuario con 61-70 caracteres.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3ODU2NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/252551",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-15826",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-15826"
+      ]
+    }
+  },
+  {
+    "id": 2199,
+    "fecha": "2026-08-15T09:20:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Estafa con comprobante de Bizum generado por IA",
+    "resumen": "Se ha detectado un método de estafa en el que se utiliza inteligencia artificial (IA) para generar comprobantes falsos de pagos a través de Bizum, con el fin de engañar a otros usuarios y evitar pagar sus deudas. El vector de ataque se basa en la creación de comprobantes falsos que parecen legítimos, lo que puede llevar a confusiones y pérdidas financieras.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3ODU2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/el-trick-del-comprobante-del-bizum.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:el trick del comprobante del bizum hecho con ia para ratear un pago a los colegas",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1496",
+        "name": "Técnica de Generación de Contenido Falso"
+      },
+      {
+        "id": "T1584.001",
+        "name": "Técnica de Phishing: Spearphishing con Documentos Falsos no aplica directamente, pero se puede considerar T1584 - Phishing en general, aunque no es exacto."
+      },
+      {
+        "id": "T1584",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1497",
+        "name": "Técnica de Generación de Contenido Malicioso no aplica directamente, pero se puede considerar T1496 como la más cercana."
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZt5LOOh8rIaHO-MoglGgGWZsZHOYil2Ihx2RotFRD0sgCJTUSMd5xGSo5oL9wenzQuhr0os-dlsWf2siSaI_TAovJxJH_qTtsmJTQSZpnu5LdCVPAh_4eMCxzMrf7M1y_wTWRa3RpKyv21fpdva6Llp9-f2HG53Z5DBNN8AUqfH01MckmrbYS/s1024/Bizum0.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZt5LOOh8rIaHO-MoglGgGWZsZHOYil2Ihx2RotFRD0sgCJTUSMd5xGSo5oL9wenzQuhr0os-dlsWf2siSaI_TAovJxJH_qTtsmJTQSZpnu5LdCVPAh_4eMCxzMrf7M1y_wTWRa3RpKyv21fpdva6Llp9-f2HG53Z5DBNN8AUqfH01MckmrbYS/w640-h350/Bizum0.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKYZ11IqMBiZV6a9ByTM60ZGRVDdIQaizt-gp5xkVyoZgHJYeGJJWB5Uusk6OriPAXOfi_9z1rkmqmN8DRckcjZDj69-mba9DXQnlSPPZcGgRNv1dNTAuZwWxUZsACZCSPXGkfmLv7gZbL0jRRWpe0C8-5FmO-Z6PouUlUGUJY6rjzN_H_7h1C/s760/Bizum5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKYZ11IqMBiZV6a9ByTM60ZGRVDdIQaizt-gp5xkVyoZgHJYeGJJWB5Uusk6OriPAXOfi_9z1rkmqmN8DRckcjZDj69-mba9DXQnlSPPZcGgRNv1dNTAuZwWxUZsACZCSPXGkfmLv7gZbL0jRRWpe0C8-5FmO-Z6PouUlUGUJY6rjzN_H_7h1C/w640-h310/Bizum5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr93I60gYYqRCtVSdn23deRkECr08yM6Rtca4nHBFsb418Dqf6-W69Z9A4Xuwf8vW17X9eJwZOM0iEjyu6iP50mmaYpKGGx5u3znjjPhamI0s_30OdvlHZPMCm5xj_K-teiek8Atx42f9BTXj9RqD2PARIRgDDZrwqEJ2FI5tsaZW15SYdIPEU/s471/bizum2.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr93I60gYYqRCtVSdn23deRkECr08yM6Rtca4nHBFsb418Dqf6-W69Z9A4Xuwf8vW17X9eJwZOM0iEjyu6iP50mmaYpKGGx5u3znjjPhamI0s_30OdvlHZPMCm5xj_K-teiek8Atx42f9BTXj9RqD2PARIRgDDZrwqEJ2FI5tsaZW15SYdIPEU/w400-h368/bizum2.jpeg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUil4fcmIIQhgO-LgFXA4fsUZVZQWXcmsg-XeHWs6HNNRs2gYE7yhMIh7FKkYcYp1tTrmC21E1BECKIXKhjhkL1E5hwDYvZ51zcyBzqJmRBuSTmlphdc0zKtTIXOyqzlWh-huPwDwGuIsep1zDrC4e70sgSMl9G-zlzwTjv_-YCyUANNiNul7O/s1320/bizum1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUil4fcmIIQhgO-LgFXA4fsUZVZQWXcmsg-XeHWs6HNNRs2gYE7yhMIh7FKkYcYp1tTrmC21E1BECKIXKhjhkL1E5hwDYvZ51zcyBzqJmRBuSTmlphdc0zKtTIXOyqzlWh-huPwDwGuIsep1zDrC4e70sgSMl9G-zlzwTjv_-YCyUANNiNul7O/w400-h368/bizum1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEink-EVzyi2O1uHDEimvbXAoWznyTmbdYDXEPcGiOS2YMkTD3Ltr96cKY79Ti7cGzJ8MjBtIlFmF8V1afIcu8Sz3FzIHL32Ti-2UvQCtBJpeKrPKQ1Ql3Cm1een0hK9DiV3b-e8uqh0Qf54xrpYnRyLNUSoOczU0lnSLzkJ42ufm-4ptzqc2VfO/s1408/bizum3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEink-EVzyi2O1uHDEimvbXAoWznyTmbdYDXEPcGiOS2YMkTD3Ltr96cKY79Ti7cGzJ8MjBtIlFmF8V1afIcu8Sz3FzIHL32Ti-2UvQCtBJpeKrPKQ1Ql3Cm1een0hK9DiV3b-e8uqh0Qf54xrpYnRyLNUSoOczU0lnSLzkJ42ufm-4ptzqc2VfO/w494-h640/bizum3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDDTn4vwv14lmnaZ4ske8MCTTKsQ64ysCEpC2r1k0pgbVW2Q7CAxaD-VBdRSbV4aCN6AaUiQxvBgSRNgRW_i6ADQEv8os7d15vOqE-j6XLUNIrnumTkXGpkuWXysDOxgwaUgNWglNagsdEmligMATykRBlCEmwL2HuM9hftJv0jtnVSszhU8r2/s750/bizum4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDDTn4vwv14lmnaZ4ske8MCTTKsQ64ysCEpC2r1k0pgbVW2Q7CAxaD-VBdRSbV4aCN6AaUiQxvBgSRNgRW_i6ADQEv8os7d15vOqE-j6XLUNIrnumTkXGpkuWXysDOxgwaUgNWglNagsdEmligMATykRBlCEmwL2HuM9hftJv0jtnVSszhU8r2/w314-h400/bizum4.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2023/02/mi-hacker-v20-teenager-edition.html",
+        "https://www.elladodelmal.com/2023/06/el-jeta-del-yo-pago-con-el-apple-pay.html",
+        "https://www.elladodelmal.com/2026/04/jailbreaking-nano-banana-just-for-fun.html"
+      ]
+    }
+  },
+  {
     "id": 2198,
     "fecha": "2026-08-15T06:29:16Z",
     "categoria": "Ciberseguridad",
@@ -16399,49 +16486,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1559,
-    "fecha": "2026-07-22T08:20:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad crítica en WordPress",
-    "resumen": "Se ha identificado una cadena crítica en WordPress Core, conocida como wp2shell, que permite la ejecución remota de código sin autenticación y la instalación de webshells persistentes, lo que ya se está explotando de forma activa. Las versiones 7.0.2, 6.9.5 y 6.8.6 de WordPress incluyen la corrección para esta vulnerabilidad, por lo que se recomienda revisar los servidores expuestos a Internet para detectar signos de compromiso.",
-    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ3MDg0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/una-cadena-critica-en-wordpress-facilita-la-instalacion-de-webshells-sin-contrasena/?utm_source=rss&utm_medium=rss&utm_campaign=una-cadena-critica-en-wordpress-facilita-la-instalacion-de-webshells-sin-contrasena",
-    "fuente": "Una al Día (Hispasec)",
-    "dedup_key": "txt:una cadena crítica en wordpress facilita la instalación de webshells sin contraseña",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1505.003",
-        "name": "Web Shell"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1583.001",
-        "name": "Acquire Infrastructure: Web Services"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/una-cadena-critica-en-wordpress-facilita-la-instalacion-de-webshells-sin-contrasena/"
-      ]
-    }
   },
   {
     "id": 1558,
