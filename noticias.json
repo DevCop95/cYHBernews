@@ -1,5 +1,142 @@
 [
   {
+    "id": 2197,
+    "fecha": "2026-08-15T03:34:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha de seguridad en RingCentral",
+    "resumen": "La empresa de comunicaciones RingCentral sufrió una brecha de seguridad en julio, en la que el grupo de extorsión ShinyHunters robó información personal de 1,6 millones de cuentas, según el servicio de notificación de brechas de datos Have I Been Pwned. El incidente pone de relieve la importancia de la ciberseguridad en la protección de la información de los clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NjQ4NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ringcentral-data-breach-exposed-info-of-16-million-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ringcentral data breach exposed info of 1 6 million accounts",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2196,
+    "fecha": "2026-08-15T03:34:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña Malware XRed",
+    "resumen": "Se ha detectado una campaña de malware llamada XRed que se dirige específicamente a analistas de malware y ingenieros de reverse engineering que utilizan frameworks basados en hipervisores, con un sitio web que imita a HyperDbg y contenido en mandarín. El malware ha sido identificado mediante reglas YARA y se ha relacionado con ataques anteriores contra empresas en la India, Reino Unido y Estados Unidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NjQ4Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9300",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:be me get dm its my friend intel80x86 author of hyperdbg wtf i love him open message smelly i got go",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Spearphishing via Servicio Web"
+      },
+      {
+        "id": "T1586.001",
+        "name": "Impersonación de Sitio Web Legítimo"
+      },
+      {
+        "id": "T1497",
+        "name": "Simulación de Entorno de Desarrollo"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Ingeniería Social para Obtener Acceso a Recursos de Desarrollo"
+      }
+    ],
+    "iocs": {
+      "sha256": [
+        "5934d1a64afd62e7d1badb81e8613e01efe9cf9c7d6748271c6d0761e3b11eb7"
+      ]
+    }
+  },
+  {
+    "id": 2195,
+    "fecha": "2026-08-15T03:34:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ejecución Remota de Código en PraisonAI",
+    "resumen": "Se ha detectado una vulnerabilidad de ejecución remota de código (Remote Code Execution, RCE) en la versión 1.6.77 de PraisonAI praisonaiagents, lo que permite a un atacante ejecutar código arbitrario en el sistema afectado a través de una conexión remota. Esta vulnerabilidad puede ser explotada por atacantes para obtener acceso no autorizado y realizar acciones maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NjQ4NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52639",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:remote praisonai praisonaiagents 1 6 77 remote code execution",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2194,
+    "fecha": "2026-08-15T03:34:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Servicio Revela Seguidores",
+    "resumen": "Un nuevo servicio llamado DecryptAds recopila y correlaciona datos de publicidad en línea, permitiendo a los usuarios identificar fácilmente quién está rastreando su actividad en línea a través de anuncios y aplicaciones móviles, proporcionando transparencia en la recolección de datos. Esto puede ayudar a los usuarios a comprender mejor su privacidad digital y los vectores de ataque potenciales a través de phishing o malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NjQ4NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:who s tracking you use this new service to find out",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2193,
+    "fecha": "2026-08-15T03:34:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SAP Commerce Cloud",
+    "resumen": "Una vulnerabilidad de ejecución de código remoto (RCE) de gravedad máxima en SAP Commerce Cloud, parcheada hace tres días, ya está siendo explotada en ataques, según la empresa de inteligencia de amenazas Defused, lo que supone un riesgo significativo para los sistemas afectados. Los atacantes pueden aprovechar esta vulnerabilidad para ejecutar código malicioso de manera remota, lo que puede llevar a brechas de seguridad y pérdida de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY3NjQ4NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:max severity sap commerce cloud flaw now targeted in attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2192,
     "fecha": "2026-08-15T00:57:42Z",
     "categoria": "Ciberseguridad",
