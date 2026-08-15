@@ -1,5 +1,19 @@
 [
   {
+    "id": 2205,
+    "fecha": "2026-08-15T18:20:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Herramienta RPC-Triage para análisis de RPC",
+    "resumen": "La herramienta RPC-Triage permite el análisis estático de archivos PE para recuperar información de RPC/MIDL/NDR, evitando la necesidad de comenzar desde un volcado de 5000 líneas, y utiliza un modelo de superficie de ataque basado en AHP/Saaty para clasificar las interfaces, lo que facilita la identificación de posibles vulnerabilidades en la capa de RPC de Windows. La herramienta extrae información detallada de cada interfaz, incluyendo UUID, métodos, parámetros y bindings de transporte, sin requerir archivos PDB ni ejecución en vivo del endpoint.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4MTgwNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22961",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "txt:rpc triage built to avoid starting windows rpc reversing from a 5000 line dump statically recovers rpc midl ndr int",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2204,
     "fecha": "2026-08-15T15:15:24Z",
     "categoria": "Ciberseguridad",
