@@ -1,5 +1,107 @@
 [
   {
+    "id": 2214,
+    "fecha": "2026-08-16T09:22:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenaza global contra VMware vCenter",
+    "resumen": "Se ha detectado una campaña de amenazas globales que explota la vulnerabilidad CVE-2026-59310 en VMware vCenter, iniciada a principios de este mes, y se advierte que parchear la vulnerabilidad puede no ser suficiente para mitigar completamente la amenaza. Los vectores de ataque pueden incluir exploits de día cero (zero-day) y técnicas de phishing para aprovechar esta debilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4NzIxMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/global-threat-campaign-critical-vmware-vcenter-flaw",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:global threat campaign hits critical vmware vcenter flaw",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1588.001",
+        "name": "Exploitation for Privilege Escalation no es explícito, pero se puede inferir T1068 - Exploitation for Privilege Escalation no es explícito, pero se puede inferir T1190 es el más cercano a la técnica de \"exploit de día cero\" (zero-day) mencionada."
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-59310"
+      ]
+    }
+  },
+  {
+    "id": 2213,
+    "fecha": "2026-08-16T09:22:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-74578 en Linux",
+    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux (CVE-2026-74578) que afectaba el procesamiento criptográfico asincrónico, permitiendo a un atacante inyectar un vector de inicialización (IV) y recuperar texto plano en operaciones concurrentes. La solución fuerza el procesamiento sincrónico en árboles sin ctx->state, eliminando la carrera de IV y cualquier carrera de escritura.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4NzIxMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/252890",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-74578",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-74578"
+      ]
+    }
+  },
+  {
+    "id": 2212,
+    "fecha": "2026-08-16T09:22:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cibercriminal detenido por uso de DeepFakes",
+    "resumen": "La Policía Nacional ha detenido a un cibercriminal que utilizaba técnicas de DeepFakes para obtener certificados digitales, aprovechando un glitch en el sistema. Esto resalta el creciente uso de la IA por parte de los cibercriminales para cometer delitos, incluyendo la creación de identidades digitales falsas con herramientas de FaceSwapping y Autoencoders.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4NzIxMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/la-policia-nacional-detiene-un.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:la policía nacional detiene a un cibercriminal que usaba deepfakes para obtener certificados digitales gracias a un glitch",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "es.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.blogger.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/205-ciberestafas-la-historia-de-nunca-acabar.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgffPhfMR1XTPj4krORq722e7EnxeTK9Alr_0FFsEbEhTPEbe0-V86854wLRsVu_ypHmyPEF8lM42WiiVsmUqSLlGM4TCbEfxsh_4Ywjx_aDm4AfEsLrhONQcxPh51lGVsYrYzMId3mHw3_zQqB8oMZKGSFSBB6tAmbSwVgwC4TDoSX8qmRoq-N/w640-h470/policia1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu0boTH1eQvQhol1Ovaj1xquwbJzH5XkzB8XZ7tp9WNyJddy4IhgqntolwegORTJ4o-h1sK53O3ntoAo2IvcmJqx9zTYqWscIxsfXiZjATPX8AD2D3Tr0jKL-B178ydEIRaWyMTHacYbvfwxoY7eGnWHkIo3fdUJAZojc2RNRmjSU2-A0YSoy8/w640-h384/policia2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvKmeKKD-aBQ0ZlKvqfJ9T6rsxe3uEanpxh6w3UjjSR6jGLu1WKHvgZRlnvk2een7jjWAhtdM5jQyl7fDA4tFCFP1EOIM1JGE-w-p4M0OGbZDon_KRNpaikQmR-clOijHNtpqUlhgB7ULv5wfqGYeYl3sXYsL8bzqu4hr4C8rTqXJaTllcOkQ_/w281-h400/ciberestafas_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy-mX0gTTSC2eOL9L2OtiPFdVEaMahiOjORAD9jmkrvTuNavesBXb4AElnU_eQ_839wHF3K4C7AActoI0ryrt_nzmA8Sx7xCr2ZY1hSfsxHg-kPZV745JFLNaVBo6jaMc22yy3ovlA2WjMJmBoDKoBffJhwdjuOvVTe-5DynMcny2LUcXdM-Ey/w640-h428/policia0.jpg",
+        "https://elladodelmal.com",
+        "https://www.blogger.com/video.g?token=AD6v5dy6voZ_XQ6uCZAFfk_cQ8GCmZxQ2XP1LYB5s3OvXroxr7M3cm96RHilF1Fv875fH98d8K-JSbTxqGk",
+        "https://www.elladodelmal.com/2018/02/deepfakeapp-una-ai-de-face-swapping-al.html",
+        "https://www.elladodelmal.com/2021/07/un-historia-de-blade-runners-virtual.html",
+        "https://www.elladodelmal.com/2023/02/blade-runners-como-crear-un-test-de.html",
+        "https://www.elladodelmal.com/2026/01/weaponized-ai-el-crimeware-con-ia-que.html",
+        "https://www.policia.es/_es/comunicacion_prensa_detalle.php?ID=16974"
+      ]
+    }
+  },
+  {
     "id": 2211,
     "fecha": "2026-08-16T06:31:41Z",
     "categoria": "Ciberseguridad",
@@ -2736,52 +2838,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 2112,
-    "fecha": "2026-08-12T12:57:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque a VMware vCenter",
-    "resumen": "La vulnerabilidad crítica CVE-2026-59310 en VMware vCenter se está explotando activamente para instalar acceso remoto persistente mediante ejecución remota de código y herramientas como reverse_ssh, afectando sistemas expuestos a internet. La aplicación de las actualizaciones de VMSA-2026-0006.1 es la única mitigación efectiva conocida hasta el momento.",
-    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1Mzk0NjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/atacantes-explotan-un-fallo-critico-en-vmware-vcenter-para-instalar-acceso-remoto-persistente/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-explotan-un-fallo-critico-en-vmware-vcenter-para-instalar-acceso-remoto-persistente",
-    "fuente": "Una al Día (Hispasec)",
-    "dedup_key": "cve:cve-2026-59310",
-    "ttps": [
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1210.001",
-        "name": "Exploitation of Remote Services: Remote Code Execution"
-      },
-      {
-        "id": "T1021",
-        "name": "Remote Services"
-      },
-      {
-        "id": "T1021.001",
-        "name": "Remote Desktop Protocol"
-      },
-      {
-        "id": "T1572",
-        "name": "Protocol Tunneling"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/atacantes-explotan-un-fallo-critico-en-vmware-vcenter-para-instalar-acceso-remoto-persistente/"
-      ],
-      "cve": [
-        "CVE-2026-59310"
-      ]
-    }
   },
   {
     "id": 2111,
