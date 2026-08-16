@@ -1,5 +1,47 @@
 [
   {
+    "id": 2227,
+    "fecha": "2026-08-16T21:15:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en kernel de Linux",
+    "resumen": "Se ha identificado una vulnerabilidad crítica (CVE-2023-52480) en el kernel de Linux, con un puntaje CVSS de 9.8, que permite una condición de ejecución entre la búsqueda de sesión y la caducidad del subproceso en ksmbd, lo que puede llevar a una vulnerabilidad de uso después de la liberación (UAF). El parche agrega un semáforo de lectura/escritura (rwsem) para corregir la condición de ejecución.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MTQ5MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-52480",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-52480",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-52480"
+      ]
+    }
+  },
+  {
+    "id": 2226,
+    "fecha": "2026-08-16T21:15:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Exploit CVE-2026-6837 en Zyxel",
+    "resumen": "Se ha descubierto una vulnerabilidad de inyección de comandos en los modelos de puntos de acceso (AP) de Zyxel, identificada como CVE-2026-6837, que permite la ejecución de comandos de root mediante la emulación de firmware y la explotación de una vulnerabilidad en el constructor de contraseñas PKCS#12. La empresa ha emitido un aviso y una solución para 18 modelos de AP afectados, que consiste en dejar de construir comandos de shell a partir de entradas de certificado no confiables.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MTQ5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22978",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "cve:cve-2026-6837",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "minanagehsalalma.github.io"
+      ],
+      "url": [
+        "https://minanagehsalalma.github.io/CVE-2026-6837-zyxel-export-cgi-command-injection/"
+      ],
+      "cve": [
+        "CVE-2026-6837"
+      ]
+    }
+  },
+  {
     "id": 2225,
     "fecha": "2026-08-16T18:21:18Z",
     "categoria": "Ciberseguridad",
