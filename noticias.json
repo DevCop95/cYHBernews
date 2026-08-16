@@ -1,5 +1,91 @@
 [
   {
+    "id": 2221,
+    "fecha": "2026-08-16T15:16:09Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Claude Agrega Marca de Agua Invisible",
+    "resumen": "Anthropic ha implementado una marca de agua invisible en el modelo de lenguaje Claude, que no se ve ni se nota, y que solo se puede detectar con la clave criptográfica correspondiente, con el objetivo de cumplir con el Código de Prácticas sobre Transparencia de Contenido Generado por IA de la Unión Europea. La marca de agua se codifica en el proceso de generación del texto y utiliza una implementación de SynthID-Text de Google DeepMind.",
+    "url_imagen": "https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4OTMzNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-explica-como-funciona-nueva-marca-agua-claude-no-se-ve-no-se-nota-casi-no-se-puede-borrar-no-prueba-nada",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:anthropic explica cómo funciona la nueva marca de agua de claude no se ve no se nota casi no se puede borrar y no prueba nada",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "support.claude.com",
+        "www.anthropic.com",
+        "www.nature.com",
+        "www.reddit.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://deepmind.google/models/synthid/",
+        "https://digital-strategy.ec.europa.eu/en/news/strong-backing-code-practice-transparency-ai-generated-content",
+        "https://digital-strategy.ec.europa.eu/es/policies/code-practice-ai-generated-content",
+        "https://i.blogs.es/5b09ea/detector/375_142.jpeg",
+        "https://i.blogs.es/9424fd/gemini_generated_image_22wr6722wr6722wr/1024_2000.jpeg",
+        "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+        "https://www.anthropic.com/news/claude-text-watermark",
+        "https://www.nature.com/articles/s41586-024-08025-4"
+      ]
+    }
+  },
+  {
+    "id": 2220,
+    "fecha": "2026-08-16T15:16:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS en OpenTofu",
+    "resumen": "Se ha identificado una vulnerabilidad de denegación de servicio (DoS) en versiones de OpenTofu anteriores a 1.11.4, que se explota a través de archivos .zip maliciosos durante la instalación de dependencias, causando un uso excesivo de CPU y degradando el rendimiento del sistema. Los atacantes pueden controlar el contenido de los archivos .zip para provocar esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4OTMzNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/252938",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-74797",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-74797"
+      ]
+    }
+  },
+  {
+    "id": 2219,
+    "fecha": "2026-08-16T15:15:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware AmnesiaStealer ataca macOS",
+    "resumen": "El malware AmnesiaStealer, que se propaga a través de ataques ClickFix, incluye un módulo de streaming que permite a los atacantes controlar de forma remota e interactiva las sesiones del navegador de los usuarios de macOS, lo que puede llevar a la pérdida de información confidencial. El malware aprovecha vulnerabilidades en los sistemas para infiltrarse y realizar acciones maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4OTMzNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-amnesiastealer-macos-malware-hijacks-browser-sessions-via-remote-control/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new amnesiastealer macos malware hijacks browser sessions via remote control",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2218,
     "fecha": "2026-08-16T12:29:45Z",
     "categoria": "IA",
