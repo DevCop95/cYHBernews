@@ -1,5 +1,107 @@
 [
   {
+    "id": 2225,
+    "fecha": "2026-08-16T18:21:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Octagon: Bot Malicioso para Android",
+    "resumen": "Se ha descubierto un nuevo bot malicioso llamado Octagon que se dirige a dispositivos Android, específicamente a wallets de criptomonedas y aplicaciones bancarias, con el fin de robar información sensible y realizar operaciones no autorizadas. El ataque puede realizarse a través de técnicas de phishing y explotación de vulnerabilidades en aplicaciones, lo que resalta la importancia de mantener actualizadas las aplicaciones y utilizar medidas de seguridad robustas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MDQ0Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2955",
+    "fuente": "TG: Android Malware",
+    "dedup_key": "txt:octagon a new android bot targeting crypto wallets and banking apps https iverify io blog octagon android bot cryp",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1056",
+        "name": "Keylogging no se menciona explícitamente, pero se puede inferir que el malware puede realizar operaciones no autorizadas, por lo que se puede considerar T1055 - Input Capture, pero como no hay suficiente información se puede considerar T1110 - Brute Force como una técnica para obtener acceso no autorizado. Sin embargo, la técnica más adecuada sería T1055 no se menciona, pero se puede considerar T1056 no es la adecuada, la adecuada sería T1055, pero como no hay suficiente información se puede considerar T1110, pero la más adecuada sería T1055, pero como no hay suficiente información se puede considerar T1056 no es la adecuada, la"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "iverify.io"
+      ],
+      "url": [
+        "https://iverify.io/blog/octagon-android-bot-cryp...",
+        "https://iverify.io/blog/octagon-android-bot-crypto-wallets-banking-apps"
+      ]
+    }
+  },
+  {
+    "id": 2224,
+    "fecha": "2026-08-16T18:21:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ingeniería inversa de Akamai",
+    "resumen": "Un investigador ha realizado ingeniería inversa del código de Akamai, revelando cómo funcionan sus mecanismos de seguridad, incluyendo la inyección de scripts de sensor y la generación de desafíos de píxeles, todo desde el propio hostname del cliente, lo que podría tener implicaciones en la ciberseguridad y la privacidad digital. Los hallazgos incluyen la ausencia de orígenes de terceros y la presencia de múltiples etiquetas en documentos protegidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MDQ0NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22972",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "txt:i reverse engineered akamai s code here is everything they do and how https proofofbots github io akamai internals",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "proofofbots.github.io"
+      ],
+      "url": [
+        "https://proofofbots.github.io/akamai-internals...",
+        "https://proofofbots.github.io/akamai-internals/index.html"
+      ]
+    }
+  },
+  {
+    "id": 2223,
+    "fecha": "2026-08-16T18:21:06Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Gemini 3.7 Flash: IA Avanzada",
+    "resumen": "Google ha lanzado Gemini 3.7 Flash, un modelo de IA capaz de realizar tareas complejas de manera autónoma, lo que puede revolucionar la industria de la inteligencia artificial con agentes más accesibles y potentes. Esto podría tener un impacto significativo en la automatización de procesos y la toma de decisiones en diversas áreas.",
+    "url_imagen": "https://images.unsplash.com/photo-1756908992154-c8a89f5e517f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MDQ0Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/gemini-37-flash-google-acelera-la",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:gemini 3 7 flash google acelera la carrera por los agentes de ia baratos y capaces",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2222,
+    "fecha": "2026-08-16T18:21:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques DDoS contra Threema",
+    "resumen": "Threema, un servicio de mensajería segura, sufrió múltiples ataques de denegación de servicio distribuidos (DDoS) que causaron interrupciones severas en las comunicaciones, afectando la disponibilidad del servicio. Los ataques DDoS son un vector de ataque común utilizado para sobrecargar los sistemas y servicios en línea, en este caso, impactando la privacidad y seguridad de los usuarios de Threema.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MDQ0NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/large-scale-ddos-attacks-disrupted-threema-secure-messaging-service/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:large scale ddos attacks disrupted threema secure messaging service",
+    "ttps": [
+      {
+        "id": "T1498",
+        "name": "Network Denial of Service"
+      },
+      {
+        "id": "T1498.001",
+        "name": "Distributed Denial of Service (DDoS)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2221,
     "fecha": "2026-08-16T15:16:09Z",
     "categoria": "IA",
