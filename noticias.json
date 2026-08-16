@@ -1,5 +1,79 @@
 [
   {
+    "id": 2211,
+    "fecha": "2026-08-16T06:31:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Mirai: Nueva variante con capacidades stealth",
+    "resumen": "Una nueva variante del botnet Mirai ha sido descubierta, que incluye comunicaciones cifradas con servidores de comando y control, así como un \"sniffer\" que busca credenciales de acceso predeterminadas, lo que aumenta su capacidad de evasión y explotación de vulnerabilidades. Esto puede permitir ataques más sofisticados y difíciles de detectar, como DDoS y ransomware, a través de la explotación de dispositivos IoT vulnerables.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4NjE5MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/new-mirai-variant-adds-stealth-to-botnet-code",
+    "fuente": "The Record",
+    "dedup_key": "txt:new mirai variant adds stealth capabilities to notorious botnet code",
+    "ttps": [
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2210,
+    "fecha": "2026-08-16T06:31:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad SQL en plugin de WordPress",
+    "resumen": "Se ha detectado una vulnerabilidad de inyección SQL genérica (CVE-2026-9767) en el plugin \"The School Management – Education & Learning ERP\" para WordPress, que permite a atacantes autenticados con acceso de nivel personalizado o superior extraer información sensible de la base de datos mediante la inyección de consultas SQL adicionales. La vulnerabilidad se replica en varios controladores AJAX y se puede explotar mediante ataques de CSRF debido a la falta de verificación de nonce.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4NjE4OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/252879",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9767",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Forced Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9767"
+      ]
+    }
+  },
+  {
     "id": 2209,
     "fecha": "2026-08-16T03:43:14Z",
     "categoria": "Ciberseguridad",
