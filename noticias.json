@@ -1,5 +1,148 @@
 [
   {
+    "id": 2218,
+    "fecha": "2026-08-16T12:29:45Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Claude Mythos: Un machete en ciberseguridad",
+    "resumen": "El modelo de lenguaje Claude Mythos de Anthropic ha demostrado ser capaz de encontrar vulnerabilidades zero-day, lo que ha generado un gran revuelo en la industria de la ciberseguridad, aunque expertos como Daniel Púa consideran que no es un cambio de paradigma, sino más bien una herramienta más potente que requiere una adaptación de la ciberseguridad tradicional para trabajar con la IA. El modelo ha sido comparado con un machete, en contraste con el modelo anterior Claude 4.8, que sería como una navaja.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4ODMzODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/daniel-pua-jefe-seguridad-magnific-claude-opus-4-8-podia-ser-navaja-mythos-machete",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:daniel púa jefe de seguridad en magnific si claude opus 4 8 podía ser una navaja mythos es un machete",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.magnific.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/2af93a/flyd-mt7lxzpjk7u-unsplash/1024_2000.jpeg",
+        "https://i.blogs.es/86b5e1/dario_amodei/375_142.jpeg",
+        "https://i.blogs.es/8900f0/filosofia-en-ia/1024_682.jpeg",
+        "https://i.blogs.es/8900f0/filosofia-en-ia/500_333.jpeg",
+        "https://i.blogs.es/8900f0/filosofia-en-ia/840_560.jpeg",
+        "https://unsplash.com/es/@flyd2069?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        "https://unsplash.com/es/fotos/candado-rojo-en-teclado-de-computadora-negro-mT7lXZPjk7U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+        "https://www.magnific.com/app"
+      ]
+    }
+  },
+  {
+    "id": 2217,
+    "fecha": "2026-08-16T12:29:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en KubeVirt",
+    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-7374) en el componente virt-handler de KubeVirt, que permite a un usuario autenticado de OpenShift con permisos de edición en un namespace único explotar la validación incorrecta de enlaces simbólicos, lo que puede llevar a un acceso no autorizado a cualquier socket Unix en el host y potencialmente al control total del nodo y el clúster. El vector de ataque implica reemplazar el socket de la consola de la máquina virtual con un enlace simbólico al socket de tiempo de ejecución del contenedor (CRI-O) del host.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4ODMzODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/252901",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-7374",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1482",
+        "name": "Domain Trust Discovery"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el atacante puede utilizar el acceso no autorizado para ejecutar comandos en el host."
+      },
+      {
+        "id": "T1550",
+        "name": "Use Alternate Authentication Material"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-7374"
+      ]
+    }
+  },
+  {
+    "id": 2216,
+    "fecha": "2026-08-16T12:29:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Planyo",
+    "resumen": "Se ha descubierto una vulnerabilidad de lectura de archivos arbitrarios en Planyo_Online_Reservation_System 3.0, explotable a través de un ataque de SSRF (Server-Side Request Forgery), lo que permite a un atacante acceder a archivos sensibles del sistema. El vector de ataque se basa en la capacidad de manipular solicitudes HTTP para engañar al servidor y leer archivos no autorizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4ODMzNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52636",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps planyo online reservation system 3 0 arbitrary file read via ssrf",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1202",
+        "name": "Indirect Command Execution"
+      },
+      {
+        "id": "T1557.001",
+        "name": "Forced Authentication"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2215,
+    "fecha": "2026-08-16T12:29:28Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Redes 5G como radares",
+    "resumen": "Las redes 5G pueden ser utilizadas para detectar objetos volantes, como drones, mediante el análisis de perturbaciones en las señales de radiofrecuencia utilizando sistemas de IA como Nvidia AI Aerial. Esto permite la detección y seguimiento de drones en vuelo, lo que puede ser útil para la seguridad y la protección del espacio aéreo.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905439-3562f088758d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY4ODMzNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/moviles/nos-vendieron-redes-5g-como-forma-rapida-conectarnos-movil-ahora-resulta-que-tambien-pueden-detectar-drones",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nos vendieron las redes 5g como la forma más rápida de conectarnos con el móvil ahora resulta que también pueden detectar drones",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "astrisai.com",
+        "developer.nvidia.com",
+        "news.lockheedmartin.com",
+        "platform.instagram.com",
+        "www.xataka.com",
+        "www.xatakamovil.com",
+        "xplorestaging.ieee.org"
+      ],
+      "url": [
+        "https://astrisai.com/request-a-briefing",
+        "https://developer.nvidia.com/industries/telecommunications/ai-aerial/",
+        "https://i.blogs.es/60f1cf/drones-radar-5g-1/1024_2000.jpeg",
+        "https://i.blogs.es/60f1cf/drones-radar-5g-1/1366_2000.jpeg",
+        "https://i.blogs.es/60f1cf/drones-radar-5g-1/450_1000.jpeg",
+        "https://i.blogs.es/60f1cf/drones-radar-5g-1/650_1200.jpeg",
+        "https://i.blogs.es/9aa908/drones-radar-5g-portada/1024_2000.jpeg",
+        "https://i.blogs.es/e4be9a/5g-fast-track/375_142.jpeg",
+        "https://news.lockheedmartin.com/2026-08-12-Lockheed-Martin,-Verizon,-Keysight,-ODC-and-Astris-AI-Demonstrate-Technology-for-Public-Airspace-Protection-with-NVIDIA-Technology",
+        "https://www.xatakamovil.com/comparativa-de-tarifas/asi-avanza-5g-espana-cobertura-velocidad-frecuencias-preparados-para-5g-real",
+        "https://www.xatakamovil.com/orange/orange-primera-operadora-lanzar-5g-sa-esta-desplegandose-varias-grandes-ciudades-espanolas",
+        "https://xplorestaging.ieee.org/document/11603383"
+      ]
+    }
+  },
+  {
     "id": 2214,
     "fecha": "2026-08-16T09:22:15Z",
     "categoria": "Ciberseguridad",
