@@ -1,5 +1,138 @@
 [
   {
+    "id": 2232,
+    "fecha": "2026-08-17T00:59:01Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Caída de Claude",
+    "resumen": "Anthropic ha confirmado una falla importante en su modelo de lenguaje Claude, afectando varios servicios con problemas de inicio de sesión y rendimiento degradado. Esto puede tener un impacto significativo en las operaciones que dependen de la infraestructura de Anthropic, incluyendo posibles vulnerabilidades de seguridad si no se abordan adecuadamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1785981254860-98d9ad1e7b22?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MjgzNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anthropic confirms claude is down in major outage affecting multiple services",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2231,
+    "fecha": "2026-08-17T00:58:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Botnet JDY: Amenaza china",
+    "resumen": "El laboratorio Black Lotus Labs de Lumen ha detectado un resurgimiento del botnet JDY de origen chino, que afecta a más de 1.500 dispositivos SOHO e IoT comprometidos, los cuales escanean y fingerprintean objetivos para identificar infraestructuras vulnerables en cuestión de horas después de la divulgación de nuevas vulnerabilidades, evadiendo defensas basadas en IP y enfocándose en redes relacionadas con el ejército estadounidense. Esto plantea preocupaciones sobre posibles ataques posteriores.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MjgzMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114061",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:china linked jdy botnet scouts networks for rapid exploitation lumen s black lotus labs uncovered a resurgence of the",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1496",
+        "name": "Network Boundary Bridging (No se menciona explícitamente, pero se puede inferir que el enfoque en redes relacionadas con el ejército estadounidense puede ser parte de una técnica de identificación de objetivos)"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Compromise SOHO Devices (Se menciona explícitamente que el botnet afecta a dispositivos SOHO e IoT)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2230,
+    "fecha": "2026-08-17T00:58:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque a Akamai con ingeniería inversa",
+    "resumen": "Un atacante ha publicado un toolkit en GitHub que permite a los atacantes encontrar y explotar vulnerabilidades en la plataforma de Akamai, utilizando técnicas de ingeniería inversa y especulación con inteligencia artificial (IA) para analizar datos de sensores decodificados. El ataque no implica una verdadera ingeniería inversa del script principal de Akamai, sino más bien una especulación informada sobre la funcionalidad del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MjgzMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22977",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "txt:we cannot let this go unpunished this is not akamai reverse engineering thousands of lines of code do not equal reve",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1213",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion (No se menciona explícitamente, pero se puede inferir que se busca evadir la detección)"
+      },
+      {
+        "id": "T1589",
+        "name": "Gather Actionable Information (Se menciona la especulación informada sobre la funcionalidad del sistema)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2229,
+    "fecha": "2026-08-17T00:58:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Wireshark 4.6.8: Correcciones de seguridad",
+    "resumen": "La versión 4.6.8 de Wireshark corrige 28 vulnerabilidades y 25 errores, mejorando la seguridad y estabilidad de la herramienta de análisis de protocolos de red. Esto es particularmente importante para los profesionales de la ciberseguridad que dependen de Wireshark para el análisis de tráfico de red y la detección de amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MjgzMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33248",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:wireshark 4 6 8 released sun aug 16th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2228,
+    "fecha": "2026-08-17T00:58:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Breach en SafePal afecta 39,798 clientes",
+    "resumen": "Se ha producido una brecha de datos en SafePal, proveedor de monederos de hardware de criptomonedas, afectando a 39,798 clientes debido a la explotación de una vulnerabilidad que permitió el robo de información de pedidos, y ahora un actor amenazante está vendiendo los datos robados. La información comprometida puede ser utilizada para ataques de phishing o ingeniería social contra los clientes afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MjgzMTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/safepal-data-breach-impacts-39-798-customers-stolen-info-for-sale/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:safepal data breach impacts 39 798 customers stolen info for sale",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1586",
+        "name": "Execution through API"
+      },
+      {
+        "id": "T1590",
+        "name": "Gather Victim Identity Information"
+      },
+      {
+        "id": "T1589",
+        "name": "Gather Victim Host Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2227,
     "fecha": "2026-08-16T21:15:21Z",
     "categoria": "Ciberseguridad",
@@ -81,28 +214,6 @@
       "url": [
         "https://iverify.io/blog/octagon-android-bot-cryp...",
         "https://iverify.io/blog/octagon-android-bot-crypto-wallets-banking-apps"
-      ]
-    }
-  },
-  {
-    "id": 2224,
-    "fecha": "2026-08-16T18:21:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ingeniería inversa de Akamai",
-    "resumen": "Un investigador ha realizado ingeniería inversa del código de Akamai, revelando cómo funcionan sus mecanismos de seguridad, incluyendo la inyección de scripts de sensor y la generación de desafíos de píxeles, todo desde el propio hostname del cliente, lo que podría tener implicaciones en la ciberseguridad y la privacidad digital. Los hallazgos incluyen la ausencia de orígenes de terceros y la presencia de múltiples etiquetas en documentos protegidos.",
-    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MDQ0NzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/secharvester/22972",
-    "fuente": "TG: Security Harvester",
-    "dedup_key": "txt:i reverse engineered akamai s code here is everything they do and how https proofofbots github io akamai internals",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "proofofbots.github.io"
-      ],
-      "url": [
-        "https://proofofbots.github.io/akamai-internals...",
-        "https://proofofbots.github.io/akamai-internals/index.html"
       ]
     }
   },
