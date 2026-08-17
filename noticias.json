@@ -1,5 +1,111 @@
 [
   {
+    "id": 2242,
+    "fecha": "2026-08-17T21:06:07Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Anthropic oculta un modelo de IA más potente que Mythos, por miedo a su uso peligroso",
+    "resumen": "Anthropic ha desarrollado un modelo de IA llamado \"Model 2\" que supera en potencia a Mythos 5, pero ha decidido no hacerlo público debido a preocupaciones sobre su uso peligroso. Aunque la compañía evalúa que el riesgo de daños graves es bajo, la incertidumbre generada por escándalos de ciberseguridad recientes ha llevado a una reevaluación del riesgo de \"desalineamiento\" en situaciones de alto impacto.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218221-1da14c0f365e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwMDA3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-ha-construido-modelo-mejor-que-mythos-tambien-ha-decidido-que-mundo-no-pueda-usarlo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:anthropic ha construido un modelo mejor que mythos también ha decidido que el mundo no pueda usarlo",
+    "ttps": [
+      {
+        "id": "T1574",
+        "name": "Entering and Executing a Binary"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "www-cdn.anthropic.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/ea5319/hacker-openai-anthropic/1024_682.jpeg",
+        "https://i.blogs.es/ea5319/hacker-openai-anthropic/500_333.jpeg",
+        "https://i.blogs.es/ea5319/hacker-openai-anthropic/840_560.jpeg",
+        "https://i.blogs.es/ecb3a4/anthropic/1024_2000.jpeg",
+        "https://i.blogs.es/f955ca/anthropic-claude-riemann/375_142.jpeg",
+        "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+      ],
+      "sha1": [
+        "f61d49fa5596956a5dec75fea0e973bf6a6a8378"
+      ]
+    }
+  },
+  {
+    "id": 2241,
+    "fecha": "2026-08-17T21:05:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Inyección de comandos en Snowflake a través de GitHub Issues",
+    "resumen": "Un equipo de investigación de ciberseguridad de Wiz ha descubierto una vulnerabilidad de inyección de flujo de trabajo en GitHub Actions en la biblioteca de conexión de Snowflake, que puede ser explotada a través de un problema de GitHub creado a medida para ejecutar comandos en un flujo de trabajo que contiene credenciales de Jira internas. El atacante podría aprovechar esta vulnerabilidad para inyectar comandos maliciosos y comprometer la seguridad de la configuración de Snowflake.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwMDA3NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/snowflake-github-actions-flaw-lets_0330881554.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:snowflake github actions flaw lets crafted issues trigger command injection",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1210.001",
+        "name": "Exploit Public-Facing Application using a Vulnerability"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1086",
+        "name": "Input Validation Error"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2240,
+    "fecha": "2026-08-17T21:05:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha en Azure: 3,6 millones de registros de cuentas de empleados robados",
+    "resumen": "Un actor malicioso está vendiendo bases de datos de empleados supuestamente robadas del entorno de Microsoft Azure de varias empresas Fortune 500, después de obtener acceso utilizando credenciales comprometidas. El ataque aprovecha la debilidad de la autenticación de credenciales en Azure, lo que permite a los atacantes acceder a datos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwMDA3NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hacker-claims-36-million-azure-account-records-stolen-from-major-companies/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hacker claims 3 6 million azure account records stolen from major companies",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Obtained Account Credentials"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1534",
+        "name": "Internal Spearphishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2239,
     "fecha": "2026-08-17T06:43:47Z",
     "categoria": "Ciberseguridad",
