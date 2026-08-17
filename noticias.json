@@ -1,5 +1,62 @@
 [
   {
+    "id": 2234,
+    "fecha": "2026-08-17T03:45:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-50601",
+    "resumen": "Se ha identificado una vulnerabilidad de seguridad en la aplicación de escritorio Planet9, donde una clave API de solo lectura codificada permitió el acceso no autorizado a repositorios internos, lo que podría permitir a un atacante extraer claves y secretos administrativos y potencialmente obtener acceso administrativo a la infraestructura del repositorio. La actualización de Acer resuelve este problema de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MzgzMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/253159",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-50601",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Credentials in Files"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-50601"
+      ]
+    }
+  },
+  {
+    "id": 2233,
+    "fecha": "2026-08-17T03:44:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Linux",
+    "resumen": "Se ha identificado una vulnerabilidad crítica (CVE-2023-52441) en el kernel de Linux, con un puntaje CVSS de 9.1, que permite una corrección fuera de los límites en la función init_smb2_rsp_hdr() cuando se reciben solicitudes de negociación smb1 y smb2. El parche soluciona el problema ignorando los paquetes smb1 después de que se establece need_neg en falso.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5MzgyOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-52441",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-52441",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-52441"
+      ]
+    }
+  },
+  {
     "id": 2232,
     "fecha": "2026-08-17T00:59:01Z",
     "categoria": "IA",
