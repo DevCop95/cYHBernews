@@ -1,5 +1,123 @@
 [
   {
+    "id": 2239,
+    "fecha": "2026-08-17T06:43:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Linux",
+    "resumen": "Se ha identificado una vulnerabilidad crítica (CVE-2022-49770) en el kernel de Linux con un puntaje CVSS de 9.8, que puede causar problemas de use-after-free y otros errores al fallar la decodificación de snaps en el sistema de archivos Ceph. La vulnerabilidad puede ser explotada para causar fallos aleatorios en el sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5NDkwMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-49770",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-49770",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-49770"
+      ]
+    }
+  },
+  {
+    "id": 2238,
+    "fecha": "2026-08-17T06:43:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bypass en Claude Watermark",
+    "resumen": "Se ha descubierto una vulnerabilidad en el algoritmo de watermarking de Claude, permitiendo remover el watermark sin necesidad de reemplazar el texto, aprovechando un fallo en el mecanismo de muestreo de tokens basado en torneos. El exploit está disponible en GitHub y podría tener implicaciones en la autenticidad y propiedad intelectual de textos generados por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5NDkwMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22979",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "txt:i figured out a loophole to remove claude watermark without rephrasing https github com aloshdenny claude awm 1",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2237,
+    "fecha": "2026-08-17T06:43:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-72314 en núcleo Linux",
+    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux, específicamente en la función regulator_lock_two(), que no verificaba correctamente el error EDEADLK, lo que podía causar un bloqueo en la adquisición de reguladores, especialmente en arquitecturas MIPS. La vulnerabilidad se debe a una comparación incorrecta contra EDEADLOCK en lugar de EDEADLK, lo que puede provocar un comportamiento incorrecto en caso de contención.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5NDkwMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/254249",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-72314",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-72314"
+      ]
+    }
+  },
+  {
+    "id": 2236,
+    "fecha": "2026-08-17T06:43:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Linux",
+    "resumen": "Se ha identificado una vulnerabilidad crítica (CVE-2023-52440) en el kernel de Linux, con un puntaje CVSS de 9.8, que permite un desbordamiento de slub en la función ksmbd_decode_ntlmssp_auth_blob() si la longitud de la clave de sesión supera el tamaño permitido, lo que podría ser explotado para ataques de ejecución remota de código. La vulnerabilidad afecta el módulo ksmbd del kernel de Linux.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5NDkwMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-52440",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-52440",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2023-52440"
+      ]
+    }
+  },
+  {
+    "id": 2235,
+    "fecha": "2026-08-17T06:43:26Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Debilidad en LLMs: Razonamiento Robado",
+    "resumen": "Un reciente estudio ha descubierto una debilidad en los modelos de lenguaje (LLMs) que permite descifrar y \"weaponizar\" las trazas de razonamiento, lo que podría ser utilizado para ataques de ingeniería social o para comprometer la seguridad de los sistemas que utilizan estas tecnologías, afectando la privacidad y la confiabilidad de los datos procesados por estos modelos. Los vectores de ataque incluyen el acceso no autorizado a información confidencial y la manipulación de los resultados generados por los LLMs.",
+    "url_imagen": "https://images.unsplash.com/photo-1777449425442-adc413f3d873?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY5NDkwMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/pensamientos-robados-como-descifrar-y.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:pensamientos robados cómo descifrar y weaponizar trazas de razonamiento en llms",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "en.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "stolen-thoughts.com",
+        "www.alphaxiv.org",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6_ePYJND4NmP6SvGTcfllN1kyKOcdxt3kDo3h6wisOg_vgnZKhrYgvulWxE_oQZGI0HM8afxa3PmePjeH8x2asnpJJvbX9LhRZWhC18P9RhZ7PlQ9gPoLmfPayXQgu-2DT0TUmLZ0wM9N2n7127m16HoJ_736WTIUEqPtzkWPZioeqzvq1D8p/w640-h402/Stolen0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCgnrFMwwsnqSwGZI-TG5ORnNNW-P2e_6X-IK12FC-O_crjWA_meNz_jR-ljr2iBYBn_7CoS9QO0Zd7uH-u34JC_xPV1nP5vaLxU19J0tqhfuE1_Lp8SxfdcrZA5O4JbLnHha6Qn8RJBTC4M6gkUrSUBkuAs2rFvQv7LHfzP52hP-_zNYbsoix/w640-h368/Stolen7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM1zItPLVUYBTvCUYYcd-6GkkNjOExtRmZvjBf0R-yhLXgBMGdenSvcND62s371Ao3ySb55OiMPhAvdrQFEeHWgEpSTJtT26_AVEhYj8aZFRYwgdRm91Ww3cVCAdc4o0AANIpr23RZkbD3SxQlD8Km2SH5MroscENW8O_d8yz8JzuX2Sms-k_v/w640-h294/Stolen6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwjZ7mpqRzLZObP0YcXr9WJFxZMqdvA6q3AVuJZ85aEOTKGqpWgpePAQTMXq3JP3MCJtS2znwNDbOZS7QbSeuq9vbPmvwDcgDy3HXTRVCGsBnEtpbFdgKUWKyKDB-uY8-kfyL73V9SiCRWz8NnZLHyTBN3aX8Rvu-d7SJC4Kq0DrGH6vFx4_fP/w640-h372/Stolen5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO7r75yUM3HJsxOTgvHveJ6UJ2aPCPRUIOwgx1o1JsidHQcoOYWD5Cdneo4pj2h0vE0tQftF7iH40i7lRsVQ9h18iElDv60pLYOCgAxBOItK39_E3buhRsQ3dKf5r9IIZqubaFn_jTqLaBcNN5M0ga4wmxOT5E-lCRvfWB5YKSaqSwbF25Y2rl/w640-h324/Stolen3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0Lah9KT1wR7OKkak0tjSd39zDtDVFb1eS6GV37Fpew9RoGtU9_RBOcUjIOHA35tlXxJGq147n-jUns85uEdhHqU34cGyxLdOHgQnW2zzfyeL2tMwtVPnpnGKeXGrktoXC5b0mC5dIJdMDfBHaznY22Urf4ngDBICtVnZaIl34ourrdUs-BrGP/w640-h490/Destilacion.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHa59-9edL1OPDnUDuIs4Suucqz_OKx-pRL9leuRiNjkwXSvI6_pNLrzr0SythEj5Syc4DYYMf9t2jAarol0OoEMlcsk1dl51Hun37ltYhs2Vtqtf1Gp1d9xzKxh6a8m_C4l8Ze7LNYSMs8BUd8dyeH6um2WWAYSo7p1KE54T9Bxb8HJXlDHGR/w640-h210/Stolen4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_0s3g0BtDYiC4Akwiibo-NdRR5HAYq5j2y2FIn44Y7mGTBi5qnCWkb7oiW9abS88FLMH_Ecm_fvRuQFkAMopM5ycCu8YvFiX2F4tb6p1To-hI6jfItUGIT6k-YPzSd6ib41b2BDZHjExzKUpHr1hElYTu6Zw3piPxb7agnnEfTfgt_zDmwkdg/w466-h640/stolen2.jpg",
+        "https://elladodelmal.com",
+        "https://stolen-thoughts.com/",
+        "https://www.alphaxiv.org/pdf/2608.09867v1",
+        "https://www.elladodelmal.com/2025/03/estego-cripto-solo-al-alcance-de-deep.html",
+        "https://www.elladodelmal.com/2026/05/como-optimizar-el-gasto-en-ia-con.html"
+      ]
+    }
+  },
+  {
     "id": 2234,
     "fecha": "2026-08-17T03:45:02Z",
     "categoria": "Ciberseguridad",
