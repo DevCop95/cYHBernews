@@ -1,5 +1,47 @@
 [
   {
+    "id": 2249,
+    "fecha": "2026-08-18T09:27:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en SafePal: 39.798 clientes expuestos",
+    "resumen": "SafePal informó una vulnerabilidad de autorización en un complemento de seguimiento de pedidos que expuso datos personales de aproximadamente 39.798 clientes, incluyendo nombres, direcciones de correo electrónico, direcciones de envío, números de teléfono y detalles de compras. El incidente se remonta a una vulnerabilidad en un complemento de terceros, lo que sugiere una debilidad en la integración de herramientas de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNDUyMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/safepal-hardware-wallet-maker-says-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:safepal hardware wallet maker says flaw exposed data of nearly 40 000 customers",
+    "ttps": [
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "safepal.com"
+      ],
+      "email": [
+        "security@safepal.com"
+      ]
+    }
+  },
+  {
     "id": 2248,
     "fecha": "2026-08-18T03:40:00Z",
     "categoria": "Ciberseguridad",
