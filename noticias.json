@@ -1,5 +1,168 @@
 [
   {
+    "id": 2261,
+    "fecha": "2026-08-18T18:30:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Falta de verificación de blobs en Kraken agents: CVE-2026-75625",
+    "resumen": "Los agentes Kraken no verifican adecuadamente los blobs descargados de p2p contra su digest SHA-256 solicitado, lo que permite a los atacantes en la ruta agente-a-agente o pares maliciosos suministrar contenido sustituido con correcciones CRC32 falsificadas que superan las comprobaciones por pieza, envenenando la caché con capas de imágenes de contenedores o manifestos elegidos por el atacante. Este fallo permite la inyección de contenido malicioso en la caché de contenido dirigida por la caché.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNzc4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/257351",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-75625",
+    "ttps": [
+      {
+        "id": "T1218",
+        "name": "Elaboración de contenido malicioso"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1552",
+        "name": "Inyección de contenido"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-75625"
+      ]
+    }
+  },
+  {
+    "id": 2260,
+    "fecha": "2026-08-18T18:30:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Medusa ransomware ataca a más de 500 víctimas, incluyendo infraestructura crítica",
+    "resumen": "La agencia de ciberseguridad CISA y el FBI han identificado a más de 500 víctimas de la ransomware Medusa, incluyendo sectores de infraestructura crítica, desde 2025. Este aumento en el número de víctimas sugiere una mayor actividad de los atacantes, lo que podría ser un indicio de una estrategia más agresiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNzc4NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/more-than-200-medusa-ransomware-victims-in-last-year-cisa",
+    "fuente": "The Record",
+    "dedup_key": "txt:more than 200 victims of medusa ransomware identified over the last year cisa says",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1047",
+        "name": "Web Shell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2259,
+    "fecha": "2026-08-18T18:30:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "TWINLOOT: Ataque de credenciales mediante SharePoint y Teams",
+    "resumen": "Los investigadores de ciberseguridad han descubierto un framework de inyección de código Python no documentado anteriormente, llamado TWINLOOT, que utiliza servicios de Microsoft como SharePoint y Teams para robar credenciales y moverse entre redes. TWINLOOT se ejecuta en su infraestructura de control y comando dentro de servicios de Microsoft, lo que lo hace difícil de detectar.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNzc4NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/twinloot-abuses-sharepoint-and-teams-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:twinloot abuses sharepoint and teams to steal credentials and move across networks",
+    "ttps": [
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1216",
+        "name": "Code Injection"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1210.001",
+        "name": "Exploit Public-Facing Application Using Malicious Links"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2258,
+    "fecha": "2026-08-18T18:30:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Clop crea web shell personalizado para ataques de robo de datos en Windchill",
+    "resumen": "El grupo de ransomware Clop creó un web shell personalizado en Java para atacar servidores PTC Windchill y FlexPLM, permitiendo a los atacantes descifrar credenciales, enumerar repositorios de archivos y robar archivos. Este ataque aprovecha vulnerabilidades específicas de la plataforma Windchill, lo que sugiere una investigación previa y planificación por parte de los atacantes.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNzc4Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/clop-created-custom-web-shell-for-windchill-data-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:clop created custom web shell for windchill data theft attacks",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "Web Shell"
+      },
+      {
+        "id": "T1210",
+        "name": "System Compromise"
+      },
+      {
+        "id": "T1550",
+        "name": "Accessing Securely Configured Resources"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2257,
+    "fecha": "2026-08-18T18:30:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ciberdelincuentes abusan de AppSheet para ataques de phishing convincentes",
+    "resumen": "Los ciberdelincuentes están utilizando la plataforma no-code AppSheet de Google para distribuir correos electrónicos fraudulentos altamente convincentes, que pueden eludir muchos de los filtros de seguridad tradicionales. Esta técnica aprovecha herramientas cloud legítimas para atacar, siguiendo una tendencia creciente en campañas de phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNzc4MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/ciberdelincuentes-usan-appsheet-para-lanzar-falsas-ofertas-de-empleo/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:ciberdelincuentes usan appsheet para lanzar falsas ofertas de empleo",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2256,
     "fecha": "2026-08-18T15:27:20Z",
     "categoria": "IA",
