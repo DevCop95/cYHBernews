@@ -1,5 +1,117 @@
 [
   {
+    "id": 2256,
+    "fecha": "2026-08-18T15:27:20Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "\"La concentración del poder en IA: un debate entre líderes del sector\"",
+    "resumen": "El CEO de Anthropic, Dario Amodei, sugiere que la concentración del poder en IA podría ser un problema, pero su afirmación ha sido desmentida por el líder técnico de la empresa. La cuestión es si la regulación de la IA concentraría el poder en pocas empresas y políticos elegidos, o si sería una solución para evitar la concentración del poder.",
+    "url_imagen": "https://images.unsplash.com/photo-1770745778460-9d9f1a7e8632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNjY4NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/ia-tiende-a-concentrar-poder-ceo-anthropic-cree-que-solucion-regular-a-empresas-como-suya",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la ia tiende a concentrar el poder el ceo de anthropic cree que la solución es regular a empresas como la suya",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "darioamodei.com",
+        "platform.instagram.com",
+        "upload.wikimedia.org",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://darioamodei.com/essay/the-adolescence-of-technology#2-a-surprising-and-terrible-empowerment",
+        "https://i.blogs.es/2af93a/flyd-mt7lxzpjk7u-unsplash/375_142.jpeg",
+        "https://i.blogs.es/49031f/stripe-openrouter-adquisicon/375_142.jpeg",
+        "https://i.blogs.es/4e1141/dario/1024_2000.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg"
+      ]
+    }
+  },
+  {
+    "id": 2255,
+    "fecha": "2026-08-18T15:26:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "'Ransom Busters' Falsos Rescatistas de Ransomware",
+    "resumen": "Un actor de ransomware se ha disfrazado de servicio de recuperación de incidentes, ofreciendo ayuda a las víctimas, mientras que en realidad busca desviar pagos de rescate. Este enfoque de \"phishing social\" puede ser particularmente efectivo, ya que las víctimas están en un estado de vulnerabilidad y desesperación después de ser atacadas. El análisis de este comportamiento sugiere que los atacantes están adaptándose a las mejores prácticas de seguridad y las tácticas de respuesta a incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNjY4MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ransom-busters-ransomware-actor-incident-recovery-service",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ransom busters ransomware actor poses as incident recovery service",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1534",
+        "name": "Internal Spearphishing"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1537",
+        "name": "Initial Access"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2254,
+    "fecha": "2026-08-18T15:26:48Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "'Virus Mente' AI: Cadenas de Infección a través de Archivos de Prompts Editables",
+    "resumen": "Los investigadores de Anthropic y EPFL han demostrado que payloads autónomos pueden propagarse entre agentes de IA a través de archivos de prompts editables utilizados por los agentes autónomos para llevar estado entre sesiones. Esta técnica permite la propagación de payloads entre agentes de IA a través de archivos de prompts editables, lo que puede tener implicaciones significativas para la seguridad de los sistemas de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1764336312138-14a5368a6cd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNjY4MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai mind viruses can spread between agents through persistent prompt files",
+    "ttps": [
+      {
+        "id": "T1219",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Application"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploit a Vulnerability in an Application"
+      },
+      {
+        "id": "T1213",
+        "name": "Accessing and Exfiltrating Data over a Network"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2253,
+    "fecha": "2026-08-18T15:26:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "NOVA: IA Autónoma Descubre 14.000 Vulnerabilidades de Software Desconocidas",
+    "resumen": "El sistema de IA autónomo NOVA, desarrollado por Palo Alto Networks, identificó más de 14.000 vulnerabilidades de software desconocidas en 3.915 proyectos de código abierto en un período de dos meses. NOVA utiliza técnicas de aprendizaje automático para descubrir, validar y documentar vulnerabilidades, lo que puede mejorar significativamente la detección y mitigación de riesgos cibernéticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNjY4MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/un-sistema-de-ia-autonoma-identifica-mas-de-14-000-vulnerabilidades-de-software-desconocidas/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:un sistema de ia autónoma identifica más de 14 000 vulnerabilidades de software desconocidas",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2252,
     "fecha": "2026-08-18T12:35:36Z",
     "categoria": "Ciberseguridad",
