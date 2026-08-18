@@ -1,5 +1,44 @@
 [
   {
+    "id": 2248,
+    "fecha": "2026-08-18T03:40:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "DeadLock: Cifrador de ransomware basado en Rust con infraestructura de recuperación descentralizada",
+    "resumen": "El análisis técnico de DeadLock, un cifrador de ransomware basado en Rust, revela su flujo de ejecución, técnicas de evasión de defensa, diseño de cifrado y comportamientos posteriores al cifrado, incluyendo un sistema de chat de recuperación descentralizado. Microsoft Defender coordina la detección, prevención, investigación y respuesta en puntos finales, identidades, correo electrónico y aplicaciones para brindar protección integrada contra amenazas como la discutida en este blog.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwMjQ0MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/secharvester/22998",
+    "fuente": "TG: Security Harvester",
+    "dedup_key": "txt:deadlock ransomware rust based encryptor with decentralized recovery infrastructure https www microsoft com en us",
+    "ttps": [
+      {
+        "id": "T1574",
+        "name": "Accepting Domain Credentials"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1491",
+        "name": "Defacement"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.microsoft.com"
+      ]
+    }
+  },
+  {
     "id": 2247,
     "fecha": "2026-08-18T01:13:32Z",
     "categoria": "Ciberseguridad",
