@@ -1,5 +1,114 @@
 [
   {
+    "id": 2252,
+    "fecha": "2026-08-18T12:35:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque persistente a Salesforce y ServiceNow desde 2025",
+    "resumen": "Un atacante ha estado extrayendo registros de los portales de clientes de Salesforce y ServiceNow en múltiples industrias durante más de un año, utilizando un solo servidor (158.220.87.79) para acceder a ambos sistemas. El ataque, conocido como la campaña City Forum, implica un vector de ataque persistente y no ha sido detectado hasta ahora.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNTY1MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/one-attacker-has-scraped-both.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:one attacker has scraped both salesforce and servicenow portals since 2025",
+    "ttps": [
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1563",
+        "name": "Create or Modify System Logs"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "158.220.87.79"
+      ]
+    }
+  },
+  {
+    "id": 2251,
+    "fecha": "2026-08-18T12:35:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "🚨 Falta de Sanitización de Nombres de Base de Datos en ArcadeDB",
+    "resumen": "La versión 26.8.1 o anteriores de ArcadeDB no sanitiza los nombres de base de datos en el endpoint POST /api/v1/server, permitiendo a usuarios autenticados con permisos root crear y eliminar archivos arbitrarios fuera del directorio de base de datos configurado. Los atacantes pueden suministrar nombres de base de datos con secuencias ../ para crear bases de datos en paths de sistema arbitrarios o eliminar directorios recursivamente accesibles por el proceso del servidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNTY1MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/256331",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-75855",
+    "ttps": [
+      {
+        "id": "T1573",
+        "name": "Encrypted Channel"
+      },
+      {
+        "id": "T1574",
+        "name": "Access Contested Files"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Resource ID"
+      },
+      {
+        "id": "T1553",
+        "name": "Create or Modify System Resources"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-75855"
+      ]
+    }
+  },
+  {
+    "id": 2250,
+    "fecha": "2026-08-18T12:35:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Limitaciones de la integridad contextual en LLMs: riesgos de privacidad y vulnerabilidades",
+    "resumen": "Dos estudios recientes destacan las limitaciones de la integridad contextual en los Modelos de Lenguaje de Gran Escala (LLMs), que pueden revelar información sensible en contextos inapropiados. Los investigadores presentan CIMemories, un benchmark para evaluar la capacidad de los LLMs para controlar la información en función del contexto de la tarea, y proponen un marco de aprendizaje por refuerzo para mejorar la integridad contextual. Los resultados muestran que los modelos actuales exhiben violaciones significativas de privacidad, que pueden aumentar con el uso y la escalabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNTY1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/llms-and-contextual-integrity.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:llms and contextual integrity",
+    "ttps": [
+      {
+        "id": "T1564",
+        "name": "Impersonation"
+      },
+      {
+        "id": "T1534",
+        "name": "Internal Spearphishing"
+      },
+      {
+        "id": "T1055",
+        "name": "Distribution of Information Not Intended by Author"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "arxiv.org"
+      ],
+      "url": [
+        "https://arxiv.org/abs/2506.04245",
+        "https://arxiv.org/abs/2511.14937"
+      ]
+    }
+  },
+  {
     "id": 2249,
     "fecha": "2026-08-18T09:27:00Z",
     "categoria": "Ciberseguridad",
@@ -3394,41 +3503,6 @@
     "fuente": "The Record",
     "dedup_key": "txt:cisa gives federal agencies two weeks to patch microsoft bug exploited in dprk campaign",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 2129,
-    "fecha": "2026-08-12T21:40:59Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Campaña de robo de datos en Salesforce",
-    "resumen": "La campaña \"City-Forum\" ha estado activa desde al menos marzo de 2025, utilizando herramientas personalizadas para robar datos de organizaciones en múltiples sectores, lo que sugiere un enfoque sofisticado y persistente en el ataque. Los vectores de ataque no se especifican, pero el objetivo en plataformas como Salesforce y ServiceNow indica un interés en la explotación de vulnerabilidades en aplicaciones de gestión de relaciones con clientes y servicios.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODY1NzA4NTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/long-running-data-theft-campaign-salesforce-servicenow",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:long running data theft campaign targeting salesforce servicenow",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1587",
-        "name": "Develop Capabilities"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1137",
-        "name": "Application Window Discovery"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      }
-    ],
     "iocs": {}
   },
   {
