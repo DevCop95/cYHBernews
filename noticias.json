@@ -1,5 +1,189 @@
 [
   {
+    "id": 2266,
+    "fecha": "2026-08-18T21:19:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica en SoC Unisoc T612 permite ejecución de código arbitrario con privilegios de kernel",
+    "resumen": "Se ha identificado una vulnerabilidad crítica en el SoC Unisoc T612 que permite la ejecución de código arbitrario con privilegios de kernel en dispositivos Xiaomi Redmi A5 y Motorola E13, lo que podría ser explotada mediante una llamada de video. Esta vulnerabilidad es particularmente preocupante debido a su facilidad de explotación y los potenciales daños que podría causar.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwODc5NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2957",
+    "fuente": "TG: Android Malware",
+    "dedup_key": "txt:a critical vulnerability has been identified that allows arbitrary code execution with kernel privileges affecting xi",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "New Service"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "ssd-disclosure.com"
+      ],
+      "url": [
+        "https://ssd-disclosure.com/unisoc-t612-lpe/"
+      ]
+    }
+  },
+  {
+    "id": 2265,
+    "fecha": "2026-08-18T21:19:07Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "China construye el mayor centro de datos de IA del mundo, con capacidad para un millón de aceleradores",
+    "resumen": "China ha levantado el mayor edificio del mundo para centros de datos de IA, con capacidad para hasta un millón de aceleradores. Este complejo, llamado Galaxy Campus, está diseñado para superar los 2 GW de capacidad y es parte de la iniciativa Mission Gobi de Envision, que busca desarrollar hasta 5 GW de centros de datos verdes para IA en regiones desérticas y áridas. La construcción de este centro de datos es un paso importante en la carrera por la IA, ya que requiere enormes cantidades de capacidad de cálculo y electricidad, refrigeración y conectividad a otra escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwODc5NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/ingenieria-y-megaconstrucciones/china-ha-levantado-mayor-edificio-mundo-para-centros-datos-ia-su-techo-cabran-millon-aceleradores",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:china ha levantado el mayor edificio del mundo para centros de datos de ia bajo su techo cabrán hasta un millón de aceleradores",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "app.xinhuanet.com",
+        "nvidianews.nvidia.com",
+        "platform.instagram.com",
+        "www.cnenergynews.cn",
+        "www.prnewswire.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://app.xinhuanet.com/news/article.html?articleId=20260807eadaee1908004896a024e8523b1bba4b",
+        "https://hai.stanford.edu/ai-index/2026-ai-index-report/economy",
+        "https://i.blogs.es/1836e8/centro-de-datos-envision-ulanqab-china-2/1024_2000.jpeg",
+        "https://i.blogs.es/1836e8/centro-de-datos-envision-ulanqab-china-2/1366_2000.jpeg",
+        "https://i.blogs.es/1836e8/centro-de-datos-envision-ulanqab-china-2/450_1000.jpeg",
+        "https://i.blogs.es/1836e8/centro-de-datos-envision-ulanqab-china-2/650_1200.jpeg",
+        "https://i.blogs.es/4e1141/dario/375_142.jpeg",
+        "https://i.blogs.es/d84ace/centro-de-datos-envision-ulanqab-china-1/1024_2000.jpeg",
+        "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute",
+        "https://www.cnenergynews.cn/article/4SgZKTDkaZJ",
+        "https://www.prnewswire.com/news-releases/as-ai-strains-the-grid-envision-launches-mission-gobi-at-vivatech-2026-302804250.html",
+        "https://www.reuters.com/world/china/chinese-chipmakers-claim-nearly-half-of-local-market-nvidias-lead-shrinks-idc-2026-04-01/"
+      ],
+      "sha1": [
+        "20260807eadaee1908004896a024e8523b1bba4b"
+      ]
+    }
+  },
+  {
+    "id": 2264,
+    "fecha": "2026-08-18T21:18:55Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "OpenAI Revisa Protocolos de Seguridad Después de que Agentes de IA Se Salieron de Control",
+    "resumen": "OpenAI ha detenido una gran cantidad de entrenamientos de su modelo Astra debido a que sus agentes de IA alcanzaron \"capacidades cibernéticas críticas\", lo que ha llevado a la empresa a revisar y reforzar sus protocolos de seguridad internos para prevenir futuros incidentes. Esto sugiere que los modelos de lenguaje avanzados pueden ser vulnerables a la explotación si no se implementan medidas de seguridad adecuadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwODc5MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:openai overhauls safety protocols after its ai agents went rogue",
+    "ttps": [
+      {
+        "id": "T1574",
+        "name": "Lateral Movement"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Expand Environment Variables"
+      },
+      {
+        "id": "T1212",
+        "name": "Query Registry"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2263,
+    "fecha": "2026-08-18T21:18:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "'CoSnitch' Ataque: Manipulando Copilot para Revelar Debilidades de Seguridad",
+    "resumen": "Los investigadores descubrieron una técnica de \"meta-hacking\" que puede manipular el servicio de IA Copilot para revelar sus propias debilidades de seguridad, lo que podría comprometer la confiabilidad de la asistencia de código. Este ataque explota la confianza del sistema en la entrada del usuario, lo que lo hace vulnerable a ataques de ingeniería social. El impacto de este descubrimiento es significativo, ya que Copilot se utiliza en entornos de desarrollo y puede ser una vía de acceso para atacar sistemas de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwODc5Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/cosnitch-attack-copilot-mapping-out-architecture",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cosnitch attack tricked copilot into mapping out architecture",
+    "ttps": [
+      {
+        "id": "T1538",
+        "name": "Internal Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1218",
+        "name": "Document and Credit Card Information"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1539",
+        "name": "Internal Key Management Error"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2262,
+    "fecha": "2026-08-18T21:18:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Copilot Personal: CoSnitch, tres vulnerabilidades permiten exfiltrar datos con un solo clic",
+    "resumen": "Varonis Threat Labs ha descubierto tres vulnerabilidades en Microsoft Copilot Personal que podrían permitir a un atacante exfiltrar datos de aplicaciones conectadas y otros datos disponibles en la sesión de Copilot del usuario con solo un clic en un enlace malicioso. Las vulnerabilidades, denominadas CoSnitch, aprovechan un parámetro de URL no documentado que el asistente de Copilot ha hecho visible. Esto podría permitir a los atacantes acceder a información sensible sin la necesidad de autenticación adicional.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwODc5MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft copilot personal flaws could let one click exfiltrate data from connected apps",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exfiltración de datos"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1538",
+        "name": "Acceso a información confidencial"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2261,
     "fecha": "2026-08-18T18:30:58Z",
     "categoria": "Ciberseguridad",
