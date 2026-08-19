@@ -1,5 +1,75 @@
 [
   {
+    "id": 2276,
+    "fecha": "2026-08-19T09:28:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "TwinLoot: Malware en la Nube de Microsoft",
+    "resumen": "El malware TwinLoot, basado en Python, utiliza tácticas de \"vivir en la tierra\" para mantenerse oculto, con un implante modular que roba credenciales y logra persistencia en la nube de Microsoft. Este framework aprovecha la infraestructura de Microsoft para operar de manera silenciosa y eficaz.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxMzE3MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/silent-twinloot-threat-operates-microsoft-cloud",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:silent twinloot cyber threat operates entirely from microsoft s cloud",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1053",
+        "name": "Scheduled Task/Job"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2275,
+    "fecha": "2026-08-19T09:28:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ransom Busters: Un nuevo actor en el mercado de ransomware",
+    "resumen": "Ransom Busters, un actor no identificado, está enviando emails a organizaciones víctimas de ataques de ransomware, ofreciendo eliminar datos robados a cambio de una tarifa de $20,000 a $60,000. Este comportamiento es anormal y sugiere una posible estrategia de extorsión.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxMzE2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/ransom-busters-claims-it-hacked.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ransom busters claims it hacked ransomware servers asks victims for up to 60 000",
+    "ttps": [
+      {
+        "id": "T1538",
+        "name": "Initial Access"
+      },
+      {
+        "id": "T1538.001",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1047",
+        "name": "Network Scanning"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2274,
     "fecha": "2026-08-19T06:35:48Z",
     "categoria": "Ciberseguridad",
