@@ -1,5 +1,102 @@
 [
   {
+    "id": 2273,
+    "fecha": "2026-08-19T03:41:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Typosquatters atacan a usuarios de RubyGems con estafador de credenciales",
+    "resumen": "Los investigadores de ciberseguridad han detectado una campaña de typosquatting que ataca a usuarios de RubyGems con un estafador de credenciales de Windows, que puede robar credenciales de navegadores y monederos criptográficos. El ataque utiliza paquetes maliciosos publicados en la plataforma RubyGems, lo que puede comprometer a los usuarios que instalen estos paquetes.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxMTA5MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:16 typosquatted rubygems packages steal browser credentials and crypto wallets",
+    "ttps": [
+      {
+        "id": "T1408",
+        "name": "Spearphishing via Repository"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1552",
+        "name": "Excávacación de Credenciales"
+      },
+      {
+        "id": "T1218",
+        "name": "Comunicación con un Servidor Controlado"
+      },
+      {
+        "id": "T1055",
+        "name": "Web Shell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2272,
+    "fecha": "2026-08-19T03:41:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-76048: Inyección SQL en Simple Online Food Ordering System 1.0",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección SQL en la aplicación Simple Online Food Ordering System 1.0, específicamente en la función desconocida del archivo /admin/ajax.php?action=login. Un atacante remoto puede explotar esta vulnerabilidad mediante una manipulación del parámetro de usuario. El exploit ya ha sido publicado y puede ser utilizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxMTA5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/258671",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-76048",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76048"
+      ]
+    }
+  },
+  {
+    "id": 2271,
+    "fecha": "2026-08-19T03:41:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque Autónomo AI: China en la Mirilla de APAC",
+    "resumen": "Un operador chino ha utilizado un marco de AI complejo para llevar a cabo un ataque \"autónomo\" en agencias gubernamentales de APAC, probablemente en Taiwán. Este ataque podría ser el primero de su tipo en un estado-nación, demostrando la capacidad de los hackers para utilizar la IA de manera autónoma.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxMTA4OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/china-linked-hacker-ai-capabilities-apac-attack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:china linked hacker shows ai capabilities in apac attack",
+    "ttps": [
+      {
+        "id": "T1546",
+        "name": "Exchange Account"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1584",
+        "name": "Disinformation and Deception"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2270,
     "fecha": "2026-08-19T00:58:06Z",
     "categoria": "IA",
