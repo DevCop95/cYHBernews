@@ -1,5 +1,100 @@
 [
   {
+    "id": 2282,
+    "fecha": "2026-08-19T15:27:10Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Microsoft oculta la verdad sobre su capacidad de IA: chips sin sacar de la caja y centros de datos que no pueden seguir el ritmo",
+    "resumen": "Una investigación de The Guardian revela que Microsoft podría estar ocultando la verdad sobre su capacidad de inteligencia artificial, ya que el número real de chips avanzados funcionando en sus centros de datos difiere de lo que la compañía dice públicamente. Esto plantea dudas sobre la capacidad de Microsoft para sostener el crecimiento prometido a inversores y desafía su estrategia de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNTMyMzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/hiperescaladores-tienen-miles-chips-ia-sacar-sus-cajas-sencilla-razon-centros-datos-no-se-levantan-dia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:los hiperescaladores tienen miles de chips de ia sin sacar de la caja por una sencilla razón los centros de datos no se levantan en un día",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "developer.nvidia.com",
+        "eu.jsonline.com",
+        "platform.instagram.com",
+        "www.businessinsider.com",
+        "www.microsoft.com",
+        "www.theguardian.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://developer.nvidia.com/blog/nvidia-data-center-gpu-manager-cluster-administration/",
+        "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin",
+        "https://eu.jsonline.com/story/money/business/2026/05/05/microsoft-ceo-says-mt-pleasant-data-center-is-online-its-close/89934415007/",
+        "https://i.blogs.es/0b18e7/centro-de-datos-construccion/1024_2000.jpeg",
+        "https://i.blogs.es/d84ace/centro-de-datos-envision-ulanqab-china-1/375_142.jpeg",
+        "https://i.blogs.es/ed8008/satya-nadella/375_142.jpeg",
+        "https://i.blogs.es/f1bf72/gemini_generated_image_8rmv638rmv638rmv-1-/1024_682.jpeg",
+        "https://i.blogs.es/f1bf72/gemini_generated_image_8rmv638rmv638rmv-1-/500_333.jpeg",
+        "https://i.blogs.es/f1bf72/gemini_generated_image_8rmv638rmv638rmv-1-/840_560.jpeg",
+        "https://www.businessinsider.com/microsoft-gpu-targets-1-8-million-ai-chips-this-year-2024-4",
+        "https://www.theguardian.com/technology/2026/aug/17/are-microsofts-ai-plans-being-held-back-by-a-shortage-of-chips"
+      ]
+    }
+  },
+  {
+    "id": 2281,
+    "fecha": "2026-08-19T15:26:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Operación SilkParasite: Ciberespionaje en Asia Central con cinco nuevos RATs",
+    "resumen": "La operación de ciberespionaje SilkParasite, detectada en 2025, está utilizando siete familias de herramientas de acceso remoto (RAT), cinco de las cuales son inéditas, para atacar a organismos gubernamentales en Asia Central. Los atacantes están aprovechando vulnerabilidades desconocidas para infiltrarse en los sistemas de los objetivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNTMyMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:silkparasite espionage campaign targets central asian governments with five new rats",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2280,
+    "fecha": "2026-08-19T15:26:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Aumento exponencial de ataques de \"spraying de contraseñas\" contra MFA",
+    "resumen": "Los ataques de \"spraying de contraseñas\" aumentaron 155 veces en H1 2026, aprovechando lagunas en políticas de MFA y autenticación legada, lo que permitió a los atacantes generar más de 81 millones de intentos de inicio de sesión en dos semanas. Este tipo de ataques explota la falta de protección en algunos flujos de inicio de sesión.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNTMxOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/password-spraying-attacks-surge-155x-as-hackers-exploit-mfa-gaps/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:password spraying attacks surge 155x as hackers exploit mfa gaps",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1111",
+        "name": "Password Spraying"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Leaked Passwords"
+      },
+      {
+        "id": "T1552",
+        "name": "Steal or Use Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2279,
     "fecha": "2026-08-19T12:37:23Z",
     "categoria": "IA",
