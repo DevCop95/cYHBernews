@@ -1,5 +1,107 @@
 [
   {
+    "id": 2279,
+    "fecha": "2026-08-19T12:37:23Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "ChatGPT con anuncios llega a España el 24 de agosto",
+    "resumen": "OpenAI implementará publicidad en ChatGPT en 31 países europeos, incluyendo España, a partir del 24 de agosto. Los anuncios se mostrarán después de las respuestas, en bloques diferenciados, y se activarán cuando el contexto comercial sea relevante. Los usuarios Premium seguirán sin publicidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1781444504263-231cc860f263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNDMwNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/oficial-chatgpt-anuncios-llegara-a-espana-proximo-lunes-24-agosto",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:es oficial chatgpt con anuncios llegará a españa el próximo lunes 24 de agosto",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "ads.openai.com",
+        "chatgpt.com",
+        "help.openai.com",
+        "openai.com",
+        "platform.instagram.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://ads.openai.com/es-ES",
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes#february-9-2026",
+        "https://i.blogs.es/4efbaf/openai-dinero/1024_682.jpeg",
+        "https://i.blogs.es/4efbaf/openai-dinero/500_333.jpeg",
+        "https://i.blogs.es/4efbaf/openai-dinero/840_560.jpeg",
+        "https://i.blogs.es/a4d0dc/openai-anuncios/1024_2000.jpeg",
+        "https://openai.com/index/chatgpt-ads-expands-across-europe/"
+      ]
+    }
+  },
+  {
+    "id": 2278,
+    "fecha": "2026-08-19T12:37:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Exposición de 9 millones de imágenes de caras: ClarityCheck falla en privacidad",
+    "resumen": "El servicio de búsqueda de imágenes inversa de ClarityCheck dejó expuesta una base de datos con más de 9 millones de archivos de imágenes, lo que pone en riesgo la privacidad de millones de personas. Este incidente de seguridad podría ser utilizado por atacantes para realizar ataques de phishing o identificar a víctimas de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNDMwMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/reverse-lookup-service-exposed-millions-of-photos-of-peoples-faces/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:reverse lookup service exposed millions of photos of people s faces",
+    "ttps": [
+      {
+        "id": "T1539",
+        "name": "Internal Shadow Data"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1534",
+        "name": "Internal Spearphishing"
+      },
+      {
+        "id": "T1552",
+        "name": "Excavation"
+      },
+      {
+        "id": "T1537",
+        "name": "Leaked Database"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2277,
+    "fecha": "2026-08-19T12:36:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Operación StopAndProtect: 2000 sitios WordPress hackeados para difundir malware y robar datos",
+    "resumen": "Los investigadores de ciberseguridad han identificado una operación global de ciberdelincuencia que explota miles de sitios web de WordPress hackeados como infraestructura para difundir malware, controlar anfitriones infectados, almacenar documentos robados, capturas de pantalla y registros de actividad. Esta operación utiliza un conjunto completo de software malicioso para sus objetivos. El impacto real es la exposición de datos sensibles y la posibilidad de ataques adicionales a través de estos sitios comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNDMwMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/stopandprotect-uses-nearly-2000-hacked.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:stopandprotect uses nearly 2 000 hacked wordpress sites to spread malware and steal data",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1022",
+        "name": "Ephemeral Infrastructure"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2276,
     "fecha": "2026-08-19T09:28:29Z",
     "categoria": "Ciberseguridad",
