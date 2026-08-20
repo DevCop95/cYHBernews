@@ -1,5 +1,73 @@
 [
   {
+    "id": 2290,
+    "fecha": "2026-08-20T00:57:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Brechas de datos sin resolver: el ritmo de arrestos se desacelera ante el aumento de ataques cibernéticos",
+    "resumen": "La tasa de resolución de brechas de datos sigue siendo baja, con solo un 19% de casos resueltos en 2024, lo que sugiere que los atacantes siguen siendo difíciles de identificar y detener. El aumento de ataques cibernéticos ha llevado a un aumento en el número de incidentes, pero el ritmo de arrestos no ha podido mantener el paso.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxODc0Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114064",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:four in five data breach cases go unsolved as cyberattacks surge arrests have consistently lagged far behind incident",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2289,
+    "fecha": "2026-08-20T00:57:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Plataforma de IA \"Kriminal\" alimenta preocupaciones de ciberdelincuencia",
+    "resumen": "La plataforma de IA \"Kriminal\" ofrece herramientas de ingeniería social, ciberdelincuencia ofensiva y análisis de OSINT sin restricciones, lo que aumenta el riesgo de ataques cibernéticos. La plataforma está disponible para aquellos que posean criptomonedas, lo que facilita el acceso a herramientas potencialmente peligrosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxODc0NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/no-filter-kriminal-ai-platform-cybercrime-concerns",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:no filter kriminal ai platform raises cybercrime concerns",
+    "ttps": [
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1534",
+        "name": "Internal Spearphishing"
+      },
+      {
+        "id": "T1592",
+        "name": "Non-Executive Software"
+      },
+      {
+        "id": "T1593",
+        "name": "Non-Executive Hardware"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2288,
+    "fecha": "2026-08-20T00:57:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque Spectre en Cloudflare Workers: Fuga de JWT a 12 bits/segundo",
+    "resumen": "Los investigadores de ciberseguridad han descubierto un ataque remoto Spectre contra Cloudflare Workers que ha permitido la fuga de un Token Web JSON (JWT) desde un Worker co-localizado en el entorno de producción a una tasa de hasta 12 bits por segundo. Este ataque aprovecha una vulnerabilidad en la implementación de Cloudflare Workers para extraer información sensible. El impacto de este ataque es significativo, ya que permite a un atacante acceder a información confidencial de una aplicación en producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxODc0Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/cloudflare-workers-spectre-attack-leaks.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cloudflare workers spectre attack leaks jwt from co located worker at 12 bits second",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Excavación de Información"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2287,
     "fecha": "2026-08-19T18:29:33Z",
     "categoria": "Ciberseguridad",
