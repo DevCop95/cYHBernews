@@ -1,5 +1,59 @@
 [
   {
+    "id": 2299,
+    "fecha": "2026-08-20T15:28:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Grandoreiro: el Banking Trojan resucita con campaña en México",
+    "resumen": "El Banking Trojan Grandoreiro ha vuelto a la escena con nuevas características que dificultan su detección y análisis, lo que lo convierte en una amenaza más sutil para las instituciones financieras. Esta evolución podría aprovecharse para ataques de phishing y otras tácticas de engaño.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyMzk3MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/grandoreiro-resurfaces-mexico-campaign",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:grandoreiro malware resurfaces with mexico campaign",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1199",
+        "name": "Trusted Relationship"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2298,
+    "fecha": "2026-08-20T15:28:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Falta de aislamiento en isolated-vm: escape de sandbox a host con RCE potencial",
+    "resumen": "Un análisis de seguridad ha identificado una vulnerabilidad crítica en isolated-vm que permite a los atacantes escapar del entorno sandbox y acceder al host con el potencial de ejecución de código remoto (RCE). El vector de ataque es la versión afectada del library (7.0.0 y anteriores).",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyMzk2OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:isolated vm flaw lets sandboxed javascript escape to host for potential rce",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Vulnerability"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1216",
+        "name": "Code Injection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2297,
     "fecha": "2026-08-20T12:38:05Z",
     "categoria": "IA",
