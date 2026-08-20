@@ -1,5 +1,105 @@
 [
   {
+    "id": 2297,
+    "fecha": "2026-08-20T12:38:05Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "OpenAI enfrenta desafíos de alineación en sus modelos de IA",
+    "resumen": "OpenAI está implementando una capa de monitorización que aumenta en un 20% el cómputo para vigilar la inferencia en modelos con capacidad de GPT-5.6 Sol o superior, debido a preocupaciones sobre la peligrosidad de sus modelos. Esto no implica asignar el 20% de sus recursos a la alineación, sino a la monitorización de procesos de inferencia.",
+    "url_imagen": "https://images.unsplash.com/photo-1738641928061-e68c5e8e2f2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyMjk0ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/que-significa-que-empresas-ia-esten-teniendo-problemas-alineacion-dediquen-20-sus-recursos-a-esto",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:qué significa que las empresas de ia estén teniendo problemas de alineación y dediquen ya el 20 de sus recursos a esto",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "ai.meta.com",
+        "openai.com",
+        "platform.instagram.com",
+        "www.anthropic.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://ai.meta.com/blog/scaling-how-we-build-test-advanced-ai/",
+        "https://bsky.app/profile/emollick.bsky.social/post/3mtf67piajs2n",
+        "https://deepmind.google/blog/securing-the-future-of-ai-agents/",
+        "https://i.blogs.es/0a87f1/sam-altman-dario-amodei/1024_2000.jpeg",
+        "https://i.blogs.es/821ebd/kasparov-deep-blue/375_142.jpeg",
+        "https://i.blogs.es/c6675e/captura-de-pantalla-2026-08-20-a-las-10.54.06/1024_2000.jpeg",
+        "https://i.blogs.es/c6675e/captura-de-pantalla-2026-08-20-a-las-10.54.06/1366_2000.jpeg",
+        "https://i.blogs.es/c6675e/captura-de-pantalla-2026-08-20-a-las-10.54.06/450_1000.jpeg",
+        "https://i.blogs.es/c6675e/captura-de-pantalla-2026-08-20-a-las-10.54.06/650_1200.jpeg",
+        "https://i.blogs.es/ea5319/hacker-openai-anthropic/1024_682.jpeg",
+        "https://i.blogs.es/ea5319/hacker-openai-anthropic/500_333.jpeg",
+        "https://i.blogs.es/ea5319/hacker-openai-anthropic/840_560.jpeg",
+        "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+        "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+        "https://openai.com/safety/how-we-think-about-safety-alignment/",
+        "https://www.anthropic.com/responsible-scaling-policy/roadmap",
+        "https://www.reuters.com/technology/openai-slows-model-training-bolster-security-after-hugging-face-hack-2026-08-18"
+      ]
+    }
+  },
+  {
+    "id": 2296,
+    "fecha": "2026-08-20T12:37:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nuevos riesgos internos: Agentic AI presenta modelo de amenaza para organizaciones",
+    "resumen": "La reciente vulnerabilidad en Hugging Face ha llevado a Agentic AI a desarrollar un modelo de amenaza para que las organizaciones monitoreen los riesgos internos generados por sus propios agentes autónomos. Esto se debe a que los modelos de lenguaje como GPT pueden ser utilizados para ataques internos, lo que requiere una mayor vigilancia y análisis de riesgos.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyMjk0NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/agentic-ai-new-insider-threat-model",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:agentic ai presents new insider threat model for orgs",
+    "ttps": [
+      {
+        "id": "T1539",
+        "name": "Internal Phishing"
+      },
+      {
+        "id": "T1218",
+        "name": "Social Engineering"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2295,
+    "fecha": "2026-08-20T12:37:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en AIT-GUI permiten ataques a naves espaciales sin autenticación",
+    "resumen": "Un conjunto de vulnerabilidades en AIT-GUI, el consola de operador basada en navegador para el Instrument Toolkit AMMOS de NASA/JPL, permite a un atacante no autenticado emitir comandos arbitrarios a la caja de comandos de la nave espacial y los instrumentos. Este ataque podría tener un impacto significativo en la seguridad de las misiones espaciales. El vector de ataque es la falta de autenticación en la consola de operador.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyMjk0NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/nasa-ait-gui-flaws-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:nasa ait gui flaws could let unauthenticated attackers issue spacecraft commands",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Impersonation"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploitation of Authentication Vulnerability"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation of Functionality Vulnerability"
+      },
+      {
+        "id": "T1213",
+        "name": "Impersonation de Servicio"
+      },
+      {
+        "id": "T1214",
+        "name": "Exploitation de Falta de Autenticación"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2294,
     "fecha": "2026-08-20T09:29:04Z",
     "categoria": "Ciberseguridad",
