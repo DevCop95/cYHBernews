@@ -1,5 +1,71 @@
 [
   {
+    "id": 2294,
+    "fecha": "2026-08-20T09:29:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "ToxicPanda 2.0: Un trógor de banco Android significativamente más poderoso",
+    "resumen": "La versión 2.0 de ToxicPanda, un trógor de banco Android, ha sido actualizada con capacidades más avanzadas para comprometer dispositivos móviles y robar información financiera. Este malware utiliza técnicas de phishing y explotación de vulnerabilidades para infiltrarse en dispositivos y acceder a aplicaciones bancarias. La actualización de ToxicPanda 2.0 representa un riesgo significativo para la seguridad financiera en el sector de las tecnologías móviles.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyMTgxNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2959",
+    "fuente": "TG: Android Malware",
+    "dedup_key": "txt:toxicpanda 2 0 a significantly more powerful android banking trojan https zimperium com blog the toxicpanda never",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "zimperium.com"
+      ],
+      "url": [
+        "https://zimperium.com/blog/the-toxicpanda-never-...",
+        "https://zimperium.com/blog/the-toxicpanda-never-sleeps-toxicpanda-2.0-prepares-its-next-strike-on-mobile"
+      ]
+    }
+  },
+  {
+    "id": 2293,
+    "fecha": "2026-08-20T09:28:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Flaw en Elementor Pro permite subir PHP y ejecutar código remoto",
+    "resumen": "Un investigador de ciberseguridad ha descubierto una vulnerabilidad crítica en Elementor Pro, un plugin de WordPress, que podría permitir a atacantes no autenticados subir PHP y ejecutar código remoto. La vulnerabilidad, identificada como CVE-2026-32475, tiene un puntaje CVSS de 9,0 sobre 10,0. El ataque podría aprovecharse mediante la carga de un archivo con un tipo de archivo peligroso en el módulo de Formularios.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyMTgxMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/elementor-pro-flaw-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-32475",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1509",
+        "name": "Server Software Component"
+      },
+      {
+        "id": "T1055",
+        "name": "Web Server Attacks"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-32475"
+      ]
+    }
+  },
+  {
     "id": 2292,
     "fecha": "2026-08-20T06:36:55Z",
     "categoria": "IA",
