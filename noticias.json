@@ -1,5 +1,66 @@
 [
   {
+    "id": 2301,
+    "fecha": "2026-08-20T18:32:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Inyección de contexto criptográfico: ataque a Grok Chat",
+    "resumen": "Un ataque de inyección de contexto criptográfico permitiría a un atacante controlar la transmisión de datos de Grok Chat, incluyendo nombres de usuarios, ubicaciones aproximadas, niveles de suscripción y promps de conversaciones, a un servidor controlado por el atacante. El ataque se produce cuando el usuario solicita una resumen de una página web ordinaria. El impacto real es la posibilidad de robo de datos confidenciales a través de una vulnerabilidad en la implementación de Grok Chat.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyNTA3NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new cryptographic context injection attack could let web pages steal grok chat data",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Excavation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2300,
+    "fecha": "2026-08-20T18:32:06Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "DeepSeek desafía la cultura 996 de China con un enfoque en la productividad y el bienestar de los empleados.",
+    "resumen": "DeepSeek, una empresa de IA china, ha logrado un éxito rápido y significativo sin adoptar la cultura laboral extrema de la industria tecnológica china, conocida como 996, que implica trabajar de 9:00 a 21:00, seis días a la semana. En lugar de eso, DeepSeek enfatiza la productividad y el bienestar de sus empleados, sin horas extra, objetivos mensuales ni supervisión tradicional.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054730163-8fb4b927efd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyNTA3MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/silicon-valley-ha-copiado-china-jornada-996-para-trabajar-deepseek-esta-logrando-haciendo-justo-contrario",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:silicon valley ha copiado de china la jornada 996 para trabajar más deepseek está logrando lo mismo haciendo justo lo contrario",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "fortune.com",
+        "platform.instagram.com",
+        "thenextweb.com",
+        "www.bloomberg.com",
+        "www.linkedin.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://fortune.com/2026/08/01/deepseek-founder-liang-wenfeng-workers-dont-do-overtime-or-kpis-china-996-culture/",
+        "https://i.blogs.es/07a22a/original/1024_2000.png",
+        "https://i.blogs.es/a212c7/nvidiah200/375_142.jpeg",
+        "https://thenextweb.com/news/deepseek-founder-liang-wenfeng-no-overtime-no-kpis-996-culture",
+        "https://www.bloomberg.com/billionaires/profiles/wenfeng-liang/"
+      ]
+    }
+  },
+  {
     "id": 2299,
     "fecha": "2026-08-20T15:28:37Z",
     "categoria": "Ciberseguridad",
