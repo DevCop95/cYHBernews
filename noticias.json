@@ -1,5 +1,94 @@
 [
   {
+    "id": 2304,
+    "fecha": "2026-08-20T21:22:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Operación 'SilkParasite': Espionaje AI asistido en Asia Central",
+    "resumen": "Un grupo de hackers de China, sospechosos de ser de origen militar, han utilizado inteligencia artificial para desarrollar malware en una campaña para penetrar en los gobiernos de Asia Central. El malware AI asistido podría permitir a los atacantes evadir las detecciones tradicionales de seguridad y permanecer ocultos en las redes de los objetivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyNjA5NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/china-cyber-espionage-central-asia",
+    "fuente": "The Record",
+    "dedup_key": "txt:china s silkparasite espionage operation targeting central asia with ai assisted malware",
+    "ttps": [
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application - Uso de vulnerabilidades en aplicaciones expuestas"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1584",
+        "name": "Automated Collection - Recopilación de datos automatizada"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2303,
+    "fecha": "2026-08-20T21:22:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas rusas abusan de OAuth de Google y enlace de WhatsApp para robar cuentas",
+    "resumen": "Las amenazas rusas están utilizando flujos de autenticación legítimos para identificar y robar cuentas de individuos que trabajan en academia, defensa y gobierno en Europa y en Estados Unidos. Se han identificado tres grupos de amenazas: UNC6293, UNC7005 y UNC5976, que utilizan tácticas persistentes y adaptativas para comprometer cuentas.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyNjA5NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:suspected russian hackers abuse google oauth and whatsapp linking to hijack accounts",
+    "ttps": [
+      {
+        "id": "T1531",
+        "name": "Credentials from OAuth"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2302,
+    "fecha": "2026-08-20T21:22:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Riesgos de privacidad en gafas inteligentes: Meta vuelve a la carga",
+    "resumen": "La reciente patente de Meta para gafas inteligentes plantea preocupaciones sobre la recopilación y procesamiento de información personal, potencialmente comprometiendo la privacidad y la ciberseguridad. Los dispositivos avanzados pueden recopilar datos sensibles, como ubicación, voz y comportamiento, sin consentimiento explícito del usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyNjA5NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/alertan-de-los-riesgos-de-privacidad-de-las-gafas-inteligentes/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:alertan de los riesgos de privacidad de las gafas inteligentes",
+    "ttps": [
+      {
+        "id": "T1539",
+        "name": "Data from Mobile Devices"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1553",
+        "name": "Spoiled Identity"
+      },
+      {
+        "id": "T1554",
+        "name": "Tainted Shared Content"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2301,
     "fecha": "2026-08-20T18:32:30Z",
     "categoria": "Ciberseguridad",
