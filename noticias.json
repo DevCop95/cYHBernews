@@ -1,5 +1,91 @@
 [
   {
+    "id": 2323,
+    "fecha": "2026-08-21T18:29:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-77237: Falta de validación de tipo de cola en xQueueAddToSet() en FreeRTOS-Kernel antes de 11.3.1",
+    "resumen": "La vulnerabilidad CVE-2026-77237 en FreeRTOS-Kernel antes de la versión 11.3.1 permite a un tarea no privilegiada leer memoria de kernel privilegiada en sistemas con MPU habilitado y configUSE_QUEUE_SETS=1. La actualización a la versión 11.3.1 o posterior es necesaria para remediar esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczMzY5ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/264984",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-77237",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "New Service"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-77237"
+      ]
+    }
+  },
+  {
+    "id": 2322,
+    "fecha": "2026-08-21T18:29:25Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "\"Robotica por aprendizaje visual: GEN-1.5 enseña a los robots en segundos\"",
+    "resumen": "La empresa Generalist AI ha presentado un modelo llamado GEN-1.5 que permite a los robots aprender nuevas tareas observando una demostración física de entre 3 y 12 segundos. Esto se logra mediante un enfoque llamado \"physical prompting\", donde el robot observa el movimiento y deduce qué tiene que hacer. El modelo utiliza un prompt basado en el movimiento, lo que permite a los robots aprender de manera más rápida y eficiente.",
+    "url_imagen": "https://images.unsplash.com/photo-1781209443149-dd12a52cc358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczMzY5NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/ahora-habia-que-entrenar-a-robot-para-cada-tarea-nueva-nueva-idea-mucho-simple-que-te-mire-unos-segundos",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:hasta ahora había que entrenar a un robot para cada tarea nueva la nueva idea es mucho más simple que te mire unos segundos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "generalistai.com",
+        "platform.instagram.com",
+        "www.wired.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://generalistai.com/blog/gen-1.5",
+        "https://i.blogs.es/000b86/robot-gen-1-5-aprende-movimiento/1024_2000.jpeg",
+        "https://i.blogs.es/1cfe29/mano_robot/1024_682.jpg",
+        "https://i.blogs.es/1cfe29/mano_robot/500_333.jpg",
+        "https://i.blogs.es/1cfe29/mano_robot/840_560.jpg"
+      ]
+    }
+  },
+  {
+    "id": 2321,
+    "fecha": "2026-08-21T18:29:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft Defender: Driver de remediación utilizada para eliminar software de seguridad",
+    "resumen": "Un equipo de investigación de Check Point ha descubierto una técnica que utiliza el propio driver de remediación de Microsoft Defender, firmado legítimamente, para realizar operaciones de kernel arbitrarias en sistemas Windows desde Windows 7 hasta Windows 11 25H2. Esto permite eliminar software de seguridad durante el arranque del sistema sin explotar ninguna vulnerabilidad del software ni importar drivers desde fuera del equipo.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczMzY5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft defender s own driver can be weaponized to delete security software at boot",
+    "ttps": [
+      {
+        "id": "T1543",
+        "name": "Create or Modify System Process"
+      },
+      {
+        "id": "T1552",
+        "name": "Modify System Time"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1484",
+        "name": "Execution through API"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2320,
     "fecha": "2026-08-21T15:27:48Z",
     "categoria": "IA",
