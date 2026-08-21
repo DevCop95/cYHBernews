@@ -1,5 +1,32 @@
 [
   {
+    "id": 2306,
+    "fecha": "2026-08-21T03:46:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-76158: Control Externo de Nombre o Ruta de Archivo en API de Subida de Datiphy",
+    "resumen": "Se identificó una vulnerabilidad de control externo de nombre o ruta de archivo en la API de subida del Datiphy Data Management Center, permitiendo a un atacante remoto escribir archivos en ubicaciones arbitrarias fuera del directorio de subida previsto. Esta vulnerabilidad afecta versiones de v8.3.0 a v8.5.1. El atacante puede aprovechar esta vulnerabilidad para realizar ataques de escritura de archivos en ubicaciones no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyODM5Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/264026",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-76158",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210.001",
+        "name": "Publicly Disclosed Exploit"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76158"
+      ]
+    }
+  },
+  {
     "id": 2305,
     "fecha": "2026-08-21T01:00:51Z",
     "categoria": "Ciberseguridad",
