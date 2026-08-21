@@ -1,5 +1,75 @@
 [
   {
+    "id": 2311,
+    "fecha": "2026-08-21T09:31:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Amenazas a infraestructuras críticas: Hacking con herramientas generadas por IA",
+    "resumen": "Las agencias de seguridad federales alertan sobre una campaña de hacking que utiliza herramientas generadas por IA para atacar tecnologías de infraestructuras críticas, específicamente Siemens S7 Series PLCs, aprovechando vulnerabilidades conocidas. El uso de IA asistida en el desarrollo de herramientas de ataque es un factor clave en esta campaña.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczMDQ2OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/nsa-fbi-warns-of-hackers-using-ai-generated-tools-critical-infrastructure",
+    "fuente": "The Record",
+    "dedup_key": "txt:nsa fbi warns of hackers using ai generated tools in attacks on critical infrastructure technology",
+    "ttps": [
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2310,
+    "fecha": "2026-08-21T09:31:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-77710: Vulnerabilidad en misp-stix que permite influir en la metadata de atributos de seguridad sensible",
+    "resumen": "Se ha identificado una vulnerabilidad en misp-stix que permite a un atacante influir en la metadata de atributos de seguridad sensible durante la importación de un documento STIX. Esto se debe a que la lógica de importación de STIX asigna dinámicamente propiedades de objetos externamente suministrados sin restringirlas a un conjunto esperado de atributos. Un atacante podría aprovechar esta vulnerabilidad para spoofear los marcadores utilizados para identificar contenido generado por MISP y injectar propiedades de atributos adicionales, alterando la distribución, restricciones de compartición, clasificación o metadata semántica de los atributos importados.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczMDQ2ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/264190",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-77710",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Modify System Time"
+      },
+      {
+        "id": "T1552.002",
+        "name": "Modify System Time to a Specific Value"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-77710"
+      ]
+    }
+  },
+  {
     "id": 2309,
     "fecha": "2026-08-21T06:37:36Z",
     "categoria": "Ciberseguridad",
