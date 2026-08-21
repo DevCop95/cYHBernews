@@ -1,5 +1,36 @@
 [
   {
+    "id": 2324,
+    "fecha": "2026-08-21T21:18:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "RedC2 4.0: Ataque de backdoor AI asistido en paquetes npm",
+    "resumen": "Se han descubierto paquetes npm troyanos que se disfrazan como herramientas de calendario y streak, pero están diseñados para entregar furtivamente un implante Linux AI denominado RedC2 4.0. El ataque utiliza técnicas de ejecución de código remoto para lanzar el backdoor como proceso de fondo. El impacto real se ve en la capacidad del atacante para acceder a sistemas Linux con permisos elevados.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczNDcxMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:14 trojanized npm packages drop redc2 4 0 linux backdoor with ai assisted c2",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1053",
+        "name": "Scheduled Task/Job"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2323,
     "fecha": "2026-08-21T18:29:41Z",
     "categoria": "Ciberseguridad",
