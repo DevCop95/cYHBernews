@@ -1,5 +1,165 @@
 [
   {
+    "id": 2309,
+    "fecha": "2026-08-21T06:37:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas en el código: vulnerabilidades en Gogs, n8n y GLM-5.3",
+    "resumen": "Se han identificado varias vulnerabilidades críticas en sistemas y aplicaciones, incluyendo una RCE en Gogs 10.0, una vulnerabilidad en n8n Workflow que permite el acceso a código, y un exploit en GLM-5.3 que aprovecha la inteligencia artificial para facilitar la explotación de vulnerabilidades. Estas amenazas pueden ser utilizadas para ejecutar código malicioso y comprometer sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyOTQyNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/threatsday-gogs-100-rce-n8n-workflow-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday gogs 10 0 rce n8n workflow to rce 10m reward glm 5 3 ai exploit and more",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2308,
+    "fecha": "2026-08-21T06:37:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-65645: Vulnerabilidad de inyección de código en Rocket.Chat",
+    "resumen": "La vulnerabilidad CVE-2026-65645 afecta a versiones anteriores de Rocket.Chat, permitiendo la inyección de código a través de parámetros no validados en los métodos DDP getThreadsList y getThreadMessages. Esto puede llevar a la divulgación de contenido privado de hilos y mensajes a usuarios autenticados con permisos bajos. El atacante puede aprovechar esta vulnerabilidad para acceder a información confidencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyOTQyNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/264149",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-65645",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "Injection"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-65645"
+      ]
+    }
+  },
+  {
+    "id": 2307,
+    "fecha": "2026-08-21T06:37:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "El algoritmo de Simon amenaza la criptografía post-cuántica",
+    "resumen": "Un investigador de Amazon, Daniel R. Simon, ha anunciado un algoritmo que podría desafiar las bases de la criptografía post-cuántica, específicamente los algoritmos PQC HAWK y AES. Aunque el algoritmo es serio, la comunidad ha desmontado su validez en nueve días, lo que sugiere que los sistemas de criptografía están preparados para este tipo de ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyOTQyMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/el-algoritmo-que-amenazo-la.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:el algoritmo que amenazó la criptografía post cuántica",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "arxiv.org",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "en.wikipedia.org",
+        "eprint.iacr.org",
+        "es.wikipedia.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "thequantuminsider.com",
+        "www.elladodelmal.com",
+        "www.linkedin.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://arxiv.org/pdf/quant-ph/0302112",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBtbtgUiBzIj7EP8968mZM-eF-45E5VcynHiybkZxgKFkc5p0QwAgkzEZKL4gx-UKUYUHroLeTKvBw4nplHKzlKRJmKs_pTQmNAdVRhPop5FB9aRrYFX_G4bqp3kx26e7RcVe90BG9hjD4Jraj5XcIG51QDgur0WShJ0HoaprTQnlqvgoIi4y5/w310-h400/quantum6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWrnrV00VOPv1X4dSnGlt6rN_6dOnRxKZUljj5_vBM9gPrLpiN7w_d9UH_3oq7fvmx1oQWfOdoGLpsuFUUuStGBBxsRCgFM4qvGbgsLFnnyR0KYeXoKoFKG2xKlR6fVfGLUer_GULXPeJWVZl3TFkU_sm97TUFsdJPLLVsY1prpG4lSivhj5zf/w328-h400/quantum5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYjp6Ziga9EsfsVOLXEl3uZ1CYcJ93zkDzyje4oRbJRyJt_lb53mbqCQvGZzJV92E7CRiRl-Zts3gMlwNO_5LUKDJqqF1A1PnJRvUR2Qp1WPIqU1aIX3F1js5Jypw6IvE5nJeTpJpovQtiztdrCcgcef0CvwcQmn8CHVzITBQsesY72ptzg_T_/s1918/quantum2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYjp6Ziga9EsfsVOLXEl3uZ1CYcJ93zkDzyje4oRbJRyJt_lb53mbqCQvGZzJV92E7CRiRl-Zts3gMlwNO_5LUKDJqqF1A1PnJRvUR2Qp1WPIqU1aIX3F1js5Jypw6IvE5nJeTpJpovQtiztdrCcgcef0CvwcQmn8CHVzITBQsesY72ptzg_T_/w640-h384/quantum2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfwPDPmXHbX6MmZannKX43oO9uZA0_-LdIQGbKCHwwCG8uBFSjrntxYLCF1UugJbmpRQ3pv1M0lMULULefkl4NWRKNG59cLC8eE5T3GjUKr-97GWZCOXU1-I6duIWdCfSNPl-YSG6ZX020TJBW9GSZ9F-04F_NlK8OqASYXq_VvrcsGepO96oY/s2024/quantum11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfwPDPmXHbX6MmZannKX43oO9uZA0_-LdIQGbKCHwwCG8uBFSjrntxYLCF1UugJbmpRQ3pv1M0lMULULefkl4NWRKNG59cLC8eE5T3GjUKr-97GWZCOXU1-I6duIWdCfSNPl-YSG6ZX020TJBW9GSZ9F-04F_NlK8OqASYXq_VvrcsGepO96oY/w640-h408/quantum11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgusDciRNrKX5jDH4eZhIjM_JJKrtf-Q0VKKsrUBpeoeeljdP1C52qSLMFreu2fidekhe1VPnqhLvp6EFaY92j7CZbYgoLAFDUyTM37VB_Cx20cNISgwJfxfHMpkGLhoyBYTcF0yJ3zO_FaYMUXGhVR-KC7Y4-zy8tbS4UnC1PaO1w77NA2ESNm/w640-h342/LWE1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhes53haL30H6F5TavNYB0e3-ZGOJFrnsIAyre8HhMMP-8I0Z2yh5ZptksiPpDcw5bVcxy72vjQ-kQ-R-mEypA7VWFWsXr4K1dKR45bCAzwHFdnh1AaLjcoY6RMKArOBn3LCMV_R9VnJ5kAgyfmt-hXIKTdWI6szra41FVujNtB1omMO8CDEibe/w640-h376/quantum0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhk2z5u64UEDyvB5d3pIDlSSOZ0AI2kKaIh2U2RzTKg2v9USo5uxmYuptO3Z09XzyEBe9wUHUIPZoC5NFJ20LJzUfUf-3TVUBiBscUwOp-Ifpt2BA4c8bIyGR9uFzgsS49SBQjo3wVQzWAG5s_PI4dpTuwj2lMbiOyZLBY8UCNQd6rdSG_pXLoU/w538-h640/quantum11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwioroXrkiccHEUWRAEun-b64u-sKMdg3AyeEMtqMy0PIfUUmwl3Qhejzah7Tk7OncKX4Jc4Hdh8TVPVSMpGaRX0TxBF0jXEfDixCAZk3oGKdNElTwuDtS-1c2YgWnsnuJooLfPF0GhklNHIWTc5GBKCySnxnGSpRwfqfn7i10VDL1CGLJdA/w640-h326/RSA-Shor.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Jm4y-KYjDzNkyIJGL_yX7p7abUKQF2zuudPhF1NOrc54secl4DsI4zNH0LACzW0JpZLBhrUL-m7Mrzn1-JP6cmmhqJ2JbhuS7yqe-gI2szVjKGHVOYLULOMRe6znSRdqBoZZ6QMk2X8HUr6dJCILCu9dE9HdoL3r1kT4wdphhefPtHcfpnU3/w462-h640/quantum10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3fqC7Q7pnlDfD01nW34gQU4EtpTuz9t2rs52Rvi3bovOFsywhoGvR_onGpAP-dLo0OMEMV8fok4LgK_C5WrrBywSzmedsLwiXlybf4qj5ksGu9DQjXqXubowYkJs13PALrSkBX66iBcEGtjiilLXWoldevfSjLOUcvPExGgr7aZJRvGIfILeH/w640-h306/quantum1.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLPfxh12BmmN-hAv7BsQotrCGN8lz3qPegFKnk0ZANH1QXIjgGbTSgwRHyTuko7342zrdw3ISVHqFuvbv0Z7K9Lfd4BPmXy3ORUh247MI6oDnaKu-HjNUPK5ct2rCXS890IZHomODHL7VUdNMoTUfgVDSmjBivJ5VxQfKyaqs4M8qm0ZIQ_gB5/s970/quantum3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLPfxh12BmmN-hAv7BsQotrCGN8lz3qPegFKnk0ZANH1QXIjgGbTSgwRHyTuko7342zrdw3ISVHqFuvbv0Z7K9Lfd4BPmXy3ORUh247MI6oDnaKu-HjNUPK5ct2rCXS890IZHomODHL7VUdNMoTUfgVDSmjBivJ5VxQfKyaqs4M8qm0ZIQ_gB5/w640-h416/quantum3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifiuc9Pufnd3d8znlbsKt3yILpGjINup3YauRHg6VBwodD29OE5p45yQnMrgm0woE8hIJmma6DYdm4pKMGzpLs-Oouh64l6C7lsCiEuYIyOIjFApcn2wloUJWMiqlA1pN9Y1_o0nLFUBx_S_9gqbiZebs7tOo5p_jxyQwAzsKIoHx2jIurSR-G/w400-h308/quantum8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7KAuHMD2IbqyhOMWpjikjF_cksbfr5VDIt6XVep_DZ18sTslRrV8mKqn3C5uewkeKePbqNEyHIi1cxcemBSWCZPQU2i-ZanIOtScugFdO-mkZwPzeyOMfuxXhOF-XMNkd8Y-DLZScWvb8w3E4mNyhm_YB0DzVM_wkV-Wa4chTtLw0qLkrfZsU/w640-h242/quantum9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIoA-Qjo8Scebz12sKmVQnmufZNAZsmVs4x8WiGsyARk1aUnKd-aX7_ptHXHaduSJ45pfQOEZ_heKE7r2xQ8NW0xCjLOcNzWC_ldIVf-oGShZ-neijW84b2-7ufCTAezRVXji9JISVmIdPe1BVsTXJuMT8-vEOIifxE9-5UCTVoLCgMoHUZavH/w640-h508/DanielRomeroRuiz.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjonM6IQev6AzSJaNGkDnrI6wKqaGJZjc1YUPaOtykxXBLNoK3DWFhpKT46843SosbJjMJ3B86qABvlxgHK3FgwN-Qp_3MpuMiOpI9L8yM5enS5xQrAgZ093V4Zb2J4X1lKLoODRcTwJipHTT_7ETpqR7Yv6acRWmGdhVovE_UCgXR3U1EgHt0Q/w640-h384/q0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://cims.nyu.edu/~regev/papers/qcrypto.pdf",
+        "https://elladodelmal.com",
+        "https://eprint.iacr.org/2018/494.pdf",
+        "https://eprint.iacr.org/2026/155.pdf",
+        "https://eprint.iacr.org/2026/1591.pdf",
+        "https://thequantuminsider.com/2026/08/06/amazon-researcher-claims-quantum-algorithm-c",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.elladodelmal.com/2018/06/quantum-cryptography-una-comunicacion.html",
+        "https://www.elladodelmal.com/2022/12/quantum-computing-cybersecurity.html",
+        "https://www.elladodelmal.com/2023/01/factorizacion-de-rsa-con-un-optimizador.html",
+        "https://www.elladodelmal.com/2025/04/hamming-quasi-cyclic-hqc-kem-nuevo-key.html",
+        "https://www.elladodelmal.com/2025/05/frodokem-un-key-encapsulation-mechanism.html",
+        "https://www.elladodelmal.com/2025/08/la-gran-busqueda-de-numeros-primos-de.html",
+        "https://www.elladodelmal.com/2025/09/como-acelerar-los-algoritmos-de.html",
+        "https://www.elladodelmal.com/2025/10/premio-nobel-en-fisica-2025-el-trabajo.html",
+        "https://www.elladodelmal.com/2025/10/un-reloj-atomico-optico-del-mit-con.html",
+        "https://www.elladodelmal.com/2025/11/algoritmo-cuantico-de-grover-un.html",
+        "https://www.elladodelmal.com/2025/11/cuanto-del-trafico-en-internet-funciona.html",
+        "https://www.elladodelmal.com/2025/12/bitcoin-vs-quantum-computers-hora-de.html",
+        "https://www.elladodelmal.com/2025/12/dyber-hardware-accelerated-post-quantum.html",
+        "https://www.elladodelmal.com/2025/12/el-white-paper-de-mastercard-que-urge.html",
+        "https://www.elladodelmal.com/2025/12/quantum-sensors-cuando-lo-invisible-se.html",
+        "https://www.elladodelmal.com/2026/01/como-ser-quantum-safe-y-desplegar-post.html",
+        "https://www.elladodelmal.com/2026/02/quantum-gps-navegacion-con-gps.html",
+        "https://www.elladodelmal.com/2026/03/alaniz-cipher-un-cifrado-simetrico.html",
+        "https://www.elladodelmal.com/2026/03/como-comprobar-si-un-web-site-is.html",
+        "https://www.elladodelmal.com/2026/05/los-papers-academicos-de-los-algoritmos.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-2.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-3.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-y-4.html",
+        "https://www.elladodelmal.com/2026/07/iii-edicion-del-programa-de.html",
+        "https://www.elladodelmal.com/2026/08/claude-mythos-preview-debilita-los.html",
+        "https://www.elladodelmal.com/2026/08/computacion-cuantica-y-fusion-nuclear.html"
+      ]
+    }
+  },
+  {
     "id": 2306,
     "fecha": "2026-08-21T03:46:06Z",
     "categoria": "Ciberseguridad",
