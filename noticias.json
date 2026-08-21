@@ -1,5 +1,40 @@
 [
   {
+    "id": 2305,
+    "fecha": "2026-08-21T01:00:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque a la cadena de suministro de Rust: 245 millones de descargas comprometidas",
+    "resumen": "Un ataque a la cadena de suministro en Rust ha comprometido 245 millones de descargas a través de tres crates populares (arrayref, internment y append-only-vec), que agregaban una dependencia maliciosa durante la compilación. El ataque se produjo a través de un script de build que descargaba y ejecutaba un payload remoto durante la compilación.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcyNzQwNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:rust supply chain attack puts build time malware in crates with 245 million downloads",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1574",
+        "name": "Hijack Execution Flow"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "crates.io"
+      ]
+    }
+  },
+  {
     "id": 2304,
     "fecha": "2026-08-20T21:22:46Z",
     "categoria": "Ciberseguridad",
