@@ -1,5 +1,195 @@
 [
   {
+    "id": 2333,
+    "fecha": "2026-08-22T12:29:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "🔴 CVE-2021-43226: Elevación de Privilegios en Windows Common Log File System Driver",
+    "resumen": "Se identificó una vulnerabilidad de elevación de privilegios en el driver de Windows Common Log File System (CVSS 7.8), lo que podría permitir a un atacante ejecutar código arbitrario con privilegios elevados. Los productos afectados incluyen Windows 10 de 1507 a 1809. El impacto real es significativo, ya que un atacante podría aprovechar esta vulnerabilidad para realizar acciones maliciosas con privilegios administrativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc0MDE3NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-43226",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2021-43207,cve-2021-43226",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2021-43207",
+        "CVE-2021-43226"
+      ]
+    }
+  },
+  {
+    "id": 2332,
+    "fecha": "2026-08-22T12:29:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cisco Corrige Nueve Vulnerabilidades en Crosswork y Workload con Puntuación CVSS 10.0",
+    "resumen": "Cisco ha publicado actualizaciones de seguridad para plataformas Crosswork y software de carga de trabajo, como parte de una revisión interna de seguridad exhaustiva. Las vulnerabilidades afectan a Crosswork Data Gateway, Crosswork Network Controller y Crosswork Planning, con cuatro de ellas puntuadas con CVSS 10.0, lo que indica un alto riesgo de explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc0MDE3NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cisco patches nine crosswork and secure workload flaws five scoring cvss 10 0",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Vulnerability"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploit Public-Facing Application (no es distinto de T1190)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2331,
+    "fecha": "2026-08-22T12:28:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-77988: Inyección de comandos en CLI Configuration Tool de TRENDnet TEW-823DRU",
+    "resumen": "Se ha identificado una vulnerabilidad en el componente CLI Configuration Tool del router TRENDnet TEW-823DRU, que permite la inyección de comandos remota y explotable. El exploit ha sido publicado y podría ser utilizado para ataques.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc0MDE3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/265526",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-77988",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-77988"
+      ]
+    }
+  },
+  {
+    "id": 2330,
+    "fecha": "2026-08-22T12:28:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Desmontaje en 9 días del algoritmo que amenazaba la Criptografía Post Cuántica",
+    "resumen": "Un equipo de expertos en criptografía, liderado por Daniel R. Simon, desmontó en 9 días un algoritmo que amenazaba la seguridad de la Criptografía Post Cuántica, demostrando que no era correcto. El proceso se llevó a cabo de manera abierta y transparente, sin necesidad de comités o revisión por pares.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc0MDE3MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/como-se-desmonto-el-algoritmo-que.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo se desmontó el algoritmo que amenazaba a la criptografía post cuántica 9 días después",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "cyber.gouv.fr",
+        "elladodelmal.com",
+        "eprint.iacr.org",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "postquantum.com",
+        "www.bsi.bund.de",
+        "www.elladodelmal.com",
+        "www.linkedin.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/248-quatum-security-tecnologia-cuantica-ciberseguridad-criptografica-cuantica-y-post-cuantica.html",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_3r-Z1n_NOU9P5zXrclGghlJF9gXs7DYYy556eQWxVNoYnXKKmam-1TtBmDuq_gFW-YKrYydlPVRwO8EzYrzW26Ya-iJbJMQL59qAqNlWCIBlMl6rUoxdMiVxZAg9xsBu8fL3i3yuq5TYXizX1idC6ITZw2QTyM5PrxLVQdhJEHRFIimG0OEc/w640-h44/quantum6.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge-QwnOYUYv6cloYYz90UxlwdcKwFByVslGpL7NMKat0VNmLx79n3Qql4yq5pzkyBG1_ogTwUZ_630FSQtZPNy_sJHPpC19xIj4HloiUxWh6NnxyEwjRsmgXwuUzXl3S2vPv1oyUdqI6ym7vWSCbKpHkjfMJzmW9WSNoz5r3bLoXGRrZpW7QEL/w640-h402/quantum3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh65Cy0x6OIhrA74APH557ga33SQEaRQuTpA2havkZRI4D6DbdjJnq6G0nlFMw2OP0reRlkG5N1nZhQouy8BaXxuf6JW1XhwwgSamS0ry8QvW2wOzhMuwUW0curu1ii-HUS6b5WuVCrTk3bBbUMgVrfL5ZRBxkVWZasig-AG04t859R1ZD9AFK-/w640-h402/quantum0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUw_-dmvGoyYQJZ-pePlrwShFAnpWUIYUUIrEylElGv7RPjCaTlTnOvS2SWGqCMK_CuOxSLozC4ZDw2Wkx4GtqV0MUhdcaYhPPzIIyOgeqf-uIEMP0tJxtM8-1ifSWfcLlLiNw_vhf7oVNT2LaJNv2jSW6WKxYZIwp3Koc51CO_r0FalBD_0sP/w640-h396/q7.png",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0Hu2rEYkvHm45Gewc-mae8804_1GEx_SCor6JD4ZT3f6FI3izvMd9M-o7ZbCGegcPL_NirFd5qKWS-3WdDI2tAgb6PgjxdZuDsoa17ARZtY9ldnkQyV3pRy1RWMbzHiAQHlOJs5-IbCHcxtzQQWADQeiGcBtxzAvx8U-CFG1mKSrJTZVJbJWY/w640-h70/quantum8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1Jm4y-KYjDzNkyIJGL_yX7p7abUKQF2zuudPhF1NOrc54secl4DsI4zNH0LACzW0JpZLBhrUL-m7Mrzn1-JP6cmmhqJ2JbhuS7yqe-gI2szVjKGHVOYLULOMRe6znSRdqBoZZ6QMk2X8HUr6dJCILCu9dE9HdoL3r1kT4wdphhefPtHcfpnU3/w462-h640/quantum10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivVLOGjvrugJi-Hl8OyV5GljEoJGnkavgLOzj6SsZZFM0CSs2unBrGLtJ2YO_ks60S-6vHLjlDKGoFy4ySiMP9dnBOVDQkX94Fywj_eYKuBQ_lRIhr7oNyEm3oOywXZvzHDVemF8kt-YALwvQc8BJDOy9Njeq3st5EEkghOSTEnA_pKjo1CEpV/w640-h422/quantum7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwg5YnFsEmuKEw5vQWEUg3eo4hDDxA1K6Mj9aWuKRJzDmhSBtKwUi3xsc4Cesf8aniixrS4WewlCxIiKx4y1TQD8HsVbfkCxUBFfLdeEfWmYhVY1PC2kmw25_aHcK6n9ZPw1oi7LgQFrS7rUWs5QR27JMyk8dWYTewIM5HH2v7k52C0qMMwGO-/w640-h120/quantum2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizgkS4uOvA5B3l4LiPqT1gW2KOS4EacJ2yS4E-PbjKPWdB5CyuBpEqx4QDviiGVmKtILIo-kWixF5GnbHWnCQ8qVpwYrGHg7QtCv2eAtfl9AFBqSuQOV51cHRQE6uxl_HyjZ6_wfJroRMIEBlOD5U9fssQ2vbzMc2fIv8bSQhpC5LlGQur95Od/s1614/quantum5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizgkS4uOvA5B3l4LiPqT1gW2KOS4EacJ2yS4E-PbjKPWdB5CyuBpEqx4QDviiGVmKtILIo-kWixF5GnbHWnCQ8qVpwYrGHg7QtCv2eAtfl9AFBqSuQOV51cHRQE6uxl_HyjZ6_wfJroRMIEBlOD5U9fssQ2vbzMc2fIv8bSQhpC5LlGQur95Od/w640-h256/quantum5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-RgwqNKng2QBLiA2-fi495EH0nZr2FHqjUoqtCjrKxr6sc2TlBDuC1JBXOBPIuSn4j0muKk8d8Bi1k4BiGkNWNhxM98Fdh4fmMw3rCWeZOycQzCT-1pu6_7mBc14npd6EQ1-8BFaQsUOgMkI1hMpYE6jqTbZ3nDQEOsBcKepxXsq6XeAH4VE6/w640-h380/quantum9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5sC4sNXSPWei3LnUpPQYxqMBP6UwMQsqvUM9SAHBRYbM_1WNgTckBqsqoCEkWCGiIi5mEqX21uZs9w6xbcbf3RtAtUpFiEtSFiwqmJjzmNp70lBeepwUtJGfABIxJKfegji6x0XVTW_5Xlb1R44_zVBUTvJqI4pK2GRWvXwEaNUoRr4bk4vtY/s1806/quantum1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5sC4sNXSPWei3LnUpPQYxqMBP6UwMQsqvUM9SAHBRYbM_1WNgTckBqsqoCEkWCGiIi5mEqX21uZs9w6xbcbf3RtAtUpFiEtSFiwqmJjzmNp70lBeepwUtJGfABIxJKfegji6x0XVTW_5Xlb1R44_zVBUTvJqI4pK2GRWvXwEaNUoRr4bk4vtY/w640-h154/quantum1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIoA-Qjo8Scebz12sKmVQnmufZNAZsmVs4x8WiGsyARk1aUnKd-aX7_ptHXHaduSJ45pfQOEZ_heKE7r2xQ8NW0xCjLOcNzWC_ldIVf-oGShZ-neijW84b2-7ufCTAezRVXji9JISVmIdPe1BVsTXJuMT8-vEOIifxE9-5UCTVoLCgMoHUZavH/w640-h508/DanielRomeroRuiz.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdIYj5IILbkRKAq4Z_5HodIWdMa4lomJiZQbCm9cxfr_XxXrYhApA-ZY3N8Q2evxTaz8NMUb9K4DcGaa_iszK_z_CTC2iFhkMOBZfW4Sw0VxSAJr2lZO2aJ-AnITCpqthZYNOs3XRO4sYO4-alEELamp5mPO2LK0RxeN3LU7j97CC4QSS_UF3V/s1566/quantum4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdIYj5IILbkRKAq4Z_5HodIWdMa4lomJiZQbCm9cxfr_XxXrYhApA-ZY3N8Q2evxTaz8NMUb9K4DcGaa_iszK_z_CTC2iFhkMOBZfW4Sw0VxSAJr2lZO2aJ-AnITCpqthZYNOs3XRO4sYO4-alEELamp5mPO2LK0RxeN3LU7j97CC4QSS_UF3V/w640-h324/quantum4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjonM6IQev6AzSJaNGkDnrI6wKqaGJZjc1YUPaOtykxXBLNoK3DWFhpKT46843SosbJjMJ3B86qABvlxgHK3FgwN-Qp_3MpuMiOpI9L8yM5enS5xQrAgZ093V4Zb2J4X1lKLoODRcTwJipHTT_7ETpqR7Yv6acRWmGdhVovE_UCgXR3U1EgHt0Q/w640-h384/q0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzNgeoS8bK-N-wht22IN3Z9fcjMOMuMh6f9H8bSB9a-4MxLglEcHxqPpeuw8auxDK6z1mWBzkmwxwpV_x1cgen1gWeVP9ig3bZUh2UrXc8DcD68D7ZVT7gCmkeHGu9p08QKsTN4fW0RsnEbdcSXP2xHDPbmogTUDdrsk_YmX7lGAsv-olxYX2k/w282-h400/Quantum1.jpg",
+        "https://cims.nyu.edu/~regev/papers/qcrypto.pdf",
+        "https://csrc.nist.gov/projects/pqc-dig-sig/round-3-additional-signatures",
+        "https://csrc.nist.gov/pubs/ir/8610/final",
+        "https://cyber.gouv.fr/en/publications/anssi-views-post-quantum-cryptography-transition",
+        "https://elladodelmal.com",
+        "https://eprint.iacr.org/2026/1591.pdf",
+        "https://eprint.iacr.org/2026/1693",
+        "https://microblog.cr.yp.to/1786774939/index.html#1786774939",
+        "https://postquantum.com/security-pqc/simon-quantum-algorithm-lattice-pqc/",
+        "https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Crypto/Migration_to_",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.elladodelmal.com/2018/06/quantum-cryptography-una-comunicacion.html",
+        "https://www.elladodelmal.com/2022/12/quantum-computing-cybersecurity.html",
+        "https://www.elladodelmal.com/2023/01/factorizacion-de-rsa-con-un-optimizador.html",
+        "https://www.elladodelmal.com/2025/04/hamming-quasi-cyclic-hqc-kem-nuevo-key.html",
+        "https://www.elladodelmal.com/2025/05/frodokem-un-key-encapsulation-mechanism.html",
+        "https://www.elladodelmal.com/2025/08/la-gran-busqueda-de-numeros-primos-de.html",
+        "https://www.elladodelmal.com/2025/09/como-acelerar-los-algoritmos-de.html",
+        "https://www.elladodelmal.com/2025/10/premio-nobel-en-fisica-2025-el-trabajo.html",
+        "https://www.elladodelmal.com/2025/10/un-reloj-atomico-optico-del-mit-con.html",
+        "https://www.elladodelmal.com/2025/11/algoritmo-cuantico-de-grover-un.html",
+        "https://www.elladodelmal.com/2025/11/cuanto-del-trafico-en-internet-funciona.html",
+        "https://www.elladodelmal.com/2025/12/bitcoin-vs-quantum-computers-hora-de.html",
+        "https://www.elladodelmal.com/2025/12/dyber-hardware-accelerated-post-quantum.html",
+        "https://www.elladodelmal.com/2025/12/el-white-paper-de-mastercard-que-urge.html",
+        "https://www.elladodelmal.com/2025/12/quantum-sensors-cuando-lo-invisible-se.html",
+        "https://www.elladodelmal.com/2026/01/como-ser-quantum-safe-y-desplegar-post.html",
+        "https://www.elladodelmal.com/2026/02/quantum-gps-navegacion-con-gps.html",
+        "https://www.elladodelmal.com/2026/03/alaniz-cipher-un-cifrado-simetrico.html",
+        "https://www.elladodelmal.com/2026/03/como-comprobar-si-un-web-site-is.html",
+        "https://www.elladodelmal.com/2026/05/los-papers-academicos-de-los-algoritmos.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-1.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-2.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-3.html",
+        "https://www.elladodelmal.com/2026/07/blind-quantum-computing-y-4.html",
+        "https://www.elladodelmal.com/2026/07/iii-edicion-del-programa-de.html",
+        "https://www.elladodelmal.com/2026/08/claude-mythos-preview-debilita-los.html",
+        "https://www.elladodelmal.com/2026/08/computacion-cuantica-y-fusion-nuclear.html",
+        "https://www.elladodelmal.com/2026/08/el-algoritmo-que-amenazo-la.html",
+        "https://www.nist.gov/news-events/news/2025/03/nist-selects-hqc-fifth-algorithm-post-quantum-encryption"
+      ]
+    }
+  },
+  {
     "id": 2329,
     "fecha": "2026-08-22T09:22:01Z",
     "categoria": "Ciberseguridad",
