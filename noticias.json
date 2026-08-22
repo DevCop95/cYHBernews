@@ -1,5 +1,47 @@
 [
   {
+    "id": 2336,
+    "fecha": "2026-08-22T21:16:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-7163: Vulnerabilidad en la API de servicio asistido permite acceso administrativo a clústeres de OpenShift",
+    "resumen": "Una vulnerabilidad en la API de servicio asistido de Multicluster Engine (MCE) permite a un usuario autenticado con privilegios mínimos obtener credenciales administrativas para clústeres de OpenShift provisionados a través de la hub. El atacante puede obtener la contraseña de kubeadmin y la configuración de kubeconfig para cualquier clúster afectado, lo que le da acceso administrativo root sin restricciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc0MzM0MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/265735",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-7163",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1550",
+        "name": "Access to Credentials"
+      },
+      {
+        "id": "T1552",
+        "name": "Steal or Capture Credentials"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1210.001",
+        "name": "Publicly Disclosed Exploit Available"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "console.redhat.com"
+      ],
+      "cve": [
+        "CVE-2026-7163"
+      ]
+    }
+  },
+  {
     "id": 2335,
     "fecha": "2026-08-22T18:22:03Z",
     "categoria": "IA",
