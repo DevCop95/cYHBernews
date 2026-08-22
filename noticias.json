@@ -1,5 +1,40 @@
 [
   {
+    "id": 2329,
+    "fecha": "2026-08-22T09:22:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-78003: Falta de validación de entrada en Mailgun for WordPress",
+    "resumen": "El plugin Mailgun para WordPress es vulnerable a ataques de falsificación de solicitudes de servidor (SSRF) debido a una falta de validación de entrada en la función add_list(), lo que permite a atacantes no autenticados realizar solicitudes POST autenticadas a cualquier punto final de la API de Mailgun, incluyendo la creación de rutas de correo electrónico de entrada que pueden interceptar correos electrónicos de restablecimiento de contraseña, lo que lleva a la toma de control de cuentas de administrador.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczOTA1MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/265519",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-78003",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1505",
+        "name": "Server Software Component"
+      },
+      {
+        "id": "T1552",
+        "name": "Excavation of Data or Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-78003"
+      ]
+    }
+  },
+  {
     "id": 2328,
     "fecha": "2026-08-22T03:37:13Z",
     "categoria": "Ciberseguridad",
