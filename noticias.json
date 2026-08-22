@@ -1,5 +1,40 @@
 [
   {
+    "id": 2328,
+    "fecha": "2026-08-22T03:37:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware para vehículos Android: Fraude publicitaria y botnet proxy",
+    "resumen": "Un nuevo malware diseñado para infectar firmware de unidades de cabeza de vehículos Android de DoFun se propaga a través de actualizadores integrados, con el objetivo de realizar fraude publicitario y crear un botnet proxy. El malware utiliza actualizadores integrados para propagarse, lo que sugiere una posible vulnerabilidad en el proceso de actualización.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczNjk4MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:android car malware spreads through built in updaters for ad fraud proxy botnet",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1568",
+        "name": "Dynamic Resolution"
+      },
+      {
+        "id": "T1216",
+        "name": "Code Injection"
+      },
+      {
+        "id": "T1210.001",
+        "name": "Exploit Public-Facing Application with a Known Vulnerability"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2327,
     "fecha": "2026-08-22T00:57:49Z",
     "categoria": "IA",
