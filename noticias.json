@@ -1,5 +1,100 @@
 [
   {
+    "id": 2327,
+    "fecha": "2026-08-22T00:57:49Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Modelos de IA generan códigos genéticos para virus bacteriófagos",
+    "resumen": "Los modelos de IA han logrado generar códigos genéticos para virus bacteriófagos viables, lo que demuestra su capacidad para diseñar y sintetizar nuevas formas de vida. Este avance tiene implicaciones tanto positivas como negativas, ya que puede utilizarse para fines de investigación o, potencialmente, para crear agentes biológicos peligrosos. Los investigadores han demostrado la viabilidad de 16 de los virus generados, algunos de los cuales resultaron más efectivos que el virus original.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027444636-ce7379d51252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczNjAyNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/ai-is-learning-to-write-genetic-code.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:ai is learning to write genetic code",
+    "ttps": [
+      {
+        "id": "T1552",
+        "name": "Excavación de Información"
+      },
+      {
+        "id": "T1584",
+        "name": "Generación de Código"
+      },
+      {
+        "id": "T1584.001",
+        "name": "Generación de Código a partir de un Modelo"
+      },
+      {
+        "id": "T1218",
+        "name": "Creación de Unidades Maliciosas"
+      },
+      {
+        "id": "T1218.001",
+        "name": "Creación de Unidades Maliciosas a partir de un Modelo"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.abc.net"
+      ],
+      "url": [
+        "https://www.abc.net.au/news/2026-08-07/ai-models-design-viruses-not-found-in-nature-for-first-time/107007854"
+      ]
+    }
+  },
+  {
+    "id": 2326,
+    "fecha": "2026-08-22T00:57:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-77781: Excepción en Tie::Hash::Regex para Perl debido a claves de búsqueda irregulares",
+    "resumen": "La versión anterior a 2.0.0 de Tie::Hash::Regex para Perl puede lanzar una excepción cuando se intenta buscar claves de búsqueda irregulares, lo que puede provocar una falla en aplicaciones que buscan cadenas externamente suministradas en un hash atado. Este problema puede ser explotado por atacantes para causar una denegación de servicio (DoS) en aplicaciones que dependen de esta biblioteca.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczNjAyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/265349",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-77781",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Return Buffer"
+      },
+      {
+        "id": "T1211",
+        "name": "Exploit Code on a Victim's Computer"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploit a Code-Execution Vulnerability"
+      },
+      {
+        "id": "T1213",
+        "name": "Accessing Local Resources"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-77781"
+      ]
+    }
+  },
+  {
+    "id": 2325,
+    "fecha": "2026-08-22T00:57:26Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Grok 4.6: La IA comienza a competir con GPT-5.6 Sol en eficiencia laboral",
+    "resumen": "El modelo de xAI Grok 4.6 ha alcanzado un nivel de competencia con GPT-5.6 Sol en el índice de Artificial Analysis, demostrando una eficiencia laboral similar. Además, sus pruebas con agentes han mostrado una ventaja significativa sobre Claude Opus 5, lo que sugiere una mejora en la capacidad de realizar tareas complejas con menos pasos. Este avance en la IA podría tener implicaciones en la automatización de procesos y la optimización de la productividad.",
+    "url_imagen": "https://images.unsplash.com/photo-1564707944519-7a116ef3841c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODczNjAyNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/grok-46-y-grok-bot-la-ia-empieza",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:grok 4 6 y grok bot la ia empieza a competir por hacer el trabajo con menos pasos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2324,
     "fecha": "2026-08-21T21:18:49Z",
     "categoria": "Ciberseguridad",
