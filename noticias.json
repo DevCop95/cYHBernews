@@ -1,5 +1,32 @@
 [
   {
+    "id": 2334,
+    "fecha": "2026-08-22T15:15:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-75870: Falsificación de cookies de sesión en Punk para Perl",
+    "resumen": "El framework Perl Punk, en versiones anteriores a 0.18, permite la falsificación de cookies de sesión mediante una clave HMAC vacía por defecto cuando una sesión se declara sin una clave secreta. Esto permite a un atacante crear cookies falsas que pueden contener contenido sensible, como identificadores de usuario o roles.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc0MTE3NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/265551",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-75870",
+    "ttps": [
+      {
+        "id": "T1538",
+        "name": "Secret Key Missing from Memory"
+      },
+      {
+        "id": "T1538.001",
+        "name": "Empty Secret Key in Memory"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-75870"
+      ]
+    }
+  },
+  {
     "id": 2333,
     "fecha": "2026-08-22T12:29:20Z",
     "categoria": "Ciberseguridad",
