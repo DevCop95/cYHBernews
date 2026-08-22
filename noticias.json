@@ -1,5 +1,78 @@
 [
   {
+    "id": 2335,
+    "fecha": "2026-08-22T18:22:03Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Abogado multado por citar 48 sentencias falsas sugeridas por ChatGPT",
+    "resumen": "Un abogado ha sido multado por 450 euros por citar 48 sentencias falsas en un recurso de apelación, que fueron sugeridas por la IA ChatGPT. El Tribunal Superior de Justicia de Canarias calculó la multa en base a la mitad del coste anual de una suscripción a una IA jurídica fiable.",
+    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc0MjI5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/magnet/tribunal-superior-justicia-canarias-multa-a-abogado-citar-48-sentencias-falsas-se-habia-sugerido-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:el tribunal superior de justicia de canarias multa a un abogado por citar hasta 48 sentencias falsas se las había sugerido la ia",
+    "ttps": [
+      {
+        "id": "T1538",
+        "name": "Social Engineering"
+      },
+      {
+        "id": "T1199",
+        "name": "Trusted Relationship"
+      },
+      {
+        "id": "T1218",
+        "name": "Impersonation"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "dreadnode.io",
+        "flickr.com",
+        "platform.instagram.com",
+        "www.atrevia.com",
+        "www.diariojudicial.com",
+        "www.expansion.com",
+        "www.infobae.com",
+        "www.iustel.com",
+        "www.legaldive.com",
+        "www.pewresearch.org",
+        "www.redaccionmedica.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://dho.stanford.edu/wp-content/uploads/Hallucinations_JLA.pdf",
+        "https://digitalperito.es/blog/tsjn-mala-fe-procesal-ia-sentencias-falsas-tribunales-2026/",
+        "https://dreadnode.io/research/every-model-cheats-prompt-level-mitigation-of-cheating-on-offensive-cyber-tasks/",
+        "https://i.blogs.es/78eca1/alucinacion/1024_2000.jpeg",
+        "https://incidentdatabase.ai/es/cite/1196/",
+        "https://law.stanford.edu/2024/01/11/hallucinating-law-legal-mistakes-with-large-language-models-are-pervasive/",
+        "https://law.stanford.edu/publications/hallucination-free-assessing-the-reliability-of-leading-ai-legal-research-tools/",
+        "https://legatiq.ai/es-ES/recursos/analisis/caso-mata-vs-avianca-chatgpt-abogado-sancion",
+        "https://summummarketing.es/multas-abogados-sentencias-falsas-ia/",
+        "https://www.atrevia.com/actualidad/como-la-ia-desordena-el-poder-entre-seniors-y-juniors/",
+        "https://www.democrata.es/sanidad/casi-uno-de-cada-cinco-espanoles-va-al-medico-por-consejo-de-la-inteligencia-artificial-segun-un-estudio/",
+        "https://www.diariojudicial.com/news-101192-chatgpt-sanciones-reales-para-citas-falsas",
+        "https://www.expansion.com/juridico/2026/07/29/6a6a092ae5fdea114e8b458e.html",
+        "https://www.haqq.ai/es/blog/lawyers-guide-to-large-language-models",
+        "https://www.infobae.com/estados-unidos/2025/09/11/uno-de-cada-cinco-estadounidenses-ha-seguido-consejos-medicos-de-ia-que-resultaron-ser-incorrectos/",
+        "https://www.iustel.com/diario_del_derecho/noticia.asp?ref_iustel=1247798",
+        "https://www.legaldive.com/news/legal-genai-tools-mislead-17-percent-of-time-stanford-HAI-hallucinations-incorrect-law-citations/717128/",
+        "https://www.pewresearch.org/short-reads/2026/08/18/young-adults-in-the-us-are-increasingly-wary-of-ai-concerned-it-will-take-jobs/",
+        "https://www.poderjudicial.es/cgpj/es/Poder-Judicial/Noticias-Judiciales/El-TSJ-de-Canarias-multa-a-un-abogado-por-citar-hasta-48-sentencias-falsas-sugeridas-por-IA",
+        "https://www.poderjudicial.es/search/indexAN.jsp",
+        "https://www.redaccionmedica.com/secciones/tecnologia/un-estudio-revela-de-quien-se-fian-mas-los-pacientes-medicos-o-ia-2713"
+      ]
+    }
+  },
+  {
     "id": 2334,
     "fecha": "2026-08-22T15:15:41Z",
     "categoria": "Ciberseguridad",
