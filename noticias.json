@@ -1,5 +1,32 @@
 [
   {
+    "id": 2337,
+    "fecha": "2026-08-23T18:21:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-64270: Vulnerabilidad de escritura en pila en el kernel de Linux",
+    "resumen": "La vulnerabilidad CVE-2026-64270 en el kernel de Linux permite a un atacante reportar un tamaño de paquete excesivo, lo que puede provocar una escritura en pila no válida en el hilo IRQ, permitiendo la sobreescritura de la bandera de canario de pila, los registros salvados y la dirección de retorno. El CVSS Score de esta vulnerabilidad es 7.8 (ALTO).",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1MDkzMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-64270",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-64270",
+    "ttps": [
+      {
+        "id": "T1222",
+        "name": "Exploit of Vulnerability"
+      },
+      {
+        "id": "T1210",
+        "name": "Software Deployment Tools"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-64270"
+      ]
+    }
+  },
+  {
     "id": 2336,
     "fecha": "2026-08-22T21:16:57Z",
     "categoria": "Ciberseguridad",
