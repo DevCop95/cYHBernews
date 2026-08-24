@@ -1,5 +1,35 @@
 [
   {
+    "id": 2338,
+    "fecha": "2026-08-24T00:59:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-78156: Desbloqueo de buffer en pila en Open5GS 2.8.0",
+    "resumen": "Se ha detectado una vulnerabilidad de seguridad en Open5GS 2.8.0, específicamente en la función hss_ogs_diam_s6a_air_cb, que puede ser manipulada para causar un desbloqueo de buffer en pila. Este ataque puede ser realizado desde una ubicación remota. Se recomienda aplicar el parche a9c82ee0b590d76a581b0580cb46b598984e2392 para remediar esta vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1MzMyMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/265995",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-78156",
+    "ttps": [
+      {
+        "id": "T4040",
+        "name": "Heap Buffer Overflow"
+      },
+      {
+        "id": "T1210",
+        "name": "Remote Service Sessions"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "a9c82ee0b590d76a581b0580cb46b598984e2392"
+      ],
+      "cve": [
+        "CVE-2026-78156"
+      ]
+    }
+  },
+  {
     "id": 2337,
     "fecha": "2026-08-23T18:21:42Z",
     "categoria": "Ciberseguridad",
