@@ -1,5 +1,44 @@
 [
   {
+    "id": 2344,
+    "fecha": "2026-08-24T12:39:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-78323: Falta de verificación de certificados CA en JSS",
+    "resumen": "Se ha encontrado una vulnerabilidad en JSS (Java Security Services) debido a que la clase JSSTrustManager no verifica las banderas de confianza NSS al validar certificados CA, lo que permite que certificados presentes en la base de datos NSS sin la bandera TRUSTED_CA sean aceptados como anclajes de confianza para conexiones TLS. Esto podría permitir a un atacante en la cadena de middle que forje certificados aceptados por conexiones de cliente PKI en configuraciones no predeterminadas donde se deshabilita la verificación de revocación de certificados.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1NzUxNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/266158",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-78323",
+    "ttps": [
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploit Tool"
+      },
+      {
+        "id": "T1550",
+        "name": "Use of Executable Code on Victim's Side"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552",
+        "name": "Leverage Alternate Authentication Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-78323"
+      ]
+    }
+  },
+  {
     "id": 2343,
     "fecha": "2026-08-24T09:41:57Z",
     "categoria": "IA",
