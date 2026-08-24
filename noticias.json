@@ -1,5 +1,52 @@
 [
   {
+    "id": 2340,
+    "fecha": "2026-08-24T06:47:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "🔴 CVE-2025-38117: Vulnerabilidad crítica en el kernel de Linux (CVSS 7.8)",
+    "resumen": "Se ha resuelto una vulnerabilidad crítica en el kernel de Linux (CVE-2025-38117) que podría causar fallos de acceso concurrente a la lista mgmt_pending, lo que podría llevar a errores como la lectura de memoria después de su liberación. El problema se ha solucionado protegiendo la lista mgmt_pending con su propio bloqueo.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1NTQwNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-38117",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-38117",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-38117"
+      ]
+    }
+  },
+  {
+    "id": 2339,
+    "fecha": "2026-08-24T06:47:20Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Becarios en la banca enseñan a sus jefes a utilizar IA: una cantera preparada para la transformación digital.",
+    "resumen": "Los bancos están aprovechando la IA para formar a sus futuros analistas, lo que está cambiando la manera de hacer las cosas en la banca. Los becarios están enseñando a sus jefes a utilizar herramientas de IA para automatizar procesos y mejorar la eficiencia.",
+    "url_imagen": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1NTQwNDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/becarios-banca-vienen-ia-brazo-ahora-le-ensenan-como-funciona-a-sus-jefes",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:los becarios en la banca ya vienen con la ia bajo el brazo ahora le enseñan cómo funciona a sus jefes",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "platform.instagram.com",
+        "unsplash.com",
+        "www.bloomberg.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/3b677d/revolut/375_142.jpeg",
+        "https://i.blogs.es/ccee12/el-banco-ha-bloqueado-las-cuentas-del-fallecido-para-el-entierro/375_142.jpeg",
+        "https://i.blogs.es/d5ad51/bancos/1024_2000.jpeg",
+        "https://unsplash.com/es/@invest_europe",
+        "https://unsplash.com/es/@miquel_parera_mila",
+        "https://www.bloomberg.com/news/articles/2026-08-18/ai-is-starting-to-define-bank-internships-as-much-as-long-hours"
+      ]
+    }
+  },
+  {
     "id": 2338,
     "fecha": "2026-08-24T00:59:59Z",
     "categoria": "Ciberseguridad",
