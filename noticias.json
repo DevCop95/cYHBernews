@@ -1,5 +1,111 @@
 [
   {
+    "id": 2343,
+    "fecha": "2026-08-24T09:41:57Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "La marca de agua de Anthropic, una falsa esperanza para detectar trampas con IA en la educación.",
+    "resumen": "La marca de agua de Anthropic, Claude, no es una solución efectiva para detectar trampas con IA en la educación, ya que no puede afirmar con certeza si un texto fue escrito por un humano o por un modelo de IA. Aunque parece ser una alternativa mejor a los detectores estadísticos tradicionales, su funcionalidad es limitada y no puede distinguir entre la probabilidad de que un texto haya sido escrito por un humano o por un modelo de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218504-81ed5eb52cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1NjQ1MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/profesorado-se-prometia-muy-felices-marca-agua-anthropic-dia-habian-hackeado-no-falta",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la marca de agua de anthropic era la gran esperanza del profesorado ante las trampas con ia el entusiasmo solo duró 24 horas",
+    "ttps": [
+      {
+        "id": "T1564",
+        "name": "Impersonation"
+      },
+      {
+        "id": "T1534",
+        "name": "Internal Spearphishing"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "aapnews.aap.com",
+        "platform.instagram.com",
+        "support.claude.com",
+        "teachinginhighered.com",
+        "www.forbes.com",
+        "www.hepi.ac.uk",
+        "www.reddit.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://aapnews.aap.com.au/aapreleases/cision20260707AE98988",
+        "https://deepmind.google/models/synthid/",
+        "https://i.blogs.es/9e347c/examen-estudiante-chica/375_142.jpeg",
+        "https://i.blogs.es/d1af31/chatgpt-image-20-ago-2026-12_15_46/1024_2000.jpeg",
+        "https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content",
+        "https://teachinginhighered.com/podcast/assessment-reform-for-the-age-of-artificial-intelligence/",
+        "https://www.forbes.com/sites/joetoscano1/2026/08/16/will-ai-watermarks-stick-around-or-are-they-just-for-show/",
+        "https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/"
+      ]
+    }
+  },
+  {
+    "id": 2342,
+    "fecha": "2026-08-24T09:41:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-78321: Falta de limitaciones en el servidor de medios HTTP de drones DJI",
+    "resumen": "El servidor de medios HTTP de los drones DJI no impone límites suficientes a las conexiones o tasas de solicitud entrantes, lo que permite a un atacante agotar la piscina de conexiones del servidor mediante solicitudes repetidas de un archivo de medios almacenado, causando un servicio denegado que impide a la aplicación DJI Fly recuperar fotos y videos del avión en modo QuickTransfer. Este ataque puede ser llevado a cabo por un atacante con acceso a la red interna del drone.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1NjQ1MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/266063",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-78321",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1216",
+        "name": "Network Service Scanning"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-78321"
+      ]
+    }
+  },
+  {
+    "id": 2341,
+    "fecha": "2026-08-24T09:41:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "UAT-10147: Amenaza global con SPECTRE y rootkit en Linux",
+    "resumen": "La organización cibernética UAT-10147, de habla china, está utilizando IA para escalar ataques a servidores Windows y Linux en sectores como educación, medios, tecnología y juegos, aprovechando vulnerabilidades en EDR y desplegando un rootkit en Linux. El objetivo principal parece ser el acceso no autorizado a sistemas y datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1NjQ0ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/uat-10147-uses-ai-to-scale-server.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:uat 10147 uses ai to scale server attacks deploys spectre with edr bypass and linux rootkit",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1053",
+        "name": "Scheduled Task/Job"
+      },
+      {
+        "id": "T1564",
+        "name": "Defense Evasion"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2340,
     "fecha": "2026-08-24T06:47:27Z",
     "categoria": "Ciberseguridad",
