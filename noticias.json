@@ -1,5 +1,117 @@
 [
   {
+    "id": 2347,
+    "fecha": "2026-08-24T15:34:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-9728: Vía de acceso no autorizada a memoria del kernel",
+    "resumen": "Se identificó una vulnerabilidad en el verificador de llamadas de sistema en el espacio de usuario (z_vrfy_mbox_send) en el controlador de mensajería (drivers/mbox/mbox_handlers.c) que permite a un atacante reemplazar la dirección de memoria válida de un mensaje con una dirección de memoria del kernel, permitiendo así el acceso no autorizado a la memoria del kernel. El impacto es la posibilidad de divulgación de contenido de memoria del kernel o, en caso de una dirección de memoria inválida, una denegación de servicio causada por una lectura fallida en el contexto del kernel.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1ODU2NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/266528",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9728",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "Injection"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1020",
+        "name": "Network Service Scanning"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9728"
+      ]
+    }
+  },
+  {
+    "id": 2346,
+    "fecha": "2026-08-24T15:34:14Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "La IA en la educación: un doble filo que amenaza el aprendizaje",
+    "resumen": "Un estudio reciente ha encontrado que la adopción de la IA por parte de estudiantes chinos entre 12 y 18 años ha mejorado su desempeño en los deberes, con una media de aumento del 18% en las puntuaciones en todas las asignaturas. Sin embargo, el estudio también sugiere que la IA puede tener un efecto negativo en el aprendizaje en los exámenes, ya que los estudiantes que usan IA pueden no estar desarrollando las habilidades cognitivas necesarias para resolver problemas de manera efectiva. El estudio analiza la actividad de casi 27.000 estudiantes chinos y encuentra que al menos el 80% de ellos usaba herramientas de IA como DeepSeek o Doubao.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905450-a26e6c964239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1ODU2NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/alumnos-que-usan-ia-hacen-mejor-deberes-problema-llega-examenes",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:los alumnos que usan ia hacen mejor los deberes el problema llega en los exámenes",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "1.0.1.1"
+      ],
+      "domain": [
+        "papers.ssrn.com",
+        "platform.instagram.com",
+        "www.economist.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/28a94f/detector-ia/375_142.jpeg",
+        "https://i.blogs.es/3c7c07/magnific_ahora-haz-zoom-out-que-la_ljpjntagv9/1024_2000.jpeg",
+        "https://i.blogs.es/5710f8/nota-de-examen/1024_2000.jpeg",
+        "https://i.blogs.es/5710f8/nota-de-examen/1366_2000.jpeg",
+        "https://i.blogs.es/5710f8/nota-de-examen/450_1000.jpeg",
+        "https://i.blogs.es/5710f8/nota-de-examen/650_1200.jpeg",
+        "https://i.blogs.es/cb3f24/nota-en-los-deberes/1024_2000.jpeg",
+        "https://i.blogs.es/cb3f24/nota-en-los-deberes/1366_2000.jpeg",
+        "https://i.blogs.es/cb3f24/nota-en-los-deberes/450_1000.jpeg",
+        "https://i.blogs.es/cb3f24/nota-en-los-deberes/650_1200.jpeg",
+        "https://i.blogs.es/d5ad68/tiempo-en-completar-los-deberes/1024_2000.jpeg",
+        "https://i.blogs.es/d5ad68/tiempo-en-completar-los-deberes/1366_2000.jpeg",
+        "https://i.blogs.es/d5ad68/tiempo-en-completar-los-deberes/450_1000.jpeg",
+        "https://i.blogs.es/d5ad68/tiempo-en-completar-los-deberes/650_1200.jpeg",
+        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6868618&__cf_chl_tk=tojhnnVjhSus0.GTkpIvgHDBzvGHAFXA1Ky8CG1IHdE-1787561171-1.0.1.1-GUzDLiblp7agS9YxrlagzhGTk_ClV7bd3bhXy7PPKqU",
+        "https://www.economist.com/graphic-detail/2026/08/18/does-ai-stop-children-from-learning"
+      ]
+    }
+  },
+  {
+    "id": 2345,
+    "fecha": "2026-08-24T15:34:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "WordlistLoader y SynkLoader: Nuevas amenazas de malware para Windows",
+    "resumen": "Los investigadores de ciberseguridad han identificado dos nuevas familias de malware, WordlistLoader y SynkLoader, que se utilizan para entregar payloads de etapa siguiente y probablemente vender acceso a grupos de ransomware. WordlistLoader está siendo utilizado para entregar el troyano Amatera Stealer a través de campañas ClearFake que emplean ClickFix.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1ODU2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:wordlistloader delivers amatera via clickfix synkloader phishes windows passwords",
+    "ttps": [
+      {
+        "id": "T1056",
+        "name": "Input Validation"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1218.005",
+        "name": "Signed Binary Proxy Execution: Windows Service"
+      },
+      {
+        "id": "T1219",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1219.001",
+        "name": "Exploit Public-Facing Application: Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2344,
     "fecha": "2026-08-24T12:39:07Z",
     "categoria": "Ciberseguridad",
