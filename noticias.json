@@ -1,5 +1,32 @@
 [
   {
+    "id": 2355,
+    "fecha": "2026-08-25T06:37:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Flaw de Reinicio de Contraseña en Keycloak Pone en Riesgo Cualquier Cuenta",
+    "resumen": "Se identificó una vulnerabilidad crítica en Keycloak que permite a atacantes no autenticados tomar el control de cualquier cuenta de usuario forzando un reinicio de contraseña. El CVE-2026-18963 tiene una puntuación de 9.1 en el sistema de puntuación CVSS. El impacto es significativo, ya que un atacante no autenticado puede acceder a cualquier cuenta sin necesidad de credenciales válidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2Mzk4NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/critical-keycloak-password-reset-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-18963",
+    "ttps": [
+      {
+        "id": "T1212",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1212.001",
+        "name": "Unauthenticated Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-18963"
+      ]
+    }
+  },
+  {
     "id": 2354,
     "fecha": "2026-08-25T03:43:49Z",
     "categoria": "Ciberseguridad",
