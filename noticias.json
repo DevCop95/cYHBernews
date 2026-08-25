@@ -1,5 +1,80 @@
 [
   {
+    "id": 2383,
+    "fecha": "2026-08-25T21:22:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Interpol desmantela red de crime‑as‑a‑service con 58 arrestos internacionales",
+    "resumen": "Operación coordinada por Interpol expuso una infraestructura de servicio criminal en Argentina que suministraba dominios y lavado de dinero a grupos organizados de África Occidental, como Black Axe, facilitando campañas de phishing y ransomware. El derribo afecta a más de 196 actores y corta un vector crítico de monetización para ciberamenazas transnacionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2OTI5NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/58-arrested-international-cybercrime-crackdown-interpol",
+    "fuente": "The Record",
+    "dedup_key": "txt:58 arrested in international cybercrime crackdown",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2382,
+    "fecha": "2026-08-25T21:22:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque con “hidden prompts” engaña a resumidores de IA en correos electrónicos",
+    "resumen": "Investigadores descubren que código HTML oculto permite a atacantes inyectar prompts maliciosos en sistemas de resumen de IA, forzando a generar respuestas con información falsa o enlaces de phishing. El vector combina vulnerabilidad de entrada no sanitizada con modelos de lenguaje integrados en plataformas de correo.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2OTI5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/hidden-prompts-trick-ai-false-email-summaries",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:hidden prompts trick ai into false email summaries",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2381,
+    "fecha": "2026-08-25T21:22:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "AnonyMousKIT PhaaS emplea agentes de IA de voz para robar códigos de desbloqueo",
+    "resumen": "La plataforma Phishing-as-a-Service AnonyMousKIT automatiza ataques de ingeniería social mediante agentes de voz basados en IA que simulan llamadas de soporte de Apple, capturando contraseñas y códigos de activación para eludir el Activation Lock. El vector combina vulnerabilidad humana con IA generativa, ampliando la escala y efectividad del phishing contra dispositivos iOS.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2OTI5NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/anonymouskit-phaas-uses-voice-ai-agents-to-phish-iphone-passcodes/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anonymouskit phaas uses voice ai agents to phish iphone passcodes",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2380,
+    "fecha": "2026-08-25T21:22:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña masiva de phishing dirige ofertas de condonación a 9.000 organizaciones",
+    "resumen": "Check Point detectó y bloqueó una campaña de phishing que utilizaba correos falsos de condonación de deudas y ayudas financieras para engañar a empleados y robar credenciales. El vector principal es spear‑phishing por email, con potencial de compromiso de redes corporativas y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2OTI5NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/una-campana-masiva-de-phishing-apunta-a-mas-de-9-000-organizaciones/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:una campaña masiva de phishing apunta a más de 9 000 organizaciones",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2379,
     "fecha": "2026-08-25T18:33:55Z",
     "categoria": "Ciberseguridad",
