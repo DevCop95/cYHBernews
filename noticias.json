@@ -1,5 +1,96 @@
 [
   {
+    "id": 2376,
+    "fecha": "2026-08-25T15:38:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica CVE‑2025‑34025 permite escape de contenedor en Versa Conc",
+    "resumen": "La falla de escalada de privilegios y escape de contenedor en Versa Concerto (v12.1.2‑12.2.0) se debe a un montaje inseguro de rutas binarias del host, posibilitando ejecución remota de código o acceso directo al host. Impacta la integridad de la infraestructura SD‑WAN y requiere parcheo inmediato o mitigaciones de hardening.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NzIyODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-34025",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-34025",
+    "ttps": [
+      {
+        "id": "T1610",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1611",
+        "name": "Escape to Host"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-34025"
+      ]
+    }
+  },
+  {
+    "id": 2375,
+    "fecha": "2026-08-25T15:37:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Ucrania comparte datos de campo de batalla con Reino Unido para entrenar IA mili",
+    "resumen": "Ucrania entregará a empresas y centros de investigación británicos un extenso conjunto de datos operacionales recopilados durante el conflicto con Rusia, habilitando el entrenamiento y validación de modelos de IA orientados a análisis de inteligencia, detección de patrones de movimiento y predicción de amenazas. El acceso plantea riesgos de exposición de información sensible y posibles vectores de explotación por actores adversarios si los datos no se anonimicen y protejan adecuadamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NzIyNjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ukraine-uk-ai-drone-data",
+    "fuente": "The Record",
+    "dedup_key": "txt:ukraine to give britain access to battlefield data to train ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2374,
+    "fecha": "2026-08-25T15:37:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Obfuscación de IPs como hostnames facilita evasión de filtros SSRF",
+    "resumen": "Los atacantes usan hostnames que resuelven a direcciones internas (ej. 169.254.169.254) para eludir reglas basadas en texto y explotar vulnerabilidades SSRF en servicios cloud. Se recomienda bloquear a nivel de DNS o aplicar listas de bloqueo de IPs en lugar de cadenas literales.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NzIyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33280",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:obfuscating ip addresses as hostnames tue aug 25th",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2373,
+    "fecha": "2026-08-25T15:37:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Página maliciosa puede comprometer modelos locales vía NVIDIA NemoClaw",
+    "resumen": "Oasis Security descubrió que una página web controlada por un atacante puede tomar control no autenticado de una instancia local de Ollama que ejecuta un agente de IA, inyectando instrucciones ocultas directamente en el modelo a través de la vulnerabilidad de NVIDIA NemoClaw. Este vector de ataque permite la manipulación de modelos de IA en entornos on‑premise, elevando el riesgo de sabotaje de datos y ejecución de código malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NzIyNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/a-malicious-webpage-could-poison-your.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:a malicious webpage could poison your local ai model behind nvidia nemoclaw",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive‑by Compromise"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2372,
     "fecha": "2026-08-25T12:38:36Z",
     "categoria": "Ciberseguridad",
