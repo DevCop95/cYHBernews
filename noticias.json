@@ -1,5 +1,81 @@
 [
   {
+    "id": 2379,
+    "fecha": "2026-08-25T18:33:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-80051 en graphql-go permite bypass de validación y posible stack overfl",
+    "resumen": "La biblioteca GraphQL para Go (github.com/graphql-go/graphql ≤ 0.8.1) no valida que los valores escalares coincidan con su tipo declarado, permitiendo inyección de datos malformados que pueden desencadenar un error fatal de “stack overflow”. El vector de ataque es la manipulación de variables scalar en peticiones GraphQL, afectando a cualquier servicio que exponga una API GraphQL basada en esta librería.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2ODI4MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/269072",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-80051",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499.001",
+        "name": "Endpoint Denial of Service (Stack Overflow)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-80051"
+      ]
+    }
+  },
+  {
+    "id": 2378,
+    "fecha": "2026-08-25T18:33:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-42167: RCE vía SQLi en ProFTPD mod_sql post‑auth",
+    "resumen": "La vulnerabilidad CVE‑2026‑42167 permite a un atacante autenticado ejecutar código arbitrario en servidores ProFTPD que usan el módulo mod_sql, explotando una inyección SQL después de la autenticación. El vector de ataque es la manipulación de consultas SQL en la fase post‑auth, lo que posibilita escalada de privilegios y compromiso total del host FTP.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2ODI4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52658",
+    "fuente": "Exploit-DB",
+    "dedup_key": "cve:cve-2026-42167",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-42167"
+      ]
+    }
+  },
+  {
+    "id": 2377,
+    "fecha": "2026-08-25T18:33:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "WhatsApp habilita passkeys múltiples para autenticación resistente al phishing e",
+    "resumen": "Meta implementa soporte para varios passkeys por cuenta, permitiendo a usuarios con dispositivos iOS y Android iniciar sesión sin contraseñas y mitigando ataques de phishing basados en credenciales. La medida se extiende a más de 1 000 millones de usuarios, reforzando la postura de seguridad de la plataforma de mensajería.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2ODI3ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/whatsapp-adds-multiple-passkeys-for.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:whatsapp adds multiple passkeys for phishing resistant sign ins across ios and android",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2376,
     "fecha": "2026-08-25T15:38:02Z",
     "categoria": "Ciberseguridad",
