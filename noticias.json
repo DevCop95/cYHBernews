@@ -1,5 +1,63 @@
 [
   {
+    "id": 2367,
+    "fecha": "2026-08-25T09:30:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2023-3268: OOB en relayfs permite fuga de información del kernel Linux",
+    "resumen": "Vulnerabilidad de acceso fuera de límites en la función relay_file_read_start_pos del módulo relayfs del kernel Linux (CVSS 7.1) permite a un atacante local provocar denegación de servicio o extraer datos internos del kernel. Afecta distribuciones basadas en Linux, incluyendo Debian, y requiere privilegios locales para su explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NTAyNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-3268",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-3268",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-3268"
+      ]
+    }
+  },
+  {
+    "id": 2366,
+    "fecha": "2026-08-25T09:30:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "ToxicPanda evoluciona a amenaza empresarial en Android",
+    "resumen": "La nueva variante del troyano bancario ToxicPanda incorpora módulos de evasión y carga lateral que amplían su superficie de ataque a aplicaciones financieras corporativas, incrementando el riesgo de exfiltración de credenciales y fraude.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NTAyMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/mobile-security/toxicpanda-banking-trojan-matures-enterprise-threat",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:toxicpanda banking trojan matures into enterprise threat",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1081",
+        "name": "Credentials in Files"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2365,
     "fecha": "2026-08-25T07:35:41Z",
     "categoria": "Ciberseguridad",
