@@ -1,5 +1,129 @@
 [
   {
+    "id": 2372,
+    "fecha": "2026-08-25T12:38:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "IA genera exploit para rootear tablet Amazon Fire HD 10 usando CVE‑2022‑38181",
+    "resumen": "Tres modelos de lenguaje (Kimi K3, Fable 5 y Claude 4.8) asistieron al investigador en la elaboración de un toolkit que aprovecha la vulnerabilidad CVE‑2022‑38181, aún sin parchear en Fire OS 7.3.2.9, para obtener privilegios de root en una Fire HD 10. El método, aunque no 100 % fiable, demuestra la capacidad de LLMs para automatizar la búsqueda y explotación de vulnerabilidades en dispositivos IoT.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NjE1MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/mi-dispositivo-asi-como-tres-modelos-ia-liberaron-tablet-amazon-que-parecia-imposible-rootear",
+    "fuente": "Xataka IA",
+    "dedup_key": "cve:cve-2022-38181",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "7.3.2.9"
+      ],
+      "domain": [
+        "ericpardee.github.io",
+        "es.wikipedia.org",
+        "www.xataka.com",
+        "xdaforums.com"
+      ],
+      "url": [
+        "https://ericpardee.github.io/fire-hd-ownership/",
+        "https://i.blogs.es/c5b5c3/glm53-rooted-verified/1024_2000.png",
+        "https://i.blogs.es/c5b5c3/glm53-rooted-verified/1366_2000.png",
+        "https://i.blogs.es/c5b5c3/glm53-rooted-verified/450_1000.png",
+        "https://i.blogs.es/c5b5c3/glm53-rooted-verified/650_1200.png",
+        "https://i.blogs.es/c8ce8c/pardee/1024_2000.png",
+        "https://i.blogs.es/c8ce8c/pardee/1366_2000.png",
+        "https://i.blogs.es/c8ce8c/pardee/450_1000.png",
+        "https://i.blogs.es/c8ce8c/pardee/650_1200.png",
+        "https://i.blogs.es/f9903a/amazon-fire-hd/1024_2000.jpeg",
+        "https://xdaforums.com/t/potential-arm-mali-gpu-based-root-firehd-8th-12th-gen-affected.4574635/"
+      ],
+      "cve": [
+        "CVE-2022-38181"
+      ]
+    }
+  },
+  {
+    "id": 2371,
+    "fecha": "2026-08-25T12:38:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Gran ataque DDoS derriba servicios públicos noruegos",
+    "resumen": "La Agencia Noruega de Digitalización reportó un ataque distribuido de denegación de servicio que saturó la infraestructura crítica, obligando a activar planes de mitigación con su proveedor de TI; la restauración es gradual y se monitorean vectores de amplificación.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NjE0OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/norway-cyberattack-ddos-government",
+    "fuente": "The Record",
+    "dedup_key": "txt:large ddos attack knocks norwegian public services offline",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "Direct Network Flood"
+      },
+      {
+        "id": "T1499.002",
+        "name": "Reflection Amplification"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2370,
+    "fecha": "2026-08-25T12:38:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "La brecha de vulnerabilidades: IA acelera descubrimientos mientras la reparación",
+    "resumen": "Los modelos de IA están identificando vulnerabilidades (CVE) a una velocidad sin precedentes, superando la capacidad de los equipos de parcheo y aumentando la exposición ante exploits y zero‑days en un contexto regulatorio más estricto.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NjE0ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/vulnerability-gap-why-discovery-is-outrunning-repair",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:the vulnerability gap why discovery is outrunning repair",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2369,
+    "fecha": "2026-08-25T12:37:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Mirage2FA compromete 4.500 empresas US y EU mediante abuso de flujos M365",
+    "resumen": "La campaña phishing‑as‑a‑service Mirage2FA usa técnicas de “login‑flow hijacking” en Microsoft 365 para eludir la autenticación de dos factores, logrando comprometer hasta el 48 % de los correos objetivo y afectando a más de 4.500 organizaciones en EE. UU y UE.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NjE0Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/mirage2fa-surge-hits-4500-us-and-eu.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:mirage2fa surge hits 4 500 us and eu companies abusing microsoft 365 login flows",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2368,
+    "fecha": "2026-08-25T12:37:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers comprometen más de 270 servidores Zimbra mediante RCE crítica",
+    "resumen": "Se ha explotado una vulnerabilidad de ejecución remota de código (CVE‑2024‑XXXXX) en Zimbra Collaboration Suite, comprometiendo más de 270 instancias y permitiendo a los atacantes ejecutar payloads arbitrarios y potencialmente instalar ransomware o exfiltrar datos. El vector de ataque se basa en solicitudes HTTP manipuladas que aprovechan la falta de validación de entrada en el módulo de gestión de archivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NjE0NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-breached-over-270-zimbra-servers-in-ongoing-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers breached over 270 zimbra servers in ongoing attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2367,
     "fecha": "2026-08-25T09:30:51Z",
     "categoria": "Ciberseguridad",
