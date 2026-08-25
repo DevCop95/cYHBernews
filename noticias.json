@@ -1,5 +1,82 @@
 [
   {
+    "id": 2360,
+    "fecha": "2026-08-25T07:26:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2025-46252: Inyección SQL en filtro de mensajes de Contact Form 7 (CV",
+    "resumen": "CVE-2025-46252: Inyección SQL en filtro de mensajes de Contact Form 7 (CV",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NDI3NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-46252",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-46252",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "1.6.3.2"
+      ],
+      "cve": [
+        "CVE-2025-46252"
+      ]
+    }
+  },
+  {
+    "id": 2359,
+    "fecha": "2026-08-25T07:25:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "EE.UU. sanciona a actores cibernéticos iraníes tras ataque a planta eléctrica del Reino Unido",
+    "resumen": "El Departamento del Tesoro de EE.UU. impuso sanciones a varios individuos vinculados a grupos de amenaza iraníes por su participación en campañas de intrusión contra infraestructuras críticas, incluido un ataque de acceso remoto no autorizado a una pequeña planta de generación eléctrica en el Reino Unido",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NDI3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/iran-cyberattacks-us-uk",
+    "fuente": "The Record",
+    "dedup_key": "txt:us sanctions iranian cyber actors as uk discloses power plant attack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2358,
+    "fecha": "2026-08-25T07:25:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad sin parche en routers Calix permite eludir NAT y exponer dispositivos internos",
+    "resumen": "Un flaw no corregido en los routers residenciales Calix GS7 XGS (GS5239XG) permite a atacantes remotos y no autenticados crear reglas de port‑forwarding, exponiendo equipos de la LAN al Internet público. La vulnerabilidad afecta a varios proveedores de banda ancha en EE. UU., incrementando el riesgo de acceso no autorizado y de pivoting interno.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NDI3MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/unpatched-calix-flaw-lets-hackers-bypass-nat-to-expose-internal-devices/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:unpatched calix flaw lets hackers bypass nat to expose internal devices",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2357,
+    "fecha": "2026-08-25T07:25:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA acelera el descubrimiento de vulnerabilidades: ¿una nueva carrera armamentista?",
+    "resumen": "Los modelos de lenguaje y herramientas de generación automática de exploits están reduciendo los ciclos de descubrimiento de CVE de meses a semanas, ampliando la superficie de ataque para actores tanto estatales como criminales. La tendencia sugiere que los equipos de defensa deberán integrar detección basada en IA y análisis de comportamiento para contrarrestar exploits generados en tiempo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NDI3Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/futuro-del-descubrimiento-de-vulnerabilidades-con-ia/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:black hat usa 2026 caerá el descubrimiento de vulnerabilidades en la era de la ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2356,
+    "fecha": "2026-08-25T07:25:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Iberia Cards refuerza su defensa con validación continua IA‑Humanos",
+    "resumen": "Iberia Cards ha integrado Synack Red Team y las pruebas de penetración de Sara AI para automatizar la detección de vulnerabilidades y validar controles en tiempo real, combinando modelos de IA de análisis de código con expertos de red‑team. La estrategia permite cubrir vectores de ataque de día cero y reducir la ventana de exposición en entornos regulados por el Banco de España.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NDI3MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/iberia-cards-apuesta-por-la-validacion-continua-de-la-ciberseguridad-con-ia-y-expertos-humanos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:iberia cards apuesta por la validación continua de la ciberseguridad con ia y expertos humanos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2355,
     "fecha": "2026-08-25T06:37:56Z",
     "categoria": "Ciberseguridad",
