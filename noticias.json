@@ -1,5 +1,32 @@
 [
   {
+    "id": 2354,
+    "fecha": "2026-08-25T03:43:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "🔴 CVE-2020-3478: Sobrescritura de archivos en NFVIS de Cisco",
+    "resumen": "La vulnerabilidad CVE-2020-3478 en la API REST de Cisco Enterprise NFV Infrastructure Software (NFVIS) permite a un atacante remoto autenticado sobrescribir archivos restringidos, lo que podría degradar la funcionalidad del sistema. Un atacante podría cargar un archivo malicioso usando la API REST.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2Mjk0MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-3478",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-3478",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "Injection"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2020-3478"
+      ]
+    }
+  },
+  {
     "id": 2353,
     "fecha": "2026-08-25T00:59:38Z",
     "categoria": "Ciberseguridad",
