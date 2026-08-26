@@ -1,5 +1,62 @@
 [
   {
+    "id": 2387,
+    "fecha": "2026-08-26T06:40:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-80138 permite ejecución remota de comandos en ClipBucket V5",
+    "resumen": "La vulnerabilidad en el instalador web de ClipBucket V5 no valida ni escapa el parámetro php_cli_filepath, lo que permite a atacantes no autenticados enviar una petición POST manipulada y ejecutar comandos arbitrarios con los privilegios del usuario del servidor web.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3MjY0MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/269721",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-80138",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.004",
+        "name": "Command and Scripting Interpreter: Unix Shell"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-80138"
+      ]
+    }
+  },
+  {
+    "id": 2386,
+    "fecha": "2026-08-26T06:40:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2020-10672: Vulnerabilidad crítica en Jackson‑databind (CVSS 8.8)",
+    "resumen": "La versión vulnerable de fasterxml:jackson-databind permite la deserialización maliciosa mediante gadgets de org.apache.aries.transaction.jms.internal.XaPooledConnectionFactory, facilitando ejecución remota de código. Afecta a entornos Java que usan Jackson < 2.9.10.4, incluyendo productos como NetApp SteelStore y distribuciones Debian.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3MjY0MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-10672",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-10672",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "2.9.10.4"
+      ],
+      "cve": [
+        "CVE-2020-10672"
+      ]
+    }
+  },
+  {
     "id": 2385,
     "fecha": "2026-08-26T03:49:58Z",
     "categoria": "Ciberseguridad",
