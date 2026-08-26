@@ -1,5 +1,54 @@
 [
   {
+    "id": 2389,
+    "fecha": "2026-08-26T09:36:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2020-10673: Vulnerabilidad crítica en Jackson‑Databind permite ejecución rem",
+    "resumen": "La falla en versiones < 2.9.10.4 de FasterXML Jackson‑Databind permite la deserialización maliciosa de gadgets vía com.caucho.config.types.ResourceRef, facilitando ejecución de código arbitrario en entornos Java. Impacta servidores que procesan datos JSON sin validación, especialmente en despliegues Debian y soluciones NetApp SteelStore.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3MzY5Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-10673",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-10673",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "2.9.10.4"
+      ],
+      "cve": [
+        "CVE-2020-10673"
+      ]
+    }
+  },
+  {
+    "id": 2388,
+    "fecha": "2026-08-26T09:35:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers explotan mirrors de npm para alojar páginas de phishing con falsos CAPTC",
+    "resumen": "Se detectó que actores de amenaza utilizan repositorios espejo de npm para servir HTML malicioso que imita los CAPTCHAs de Cloudflare, redirigiendo a usuarios a sitios controlados por los atacantes y facilitando campañas de phishing. El vector de ataque aprovecha la confianza en los paquetes npm y la falta de validación de contenido estático en los mirrors.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3MzY5MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-abuse-npm-mirrors-to-host-phishing-redirect-pages/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers abuse npm mirrors to host phishing redirect pages",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Supply Chain Compromise: Software Supply Chain"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2387,
     "fecha": "2026-08-26T06:40:13Z",
     "categoria": "Ciberseguridad",
