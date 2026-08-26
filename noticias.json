@@ -1,5 +1,159 @@
 [
   {
+    "id": 2396,
+    "fecha": "2026-08-26T16:14:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers vinculados a Irán amplían infraestructura en Europa y Oriente Medio",
+    "resumen": "Investigadores detectaron nuevos servidores y dominios asociados a un grupo de amenazas persistentes respaldado por Irán, ampliando su superficie de ataque en múltiples países europeos y del Medio Oriente, lo que sugiere una campaña de reconocimiento y posible despliegue de malware dirigido.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NjA4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/iran-linked-hackers-expand-infrastructure-europe-middle-east",
+    "fuente": "The Record",
+    "dedup_key": "txt:iran linked hackers expand infrastructure across europe and middle east report says",
+    "ttps": [
+      {
+        "id": "T1583.001",
+        "name": "Acquire Infrastructure: Domain Registration"
+      },
+      {
+        "id": "T1584.001",
+        "name": "Compromise Infrastructure: Domains"
+      },
+      {
+        "id": "T1595.001",
+        "name": "Search Open Websites/Domains"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2395,
+    "fecha": "2026-08-26T16:14:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Riesgo de privilegios excesivos en Entra ID: quién tiene derechos de administrad",
+    "resumen": "La falta de revisión continua de los permisos de administrador en Azure Entra ID permite que cuentas inactivas o ex‑empleados mantengan privilegios críticos, facilitando modificaciones no autorizadas o eliminación de recursos. Se recomienda auditorías periódicas y aplicación de principios de least privilege para mitigar escaladas de privilegio internas.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NjA4Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33284",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:who has admin rights in your entra id directory x3f wed aug 26th",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1087.004",
+        "name": "Cloud Account"
+      },
+      {
+        "id": "T1069.002",
+        "name": "Permission Group Discovery: Cloud Groups"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1089",
+        "name": "Disabling Security Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2394,
+    "fecha": "2026-08-26T16:14:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "NovaCookies usa notificaciones falsas de DocuSign para secuestrar sesiones de Mi",
+    "resumen": "Investigadores de ciberseguridad identificaron NovaCookies, un toolkit AitM de phishing que actúa como proxy y redirige inicios de sesión de Microsoft 365 capturando tokens de sesión válidos mediante notificaciones legítimas de DocuSign. La operación se ofrece como servicio de suscripción ($320/mes), permitiendo a los actores robar credenciales y acceder a recursos corporativos sin interacción adicional del usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NjA4NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/novacookies-campaigns-abuse-genuine.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:novacookies campaigns abuse genuine docusign notifications to steal microsoft 365 sessions",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1606.003",
+        "name": "Web Session Cookie"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing (Credential Theft via Token Capture)"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2393,
+    "fecha": "2026-08-26T16:14:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Boston Scientific sufre ciberataque que interrumpe operaciones globales",
+    "resumen": "Un ataque dirigido comprometió varios sistemas IT críticos de Boston Scientific, provocando interrupciones operativas en sus unidades de producción y soporte a nivel mundial; se sospecha de un vector de phishing con credenciales comprometidas y posible ransomware en fase de despliegue.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NjA4NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/boston-scientific-says-cyberattack-disrupted-operations-globally/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:boston scientific says cyberattack disrupted operations globally",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2392,
+    "fecha": "2026-08-26T16:14:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "SLEEPWALKER: puerta trasera para Windows que se activa con un solo paquete cifra",
+    "resumen": "SLEEPWALKER es un implante de acceso remoto que permanece dormido en sistemas Windows hasta recibir un único paquete de red cifrado a medida, momento en el que descifra y ejecuta su propio bytecode, minimizando la huella de red y dificultando la detección por EDR/SIEM. Su mecanismo de activación “single‑packet wake‑up” representa un nuevo vector de compromiso de bajo ruido para campañas APT dirigidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NjA4NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/sleepwalker-introduce-una-puerta-trasera-para-windows-que-solo-despierta-con-un-unico-paquete-de-red-2/?utm_source=rss&utm_medium=rss&utm_campaign=sleepwalker-introduce-una-puerta-trasera-para-windows-que-solo-despierta-con-un-unico-paquete-de-red-2",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:sleepwalker introduce una puerta trasera para windows que solo despierta con un único paquete de red",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/sleepwalker-introduce-una-puerta-trasera-para-windows-que-solo-despierta-con-un-unico-paquete-de-red-2/"
+      ]
+    }
+  },
+  {
     "id": 2391,
     "fecha": "2026-08-26T12:42:03Z",
     "categoria": "Ciberseguridad",
