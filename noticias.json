@@ -1,5 +1,131 @@
 [
   {
+    "id": 2401,
+    "fecha": "2026-08-26T19:42:07Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Hack a OpenAI y Hugging Face expone fallas críticas en la gestión de agentes IA",
+    "resumen": "Un ataque que comprometió los tokens de acceso de OpenAI y Hugging Face reveló que los agentes de IA pudieron operar sin restricciones, evidenciando una falta de controles de sandboxing y monitoreo de comportamiento. El incidente permite a actores maliciosos ejecutar prompts no autorizados, potencialmente generando código malicioso o filtrando datos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1781209443149-dd12a52cc358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NzMzMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/openais-hugging-face-hack-debrief-raises-more-questions-than-it-answers/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:openai s hugging face hack debrief raises more questions than it answers",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2400,
+    "fecha": "2026-08-26T19:41:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Monitores de bebé con IA amplían la vigilancia de datos infantiles",
+    "resumen": "Empresas como Nanit están integrando modelos de IA para monitorizar salud, desarrollo del habla y habilidades motoras de menores, creando flujos continuos de datos sensibles que aumentan la superficie de ataque para espionaje y abuso de privacidad. La expansión de estos dispositivos a la adolescencia eleva el riesgo de explotación mediante vulnerabilidades en firmware o accesos no autorizados a la nube.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NzMzMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/spyware-for-babies.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:spyware for babies",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.nytimes.com"
+      ],
+      "url": [
+        "https://archive.is/CffBe",
+        "https://www.nytimes.com/2026/08/02/business/smart-baby-monitors-nanit-owlet.html"
+      ]
+    }
+  },
+  {
+    "id": 2399,
+    "fecha": "2026-08-26T19:41:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware Android secuestra el sistema de actualización de unidades de coche",
+    "resumen": "Un botnet de click‑fraude está explotando la funcionalidad de actualización legítima de los módulos de infotainment Android para desplegar malware, comprometiendo la integridad del software del vehículo y permitiendo control remoto y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NzMzMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/android-malware-hijacks-update-system-car-head-units",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:android malware hijacks update system for car head units",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Supply Chain"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2398,
+    "fecha": "2026-08-26T19:41:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "FBI desmantela infraestructura QTFY china que robaba datos de organizaciones est",
+    "resumen": "El DOJ informó la interrupción de las plataformas de ataque QScan y QTRouter, operadas por el grupo estatal chino QTFY, usadas para infiltrar infraestructuras críticas y exfiltrar datos sensibles mediante técnicas de spear‑phishing y movimiento lateral. La acción reduce la capacidad de exfiltración de información confidencial y mitiga la exposición de redes gubernamentales y corporativas en EE. UU.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NzMzMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/fbi-disrupts-china-linked-qtfy.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fbi disrupts china linked qtfy infrastructure used to steal data from u s organizations",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1584.001",
+        "name": "Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2397,
+    "fecha": "2026-08-26T19:41:36Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "GPUThor vulnera la protección ECC de GPUs NVIDIA y otorga acceso root",
+    "resumen": "Se ha revelado un ataque Rowhammer denominado GPUThor que elude el error‑correcting code (ECC) de GPUs NVIDIA, permitiendo denegación de servicio y escalada de privilegios a nivel de root en sistemas que dependen de aceleración AI/ML. El vector explota fallas en la gestión de memoria de la GPU, comprometiendo entornos de entrenamiento y despliegue de modelos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905916-1f9786324de9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NzMyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-gputhor-attack-defeats-nvidia-ecc-protection-for-root-access/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new gputhor attack defeats nvidia ecc protection for root access",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2396,
     "fecha": "2026-08-26T16:14:37Z",
     "categoria": "Ciberseguridad",
