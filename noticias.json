@@ -1,5 +1,46 @@
 [
   {
+    "id": 2391,
+    "fecha": "2026-08-26T12:42:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-79912 permite ejecución remota de comandos en routers TOTOLINK N600R",
+    "resumen": "Vulnerabilidad de command injection en la función getCurrentTime del CGI /cgi-bin/cstecgi.cgi permite a un atacante remoto inyectar comandos arbitrarios mediante el parámetro ntp_server. El exploit está publicado, exponiendo dispositivos TOTOLINK N600R con firmware 4.3.0cu.7647_B20210106 a compromisos completos del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NDgxMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/269720",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-79912",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-79912"
+      ]
+    }
+  },
+  {
+    "id": 2390,
+    "fecha": "2026-08-26T12:41:18Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "SOC sin colas: de la acumulación de alertas a un motor de hipótesis IA",
+    "resumen": "La propuesta elimina el backlog de alertas mediante un motor de hipótesis basado en IA que prioriza y genera contextos de investigación automática, reduciendo la dependencia de la revisión humana y acelerando la detección de amenazas. Se plantea un cambio de arquitectura que integra modelos de lenguaje y embeddings para correlacionar eventos y sugerir acciones de mitigación en tiempo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219074-943fc738e5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3NDgwNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/imagine-soc-without-queue-from-alert.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:imagine the soc without a queue from alert backlog to ai hypothesis engine",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2389,
     "fecha": "2026-08-26T09:36:07Z",
     "categoria": "Ciberseguridad",
