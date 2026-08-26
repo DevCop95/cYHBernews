@@ -1,5 +1,23 @@
 [
   {
+    "id": 2384,
+    "fecha": "2026-08-26T01:01:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica CVE‑2018‑1258 en Spring Framework permite bypass de autor",
+    "resumen": "La versión 5.0.5 de Spring Framework, combinada con cualquier versión de Spring Security, presenta una omisión de autorización en la seguridad de métodos, permitiendo a un atacante no autenticado ejecutar funciones restringidas. Impacta a aplicaciones Java que dependen de Spring, exponiendo datos y lógica de negocio críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3MDYwNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-1258",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-1258",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2018-1258"
+      ]
+    }
+  },
+  {
     "id": 2383,
     "fecha": "2026-08-25T21:22:43Z",
     "categoria": "Ciberseguridad",
