@@ -1,5 +1,139 @@
 [
   {
+    "id": 2406,
+    "fecha": "2026-08-27T00:24:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad RCE CVE‑2019‑1068 en Microsoft SQL Server 2016 (CVSS 8.8)",
+    "resumen": "Se detectó una vulnerabilidad de ejecución remota de código (RCE) en Microsoft SQL Server 2016 que permite a un atacante sin autenticación inyectar y ejecutar comandos arbitrarios mediante el manejo incorrecto de funciones internas del motor de base de datos. El vector de ataque es remoto a través de la red, explotable mediante paquetes especialmente formados dirigidos al puerto del servicio SQL.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3OTAyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2019-1068",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2019-1068",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2019-1068"
+      ]
+    }
+  },
+  {
+    "id": 2405,
+    "fecha": "2026-08-27T00:24:42Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Exportación ilegal de servidores IA con GPUs B300 de NVIDIA a China detectada en",
+    "resumen": "La Fiscalía de Keelung acusa a nueve personas, entre empleados de NVIDIA Taiwan y Super Micro Taiwan, de falsificar declaraciones de uso para exportar 130 servidores equipados con GPUs B300, el 74 % de los cuales llegaron a clientes chinos, vulnerando controles de exportación de tecnología estratégica. El esquema revela riesgos de cadena de suministro y posibles brechas de cumplimiento de sanciones EE.UU.-China.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557010061-315772f6efef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3OTAyODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/componentes/nvidia-fabrica-sus-chips-eeuu-taiwan-problema-que-algunos-servidores-ia-acabaron-donde-no-debian",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nvidia fabrica sus chips entre eeuu y taiwán el problema es que algunos servidores de ia acabaron donde no debían",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "blogs.nvidia.com",
+        "dw1.s81c.com",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://blogs.nvidia.com/blog/tsmc-blackwell-manufacturing/",
+        "https://dw1.s81c.com/IMWUC/FeaturedImages/56e86b07-69ea-4aed-89dd-5d2d80e642ef-L.Png",
+        "https://i.blogs.es/2f8e71/b-300-nvidia-china/1024_2000.jpeg",
+        "https://i.blogs.es/9eedec/dao-hi-u-yro0qquzh-y-unsplash/375_142.jpeg",
+        "https://www.klc.moj.gov.tw/media/450456/1150824%E5%9F%BA%E6%AA%A2%E5%81%B5%E7%B5%90%E4%B8%8D%E6%B3%95%E5%87%BA%E5%8F%A3%E9%AB%98%E9%9A%8E%E4%BC%BA%E6%9C%8D%E5%99%A8%E6%A1%88%E4%BB%B6%E6%96%B0%E8%81%9E%E7%A8%BF.pdf",
+        "https://www.reuters.com/world/china/prices-nvidias-b300-server-1-million-china-us-curbs-sources-say-2026-04-30",
+        "https://www.trade.gov.tw/Pages/Detail.aspx?nodeID=4433&pid=725764&utm_source"
+      ]
+    }
+  },
+  {
+    "id": 2404,
+    "fecha": "2026-08-27T00:24:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Dark Caracal despliega GoCaracal, nuevo framework modular de espionaje cibernéti",
+    "resumen": "GoCaracal amplía la capacidad de extracción de datos y persistencia de Dark Caracal mediante módulos personalizables, facilitando despliegues rápidos y evasión de EDR. El vector principal sigue siendo spear‑phishing con documentos maliciosos y abuso de credenciales comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3OTAyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/dark-caracal-adds-new-malware-cyber-espionage-arsenal",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:dark caracal adds new malware to cyber espionage arsenal",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2403,
+    "fecha": "2026-08-27T00:24:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Nimbus Manticore despliega backdoor tipo TWOSTROKE y tunelizador SSH",
+    "resumen": "El grupo iraní APT, vinculado al IRGC, amplía su infraestructura con un nuevo payload que actúa como backdoor estilo TWOSTROKE y un módulo de túnel SSH, facilitando exfiltración persistente y movimiento lateral en entornos Windows y Linux. La detección se basa en indicadores de compromiso (C2, hashes) y sugiere campañas dirigidas a sectores críticos en 2026.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3OTAyNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:nimbus manticore expands toolset with twostroke like backdoor and ssh tunneler",
+    "ttps": [
+      {
+        "id": "T1572",
+        "name": "Protocol Tunneling"
+      },
+      {
+        "id": "T1021.004",
+        "name": "Remote Services: SSH"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2402,
+    "fecha": "2026-08-27T00:24:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en tema Avada de WordPress permite RCE sin interacción",
+    "resumen": "Una cadena de vulnerabilidades en el tema Avada permite a un atacante no autenticado ejecutar código PHP arbitrario en el servidor mediante un exploit zero‑click, comprometiendo la integridad de los sitios web que lo usan. El vector de ataque se basa en la manipulación de peticiones HTTP a componentes del tema sin requerir interacción del usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc3OTAyNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-avada-wordpress-theme-flaw-enables-zero-click-rce/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:critical avada wordpress theme flaw enables zero click rce",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2401,
     "fecha": "2026-08-26T19:42:07Z",
     "categoria": "IA",
