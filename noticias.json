@@ -1,5 +1,143 @@
 [
   {
+    "id": 2411,
+    "fecha": "2026-08-27T13:40:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Página de phishing polimórfica que se autodestruye ocasionalmente",
+    "resumen": "Se ha detectado una campaña de phishing que genera páginas web polimórficas, alterando su código en cada visita para evadir firmas estáticas y, en ocasiones, provocando fallos que interrumpen el ataque. Utiliza técnicas de ofuscación y redirecciones dinámicas, aumentando la dificultad de detección por firmas tradicionales de EDR y gateways de correo.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc4MzgwMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33290",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:a polymorphic phishing page that occasionally breaks itself thu aug 27th",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2410,
+    "fecha": "2026-08-27T13:39:58Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Redes de ingeniería social impulsadas por LLM generan fraudes multimodales",
+    "resumen": "OpenAI desmanteló una célula de estafadores en Camboya que utilizó ChatGPT para crear identidades falsas, documentos falsificados y mensajes persuasivos en campañas de phishing, romance y fraude financiero. El uso de generación de texto e imágenes automatiza la escala y personalización de los ataques, aumentando el riesgo de compromisos de datos y pérdidas económicas.",
+    "url_imagen": "https://images.unsplash.com/photo-1679403766665-67ed6cd2df30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc4Mzc5OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/llm-based-social-engineering-scams.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:llm based social engineering scams",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1589",
+        "name": "Gather Victim Identity Information"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "openai.com"
+      ],
+      "url": [
+        "https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation/"
+      ]
+    }
+  },
+  {
+    "id": 2409,
+    "fecha": "2026-08-27T13:39:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers rusos usan phishing en Signal y WhatsApp contra funcionarios de la UE",
+    "resumen": "Grupos de amenaza estatales están desplazando sus campañas de spear‑phishing de correo electrónico a aplicaciones de mensajería cifrada, apuntando a contactos de alto nivel en instituciones europeas y explotando la confianza en Signal y WhatsApp para robar credenciales y datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc4Mzc5ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-phish-eu-officials-messaging-apps",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:russian hackers phish eu officials over messaging apps",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2408,
+    "fecha": "2026-08-27T13:39:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Australia detiene a presuntos miembros de TeamPCP vinculados a ataques de cadena",
+    "resumen": "Las autoridades australianas arrestaron a dos jóvenes acusados de pertenecer a TeamPCP, grupo responsable de comprometer paquetes de desarrollo y herramientas de código abierto, lo que permitió la inserción de malware en infraestructuras críticas a nivel global. El vector de ataque se basó en la manipulación de dependencias de software en repositorios públicos, ampliando la superficie de exposición de organizaciones que confían en dichos componentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc4Mzc5Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/australia-arrests-alleged-teampcp-hackers-behind-supply-chain-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:australia arrests alleged teampcp hackers behind supply chain attacks",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2407,
+    "fecha": "2026-08-27T13:39:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora 6 CVE críticos al catálogo KEV, alerta sobre NetScaler, Linux y S",
+    "resumen": "CISA añadió seis vulnerabilidades activamente explotadas al catálogo Known Exploited Vulnerabilities (KEV), incluyendo un CVE reciente en Citrix NetScaler y cinco CVE antiguos reapareciendo en campañas reales, demandando parcheo inmediato. El vector de ataque se centra en ejecución remota de código y escalada de privilegios, afectando infraestructuras críticas de red y servidores de bases de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc4Mzc5NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/cisa-suma-seis-fallos-explotados-al-catalogo-kev-y-eleva-la-urgencia-de-parcheo-en-netscaler-linux-y-sql-server/?utm_source=rss&utm_medium=rss&utm_campaign=cisa-suma-seis-fallos-explotados-al-catalogo-kev-y-eleva-la-urgencia-de-parcheo-en-netscaler-linux-y-sql-server",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:cisa suma seis fallos explotados al catálogo kev y eleva la urgencia de parcheo en netscaler linux y sql server",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/cisa-suma-seis-fallos-explotados-al-catalogo-kev-y-eleva-la-urgencia-de-parcheo-en-netscaler-linux-y-sql-server/"
+      ]
+    }
+  },
+  {
     "id": 2406,
     "fecha": "2026-08-27T00:24:56Z",
     "categoria": "Ciberseguridad",
