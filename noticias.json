@@ -1,5 +1,141 @@
 [
   {
+    "id": 2421,
+    "fecha": "2026-08-28T14:50:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "EE.UU. prohíbe equipos extranjeros para generación eléctrica por riesgo de backd",
+    "resumen": "La administración de EE.UU. impone una prohibición a la adquisición de componentes extranjeros en sistemas de control de energía, citando la explotación de vulnerabilidades y backdoors por actores estatales. La medida afecta la cadena de suministro de SCADA y aumenta la presión regulatoria sobre proveedores críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5Mjg2NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/trump-cyber-electricity-parts",
+    "fuente": "The Record",
+    "dedup_key": "txt:white house bans foreign made equipment for power generation over cyber backdoor concerns",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2420,
+    "fecha": "2026-08-28T14:50:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Estadísticas de PE maliciosos revelan aumento de compiladores 64‑bit",
+    "resumen": "Un script en Python basado en la librería pefile extrae metadatos de encabezados PE, mostrando una tendencia creciente de malware compilado en 64 bits frente a 32 bits, lo que amplía la superficie de ataque en entornos Windows modernos.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5Mjg2Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33292",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:some malicious pe stats thu aug 27th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2419,
+    "fecha": "2026-08-28T14:50:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en robots Unitree G1 EDU permiten RCE remoto y acceso",
+    "resumen": "Dos CVE (CVE‑2026‑76639 y CVE‑2026‑76640) descubiertos en el robot humanoide Unitree G1 EDU habilitan ejecución de código remoto con privilegios de root, incluyendo una cadena de ataque vía Bluetooth Low Energy que compromete el PC de locomoción. El vector de red se explota a través de los servicios chat_go y bashrunner, exponiendo a instalaciones que usan estos robots en investigación y producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5Mjg2MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-76639,cve-2026-76640",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Explo"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76639",
+        "CVE-2026-76640"
+      ]
+    }
+  },
+  {
+    "id": 2418,
+    "fecha": "2026-08-28T14:50:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de jailbreak en el AI Bot universitario expone a estudiantes a at",
+    "resumen": "Un chatbot basado en LLM desplegado por una universidad carece de controles de jailbreak, permitiendo a actores maliciosos ejecutar prompt injection para obtener información confidencial y potencialmente lanzar payloads a través del API. El riesgo se amplía al uso no autorizado del modelo para generar contenido malicioso o extraer datos académicos.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5Mjg2MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/el-aibot-de-la-universidad-que-ayuda-no.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:el aibot de la universidad que ayuda no sólo a los estudiantes",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6FMPdJTziKYQxScTZoKIjpeg_TOyZMpsexWIwOBA9hFrtJ2aeZImhGUfEVyrP9F5ojtj7OE03JouBmohQcrGK2HqPwM0Ret5Xfa62KgJle-lQR3RPt764Rpe9uMuZNtka7q9YktpC536xaN3j-4hloJrYQza5VHXVrB7aXJZ-3mU_cI5AQOV_/s1348/UNI0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6FMPdJTziKYQxScTZoKIjpeg_TOyZMpsexWIwOBA9hFrtJ2aeZImhGUfEVyrP9F5ojtj7OE03JouBmohQcrGK2HqPwM0Ret5Xfa62KgJle-lQR3RPt764Rpe9uMuZNtka7q9YktpC536xaN3j-4hloJrYQza5VHXVrB7aXJZ-3mU_cI5AQOV_/w640-h396/UNI0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAakA-db8NUwkHSsIz-Oqx-Ba-I6WhoUjV_UV3TXxZzk81BOC0j4Jkd2AcKJGZ_BAKz9dCjLE8STf4_EJRIxhqoxiDCJknekEKagvz73pDoE7yOE5dRleUN7EZGrhuZuuvNTgpXJxowGhJJFq1JASJ8s3xrQwVpRCSPc4SLlCX0SStTo5byaMc/s1016/uni4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAakA-db8NUwkHSsIz-Oqx-Ba-I6WhoUjV_UV3TXxZzk81BOC0j4Jkd2AcKJGZ_BAKz9dCjLE8STf4_EJRIxhqoxiDCJknekEKagvz73pDoE7yOE5dRleUN7EZGrhuZuuvNTgpXJxowGhJJFq1JASJ8s3xrQwVpRCSPc4SLlCX0SStTo5byaMc/w640-h368/uni4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCbvNsPVDjOw18xxsxsLCqBZHRItkFFutxcpsu4NYiX_txqR7Sdgak_mXAfYedUWH3abJBr6otlpm-G5PccWuZM45ro1Z6mhC2gqbRIWkiB4sRJgkGnqL29zX4ph2Uko1-oWlSgubADWYRlAH3hzuOv3PpdRkHZUs-y2LMMJeLy6YpsU09Tgxh/s1340/uni2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCbvNsPVDjOw18xxsxsLCqBZHRItkFFutxcpsu4NYiX_txqR7Sdgak_mXAfYedUWH3abJBr6otlpm-G5PccWuZM45ro1Z6mhC2gqbRIWkiB4sRJgkGnqL29zX4ph2Uko1-oWlSgubADWYRlAH3hzuOv3PpdRkHZUs-y2LMMJeLy6YpsU09Tgxh/w640-h532/uni2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLX-yMsYAl9F6kSIjvF61ea4SNqAhozzN_9fCAOIkK3O_BnhOMB_0jcbMXDmJCVT5UO2C03BM8yiQeZVPJuqZNcx87KGwJBMMqvtkyNdLHDWw5EEubX2bCzfYuOF2oFLH5Nh-fUOQfjfHG_Vv487pa7pNkNq7yh_STgcmjNx4umGTpUZYUDyqW/s1872/uni9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLX-yMsYAl9F6kSIjvF61ea4SNqAhozzN_9fCAOIkK3O_BnhOMB_0jcbMXDmJCVT5UO2C03BM8yiQeZVPJuqZNcx87KGwJBMMqvtkyNdLHDWw5EEubX2bCzfYuOF2oFLH5Nh-fUOQfjfHG_Vv487pa7pNkNq7yh_STgcmjNx4umGTpUZYUDyqW/w640-h608/uni9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFwax3XrYkckLA8XjaVeKFesmKs88C92RdTVkR6cm4XA3-boVHE0CKGubMAd795B5QvIKkkW7Rh9dffinxO9THD0yhuMTB6bT-n2RAQ4vTYPaniMfsQFVesq9iFuOda3iFCVLGMcMAUbKiBUGBGuB5s0StdZwNyb77Qra-D0n4kBfQM8aAb1b/s1356/uni8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifFwax3XrYkckLA8XjaVeKFesmKs88C92RdTVkR6cm4XA3-boVHE0CKGubMAd795B5QvIKkkW7Rh9dffinxO9THD0yhuMTB6bT-n2RAQ4vTYPaniMfsQFVesq9iFuOda3iFCVLGMcMAUbKiBUGBGuB5s0StdZwNyb77Qra-D0n4kBfQM8aAb1b/w640-h620/uni8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6hUAUiiicZG6kwKVfbQcMNPOv1SMI66U94Wn7uomDzMpa6Z2bkl2z75wTtuUyNVUcKllO1qCIhP4Du5jCljlG-EJZtwRHEwfxviOvjxqJN6HY3JQDZVDvRvA1Xw3Q_8CXknjyeGj5exkt2saW5-zCDrd_PoAxXxnaMorW5YChAjFJBAnDQIbs/s1470/uni3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6hUAUiiicZG6kwKVfbQcMNPOv1SMI66U94Wn7uomDzMpa6Z2bkl2z75wTtuUyNVUcKllO1qCIhP4Du5jCljlG-EJZtwRHEwfxviOvjxqJN6HY3JQDZVDvRvA1Xw3Q_8CXknjyeGj5exkt2saW5-zCDrd_PoAxXxnaMorW5YChAjFJBAnDQIbs/s1600/uni3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE6Iam2umIWTmBV1iXP6RIfZ1zV7IH2ATlGwjghck-KkKRmXb-pPaKXPwgcZihyi9jfFuGYzedzD7K34eBexzTmDAxjFEg9wOKBoHYB0F2KWKtQJZjxE6cUyM1Deohy-XBLD3gouSjj4EJU0Tn78ihJWpaOEmToCQuitizETXezHH2zmQZ1gfc/s1424/uni5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE6Iam2umIWTmBV1iXP6RIfZ1zV7IH2ATlGwjghck-KkKRmXb-pPaKXPwgcZihyi9jfFuGYzedzD7K34eBexzTmDAxjFEg9wOKBoHYB0F2KWKtQJZjxE6cUyM1Deohy-XBLD3gouSjj4EJU0Tn78ihJWpaOEmToCQuitizETXezHH2zmQZ1gfc/s1600/uni5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdFECha8ojMf-Z6ZCxXWZYq18MEsIhze_K4N_aTKaswovtPGxfnIg0x4yvBnPLuwd8lZCpKgKvfbKUbxxlrqHk3Spu4gfbf-y_GlklrXqBuSACp71-yEMeavnQKwK0UvqX_b7-9lakgxtEmQjvNYS6uDP5VfyYtqPAUKzeuqtseZ9wszlnyhad/s1368/uni1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdFECha8ojMf-Z6ZCxXWZYq18MEsIhze_K4N_aTKaswovtPGxfnIg0x4yvBnPLuwd8lZCpKgKvfbKUbxxlrqHk3Spu4gfbf-y_GlklrXqBuSACp71-yEMeavnQKwK0UvqX_b7-9lakgxtEmQjvNYS6uDP5VfyYtqPAUKzeuqtseZ9wszlnyhad/w640-h484/uni1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpe8g4jW4V2DL_OaXxRyYRHXNo8fHbD997ZVCQpETcR5kNir8nvTqdrYO9Wq2h6KyIpmxM4P_X94FWlFUCcKZp95vtrmw_737cXp0b3TcXRIx9WBkULAQ7O2M4nBRuimmWQqSxYbyC2KTBq4otVggIE1LsrANjju1fa8YhLLcXZkrQb9l3rQRT/s1344/uni6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpe8g4jW4V2DL_OaXxRyYRHXNo8fHbD997ZVCQpETcR5kNir8nvTqdrYO9Wq2h6KyIpmxM4P_X94FWlFUCcKZp95vtrmw_737cXp0b3TcXRIx9WBkULAQ7O2M4nBRuimmWQqSxYbyC2KTBq4otVggIE1LsrANjju1fa8YhLLcXZkrQb9l3rQRT/w640-h534/uni6.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2026/06/footprinting-fingerprinting-ai.html",
+        "https://www.elladodelmal.com/2026/06/hacking-llm-assistants-just-for-fun.html",
+        "https://www.elladodelmal.com/2026/06/weaponinzing-token-consumption-en-llm.html"
+      ]
+    }
+  },
+  {
+    "id": 2417,
+    "fecha": "2026-08-28T14:49:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "IA reduce costos y acelera la recolección de datos para fraudes dirigidos",
+    "resumen": "Los ciberdelincuentes emplean modelos de lenguaje y herramientas de scraping impulsadas por IA para perfilar víctimas en minutos, explotando datos públicos y filtrados; el vector de ataque se centra en la automatización de OSINT y generación de credenciales falsas para phishing y account takeover.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5Mjg1OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/privacidad/ia-fraudes-recopilacion-informacion-victimas/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:cómo la ia facilita la recopilación de información para fraudes cualquiera puede ser un objetivo",
+    "ttps": [
+      {
+        "id": "T1596",
+        "name": "Search Open Websites/Domains"
+      },
+      {
+        "id": "T1589.001",
+        "name": "Gather Victim Identity Information:"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2416,
     "fecha": "2026-08-28T00:12:59Z",
     "categoria": "Ciberseguridad",
