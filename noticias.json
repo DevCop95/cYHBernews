@@ -1,5 +1,111 @@
 [
   {
+    "id": 2435,
+    "fecha": "2026-08-29T12:11:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PCMan 2.0.7 sufre vulnerabilidad de buffer overflow crítica",
+    "resumen": "Se ha identificado un buffer overflow en la versión 2.0.7 de PCMan que permite ejecución remota de código arbitrario bajo condiciones de explotación controlada. El vector de ataque se basa en la manipulación de entradas no validadas en la función de manejo de archivos, exponiendo a entornos corporativos a compromisos de confidencialidad e integridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMDU0Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52657",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:remote pcman 2 0 7 buffer overflow",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2434,
+    "fecha": "2026-08-29T12:10:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PaperCut alerta sobre explotación activa de vulnerabilidades en su software de g",
+    "resumen": "Se detecta que actores maliciosos están explotando vulnerabilidades críticas en PaperCut NG y MF para ejecutar código remoto y comprometer redes corporativas, con potencial de despliegue de ransomware o exfiltración de datos. La amenaza se encuentra en fase de explotación activa, requiriendo parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMDU0NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/papercut-warns-of-hackers-using-printer-management-vulnerabilities",
+    "fuente": "The Record",
+    "dedup_key": "txt:papercut warns of hackers using printer management software flaw in attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2433,
+    "fecha": "2026-08-29T12:10:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Crece la inversión en seguridad ofensiva ante la expansión de IA agente",
+    "resumen": "Omdia advierte que la adopción de IA agente para pruebas de penetración y red teaming está impulsando un aumento significativo de inversiones en capacidades ofensivas, al tiempo que introduce nuevos vectores de ataque automatizados y riesgos de uso malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMDU0Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/offensive-security-investments-surge-ai-threats-increase",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:offensive security investments surge as ai threats increase",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2432,
+    "fecha": "2026-08-29T12:10:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad crítica en Cosmos EVM permite drenaje de fondos en seis blockchai",
+    "resumen": "Cosmos Labs confirmó la explotación de una falla de manejo de balances (GHSA-7g4w-cg88-2cq2) en el módulo compartido Cosmos EVM, afectando versiones < 0.6.2 y ≥ 0.6.2, y provocando el robo de activos en seis cadenas entre el 20 y 25 de agosto 2026. La ausencia de CVE, clasificación y CVSS complica la respuesta coordinada, pero el vector de ataque se basa en transacciones malformadas que manipulan el cálculo de saldos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMDU0MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cosmos evm flaw exploited after cosmos labs knew every blockchain running it was vulnerable",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2431,
+    "fecha": "2026-08-29T12:10:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "GLM‑5.3 de Z.ai abre código y reaviva amenazas de IA de código abierto",
+    "resumen": "Z.ai lanza el modelo de lenguaje GLM‑5.3 bajo licencia de pesos abiertos, permitiendo su descarga y ejecución sin restricciones. La disponibilidad pública aumenta el riesgo de uso malicioso para generación de phishing automatizado, deepfakes y evasión de detección en malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMDU0Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/glm-5-3-reabre-el-debate-sobre-los-riesgos-de-la-ia-de-codigo-abierto/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:glm 5 3 reabre el debate sobre los riesgos de la ia de código abierto",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2430,
     "fecha": "2026-08-29T05:21:42Z",
     "categoria": "Ciberseguridad",
