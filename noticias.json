@@ -1,5 +1,88 @@
 [
   {
+    "id": 2430,
+    "fecha": "2026-08-29T05:21:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2023-36664: Ghostscript permite bypass de permisos en dispositivos pipe",
+    "resumen": "Ghostscript ≤ 10.01.2 falla en la validación de permisos para rutas con prefijo %pipe% o “|”, posibilitando ejecución de comandos arbitrarios bajo el contexto del proceso vulnerable. Afecta distribuciones Linux (Debian, Fedora) y puede ser explotado mediante archivos PDF maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5ODA5MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-36664",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-36664",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-36664"
+      ]
+    }
+  },
+  {
+    "id": 2429,
+    "fecha": "2026-08-29T05:21:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Scammers usan Microsoft Teams y Webex para fraudes masivos en China",
+    "resumen": "Grupos de estafadores aprovechan vulnerabilidades de ingeniería social en aplicaciones de mensajería empresarial para engañar a usuarios chinos y lograr transferencias de fondos de alto valor, incrementando denuncias y pérdidas financieras.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5ODA4NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/microsoft-teams-is-becoming-a-haven-for-chinese-scammers/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:microsoft teams has become a haven for scammers in china",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2428,
+    "fecha": "2026-08-29T05:21:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PaperCut lanza segundo parche de emergencia ante vulnerabilidades activamente ex",
+    "resumen": "Se publica una actualización crítica para PaperCut NG y MF que corrige dos CVE explotados en cadena, tras la detección de técnicas de evasión que eluden el parche inicial, exponiendo a organizaciones a ejecución remota de código y escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5ODA4NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/papercut-releases-second-emergency-patch-for-exploited-flaws/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:papercut releases second emergency patch for exploited flaws",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2427,
+    "fecha": "2026-08-29T05:20:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña de phishing explota OAuth Device Code Flow de Microsoft",
+    "resumen": "Ciberdelincuentes usan el grant Device Authorization de OAuth 2.0 para capturar tokens de acceso y tomar control de cuentas de Outlook, OneDrive y Teams. La técnica permite eludir MFA y propagar credenciales en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc5ODA4NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/alertan-de-una-campana-de-phishing-que-suplanta-a-microsoft/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:alertan de una campaña de phishing que suplanta a microsoft",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2426,
     "fecha": "2026-08-28T23:50:05Z",
     "categoria": "IA",
