@@ -1,5 +1,108 @@
 [
   {
+    "id": 2439,
+    "fecha": "2026-08-29T18:09:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE‑2026‑35397: Path‑Traversal crítico en Jupyter Server 2.17.0‑",
+    "resumen": "Vulnerabilidad de salto de ruta (CVSS 8.8) permite a usuarios autenticados escapar del root_dir configurado y leer/escribir/eliminar archivos en directorios hermanos con prefijo coincidente, afectando entornos multi‑inquilino. La corrección está disponible en la versión 2.18.0; mientras tanto, evite nombres de carpetas con prefijos comunes.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMjY5NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-35397",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-35397",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-35397"
+      ]
+    }
+  },
+  {
+    "id": 2438,
+    "fecha": "2026-08-29T18:08:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA advierte: la próxima “apocalipsis” cibernética en meses",
+    "resumen": "Analistas de OpenAI y Google AI alertan sobre una convergencia de vulnerabilidades de IA generativa y ataques a infraestructuras críticas, con hackers ya comprometiendo más de 100 sistemas de agua en EE. UU., lo que eleva el riesgo de interrupciones masivas y manipulación de datos de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMjY5MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-news-this-week-the-cybersecurity-apocalypse-is-coming-in-months-ai-giants-warn/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the cybersecurity apocalypse is coming in months ai giants warn",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2437,
+    "fecha": "2026-08-29T18:08:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades críticas en plugins y temas de WordPress permiten toma de contr",
+    "resumen": "Se han divulgado varias vulnerabilidades CVE de alta gravedad (p. ej., CVE‑2026‑76581 con CVSS 9.8) en plugins y temas como WPMU DEV Dashboard, Avada, TranslatePress, Pods y GiveWP, que permiten eludir la autenticación, secuestrar cuentas y ejecutar código arbitrario en el servidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMjY5MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/five-critical-wordpress-plugin-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-76581",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76581"
+      ]
+    }
+  },
+  {
+    "id": 2436,
+    "fecha": "2026-08-29T18:08:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "85 % del ransomware en educación proviene de ataques de identidad",
+    "resumen": "El informe de Sophos muestra que la mayoría de los incidentes de ransomware en instituciones educativas se inician mediante técnicas de compromiso de credenciales, como phishing y correos maliciosos, facilitando la lateralización y la encriptación de datos críticos. Este vector de ataque eleva el riesgo de interrupciones operativas y exposición de datos sensibles de estudiantes y personal.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwMjY5MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-85-del-ransomware-en-educacion-se-origina-en-ataques-de-identidad/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el 85 del ransomware en educación se origina en ataques de identidad",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2435,
     "fecha": "2026-08-29T12:11:07Z",
     "categoria": "Ciberseguridad",
