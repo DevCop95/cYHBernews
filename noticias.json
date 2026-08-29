@@ -1,5 +1,24 @@
 [
   {
+    "id": 2440,
+    "fecha": "2026-08-29T22:58:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "NanaZip 6.5 vulnerado por ataque DoS crítico",
+    "resumen": "Se ha identificado una vulnerabilidad de denegación de servicio (DoS) en la versión 6.5 de NanaZip que permite a un atacante remoto provocar el cierre inesperado del proceso mediante archivos comprimidos malformados. El vector de ataque se basa en la manipulación de cabeceras de archivo, afectando a entornos que utilizan NanaZip para compresión y descompresión sin mitigaciones de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwNDQzMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52656",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:dos nanazip 6 5 dos",
+    "ttps": [
+      {
+        "id": "T1499.002",
+        "name": "Application or Service Crash"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2439,
     "fecha": "2026-08-29T18:09:07Z",
     "categoria": "Ciberseguridad",
