@@ -1,5 +1,58 @@
 [
   {
+    "id": 2449,
+    "fecha": "2026-08-30T20:26:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-66787: MITM en Red Hat Advanced Cluster Management (CVSS 8.7)",
+    "resumen": "Vulnerabilidad en el componente Lighthouse permite que un clúster comprometido cree EndpointSlices con IPs controladas, forzando al DNS de otros clústeres a redirigir tráfico legítimo a endpoints maliciosos y ejecutar ataques Man‑in‑the‑Middle. Impacta la confidencialidad e integridad de los servicios inter‑cluster en entornos Kubernetes gestionados por Red Hat.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgxMjE2MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-66787",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-66787",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-66787"
+      ]
+    }
+  },
+  {
+    "id": 2448,
+    "fecha": "2026-08-30T20:26:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Anthropic alerta sobre malware que secuestra sesiones de Claude para drenar cons",
+    "resumen": "Un infostealer detectado en PCs de usuarios de Claude roba tokens de sesión activos, permitiendo a los atacantes acceder a cuentas de IA y consumir recursos de facturación. El vector de ataque es la captura de credenciales en memoria y la reutilización de sesiones autenticadas, exponiendo a clientes a uso no autorizado y posibles cargos inesperados.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgxMjE2MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anthropic warns infostealer malware is hijacking claude sessions to drain usage",
+    "ttps": [
+      {
+        "id": "T1003.001",
+        "name": "OS Credential Dumping: LSASS Memory"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2447,
     "fecha": "2026-08-30T15:56:12Z",
     "categoria": "IA",
