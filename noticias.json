@@ -1,5 +1,56 @@
 [
   {
+    "id": 2447,
+    "fecha": "2026-08-30T15:56:12Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Ulanqab se consolida como la “gasolina” de la IA con un campus de 2 GW y 1 M de",
+    "resumen": "Envision Group ha puesto en marcha el Galaxy Campus en Ulanqab, un centro de datos de 120 000 m² con capacidad para un millón de aceleradores de IA y más de 2 GW de potencia, aprovechando energía barata y clima frío para lograr un PUE < 1,15. El proyecto refuerza la infraestructura de entrenamiento de modelos de gran escala en China, incrementando la superficie de ataque potencial sobre la cadena de suministro de hardware AI.",
+    "url_imagen": "https://images.unsplash.com/photo-1761740533449-b8d4385e60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgxMDUzNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/servicios/donde-antes-habia-vacas-patatas-hoy-hay-centros-datos-ciudad-china-que-gasolina-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:donde antes había vacas y patatas hoy hay centros de datos esta ciudad china es la gasolina de la ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "es.wikipedia.org",
+        "www.envision-group.com",
+        "www.scmp.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+        "https://i.blogs.es/1a5bec/china-reverdecida/375_142.jpeg",
+        "https://i.blogs.es/1b8423/ulan/1024_2000.jpeg",
+        "https://i.blogs.es/7f75f1/ulanqab/1024_2000.jpeg",
+        "https://i.blogs.es/7f75f1/ulanqab/1366_2000.jpeg",
+        "https://i.blogs.es/7f75f1/ulanqab/450_1000.jpeg",
+        "https://i.blogs.es/7f75f1/ulanqab/650_1200.jpeg",
+        "https://www.envision-group.com/envision-galaxy-campus-ulanqab",
+        "https://www.scmp.com/tech/tech-trends/article/3364920/rural-city-once-known-livestock-now-provides-chinas-ai-computing-fuel"
+      ]
+    }
+  },
+  {
+    "id": 2446,
+    "fecha": "2026-08-30T15:55:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FulcrumSec expone filtración de 86 GB de datos de Manchester Airports Group",
+    "resumen": "El grupo de hackers FulcrumSec afirma haber extraído 86 GB de información de pasajeros, reservas y datos de viaje de Manchester Airports Group, confirmada por BleepingComputer mediante la verificación de registros de viajeros. La filtración expone datos personales y de itinerario, aumentando el riesgo de phishing dirigido y fraude de identidad contra clientes y socios.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgxMDUzNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fulcrumsec-claims-manchester-airports-hack-theft-of-86-gb-of-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fulcrumsec claims manchester airports hack theft of 86 gb of data",
+    "ttps": [
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2445,
     "fecha": "2026-08-30T11:07:20Z",
     "categoria": "Ciberseguridad",
