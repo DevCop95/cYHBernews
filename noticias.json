@@ -1,5 +1,166 @@
 [
   {
+    "id": 2445,
+    "fecha": "2026-08-30T11:07:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Policía de Alpharetta comparte datos de Flock con más de 2 000 entidades",
+    "resumen": "La agencia de Alpharetta, GA, ha distribuido información recopilada por la plataforma de vigilancia Flock a cientos de organismos, incluidos agencias federales y una comisión de vida silvestre, exponiendo potenciales vulnerabilidades de privacidad y riesgos de abuso de datos. El amplio alcance del intercambio sugiere falta de controles de acceso y posible incumplimiento de normativas como GDPR y CCPA.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwODgwNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/how-an-atlanta-suburb-ended-up-sharing-flock-data-with-more-than-2000-organizations/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:how an atlanta suburb ended up sharing flock data with more than 2 000 organizations",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2444,
+    "fecha": "2026-08-30T11:07:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "YARA‑X 1.20.0 lanza 14 mejoras y 13 correcciones críticas",
+    "resumen": "La nueva versión de YARA‑X incorpora mejoras en la detección de firmas, optimizaciones de rendimiento y corrección de vulnerabilidades que podrían ser explotadas para evadir EDR. Se añaden nuevas funciones de compilación de reglas y soporte ampliado para formatos binarios, reforzando la capacidad de respuesta ante malware y APT.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwODgwMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33288",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:yara x 1 20 0 release sun aug 30th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2443,
+    "fecha": "2026-08-30T11:07:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "TerminalFix usa CAPTCHAs falsos de Cloudflare para instalar backdoor por túnel i",
+    "resumen": "Variante de ClickFix que engaña a usuarios para ejecutar comandos maliciosos en Windows Terminal o PowerShell, usando CAPTCHAs falsos de Cloudflare como vector de ingeniería social y estableciendo un túnel inverso que permite acceso remoto persistente.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwODgwMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/08/terminalfix-uses-fake-cloudflare.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:terminalfix uses fake cloudflare captchas to deploy reverse tunnel backdoor",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1090.002",
+        "name": "External Proxy (Reverse Tunnel)"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection (used to execute malicious commands"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2442,
+    "fecha": "2026-08-30T11:07:05Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Anthropic eleva límites semanales de Claude Code en 25% para planes Pro y Enterp",
+    "resumen": "Anthropic incrementa permanentemente el uso semanal permitido de Claude Code en un 25% para los planes Pro, Max, Team y Enterprise, aunque la medida no elimina restricciones de capacidad y sigue afectando la disponibilidad para cargas de trabajo intensivas. El ajuste busca equilibrar la demanda creciente de generación de código con la gestión de recursos de backend, manteniendo la política de cuotas para evitar abusos.",
+    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwODgwMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-cutting-claude-codes-current-weekly-limits-by-17-percent/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anthropic is cutting claude code s current weekly limits by 17",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2441,
+    "fecha": "2026-08-30T11:07:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Asistentes LLM sin control: vector de abuso para phishing y botnets",
+    "resumen": "Se documentan múltiples asistentes IA basados en LLM (Gemma, Gemini, GPT‑4o) con escasos mecanismos de defensa, lo que permite a actores maliciosos “weaponizar” su consumo de tokens mediante API públicas para campañas masivas de phishing, generación de propaganda y creación de botnets. La falta de alineación y la exposición de endpoints facilitan ataques de prompt injection y abuso de recursos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgwODgwMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/08/mi-asistente-virtual-ia-no-programara.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:mi asistente virtual ia no programará en python para ti pero si es cobol vale",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghiplD67kwMJjpM-GWicYG5V1HSz8GW9AiUZ9_zKwM_DCWSWz6H3iuxy1XPuglFW-IDRtsFfEiHtZLL2ZzLGOkYE_rYJ2k-559Wo6fcSGhjrAWuJvG46mM5IqKtcxMmTcjrd_NCTc80A4YGeKG7wph51sU7NzNe0s3golqNxBIqgB5Z_bp767w/s604/web10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghiplD67kwMJjpM-GWicYG5V1HSz8GW9AiUZ9_zKwM_DCWSWz6H3iuxy1XPuglFW-IDRtsFfEiHtZLL2ZzLGOkYE_rYJ2k-559Wo6fcSGhjrAWuJvG46mM5IqKtcxMmTcjrd_NCTc80A4YGeKG7wph51sU7NzNe0s3golqNxBIqgB5Z_bp767w/w365-h400/web10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkQmshrQ53OOwOt9DGTL4BD1N00Mg1t8ySap2XOLb_LblhazJMM2VVBvSaWc_9l5vsNgmWcJpjIi8Dbq0ReK2tpFY9ZgM05zdTAK-blp9IH6UaHJlsNRS24_rkXnpuXTx-_G8xwkIx_mJW67Fy4QdCFLHNuD7W0tuW_qkMukVifC6N12AmJGJF/s1602/web13.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkQmshrQ53OOwOt9DGTL4BD1N00Mg1t8ySap2XOLb_LblhazJMM2VVBvSaWc_9l5vsNgmWcJpjIi8Dbq0ReK2tpFY9ZgM05zdTAK-blp9IH6UaHJlsNRS24_rkXnpuXTx-_G8xwkIx_mJW67Fy4QdCFLHNuD7W0tuW_qkMukVifC6N12AmJGJF/w542-h640/web13.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmtpoAstkrepP2Mfx_skHQgA9ZCiJO3vdnSr03QJWrWhGpAePcXslkQNWUMBBGWHpa6uNYrUlHIYNQm7xcc9BVbVCXgwiEIMFlN80q1FtWuHgdEhBC8jb8Astn9gn0fszvEQ3M5kqOICYA50lYZJbn1BdLfCxgXF6agN234u_IFbmPQ4QwNeL/s562/web1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmtpoAstkrepP2Mfx_skHQgA9ZCiJO3vdnSr03QJWrWhGpAePcXslkQNWUMBBGWHpa6uNYrUlHIYNQm7xcc9BVbVCXgwiEIMFlN80q1FtWuHgdEhBC8jb8Astn9gn0fszvEQ3M5kqOICYA50lYZJbn1BdLfCxgXF6agN234u_IFbmPQ4QwNeL/w400-h249/web1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh397gM0iBSDJoRZnMKtRbWikNcZt33dsdeQ8ZfJqkmcN1LZmlEdZdzqxnfp7BudREP0G83PfvVtpGwFYxvco4s8CaTzG74nfyIMiNlDTRqhnV4opnsNvbK6BOP_QplDe8P6cRqSo86D7SwN7JFAWWUYT-2x2jbxGCeQAMwsbtKuYRmY-n58dpV/s552/web15.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh397gM0iBSDJoRZnMKtRbWikNcZt33dsdeQ8ZfJqkmcN1LZmlEdZdzqxnfp7BudREP0G83PfvVtpGwFYxvco4s8CaTzG74nfyIMiNlDTRqhnV4opnsNvbK6BOP_QplDe8P6cRqSo86D7SwN7JFAWWUYT-2x2jbxGCeQAMwsbtKuYRmY-n58dpV/w400-h289/web15.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3OMz38TQj-ZMYMqSBEpTd01n-N1rkTXJKxVwzu3e4QgYjY-EYR4-R-YZhT4UdGiTTuyaqJWcUb4hxqaUKyciZH_oo7DLnCxf79Kp3xOaTG5pCc9OHfpG91T7OZ5I9RrbQQRF381Xlj5gPS_U_Txh033lzE8Uex_mNFYX6trlzTRdKjgeYs-xg/s576/web7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3OMz38TQj-ZMYMqSBEpTd01n-N1rkTXJKxVwzu3e4QgYjY-EYR4-R-YZhT4UdGiTTuyaqJWcUb4hxqaUKyciZH_oo7DLnCxf79Kp3xOaTG5pCc9OHfpG91T7OZ5I9RrbQQRF381Xlj5gPS_U_Txh033lzE8Uex_mNFYX6trlzTRdKjgeYs-xg/w400-h348/web7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFeF9BQ5S4zd87w6IVqNYrXULZ0mEdJcmf_0y8ZUFJ0vv8aVwkcYzwb9lvFutO2JW9aesX8lDGO4w-gUjNbXio_NC-MwsoI0lLthBMzGQCjvjvLfwbUJkENXXs0DYzR3SkoAmGazkTZuyqNTODY9LV7LhRjvOszEJcRV_afT0IJjUPHaitOu3V/s716/web3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFeF9BQ5S4zd87w6IVqNYrXULZ0mEdJcmf_0y8ZUFJ0vv8aVwkcYzwb9lvFutO2JW9aesX8lDGO4w-gUjNbXio_NC-MwsoI0lLthBMzGQCjvjvLfwbUJkENXXs0DYzR3SkoAmGazkTZuyqNTODY9LV7LhRjvOszEJcRV_afT0IJjUPHaitOu3V/w300-h400/web3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMyhqirI788ict472YrGYnMSNmdKdMmcHG2L5O816ozbPxToE9COgKx5t-2Tcpq5JxwTe5qzBU0qNI2z-UsxItNwbv8Ku3uNp8FMeewMtyWkGCwSXYfTUrygmFLnHPGd6_25HnNqDqNyM8hUSL6K8b-TXD8Ux-8AEcE_chvra7JXBB4UXwsnyQ/s560/web11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMyhqirI788ict472YrGYnMSNmdKdMmcHG2L5O816ozbPxToE9COgKx5t-2Tcpq5JxwTe5qzBU0qNI2z-UsxItNwbv8Ku3uNp8FMeewMtyWkGCwSXYfTUrygmFLnHPGd6_25HnNqDqNyM8hUSL6K8b-TXD8Ux-8AEcE_chvra7JXBB4UXwsnyQ/w400-h316/web11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu5CLWHPSikgD0YW5tt4u74x1dQp6RFOn0lp41CiLXGPm3rwwilYRd-_xn1fM6DCVq113rbvq15yLw9EByHk_k50JOUjDtc5HngPTkMOy7bGJoJ-1A6QYAEEaIPkviOqT52ArUkP5Bj92WRZ4WDB_xk6lltTh1T3nEcJASHN_vgf28FHRObVDL/s558/web14.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu5CLWHPSikgD0YW5tt4u74x1dQp6RFOn0lp41CiLXGPm3rwwilYRd-_xn1fM6DCVq113rbvq15yLw9EByHk_k50JOUjDtc5HngPTkMOy7bGJoJ-1A6QYAEEaIPkviOqT52ArUkP5Bj92WRZ4WDB_xk6lltTh1T3nEcJASHN_vgf28FHRObVDL/w400-h255/web14.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFotm0k02SbAtvyzPjqN8RK4J7Ylk-CA25mNU1iac7pXSY-NZZWAYvcUBPWS5sZnnYS6yw6F5Ttq-4GQFaxcH9-ffFwNV75o2NR3S4v7wD79cq9rnYSeZ8TUG2p1UvIVhLlI6aOB3QJMuUTLuQudLq2fXk6uWCmDRifBcDXJlygvN-6Sib4htW/s728/web9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFotm0k02SbAtvyzPjqN8RK4J7Ylk-CA25mNU1iac7pXSY-NZZWAYvcUBPWS5sZnnYS6yw6F5Ttq-4GQFaxcH9-ffFwNV75o2NR3S4v7wD79cq9rnYSeZ8TUG2p1UvIVhLlI6aOB3QJMuUTLuQudLq2fXk6uWCmDRifBcDXJlygvN-6Sib4htW/w294-h400/web9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUSktK3G46G3FWK55W3eMOehUHQHiXxN25vOe5_k_FMc95U9BPtyOAYtMlCrbA2JpDjQRuweuu135a_LjQGZ_80Z94PNcD-W70Z5Isa5rH7-fBJ9ghTdEOLx9td_Lb4yCQatFDITJcT6ogosSjYIw9qfWB0uPot5iQrUBGc5yk9SooeDw_Df0p/s708/web8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUSktK3G46G3FWK55W3eMOehUHQHiXxN25vOe5_k_FMc95U9BPtyOAYtMlCrbA2JpDjQRuweuu135a_LjQGZ_80Z94PNcD-W70Z5Isa5rH7-fBJ9ghTdEOLx9td_Lb4yCQatFDITJcT6ogosSjYIw9qfWB0uPot5iQrUBGc5yk9SooeDw_Df0p/w314-h400/web8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiauLoBmU-Tg1aPCln4hAorRwKJehIf1qln_Bxj6kDaK7-Q8V_M_QftD471_e75I1TgqZ97-7mQOkHfccO83lJBYO8dubnBInFev_KGngDzKn7UMl7REH3gtJKbFdp0R7UJNdw-DbXnYr20qZA84USDi0wEsTljh5i-zWddSntZA6Frp8FHK3Y-/s704/web12.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiauLoBmU-Tg1aPCln4hAorRwKJehIf1qln_Bxj6kDaK7-Q8V_M_QftD471_e75I1TgqZ97-7mQOkHfccO83lJBYO8dubnBInFev_KGngDzKn7UMl7REH3gtJKbFdp0R7UJNdw-DbXnYr20qZA84USDi0wEsTljh5i-zWddSntZA6Frp8FHK3Y-/w296-h400/web12.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiu5qDeqJoK6B3aNz7yDI6qdb45gS7hZLD_C-5na9l-J1MvoY219r-gOy7zUOo7Gg28hcjpZTlAtGrvvLuAXo1Yp1eYRigyTE2buYvYWIIxREwhNt9fyaElU7sDAVzOHucgWFIqosEl-KAB_ZpQCylhoz53d7jTj2b2n5LWwx07kyU3WVtxvc9d/s566/web2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiu5qDeqJoK6B3aNz7yDI6qdb45gS7hZLD_C-5na9l-J1MvoY219r-gOy7zUOo7Gg28hcjpZTlAtGrvvLuAXo1Yp1eYRigyTE2buYvYWIIxREwhNt9fyaElU7sDAVzOHucgWFIqosEl-KAB_ZpQCylhoz53d7jTj2b2n5LWwx07kyU3WVtxvc9d/w400-h268/web2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2KuK2UEaBl23wI-t45Sn-LebF3f2JjjgbwkpZSBtbE5CWYiVn5tNyG2nlL5AXD6p40z4nlRcj-iPWRdx9TM4cephlVS6Dar5fi6S4VAepKKqHcAYqvwKpHev_NCXP2KVE_3ulxeuKSZpqaoXLqZbVM6SU7Lyhkt8d5V7kyteoRJj89ddPqxcA/s562/web5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2KuK2UEaBl23wI-t45Sn-LebF3f2JjjgbwkpZSBtbE5CWYiVn5tNyG2nlL5AXD6p40z4nlRcj-iPWRdx9TM4cephlVS6Dar5fi6S4VAepKKqHcAYqvwKpHev_NCXP2KVE_3ulxeuKSZpqaoXLqZbVM6SU7Lyhkt8d5V7kyteoRJj89ddPqxcA/w400-h316/web5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFFkSWe2le5bPdvvkqPd39hGrr_Itj55Hyv5uV2SVQrL93Pk4H2amFAxzHsuWRbw0WvSc7bRw3rqRKxB6zBIjPsFexvpNb4-1iH1ULXfyJyWVyl-jBmtrOGAnsCcH25aq4-NBNU_G8dchsaiO0COeC8qJHjxurRJIo4PkHp_DE1SNEGOunDv1x/s566/web6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFFkSWe2le5bPdvvkqPd39hGrr_Itj55Hyv5uV2SVQrL93Pk4H2amFAxzHsuWRbw0WvSc7bRw3rqRKxB6zBIjPsFexvpNb4-1iH1ULXfyJyWVyl-jBmtrOGAnsCcH25aq4-NBNU_G8dchsaiO0COeC8qJHjxurRJIo4PkHp_DE1SNEGOunDv1x/w400-h343/web6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwf1dAOj18KIWtrNJbnZAaAIbRrmlLm_xyqKI6gtaSleqanVeQJw8FJ51sDunzbIvaG5vW6-rbA_scCFK4G6lrW8_V02dshl_ulgjH5jamTI9G6AenVmqVL4VlsKorpG9Wy-UhmLnabe0VRwoIVQXwZbE4S1bAJWix6Y7J6x5bwiNSzXwM1sF/s968/web0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVwf1dAOj18KIWtrNJbnZAaAIbRrmlLm_xyqKI6gtaSleqanVeQJw8FJ51sDunzbIvaG5vW6-rbA_scCFK4G6lrW8_V02dshl_ulgjH5jamTI9G6AenVmqVL4VlsKorpG9Wy-UhmLnabe0VRwoIVQXwZbE4S1bAJWix6Y7J6x5bwiNSzXwM1sF/w640-h360/web0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyAvwmfpkesGQ9OdBtSLl_4VzLS158uMlBz0D_riZwYR3CZbqIZ-8526qm6E1kMzpthlGspoYvI2s0bkoXizcRMetyfPOWap2XjpcXebX8UpEdkuLRTUE6Y2wF6NwqGv8RgOekJQKUGXqS2SXTEYLzpyxjcM7rmiRBI1EWVmg_BFkY5mNb5Myb/s1280/web16.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyAvwmfpkesGQ9OdBtSLl_4VzLS158uMlBz0D_riZwYR3CZbqIZ-8526qm6E1kMzpthlGspoYvI2s0bkoXizcRMetyfPOWap2XjpcXebX8UpEdkuLRTUE6Y2wF6NwqGv8RgOekJQKUGXqS2SXTEYLzpyxjcM7rmiRBI1EWVmg_BFkY5mNb5Myb/w346-h640/web16.jpg",
+        "https://elladodelmal.com",
+        "https://www.elladodelmal.com/2026/06/footprinting-fingerprinting-ai.html",
+        "https://www.elladodelmal.com/2026/06/hacking-llm-assistants-just-for-fun.html",
+        "https://www.elladodelmal.com/2026/06/weaponinzing-token-consumption-en-llm.html",
+        "https://www.elladodelmal.com/2026/08/el-aibot-de-la-universidad-que-ayuda-no.html"
+      ]
+    }
+  },
+  {
     "id": 2440,
     "fecha": "2026-08-29T22:58:34Z",
     "categoria": "Ciberseguridad",
