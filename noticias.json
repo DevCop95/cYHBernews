@@ -1,5 +1,119 @@
 [
   {
+    "id": 2462,
+    "fecha": "2026-08-31T20:37:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2024-6387: Vulnerabilidad crítica en OpenSSH permite ejecución asíncrona de",
+    "resumen": "La condición de ejecución del controlador de señales SIGALRM en sshd permite que un cliente no autenticado dispare llamadas a funciones no seguras como syslog(), potencialmente facilitando escalada de privilegios o denegación de servicio. Afecta firmware de SonicWall SMA 7200/6200 y Arista EOS, con impacto en entornos que dependen de OpenSSH para acceso remoto.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyMDg2NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-6387",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-6387",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-6387"
+      ]
+    }
+  },
+  {
+    "id": 2461,
+    "fecha": "2026-08-31T20:36:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Robo de $6 M en Tectonic tras manipulación del precio del token Tonic",
+    "resumen": "Un atacante alteró el precio del token Tonic en la plataforma DeFi Tectonic, ejecutando una operación de compra/venta que permitió drenar aproximadamente $6 millones en fondos. El vector de ataque se basó en la explotación de la falta de mecanismos de protección contra manipulaciones de precios en el oracle interno.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyMDg2MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/crypto-tectonic-hack-cronos",
+    "fuente": "The Record",
+    "dedup_key": "txt:fraudsters steal 6 million from tectonic crypto platform after inflating token price",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2460,
+    "fecha": "2026-08-31T20:36:27Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Trampa de agentes de código: endpoints LLM “gratuitos” usados como vectores de a",
+    "resumen": "Un honeypot de inferencia expuesto a Internet fue reutilizado bajo nombres de modelos populares para ofrecer “backends” LLM gratuitos, permitiendo a un atacante extraer historial de sesiones, rutas de trabajo y el manifiesto de herramientas locales del agente de codificación. La exposición muestra cómo los endpoints LLM sin autenticación pueden servir como pivote para recopilación de información sensible y posible ejecución de herramientas maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1770170389700-eb0f9b910ed8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyMDg1ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33298",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:the coding agent trap when a free llm endpoint is the adversary mon aug 31st",
+    "ttps": [
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1518.001",
+        "name": "Software Discovery: Security Software Discovery"
+      },
+      {
+        "id": "T1560.001",
+        "name": "Archive Collected Data: Archive via Utility"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2459,
+    "fecha": "2026-08-31T20:36:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Posible intrusión cibernética afecta refrigeración en comisariados del DoD",
+    "resumen": "Se reportan fallas simultáneas en sistemas de refrigeración de varios comisariados militares, con indicios de manipulación remota que sugiere un ataque dirigido a la infraestructura IoT de la cadena de suministro. El vector probable es explotación de vulnerabilidades en controladores PLC/SCADA sin autenticación adecuada, lo que podría escalar a interrupciones operativas mayores.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyMDg1NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/08/is-someone-hacking-dod-refrigerators.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:is someone hacking dod refrigerators",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "corp.commissaries.com",
+        "signalandsilence.substack.com",
+        "www.facebook.com",
+        "www.militarytimes.com"
+      ],
+      "url": [
+        "https://corp.commissaries.com/shopping/store-locations/travis-afb",
+        "https://signalandsilence.substack.com/p/i-think-someone-hacked-the-commissary",
+        "https://www.militarytimes.com/news/your-military/2026/08/28/dod-confirms-refrigeration-disruption-at-military-commissaries/"
+      ]
+    }
+  },
+  {
     "id": 2458,
     "fecha": "2026-08-31T12:31:52Z",
     "categoria": "Ciberseguridad",
