@@ -1,5 +1,63 @@
 [
   {
+    "id": 2453,
+    "fecha": "2026-08-31T03:10:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-82447: Escape de sandbox en Skyvern permite ejecución de código remoto",
+    "resumen": "Skyvern < 1.0.45 presenta una vulnerabilidad de escape de sandbox en TextPromptBlock que procesa prompts dos veces, primero en un entorno Jinja aislado y luego sin aislamiento, permitiendo inyección de sintaxis Jinja maliciosa vía parámetros de workflow o salida de bloques previos para ejecutar código arbitrario con privilegios del proceso del servidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgxNDU4NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-82447",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-82447",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-82447"
+      ]
+    }
+  },
+  {
+    "id": 2452,
+    "fecha": "2026-08-31T03:10:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades críticas de escalada de privilegios en Active Directory descubi",
+    "resumen": "Se identificaron dos CVE de escalada de privilegios en AD que permiten a un atacante obtener control total del dominio y desplazar lateralmente sin detección, afectando la cadena de confianza de autenticación. La explotación requiere acceso previo a una cuenta de bajo privilegio y puede ser automatizada mediante scripts de post-explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgxNDU4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/descubren-vulnerabilidades-criticas-de-escalada-de-privilegios-en-active-directory/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:descubren vulnerabilidades críticas de escalada de privilegios en active directory",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2451,
     "fecha": "2026-08-30T23:05:41Z",
     "categoria": "Ciberseguridad",
