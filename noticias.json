@@ -1,5 +1,142 @@
 [
   {
+    "id": 2483,
+    "fecha": "2026-09-01T22:57:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña “Fire Ant” compromete routers Cisco para expandir ataques a nivel global",
+    "resumen": "La operación de amenazas persistentes “Fire Ant” infiltra routers Cisco, alterando la capa de confianza de la infraestructura de red y permitiendo la inserción de payloads de comando y control para posteriores compromisos de sistemas críticos. El vector de ataque se basa en vulnerabilidades de firmware y credenciales predeterminadas, facilitando movimientos laterales y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMDM0NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/router-hacks-fire-ant-group-china",
+    "fuente": "The Record",
+    "dedup_key": "txt:china s fire ant campaign used compromised cisco routers as platform for more attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078.001",
+        "name": "Default Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2482,
+    "fecha": "2026-09-01T22:57:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Incremento de ransomware interno: grupos reclutan talento interno",
+    "resumen": "Investigadores de seguridad detectan un aumento de ataques de ransomware facilitados por insiders, lo que permite eludir controles perimetrales y acelerar la exfiltración de datos; la amenaza interna genera pérdidas multimillonarias al combinar acceso legítimo con técnicas de cifrado.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMDM0NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/stronger-security-drives-ransomware-groups-to-recruit-from-within",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:stronger security drives ransomware groups to recruit from within",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2481,
+    "fecha": "2026-09-01T22:57:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FBI abre investigación por venta masiva de 153 M+ licencias de conducir en la da",
+    "resumen": "Se detectó un servicio de robo de identidad que comercializa escaneos digitales de más de 153 millones de licencias de EE. UU. y Canadá, presumiblemente extraídas de una empresa de verificación de identidad. El FBI de Nueva Orleans ha iniciado una investigación para rastrear la fuente y mitigar el riesgo de fraude de identidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMDM0NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:fbi probes service selling 153m drivers licenses",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2480,
+    "fecha": "2026-09-01T22:57:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Explotan vulnerabilidad crítica en JFrog Artifactory para generar tokens de admi",
+    "resumen": "Threat actors están aprovechando la vulnerabilidad CVE‑2026‑82329 (CVSS 9.8) que permite eludir la autenticación y crear tokens administrativos en JFrog Artifactory, apenas días después de su divulgación pública. El vector de ataque se basa en solicitudes HTTP manipuladas que explotan la lógica de autorización predeterminada, comprometiendo repositorios de artefactos y potencialmente facilitando la distribución de malware o ransomware interno.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMDM0MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-82329",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Modify Authentication Process: Token Manipulation"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-82329"
+      ]
+    }
+  },
+  {
+    "id": 2479,
+    "fecha": "2026-09-01T22:57:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers explotan Faronics Deploy para implantar ScreenConnect y tomar control re",
+    "resumen": "Actores de phishing utilizan la herramienta legítima de gestión de endpoints Faronics Deploy como vector de ataque, instalando el software de soporte remoto ScreenConnect para obtener acceso administrativo persistente a los equipos comprometidos. La técnica combina abuso de credenciales legítimas y despliegue silencioso, incrementando la superficie de ataque en entornos corporativos que confían en soluciones de gestión de endpoints.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMDM0Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-abuse-faronics-deploy-admin-tool-to-install-screenconnect/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers abuse faronics deploy admin tool to install screenconnect",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2478,
     "fecha": "2026-09-01T18:07:58Z",
     "categoria": "Ciberseguridad",
