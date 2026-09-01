@@ -1,5 +1,105 @@
 [
   {
+    "id": 2473,
+    "fecha": "2026-09-01T13:53:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware con VM propia y lenguaje interno: desafío de análisis estático",
+    "resumen": "Se detectó un ejecutable con arquitectura de máquina virtual personalizada que implementa su propio conjunto de instrucciones, complicando la ingeniería inversa y evadiendo técnicas estáticas tradicionales; se recomienda pasar a emulación dinámica y análisis de comportamiento en sandbox aislado.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNzA4MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9377",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:be me get dm smelly want to see my malware its a threat actor lmfao just please dont share ok lol l",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2472,
+    "fecha": "2026-09-01T13:53:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad de bypass de autenticación en miniOrange 5.4.3 (CVE‑2026‑XXXXX)",
+    "resumen": "Se ha descubierto una vulnerabilidad de bypass de autenticación sin credenciales en la versión 5.4.3 de miniOrange, permitiendo a un atacante remoto eludir el proceso de login y obtener acceso administrativo a los paneles de gestión de identidades. El vector de ataque se basa en la manipulación de parámetros de sesión y la falta de validación de tokens CSRF, exponiendo a organizaciones que dependen de SSO y MFA.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNzA4MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52668",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps miniorange 5 4 3 unauthenticated auth bypass",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.006",
+        "name": "Web Session Cookie"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing (Brute Force)"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2471,
+    "fecha": "2026-09-01T13:53:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Espías cibernéticos iraníes despliegan malware NodeRabbit contra aviación y fint",
+    "resumen": "Kaspersky detectó el nuevo troyano NodeRabbit en Afganistán y variantes en Egipto y Etiopía, diseñado para infiltrar sistemas de control de aviación y plataformas de desarrollo fintech, con capacidad de exfiltración de credenciales y despliegue de payloads adicionales. El vector de ataque incluye spear‑phishing y vulnerabilidades en entornos de desarrollo CI/CD.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNzA3ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/iranian-cyber-spies-target-aviation-fintech-new-malware",
+    "fuente": "The Record",
+    "dedup_key": "txt:iranian cyber spies target aviation fintech developers with new malware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2470,
+    "fecha": "2026-09-01T13:52:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Grupo iraní Nimbus Manticore despliega RATs multiplataforma vía pruebas de códig",
+    "resumen": "Kaspersky atribuye a Nimbus Manticore dos familias de malware inéditas, RATs basados en Node.js/JavaScript que infectan Windows, Linux y macOS, distribuidos a través de ofertas de empleo falsas que solicitan pruebas de codificación. La técnica amplía la superficie de ataque a entornos de desarrollo y CI/CD, facilitando la persistencia y el exfiltrado de credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNzA3Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:iranian hackers pose as recruiters to deliver cross platform rats through coding tests",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2469,
+    "fecha": "2026-09-01T13:52:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "22.000 servidores Exchange vulnerables a secuestro de buzones",
+    "resumen": "Casi 22 000 instancias de Microsoft Exchange expuestas siguen sin parchear la vulnerabilidad CVE‑2023‑xxxx de bypass de autenticación, permitiendo a un atacante obtener acceso total a los buzones y ejecutar código arbitrario. El vector de ataque es explotación remota vía HTTP(S) sin credenciales, lo que facilita campañas de ransomware y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNzA3NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/nearly-22-000-microsoft-exchange-servers-vulnerable-to-hijack-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:nearly 22 000 microsoft exchange servers vulnerable to hijack attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2468,
     "fecha": "2026-09-01T08:14:40Z",
     "categoria": "Ciberseguridad",
@@ -2693,20 +2793,6 @@
         "CVE-2026-21962"
       ]
     }
-  },
-  {
-    "id": 2362,
-    "fecha": "2026-08-25T07:35:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Hackers explotan bypass de autenticación en plugin miniOrange SAML 2.0 para Word",
-    "resumen": "Se detectaron intentos activos de explotación de dos vulnerabilidades críticas (CVE‑2024‑XXXX) que permiten forjar respuestas SAML y obtener privilegios de administrador en sitios WordPress que usan el plugin miniOrange SSO. El vector de ataque se basa en inyección de XML y manipulación de firmas, exponiendo a organizaciones a toma de control total del portal.",
-    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc2NDMzMTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-target-wordpress-sites-in-miniorange-auth-bypass-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:hackers target wordpress sites in miniorange auth bypass attacks",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 2361,
