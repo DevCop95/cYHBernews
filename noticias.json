@@ -1,5 +1,55 @@
 [
   {
+    "id": 2464,
+    "fecha": "2026-09-01T00:20:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cinco venezolanos se declaran culpables en caso federal de jackpotting de cajero",
+    "resumen": "Un grupo de cinco nacionales venezolanos admitió culpabilidad en un esquema de jackpotting de cajeros automáticos que comprometió cientos de máquinas en EE. UU., evidenciando la persistencia de redes criminales que explotan vulnerabilidades de firmware y acceso físico para extraer efectivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyMjIwMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/kansas-atm-jackpotting-guilty-pleas",
+    "fuente": "The Record",
+    "dedup_key": "txt:five plead guilty in latest federal atm jackpotting case",
+    "ttps": [
+      {
+        "id": "T1495",
+        "name": "Firmware Modification"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Data Manipulation: Modify Firmware"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2463,
+    "fecha": "2026-09-01T00:19:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA impulsa el aumento del cibercrimen al 20 % de la criminalidad en España",
+    "resumen": "La automatización de phishing, generación de malware y ataques dirigidos mediante modelos de lenguaje como GPT y herramientas de IA está reduciendo la barrera de entrada para actores maliciosos, elevando la cuota del cibercrimen al 20 % del total de delitos en España. Este fenómeno amplía la superficie de ataque al habilitar campañas de ingeniería social a gran escala y malware polimórfico sin necesidad de conocimientos avanzados.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyMjE5OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/los-ciberdelitos-rozan-el-20-de-la-criminalidad-en-espana/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:los ciberdelitos rozan el 20 de la criminalidad en españa",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2462,
     "fecha": "2026-08-31T20:37:24Z",
     "categoria": "Ciberseguridad",
