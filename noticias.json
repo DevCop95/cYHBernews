@@ -1,5 +1,108 @@
 [
   {
+    "id": 2468,
+    "fecha": "2026-09-01T08:14:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2023-45745 permite escalada de privilegios en módulos Intel TDX < 1.5.05.46.",
+    "resumen": "Vulnerabilidad de validación de entrada en Intel® TDX (versión < 1.5.05.46.698) permite a usuarios locales privilegiados ejecutar código con privilegios de kernel, facilitando escalada de privilegios y posible compromiso de entornos HCI. Afecta firmware de BIOS en nodos NetApp HCI y módulos TDX de Intel.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNTA0ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-45745",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2023-45745",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1542.003",
+        "name": "Modify Firmware"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "1.5.05.46"
+      ],
+      "cve": [
+        "CVE-2023-45745"
+      ]
+    }
+  },
+  {
+    "id": 2467,
+    "fecha": "2026-09-01T08:14:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Atacantes explotan fallas críticas en Langflow y Ruby on Rails para robo de cred",
+    "resumen": "Vulnerabilidades CVE‑2026‑0768 (ejecución arbitraria de código Python con privilegios root) y CVE‑2026‑66066 en Rails permiten a actores maliciosos inyectar payloads y establecer canales de comando y control, facilitando campañas de credential‑probing.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNTA0NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-0768,cve-2026-66066",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-0768",
+        "CVE-2026-66066"
+      ]
+    }
+  },
+  {
+    "id": 2466,
+    "fecha": "2026-09-01T08:13:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Zero-days de PaperCut NG/MF explotados para robo de datos",
+    "resumen": "Dos vulnerabilidades críticas (CVE‑2024‑XXXX) en el software de gestión de impresión PaperCut NG y MF, corregidas recientemente, están siendo reutilizadas en campañas activas de exfiltración de datos mediante ejecución remota y escalada de privilegios. Los atacantes aprovechan la exposición del puerto de administración y la falta de segmentación de red para extraer credenciales y documentos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNTA0Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/recently-patched-papercut-zero-days-used-in-data-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:recently patched papercut zero days used in data theft attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2465,
+    "fecha": "2026-09-01T08:13:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "IA en tiempo real para detección de fraude bancario sin frenar transacciones",
+    "resumen": "Bancos están desplegando modelos de lenguaje y sistemas de embeddings para analizar miles de eventos por segundo, identificando patrones de fraude con latencia sub‑milisegundo y reduciendo falsos positivos que bloquean compras legítimas. La arquitectura combina streaming de Big Data, inferencia en GPUs y feedback de detección de anomalías, mitigando vectores de ataque de card‑not‑present y credential stuffing.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyNTA0MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-reto-del-big-data-bancario-detectar-fraude-sin-bloquear-compras/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el reto del big data bancario detectar fraude sin bloquear compras",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2464,
     "fecha": "2026-09-01T00:20:21Z",
     "categoria": "Ciberseguridad",
