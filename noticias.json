@@ -1,5 +1,131 @@
 [
   {
+    "id": 2478,
+    "fecha": "2026-09-01T18:07:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2018-16497 permite escalada de privilegios en Versa Analytics",
+    "resumen": "Vulnerabilidad de escalada de privilegios (CVSS 7.8) en los jobs cron de Versa Analytics que se ejecutan como root y son modificables por usuarios del grupo versa, posibilitando ejecución de código arbitrario con privilegios de sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyODYwNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-16497",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2018-16497",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1543.003",
+        "name": "Create or Modify System Process: Cron Job"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2018-16497"
+      ]
+    }
+  },
+  {
+    "id": 2477,
+    "fecha": "2026-09-01T18:07:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nutex Health sufre filtración de datos de pacientes y empleados con intento de e",
+    "resumen": "Un actor de amenazas comprometió la base de datos de Nutex Health, exponiendo información sensible de pacientes y personal, y luego intentó extorsionar a la empresa bajo amenaza de publicación. El vector probable incluye credenciales comprometidas y falta de segmentación de red, lo que eleva el riesgo de cumplimiento con HIPAA y posibles sanciones regulatorias.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyODYwNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/nutex-health-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:healthcare facilities operator nutex says patient employee data stolen in august incident",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2476,
+    "fecha": "2026-09-01T18:07:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Campaña ClickFix compromete 31 organizaciones usando la blockchain de Polygon",
+    "resumen": "La operación emplea la técnica EtherHiding para actualizar dinámicamente los servidores C2, utilizando direcciones en la blockchain de Polygon como libro de direcciones controlado por el atacante, lo que dificulta la detección y permite la persistencia en múltiples entornos.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyODYwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/clickfix-campaign-comprises-31-orgs-abuses-polygon-blockchain",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:clickfix campaign compromises 31 orgs abuses polygon blockchain",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2475,
+    "fecha": "2026-09-01T18:07:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "13 paquetes maliciosos de Packagist infectan iPhones sin parche y roban semillas",
+    "resumen": "Investigadores descubrieron 13 paquetes Composer en Packagist que inyectan JavaScript en sitios de streaming vietnamitas, ejecutando fraude publicitario móvil y redirecciones a juegos, además de desplegar spyware que extrae semillas de carteras criptográficas de dispositivos iOS sin actualizar. La cadena de ataque aprovecha la falta de parches en iOS y la confianza en dependencias de PHP, exponiendo a usuarios a pérdida de fondos y a actores de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyODYwMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:13 malicious packagist packages target unpatched iphones to steal crypto wallet seeds",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Supply Chain Compromise: Compromise Software Dependencies"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking (ad fraud and redirection)"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2474,
+    "fecha": "2026-09-01T18:06:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en Langflow permite robar claves de OpenAI y AWS",
+    "resumen": "Un actor malicioso explota la vulnerabilidad sin autenticación CVE‑2026‑0768 en el framework open‑source Langflow para ejecutar código remoto y extraer credenciales, tokens y claves de API de OpenAI y AWS, comprometiendo entornos de desarrollo de IA. La explotación se realiza mediante peticiones HTTP manipuladas que descargan payloads y exfiltran datos a servidores de comando y control.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgyODYwMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-langflow-flaw-exploited-to-steal-openai-and-aws-keys/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "cve:cve-2026-0768",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-0768"
+      ]
+    }
+  },
+  {
     "id": 2473,
     "fecha": "2026-09-01T13:53:40Z",
     "categoria": "Ciberseguridad",
