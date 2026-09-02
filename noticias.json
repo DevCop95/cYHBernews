@@ -1,5 +1,138 @@
 [
   {
+    "id": 2488,
+    "fecha": "2026-09-02T02:34:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de deserialización en Spring Batch (CVE‑2020‑5411) permite ejecuc",
+    "resumen": "CVE‑2020‑5411 (CVSS 8.1) afecta a Spring Batch que habilita la escritura predeterminada de Jackson; un atacante con acceso de escritura al JobRepository puede explotar gadgets de deserialización para ejecutar código arbitrario. La mitigación requiere blacklist de gadgets en Jackson y revisión de configuraciones de escritura.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMTY0NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-5411",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-5411",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2020-5411"
+      ]
+    }
+  },
+  {
+    "id": 2487,
+    "fecha": "2026-09-02T02:34:16Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Huawei impulsa IA para descubrimiento de fármacos con su plataforma Pangu Drug",
+    "resumen": "Huawei despliega su ecosistema de chips Ascend/Kunpeng, nube y modelo Pangu AI para acelerar la generación y optimización de moléculas en fases preclínicas, ofreciendo capacidad de cómputo a farmacéuticas chinas. El movimiento amplía la presencia de la compañía en IA generativa aplicada a la industria farmacéutica, con potencial de alterar el panorama de I+D de medicamentos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217941-ea11df0605f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMTY0NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/huawei-quiere-llevar-su-ia-mucho-alla-moviles-ahora-busca-hacerse-hueco-desarrollo-nuevos-medicamentos",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:huawei quiere llevar su ia mucho más allá de los móviles ahora busca hacerse un hueco en el desarrollo de nuevos medicamentos",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "e.huawei.com",
+        "investor.nvidia.com",
+        "support.huawei.com",
+        "www.gpc.com.cn",
+        "www.m-expo.net",
+        "www.reuters.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "http://www.m-expo.net/en/lyh/overview/promotion/213",
+        "https://e.huawei.com/cn/news/2026/industries/manufacturing/ai-drug-research-solution",
+        "https://i.blogs.es/065362/huawei-medicamentos/1024_2000.jpeg",
+        "https://i.blogs.es/31fdba/huawei-matebook-pro-s-portada/375_142.jpeg",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Lilly-Announce-Co-Innovation-AI-Lab-to-Reinvent-Drug-Discovery-in-the-Age-of-AI/default.aspx",
+        "https://support.huawei.com/enterprise/en/doc/EDOC1100402675/dba83b5b/welcome-to-the-pangu-ai-drug-platform",
+        "https://www.gpc.com.cn/article/13815.html",
+        "https://www.reuters.com/legal/litigation/huawei-plans-more-ai-pharma-tie-ups-says-healthcare-president-2026-08-27/"
+      ]
+    }
+  },
+  {
+    "id": 2486,
+    "fecha": "2026-09-02T02:33:55Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "OpenAI lanzará Astra, su primer modelo IA con capacidades cibercríticas",
+    "resumen": "OpenAI ofrecerá acceso anticipado a Astra, un modelo de lenguaje diseñado para tareas de ciberseguridad, a socios seleccionados para que refuercen sus defensas antes del despliegue general. El modelo incorpora funcionalidades de detección de vulnerabilidades, generación de exploits controlados y análisis de amenazas, lo que plantea riesgos de uso indebido si cae en manos de actores maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMTY0MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:openai is about to release its first ai model with critical cyber abilities",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2485,
+    "fecha": "2026-09-02T02:33:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades sin parchear en ownCloud permiten acceso a la Agencia Nuclear d",
+    "resumen": "Actores de amenaza explotaron una vulnerabilidad conocida en ownCloud para obtener acceso inicial y exfiltrar bases de datos de reactores, registros de personal y almacenes de credenciales, comprometiendo la confidencialidad y la integridad de la infraestructura nuclear.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMTY0MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/old-unpatched-flaws-attackers-philippines-nuclear-agency",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:old unpatched flaws give attackers access to philippines nuclear agency",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2484,
+    "fecha": "2026-09-02T02:33:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Breeze Comet orquesta cientos de transacciones fraudulentas en sistemas de pago",
+    "resumen": "Grupo de amenazas brasileño, identificado como Breeze Comet (antes UNC5669), explota vulnerabilidades en software bancario y APIs de pagos para ejecutar transferencias no autorizadas, afectando a entidades financieras, retail y e‑commerce. La campaña, detectada desde 2024, muestra un modus operandi de manipulación de protocolos de pago y uso de credenciales comprometidas para desviar fondos.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMTY0MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/breeze-comet-executes-hundreds-of.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:breeze comet executes hundreds of fraudulent transactions via brazilian payment systems",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2483,
     "fecha": "2026-09-01T22:57:54Z",
     "categoria": "Ciberseguridad",
