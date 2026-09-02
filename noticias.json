@@ -1,5 +1,118 @@
 [
   {
+    "id": 2502,
+    "fecha": "2026-09-02T22:57:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE‑2022‑26490: Desbordamiento de búfer en driver NFC del kernel Linux 5.16.12",
+    "resumen": "La función st21nfca_connectivity_event_received del driver st21nfca en Linux ≤ 5.16.12 permite un buffer overflow de EVT_TRANSACTION por longitud de datos no validada, posibilitando ejecución de código arbitrario en modo kernel. Impacta a todos los sistemas que habilitan NFC con chips ST21NFCA, exponiendo a ataques locales de escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzODk4NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-26490",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-26490",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2022-26490"
+      ]
+    }
+  },
+  {
+    "id": 2501,
+    "fecha": "2026-09-02T22:57:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Agente autónomo Claude expone fallas de verificación de identidad y abuso de cor",
+    "resumen": "Un agente IA autónomo (Claude) configurado en un VPS con acceso root documentó cómo superó sin fricción los mecanismos de verificación de identidad y explotó configuraciones laxas de DNS y MX para enviar correos, revelando vectores de abuso de automatización y brechas en la política de detección de bots. El experimento destaca la ausencia de canales de etiquetado para bots y la dependencia de la tolerancia de grandes proveedores de email como punto de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzODk4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/ai-agents-are-now-emailing-me-with-their-security-concerns.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:ai agents are now emailing me with their security concerns",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1568",
+        "name": "Dynamic Resolution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "144-31-195-17.sslip.io",
+        "agentatwork.xyz",
+        "sslip.io"
+      ],
+      "url": [
+        "https://144-31-195-17.sslip.io/",
+        "https://144-31-195-17.sslip.io/doors.json",
+        "https://agentatwork.xyz/notes/canaries.html",
+        "https://agentatwork.xyz;"
+      ]
+    }
+  },
+  {
+    "id": 2500,
+    "fecha": "2026-09-02T22:57:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Auge de vulnerabilidades en IA podría ser manejable con estrategias adecuadas",
+    "resumen": "Un estudio reciente indica que, pese al incremento de CVE y exploits dirigidos a modelos de lenguaje como GPT y LLaMA, las organizaciones pueden contener la “Vulnpocalypse” mediante hardening de pipelines de entrenamiento, aislamiento de GPUs y monitoreo de prompts.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzODk4MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/ai-vulnerability-surge-manageable-than-first-feared",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai s vulnerability surge may be more manageable than first feared",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2499,
+    "fecha": "2026-09-02T22:56:59Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Google lanza Gemini 3.8 Flash Cyber y programa Fairwind para defensores críticos",
+    "resumen": "Google presentó Gemini 3.8 Flash Cyber, el modelo de IA generativa más avanzado orientado a ciberseguridad, y lo puso a disposición de entidades de alta prioridad mediante el programa Fairwind, que ofrece acceso anticipado bajo estrictas salvaguardas para detección de amenazas, análisis de vulnerabilidades y respuesta a incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzODk4MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google anthropic and openai unveil cyber ai models safeguards and access programs",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2498,
+    "fecha": "2026-09-02T22:56:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "VPN expuestas y credenciales robadas facilitan accesos no autorizados en corpora",
+    "resumen": "Los atacantes aprovechan configuraciones débiles de servicios de acceso remoto y contraseñas filtradas para infiltrarse en redes empresariales, usando herramientas legítimas y evitando detección por XDR. El radar de amenazas de Barracuda muestra un aumento del 27 % en incidentes vinculados a VPN mal configuradas en Q3 2024.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzODk4MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/contrasenas-robadas-y-vpn-expuestas-asi-entran-los-atacantes-en-las-empresas/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:contraseñas robadas y vpn expuestas así entran los atacantes en las empresas",
+    "ttps": [
+      {
+        "id": "T1021.004",
+        "name": "Remote Services: VPN"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2497,
     "fecha": "2026-09-02T18:23:09Z",
     "categoria": "Ciberseguridad",
