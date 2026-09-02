@@ -1,5 +1,95 @@
 [
   {
+    "id": 2497,
+    "fecha": "2026-09-02T18:23:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Filtración de datos de salud de 9.5 M de usuarios tras ataque a Aesto",
+    "resumen": "Un ataque cibernético comprometió el sistema de registro de Aesto, exponiendo información sensible de más de 9,5 millones de pacientes, incluyendo historiales médicos y datos de identificación. La brecha sugiere explotación de vulnerabilidades en la infraestructura de bases de datos y falta de segmentación adecuada, con potencial impacto regulatorio bajo HIPAA y GDPR.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzNzMzODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/health-data-aesto-cyberattack-leak",
+    "fuente": "The Record",
+    "dedup_key": "txt:health data of more than 9 5 million people leaked from aesto record system",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2496,
+    "fecha": "2026-09-02T18:23:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Operación \"Spring Ring\" lanza ataques vishing contra usuarios de Microsoft Teams",
+    "resumen": "Grupo de amenaza utiliza ingeniería social vía llamadas telefónicas (vishing) para obtener credenciales de Teams, permitiendo acceso remoto a sesiones, despliegue de malware y posible toma de control de infraestructura crítica.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzNzMzODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/threat-gang-springs-vishing-attacks-microsoft-teams-users",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:threat gang springs vishing attacks on microsoft teams users",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spear"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2495,
+    "fecha": "2026-09-02T18:22:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña de instaladores falsos desactiva Windows Update y debilita Microsoft Def",
+    "resumen": "Malware distribuido vía sitios falsos de descarga imita a proveedores legítimos, instala payloads que deshabilitan Windows Update y modifican configuraciones de Microsoft Defender, facilitando persistencia y movimiento lateral en entornos corporativos, con foco en operaciones chinas.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzNzMzNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/fake-software-installers-disable.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fake software installers disable windows update and weaken microsoft defender",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2494,
+    "fecha": "2026-09-02T18:22:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Switchvox permite shells inversos sin autenticación",
+    "resumen": "CVE‑2026‑XXXX en Sangoma Switchvox (SQL injection) otorga ejecución remota de código sin credenciales, facilitando despliegue de reverse shells y potencial movimiento lateral en entornos VoIP. La mitigación requiere actualizar a Switchvox 8.4.0.2+ y monitorizar indicadores de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzNzMzNzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-switchvox-para-abrir-reverse-shells-sin-credenciales/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-aprovechan-un-fallo-critico-en-switchvox-para-abrir-reverse-shells-sin-credenciales",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:atacantes aprovechan un fallo crítico en switchvox para abrir reverse shells sin credenciales",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.004",
+        "name": "Unix Shell"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "8.4.0.2"
+      ],
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-switchvox-para-abrir-reverse-shells-sin-credenciales/"
+      ]
+    }
+  },
+  {
     "id": 2493,
     "fecha": "2026-09-02T13:10:40Z",
     "categoria": "Ciberseguridad",
