@@ -1,5 +1,96 @@
 [
   {
+    "id": 2492,
+    "fecha": "2026-09-02T07:33:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Riesgo de IA de frontera amenaza la estabilidad del sistema financiero global",
+    "resumen": "El presidente del Financial Stability Board advierte que la dependencia compartida de modelos de lenguaje avanzados y plataformas de IA genera un vector de ataque sistémico, pudiendo desencadenar interrupciones simultáneas en múltiples instituciones financieras. Se insta a bancos y proveedores de tecnología a implementar controles de resiliencia, auditorías de modelo y planes de contingencia ante posibles exploits o fallos de integridad en IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMzQ0MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cyber-risk-from-frontier-ai-most-immediate-concern-to-global-finance",
+    "fuente": "The Record",
+    "dedup_key": "txt:cyber risk from frontier ai poses most immediate concern to global financial system watchdog warns",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2491,
+    "fecha": "2026-09-02T07:33:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Robo de credenciales compromete API de AI Model Evaluator y genera $600k en cons",
+    "resumen": "Un actor malicioso sustrajo la clave API de METR, una herramienta de evaluación de modelos de IA, y la utilizó para agotar $600,000 en créditos de acceso a modelos públicos, exponiendo la falta de gestión de secretos y potenciales vectores de abuso de recursos en entornos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMzQ0MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/identity-access-management-security/ai-model-evaluator-metr-credential-theft-probing",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai model evaluator metr hit by credential theft probing",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2490,
+    "fecha": "2026-09-02T07:33:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ClickFix: Técnica de acceso inicial basada en clipboard domina 2023",
+    "resumen": "Microsoft reporta que el método ClickFix, que inserta comandos maliciosos en el portapapeles tras un captcha y guía al usuario a pegarlos en una terminal, fue la vía de acceso inicial más frecuente en 2023, evidenciando una tendencia a ataques repetibles y de bajo nivel de sofisticación.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMzQzOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/threat-actors-dont-want-better-attacks.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threat actors don t want better attacks they want repeatable ones",
+    "ttps": [
+      {
+        "id": "T1115",
+        "name": "Clipboard Data"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2489,
+    "fecha": "2026-09-02T07:33:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SonicWall alerta sobre zero‑day activo en firewalls SMA1000",
+    "resumen": "Se detectó que actores de amenaza están encadenando dos vulnerabilidades críticas (CVE‑2024‑XXXX) en los dispositivos SMA1000 para ejecutar código remoto sin autenticación, comprometiendo la infraestructura perimetral de clientes. El vector de ataque combina explotación de RCE vía gestión web y bypass de autenticación, lo que permite despliegue de payloads y movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMzQzODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:sonicwall warns of actively exploited sma1000 zero day flaws",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2488,
     "fecha": "2026-09-02T02:34:24Z",
     "categoria": "Ciberseguridad",
