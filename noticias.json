@@ -1,5 +1,83 @@
 [
   {
+    "id": 2516,
+    "fecha": "2026-09-03T22:57:28Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "GPT‑6 Astra de OpenAI eleva la IA agéntica, complica la supervisión en entornos",
+    "resumen": "OpenAI lanza GPT‑6 Astra, un modelo de lenguaje con capacidad de ejecutar flujos multi‑paso (navegación web, uso de herramientas locales y generación de código) dirigido a sectores como ciberseguridad y ciencia; su autonomía incrementada reduce la visibilidad de decisiones, aumentando el riesgo de uso malicioso o de bypass de controles de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1781643565886-31cb0e88084d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NzYyNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/gpt-6-astra-llega-como-gran-salto-openai-puede-hacer-mucho-nosotros-tambien-sera-dificil-supervisar",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:gpt 6 astra llega como el gran salto de openai puede hacer mucho más por nosotros pero también será más difícil de supervisar",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "openai.com",
+        "www.reuters.com",
+        "www.theverge.com",
+        "www.xataka.com"
+      ],
+      "url": [
+        "https://i.blogs.es/1ec8f0/fable5-1/375_142.jpeg",
+        "https://i.blogs.es/5807ba/api-astra/1024_2000.jpeg",
+        "https://i.blogs.es/5807ba/api-astra/1366_2000.jpeg",
+        "https://i.blogs.es/5807ba/api-astra/450_1000.jpeg",
+        "https://i.blogs.es/5807ba/api-astra/650_1200.jpeg",
+        "https://i.blogs.es/7c263a/benchmarks-astra/1024_2000.jpeg",
+        "https://i.blogs.es/7c263a/benchmarks-astra/1366_2000.jpeg",
+        "https://i.blogs.es/7c263a/benchmarks-astra/450_1000.jpeg",
+        "https://i.blogs.es/7c263a/benchmarks-astra/650_1200.jpeg",
+        "https://i.blogs.es/8c7cd3/open-ai-nuevo-modelo-astra/1024_2000.jpeg",
+        "https://openai.com/index/gpt-6-astra/",
+        "https://www.reuters.com/legal/litigation/openai-launches-new-astra-model-amid-growing-scrutiny-over-agents-safety-2026-09-03/",
+        "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release"
+      ]
+    }
+  },
+  {
+    "id": 2515,
+    "fecha": "2026-09-03T22:57:16Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Simultáneas caídas de ChatGPT, Claude y Grok generan incertidumbre operativa",
+    "resumen": "Los principales modelos de lenguaje (ChatGPT, Claude y Grok) experimentaron interrupciones simultáneas sin explicación pública, lo que afecta la disponibilidad de servicios críticos basados en IA y plantea riesgos de continuidad para entornos productivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1767966783202-c5659292bd39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NzYyMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:nobody is saying why openai and anthropic had outages today",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2514,
+    "fecha": "2026-09-03T22:57:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Spyware avanzado apunta a 14 opositores serbios, incluido un diputado",
+    "resumen": "Investigadores forenses digitales detectaron que al menos 14 individuos en Serbia, entre ellos un parlamentario, un político opositor y activistas estudiantiles, fueron infectados con spyware de alta sofisticación desde diciembre, indicando un posible campaña de vigilancia estatal o de actores con intereses políticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NzYyMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/serbia-spyware-pegasus-europe",
+    "fuente": "The Record",
+    "dedup_key": "txt:large group of serbian opposition activist figures targeted with spyware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2513,
+    "fecha": "2026-09-03T22:57:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Phishing a CEOs y compromisos masivos de cuentas Dropbox mediante trampas OAuth",
+    "resumen": "Se reportan kits de phishing dirigidos a ejecutivos (CEO phishing) que usan páginas de login falsificadas y flujos OAuth manipulados para robar credenciales, junto con más de 5 000 cuentas de Dropbox comprometidas por descargas maliciosas ocultas en enlaces de “Allow”. El vector principal es la ingeniería social combinada con abuso de OAuth y credenciales reutilizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NzYyMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday ceo phishing kits 5k dropbox account hacks oauth traps 17 more stories",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2512,
     "fecha": "2026-09-03T18:17:58Z",
     "categoria": "Ciberseguridad",
