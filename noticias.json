@@ -1,5 +1,51 @@
 [
   {
+    "id": 2507,
+    "fecha": "2026-09-03T07:41:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE‑2022‑27666: Desbordamiento de búfer en IPsec ESP permite escalada de privile",
+    "resumen": "Vulnerabilidad de tipo stack buffer overflow en los módulos net/ipv4/esp4.c y net/ipv6/esp6.c del kernel Linux permite a un atacante local con privilegios de usuario estándar sobrescribir estructuras críticas del kernel y obtener privilegios de root. Impacta a todas las distribuciones que utilicen versiones vulnerables del kernel, exponiendo entornos de servidores y dispositivos IoT.",
+    "url_imagen": "https://picsum.photos/seed/cybersec102/800/450",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-27666",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2022-27666",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2022-27666"
+      ]
+    }
+  },
+  {
+    "id": 2506,
+    "fecha": "2026-09-03T07:41:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Zero‑day FalconFlank permite escalada de privilegios en CrowdStrike Falcon",
+    "resumen": "El investigador Chaotic Eclipse divulgó FalconFlank, una vulnerabilidad 0‑day que explota la funcionalidad de remediación de macros maliciosas en el sensor de CrowdStrike Falcon para obtener privilegios de administrador en sistemas comprometidos. El vector de ataque se basa en la ejecución de macros en entornos Windows y la manipulación de procesos internos del agente, lo que podría ser aprovechado por actores avanzados para evadir EDR y expandir su dominio.",
+    "url_imagen": "https://picsum.photos/seed/cybersec103/800/450",
+    "enlace_original": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researcher releases falconflank poc showing privilege escalation in crowdstrike falcon",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059.005",
+        "name": "Visual Basic"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2505,
     "fecha": "2026-09-03T02:40:51Z",
     "categoria": "Ciberseguridad",
