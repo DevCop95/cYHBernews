@@ -1,5 +1,77 @@
 [
   {
+    "id": 2505,
+    "fecha": "2026-09-03T02:40:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ruso extraditado a EE. UU. enfrenta 20 años por campaña de malware contra 80 000",
+    "resumen": "El ciudadano ruso Searzhudin Tamirlanovich Aktulaev fue detenido en Chipre y extraditado a EE. UU., donde se le acusa de liderar una campaña de malware que comprometió a más de 80 000 trabajadores freelance, instalando ransomware y troyanos para robar credenciales y datos financieros. El ataque explotó vulnerabilidades en herramientas de gestión de proyectos y plataformas de pago, generando pérdidas estimadas en varios millones de dólares y exponiendo información sensible de usuarios globales.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0MDMyNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russian-national-facing-20-years-malware-campaign",
+    "fuente": "The Record",
+    "dedup_key": "txt:russian national facing 20 years for malware campaign that infected 80 000 freelancers",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2504,
+    "fecha": "2026-09-03T02:40:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en agentes de IA de línea de comandos permiten ejecución de cód",
+    "resumen": "Manifold Security reportó ocho fallas en siete agentes de codificación IA (Claude, Codex, Cursor, etc.) que explotan configuraciones .git maliciosas para ejecutar comandos arbitrarios en el host del desarrollador sin sandbox ni prompt de aprobación; cuatro vulnerabilidades siguen sin parchear.",
+    "url_imagen": "https://images.unsplash.com/photo-1756671994948-183e2d833da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0MDMyNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/malicious-git-configs-can-make-claude.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:malicious git configs can make claude codex cursor and other ai agents run attacker code",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2503,
+    "fecha": "2026-09-03T02:40:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "93% de CTOs priorizan backup inmutable para mitigar ransomware",
+    "resumen": "Un estudio de Object First y Omdia revela que el 83 % de las organizaciones sufrió ransomware en los últimos 24 meses, impulsando la adopción de soluciones de backup inmutable como medida crítica de defensa. La falta de mutabilidad impide la alteración de copias de datos, cerrando el vector de cifrado y facilitando la recuperación sin pagar rescate.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0MDMyMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-93-de-los-responsables-tecnologicos-considera-clave-el-backup-inmutable-contra-el-ransomware/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el 93 de los responsables tecnológicos considera clave el backup inmutable contra el ransomware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2502,
     "fecha": "2026-09-02T22:57:35Z",
     "categoria": "Ciberseguridad",
