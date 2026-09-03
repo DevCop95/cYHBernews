@@ -1,5 +1,101 @@
 [
   {
+    "id": 2511,
+    "fecha": "2026-09-03T13:12:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Herramienta de búsqueda IA de Flock para vigilancia policial en tiempo real",
+    "resumen": "Flock despliega un motor de IA que analiza flujos de vídeo de múltiples cámaras y alerta a los agentes cuando detecta personas que coinciden con descripciones textuales, integrándose directamente en el navegador del oficial. El vector de ataque potencial incluye la inyección de código malicioso en la extensión del navegador y la manipulación de los modelos de visión para falsos positivos o negativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NDExNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/flock-ai-search-user-interface/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:this is flock s ai search tool for cops",
+    "ttps": [
+      {
+        "id": "T1546.015",
+        "name": "Browser Extensions"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2510,
+    "fecha": "2026-09-03T13:12:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Investigación revela tácticas de estafas laborales mediante empresas ficticias",
+    "resumen": "Un equipo de investigadores creó una compañía simulada para infiltrarse y documentar los métodos de phishing y fraude de empleo empleados por actores maliciosos, identificando vectores de ataque basados en correos de oferta y formularios de reclutamiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NDExMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/researching-employment-scams.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:researching employment scams",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "https://any.run/cybersecurity-blog/lazarus-group-it-workers-investigation-part-two/"
+      ]
+    }
+  },
+  {
+    "id": 2509,
+    "fecha": "2026-09-03T13:12:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Grupo de amenaza brasileño “Breeze Comet” compromete sistemas financieros nacion",
+    "resumen": "La célula de ataque más sofisticada de Brasil ha infiltrado infraestructuras de pago y plataformas bancarias, desviando fondos directamente a cuentas controladas por los atacantes; el vector principal incluye malware de tipo banking trojan y explotación de vulnerabilidades sin parchear en APIs de transferencia.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NDExMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/breeze-comet-brazilian-global-financial-systems",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:breeze comet tears into brazilian amp global financial systems",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1056.001",
+        "name": "Input Capture: Keylogging"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2508,
+    "fecha": "2026-09-03T13:12:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "EE. UU. lidera objetivo de campaña global de phishing RMM en 46 países",
+    "resumen": "La campaña de phishing dirigida a herramientas de Remote Monitoring and Management (RMM) utilizó formularios falsos de la CRA y se expandió a 46 naciones, con un 45 % de los incidentes detectados en EE. UU., indicando un foco geográfico y vector de ataque de credenciales RMM.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0NDExMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/us-becomes-top-target-in-rmm-phishing.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:us becomes top target in rmm phishing campaign spanning 46 countries",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2507,
     "fecha": "2026-09-03T07:41:56Z",
     "categoria": "Ciberseguridad",
