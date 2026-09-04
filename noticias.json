@@ -1,5 +1,156 @@
 [
   {
+    "id": 2531,
+    "fecha": "2026-09-04T18:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "GPT‑6 Astra supera ExploitBench: IA de alto rendimiento con riesgo de abuso",
+    "resumen": "OpenAI anuncia GPT‑6 Astra, que alcanza 100 % en ExploitBench, evidenciando capacidad avanzada para generar exploits y código malicioso; su alineación declarada no garantiza mitigación de usos maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NDQ5MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/vibe-coding-al-vibe-doing-como-gpt-6-astra-openai-quiere-que-maquinas-hagan-cosas-nosotros",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:del vibe coding al vibe doing cómo con gpt 6 astra openai quiere que las máquinas hagan cosas por nosotros",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arcprize.org",
+        "en.wikipedia.org",
+        "openai.com",
+        "play.excel-esports.com",
+        "thenewstack.io",
+        "www.technologyreview.com",
+        "www.xataka.com",
+        "www.youtube.com"
+      ],
+      "url": [
+        "https://arcprize.org/blog/astra",
+        "https://artificialanalysis.ai/articles/benchmarking-gpt-6-astra",
+        "https://i.blogs.es/2eb931/star-trek/375_142.jpeg",
+        "https://i.blogs.es/465004/immich-android-tv-javipas3/1024_682.jpeg",
+        "https://i.blogs.es/465004/immich-android-tv-javipas3/500_333.jpeg",
+        "https://i.blogs.es/465004/immich-android-tv-javipas3/840_560.jpeg",
+        "https://i.blogs.es/5ccf46/captura-de-pantalla-2026-09-04-a-las-12.33.05/1024_2000.jpeg",
+        "https://i.blogs.es/87679d/spectrum-claude/375_142.jpeg",
+        "https://i.blogs.es/acb86c/btron-1/375_142.jpeg",
+        "https://i.blogs.es/c3b086/captura-de-pantalla-2026-09-04-a-las-11.40.09/1024_2000.jpeg",
+        "https://i.blogs.es/c3b086/captura-de-pantalla-2026-09-04-a-las-11.40.09/1366_2000.jpeg",
+        "https://i.blogs.es/c3b086/captura-de-pantalla-2026-09-04-a-las-11.40.09/450_1000.jpeg",
+        "https://i.blogs.es/c3b086/captura-de-pantalla-2026-09-04-a-las-11.40.09/650_1200.jpeg",
+        "https://openai.com/index/gpt-6-astra/",
+        "https://openai.com/index/path-to-astra/",
+        "https://play.excel-esports.com/",
+        "https://thenewstack.io/openai-gpt6-astra-benchmarks/",
+        "https://www.technologyreview.com/2019/04/24/135828/the-geek/"
+      ]
+    }
+  },
+  {
+    "id": 2530,
+    "fecha": "2026-09-04T18:01:31Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "VM tradicionales insuficientes para contener agentes IA con capacidad cibernétic",
+    "resumen": "Un análisis de Trail of Bits muestra que agentes IA avanzados (p.ej., GPT‑5.6‑Cyber) pueden evadir entornos virtualizados estándar, explotando la superficie de ataque ampliada por funcionalidades comunes como la salida de pantalla. Se requiere reevaluar los mecanismos de sandboxing y la cadena de confianza del stack software para mitigar riesgos de ejecución de código malicioso por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009875-436f71457475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NDQ4OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/using-a-vm-to-contain-an-ai-agent.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:using a vm to contain an ai agent",
+    "ttps": [
+      {
+        "id": "T1497.001",
+        "name": "Virtualization/Sandbox Evasion: System Checks"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "blog.trailofbits.com"
+      ],
+      "url": [
+        "https://blog.trailofbits.com/2026/08/26/vms-wont-contain-cyber-capable-agents/"
+      ]
+    }
+  },
+  {
+    "id": 2529,
+    "fecha": "2026-09-04T18:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Modelos de IA autónomos pueden lanzar compromisos de extremo a extremo en 6 mese",
+    "resumen": "Estudios de Frontier AI demuestran que sus modelos ya ejecutan ataques completos sin intervención humana, incluyendo reconocimiento, explotación de CVE y exfiltración de datos; se prevé que en los próximos seis meses la capacidad de automatización alcance escala operativa.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NDQ4ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/companies-six-months-prepare-automated-attacks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:companies have 6 months to prepare for automated attacks",
+    "ttps": [
+      {
+        "id": "T1589",
+        "name": "Gather Victim Identity"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2528,
+    "fecha": "2026-09-04T18:01:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña de phishing masiva usa caracteres Unicode invisibles para evadir filtros",
+    "resumen": "Microsoft detectó una campaña de phishing de alto volumen que inserta caracteres Unicode de control invisibles dentro de palabras clave financieras (p. ej., “fu​nding”) para romper la detección de filtros de correo. El vector de ataque explota la falta de normalización de Unicode en gateways de email, permitiendo la entrega de enlaces maliciosos a miles de destinatarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NDQ4ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/phishing-campaign-sends-millions-of.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:phishing campaign sends millions of emails using invisible unicode to evade filters",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1027.007",
+        "name": "Obfuscated Files or Information: Unicode Obfusc"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2527,
+    "fecha": "2026-09-04T18:01:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Google parchea zero‑day activo en V8 de Chrome (CVE‑2026‑85046)",
+    "resumen": "Google lanzó Chrome 152.0.7977.82 con parche crítico para CVE‑2026‑85046, un zero‑day en el motor V8 explotado activamente en ataques de ejecución remota de código. La vulnerabilidad afecta a todos los usuarios de Chrome y requiere actualización inmediata y reinicio del navegador.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NDQ4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/google-corrige-un-dia-cero-de-v8-en-chrome-que-se-explota-de-forma-activa-2/?utm_source=rss&utm_medium=rss&utm_campaign=google-corrige-un-dia-cero-de-v8-en-chrome-que-se-explota-de-forma-activa-2",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-85046",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/google-corrige-un-dia-cero-de-v8-en-chrome-que-se-explota-de-forma-activa-2/"
+      ],
+      "cve": [
+        "CVE-2026-85046"
+      ]
+    }
+  },
+  {
     "id": 2526,
     "fecha": "2026-09-04T13:06:20Z",
     "categoria": "Ciberseguridad",
