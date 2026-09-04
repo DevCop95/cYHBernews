@@ -1,5 +1,110 @@
 [
   {
+    "id": 2526,
+    "fecha": "2026-09-04T13:06:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en FreePBX 17.0.2 permite ejecución remota de código",
+    "resumen": "Se ha identificado una vulnerabilidad crítica de Remote Code Execution en FreePBX versión 17.0.2, explotable sin autenticación mediante inyección de comandos en la API REST, lo que permite a un atacante tomar control total del servidor de telefonía IP. La falla afecta a todas las instalaciones que no apliquen el parche disponible y puede ser usada como pivote para comprometer redes corporativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1MjcxODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52681",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps freepbx 17 0 2 remote code execution rce",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2525,
+    "fecha": "2026-09-04T13:06:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2025-38206: Doble liberación en exFAT del kernel Linux (CVSS 7.8)",
+    "resumen": "Vulnerabilidad de doble free en la ruta exfat_create_upcase_table() permite a un atacante local escalar privilegios o provocar denegación de servicio mediante manipulación de sistemas de archivos exFAT. El parche corrige la condición estableciendo vol_util a NULL tras la liberación, mitigando la explotación en distribuciones basadas en Linux y Debian.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1MjcxNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-38206",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-38206",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-38206"
+      ]
+    }
+  },
+  {
+    "id": 2524,
+    "fecha": "2026-09-04T13:05:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en escáneres electorales permite reconstruir el orden de boletas",
+    "resumen": "Un exploit basado en IA reutiliza una vulnerabilidad divulgada hace cuatro años para inferir el orden de los votos en Georgia, combinando listas de votantes tempranos y archivos CVR públicos, sin necesidad de acceso a la máquina o la red. El vector de ataque es la correlación de datos abiertos mediante un agente de codificación, lo que compromete la confidencialidad del voto secreto.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1MjcxNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/security-vulnerability-in-a-voting-system.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:security vulnerability in a voting system",
+    "ttps": [
+      {
+        "id": "T1518.001",
+        "name": "Search Open Websites/Domains"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "https://blog.citp.princeton.edu/2026/08/03/an-algorithmic-failure-beneath-the-secret-ballot/"
+      ]
+    }
+  },
+  {
+    "id": 2523,
+    "fecha": "2026-09-04T13:05:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA acelera la exposición de vulnerabilidades ocultas en software",
+    "resumen": "Los modelos de IA generativa están automatizando la identificación y reporte masivo de bugs, revelando fallos de diseño seguro y saturando los procesos de divulgación de vulnerabilidades (CVE). Esto aumenta el riesgo de explotación antes de que los proveedores apliquen mitigaciones, creando cuellos de botella críticos en la gestión de parches.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1MjcxNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/ai-ending-era-hidden-vulnerabilities-are-vendors-ready",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai is ending the era of hidden vulnerabilities are vendors ready",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2522,
+    "fecha": "2026-09-04T13:05:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Más de 440 000 intentos de exploit contra fallas RCE en Super Forms y Elementor",
+    "resumen": "Amenazas están explotando CVE‑2026‑14894 (Super Forms) y CVE‑2026‑14901 (Elementor Pro) para subir archivos arbitrarios y ejecutar código remoto sin autenticación, con más de 440 k intentos detectados por Wordfence en los últimos 30 días. El vector principal es la carga de archivos maliciosos vía formularios web, exponiendo sitios WordPress a compromisos de servidor y posible movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1MjcxNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-14894",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14894"
+      ]
+    }
+  },
+  {
     "id": 2521,
     "fecha": "2026-09-04T07:39:12Z",
     "categoria": "Ciberseguridad",
