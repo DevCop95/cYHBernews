@@ -1,5 +1,66 @@
 [
   {
+    "id": 2519,
+    "fecha": "2026-09-04T02:37:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2025-5459 permite escalada a root en Puppet Enterprise 2018‑2025",
+    "resumen": "Vulnerabilidad de privilegio de edición de grupos de nodos y parámetros de clase manipulados que permite ejecución de comandos como root en el host maestro; afecta a Puppet Enterprise 2018.1.8‑2023.8.3 y 2025.3, mitigada en 2023.8.4 y 2025.4.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0ODk0NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-5459",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-5459",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-5459"
+      ]
+    }
+  },
+  {
+    "id": 2518,
+    "fecha": "2026-09-04T02:37:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brecha en plataforma judicial de Thomson Reuters expone datos de EE. UU. y Canad",
+    "resumen": "Un ataque comprometió el sistema de registros judiciales de Thomson Reuters, revelando información sellada de tribunales y datos personales sensibles de al menos 12 estados estadounidenses, Islas Vírgenes y Canadá; el vector parece ser una vulnerabilidad de acceso no autenticado en la API de consulta.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0ODk0NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/thomson-reuters-cyberattack-data",
+    "fuente": "The Record",
+    "dedup_key": "txt:us and canadian court data exposed in thomson reuters breach",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2517,
+    "fecha": "2026-09-04T02:37:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fraude de fusiones falsas apunta a grandes corporaciones en campaña \"Phantom Dea",
+    "resumen": "Amenazas de actores maliciosos analizan exhaustivamente a empresas objetivo para engañar a empleados de nivel medio y lograr transferencias financieras masivas mediante correos de phishing de fusiones y adquisiciones falsas. El vector principal es spear‑phishing con documentos de negocio falsificados, lo que incrementa el riesgo de pérdidas económicas significativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg0ODk0NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/large-enterprises-fake-merger-acquisition-scams",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:large enterprises targeted in fake merger amp acquisition scams",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2516,
     "fecha": "2026-09-03T22:57:28Z",
     "categoria": "IA",
