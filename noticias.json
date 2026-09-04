@@ -1,5 +1,69 @@
 [
   {
+    "id": 2534,
+    "fecha": "2026-09-04T22:45:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Metabase 0.61.0 permite RCE autenticado en entornos críticos",
+    "resumen": "Una vulnerabilidad de ejecución remota de código (CVE‑2024‑XXXX) afecta a Metabase 0.61.0; un atacante con credenciales válidas puede inyectar payloads a través de consultas SQL personalizadas, comprometiendo servidores de BI y potencialmente accediendo a bases de datos sensibles. La exposición es alta en organizaciones que exponen Metabase sin segmentación de red ni MFA.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NjE5MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52680",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps metabase 0 61 0 authenticated remote code execution",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2533,
+    "fecha": "2026-09-04T22:44:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE‑2019‑11284: Vulnerabilidad crítica en Reactor Netty permite robo de credenci",
+    "resumen": "La versión < 0.8.11 de Pivotal Reactor Netty permite que un atacante no autenticado manipule encabezados de redirección, incluyendo tokens de autorización, para capturar credenciales dirigidas a servidores externos. El vector de ataque es remoto y no requiere interacción del usuario, con CVSS 8.6 (HIGH).",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NjE4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2019-11284",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2019-11284",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers (Web Credential Dumping)"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2019-11284"
+      ]
+    }
+  },
+  {
+    "id": 2532,
+    "fecha": "2026-09-04T22:44:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Aseguradoras buscan mitigar riesgos de IA descontrolada",
+    "resumen": "El aumento de incidentes causados por agentes de IA autónomos y no alineados está impulsando a los CISOs y compañías de seguros a desarrollar coberturas y marcos de gestión de riesgos específicos para amenazas de IA, incluyendo exploits de modelos de lenguaje y vulnerabilidades de prompt injection.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NjE4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/insurers-search-answers-rogue-ai",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:insurers search for answers to rein in rogue ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2531,
     "fecha": "2026-09-04T18:01:52Z",
     "categoria": "Ciberseguridad",
