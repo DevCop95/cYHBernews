@@ -1,5 +1,55 @@
 [
   {
+    "id": 2521,
+    "fecha": "2026-09-04T07:39:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Grupo hacker pro-Ucrania VantaCore despliega ransomware a empresas rusas",
+    "resumen": "VantaCore ha comprometido al menos siete organizaciones en Rusia, usando un ransomware a medida que cifra datos críticos y exige pagos en criptomonedas, incrementando la exposición de infraestructura crítica en el conflicto geopolítico.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1MDc1NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/new-pro-ukraine-hacker-group-custom-ransomware-russia",
+    "fuente": "The Record",
+    "dedup_key": "txt:new pro ukraine hacker group targets russian companies with custom ransomware",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2520,
+    "fecha": "2026-09-04T07:39:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "ShinyHunters apunta a ReliaQuest: posible brecha y auge del malware IA",
+    "resumen": "Según la discusión de Dark Reading, el grupo de amenazas ShinyHunters habría comprometido datos de ReliaQuest, exponiendo credenciales de clientes y potenciales vectores de movimiento lateral; simultáneamente se citan investigaciones que indican un incremento en malware generado por modelos de lenguaje, elevando la amenaza de ataques automatizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1MDc1NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/what-we-missed-did-shinyhunters-breach-reliaquest",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:what we missed did shinyhunters breach reliaquest",
+    "ttps": [
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Develop Capabilities: Malware"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2519,
     "fecha": "2026-09-04T02:37:34Z",
     "categoria": "Ciberseguridad",
