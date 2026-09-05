@@ -1,5 +1,86 @@
 [
   {
+    "id": 2537,
+    "fecha": "2026-09-05T02:39:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware con C2 en contratos inteligentes de Ethereum se actualiza en tiempo real",
+    "resumen": "Se detectó una campaña activa que emplea contratos inteligentes de Ethereum para la resolución de C2, permitiendo actualizaciones dinámicas del payload sin infraestructura tradicional. El vector de ataque combina phishing y ejecución de código Go, incrementando la persistencia y evasión en entornos de blockchain.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NzU5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9401",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:this is really exciting malware actually tl dr they re updating their goop as i poke the goop with a stick they re",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1102",
+        "name": "Web Service"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2536,
+    "fecha": "2026-09-05T02:38:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2020-5403: Vulnerabilidad en Reactor Netty HttpServer permite denegación de",
+    "resumen": "La versión 0.9.3/0.9.4 de Reactor Netty HttpServer cierra la conexión ante una URISyntaxException en lugar de devolver 400, facilitando ataques de DoS por peticiones malformadas. Afecta a aplicaciones Java que dependan de broadcom:reactor_netty, exponiendo servicios críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NzU5MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-5403",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2020-5403",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.002",
+        "name": "Application Exhaustion Flood"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2020-5403"
+      ]
+    }
+  },
+  {
+    "id": 2535,
+    "fecha": "2026-09-05T02:38:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "IDScan enfrenta demandas tras presunto brecha de datos que expone 153 M de licen",
+    "resumen": "Hackers comprometieron la plataforma de verificación de identidad de IDScan y pusieron a la venta más de 153 millones de registros de licencias de conducir, lo que genera un riesgo masivo de fraude de identidad y phishing dirigido. La vulnerabilidad parece derivar de una exposición de API sin autenticación adecuada, facilitando la extracción masiva de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1NzU5MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/idscan-sued-over-alleged-data-breach-affecting-153-million-drivers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:idscan sued over alleged data breach affecting 153 million drivers",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2534,
     "fecha": "2026-09-04T22:45:05Z",
     "categoria": "Ciberseguridad",
