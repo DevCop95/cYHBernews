@@ -1,5 +1,73 @@
 [
   {
+    "id": 2548,
+    "fecha": "2026-09-05T17:05:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brecha en JetBrains Cadence por vulnerabilidad crítica sin parchear en TeamCity",
+    "resumen": "Threat actors explotaron una vulnerabilidad crítica recientemente divulgada en TeamCity para infiltrarse en el entorno de JetBrains y extraer credenciales de AWS, comprometiendo potencialmente flujos de trabajo automatizados en Cadence. Se recomienda revocar y rotar inmediatamente todas las credenciales y secretos asociados.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg2Mjc5MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-breached-jetbrains-cadence.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers breached jetbrains cadence via unpatched teamcity extracting aws credentials",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*Brecha en JetBrains Cadence por vulnerabilidad crítica sin parchear en TeamCity*\n\nThreat actors explotaron una vulnerabilidad crítica recientemente divulgada en TeamCity para infiltrarse en el entorno de JetBrains y extraer credenciales de AWS, comprometiendo potencialmente flujos de trabajo automatizados en Cadence. Se recomienda revocar y rotar inmediatamente todas las credenciales y secretos asociados.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1552.001` — Credentials In Files\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-breached-jetbrains-cadence.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2547,
+    "fecha": "2026-09-05T17:05:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Exploitan vulnerabilidad crítica de bypass de autenticación en Citrix NetScaler",
+    "resumen": "Amenaza activa en la wild que aprovecha un bypass de autenticación de severidad crítica en Citrix NetScaler, permitiendo a actores no autenticados ejecutar comandos arbitrarios y escalar privilegios dentro de entornos de red perimetral. El vector de ataque se basa en solicitudes HTTP manipuladas que evaden la validación de credenciales, exponiendo a organizaciones a compromisos de infraestructura y posible movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg2Mjc5MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-target-critical-citrix-netscaler-auth-bypass-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "cve:cve-2026-19490",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19490"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Bleeping Computer*\n\n*Exploitan vulnerabilidad crítica de bypass de autenticación en Citrix NetScaler*\n\nAmenaza activa en la wild que aprovecha un bypass de autenticación de severidad crítica en Citrix NetScaler, permitiendo a actores no autenticados ejecutar comandos arbitrarios y escalar privilegios dentro de entornos de red perimetral. El vector de ataque se basa en solicitudes HTTP manipuladas que evaden la validación de credenciales, exponiendo a organizaciones a compromisos de infraestructura y posible movimiento lateral.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-19490\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/hackers-target-critical-citrix-netscaler-auth-bypass-in-attacks/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2546,
     "fecha": "2026-09-05T15:28:45Z",
     "categoria": "Ciberseguridad",
