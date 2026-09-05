@@ -1,5 +1,32 @@
 [
   {
+    "id": 2550,
+    "fecha": "2026-09-05T22:37:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Zero‑Day StyleSmuggler compromete tiendas Magento y Adobe Commerce sin autentica",
+    "resumen": "Un vulnerabilidad sin parche (CVE pendiente) en Magento Open Source y Adobe Commerce permite a atacantes ejecutar código arbitrario en el servidor del e‑commerce sin necesidad de credenciales, habilitando backdoors y potencial exfiltración de datos. El vector de ataque se basa en la manipulación de peticiones HTTP que aprovechan la lógica de carga de temas, y los exploits se detectaron a partir del 4 de septiembre.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg2NDc4NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:unpatched magento and adobe commerce zero day exploited to backdoor online stores",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2549,
     "fecha": "2026-09-05T19:50:59Z",
     "categoria": "Ciberseguridad",
