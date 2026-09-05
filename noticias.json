@@ -26,10 +26,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *CyberSecurity News*\n\n*Error operativo expone red de cibercrimen con 5.000 endpoints comprometidos*\n\nUn fallo de configuración en la infraestructura de la operación StopAndProtect permitió a investigadores de Check Point identificar y mapear más de 5.000 sistemas bajo control de la banda criminal, revelando su arquitectura de comando y control y los vectores de infección basados en phishing y exploits de vulnerabilidades no parcheadas.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1071` — Application Layer Protocol\n\n🔗 [Leer más](https://cybersecuritynews.es/un-error-operativo-destapa-una-red-global-de-cibercrimen-con-5-000-equipos-comprometidos/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "93ecedc2c2b14f8c81cdf15a04b9e2ad"
+      "attempt_id": "93ecedc2c2b14f8c81cdf15a04b9e2ad",
+      "message_id": 2590,
+      "sent_at": "2026-09-05T15:31:37Z"
     }
   },
   {
