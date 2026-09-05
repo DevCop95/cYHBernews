@@ -1,5 +1,44 @@
 [
   {
+    "id": 2538,
+    "fecha": "2026-09-05T07:19:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "PostgreSQL corrige vulnerabilidad de 12 años que permite ejecución de código vía",
+    "resumen": "Se parchea CVE‑2026‑6471 (CVSS 7.2) que permite a un usuario con el atributo REPLICATION ejecutar código arbitrario como el usuario del SO que aloja el servidor, afectando todas las versiones anteriores a 14.24, 15.19, 16.15, 17.11 y 18.6. El vector de ataque es la manipulación de logical decoding en replicación, lo que expone bases de datos críticas a compromisos de integridad y confidencialidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg1OTI3ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-6471",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499.001",
+        "name": "Endpoint Denial of Service: OS Exhaustion (por ejecución de código arbitrario que compromete la integridad)"
+      },
+      {
+        "id": "T1021.010",
+        "name": "Remote Services: Replication Protocol"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Data Manipulation: Stored Data Manipulation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-6471"
+      ]
+    }
+  },
+  {
     "id": 2537,
     "fecha": "2026-09-05T02:39:03Z",
     "categoria": "Ciberseguridad",
