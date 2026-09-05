@@ -1,5 +1,49 @@
 [
   {
+    "id": 2549,
+    "fecha": "2026-09-05T19:50:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE‑2025‑15379: Inyección de comandos en MLflow permite ejecución arbitraria",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en la función `_install_model_dependencies_to_env()` de MLflow 3.8.0 permite que un artefacto de modelo malicioso inyecte comandos de shell al usar `env_manager=LOCAL`. Un atacante que controle el artefacto puede ejecutar código arbitrario en el host que despliegue el modelo.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg2Mzc4NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-15379",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-15379",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1059.003",
+        "name": "Windows Command Shell"
+      },
+      {
+        "id": "T1546.009",
+        "name": "AppCert DLLs"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-15379"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *NVD (NIST)*\n\n*CVE‑2025‑15379: Inyección de comandos en MLflow permite ejecución arbitraria*\n\nVulnerabilidad crítica (CVSS 10.0) en la función `_install_model_dependencies_to_env()` de MLflow 3.8.0 permite que un artefacto de modelo malicioso inyecte comandos de shell al usar `env_manager=LOCAL`. Un atacante que controle el artefacto puede ejecutar código arbitrario en el host que despliegue el modelo.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1059.003` — Windows Command Shell\n⚔️ `T1546.009` — AppCert DLLs\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2025-15379\n\n🔗 [Leer más](https://nvd.nist.gov/vuln/detail/CVE-2025-15379)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2548,
     "fecha": "2026-09-05T17:05:14Z",
     "categoria": "Ciberseguridad",
