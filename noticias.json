@@ -26,10 +26,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Hacker News*\n\n*Zero‑Day StyleSmuggler compromete tiendas Magento y Adobe Commerce sin autentica*\n\nUn vulnerabilidad sin parche (CVE pendiente) en Magento Open Source y Adobe Commerce permite a atacantes ejecutar código arbitrario en el servidor del e‑commerce sin necesidad de credenciales, habilitando backdoors y potencial exfiltración de datos. El vector de ataque se basa en la manipulación de peticiones HTTP que aprovechan la lógica de carga de temas, y los exploits se detectaron a partir del 4 de septiembre.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1071.001` — Web Protocols\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔗 [Leer más](https://thehackernews.com/2026/09/unpatched-magento-and-adobe-commerce.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "37a507026c2348e5bfd56d79c7e09e54"
+      "attempt_id": "37a507026c2348e5bfd56d79c7e09e54",
+      "message_id": 2594,
+      "sent_at": "2026-09-05T22:40:40Z"
     }
   },
   {
