@@ -71,10 +71,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *Bleeping Computer*\n\n*Más de 5.400 sitios comprometidos distribuyen payloads ClickFix vía blockchain B*\n\nUna campaña de actores maliciosos ha tomado control de miles de sitios web de pequeñas empresas para servir payloads ClickFix alojados en contratos inteligentes de BNB Smart Chain, facilitando la descarga automática de malware a visitantes. El vector combina compromisos de CMS vulnerables con infraestructura descentralizada, ampliando la resiliencia y evasión de detección.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1189` — Drive-by Compromise\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/over-5-400-hacked-sites-serve-clickfix-payloads-stored-on-the-blockchain/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "1da94da5c37940b7b81cb746c70c8fa2"
+      "attempt_id": "1da94da5c37940b7b81cb746c70c8fa2",
+      "message_id": 2588,
+      "sent_at": "2026-09-05T14:38:49Z"
     }
   },
   {
