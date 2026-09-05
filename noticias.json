@@ -26,9 +26,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Brecha en JetBrains Cadence por vulnerabilidad crítica sin parchear en TeamCity*\n\nThreat actors explotaron una vulnerabilidad crítica recientemente divulgada en TeamCity para infiltrarse en el entorno de JetBrains y extraer credenciales de AWS, comprometiendo potencialmente flujos de trabajo automatizados en Cadence. Se recomienda revocar y rotar inmediatamente todas las credenciales y secretos asociados.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1552.001` — Credentials In Files\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-breached-jetbrains-cadence.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "469bf9e74875471c91729c92171adb8f"
     }
   },
   {
