@@ -62,10 +62,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Bleeping Computer*\n\n*Exploitan vulnerabilidad crítica de bypass de autenticación en Citrix NetScaler*\n\nAmenaza activa en la wild que aprovecha un bypass de autenticación de severidad crítica en Citrix NetScaler, permitiendo a actores no autenticados ejecutar comandos arbitrarios y escalar privilegios dentro de entornos de red perimetral. El vector de ataque se basa en solicitudes HTTP manipuladas que evaden la validación de credenciales, exponiendo a organizaciones a compromisos de infraestructura y posible movimiento lateral.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-19490\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/hackers-target-critical-citrix-netscaler-auth-bypass-in-attacks/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "24d55744234d467dbbd337b396838d2f"
+      "attempt_id": "24d55744234d467dbbd337b396838d2f",
+      "message_id": 2591,
+      "sent_at": "2026-09-05T17:08:28Z"
     }
   },
   {
