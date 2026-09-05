@@ -39,9 +39,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *The Hacker News*\n\n*Atacantes explotan vulnerabilidades PaperCut para robar credenciales en instituc*\n\nAmenazas aprovechan CVE‑2026‑81578 (bypass de autenticación) y CVE‑2026‑82078 (RCE) para ejecutar comandos y realizar reconocimiento, extrayendo credenciales de usuarios en escuelas y universidades de EE. UU. y Europa.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1003` — OS Credential Dumping\n⚔️ `T1087` — Account Discovery\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-81578, CVE-2026-82078\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "e0e69a6dcfc9404a882467a7212a2774"
     }
   },
   {
