@@ -1,5 +1,82 @@
 [
   {
+    "id": 2545,
+    "fecha": "2026-09-05T14:35:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Atacantes explotan vulnerabilidades PaperCut para robar credenciales en instituc",
+    "resumen": "Amenazas aprovechan CVE‑2026‑81578 (bypass de autenticación) y CVE‑2026‑82078 (RCE) para ejecutar comandos y realizar reconocimiento, extrayendo credenciales de usuarios en escuelas y universidades de EE. UU. y Europa.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg2MTg5NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-81578,cve-2026-82078",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-81578",
+        "CVE-2026-82078"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *The Hacker News*\n\n*Atacantes explotan vulnerabilidades PaperCut para robar credenciales en instituc*\n\nAmenazas aprovechan CVE‑2026‑81578 (bypass de autenticación) y CVE‑2026‑82078 (RCE) para ejecutar comandos y realizar reconocimiento, extrayendo credenciales de usuarios en escuelas y universidades de EE. UU. y Europa.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1003` — OS Credential Dumping\n⚔️ `T1087` — Account Discovery\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-81578, CVE-2026-82078\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-exploit-papercut-flaws-to.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2544,
+    "fecha": "2026-09-05T14:35:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Más de 5.400 sitios comprometidos distribuyen payloads ClickFix vía blockchain B",
+    "resumen": "Una campaña de actores maliciosos ha tomado control de miles de sitios web de pequeñas empresas para servir payloads ClickFix alojados en contratos inteligentes de BNB Smart Chain, facilitando la descarga automática de malware a visitantes. El vector combina compromisos de CMS vulnerables con infraestructura descentralizada, ampliando la resiliencia y evasión de detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg2MTg5NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/over-5-400-hacked-sites-serve-clickfix-payloads-stored-on-the-blockchain/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:over 5 400 hacked sites serve clickfix payloads stored on the blockchain",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Más de 5.400 sitios comprometidos distribuyen payloads ClickFix vía blockchain B*\n\nUna campaña de actores maliciosos ha tomado control de miles de sitios web de pequeñas empresas para servir payloads ClickFix alojados en contratos inteligentes de BNB Smart Chain, facilitando la descarga automática de malware a visitantes. El vector combina compromisos de CMS vulnerables con infraestructura descentralizada, ampliando la resiliencia y evasión de detección.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1189` — Drive-by Compromise\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/over-5-400-hacked-sites-serve-clickfix-payloads-stored-on-the-blockchain/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2543,
     "fecha": "2026-09-05T14:11:56Z",
     "categoria": "IA",
