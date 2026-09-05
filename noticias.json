@@ -38,9 +38,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *NVD (NIST)*\n\n*CVE‑2025‑15379: Inyección de comandos en MLflow permite ejecución arbitraria*\n\nVulnerabilidad crítica (CVSS 10.0) en la función `_install_model_dependencies_to_env()` de MLflow 3.8.0 permite que un artefacto de modelo malicioso inyecte comandos de shell al usar `env_manager=LOCAL`. Un atacante que controle el artefacto puede ejecutar código arbitrario en el host que despliegue el modelo.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1059.003` — Windows Command Shell\n⚔️ `T1546.009` — AppCert DLLs\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2025-15379\n\n🔗 [Leer más](https://nvd.nist.gov/vuln/detail/CVE-2025-15379)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "8c610b6c1b584466abb66f0848ae5fc5"
     }
   },
   {
