@@ -62,9 +62,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*Módulos REVSTEALER desactivan Windows Update y Defender para lanzar minero de cr*\n\nElastic Security Labs identificó cuatro componentes inéditos vinculados al stealer REVSTEALER que persisten tras la autodestrucción del payload principal; uno de ellos desactiva Windows Update y Microsoft Defender antes de iniciar un cryptominer, ampliando la superficie de ataque y dificultando la detección.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1562.001` — Disable or Modify Tools\n⚔️ `T1496` — Resource Hijacking\n\n🔗 [Leer más](https://thehackernews.com/2026/09/four-revstealer-linked-modules-disable.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "bf5cb5f2eee14648af6e54755b7827b1"
     }
   },
   {
