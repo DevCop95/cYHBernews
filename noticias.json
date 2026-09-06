@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*Ataques a routers MikroTik explotan SSH expuesto sin autenticación*\n\nAmenaza activa que compromete routers MikroTik mediante acceso SSH abierto a Internet, permitiendo a los atacantes obtener privilegios de administrador sin credenciales. El vector es la exposición directa del puerto 22, explotado desde al menos el 2 de septiembre, con potencial de crear botnets y desviar tráfico.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1021.004` — SSH\n⚔️ `T1210` — Exploitation of Remote Services\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "fe46bebe70734dc5a83fe6fd6c6dcd9c"
     }
   },
   {
