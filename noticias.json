@@ -13,9 +13,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Exploit-DB*\n\n*Vulnerabilidad DoS en EVerest 2025.9.0 expone riesgos críticos*\n\nSe ha detectado una vulnerabilidad de Denial‑of‑Service en la versión 2025.9.0 de EVerest que permite a un atacante remoto agotar recursos del servidor mediante peticiones malformed, provocando interrupciones del servicio. Afecta a todas las implementaciones que no apliquen el parche disponible, incrementando la superficie de ataque en infraestructuras de carga y gestión de energía.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://www.exploit-db.com/exploits/52679)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "d92090b1ddff48cdbeda088319d82c99"
     }
   },
   {
