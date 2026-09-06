@@ -34,10 +34,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *SANS ISC*\n\n*Vulnerabilidad crítica en MikroTik permite bypass de autenticación SSH*\n\nMikroTik emitió un parche para una vulnerabilidad ya explotada que permite eludir la autenticación SSH, con ataques activos que añaden cuentas persistentes en los dispositivos comprometidos. Se asume compromiso total y se recomienda aplicar el parche inmediatamente y revisar cuentas creadas.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1021.004` — SSH\n⚔️ `T1136.001` — Local Account\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1548.001` — Setuid and Setgid\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33314)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "d807cbebf30344a58942b232a78e18c1"
+      "attempt_id": "d807cbebf30344a58942b232a78e18c1",
+      "message_id": 2600,
+      "sent_at": "2026-09-06T22:41:53Z"
     }
   },
   {
