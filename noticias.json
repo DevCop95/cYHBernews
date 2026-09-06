@@ -1,5 +1,55 @@
 [
   {
+    "id": 2553,
+    "fecha": "2026-09-06T17:28:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques a routers MikroTik explotan SSH expuesto sin autenticación",
+    "resumen": "Amenaza activa que compromete routers MikroTik mediante acceso SSH abierto a Internet, permitiendo a los atacantes obtener privilegios de administrador sin credenciales. El vector es la exposición directa del puerto 22, explotado desde al menos el 2 de septiembre, con potencial de crear botnets y desviar tráfico.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg3MTU3MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers hijack mikrotik routers through internet exposed ssh without authentication",
+    "ttps": [
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2552,
+    "fecha": "2026-09-06T17:28:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques de phishing con caracteres Unicode invisibles evaden filtros de correo",
+    "resumen": "Amenazas utilizan la técnica de “ASCII smuggling” insertando caracteres Unicode no visibles para ocultar URLs maliciosas, eludiendo detección de gateways y EDR basados en firmas. El vector permite campañas de phishing más efectivas contra usuarios corporativos y gubernamentales.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg3MTU2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/attackers-conceal-phishing-lures-using-invisible-unicode-characters/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:attackers conceal phishing lures using invisible unicode characters",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2551,
     "fecha": "2026-09-06T12:34:17Z",
     "categoria": "Ciberseguridad",
