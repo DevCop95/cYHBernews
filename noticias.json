@@ -54,9 +54,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Bleeping Computer*\n\n*Ataques de phishing con caracteres Unicode invisibles evaden filtros de correo*\n\nAmenazas utilizan la técnica de “ASCII smuggling” insertando caracteres Unicode no visibles para ocultar URLs maliciosas, eludiendo detección de gateways y EDR basados en firmas. El vector permite campañas de phishing más efectivas contra usuarios corporativos y gubernamentales.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/attackers-conceal-phishing-lures-using-invisible-unicode-characters/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "7a9f510bca534d8e8ebba5b7d2117239"
     }
   },
   {
