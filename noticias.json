@@ -26,10 +26,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *NVD (NIST)*\n\n*CVE‑2026‑69502: SSRF crítico en Azure SQL Database permite escalada de privilegi*\n\nVulnerabilidad SSRF (CVSS 10.0) en Azure SQL Database permite a un atacante no autenticado forjar solicitudes internas y elevar privilegios de red, comprometiendo la confidencialidad e integridad de los datos. Afecta a todas las instancias de Azure SQL sin parchear y requiere mitigación inmediata.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-69502\n\n🔗 [Leer más](https://nvd.nist.gov/vuln/detail/CVE-2026-69502)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "5f0a12ab65d24456a722a3ed217cb830"
+      "attempt_id": "5f0a12ab65d24456a722a3ed217cb830",
+      "message_id": 2598,
+      "sent_at": "2026-09-06T19:58:26Z"
     }
   },
   {
