@@ -1,5 +1,32 @@
 [
   {
+    "id": 2554,
+    "fecha": "2026-09-06T19:55:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE‑2026‑69502: SSRF crítico en Azure SQL Database permite escalada de privilegi",
+    "resumen": "Vulnerabilidad SSRF (CVSS 10.0) en Azure SQL Database permite a un atacante no autenticado forjar solicitudes internas y elevar privilegios de red, comprometiendo la confidencialidad e integridad de los datos. Afecta a todas las instancias de Azure SQL sin parchear y requiere mitigación inmediata.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg3MjQ1MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-69502",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-69502",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-69502"
+      ]
+    }
+  },
+  {
     "id": 2553,
     "fecha": "2026-09-06T17:28:20Z",
     "categoria": "Ciberseguridad",
