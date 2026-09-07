@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Record*\n\n*Berlín investiga nueva filtración masiva de credenciales tras publicación del gr*\n\nAutoridades alemanas confirman la aparición en línea de un nuevo lote de credenciales de acceso a sistemas gubernamentales, atribuido al grupo cibercriminal Rhysida; la filtración expone potenciales vectores de acceso no autorizado a infraestructuras críticas y datos sensibles.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1003` — OS Credential Dumping\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://therecord.media/germany-berlin-second-data-breach-city-agencies)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "f53e8301df424c218c3b3781051c95ad"
     }
   },
   {
