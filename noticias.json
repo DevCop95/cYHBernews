@@ -13,9 +13,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Exploit-DB*\n\n*Vulnerabilidad Reflected XSS en Bludit CMS 3.20.0*\n\nSe ha identificado una vulnerabilidad de Reflected Cross‑Site Scripting (CVE‑2026‑XXXXX) en la versión 3.20.0 de Bludit CMS que permite la inyección de scripts maliciosos a través de parámetros de URL, facilitando ataques de phishing y secuestro de sesiones. La explotación no requiere autenticación y afecta a todos los sitios que ejecuten la versión vulnerable sin mitigaciones de CSP.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://www.exploit-db.com/exploits/52678)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "db894bf6f6c749ffb7e247dadee7e555"
     }
   },
   {
