@@ -1,5 +1,51 @@
 [
   {
+    "id": 2560,
+    "fecha": "2026-09-07T14:45:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Berlín investiga nueva filtración masiva de credenciales tras publicación del gr",
+    "resumen": "Autoridades alemanas confirman la aparición en línea de un nuevo lote de credenciales de acceso a sistemas gubernamentales, atribuido al grupo cibercriminal Rhysida; la filtración expone potenciales vectores de acceso no autorizado a infraestructuras críticas y datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg3OTIzMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/germany-berlin-second-data-breach-city-agencies",
+    "fuente": "The Record",
+    "dedup_key": "txt:berlin investigates new data leak after hackers publish stolen login credentials",
+    "ttps": [
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2559,
+    "fecha": "2026-09-07T14:45:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "La checklist de seguridad en la nube falla: riesgos divergentes entre AWS, Azure",
+    "resumen": "Un estudio de Intruder sobre 3,000 organizaciones revela que los perfiles de riesgo por mala configuración varían significativamente entre los principales proveedores de nube, invalidando enfoques genéricos de mitigación. La falta de uniformidad expone vectores de ataque como escalada de privilegios y exposición de datos sensibles en cada entorno.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg3OTIzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/your-cloud-security-checklist-doesnt.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:your cloud security checklist doesn t work the way you think it does",
+    "ttps": [
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1530",
+        "name": "Data from Cloud Storage"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2558,
     "fecha": "2026-09-07T07:50:30Z",
     "categoria": "Ciberseguridad",
