@@ -1,5 +1,37 @@
 [
   {
+    "id": 2558,
+    "fecha": "2026-09-07T07:50:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA industrializa los ciberataques: automatización global y evasión avanzada",
+    "resumen": "El informe 2026 Threat Landscape de Infoblox muestra que los actores de cibercrimen usan ecosistemas automatizados basados en modelos de lenguaje y agentes autónomos para escalar ataques, reducir tiempos de respuesta y evadir detección de EDR y SIEM. La capacidad de generar exploits y phishing personalizados mediante RAG y embeddings incrementa el riesgo para infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg3Njc0MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/ecosistemas-globales-automatizados-y-basados-en-ia-detras-de-los-ciberataques-modernos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:ecosistemas globales automatizados y basados en ia detrás de los ciberataques modernos",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *CyberSecurity News*\n\n*IA industrializa los ciberataques: automatización global y evasión avanzada*\n\nEl informe 2026 Threat Landscape de Infoblox muestra que los actores de cibercrimen usan ecosistemas automatizados basados en modelos de lenguaje y agentes autónomos para escalar ataques, reducir tiempos de respuesta y evadir detección de EDR y SIEM. La capacidad de generar exploits y phishing personalizados mediante RAG y embeddings incrementa el riesgo para infraestructuras críticas.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1566.002` — Spearphishing Link\n\n🔗 [Leer más](https://cybersecuritynews.es/ecosistemas-globales-automatizados-y-basados-en-ia-detras-de-los-ciberataques-modernos/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2557,
     "fecha": "2026-09-07T02:33:58Z",
     "categoria": "IA",
