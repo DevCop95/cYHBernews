@@ -50,9 +50,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*La checklist de seguridad en la nube falla: riesgos divergentes entre AWS, Azure*\n\nUn estudio de Intruder sobre 3,000 organizaciones revela que los perfiles de riesgo por mala configuración varían significativamente entre los principales proveedores de nube, invalidando enfoques genéricos de mitigación. La falta de uniformidad expone vectores de ataque como escalada de privilegios y exposición de datos sensibles en cada entorno.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1548` — Abuse Elevation Control Mechanism\n⚔️ `T1530` — Data from Cloud Storage\n\n🔗 [Leer más](https://thehackernews.com/2026/09/your-cloud-security-checklist-doesnt.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "a2b0978ff6034cdbb0897fe09c38762c"
     }
   },
   {
