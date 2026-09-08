@@ -1,5 +1,52 @@
 [
   {
+    "id": 2574,
+    "fecha": "2026-09-08T23:08:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft lanza parche histórico con 973 vulnerabilidades, 113 críticas",
+    "resumen": "En el Patch Tuesday de septiembre 2026, Microsoft corrigió 973 CVE, incluyendo escaladas de privilegios en Windows y RCE críticos en Skype for Business, MSMQ y RRAS; dos vulnerabilidades ya estaban siendo explotadas en la naturaleza. El volumen récord eleva la superficie de ataque y obliga a una rápida remediación en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5MDg5MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33320",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:september 2026 microsoft patch tuesday tue sep 8th",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *SANS ISC*\n\n*Microsoft lanza parche histórico con 973 vulnerabilidades, 113 críticas*\n\nEn el Patch Tuesday de septiembre 2026, Microsoft corrigió 973 CVE, incluyendo escaladas de privilegios en Windows y RCE críticos en Skype for Business, MSMQ y RRAS; dos vulnerabilidades ya estaban siendo explotadas en la naturaleza. El volumen récord eleva la superficie de ataque y obliga a una rápida remediación en entornos corporativos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1203` — Exploitation for Client Execution\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33320)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2573,
+    "fecha": "2026-09-08T23:08:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft lanza parche crítico para 974 vulnerabilidades, IA acelera detección",
+    "resumen": "Microsoft emitió actualizaciones que corrigen 974 CVE en Windows y productos asociados, el mayor lote de parches de su historia; la IA se utilizó para priorizar y validar vulnerabilidades, pero la sobrecarga de parches sigue exponiendo a organizaciones a riesgos de explotación antes de la mitigación.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5MDg5MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:microsoft plugs nearly 1 000 security holes",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Krebs on Security*\n\n*Microsoft lanza parche crítico para 974 vulnerabilidades, IA acelera detección*\n\nMicrosoft emitió actualizaciones que corrigen 974 CVE en Windows y productos asociados, el mayor lote de parches de su historia; la IA se utilizó para priorizar y validar vulnerabilidades, pero la sobrecarga de parches sigue exponiendo a organizaciones a riesgos de explotación antes de la mitigación.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2572,
     "fecha": "2026-09-08T18:16:47Z",
     "categoria": "Ciberseguridad",
