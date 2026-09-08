@@ -60,9 +60,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Bleeping Computer*\n\n*Filtración masiva de 220 M de registros de viajeros en APIS vinculado a Vietnam*\n\nUn APIS expuesto reveló 220 millones de datos de pasajeros y tripulantes (nombres, pasaportes, fechas de nacimiento, nacionalidades y detalles de vuelos 2017‑2026) mediante credenciales predeterminadas en una infraestructura cloud. El vector de ataque fue la explotación de credenciales por defecto, lo que permite acceso no autorizado a información sensible a escala global.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1078.004` — Cloud Accounts\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/220-million-traveler-records-exposed-in-vietnam-linked-apis-leak/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "bb70e47f125c401ab703912053ac6323"
     }
   },
   {
