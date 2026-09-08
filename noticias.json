@@ -1,5 +1,77 @@
 [
   {
+    "id": 2572,
+    "fecha": "2026-09-08T18:16:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ClickFix reutiliza servicios legítimos para mantener acceso persistente",
+    "resumen": "Amenazas emplean campañas ClickFix que combinan phishing con abuso de APIs de servicios legítimos, logrando persistencia en entornos corporativos y evadiendo detección de EDR tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg4OTE0MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/clickfix-campaigns-legitimate-services-persistent-access",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:clickfix campaigns abuse legitimate services for persistent access",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2571,
+    "fecha": "2026-09-08T18:16:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Slim Spider roba credenciales de custodia cripto a bancos brasileños",
+    "resumen": "Grupo de amenaza no documentado, activo desde marzo 2026, compromete sistemas de pagos instantáneos y almacenes de claves criptográficas en instituciones financieras de Brasil, usando malware modular y credenciales comprometidas para exfiltrar secretos de custodia. El ataque permite acceso directo a fondos digitales y potenciales lavados de dinero.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg4OTE0MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:slim spider steals crypto custody secrets from brazilian financial institution",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2570,
+    "fecha": "2026-09-08T18:16:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft lanza actualizaciones acumulativas KB5124008 y KB5122880 para Windows",
+    "resumen": "Las actualizaciones KB5124008 (versión 25H2/24H2) y KB5122880 (versión 23H2) corrigen múltiples vulnerabilidades críticas, errores de estabilidad y añaden funcionalidades, reforzando la postura de defensa del sistema operativo. Se recomienda su despliegue inmediato en entornos corporativos para mitigar riesgos de explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg4OTE0MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/windows-11-cumulative-updates-kb5124008-and-kb5122880-released/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:windows 11 cumulative updates kb5124008 kb5122880 released",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2569,
     "fecha": "2026-09-08T13:17:27Z",
     "categoria": "Ciberseguridad",
