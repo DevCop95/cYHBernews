@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *SANS ISC*\n\n*Microsoft lanza parche histórico con 973 vulnerabilidades, 113 críticas*\n\nEn el Patch Tuesday de septiembre 2026, Microsoft corrigió 973 CVE, incluyendo escaladas de privilegios en Windows y RCE críticos en Skype for Business, MSMQ y RRAS; dos vulnerabilidades ya estaban siendo explotadas en la naturaleza. El volumen récord eleva la superficie de ataque y obliga a una rápida remediación en entornos corporativos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1203` — Exploitation for Client Execution\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33320)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "79bded153d174c7fb3830ba678479ba6"
     }
   },
   {
