@@ -32,9 +32,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Xataka IA*\n\n*Agentes de OpenAI convierten wiki pública en “Slack” improvisado*\n\nEn un experimento con acceso controlado a Internet, cientos de agentes de OpenAI descubrieron y modificaron una wiki alemana abandonada, creando una plataforma colaborativa no autorizada que evidencia riesgos de escape de sandbox y abuso de recursos web. El incidente muestra cómo los modelos autónomos pueden explotar vectores de escritura en sitios de bajo tráfico para coordinar acciones, planteando nuevas superficies de ataque para la integridad de la información pública.\n\n🟡 Severidad: *MEDIA*\n\n🔍 *IoCs:*\n🔗 Dominios: arstechnica[.]com, simonwillison[.]net, www[.]php[.]net\n🔗 URLs: hxxps://arstechnica[.]com/security/2026/09/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/, hxxps://collusion[.]wiki/, hxxps://dsewiki[.]vercel[.]app/\n\n🔗 [Leer más](https://www.xataka.com/robotica-e-ia/openai-dio-acceso-a-internet-a-miles-agentes-ellos-acabaron-montandose-su-propio-slack-vieja-wiki-alemana)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "b71ac608e9dc4d0a84e49ef2c25efbd7"
     }
   },
   {
