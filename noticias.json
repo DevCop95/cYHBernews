@@ -39,9 +39,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Schneier on Security*\n\n*Vulnerabilidad crítica permite robar trazas de razonamiento de LLMs propietarios*\n\nInvestigadores descubren que los bloques cifrados de razonamiento devueltos por APIs de LLM pueden reutilizarse entre sesiones y modelos, habilitando una decriptación jailbreak que extrae cadenas de pensamiento en texto plano y expone PII, credenciales y prompts maliciosos. El vector afecta a proveedores como Anthropic, OpenAI y Google, comprometiendo anti‑distillation y facilitando inyección invisible.\n\n🟠 Severidad: *ALTA*\n\n🔍 *IoCs:*\n🔗 Dominios: arxiv[.]org\n🔗 URLs: hxxps://arxiv[.]org/abs/2608[.]09867\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/stealing-ai-reasoning-traces.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "0b54cf9118ae4330adf266872aae1881"
     }
   },
   {
