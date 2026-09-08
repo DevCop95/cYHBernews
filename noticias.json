@@ -63,10 +63,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Hacker News*\n\n*Worm sin interacción compromete cuentas de WeChat en iOS y Android vía llamadas*\n\nUn worm de cero‑click, desarrollado por la firma Calif, se propaga al iniciar una llamada entrante desde un contacto de WeChat, tomando control de la cuenta sin que la víctima responda ni interactúe con el dispositivo; la vulnerabilidad afecta tanto a iPhone como a Android y permite la ejecución de código remoto. Tencent fue notificado en julio y aún no ha publicado parche.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n\n🔗 [Leer más](https://thehackernews.com/2026/09/wechat-zero-click-worm-took-over.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "1a695970049d46acbc428bfb3d66162c"
+      "attempt_id": "1a695970049d46acbc428bfb3d66162c",
+      "message_id": 2611,
+      "sent_at": "2026-09-08T13:20:23Z"
     }
   },
   {
