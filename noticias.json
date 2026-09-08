@@ -22,10 +22,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *Dark Reading*\n\n*ClickFix reutiliza servicios legítimos para mantener acceso persistente*\n\nAmenazas emplean campañas ClickFix que combinan phishing con abuso de APIs de servicios legítimos, logrando persistencia en entornos corporativos y evadiendo detección de EDR tradicionales.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1566.002` — Spearphishing Link\n\n🔗 [Leer más](https://www.darkreading.com/endpoint-security/clickfix-campaigns-legitimate-services-persistent-access)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "06685b6b9a444090a62269a6003ae8cf"
+      "attempt_id": "06685b6b9a444090a62269a6003ae8cf",
+      "message_id": 2616,
+      "sent_at": "2026-09-08T18:20:16Z"
     }
   },
   {
