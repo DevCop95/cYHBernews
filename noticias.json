@@ -62,9 +62,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Slim Spider roba credenciales de custodia cripto a bancos brasileños*\n\nGrupo de amenaza no documentado, activo desde marzo 2026, compromete sistemas de pagos instantáneos y almacenes de claves criptográficas en instituciones financieras de Brasil, usando malware modular y credenciales comprometidas para exfiltrar secretos de custodia. El ataque permite acceso directo a fondos digitales y potenciales lavados de dinero.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔗 [Leer más](https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "a8d5b73a4a9a46ada1eb3958e2f5ad9b"
     }
   },
   {
