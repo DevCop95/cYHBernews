@@ -20,10 +20,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *NVD (NIST)*\n\n*CVE‑2026‑19188: Inyección de comandos OS con privilegios root en Haiwell IoT Clo*\n\nSe detectó una vulnerabilidad crítica (CVSS 10.0) de OS command injection en la función Net Check del endpoint /setting del gateway HMI de Haiwell IoT Cloud. El evento cmdPing de Socket.io no sanitiza la entrada del usuario, permitiendo a un atacante ejecutar comandos arbitrarios con privilegios de root.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-19188\n🔗 Dominios: socket[.]io\n\n🔗 [Leer más](https://nvd.nist.gov/vuln/detail/CVE-2026-19188)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "804b43409ef74872a4b2602f37a17004"
+      "attempt_id": "804b43409ef74872a4b2602f37a17004",
+      "message_id": 2623,
+      "sent_at": "2026-09-09T07:53:11Z"
     }
   },
   {
