@@ -1,5 +1,38 @@
 [
   {
+    "id": 2576,
+    "fecha": "2026-09-09T02:48:46Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Meta lanza Muse, agente IA personal que requiere confianza del usuario",
+    "resumen": "Muse es el nuevo agente autónomo de Meta diseñado para competir con OpenAI y Anthropic, capaz de ejecutar tareas como venta de vehículos y reservas de vuelos mediante interacción directa; su modelo depende de permisos de acceso a datos personales, lo que amplía la superficie de ataque a través de posibles abusos de credenciales y extracción de información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5MjIxMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:muse meta s new personal ai agent needs you to trust it",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2575,
+    "fecha": "2026-09-09T02:48:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers devuelven 3.400 BTC tras robo de 4.000 en la sidechain Liquid",
+    "resumen": "Tras el ataque del 6 sep 2023 que explotó una vulnerabilidad en el protocolo de Liquid Network, los atacantes devolvieron 3.400 BTC (~$47 M) pero retuvieron 598,5 BTC. La sidechain sigue pausada, impidiendo la conversión de L‑BTC a BTC y manteniendo el riesgo de pérdida para los usuarios.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5MjIxMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:liquid hackers return 3 400 bitcoin taken via elements bug still holding 47m in btc",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2574,
     "fecha": "2026-09-08T23:08:29Z",
     "categoria": "Ciberseguridad",
