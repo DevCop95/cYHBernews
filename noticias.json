@@ -53,10 +53,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*Más de 36,000 servidores Plex expuestos sin parchear ante nuevas vulnerabilidade*\n\nSe identificaron más de 36,000 instancias de Plex Media Server accesibles públicamente que carecen de los parches críticos para CVE‑2024‑XXXX y CVE‑2024‑YYYY, permitiendo ejecución remota de código y escalado de privilegios mediante peticiones HTTP manipuladas. El vector de ataque principal es la exposición directa del puerto 32400 sin autenticación adecuada, lo que facilita exploits automatizados y ransomware en entornos domésticos y empresariales.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1046` — Network Service Discovery\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1486` — Data Encrypted for Impact\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/over-36-000-plex-servers-unpatched-against-recently-disclosed-flaws/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "9d3f66f46c83425b876cbc4fab60a0e7"
+      "attempt_id": "9d3f66f46c83425b876cbc4fab60a0e7",
+      "message_id": 2626,
+      "sent_at": "2026-09-09T13:25:13Z"
     }
   },
   {
