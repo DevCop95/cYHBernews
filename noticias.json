@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Dark Reading*\n\n*Ataque de IA basado en secuestro de identidad compromete datos empresariales*\n\nUn método de “workflow identity hijacking” explota puntos de entrada no autenticados para falsificar identidades de procesos de IA, eludiendo firewalls y EDR y permitiendo la extracción o manipulación de datos críticos. La vulnerabilidad afecta a cualquier organización que integre modelos de lenguaje en flujos de trabajo automatizados sin controles de autenticación robustos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://www.darkreading.com/threat-intelligence/identity-based-ai-attack-security-enterprise-data)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "81d456ca32654ffd818ddf1697723f20"
     }
   },
   {
