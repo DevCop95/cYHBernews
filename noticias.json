@@ -77,9 +77,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *WeLiveSecurity*\n\n*Spoofing de email: vectores de ataque y defensa con SPF/DKIM/DMARC*\n\nEl spoofing de email falsifica la dirección del remitente para engañar a usuarios y sistemas, facilitando phishing y entrega de malware; la implementación conjunta de SPF, DKIM y DMARC permite validar la autenticidad del origen y bloquear mensajes no autorizados.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n\n🔗 [Leer más](https://www.welivesecurity.com/es/seguridad-corporativa/que-es-spoofing-de-email/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "547275b084dc46c9ba67bce5b53b96c1"
     }
   },
   {
