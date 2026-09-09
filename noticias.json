@@ -1,5 +1,52 @@
 [
   {
+    "id": 2587,
+    "fecha": "2026-09-09T22:54:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Proxmox VE 7 expuesta en advisory oficial",
+    "resumen": "Proxmox VE 7 presenta una vulnerabilidad que permite ejecución remota de código y escalado de privilegios; aunque la versión está fuera de soporte, sigue siendo explotable en entornos legacy. Se recomienda parchear o migrar a versiones soportadas inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5OTQ0NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33324",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:scans for proxmox servers wed sep 9th",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *SANS ISC*\n\n*Vulnerabilidad crítica en Proxmox VE 7 expuesta en advisory oficial*\n\nProxmox VE 7 presenta una vulnerabilidad que permite ejecución remota de código y escalado de privilegios; aunque la versión está fuera de soporte, sigue siendo explotable en entornos legacy. Se recomienda parchear o migrar a versiones soportadas inmediatamente.\n\n🔴 Severidad: *CRÍTICA*\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33324)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2586,
+    "fecha": "2026-09-09T22:54:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "EE.UU. desmantela mercado de estafas Xinbi Guarantee y congela $52.8 M en cripto",
+    "resumen": "El Departamento de Justicia de EE. UU. ejecutó una operación coordinada que cerró la plataforma Xinbi Guarantee, incautó dos wallets de criptomonedas y tomó control de canales de Telegram usados para orquestar fraudes, desplegando un equipo especializado en Madagascar para desarticular 13 compuestos de estafadores vinculados al crimen organizado chino.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5OTQ0NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:u s disrupts xinbi guarantee scam marketplace freezes 52 8 million in crypto",
+    "ttps": [
+      {
+        "id": "T1102",
+        "name": "Web Service"
+      },
+      {
+        "id": "T1584.001",
+        "name": "Domains"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*EE.UU. desmantela mercado de estafas Xinbi Guarantee y congela $52.8 M en cripto*\n\nEl Departamento de Justicia de EE. UU. ejecutó una operación coordinada que cerró la plataforma Xinbi Guarantee, incautó dos wallets de criptomonedas y tomó control de canales de Telegram usados para orquestar fraudes, desplegando un equipo especializado en Madagascar para desarticular 13 compuestos de estafadores vinculados al crimen organizado chino.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1102` — Web Service\n⚔️ `T1584.001` — Domains\n\n🔗 [Leer más](https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2585,
     "fecha": "2026-09-09T18:21:06Z",
     "categoria": "Ciberseguridad",
