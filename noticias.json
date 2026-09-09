@@ -1,5 +1,96 @@
 [
   {
+    "id": 2583,
+    "fecha": "2026-09-09T13:21:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA acelera la evaluación de exposición ante la nueva CVE crítica",
+    "resumen": "La vulnerabilidad recién divulgada exige correlacionar datos de escáneres, EDR, inventarios cloud y SBOM; los modelos de lenguaje generativo permiten automatizar la agregación y priorización de estos indicadores, reduciendo el tiempo de respuesta de días a horas.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5NjAxMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/webinar-learn-how-to-answer-are-we.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:webinar learn how to answer are we exposed faster after a new cve",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2582,
+    "fecha": "2026-09-09T13:21:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Más de 36,000 servidores Plex expuestos sin parchear ante nuevas vulnerabilidade",
+    "resumen": "Se identificaron más de 36,000 instancias de Plex Media Server accesibles públicamente que carecen de los parches críticos para CVE‑2024‑XXXX y CVE‑2024‑YYYY, permitiendo ejecución remota de código y escalado de privilegios mediante peticiones HTTP manipuladas. El vector de ataque principal es la exposición directa del puerto 32400 sin autenticación adecuada, lo que facilita exploits automatizados y ransomware en entornos domésticos y empresariales.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5NjAxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/over-36-000-plex-servers-unpatched-against-recently-disclosed-flaws/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:over 36 000 exposed plex servers vulnerable to recent flaws",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2581,
+    "fecha": "2026-09-09T13:21:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Spoofing de email: vectores de ataque y defensa con SPF/DKIM/DMARC",
+    "resumen": "El spoofing de email falsifica la dirección del remitente para engañar a usuarios y sistemas, facilitando phishing y entrega de malware; la implementación conjunta de SPF, DKIM y DMARC permite validar la autenticidad del origen y bloquear mensajes no autorizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5NjAxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/que-es-spoofing-de-email/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:qué es el spoofing de email cómo funciona y cómo proteger tu dominio",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2580,
+    "fecha": "2026-09-09T13:21:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA eleva la complejidad de la ciberresiliencia según Voice of the CISO 2026",
+    "resumen": "El informe de Proofpoint muestra una mejora general en la ciberresiliencia, pero destaca que los modelos de IA generativa incrementan la superficie de ataque mediante automatización de phishing y creación de malware adaptativo, obligando a los CISO a reforzar detección basada en comportamiento y controles de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5NjAwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ciberresiliencia-mejora-pero-la-ia-amplia-el-reto-para-los-ciso/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ciberresiliencia mejora pero la ia amplía el reto para los ciso",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2579,
     "fecha": "2026-09-09T07:50:37Z",
     "categoria": "Ciberseguridad",
