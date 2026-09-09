@@ -83,10 +83,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *Bleeping Computer*\n\n*Zero‑day “ShieldCrash” compromete Microsoft Defender tras Patch Tuesday*\n\nUn investigador anónimo, “Nightmare Eclipse”, divulgó un exploit zero‑day llamado ShieldCrash que otorga privilegios SYSTEM en Microsoft Defender, permitiendo ejecución de código arbitrario y evasión de controles de integridad. El vector de ataque se basa en la manipulación de la cadena de procesamiento de eventos del motor de detección, explotado justo después del despliegue de los parches de septiembre 2026.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-microsoft-defender-shieldcrash-zero-day-grants-system-access/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "7aeeb62b293545f4bf5c0db63cf7aa04"
+      "attempt_id": "7aeeb62b293545f4bf5c0db63cf7aa04",
+      "message_id": 2621,
+      "sent_at": "2026-09-09T07:52:57Z"
     }
   },
   {
