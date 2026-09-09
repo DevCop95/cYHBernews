@@ -13,10 +13,11 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *SANS ISC*\n\n*Vulnerabilidad crítica en Proxmox VE 7 expuesta en advisory oficial*\n\nProxmox VE 7 presenta una vulnerabilidad que permite ejecución remota de código y escalado de privilegios; aunque la versión está fuera de soporte, sigue siendo explotable en entornos legacy. Se recomienda parchear o migrar a versiones soportadas inmediatamente.\n\n🔴 Severidad: *CRÍTICA*\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33324)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "c4839c878c60492d80f4fcf749766027"
+      "attempt_id": "c4839c878c60492d80f4fcf749766027",
+      "message_id": 2631,
+      "sent_at": "2026-09-09T22:57:56Z"
     }
   },
   {
