@@ -50,9 +50,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Bleeping Computer*\n\n*EE.UU. detecta ataques de destilación masiva de modelos IA por firmas chinas*\n\nAgencias de ciberseguridad e inteligencia de EE.UU. confirman que al menos seis compañías chinas realizaron ataques de distilación a gran escala contra modelos de IA de frontera estadounidenses desde finales de 2024, extrayendo miles de millones de tokens y potencialmente replicando capacidades críticas. El vector de ataque se basa en consultas masivas y extracción de embeddings, lo que plantea riesgos de fuga de propiedad intelectual y posible reutilización en sistemas adversarios.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1213` — Data from Information Repositories\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/us-says-chinese-firms-extracted-billions-of-tokens-from-frontier-ai-models/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "9b63aa278ff349b08f91918dcdbbf0fb"
     }
   },
   {
