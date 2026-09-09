@@ -37,9 +37,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Hackers devuelven 3.400 BTC tras robo de 4.000 en la sidechain Liquid*\n\nTras el ataque del 6 sep 2023 que explotó una vulnerabilidad en el protocolo de Liquid Network, los atacantes devolvieron 3.400 BTC (~$47 M) pero retuvieron 598,5 BTC. La sidechain sigue pausada, impidiendo la conversión de L‑BTC a BTC y manteniendo el riesgo de pérdida para los usuarios.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "847a0af348fc458c8674366e0d09062f"
     }
   },
   {
