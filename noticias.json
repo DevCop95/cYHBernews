@@ -41,9 +41,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *The Hacker News*\n\n*Cuatro grupos de espionaje usan el mismo kit de exploits para Chrome y Windows e*\n\nSe ha detectado el kit de exploits no documentado “BlueMoon”, que combina vulnerabilidades en Microsoft Windows y Google Chrome, siendo utilizado por al menos cuatro APT, incluido el grupo estatal chino APT31. El vector de ataque se basa en cadenas de exploits de día cero y vulnerabilidades de ejecución remota, aumentando el riesgo de compromisos de alta prioridad en entornos corporativos y gubernamentales.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "984a1de397ed4c94bf55616225692ceb"
     }
   },
   {
