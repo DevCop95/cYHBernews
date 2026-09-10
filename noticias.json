@@ -1,5 +1,109 @@
 [
   {
+    "id": 2602,
+    "fecha": "2026-09-10T22:55:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Explotan BYOD y Graph API para acceder a datos de Microsoft 365",
+    "resumen": "Amenazas usan la API de Microsoft Graph para mapear usuarios BYOD y robar credenciales, luego venden el acceso a grupos de extorsión como ShinyHunters, comprometiendo datos corporativos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwODA5Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/voice-callers-exploit-byod-microsoft-365-corporate-data",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:voice callers exploit byod to reach microsoft 365 corporate data",
+    "ttps": [
+      {
+        "id": "T1087.004",
+        "name": "Cloud Account"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Explotan BYOD y Graph API para acceder a datos de Microsoft 365*\n\nAmenazas usan la API de Microsoft Graph para mapear usuarios BYOD y robar credenciales, luego venden el acceso a grupos de extorsión como ShinyHunters, comprometiendo datos corporativos críticos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1087.004` — Cloud Account\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1588.006` — Vulnerabilities\n\n🔗 [Leer más](https://www.darkreading.com/threat-intelligence/voice-callers-exploit-byod-microsoft-365-corporate-data)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2601,
+    "fecha": "2026-09-10T22:55:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Amenazas emergentes: 200 vulnerabilidades Android y phishing vía navegadores",
+    "resumen": "Se reportan 200 CVE críticos en Android, incluyendo escalada de privilegios y fuga de datos, y nuevas técnicas de phishing integradas en extensiones de navegador que capturan credenciales en tiempo real. El vector de ataque combina permisos excesivos de apps y cadenas de suministro comprometidas, ampliando la superficie de exposición para usuarios móviles y corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwODA5MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/threatsday-200-android-flaws-browser.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday 200 android flaws browser built phishing 119k scam shops 23 more stories",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1025",
+        "name": "Data from Removable Media"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*Amenazas emergentes: 200 vulnerabilidades Android y phishing vía navegadores*\n\nSe reportan 200 CVE críticos en Android, incluyendo escalada de privilegios y fuga de datos, y nuevas técnicas de phishing integradas en extensiones de navegador que capturan credenciales en tiempo real. El vector de ataque combina permisos excesivos de apps y cadenas de suministro comprometidas, ampliando la superficie de exposición para usuarios móviles y corporativos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1025` — Data from Removable Media\n⚔️ `T1195` — Supply Chain Compromise\n⚔️ `T1566.002` — Spearphishing Link\n\n🔗 [Leer más](https://thehackernews.com/2026/09/threatsday-200-android-flaws-browser.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2600,
+    "fecha": "2026-09-10T22:55:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Nuevo malware Android combina ransomware y spyware para cifrar y robar datos",
+    "resumen": "Mantax Otax es una variante de malware para Android que cifra archivos del dispositivo, extrae información sensible y envía spam para acosar a la víctima, ampliando la superficie de ataque a móviles corporativos. Su capacidad de combinar ransomware y espionaje eleva el riesgo de pérdida de datos y extorsión en entornos BYOD.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwODA5MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-android-malware-encrypts-files-steals-data-and-harasses-victims/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new android malware encrypts files steals data and harasses victims",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Bleeping Computer*\n\n*Nuevo malware Android combina ransomware y spyware para cifrar y robar datos*\n\nMantax Otax es una variante de malware para Android que cifra archivos del dispositivo, extrae información sensible y envía spam para acosar a la víctima, ampliando la superficie de ataque a móviles corporativos. Su capacidad de combinar ransomware y espionaje eleva el riesgo de pérdida de datos y extorsión en entornos BYOD.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1005` — Data from Local System\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-android-malware-encrypts-files-steals-data-and-harasses-victims/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2599,
     "fecha": "2026-09-10T18:01:41Z",
     "categoria": "Ciberseguridad",
