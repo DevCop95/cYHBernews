@@ -124,10 +124,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Bleeping Computer*\n\n*Campaña global de IA explota vulnerabilidades de PaperCut en 395 organizaciones*\n\nUn actor amenazante, presumiblemente de habla rusa, desplegó cientos de agentes de IA para automatizar la identificación y explotación de CVE en servidores PaperCut NG/MF, comprometiendo datos y permitiendo ejecución remota de código. La campaña afecta a cientos de entidades, ampliando la superficie de ataque mediante RAG y generación automática de exploits.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "80b351420ed348028978c45d3d6db69a"
+      "attempt_id": "80b351420ed348028978c45d3d6db69a",
+      "message_id": 2640,
+      "sent_at": "2026-09-10T18:04:58Z"
     }
   },
   {
