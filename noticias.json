@@ -63,9 +63,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Schneier on Security*\n\n*IA genera exploits a partir de rumores, acelerando la ventana de vulnerabilidad*\n\nInvestigadores demuestran que agentes de IA pueden descubrir un exploit con solo información vaga sobre la vulnerabilidad, reduciendo drásticamente el tiempo entre la divulgación de un rumor y la disponibilidad de un exploit activo, lo que compromete los procesos de embargo en proyectos de código abierto.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1588.006` — Vulnerabilities\n⚔️ `T1608.003` — Install Digital Certificate\n\n🔍 *IoCs:*\n🔗 Dominios: anil[.]recoil[.]org, simonwillison[.]net\n🔗 URLs: hxxps://anil[.]recoil[.]org/notes/rumour-is-the-exploit, hxxps://simonwillison[.]net/2026/Aug/28/just-a-rumour-of-a-bug/\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/ais-compress-exploit-timeline.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "e39c597b25824a8c9e167c21ac9439db"
     }
   },
   {
