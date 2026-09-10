@@ -96,10 +96,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *The Hacker News*\n\n*Abuse del programa Early Access de Google Play para distribuir miles de apps eng*\n\nAmenazas de software malicioso se están propagando mediante el programa Early Access, donde actores maliciosos publican apps que prometen recompensas financieras y contenido premium, explotando la confianza del usuario y evadiendo revisiones tempranas. El vector de ataque principal es la instalación voluntaria de estas apps desde la tienda oficial, facilitando phishing, fraude y posible descarga de payloads adicionales.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1204` — User Execution\n⚔️ `T1566` — Phishing\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1195.002` — Compromise Software Supply Chain\n\n🔗 [Leer más](https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "1a8d84a0c6a04914a17e6a65bf503913"
+      "attempt_id": "1a8d84a0c6a04914a17e6a65bf503913",
+      "message_id": 2641,
+      "sent_at": "2026-09-10T18:05:05Z"
     }
   },
   {
