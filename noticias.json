@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Wired Security*\n\n*Clearview AI prueba herramienta IA para que policías rastreen perfiles online*\n\nSe ha detectado un prototipo, InquiryIQ, que utiliza el modelo Grok de xAI para extraer datos de redes sociales, contactos y actividades digitales de individuos identificados mediante la base de datos de Clearview, ampliando la capacidad de vigilancia policial y planteando riesgos de abuso de datos personales.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1518.001` — Security Software Discovery\n⚔️ `T1087` — Account Discovery\n\n🔗 [Leer más](https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "c20e890189494d18abd1d56e6f85af30"
     }
   },
   {
