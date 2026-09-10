@@ -26,9 +26,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*Robo de tokens IA permite eludir MFA y acceder a modelos de Google y Anthropic*\n\nCibercriminales usan stealer logs (Lumma, Vidar) para extraer tokens de sesión y API de proveedores de IA, creando “claves robadas” que permiten autenticación sin MFA y acceso no autorizado a modelos de generación de texto. La exposición de estos tokens compromete entornos de desarrollo y producción que dependen de IA, ampliando la superficie de ataque a través de credenciales reutilizables.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1606.001` — Web Cookies\n\n🔗 [Leer más](https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "19a48664f65342339be00ee17e3acd15"
     }
   },
   {
