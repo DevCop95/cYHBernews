@@ -70,10 +70,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Hacker News*\n\n*Amenazas emergentes: 200 vulnerabilidades Android y phishing vía navegadores*\n\nSe reportan 200 CVE críticos en Android, incluyendo escalada de privilegios y fuga de datos, y nuevas técnicas de phishing integradas en extensiones de navegador que capturan credenciales en tiempo real. El vector de ataque combina permisos excesivos de apps y cadenas de suministro comprometidas, ampliando la superficie de exposición para usuarios móviles y corporativos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1025` — Data from Removable Media\n⚔️ `T1195` — Supply Chain Compromise\n⚔️ `T1566.002` — Spearphishing Link\n\n🔗 [Leer más](https://thehackernews.com/2026/09/threatsday-200-android-flaws-browser.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "705ca86ccfec45349faa5a4c5c03f8b4"
+      "attempt_id": "705ca86ccfec45349faa5a4c5c03f8b4",
+      "message_id": 2645,
+      "sent_at": "2026-09-10T22:58:41Z"
     }
   },
   {
