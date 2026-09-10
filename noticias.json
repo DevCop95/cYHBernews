@@ -1,5 +1,93 @@
 [
   {
+    "id": 2595,
+    "fecha": "2026-09-10T13:21:37Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Clearview AI prueba herramienta IA para que policías rastreen perfiles online",
+    "resumen": "Se ha detectado un prototipo, InquiryIQ, que utiliza el modelo Grok de xAI para extraer datos de redes sociales, contactos y actividades digitales de individuos identificados mediante la base de datos de Clearview, ampliando la capacidad de vigilancia policial y planteando riesgos de abuso de datos personales.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218003-3c89682cfb3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwNDY0OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:clearview ai is testing an ai tool that would let cops unearth your life online",
+    "ttps": [
+      {
+        "id": "T1518.001",
+        "name": "Security Software Discovery"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Wired Security*\n\n*Clearview AI prueba herramienta IA para que policías rastreen perfiles online*\n\nSe ha detectado un prototipo, InquiryIQ, que utiliza el modelo Grok de xAI para extraer datos de redes sociales, contactos y actividades digitales de individuos identificados mediante la base de datos de Clearview, ampliando la capacidad de vigilancia policial y planteando riesgos de abuso de datos personales.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1518.001` — Security Software Discovery\n⚔️ `T1087` — Account Discovery\n\n🔗 [Leer más](https://www.wired.com/story/clearview-ai-is-testing-an-ai-tool-that-lets-cops-instantly-unearth-your-online-activity/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2594,
+    "fecha": "2026-09-10T13:21:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA genera exploits a partir de rumores, acelerando la ventana de vulnerabilidad",
+    "resumen": "Investigadores demuestran que agentes de IA pueden descubrir un exploit con solo información vaga sobre la vulnerabilidad, reduciendo drásticamente el tiempo entre la divulgación de un rumor y la disponibilidad de un exploit activo, lo que compromete los procesos de embargo en proyectos de código abierto.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwNDY0OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/ais-compress-exploit-timeline.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:ais compress exploit timeline",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "anil.recoil.org",
+        "simonwillison.net"
+      ],
+      "url": [
+        "https://anil.recoil.org/notes/rumour-is-the-exploit",
+        "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Schneier on Security*\n\n*IA genera exploits a partir de rumores, acelerando la ventana de vulnerabilidad*\n\nInvestigadores demuestran que agentes de IA pueden descubrir un exploit con solo información vaga sobre la vulnerabilidad, reduciendo drásticamente el tiempo entre la divulgación de un rumor y la disponibilidad de un exploit activo, lo que compromete los procesos de embargo en proyectos de código abierto.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1588.006` — Vulnerabilities\n⚔️ `T1608.003` — Install Digital Certificate\n\n🔍 *IoCs:*\n🔗 Dominios: anil[.]recoil[.]org, simonwillison[.]net\n🔗 URLs: hxxps://anil[.]recoil[.]org/notes/rumour-is-the-exploit, hxxps://simonwillison[.]net/2026/Aug/28/just-a-rumour-of-a-bug/\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/ais-compress-exploit-timeline.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2593,
+    "fecha": "2026-09-10T13:21:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "UE impone 24 h para reportar incidentes críticos de seguridad de productos",
+    "resumen": "A partir del viernes, las empresas que operen en la UE deberán notificar a autoridades gubernamentales cualquier incidente grave de seguridad de sus productos en un plazo máximo de 24 horas, bajo el nuevo Cyber Resilience Act. El requisito acelera la detección y respuesta a vulnerabilidades críticas, aumentando la presión sobre los procesos de gestión de incidentes y cumplimiento normativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwNDY0OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/eu-cyber-resilience-act-reporting-requirements",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:eu cyber resilience act to enforce new reporting requirements",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*UE impone 24 h para reportar incidentes críticos de seguridad de productos*\n\nA partir del viernes, las empresas que operen en la UE deberán notificar a autoridades gubernamentales cualquier incidente grave de seguridad de sus productos en un plazo máximo de 24 horas, bajo el nuevo Cyber Resilience Act. El requisito acelera la detección y respuesta a vulnerabilidades críticas, aumentando la presión sobre los procesos de gestión de incidentes y cumplimiento normativo.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.darkreading.com/cybersecurity-operations/eu-cyber-resilience-act-reporting-requirements)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2592,
     "fecha": "2026-09-10T07:51:08Z",
     "categoria": "IA",
