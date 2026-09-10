@@ -54,10 +54,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Bleeping Computer*\n\n*Trezor alerta sobre brecha en proveedor de email y campaña de phishing dirigida*\n\nUn actor amenaza comprometió el proveedor de correo electrónico de Trezor y está enviando correos de phishing a usuarios para robar credenciales y claves de hardware wallet. El vector de ataque se basa en suplantación de identidad mediante dominios comprometidos y enlaces maliciosos, aumentando el riesgo de pérdida de fondos cripto.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1566.002` — Spearphishing Link\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/trezor-warns-users-of-email-provider-breach-phishing-attacks/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "44685cf5f81f4563819c325aa85383b4"
+      "attempt_id": "44685cf5f81f4563819c325aa85383b4",
+      "message_id": 2635,
+      "sent_at": "2026-09-10T07:54:33Z"
     }
   },
   {
