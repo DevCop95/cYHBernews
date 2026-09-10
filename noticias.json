@@ -1,5 +1,52 @@
 [
   {
+    "id": 2589,
+    "fecha": "2026-09-10T02:49:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Vulnerabilidad masiva \"Mythos\" revela cuello de botella humano en la mitigación",
+    "resumen": "El análisis de Project Glasswing muestra que, aunque se han identificado cientos de CVE críticos, solo una fracción ha sido divulgada y una menor aún corregida, exponiendo a organizaciones a riesgos prolongados de exploits. El cuello de botella radica en la capacidad limitada de los equipos de respuesta para validar, priorizar y parchear rápidamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwMDg1NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/mythos-vulnerability-firehose-hits-human-bottleneck",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:mythos vulnerability firehose hits a human bottleneck",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Vulnerabilidad masiva \"Mythos\" revela cuello de botella humano en la mitigación*\n\nEl análisis de Project Glasswing muestra que, aunque se han identificado cientos de CVE críticos, solo una fracción ha sido divulgada y una menor aún corregida, exponiendo a organizaciones a riesgos prolongados de exploits. El cuello de botella radica en la capacidad limitada de los equipos de respuesta para validar, priorizar y parchear rápidamente.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.darkreading.com/application-security/mythos-vulnerability-firehose-hits-human-bottleneck)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2588,
+    "fecha": "2026-09-10T02:49:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cuatro grupos de espionaje usan el mismo kit de exploits para Chrome y Windows e",
+    "resumen": "Se ha detectado el kit de exploits no documentado “BlueMoon”, que combina vulnerabilidades en Microsoft Windows y Google Chrome, siendo utilizado por al menos cuatro APT, incluido el grupo estatal chino APT31. El vector de ataque se basa en cadenas de exploits de día cero y vulnerabilidades de ejecución remota, aumentando el riesgo de compromisos de alta prioridad en entornos corporativos y gubernamentales.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwMDg1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:four spy groups used the same chrome and windows exploit kit within a week",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *The Hacker News*\n\n*Cuatro grupos de espionaje usan el mismo kit de exploits para Chrome y Windows e*\n\nSe ha detectado el kit de exploits no documentado “BlueMoon”, que combina vulnerabilidades en Microsoft Windows y Google Chrome, siendo utilizado por al menos cuatro APT, incluido el grupo estatal chino APT31. El vector de ataque se basa en cadenas de exploits de día cero y vulnerabilidades de ejecución remota, aumentando el riesgo de compromisos de alta prioridad en entornos corporativos y gubernamentales.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2587,
     "fecha": "2026-09-09T22:54:20Z",
     "categoria": "Ciberseguridad",
