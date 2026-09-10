@@ -60,9 +60,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Schneier on Security*\n\n*153 MILLONES DE LICENCIAS DE CONDUCIR COMERCIALIZADAS EN la Dark Web*\n\nSe ha expuesto una base de datos con 153 M millones de licencias de conducir, disponible en un sitio clandestino; la filtración sugiere compromiso a gran escala de sistemas estatales de emisión y plantea riesgos de fraude de identidad y ataques de phishing dirigidos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1005` — Data from Local System\n⚔️ `T1566` — Phishing\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1039` — Data from Network Shared Drive\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔍 *IoCs:*\n🔗 Dominios: arstechnica[.]com\n🔗 URLs: hxxps://arstechnica[.]com/security/2026/09/my-drivers-license-is-one-of-153-million-for-sale-on-a-new-dark-website/\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/drivers-license-data-for-sale.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "8c3d397e4c8246b58847ea07efad30a4"
     }
   },
   {
