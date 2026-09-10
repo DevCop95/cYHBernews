@@ -34,10 +34,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *Dark Reading*\n\n*Explotan BYOD y Graph API para acceder a datos de Microsoft 365*\n\nAmenazas usan la API de Microsoft Graph para mapear usuarios BYOD y robar credenciales, luego venden el acceso a grupos de extorsión como ShinyHunters, comprometiendo datos corporativos críticos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1087.004` — Cloud Account\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1588.006` — Vulnerabilities\n\n🔗 [Leer más](https://www.darkreading.com/threat-intelligence/voice-callers-exploit-byod-microsoft-365-corporate-data)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "0e3b27fa9ab241dd9e3f1ad3f46c72ee"
+      "attempt_id": "0e3b27fa9ab241dd9e3f1ad3f46c72ee",
+      "message_id": 2646,
+      "sent_at": "2026-09-10T22:58:49Z"
     }
   },
   {
