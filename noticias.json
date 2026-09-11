@@ -56,9 +56,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Bleeping Computer*\n\n*Sentencian a 4 años a miembro ucraniano del grupo Conti ransomware*\n\nUn nacional ucraniano fue condenado a cuatro años de prisión por su participación en campañas de ransomware Conti entre 2021 y 2022, evidenciando la continuidad de operaciones de APT criminales y la exposición de infraestructuras críticas a extorsión. El caso subraya la necesidad de reforzar detección de indicadores de compromiso (IOCs) y de mejorar la respuesta a incidentes de ransomware.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1486` — Data Encrypted for Impact\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "7c7f29ce6dae4865a61bb247fb5a8ce4"
     }
   },
   {
