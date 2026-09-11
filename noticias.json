@@ -1,5 +1,139 @@
 [
   {
+    "id": 2622,
+    "fecha": "2026-09-11T22:56:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha en el DMV de Florida vinculada a credenciales robadas de dispositivo pers",
+    "resumen": "El Departamento de Vehículos Motorizados de Florida confirmó que el grupo cibercriminal ShinyHunters accedió a su base de datos tras sustraer credenciales almacenadas en el móvil personal de un agente policial, comprometiendo información de millones de conductores. El vector de ataque fue el phishing/compromiso de dispositivo personal, lo que subraya la necesidad de reforzar la gestión de credenciales y la segmentación de accesos.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNjc0MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/florida-shiny-hunters-motor-vehicle",
+    "fuente": "The Record",
+    "dedup_key": "txt:florida says motor vehicle data breach tied to credentials stolen from officer s personal device",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Record*\n\n*Brecha en el DMV de Florida vinculada a credenciales robadas de dispositivo pers*\n\nEl Departamento de Vehículos Motorizados de Florida confirmó que el grupo cibercriminal ShinyHunters accedió a su base de datos tras sustraer credenciales almacenadas en el móvil personal de un agente policial, comprometiendo información de millones de conductores. El vector de ataque fue el phishing/compromiso de dispositivo personal, lo que subraya la necesidad de reforzar la gestión de credenciales y la segmentación de accesos.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://therecord.media/florida-shiny-hunters-motor-vehicle)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2621,
+    "fecha": "2026-09-11T22:56:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Actor de amenaza genera 1 M de correos de fraude personalizados en 3 días usando",
+    "resumen": "Un grupo de cibercriminales ha empleado modelos de lenguaje generativos para crear un millón de correos de phishing altamente personalizados en apenas 72 horas, combinando credibilidad y escala. El vector de ataque se basa en IA para generar contenido convincente y evadir filtros anti‑spam, incrementando el riesgo de compromisos de credenciales a gran escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNjc0MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:threat actor generates 1m personalized fraud emails in 3 days",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Dark Reading*\n\n*Actor de amenaza genera 1 M de correos de fraude personalizados en 3 días usando*\n\nUn grupo de cibercriminales ha empleado modelos de lenguaje generativos para crear un millón de correos de phishing altamente personalizados en apenas 72 horas, combinando credibilidad y escala. El vector de ataque se basa en IA para generar contenido convincente y evadir filtros anti‑spam, incrementando el riesgo de compromisos de credenciales a gran escala.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/1m-personalized-fraud-emails-3-days)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2620,
+    "fecha": "2026-09-11T22:56:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Claude empleado para automatizar explotación y robo de datos en múltiples víctim",
+    "resumen": "Anthropic advierte que grupos de amenaza (GTGs) están utilizando modelos Claude para generar exploits automatizados, phishing y extracción masiva de datos, combinando técnicas de zero‑day con generación de código malicioso. El uso de IA generativa amplifica la velocidad y escala de los ataques, afectando tanto a actores estatales como criminales financieros.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNjczOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:claude used to automate exploitation and data theft across multiple victims",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*Claude empleado para automatizar explotación y robo de datos en múltiples víctim*\n\nAnthropic advierte que grupos de amenaza (GTGs) están utilizando modelos Claude para generar exploits automatizados, phishing y extracción masiva de datos, combinando técnicas de zero‑day con generación de código malicioso. El uso de IA generativa amplifica la velocidad y escala de los ataques, afectando tanto a actores estatales como criminales financieros.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔗 [Leer más](https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2619,
+    "fecha": "2026-09-11T22:56:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotan Claude de Anthropic para robar datos de 1,8 M de apps Android",
+    "resumen": "Grupos de amenaza, incluidos actores financieros y APT vinculados a Rusia y China, intentaron usar el modelo de lenguaje Claude para generar código que extraiga credenciales y claves API de 1,8 millones de aplicaciones Android, exponiendo potenciales vectores de ataque de supply‑chain y comprometiendo datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNjczOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers abused claude to extract secrets from 1 8m android apps",
+    "ttps": [
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Bleeping Computer*\n\n*Hackers explotan Claude de Anthropic para robar datos de 1,8 M de apps Android*\n\nGrupos de amenaza, incluidos actores financieros y APT vinculados a Rusia y China, intentaron usar el modelo de lenguaje Claude para generar código que extraiga credenciales y claves API de 1,8 millones de aplicaciones Android, exponiendo potenciales vectores de ataque de supply‑chain y comprometiendo datos sensibles.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1608.003` — Install Digital Certificate\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n⚔️ `T1552.001` — Credentials In Files\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/hackers-abused-claude-to-extract-secrets-from-18m-android-apps/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2618,
+    "fecha": "2026-09-11T22:56:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "UE eleva requisitos de ciberresiliencia para proveedores de seguridad física",
+    "resumen": "La nueva Ley de Ciberresiliencia de la UE (CRA) impone auditorías de diseño, mantenimiento y soporte a productos conectados de seguridad física, obligando a fabricantes como Genetec a certificar la resistencia contra vulnerabilidades y ataques de cadena de suministro. El incumplimiento conlleva sanciones y restricciones de mercado en la UE.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNjczOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ley-de-ciberresiliencia-de-la-ue-eleva-el-liston-para-los-proveedores-de-tecnologia-de-seguridad-fisica/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ley de ciberresiliencia de la ue eleva el listón para los proveedores de tecnología de seguridad física",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *CyberSecurity News*\n\n*UE eleva requisitos de ciberresiliencia para proveedores de seguridad física*\n\nLa nueva Ley de Ciberresiliencia de la UE (CRA) impone auditorías de diseño, mantenimiento y soporte a productos conectados de seguridad física, obligando a fabricantes como Genetec a certificar la resistencia contra vulnerabilidades y ataques de cadena de suministro. El incumplimiento conlleva sanciones y restricciones de mercado en la UE.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://cybersecuritynews.es/la-ley-de-ciberresiliencia-de-la-ue-eleva-el-liston-para-los-proveedores-de-tecnologia-de-seguridad-fisica/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2617,
     "fecha": "2026-09-11T18:08:33Z",
     "categoria": "Ciberseguridad",
