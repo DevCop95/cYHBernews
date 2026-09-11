@@ -1,5 +1,118 @@
 [
   {
+    "id": 2610,
+    "fecha": "2026-09-11T07:42:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Grupo de amenazas GoldFactory usa Android Work Profile para distribuir troyano b",
+    "resumen": "El actor avanzado GoldFactory explota la funcionalidad Android Work Profile para clonar aplicaciones bancarias y desplegar el troyano Gigabud, mientras la campaña paralela Mantax Otax propaga variantes adicionales, incrementando el riesgo de fraude financiero en dispositivos móviles.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/mobile-security/indonesia-android-banking-app-cloning-campaign",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:indonesia hit by android banking app cloning campaign",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2609,
+    "fecha": "2026-09-11T07:42:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cadena de vulnerabilidades en JFrog Artifactory permite control admin y backdoor",
+    "resumen": "Los atacantes combinaron dos CVE en Artifactory para escalar privilegios y desplegar puertas traseras en servidores auto‑gestionados, explotando instalaciones sin parchear entre el 15 ago y 8 sep. La falta de actualización dejó expuestos pipelines CI/CD críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers chain jfrog artifactory flaws to gain admin control and plant backdoors",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2608,
+    "fecha": "2026-09-11T07:42:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sentencian a 4 años a miembro ucraniano del grupo Conti ransomware",
+    "resumen": "Un nacional ucraniano fue condenado a cuatro años de prisión por su participación en campañas de ransomware Conti entre 2021 y 2022, evidenciando la continuidad de operaciones de APT criminales y la exposición de infraestructuras críticas a extorsión. El caso subraya la necesidad de reforzar detección de indicadores de compromiso (IOCs) y de mejorar la respuesta a incidentes de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/conti-ransomware-gang-member-sentenced-to-four-years-in-prison/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:conti ransomware gang member sentenced to 4 years in prison",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2607,
+    "fecha": "2026-09-11T07:42:50Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Pentesting autónomo con agentes IA: riesgos y controles críticos",
+    "resumen": "FaradaySec reporta 157 pruebas autónomas con un agente LLM que ejecutó herramientas ofensivas, procesó 117 000 vulnerabilidades y generó 250 h de testing, evidenciando la necesidad de validar la salida del modelo mediante trazabilidad y gobernanza para evitar falsos positivos y abuso. El vector de ataque radica en la automatización de exploits sin supervisión humana directa, lo que amplía la superficie de riesgo si el agente es comprometido o mal configurado.",
+    "url_imagen": "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/09/como-gestionar-el-autonomous-continuous.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo gestionar el autonomous continuous attack con agentes ia en offensive security",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "faradaysec.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.blogger.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://MyPublicInbox.com",
+        "https://MyPublicInbox.com/ChemaAlonso",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3dMIn-xrC0cwM20P-ONYZ7hnomN9CvSxLVyrcU3LfmPz3ecgw3-EJOFQRJsB7-nOb7r6li0p1u0SIjZaR-7ifsnz-zzNNPTataT2apIUIaRJcUCZshFgLv1bsf6bLvnSAAB1QPfvS8qg6fWmGm9dq5jler29DLxTjAwesHITLk35VOT929ZcK/w640-h288/Faraday4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIDYCLUrR2CrlzhM-5CEDCYmIS_J7sSXXD1_LS8HTzs114RThBlBTqpibfElGwxXwoq3HS2GA3St_lZJ4EzUrKHOyKm5V5XTGnCJS-gNVFJBui_HO_1DipA04iAVhf0zFd4vZgRhWIIQ_zSa5fcnW-eiqEjIa-bHnfk8UWjt9YtsfNbbL3JdZM/w640-h276/Faraday3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6ZW2Q_6A0c5m6u4yVwtGv_rCLrfPrpn9qPA8yxrH9Qden_nf-PDLD-YpVyRJArWVxDWiZIq1ApLwEfLw6ZdDzMOzq8BVuwWa__kg0kqMEv0YiWvOlp4taKrgFoAOWuuj2EKnROINSEhSblFfb2OQ_4L69Z97ZBsHUsYivOkmXy1YNUTJZEArv/w640-h274/farday1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN7GFiT2LdfWpkNvy0UuzYxmfHshNlg_4LrbzpPKfz5_wX0-eqacPmxvnJns4b8k4w4UZ_0Huv1-CXX6dR4cKYNMGsBmsnskKy1XvGaAhAYzv9xblia-OG2XqsWLFtpSZQRSvQijdMo92Ere-6sdzsJjgGzJWOJaMR4RalVDr93cKvnLErhIPP/w640-h430/Faraday6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRvDZn5SaDvlwE3PBMJHkjqNnps46kqcF98lPNPnvivIm_J7CUPPXxvUpPqMMPDzHe_uvgIq5VOV1fecAjIUbNfaWnPxhgHOW-ul1-5KlWpEYqyvlLt6GyYAjDqvEOkdMajlQNYJpC1nYZrEukWlpXFaKfBLwbfkt81zgJg1OoqvNREGCVS5bZ/w640-h294/Faraday8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf4nvr1N0qESlAFJAznBVNH2KaarV9u2GP7D_3derd8ugYBwReQCFzSj3ZCgxJgpj08bKEfqjTqiwUyWtOlfC5Zq9VA8WTSm6Y2zAIDgx49TwLEYsKCLqJ_KyyXFM3nEmZCztp6YcckB0x3bnuA1lTLyCh3_Gk-JH8j4wvTPa49AmiRRmuQyYW/w640-h362/Faraday0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigjWR0pqz3ec0qCjaG1M_ttouWUfTg1tDqA0SUrvzQOznWB5QwCGugH-ksphU6ecfllZDNy1gHsa8tBVLE2AeSPRCniA5gWQLjWyolIB2JlIEYTeWkSxdIcWa2fN906Wv73mYwC2_pioaJrs_hC6OJTQyyOYKPdkmP3SjAapx-0QrfJCAbkfm4/w640-h296/Farday5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiizgD6gGQUVQjupgegjqb_i4fjO0_VG8ZpvJ5Y-6b8e3qyLiLpvlkx2p92N1kbs7K6_rrePI8ezLLFjYHs5Ou6i-SihGUMbX58q-QoMthzGeNT5r7ycgG5a7Y9CQn8LdnsEadj38P4nJ9WaqHERAl8SamfMdSeO6obwP1caeoQ6ojBmKX5s_kw/w640-h434/Faraday7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij2CIJ_kCIxPNSyAlBHTlANdantjfXZbdEjFpK8eNR8pbtyza9VT8vvhfKbSKrXlHV6LACw6F4qV_k_8rlHXdU_x4Qucsk5reT20yZfnqRozwzp0P6DZBCIMvPT5OqqiFF71DAONm5ln5O2spCNExHxcukVJXO6NjlXE07_uhsbHHC9II0ER1I/w640-h422/faraday2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0YgFGObUJO70XT49RDfcceyW7GiNwSha8j3CIHIHVu7j_nc9DbEj4UoDD_OXjLcNEUOrep9qWNlCRYUTVH7B_Ek7k8rxLX5DWp_F1pMKH2ZO2pHgikpNZE5N9088oxk99Qb92ZeGVlAkgw7Co8srdJXMv9N_E5L0auPy3p_bPXv7nXieIbtWg/w640-h294/Faraday9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj40UL9hBNxzKcPzWVP1BKSjzXAMynWUjaOmEG8RzI6XucI4uWSgayRNDFCWAw6jT5HmGWMmMJIY4TCqAu5rb6Ws2RC1Tc0oAY0aOZWy0HXi4PYGCgXNgTjiagmfaoEezzHlq-Qu2KNIo5OCK4JM5nJMrHkYgWL-rs0P38pqoxOy_w7c9AFUGWT/w640-h594/MartinTartarelli.jpg",
+        "https://elladodelmal.com",
+        "https://faradaysec.com/",
+        "https://faradaysec.com/get-in-touch/",
+        "https://mypublicinbox.com/MartinTartarelli",
+        "https://mypublicinbox.com/dashboard/chats/zo1KA0wRZ4w3OPMn",
+        "https://www.blogger.com/video.g?token=AD6v5dzmosi5xPjFUz4ES2u7PRV6L835dKG1XUohRhOIDCUrLqOtlO_NYmSRETumDi8L7J75Y3ImHTbOJ9Q"
+      ]
+    }
+  },
+  {
+    "id": 2606,
+    "fecha": "2026-09-11T07:42:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "GuardBreaker: código engañoso que desorienta a LLMs en escaneo de malware",
+    "resumen": "Investigadores demuestran que insertar comentarios triviales en binarios permite evadir detecciones de escáneres basados en grandes modelos de lenguaje, creando un vector de ofuscación que compromete la fiabilidad de herramientas de análisis automático.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxMTI1Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/guardbreaker-ia-analisis-malware/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:guardbreaker cómo un simple comentario de código puede confundir a la ia en el análisis de malware",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2605,
     "fecha": "2026-09-11T02:43:37Z",
     "categoria": "Ciberseguridad",
