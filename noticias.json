@@ -1,5 +1,71 @@
 [
   {
+    "id": 2617,
+    "fecha": "2026-09-11T18:08:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cadena de suministro de inferencias robadas: agente IA semi‑autónomo expande acc",
+    "resumen": "Se detectó un atacante que emplea un agente de codificación semi‑autónomo para localizar gateways de reventa de LLM mal asegurados, explotar vulnerabilidades web y técnicas de account farming, validar la capacidad de inferencia obtenida y consolidarla en un punto de control propio, creando un hub de procesamiento de peticiones ilícitas.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNTAxMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33332",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:the self expanding stolen inference supply chain an ai agent harvesting and re serving llm access fri sep 11th",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1136.001",
+        "name": "Local Account"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *SANS ISC*\n\n*Cadena de suministro de inferencias robadas: agente IA semi‑autónomo expande acc*\n\nSe detectó un atacante que emplea un agente de codificación semi‑autónomo para localizar gateways de reventa de LLM mal asegurados, explotar vulnerabilidades web y técnicas de account farming, validar la capacidad de inferencia obtenida y consolidarla en un punto de control propio, creando un hub de procesamiento de peticiones ilícitas.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1136.001` — Local Account\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33332)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2616,
+    "fecha": "2026-09-11T18:08:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Adversarios manipulan razonamiento defensivo de IA para comprometer redes",
+    "resumen": "Se ha detectado que actores maliciosos alteran los modelos de IA de defensa, induciendo decisiones erróneas que permiten la infiltración silenciosa en infraestructuras críticas. El vector de ataque explota vulnerabilidades en la lógica de razonamiento y en los pipelines de datos de entrenamiento, comprometiendo la integridad de los sistemas de detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1752742111841-f490c48aa668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNTAxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-governance-cannot-wait",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai governance can t wait",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Adversarios manipulan razonamiento defensivo de IA para comprometer redes*\n\nSe ha detectado que actores maliciosos alteran los modelos de IA de defensa, induciendo decisiones erróneas que permiten la infiltración silenciosa en infraestructuras críticas. El vector de ataque explota vulnerabilidades en la lógica de razonamiento y en los pipelines de datos de entrenamiento, comprometiendo la integridad de los sistemas de detección.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.darkreading.com/cyber-risk/ai-governance-cannot-wait)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2615,
+    "fecha": "2026-09-11T18:08:29Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Anthropic detecta ataques de destilación industrial contra Claude en siete labor",
+    "resumen": "Anthropic confirmó la identificación y mitigación de campañas a gran escala que extraían modelos de Claude mediante técnicas de knowledge distillation, involucrando a laboratorios como Alibaba, Moonshot, DeepSeek, Z.ai y MiniMax. El vector de ataque permite reproducir capacidades del modelo original sin autorización, representando una amenaza de fuga de propiedad intelectual y posible reutilización maliciosa.",
+    "url_imagen": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxNTAxMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:anthropic says seven china based ai labs ran industrial scale claude distillation attacks",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*Anthropic detecta ataques de destilación industrial contra Claude en siete labor*\n\nAnthropic confirmó la identificación y mitigación de campañas a gran escala que extraían modelos de Claude mediante técnicas de knowledge distillation, involucrando a laboratorios como Alibaba, Moonshot, DeepSeek, Z.ai y MiniMax. El vector de ataque permite reproducir capacidades del modelo original sin autorización, representando una amenaza de fuga de propiedad intelectual y posible reutilización maliciosa.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2614,
     "fecha": "2026-09-11T13:13:41Z",
     "categoria": "IA",
