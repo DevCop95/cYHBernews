@@ -46,9 +46,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*Check Point corrige dos vulnerabilidades críticas CVE‑9.8 en certificados VPN qu*\n\nSe han parcheado dos fallas en los productos de firewall y gestión de Check Point que, bajo condiciones específicas, permiten a un atacante remoto no autenticado ejecutar código arbitrario mediante manipulación de certificados VPN. El vector de ataque se basa en la validación insuficiente de certificados TLS en los gateways de seguridad.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "d5b16a84bda347bc88d09d4980e6a600"
     }
   },
   {
