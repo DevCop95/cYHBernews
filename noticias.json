@@ -94,10 +94,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Bleeping Computer*\n\n*GitLab alerta sobre vulnerabilidad crítica de path traversal (CVE‑2026‑85706)*\n\nGitLab emitió un advisory urgente para parchear una vulnerabilidad de máxima severidad que permite traversal de rutas y ejecución de código arbitrario en servidores GitLab self‑hosted. El vector de ataque explota la falta de validación de rutas en la API de archivos, exponiendo a organizaciones a compromisos de integridad y confidencialidad de repositorios.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-85706\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "f6138ae91df643a39836c6f27fb5f937"
+      "attempt_id": "f6138ae91df643a39836c6f27fb5f937",
+      "message_id": 2656,
+      "sent_at": "2026-09-11T13:17:08Z"
     }
   },
   {
