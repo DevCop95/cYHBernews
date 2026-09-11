@@ -32,9 +32,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Cadena de vulnerabilidades en JFrog Artifactory permite control admin y backdoor*\n\nLos atacantes combinaron dos CVE en Artifactory para escalar privilegios y desplegar puertas traseras en servidores auto‑gestionados, explotando instalaciones sin parchear entre el 15 ago y 8 sep. La falta de actualización dejó expuestos pipelines CI/CD críticos.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "642115d62b234a85a93ba651dd22adfd"
     }
   },
   {
