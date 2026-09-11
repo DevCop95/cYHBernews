@@ -132,9 +132,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *WeLiveSecurity*\n\n*GuardBreaker: código engañoso que desorienta a LLMs en escaneo de malware*\n\nInvestigadores demuestran que insertar comentarios triviales en binarios permite evadir detecciones de escáneres basados en grandes modelos de lenguaje, creando un vector de ofuscación que compromete la fiabilidad de herramientas de análisis automático.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://www.welivesecurity.com/es/seguridad-corporativa/guardbreaker-ia-analisis-malware/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "2291a022e30c4d58846cf4f307b9a154"
     }
   },
   {
