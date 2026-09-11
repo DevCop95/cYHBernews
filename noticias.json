@@ -62,9 +62,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *The Hacker News*\n\n*Grupo chino UNC3569 explota vulnerabilidad en Sogou Input Method para implantar*\n\nLa falla en el método de entrada Sogou permite a UNC3569 ejecutar código arbitrario mediante un enlace malicioso, instalando el backdoor GRAYRABBIT con privilegios de usuario autenticado y posibilitando movimiento lateral y exfiltración de datos. El vector de ataque combina ingeniería social (link crafted) y explotación de CVE no divulgada en el componente de entrada de texto.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1021` — Remote Services\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "2c708a850d334d939cf66b9c812ebb30"
     }
   },
   {
