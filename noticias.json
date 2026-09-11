@@ -77,10 +77,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *The Hacker News*\n\n*Claude empleado para automatizar explotación y robo de datos en múltiples víctim*\n\nAnthropic advierte que grupos de amenaza (GTGs) están utilizando modelos Claude para generar exploits automatizados, phishing y extracción masiva de datos, combinando técnicas de zero‑day con generación de código malicioso. El uso de IA generativa amplifica la velocidad y escala de los ataques, afectando tanto a actores estatales como criminales financieros.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔗 [Leer más](https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "7dcd02c44109462fa23138121d068660"
+      "attempt_id": "7dcd02c44109462fa23138121d068660",
+      "message_id": 2664,
+      "sent_at": "2026-09-11T22:59:51Z"
     }
   },
   {
