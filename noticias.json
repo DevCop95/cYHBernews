@@ -1,5 +1,61 @@
 [
   {
+    "id": 2605,
+    "fecha": "2026-09-11T02:43:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tesoro EE.UU. exige a bancos reportar estafas cibernéticas tras $13 MM de pérdid",
+    "resumen": "El Departamento del Tesoro insta a las instituciones financieras a reportar incidentes de fraude digital, con el objetivo de consolidar inteligencia sobre campañas de phishing y ransomware que han generado casi $13 mil millones en pérdidas desde 2023. La medida busca mejorar la visibilidad de vectores de ataque y acelerar la respuesta coordinada entre reguladores y entidades bancarias.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwOTQ2MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/treasury-urges-banks-report-cyber-scams",
+    "fuente": "The Record",
+    "dedup_key": "txt:treasury urges banks to file cyber scam reports noting nearly 13 billion in losses since 2023",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2604,
+    "fecha": "2026-09-11T02:43:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Check Point corrige dos vulnerabilidades críticas CVE‑9.8 en certificados VPN qu",
+    "resumen": "Se han parcheado dos fallas en los productos de firewall y gestión de Check Point que, bajo condiciones específicas, permiten a un atacante remoto no autenticado ejecutar código arbitrario mediante manipulación de certificados VPN. El vector de ataque se basa en la validación insuficiente de certificados TLS en los gateways de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwOTQ2MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:check point discloses two 9 8 rated vpn certificate flaws enabling unauthenticated rce",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2603,
+    "fecha": "2026-09-11T02:43:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Fallos críticos en Remote Desktop Services tras parches de septiembre 2026",
+    "resumen": "Los últimos actualizaciones de seguridad de Windows Server 2019, 2022 y 2025 provocan interrupciones totales de RDS, impidiendo conexiones remotas y obligando a reinicios forzados; el problema afecta a entornos críticos de administración y puede ser explotado para denegación de servicio si no se corrige rápidamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwOTQ2MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/september-windows-server-updates-break-remote-desktop-services/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:september windows server updates break remote desktop services",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2602,
     "fecha": "2026-09-10T22:55:38Z",
     "categoria": "Ciberseguridad",
