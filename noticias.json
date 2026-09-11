@@ -108,9 +108,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *El Lado Del Mal*\n\n*Pentesting autónomo con agentes IA: riesgos y controles críticos*\n\nFaradaySec reporta 157 pruebas autónomas con un agente LLM que ejecutó herramientas ofensivas, procesó 117 000 vulnerabilidades y generó 250 h de testing, evidenciando la necesidad de validar la salida del modelo mediante trazabilidad y gobernanza para evitar falsos positivos y abuso. El vector de ataque radica en la automatización de exploits sin supervisión humana directa, lo que amplía la superficie de riesgo si el agente es comprometido o mal configurado.\n\n🟡 Severidad: *MEDIA*\n\n🔍 *IoCs:*\n🔗 Dominios: 0xword[.]com, blogger[.]googleusercontent[.]com, elladodelmal[.]com\n🔗 URLs: hxxp://feeds[.]feedburner[.]com/ElLadoDelMal, hxxps://0xWord[.]com, hxxps://MyPublicInbox[.]com\n\n🔗 [Leer más](http://www.elladodelmal.com/2026/09/como-gestionar-el-autonomous-continuous.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "e0ec71bb727441458348008ff97c839a"
     }
   },
   {
