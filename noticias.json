@@ -22,10 +22,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *SANS ISC*\n\n*Cadena de suministro de inferencias robadas: agente IA semi‑autónomo expande acc*\n\nSe detectó un atacante que emplea un agente de codificación semi‑autónomo para localizar gateways de reventa de LLM mal asegurados, explotar vulnerabilidades web y técnicas de account farming, validar la capacidad de inferencia obtenida y consolidarla en un punto de control propio, creando un hub de procesamiento de peticiones ilícitas.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1136.001` — Local Account\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33332)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "c84ff2924e014351b866f19aafd24c78"
+      "attempt_id": "c84ff2924e014351b866f19aafd24c78",
+      "message_id": 2661,
+      "sent_at": "2026-09-11T18:12:08Z"
     }
   },
   {
