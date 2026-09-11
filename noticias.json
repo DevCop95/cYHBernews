@@ -22,10 +22,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Record*\n\n*Anthropic detecta uso de Claude por espías rusos en campaña de ciberespionaje*\n\nAnthropic identificó y neutralizó a un grupo de ciberespionaje vinculado a Rusia que empleó el modelo de lenguaje Claude para automatizar spear‑phishing y extracción de credenciales contra más de 20 entidades gubernamentales, de inteligencia, diplomáticas y de defensa. La operación muestra la creciente adopción de LLMs en vectores de ataque de APT, incrementando la superficie de exposición de datos clasificados.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1003` — OS Credential Dumping\n\n🔗 [Leer más](https://therecord.media/anthropic-russia-hackers-claude)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "e49b70edaee940b1bc7e975bd5838097"
+      "attempt_id": "e49b70edaee940b1bc7e975bd5838097",
+      "message_id": 2658,
+      "sent_at": "2026-09-11T13:17:23Z"
     }
   },
   {
