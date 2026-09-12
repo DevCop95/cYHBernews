@@ -1,5 +1,106 @@
 [
   {
+    "id": 2633,
+    "fecha": "2026-09-12T17:40:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora 5 vulnerabilidades activamente explotadas en Artifactory, ScreenC",
+    "resumen": "CISA añadió cinco CVE críticos (incluido CVE‑2026‑42016 con CVSS 8.1) que ya están siendo explotados contra JFrog Artifactory, ConnectWise ScreenConnect y MikroTik RouterOS, indicando campañas activas en la wild. Los vectores incluyen autorización incorrecta y ejecución remota, lo que eleva el riesgo de compromiso de infraestructuras de CI/CD, soporte remoto y redes de telecomunicaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyMzQ4MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-42016",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-42016"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *The Hacker News*\n\n*CISA incorpora 5 vulnerabilidades activamente explotadas en Artifactory, ScreenC*\n\nCISA añadió cinco CVE críticos (incluido CVE‑2026‑42016 con CVSS 8.1) que ya están siendo explotados contra JFrog Artifactory, ConnectWise ScreenConnect y MikroTik RouterOS, indicando campañas activas en la wild. Los vectores incluyen autorización incorrecta y ejecución remota, lo que eleva el riesgo de compromiso de infraestructuras de CI/CD, soporte remoto y redes de telecomunicaciones.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1547.001` — Registry Run Keys / Startup Folder\n⚔️ `T1021.004` — SSH\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-42016\n\n🔗 [Leer más](https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2632,
+    "fecha": "2026-09-12T17:40:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Explotación inminente de vulnerabilidades críticas en VPN de Check Point (CVE‑20",
+    "resumen": "El NCSC de Países Bajos alerta que se prevé un ataque activo contra dos vulnerabilidades críticas en el cliente VPN de Check Point, permitiendo ejecución remota de código y bypass de autenticación. Se recomienda aplicar los parches de inmediato y reforzar la monitorización de tráfico VPN.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyMzQ4MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "cve:cve-2026-85102,cve-2026-85103",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-85102",
+        "CVE-2026-85103"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Bleeping Computer*\n\n*Explotación inminente de vulnerabilidades críticas en VPN de Check Point (CVE‑20*\n\nEl NCSC de Países Bajos alerta que se prevé un ataque activo contra dos vulnerabilidades críticas en el cliente VPN de Check Point, permitiendo ejecución remota de código y bypass de autenticación. Se recomienda aplicar los parches de inmediato y reforzar la monitorización de tráfico VPN.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-85102, CVE-2026-85103\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2631,
+    "fecha": "2026-09-12T17:40:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña global de phishing con falsas propuestas de patrocinio apunta a cuentas",
+    "resumen": "Se detectó una operación que envía correos falsos de patrocinio, usando marcas reales como Hollyland y plataformas de colaboración fraudulentas, para robar credenciales de Google y tomar control de canales de YouTube. El vector principal es spear‑phishing dirigido a creadores, con riesgo de compromiso de datos y monetización ilícita.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyMzQ4MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/falsas-colaboraciones-creadores-youtube/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:una campaña de falsas propuestas de colaboración busca comprometer cuentas de creadores de youtube",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *WeLiveSecurity*\n\n*Campaña global de phishing con falsas propuestas de patrocinio apunta a cuentas*\n\nSe detectó una operación que envía correos falsos de patrocinio, usando marcas reales como Hollyland y plataformas de colaboración fraudulentas, para robar credenciales de Google y tomar control de canales de YouTube. El vector principal es spear‑phishing dirigido a creadores, con riesgo de compromiso de datos y monetización ilícita.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://www.welivesecurity.com/es/seguridad-digital/falsas-colaboraciones-creadores-youtube/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2630,
     "fecha": "2026-09-12T12:35:47Z",
     "categoria": "Ciberseguridad",
