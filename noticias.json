@@ -95,10 +95,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *WeLiveSecurity*\n\n*Campaña global de phishing con falsas propuestas de patrocinio apunta a cuentas*\n\nSe detectó una operación que envía correos falsos de patrocinio, usando marcas reales como Hollyland y plataformas de colaboración fraudulentas, para robar credenciales de Google y tomar control de canales de YouTube. El vector principal es spear‑phishing dirigido a creadores, con riesgo de compromiso de datos y monetización ilícita.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://www.welivesecurity.com/es/seguridad-digital/falsas-colaboraciones-creadores-youtube/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "38e23a9049d2478ab712069c4650d5f6"
+      "attempt_id": "38e23a9049d2478ab712069c4650d5f6",
+      "message_id": 2675,
+      "sent_at": "2026-09-12T17:42:52Z"
     }
   },
   {
