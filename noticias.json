@@ -1,5 +1,42 @@
 [
   {
+    "id": 2630,
+    "fecha": "2026-09-12T12:35:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fraude de facturas: actores usan IA para perfeccionar correos de phishing",
+    "resumen": "Investigadores detectaron que los ciberdelincuentes están empleando modelos de lenguaje generativo para crear correos de facturación falsos con mayor realismo, duplicando técnicas de suplantación y evasión de filtros. El vector de ataque se centra en spear‑phishing dirigido a departamentos financieros, incrementando el riesgo de fraude de pagos.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyMTY1NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers",
+    "fuente": "The Record",
+    "dedup_key": "txt:microsoft sees some new wrinkles in invoice scam emails",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2629,
+    "fecha": "2026-09-12T12:35:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Alertas de IA en SOC: nuevo vector de ruido y riesgo operativo",
+    "resumen": "La adopción masiva de herramientas y agentes de IA genera una clase emergente de alertas en los SOC, saturando los pipelines de detección y ocultando indicadores de compromiso reales; los falsos positivos provienen de actividades legítimas como uso de Copilot, ChatGPT y agentes de código, complicando la correlación de eventos y la priorización de incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyMTY1NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:when the whole company adopts ai what it does to your soc",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2628,
     "fecha": "2026-09-12T07:38:29Z",
     "categoria": "Ciberseguridad",
