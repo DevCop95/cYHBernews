@@ -38,10 +38,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *The Hacker News*\n\n*CISA incorpora 5 vulnerabilidades activamente explotadas en Artifactory, ScreenC*\n\nCISA añadió cinco CVE críticos (incluido CVE‑2026‑42016 con CVSS 8.1) que ya están siendo explotados contra JFrog Artifactory, ConnectWise ScreenConnect y MikroTik RouterOS, indicando campañas activas en la wild. Los vectores incluyen autorización incorrecta y ejecución remota, lo que eleva el riesgo de compromiso de infraestructuras de CI/CD, soporte remoto y redes de telecomunicaciones.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1547.001` — Registry Run Keys / Startup Folder\n⚔️ `T1021.004` — SSH\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-42016\n\n🔗 [Leer más](https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "24efdf12d919407d8daf1459a411029e"
+      "attempt_id": "24efdf12d919407d8daf1459a411029e",
+      "message_id": 2677,
+      "sent_at": "2026-09-12T17:43:06Z"
     }
   },
   {
