@@ -1,5 +1,135 @@
 [
   {
+    "id": 2626,
+    "fecha": "2026-09-12T02:53:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA exige mayor claridad y menos retórica ante el aumento de interrupciones cib",
+    "resumen": "La nueva advertencia conjunta del gobierno insta a las organizaciones a implementar protocolos de notificación de brechas y respuesta a incidentes más transparentes, reduciendo la ambigüedad que dificulta la detección y mitigación de ataques. Se prevé un impacto directo en la capacidad de los equipos de SOC para cumplir con requisitos regulatorios y coordinar respuestas frente a incidentes críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxODE1OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/cisa-calls-for-more-guidance-less-spin-as-cyber-outages-escalate",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cisa calls for more guidance less spin as cyber outages escalate",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2625,
+    "fecha": "2026-09-12T02:53:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers rusos usan Claude para regenerar malware y evadir detección",
+    "resumen": "Anthropic confirmó la interrupción de una campaña de un actor estatal ruso (GTG‑20006) que empleó el modelo Claude para automatizar la generación y ofuscación de payloads, reduciendo el tiempo de respuesta de los sistemas de detección. La técnica combina RAG y embeddings para crear variantes de malware en tiempo real, incrementando la efectividad de ataques de espionaje cibernético.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxODE1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/russian-state-sponsored-hackers-use.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:russian state sponsored hackers use claude to rebuild malware after detection",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2624,
+    "fecha": "2026-09-12T02:53:14Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Anthropic alerta sobre uso de sus LLMs para armas biológicas y drones militares",
+    "resumen": "El informe de Threat Intelligence de Anthropic (septiembre 2026) detalla más de 150 casos donde grupos malintencionados (GTG) emplean modelos generativos para diseñar agentes biológicos, coordinar enjambres de drones y programar cohetes guiados por móvil, evidenciando una nueva capa de riesgo de weaponization de IA. Se describen vectores de ataque que incluyen generación de código malicioso, optimización de rutas de ataque y falsificación de datos de sensores, subrayando la necesidad de controles de uso y detección de anomalías en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217941-ea11df0605f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxODE1OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/09/anthropic-explica-como-sus-modelos-de.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:anthropic explica cómo sus modelos de ia se usan para hacer armas biológicas enjambres de drones militares o cohetes dirigidos por móvil",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.anthropic.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://MyPublicInbox.com",
+        "https://MyPublicInbox.com/AmadorAparicio",
+        "https://MyPublicInbox.com/CarmenPorter",
+        "https://MyPublicInbox.com/ChemaAlonso",
+        "https://MyPublicInbox.com/FranRamirez",
+        "https://MyPublicInbox.com/IkerJimenez",
+        "https://MyPublicInbox.com/JPalanco",
+        "https://MyPublicInbox.com/ManuelSLemos",
+        "https://MyPublicInbox.com/PabloGonzalez",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2-D-yd4oe-qg7wA_nMTqK-ex6w8a0P9mS9V895x5P7uesKZx67wsL1yTBrHfl_oEvLZtuDR0Z2ouEHAFQelDR9tfqp_8JL7lBWFMwz2Khzp1m07CcH1HbdOJGXeVypx7RZAk-U5NFKsA7f7HBztOwB8OPyJ6OvxaIZ3WCg8eXkk3xHvaj4BhR/w640-h244/Ant11.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAoQngOUXqJgbhT_q6yX869KACd8pGIFOaLEOaPeRboM4R6be2loFd53XEmTwjHsrtGrf1p6nJy8j7qe1TkjPzFNheTuTG5ANmMUpfoKMdeYAmjJ1sin4pOhb9rW9__FSJZi-WQLGvgRlpJXf3g8478tvEk_qEydq5bnccEVtrZ09xKVnaPvTh/w640-h325/Ant13.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqZcPhxhjBX3wDNh5tH0NGrLLuLo_JEbYoTUstzI18g39kRpa0OxAKOAtFbKkj8Ma5lR2-3Db0gDucROZClEs4ac_ZNg4hSu6eMmVqGHVFRxF7c2Gh0ToYJgSNLbU3sDS3jSBBDSM2DzMzELEe4OAuDje7dICNh0j_0ud-QBgCSl0TnC_cKYFs/w640-h338/Ant0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCAqiDbD2ggtIhC5MCeBsDk6ktatpNIJRty7yupBnUEBOw8OxF4cyajEMeOTDNmZ6GDTMUxqAB0_wfH6OZVC8Z7jReTsh9QvV7FNtf6h8GzftZWSO9B3fhsB_bfDaJDf0TfV1cEFKLFJO6oyvmLKjCx3Xzg2oy0EnmpGL20BvjDs3vb-x_Vyx9/w640-h558/Ant15.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhG-eWy7_I3gARyK6oxecq8cIXGC1LvVBp3YA6h7RBsQQ4H-yUTDncmbyiaSmf4gorWYNlC6dy-nrJEtukiA-0ooo5AJPB5sz0jSikl7hE7QbHkQpBBMS7_BHC7HhyOhVy1dvuQuzoujVF7EBA24NhDO-Vx8_Jm2JAdSDuoPQs8PQRTv0yLuI8m/w640-h386/Ant6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX1ueiTkWaXk1fqcL_XHTNoqyAz2bWq-1sm8p29YcbacX-PsCgSHnhHaIqm56YNAyN-e9YFJgMEiFHdoUbo515ljk3qYU9hBJm9kNxS5CSaFx1_5dlVWyUe9V3Qnp66nh7JYaMn5C0qOhwbE2hQPTW4vZJmog4da3-VgmdBMBdMthhBwpHUCr1/w640-h640/Ant14.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheJCUf7PsuZcliohylEz2LnzCBZRsu4CD3pF8Y9KDUlLDtQFHG3HOjpvf8Y1AK1wAGhlnp88Ryo-94rIf4Pt92UqIgapEbQRHqDsdfkQokpKUd9rT6NjtgptCeyp99Nhv2WNFQ34cdLuXI0qwZK4FnwsybJI8X1EIammcuM8nMF5nw9yKD1HXC/s3094/Ant2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheJCUf7PsuZcliohylEz2LnzCBZRsu4CD3pF8Y9KDUlLDtQFHG3HOjpvf8Y1AK1wAGhlnp88Ryo-94rIf4Pt92UqIgapEbQRHqDsdfkQokpKUd9rT6NjtgptCeyp99Nhv2WNFQ34cdLuXI0qwZK4FnwsybJI8X1EIammcuM8nMF5nw9yKD1HXC/w640-h368/Ant2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuEhuo41Swov7UQvriTPdHlWXjW8OPZqe4-fMqgyqaVuz9erngzmxmcckCPpEu7zwHhQE_qHYYuM1Eq7hQpOCZCcUuR5RrFZHz_5rTFXt_XCudjdFNu4jJ4BUNN4Gjo3l2G-kP-iSj6tVugF6hje1HjbOiyrJ9NB2lOx3giJemZa_pJVNk1woO/w640-h272/Ant9.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhykslKXbfGlHQ_Epw_XBExY7ASjfYKHs65ysA5M0RkfXmu6KFXHSObxpocAZbFt1-TteuDx5LgEJNQ5ZEeLA_yykypBAiPgC2IC1RAs3-vCOKvJbeuOESCNrOpmtKqXG6Rpyy1t8U2VV__2wvsxMdEsuSOaNNO-lF2ZO7ZYBxRjEYSIAXUKGs5/w640-h424/Ant7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiL9I9PjO7U2D-QeDLbN9ONe2nmienoWLILN5cgoSWWtTFCgUiEp8U49IBx9jdmXPSZ2agXHtIWXixBQ-vGZDTpCZzR0dFhlE_mdYMoDuMRbGEehR0jYQepn5xY3O2BI9kuLkGJYbf0iSGrXAawFtMOlfm3nj1PlLn07kO7UWF78-wH6GAg-FuU/w640-h552/Ant16.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNK-ocVeimPwHHOMChr7s6hLyRG8OsajbpULUF2Z7R1MLzTqUcYTm5dYcT9zG48lTyqfL3EWtZMSl1Uew4dZuFwd2wAAUyKnF_PGXlQ6OlpuiJ_zuNfFzxuxXciiZVJ9WESpIkXLDTFuqpaLALbHIRUJROBk4SQ9NLwB3y1SW1w9nWwjKsIHG8/w640-h390/Ant10.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQ4QvKdoopJVrzgEx9cW8vMFAZdhONlk6Xs_RE4D5ILckZi68KWQECFYfy01wIFjcs2WFT5FeUD8T_0qoeDRUlvgGzqebvyx8ARncFtqGbb6Jgc11Fo_LJYM64e84LPqjKgpcB6BFVv2NqzScJrjzUb4z2GmZky9GBt4d0PzLvNPVU6h176ayn/w640-h474/Ant17.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQuMirIAQ5KBD-k3CRhixaugdVQHL5P3EdUnt8cPERQMiHFIUL-4d5ZxOmAOAV1Re9QBuhMdNGorIEU-vOEpKmnOMI1zvr6P0yU3s-C43F2Me0n0K-bz2dRtT-LBQ7LyhyphenhyphenQXFAJYLG7PHLE7uKHh3889DDDAX5vzxIhb9wJDJ9XD-MILDHG8Nk/w554-h640/Ant8.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiD1R4Wo5ypOw8mOXJf6d2lM8myz1ZxtQG-0ILiETSTm4pMcZ7MerCr1pW6CgFQ0eRAF6Ui4XT7fQolGAVul_eNd_r6HHGkwI7_mQazc2gnA1QCciYswAM8upcKJJMpQ0g0GR8WLG8OktJfBeZqCYkiepZ0RxfhO8Fz7s375vHR841-drI49dt/s3170/Ant4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiD1R4Wo5ypOw8mOXJf6d2lM8myz1ZxtQG-0ILiETSTm4pMcZ7MerCr1pW6CgFQ0eRAF6Ui4XT7fQolGAVul_eNd_r6HHGkwI7_mQazc2gnA1QCciYswAM8upcKJJMpQ0g0GR8WLG8OktJfBeZqCYkiepZ0RxfhO8Fz7s375vHR841-drI49dt/w640-h368/Ant4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizqPVvwKR9QbKItSZWZy9g7LGiLOnKT3vfl_cqyNrAHmP8gBz0dJor2G9Cxc-iAZzvONbotET3G7cbblJg5blT6GmfdHnSFVMYJfKr7Q8d28oezvhjJnXnqsj6V9fp33FcOqjIn3-P17AyUQsIM2aMUM3_bhaMUa_6R0MlD7GAj8AcbcKEvVN_/w640-h406/Ant12.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdiIvzjFthWznLCYeOJCYP3XTPdcBoQSytvNL0ArHXnyAY8ISPAstZFw7hGND2BJoAvNpASZQZXkUbgTiPS9bxXS8XtCwx6q_ylkxeV-hgr7aV0QyoE9hwBE8sac9yVsvVhTiZCaX5GaOu8Ia_LmKg9Rs7UBckhNSbBBbd4oyDgv9AILYK3GP4/w400-h354/Ant1.jpg",
+        "https://elladodelmal.com",
+        "https://mypublicinbox.com/dashboard/chats/zo1KA0wRZ4w3OPMn",
+        "https://www.anthropic.com/threat-intelligence-report-september-2026",
+        "https://www.elladodelmal.com/2024/04/como-crear-una-campana-de-polemica-en.html",
+        "https://www.elladodelmal.com/2024/05/como-se-creo-codename-news-bender.html",
+        "https://www.elladodelmal.com/2026/03/como-identificar-perfiles-anonimos-de.html",
+        "https://www.elladodelmal.com/2026/06/anthropic-llm-att-navigator.html",
+        "https://www.elladodelmal.com/2026/08/ataques-orquestados-con-enjambres-de.html",
+        "https://www.elladodelmal.com/2026/09/como-gestionar-el-autonomous-continuous.html",
+        "https://www.mypublicinbox.com/chemaalonso"
+      ]
+    }
+  },
+  {
+    "id": 2623,
+    "fecha": "2026-09-12T02:53:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Fraude en Google Play Early Access permite distribución masiva de apps maliciosa",
+    "resumen": "Bitdefender detectó cientos de aplicaciones fraudulentas en el programa Early Access de Google Play que emplean publicidad invasiva y SDKs de terceros para ejecutar payloads de adware y ransomware. El vector de ataque se basa en la confianza del programa Early Access y la falta de revisión exhaustiva, exponiendo a usuarios y organizaciones a compromisos de datos y consumo de recursos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkxODE1OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/descubren-aplicaciones-fraudulentas-ocultas-en-google-play-early-access/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:descubren aplicaciones fraudulentas ocultas en google play early access",
+    "ttps": [
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2622,
     "fecha": "2026-09-11T22:56:41Z",
     "categoria": "Ciberseguridad",
