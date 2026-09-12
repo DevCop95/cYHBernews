@@ -144,10 +144,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *CyberSecurity News*\n\n*Fraude en Google Play Early Access permite distribución masiva de apps maliciosa*\n\nBitdefender detectó cientos de aplicaciones fraudulentas en el programa Early Access de Google Play que emplean publicidad invasiva y SDKs de terceros para ejecutar payloads de adware y ransomware. El vector de ataque se basa en la confianza del programa Early Access y la falta de revisión exhaustiva, exponiendo a usuarios y organizaciones a compromisos de datos y consumo de recursos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195.002` — Compromise Software Supply Chain\n⚔️ `T1189` — Drive-by Compromise\n\n🔗 [Leer más](https://cybersecuritynews.es/descubren-aplicaciones-fraudulentas-ocultas-en-google-play-early-access/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "16a7f26db5ec4db09a8ab0c42166ebc9"
+      "attempt_id": "16a7f26db5ec4db09a8ab0c42166ebc9",
+      "message_id": 2667,
+      "sent_at": "2026-09-12T02:56:44Z"
     }
   },
   {
