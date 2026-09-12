@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Record*\n\n*Fraude de facturas: actores usan IA para perfeccionar correos de phishing*\n\nInvestigadores detectaron que los ciberdelincuentes están empleando modelos de lenguaje generativo para crear correos de facturación falsos con mayor realismo, duplicando técnicas de suplantación y evasión de filtros. El vector de ataque se centra en spear‑phishing dirigido a departamentos financieros, incrementando el riesgo de fraude de pagos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔗 [Leer más](https://therecord.media/invoice-scam-emails-new-features-microsoft-researchers)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "e03309f0565840ba9c97788abd1ef3e4"
     }
   },
   {
