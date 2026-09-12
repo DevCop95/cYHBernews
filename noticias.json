@@ -67,9 +67,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Bleeping Computer*\n\n*Explotación inminente de vulnerabilidades críticas en VPN de Check Point (CVE‑20*\n\nEl NCSC de Países Bajos alerta que se prevé un ataque activo contra dos vulnerabilidades críticas en el cliente VPN de Check Point, permitiendo ejecución remota de código y bypass de autenticación. Se recomienda aplicar los parches de inmediato y reforzar la monitorización de tráfico VPN.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-85102, CVE-2026-85103\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "91a7b3e13e2e4f2c8998268e8f1fac86"
     }
   },
   {
