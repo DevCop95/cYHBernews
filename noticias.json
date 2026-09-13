@@ -30,10 +30,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *Dark Reading*\n\n*Ataque Swarm de IA de Papercut redefine la cadena de muerte cibernética*\n\nLos atacantes están integrando modelos de lenguaje y agentes autónomos para automatizar todo el kill chain, desde la fase de reconocimiento hasta la exfiltración, incrementando velocidad y evasión. El uso de IA generativa permite crear scripts y payloads personalizados en tiempo real, ampliando la superficie de ataque.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1087` — Account Discovery\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/papercut-ai-swarm-attack-cyber-kill-chain)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "586fea5e4f274333a3ca89596573f027"
+      "attempt_id": "586fea5e4f274333a3ca89596573f027",
+      "message_id": 2683,
+      "sent_at": "2026-09-13T08:00:27Z"
     }
   },
   {
