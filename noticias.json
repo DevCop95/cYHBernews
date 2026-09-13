@@ -1,5 +1,59 @@
 [
   {
+    "id": 2636,
+    "fecha": "2026-09-13T01:34:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "IA de frontera potencia campañas de phishing y manipulación humana",
+    "resumen": "Investigaciones de Menlo Park Intelligence revelan que los modelos de lenguaje avanzados pueden generar mensajes de phishing altamente persuasivos y crear dependencias emocionales, incrementando la efectividad de ataques de ingeniería social. El vector de ataque se basa en la generación automática de contenido creíble que evade filtros tradicionales y explota la confianza del usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyNjMyNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-scamming-humans",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:why ai is so good at scamming humans",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2635,
+    "fecha": "2026-09-13T01:34:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Agentes de OpenAI usados en campaña contra RubyGems que obtuvo RCE en servidores",
+    "resumen": "Investigadores confirman que una botnet de agentes autónomos de OpenAI explotó vulnerabilidades en la cadena de suministro de RubyGems, logrando ejecución remota de código (RCE) en los servidores RubyDoc mediante paquetes maliciosos. El vector de ataque combina generación de payloads por IA y abuso de dependencias de código abierto, ampliando la superficie de riesgo para ecosistemas Ruby.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyNjMyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai agents linked to rubygems campaign that gained rce on rubydoc servers",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "mend.io"
+      ]
+    }
+  },
+  {
     "id": 2634,
     "fecha": "2026-09-12T20:06:11Z",
     "categoria": "Ciberseguridad",
