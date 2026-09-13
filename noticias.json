@@ -1,5 +1,71 @@
 [
   {
+    "id": 2639,
+    "fecha": "2026-09-13T07:56:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque Swarm de IA de Papercut redefine la cadena de muerte cibernética",
+    "resumen": "Los atacantes están integrando modelos de lenguaje y agentes autónomos para automatizar todo el kill chain, desde la fase de reconocimiento hasta la exfiltración, incrementando velocidad y evasión. El uso de IA generativa permite crear scripts y payloads personalizados en tiempo real, ampliando la superficie de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyODYyMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/papercut-ai-swarm-attack-cyber-kill-chain",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:papercut ai swarm attack heralds changes for cyber kill chain",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2638,
+    "fecha": "2026-09-13T07:56:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cadena de fallos en JFrog Artifactory otorga admin y backdoor en minutos",
+    "resumen": "Vulnerabilidades encadenadas (CVE-2024-XXXXX, CVE-2024-YYYYY) permiten a un atacante pasar de peticiones no autenticadas a privilegios de administrador, instalar backdoors y comprometer la cadena de suministro de software en menos de 10 minutos. El vector combina exposición de API, escalado de privilegios y ejecución remota de código en entornos auto‑alojados.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyODYyMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/una-cadena-de-fallos-en-jfrog-artifactory-da-a-atacantes-control-admin-y-puerta-trasera-en-minutos/?utm_source=rss&utm_medium=rss&utm_campaign=una-cadena-de-fallos-en-jfrog-artifactory-da-a-atacantes-control-admin-y-puerta-trasera-en-minutos",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:una cadena de fallos en jfrog artifactory da a atacantes control admin y puerta trasera en minutos",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "unaaldia.hispasec.com"
+      ],
+      "url": [
+        "https://unaaldia.hispasec.com",
+        "https://unaaldia.hispasec.com/una-cadena-de-fallos-en-jfrog-artifactory-da-a-atacantes-control-admin-y-puerta-trasera-en-minutos/"
+      ]
+    }
+  },
+  {
     "id": 2637,
     "fecha": "2026-09-13T02:49:27Z",
     "categoria": "Ciberseguridad",
