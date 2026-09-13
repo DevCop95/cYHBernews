@@ -70,10 +70,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Una al Día (Hispasec)*\n\n*Cadena de fallos en JFrog Artifactory otorga admin y backdoor en minutos*\n\nVulnerabilidades encadenadas (CVE-2024-XXXXX, CVE-2024-YYYYY) permiten a un atacante pasar de peticiones no autenticadas a privilegios de administrador, instalar backdoors y comprometer la cadena de suministro de software en menos de 10 minutos. El vector combina exposición de API, escalado de privilegios y ejecución remota de código en entornos auto‑alojados.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1547` — Boot or Logon Autostart Execution\n\n🔍 *IoCs:*\n🔗 Dominios: unaaldia[.]hispasec[.]com\n🔗 URLs: hxxps://unaaldia[.]hispasec[.]com, hxxps://unaaldia[.]hispasec[.]com/una-cadena-de-fallos-en-jfrog-artifactory-da-a-atacantes-control-admin-y-puerta-trasera-en-minutos/\n\n🔗 [Leer más](https://unaaldia.hispasec.com/una-cadena-de-fallos-en-jfrog-artifactory-da-a-atacantes-control-admin-y-puerta-trasera-en-minutos/?utm_source=rss&utm_medium=rss&utm_campaign=una-cadena-de-fallos-en-jfrog-artifactory-da-a-atacantes-control-admin-y-puerta-trasera-en-minutos)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "1040356c44224410bb207b71fe35179b"
+      "attempt_id": "1040356c44224410bb207b71fe35179b",
+      "message_id": 2682,
+      "sent_at": "2026-09-13T08:00:20Z"
     }
   },
   {
