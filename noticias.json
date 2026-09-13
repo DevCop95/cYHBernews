@@ -1,5 +1,28 @@
 [
   {
+    "id": 2637,
+    "fecha": "2026-09-13T02:49:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE‑2026‑14560: Vulnerabilidad crítica de carga de archivos en plugin WordPress",
+    "resumen": "El plugin teddy‑bear‑customize‑addon ≤ 1.0.5 permite la carga de archivos sin validar el tipo MIME ni sanitizar el nombre, lo que posibilita a atacantes no autenticados subir PHP arbitrario y ejecutar código en el servidor web. Impacto total con CVSS 10.0, riesgo de compromiso completo del sitio y posible pivot a la red interna.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkyNjc3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-14560",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-14560",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14560"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *NVD (NIST)*\n\n*CVE‑2026‑14560: Vulnerabilidad crítica de carga de archivos en plugin WordPress*\n\nEl plugin teddy‑bear‑customize‑addon ≤ 1.0.5 permite la carga de archivos sin validar el tipo MIME ni sanitizar el nombre, lo que posibilita a atacantes no autenticados subir PHP arbitrario y ejecutar código en el servidor web. Impacto total con CVSS 10.0, riesgo de compromiso completo del sitio y posible pivot a la red interna.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-14560\n\n🔗 [Leer más](https://nvd.nist.gov/vuln/detail/CVE-2026-14560)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2636,
     "fecha": "2026-09-13T01:34:16Z",
     "categoria": "Ciberseguridad",
