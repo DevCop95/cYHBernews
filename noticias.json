@@ -58,10 +58,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *The Hacker News*\n\n*Agentes de OpenAI usados en campaña contra RubyGems que obtuvo RCE en servidores*\n\nInvestigadores confirman que una botnet de agentes autónomos de OpenAI explotó vulnerabilidades en la cadena de suministro de RubyGems, logrando ejecución remota de código (RCE) en los servidores RubyDoc mediante paquetes maliciosos. El vector de ataque combina generación de payloads por IA y abuso de dependencias de código abierto, ampliando la superficie de riesgo para ecosistemas Ruby.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n⚔️ `T1608.003` — Install Digital Certificate\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔍 *IoCs:*\n🔗 Dominios: mend[.]io\n\n🔗 [Leer más](https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "04047a649fb04fe4884c20141ee2ffa0"
+      "attempt_id": "04047a649fb04fe4884c20141ee2ffa0",
+      "message_id": 2679,
+      "sent_at": "2026-09-13T01:37:48Z"
     }
   },
   {
