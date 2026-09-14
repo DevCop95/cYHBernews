@@ -1,5 +1,77 @@
 [
   {
+    "id": 2645,
+    "fecha": "2026-09-14T11:36:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Deepfakes políticos en Europa: más de 100 figuras expuestas en sitios pornográfi",
+    "resumen": "Un estudio de 160 plataformas de deepfake revela que políticos de 22 países europeos, mayormente mujeres, aparecen en contenidos sexuales falsos, creando un vector de desinformación y potencial extorsión. La proliferación de estos videos aumenta el riesgo de campañas de influencia y ataques de reputación dirigidos a gobiernos y partidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1756671994948-183e2d833da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzODU3ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/sexually-explicit-deepfake-sites-target-100-plus-politicians-in-europe/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:sexually explicit deepfake sites target 100 plus politicians in europe",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2644,
+    "fecha": "2026-09-14T11:36:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft lanza parche récord con 972 vulnerabilidades, 112 críticas",
+    "resumen": "Septiembre marca un récord de 972 CVE corregidos, impulsado por IA que acelera la detección de fallos; sin embargo, la reducción del “window to patch” a inmediato eleva el riesgo de exploits zero‑day generados a partir de los propios parches.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzODU3Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/microsofts-patching.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:microsoft s patching",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arstechnica.com",
+        "openai.com"
+      ],
+      "url": [
+        "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
+        "https://openai.com/collective-cyberdefense"
+      ]
+    }
+  },
+  {
+    "id": 2643,
+    "fecha": "2026-09-14T11:36:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extensión de Twitch filtra tokens OAuth de 31 000 usuarios a servidores rusos",
+    "resumen": "Una extensión de navegador cruzada, \"Twitch Enhanced Viewer | JeetBot\", comprometió credenciales OAuth de casi 31 000 cuentas, enviándolas a proxies de un botnet comercial ruso, lo que permite suplantación de identidad y acceso no autorizado a recursos de Twitch.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzODU3Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:malicious twitch browser extension leaks oauth tokens from nearly 31 000 users",
+    "ttps": [
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "jeetbot.cc"
+      ]
+    }
+  },
+  {
     "id": 2642,
     "fecha": "2026-09-14T03:03:59Z",
     "categoria": "Ciberseguridad",
