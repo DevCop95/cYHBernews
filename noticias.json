@@ -41,9 +41,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Schneier on Security*\n\n*Microsoft lanza parche récord con 972 vulnerabilidades, 112 críticas*\n\nSeptiembre marca un récord de 972 CVE corregidos, impulsado por IA que acelera la detección de fallos; sin embargo, la reducción del “window to patch” a inmediato eleva el riesgo de exploits zero‑day generados a partir de los propios parches.\n\n🟠 Severidad: *ALTA*\n\n🔍 *IoCs:*\n🔗 Dominios: arstechnica[.]com, openai[.]com\n🔗 URLs: hxxps://arstechnica[.]com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/, hxxps://openai[.]com/collective-cyberdefense\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/microsofts-patching.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "2d72e7e9a93c47f4bd229ef9cdcb168f"
     }
   },
   {
