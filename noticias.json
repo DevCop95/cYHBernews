@@ -99,10 +99,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *Bleeping Computer*\n\n*Hackers escanean servidores Vite expuestos para robar credenciales de AWS y Azur*\n\nCampaña masiva de escaneo automatizado busca servidores de desarrollo Vite accesibles públicamente y extrae archivos de configuración que contienen claves de acceso a entornos AWS y Azure, facilitando despliegues de ransomware o movimiento lateral. El vector de ataque se basa en la exposición inadvertida de puertos de desarrollo y la falta de controles de acceso a secretos en la cadena CI/CD.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1595.001` — Scanning IP Blocks\n⚔️ `T1552.001` — Credentials In Files\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/hackers-target-exposed-vite-dev-servers-to-steal-aws-azure-secrets/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "1a80b5016f444c2d942dd8d4b5590948"
+      "attempt_id": "1a80b5016f444c2d942dd8d4b5590948",
+      "message_id": 2690,
+      "sent_at": "2026-09-14T17:35:53Z"
     }
   },
   {
