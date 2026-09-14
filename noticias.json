@@ -71,9 +71,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*DDRop vulnera Intel TDX y AMD SEV‑SNP en entornos de cómputo confidencial*\n\nInvestigadores revelan DDRop, un ataque de hardware que, con acceso previo al software del servidor, inserta un circuito para suprimir escrituras de memoria, forzando al procesador a leer datos cifrados obsoletos y romper la protección de confidencialidad. Impacta directamente la integridad de workloads protegidos en nubes y data centers que dependen de TDX y SEV‑SNP.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1542.003` — Bootkit\n\n🔗 [Leer más](https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "40704d71e2914fc195cd6cf7b8804cc0"
     }
   },
   {
