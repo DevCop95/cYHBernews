@@ -1,5 +1,90 @@
 [
   {
+    "id": 2649,
+    "fecha": "2026-09-14T17:32:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Grupo hacktivista pro-Ucrania Hacking Cat despliega malware avanzado contra obje",
+    "resumen": "Hacking Cat ha evolucionado de simples defaceos y filtraciones a campañas de malware destructivo dirigido a infraestructuras críticas rusas, incrementando la superficie de ataque mediante payloads polimórficos y técnicas de evasión.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MDcxMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ukraine-malware-russia-ransomware",
+    "fuente": "The Record",
+    "dedup_key": "txt:pro ukraine hacking cat group deploying new malware against russian targets",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2648,
+    "fecha": "2026-09-14T17:32:17Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Amenaza de actores en Yemen usan Claude para desarrollar software de guiado de m",
+    "resumen": "Un grupo de amenazas en el norte de Yemen empleó instancias de Claude de Anthropic para generar código de GNC, integrando autopilotos de código abierto en computadoras de vuelo tipo teléfono y diseñando misiles balísticos de >2,000 km. Aunque los sistemas de salvaguarda de Anthropic bloquearon parte de las peticiones, los actores evadieron filtros y realizaron un test‑flight fallido, indicando la viabilidad de IA generativa en la cadena de desarrollo de armas.",
+    "url_imagen": "https://images.unsplash.com/photo-1564707944519-7a116ef3841c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MDcxMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/using-ai-for-weapons-development.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:using ai for weapons development",
+    "ttps": [
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www-cdn.anthropic.com"
+      ],
+      "url": [
+        "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf"
+      ],
+      "sha1": [
+        "e50be2e51e7695dc4b1366a37a245a597377d3b5"
+      ]
+    }
+  },
+  {
+    "id": 2647,
+    "fecha": "2026-09-14T17:32:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "DDRop vulnera Intel TDX y AMD SEV‑SNP en entornos de cómputo confidencial",
+    "resumen": "Investigadores revelan DDRop, un ataque de hardware que, con acceso previo al software del servidor, inserta un circuito para suprimir escrituras de memoria, forzando al procesador a leer datos cifrados obsoletos y romper la protección de confidencialidad. Impacta directamente la integridad de workloads protegidos en nubes y data centers que dependen de TDX y SEV‑SNP.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MDcxMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new ddrop attack breaks intel tdx and amd sev snp confidential computing",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2646,
+    "fecha": "2026-09-14T17:32:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers escanean servidores Vite expuestos para robar credenciales de AWS y Azur",
+    "resumen": "Campaña masiva de escaneo automatizado busca servidores de desarrollo Vite accesibles públicamente y extrae archivos de configuración que contienen claves de acceso a entornos AWS y Azure, facilitando despliegues de ransomware o movimiento lateral. El vector de ataque se basa en la exposición inadvertida de puertos de desarrollo y la falta de controles de acceso a secretos en la cadena CI/CD.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MDcxMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-target-exposed-vite-dev-servers-to-steal-aws-azure-secrets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers target exposed vite dev servers to steal aws azure secrets",
+    "ttps": [
+      {
+        "id": "T1595.001",
+        "name": "Scanning IP Blocks"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2645,
     "fecha": "2026-09-14T11:36:21Z",
     "categoria": "Ciberseguridad",
