@@ -68,10 +68,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *The Hacker News*\n\n*Ataque a 3BB usa backdoor MeshCentral para acceso root y robo de credenciales*\n\nUn actor persistente comprometió la red del ISP tailandés 3BB mediante la herramienta de gestión legítima MeshCentral, estableciendo un backdoor que permitió acceso root y extracción de credenciales de suscriptores. La intrusión se detectó al analizar un servidor expuesto en Internet que alojaba herramientas del atacante y listas de usuarios comprometidos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1003` — OS Credential Dumping\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1543.003` — Windows Service\n\n🔍 *IoCs:*\n🔗 Dominios: hunt[.]io\n\n🔗 [Leer más](https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "a0a2142899bf4c19b2206316fc1b9256"
+      "attempt_id": "a0a2142899bf4c19b2206316fc1b9256",
+      "message_id": 2695,
+      "sent_at": "2026-09-14T21:25:42Z"
     }
   },
   {
