@@ -1,5 +1,40 @@
 [
   {
+    "id": 2642,
+    "fecha": "2026-09-14T03:03:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE‑2026‑81648: Vulnerabilidad crítica en plugin CryptoPayment Gateway permite e",
+    "resumen": "La falta de verificación de autorización en un endpoint AJAX del plugin CryptoPayment Gateway (v1.2.1‑v1.2.2) permite a usuarios no autenticados ejecutar acciones administrativas, como borrado arbitrario de archivos, sobrescritura de configuración y extracción de credenciales de wallets en texto plano. Impacta directamente la confidencialidad e integridad de los sistemas de pago basados en WordPress.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkzNTUwNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-81648",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-81648",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-81648"
+      ]
+    }
+  },
+  {
     "id": 2641,
     "fecha": "2026-09-13T22:49:00Z",
     "categoria": "Ciberseguridad",
