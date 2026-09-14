@@ -81,9 +81,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *The Hacker News*\n\n*Extensión de Twitch filtra tokens OAuth de 31 000 usuarios a servidores rusos*\n\nUna extensión de navegador cruzada, \"Twitch Enhanced Viewer | JeetBot\", comprometió credenciales OAuth de casi 31 000 cuentas, enviándolas a proxies de un botnet comercial ruso, lo que permite suplantación de identidad y acceso no autorizado a recursos de Twitch.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1567.001` — Exfiltration to Code Repository\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1078` — Valid Accounts\n\n🔍 *IoCs:*\n🔗 Dominios: jeetbot[.]cc\n\n🔗 [Leer más](https://thehackernews.com/2026/09/malicious-twitch-browser-extension.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "ef733f593fbc4d86b61881ae8abca71b"
     }
   },
   {
