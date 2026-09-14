@@ -108,10 +108,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *CyberSecurity News*\n\n*Riesgos de correo en agentes de IA: mitigaciones críticas para entornos corporat*\n\nLos agentes de IA integrados en flujos de trabajo empresariales son explotados vía phishing y spoofing de correo, permitiendo la ejecución de comandos no autorizados y la filtración de datos sensibles. Se recomienda segmentar canales de email, aplicar DMARC/DKIM robustos y monitorizar anomalías de envío con EDR y SIEM.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1071.003` — Mail Protocols\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔗 [Leer más](https://cybersecuritynews.es/como-proteger-los-agentes-de-ia-y-reducir-los-riesgos-del-correo/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "dbe51538207645a88547d2ffe0d94e1a"
+      "attempt_id": "dbe51538207645a88547d2ffe0d94e1a",
+      "message_id": 2694,
+      "sent_at": "2026-09-14T21:25:34Z"
     }
   },
   {
