@@ -1,5 +1,99 @@
 [
   {
+    "id": 2653,
+    "fecha": "2026-09-14T21:22:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Apple lanza actualización masiva con 261 parches de vulnerabilidades",
+    "resumen": "Apple publicó su actualización anual corrigiendo 261 CVE, la mayor cantidad de vulnerabilidades parcheadas por la compañía hasta la fecha, mitigando riesgos de exploits de día cero y ataques de ejecución remota en macOS, iOS y watchOS.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MjA5NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33336",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:apple updates everything mon sep 14th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2652,
+    "fecha": "2026-09-14T21:22:19Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Anthropic advierte sobre la necesidad de frenar el ritmo de mejora de IA de fron",
+    "resumen": "El CEO de Anthropic, Dario Amodei, insta a ralentizar el desarrollo de modelos de lenguaje avanzados para que los controles de seguridad y los marcos de mitigación de riesgos alcancen la velocidad de innovación. Advierte que la brecha actual expone a las organizaciones a vectores de ataque emergentes como prompt injection y uso malicioso de modelos generativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MjA5Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/anthropic-ceo-shift-from-improving-to-controlling-ai",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:anthropic ceo time to shift from improving to controlling ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2651,
+    "fecha": "2026-09-14T21:22:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque a 3BB usa backdoor MeshCentral para acceso root y robo de credenciales",
+    "resumen": "Un actor persistente comprometió la red del ISP tailandés 3BB mediante la herramienta de gestión legítima MeshCentral, estableciendo un backdoor que permitió acceso root y extracción de credenciales de suscriptores. La intrusión se detectó al analizar un servidor expuesto en Internet que alojaba herramientas del atacante y listas de usuarios comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MjA5Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/3bb-attacker-used-meshcentral-backdoor.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:3bb attacker used meshcentral backdoor for root access targeted subscriber credentials",
+    "ttps": [
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1543.003",
+        "name": "Windows Service"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "hunt.io"
+      ]
+    }
+  },
+  {
+    "id": 2650,
+    "fecha": "2026-09-14T21:22:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Riesgos de correo en agentes de IA: mitigaciones críticas para entornos corporat",
+    "resumen": "Los agentes de IA integrados en flujos de trabajo empresariales son explotados vía phishing y spoofing de correo, permitiendo la ejecución de comandos no autorizados y la filtración de datos sensibles. Se recomienda segmentar canales de email, aplicar DMARC/DKIM robustos y monitorizar anomalías de envío con EDR y SIEM.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0MjA5MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/como-proteger-los-agentes-de-ia-y-reducir-los-riesgos-del-correo/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:cómo proteger los agentes de ia y reducir los riesgos del correo",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1071.003",
+        "name": "Mail Protocols"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2649,
     "fecha": "2026-09-14T17:32:18Z",
     "categoria": "Ciberseguridad",
