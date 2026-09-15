@@ -56,9 +56,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *The Hacker News*\n\n*Vulnerabilidad crítica en LiteSpeed Enterprise permite escalada a root en servid*\n\nUn flaw en LiteSpeed Web Server Enterprise permite a un usuario con privilegios de sitio web bajo escalar a privilegios de root en entornos de hosting compartido, comprometiendo todos los sitios alojados y el propio servidor. cPanel emitió un advisory el 14 sep, instando a aplicar el parche inmediato.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/litespeed-enterprise-flaw-could-let-one.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "fff52cba24f543958a31fcf5ca4c0041"
     }
   },
   {
