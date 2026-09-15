@@ -36,9 +36,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Bleeping Computer*\n\n*BambooToken usa MQTT para controlar sistemas Windows y Linux*\n\nNuevo framework de malware BambooToken, detectado desde 2023, emplea el protocolo MQTT para establecer C2 y ejecutar comandos en hosts Windows y Linux, facilitando despliegues de ransomware y exfiltración de datos. Su uso de MQTT permite evadir detecciones tradicionales de firewalls y EDR al aprovechar puertos típicos de IoT.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/bambootoken-malware-controls-windows-and-linux-systems-via-mqtt/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "9adef7b53a0f4ac98b717388cd492455"
     }
   },
   {
