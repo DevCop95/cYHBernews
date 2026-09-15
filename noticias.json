@@ -1,5 +1,47 @@
 [
   {
+    "id": 2662,
+    "fecha": "2026-09-15T16:07:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE‑2026‑25470: RCE crítica en plugin WordPress ACPT (Pro) ≤ 2.0.47",
+    "resumen": "Vulnerabilidad sin autenticación que permite ejecución remota de código en servidores WordPress que usan el plugin ACPT (Pro) versiones ≤ 2.0.47, con CVSS 10.0, explotable vía peticiones HTTP manipuladas. Impacta la integridad y disponibilidad de los sitios, requiriendo parche inmediato y mitigaciones de WAF.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0ODg0NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-25470",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-25470",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-25470"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *NVD (NIST)*\n\n*CVE‑2026‑25470: RCE crítica en plugin WordPress ACPT (Pro) ≤ 2.0.47*\n\nVulnerabilidad sin autenticación que permite ejecución remota de código en servidores WordPress que usan el plugin ACPT (Pro) versiones ≤ 2.0.47, con CVSS 10.0, explotable vía peticiones HTTP manipuladas. Impacta la integridad y disponibilidad de los sitios, requiriendo parche inmediato y mitigaciones de WAF.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-25470\n\n🔗 [Leer más](https://nvd.nist.gov/vuln/detail/CVE-2026-25470)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2661,
+    "fecha": "2026-09-15T16:07:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "BambooToken usa MQTT para controlar sistemas Windows y Linux",
+    "resumen": "Nuevo framework de malware BambooToken, detectado desde 2023, emplea el protocolo MQTT para establecer C2 y ejecutar comandos en hosts Windows y Linux, facilitando despliegues de ransomware y exfiltración de datos. Su uso de MQTT permite evadir detecciones tradicionales de firewalls y EDR al aprovechar puertos típicos de IoT.",
+    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0ODg0NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/bambootoken-malware-controls-windows-and-linux-systems-via-mqtt/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:bambootoken malware controls windows and linux systems via mqtt",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Bleeping Computer*\n\n*BambooToken usa MQTT para controlar sistemas Windows y Linux*\n\nNuevo framework de malware BambooToken, detectado desde 2023, emplea el protocolo MQTT para establecer C2 y ejecutar comandos en hosts Windows y Linux, facilitando despliegues de ransomware y exfiltración de datos. Su uso de MQTT permite evadir detecciones tradicionales de firewalls y EDR al aprovechar puertos típicos de IoT.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/bambootoken-malware-controls-windows-and-linux-systems-via-mqtt/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2660,
     "fecha": "2026-09-15T10:58:03Z",
     "categoria": "Ciberseguridad",
