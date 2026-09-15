@@ -78,9 +78,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Vulnerabilidad en Telegram Desktop permite exfiltración vía JavaScript oculto en*\n\nUn flaw permite a un bot inyectar JavaScript oculto en mensajes que, al exportarse a HTML, ejecutan código al abrirse en el navegador y copian todo el historial de chat. El vector de ataque es la manipulación de enlaces en mensajes y la ejecución local en el cliente, comprometiendo la confidencialidad de datos sensibles.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1020` — Automated Exfiltration\n\n🔗 [Leer más](https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "c9907302a8d64d17945cf24c9656a46f"
     }
   },
   {
