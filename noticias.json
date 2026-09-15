@@ -1,5 +1,89 @@
 [
   {
+    "id": 2656,
+    "fecha": "2026-09-15T03:06:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "EE.UU. incauta 12 sitios de deepfake que afectaron a 1.200 víctimas",
+    "resumen": "La Fiscalía de Manhattan ejecutó la mayor incautación de dominios de deepfake, cerrando 12 webs que distribuían contenido manipulado con IA para extorsión y suplantación de identidad, afectando a aproximadamente 1.200 usuarios. El operativo evidencia la creciente amenaza de los modelos generativos en campañas de fraude y reputación.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0NDE1NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:new york seizes a dozen celebrity deepfake websites",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Wired Security*\n\n*EE.UU. incauta 12 sitios de deepfake que afectaron a 1.200 víctimas*\n\nLa Fiscalía de Manhattan ejecutó la mayor incautación de dominios de deepfake, cerrando 12 webs que distribuían contenido manipulado con IA para extorsión y suplantación de identidad, afectando a aproximadamente 1.200 usuarios. El operativo evidencia la creciente amenaza de los modelos generativos en campañas de fraude y reputación.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1036` — Masquerading\n⚔️ `T1566` — Phishing\n\n🔗 [Leer más](https://www.wired.com/story/new-york-seizes-a-dozen-celebrity-deepfake-websites/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2655,
+    "fecha": "2026-09-15T03:06:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Sandworm explota vulnerabilidades de Cisco para propagar Cyclops Blink",
+    "resumen": "El grupo APT ruso Sandworm está encadenando varias CVE críticas de Cisco (incluyendo CVE‑2024‑XXXXX) para instalar la variante mejorada del malware botnet Cyclops Blink, que ya había sido desarticulado por el FBI en 2022. La campaña apunta a infraestructuras de red corporativas, aumentando el riesgo de espionaje y movimiento lateral dentro de entornos OT/IT.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0NDE1NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:sandworm chains cisco vulnerabilities to deploy cyclops blink",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Dark Reading*\n\n*Sandworm explota vulnerabilidades de Cisco para propagar Cyclops Blink*\n\nEl grupo APT ruso Sandworm está encadenando varias CVE críticas de Cisco (incluyendo CVE‑2024‑XXXXX) para instalar la variante mejorada del malware botnet Cyclops Blink, que ya había sido desarticulado por el FBI en 2022. La campaña apunta a infraestructuras de red corporativas, aumentando el riesgo de espionaje y movimiento lateral dentro de entornos OT/IT.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1021` — Remote Services\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2654,
+    "fecha": "2026-09-15T03:06:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Telegram Desktop permite exfiltración vía JavaScript oculto en",
+    "resumen": "Un flaw permite a un bot inyectar JavaScript oculto en mensajes que, al exportarse a HTML, ejecutan código al abrirse en el navegador y copian todo el historial de chat. El vector de ataque es la manipulación de enlaces en mensajes y la ejecución local en el cliente, comprometiendo la confidencialidad de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0NDE1NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:telegram desktop flaw lets hidden javascript exfiltrate messages from html exports",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*Vulnerabilidad en Telegram Desktop permite exfiltración vía JavaScript oculto en*\n\nUn flaw permite a un bot inyectar JavaScript oculto en mensajes que, al exportarse a HTML, ejecutan código al abrirse en el navegador y copian todo el historial de chat. El vector de ataque es la manipulación de enlaces en mensajes y la ejecución local en el cliente, comprometiendo la confidencialidad de datos sensibles.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1020` — Automated Exfiltration\n\n🔗 [Leer más](https://thehackernews.com/2026/09/telegram-desktop-flaw-lets-hidden.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2653,
     "fecha": "2026-09-14T21:22:21Z",
     "categoria": "Ciberseguridad",
