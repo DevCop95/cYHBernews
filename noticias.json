@@ -50,10 +50,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Dark Reading*\n\n*Sandworm explota vulnerabilidades de Cisco para propagar Cyclops Blink*\n\nEl grupo APT ruso Sandworm está encadenando varias CVE críticas de Cisco (incluyendo CVE‑2024‑XXXXX) para instalar la variante mejorada del malware botnet Cyclops Blink, que ya había sido desarticulado por el FBI en 2022. La campaña apunta a infraestructuras de red corporativas, aumentando el riesgo de espionaje y movimiento lateral dentro de entornos OT/IT.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1021` — Remote Services\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "985a64b82cad4ec0b11fdfb810f45bec"
+      "attempt_id": "985a64b82cad4ec0b11fdfb810f45bec",
+      "message_id": 2699,
+      "sent_at": "2026-09-15T03:09:59Z"
     }
   },
   {
