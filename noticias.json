@@ -17,9 +17,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *NVD (NIST)*\n\n*CVE‑2026‑25470: RCE crítica en plugin WordPress ACPT (Pro) ≤ 2.0.47*\n\nVulnerabilidad sin autenticación que permite ejecución remota de código en servidores WordPress que usan el plugin ACPT (Pro) versiones ≤ 2.0.47, con CVSS 10.0, explotable vía peticiones HTTP manipuladas. Impacta la integridad y disponibilidad de los sitios, requiriendo parche inmediato y mitigaciones de WAF.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-25470\n\n🔗 [Leer más](https://nvd.nist.gov/vuln/detail/CVE-2026-25470)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "7ecf10cb78db4323bdd9a16c3e96f12b"
     }
   },
   {
