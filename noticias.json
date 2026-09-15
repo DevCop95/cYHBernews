@@ -1,5 +1,95 @@
 [
   {
+    "id": 2660,
+    "fecha": "2026-09-15T10:58:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Extranjeros del grupo Black Axe son entregados tras investigación de estafas rom",
+    "resumen": "Cinco miembros del sindicato cibernético Black Axe fueron extraditados desde Sudáfrica tras una acusación de 2021 que los vincula a campañas de romance scams que defraudarion a más de 100 víctimas, generando pérdidas de varios miles de dólares. La operación evidencia la colaboración internacional en la persecución de actores de fraude financiero y sugiere un posible aumento en la vigilancia de redes de estafas transfronterizas.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0Njk4ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/members-of-black-axe-cybercrime-group-extradited-south-africa",
+    "fuente": "The Record",
+    "dedup_key": "txt:members of black axe cybercriminal group extradited from south africa",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔵 *The Record*\n\n*Extranjeros del grupo Black Axe son entregados tras investigación de estafas rom*\n\nCinco miembros del sindicato cibernético Black Axe fueron extraditados desde Sudáfrica tras una acusación de 2021 que los vincula a campañas de romance scams que defraudarion a más de 100 víctimas, generando pérdidas de varios miles de dólares. La operación evidencia la colaboración internacional en la persecución de actores de fraude financiero y sugiere un posible aumento en la vigilancia de redes de estafas transfronterizas.\n\n🔵 Severidad: *INFO*\n\n🔗 [Leer más](https://therecord.media/members-of-black-axe-cybercrime-group-extradited-south-africa)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2659,
+    "fecha": "2026-09-15T10:58:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "SpiderSilk despliega escáner AI para detectar activos expuestos y zero‑days",
+    "resumen": "La startup de Dubái utiliza modelos de IA para analizar miles de millones de direcciones IP, identificando activos vulnerables, datos filtrados y vulnerabilidades zero‑day en tiempo real, lo que amplía la superficie de ataque para actores externos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0Njk4ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/spidersilk-hunts-external-threats-ai-scanning",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:spidersilk hunts external threats with ai based scanner",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Dark Reading*\n\n*SpiderSilk despliega escáner AI para detectar activos expuestos y zero‑days*\n\nLa startup de Dubái utiliza modelos de IA para analizar miles de millones de direcciones IP, identificando activos vulnerables, datos filtrados y vulnerabilidades zero‑day en tiempo real, lo que amplía la superficie de ataque para actores externos.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://www.darkreading.com/endpoint-security/spidersilk-hunts-external-threats-ai-scanning)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2658,
+    "fecha": "2026-09-15T10:58:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica en LiteSpeed Enterprise permite escalada a root en servid",
+    "resumen": "Un flaw en LiteSpeed Web Server Enterprise permite a un usuario con privilegios de sitio web bajo escalar a privilegios de root en entornos de hosting compartido, comprometiendo todos los sitios alojados y el propio servidor. cPanel emitió un advisory el 14 sep, instando a aplicar el parche inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0Njk4ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/litespeed-enterprise-flaw-could-let-one.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:litespeed enterprise flaw could let one hosting account gain root access on a shared server",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Hacker News*\n\n*Vulnerabilidad crítica en LiteSpeed Enterprise permite escalada a root en servid*\n\nUn flaw en LiteSpeed Web Server Enterprise permite a un usuario con privilegios de sitio web bajo escalar a privilegios de root en entornos de hosting compartido, comprometiendo todos los sitios alojados y el propio servidor. cPanel emitió un advisory el 14 sep, instando a aplicar el parche inmediato.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/litespeed-enterprise-flaw-could-let-one.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2657,
+    "fecha": "2026-09-15T10:57:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Líderes de la banda Black Axe extraditados a EE. UU. por fraude financiero ciber",
+    "resumen": "Cinco presuntos cabecillas del sindicato Black Axe, responsable de fraudes financieros a escala global mediante phishing y ransomware, fueron entregados a EE. UU. para enfrentar cargos de wire fraud y lavado de dinero, lo que permite a las autoridades desmantelar su infraestructura de comando y control.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk0Njk4Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/black-axe-gang-members-extradited-to-us-face-cybercrime-charges/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:suspected black axe gang leaders face cybercrime charges in the us",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Líderes de la banda Black Axe extraditados a EE. UU. por fraude financiero ciber*\n\nCinco presuntos cabecillas del sindicato Black Axe, responsable de fraudes financieros a escala global mediante phishing y ransomware, fueron entregados a EE. UU. para enfrentar cargos de wire fraud y lavado de dinero, lo que permite a las autoridades desmantelar su infraestructura de comando y control.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1486` — Data Encrypted for Impact\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/black-axe-gang-members-extradited-to-us-face-cybercrime-charges/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2656,
     "fecha": "2026-09-15T03:06:16Z",
     "categoria": "Ciberseguridad",
