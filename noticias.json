@@ -1,5 +1,96 @@
 [
   {
+    "id": 2678,
+    "fecha": "2026-09-16T23:29:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Incremento récord del gasto en IA para ciberseguridad supera la prueba de valor",
+    "resumen": "Los CISO están destinando presupuestos crecientes a soluciones de IA (GPT, LLMs, detección basada en ML) sin esperar evidencia operativa, impulsados por la percepción de riesgo de ataques automatizados. Esta tendencia acelera la adopción de herramientas como EDR con IA y plataformas de detección de anomalías, pero genera exposición a dependencias de proveedores y posibles brechas de datos en modelos entrenados.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2MDEzOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ai-security-spending-jumps-fear-outpaces-proof-value",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai security spending jumps as fear outpaces proof of value",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Incremento récord del gasto en IA para ciberseguridad supera la prueba de valor*\n\nLos CISO están destinando presupuestos crecientes a soluciones de IA (GPT, LLMs, detección basada en ML) sin esperar evidencia operativa, impulsados por la percepción de riesgo de ataques automatizados. Esta tendencia acelera la adopción de herramientas como EDR con IA y plataformas de detección de anomalías, pero genera exposición a dependencias de proveedores y posibles brechas de datos en modelos entrenados.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.darkreading.com/cybersecurity-operations/ai-security-spending-jumps-fear-outpaces-proof-value)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2677,
+    "fecha": "2026-09-16T23:29:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Tres grupos de amenaza atacan a empresas rusas con backdoors, ransomware y wiper",
+    "resumen": "Kaspersky identifica a NightEagle (APT‑Q‑95), Hacking Cat y Toy Ghouls como responsables de campañas que combinan implantación de backdoors persistentes, ransomware y wipers, con técnicas avanzadas de movimiento lateral y evasión. El foco son infraestructuras críticas y corporativas en Rusia, elevando el riesgo de interrupciones operativas y pérdida de datos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2MDEzOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/three-threat-groups-target-russian.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:three threat groups target russian enterprises with backdoors ransomware and wipers",
+    "ttps": [
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Hacker News*\n\n*Tres grupos de amenaza atacan a empresas rusas con backdoors, ransomware y wiper*\n\nKaspersky identifica a NightEagle (APT‑Q‑95), Hacking Cat y Toy Ghouls como responsables de campañas que combinan implantación de backdoors persistentes, ransomware y wipers, con técnicas avanzadas de movimiento lateral y evasión. El foco son infraestructuras críticas y corporativas en Rusia, elevando el riesgo de interrupciones operativas y pérdida de datos confidenciales.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1547` — Boot or Logon Autostart Execution\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1485` — Data Destruction\n⚔️ `T1021` — Remote Services\n⚔️ `T1562` — Impair Defenses\n\n🔗 [Leer más](https://thehackernews.com/2026/09/three-threat-groups-target-russian.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2676,
+    "fecha": "2026-09-16T23:29:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers iraníes despliegan malware CHOSEN BRICK para espionaje a disidentes",
+    "resumen": "Se detecta que grupos vinculados al Estado iraní utilizan el troyano Windows CHOSEN BRICK para infiltrar sistemas de activistas, periodistas y opositores, empleando técnicas de carga lateral y exfiltración de datos mediante C2 cifrado. El vector principal es la distribución mediante spear‑phishing y documentos maliciosos, lo que incrementa el riesgo de compromisos en entornos de alta sensibilidad política.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2MDEzODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/iranian-hackers-use-chosen-brick-windows-malware-to-spy-on-targets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:iranian hackers use chosen brick windows malware to spy on targets",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Bleeping Computer*\n\n*Hackers iraníes despliegan malware CHOSEN BRICK para espionaje a disidentes*\n\nSe detecta que grupos vinculados al Estado iraní utilizan el troyano Windows CHOSEN BRICK para infiltrar sistemas de activistas, periodistas y opositores, empleando técnicas de carga lateral y exfiltración de datos mediante C2 cifrado. El vector principal es la distribución mediante spear‑phishing y documentos maliciosos, lo que incrementa el riesgo de compromisos en entornos de alta sensibilidad política.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1021` — Remote Services\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/iranian-hackers-use-chosen-brick-windows-malware-to-spy-on-targets/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2675,
     "fecha": "2026-09-16T20:48:18Z",
     "categoria": "Ciberseguridad",
