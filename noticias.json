@@ -41,9 +41,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Schneier on Security*\n\n*Nueva variante de estafa CAPTCHA que entrega malware*\n\nSe detecta un esquema que usa la apariencia de un CAPTCHA legítimo para engañar al usuario y lograr la descarga y ejecución de payload malicioso, ampliando la superficie de ataque de phishing. El vector se basa en ingeniería social mediante inyección de scripts en sitios comprometidos o anuncios maliciosos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1204` — User Execution\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1189` — Drive-by Compromise\n\n🔍 *IoCs:*\n🔗 Dominios: www[.]malwarebytes[.]com\n🔗 URLs: hxxps://www[.]malwarebytes[.]com/cybersecurity/basics/fake-captcha-scams\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/fake-captcha-scams.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "6bc88f072a624651bdbb1bb00449e420"
     }
   },
   {
