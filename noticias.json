@@ -85,9 +85,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Bleeping Computer*\n\n*Hackers iraníes despliegan malware CHOSEN BRICK para espionaje a disidentes*\n\nSe detecta que grupos vinculados al Estado iraní utilizan el troyano Windows CHOSEN BRICK para infiltrar sistemas de activistas, periodistas y opositores, empleando técnicas de carga lateral y exfiltración de datos mediante C2 cifrado. El vector principal es la distribución mediante spear‑phishing y documentos maliciosos, lo que incrementa el riesgo de compromisos en entornos de alta sensibilidad política.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1021` — Remote Services\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/iranian-hackers-use-chosen-brick-windows-malware-to-spy-on-targets/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "81b79af7820546abaeda09f85e6d1f38"
     }
   },
   {
