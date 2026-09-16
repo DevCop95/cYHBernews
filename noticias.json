@@ -92,10 +92,11 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *The Hacker News*\n\n*Ataque a asistente de codificación IA secuestra sesión y propaga worm Shai‑Hulud*\n\nUn actor comprometió una sesión activa de un asistente de IA para desarrollo (tipo Copilot) en un SaaS, inyectó código malicioso que fue aceptado y utilizó el worm Shai‑Hulud para exfiltrar secretos y código fuente, replicándose en aproximadamente 100 repositorios internos. El vector combina secuestro de sesión de IA, poisoning de recomendaciones y movimiento lateral automatizado.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attacker-hijacks-ai-coding-assistant.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "936f9068d1554708b6d693ee56e8e2e8"
+      "attempt_id": "936f9068d1554708b6d693ee56e8e2e8",
+      "message_id": 2714,
+      "sent_at": "2026-09-16T16:04:32Z"
     }
   },
   {
