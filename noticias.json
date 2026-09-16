@@ -1,5 +1,75 @@
 [
   {
+    "id": 2668,
+    "fecha": "2026-09-16T10:47:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers comprometen cámara Flock y exponen 1,6 M de imágenes de vehículos",
+    "resumen": "Un colectivo de hackers accedió a la infraestructura de una cámara de vigilancia Flock, extrayendo miles de videos y logs que revelan la captura de 1,6 millones de imágenes de 50 000 vehículos en apenas 21 días; la filtración expone fallos críticos en la autenticación y el almacenamiento de datos en la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1NTU2NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:hackers got inside a flock camera its data shows how the system really works",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      },
+      {
+        "id": "T1025",
+        "name": "Data from Removable Media"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2667,
+    "fecha": "2026-09-16T10:47:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "APT norcoreano compromete balanceadores Linux en medios y automotriz surcoreanos",
+    "resumen": "Un grupo APT de Corea del Norte desplegó un toolkit de espionaje Linux previamente desconocido para infiltrar balanceadores de carga, interceptar comunicaciones y escalar privilegios en redes de medios y fabricantes de automóviles. La ausencia de firmas en los IDS sugiere un zero‑day y potencial exfiltración de datos críticos.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1NTU2NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/cyber-south-korean-media-automotive",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cyber op targets south korean media amp automotive sectors",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2666,
     "fecha": "2026-09-16T03:05:19Z",
     "categoria": "Ciberseguridad",
