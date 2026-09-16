@@ -64,9 +64,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Bleeping Computer*\n\n*Actualización KB5124008 de Windows 11 rompe confianza de dominio en entornos emp*\n\nLa actualización de seguridad KB5124008 está provocando fallos en la autenticación Kerberos, impidiendo que usuarios con credenciales válidas accedan a recursos del dominio; Microsoft investiga y recomienda posponer su despliegue.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124008-update-breaks-domain-trust-for-some-users/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "74f6ea045bc44f89b07032a720ea62ca"
     }
   },
   {
