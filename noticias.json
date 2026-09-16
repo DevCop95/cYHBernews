@@ -53,10 +53,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *The Hacker News*\n\n*Tres grupos de amenaza atacan a empresas rusas con backdoors, ransomware y wiper*\n\nKaspersky identifica a NightEagle (APT‑Q‑95), Hacking Cat y Toy Ghouls como responsables de campañas que combinan implantación de backdoors persistentes, ransomware y wipers, con técnicas avanzadas de movimiento lateral y evasión. El foco son infraestructuras críticas y corporativas en Rusia, elevando el riesgo de interrupciones operativas y pérdida de datos confidenciales.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1547` — Boot or Logon Autostart Execution\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1485` — Data Destruction\n⚔️ `T1021` — Remote Services\n⚔️ `T1562` — Impair Defenses\n\n🔗 [Leer más](https://thehackernews.com/2026/09/three-threat-groups-target-russian.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "38888950d83944fb8be4ef41995b9d41"
+      "attempt_id": "38888950d83944fb8be4ef41995b9d41",
+      "message_id": 2721,
+      "sent_at": "2026-09-16T23:33:44Z"
     }
   },
   {
