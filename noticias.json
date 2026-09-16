@@ -74,10 +74,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *Dark Reading*\n\n*APT norcoreano compromete balanceadores Linux en medios y automotriz surcoreanos*\n\nUn grupo APT de Corea del Norte desplegó un toolkit de espionaje Linux previamente desconocido para infiltrar balanceadores de carga, interceptar comunicaciones y escalar privilegios en redes de medios y fabricantes de automóviles. La ausencia de firmas en los IDS sugiere un zero‑day y potencial exfiltración de datos críticos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1040` — Network Sniffing\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1021.004` — SSH\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/cyber-south-korean-media-automotive)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "77638b9d4a284dc1a652c0daa96c18a0"
+      "attempt_id": "77638b9d4a284dc1a652c0daa96c18a0",
+      "message_id": 2711,
+      "sent_at": "2026-09-16T10:50:04Z"
     }
   },
   {
