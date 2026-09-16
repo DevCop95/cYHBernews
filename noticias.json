@@ -45,9 +45,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *The Hacker News*\n\n*Ataque activo contra vulnerabilidad crítica en Issabel Framework permite ejecuci*\n\nCVE‑2026‑89026 (CVSS 9.8) en el framework web de Issabel permite a un atacante no autenticado ejecutar comandos arbitrarios en el sistema operativo mediante una ruta de código duro. La vulnerabilidad está siendo explotada en campañas dirigidas a infraestructuras de comunicaciones unificadas.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-89026\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "320d8c7bf3fe461ea0dba0463aaf8b7d"
     }
   },
   {
