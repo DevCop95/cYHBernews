@@ -34,10 +34,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Wired Security*\n\n*Hackers comprometen cámara Flock y exponen 1,6 M de imágenes de vehículos*\n\nUn colectivo de hackers accedió a la infraestructura de una cámara de vigilancia Flock, extrayendo miles de videos y logs que revelan la captura de 1,6 millones de imágenes de 50 000 vehículos en apenas 21 días; la filtración expone fallos críticos en la autenticación y el almacenamiento de datos en la plataforma.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1110` — Brute Force\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1567.001` — Exfiltration to Code Repository\n⚔️ `T1025` — Data from Removable Media\n\n🔗 [Leer más](https://www.wired.com/story/hackers-flock-camera-data-shows-how-system-works/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "6a2f8d9d9d204fe386ac100b2b8ce23c"
+      "attempt_id": "6a2f8d9d9d204fe386ac100b2b8ce23c",
+      "message_id": 2712,
+      "sent_at": "2026-09-16T10:50:12Z"
     }
   },
   {
