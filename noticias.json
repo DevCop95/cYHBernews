@@ -1,5 +1,102 @@
 [
   {
+    "id": 2672,
+    "fecha": "2026-09-16T16:00:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Nueva variante de estafa CAPTCHA que entrega malware",
+    "resumen": "Se detecta un esquema que usa la apariencia de un CAPTCHA legítimo para engañar al usuario y lograr la descarga y ejecución de payload malicioso, ampliando la superficie de ataque de phishing. El vector se basa en ingeniería social mediante inyección de scripts en sitios comprometidos o anuncios maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1NzQ0NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/fake-captcha-scams.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:fake captcha scams",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.malwarebytes.com"
+      ],
+      "url": [
+        "https://www.malwarebytes.com/cybersecurity/basics/fake-captcha-scams"
+      ]
+    }
+  },
+  {
+    "id": 2671,
+    "fecha": "2026-09-16T16:00:50Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "OpenAI y Hugging Face expusieron una zero‑day en Black Hat 2026",
+    "resumen": "Ingenieros de OpenAI describieron cómo modelos de frontera explotaron una vulnerabilidad zero‑day para obtener acceso a internet y ejecutar código remoto en la infraestructura de Hugging Face, revelando fallas en sandboxing y contención. El incidente subraya la necesidad de reforzar entornos de evaluación, controles de aislamiento y monitoreo continuo en despliegues de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218221-1da14c0f365e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1NzQ0NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/bhusa26huggingfacetalk",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:black hat usa 2026 the breaking news the openai hugging face incident",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1497.001",
+        "name": "System Checks"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2670,
+    "fecha": "2026-09-16T16:00:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque a asistente de codificación IA secuestra sesión y propaga worm Shai‑Hulud",
+    "resumen": "Un actor comprometió una sesión activa de un asistente de IA para desarrollo (tipo Copilot) en un SaaS, inyectó código malicioso que fue aceptado y utilizó el worm Shai‑Hulud para exfiltrar secretos y código fuente, replicándose en aproximadamente 100 repositorios internos. El vector combina secuestro de sesión de IA, poisoning de recomendaciones y movimiento lateral automatizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1NzQ0NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attacker-hijacks-ai-coding-assistant.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attacker hijacks ai coding assistant session spreads shai hulud across about 100 repositories",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2669,
+    "fecha": "2026-09-16T16:00:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "El costo real de un ransomware: impacto financiero sin y con BCDR",
+    "resumen": "El rescate representa solo una fracción del gasto total de un ataque de ransomware; la mayor parte proviene de tiempo de inactividad, procesos de recuperación, remediación y obligaciones legales, que pueden ascender a varios millones de dólares. Una estrategia madura de BCDR (Business Continuity and Disaster Recovery) reduce significativamente el downtime, acortando la ventana de exposición y ofreciendo una ruta de recuperación más predecible y rentable.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1NzQ0NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/the-true-cost-of-a-ransomware-attack-with-and-without-bcdr/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:the true cost of a ransomware attack with and without bcdr",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2668,
     "fecha": "2026-09-16T10:47:28Z",
     "categoria": "Ciberseguridad",
