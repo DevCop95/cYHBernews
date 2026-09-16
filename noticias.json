@@ -1,5 +1,60 @@
 [
   {
+    "id": 2675,
+    "fecha": "2026-09-16T20:48:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Guardia Costera y FBI interceptan petrolero tras ataque cibernético de actores e",
+    "resumen": "Un buque tanque en el Golfo de México fue abordado por personal de la Guardia Costera y el FBI para validar la integridad de sus sistemas OT e IT tras detectar una intrusión atribuida a actores de amenaza externos, potencialmente vinculada a espionaje industrial o sabotaje de infraestructura crítica.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1OTE2OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/oil-tanker-cyberattack-coast-guard-fbi",
+    "fuente": "The Record",
+    "dedup_key": "txt:coast guard fbi boarded tanker after attack by foreign cyber actors",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2674,
+    "fecha": "2026-09-16T20:48:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque activo contra vulnerabilidad crítica en Issabel Framework permite ejecuci",
+    "resumen": "CVE‑2026‑89026 (CVSS 9.8) en el framework web de Issabel permite a un atacante no autenticado ejecutar comandos arbitrarios en el sistema operativo mediante una ruta de código duro. La vulnerabilidad está siendo explotada en campañas dirigidas a infraestructuras de comunicaciones unificadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1OTE2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-exploit-issabel-framework.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-89026",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-89026"
+      ]
+    }
+  },
+  {
+    "id": 2673,
+    "fecha": "2026-09-16T20:48:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Actualización KB5124008 de Windows 11 rompe confianza de dominio en entornos emp",
+    "resumen": "La actualización de seguridad KB5124008 está provocando fallos en la autenticación Kerberos, impidiendo que usuarios con credenciales válidas accedan a recursos del dominio; Microsoft investiga y recomienda posponer su despliegue.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk1OTE2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5124008-update-breaks-domain-trust-for-some-users/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:windows 11 kb5124008 update breaks domain trust for some users",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2672,
     "fecha": "2026-09-16T16:00:52Z",
     "categoria": "Ciberseguridad",
