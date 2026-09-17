@@ -1,5 +1,56 @@
 [
   {
+    "id": 2680,
+    "fecha": "2026-09-17T03:06:22Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Extensión de navegador compromete asistentes IA en Chrome, Edge, Opera y Claude",
+    "resumen": "Un módulo de extensión malicioso permite a un atacante inyectar comandos y extraer datos de los asistentes IA integrados (Gemini, Perplexity Comet, Claude) en cinco navegadores Chromium con un solo clic, exponiendo información sensible y posibilitando abuso de APIs de IA. El vector de ataque es la instalación de la extensión y la falta de aislamiento entre la UI del navegador y los endpoints de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2MTQzODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/one-extension-could-hijack-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:one extension could hijack ai assistants across chrome comet edge opera neon and claude",
+    "ttps": [
+      {
+        "id": "T1129",
+        "name": "Shared Modules"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*Extensión de navegador compromete asistentes IA en Chrome, Edge, Opera y Claude*\n\nUn módulo de extensión malicioso permite a un atacante inyectar comandos y extraer datos de los asistentes IA integrados (Gemini, Perplexity Comet, Claude) en cinco navegadores Chromium con un solo clic, exponiendo información sensible y posibilitando abuso de APIs de IA. El vector de ataque es la instalación de la extensión y la falta de aislamiento entre la UI del navegador y los endpoints de IA.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1129` — Shared Modules\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1213` — Data from Information Repositories\n\n🔗 [Leer más](https://thehackernews.com/2026/09/one-extension-could-hijack-ai.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2679,
+    "fecha": "2026-09-17T03:06:20Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Anthropic prueba Claude Money para análisis directo de cuentas bancarias",
+    "resumen": "Anthropic está evaluando \"Claude Money\", una funcionalidad que permite conectar cuentas bancarias a Claude para que el modelo interprete datos financieros y genere insights personalizados; implica exposición de datos sensibles a un LLM y plantea riesgos de privacidad y posible vector de exfiltración si el modelo o la integración son comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218511-768944e2c325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2MTQzODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-wants-claude-to-analyze-your-bank-account-and-financial-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anthropic wants claude to analyze your bank account and financial data",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Bleeping Computer*\n\n*Anthropic prueba Claude Money para análisis directo de cuentas bancarias*\n\nAnthropic está evaluando \"Claude Money\", una funcionalidad que permite conectar cuentas bancarias a Claude para que el modelo interprete datos financieros y genere insights personalizados; implica exposición de datos sensibles a un LLM y plantea riesgos de privacidad y posible vector de exfiltración si el modelo o la integración son comprometidos.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-wants-claude-to-analyze-your-bank-account-and-financial-data/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2678,
     "fecha": "2026-09-16T23:29:52Z",
     "categoria": "Ciberseguridad",
