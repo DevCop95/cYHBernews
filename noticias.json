@@ -53,10 +53,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Bleeping Computer*\n\n*RatHat, malware Android con subsistema IA para control remoto automatizado*\n\nSe ha identificado el ransomware RatHat, que incorpora un módulo de IA para generar comandos y navegar en dispositivos Android comprometidos sin intervención humana, ampliando la velocidad de explotación. El vector de ataque combina phishing móvil y vulnerabilidades de apps de terceros, permitiendo a los operadores ejecutar acciones de exfiltración y espionaje en tiempo real.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1056.001` — Keylogging\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-rathat-android-malware-uses-ai-to-automate-device-control/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "fde504d28ac2479f8a535b0935c890c5"
+      "attempt_id": "fde504d28ac2479f8a535b0935c890c5",
+      "message_id": 2733,
+      "sent_at": "2026-09-17T23:24:19Z"
     }
   },
   {
