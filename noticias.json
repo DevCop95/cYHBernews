@@ -26,10 +26,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *The Hacker News*\n\n*Extensión de navegador compromete asistentes IA en Chrome, Edge, Opera y Claude*\n\nUn módulo de extensión malicioso permite a un atacante inyectar comandos y extraer datos de los asistentes IA integrados (Gemini, Perplexity Comet, Claude) en cinco navegadores Chromium con un solo clic, exponiendo información sensible y posibilitando abuso de APIs de IA. El vector de ataque es la instalación de la extensión y la falta de aislamiento entre la UI del navegador y los endpoints de IA.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1129` — Shared Modules\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1213` — Data from Information Repositories\n\n🔗 [Leer más](https://thehackernews.com/2026/09/one-extension-could-hijack-ai.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "9dc00184a5cd497387edf04e4d84a723"
+      "attempt_id": "9dc00184a5cd497387edf04e4d84a723",
+      "message_id": 2724,
+      "sent_at": "2026-09-17T03:10:14Z"
     }
   },
   {
