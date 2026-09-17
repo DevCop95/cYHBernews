@@ -58,9 +58,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *The Hacker News*\n\n*Vulnerabilidad crítica en validador DNSSEC de Unbound permite RCE vía zona DNS m*\n\nUnbound < 1.26.1 presenta un heap overflow en el módulo DNSSEC validator que un atacante puede explotar controlando una zona DNS y enviando consultas al resolvedor vulnerable, logrando ejecución remota de código. El fallo está catalogado como CVE‑2026‑81642 y se corrige en la versión 1.26.1.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-81642\n\n🔗 [Leer más](https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "52d7cabc9ca94dab801cab3931ab13d2"
     }
   },
   {
