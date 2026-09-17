@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Dark Reading*\n\n*APT “FamousSparrow” de China infiltra campañas políticas estadounidenses en Lati*\n\nUn backdoor avanzado, atribuido al grupo APT “FamousSparrow”, ha sido detectado en infraestructuras de campaña política de EE. UU. operando en Latinoamérica, permitiendo extracción de datos de estrategia electoral y posible manipulación de comunicaciones.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1565.001` — Stored Data Manipulation\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/china-famoussparrow-spies-latin-america)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "08d19b733d62444cb106ceedeac19e13"
     }
   },
   {
