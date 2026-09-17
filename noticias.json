@@ -45,9 +45,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Bleeping Computer*\n\n*Anthropic prueba Claude Money para análisis directo de cuentas bancarias*\n\nAnthropic está evaluando \"Claude Money\", una funcionalidad que permite conectar cuentas bancarias a Claude para que el modelo interprete datos financieros y genere insights personalizados; implica exposición de datos sensibles a un LLM y plantea riesgos de privacidad y posible vector de exfiltración si el modelo o la integración son comprometidos.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-wants-claude-to-analyze-your-bank-account-and-financial-data/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "c13e49f988824ab9a858907413fc641e"
     }
   },
   {
