@@ -26,10 +26,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Bleeping Computer*\n\n*Grupo de espionaje chino despliega malware SparroWocky contra gobiernos latinoam*\n\nLa amenaza conocida como FamousSparrow ha introducido el backdoor SparroWocky, capaz de evadir EDRs y establecer canales C2 cifrados, comprometiendo datos sensibles de agencias gubernamentales en América Latina. El vector principal es spear‑phishing con documentos maliciosos que ejecutan payloads basados en PowerShell.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1573` — Encrypted Channel\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/chinese-hackers-use-sparrowocky-malware-in-govt-espionage-attacks/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "b4689feab9d64449a24f3cf068b2de01"
+      "attempt_id": "b4689feab9d64449a24f3cf068b2de01",
+      "message_id": 2726,
+      "sent_at": "2026-09-17T10:56:19Z"
     }
   },
   {
