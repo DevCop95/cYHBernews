@@ -99,10 +99,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Una al Día (Hispasec)*\n\n*Cisco publica parche crítico para ISE ante zero‑day CVE‑2026‑76460 explotado en*\n\nCisco emitió actualizaciones de emergencia para Identity Services Engine (ISE) y ISE‑Passive Identity Connector (ISE‑PIC) tras la confirmación de explotación activa de un zero‑day con CVSS 10.0 que permite eludir autenticación remota; se recomienda aplicar los parches inmediatamente y revisar logs de autenticación para detectar indicadores de compromiso.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-76460\n🔗 Dominios: unaaldia[.]hispasec[.]com\n🔗 URLs: hxxps://unaaldia[.]hispasec[.]com, hxxps://unaaldia[.]hispasec[.]com/cisco-corrige-un-zero-day-critico-en-ise-que-ya-se-explota-en-ataques/\n\n🔗 [Leer más](https://unaaldia.hispasec.com/cisco-corrige-un-zero-day-critico-en-ise-que-ya-se-explota-en-ataques/?utm_source=rss&utm_medium=rss&utm_campaign=cisco-corrige-un-zero-day-critico-en-ise-que-ya-se-explota-en-ataques)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "7d736203da464f17b7b05ff520b045d5"
+      "attempt_id": "7d736203da464f17b7b05ff520b045d5",
+      "message_id": 2729,
+      "sent_at": "2026-09-17T20:58:19Z"
     }
   },
   {
