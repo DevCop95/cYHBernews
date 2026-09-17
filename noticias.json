@@ -1,5 +1,55 @@
 [
   {
+    "id": 2682,
+    "fecha": "2026-09-17T10:52:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Grupo de espionaje chino despliega malware SparroWocky contra gobiernos latinoam",
+    "resumen": "La amenaza conocida como FamousSparrow ha introducido el backdoor SparroWocky, capaz de evadir EDRs y establecer canales C2 cifrados, comprometiendo datos sensibles de agencias gubernamentales en América Latina. El vector principal es spear‑phishing con documentos maliciosos que ejecutan payloads basados en PowerShell.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2NDIzNDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-sparrowocky-malware-in-govt-espionage-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:chinese hackers use sparrowocky malware in govt espionage attacks",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1573",
+        "name": "Encrypted Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2681,
+    "fecha": "2026-09-17T10:52:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Phishing suplantando notificaciones de buzón de voz afecta a 7.800 empresas",
+    "resumen": "Campaña masiva de phishing que falsifica alertas del sistema de transcripción de buzón de voz para distribuir archivos SVG maliciosos, comprometiendo credenciales y posibilitando ejecución de código en entornos corporativos. Impacta a miles de organizaciones, ampliando la superficie de ataque a través de vectores de ingeniería social basados en confianza interna.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2NDIzMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/phishing-suplanta-buzones-de-voz-y-afecta-a-7-800-empresas/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:phishing suplanta buzones de voz y afecta a 7 800 empresas",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2680,
     "fecha": "2026-09-17T03:06:22Z",
     "categoria": "IA",
