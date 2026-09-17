@@ -1,5 +1,54 @@
 [
   {
+    "id": 2690,
+    "fecha": "2026-09-17T23:21:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Guía de CISO para Pentesting Autónomo de Sitios Web con IA",
+    "resumen": "Los atacantes están explotando vulnerabilidades en un promedio de 5 días, mientras que las organizaciones tardan 43 días en aplicar parches; los agentes autónomos de IA reducen esta brecha al automatizar la detección y explotación controlada. El informe gratuito detalla los requisitos de seguridad que los líderes deben imponer antes de desplegar agentes IA en entornos de producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2ODcyODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/cisos-expert-guide-to-agentic.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ciso s expert guide to agentic pentesting for websites",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2689,
+    "fecha": "2026-09-17T23:21:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "RatHat, malware Android con subsistema IA para control remoto automatizado",
+    "resumen": "Se ha identificado el ransomware RatHat, que incorpora un módulo de IA para generar comandos y navegar en dispositivos Android comprometidos sin intervención humana, ampliando la velocidad de explotación. El vector de ataque combina phishing móvil y vulnerabilidades de apps de terceros, permitiendo a los operadores ejecutar acciones de exfiltración y espionaje en tiempo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2ODcyODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-rathat-android-malware-uses-ai-to-automate-device-control/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new rathat android malware uses ai to automate device control",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1056.001",
+        "name": "Keylogging"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2688,
     "fecha": "2026-09-17T20:54:42Z",
     "categoria": "Ciberseguridad",
