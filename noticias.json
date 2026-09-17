@@ -30,10 +30,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *SANS ISC*\n\n*LausivLoader revela método de paso de datos entre etapas de malware*\n\nAnálisis de la campaña de malspam detectada a finales de agosto muestra que el loader LausivLoader usa técnicas de inyección y canales cifrados para transferir información de configuración y credenciales entre sus módulos, facilitando la persistencia y evasión en entornos corporativos. El vector de ataque inicial es spear‑phishing con documento adjunto malicioso que simula una solicitud de cotización de fibra óptica.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1055` — Process Injection\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33348)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "f9e5c24554ac410a8b5ad93684ebceb5"
+      "attempt_id": "f9e5c24554ac410a8b5ad93684ebceb5",
+      "message_id": 2728,
+      "sent_at": "2026-09-17T16:10:43Z"
     }
   },
   {
