@@ -77,9 +77,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *WeLiveSecurity*\n\n*FamousSparrow despliega backdoor SparroWocky y focaliza ataques en América Latin*\n\nEl grupo de ciberespionaje vinculado a China ha sustituido su herramienta SparrowDoor por el nuevo backdoor SparroWocky, que incorpora técnicas de evasión de detección basadas en kernel-mode hooking y ofuscación dinámica. La campaña se concentra en objetivos de gobiernos y empresas latinoamericanas, ampliando la superficie de ataque a través de spear‑phishing y compromisos de cadena de suministro.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1055.012` — Process Hollowing\n⚔️ `T1027` — Obfuscated Files or Information\n⚔️ `T1566` — Phishing\n⚔️ `T1195` — Supply Chain Compromise\n\n🔗 [Leer más](https://www.welivesecurity.com/es/investigaciones/famoussparrow-america-latina-sparrowocky/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "e24e4daaa98a4c00b8b2272d919ee8b0"
     }
   },
   {
