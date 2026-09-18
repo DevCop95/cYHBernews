@@ -26,9 +26,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Schneier on Security*\n\n*Claude sigue fallando en CAPTCHAs: evidencia de limitaciones de visión en LLMs*\n\nUn informe interno de Anthropic muestra que el modelo Claude no logra resolver pruebas de identificación visual tipo CAPTCHA, evidenciando fallos en la integración de visión y razonamiento en tiempo real. El incidente sugiere que los atacantes que intenten automatizar bypass de CAPTCHAs con LLMs aún enfrentan barreras técnicas significativas.\n\n🟡 Severidad: *MEDIA*\n\n🔍 *IoCs:*\n🔗 Dominios: gizmodo[.]com, www-cdn[.]anthropic[.]com\n#️⃣ SHA1: e50be2e51e7695dc4b1366a37a245a597377d3b5\n🔗 URLs: hxxps://gizmodo[.]com/ai-models-can-crack-everything-but-captchas-2000810126, hxxps://neal[.]fun/not-a-robot/, hxxps://www-cdn[.]anthropic[.]com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026[.]pdf\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/are-ais-still-struggling-with-captchas.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "beb3bc9a8b9043aa9a0ee9e950267a9b"
     }
   },
   {
