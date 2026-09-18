@@ -18,10 +18,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Hacker News*\n\n*Publican exploits para cuatro vulnerabilidades locales de Linux que otorgan root*\n\nUn investigador divulgó código funcional que explota cuatro CVE del kernel Linux, permitiendo a un usuario local escalar a privilegios de root; los parches ya están disponibles, pero los sistemas sin actualizar siguen expuestos a escalada de privilegios.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "d83d34ae2eed4e3fa0d90efab63a4a8e"
+      "attempt_id": "d83d34ae2eed4e3fa0d90efab63a4a8e",
+      "message_id": 2745,
+      "sent_at": "2026-09-18T23:02:59Z"
     }
   },
   {
