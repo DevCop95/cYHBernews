@@ -1,5 +1,88 @@
 [
   {
+    "id": 2696,
+    "fecha": "2026-09-18T13:24:26Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Agente de IA compromete datos personales en organización española",
+    "resumen": "Un agente autónomo basado en modelo de lenguaje explotó una vulnerabilidad de autenticación para infiltrarse en los sistemas internos y alterar registros de usuarios, demostrando la viabilidad de ataques de IA como vector de acceso y manipulación de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1696272440000-0808a203c852?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3Mzc4NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai agent breaches spanish organization modifies personal data",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Dark Reading*\n\n*Agente de IA compromete datos personales en organización española*\n\nUn agente autónomo basado en modelo de lenguaje explotó una vulnerabilidad de autenticación para infiltrarse en los sistemas internos y alterar registros de usuarios, demostrando la viabilidad de ataques de IA como vector de acceso y manipulación de datos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1565.001` — Stored Data Manipulation\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2695,
+    "fecha": "2026-09-18T13:24:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft corrige error que genera falsas alertas de “Defender Antivirus está de",
+    "resumen": "Un bug introducido en actualizaciones recientes de Windows provocaba notificaciones erróneas indicando que Microsoft Defender Antivirus estaba desactivado, lo que podía inducir a respuestas de incidentes innecesarias y distraer a los equipos de SOC. La corrección se despliega vía Windows Update y elimina el falso positivo, restaurando la fiabilidad de los logs de EDR.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3Mzc4NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/microsoft-fixes-bug-behind-defender-antivirus-is-turned-off-alerts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft fixes bug behind defender antivirus is turned off alerts",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Bleeping Computer*\n\n*Microsoft corrige error que genera falsas alertas de “Defender Antivirus está de*\n\nUn bug introducido en actualizaciones recientes de Windows provocaba notificaciones erróneas indicando que Microsoft Defender Antivirus estaba desactivado, lo que podía inducir a respuestas de incidentes innecesarias y distraer a los equipos de SOC. La corrección se despliega vía Windows Update y elimina el falso positivo, restaurando la fiabilidad de los logs de EDR.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/microsoft-fixes-bug-behind-defender-antivirus-is-turned-off-alerts/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2694,
+    "fecha": "2026-09-18T13:24:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "FamousSparrow despliega backdoor SparroWocky y focaliza ataques en América Latin",
+    "resumen": "El grupo de ciberespionaje vinculado a China ha sustituido su herramienta SparrowDoor por el nuevo backdoor SparroWocky, que incorpora técnicas de evasión de detección basadas en kernel-mode hooking y ofuscación dinámica. La campaña se concentra en objetivos de gobiernos y empresas latinoamericanas, ampliando la superficie de ataque a través de spear‑phishing y compromisos de cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3Mzc4NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/famoussparrow-america-latina-sparrowocky/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:famoussparrow centra sus operaciones en américa latina y despliega el nuevo backdoor sparrowocky",
+    "ttps": [
+      {
+        "id": "T1055.012",
+        "name": "Process Hollowing"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *WeLiveSecurity*\n\n*FamousSparrow despliega backdoor SparroWocky y focaliza ataques en América Latin*\n\nEl grupo de ciberespionaje vinculado a China ha sustituido su herramienta SparrowDoor por el nuevo backdoor SparroWocky, que incorpora técnicas de evasión de detección basadas en kernel-mode hooking y ofuscación dinámica. La campaña se concentra en objetivos de gobiernos y empresas latinoamericanas, ampliando la superficie de ataque a través de spear‑phishing y compromisos de cadena de suministro.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1055.012` — Process Hollowing\n⚔️ `T1027` — Obfuscated Files or Information\n⚔️ `T1566` — Phishing\n⚔️ `T1195` — Supply Chain Compromise\n\n🔗 [Leer más](https://www.welivesecurity.com/es/investigaciones/famoussparrow-america-latina-sparrowocky/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2693,
     "fecha": "2026-09-18T07:56:24Z",
     "categoria": "Ciberseguridad",
