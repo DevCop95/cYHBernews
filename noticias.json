@@ -1,5 +1,47 @@
 [
   {
+    "id": 2701,
+    "fecha": "2026-09-18T22:59:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Publican exploits para cuatro vulnerabilidades locales de Linux que otorgan root",
+    "resumen": "Un investigador divulgó código funcional que explota cuatro CVE del kernel Linux, permitiendo a un usuario local escalar a privilegios de root; los parches ya están disponibles, pero los sistemas sin actualizar siguen expuestos a escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3NzIzNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:public exploits released for four linux kernel flaws that enable local root",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2700,
+    "fecha": "2026-09-18T22:59:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Campaña de malware usa repositorios GitHub falsos para distribuir el stealer Rap",
+    "resumen": "Un actor amenaza la cadena de suministro al crear repositorios SEO‑optimizados que imitan a proveedores de software legítimos, alojando el nuevo infostealer Rapuncel, capaz de robar credenciales y datos de sesión. El vector de ataque se basa en la descarga automática de herramientas desde GitHub, explotando la confianza del usuario y la falta de verificación de firmas.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3NzIzNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fake lastpass authenticator github repos push new rapuncel infostealer",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2699,
     "fecha": "2026-09-18T18:02:09Z",
     "categoria": "IA",
