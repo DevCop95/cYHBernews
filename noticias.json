@@ -58,10 +58,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *The Hacker News*\n\n*Vulnerabilidad Click2Shell en WordPress permite instalación automática de temas*\n\nUna cadena de ataque (Click2Shell) explotable por un enlace malicioso permite a un administrador autenticado instalar un tema desde WordPress.org sin interacción y escalar a ejecución remota de código; los parches fueron publicados por WordPress y pwn.ai.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1505.003` — Web Shell\n\n🔍 *IoCs:*\n🔗 Dominios: wordpress[.]org\n\n🔗 [Leer más](https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "3ff041c015a2400da955b7c41ff16c15"
+      "attempt_id": "3ff041c015a2400da955b7c41ff16c15",
+      "message_id": 2742,
+      "sent_at": "2026-09-18T18:06:05Z"
     }
   },
   {
