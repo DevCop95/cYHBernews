@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Dark Reading*\n\n*Agente de IA compromete datos personales en organización española*\n\nUn agente autónomo basado en modelo de lenguaje explotó una vulnerabilidad de autenticación para infiltrarse en los sistemas internos y alterar registros de usuarios, demostrando la viabilidad de ataques de IA como vector de acceso y manipulación de datos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1565.001` — Stored Data Manipulation\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-breaches-spanish-organization-personal-data)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "1d57e929e814449ab4a9d7ae92a35166"
     }
   },
   {
