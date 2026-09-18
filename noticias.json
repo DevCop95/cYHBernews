@@ -90,9 +90,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Bleeping Computer*\n\n*Vulnerabilidad en servidores de Gyazo permite el robo de 23,6 M de registros de*\n\nHackers explotaron una vulnerabilidad sin parchear en la infraestructura de Gyazo, accediendo a bases de datos que contenían 23,6 millones de credenciales y metadatos de usuarios; la brecha expone información personal y potencialmente permite ataques de credential stuffing.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1005` — Data from Local System\n⚔️ `T1110.004` — Credential Stuffing\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "8728ee07020e46a3aea72d129f95895c"
     }
   },
   {
