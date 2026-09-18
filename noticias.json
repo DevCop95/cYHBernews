@@ -37,10 +37,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*Brevo sufre ataque de cadena de suministro con inyección de scripts ClickFix*\n\nLos atacantes robaron una clave API de Cloudflare y la usaron para insertar scripts maliciosos ClickFix en los sitios de Brevo y en archivos JavaScript incrustados en los sitios de sus clientes, facilitando la distribución de malware. El vector de compromiso es la manipulación de la infraestructura CDN, lo que permite comprometer a gran escala a los usuarios finales.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195` — Supply Chain Compromise\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "a2bc2ff7418042beac6d091724956172"
+      "attempt_id": "a2bc2ff7418042beac6d091724956172",
+      "message_id": 2735,
+      "sent_at": "2026-09-18T02:57:48Z"
     }
   },
   {
