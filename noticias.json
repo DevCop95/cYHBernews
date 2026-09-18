@@ -46,9 +46,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Bleeping Computer*\n\n*Campaña de malware usa repositorios GitHub falsos para distribuir el stealer Rap*\n\nUn actor amenaza la cadena de suministro al crear repositorios SEO‑optimizados que imitan a proveedores de software legítimos, alojando el nuevo infostealer Rapuncel, capaz de robar credenciales y datos de sesión. El vector de ataque se basa en la descarga automática de herramientas desde GitHub, explotando la confianza del usuario y la falta de verificación de firmas.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n⚔️ `T1555.003` — Credentials from Web Browsers\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "47d7269e79f548ff92cfd4d6d70f856c"
     }
   },
   {
