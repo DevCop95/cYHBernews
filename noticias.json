@@ -41,10 +41,11 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *Bleeping Computer*\n\n*Microsoft corrige error que genera falsas alertas de “Defender Antivirus está de*\n\nUn bug introducido en actualizaciones recientes de Windows provocaba notificaciones erróneas indicando que Microsoft Defender Antivirus estaba desactivado, lo que podía inducir a respuestas de incidentes innecesarias y distraer a los equipos de SOC. La corrección se despliega vía Windows Update y elimina el falso positivo, restaurando la fiabilidad de los logs de EDR.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/microsoft-fixes-bug-behind-defender-antivirus-is-turned-off-alerts/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "86f41a168fbb42cca98fcd446b76a8ae"
+      "attempt_id": "86f41a168fbb42cca98fcd446b76a8ae",
+      "message_id": 2739,
+      "sent_at": "2026-09-18T13:28:17Z"
     }
   },
   {
