@@ -1,5 +1,86 @@
 [
   {
+    "id": 2699,
+    "fecha": "2026-09-18T18:02:09Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Claude sigue fallando en CAPTCHAs: evidencia de limitaciones de visión en LLMs",
+    "resumen": "Un informe interno de Anthropic muestra que el modelo Claude no logra resolver pruebas de identificación visual tipo CAPTCHA, evidenciando fallos en la integración de visión y razonamiento en tiempo real. El incidente sugiere que los atacantes que intenten automatizar bypass de CAPTCHAs con LLMs aún enfrentan barreras técnicas significativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1753513291124-4f615bf1f6de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3NTQ1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/are-ais-still-struggling-with-captchas.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:are ais still struggling with captchas",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "gizmodo.com",
+        "www-cdn.anthropic.com"
+      ],
+      "url": [
+        "https://gizmodo.com/ai-models-can-crack-everything-but-captchas-2000810126",
+        "https://neal.fun/not-a-robot/",
+        "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf"
+      ],
+      "sha1": [
+        "e50be2e51e7695dc4b1366a37a245a597377d3b5"
+      ]
+    }
+  },
+  {
+    "id": 2698,
+    "fecha": "2026-09-18T18:02:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Click2Shell en WordPress permite instalación automática de temas",
+    "resumen": "Una cadena de ataque (Click2Shell) explotable por un enlace malicioso permite a un administrador autenticado instalar un tema desde WordPress.org sin interacción y escalar a ejecución remota de código; los parches fueron publicados por WordPress y pwn.ai.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3NTQ1Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/new-wordpress-click2shell-flaw-forces.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new wordpress click2shell flaw forces theme installs can chain to code execution",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "wordpress.org"
+      ]
+    }
+  },
+  {
+    "id": 2697,
+    "fecha": "2026-09-18T18:02:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en servidores de Gyazo permite el robo de 23,6 M de registros de",
+    "resumen": "Hackers explotaron una vulnerabilidad sin parchear en la infraestructura de Gyazo, accediendo a bases de datos que contenían 23,6 millones de credenciales y metadatos de usuarios; la brecha expone información personal y potencialmente permite ataques de credential stuffing.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3NTQ1MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/gyazo-server-flaw-exploited-to-steal-236-million-user-records/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:gyazo server flaw exploited to steal 23 6 million user records",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1110.004",
+        "name": "Credential Stuffing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2696,
     "fecha": "2026-09-18T13:24:26Z",
     "categoria": "IA",
