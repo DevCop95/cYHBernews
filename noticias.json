@@ -69,9 +69,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *INCIBE-CERT*\n\n*Boletín de seguridad de Oracle – Septiembre 2026: 45 productos críticos*\n\nOracle publica parches para más de 40 componentes, incluidos Oracle Database, Access Manager y la suite Banking, corrigiendo vulnerabilidades que podrían permitir ejecución remota de código y escalada de privilegios. Los entornos empresariales deben aplicar los updates antes del 30 de septiembre para mitigar riesgos de explotación en cadena de suministro.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1195` — Supply Chain Compromise\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-71133, CVE-2026-83020, CVE-2026-83021\n🌐 IPs: 13[.]3[.]0[.]1, 21[.]3[.]19[.]1, 23[.]0[.]13[.]1\n🔗 Dominios: pinterest[.]com, wa[.]me, www[.]oracle[.]com\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/boletin-de-seguridad-de-oracle-septiembre-de-2026)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "d3af2afa04304833a1a729ed90caf873"
     }
   },
   {
