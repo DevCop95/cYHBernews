@@ -1,5 +1,52 @@
 [
   {
+    "id": 2705,
+    "fecha": "2026-09-19T12:50:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Explosión de vulnerabilidades impulsada por chatbots de IA",
+    "resumen": "Los modelos de lenguaje generativos (ChatGPT, Claude, Gemini) están siendo usados para automatizar la detección y divulgación de CVE, incrementando el ritmo de descubrimiento de zero‑days y facilitando la creación de exploits dirigidos. Esta tendencia eleva el riesgo de ataques de ransomware y APT que aprovechan fallas recién expuestas antes de que los equipos de mitigación apliquen parches.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4MjIyNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:forget the ai slowdown the vulnerability explosion is already happening",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Wired Security*\n\n*Explosión de vulnerabilidades impulsada por chatbots de IA*\n\nLos modelos de lenguaje generativos (ChatGPT, Claude, Gemini) están siendo usados para automatizar la detección y divulgación de CVE, incrementando el ritmo de descubrimiento de zero‑days y facilitando la creación de exploits dirigidos. Esta tendencia eleva el riesgo de ataques de ransomware y APT que aprovechan fallas recién expuestas antes de que los equipos de mitigación apliquen parches.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://www.wired.com/story/kernel-panic-ai-vulnerability-explosion/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2704,
+    "fecha": "2026-09-19T12:50:42Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Vectra AI lanza Ascent para contrarrestar ataques impulsados por IA",
+    "resumen": "El programa Ascent amplía la estrategia de partners de Vectra, ofreciendo servicios de detección y respuesta especializados en amenazas que emplean modelos de lenguaje y técnicas de generación automática. Busca cerrar la brecha de visibilidad en entornos donde los adversarios usan IA para evadir EDR y crear payloads adaptativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1756908992154-c8a89f5e517f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4MjIyNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/vectra-ai-launches-ascent-new-era-ai-driven-attacks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:vectra ai launches ascent to help address new era of ai driven attacks",
+    "ttps": [
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Vectra AI lanza Ascent para contrarrestar ataques impulsados por IA*\n\nEl programa Ascent amplía la estrategia de partners de Vectra, ofreciendo servicios de detección y respuesta especializados en amenazas que emplean modelos de lenguaje y técnicas de generación automática. Busca cerrar la brecha de visibilidad en entornos donde los adversarios usan IA para evadir EDR y crear payloads adaptativos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1562` — Impair Defenses\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/vectra-ai-launches-ascent-new-era-ai-driven-attacks)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2703,
     "fecha": "2026-09-19T07:46:26Z",
     "categoria": "Ciberseguridad",
