@@ -43,10 +43,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*XSS almacenado en TAO 2.0 de T‑Systems (CVE‑2026‑92976)*\n\nVulnerabilidad de tipo stored XSS (CVE‑2026‑92976) permite a un usuario autenticado inyectar HTML/JS malicioso en perfiles de la suite TAO 2.0, ejecutándose en el navegador de cualquier otro usuario que visualice la ficha. Impacta la integridad de la sesión y puede conducir a robo de credenciales o acciones no autorizadas.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-92976\n🔗 Dominios: pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-almacenado-en-tao-20-de-t-systems)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "329b771846d64763a6805c407ff8be54"
+      "attempt_id": "329b771846d64763a6805c407ff8be54",
+      "message_id": 2755,
+      "sent_at": "2026-09-19T22:43:11Z"
     }
   },
   {
