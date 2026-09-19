@@ -34,9 +34,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*Copia masiva de 170 repositorios privados de CrowdSec tras ataque a la cadena de*\n\nUn ex‑empleado de CrowdSec, cuya cuenta de GitHub permaneció activa, permitió que un atacante accediera y clonara 170 repositorios privados el 22 de mayo, aprovechando credenciales robadas en el ataque de suministro de paquetes npm de TanStack. El incidente expone código fuente crítico y potenciales secretos de infraestructura, aumentando la superficie de ataque para futuros exploits.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1195` — Supply Chain Compromise\n⚔️ `T1213.001` — Confluence\n⚔️ `T1566` — Phishing\n⚔️ `T1020` — Automated Exfiltration\n\n🔗 [Leer más](https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "bbba84ced7594016aaf64481bbc61b9b"
     }
   },
   {
