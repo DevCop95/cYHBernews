@@ -1,5 +1,64 @@
 [
   {
+    "id": 2707,
+    "fecha": "2026-09-19T17:43:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Visibilidad de Identidades 2026: Pilar Crítico para la Seguridad de Acceso",
+    "resumen": "La falta de visibilidad de credenciales comprometidas sigue siendo el vector de acceso inicial más explotado en brechas, especialmente en entornos cloud y multicloud; la ausencia de monitoreo continuo permite la reutilización de credenciales robadas para movimientos laterales y escalada de privilegios. Implementar detección basada en comportamiento y correlación de logs en tiempo real es esencial para mitigar este riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4Mzk4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:identity visibility in 2026 the foundation of identity security",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      },
+      {
+        "id": "T1075",
+        "name": "Pass the Hash"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1069.001",
+        "name": "Local Groups"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*Visibilidad de Identidades 2026: Pilar Crítico para la Seguridad de Acceso*\n\nLa falta de visibilidad de credenciales comprometidas sigue siendo el vector de acceso inicial más explotado en brechas, especialmente en entornos cloud y multicloud; la ausencia de monitoreo continuo permite la reutilización de credenciales robadas para movimientos laterales y escalada de privilegios. Implementar detección basada en comportamiento y correlación de logs en tiempo real es esencial para mitigar este riesgo.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1078.004` — Cloud Accounts\n⚔️ `T1075` — Pass the Hash\n⚔️ `T1087` — Account Discovery\n⚔️ `T1069.001` — Local Groups\n\n🔗 [Leer más](https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2706,
+    "fecha": "2026-09-19T17:43:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Deepfakes de desnudos generados por IA: nueva amenaza a la privacidad digital",
+    "resumen": "Aplicaciones basadas en modelos de generación de imágenes crean desnudos falsos de individuos sin su consentimiento, exponiendo datos sensibles y facilitando extorsión o chantaje. El vector de ataque se basa en la manipulación de modelos de difusión y la distribución masiva vía plataformas de mensajería y redes sociales.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4Mzk4MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/nudify-apps-desnudos-falsos-ia/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:te preocupan las aplicaciones que crean desnudos falsos con ia lo que necesitas saber",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *WeLiveSecurity*\n\n*Deepfakes de desnudos generados por IA: nueva amenaza a la privacidad digital*\n\nAplicaciones basadas en modelos de generación de imágenes crean desnudos falsos de individuos sin su consentimiento, exponiendo datos sensibles y facilitando extorsión o chantaje. El vector de ataque se basa en la manipulación de modelos de difusión y la distribución masiva vía plataformas de mensajería y redes sociales.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.welivesecurity.com/es/seguridad-digital/nudify-apps-desnudos-falsos-ia/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2705,
     "fecha": "2026-09-19T12:50:44Z",
     "categoria": "Ciberseguridad",
