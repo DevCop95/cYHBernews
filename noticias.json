@@ -1,5 +1,54 @@
 [
   {
+    "id": 2711,
+    "fecha": "2026-09-19T22:39:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "XSS almacenado en TAO 2.0 de T‑Systems (CVE‑2026‑92976)",
+    "resumen": "Vulnerabilidad de tipo stored XSS (CVE‑2026‑92976) permite a un usuario autenticado inyectar HTML/JS malicioso en perfiles de la suite TAO 2.0, ejecutándose en el navegador de cualquier otro usuario que visualice la ficha. Impacta la integridad de la sesión y puede conducir a robo de credenciales o acciones no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1547190027-9156686aa2f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4NTc1NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-almacenado-en-tao-20-de-t-systems",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-92976",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/avisos/aviso",
+        "https://www.incibe.es/incibe-cert/tags/actualizaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/cna",
+        "https://www.incibe.es/incibe-cert/tags/vulnerabilidad",
+        "https://www.incibe.es/incibe-cert/tags/xss",
+        "https://www.incibe.es/sites/default/files/public/rrss/FB_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/LI_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Mail_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Pinterest_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/TW_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/WhatsApp_compartir.png",
+        "https://www.tao.es/"
+      ],
+      "cve": [
+        "CVE-2026-92976"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*XSS almacenado en TAO 2.0 de T‑Systems (CVE‑2026‑92976)*\n\nVulnerabilidad de tipo stored XSS (CVE‑2026‑92976) permite a un usuario autenticado inyectar HTML/JS malicioso en perfiles de la suite TAO 2.0, ejecutándose en el navegador de cualquier otro usuario que visualice la ficha. Impacta la integridad de la sesión y puede conducir a robo de credenciales o acciones no autorizadas.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-92976\n🔗 Dominios: pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-almacenado-en-tao-20-de-t-systems)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2710,
     "fecha": "2026-09-19T20:16:18Z",
     "categoria": "Ciberseguridad",
