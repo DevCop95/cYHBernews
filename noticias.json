@@ -1,5 +1,33 @@
 [
   {
+    "id": 2702,
+    "fecha": "2026-09-19T02:54:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Riesgo de exposición prolongada por accesos no revocados en Microsoft 365",
+    "resumen": "El acceso persistente a archivos compartidos en Microsoft 365 permite que usuarios y cuentas externas mantengan privilegios después de concluido el proyecto, creando superficies de ataque para exfiltración de datos y ransomware. La falta de revisiones centralizadas de permisos dificulta la detección de accesos innecesarios y vulnerables.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk3ODY0NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:secure enterprise sharing with access reviews for microsoft 365",
+    "ttps": [
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Riesgo de exposición prolongada por accesos no revocados en Microsoft 365*\n\nEl acceso persistente a archivos compartidos en Microsoft 365 permite que usuarios y cuentas externas mantengan privilegios después de concluido el proyecto, creando superficies de ataque para exfiltración de datos y ransomware. La falta de revisiones centralizadas de permisos dificulta la detección de accesos innecesarios y vulnerables.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078.004` — Cloud Accounts\n⚔️ `T1486` — Data Encrypted for Impact\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/secure-enterprise-sharing-with-access-reviews-for-microsoft-365/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2701,
     "fecha": "2026-09-18T22:59:04Z",
     "categoria": "Ciberseguridad",
