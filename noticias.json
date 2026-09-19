@@ -34,9 +34,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Visibilidad de Identidades 2026: Pilar Crítico para la Seguridad de Acceso*\n\nLa falta de visibilidad de credenciales comprometidas sigue siendo el vector de acceso inicial más explotado en brechas, especialmente en entornos cloud y multicloud; la ausencia de monitoreo continuo permite la reutilización de credenciales robadas para movimientos laterales y escalada de privilegios. Implementar detección basada en comportamiento y correlación de logs en tiempo real es esencial para mitigar este riesgo.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1078.004` — Cloud Accounts\n⚔️ `T1075` — Pass the Hash\n⚔️ `T1087` — Account Discovery\n⚔️ `T1069.001` — Local Groups\n\n🔗 [Leer más](https://thehackernews.com/2026/09/identity-visibility-in-2026-foundation.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "69c2b8ba2e72428e81e89f44d638041f"
     }
   },
   {
