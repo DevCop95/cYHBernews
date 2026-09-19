@@ -53,9 +53,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Claude Opus 5 permite a investigadores comprometer cuentas de staff de OpenAI*\n\nTres analistas de Hacktron explotaron dos fallas consecutivas – una en el foro público de ayuda de OpenAI y otra en su propio sistema de autenticación – usando el modelo Claude Opus 5 de Anthropic para tomar control de cuentas ChatGPT y Codex de empleados y acceder a un repositorio interno de código. El vector combina manipulación de prompts con escalada de privilegios en la infraestructura de identidad, evidenciando riesgos de confianza en modelos de IA para procesos críticos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1556` — Modify Authentication Process\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1566` — Phishing\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "c793e5ab5f9e421ea3a275648c666aea"
     }
   },
   {
