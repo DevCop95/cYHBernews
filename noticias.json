@@ -1,5 +1,64 @@
 [
   {
+    "id": 2710,
+    "fecha": "2026-09-19T20:16:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Implementación de IA autónoma supera la supervisión, según encuesta de EY",
+    "resumen": "La encuesta a altos ejecutivos de IA revela que la adopción de sistemas autónomos avanza rápidamente, mientras que los procesos de gobernanza y controles de seguridad no lo hacen al mismo ritmo, exponiendo brechas de gestión de riesgos.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4NDg5Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ey-survey-autonomous-ai-implementation-outpaces-oversight",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ey survey finds autonomous ai implementation outpaces oversight",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Implementación de IA autónoma supera la supervisión, según encuesta de EY*\n\nLa encuesta a altos ejecutivos de IA revela que la adopción de sistemas autónomos avanza rápidamente, mientras que los procesos de gobernanza y controles de seguridad no lo hacen al mismo ritmo, exponiendo brechas de gestión de riesgos.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/ey-survey-autonomous-ai-implementation-outpaces-oversight)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2709,
+    "fecha": "2026-09-19T20:16:17Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Claude Opus 5 permite a investigadores comprometer cuentas de staff de OpenAI",
+    "resumen": "Tres analistas de Hacktron explotaron dos fallas consecutivas – una en el foro público de ayuda de OpenAI y otra en su propio sistema de autenticación – usando el modelo Claude Opus 5 de Anthropic para tomar control de cuentas ChatGPT y Codex de empleados y acceder a un repositorio interno de código. El vector combina manipulación de prompts con escalada de privilegios en la infraestructura de identidad, evidenciando riesgos de confianza en modelos de IA para procesos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4NDg5Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:claude opus 5 helped researchers take over openai staff accounts via chained flaws",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*Claude Opus 5 permite a investigadores comprometer cuentas de staff de OpenAI*\n\nTres analistas de Hacktron explotaron dos fallas consecutivas – una en el foro público de ayuda de OpenAI y otra en su propio sistema de autenticación – usando el modelo Claude Opus 5 de Anthropic para tomar control de cuentas ChatGPT y Codex de empleados y acceder a un repositorio interno de código. El vector combina manipulación de prompts con escalada de privilegios en la infraestructura de identidad, evidenciando riesgos de confianza en modelos de IA para procesos críticos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1556` — Modify Authentication Process\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1566` — Phishing\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/claude-opus-5-helped-researchers-take.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2708,
     "fecha": "2026-09-19T20:12:16Z",
     "categoria": "Ciberseguridad",
