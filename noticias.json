@@ -41,9 +41,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Dark Reading*\n\n*Vectra AI lanza Ascent para contrarrestar ataques impulsados por IA*\n\nEl programa Ascent amplía la estrategia de partners de Vectra, ofreciendo servicios de detección y respuesta especializados en amenazas que emplean modelos de lenguaje y técnicas de generación automática. Busca cerrar la brecha de visibilidad en entornos donde los adversarios usan IA para evadir EDR y crear payloads adaptativos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1562` — Impair Defenses\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/vectra-ai-launches-ascent-new-era-ai-driven-attacks)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "d2ab88ff087d423ca2039f4033322087"
     }
   },
   {
