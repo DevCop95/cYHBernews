@@ -1,5 +1,40 @@
 [
   {
+    "id": 2703,
+    "fecha": "2026-09-19T07:46:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Copia masiva de 170 repositorios privados de CrowdSec tras ataque a la cadena de",
+    "resumen": "Un ex‑empleado de CrowdSec, cuya cuenta de GitHub permaneció activa, permitió que un atacante accediera y clonara 170 repositorios privados el 22 de mayo, aprovechando credenciales robadas en el ataque de suministro de paquetes npm de TanStack. El incidente expone código fuente crítico y potenciales secretos de infraestructura, aumentando la superficie de ataque para futuros exploits.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4MDM5ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/crowdsec-says-tanstack-npm-attack-led.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:crowdsec says tanstack npm attack led to copy of 170 private github repositories",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1213.001",
+        "name": "Confluence"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2702,
     "fecha": "2026-09-19T02:54:07Z",
     "categoria": "Ciberseguridad",
