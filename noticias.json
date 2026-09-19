@@ -1,5 +1,75 @@
 [
   {
+    "id": 2708,
+    "fecha": "2026-09-19T20:12:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Boletín de seguridad de Oracle – Septiembre 2026: 45 productos críticos",
+    "resumen": "Oracle publica parches para más de 40 componentes, incluidos Oracle Database, Access Manager y la suite Banking, corrigiendo vulnerabilidades que podrían permitir ejecución remota de código y escalada de privilegios. Los entornos empresariales deben aplicar los updates antes del 30 de septiembre para mitigar riesgos de explotación en cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk4NDg3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/boletin-de-seguridad-de-oracle-septiembre-de-2026",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-71133,cve-2026-83020,cve-2026-83021,cve-2026-83059,cve-2026-83099,cve-2026-87230",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "13.3.0.1",
+        "21.3.19.1",
+        "23.0.13.1",
+        "23.1.12.1"
+      ],
+      "domain": [
+        "pinterest.com",
+        "wa.me",
+        "www.oracle.com"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/avisos/aviso",
+        "https://www.incibe.es/incibe-cert/tags/actualizaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/autenticaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/c%C3%B3digo%20arbitrario",
+        "https://www.incibe.es/incibe-cert/tags/denegaci%C3%B3n%20de%20servicio%20-%20dos%20-%20ddos",
+        "https://www.incibe.es/incibe-cert/tags/divulgaci%C3%B3n%20de%20informaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/java",
+        "https://www.incibe.es/incibe-cert/tags/oracle",
+        "https://www.incibe.es/incibe-cert/tags/rce",
+        "https://www.incibe.es/incibe-cert/tags/virtualizaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/vulnerabilidad",
+        "https://www.incibe.es/sites/default/files/public/rrss/FB_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/LI_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Mail_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Pinterest_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/TW_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/WhatsApp_compartir.png",
+        "https://www.oracle.com/security-alerts/cspusep2026.html"
+      ],
+      "cve": [
+        "CVE-2026-71133",
+        "CVE-2026-83020",
+        "CVE-2026-83021",
+        "CVE-2026-83059",
+        "CVE-2026-83099",
+        "CVE-2026-87230"
+      ]
+    }
+  },
+  {
     "id": 2707,
     "fecha": "2026-09-19T17:43:40Z",
     "categoria": "Ciberseguridad",
