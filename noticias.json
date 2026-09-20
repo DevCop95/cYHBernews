@@ -1,5 +1,69 @@
 [
   {
+    "id": 2717,
+    "fecha": "2026-09-20T20:13:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora dos vulnerabilidades Linux al catálogo KEV",
+    "resumen": "CISA añadió CVE‑2025‑39964 (race condition) y CVE‑2026‑53266 (out‑of‑bounds write) al Known Exploited Vulnerabilities Catalog, exigiendo remediación prioritaria en activos federales expuestos. Ambos vectores permiten escalada de privilegios y control total del sistema tras explotación activa.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5MzUyMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2025-39964,cve-2026-53266",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "cisasurvey.gov1.qualtrics.com",
+        "www.cve.org"
+      ],
+      "url": [
+        "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog/reducing-significant-risk-known-exploited-vulnerabilities",
+        "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk",
+        "https://www.cve.org/CVERecord?id=CVE-2025-39964",
+        "https://www.cve.org/CVERecord?id=CVE-2026-53266"
+      ],
+      "cve": [
+        "CVE-2025-39964",
+        "CVE-2026-53266"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *CISA Advisories*\n\n*CISA incorpora dos vulnerabilidades Linux al catálogo KEV*\n\nCISA añadió CVE‑2025‑39964 (race condition) y CVE‑2026‑53266 (out‑of‑bounds write) al Known Exploited Vulnerabilities Catalog, exigiendo remediación prioritaria en activos federales expuestos. Ambos vectores permiten escalada de privilegios y control total del sistema tras explotación activa.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2025-39964, CVE-2026-53266\n🔗 Dominios: cisasurvey[.]gov1[.]qualtrics[.]com, www[.]cve[.]org\n🔗 URLs: hxxps://cisasurvey[.]gov1[.]qualtrics[.]com/jfe/form/SV_1Zwu52kgK2OYf3w, hxxps://www[.]cisa[.]gov/known-exploited-vulnerabilities-catalog, hxxps://www[.]cisa[.]gov/known-exploited-vulnerabilities-catalog/reducing-significant-risk-known-exploited-vulnerabilities\n\n🔗 [Leer más](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2716,
+    "fecha": "2026-09-20T20:13:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en el sandbox de OpenAI Codex permite ejecución de comandos",
+    "resumen": "Investigadores demostraron dos métodos para escapar del entorno aislado de Codex, logrando ejecutar comandos en la máquina del desarrollador incluso bajo el modo más restrictivo; OpenAI ya ha lanzado parches para ambas rutas de escape.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5MzUyMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:researchers escape openai codex sandbox to run commands on host",
+    "ttps": [
+      {
+        "id": "T1497",
+        "name": "Virtualization/Sandbox Evasion"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Vulnerabilidad en el sandbox de OpenAI Codex permite ejecución de comandos*\n\nInvestigadores demostraron dos métodos para escapar del entorno aislado de Codex, logrando ejecutar comandos en la máquina del desarrollador incluso bajo el modo más restrictivo; OpenAI ya ha lanzado parches para ambas rutas de escape.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1497` — Virtualization/Sandbox Evasion\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2715,
     "fecha": "2026-09-20T15:19:34Z",
     "categoria": "Ciberseguridad",
