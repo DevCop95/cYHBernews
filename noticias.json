@@ -56,9 +56,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *El Lado Del Mal*\n\n*Explotación de heap overflow en Discourse permite comprometer infraestructura*\n\nInvestigadores usaron Claude Opus para automatizar la cadena de Vibe‑Exploiting, aprovechando un CVE no parcheado en ImageMagick dentro del foro Discourse de OpenAI y evadiendo ASLR para ejecutar código remoto. El bug bounty de 6 000 USD evidencia la exposición de servicios críticos que dependen de librerías de IA.\n\n🟢 Severidad: *BAJA*\n\n🔍 *IoCs:*\n🔗 Dominios: 0xword[.]com, 1[.]bp[.]blogspot[.]com, blogger[.]googleusercontent[.]com\n🔗 URLs: hxxp://feeds[.]feedburner[.]com/ElLadoDelMal, hxxps://0xWord[.]com, hxxps://0xword[.]com/es/libros/245-hacking-pentesting-con-inteligencia-artificial[.]html\n\n🔗 [Leer más](http://www.elladodelmal.com/2026/09/vibe-exploiting-discourse-para-hackear.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "4448ebea9c9c4dfe9412ed92531a23d8"
     }
   },
   {
