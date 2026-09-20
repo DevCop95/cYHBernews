@@ -58,9 +58,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Bleeping Computer*\n\n*Vulnerabilidad en el sandbox de OpenAI Codex permite ejecución de comandos*\n\nInvestigadores demostraron dos métodos para escapar del entorno aislado de Codex, logrando ejecutar comandos en la máquina del desarrollador incluso bajo el modo más restrictivo; OpenAI ya ha lanzado parches para ambas rutas de escape.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1497` — Virtualization/Sandbox Evasion\n⚔️ `T1059` — Command and Scripting Interpreter\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/researchers-escape-openai-codex-sandbox-to-run-commands-on-host/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "16f76a1259884589b40d570864e52af6"
     }
   },
   {
