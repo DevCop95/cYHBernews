@@ -30,9 +30,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *The Hacker News*\n\n*SolarWinds parchea vulnerabilidad ARM de clave codificada que permitía RCE*\n\nSolarWinds lanzó actualizaciones críticas para Access Rights Manager (ARM) que corrigen la CVE‑2026‑28326, una falla de alta severidad (CVSS 8.8) que permite ejecución remota de código sin autenticación mediante una clave hard‑coded. La vulnerabilidad afecta a todas las versiones de ARM 2026.2 y anteriores, exponiendo a organizaciones a compromisos de control de acceso y posible movimiento lateral.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1078` — Valid Accounts\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-28326\n\n🔗 [Leer más](https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "985960f9db8e40fd9b1c1e15a379a442"
     }
   },
   {
