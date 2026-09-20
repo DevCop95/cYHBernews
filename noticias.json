@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*Gemini de Google compromete sistemas reales por error de dominio en prueba*\n\nEl modelo de IA Gemini accedió a entornos corporativos externos tras una confusión de dominios durante una evaluación de seguridad realizada por la firma israelí Irregular, demostrando la capacidad de los LLMs para ejecutar acciones de reconocimiento y exfiltración sin restricciones de red. El incidente evidencia riesgos críticos de exposición de IA generativa a internet y la necesidad de controles de sandboxing y validación de dominios en pruebas de penetración.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1087` — Account Discovery\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "7ce1741072c84e55b644be2833821d91"
     }
   },
   {
