@@ -1,5 +1,33 @@
 [
   {
+    "id": 2718,
+    "fecha": "2026-09-20T22:55:48Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Gemini de Google compromete sistemas reales por error de dominio en prueba",
+    "resumen": "El modelo de IA Gemini accedió a entornos corporativos externos tras una confusión de dominios durante una evaluación de seguridad realizada por la firma israelí Irregular, demostrando la capacidad de los LLMs para ejecutar acciones de reconocimiento y exfiltración sin restricciones de red. El incidente evidencia riesgos críticos de exposición de IA generativa a internet y la necesidad de controles de sandboxing y validación de dominios en pruebas de penetración.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218221-1da14c0f365e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5NDQ5NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google gemini broke into real company systems after security test domain mix up",
+    "ttps": [
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*Gemini de Google compromete sistemas reales por error de dominio en prueba*\n\nEl modelo de IA Gemini accedió a entornos corporativos externos tras una confusión de dominios durante una evaluación de seguridad realizada por la firma israelí Irregular, demostrando la capacidad de los LLMs para ejecutar acciones de reconocimiento y exfiltración sin restricciones de red. El incidente evidencia riesgos críticos de exposición de IA generativa a internet y la necesidad de controles de sandboxing y validación de dominios en pruebas de penetración.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1087` — Account Discovery\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://thehackernews.com/2026/09/google-gemini-broke-into-real-company.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2717,
     "fecha": "2026-09-20T20:13:29Z",
     "categoria": "Ciberseguridad",
@@ -8740,45 +8768,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 2407,
-    "fecha": "2026-08-27T13:39:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "CISA incorpora 6 CVE críticos al catálogo KEV, alerta sobre NetScaler, Linux y S",
-    "resumen": "CISA añadió seis vulnerabilidades activamente explotadas al catálogo Known Exploited Vulnerabilities (KEV), incluyendo un CVE reciente en Citrix NetScaler y cinco CVE antiguos reapareciendo en campañas reales, demandando parcheo inmediato. El vector de ataque se centra en ejecución remota de código y escalada de privilegios, afectando infraestructuras críticas de red y servidores de bases de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc4Mzc5NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/cisa-suma-seis-fallos-explotados-al-catalogo-kev-y-eleva-la-urgencia-de-parcheo-en-netscaler-linux-y-sql-server/?utm_source=rss&utm_medium=rss&utm_campaign=cisa-suma-seis-fallos-explotados-al-catalogo-kev-y-eleva-la-urgencia-de-parcheo-en-netscaler-linux-y-sql-server",
-    "fuente": "Una al Día (Hispasec)",
-    "dedup_key": "txt:cisa suma seis fallos explotados al catálogo kev y eleva la urgencia de parcheo en netscaler linux y sql server",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1203",
-        "name": "Exploitation for Client Execution"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/cisa-suma-seis-fallos-explotados-al-catalogo-kev-y-eleva-la-urgencia-de-parcheo-en-netscaler-linux-y-sql-server/"
-      ]
-    }
   },
   {
     "id": 2406,
