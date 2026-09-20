@@ -49,10 +49,11 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*Malware en paquetes npm evade defensas de scripts de instalación en tiempo*\n\nUna campaña activa de malware en npm utiliza el paquete “indexed‑btree” para ocultar código malicioso en la lógica de ejecución normal, eludiendo detecciones basadas en scripts de instalación y comprometiendo entornos de desarrollo y producción. El vector de ataque se centra en la cadena de suministro de dependencias de JavaScript, explotando la confianza en paquetes publicados en el registro público.\n\n🔴 Severidad: *CRÍTICA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "c1d6399b463846049153075c1925d1ba"
+      "attempt_id": "c1d6399b463846049153075c1925d1ba",
+      "message_id": 2758,
+      "sent_at": "2026-09-20T15:23:30Z"
     }
   },
   {
