@@ -1,5 +1,50 @@
 [
   {
+    "id": 2715,
+    "fecha": "2026-09-20T15:19:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SolarWinds parchea vulnerabilidad ARM de clave codificada que permitía RCE",
+    "resumen": "SolarWinds lanzó actualizaciones críticas para Access Rights Manager (ARM) que corrigen la CVE‑2026‑28326, una falla de alta severidad (CVSS 8.8) que permite ejecución remota de código sin autenticación mediante una clave hard‑coded. La vulnerabilidad afecta a todas las versiones de ARM 2026.2 y anteriores, exponiendo a organizaciones a compromisos de control de acceso y posible movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5MTc1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-28326",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-28326"
+      ]
+    }
+  },
+  {
+    "id": 2714,
+    "fecha": "2026-09-20T15:19:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware en paquetes npm evade defensas de scripts de instalación en tiempo",
+    "resumen": "Una campaña activa de malware en npm utiliza el paquete “indexed‑btree” para ocultar código malicioso en la lógica de ejecución normal, eludiendo detecciones basadas en scripts de instalación y comprometiendo entornos de desarrollo y producción. El vector de ataque se centra en la cadena de suministro de dependencias de JavaScript, explotando la confianza en paquetes publicados en el registro público.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5MTc1NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-npm-packages-evade-install-script-defenses-at-runtime/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:malicious npm packages evade install script defenses at runtime",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2713,
     "fecha": "2026-09-20T10:31:39Z",
     "categoria": "Ciberseguridad",
