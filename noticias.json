@@ -18,9 +18,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Dark Reading*\n\n*MFA no protege contra el abuso de consentimiento OAuth*\n\nEl análisis muestra que, pese a reforzar la autenticación, la falta de gobernanza de OAuth, scopes de mínimo privilegio y monitoreo de consentimientos permite que atacantes exploten tokens válidos y comprometan recursos críticos. Se recomienda implementar revocación rápida y controles de consentimiento granular.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://www.darkreading.com/vulnerabilities-threats/mfa-oauth-consent-abuse)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "d2d9415d99f049e08a62fcef4c94ab79"
     }
   },
   {
