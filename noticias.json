@@ -30,10 +30,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *CISA Advisories*\n\n*CISA incorpora dos vulnerabilidades Linux al catálogo KEV*\n\nCISA añadió CVE‑2025‑39964 (race condition) y CVE‑2026‑53266 (out‑of‑bounds write) al Known Exploited Vulnerabilities Catalog, exigiendo remediación prioritaria en activos federales expuestos. Ambos vectores permiten escalada de privilegios y control total del sistema tras explotación activa.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2025-39964, CVE-2026-53266\n🔗 Dominios: cisasurvey[.]gov1[.]qualtrics[.]com, www[.]cve[.]org\n🔗 URLs: hxxps://cisasurvey[.]gov1[.]qualtrics[.]com/jfe/form/SV_1Zwu52kgK2OYf3w, hxxps://www[.]cisa[.]gov/known-exploited-vulnerabilities-catalog, hxxps://www[.]cisa[.]gov/known-exploited-vulnerabilities-catalog/reducing-significant-risk-known-exploited-vulnerabilities\n\n🔗 [Leer más](https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "7b76853d5c664d148a89dd68ad77e48b"
+      "attempt_id": "7b76853d5c664d148a89dd68ad77e48b",
+      "message_id": 2761,
+      "sent_at": "2026-09-20T20:15:58Z"
     }
   },
   {
