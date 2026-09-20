@@ -1,5 +1,67 @@
 [
   {
+    "id": 2713,
+    "fecha": "2026-09-20T10:31:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Explotación de heap overflow en Discourse permite comprometer infraestructura",
+    "resumen": "Investigadores usaron Claude Opus para automatizar la cadena de Vibe‑Exploiting, aprovechando un CVE no parcheado en ImageMagick dentro del foro Discourse de OpenAI y evadiendo ASLR para ejecutar código remoto. El bug bounty de 6 000 USD evidencia la exposición de servicios críticos que dependen de librerías de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5MDAyOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/09/vibe-exploiting-discourse-para-hackear.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:vibe exploiting discourse para hackear openai con claude opus",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "mypublicinbox.com",
+        "www.discourse.org",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
+        "https://0xword.com/es/libros/255-bug-hunter.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://MyPublicInbox.com",
+        "https://MyPublicInbox.com/ChemaAlonso",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtbS_o0-xIQsHKp8h9HY361u2c6VbBy2NvHmg-Za9evu_CyiExfAAsZYr1pAkKlcVWebaBE5JkLEzcl_34ayDoHi54tF_UrGMqBIJoMcO-AZwIqCJTejPTODFIg8Z8jf2vjoo7hHBm_7lP1BHtuyt9rPVI0-anAY0_Iq13ix1ESeqse9jKRIw7/w640-h98/exploit2.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3t8sOel1IaTAasHiyT9eAKaXXHLeHon5nAay2PJiWQeWgljXmicqIRRVN9gt-rj9DbWDLPv7Ki-Rb8mqSkwoNf-XuCKOT0WMS5tUakYDRq9h5BQyd1HfZx3Y8cQZlWnRWqKBAYw23WFMr31AqF7QmE069clhoOCmtgV_vOivgMp7d-JhVGtIs/w640-h288/exploit4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Et4MhwLQe6SfDRbf0r6y1SRppeyVBYrZQHXBdCYTUWYR1Ep0HqK7s8DEo0YLitb0Sll4OKFTbhbS7AUWN3ms07sQG2XN9aqOPpRYhuQXCVc8Olwv2hIW5dBBNWDTvdj6sPH4azYGdm1CZexPEZrQFEqbpSoccIahv_A6-8b-ddI7WT6MdU0y/w640-h380/exploit0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgRipbX3YEVOjNN_-2zE7wrM_T5Unn4vYp3mic46yPvKa0-__X1EmvKJECTQtuZ0GCxX4Oj-wDVXXDkf8Xpnn4YRVuujJxFCmlbPX7CoO44Yyumwi_mBOaqw1RtTGjhSaTjRRgtAituTE6mHZBVKMEB4X0CfyTW63VRo66P6BwqGhBzImsAZiW/w640-h138/exploit6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxkr6NJpYgLX3xK3CVSvpYZQreF9Tsym0F5th_KagvdfqdQvlexws_6jSTICHIZIrye4NVevI9vglf7jqeNAUqZmxNXeGUuFnVmxzE_YIcla7V2xVhpCWOAI7rGTlTN5IsWvFp_XJdNV_sxg8R0VXoe42Gb-rtnYHx6qcwV_-aQ6VDu1cIIMlc/w306-h400/BugHunter1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyymhUSKciGoPgFOQZVFO2LAUY6tIWn0g-DkE058xMGaIAyur5B2T1hiTXRrqAAkqIkTTXf8xXhkD4W3JMUlAdfVXyqkYumyJ32BGqA3k6Aie8gesJYDM_l12H7mEoAg3ecOXkzLrbt2sDt_A9Hohl4wZ-pQ6A8sfF762IEDWEZWaqxrjZZVNU/w640-h78/exploit3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKADc7-0In-b4SfMtD3MdhJdhEsV5Cy7jSmIqvQPbiMKzZvk7yM2_TbuWQzKBniXtDQ0FYWJAw0Adf-mak_zCo03STvfsExqOIPmVADRmUlmmJYjKjshb4lU3Ke-96hJOs7xXkQ0B48MBhTd1wn108UqQMiij-j_QP_nBLJ-xu9Vm9jUpe2cui/w640-h366/exploit1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOAsvL5HeogfX-rBnr_e7sIpd5Y5-sfkh4ir1mNY4a1CB-aQfkpV4wZb_-hYKxAYsq7sIxG6wq2w6hKuWg7UebQGvzV91ls8qi1wNGfRAtnTIkJL4TtHQMw9jd9jsKY99XcpEtJBjamfm7IzRXiy4Ka9-MbsoWY-OkWpVg0Q3U0vAQn5kEvRPx/w640-h140/exploit7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCxJl1Z-H6JOAsPe3z_jHYGmu4y7yhx_LGx1X7RQ4brLpR9kASwVYwOlqyITM2BTDJ_dzmqkV6OY6a_RL-J0jct7xZsXEsdgaZI3PE1-xITlDaIftOCc84coeCl9wUjIDFXRgs4dOXk508EdZ4465YO4EGiLVQaXg9yd6DTgoEfWZOqYKhTUS2/w640-h502/exploit5.jpg",
+        "https://elladodelmal.com",
+        "https://mypublicinbox.com/DavidPadilla",
+        "https://mypublicinbox.com/FranRamirez",
+        "https://mypublicinbox.com/JaviPino",
+        "https://mypublicinbox.com/PabloGonzalez",
+        "https://mypublicinbox.com/RafaelTroncoso",
+        "https://mypublicinbox.com/chemaalonso",
+        "https://mypublicinbox.com/dashboard/chats/zo1KA0wRZ4w3OPMn",
+        "https://www.discourse.org/",
+        "https://www.elladodelmal.com/2026/04/como-crear-un-exploit-1-day-sobre-un.html",
+        "https://www.hacktron.ai/blog/hacking-openai",
+        "https://www.mypublicinbox.com/chemaalonso"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *El Lado Del Mal*\n\n*Explotación de heap overflow en Discourse permite comprometer infraestructura*\n\nInvestigadores usaron Claude Opus para automatizar la cadena de Vibe‑Exploiting, aprovechando un CVE no parcheado en ImageMagick dentro del foro Discourse de OpenAI y evadiendo ASLR para ejecutar código remoto. El bug bounty de 6 000 USD evidencia la exposición de servicios críticos que dependen de librerías de IA.\n\n🟢 Severidad: *BAJA*\n\n🔍 *IoCs:*\n🔗 Dominios: 0xword[.]com, 1[.]bp[.]blogspot[.]com, blogger[.]googleusercontent[.]com\n🔗 URLs: hxxp://feeds[.]feedburner[.]com/ElLadoDelMal, hxxps://0xWord[.]com, hxxps://0xword[.]com/es/libros/245-hacking-pentesting-con-inteligencia-artificial[.]html\n\n🔗 [Leer más](http://www.elladodelmal.com/2026/09/vibe-exploiting-discourse-para-hackear.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2712,
     "fecha": "2026-09-20T03:04:37Z",
     "categoria": "Ciberseguridad",
