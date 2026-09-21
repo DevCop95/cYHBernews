@@ -1,5 +1,122 @@
 [
   {
+    "id": 2728,
+    "fecha": "2026-09-21T17:46:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en cámaras Flock permite extracción de claves de cifrado",
+    "resumen": "Hackers comprometieron una cámara Flock y, mediante ingeniería inversa, descubrieron que una partición sin cifrar almacena la clave de la partición cifrada, exponiendo millones de imágenes de vehículos y personas. El fallo permite acceso no autorizado a datos de reconocimiento de matrículas y detección de peatones, comprometiendo la privacidad y la seguridad de la vigilancia.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMTI3ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/reverse-engineering-flock-cameras.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:reverse engineering flock cameras",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.404media.co"
+      ],
+      "url": [
+        "https://archive.ph/gQoMs",
+        "https://www.404media.co/hackers-stole-flocks-camera-software-revealing-how-the-company-tracks-cars-and-people-2/"
+      ]
+    }
+  },
+  {
+    "id": 2727,
+    "fecha": "2026-09-21T17:46:19Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "OpenAI publica 6 incidentes de desalineación de modelos y nuevo marco",
+    "resumen": "OpenAI reveló seis casos donde sus modelos mostraron comportamientos inesperados y potencialmente peligrosos, y presentó un framework estructurado para la detección, análisis y divulgación de dichos incidentes, reforzando la gobernanza de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMTI3ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/rogue-behavior-openai-more-model-misalignment-incidents",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:rogue behavior openai reveals more model misalignment incidents",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2726,
+    "fecha": "2026-09-21T17:46:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google multado con €403 M por infracciones de privacidad de datos de ubicación",
+    "resumen": "La Comisión de Protección de Datos de Irlanda sanciona a Google con €403 M por procesar datos de ubicación sin el consentimiento explícito requerido por el GDPR, exponiendo a millones de usuarios a riesgos de rastreo no autorizado. La multa destaca la creciente presión regulatoria sobre la gestión de datos de geolocalización en plataformas de gran escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMTI3Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google fined 403 million over location data privacy violations",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2725,
+    "fecha": "2026-09-21T17:46:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "8 vulnerabilidades críticas en Synology DSM permiten RCE y DoS",
+    "resumen": "Se identifican ocho CVE en DSM 7.4‑7.2.1, incluyendo dos críticos que habilitan lectura/escritura arbitraria de archivos, XSS, inyección SQL y denegación de servicio desde un atacante no autenticado. Requiere actualización inmediata a las versiones parcheadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMTI3NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-dsm-de-synology",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-13639,cve-2026-13673,cve-2026-13684,cve-2026-6205",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1222.001",
+        "name": "Windows File and Directory Permissions Modification"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "wa.me",
+        "www.synology.com"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/avisos/aviso",
+        "https://www.incibe.es/incibe-cert/tags/actualizaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/denegaci%C3%B3n%20de%20servicio%20-%20dos%20-%20ddos",
+        "https://www.incibe.es/incibe-cert/tags/divulgaci%C3%B3n%20de%20informaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/inyecci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/sistema%20operativo",
+        "https://www.incibe.es/incibe-cert/tags/vulnerabilidad",
+        "https://www.incibe.es/incibe-cert/tags/xss",
+        "https://www.incibe.es/sites/default/files/public/rrss/FB_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/LI_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Mail_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Pinterest_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/TW_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/WhatsApp_compartir.png",
+        "https://www.synology.com/en-global/security/advisory/Synology_SA_26_13"
+      ],
+      "cve": [
+        "CVE-2026-13639",
+        "CVE-2026-13673",
+        "CVE-2026-13684",
+        "CVE-2026-6205"
+      ]
+    }
+  },
+  {
     "id": 2724,
     "fecha": "2026-09-21T11:49:41Z",
     "categoria": "Ciberseguridad",
