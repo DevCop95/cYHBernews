@@ -64,10 +64,11 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *The Hacker News*\n\n*Instalador falsificado de LastPass Authenticator usa driver firmado*\n\nUn instalador malicioso alojado en GitHub despliega un driver de kernel con firma de Microsoft que desactiva antivirus y soluciones EDR antes de ejecutar un ladrón de credenciales, evadiendo detecciones en VirusTotal. La técnica de firma legítima permite eludir controles de integridad y facilita la exfiltración de contraseñas de gestores.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "dd1e8a7433684999956b691c991e8139"
+      "attempt_id": "dd1e8a7433684999956b691c991e8139",
+      "message_id": 2775,
+      "sent_at": "2026-09-21T21:41:50Z"
     }
   },
   {
