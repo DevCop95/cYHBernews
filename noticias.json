@@ -45,9 +45,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Dark Reading*\n\n*ShinyHunters compromete a Clop y expone datos de víctimas de ransomware*\n\nEl grupo de hacktivistas ShinyHunters tomó control del sitio Dark Web de la ransomware‑as‑a‑service Clop, publicando evidencia de que ha extraído bases de datos de organizaciones que pagaron rescates, lo que habilita nuevas campañas de extorsión y re‑explotación de credenciales comprometidas.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1005` — Data from Local System\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1539` — Steal Web Session Cookie\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/shinyhunters-hacked-clop-what-about-clops-victims)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "5e965e0654f944ef992758518b808733"
     }
   },
   {
