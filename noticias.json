@@ -1,5 +1,199 @@
 [
   {
+    "id": 2733,
+    "fecha": "2026-09-21T21:37:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "EE.UU. y China buscan mecanismo de alerta mutua por amenazas de IA",
+    "resumen": "Los altos funcionarios de EE.UU. y China acordaron explorar un protocolo de notificación bilateral para incidentes de IA que puedan comprometer la seguridad nacional, incluyendo usos maliciosos de modelos de lenguaje y vulnerabilidades en infraestructuras críticas. La iniciativa busca reducir riesgos de escalada y mejorar la resiliencia ante ataques basados en IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMjY2NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/us-and-china-discuss-alerting-each-other-to-ai-national-security-threats/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:us and china discuss alerting each other to ai national security threats",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2732,
+    "fecha": "2026-09-21T21:37:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "ShinyHunters compromete a Clop y expone datos de víctimas de ransomware",
+    "resumen": "El grupo de hacktivistas ShinyHunters tomó control del sitio Dark Web de la ransomware‑as‑a‑service Clop, publicando evidencia de que ha extraído bases de datos de organizaciones que pagaron rescates, lo que habilita nuevas campañas de extorsión y re‑explotación de credenciales comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMjY2Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/shinyhunters-hacked-clop-what-about-clops-victims",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:shinyhunters hacked clop now what about clop s victims",
+    "ttps": [
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2731,
+    "fecha": "2026-09-21T21:37:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Instalador falsificado de LastPass Authenticator usa driver firmado",
+    "resumen": "Un instalador malicioso alojado en GitHub despliega un driver de kernel con firma de Microsoft que desactiva antivirus y soluciones EDR antes de ejecutar un ladrón de credenciales, evadiendo detecciones en VirusTotal. La técnica de firma legítima permite eludir controles de integridad y facilita la exfiltración de contraseñas de gestores.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMjY2Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fake lastpass authenticator installer abuses microsoft signed driver to kill antivirus and edr",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2730,
+    "fecha": "2026-09-21T21:37:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "BigCommerce advierte sobre brecha de datos vía apps de terceros Ribon",
+    "resumen": "Attackers comprometieron credenciales de aplicaciones Ribon y plantaron scripts maliciosos en tiendas online, exponiendo datos de clientes y permitiendo potenciales ataques de phishing o ransomware. La vulnerabilidad radica en la integración insuficientemente segura de software de terceros en la plataforma de comercio electrónico.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMjY2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:bigcommerce alerts merchants of data breach linked to ribon apps",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2729,
+    "fecha": "2026-09-21T21:37:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "39 vulnerabilidades críticas en HPE EdgeConnect SD‑WAN permiten RCE y escalada",
+    "resumen": "HPE ha identificado 39 CVE en sus versiones ECOS 9.4‑9.7 y Orchestrator 9.4‑9.7; 6 son críticas y pueden ser explotadas remotamente para ejecutar código arbitrario, obtener privilegios administrativos o exfiltrar datos sensibles. Se recomienda parchear a ECOS 9.7.1.0/9.6.4.0/9.5.9.0/9.4.9.0 y Orchestrator 9.7.1 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwMjY2NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-edgeconnect-sd-wan-de-hpe",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2024-32664,cve-2026-76669,cve-2026-76670,cve-2026-76672,cve-2026-76673,cve-2026-76674,cve-2026-76675,cve-2026-76676,cve-2026-76677,cve-2026-76678,cve-2026-76679,cve-2026-76680,cve-2026-76681,cve-2026-76682,cve-2026-76683,cve-2026-76684,cve-2026-76685,cve-2026-76686,cve-2026-76687,cve-2026-76688,cve-2026-76689,cve-2026-76690,cve-2026-76691,cve-2026-76692,cve-2026-76693,cve-2026-76694,cve-2026-76695,cve-2026-76696,cve-2026-76697,cve-2026-76698,cve-2026-76699,cve-2026-76700,cve-2026-76701,cve-2026-76702,cve-2026-76703,cve-2026-76704,cve-2026-76705,cve-2026-76706,cve-2026-76707",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "9.4.8.2",
+        "9.4.9.0",
+        "9.5.8.1",
+        "9.5.9.0",
+        "9.6.3.1",
+        "9.6.4.0",
+        "9.7.0.0",
+        "9.7.1.0"
+      ],
+      "domain": [
+        "pinterest.com",
+        "support.hpe.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbnw05135en_us&amp;docLocale=en_US",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/avisos/aviso",
+        "https://www.incibe.es/incibe-cert/tags/aviso",
+        "https://www.incibe.es/incibe-cert/tags/confidencialidad",
+        "https://www.incibe.es/incibe-cert/tags/desbordamiento",
+        "https://www.incibe.es/incibe-cert/tags/escalada%20de%20privilegios",
+        "https://www.incibe.es/incibe-cert/tags/inyecci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/rce",
+        "https://www.incibe.es/incibe-cert/tags/vulnerabilidad",
+        "https://www.incibe.es/sites/default/files/public/rrss/FB_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/LI_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Mail_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Pinterest_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/TW_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/WhatsApp_compartir.png"
+      ],
+      "cve": [
+        "CVE-2024-32664",
+        "CVE-2026-76669",
+        "CVE-2026-76670",
+        "CVE-2026-76672",
+        "CVE-2026-76673",
+        "CVE-2026-76674",
+        "CVE-2026-76675",
+        "CVE-2026-76676",
+        "CVE-2026-76677",
+        "CVE-2026-76678",
+        "CVE-2026-76679",
+        "CVE-2026-76680",
+        "CVE-2026-76681",
+        "CVE-2026-76682",
+        "CVE-2026-76683",
+        "CVE-2026-76684",
+        "CVE-2026-76685",
+        "CVE-2026-76686",
+        "CVE-2026-76687",
+        "CVE-2026-76688",
+        "CVE-2026-76689",
+        "CVE-2026-76690",
+        "CVE-2026-76691",
+        "CVE-2026-76692",
+        "CVE-2026-76693",
+        "CVE-2026-76694",
+        "CVE-2026-76695",
+        "CVE-2026-76696",
+        "CVE-2026-76697",
+        "CVE-2026-76698",
+        "CVE-2026-76699",
+        "CVE-2026-76700",
+        "CVE-2026-76701",
+        "CVE-2026-76702",
+        "CVE-2026-76703",
+        "CVE-2026-76704",
+        "CVE-2026-76705",
+        "CVE-2026-76706",
+        "CVE-2026-76707"
+      ]
+    }
+  },
+  {
     "id": 2728,
     "fecha": "2026-09-21T17:46:21Z",
     "categoria": "Ciberseguridad",
