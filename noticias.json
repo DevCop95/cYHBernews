@@ -213,10 +213,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*39 vulnerabilidades críticas en HPE EdgeConnect SD‑WAN permiten RCE y escalada*\n\nHPE ha identificado 39 CVE en sus versiones ECOS 9.4‑9.7 y Orchestrator 9.4‑9.7; 6 son críticas y pueden ser explotadas remotamente para ejecutar código arbitrario, obtener privilegios administrativos o exfiltrar datos sensibles. Se recomienda parchear a ECOS 9.7.1.0/9.6.4.0/9.5.9.0/9.4.9.0 y Orchestrator 9.7.1 o superior.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2024-32664, CVE-2026-76669, CVE-2026-76670\n🌐 IPs: 9[.]4[.]8[.]2, 9[.]4[.]9[.]0, 9[.]5[.]8[.]1\n🔗 Dominios: pinterest[.]com, support[.]hpe[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://support[.]hpe[.]com/hpesc/public/docDisplay?docId=hpesbnw05135en_us&amp;docLocale=en_US, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-edgeconnect-sd-wan-de-hpe)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "2850ecb2e9304ee0832788468edd5f96"
+      "attempt_id": "2850ecb2e9304ee0832788468edd5f96",
+      "message_id": 2773,
+      "sent_at": "2026-09-21T21:41:38Z"
     }
   },
   {
