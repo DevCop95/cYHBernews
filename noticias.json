@@ -95,9 +95,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *INCIBE-CERT*\n\n*Vulnerabilidad crítica en restablecimiento de contraseñas de MobiAPParc*\n\nLa función de recuperación de contraseñas permite a un atacante modificar arbitrariamente cualquier cuenta al manipular el parámetro user_id sin autenticación, con CVSS v4.0 8.8 (CWE‑640). Afecta a versiones iOS v0‑v2.28 y Android v0‑v2.42, exponiendo datos de usuarios de aparcamientos municipales.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1078` — Valid Accounts\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-14850\n🔗 Dominios: pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://mobipalma[.]mobi/mobilitat/estacionament/aparcamentssmap/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/mecanismo-deficiente-de-recuperacion-de-contrasenas-olvidadas-en-mobiapparc)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "d1437e4e23674569801d2407fb70dd09"
     }
   },
   {
