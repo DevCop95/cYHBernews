@@ -104,10 +104,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*BigCommerce advierte sobre brecha de datos vía apps de terceros Ribon*\n\nAttackers comprometieron credenciales de aplicaciones Ribon y plantaron scripts maliciosos en tiendas online, exponiendo datos de clientes y permitiendo potenciales ataques de phishing o ransomware. La vulnerabilidad radica en la integración insuficientemente segura de software de terceros en la plataforma de comercio electrónico.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1566` — Phishing\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/bigcommerce-alerts-merchants-of-data-breach-linked-to-ribon-apps/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "61014c43eeb14feb96d7c35dc67aa8ce"
+      "attempt_id": "61014c43eeb14feb96d7c35dc67aa8ce",
+      "message_id": 2774,
+      "sent_at": "2026-09-21T21:41:44Z"
     }
   },
   {
