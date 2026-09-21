@@ -38,10 +38,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *CISA Advisories*\n\n*Vulnerabilidad crítica CVE‑2026‑31431 permite escalada a root en ABB Ability*\n\nCVE‑2026‑31431 es una falla en el subsistema criptográfico del kernel Linux que permite a un usuario autenticado localmente o a una carga de contenedor comprometida obtener privilegios de root en ABB Ability Edgenius (versiones 3.2.0.0‑<3.2.4.1). En entornos multi‑tenant o con contenedores, el vector de ataque se amplifica, comprometiendo potencialmente sistemas críticos de manufactura, energía y agua.\n\n🟠 Severidad: *ALTA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-31431\n🌐 IPs: 3[.]2[.]0[.]0, 3[.]2[.]4[.]1\n🔗 Dominios: cwe[.]mitre[.]org, psirt[.]abb[.]com, search[.]abb[.]com\n🔗 URLs: hxxps://cwe[.]mitre[.]org/data/definitions/669[.]html, hxxps://psirt[.]abb[.]com/csaf/2026/7paa024620[.]json, hxxps://search[.]abb[.]com/library/Download[.]aspx?DocumentID=7PAA024620&amp;LanguageCode=en&amp;DocumentPartId=&amp;Action=Launch\n\n🔗 [Leer más](https://www.cisa.gov/news-events/ics-advisories/icsa-26-260-06)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "e8a652cf316f4ab5a82622dbfd05bbed"
+      "attempt_id": "e8a652cf316f4ab5a82622dbfd05bbed",
+      "message_id": 2764,
+      "sent_at": "2026-09-21T03:05:08Z"
     }
   },
   {
