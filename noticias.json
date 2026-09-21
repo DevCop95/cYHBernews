@@ -1,5 +1,96 @@
 [
   {
+    "id": 2720,
+    "fecha": "2026-09-21T03:01:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica CVE‑2026‑31431 permite escalada a root en ABB Ability",
+    "resumen": "CVE‑2026‑31431 es una falla en el subsistema criptográfico del kernel Linux que permite a un usuario autenticado localmente o a una carga de contenedor comprometida obtener privilegios de root en ABB Ability Edgenius (versiones 3.2.0.0‑<3.2.4.1). En entornos multi‑tenant o con contenedores, el vector de ataque se amplifica, comprometiendo potencialmente sistemas críticos de manufactura, energía y agua.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5NTk2NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-260-06",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-31431",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "3.2.0.0",
+        "3.2.4.1"
+      ],
+      "domain": [
+        "cwe.mitre.org",
+        "psirt.abb.com",
+        "search.abb.com",
+        "www.cve.org",
+        "www.first.org"
+      ],
+      "url": [
+        "https://cwe.mitre.org/data/definitions/669.html",
+        "https://psirt.abb.com/csaf/2026/7paa024620.json",
+        "https://search.abb.com/library/Download.aspx?DocumentID=7PAA024620&amp;LanguageCode=en&amp;DocumentPartId=&amp;Action=Launch",
+        "https://search.abb.com/library/download.aspx?documentid=7paa024620&amp;languagecode=en&amp;documentpartid=&amp;action=launch",
+        "https://www.cisa.gov/notification",
+        "https://www.cisa.gov/privacy-policy",
+        "https://www.cve.org/CVERecord?id=CVE-2026-31431",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      ],
+      "cve": [
+        "CVE-2026-31431"
+      ]
+    }
+  },
+  {
+    "id": 2719,
+    "fecha": "2026-09-21T03:01:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica en restablecimiento de contraseñas de MobiAPParc",
+    "resumen": "La función de recuperación de contraseñas permite a un atacante modificar arbitrariamente cualquier cuenta al manipular el parámetro user_id sin autenticación, con CVSS v4.0 8.8 (CWE‑640). Afecta a versiones iOS v0‑v2.28 y Android v0‑v2.42, exponiendo datos de usuarios de aparcamientos municipales.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5NTk2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/mecanismo-deficiente-de-recuperacion-de-contrasenas-olvidadas-en-mobiapparc",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-14850",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://mobipalma.mobi/mobilitat/estacionament/aparcamentssmap/",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/avisos/aviso",
+        "https://www.incibe.es/incibe-cert/tags/0day",
+        "https://www.incibe.es/incibe-cert/tags/ataque%20de%20fuerza%20bruta",
+        "https://www.incibe.es/incibe-cert/tags/autenticaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/aviso",
+        "https://www.incibe.es/incibe-cert/tags/cna",
+        "https://www.incibe.es/incibe-cert/tags/contrase%C3%B1a",
+        "https://www.incibe.es/incibe-cert/tags/control%20de%20acceso",
+        "https://www.incibe.es/incibe-cert/tags/explotaci%C3%B3n%20de%20vulnerabilidades%20de%20software",
+        "https://www.incibe.es/sites/default/files/public/rrss/FB_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/LI_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Mail_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Pinterest_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/TW_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/WhatsApp_compartir.png"
+      ],
+      "cve": [
+        "CVE-2026-14850"
+      ]
+    }
+  },
+  {
     "id": 2718,
     "fecha": "2026-09-20T22:55:48Z",
     "categoria": "IA",
