@@ -62,9 +62,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*ClickFix usa ChainScript RAT y Polygon para rotar infraestructura C2*\n\nAmenaza despliega el RAT ChainScript, camuflado como Spotify, Zoom y Teams, y utiliza la red Polygon para cambiar dinámicamente los servidores C2, complicando la trazabilidad y respuesta.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1036` — Masquerading\n⚔️ `T1568.001` — Fast Flux DNS\n⚔️ `T1102` — Web Service\n\n🔗 [Leer más](https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "ab83071ac2b84e77b87bbc681e4e5942"
     }
   },
   {
