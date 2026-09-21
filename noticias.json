@@ -1,5 +1,149 @@
 [
   {
+    "id": 2724,
+    "fecha": "2026-09-21T11:49:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña TerminalFix usa PNG esteganográfico para túnel inverso",
+    "resumen": "La investigación de Microsoft Security revela que el malware TerminalFix oculta payloads en archivos PNG mediante esteganografía, estableciendo un túnel inverso multietapa para evadir detección. El vector de ataque combina phishing o descarga de archivos comprometidos con técnicas de ocultación, ampliando la superficie de compromiso en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5OTEzODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33318",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:terminalfix png steganography mon sep 21st",
+    "ttps": [
+      {
+        "id": "T1027.003",
+        "name": "Steganography"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1090",
+        "name": "Proxy"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *SANS ISC*\n\n*Campaña TerminalFix usa PNG esteganográfico para túnel inverso*\n\nLa investigación de Microsoft Security revela que el malware TerminalFix oculta payloads en archivos PNG mediante esteganografía, estableciendo un túnel inverso multietapa para evadir detección. El vector de ataque combina phishing o descarga de archivos comprometidos con técnicas de ocultación, ampliando la superficie de compromiso en entornos corporativos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1027.003` — Steganography\n⚔️ `T1566` — Phishing\n⚔️ `T1090` — Proxy\n⚔️ `T1059.001` — PowerShell\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33318)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2723,
+    "fecha": "2026-09-21T11:49:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ClickFix usa ChainScript RAT y Polygon para rotar infraestructura C2",
+    "resumen": "Amenaza despliega el RAT ChainScript, camuflado como Spotify, Zoom y Teams, y utiliza la red Polygon para cambiar dinámicamente los servidores C2, complicando la trazabilidad y respuesta.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5OTEzODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:clickfix lures deploy chainscript rat using polygon to rotate c2 infrastructure",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1568.001",
+        "name": "Fast Flux DNS"
+      },
+      {
+        "id": "T1102",
+        "name": "Web Service"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*ClickFix usa ChainScript RAT y Polygon para rotar infraestructura C2*\n\nAmenaza despliega el RAT ChainScript, camuflado como Spotify, Zoom y Teams, y utiliza la red Polygon para cambiar dinámicamente los servidores C2, complicando la trazabilidad y respuesta.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1036` — Masquerading\n⚔️ `T1568.001` — Fast Flux DNS\n⚔️ `T1102` — Web Service\n\n🔗 [Leer más](https://thehackernews.com/2026/09/clickfix-lures-deploy-chainscript-rat.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2722,
+    "fecha": "2026-09-21T11:49:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "XSS crítico en la plataforma SaaS de chatbot IA de 1millionbot",
+    "resumen": "Vulnerabilidad CVE‑2026‑91921 (CVSS 5.1) permite a un atacante remoto no autenticado inyectar código mediante Markdown, ejecutando scripts en la sesión del usuario de la AI Chatbot Platform. El vector es client‑side rendering; el impacto se limita a la sesión, sin comprometer datos internos ni paneles administrativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5OTEzNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-en-ai-chatbot-platform-de-1millionbot",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-91921",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "1millionbot.com",
+        "pinterest.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://1millionbot.com/",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/avisos/aviso",
+        "https://www.incibe.es/incibe-cert/tags/aviso",
+        "https://www.incibe.es/incibe-cert/tags/cna",
+        "https://www.incibe.es/incibe-cert/tags/explotaci%C3%B3n%20de%20vulnerabilidades%20de%20software",
+        "https://www.incibe.es/incibe-cert/tags/inteligencia%20artificial",
+        "https://www.incibe.es/incibe-cert/tags/vulnerabilidad",
+        "https://www.incibe.es/incibe-cert/tags/web",
+        "https://www.incibe.es/incibe-cert/tags/xss",
+        "https://www.incibe.es/sites/default/files/public/rrss/FB_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/LI_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Mail_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Pinterest_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/TW_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/WhatsApp_compartir.png"
+      ],
+      "cve": [
+        "CVE-2026-91921"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *INCIBE-CERT*\n\n*XSS crítico en la plataforma SaaS de chatbot IA de 1millionbot*\n\nVulnerabilidad CVE‑2026‑91921 (CVSS 5.1) permite a un atacante remoto no autenticado inyectar código mediante Markdown, ejecutando scripts en la sesión del usuario de la AI Chatbot Platform. El vector es client‑side rendering; el impacto se limita a la sesión, sin comprometer datos internos ni paneles administrativos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1059.007` — JavaScript\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-91921\n🔗 Dominios: 1millionbot[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://1millionbot[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-en-ai-chatbot-platform-de-1millionbot)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2721,
+    "fecha": "2026-09-21T11:49:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers venden SIM swapping por $300 en la dark web",
+    "resumen": "En foros de la dark web se comercializa el servicio de duplicado de tarjetas SIM por $300, facilitando el secuestro de SMS OTP y restablecimientos de contraseñas mediante ingeniería social. El bajo costo reduce la barrera de entrada para ataques de fraude a cuentas bancarias y servicios críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5OTEzNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/en-la-dark-web-los-hackers-cobran-tan-solo-300-us-por-una-sim-duplicada-de-forma-fraudulenta/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:en la dark web los hackers cobran tan solo 300 us por una sim duplicada de forma fraudulenta",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *CyberSecurity News*\n\n*Hackers venden SIM swapping por $300 en la dark web*\n\nEn foros de la dark web se comercializa el servicio de duplicado de tarjetas SIM por $300, facilitando el secuestro de SMS OTP y restablecimientos de contraseñas mediante ingeniería social. El bajo costo reduce la barrera de entrada para ataques de fraude a cuentas bancarias y servicios críticos.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://cybersecuritynews.es/en-la-dark-web-los-hackers-cobran-tan-solo-300-us-por-una-sim-duplicada-de-forma-fraudulenta/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2720,
     "fecha": "2026-09-21T03:01:10Z",
     "categoria": "Ciberseguridad",
