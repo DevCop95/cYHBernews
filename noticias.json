@@ -131,10 +131,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*8 vulnerabilidades críticas en Synology DSM permiten RCE y DoS*\n\nSe identifican ocho CVE en DSM 7.4‑7.2.1, incluyendo dos críticos que habilitan lectura/escritura arbitraria de archivos, XSS, inyección SQL y denegación de servicio desde un atacante no autenticado. Requiere actualización inmediata a las versiones parcheadas.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1499` — Endpoint Denial of Service\n⚔️ `T1222.001` — Windows File and Directory Permissions Modification\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-13639, CVE-2026-13673, CVE-2026-13684\n🔗 Dominios: pinterest[.]com, wa[.]me, www[.]synology[.]com\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-dsm-de-synology)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "698632aedf02429e8c9b0ca01573cd83"
+      "attempt_id": "698632aedf02429e8c9b0ca01573cd83",
+      "message_id": 2769,
+      "sent_at": "2026-09-21T17:50:13Z"
     }
   },
   {
