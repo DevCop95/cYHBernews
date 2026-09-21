@@ -30,10 +30,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *SANS ISC*\n\n*Campaña TerminalFix usa PNG esteganográfico para túnel inverso*\n\nLa investigación de Microsoft Security revela que el malware TerminalFix oculta payloads en archivos PNG mediante esteganografía, estableciendo un túnel inverso multietapa para evadir detección. El vector de ataque combina phishing o descarga de archivos comprometidos con técnicas de ocultación, ampliando la superficie de compromiso en entornos corporativos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1027.003` — Steganography\n⚔️ `T1566` — Phishing\n⚔️ `T1090` — Proxy\n⚔️ `T1059.001` — PowerShell\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33318)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "d3321fe4f616471dab8a916ff8742b40"
+      "attempt_id": "d3321fe4f616471dab8a916ff8742b40",
+      "message_id": 2768,
+      "sent_at": "2026-09-21T11:52:55Z"
     }
   },
   {
