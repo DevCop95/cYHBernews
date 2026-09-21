@@ -21,10 +21,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Schneier on Security*\n\n*Vulnerabilidad crítica en cámaras Flock permite extracción de claves de cifrado*\n\nHackers comprometieron una cámara Flock y, mediante ingeniería inversa, descubrieron que una partición sin cifrar almacena la clave de la partición cifrada, exponiendo millones de imágenes de vehículos y personas. El fallo permite acceso no autorizado a datos de reconocimiento de matrículas y detección de peatones, comprometiendo la privacidad y la seguridad de la vigilancia.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔗 Dominios: www[.]404media[.]co\n🔗 URLs: hxxps://archive[.]ph/gQoMs, hxxps://www[.]404media[.]co/hackers-stole-flocks-camera-software-revealing-how-the-company-tracks-cars-and-people-2/\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/reverse-engineering-flock-cameras.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "1c589c0c1f6f4714afc03db8fcce5022"
+      "attempt_id": "1c589c0c1f6f4714afc03db8fcce5022",
+      "message_id": 2772,
+      "sent_at": "2026-09-21T17:50:37Z"
     }
   },
   {
