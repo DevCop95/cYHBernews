@@ -119,10 +119,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *INCIBE-CERT*\n\n*XSS crítico en la plataforma SaaS de chatbot IA de 1millionbot*\n\nVulnerabilidad CVE‑2026‑91921 (CVSS 5.1) permite a un atacante remoto no autenticado inyectar código mediante Markdown, ejecutando scripts en la sesión del usuario de la AI Chatbot Platform. El vector es client‑side rendering; el impacto se limita a la sesión, sin comprometer datos internos ni paneles administrativos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1059.007` — JavaScript\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-91921\n🔗 Dominios: 1millionbot[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://1millionbot[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-en-ai-chatbot-platform-de-1millionbot)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "29b1a6555416494d9ed38deac324c610"
+      "attempt_id": "29b1a6555416494d9ed38deac324c610",
+      "message_id": 2766,
+      "sent_at": "2026-09-21T11:52:42Z"
     }
   },
   {
