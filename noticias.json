@@ -128,10 +128,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *CyberSecurity News*\n\n*92 % de las pymes españolas reportan incidentes de ciberseguridad en 2025*\n\nLa encuesta “Inside the 2026 SMB Threat Landscape” revela que la mayoría de las pymes españolas han sufrido al menos un ataque, predominando phishing, scams y herramientas de IA falsas, lo que evidencia una brecha crítica en la adopción de controles de detección y respuesta. El vector de ataque principal sigue siendo correos maliciosos que explotan credenciales y despliegan ransomware o exfiltración de datos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://cybersecuritynews.es/el-92-de-las-pymes-espanolas-ha-sufrido-un-incidente-de-ciberseguridad-en-el-ultimo-ano/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "666fa092feb64840a33eaab00ec024cd"
+      "attempt_id": "666fa092feb64840a33eaab00ec024cd",
+      "message_id": 2782,
+      "sent_at": "2026-09-22T08:30:56Z"
     }
   },
   {
