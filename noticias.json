@@ -33,9 +33,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *CISA Advisories*\n\n*Vulnerabilidad XSS en OpenPLC Runtime v3 permite secuestro de sesión y control de procesos...*\n\nCVE‑2026‑88020 es una vulnerabilidad de Cross‑Site Scripting en la interfaz web de OpenPLC Runtime v3 que permite a un atacante capturar cookies de sesión y ejecutar peticiones con privilegios de operador, comprometiendo PLCs en sectores de manufactura, energía y transporte. La solución recomendada es migrar a OpenPLC v4, ya que v3 está fuera de soporte.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1539` — Steal Web Session Cookie\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-88020\n🔗 Dominios: cwe[.]mitre[.]org, www[.]cve[.]org, www[.]first[.]org\n🔗 URLs: hxxps://cwe[.]mitre[.]org/data/definitions/79[.]html, hxxps://www[.]cve[.]org/CVERecord?id=CVE-2026-88020, hxxps://www[.]first[.]org/cvss/calculator/3[.]1#CVSS:3[.]1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N\n\n🔗 [Leer más](https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-09)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "2478dcc058784c04a892fb5abc29a7b9"
     }
   },
   {
