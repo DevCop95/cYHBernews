@@ -1,5 +1,51 @@
 [
   {
+    "id": 2742,
+    "fecha": "2026-09-22T09:02:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en AWS AgentCore Harness permite inyección de prompts para robar credenciales de identidad",
+    "resumen": "La configuración por defecto de AgentCore Harness en AWS expone un vector de prompt injection que permite a un atacante extraer credenciales almacenadas en el vault del agente, comprometiendo la identidad de los recursos en la nube. Se describen los pasos críticos de mitigación, incluyendo endurecimiento de políticas IAM y aislamiento de entornos de ejecución.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNjc3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:a vault with a heap view the uncomfortable space between agentcore harness and identity",
+    "ttps": [
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2741,
+    "fecha": "2026-09-22T09:02:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA obliga a agencias federales a parchear vulnerabilidad crítica en switches Zyxel GS1900...",
+    "resumen": "La vulnerabilidad CVE‑2024‑XXXXX en los switches Zyxel GS1900 permite ejecución remota de código y ha sido usada en campañas de exfiltración de credenciales en entornos gubernamentales; CISA emitió una orden de parcheo inmediato para mitigar la amenaza.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNjc3NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-zyxel-flaw-by-thursday/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa orders feds to patch zyxel flaw exploited for data theft",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2740,
     "fecha": "2026-09-22T08:28:06Z",
     "categoria": "Ciberseguridad",
