@@ -85,10 +85,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*CISA advierte explotación activa de tres vulnerabilidades críticas del kernel*\n\nLa agencia CISA ha detectado que actores maliciosos están explotando activamente tres CVE en el kernel de Linux, incluyendo una vulnerabilidad crítica que permite escalada de privilegios local y posible ejecución remota de código. Se recomienda aplicar los parches de inmediato y reforzar la monitorización de logs de kernel para detectar indicadores de compromiso.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "b26aed44ffb54c92b491d72b96a03034"
+      "attempt_id": "b26aed44ffb54c92b491d72b96a03034",
+      "message_id": 2779,
+      "sent_at": "2026-09-22T03:05:12Z"
     }
   },
   {
