@@ -92,9 +92,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Hacker News*\n\n*Microsoft desmantela servicio de phishing EvilTokens que usaba IA en toda la cadena de ataque...*\n\nMicrosoft cerró el servicio EvilTokens, que automatizaba ataques de phishing mediante generación de códigos de dispositivo con IA, afectando a más de 12 000 cuentas de correo. La operación, coordinada con autoridades judiciales y socios de seguridad, elimina una infraestructura de acceso persistente que explotaba IA para crear credenciales falsas y evadir detección.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1588.006` — Vulnerabilities\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1566.002` — Spearphishing Link\n\n🔗 [Leer más](https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "197d06230b2049c487dbeae3c8c4c497"
     }
   },
   {
