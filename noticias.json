@@ -141,10 +141,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*Critical Stack Overflow in Check Point Security Management & Log Servers*\n\nVulnerabilidad crítica de desbordamiento de pila en el proceso de login no autenticado permite ejecución remota de código con privilegios de root en los servidores de gestión y registro de Check Point. Afecta versiones R80‑R82.2; parche disponible vía Check Point LivePatch.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-91843\n🔗 Dominios: pinterest[.]com, support[.]checkpoint[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://support[.]checkpoint[.]com/results/sk/sk1000155, hxxps://support[.]checkpoint[.]com/results/sk/sk185114\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-basado-en-pila-en-security-management-y-log-servers-de)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "95dfec8ca9c748ed90a93808b0cc53b5"
+      "attempt_id": "95dfec8ca9c748ed90a93808b0cc53b5",
+      "message_id": 2778,
+      "sent_at": "2026-09-22T03:05:06Z"
     }
   },
   {
