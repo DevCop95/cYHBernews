@@ -1,5 +1,143 @@
 [
   {
+    "id": 2751,
+    "fecha": "2026-09-22T18:28:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS en OpenPLC Runtime v3 permite secuestro de sesión y control de procesos...",
+    "resumen": "CVE‑2026‑88020 es una vulnerabilidad de Cross‑Site Scripting en la interfaz web de OpenPLC Runtime v3 que permite a un atacante capturar cookies de sesión y ejecutar peticiones con privilegios de operador, comprometiendo PLCs en sectores de manufactura, energía y transporte. La solución recomendada es migrar a OpenPLC v4, ya que v3 está fuera de soporte.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMDE3MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-09",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-88020",
+    "ttps": [
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "cwe.mitre.org",
+        "www.cve.org",
+        "www.first.org"
+      ],
+      "url": [
+        "https://cwe.mitre.org/data/definitions/79.html",
+        "https://www.cve.org/CVERecord?id=CVE-2026-88020",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N"
+      ],
+      "cve": [
+        "CVE-2026-88020"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *CISA Advisories*\n\n*Vulnerabilidad XSS en OpenPLC Runtime v3 permite secuestro de sesión y control de procesos...*\n\nCVE‑2026‑88020 es una vulnerabilidad de Cross‑Site Scripting en la interfaz web de OpenPLC Runtime v3 que permite a un atacante capturar cookies de sesión y ejecutar peticiones con privilegios de operador, comprometiendo PLCs en sectores de manufactura, energía y transporte. La solución recomendada es migrar a OpenPLC v4, ya que v3 está fuera de soporte.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1539` — Steal Web Session Cookie\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-88020\n🔗 Dominios: cwe[.]mitre[.]org, www[.]cve[.]org, www[.]first[.]org\n🔗 URLs: hxxps://cwe[.]mitre[.]org/data/definitions/79[.]html, hxxps://www[.]cve[.]org/CVERecord?id=CVE-2026-88020, hxxps://www[.]first[.]org/cvss/calculator/3[.]1#CVSS:3[.]1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N\n\n🔗 [Leer más](https://www.cisa.gov/news-events/ics-advisories/icsa-26-265-09)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2750,
+    "fecha": "2026-09-22T18:28:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Cisco Talos detecta malware guiado por IA tipo “hive mind” sin interacción humana directa",
+    "resumen": "Talos desarrolló un framework para identificar herramientas de ataque que usan modelos de lenguaje como backend, revelando campañas que automatizan generación de payloads y phishing mediante prompts a chatbots, lo que eleva la velocidad y personalización de los vectores de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMDE3MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/a-tool-for-tracking-ai-integrated-malware-uncovered-an-autonomous-command-system/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:a new tool found malware that s guided by an ai hive mind no humans in sight",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Wired Security*\n\n*Cisco Talos detecta malware guiado por IA tipo “hive mind” sin interacción humana directa*\n\nTalos desarrolló un framework para identificar herramientas de ataque que usan modelos de lenguaje como backend, revelando campañas que automatizan generación de payloads y phishing mediante prompts a chatbots, lo que eleva la velocidad y personalización de los vectores de compromiso.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://www.wired.com/story/a-tool-for-tracking-ai-integrated-malware-uncovered-an-autonomous-command-system/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2749,
+    "fecha": "2026-09-22T18:28:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft desmantela servicio de phishing EvilTokens que usaba IA en toda la cadena de ataque...",
+    "resumen": "Microsoft cerró el servicio EvilTokens, que automatizaba ataques de phishing mediante generación de códigos de dispositivo con IA, afectando a más de 12 000 cuentas de correo. La operación, coordinada con autoridades judiciales y socios de seguridad, elimina una infraestructura de acceso persistente que explotaba IA para crear credenciales falsas y evadir detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMDE3MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft takes down eviltokens device code phishing service tied to 12 000 inbox compromises",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*Microsoft desmantela servicio de phishing EvilTokens que usaba IA en toda la cadena de ataque...*\n\nMicrosoft cerró el servicio EvilTokens, que automatizaba ataques de phishing mediante generación de códigos de dispositivo con IA, afectando a más de 12 000 cuentas de correo. La operación, coordinada con autoridades judiciales y socios de seguridad, elimina una infraestructura de acceso persistente que explotaba IA para crear credenciales falsas y evadir detección.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1588.006` — Vulnerabilities\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1566.002` — Spearphishing Link\n\n🔗 [Leer más](https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2748,
+    "fecha": "2026-09-22T18:28:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware ClosedQuorum para Windows emplea modelos Gemini, DeepSeek, Qwen y Mistral...",
+    "resumen": "ClosedQuorum incorpora LLMs de Google Gemini, DeepSeek, Qwen y Mistral para seleccionar dinámicamente técnicas de movimiento lateral, exfiltración y evasión tras la intrusión, incrementando la capacidad de adaptación y reduciendo la detección basada en firmas. El vector de infección sigue siendo tradicional (ejecución de payloads Windows), pero la lógica de ataque se delega a IA, lo que complica la correlación de indicadores en SIEM/EDR.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMDE3Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new closedquorum windows malware uses ai for attack decisions",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Malware ClosedQuorum para Windows emplea modelos Gemini, DeepSeek, Qwen y Mistral...*\n\nClosedQuorum incorpora LLMs de Google Gemini, DeepSeek, Qwen y Mistral para seleccionar dinámicamente técnicas de movimiento lateral, exfiltración y evasión tras la intrusión, incrementando la capacidad de adaptación y reduciendo la detección basada en firmas. El vector de infección sigue siendo tradicional (ejecución de payloads Windows), pero la lógica de ataque se delega a IA, lo que complica la correlación de indicadores en SIEM/EDR.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1021` — Remote Services\n⚔️ `T1567` — Exfiltration Over Web Service\n⚔️ `T1562` — Impair Defenses\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2747,
     "fecha": "2026-09-22T13:53:09Z",
     "categoria": "Ciberseguridad",
