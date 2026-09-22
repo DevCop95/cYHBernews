@@ -81,10 +81,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *The Hacker News*\n\n*Check Point alerta sobre zero‑day en Security Management Server explotado en ataques dirigidos*\n\nUn atacante que accede al servicio web del Security Management Server puede ejecutar scripts sin autenticación, vulnerabilidad catalogada como CVE‑2026‑93616; se detectaron campañas focalizadas el 23 de julio y el parche se publicó el 22 de septiembre.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-93616\n\n🔗 [Leer más](https://thehackernews.com/2026/09/check-point-warns-of-management-server.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "9d7f9ce132554db88247eaa114319073"
+      "attempt_id": "9d7f9ce132554db88247eaa114319073",
+      "message_id": 2798,
+      "sent_at": "2026-09-22T23:30:29Z"
     }
   },
   {
