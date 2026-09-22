@@ -26,9 +26,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *The Hacker News*\n\n*Vulnerabilidad oculta en Meta Muse permite convertir el asistente en puerta*\n\nUn malware en macOS puede modificar una configuración oculta de Meta Muse, redirigiendo la entrada de voz del usuario al atacante y explotando los permisos amplios concedidos al asistente. El vector de ataque combina persistencia local y abuso de APIs de dictado, creando una vía de exfiltración y control remoto sin interacción directa.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1547.009` — Shortcut Modification\n⚔️ `T1056.004` — Credential API Hooking\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "e77e376e02534305b5ebd05c94360623"
     }
   },
   {
