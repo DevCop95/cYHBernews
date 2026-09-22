@@ -61,10 +61,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Hacker News*\n\n*Campaña “Contagious Interview” compromete 30,000 dispositivos y roba $10,7 M*\n\nUn actor estatal norcoreano ha infectado más de 30 000 endpoints en 100+ países mediante un malware de tipo credential‑stealer, exfiltrando credenciales y claves privadas de 7 000 wallets, generando pérdidas de $10,71 M. El vector principal es phishing con documentos maliciosos dirigidos a diseñadores web, ingenieros y profesionales de cripto.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1003` — OS Credential Dumping\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1552.004` — Private Keys\n⚔️ `T1020` — Automated Exfiltration\n\n🔗 [Leer más](https://thehackernews.com/2026/09/contagious-interview-campaign.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "94b1ca02bfd14a1d9c3e8378911215ee"
+      "attempt_id": "94b1ca02bfd14a1d9c3e8378911215ee",
+      "message_id": 2780,
+      "sent_at": "2026-09-22T03:05:18Z"
     }
   },
   {
