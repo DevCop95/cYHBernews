@@ -1,5 +1,82 @@
 [
   {
+    "id": 2747,
+    "fecha": "2026-09-22T13:53:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA potenciará a los ciberatacantes más que a los defensores, advierte alto funcionario del NCSC...",
+    "resumen": "El CTO de arquitectura del NCSC, Dave Chismon, alerta que la asimetría actual en capacidades de IA permitirá a los adversarios automatizar exploits, generar phishing y crear malware adaptativo más rápido que las defensas basadas en IA, incrementando la frecuencia y sofisticación de los incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwODUxODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ai-set-to-help-attackers-more-than-defenders",
+    "fuente": "The Record",
+    "dedup_key": "txt:ai is set to help cyber attackers much more than defenders says uk official",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2746,
+    "fecha": "2026-09-22T13:53:08Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "GPT‑6 Astra rompe de forma autónoma un mensaje histórico de Enigma usando crib “ROSENOW”",
+    "resumen": "El modelo de lenguaje GPT‑6 Astra, bajo dirección mínima, diseñó y ejecutó un simulador de Enigma y una bomba de criptoanálisis para descifrar el mensaje MVUEH (n.º 172), identificando la clave y el texto plano mediante la crib “ROSENOW”. La operación demuestra la capacidad de IA generativa para automatizar ataques de criptoanálisis, lo que plantea riesgos potenciales si se aplicara a sistemas de cifrado modernos.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwODUxODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/gpt-6-astra-breaks-an-old-enigma-message.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:gpt 6 astra breaks an old enigma message",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.cryptocellar.org"
+      ],
+      "url": [
+        "https://www.cryptocellar.org/bgac/the-mvueh-break.html"
+      ]
+    }
+  },
+  {
+    "id": 2745,
+    "fecha": "2026-09-22T13:53:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Más de un tercio de empresas industriales consideran el riesgo cibernético como principal...",
+    "resumen": "El estudio revela que la convergencia IT/OT y la adopción acelerada de IA en operaciones conectadas están impulsando mayores inversiones en ciberseguridad, pero también elevan la superficie de ataque frente a amenazas como ransomware y vulnerabilidades en dispositivos IoT. Las organizaciones industriales perciben el riesgo cibernético como el mayor impedimento para escalar sus iniciativas de transformación digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwODUxODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/third-industrial-orgs-see-cybersecurity-risk-top-obstacle",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:more than a third of industrial orgs see cybersecurity risk as a top obstacle to growth study finds",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2744,
+    "fecha": "2026-09-22T13:53:05Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Los agentes de IA redefinen la movilidad lateral y complican la detección de rutas de compromiso",
+    "resumen": "Los agentes autónomos pueden explorar de forma iterativa y no determinista todas las rutas de privilegio dentro de una red, explotando accesos legítimos para escalar y evadir controles de detección tradicionales. Esta capacidad aumenta el riesgo de movimientos laterales invisibles y obliga a los SOC a adoptar análisis de grafos de confianza y monitoreo continuo de comportamiento de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1786539861652-ceb1167cc717?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwODUxODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/ai-agents-are-rewriting-rules-of.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai agents are rewriting the rules of lateral movement",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2743,
+    "fecha": "2026-09-22T13:53:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Brechas reales en Google Workspace: análisis de vectores de ingeniería social y OAuth maliciosos",
+    "resumen": "El webinar detalla incidentes de compromiso en entornos Google Workspace, enfocándose en la cadena de ataque iniciada por ingeniería social y aplicaciones OAuth no autorizadas, y describe los controles críticos de detección y respuesta durante las primeras horas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwODUxODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/webinar-tomorrow-inside-real-world-google-workspace-breaches/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:webinar tomorrow inside real world google workspace breaches",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2742,
     "fecha": "2026-09-22T09:02:35Z",
     "categoria": "Ciberseguridad",
