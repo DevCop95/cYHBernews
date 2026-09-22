@@ -50,9 +50,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Bleeping Computer*\n\n*CISA obliga a agencias federales a parchear vulnerabilidad crítica en switches Zyxel GS1900...*\n\nLa vulnerabilidad CVE‑2024‑XXXXX en los switches Zyxel GS1900 permite ejecución remota de código y ha sido usada en campañas de exfiltración de credenciales en entornos gubernamentales; CISA emitió una orden de parcheo inmediato para mitigar la amenaza.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1003` — OS Credential Dumping\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-zyxel-flaw-by-thursday/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "0ddfa94c1f854e2e89c2863a8ffcba6d"
     }
   },
   {
