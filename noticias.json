@@ -132,9 +132,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Bleeping Computer*\n\n*Malware ClosedQuorum para Windows emplea modelos Gemini, DeepSeek, Qwen y Mistral...*\n\nClosedQuorum incorpora LLMs de Google Gemini, DeepSeek, Qwen y Mistral para seleccionar dinámicamente técnicas de movimiento lateral, exfiltración y evasión tras la intrusión, incrementando la capacidad de adaptación y reduciendo la detección basada en firmas. El vector de infección sigue siendo tradicional (ejecución de payloads Windows), pero la lógica de ataque se delega a IA, lo que complica la correlación de indicadores en SIEM/EDR.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1021` — Remote Services\n⚔️ `T1567` — Exfiltration Over Web Service\n⚔️ `T1562` — Impair Defenses\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-closedquorum-windows-malware-uses-ai-for-attack-decisions/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "6c96a9789b024c79894e17d4254b011e"
     }
   },
   {
