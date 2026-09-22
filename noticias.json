@@ -53,9 +53,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Dark Reading*\n\n*Más de 80 000 relés de IA ocultan acceso chino a modelos LLM de frontera en EE. UU.*\n\nSe identificaron más de 80 000 servidores de relé que permiten a usuarios en China eludir restricciones y conectarse a grandes modelos de lenguaje (GPT‑4, Claude, Gemini) para potencialmente copiar sus pesos y arquitectura, creando una superficie de ataque de exfiltración de IP y vulnerabilidades de abuso de API.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1090` — Proxy\n⚔️ `T1090.002` — External Proxy\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1567` — Exfiltration Over Web Service\n\n🔗 [Leer más](https://www.darkreading.com/cyber-risk/relays-masking-chinese-access-frontier-ai-models)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "59beac2381a74eb581335b81c96f1aae"
     }
   },
   {
