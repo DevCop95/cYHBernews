@@ -100,10 +100,11 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *Bleeping Computer*\n\n*Proveedores externos de MFA falsos pueden robar contraseñas durante inicios de sesión legítimos*\n\nInvestigadores de seguridad demostraron que un atacante con privilegios puede registrar un proveedor externo de MFA malicioso que intercepta y extrae credenciales de usuarios en tiempo real durante el flujo de autenticación multifactor. El vector combina abuso de APIs de registro de proveedores y técnicas de phishing interno, exponiendo a organizaciones a compromisos de credenciales de alto valor.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "b4c17a722b304fc09246b99b41391595"
+      "attempt_id": "b4c17a722b304fc09246b99b41391595",
+      "message_id": 2797,
+      "sent_at": "2026-09-22T23:30:22Z"
     }
   },
   {
