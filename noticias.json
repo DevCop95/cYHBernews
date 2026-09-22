@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Unit 42*\n\n*Vulnerabilidad en AWS AgentCore Harness permite inyección de prompts para robar credenciales de identidad*\n\nLa configuración por defecto de AgentCore Harness en AWS expone un vector de prompt injection que permite a un atacante extraer credenciales almacenadas en el vault del agente, comprometiendo la identidad de los recursos en la nube. Se describen los pasos críticos de mitigación, incluyendo endurecimiento de políticas IAM y aislamiento de entornos de ejecución.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1555` — Credentials from Password Stores\n⚔️ `T1059.001` — PowerShell\n\n🔗 [Leer más](https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "a8a8e96d183e4f0286c6beeda6f41450"
     }
   },
   {
