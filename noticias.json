@@ -1,5 +1,124 @@
 [
   {
+    "id": 2740,
+    "fecha": "2026-09-22T08:28:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad oculta en Meta Muse permite convertir el asistente en puerta",
+    "resumen": "Un malware en macOS puede modificar una configuración oculta de Meta Muse, redirigiendo la entrada de voz del usuario al atacante y explotando los permisos amplios concedidos al asistente. El vector de ataque combina persistencia local y abuso de APIs de dictado, creando una vía de exfiltración y control remoto sin interacción directa.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNjU2ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:one hidden meta muse setting could let attackers turn the ai assistant into a backdoor",
+    "ttps": [
+      {
+        "id": "T1547.009",
+        "name": "Shortcut Modification"
+      },
+      {
+        "id": "T1056.004",
+        "name": "Credential API Hooking"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2739,
+    "fecha": "2026-09-22T08:28:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Inyección EM y fuga de audio: espionaje a 30 m con auriculares",
+    "resumen": "Investigadores de HKUST demuestran que mediante señales portadoras electromagnéticas y la no linealidad del hardware de los auriculares se puede inducir y capturar leakage de audio a más de 30 m, incluso a través de paredes, usando equipos comerciales. El vector combina side‑channel EM injection con amplificación pasiva, creando un nuevo riesgo para dispositivos de consumo y entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNjU2ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/09/inyectado-y-espiado-como-escuchar-tus.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:inyectado y espiado cómo escuchar tus audios a distancia inyectando señales portadoras",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "0xword.com",
+        "1.bp.blogspot.com",
+        "blogger.googleusercontent.com",
+        "elladodelmal.com",
+        "feeds.feedburner.com",
+        "injecteave.github.io",
+        "mypublicinbox.com",
+        "www.blogger.com",
+        "www.elladodelmal.com",
+        "www.mypublicinbox.com"
+      ],
+      "url": [
+        "http://feeds.feedburner.com/ElLadoDelMal",
+        "https://0xWord.com",
+        "https://0xword.com/es/libros/143-machine-learning-aplicado-a-ciberseguridad-tecnicas-y-ejemplos-en-la-deteccion-de-amenazas.html",
+        "https://0xword.com/es/libros/145-arduino-para-hackers-pocs-hacks-just-for-fun.html",
+        "https://0xword.com/es/libros/172-raspberry-pi-para-hackers-makers-pocs-hacks-just-for-fun.html",
+        "https://0xword.com/es/libros/95-hacking-con-drones-love-is-in-the-air.html",
+        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
+        "https://MyPublicInbox.com",
+        "https://MyPublicInbox.com/ChemaAlonso",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNQOj_vqsqNAlyLS3JRwgceXp6tKAose0h24AqchVjG_F5UOsF8eXv47pgFe-mtMS6Sbj659tBVmRY4R7XwWl2hYvaVU1edZduKf0p7_zTVacNrFAsWYJQajntxsI5CZeZVmaqVv7FUhpI9MXpmXnyideh1zK51p1Y-3iumukKOVpzZWxM1CDg/w640-h266/Side4.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPV7jtl9eXXQ4j4cIsFuWFJz9EV7SQBeQoSaLwr3oQhCJ4dG05QJzvX0PTiy5QtRRE5gKTkUOYM-YAbbqu-QxHvcZv9QBwna_AgM7KrW9NM6rk-Ve-CfIa_3R4DElaUwPH9Zb8PQiYF8c6WXdsCwcmIVnVPDPNhwhkMrfEffoIu4WNfsAQQECE/w640-h368/Side5.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggNw91c7W269Q5Gx6aYXyXaVBtUF0eZ9hY3Pory0pIdUB-wa9xGKy26qqAUmlfzZrH6Are2-ARiSLs4pzyGnKttJtBLSstxC90QO80E6f6YYjXyMevK8tk9bgUvd23B8tC2rBkrDLZimWYU0tAhIrc7ZOXPaUzKC8Sm1D0ZTQ_gRtae7SMNVfN/w640-h474/Side7.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIIr_kidL1BeXguBaabqEyajetj48UwsMTad6jc-rgoFbkzGovFmD8vRwp0Ja5augDzGfdB48rP2p175cqosoqJqYQOSADG2xYzSIt6zGXsaAHRzCy3GfxQz183cwkWAuEeU9_7LPsoIrmaQ-w6lBmlDap2Cd2Dcz8H5qnKeEhhmFIjJEbh7CK/w640-h380/Side0.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimBeaevOvr4oYl699b_GvfFruiZgmHWyFzyRTi4D208CiDm6XEt_2U6JXhuEpKqTn7DmEi1oWRHRnduJSOIPUdqzP5echEfq4XBPoQzql_qKzj0ecybw2JiqN9qtCCaFlVoGTtJtevHw-MbzeIRnc01gT4yc0VUsG-vDmyqVDX1rHiAeInGRvl/w640-h246/Side3.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqTM4OYCVFlm-sX6fTPTX5DwDQmQyRUnm-36y4KeBtrjeOH_FVKmuVn92vnMonz-87Q0mrMvPt0-QTJBr9rXk6IK4PoRvRmRR6dzAPWP2lDNhG1F4eN6kZqRai2gAVi6HjoQSQ/w640-h278/0xWord_Makers_libros.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSqlwhKpt9Gy16M-GArpg_-sqM7Uct09OUkZtjIsfwfgkBxZ0ARW2f9p9WnTxvtOpvORWnYcn31Y3Qrubb0bprUNeGkVZqVeyzYrFarQcLm_SsTLbbJ55NFbT8Q8gH1jhzz3XET7QpowulwTHkkXF243UBjB9gpGkDmDM9X3auqZsOAjlncZ9y/w510-h640/Side1.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZSTVF56GFjhK-TGaUwwKNWsGHSu7kOcgIXlWk_8EKhtUpP4kroj8MPAmhkUf_ZXgsV2CNP-Yyz6Pvhw12grbr-tsfRaQ2EmZ5_Met4G7WH6L-ZouvoAbnp2niYBMBuCd8sKrQuuTz-rxqGLd7tfRZYtfWNalbGpQucywv2be8SqHt1PsDLTFm/w640-h278/Side6.jpg",
+        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjypDWqJiamHWk2WLKQv_Keug5djJ72mmNJ9yqIOIAYl2ygC2SGvH7P7aOBESlzyfq2B1_pxTp4GHsgsayM-VBS7OAnxt8uqOOPcvOJgbmPbyo1iVKnRbr_addEsZ5fR2r2pnSnwIqPqJohPy1-Aby80FTFpDMnolgqEWFFBw6NB39bIUSZG7vO/w640-h236/Side2.jpg",
+        "https://elladodelmal.com",
+        "https://injecteave.github.io/assets/paper/sec26cycle2-final651.pdf",
+        "https://mypublicinbox.com/dashboard/chats/zo1KA0wRZ4w3OPMn",
+        "https://www.blogger.com/video.g?token=AD6v5dyhMKdrSzDnp5tw_ad-Hnr7zX_vTvVNNnIUsjp1xLpt7nOX8URb5tpKxcVcZ5BgqaD7W5rk-zJHqZI",
+        "https://www.elladodelmal.com/2014/08/extraccion-de-claves-gnupg-con-el-poder.html",
+        "https://www.elladodelmal.com/2015/01/tempest-en-busca-de-software-y-hardware.html",
+        "https://www.elladodelmal.com/2015/08/robar-datos-de-servidores-aislados.html",
+        "https://www.elladodelmal.com/2016/02/como-robar-claves-de-cifrado-de-curva.html",
+        "https://www.elladodelmal.com/2016/09/diskfiltration-usbee-nuevos-tecnicas.html",
+        "https://www.elladodelmal.com/2016/11/windtalker-averiguar-que-contrasenas.html",
+        "https://www.elladodelmal.com/2023/03/como-reconstruir-las-imagenes-en-tu.html",
+        "https://www.elladodelmal.com/2024/03/audio-snooping-escuchar-tus-pulsaciones.html",
+        "https://www.elladodelmal.com/2024/08/deep-tempest-deeplearning-para.html",
+        "https://www.mypublicinbox.com/chemaalonso"
+      ]
+    }
+  },
+  {
+    "id": 2738,
+    "fecha": "2026-09-22T08:28:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "92 % de las pymes españolas reportan incidentes de ciberseguridad en 2025",
+    "resumen": "La encuesta “Inside the 2026 SMB Threat Landscape” revela que la mayoría de las pymes españolas han sufrido al menos un ataque, predominando phishing, scams y herramientas de IA falsas, lo que evidencia una brecha crítica en la adopción de controles de detección y respuesta. El vector de ataque principal sigue siendo correos maliciosos que explotan credenciales y despliegan ransomware o exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNjU2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-92-de-las-pymes-espanolas-ha-sufrido-un-incidente-de-ciberseguridad-en-el-ultimo-ano/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el 92 de las pymes españolas ha sufrido un incidente de ciberseguridad en el último año",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2737,
     "fecha": "2026-09-22T03:01:14Z",
     "categoria": "Ciberseguridad",
