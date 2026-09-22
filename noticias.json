@@ -21,9 +21,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Unit 42*\n\n*AWS neutraliza credenciales IAM comprometidas mediante políticas gestionadas*\n\nLa guía detalla cómo AWS usa escaneo de secretos en GitHub y monitoreo de CloudTrail para detectar y revocar credenciales IAM expuestas, reduciendo la ventana de explotación de ataques de credential stuffing y abuso de privilegios.\n\n🟢 Severidad: *BAJA*\n\n🔍 *IoCs:*\n🔗 Dominios: unit42[.]paloaltonetworks[.]com\n🔗 URLs: hxxps://unit42[.]paloaltonetworks[.]com, hxxps://unit42[.]paloaltonetworks[.]com/detecting-exposed-aws-iam-credentials/\n\n🔗 [Leer más](https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "7a6a7258df0e44cd8d3f6e64018a601f"
     }
   },
   {
