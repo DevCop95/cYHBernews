@@ -1,5 +1,132 @@
 [
   {
+    "id": 2737,
+    "fecha": "2026-09-22T03:01:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "AWS neutraliza credenciales IAM comprometidas mediante políticas gestionadas",
+    "resumen": "La guía detalla cómo AWS usa escaneo de secretos en GitHub y monitoreo de CloudTrail para detectar y revocar credenciales IAM expuestas, reduciendo la ventana de explotación de ataques de credential stuffing y abuso de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNDYwNzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:from exposure to lockdown how aws neutralizes compromised iam credentials through managed policies",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "unit42.paloaltonetworks.com"
+      ],
+      "url": [
+        "https://unit42.paloaltonetworks.com",
+        "https://unit42.paloaltonetworks.com/detecting-exposed-aws-iam-credentials/"
+      ]
+    }
+  },
+  {
+    "id": 2736,
+    "fecha": "2026-09-22T03:01:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña “Contagious Interview” compromete 30,000 dispositivos y roba $10,7 M",
+    "resumen": "Un actor estatal norcoreano ha infectado más de 30 000 endpoints en 100+ países mediante un malware de tipo credential‑stealer, exfiltrando credenciales y claves privadas de 7 000 wallets, generando pérdidas de $10,71 M. El vector principal es phishing con documentos maliciosos dirigidos a diseñadores web, ingenieros y profesionales de cripto.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNDYwNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:contagious interview campaign compromises 30 000 devices steals 10 71m in crypto",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1552.004",
+        "name": "Private Keys"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2735,
+    "fecha": "2026-09-22T03:01:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA advierte explotación activa de tres vulnerabilidades críticas del kernel",
+    "resumen": "La agencia CISA ha detectado que actores maliciosos están explotando activamente tres CVE en el kernel de Linux, incluyendo una vulnerabilidad crítica que permite escalada de privilegios local y posible ejecución remota de código. Se recomienda aplicar los parches de inmediato y reforzar la monitorización de logs de kernel para detectar indicadores de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNDYwNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-alerts-of-active-exploitation-of-three-linux-kernel-flaws/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa alerts of active exploitation of three linux kernel flaws",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2734,
+    "fecha": "2026-09-22T03:01:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Critical Stack Overflow in Check Point Security Management & Log Servers",
+    "resumen": "Vulnerabilidad crítica de desbordamiento de pila en el proceso de login no autenticado permite ejecución remota de código con privilegios de root en los servidores de gestión y registro de Check Point. Afecta versiones R80‑R82.2; parche disponible vía Check Point LivePatch.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNDYwNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-basado-en-pila-en-security-management-y-log-servers-de",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-91843",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "support.checkpoint.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://support.checkpoint.com/results/sk/sk1000155",
+        "https://support.checkpoint.com/results/sk/sk185114",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.incibe.es/incibe-cert/avisos/aviso",
+        "https://www.incibe.es/incibe-cert/tags/actualizaci%C3%B3n",
+        "https://www.incibe.es/incibe-cert/tags/cortafuego",
+        "https://www.incibe.es/incibe-cert/tags/desbordamiento",
+        "https://www.incibe.es/incibe-cert/tags/sistema%20operativo",
+        "https://www.incibe.es/incibe-cert/tags/vulnerabilidad",
+        "https://www.incibe.es/sites/default/files/public/rrss/FB_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/LI_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Mail_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/Pinterest_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/TW_compartir.png",
+        "https://www.incibe.es/sites/default/files/public/rrss/WhatsApp_compartir.png"
+      ],
+      "cve": [
+        "CVE-2026-91843"
+      ]
+    }
+  },
+  {
     "id": 2733,
     "fecha": "2026-09-21T21:37:50Z",
     "categoria": "Ciberseguridad",
