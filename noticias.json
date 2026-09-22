@@ -1,5 +1,135 @@
 [
   {
+    "id": 2756,
+    "fecha": "2026-09-22T23:27:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Regulador canadiense inicia investigación a IDScan por presunta violación de leyes de privacidad de datos",
+    "resumen": "La autoridad de privacidad de Canadá abrirá una investigación para evaluar las prácticas de seguridad de IDScan y la suficiencia de sus notificaciones a víctimas bajo la ley federal de privacidad del sector privado. El caso podría implicar sanciones regulatorias y requerir mejoras en los controles de protección de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMTk2NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/canadian-regulator-opens-probe-of-idscan-following-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:canadian regulator opens probe of idscan for allegedly violating data privacy laws",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔵 *The Record*\n\n*Regulador canadiense inicia investigación a IDScan por presunta violación de leyes de privacidad de datos*\n\nLa autoridad de privacidad de Canadá abrirá una investigación para evaluar las prácticas de seguridad de IDScan y la suficiencia de sus notificaciones a víctimas bajo la ley federal de privacidad del sector privado. El caso podría implicar sanciones regulatorias y requerir mejoras en los controles de protección de datos.\n\n🔵 Severidad: *INFO*\n\n🔗 [Leer más](https://therecord.media/canadian-regulator-opens-probe-of-idscan-following-data-breach)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2755,
+    "fecha": "2026-09-22T23:27:20Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Más de 80 000 relés de IA ocultan acceso chino a modelos LLM de frontera en EE. UU.",
+    "resumen": "Se identificaron más de 80 000 servidores de relé que permiten a usuarios en China eludir restricciones y conectarse a grandes modelos de lenguaje (GPT‑4, Claude, Gemini) para potencialmente copiar sus pesos y arquitectura, creando una superficie de ataque de exfiltración de IP y vulnerabilidades de abuso de API.",
+    "url_imagen": "https://images.unsplash.com/photo-1646583288948-24548aedffd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMTk2NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/relays-masking-chinese-access-frontier-ai-models",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:relays are masking chinese access to frontier ai models in the us",
+    "ttps": [
+      {
+        "id": "T1090",
+        "name": "Proxy"
+      },
+      {
+        "id": "T1090.002",
+        "name": "External Proxy"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Más de 80 000 relés de IA ocultan acceso chino a modelos LLM de frontera en EE. UU.*\n\nSe identificaron más de 80 000 servidores de relé que permiten a usuarios en China eludir restricciones y conectarse a grandes modelos de lenguaje (GPT‑4, Claude, Gemini) para potencialmente copiar sus pesos y arquitectura, creando una superficie de ataque de exfiltración de IP y vulnerabilidades de abuso de API.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1090` — Proxy\n⚔️ `T1090.002` — External Proxy\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1567` — Exfiltration Over Web Service\n\n🔗 [Leer más](https://www.darkreading.com/cyber-risk/relays-masking-chinese-access-frontier-ai-models)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2754,
+    "fecha": "2026-09-22T23:27:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Check Point alerta sobre zero‑day en Security Management Server explotado en ataques dirigidos",
+    "resumen": "Un atacante que accede al servicio web del Security Management Server puede ejecutar scripts sin autenticación, vulnerabilidad catalogada como CVE‑2026‑93616; se detectaron campañas focalizadas el 23 de julio y el parche se publicó el 22 de septiembre.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMTk2Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-93616",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-93616"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Hacker News*\n\n*Check Point alerta sobre zero‑day en Security Management Server explotado en ataques dirigidos*\n\nUn atacante que accede al servicio web del Security Management Server puede ejecutar scripts sin autenticación, vulnerabilidad catalogada como CVE‑2026‑93616; se detectaron campañas focalizadas el 23 de julio y el parche se publicó el 22 de septiembre.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-93616\n\n🔗 [Leer más](https://thehackernews.com/2026/09/check-point-warns-of-management-server.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2753,
+    "fecha": "2026-09-22T23:27:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Proveedores externos de MFA falsos pueden robar contraseñas durante inicios de sesión legítimos",
+    "resumen": "Investigadores de seguridad demostraron que un atacante con privilegios puede registrar un proveedor externo de MFA malicioso que intercepta y extrae credenciales de usuarios en tiempo real durante el flujo de autenticación multifactor. El vector combina abuso de APIs de registro de proveedores y técnicas de phishing interno, exponiendo a organizaciones a compromisos de credenciales de alto valor.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMTk2Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:rogue external mfa providers can steal passwords during logins",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Bleeping Computer*\n\n*Proveedores externos de MFA falsos pueden robar contraseñas durante inicios de sesión legítimos*\n\nInvestigadores de seguridad demostraron que un atacante con privilegios puede registrar un proveedor externo de MFA malicioso que intercepta y extrae credenciales de usuarios en tiempo real durante el flujo de autenticación multifactor. El vector combina abuso de APIs de registro de proveedores y técnicas de phishing interno, exponiendo a organizaciones a compromisos de credenciales de alto valor.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/rogue-external-mfa-providers-can-steal-passwords-during-logins/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2752,
+    "fecha": "2026-09-22T23:27:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Detectan campaña de vishing en España que suplantan a Amazon y exigen pagos de 100‑190 €",
+    "resumen": "Ciberdelincuentes realizan llamadas de vishing simulando notificaciones de cargos de suscripción de Amazon, buscando que las víctimas autoricen transferencias de 100 a 190 €. La táctica combina ingeniería social con presión temporal para lograr el fraude financiero.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxMTk2MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/detectada-campana-de-vishing-en-espana-que-suplanta-a-amazon-y-reclama-entre-100-y-190-euros/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:detectada campaña de vishing en españa que suplanta a amazon y reclama entre 100 y 190 euros",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *CyberSecurity News*\n\n*Detectan campaña de vishing en España que suplantan a Amazon y exigen pagos de 100‑190 €*\n\nCiberdelincuentes realizan llamadas de vishing simulando notificaciones de cargos de suscripción de Amazon, buscando que las víctimas autoricen transferencias de 100 a 190 €. La táctica combina ingeniería social con presión temporal para lograr el fraude financiero.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.003` — Spearphishing via Service\n\n🔗 [Leer más](https://cybersecuritynews.es/detectada-campana-de-vishing-en-espana-que-suplanta-a-amazon-y-reclama-entre-100-y-190-euros/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2751,
     "fecha": "2026-09-22T18:28:55Z",
     "categoria": "Ciberseguridad",
