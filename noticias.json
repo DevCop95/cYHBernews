@@ -37,9 +37,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Malware Windows CLOSEDQUORUM permite que hasta cuatro modelos de IA voten su siguiente acción*\n\nCLOSEDQUORUM, detectado por Cisco Talos, sustituye el C2 tradicional por un mecanismo de votación entre hasta cuatro modelos de IA para decidir robos de credenciales, contraseñas de navegadores y datos de wallets; aunque la versión pública no ejecuta el flujo completo, evidencia una nueva arquitectura de comando autónomo basada en IA.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1555.003` — Credentials from Web Browsers\n\n🔗 [Leer más](https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "163637c6326747c1875e6bcacbe7e717"
     }
   },
   {
