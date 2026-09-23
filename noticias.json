@@ -1,5 +1,149 @@
 [
   {
+    "id": 2761,
+    "fecha": "2026-09-23T10:43:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Dos detenidos en Reino Unido tras el derribo de “EvilTokens”, chatbot IA vendido a cibercriminales",
+    "resumen": "EvilTokens ofrecía en Telegram acceso a IA para comprometer cuentas, analizar buzones filtrados y optimizar la monetización mediante fraude, cobrando $1,500 de inscripción y $500 mensuales; la operación fue desmantelada por Microsoft y resultó en la captura de sus operadores.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNjAxOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/two-arrested-in-uk-after-microsoft-takedown-eviltokens",
+    "fuente": "The Record",
+    "dedup_key": "txt:two arrested in uk after microsoft takedown of eviltokens ai chatbot for cybercriminals",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Record*\n\n*Dos detenidos en Reino Unido tras el derribo de “EvilTokens”, chatbot IA vendido a cibercriminales*\n\nEvilTokens ofrecía en Telegram acceso a IA para comprometer cuentas, analizar buzones filtrados y optimizar la monetización mediante fraude, cobrando $1,500 de inscripción y $500 mensuales; la operación fue desmantelada por Microsoft y resultó en la captura de sus operadores.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://therecord.media/two-arrested-in-uk-after-microsoft-takedown-eviltokens)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2760,
+    "fecha": "2026-09-23T10:43:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers chinos aprovechan cadena zero‑day Chrome‑Windows para desplegar malware CLEANGULP",
+    "resumen": "El actor estatal UTA0565 encadenó CVE‑2026‑85046 y CVE‑2026‑87491 en Chrome con CVE‑2026‑85880 en Windows para ejecutar código remoto vía sitios web falsos, instalando el troyano CLEANGULP. La técnica combina vulnerabilidades del navegador y del subsistema RPC, ampliando la superficie de ataque en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNjAxOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-85046,cve-2026-85880,cve-2026-87491",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-85046",
+        "CVE-2026-85880",
+        "CVE-2026-87491"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *The Hacker News*\n\n*Hackers chinos aprovechan cadena zero‑day Chrome‑Windows para desplegar malware CLEANGULP*\n\nEl actor estatal UTA0565 encadenó CVE‑2026‑85046 y CVE‑2026‑87491 en Chrome con CVE‑2026‑85880 en Windows para ejecutar código remoto vía sitios web falsos, instalando el troyano CLEANGULP. La técnica combina vulnerabilidades del navegador y del subsistema RPC, ampliando la superficie de ataque en entornos corporativos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1189` — Drive-by Compromise\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-85046, CVE-2026-85880, CVE-2026-87491\n\n🔗 [Leer más](https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2759,
+    "fecha": "2026-09-23T10:43:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Sentencian a 24 meses a un miembro del grupo Ryuk por ataques ransomware a empresas estadounidenses",
+    "resumen": "Un ciudadano armenio fue condenado a 24 meses de prisión y tres años de libertad supervisada tras perpetrar intrusiones y cifrado de sistemas en múltiples organizaciones de EE. UU. Usó infraestructura de comando y control para desplegar el ransomware Ryuk, evidenciando la continuidad de campañas dirigidas a sectores críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNjAxOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ryuk ransomware member sentenced to 24 months in prison",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Sentencian a 24 meses a un miembro del grupo Ryuk por ataques ransomware a empresas estadounidenses*\n\nUn ciudadano armenio fue condenado a 24 meses de prisión y tres años de libertad supervisada tras perpetrar intrusiones y cifrado de sistemas en múltiples organizaciones de EE. UU. Usó infraestructura de comando y control para desplegar el ransomware Ryuk, evidenciando la continuidad de campañas dirigidas a sectores críticos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1071` — Application Layer Protocol\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2758,
+    "fecha": "2026-09-23T10:43:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "10 vulnerabilidades críticas y altas en HPE Networking Analytics and Location Engine (ALE)...",
+    "resumen": "HPE ha divulgado diez CVE, entre ellas CVE‑2026‑76708 y CVE‑2026‑76709, que exponen credenciales predeterminadas y escritura con privilegios elevados, posibilitando acceso no autenticado, compromiso total del servidor y denegación de servicio. La mitigación consiste en actualizar a ALE 5.1.0.0 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNjAxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-analytics-and-location-engine-de-hpe",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-76708,cve-2026-76709,cve-2026-76710,cve-2026-76711,cve-2026-76712,cve-2026-76713,cve-2026-76714,cve-2026-76715,cve-2026-76716,cve-2026-76717",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "5.0.0.0",
+        "5.1.0.0"
+      ],
+      "domain": [
+        "pinterest.com",
+        "support.hpe.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbnw05137en_us&amp;docLocale=en_US",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
+      ],
+      "cve": [
+        "CVE-2026-76708",
+        "CVE-2026-76709",
+        "CVE-2026-76710",
+        "CVE-2026-76711",
+        "CVE-2026-76712",
+        "CVE-2026-76713",
+        "CVE-2026-76714",
+        "CVE-2026-76715",
+        "CVE-2026-76716",
+        "CVE-2026-76717"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*10 vulnerabilidades críticas y altas en HPE Networking Analytics and Location Engine (ALE)...*\n\nHPE ha divulgado diez CVE, entre ellas CVE‑2026‑76708 y CVE‑2026‑76709, que exponen credenciales predeterminadas y escritura con privilegios elevados, posibilitando acceso no autenticado, compromiso total del servidor y denegación de servicio. La mitigación consiste en actualizar a ALE 5.1.0.0 o superior.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1499` — Endpoint Denial of Service\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-76708, CVE-2026-76709, CVE-2026-76710\n🌐 IPs: 5[.]0[.]0[.]0, 5[.]1[.]0[.]0\n🔗 Dominios: pinterest[.]com, support[.]hpe[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://support[.]hpe[.]com/hpesc/public/docDisplay?docId=hpesbnw05137en_us&amp;docLocale=en_US, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-analytics-and-location-engine-de-hpe)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2757,
     "fecha": "2026-09-23T03:02:24Z",
     "categoria": "Ciberseguridad",
