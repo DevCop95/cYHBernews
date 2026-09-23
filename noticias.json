@@ -1,5 +1,99 @@
 [
   {
+    "id": 2773,
+    "fecha": "2026-09-23T23:33:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Riesgos de integradores externos en sistemas de control industrial y medidas de mitigación...",
+    "resumen": "El FBI y CISA advierten que la falta de aplicación del principio de menor privilegio (PoLP) en entornos OT permite a actores maliciosos comprometer redes de integradores de ICS, exfiltrar datos de SCADA y preparar ataques disruptivos contra servicios críticos. Se recomienda validar requisitos de seguridad, segmentar accesos y aplicar controles de cadena de suministro para limitar la superficie de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMDY0MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/resources-tools/resources/considerations-critical-infrastructure-operators-working-third-party-ics-integrators",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:considerations for critical infrastructure operators working with third party ics integrators",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.comms-scc.org"
+      ],
+      "url": [
+        "http://www.ic3.gov/",
+        "https://csrc.nist.gov/Projects/cyber-supply-chain-risk-management",
+        "https://tips.fbi.gov/",
+        "https://www.cjis.gov/",
+        "https://www.comms-scc.org/wp-content/uploads/2025/07/ICTSCRMTaskForce_SupplierProductsandServicesThreatEvaluationReport_July2025.pdf",
+        "https://www.fbi.gov/contact-us/field-offices"
+      ],
+      "email": [
+        "contact@cisa.dhs.gov"
+      ]
+    }
+  },
+  {
+    "id": 2772,
+    "fecha": "2026-09-23T23:33:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Técnica de poisoning de parámetros de proceso permite inyección y evade EDR sin usar APIs...",
+    "resumen": "Un método de poisoning de parámetros de proceso inserta código malicioso en estructuras de inicialización del proceso, eludiendo la detección de herramientas EDR que solo inspeccionan llamadas a APIs de Windows. La técnica facilita la ejecución de payloads y la persistencia en entornos de alta seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMDY0MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/edr-evasion-stack-helps-process-injection-slip-past-defenses",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:edr evasion stack helps process injection slip past defenses",
+    "ttps": [
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2771,
+    "fecha": "2026-09-23T23:33:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en GitLab permite a cualquier atacante crear commits y ejecutar pipelines CI/CD...",
+    "resumen": "La dirección de correo privada que GitLab asigna para crear incidencias por email actúa como credencial implícita; un atacante que la obtenga puede enviar parches que se comprometen como el usuario, empujar código a cualquier rama con permisos y disparar jobs de CI/CD bajo su identidad, exponiendo potenciales zero‑days y comprometiendo la integridad del repositorio.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMDY0MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:a leaked gitlab issue email address lets anyone push code and run ci jobs as you",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2770,
+    "fecha": "2026-09-23T23:33:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Dominio placeholder “third‑party.com” usado en docs de desarrollo despliega ataques ClickFix...",
+    "resumen": "El dominio “third‑party.com”, tradicionalmente usado como ejemplo en documentación, ahora muestra una página falsa de verificación de Cloudflare que engaña a usuarios de Windows para ejecutar comandos PowerShell, constituyendo un vector de phishing y ejecución remota de código. El ataque se propaga mediante enlaces en repositorios y foros de desarrollo, aumentando el riesgo de compromisos en entornos de CI/CD.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMDY0MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/placeholder-domain-used-in-dev-docs-now-serves-clickfix-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:placeholder domain used in dev docs now serves clickfix attacks",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "party.com",
+        "third-party.com"
+      ]
+    }
+  },
+  {
     "id": 2769,
     "fecha": "2026-09-23T21:00:57Z",
     "categoria": "Ciberseguridad",
