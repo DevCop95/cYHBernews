@@ -138,9 +138,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *INCIBE-CERT*\n\n*10 vulnerabilidades críticas y altas en HPE Networking Analytics and Location Engine (ALE)...*\n\nHPE ha divulgado diez CVE, entre ellas CVE‑2026‑76708 y CVE‑2026‑76709, que exponen credenciales predeterminadas y escritura con privilegios elevados, posibilitando acceso no autenticado, compromiso total del servidor y denegación de servicio. La mitigación consiste en actualizar a ALE 5.1.0.0 o superior.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1499` — Endpoint Denial of Service\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-76708, CVE-2026-76709, CVE-2026-76710\n🌐 IPs: 5[.]0[.]0[.]0, 5[.]1[.]0[.]0\n🔗 Dominios: pinterest[.]com, support[.]hpe[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://support[.]hpe[.]com/hpesc/public/docDisplay?docId=hpesbnw05137en_us&amp;docLocale=en_US, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-analytics-and-location-engine-de-hpe)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "b344834b1fa140019ae9090f0fd2348a"
     }
   },
   {
