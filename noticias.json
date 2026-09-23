@@ -28,10 +28,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *CISA Advisories*\n\n*Riesgos de integradores externos en sistemas de control industrial y medidas de mitigación...*\n\nEl FBI y CISA advierten que la falta de aplicación del principio de menor privilegio (PoLP) en entornos OT permite a actores maliciosos comprometer redes de integradores de ICS, exfiltrar datos de SCADA y preparar ataques disruptivos contra servicios críticos. Se recomienda validar requisitos de seguridad, segmentar accesos y aplicar controles de cadena de suministro para limitar la superficie de ataque.\n\n🟠 Severidad: *ALTA*\n\n🔍 *IoCs:*\n🔗 Dominios: www[.]comms-scc[.]org\n🔗 URLs: hxxp://www[.]ic3[.]gov/, hxxps://csrc[.]nist[.]gov/Projects/cyber-supply-chain-risk-management, hxxps://tips[.]fbi[.]gov/\n📧 Emails: contact@cisa[.]dhs[.]gov\n\n🔗 [Leer más](https://www.cisa.gov/resources-tools/resources/considerations-critical-infrastructure-operators-working-third-party-ics-integrators)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "9e70d66b24584467afa4d89b99846020"
+      "attempt_id": "9e70d66b24584467afa4d89b99846020",
+      "message_id": 2817,
+      "sent_at": "2026-09-23T23:37:14Z"
     }
   },
   {
