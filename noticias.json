@@ -108,10 +108,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*Dominio placeholder “third‑party.com” usado en docs de desarrollo despliega ataques ClickFix...*\n\nEl dominio “third‑party.com”, tradicionalmente usado como ejemplo en documentación, ahora muestra una página falsa de verificación de Cloudflare que engaña a usuarios de Windows para ejecutar comandos PowerShell, constituyendo un vector de phishing y ejecución remota de código. El ataque se propaga mediante enlaces en repositorios y foros de desarrollo, aumentando el riesgo de compromisos en entornos de CI/CD.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n\n🔍 *IoCs:*\n🔗 Dominios: party[.]com, third-party[.]com\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/placeholder-domain-used-in-dev-docs-now-serves-clickfix-attacks/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "54ee6594bd7249db97510d80515ac8eb"
+      "attempt_id": "54ee6594bd7249db97510d80515ac8eb",
+      "message_id": 2814,
+      "sent_at": "2026-09-23T23:36:50Z"
     }
   },
   {
