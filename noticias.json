@@ -71,9 +71,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*Vulnerabilidad en GitLab permite a cualquier atacante crear commits y ejecutar pipelines CI/CD...*\n\nLa dirección de correo privada que GitLab asigna para crear incidencias por email actúa como credencial implícita; un atacante que la obtenga puede enviar parches que se comprometen como el usuario, empujar código a cualquier rama con permisos y disparar jobs de CI/CD bajo su identidad, exponiendo potenciales zero‑days y comprometiendo la integridad del repositorio.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "ecd35ffe8b7943e99b112f1cd32fdd08"
     }
   },
   {
