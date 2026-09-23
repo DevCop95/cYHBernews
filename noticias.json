@@ -51,9 +51,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *The Hacker News*\n\n*Hackers chinos aprovechan cadena zero‑day Chrome‑Windows para desplegar malware CLEANGULP*\n\nEl actor estatal UTA0565 encadenó CVE‑2026‑85046 y CVE‑2026‑87491 en Chrome con CVE‑2026‑85880 en Windows para ejecutar código remoto vía sitios web falsos, instalando el troyano CLEANGULP. La técnica combina vulnerabilidades del navegador y del subsistema RPC, ampliando la superficie de ataque en entornos corporativos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1189` — Drive-by Compromise\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-85046, CVE-2026-85880, CVE-2026-87491\n\n🔗 [Leer más](https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "dc3e52811d3a4153ae8cd8077d5219b4"
     }
   },
   {
