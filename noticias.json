@@ -13,9 +13,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Cisco Talos*\n\n*Closed Quorum: Primer implante C2 autónomo impulsado por IA detectado en la cadena de ataque*\n\nCisco Talos identificó el malware CLOSEDQUORUM, que incorpora un modelo de IA generativa para ejecutar de forma totalmente autónoma funciones de command‑and‑control, eliminando la necesidad de intervención humana en fases críticas del ataque. Este avance permite a los adversarios escalar rápidamente la cadena de compromiso y reducir la huella operativa.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "096e23ba826f41479ba727a0d98d9bdd"
     }
   },
   {
