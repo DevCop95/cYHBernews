@@ -111,10 +111,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *INCIBE-CERT*\n\n*Vulnerabilidad crítica de inclusión remota de archivos PHP en WordPress...*\n\nLa CVE detectada (INCIBE‑2026‑659) afecta a versiones de WordPress 4.7.0‑7.1.1, permitiendo a un atacante no autenticado incluir archivos PHP fuera del directorio del tema activo y ejecutar código remoto bajo condiciones específicas. Se recomienda actualizar inmediatamente a WordPress 7.1.2 o a los parches retrocompatibles.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-87902\n🔗 Dominios: pinterest[.]com, wa[.]me, wordpress[.]org\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://wordpress[.]org/news/2026/09/wordpress-7-1-2-release/\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inclusion-de-archivos-php-en-wordpress)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "f2e423e2999347d3b6037c7a63ab8d1f"
+      "attempt_id": "f2e423e2999347d3b6037c7a63ab8d1f",
+      "message_id": 2807,
+      "sent_at": "2026-09-23T16:05:47Z"
     }
   },
   {
