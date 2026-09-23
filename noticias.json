@@ -73,9 +73,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Bleeping Computer*\n\n*InfraTrust alerta sobre ataques activos a sistemas de gestión de redes empresariales...*\n\nAnalistas de InfraTrust confirman que actores de amenaza están explotando vulnerabilidades CVE en plataformas de gestión de infraestructura, permitiendo acceso remoto y control de dispositivos de red antes de la divulgación oficial. El vector principal es la explotación de APIs sin autenticación y credenciales predeterminadas, lo que compromete la disponibilidad y confidencialidad de entornos críticos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1021` — Remote Services\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/infratrust-report-warns-network-management-systems-under-attack/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "06da9db76c254c08989d8f52d74eedb0"
     }
   },
   {
