@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Wired Security*\n\n*Meta corrige vulnerabilidad zero‑day en Muse AI que permitía ejecución arbitraria en macOS*\n\nMeta lanzó un parche para la vulnerabilidad zero‑day descubierta en el asistente de IA Muse, la cual permitía a un atacante ejecutar código arbitrario y tomar control total del sistema macOS del usuario. El flaw subraya el riesgo de exposición de privilegios que conllevan los asistentes de IA integrados en entornos de escritorio.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://www.wired.com/story/metas-muse-ai-agent-zero-day/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "0ade0f025e734492b00a91349fb6c026"
     }
   },
   {
