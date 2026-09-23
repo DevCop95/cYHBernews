@@ -1,5 +1,116 @@
 [
   {
+    "id": 2766,
+    "fecha": "2026-09-23T16:02:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Atacantes envenenan chatbots de IA (ChatGPT, Gemini) para campañas masivas de desinformación y phishing",
+    "resumen": "Amenazas persisten al inyectar enlaces maliciosos y datos manipulados en la web, sesgando respuestas de modelos como ChatGPT y Gemini para difundir contenido de phishing y desinformación a gran escala. La técnica de poisoning de entrenamiento permite a los actores optimizar payloads que se entregan a usuarios finales a través de respuestas generadas por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNzkzNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/attackers-manipulate-ai-chatbots-mass-disinformation-phishing-campaign",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:attackers manipulate ai chatbots in mass disinformation phishing campaign",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2765,
+    "fecha": "2026-09-23T16:02:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Malware Windows CLOSEDQUORUM permite que hasta cuatro modelos de IA voten su siguiente acción",
+    "resumen": "CLOSEDQUORUM, detectado por Cisco Talos, sustituye el C2 tradicional por un mecanismo de votación entre hasta cuatro modelos de IA para decidir robos de credenciales, contraseñas de navegadores y datos de wallets; aunque la versión pública no ejecuta el flujo completo, evidencia una nueva arquitectura de comando autónomo basada en IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNzkzNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:this windows malware is built to let up to four ai models vote on its next move",
+    "ttps": [
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2764,
+    "fecha": "2026-09-23T16:02:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "InfraTrust alerta sobre ataques activos a sistemas de gestión de redes empresariales...",
+    "resumen": "Analistas de InfraTrust confirman que actores de amenaza están explotando vulnerabilidades CVE en plataformas de gestión de infraestructura, permitiendo acceso remoto y control de dispositivos de red antes de la divulgación oficial. El vector principal es la explotación de APIs sin autenticación y credenciales predeterminadas, lo que compromete la disponibilidad y confidencialidad de entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNzkzNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-network-management-systems-under-attack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:infratrust report warns network management systems under attack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2763,
+    "fecha": "2026-09-23T16:02:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad crítica de inclusión remota de archivos PHP en WordPress...",
+    "resumen": "La CVE detectada (INCIBE‑2026‑659) afecta a versiones de WordPress 4.7.0‑7.1.1, permitiendo a un atacante no autenticado incluir archivos PHP fuera del directorio del tema activo y ejecutar código remoto bajo condiciones específicas. Se recomienda actualizar inmediatamente a WordPress 7.1.2 o a los parches retrocompatibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNzkzNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inclusion-de-archivos-php-en-wordpress",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-87902",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "wa.me",
+        "wordpress.org"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://wordpress.org/news/2026/09/wordpress-7-1-2-release/"
+      ],
+      "cve": [
+        "CVE-2026-87902"
+      ]
+    }
+  },
+  {
+    "id": 2762,
+    "fecha": "2026-09-23T16:02:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Casi la mitad de los directivos de TI carecen de competencias para asegurar la IA en entornos corporativos",
+    "resumen": "Un estudio de Barracuda Research muestra que el 48 % de los CIO y CISO admiten insuficiencia de habilidades para gestionar riesgos de IA, exponiendo a las organizaciones a vectores como prompt injection, model poisoning y fuga de datos por configuraciones inseguras. La brecha de talento se agrava mientras la adopción de modelos generativos (GPT, Claude, Gemini) y herramientas de RAG acelera su despliegue en producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAxNzkzNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/casi-la-mitad-de-los-responsables-de-ti-no-esta-preparada-para-gestionar-la-ia-de-forma-segura/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:casi la mitad de los responsables de ti no está preparada para gestionar la ia de forma segura",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2761,
     "fecha": "2026-09-23T10:43:16Z",
     "categoria": "Ciberseguridad",
