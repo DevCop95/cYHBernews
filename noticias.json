@@ -80,10 +80,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *The Hacker News*\n\n*Atacantes emplean proveedores Terraform maliciosos para distribuir malware Go a través...*\n\nInvestigadores de ciberseguridad identificaron dos módulos Go y dos proveedores Terraform que alojan payloads Go, marcando la primera utilización del registro centralizado de HashiCorp como vector de entrega; la cadena de suministro compromete infraestructuras IaC y permite ejecución remota de código en entornos de orquestación.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195` — Supply Chain Compromise\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1546.003` — Windows Management Instrumentation Event Subscription\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "d04cc7d1dbbd4e46989381369fb7faf4"
+      "attempt_id": "d04cc7d1dbbd4e46989381369fb7faf4",
+      "message_id": 2811,
+      "sent_at": "2026-09-23T21:04:44Z"
     }
   },
   {
