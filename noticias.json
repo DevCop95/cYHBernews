@@ -52,9 +52,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Dark Reading*\n\n*Técnica de poisoning de parámetros de proceso permite inyección y evade EDR sin usar APIs...*\n\nUn método de poisoning de parámetros de proceso inserta código malicioso en estructuras de inicialización del proceso, eludiendo la detección de herramientas EDR que solo inspeccionan llamadas a APIs de Windows. La técnica facilita la ejecución de payloads y la persistencia en entornos de alta seguridad.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1055` — Process Injection\n\n🔗 [Leer más](https://www.darkreading.com/endpoint-security/edr-evasion-stack-helps-process-injection-slip-past-defenses)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "e521560be8d94bad8df2b788827f416c"
     }
   },
   {
