@@ -79,9 +79,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Bleeping Computer*\n\n*Sentencian a 24 meses a un miembro del grupo Ryuk por ataques ransomware a empresas estadounidenses*\n\nUn ciudadano armenio fue condenado a 24 meses de prisión y tres años de libertad supervisada tras perpetrar intrusiones y cifrado de sistemas en múltiples organizaciones de EE. UU. Usó infraestructura de comando y control para desplegar el ransomware Ryuk, evidenciando la continuidad de campañas dirigidas a sectores críticos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1071` — Application Layer Protocol\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-sentenced-to-24-months-in-prison/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "56fded075dce49f6b2640765477d311f"
     }
   },
   {
