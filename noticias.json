@@ -13,10 +13,11 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Dark Reading*\n\n*Direcciones de correo de GitLab pueden ser explotadas para ataques de cadena de suministro...*\n\nSe descubrió que las direcciones de correo asignadas automáticamente a usuarios en GitLab incluyen tokens de acceso con privilegios elevados, permitiendo a actores maliciosos utilizarlos para comprometer repositorios y ejecutar código malicioso en pipelines CI/CD. El vector de ataque se basa en la suplantación de correo y la extracción de dichos tokens, ampliando la superficie de riesgo en entornos de desarrollo.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "da44bfa678c94f228dc00e2c0c13e42d"
+      "attempt_id": "da44bfa678c94f228dc00e2c0c13e42d",
+      "message_id": 2821,
+      "sent_at": "2026-09-24T02:58:54Z"
     }
   },
   {
