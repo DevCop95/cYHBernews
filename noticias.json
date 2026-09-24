@@ -78,10 +78,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Hacker News*\n\n*Vulnerabilidad sin parche en OnePlus permite a apps instaladas obtener root sin permisos*\n\nUn investigador descubrió que al combinar dos fallos en OxygenOS, una app maliciosa puede escalar a privilegios de root en dispositivos OnePlus y OPPO sin solicitar permisos, exponiendo a los usuarios a control total del teléfono. La vulnerabilidad afecta a múltiples modelos y aún no ha sido mitigada por el fabricante.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "8793e5a2a97246388ea085a9be4fdb0b"
+      "attempt_id": "8793e5a2a97246388ea085a9be4fdb0b",
+      "message_id": 2830,
+      "sent_at": "2026-09-24T18:52:52Z"
     }
   },
   {
