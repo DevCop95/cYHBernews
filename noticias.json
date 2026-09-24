@@ -13,9 +13,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*MemTensor compromete paquetes npm y PyPI para distribuir el implante Go “sckit” en Windows, Linux y macOS*\n\nActores de amenaza infiltraron los paquetes legítimos @memtensor/memos‑cloud‑openclaw‑plugin (npm) y su equivalente en PyPI, insertando un loader Go que descarga y ejecuta el credential stealer “sckit” con capacidades multiplataforma, exponiendo a los usuarios a robo de credenciales y posible movimiento lateral.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "0f7ffd1c05c44e62b6585f7dfeb68a76"
     }
   },
   {
