@@ -1,5 +1,138 @@
 [
   {
+    "id": 2793,
+    "fecha": "2026-09-24T23:44:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Agente de OpenAI comprometido en el Servicio de Salud de Australia; Gobierno descubre la brecha...",
+    "resumen": "Un agente autónomo basado en modelos de lenguaje de OpenAI fue infiltrado, permitiendo acceso no autorizado a datos sensibles del sistema de salud australiano; la filtración fue detectada por el gobierno solo tras recibir una notificación por correo electrónico, lo que desencadena una investigación sobre posibles violaciones legales por parte de OpenAI.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyOTM0NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:an openai agent hacked australia s health service their government found out months later",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Wired Security*\n\n*Agente de OpenAI comprometido en el Servicio de Salud de Australia; Gobierno descubre la brecha...*\n\nUn agente autónomo basado en modelos de lenguaje de OpenAI fue infiltrado, permitiendo acceso no autorizado a datos sensibles del sistema de salud australiano; la filtración fue detectada por el gobierno solo tras recibir una notificación por correo electrónico, lo que desencadena una investigación sobre posibles violaciones legales por parte de OpenAI.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2792,
+    "fecha": "2026-09-24T23:44:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ejecutivos de empresa de forense digital con contratos federales estadounidenses arrestados...",
+    "resumen": "Dos directivos de una compañía de extracción de datos y forense digital fueron detenidos bajo acusación de mentir al Departamento de Justicia sobre la fabricación rusa de su tecnología, lo que plantea riesgos de suministro y posibles puertas traseras en entornos gubernamentales.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyOTM0Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russia-forensics-technology-doj",
+    "fuente": "The Record",
+    "dedup_key": "txt:digital forensics firm with us federal contracts covered up ties to russia doj alleges",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Record*\n\n*Ejecutivos de empresa de forense digital con contratos federales estadounidenses arrestados...*\n\nDos directivos de una compañía de extracción de datos y forense digital fueron detenidos bajo acusación de mentir al Departamento de Justicia sobre la fabricación rusa de su tecnología, lo que plantea riesgos de suministro y posibles puertas traseras en entornos gubernamentales.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://therecord.media/russia-forensics-technology-doj)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2791,
+    "fecha": "2026-09-24T23:44:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Salesbleed explota agentes de Salesforce para inyectar phishing en Slack mediante IA agente",
+    "resumen": "Un nuevo vector de ataque llamado Salesbleed permite a actores maliciosos usar agentes de IA en Salesforce para introducir instrucciones arbitrarias que se propagan a canales internos de Slack, facilitando campañas de phishing dirigidas. La vulnerabilidad combina abuso de APIs de Salesforce y su integración con Slack, ampliando la superficie de ataque en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyOTM0Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:salesbleed exploits salesforce agents to enable slack phishing",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Dark Reading*\n\n*Salesbleed explota agentes de Salesforce para inyectar phishing en Slack mediante IA agente*\n\nUn nuevo vector de ataque llamado Salesbleed permite a actores maliciosos usar agentes de IA en Salesforce para introducir instrucciones arbitrarias que se propagan a canales internos de Slack, facilitando campañas de phishing dirigidas. La vulnerabilidad combina abuso de APIs de Salesforce y su integración con Slack, ampliando la superficie de ataque en entornos corporativos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1071.001` — Web Protocols\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2790,
+    "fecha": "2026-09-24T23:44:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "ThreatsDay revela envenenamiento de búsquedas AI, fuga de repositorios por herramientas...",
+    "resumen": "La edición semanal de ThreatsDay detalla 13 incidentes de seguridad centrados en IA, destacando ataques de search poisoning contra motores de IA, filtraciones de código fuente mediante herramientas de autocompletado como Copilot, y vulnerabilidades que permiten ejecución remota de código con un solo clic, sin necesidad de exploits tradicionales. Estas técnicas amplían la superficie de ataque al comprometer flujos de trabajo de desarrollo y consultas de IA, incrementando el riesgo de exfiltración de datos sensibles y compromisos de infraestructura.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyOTM0NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/threatsday-ai-search-poisoning-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday ai search poisoning ai coding tool leaking repos one click code execution and 13 more stories",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Hacker News*\n\n*ThreatsDay revela envenenamiento de búsquedas AI, fuga de repositorios por herramientas...*\n\nLa edición semanal de ThreatsDay detalla 13 incidentes de seguridad centrados en IA, destacando ataques de search poisoning contra motores de IA, filtraciones de código fuente mediante herramientas de autocompletado como Copilot, y vulnerabilidades que permiten ejecución remota de código con un solo clic, sin necesidad de exploits tradicionales. Estas técnicas amplían la superficie de ataque al comprometer flujos de trabajo de desarrollo y consultas de IA, incrementando el riesgo de exfiltración de datos sensibles y compromisos de infraestructura.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/threatsday-ai-search-poisoning-ai.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2789,
+    "fecha": "2026-09-24T23:44:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "MacSync malware explota calendarios públicos de iCloud para inyectar payloads en macOS",
+    "resumen": "La última variante de MacSync utiliza eventos de calendario públicos en iCloud como canal de comando y control, permitiendo la descarga y ejecución de payloads nativos sin interacción del usuario. Este vector de ataque aprovecha la confianza en los servicios de Apple y dificulta la detección por firmas tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyOTM0NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/macsync-malware-uses-public-icloud-calendars-to-deliver-new-payloads/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:macsync malware uses public icloud calendars to deliver new payloads",
+    "ttps": [
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*MacSync malware explota calendarios públicos de iCloud para inyectar payloads en macOS*\n\nLa última variante de MacSync utiliza eventos de calendario públicos en iCloud como canal de comando y control, permitiendo la descarga y ejecución de payloads nativos sin interacción del usuario. Este vector de ataque aprovecha la confianza en los servicios de Apple y dificulta la detección por firmas tradicionales.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1071.001` — Web Protocols\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/macsync-malware-uses-public-icloud-calendars-to-deliver-new-payloads/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2788,
     "fecha": "2026-09-24T18:49:28Z",
     "categoria": "Ciberseguridad",
