@@ -121,10 +121,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*11 vulnerabilidades críticas y altas en GitLab permiten ejecución remota de código y XSS...*\n\nSe identificaron 11 CVE en GitLab CE/EE, incluidas dos críticas (CVE‑2026‑8907 y CVE‑2026‑93577) que permiten a usuarios autenticados inyectar expresiones regulares manipuladas y ejecutar código arbitrario en el servidor CI/CD; también se reportan XSS y evasión de controles. La mitigación requiere actualizar a GitLab 19.2.7, 19.3.3 o 19.4.1 según la rama.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-10518, CVE-2026-4523, CVE-2026-84739\n🔗 Dominios: docs[.]gitlab[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://docs[.]gitlab[.]com/releases/patches/patch-release-gitlab-19-4-1-released/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-gitlab-6)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "143d878b911e4b84a2f1521032a380b5"
+      "attempt_id": "143d878b911e4b84a2f1521032a380b5",
+      "message_id": 2824,
+      "sent_at": "2026-09-24T14:03:59Z"
     }
   },
   {
