@@ -1,5 +1,112 @@
 [
   {
+    "id": 2783,
+    "fecha": "2026-09-24T14:00:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Paquetes npm maliciosos evaden defensas de instalación y ejecutan código en tiempo de ejecución",
+    "resumen": "Investigadores detectaron varios paquetes npm que utilizan scripts de instalación ocultos para descargar y ejecutar payloads después de pasar los escaneos de seguridad de repositorios y CI/CD, indicando posible campaña de actores avanzados. El vector de ataque se basa en la confianza en dependencias de código abierto y la falta de verificación de scripts post‑instalación.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNTg0MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/malicious-npm-packages-that-evade-defenses.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:malicious npm packages that evade defenses",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2782,
+    "fecha": "2026-09-24T14:00:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Cuentas de servicio fantasma comprometen entornos M365 y facilitan robo de datos en Chile",
+    "resumen": "Investigaciones revelan que cuentas de servicio inactivas y sin monitorizar en Microsoft 365 permiten a actores internos o externos escalar privilegios y exfiltrar información confidencial sin necesidad de comprometer cuentas de usuarios. La falta de gestión de ciclo de vida de estas cuentas constituye un vector de ataque crítico para organizaciones que creen haber cerrado sus accesos.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNTg0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ghost-service-accounts-m365-data-theft-chile",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ghost service accounts enable m365 data theft in chile",
+    "ttps": [
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      },
+      {
+        "id": "T1087.004",
+        "name": "Cloud Account"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2781,
+    "fecha": "2026-09-24T14:00:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotan vulnerabilidad crítica de Roundcube para inyección de código en campañas activas",
+    "resumen": "La falla CVE‑2024‑XXXXX en Roundcube Webmail, parcheada en mayo, está siendo utilizada en ataques de inyección de código que comprometen servidores de correo y permiten ejecución remota de comandos. El CCCS confirma actividad en la wild, señalando vectores de explotación vía correos maliciosos y carga útil basada en PHP.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNTg0MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers now exploit critical roundcube flaw in code injection attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2780,
+    "fecha": "2026-09-24T14:00:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "11 vulnerabilidades críticas y altas en GitLab permiten ejecución remota de código y XSS...",
+    "resumen": "Se identificaron 11 CVE en GitLab CE/EE, incluidas dos críticas (CVE‑2026‑8907 y CVE‑2026‑93577) que permiten a usuarios autenticados inyectar expresiones regulares manipuladas y ejecutar código arbitrario en el servidor CI/CD; también se reportan XSS y evasión de controles. La mitigación requiere actualizar a GitLab 19.2.7, 19.3.3 o 19.4.1 según la rama.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNTg0MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-gitlab-6",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-10518,cve-2026-4523,cve-2026-84739,cve-2026-8907,cve-2026-89078,cve-2026-8937,cve-2026-92470,cve-2026-92529,cve-2026-92530,cve-2026-92628,cve-2026-92874,cve-2026-93577",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "docs.gitlab.com",
+        "pinterest.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-1-released/",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
+      ],
+      "cve": [
+        "CVE-2026-10518",
+        "CVE-2026-4523",
+        "CVE-2026-84739",
+        "CVE-2026-8907",
+        "CVE-2026-89078",
+        "CVE-2026-8937",
+        "CVE-2026-92470",
+        "CVE-2026-92529",
+        "CVE-2026-92530",
+        "CVE-2026-92628",
+        "CVE-2026-92874",
+        "CVE-2026-93577"
+      ]
+    }
+  },
+  {
     "id": 2779,
     "fecha": "2026-09-24T08:07:37Z",
     "categoria": "Ciberseguridad",
