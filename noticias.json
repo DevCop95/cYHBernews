@@ -142,9 +142,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidad crítica CVE‑2026‑94127 permite ejecución remota de código en F5 BIG‑IP APM...*\n\nUn heap‑buffer overflow en BIG‑IP Access Policy Manager, explotable sin autenticación cuando una política APM y un perfil OAuth coexisten en el mismo virtual server, permite a un atacante ejecutar código arbitrario y comprometer totalmente el dispositivo. F5 confirma explotación activa y recomienda aplicar hotfixes críticos o mitigar con iRule.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1210` — Exploitation of Remote Services\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-94127\n🔗 Dominios: my[.]f5[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://cert[.]europa[.]eu/publications/security-advisories/2026-013/, hxxps://my[.]f5[.]com/manage/s/article/K000162605\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-basado-en-monticulo-en-big-ip-apm-de-f5)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "d0e18bb9cdb34ad5be310f2525ac62c3"
     }
   },
   {
