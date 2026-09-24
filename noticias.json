@@ -106,10 +106,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*Exposición de direcciones de correo de proyectos GitLab permite a atacantes inyectar código malicioso*\n\nSe descubrió que direcciones de correo internas de GitLab, usadas para crear issues y tareas, están publicadas en READMEs y guías, facilitando que actores maliciosos envíen commits no autorizados mediante la funcionalidad de push por email. La vulnerabilidad amplía la superficie de ataque de repositorios privados y puede ser explotada para introducir malware o ransomware en la cadena de suministro.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n⚔️ `T1071.003` — Mail Protocols\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "74aa44e687a24ce9af7b14af7870c517"
+      "attempt_id": "74aa44e687a24ce9af7b14af7870c517",
+      "message_id": 2829,
+      "sent_at": "2026-09-24T18:52:43Z"
     }
   },
   {
