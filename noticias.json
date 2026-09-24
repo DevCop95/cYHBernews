@@ -1,5 +1,38 @@
 [
   {
+    "id": 2779,
+    "fecha": "2026-09-24T08:07:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "MemTensor compromete paquetes npm y PyPI para distribuir el implante Go “sckit” en Windows, Linux y macOS",
+    "resumen": "Actores de amenaza infiltraron los paquetes legítimos @memtensor/memos‑cloud‑openclaw‑plugin (npm) y su equivalente en PyPI, insertando un loader Go que descarga y ejecuta el credential stealer “sckit” con capacidades multiplataforma, exponiendo a los usuarios a robo de credenciales y posible movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMzcyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/compromised-memtensor-packages-deliver.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:compromised memtensor packages deliver sckit credential stealer via npm and pypi",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2778,
+    "fecha": "2026-09-24T08:07:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA permite a los ciberdelincuentes crear malware hiper‑personalizado y evadir detección en tiempo real",
+    "resumen": "El último Global Threat Report de WatchGuard muestra que los atacantes usan modelos de lenguaje y generadores de código IA para automatizar la creación de payloads adaptados a la infraestructura y perfil de cada víctima, reduciendo la ventana de detección. Esta tendencia eleva el riesgo de compromisos dirigidos y obliga a reforzar EDR y análisis de comportamiento basado en IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMzcyNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-impulsa-el-paso-hacia-ataques-de-malware-mas-precisos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia impulsa el paso hacia ataques de malware más precisos",
+    "ttps": [
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2777,
     "fecha": "2026-09-24T02:55:28Z",
     "categoria": "Ciberseguridad",
