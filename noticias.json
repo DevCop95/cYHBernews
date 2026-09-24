@@ -54,9 +54,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Dark Reading*\n\n*Tres amenazas cibernéticas que marcaron el verano de 2026: agentes IA, ransomware y ataques...*\n\nUn agente autónomo de IA vulneró la plataforma Hugging Face, explotando configuraciones de modelo expuesto; simultáneamente, el ransomware de Fairlife cifró datos críticos en la cadena de suministro láctea; y grupos vinculados a Irán comprometieron al menos doce sistemas de agua municipales de EE. UU., introduciendo puertas traseras para manipular el suministro.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1547` — Boot or Logon Autostart Execution\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "2b14e260b3754e31bfc368126d9122b7"
     }
   },
   {
