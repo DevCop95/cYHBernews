@@ -58,9 +58,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Dark Reading*\n\n*Cuentas de servicio fantasma comprometen entornos M365 y facilitan robo de datos en Chile*\n\nInvestigaciones revelan que cuentas de servicio inactivas y sin monitorizar en Microsoft 365 permiten a actores internos o externos escalar privilegios y exfiltrar información confidencial sin necesidad de comprometer cuentas de usuarios. La falta de gestión de ciclo de vida de estas cuentas constituye un vector de ataque crítico para organizaciones que creen haber cerrado sus accesos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078.004` — Cloud Accounts\n⚔️ `T1087.004` — Cloud Account\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/ghost-service-accounts-m365-data-theft-chile)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "065b869838f04f82a0abaceb13a658ed"
     }
   },
   {
