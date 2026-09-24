@@ -58,9 +58,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *The Hacker News*\n\n*Cadena MikroTrick permite a atacantes tomar control total de routers MikroTik sin credenciales...*\n\nDos vulnerabilidades críticas en RouterOS (CVE‑2026‑67279 y CVE‑2026‑86060) se combinan para evadir la autenticación SSH y ejecutar código con privilegios de administrador en dispositivos expuestos a Internet. El vector de ataque explota una falla en la máquina de estados SSH y una inyección de argumentos en el proceso de login, facilitando la toma de control completa sin necesidad de contraseñas ni claves.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1021.004` — SSH\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1547.001` — Registry Run Keys / Startup Folder\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-67279, CVE-2026-86060\n\n🔗 [Leer más](https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "8ed7c6e4fd554ed3a53a4e3581d9d5a1"
     }
   },
   {
