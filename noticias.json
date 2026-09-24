@@ -1,5 +1,153 @@
 [
   {
+    "id": 2777,
+    "fecha": "2026-09-24T02:55:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Direcciones de correo de GitLab pueden ser explotadas para ataques de cadena de suministro...",
+    "resumen": "Se descubrió que las direcciones de correo asignadas automáticamente a usuarios en GitLab incluyen tokens de acceso con privilegios elevados, permitiendo a actores maliciosos utilizarlos para comprometer repositorios y ejecutar código malicioso en pipelines CI/CD. El vector de ataque se basa en la suplantación de correo y la extracción de dichos tokens, ampliando la superficie de riesgo en entornos de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMTg1Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:gitlab email addresses can be weaponized for supply chain attacks",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Dark Reading*\n\n*Direcciones de correo de GitLab pueden ser explotadas para ataques de cadena de suministro...*\n\nSe descubrió que las direcciones de correo asignadas automáticamente a usuarios en GitLab incluyen tokens de acceso con privilegios elevados, permitiendo a actores maliciosos utilizarlos para comprometer repositorios y ejecutar código malicioso en pipelines CI/CD. El vector de ataque se basa en la suplantación de correo y la extracción de dichos tokens, ampliando la superficie de riesgo en entornos de desarrollo.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2776,
+    "fecha": "2026-09-24T02:55:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cadena MikroTrick permite a atacantes tomar control total de routers MikroTik sin credenciales...",
+    "resumen": "Dos vulnerabilidades críticas en RouterOS (CVE‑2026‑67279 y CVE‑2026‑86060) se combinan para evadir la autenticación SSH y ejecutar código con privilegios de administrador en dispositivos expuestos a Internet. El vector de ataque explota una falla en la máquina de estados SSH y una inyección de argumentos en el proceso de login, facilitando la toma de control completa sin necesidad de contraseñas ni claves.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMTg1Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-67279,cve-2026-86060",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-67279",
+        "CVE-2026-86060"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Hacker News*\n\n*Cadena MikroTrick permite a atacantes tomar control total de routers MikroTik sin credenciales...*\n\nDos vulnerabilidades críticas en RouterOS (CVE‑2026‑67279 y CVE‑2026‑86060) se combinan para evadir la autenticación SSH y ejecutar código con privilegios de administrador en dispositivos expuestos a Internet. El vector de ataque explota una falla en la máquina de estados SSH y una inyección de argumentos en el proceso de login, facilitando la toma de control completa sin necesidad de contraseñas ni claves.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1210` — Exploitation of Remote Services\n⚔️ `T1021.004` — SSH\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1547.001` — Registry Run Keys / Startup Folder\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-67279, CVE-2026-86060\n\n🔗 [Leer más](https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2775,
+    "fecha": "2026-09-24T02:55:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nuevo malware bancario Android RemControl explota campañas de malvertising en Europa y Canadá",
+    "resumen": "RemControl, una plataforma Android malware‑as‑a‑service, se distribuye mediante anuncios maliciosos que imitan la app IPTV TVTap, capturando credenciales bancarias y datos de pago de usuarios en Europa y Canadá; su arquitectura modular permite la carga de payloads adicionales y evasión de EDR.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMTg1MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-remcontrol-android-banking-malware-targets-users-in-europe-and-canada/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new remcontrol android banking malware targets users in europe and canada",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Nuevo malware bancario Android RemControl explota campañas de malvertising en Europa y Canadá*\n\nRemControl, una plataforma Android malware‑as‑a‑service, se distribuye mediante anuncios maliciosos que imitan la app IPTV TVTap, capturando credenciales bancarias y datos de pago de usuarios en Europa y Canadá; su arquitectura modular permite la carga de payloads adicionales y evasión de EDR.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1189` — Drive-by Compromise\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1027` — Obfuscated Files or Information\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-remcontrol-android-banking-malware-targets-users-in-europe-and-canada/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2774,
+    "fecha": "2026-09-24T02:55:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE‑2026‑94127 permite ejecución remota de código en F5 BIG‑IP APM...",
+    "resumen": "Un heap‑buffer overflow en BIG‑IP Access Policy Manager, explotable sin autenticación cuando una política APM y un perfil OAuth coexisten en el mismo virtual server, permite a un atacante ejecutar código arbitrario y comprometer totalmente el dispositivo. F5 confirma explotación activa y recomienda aplicar hotfixes críticos o mitigar con iRule.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyMTg1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-basado-en-monticulo-en-big-ip-apm-de-f5",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-94127",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "my.f5.com",
+        "pinterest.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://cert.europa.eu/publications/security-advisories/2026-013/",
+        "https://my.f5.com/manage/s/article/K000162605",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.cyber.gc.ca/en/alerts-advisories/al26-022-vulnerability-impacting-f5-big-ip-access-policy-manager-apm-cve-2026-94127"
+      ],
+      "cve": [
+        "CVE-2026-94127"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidad crítica CVE‑2026‑94127 permite ejecución remota de código en F5 BIG‑IP APM...*\n\nUn heap‑buffer overflow en BIG‑IP Access Policy Manager, explotable sin autenticación cuando una política APM y un perfil OAuth coexisten en el mismo virtual server, permite a un atacante ejecutar código arbitrario y comprometer totalmente el dispositivo. F5 confirma explotación activa y recomienda aplicar hotfixes críticos o mitigar con iRule.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1210` — Exploitation of Remote Services\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-94127\n🔗 Dominios: my[.]f5[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://cert[.]europa[.]eu/publications/security-advisories/2026-013/, hxxps://my[.]f5[.]com/manage/s/article/K000162605\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-basado-en-monticulo-en-big-ip-apm-de-f5)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2773,
     "fecha": "2026-09-23T23:33:42Z",
     "categoria": "Ciberseguridad",
