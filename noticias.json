@@ -30,9 +30,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Schneier on Security*\n\n*Paquetes npm maliciosos evaden defensas de instalación y ejecutan código en tiempo de ejecución*\n\nInvestigadores detectaron varios paquetes npm que utilizan scripts de instalación ocultos para descargar y ejecutar payloads después de pasar los escaneos de seguridad de repositorios y CI/CD, indicando posible campaña de actores avanzados. El vector de ataque se basa en la confianza en dependencias de código abierto y la falta de verificación de scripts post‑instalación.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1566.001` — Spearphishing Attachment\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/malicious-npm-packages-that-evade-defenses.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "2b8fffe579104837a6a6db3e65cca25f"
     }
   },
   {
