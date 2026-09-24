@@ -150,10 +150,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *INCIBE-CERT*\n\n*Vulnerabilidad de ruta de búsqueda sin validar en Evope Collector permite escalada a SYSTEM...*\n\nCVE‑2026‑7169 es una vulnerabilidad de tipo CWE‑427 que permite a un atacante local sin privilegios cargar una DLL maliciosa (wtsapi32.dll) desde C:\\ProgramData\\Evope\\, la cual es cargada por Evope.Service.exe con privilegios NT AUTHORITY\\SYSTEM, resultando en ejecución de código con nivel SYSTEM. La vulnerabilidad tiene CVSS v4.0 7.5 y fue mitigada en la versión 1.1.7.13.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1574.001` — DLL\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-7169\n🌐 IPs: 1[.]1[.]7[.]13\n🔗 Dominios: pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]evope[.]tech/\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/elemento-de-ruta-de-busqueda-sin-controlar-en-evope-collector)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "5a265849c3cb47cfba2a26c66fd2c606"
+      "attempt_id": "5a265849c3cb47cfba2a26c66fd2c606",
+      "message_id": 2828,
+      "sent_at": "2026-09-24T18:52:35Z"
     }
   },
   {
