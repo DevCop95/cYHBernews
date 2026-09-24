@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *SANS ISC*\n\n*Phishing con URL ofuscada que evade filtros básicos mediante técnicas de camuflaje de caracteres*\n\nUn correo de phishing contiene un enlace que aparenta ser basura, pero cada segmento está diseñado para eludir detección de filtros de URL y sandboxing mediante codificación y caracteres invisibles. El vector de ataque se basa en la manipulación de la cadena del enlace para engañar a soluciones de seguridad tradicionales y dirigir a la víctima a un sitio malicioso.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33366)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "99cea6463d8a479988ec3b0939778202"
     }
   },
   {
