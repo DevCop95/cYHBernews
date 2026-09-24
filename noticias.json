@@ -98,9 +98,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *Bleeping Computer*\n\n*Nuevo malware bancario Android RemControl explota campañas de malvertising en Europa y Canadá*\n\nRemControl, una plataforma Android malware‑as‑a‑service, se distribuye mediante anuncios maliciosos que imitan la app IPTV TVTap, capturando credenciales bancarias y datos de pago de usuarios en Europa y Canadá; su arquitectura modular permite la carga de payloads adicionales y evasión de EDR.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1189` — Drive-by Compromise\n⚔️ `T1555.003` — Credentials from Web Browsers\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1027` — Obfuscated Files or Information\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-remcontrol-android-banking-malware-targets-users-in-europe-and-canada/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "003910086457447faed72fd9129a9287"
     }
   },
   {
