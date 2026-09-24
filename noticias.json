@@ -127,10 +127,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *Bleeping Computer*\n\n*MacSync malware explota calendarios públicos de iCloud para inyectar payloads en macOS*\n\nLa última variante de MacSync utiliza eventos de calendario públicos en iCloud como canal de comando y control, permitiendo la descarga y ejecución de payloads nativos sin interacción del usuario. Este vector de ataque aprovecha la confianza en los servicios de Apple y dificulta la detección por firmas tradicionales.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1071.001` — Web Protocols\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/macsync-malware-uses-public-icloud-calendars-to-deliver-new-payloads/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "5e4e114236e7488e8e698b4b14e28ffa"
+      "attempt_id": "5e4e114236e7488e8e698b4b14e28ffa",
+      "message_id": 2833,
+      "sent_at": "2026-09-24T23:46:52Z"
     }
   },
   {
