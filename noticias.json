@@ -68,10 +68,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *Dark Reading*\n\n*Salesbleed explota agentes de Salesforce para inyectar phishing en Slack mediante IA agente*\n\nUn nuevo vector de ataque llamado Salesbleed permite a actores maliciosos usar agentes de IA en Salesforce para introducir instrucciones arbitrarias que se propagan a canales internos de Slack, facilitando campañas de phishing dirigidas. La vulnerabilidad combina abuso de APIs de Salesforce y su integración con Slack, ampliando la superficie de ataque en entornos corporativos.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1071.001` — Web Protocols\n⚔️ `T1105` — Ingress Tool Transfer\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://www.darkreading.com/application-security/salesbleed-exploits-salesforce-agents-slack-phishing)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "425953438c8145468257068db0ec1fb7"
+      "attempt_id": "425953438c8145468257068db0ec1fb7",
+      "message_id": 2835,
+      "sent_at": "2026-09-24T23:47:07Z"
     }
   },
   {
