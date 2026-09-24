@@ -1,5 +1,161 @@
 [
   {
+    "id": 2788,
+    "fecha": "2026-09-24T18:49:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Phishing con URL ofuscada que evade filtros básicos mediante técnicas de camuflaje de caracteres",
+    "resumen": "Un correo de phishing contiene un enlace que aparenta ser basura, pero cada segmento está diseñado para eludir detección de filtros de URL y sandboxing mediante codificación y caracteres invisibles. El vector de ataque se basa en la manipulación de la cadena del enlace para engañar a soluciones de seguridad tradicionales y dirigir a la víctima a un sitio malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNzU3Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33366",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:one url three different tricks thu sep 24th",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *SANS ISC*\n\n*Phishing con URL ofuscada que evade filtros básicos mediante técnicas de camuflaje de caracteres*\n\nUn correo de phishing contiene un enlace que aparenta ser basura, pero cada segmento está diseñado para eludir detección de filtros de URL y sandboxing mediante codificación y caracteres invisibles. El vector de ataque se basa en la manipulación de la cadena del enlace para engañar a soluciones de seguridad tradicionales y dirigir a la víctima a un sitio malicioso.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://isc.sans.edu/diary/rss/33366)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2787,
+    "fecha": "2026-09-24T18:49:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tres amenazas cibernéticas que marcaron el verano de 2026: agentes IA, ransomware y ataques...",
+    "resumen": "Un agente autónomo de IA vulneró la plataforma Hugging Face, explotando configuraciones de modelo expuesto; simultáneamente, el ransomware de Fairlife cifró datos críticos en la cadena de suministro láctea; y grupos vinculados a Irán comprometieron al menos doce sistemas de agua municipales de EE. UU., introduciendo puertas traseras para manipular el suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNzU3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:3 cyber threats that defined the summer of 2026",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Dark Reading*\n\n*Tres amenazas cibernéticas que marcaron el verano de 2026: agentes IA, ransomware y ataques...*\n\nUn agente autónomo de IA vulneró la plataforma Hugging Face, explotando configuraciones de modelo expuesto; simultáneamente, el ransomware de Fairlife cifró datos críticos en la cadena de suministro láctea; y grupos vinculados a Irán comprometieron al menos doce sistemas de agua municipales de EE. UU., introduciendo puertas traseras para manipular el suministro.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1547` — Boot or Logon Autostart Execution\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/3-cyber-threats-defined-summer-2026)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2786,
+    "fecha": "2026-09-24T18:49:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad sin parche en OnePlus permite a apps instaladas obtener root sin permisos",
+    "resumen": "Un investigador descubrió que al combinar dos fallos en OxygenOS, una app maliciosa puede escalar a privilegios de root en dispositivos OnePlus y OPPO sin solicitar permisos, exponiendo a los usuarios a control total del teléfono. La vulnerabilidad afecta a múltiples modelos y aún no ha sido mitigada por el fabricante.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNzU3NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:unpatched oneplus flaws let installed android apps gain root without permissions",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*Vulnerabilidad sin parche en OnePlus permite a apps instaladas obtener root sin permisos*\n\nUn investigador descubrió que al combinar dos fallos en OxygenOS, una app maliciosa puede escalar a privilegios de root en dispositivos OnePlus y OPPO sin solicitar permisos, exponiendo a los usuarios a control total del teléfono. La vulnerabilidad afecta a múltiples modelos y aún no ha sido mitigada por el fabricante.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://thehackernews.com/2026/09/unpatched-oneplus-flaws-let-installed.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2785,
+    "fecha": "2026-09-24T18:49:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Exposición de direcciones de correo de proyectos GitLab permite a atacantes inyectar código malicioso",
+    "resumen": "Se descubrió que direcciones de correo internas de GitLab, usadas para crear issues y tareas, están publicadas en READMEs y guías, facilitando que actores maliciosos envíen commits no autorizados mediante la funcionalidad de push por email. La vulnerabilidad amplía la superficie de ataque de repositorios privados y puede ser explotada para introducir malware o ransomware en la cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNzU3NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:exposed gitlab project email addresses let attackers push code",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1071.003",
+        "name": "Mail Protocols"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Bleeping Computer*\n\n*Exposición de direcciones de correo de proyectos GitLab permite a atacantes inyectar código malicioso*\n\nSe descubrió que direcciones de correo internas de GitLab, usadas para crear issues y tareas, están publicadas en READMEs y guías, facilitando que actores maliciosos envíen commits no autorizados mediante la funcionalidad de push por email. La vulnerabilidad amplía la superficie de ataque de repositorios privados y puede ser explotada para introducir malware o ransomware en la cadena de suministro.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195.001` — Compromise Software Dependencies and Development Tools\n⚔️ `T1071.003` — Mail Protocols\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2784,
+    "fecha": "2026-09-24T18:49:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de ruta de búsqueda sin validar en Evope Collector permite escalada a SYSTEM...",
+    "resumen": "CVE‑2026‑7169 es una vulnerabilidad de tipo CWE‑427 que permite a un atacante local sin privilegios cargar una DLL maliciosa (wtsapi32.dll) desde C:\\ProgramData\\Evope\\, la cual es cargada por Evope.Service.exe con privilegios NT AUTHORITY\\SYSTEM, resultando en ejecución de código con nivel SYSTEM. La vulnerabilidad tiene CVSS v4.0 7.5 y fue mitigada en la versión 1.1.7.13.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNzU3NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/elemento-de-ruta-de-busqueda-sin-controlar-en-evope-collector",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-7169",
+    "ttps": [
+      {
+        "id": "T1574.001",
+        "name": "DLL"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "1.1.7.13"
+      ],
+      "domain": [
+        "pinterest.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.evope.tech/"
+      ],
+      "cve": [
+        "CVE-2026-7169"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *INCIBE-CERT*\n\n*Vulnerabilidad de ruta de búsqueda sin validar en Evope Collector permite escalada a SYSTEM...*\n\nCVE‑2026‑7169 es una vulnerabilidad de tipo CWE‑427 que permite a un atacante local sin privilegios cargar una DLL maliciosa (wtsapi32.dll) desde C:\\ProgramData\\Evope\\, la cual es cargada por Evope.Service.exe con privilegios NT AUTHORITY\\SYSTEM, resultando en ejecución de código con nivel SYSTEM. La vulnerabilidad tiene CVSS v4.0 7.5 y fue mitigada en la versión 1.1.7.13.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1574.001` — DLL\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-7169\n🌐 IPs: 1[.]1[.]7[.]13\n🔗 Dominios: pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]evope[.]tech/\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/elemento-de-ruta-de-busqueda-sin-controlar-en-evope-collector)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2783,
     "fecha": "2026-09-24T14:00:26Z",
     "categoria": "Ciberseguridad",
