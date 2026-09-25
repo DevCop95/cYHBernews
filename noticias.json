@@ -53,10 +53,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *The Hacker News*\n\n*GitHub Actions comprometidos reactivados ejecutan nuevamente el malware Mini Shai‑Hulud*\n\nLos workflows de GitHub Actions “issues‑helper” y “maintain‑one‑comment” fueron reactivados tras una segunda desactivación, permitiendo que el payload Mini Shai‑Hulud continúe su cadena de ejecución en entornos CI/CD. La persistencia se logra mediante tokens de acceso robados y scripts de descarga automática, exponiendo a organizaciones que confían en estos runners a ejecución de código no autorizado.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://thehackernews.com/2026/09/compromised-github-actions-came-back.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "f2ca8fd97f3a47ecab7b4e5b7e3ef93c"
+      "attempt_id": "f2ca8fd97f3a47ecab7b4e5b7e3ef93c",
+      "message_id": 2848,
+      "sent_at": "2026-09-25T16:28:12Z"
     }
   },
   {
