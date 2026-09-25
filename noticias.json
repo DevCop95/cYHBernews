@@ -82,10 +82,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*ShinyHunters compromete sitio de filtración de Clop mediante vulnerabilidad de path traversal en Grav CMS*\n\nEl grupo ransomware Clop trasladó su portal de filtración a una nueva dirección .onion tras confirmar que el servidor anterior fue vulnerado y desfigurado por ShinyHunters explotando una vulnerabilidad no autenticada de path traversal en Grav CMS. El vector de ataque permite a un actor remoto leer y sobrescribir archivos arbitrarios, comprometiendo la confidencialidad de los datos filtrados y la integridad del sitio.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "8613af2026e042059618a1544890bf1b"
+      "attempt_id": "8613af2026e042059618a1544890bf1b",
+      "message_id": 2850,
+      "sent_at": "2026-09-25T21:07:32Z"
     }
   },
   {
