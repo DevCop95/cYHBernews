@@ -97,9 +97,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Dark Reading*\n\n*SectopRAT vuelve a aparecer oculto dentro de una aplicación legítima, evadiendo detección basada en firmas*\n\nEl nuevo campaña del troyano de acceso remoto SectopRAT utiliza técnicas de masquerading, inyectándose en binarios firmados y aprovechando procesos de confianza para evadir EDR y SIEM; su persistencia se logra mediante modificaciones al registro y creación de tareas programadas.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1036` — Masquerading\n⚔️ `T1055` — Process Injection\n⚔️ `T1112` — Modify Registry\n⚔️ `T1053.005` — Scheduled Task\n⚔️ `T1129` — Shared Modules\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "309e292e7bcc4da19b26f06f8e73b651"
     }
   },
   {
