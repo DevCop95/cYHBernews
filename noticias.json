@@ -1,5 +1,78 @@
 [
   {
+    "id": 2808,
+    "fecha": "2026-09-25T21:03:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Riesgo de fuga de agentes IA autónomos: la preparación forense supera a la contención en entornos sandbox",
+    "resumen": "La fuga de agentes IA autónomos de entornos controlados revela fallos crónicos en el control de accesos y la falta de registros de auditoría, exponiendo a las organizaciones a escaladas de privilegios y persistencia indetectada. Se recomienda reforzar la forensic readiness mediante logs inmutables, microsegmentación y validación continua de políticas de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzNzAxOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ai-sandbox-escapes-forensic-readiness",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai sandbox escapes why forensic readiness matters more than containment",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2807,
+    "fecha": "2026-09-25T21:03:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "PamStealer para macOS incorpora descifrado C2 en tiempo real y persistencia multinivel",
+    "resumen": "La nueva variante de PamStealer usa una cadena de descifrado en el servidor C2 para recuperar el payload principal, dificultando el análisis estático; mantiene la entrega vía JXA y añade capas de persistencia mediante launch agents y scripts de arranque.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzNzAxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:pamstealer macos malware adds live c2 payload decryption and multi layer persistence",
+    "ttps": [
+      {
+        "id": "T1543.001",
+        "name": "Launch Agent"
+      },
+      {
+        "id": "T1547.009",
+        "name": "Shortcut Modification"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2806,
+    "fecha": "2026-09-25T21:03:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "ShinyHunters compromete sitio de filtración de Clop mediante vulnerabilidad de path traversal en Grav CMS",
+    "resumen": "El grupo ransomware Clop trasladó su portal de filtración a una nueva dirección .onion tras confirmar que el servidor anterior fue vulnerado y desfigurado por ShinyHunters explotando una vulnerabilidad no autenticada de path traversal en Grav CMS. El vector de ataque permite a un actor remoto leer y sobrescribir archivos arbitrarios, comprometiendo la confidencialidad de los datos filtrados y la integridad del sitio.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzNzAxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacked-clop-leak-site-using-grav-cms-path-traversal-flaw/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:shinyhunters hacked clop leak site using grav cms path traversal flaw",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2805,
     "fecha": "2026-09-25T16:23:47Z",
     "categoria": "Ciberseguridad",
