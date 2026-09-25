@@ -1,5 +1,131 @@
 [
   {
+    "id": 2805,
+    "fecha": "2026-09-25T16:23:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Anthropic revela que agentes de IA facilitan robo de credenciales, phishing y vigilancia a gran escala",
+    "resumen": "El informe de Anthropic identifica 117 casos donde agentes de IA automatizan reconocimiento, explotación y extracción de datos, permitiendo ataques de credential stuffing, compromisos en la nube y campañas de phishing con mínima intervención humana. Además, se documentan usos de memoria persistente para operaciones de desinformación y vigilancia transnacional, elevando el riesgo de abuso dual en contextos biológicos y militares.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzNTM0Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/on-anthropics-ai-misuse-report.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:on anthropic s ai misuse report",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "danielmiessler.com",
+        "www-cdn.anthropic.com"
+      ],
+      "url": [
+        "https://danielmiessler.com/blog/anthropic-misuse-report-september-2026",
+        "https://www-cdn.anthropic.com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026.pdf"
+      ],
+      "sha1": [
+        "e50be2e51e7695dc4b1366a37a245a597377d3b5"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Schneier on Security*\n\n*Anthropic revela que agentes de IA facilitan robo de credenciales, phishing y vigilancia a gran escala*\n\nEl informe de Anthropic identifica 117 casos donde agentes de IA automatizan reconocimiento, explotación y extracción de datos, permitiendo ataques de credential stuffing, compromisos en la nube y campañas de phishing con mínima intervención humana. Además, se documentan usos de memoria persistente para operaciones de desinformación y vigilancia transnacional, elevando el riesgo de abuso dual en contextos biológicos y militares.\n\n🟠 Severidad: *ALTA*\n\n🔍 *IoCs:*\n🔗 Dominios: danielmiessler[.]com, www-cdn[.]anthropic[.]com\n#️⃣ SHA1: e50be2e51e7695dc4b1366a37a245a597377d3b5\n🔗 URLs: hxxps://danielmiessler[.]com/blog/anthropic-misuse-report-september-2026, hxxps://www-cdn[.]anthropic[.]com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026[.]pdf\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/on-anthropics-ai-misuse-report.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2804,
+    "fecha": "2026-09-25T16:23:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "GitHub Actions comprometidos reactivados ejecutan nuevamente el malware Mini Shai‑Hulud",
+    "resumen": "Los workflows de GitHub Actions “issues‑helper” y “maintain‑one‑comment” fueron reactivados tras una segunda desactivación, permitiendo que el payload Mini Shai‑Hulud continúe su cadena de ejecución en entornos CI/CD. La persistencia se logra mediante tokens de acceso robados y scripts de descarga automática, exponiendo a organizaciones que confían en estos runners a ejecución de código no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzNTM0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/compromised-github-actions-came-back.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:compromised github actions came back online and resumed executing mini shai hulud malware",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*GitHub Actions comprometidos reactivados ejecutan nuevamente el malware Mini Shai‑Hulud*\n\nLos workflows de GitHub Actions “issues‑helper” y “maintain‑one‑comment” fueron reactivados tras una segunda desactivación, permitiendo que el payload Mini Shai‑Hulud continúe su cadena de ejecución en entornos CI/CD. La persistencia se logra mediante tokens de acceso robados y scripts de descarga automática, exponiendo a organizaciones que confían en estos runners a ejecución de código no autorizado.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://thehackernews.com/2026/09/compromised-github-actions-came-back.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2803,
+    "fecha": "2026-09-25T16:23:44Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Anthropic ofrece hasta $250 en créditos gratuitos para Claude Code en sesiones cloud...",
+    "resumen": "Anthropic habilita el acceso a Claude Code mediante sesiones en la nube, otorgando hasta $250 en créditos gratuitos para usuarios que no se inscriban en el programa de vista previa, facilitando pruebas de generación de código y RAG. Esta apertura amplía la superficie de exposición a potenciales abusos de generación automática de código malicioso y a la extracción de modelos.",
+    "url_imagen": "https://images.unsplash.com/photo-1739054730060-2cfb438ed96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzNTM0MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anthropic rolls out up to 250 in free claude code credits but only for cloud sessions",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Bleeping Computer*\n\n*Anthropic ofrece hasta $250 en créditos gratuitos para Claude Code en sesiones cloud...*\n\nAnthropic habilita el acceso a Claude Code mediante sesiones en la nube, otorgando hasta $250 en créditos gratuitos para usuarios que no se inscriban en el programa de vista previa, facilitando pruebas de generación de código y RAG. Esta apertura amplía la superficie de exposición a potenciales abusos de generación automática de código malicioso y a la extracción de modelos.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-up-to-250-in-free-claude-code-credits-but-only-for-cloud-sessions/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2802,
+    "fecha": "2026-09-25T16:23:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad almacenada XSS en la API y panel de StockAgile (CVE‑2026‑6082‑6088)...",
+    "resumen": "INCIBE ha divulgado siete vulnerabilidades de tipo Cross‑Site Scripting almacenado (CWE‑79) en la API REST y el panel de gestión de StockAgile, con CVSS 4.0 5.1; un atacante autenticado puede inyectar scripts maliciosos mediante parámetros como code o name y lograr ejecución de código JavaScript en navegadores de usuarios legítimos.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzNTM0MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-almacenado-de-stockagile-de-novadigits-technologies",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-6082,cve-2026-6083,cve-2026-6084,cve-2026-6085,cve-2026-6086,cve-2026-6087,cve-2026-6088",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "stockagile.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://stockagile.com/",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
+      ],
+      "cve": [
+        "CVE-2026-6082",
+        "CVE-2026-6083",
+        "CVE-2026-6084",
+        "CVE-2026-6085",
+        "CVE-2026-6086",
+        "CVE-2026-6087",
+        "CVE-2026-6088"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidad almacenada XSS en la API y panel de StockAgile (CVE‑2026‑6082‑6088)...*\n\nINCIBE ha divulgado siete vulnerabilidades de tipo Cross‑Site Scripting almacenado (CWE‑79) en la API REST y el panel de gestión de StockAgile, con CVSS 4.0 5.1; un atacante autenticado puede inyectar scripts maliciosos mediante parámetros como code o name y lograr ejecución de código JavaScript en navegadores de usuarios legítimos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-6082, CVE-2026-6083, CVE-2026-6084\n🔗 Dominios: pinterest[.]com, stockagile[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://stockagile[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-almacenado-de-stockagile-de-novadigits-technologies)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2801,
     "fecha": "2026-09-25T11:01:21Z",
     "categoria": "Ciberseguridad",
