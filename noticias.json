@@ -107,10 +107,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟡 *WeLiveSecurity*\n\n*IA en expansión aumenta la superficie de ataque de PyMEs y acelera amenazas tradicionales*\n\nLos agentes de IA generativa están siendo explotados para automatizar phishing, credential stuffing y creación de malware a bajo costo, ampliando la exposición de las PyMEs que carecen de recursos de detección avanzados; la combinación de IA y vulnerabilidades conocidas exige despliegues rápidos de EDR basados en modelos de detección de anomalías.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1110.003` — Password Spraying\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1566.002` — Spearphishing Link\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1105` — Ingress Tool Transfer\n\n🔗 [Leer más](https://www.welivesecurity.com/es/seguridad-corporativa/agentes-ia-ciberseguridad-pymes/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "0648a60e9e854ff6888e875010310a18"
+      "attempt_id": "0648a60e9e854ff6888e875010310a18",
+      "message_id": 2842,
+      "sent_at": "2026-09-25T11:05:30Z"
     }
   },
   {
