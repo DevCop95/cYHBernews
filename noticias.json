@@ -1,5 +1,98 @@
 [
   {
+    "id": 2801,
+    "fecha": "2026-09-25T11:01:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Operador del mercado ilícito Rydox se declara culpable tras la deportación de su cómplice",
+    "resumen": "El administrador de Rydox, plataforma de venta de datos personales robados y acceso a dispositivos, aceptó el cargo tras la extradición y deportación de su hermano colaborador, evidenciando la presión legal contra infraestructuras de cibercrimen organizadas. El caso destaca la exposición de datos sensibles y la capacidad de los actores estatales para desmantelar mercados de fraude a gran escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMzQwODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/rydox-criminal-marketplace-operator-pleads-guilty",
+    "fuente": "The Record",
+    "dedup_key": "txt:rydox cybercriminal marketplace operator pleads guilty following co conspirator brothers s deportation",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2800,
+    "fecha": "2026-09-25T11:01:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad pre‑autenticación SQLi en Roundcube Webmail (CVE‑2026‑48842) explotada...",
+    "resumen": "El Centro Canadiense de Ciberseguridad alerta que la vulnerabilidad SQL injection en el plugin virtuser_query de Roundcube Webmail (versions 1.6.x < 1.6.16 y 1.7.x < 1.7.1) está siendo explotada en la wild, permitiendo ejecución de consultas arbitrarias antes de la autenticación y potencial compromiso de credenciales. Se ha emitido parche y se recomienda actualización inmediata y monitoreo de logs de bases de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMzQwNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-48842",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-48842"
+      ]
+    }
+  },
+  {
+    "id": 2799,
+    "fecha": "2026-09-25T11:01:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "HP Wolf Security revela campaña de ransomware que usa agentes IA para suplantar extensiones...",
+    "resumen": "El informe de septiembre 2026 identifica una nueva variante de malware que despliega un “AI Agent” para desinstalar extensiones legítimas de carteras criptográficas y sustituirlas por módulos maliciosos que roban claves privadas. El vector de ataque combina phishing dirigido y ejecución de código en el navegador, afectando principalmente a usuarios de finanzas personales y plataformas DeFi.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMzQwNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/09/hp-wolf-security-threat-insights-report.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:hp wolf security threat insights report septiembre 2026",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "threatresearch.ext.hp.com"
+      ],
+      "url": [
+        "https://threatresearch.ext.hp.com/wp-content/uploads/2026/09/HP_Wolf_Security_Threat_Insights_Report_September_2026.pdf"
+      ]
+    }
+  },
+  {
+    "id": 2798,
+    "fecha": "2026-09-25T11:01:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA en expansión aumenta la superficie de ataque de PyMEs y acelera amenazas tradicionales",
+    "resumen": "Los agentes de IA generativa están siendo explotados para automatizar phishing, credential stuffing y creación de malware a bajo costo, ampliando la exposición de las PyMEs que carecen de recursos de detección avanzados; la combinación de IA y vulnerabilidades conocidas exige despliegues rápidos de EDR basados en modelos de detección de anomalías.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMzQwNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/agentes-ia-ciberseguridad-pymes/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:la presión sobre la ciberseguridad de las pymes agentes de ia en expansión amenazas tradicionales en aceleración",
+    "ttps": [
+      {
+        "id": "T1110.003",
+        "name": "Password Spraying"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2797,
     "fecha": "2026-09-25T03:08:43Z",
     "categoria": "Ciberseguridad",
