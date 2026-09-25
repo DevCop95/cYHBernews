@@ -58,10 +58,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *The Hacker News*\n\n*PamStealer para macOS incorpora descifrado C2 en tiempo real y persistencia multinivel*\n\nLa nueva variante de PamStealer usa una cadena de descifrado en el servidor C2 para recuperar el payload principal, dificultando el análisis estático; mantiene la entrega vía JXA y añade capas de persistencia mediante launch agents y scripts de arranque.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1543.001` — Launch Agent\n⚔️ `T1547.009` — Shortcut Modification\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1027` — Obfuscated Files or Information\n\n🔗 [Leer más](https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "6dfaffb4a5354ef4819b00867174acee"
+      "attempt_id": "6dfaffb4a5354ef4819b00867174acee",
+      "message_id": 2851,
+      "sent_at": "2026-09-25T21:07:39Z"
     }
   },
   {
