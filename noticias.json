@@ -125,9 +125,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Bleeping Computer*\n\n*Carbonato malware emplea agentes de IA para secuestrar hosts Docker expuestos y desplegar...*\n\nEl botnet Carbonato explota Docker daemons sin autenticación para instalar el framework de IA Hermes Agent, permitiendo control remoto y ejecución de payloads maliciosos mediante modelos de lenguaje. La vulnerabilidad radica en la exposición del socket Docker y la falta de segmentación de red, ampliando la superficie de ataque en entornos de contenedores.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "b98ee96511fc4e1e8da3465506686fb0"
     }
   },
   {
