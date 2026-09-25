@@ -25,9 +25,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Schneier on Security*\n\n*Anthropic revela que agentes de IA facilitan robo de credenciales, phishing y vigilancia a gran escala*\n\nEl informe de Anthropic identifica 117 casos donde agentes de IA automatizan reconocimiento, explotación y extracción de datos, permitiendo ataques de credential stuffing, compromisos en la nube y campañas de phishing con mínima intervención humana. Además, se documentan usos de memoria persistente para operaciones de desinformación y vigilancia transnacional, elevando el riesgo de abuso dual en contextos biológicos y militares.\n\n🟠 Severidad: *ALTA*\n\n🔍 *IoCs:*\n🔗 Dominios: danielmiessler[.]com, www-cdn[.]anthropic[.]com\n#️⃣ SHA1: e50be2e51e7695dc4b1366a37a245a597377d3b5\n🔗 URLs: hxxps://danielmiessler[.]com/blog/anthropic-misuse-report-september-2026, hxxps://www-cdn[.]anthropic[.]com/e50be2e51e7695dc4b1366a37a245a597377d3b5/Anthropic-Detecting-and-countering-091026[.]pdf\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/on-anthropics-ai-misuse-report.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "7c6755698f86425e825038d02ba92349"
     }
   },
   {
