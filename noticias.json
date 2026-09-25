@@ -120,9 +120,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidad almacenada XSS en la API y panel de StockAgile (CVE‑2026‑6082‑6088)...*\n\nINCIBE ha divulgado siete vulnerabilidades de tipo Cross‑Site Scripting almacenado (CWE‑79) en la API REST y el panel de gestión de StockAgile, con CVSS 4.0 5.1; un atacante autenticado puede inyectar scripts maliciosos mediante parámetros como code o name y lograr ejecución de código JavaScript en navegadores de usuarios legítimos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-6082, CVE-2026-6083, CVE-2026-6084\n🔗 Dominios: pinterest[.]com, stockagile[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://stockagile[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-almacenado-de-stockagile-de-novadigits-technologies)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "96a1286c62d144ba922a1ad902733e5e"
     }
   },
   {
