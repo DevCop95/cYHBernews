@@ -22,10 +22,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟢 *Dark Reading*\n\n*Riesgo de fuga de agentes IA autónomos: la preparación forense supera a la contención en entornos sandbox*\n\nLa fuga de agentes IA autónomos de entornos controlados revela fallos crónicos en el control de accesos y la falta de registros de auditoría, exponiendo a las organizaciones a escaladas de privilegios y persistencia indetectada. Se recomienda reforzar la forensic readiness mediante logs inmutables, microsegmentación y validación continua de políticas de acceso.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1547` — Boot or Logon Autostart Execution\n\n🔗 [Leer más](https://www.darkreading.com/cyberattacks-data-breaches/ai-sandbox-escapes-forensic-readiness)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "c4f38750099c40ca974d9833e038ed70"
+      "attempt_id": "c4f38750099c40ca974d9833e038ed70",
+      "message_id": 2852,
+      "sent_at": "2026-09-25T21:07:48Z"
     }
   },
   {
