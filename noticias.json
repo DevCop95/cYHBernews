@@ -41,10 +41,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *The Hacker News*\n\n*Vulnerabilidad pre‑autenticación SQLi en Roundcube Webmail (CVE‑2026‑48842) explotada...*\n\nEl Centro Canadiense de Ciberseguridad alerta que la vulnerabilidad SQL injection en el plugin virtuser_query de Roundcube Webmail (versions 1.6.x < 1.6.16 y 1.7.x < 1.7.1) está siendo explotada en la wild, permitiendo ejecución de consultas arbitrarias antes de la autenticación y potencial compromiso de credenciales. Se ha emitido parche y se recomienda actualización inmediata y monitoreo de logs de bases de datos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-48842\n\n🔗 [Leer más](https://thehackernews.com/2026/09/roundcube-pre-auth-sql-injection-flaw.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "aabcf45ff9934d379f31106ebc4a2861"
+      "attempt_id": "aabcf45ff9934d379f31106ebc4a2861",
+      "message_id": 2844,
+      "sent_at": "2026-09-25T11:05:46Z"
     }
   },
   {
