@@ -38,10 +38,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *CISA Advisories*\n\n*Vulnerabilidades críticas en Eufy Omni C20 y Omni X10 Pro permiten ejecución remota de comandos...*\n\nTres CVE (CVE‑2026‑93289, CVE‑2026‑93290, CVE‑2026‑93291) afectan a versiones < 1.6.4 de los dispositivos Eufy Omni C20 y Omni X10 Pro, habilitando inyección de comandos durante el emparejamiento y exposición de credenciales embebidas, con CVSS hasta 9.0 (crítico). La mitigación recomendada es actualizar a la versión 1.6.4 o superior.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-93289, CVE-2026-93290, CVE-2026-93291\n🔗 Dominios: cwe[.]mitre[.]org, www[.]cve[.]org, www[.]first[.]org\n🔗 URLs: hxxps://cwe[.]mitre[.]org/data/definitions/295[.]html, hxxps://cwe[.]mitre[.]org/data/definitions/78[.]html, hxxps://cwe[.]mitre[.]org/data/definitions/798[.]html\n\n🔗 [Leer más](https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-02)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "e36ae9225c7a4b918589117179e720e3"
+      "attempt_id": "e36ae9225c7a4b918589117179e720e3",
+      "message_id": 2841,
+      "sent_at": "2026-09-25T03:13:10Z"
     }
   },
   {
