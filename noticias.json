@@ -1,5 +1,116 @@
 [
   {
+    "id": 2797,
+    "fecha": "2026-09-25T03:08:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Eufy Omni C20 y Omni X10 Pro permiten ejecución remota de comandos...",
+    "resumen": "Tres CVE (CVE‑2026‑93289, CVE‑2026‑93290, CVE‑2026‑93291) afectan a versiones < 1.6.4 de los dispositivos Eufy Omni C20 y Omni X10 Pro, habilitando inyección de comandos durante el emparejamiento y exposición de credenciales embebidas, con CVSS hasta 9.0 (crítico). La mitigación recomendada es actualizar a la versión 1.6.4 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMDU3MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-93289,cve-2026-93290,cve-2026-93291",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "cwe.mitre.org",
+        "www.cve.org",
+        "www.first.org"
+      ],
+      "url": [
+        "https://cwe.mitre.org/data/definitions/295.html",
+        "https://cwe.mitre.org/data/definitions/78.html",
+        "https://cwe.mitre.org/data/definitions/798.html",
+        "https://www.cve.org/CVERecord?id=CVE-2026-93289",
+        "https://www.cve.org/CVERecord?id=CVE-2026-93290",
+        "https://www.cve.org/CVERecord?id=CVE-2026-93291",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N"
+      ],
+      "cve": [
+        "CVE-2026-93289",
+        "CVE-2026-93290",
+        "CVE-2026-93291"
+      ]
+    }
+  },
+  {
+    "id": 2796,
+    "fecha": "2026-09-25T03:08:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Congreso EE.UU. propone ley de normas cibernéticas voluntarias para telecom tras brechas de Salt Typhoon",
+    "resumen": "Senadores Warner y Cruz impulsan el Telecommunications Cybersecurity and Resilience Act, buscando establecer directrices de seguridad y resiliencia para operadores de telecomunicaciones tras el ataque de Salt Typhoon atribuido a actores chinos que comprometieron infraestructuras críticas. La medida apunta a formalizar prácticas de defensa, detección y respuesta ante amenazas persistentes en el sector.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMDU3MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/lawmakers-introduce-bill-for-voluntary-telecom-cyber-rules",
+    "fuente": "The Record",
+    "dedup_key": "txt:lawmakers introduce bill for voluntary telecom cyber rules after salt typhoon hacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2795,
+    "fecha": "2026-09-25T03:08:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "SectopRAT vuelve a aparecer oculto dentro de una aplicación legítima, evadiendo detección basada en firmas",
+    "resumen": "El nuevo campaña del troyano de acceso remoto SectopRAT utiliza técnicas de masquerading, inyectándose en binarios firmados y aprovechando procesos de confianza para evadir EDR y SIEM; su persistencia se logra mediante modificaciones al registro y creación de tareas programadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMDU3MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/sectoprat-returns-hiding-inside-legitimate-application",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:sectoprat returns hiding inside a legitimate application",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1112",
+        "name": "Modify Registry"
+      },
+      {
+        "id": "T1053.005",
+        "name": "Scheduled Task"
+      },
+      {
+        "id": "T1129",
+        "name": "Shared Modules"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2794,
+    "fecha": "2026-09-25T03:08:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Carbonato malware emplea agentes de IA para secuestrar hosts Docker expuestos y desplegar...",
+    "resumen": "El botnet Carbonato explota Docker daemons sin autenticación para instalar el framework de IA Hermes Agent, permitiendo control remoto y ejecución de payloads maliciosos mediante modelos de lenguaje. La vulnerabilidad radica en la exposición del socket Docker y la falta de segmentación de red, ampliando la superficie de ataque en entornos de contenedores.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzMDU3MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-carbonato-malware-uses-ai-agents-to-hijack-exposed-docker-hosts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new carbonato malware uses ai agents to hijack exposed docker hosts",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2793,
     "fecha": "2026-09-24T23:44:30Z",
     "categoria": "Ciberseguridad",
