@@ -62,10 +62,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Bleeping Computer*\n\n*Vulnerabilidad CSRF en Elementor permite crear cuentas de administrador en WordPress*\n\nUn flaw CSRF (CVE‑2024‑XXXX) en el plugin Elementor permite a un atacante no autenticado inyectar peticiones que generan usuarios con privilegios de administrador, comprometiendo la integridad del sitio y facilitando despliegues de ransomware o APT.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1136.001` — Local Account\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/elementor-wordpress-flaw-lets-attackers-create-admin-accounts/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "c85284743e074ff1a383098bedee9334"
+      "attempt_id": "c85284743e074ff1a383098bedee9334",
+      "message_id": 2857,
+      "sent_at": "2026-09-26T10:47:58Z"
     }
   },
   {
