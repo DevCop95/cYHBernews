@@ -1,5 +1,107 @@
 [
   {
+    "id": 2819,
+    "fecha": "2026-09-26T20:35:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA incorpora dos vulnerabilidades explotadas (CVE‑2026‑65660 y CVE‑2026‑67279) al catálogo...",
+    "resumen": "CISA añadió al Known Exploited Vulnerabilities Catalog dos CVE activos: una inyección de código en Microsoft SharePoint y una falla de control de flujo en Mikrotik RouterOS, obligando a las agencias federales a aplicar parches inmediatos bajo la BOD 26‑04 y recomendando a todas las organizaciones gestión de riesgos basada en KEV.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NTQ5MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-65660,cve-2026-67279",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "cisasurvey.gov1.qualtrics.com",
+        "www.cve.org"
+      ],
+      "url": [
+        "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w",
+        "https://www.cve.org/CVERecord?id=CVE-2026-65660",
+        "https://www.cve.org/CVERecord?id=CVE-2026-67279"
+      ],
+      "cve": [
+        "CVE-2026-65660",
+        "CVE-2026-67279"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *CISA Advisories*\n\n*CISA incorpora dos vulnerabilidades explotadas (CVE‑2026‑65660 y CVE‑2026‑67279) al catálogo...*\n\nCISA añadió al Known Exploited Vulnerabilities Catalog dos CVE activos: una inyección de código en Microsoft SharePoint y una falla de control de flujo en Mikrotik RouterOS, obligando a las agencias federales a aplicar parches inmediatos bajo la BOD 26‑04 y recomendando a todas las organizaciones gestión de riesgos basada en KEV.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-65660, CVE-2026-67279\n🔗 Dominios: cisasurvey[.]gov1[.]qualtrics[.]com, www[.]cve[.]org\n🔗 URLs: hxxps://cisasurvey[.]gov1[.]qualtrics[.]com/jfe/form/SV_1Zwu52kgK2OYf3w, hxxps://www[.]cve[.]org/CVERecord?id=CVE-2026-65660, hxxps://www[.]cve[.]org/CVERecord?id=CVE-2026-67279\n\n🔗 [Leer más](https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-two-known-exploited-vulnerabilities-catalog)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2818,
+    "fecha": "2026-09-26T20:35:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Lunex Stealer explota controlador AMD para desactivar monitoreo de seguridad y robar...",
+    "resumen": "El malware Lunex Stealer, distribuido a través de sitios ucranianos comprometidos, utiliza un driver de AMD para deshabilitar sensores de integridad del sistema y evadir EDR, permitiendo la extracción de cookies y contraseñas almacenadas en navegadores. La cadena de ataque de cuatro fases inicia con una página CAPTCHA falsa y culmina en la exfiltración de credenciales, representando una amenaza dirigida a usuarios de habla ucraniana.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NTQ5MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:lunex stealer abuses amd driver to disable security monitoring and steal browser credentials",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*Lunex Stealer explota controlador AMD para desactivar monitoreo de seguridad y robar...*\n\nEl malware Lunex Stealer, distribuido a través de sitios ucranianos comprometidos, utiliza un driver de AMD para deshabilitar sensores de integridad del sistema y evadir EDR, permitiendo la extracción de cookies y contraseñas almacenadas en navegadores. La cadena de ataque de cuatro fases inicia con una página CAPTCHA falsa y culmina en la exfiltración de credenciales, representando una amenaza dirigida a usuarios de habla ucraniana.\n\n🟡 Severidad: *MEDIA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2817,
+    "fecha": "2026-09-26T20:35:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas CVE‑2026‑28324 y CVE‑2026‑28325 permiten RCE en SolarWinds...",
+    "resumen": "Dos vulnerabilidades (una crítica, una alta) en versiones < 2026.2.3 de SolarWinds Observability Self‑Hosted permiten a un atacante remoto no autenticado ejecutar código arbitrario mediante una comprobación insuficiente de integridad de datos. La explotación afecta a despliegues con configuraciones no predeterminadas y requiere parchear a 2026.2.3 inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NTQ5Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-observability-self-hosted-de-solarwinds",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-28324,cve-2026-28325",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "documentation.solarwinds.com",
+        "pinterest.com",
+        "wa.me",
+        "www.solarwinds.com"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://documentation.solarwinds.com/en/success_center/orionplatform/content/release_notes/hco_2026-2-3_release_notes.htm",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.solarwinds.com/trust-center/security-advisories/cve-2026-28324"
+      ],
+      "cve": [
+        "CVE-2026-28324",
+        "CVE-2026-28325"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidades críticas CVE‑2026‑28324 y CVE‑2026‑28325 permiten RCE en SolarWinds...*\n\nDos vulnerabilidades (una crítica, una alta) en versiones < 2026.2.3 de SolarWinds Observability Self‑Hosted permiten a un atacante remoto no autenticado ejecutar código arbitrario mediante una comprobación insuficiente de integridad de datos. La explotación afecta a despliegues con configuraciones no predeterminadas y requiere parchear a 2026.2.3 inmediatamente.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-28324, CVE-2026-28325\n🔗 Dominios: documentation[.]solarwinds[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://documentation[.]solarwinds[.]com/en/success_center/orionplatform/content/release_notes/hco_2026-2-3_release_notes[.]htm, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-observability-self-hosted-de-solarwinds)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2816,
     "fecha": "2026-09-26T15:38:07Z",
     "categoria": "Ciberseguridad",
