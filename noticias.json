@@ -45,10 +45,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *Krebs on Security*\n\n*Soldado estadounidense condenado a 70 meses por hackeo masivo a AT&T y Verizon y robo...*\n\nEl militar violó sistemas internos de telecomunicaciones, extrayendo llamadas y SMS de más de 100 millones de suscriptores, lo que constituye una brecha de datos a gran escala y evidencia de vulnerabilidades de acceso interno. La sentencia incluye 70 meses de prisión y $300 000 en restitución, subrayando riesgos de insider threat en infraestructuras críticas.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1039` — Data from Network Shared Drive\n\n🔗 [Leer más](https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "07940071021a43c8bac034c54052343d"
+      "attempt_id": "07940071021a43c8bac034c54052343d",
+      "message_id": 2855,
+      "sent_at": "2026-09-26T03:18:14Z"
     }
   },
   {
