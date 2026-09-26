@@ -1,5 +1,56 @@
 [
   {
+    "id": 2816,
+    "fecha": "2026-09-26T15:38:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Labcorp revisará sus prácticas de seguridad de datos y pagará multa de 2,3 M USD por fallos...",
+    "resumen": "La empresa implementará un plan de respuesta a incidentes para vulnerabilidades de proveedores, limitará el intercambio de datos con terceros y ampliará su equipo de gestión de riesgos para monitorizar el cumplimiento de normas de seguridad. La multa de $2.3 M refleja la gravedad de los hallazgos regulatorios y la necesidad de reforzar la cadena de suministro de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0MzcwODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/labcorp-to-overhaul-security-practices-settlement",
+    "fuente": "The Record",
+    "dedup_key": "txt:labcorp to overhaul data security practices pay 2 3 million fine for cybersecurity failings",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Record*\n\n*Labcorp revisará sus prácticas de seguridad de datos y pagará multa de 2,3 M USD por fallos...*\n\nLa empresa implementará un plan de respuesta a incidentes para vulnerabilidades de proveedores, limitará el intercambio de datos con terceros y ampliará su equipo de gestión de riesgos para monitorizar el cumplimiento de normas de seguridad. La multa de $2.3 M refleja la gravedad de los hallazgos regulatorios y la necesidad de reforzar la cadena de suministro de datos.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://therecord.media/labcorp-to-overhaul-security-practices-settlement)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2815,
+    "fecha": "2026-09-26T15:38:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Atacantes evaden WAFs y explotan vulnerabilidad crítica de Oracle PeopleSoft (CVE‑2026‑35273)...",
+    "resumen": "Google advierte de una campaña global que usa CVE‑2026‑35273, una RCE sin autenticación con CVSS 9.8, para sortear firewalls de aplicaciones web y desplegar web shells en entornos PeopleSoft, afectando a múltiples sectores. La explotación masiva indica disponibilidad de exploits y kits automatizados, incrementando el riesgo de compromiso de datos y movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1790172068601-c192a0c1c0b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0MzcwODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-35273",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1100",
+        "name": "Web Shell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-35273"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *The Hacker News*\n\n*Atacantes evaden WAFs y explotan vulnerabilidad crítica de Oracle PeopleSoft (CVE‑2026‑35273)...*\n\nGoogle advierte de una campaña global que usa CVE‑2026‑35273, una RCE sin autenticación con CVSS 9.8, para sortear firewalls de aplicaciones web y desplegar web shells en entornos PeopleSoft, afectando a múltiples sectores. La explotación masiva indica disponibilidad de exploits y kits automatizados, incrementando el riesgo de compromiso de datos y movimiento lateral.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1100` — Web Shell\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-35273\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2814,
     "fecha": "2026-09-26T10:43:41Z",
     "categoria": "IA",
