@@ -113,9 +113,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Bleeping Computer*\n\n*Kiteworks solicita cierre de servidores por 6 horas ante amenaza de zero‑day inminente*\n\nLa plataforma de intercambio seguro de archivos advierte a sus clientes de un posible zero‑day que podría permitir ejecución remota de código y exfiltración de datos; recomienda detener los servidores durante una ventana de seis horas para aplicar mitigaciones y actualizar firmas.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "2937ae3272c04f9295870e701875075f"
     }
   },
   {
