@@ -45,10 +45,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *The Hacker News*\n\n*Atacantes evaden WAFs y explotan vulnerabilidad crítica de Oracle PeopleSoft (CVE‑2026‑35273)...*\n\nGoogle advierte de una campaña global que usa CVE‑2026‑35273, una RCE sin autenticación con CVSS 9.8, para sortear firewalls de aplicaciones web y desplegar web shells en entornos PeopleSoft, afectando a múltiples sectores. La explotación masiva indica disponibilidad de exploits y kits automatizados, incrementando el riesgo de compromiso de datos y movimiento lateral.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1100` — Web Shell\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-35273\n\n🔗 [Leer más](https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "f0c01011dae54798af337111aad05803"
+      "attempt_id": "f0c01011dae54798af337111aad05803",
+      "message_id": 2859,
+      "sent_at": "2026-09-26T15:42:22Z"
     }
   },
   {
