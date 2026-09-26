@@ -32,10 +32,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *CISA Advisories*\n\n*CISA incorpora dos vulnerabilidades explotadas (CVE‑2026‑65660 y CVE‑2026‑67279) al catálogo...*\n\nCISA añadió al Known Exploited Vulnerabilities Catalog dos CVE activos: una inyección de código en Microsoft SharePoint y una falla de control de flujo en Mikrotik RouterOS, obligando a las agencias federales a aplicar parches inmediatos bajo la BOD 26‑04 y recomendando a todas las organizaciones gestión de riesgos basada en KEV.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-65660, CVE-2026-67279\n🔗 Dominios: cisasurvey[.]gov1[.]qualtrics[.]com, www[.]cve[.]org\n🔗 URLs: hxxps://cisasurvey[.]gov1[.]qualtrics[.]com/jfe/form/SV_1Zwu52kgK2OYf3w, hxxps://www[.]cve[.]org/CVERecord?id=CVE-2026-65660, hxxps://www[.]cve[.]org/CVERecord?id=CVE-2026-67279\n\n🔗 [Leer más](https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-two-known-exploited-vulnerabilities-catalog)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "542d4336f8d54722ada792bb8f03ff6d"
+      "attempt_id": "542d4336f8d54722ada792bb8f03ff6d",
+      "message_id": 2863,
+      "sent_at": "2026-09-26T20:39:45Z"
     }
   },
   {
