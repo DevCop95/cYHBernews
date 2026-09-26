@@ -1,5 +1,124 @@
 [
   {
+    "id": 2812,
+    "fecha": "2026-09-26T03:13:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Kiteworks advierte a clientes que suspendan el uso de la plataforma tras alerta de agencias...",
+    "resumen": "El CISO de Kiteworks confirmó haber recibido inteligencia de amenazas creíble de autoridades federales que indica un posible intento de actores maliciosos de comprometer sistemas de la solución para clientes, recomendando la interrupción inmediata del servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzOTI0MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/kiteworks-urges-customers-to-stop-using-systems-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:kiteworks urges customers to stop using platform after warning from federal intelligence agencies",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Record*\n\n*Kiteworks advierte a clientes que suspendan el uso de la plataforma tras alerta de agencias...*\n\nEl CISO de Kiteworks confirmó haber recibido inteligencia de amenazas creíble de autoridades federales que indica un posible intento de actores maliciosos de comprometer sistemas de la solución para clientes, recomendando la interrupción inmediata del servicio.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://therecord.media/kiteworks-urges-customers-to-stop-using-systems-incident)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2811,
+    "fecha": "2026-09-26T03:13:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Soldado estadounidense condenado a 70 meses por hackeo masivo a AT&T y Verizon y robo...",
+    "resumen": "El militar violó sistemas internos de telecomunicaciones, extrayendo llamadas y SMS de más de 100 millones de suscriptores, lo que constituye una brecha de datos a gran escala y evidencia de vulnerabilidades de acceso interno. La sentencia incluye 70 meses de prisión y $300 000 en restitución, subrayando riesgos de insider threat en infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzOTI0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:u s soldier gets 70 months in prison for at t verizon extortions",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1039",
+        "name": "Data from Network Shared Drive"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Krebs on Security*\n\n*Soldado estadounidense condenado a 70 meses por hackeo masivo a AT&T y Verizon y robo...*\n\nEl militar violó sistemas internos de telecomunicaciones, extrayendo llamadas y SMS de más de 100 millones de suscriptores, lo que constituye una brecha de datos a gran escala y evidencia de vulnerabilidades de acceso interno. La sentencia incluye 70 meses de prisión y $300 000 en restitución, subrayando riesgos de insider threat en infraestructuras críticas.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1020` — Automated Exfiltration\n⚔️ `T1039` — Data from Network Shared Drive\n\n🔗 [Leer más](https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2810,
+    "fecha": "2026-09-26T03:13:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA reduce costos de reintentos y acelera la escalada de privilegios en ataques a cuentas cloud",
+    "resumen": "Los atacantes aprovechan modelos de lenguaje para automatizar la generación de scripts y credenciales, permitiendo repetir intentos de escalada de privilegios en entornos cloud sin la carga manual de análisis de documentación, lo que disminuye el tiempo de exposición y aumenta la frecuencia de intentos exitosos. Esta tendencia eleva el riesgo de compromisos persistentes y requiere que los SOC integren detección basada en comportamiento y análisis de anomalías impulsado por IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzOTI0MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:the soc doesn t need to start over with every alert",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Hacker News*\n\n*IA reduce costos de reintentos y acelera la escalada de privilegios en ataques a cuentas cloud*\n\nLos atacantes aprovechan modelos de lenguaje para automatizar la generación de scripts y credenciales, permitiendo repetir intentos de escalada de privilegios en entornos cloud sin la carga manual de análisis de documentación, lo que disminuye el tiempo de exposición y aumenta la frecuencia de intentos exitosos. Esta tendencia eleva el riesgo de compromisos persistentes y requiere que los SOC integren detección basada en comportamiento y análisis de anomalías impulsado por IA.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1110.001` — Password Guessing\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2809,
+    "fecha": "2026-09-26T03:13:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Kiteworks solicita cierre de servidores por 6 horas ante amenaza de zero‑day inminente",
+    "resumen": "La plataforma de intercambio seguro de archivos advierte a sus clientes de un posible zero‑day que podría permitir ejecución remota de código y exfiltración de datos; recomienda detener los servidores durante una ventana de seis horas para aplicar mitigaciones y actualizar firmas.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAzOTI0MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:kiteworks urges 6 hour server shutdown over potential zero day attacks",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Bleeping Computer*\n\n*Kiteworks solicita cierre de servidores por 6 horas ante amenaza de zero‑day inminente*\n\nLa plataforma de intercambio seguro de archivos advierte a sus clientes de un posible zero‑day que podría permitir ejecución remota de código y exfiltración de datos; recomienda detener los servidores durante una ventana de seis horas para aplicar mitigaciones y actualizar firmas.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n⚔️ `T1041` — Exfiltration Over C2 Channel\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/kiteworks-urges-6-hour-server-shutdown-over-potential-zero-day-attacks/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2808,
     "fecha": "2026-09-25T21:03:14Z",
     "categoria": "Ciberseguridad",
