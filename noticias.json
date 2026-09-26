@@ -85,9 +85,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Hacker News*\n\n*IA reduce costos de reintentos y acelera la escalada de privilegios en ataques a cuentas cloud*\n\nLos atacantes aprovechan modelos de lenguaje para automatizar la generación de scripts y credenciales, permitiendo repetir intentos de escalada de privilegios en entornos cloud sin la carga manual de análisis de documentación, lo que disminuye el tiempo de exposición y aumenta la frecuencia de intentos exitosos. Esta tendencia eleva el riesgo de compromisos persistentes y requiere que los SOC integren detección basada en comportamiento y análisis de anomalías impulsado por IA.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1068` — Exploitation for Privilege Escalation\n⚔️ `T1110.001` — Password Guessing\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "f8c0806e1da44f59886ee903b89968b0"
     }
   },
   {
