@@ -66,10 +66,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidades críticas en el panel de administración de Microweber permiten carga arbitraria...*\n\nDos CVE publicados por INCIBE afectan a Microweber v2.0.19: una vulnerabilidad de carga arbitraria de archivos (CVSS 8.4) permite ejecución remota de código por usuarios autenticados; la otra, XSS reflejado (CVSS 5.9), compromete sesiones de administradores mediante inyección en el parámetro group. No existe parche disponible.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-5695, CVE-2026-5696\n🔗 Dominios: microweber[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://microweber[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-el-panel-de-administracion-de-microweber)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "626bb5046c3446b9bd76910b446d9635"
+      "attempt_id": "626bb5046c3446b9bd76910b446d9635",
+      "message_id": 2864,
+      "sent_at": "2026-09-26T23:25:51Z"
     }
   },
   {
