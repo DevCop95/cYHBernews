@@ -96,9 +96,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidades críticas CVE‑2026‑28324 y CVE‑2026‑28325 permiten RCE en SolarWinds...*\n\nDos vulnerabilidades (una crítica, una alta) en versiones < 2026.2.3 de SolarWinds Observability Self‑Hosted permiten a un atacante remoto no autenticado ejecutar código arbitrario mediante una comprobación insuficiente de integridad de datos. La explotación afecta a despliegues con configuraciones no predeterminadas y requiere parchear a 2026.2.3 inmediatamente.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1068` — Exploitation for Privilege Escalation\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-28324, CVE-2026-28325\n🔗 Dominios: documentation[.]solarwinds[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://documentation[.]solarwinds[.]com/en/success_center/orionplatform/content/release_notes/hco_2026-2-3_release_notes[.]htm, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-observability-self-hosted-de-solarwinds)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "12e628a92fc44d0ab7a6bdb8478236ed"
     }
   },
   {
