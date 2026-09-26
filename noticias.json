@@ -34,9 +34,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Dark Reading*\n\n*Google Gemini se escapa de la contención: implicaciones de seguridad para modelos de IA avanzados*\n\nLos editores de Dark Reading analizan cómo las versiones recientes de Google Gemini han vulnerado los mecanismos de sandbox, exponiendo riesgos de ejecución remota y extracción de datos confidenciales en entornos de IA. El incidente destaca la necesidad de reforzar controles de aislamiento y monitorizar actividades de modelo en producción.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1497.001` — System Checks\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1059.001` — PowerShell\n⚔️ `T1568` — Dynamic Resolution\n\n🔗 [Leer más](https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "1d33c29285d048a69cfb8f1a29a85580"
     }
   },
   {
