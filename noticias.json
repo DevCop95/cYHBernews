@@ -1,5 +1,77 @@
 [
   {
+    "id": 2822,
+    "fecha": "2026-09-26T23:21:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CEO de Crypto acusa a Corea del Norte de robar $387 M en la plataforma Bitget y activa fondo...",
+    "resumen": "El director de Bitget informó que un ataque atribuido a actores norcoreanos sustrajo $387 millones de criptoactivos, activando su User Protection Fund de $464 millones para indemnizar a los afectados; el incidente evidencia vulnerabilidades en la gestión de claves y controles de acceso de exchanges.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NjQ4ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/crypto-ceo-accuses-north-korea-of-387-million-theft",
+    "fuente": "The Record",
+    "dedup_key": "txt:crypto ceo accuses north korea of stealing 387 million from bitget platform",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Record*\n\n*CEO de Crypto acusa a Corea del Norte de robar $387 M en la plataforma Bitget y activa fondo...*\n\nEl director de Bitget informó que un ataque atribuido a actores norcoreanos sustrajo $387 millones de criptoactivos, activando su User Protection Fund de $464 millones para indemnizar a los afectados; el incidente evidencia vulnerabilidades en la gestión de claves y controles de acceso de exchanges.\n\n🟠 Severidad: *ALTA*\n\n🔗 [Leer más](https://therecord.media/crypto-ceo-accuses-north-korea-of-387-million-theft)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2821,
+    "fecha": "2026-09-26T23:21:24Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Zero Trust para agentes de IA: la urgencia de eliminar la invisibilidad y prevenir intrusiones críticas",
+    "resumen": "Tras incidentes como la intrusión en Hugging Face durante pruebas de agentes OpenAI, se evidencia que la falta de visibilidad sobre la actividad de los agentes de IA crea una superficie de ataque explotable; la adopción de arquitecturas Zero Trust, con monitoreo continuo y control de acceso granular, es esencial para mitigar riesgos de compromiso y abuso de modelos.",
+    "url_imagen": "https://images.unsplash.com/photo-1763110305836-17790330be78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NjQ4ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:zero trust for ai agents starts with fixing zero visibility",
+    "ttps": [],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Hacker News*\n\n*Zero Trust para agentes de IA: la urgencia de eliminar la invisibilidad y prevenir intrusiones críticas*\n\nTras incidentes como la intrusión en Hugging Face durante pruebas de agentes OpenAI, se evidencia que la falta de visibilidad sobre la actividad de los agentes de IA crea una superficie de ataque explotable; la adopción de arquitecturas Zero Trust, con monitoreo continuo y control de acceso granular, es esencial para mitigar riesgos de compromiso y abuso de modelos.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2820,
+    "fecha": "2026-09-26T23:21:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en el panel de administración de Microweber permiten carga arbitraria...",
+    "resumen": "Dos CVE publicados por INCIBE afectan a Microweber v2.0.19: una vulnerabilidad de carga arbitraria de archivos (CVSS 8.4) permite ejecución remota de código por usuarios autenticados; la otra, XSS reflejado (CVSS 5.9), compromete sesiones de administradores mediante inyección en el parámetro group. No existe parche disponible.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NjQ4ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-el-panel-de-administracion-de-microweber",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-5695,cve-2026-5696",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "microweber.com",
+        "pinterest.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://microweber.com/",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
+      ],
+      "cve": [
+        "CVE-2026-5695",
+        "CVE-2026-5696"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidades críticas en el panel de administración de Microweber permiten carga arbitraria...*\n\nDos CVE publicados por INCIBE afectan a Microweber v2.0.19: una vulnerabilidad de carga arbitraria de archivos (CVSS 8.4) permite ejecución remota de código por usuarios autenticados; la otra, XSS reflejado (CVSS 5.9), compromete sesiones de administradores mediante inyección en el parámetro group. No existe parche disponible.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-5695, CVE-2026-5696\n🔗 Dominios: microweber[.]com, pinterest[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://microweber[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-el-panel-de-administracion-de-microweber)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2819,
     "fecha": "2026-09-26T20:35:34Z",
     "categoria": "Ciberseguridad",
@@ -3509,44 +3581,6 @@
       "attempt_id": "16f76a1259884589b40d570864e52af6",
       "message_id": 2760,
       "sent_at": "2026-09-20T20:15:51Z"
-    }
-  },
-  {
-    "id": 2715,
-    "fecha": "2026-09-20T15:19:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "SolarWinds parchea vulnerabilidad ARM de clave codificada que permitía RCE",
-    "resumen": "SolarWinds lanzó actualizaciones críticas para Access Rights Manager (ARM) que corrigen la CVE‑2026‑28326, una falla de alta severidad (CVSS 8.8) que permite ejecución remota de código sin autenticación mediante una clave hard‑coded. La vulnerabilidad afecta a todas las versiones de ARM 2026.2 y anteriores, exponiendo a organizaciones a compromisos de control de acceso y posible movimiento lateral.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5MTc1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/09/solarwinds-patches-arm-hard-coded-key.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-28326",
-    "ttps": [
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-28326"
-      ]
-    },
-    "telegram": {
-      "status": "sent",
-      "attempts": 1,
-      "attempt_id": "985960f9db8e40fd9b1c1e15a379a442",
-      "message_id": 2759,
-      "sent_at": "2026-09-20T15:23:36Z"
     }
   },
   {
