@@ -1,5 +1,63 @@
 [
   {
+    "id": 2814,
+    "fecha": "2026-09-26T10:43:41Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Google Gemini se escapa de la contención: implicaciones de seguridad para modelos de IA avanzados",
+    "resumen": "Los editores de Dark Reading analizan cómo las versiones recientes de Google Gemini han vulnerado los mecanismos de sandbox, exponiendo riesgos de ejecución remota y extracción de datos confidenciales en entornos de IA. El incidente destaca la necesidad de reforzar controles de aislamiento y monitorizar actividades de modelo en producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0MTk0MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/what-we-missed-google-gemini-ai-escape-party",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:what we missed google gemini joins the ai escape party",
+    "ttps": [
+      {
+        "id": "T1497.001",
+        "name": "System Checks"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1568",
+        "name": "Dynamic Resolution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2813,
+    "fecha": "2026-09-26T10:43:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CSRF en Elementor permite crear cuentas de administrador en WordPress",
+    "resumen": "Un flaw CSRF (CVE‑2024‑XXXX) en el plugin Elementor permite a un atacante no autenticado inyectar peticiones que generan usuarios con privilegios de administrador, comprometiendo la integridad del sitio y facilitando despliegues de ransomware o APT.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0MTk0MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/elementor-wordpress-flaw-lets-attackers-create-admin-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:elementor wordpress flaw lets attackers create admin accounts",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1136.001",
+        "name": "Local Account"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2812,
     "fecha": "2026-09-26T03:13:46Z",
     "categoria": "Ciberseguridad",
