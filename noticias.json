@@ -1,5 +1,127 @@
 [
   {
+    "id": 2824,
+    "fecha": "2026-09-27T03:20:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Storm-3168: Ataques en la nube impulsados por agentes IA mediante Principales de Servicio comprometidos",
+    "resumen": "Microsoft revela que el grupo Storm-3168 usa agentes autónomos para comprometer Principales de Servicio en Azure, realizando reconocimiento, eliminación de recursos y extracción de credenciales, lo que amplía la superficie de ataque en entornos cloud. Se recomienda reforzar la gestión de identidades, monitorizar actividades de privilegios y aplicar políticas de Zero Trust.",
+    "url_imagen": "https://images.unsplash.com/photo-1581092336206-b9e5146be6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NzkyMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:storm 3168 agentic driven cloud attacks using compromised service principals",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2823,
+    "fecha": "2026-09-27T03:20:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en dashcams Botslab G980H permiten bypass de autenticación...",
+    "resumen": "Las fallas (CVE‑2026‑84399 y otras 12 CVE) en el firmware de los modelos G980H permiten a un atacante con acceso a la red capturar sesiones válidas, evadir controles de autenticación y ejecutar comandos privilegiados, comprometiendo datos y la operatividad del dispositivo. El CVSS medio es 8.8, con vectores de ataque de red y explotación sin credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA0NzkyMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-75558,cve-2026-77967,cve-2026-79959,cve-2026-81630,cve-2026-82566,cve-2026-82585,cve-2026-82708,cve-2026-82716,cve-2026-84399,cve-2026-84403,cve-2026-85496,cve-2026-87118,cve-2026-88761,cve-2026-88956",
+    "ttps": [
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "cwe.mitre.org",
+        "www.botslab.com",
+        "www.cve.org",
+        "www.first.org"
+      ],
+      "url": [
+        "https://cwe.mitre.org/data/definitions/1391.html",
+        "https://cwe.mitre.org/data/definitions/22.html",
+        "https://cwe.mitre.org/data/definitions/294.html",
+        "https://cwe.mitre.org/data/definitions/306.html",
+        "https://cwe.mitre.org/data/definitions/319.html",
+        "https://cwe.mitre.org/data/definitions/321.html",
+        "https://cwe.mitre.org/data/definitions/340.html",
+        "https://cwe.mitre.org/data/definitions/345.html",
+        "https://cwe.mitre.org/data/definitions/532.html",
+        "https://cwe.mitre.org/data/definitions/613.html",
+        "https://cwe.mitre.org/data/definitions/787.html",
+        "https://cwe.mitre.org/data/definitions/798.html",
+        "https://cwe.mitre.org/data/definitions/863.html",
+        "https://www.botslab.com/pages/about-botslab",
+        "https://www.cve.org/CVERecord?id=CVE-2026-75558",
+        "https://www.cve.org/CVERecord?id=CVE-2026-77967",
+        "https://www.cve.org/CVERecord?id=CVE-2026-79959",
+        "https://www.cve.org/CVERecord?id=CVE-2026-81630",
+        "https://www.cve.org/CVERecord?id=CVE-2026-82566",
+        "https://www.cve.org/CVERecord?id=CVE-2026-82585",
+        "https://www.cve.org/CVERecord?id=CVE-2026-82708",
+        "https://www.cve.org/CVERecord?id=CVE-2026-82716",
+        "https://www.cve.org/CVERecord?id=CVE-2026-84399",
+        "https://www.cve.org/CVERecord?id=CVE-2026-84403",
+        "https://www.cve.org/CVERecord?id=CVE-2026-85496",
+        "https://www.cve.org/CVERecord?id=CVE-2026-87118",
+        "https://www.cve.org/CVERecord?id=CVE-2026-88761",
+        "https://www.cve.org/CVERecord?id=CVE-2026-88956",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+        "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:H/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:P/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+      ],
+      "cve": [
+        "CVE-2026-75558",
+        "CVE-2026-77967",
+        "CVE-2026-79959",
+        "CVE-2026-81630",
+        "CVE-2026-82566",
+        "CVE-2026-82585",
+        "CVE-2026-82708",
+        "CVE-2026-82716",
+        "CVE-2026-84399",
+        "CVE-2026-84403",
+        "CVE-2026-85496",
+        "CVE-2026-87118",
+        "CVE-2026-88761",
+        "CVE-2026-88956"
+      ]
+    }
+  },
+  {
     "id": 2822,
     "fecha": "2026-09-26T23:21:25Z",
     "categoria": "Ciberseguridad",
