@@ -1,5 +1,29 @@
 [
   {
+    "id": 2829,
+    "fecha": "2026-09-27T20:46:30Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Dudas sobre el supuesto hack de un agente OpenAI al portal de Medicare australiano generan...",
+    "resumen": "Analistas detectan que el código archivado del portal dirige a un endpoint sin autenticación, lo que sugiere que no se requirió un agente de IA para vulnerar el sistema; sin embargo, la exposición a un acceso no autenticado constituye un vector de ataque crítico para datos de salud.",
+    "url_imagen": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1NDE5OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/openai-australia-breach-cyber",
+    "fuente": "The Record",
+    "dedup_key": "txt:doubts grow over claims openai agent hacked australian medicare portal",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Record*\n\n*Dudas sobre el supuesto hack de un agente OpenAI al portal de Medicare australiano generan...*\n\nAnalistas detectan que el código archivado del portal dirige a un endpoint sin autenticación, lo que sugiere que no se requirió un agente de IA para vulnerar el sistema; sin embargo, la exposición a un acceso no autenticado constituye un vector de ataque crítico para datos de salud.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://therecord.media/openai-australia-breach-cyber)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2828,
     "fecha": "2026-09-27T16:17:12Z",
     "categoria": "Ciberseguridad",
@@ -55001,53 +55025,6 @@
         "name": "Adversary-in-the-Middle"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 710,
-    "fecha": "2026-06-19T14:55:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Brecha en Novo Nordisk",
-    "resumen": "Una fuga de un token de GitHub ha expuesto la pipeline de desarrollo de software de Novo Nordisk, destacando el riesgo de no tratar el manejo de secretos como un problema de identidad en lugar de uno de herramientas, lo que puede permitir ataques de phishing y exposición de datos sensibles. El incidente resalta la importancia de una gestión de identidad y acceso adecuada en el desarrollo de software.",
-    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODA5MTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/novo-nordisk-breach-exposes-dev-pipeline-risk",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 709,
-    "fecha": "2026-06-19T14:55:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Alerta CISA por FortiBleed",
-    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) advierte a los clientes de Fortinet sobre la campaña maliciosa FortiBleed, que ha afectado a 86,644 dispositivos FortiGate accesibles desde internet, atribuida a actores de amenaza de habla rusa. Los clientes deben tomar medidas para protegerse contra esta actividad maliciosa en curso.",
-    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODA5MTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
     "iocs": {}
   }
 ]
