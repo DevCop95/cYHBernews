@@ -1,5 +1,24 @@
 [
   {
+    "id": 2829,
+    "fecha": "2026-09-27T20:46:30Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Dudas sobre el supuesto hack de un agente OpenAI al portal de Medicare australiano generan...",
+    "resumen": "Analistas detectan que el código archivado del portal dirige a un endpoint sin autenticación, lo que sugiere que no se requirió un agente de IA para vulnerar el sistema; sin embargo, la exposición a un acceso no autenticado constituye un vector de ataque crítico para datos de salud.",
+    "url_imagen": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1NDE5OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/openai-australia-breach-cyber",
+    "fuente": "The Record",
+    "dedup_key": "txt:doubts grow over claims openai agent hacked australian medicare portal",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2828,
     "fecha": "2026-09-27T16:17:12Z",
     "categoria": "Ciberseguridad",
@@ -52963,40 +52982,6 @@
       {
         "id": "T1589",
         "name": "Drive-by Compromise (No se menciona explícitamente, pero se puede inferir que la exposición de datos puede ser utilizada para ataques de phishing)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 712,
-    "fecha": "2026-06-19T14:55:26Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Phishing eBanking a través de IPv6",
-    "resumen": "Se ha detectado un ataque de phishing dirigido a un banco belga importante, utilizando una dirección IPv4 mapeada a IPv6 para entregar el ataque, lo que sugiere una técnica de evasión de detección de seguridad. El vector de ataque es un correo electrónico de phishing que intenta engañar a los usuarios para que revelen sus credenciales de acceso.",
-    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODA5MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33090",
-    "fuente": "SANS ISC",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtual Private Server (no se menciona explícitamente, pero se puede inferir que se utiliza una dirección IPv6 para evadir la detección de seguridad)"
-      },
-      {
-        "id": "T1557",
-        "name": "Adversary-in-the-Middle"
       }
     ],
     "iocs": {}
