@@ -13,9 +13,10 @@
     "ttps": [],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Microsoft Security*\n\n*Storm-3168: Ataques en la nube impulsados por agentes IA mediante Principales de Servicio comprometidos*\n\nMicrosoft revela que el grupo Storm-3168 usa agentes autónomos para comprometer Principales de Servicio en Azure, realizando reconocimiento, eliminación de recursos y extracción de credenciales, lo que amplía la superficie de ataque en entornos cloud. Se recomienda reforzar la gestión de identidades, monitorizar actividades de privilegios y aplicar políticas de Zero Trust.\n\n🟢 Severidad: *BAJA*\n\n🔗 [Leer más](https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "6ff7111cfe5e46ce95d3dc4735cbf38d"
     }
   },
   {
