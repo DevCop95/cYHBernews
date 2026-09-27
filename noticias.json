@@ -1,5 +1,53 @@
 [
   {
+    "id": 2826,
+    "fecha": "2026-09-27T11:17:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ciberataque compromete datos del personal de la Policía de Dyfed-Powys en Gales...",
+    "resumen": "Un ataque dirigido contra la infraestructura de Dyfed-Powys Police interrumpió servicios no de emergencia y potencialmente expuso información personal de empleados, indicando posible acceso a bases de datos internos mediante credenciales comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1MDc4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/wales-cyberattack-police-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:cyberattack hits welsh police force may have affected staff data",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *The Record*\n\n*Ciberataque compromete datos del personal de la Policía de Dyfed-Powys en Gales...*\n\nUn ataque dirigido contra la infraestructura de Dyfed-Powys Police interrumpió servicios no de emergencia y potencialmente expuso información personal de empleados, indicando posible acceso a bases de datos internos mediante credenciales comprometidas.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://therecord.media/wales-cyberattack-police-breach)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2825,
+    "fecha": "2026-09-27T11:16:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Dos zero‑days sin parche en Citrix NetScaler ADC y Gateway son explotados activamente en producción",
+    "resumen": "Se detectan dos vulnerabilidades críticas (CVE‑pendientes) que permiten ejecución remota de código en los appliances NetScaler ADC y Gateway, con explotación en curso según watchTowr; la falta de parches obliga a aislar los dispositivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1MDc4MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:warning two unpatched citrix netscaler rce zero days under active exploitation",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *The Hacker News*\n\n*Dos zero‑days sin parche en Citrix NetScaler ADC y Gateway son explotados activamente en producción*\n\nSe detectan dos vulnerabilidades críticas (CVE‑pendientes) que permiten ejecución remota de código en los appliances NetScaler ADC y Gateway, con explotación en curso según watchTowr; la falta de parches obliga a aislar los dispositivos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2824,
     "fecha": "2026-09-27T03:20:27Z",
     "categoria": "Ciberseguridad",
