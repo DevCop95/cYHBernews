@@ -1,5 +1,19 @@
 [
   {
+    "id": 2830,
+    "fecha": "2026-09-27T21:28:01Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Novedades de Microsoft Security septiembre 2026: control de agentes IA locales y ampliación...",
+    "resumen": "La actualización introduce mecanismos para descubrir y gestionar agentes de IA en endpoints, extiende la política Zero Trust a comunicaciones de agentes autónomos y refuerza la arquitectura SOC con nuevas integraciones de detección y respuesta.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1NDQ0ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:what s new in microsoft security september 2026",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2829,
     "fecha": "2026-09-27T20:46:30Z",
     "categoria": "IA",
@@ -52948,40 +52962,6 @@
       {
         "id": "T1490",
         "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 713,
-    "fecha": "2026-06-19T17:16:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha de datos en Texas",
-    "resumen": "Se ha producido una brecha de datos en el sistema de licencias del Departamento de Parques y Vida Silvestre de Texas (TPWD), expuso información personal de más de tres millones de individuos, incluyendo licencias de conducir, lo que puede aumentar el riesgo de phishing y robo de identidad. La brecha se debió a un incidente de seguridad en el proveedor del sistema de licencias.",
-    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODkzOTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/texas-govt-data-breach-exposes-over-3-million-drivers-licenses/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise (No se menciona explícitamente, pero se puede inferir que la exposición de datos puede ser utilizada para ataques de phishing)"
       }
     ],
     "iocs": {}
