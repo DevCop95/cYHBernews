@@ -126,10 +126,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *CISA Advisories*\n\n*Vulnerabilidades críticas en dashcams Botslab G980H permiten bypass de autenticación...*\n\nLas fallas (CVE‑2026‑84399 y otras 12 CVE) en el firmware de los modelos G980H permiten a un atacante con acceso a la red capturar sesiones válidas, evadir controles de autenticación y ejecutar comandos privilegiados, comprometiendo datos y la operatividad del dispositivo. El CVSS medio es 8.8, con vectores de ataque de red y explotación sin credenciales.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1040` — Network Sniffing\n⚔️ `T1556` — Modify Authentication Process\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1059` — Command and Scripting Interpreter\n⚔️ `T1021.001` — Remote Desktop Protocol\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-75558, CVE-2026-77967, CVE-2026-79959\n🔗 Dominios: cwe[.]mitre[.]org, www[.]botslab[.]com, www[.]cve[.]org\n🔗 URLs: hxxps://cwe[.]mitre[.]org/data/definitions/1391[.]html, hxxps://cwe[.]mitre[.]org/data/definitions/22[.]html, hxxps://cwe[.]mitre[.]org/data/definitions/294[.]html\n\n🔗 [Leer más](https://www.cisa.gov/news-events/ics-advisories/icsa-26-267-01)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "98a0fd3ffd654016917761133b7e42ed"
+      "attempt_id": "98a0fd3ffd654016917761133b7e42ed",
+      "message_id": 2867,
+      "sent_at": "2026-09-27T03:24:42Z"
     }
   },
   {
