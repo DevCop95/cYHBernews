@@ -42,9 +42,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *The Hacker News*\n\n*Dos zero‑days sin parche en Citrix NetScaler ADC y Gateway son explotados activamente en producción*\n\nSe detectan dos vulnerabilidades críticas (CVE‑pendientes) que permiten ejecución remota de código en los appliances NetScaler ADC y Gateway, con explotación en curso según watchTowr; la falta de parches obliga a aislar los dispositivos.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "b35116fdf5934532afa9e3e55b4ded94"
     }
   },
   {
