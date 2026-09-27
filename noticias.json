@@ -18,9 +18,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *The Record*\n\n*Dudas sobre el supuesto hack de un agente OpenAI al portal de Medicare australiano generan...*\n\nAnalistas detectan que el código archivado del portal dirige a un endpoint sin autenticación, lo que sugiere que no se requirió un agente de IA para vulnerar el sistema; sin embargo, la exposición a un acceso no autenticado constituye un vector de ataque crítico para datos de salud.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n\n🔗 [Leer más](https://therecord.media/openai-australia-breach-cyber)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "3740cd9d7cbf44ee80623ad272e91e03"
     }
   },
   {
