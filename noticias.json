@@ -82,9 +82,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Bleeping Computer*\n\n*Keio Corp. confirma ataque de ransomware que interrumpe sistemas críticos de negocio en Japón*\n\nLa operadora ferroviaria Keio sufrió un ransomware que cifró servidores de gestión y obligó a suspender procesos de ticketing y logística, evidenciando vulnerabilidades en su arquitectura de red y falta de segmentación. El incidente impacta la disponibilidad operativa y plantea riesgos de exposición de datos de pasajeros.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1489` — Service Stop\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "ce7d16ce3eab4255b820becef2b273ab"
     }
   },
   {
