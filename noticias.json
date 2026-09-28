@@ -25,10 +25,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔵 *Schneier on Security*\n\n*Nueva implementación acelera ataque de falsificación contra firmas RSA sin padding*\n\nInvestigadores presentan una variante práctica del ataque de 2007 que permite forjar firmas RSA puras en 1024 bits usando 1380 años‑CPU, reduciendo el tiempo respecto al factoring pero sin comprometer claves privadas. El vector afecta sistemas que emplean RSA sin padding ni formateo, exponiendo la necesidad de migrar a esquemas con OAEP o ECDSA.\n\n🔵 Severidad: *INFO*\n\n🔍 *IoCs:*\n🔗 Dominios: arstechnica[.]com, eprint[.]iacr[.]org, it[.]slashdot[.]org\n🔗 URLs: hxxps://arstechnica[.]com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/, hxxps://eprint[.]iacr[.]org/2007/424, hxxps://eprint[.]iacr[.]org/2026/2131[.]pdf\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/new-attack-against-rsa.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "c2cf0a4eef8c4ea48f5dc6e6635f32fe"
+      "attempt_id": "c2cf0a4eef8c4ea48f5dc6e6635f32fe",
+      "message_id": 2880,
+      "sent_at": "2026-09-28T12:49:09Z"
     }
   },
   {
