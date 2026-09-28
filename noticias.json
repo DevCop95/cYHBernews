@@ -106,9 +106,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Krebs on Security*\n\n*Policía holandesa detiene a hacker de 23 años vinculado a robos de datos de ShinyHunters*\n\nEl arresto de un delincuente cibernético condenado desencadenó una escalada de ataques de ShinyHunters, que sustrajeron información sensible del FBI y extorsionaron al ransomware ruso Cl0p. La operación evidencia la capacidad del grupo para combinar robo de datos y extorsión como vectores de amenaza.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1213` — Data from Information Repositories\n⚔️ `T1486` — Data Encrypted for Impact\n\n🔗 [Leer más](https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "825d83168c024de0a25ffde2412ed616"
     }
   },
   {
