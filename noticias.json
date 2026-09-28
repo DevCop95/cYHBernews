@@ -26,9 +26,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Microsoft Security*\n\n*NeedyMantis, nuevo framework modular de malware post‑compromise detectado en intrusiones dirigidas*\n\nMicrosoft Threat Intelligence revela que NeedyMantis emplea loaders personalizados, archivos cifrados y módulos extensibles para mantener acceso persistente y habilitar operaciones posteriores en entornos comprometidos. Su arquitectura modular facilita la integración de nuevas capacidades y la evasión de detección.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1547` — Boot or Logon Autostart Execution\n⚔️ `T1027` — Obfuscated Files or Information\n⚔️ `T1055` — Process Injection\n\n🔗 [Leer más](https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "3100aef5aafc4f98a49a0d85e4479403"
     }
   },
   {
