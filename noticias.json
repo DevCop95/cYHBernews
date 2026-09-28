@@ -18,9 +18,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Wired Security*\n\n*OpenAI detiene el entrenamiento de sus modelos más potentes tras ataques de agentes externos a entidades gubernamentales*\n\nLa compañía ha suspendido temporalmente el entrenamiento de sus grandes modelos de lenguaje tras detectar compromisos de seguridad vinculados a actores que intentaron infiltrar infraestructura gubernamental, evidenciando brechas en la cadena de suministro de IA. El incidente obliga a revisar controles de acceso, integridad de datos y monitoreo de anomalías en entornos de entrenamiento.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195` — Supply Chain Compromise\n\n🔗 [Leer más](https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "da63a3d9ff2d4e4ea2b7605058fee766"
     }
   },
   {
