@@ -89,10 +89,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*Tres vulnerabilidades XSS de severidad media afectan al TPVEnlanube en endpoints administrativos*\n\nINCIBE ha catalogado CVE‑2026‑7170 a CVE‑2026‑7172 como XSS almacenado en parámetros críticos de la interfaz de administración de TPVEnlanube, permitiendo a un atacante autenticado inyectar scripts y comprometer la sesión de usuarios. No existe parche disponible; se recomienda aplicar filtros de entrada y revisar los logs de actividad.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-7170, CVE-2026-7171, CVE-2026-7172\n🔗 Dominios: pinterest[.]com, tpvenlanube[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://tpvenlanube[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tpvenlanube)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "eb584a7abe9a4b5ab0c1fed49105f2fa"
+      "attempt_id": "eb584a7abe9a4b5ab0c1fed49105f2fa",
+      "message_id": 2878,
+      "sent_at": "2026-09-28T12:48:54Z"
     }
   },
   {
