@@ -1,5 +1,137 @@
 [
   {
+    "id": 2845,
+    "fecha": "2026-09-28T21:02:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "NeedyMantis, nuevo framework modular de malware post‑compromise detectado en intrusiones dirigidas",
+    "resumen": "Microsoft Threat Intelligence revela que NeedyMantis emplea loaders personalizados, archivos cifrados y módulos extensibles para mantener acceso persistente y habilitar operaciones posteriores en entornos comprometidos. Su arquitectura modular facilita la integración de nuevas capacidades y la evasión de detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:needymantis unpacking a post compromise malware family used in targeted operations",
+    "ttps": [
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2844,
+    "fecha": "2026-09-28T21:02:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Apple corrige vulnerabilidad CoreGraphics CVE‑2026‑86950 que permite ejecución arbitraria",
+    "resumen": "La actualización de iOS, iPadOS y macOS soluciona un out‑of‑bounds write en CoreGraphics que permite ejecución de código arbitrario mediante archivos maliciosos; Apple indica que la falla ya fue explotada en ataques dirigidos. Se recomienda aplicar los parches inmediatamente y monitorizar indicadores de compromiso relacionados con la manipulación de imágenes y PDFs.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-86950",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-86950"
+      ]
+    }
+  },
+  {
+    "id": 2843,
+    "fecha": "2026-09-28T21:02:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Keio Corp. confirma ataque de ransomware que interrumpe sistemas críticos de negocio en Japón",
+    "resumen": "La operadora ferroviaria Keio sufrió un ransomware que cifró servidores de gestión y obligó a suspender procesos de ticketing y logística, evidenciando vulnerabilidades en su arquitectura de red y falta de segmentación. El incidente impacta la disponibilidad operativa y plantea riesgos de exposición de datos de pasajeros.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:japan s keio confirms ransomware attack disrupted business systems",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1489",
+        "name": "Service Stop"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2842,
+    "fecha": "2026-09-28T21:02:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Citrix NetScaler ADC y Gateway presentan 8 vulnerabilidades críticas y altas, con explotación activa de dos CVE",
+    "resumen": "Se identifican ocho fallos (tres críticos, cinco altos) que permiten RCE, DoS, secuestro de peticiones HTTP y evasión de políticas, con CVE‑2026‑88771 y CVE‑2026‑88772 ya explotados en entornos no parcheados. La mitigación requiere actualizar a versiones 14.1‑73.37+, 13.1‑64.23+ y habilitar Enhanced ISN Generation, preservando evidencias y aislando sistemas comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-1",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-88771,cve-2026-88772,cve-2026-88773,cve-2026-88774,cve-2026-88775,cve-2026-88776,cve-2026-88777,cve-2026-88778",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1562.006",
+        "name": "Indicator Blocking"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "community.citrix.com",
+        "pinterest.com",
+        "support.citrix.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://community.citrix.com/techzone-blogs/110_security-updates/netscaler-adc-and-netscaler-gateway-security-bulletin-for-cve-2026-88771-through-cve-2026-88778/",
+        "https://support.citrix.com/external/article/CTX694799/steps-to-take-if-netscaler-adc-is-suspec.html",
+        "https://support.citrix.com/external/article/CTX697096/citrix-netscaler-adc-and-citrix-netscale.html",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
+      ],
+      "cve": [
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2026-88773",
+        "CVE-2026-88774",
+        "CVE-2026-88775",
+        "CVE-2026-88776",
+        "CVE-2026-88777",
+        "CVE-2026-88778"
+      ]
+    }
+  },
+  {
     "id": 2841,
     "fecha": "2026-09-28T20:42:26Z",
     "categoria": "IA",
@@ -52819,100 +52951,6 @@
     "enlace_original": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
     "fuente": "Wired Security",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 730,
-    "fecha": "2026-06-20T02:54:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Bulgaria permite venta de tech de vigilancia",
-    "resumen": "Según un informe de Human Rights Watch, el gobierno búlgaro permitió a la empresa de vigilancia Circles vender tecnología de vigilancia a agencias de inteligencia y fuerzas del orden en países con antecedentes de abusos a los derechos humanos, lo que plantea preocupaciones sobre el uso potencial de esta tecnología para violar la privacidad digital y los derechos humanos. Esto podría facilitar ataques de phishing y otros tipos de vigilancia masiva en estos países.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218661-0322e4bc4c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/bulgaria-allowed-surveillance-tech-firm-to-sell-to-repressive-regimes-report",
-    "fuente": "The Record",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 729,
-    "fecha": "2026-06-20T02:54:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Breach de OAuth en Klue",
-    "resumen": "La plataforma de inteligencia de mercado Klue ha confirmado un incidente de seguridad reciente que permitió a actores maliciosos robar tokens OAuth utilizados para conectar con entornos de Salesforce de los clientes, lo que ha sido reclamado por el nuevo grupo de extorsión \"Icarus\". El vector de ataque se centra en la explotación de vulnerabilidades en el flujo de autenticación OAuth.",
-    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQwOTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/klue-oauth-breach-victim-list-grows-as-icarus-hackers-claim-attack/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1552",
-        "name": "Exploitar la confianza en el proveedor de identidad (se centra en la explotación de vulnerabilidades en el flujo de autenticación OAuth)"
-      },
-      {
-        "id": "T1556",
-        "name": "Exploitar la confianza en el proveedor de identidad no se aplica, en su lugar se aplica T1552, pero se puede considerar T1552.004 - OAuth Access Token"
-      },
-      {
-        "id": "T1552.004",
-        "name": "OAuth Access Token"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 728,
-    "fecha": "2026-06-20T02:54:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ciberseguridad en OT",
-    "resumen": "Los sistemas de tecnología operativa (OT) en plantas de fabricación están expuestos a ciberamenazas modernas debido a su largo tiempo de servicio, lo que puede ocultar vulnerabilidades como zero-day y exploits. El impacto real puede incluir ataques de ransomware y DDoS que afecten la disponibilidad y confiabilidad de los sistemas.",
-    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQwODV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/seguridad-infraestructuras-criticas/tecnologias-operativas-legacy-ciberamenazas-actuales/",
-    "fuente": "WeLiveSecurity",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 727,
-    "fecha": "2026-06-19T22:01:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Robos de datos en Salesforce",
-    "resumen": "La aplicación Klue Battlecards ha sido comprometida para robar datos de clientes de Salesforce, siendo la tercera aplicación integrada en ser afectada, con víctimas como Huntress, un proveedor de ciberseguridad. El ataque aprovecha la integración de aplicaciones para acceder a datos confidenciales.",
-    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MDY1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/salesforce-data-thefts-klue-app-compromise",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1530",
-        "name": "Data from Local System"
-      }
-    ],
     "iocs": {}
   }
 ]
