@@ -54,10 +54,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *The Hacker News*\n\n*Apple corrige vulnerabilidad CoreGraphics CVE‑2026‑86950 que permite ejecución arbitraria*\n\nLa actualización de iOS, iPadOS y macOS soluciona un out‑of‑bounds write en CoreGraphics que permite ejecución de código arbitrario mediante archivos maliciosos; Apple indica que la falla ya fue explotada en ataques dirigidos. Se recomienda aplicar los parches inmediatamente y monitorizar indicadores de compromiso relacionados con la manipulación de imágenes y PDFs.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-86950\n\n🔗 [Leer más](https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "15ea32ab457b45dd9c0f1b42e38bd96d"
+      "attempt_id": "15ea32ab457b45dd9c0f1b42e38bd96d",
+      "message_id": 2888,
+      "sent_at": "2026-09-28T21:07:21Z"
     }
   },
   {
