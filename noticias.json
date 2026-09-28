@@ -46,9 +46,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟡 *The Record*\n\n*ShinyHunters lanza campaña contra vulnerabilidad de Oracle PeopleSoft aprovechando bypasses críticos*\n\nEl grupo de amenaza avanzada ShinyHunters explota una vulnerabilidad sin parchear en Oracle PeopleSoft, usando técnicas de evasión para evadir controles de detección y comprometer entornos empresariales. La campaña sigue a su reciente ataque al portal de empleo del FBI, indicando una tendencia a apuntar a infraestructuras críticas.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "89c0116f23be49e4939dbc5d247742a5"
     }
   },
   {
