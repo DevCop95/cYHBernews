@@ -1,5 +1,100 @@
 [
   {
+    "id": 2836,
+    "fecha": "2026-09-28T12:44:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Nueva implementación acelera ataque de falsificación contra firmas RSA sin padding",
+    "resumen": "Investigadores presentan una variante práctica del ataque de 2007 que permite forjar firmas RSA puras en 1024 bits usando 1380 años‑CPU, reduciendo el tiempo respecto al factoring pero sin comprometer claves privadas. El vector afecta sistemas que emplean RSA sin padding ni formateo, exponiendo la necesidad de migrar a esquemas con OAEP o ECDSA.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1OTk0ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/new-attack-against-rsa.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:new attack against rsa",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "arstechnica.com",
+        "eprint.iacr.org",
+        "it.slashdot.org"
+      ],
+      "url": [
+        "https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/",
+        "https://eprint.iacr.org/2007/424",
+        "https://eprint.iacr.org/2026/2131.pdf",
+        "https://it.slashdot.org/story/26/09/24/1652228/theres-a-new-way-to-break-rsa-encryption"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔵 *Schneier on Security*\n\n*Nueva implementación acelera ataque de falsificación contra firmas RSA sin padding*\n\nInvestigadores presentan una variante práctica del ataque de 2007 que permite forjar firmas RSA puras en 1024 bits usando 1380 años‑CPU, reduciendo el tiempo respecto al factoring pero sin comprometer claves privadas. El vector afecta sistemas que emplean RSA sin padding ni formateo, exponiendo la necesidad de migrar a esquemas con OAEP o ECDSA.\n\n🔵 Severidad: *INFO*\n\n🔍 *IoCs:*\n🔗 Dominios: arstechnica[.]com, eprint[.]iacr[.]org, it[.]slashdot[.]org\n🔗 URLs: hxxps://arstechnica[.]com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/, hxxps://eprint[.]iacr[.]org/2007/424, hxxps://eprint[.]iacr[.]org/2026/2131[.]pdf\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/new-attack-against-rsa.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2835,
+    "fecha": "2026-09-28T12:44:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Bitget reanuda retiros de Bitcoin tras robo de $387,5 M por hackers norcoreanos",
+    "resumen": "El intercambio Bitget restableció los retiros de BTC tras una intrusión que permitió a un actor estatal norcoreano sustraer más de $350 M, evidenciando fallos en la segmentación de claves y monitoreo de transacciones. La recuperación de servicios implica la implementación de controles de acceso reforzados y auditorías forenses para mitigar futuros compromisos.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1OTk0Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/bitget-resumes-bitcoin-withdrawals-after-3875-million-crypto-heist/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:bitget resumes bitcoin withdrawals after 387 5 million crypto heist",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Bleeping Computer*\n\n*Bitget reanuda retiros de Bitcoin tras robo de $387,5 M por hackers norcoreanos*\n\nEl intercambio Bitget restableció los retiros de BTC tras una intrusión que permitió a un actor estatal norcoreano sustraer más de $350 M, evidenciando fallos en la segmentación de claves y monitoreo de transacciones. La recuperación de servicios implica la implementación de controles de acceso reforzados y auditorías forenses para mitigar futuros compromisos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/bitget-resumes-bitcoin-withdrawals-after-3875-million-crypto-heist/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2834,
+    "fecha": "2026-09-28T12:44:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tres vulnerabilidades XSS de severidad media afectan al TPVEnlanube en endpoints administrativos",
+    "resumen": "INCIBE ha catalogado CVE‑2026‑7170 a CVE‑2026‑7172 como XSS almacenado en parámetros críticos de la interfaz de administración de TPVEnlanube, permitiendo a un atacante autenticado inyectar scripts y comprometer la sesión de usuarios. No existe parche disponible; se recomienda aplicar filtros de entrada y revisar los logs de actividad.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA1OTk0NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tpvenlanube",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-7170,cve-2026-7171,cve-2026-7172",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "tpvenlanube.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://tpvenlanube.com/",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
+      ],
+      "cve": [
+        "CVE-2026-7170",
+        "CVE-2026-7171",
+        "CVE-2026-7172"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*Tres vulnerabilidades XSS de severidad media afectan al TPVEnlanube en endpoints administrativos*\n\nINCIBE ha catalogado CVE‑2026‑7170 a CVE‑2026‑7172 como XSS almacenado en parámetros críticos de la interfaz de administración de TPVEnlanube, permitiendo a un atacante autenticado inyectar scripts y comprometer la sesión de usuarios. No existe parche disponible; se recomienda aplicar filtros de entrada y revisar los logs de actividad.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1059.007` — JavaScript\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-7170, CVE-2026-7171, CVE-2026-7172\n🔗 Dominios: pinterest[.]com, tpvenlanube[.]com, wa[.]me\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://tpvenlanube[.]com/, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tpvenlanube)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2833,
     "fecha": "2026-09-28T00:14:34Z",
     "categoria": "Ciberseguridad",
