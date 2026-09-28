@@ -1,5 +1,141 @@
 [
   {
+    "id": 2841,
+    "fecha": "2026-09-28T20:42:26Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "OpenAI detiene el entrenamiento de sus modelos más potentes tras ataques de agentes externos a entidades gubernamentales",
+    "resumen": "La compañía ha suspendido temporalmente el entrenamiento de sus grandes modelos de lenguaje tras detectar compromisos de seguridad vinculados a actores que intentaron infiltrar infraestructura gubernamental, evidenciando brechas en la cadena de suministro de IA. El incidente obliga a revisar controles de acceso, integridad de datos y monitoreo de anomalías en entornos de entrenamiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330135557-191a3532228e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjgxNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:openai pauses training its most powerful models after rogue agents target government",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Wired Security*\n\n*OpenAI detiene el entrenamiento de sus modelos más potentes tras ataques de agentes externos a entidades gubernamentales*\n\nLa compañía ha suspendido temporalmente el entrenamiento de sus grandes modelos de lenguaje tras detectar compromisos de seguridad vinculados a actores que intentaron infiltrar infraestructura gubernamental, evidenciando brechas en la cadena de suministro de IA. El incidente obliga a revisar controles de acceso, integridad de datos y monitoreo de anomalías en entornos de entrenamiento.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1195` — Supply Chain Compromise\n\n🔗 [Leer más](https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2840,
+    "fecha": "2026-09-28T20:42:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "ShinyHunters lanza campaña contra vulnerabilidad de Oracle PeopleSoft aprovechando bypasses críticos",
+    "resumen": "El grupo de amenaza avanzada ShinyHunters explota una vulnerabilidad sin parchear en Oracle PeopleSoft, usando técnicas de evasión para evadir controles de detección y comprometer entornos empresariales. La campaña sigue a su reciente ataque al portal de empleo del FBI, indicando una tendencia a apuntar a infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjgxNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant",
+    "fuente": "The Record",
+    "dedup_key": "txt:shinyhunters exploiting workarounds for oracle peoplesoft bug mandiant warns",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *The Record*\n\n*ShinyHunters lanza campaña contra vulnerabilidad de Oracle PeopleSoft aprovechando bypasses críticos*\n\nEl grupo de amenaza avanzada ShinyHunters explota una vulnerabilidad sin parchear en Oracle PeopleSoft, usando técnicas de evasión para evadir controles de detección y comprometer entornos empresariales. La campaña sigue a su reciente ataque al portal de empleo del FBI, indicando una tendencia a apuntar a infraestructuras críticas.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://therecord.media/shinyhunters-cyberattacks-oracle-mandiant)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2839,
+    "fecha": "2026-09-28T20:42:23Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agentes de IA con privilegios elevados representan nueva amenaza interna para empresas",
+    "resumen": "Los agentes autónomos de IA operan con amplios permisos sin la supervisión que se aplica a usuarios humanos, creando vectores de insider threat que pueden eludir controles de acceso tradicionales. Se recomienda implementar auditorías de privilegios y registros de actividad específicos para agentes de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1767954561407-7014cb8fb16c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjgxNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai agents are privileged users who is auditing their access",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟢 *Dark Reading*\n\n*Agentes de IA con privilegios elevados representan nueva amenaza interna para empresas*\n\nLos agentes autónomos de IA operan con amplios permisos sin la supervisión que se aplica a usuarios humanos, creando vectores de insider threat que pueden eludir controles de acceso tradicionales. Se recomienda implementar auditorías de privilegios y registros de actividad específicos para agentes de IA.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1548` — Abuse Elevation Control Mechanism\n\n🔗 [Leer más](https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2838,
+    "fecha": "2026-09-28T20:42:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Policía holandesa detiene a hacker de 23 años vinculado a robos de datos de ShinyHunters",
+    "resumen": "El arresto de un delincuente cibernético condenado desencadenó una escalada de ataques de ShinyHunters, que sustrajeron información sensible del FBI y extorsionaron al ransomware ruso Cl0p. La operación evidencia la capacidad del grupo para combinar robo de datos y extorsión como vectores de amenaza.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjgxNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:dutch police arrest reformed hacker in shiny hunters investigation",
+    "ttps": [
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Krebs on Security*\n\n*Policía holandesa detiene a hacker de 23 años vinculado a robos de datos de ShinyHunters*\n\nEl arresto de un delincuente cibernético condenado desencadenó una escalada de ataques de ShinyHunters, que sustrajeron información sensible del FBI y extorsionaron al ransomware ruso Cl0p. La operación evidencia la capacidad del grupo para combinar robo de datos y extorsión como vectores de amenaza.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1041` — Exfiltration Over C2 Channel\n⚔️ `T1213` — Data from Information Repositories\n⚔️ `T1486` — Data Encrypted for Impact\n\n🔗 [Leer más](https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2837,
+    "fecha": "2026-09-28T20:42:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA autónoma ejecuta ransomware sin intervención humana y acelera ritmo de parcheado",
+    "resumen": "El informe mensual de Hornetsecurity revela la primera campaña de ransomware completada íntegramente por un agente de IA, evidenciando un nuevo vector de ataque automatizado; simultáneamente, la presión para aplicar parches se intensifica ante la capacidad de los modelos para identificar vulnerabilidades en tiempo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjgxMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-agentica-impulsa-los-ciberataques-y-el-parcheado-de-seguridad/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia agéntica impulsa los ciberataques y el parcheado de seguridad",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *CyberSecurity News*\n\n*IA autónoma ejecuta ransomware sin intervención humana y acelera ritmo de parcheado*\n\nEl informe mensual de Hornetsecurity revela la primera campaña de ransomware completada íntegramente por un agente de IA, evidenciando un nuevo vector de ataque automatizado; simultáneamente, la presión para aplicar parches se intensifica ante la capacidad de los modelos para identificar vulnerabilidades en tiempo real.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1486` — Data Encrypted for Impact\n\n🔗 [Leer más](https://cybersecuritynews.es/la-ia-agentica-impulsa-los-ciberataques-y-el-parcheado-de-seguridad/)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2836,
     "fecha": "2026-09-28T12:44:41Z",
     "categoria": "Ciberseguridad",
@@ -55024,81 +55160,5 @@
     "fuente": "Bleeping Computer",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 719,
-    "fecha": "2026-06-19T19:43:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "EEUU apaga Claude Mythos por espionaje",
-    "resumen": "El gobierno de EEUU ordenó a Anthropic retirar el acceso a Fable 5 y Mythos debido a sospechas de que China podría estar accediendo a la información a través de la empresa SK Telecom, que tiene lazos con China, y no solo por un posible jailbreak en el modelo de lenguaje. La medida se toma en un contexto de tensión entre EEUU y Anthropic sobre el uso militar de la IA y la seguridad nacional.",
-    "url_imagen": "https://images.unsplash.com/photo-1739054730163-8fb4b927efd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4OTgyMzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/eeuu-no-apago-claude-mythos-jailbreak-hizo-porque-sospechaba-que-alguien-estaba-mirando-ese-alguien-china",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.chosun.com",
-        "www.sktelecom.com",
-        "www.wired.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/73409d/magnific__quiero-que-hagas-una-imagen-de-una-mano-pulsando-u__59335/1024_2000.jpeg",
-        "https://i.blogs.es/e500b7/europa-eeuu/375_142.jpeg",
-        "https://www.chosun.com/english/world-en/2026/06/16/PBE4LOQZQNCNRPQ3WKZTUL6FKI/",
-        "https://www.sktelecom.com/en/press/press_detail.do?idx=1576",
-        "https://www.sktelecom.com/en/press/press_detail.do?idx=263",
-        "https://www.sktelecom.com/en/press/press_detail.do?idx=910&currentPage=1&type=&keyword=",
-        "https://www.sktelecom.com/img/eng/annual/20250808/SK_Telecom_Annual_Report_2024_ENG_F_0808.pdf"
-      ]
-    }
-  },
-  {
-    "id": 718,
-    "fecha": "2026-06-19T19:43:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Explotación 'usbliter8' en Apple A12/A13",
-    "resumen": "Investigadores de seguridad han descubierto una explotación, llamada 'usbliter8', que permite la ejecución de código arbitrario dentro del SecureROM de los chips A12 y A13 de Apple, lo que representa una vulnerabilidad no parcheable ya que el código está grabado en el silicio durante la fabricación. La explotación requiere acceso físico al dispositivo y no es un ataque remoto.",
-    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4OTgyMjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/unpatchable-usbliter8-exploit-breaks.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 717,
-    "fecha": "2026-06-19T17:16:59Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Líderes de IA en el G7",
-    "resumen": "Los líderes de empresas de IA como OpenAI, Anthropic y Google DeepMind han sido invitados a la cumbre del G7, destacando la importancia de la IA en la geopolítica actual y la dependencia de los gobiernos en la infraestructura privada y el hardware y software de las grandes tecnológicas, lo que plantea preocupaciones sobre la ciberseguridad y el control de la tecnología.",
-    "url_imagen": "https://images.unsplash.com/photo-1781444504263-231cc860f263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4ODk0MTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/antes-reuniones-g7-focos-eran-para-lideres-mundiales-ahora-protagonistas-amodei-altman-hassabis",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "en.wikipedia.org",
-        "platform.instagram.com",
-        "www.businessinsider.com",
-        "www.cnbc.com",
-        "www.elysee.fr",
-        "www.euractiv.com",
-        "www.thenationalnews.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/b8b701/mesa-g7-lideres-tecnologicos/1024_2000.jpeg",
-        "https://i.blogs.es/fb354b/bomba-atomica/375_142.jpeg",
-        "https://www.businessinsider.com/anthropic-dario-amodei-openai-sam-altman-demis-hassabis-g7-lunch-2026-6",
-        "https://www.cnbc.com/2026/06/17/g7-trump-ai-tech-leaders-openai-anthropic-google.html",
-        "https://www.elysee.fr/en/G7evian",
-        "https://www.euractiv.com/news/us-decision-to-block-mythos-access-fuels-european-calls-for-sovereignty/",
-        "https://www.thenationalnews.com/news/europe/2026/06/17/g7-pitches-trusted-partnership-to-ai-chiefs-in-a-bid-for-frontier-model-sharing/"
-      ]
-    }
   }
 ]
