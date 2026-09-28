@@ -146,9 +146,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *INCIBE-CERT*\n\n*Citrix NetScaler ADC y Gateway presentan 8 vulnerabilidades críticas y altas, con explotación activa de dos CVE*\n\nSe identifican ocho fallos (tres críticos, cinco altos) que permiten RCE, DoS, secuestro de peticiones HTTP y evasión de políticas, con CVE‑2026‑88771 y CVE‑2026‑88772 ya explotados en entornos no parcheados. La mitigación requiere actualizar a versiones 14.1‑73.37+, 13.1‑64.23+ y habilitar Enhanced ISN Generation, preservando evidencias y aislando sistemas comprometidos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1499` — Endpoint Denial of Service\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1071.001` — Web Protocols\n⚔️ `T1562.006` — Indicator Blocking\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-88771, CVE-2026-88772, CVE-2026-88773\n🔗 Dominios: community[.]citrix[.]com, pinterest[.]com, support[.]citrix[.]com\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://community[.]citrix[.]com/techzone-blogs/110_security-updates/netscaler-adc-and-netscaler-gateway-security-bulletin-for-cve-2026-88771-through-cve-2026-88778/, hxxps://support[.]citrix[.]com/external/article/CTX694799/steps-to-take-if-netscaler-adc-is-suspec[.]html\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-1)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "f8ebbe4bb7394e62932f805e2eaa2800"
     }
   },
   {
