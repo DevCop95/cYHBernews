@@ -1,5 +1,157 @@
 [
   {
+    "id": 2845,
+    "fecha": "2026-09-28T21:02:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "NeedyMantis, nuevo framework modular de malware post‑compromise detectado en intrusiones dirigidas",
+    "resumen": "Microsoft Threat Intelligence revela que NeedyMantis emplea loaders personalizados, archivos cifrados y módulos extensibles para mantener acceso persistente y habilitar operaciones posteriores en entornos comprometidos. Su arquitectura modular facilita la integración de nuevas capacidades y la evasión de detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:needymantis unpacking a post compromise malware family used in targeted operations",
+    "ttps": [
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Microsoft Security*\n\n*NeedyMantis, nuevo framework modular de malware post‑compromise detectado en intrusiones dirigidas*\n\nMicrosoft Threat Intelligence revela que NeedyMantis emplea loaders personalizados, archivos cifrados y módulos extensibles para mantener acceso persistente y habilitar operaciones posteriores en entornos comprometidos. Su arquitectura modular facilita la integración de nuevas capacidades y la evasión de detección.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1547` — Boot or Logon Autostart Execution\n⚔️ `T1027` — Obfuscated Files or Information\n⚔️ `T1055` — Process Injection\n\n🔗 [Leer más](https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2844,
+    "fecha": "2026-09-28T21:02:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Apple corrige vulnerabilidad CoreGraphics CVE‑2026‑86950 que permite ejecución arbitraria",
+    "resumen": "La actualización de iOS, iPadOS y macOS soluciona un out‑of‑bounds write en CoreGraphics que permite ejecución de código arbitrario mediante archivos maliciosos; Apple indica que la falla ya fue explotada en ataques dirigidos. Se recomienda aplicar los parches inmediatamente y monitorizar indicadores de compromiso relacionados con la manipulación de imágenes y PDFs.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-86950",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-86950"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *The Hacker News*\n\n*Apple corrige vulnerabilidad CoreGraphics CVE‑2026‑86950 que permite ejecución arbitraria*\n\nLa actualización de iOS, iPadOS y macOS soluciona un out‑of‑bounds write en CoreGraphics que permite ejecución de código arbitrario mediante archivos maliciosos; Apple indica que la falla ya fue explotada en ataques dirigidos. Se recomienda aplicar los parches inmediatamente y monitorizar indicadores de compromiso relacionados con la manipulación de imágenes y PDFs.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1203` — Exploitation for Client Execution\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-86950\n\n🔗 [Leer más](https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2843,
+    "fecha": "2026-09-28T21:02:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Keio Corp. confirma ataque de ransomware que interrumpe sistemas críticos de negocio en Japón",
+    "resumen": "La operadora ferroviaria Keio sufrió un ransomware que cifró servidores de gestión y obligó a suspender procesos de ticketing y logística, evidenciando vulnerabilidades en su arquitectura de red y falta de segmentación. El incidente impacta la disponibilidad operativa y plantea riesgos de exposición de datos de pasajeros.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:japan s keio confirms ransomware attack disrupted business systems",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1489",
+        "name": "Service Stop"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *Bleeping Computer*\n\n*Keio Corp. confirma ataque de ransomware que interrumpe sistemas críticos de negocio en Japón*\n\nLa operadora ferroviaria Keio sufrió un ransomware que cifró servidores de gestión y obligó a suspender procesos de ticketing y logística, evidenciando vulnerabilidades en su arquitectura de red y falta de segmentación. El incidente impacta la disponibilidad operativa y plantea riesgos de exposición de datos de pasajeros.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1486` — Data Encrypted for Impact\n⚔️ `T1489` — Service Stop\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/japans-keio-confirms-ransomware-attack-disrupted-business-systems/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2842,
+    "fecha": "2026-09-28T21:02:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Citrix NetScaler ADC y Gateway presentan 8 vulnerabilidades críticas y altas, con explotación activa de dos CVE",
+    "resumen": "Se identifican ocho fallos (tres críticos, cinco altos) que permiten RCE, DoS, secuestro de peticiones HTTP y evasión de políticas, con CVE‑2026‑88771 y CVE‑2026‑88772 ya explotados en entornos no parcheados. La mitigación requiere actualizar a versiones 14.1‑73.37+, 13.1‑64.23+ y habilitar Enhanced ISN Generation, preservando evidencias y aislando sistemas comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-1",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-88771,cve-2026-88772,cve-2026-88773,cve-2026-88774,cve-2026-88775,cve-2026-88776,cve-2026-88777,cve-2026-88778",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1562.006",
+        "name": "Indicator Blocking"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "community.citrix.com",
+        "pinterest.com",
+        "support.citrix.com",
+        "wa.me"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://community.citrix.com/techzone-blogs/110_security-updates/netscaler-adc-and-netscaler-gateway-security-bulletin-for-cve-2026-88771-through-cve-2026-88778/",
+        "https://support.citrix.com/external/article/CTX694799/steps-to-take-if-netscaler-adc-is-suspec.html",
+        "https://support.citrix.com/external/article/CTX697096/citrix-netscaler-adc-and-citrix-netscale.html",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
+      ],
+      "cve": [
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2026-88773",
+        "CVE-2026-88774",
+        "CVE-2026-88775",
+        "CVE-2026-88776",
+        "CVE-2026-88777",
+        "CVE-2026-88778"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*Citrix NetScaler ADC y Gateway presentan 8 vulnerabilidades críticas y altas, con explotación activa de dos CVE*\n\nSe identifican ocho fallos (tres críticos, cinco altos) que permiten RCE, DoS, secuestro de peticiones HTTP y evasión de políticas, con CVE‑2026‑88771 y CVE‑2026‑88772 ya explotados en entornos no parcheados. La mitigación requiere actualizar a versiones 14.1‑73.37+, 13.1‑64.23+ y habilitar Enhanced ISN Generation, preservando evidencias y aislando sistemas comprometidos.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1499` — Endpoint Denial of Service\n⚔️ `T1566.001` — Spearphishing Attachment\n⚔️ `T1071.001` — Web Protocols\n⚔️ `T1562.006` — Indicator Blocking\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-88771, CVE-2026-88772, CVE-2026-88773\n🔗 Dominios: community[.]citrix[.]com, pinterest[.]com, support[.]citrix[.]com\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://community[.]citrix[.]com/techzone-blogs/110_security-updates/netscaler-adc-and-netscaler-gateway-security-bulletin-for-cve-2026-88771-through-cve-2026-88778/, hxxps://support[.]citrix[.]com/external/article/CTX694799/steps-to-take-if-netscaler-adc-is-suspec[.]html\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-1)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2841,
     "fecha": "2026-09-28T20:42:26Z",
     "categoria": "IA",
@@ -55006,169 +55158,6 @@
         "name": "Data from Local System"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 726,
-    "fecha": "2026-06-19T22:01:40Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "GLM-5.2: Avance Chino en IA",
-    "resumen": "La startup china Z.ai ha lanzado GLM-5.2, un modelo de IA abierto que supera a GPT-5.5 en algunas pruebas y se acerca a los niveles de Opus 4.8, demostrando un salto significativo en rendimiento y eficiencia, con 744.000 millones de parámetros y una ventana de contexto de un millón de tokens. Esto podría marcar un cambio de tendencia en el desarrollo de modelos de lenguaje, ofreciendo una alternativa más asequible y potente a los modelos líderes actuales.",
-    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MDY1MDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/creiamos-que-ningun-modelo-chino-ia-se-acercaria-pronto-a-fable-5-gpt-5-5-entonces-llego-glm-5-2",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "arxiv.org",
-        "developers.openai.com",
-        "platform.claude.com",
-        "platform.instagram.com",
-        "www.reddit.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://artificialanalysis.ai/articles/glm-5-2-is-the-new-leading-open-weights-model-on-the-artificial-analysis-intelligence-index",
-        "https://arxiv.org/abs/2603.12201",
-        "https://chat.z.ai/",
-        "https://developers.openai.com/api/docs/pricing",
-        "https://docs.z.ai/guides/overview/pricing",
-        "https://i.blogs.es/0359d5/captura-de-pantalla-2026-06-19-a-las-11.33.29/1024_2000.jpeg",
-        "https://i.blogs.es/0359d5/captura-de-pantalla-2026-06-19-a-las-11.33.29/1366_2000.jpeg",
-        "https://i.blogs.es/0359d5/captura-de-pantalla-2026-06-19-a-las-11.33.29/450_1000.jpeg",
-        "https://i.blogs.es/0359d5/captura-de-pantalla-2026-06-19-a-las-11.33.29/650_1200.jpeg",
-        "https://i.blogs.es/072a37/captura-de-pantalla-2026-06-19-a-las-11.33.08/1024_2000.jpeg",
-        "https://i.blogs.es/072a37/captura-de-pantalla-2026-06-19-a-las-11.33.08/1366_2000.jpeg",
-        "https://i.blogs.es/072a37/captura-de-pantalla-2026-06-19-a-las-11.33.08/450_1000.jpeg",
-        "https://i.blogs.es/072a37/captura-de-pantalla-2026-06-19-a-las-11.33.08/650_1200.jpeg",
-        "https://i.blogs.es/6335ae/zai-glm-5-2/1024_2000.jpeg",
-        "https://i.blogs.es/7560fc/captura-de-pantalla-2026-06-19-a-las-11.24.16/1024_2000.jpeg",
-        "https://i.blogs.es/7560fc/captura-de-pantalla-2026-06-19-a-las-11.24.16/1366_2000.jpeg",
-        "https://i.blogs.es/7560fc/captura-de-pantalla-2026-06-19-a-las-11.24.16/450_1000.jpeg",
-        "https://i.blogs.es/7560fc/captura-de-pantalla-2026-06-19-a-las-11.24.16/650_1200.jpeg",
-        "https://i.blogs.es/c34dd1/captura-de-pantalla-2026-06-19-a-las-11.28.49/1024_2000.jpeg",
-        "https://i.blogs.es/c34dd1/captura-de-pantalla-2026-06-19-a-las-11.28.49/1366_2000.jpeg",
-        "https://i.blogs.es/c34dd1/captura-de-pantalla-2026-06-19-a-las-11.28.49/450_1000.jpeg",
-        "https://i.blogs.es/c34dd1/captura-de-pantalla-2026-06-19-a-las-11.28.49/650_1200.jpeg",
-        "https://platform.claude.com/docs/en/about-claude/pricing",
-        "https://z.ai/blog/glm-5.2"
-      ]
-    }
-  },
-  {
-    "id": 724,
-    "fecha": "2026-06-19T22:01:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Operación Endgame contra SocGholish",
-    "resumen": "La operación Endgame, liderada por autoridades holandesas y con la colaboración de Canadá, Alemania y EE. UU., ha desmantelado servidores maliciosos asociados con SocGholish, un malware que infecta sitios web de WordPress, y ha limpiado 14,971 sitios web infectados, privando a los ciberdelincuentes del acceso a sistemas informáticos comprometidos. El vector de ataque se centraba en la explotación de vulnerabilidades en sitios web de WordPress.",
-    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MDY0ODh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/operation-endgame-disrupts-socgholish.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1190.001",
-        "name": "Exploit Public-Facing Web Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 722,
-    "fecha": "2026-06-19T19:44:07Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataques SSH coordinados",
-    "resumen": "Se han detectado ataques de fuerza bruta SSH coordinados en los últimos tres meses, lo que sugiere una campaña maliciosa dirigida a explotar vulnerabilidades en sistemas de autenticación. Estos ataques pueden aprovecharse de contraseñas débiles o configuraciones inseguras, poniendo en riesgo la seguridad de los sistemas y la privacidad de los datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4OTgyNDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33086",
-    "fuente": "SANS ISC",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise no es relevante en este caso, en su lugar se puede considerar T1555 - Credentials from Password Attacks, pero como no se menciona explícitamente la extracción de credenciales, se puede considerar T1110 como la técnica principal y T1552 como una posible técnica relacionada con el uso de contraseñas débiles."
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 721,
-    "fecha": "2026-06-19T19:44:02Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "RaaS \"The Gentlemen\" utiliza GentleKiller",
-    "resumen": "La operación de ransomware-as-a-service (RaaS) \"The Gentlemen\" utiliza un framework de endpoint detection and response (EDR) llamado GentleKiller para inhabilitar las defensas del sistema antes de desplegar el cifrador, afectando a más de 400 procesos de seguridad. Esto permite a los afiliados debilitar las medidas de seguridad y aumentar el éxito de los ataques de ransomware.",
-    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4OTgyNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1562.001",
-        "name": "Disable or Modify Tools"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1021",
-        "name": "Remote Services"
-      },
-      {
-        "id": "T1041",
-        "name": "Exfiltration Over C2 Channel"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 720,
-    "fecha": "2026-06-19T19:43:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad Splunk Enterprise",
-    "resumen": "La Agencia de Seguridad y Ciberseguridad de Infraestructura (CISA) ha advertido sobre la explotación activa de una vulnerabilidad crítica en Splunk Enterprise, recomendando a las agencias federales de EE. UU. que apliquen un parche antes del domingo para evitar ataques. La vulnerabilidad puede ser utilizada por atacantes para comprometer sistemas, lo que podría tener un impacto significativo en la seguridad de la información.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE4OTgyMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-splunk-enterprise-flaw-actively-exploited-patch-by-sunday/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
     "iocs": {}
   }
 ]
