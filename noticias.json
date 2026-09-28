@@ -74,9 +74,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Dark Reading*\n\n*Agentes de IA con privilegios elevados representan nueva amenaza interna para empresas*\n\nLos agentes autónomos de IA operan con amplios permisos sin la supervisión que se aplica a usuarios humanos, creando vectores de insider threat que pueden eludir controles de acceso tradicionales. Se recomienda implementar auditorías de privilegios y registros de actividad específicos para agentes de IA.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n⚔️ `T1548` — Abuse Elevation Control Mechanism\n\n🔗 [Leer más](https://www.darkreading.com/vulnerabilities-threats/ai-agents-are-privileged-users-who-is-auditing-their-access)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "6054d26deac7435ca6405ddb9c786565"
     }
   },
   {
