@@ -49,9 +49,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟢 *Bleeping Computer*\n\n*Bitget reanuda retiros de Bitcoin tras robo de $387,5 M por hackers norcoreanos*\n\nEl intercambio Bitget restableció los retiros de BTC tras una intrusión que permitió a un actor estatal norcoreano sustraer más de $350 M, evidenciando fallos en la segmentación de claves y monitoreo de transacciones. La recuperación de servicios implica la implementación de controles de acceso reforzados y auditorías forenses para mitigar futuros compromisos.\n\n🟢 Severidad: *BAJA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/bitget-resumes-bitcoin-withdrawals-after-3875-million-crypto-heist/)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "883e2117f9034581a9572152b686dabc"
     }
   },
   {
