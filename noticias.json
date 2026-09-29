@@ -1,5 +1,119 @@
 [
   {
+    "id": 2859,
+    "fecha": "2026-09-29T19:46:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Storm-3068 compromete identidades y amplía acceso a entornos cloud explotando credenciales comprometidas",
+    "resumen": "El grupo APT Storm-3068 utiliza credenciales robadas para escalar privilegios en plataformas cloud, accediendo a pipelines CI/CD y datos críticos; la amenaza requiere reforzar la gestión de identidades, MFA y monitoreo de actividad sospechosa.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MTExODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:beyond source code a path to the keys to the kingdom",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2858,
+    "fecha": "2026-09-29T19:46:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-96274 permite DoS en eNodeB Baicells Nova 430H",
+    "resumen": "Un atacante sin autenticación dentro del radio puede inyectar mensajes uplink malformados con payload NAS inválido, provocando que el eNodeB 430H cierre la asociación de señalización y cause interrupción del servicio hasta la reconexión. La vulnerabilidad, con CVSS 7.4 (alto), afecta versiones ≤BaiBLQ_3.0.12 y no cuenta con parche disponible, requiriendo mitigaciones de red y aislamiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MTExODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-04",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-96274",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.baicells.com"
+      ],
+      "url": [
+        "https://www.baicells.com/contact-us"
+      ],
+      "cve": [
+        "CVE-2026-96274"
+      ]
+    }
+  },
+  {
+    "id": 2857,
+    "fecha": "2026-09-29T19:46:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Detectan escaneos dirigidos a la ruta wordfence-waf.php en sitios WordPress protegidos",
+    "resumen": "Los sensores del SOC identificaron intentos de enumeración de la página wordfence-waf.php, indicando reconocimiento previo a posibles vulnerabilidades en la configuración del firewall de Wordfence. El vector de ataque se basa en peticiones HTTP a la ruta del WAF, lo que permite a actores mapear instalaciones WordPress con protección activa.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MTExODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33382",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:scans for wordfence protected websites tue sep 29th",
+    "ttps": [
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2856,
+    "fecha": "2026-09-29T19:46:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña automatizada explota CVE-2026-39364 en servidores Vite para robar credenciales de AWS y Azure",
+    "resumen": "Grupo de actores realiza escaneos masivos de servidores de desarrollo Vite expuestos, aprovechando la vulnerabilidad CVE-2026-39364 para leer archivos sin autenticación y extraer secretos de AWS y Microsoft Azure. El vector combina acceso no autenticado al dev server y extracción de claves, incrementando el riesgo de compromiso de entornos cloud.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MTExNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/una-campana-automatizada-saquea-servidores-de-desarrollo-vite-expuestos-para-robar-secretos-de-aws-y-azure/?utm_source=rss&utm_medium=rss&utm_campaign=una-campana-automatizada-saquea-servidores-de-desarrollo-vite-expuestos-para-robar-secretos-de-aws-y-azure",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-39364",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1528",
+        "name": "Steal Application Access Token"
+      },
+      {
+        "id": "T1595.001",
+        "name": "Scanning IP Blocks"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-39364"
+      ]
+    }
+  },
+  {
     "id": 2855,
     "fecha": "2026-09-29T12:38:59Z",
     "categoria": "Ciberseguridad",
@@ -52812,142 +52926,6 @@
       "url": [
         "https://unaaldia.hispasec.com",
         "https://unaaldia.hispasec.com/arystinger-convierte-4-300-routers-antiguos-en-una-red-de-reconocimiento-y-proxies-para-ataques/"
-      ]
-    }
-  },
-  {
-    "id": 748,
-    "fecha": "2026-06-22T11:45:40Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "IA en Ciberseguridad",
-    "resumen": "La convergencia de la Inteligencia Artificial (IA) y la Ciberseguridad está cambiando el panorama de la seguridad digital, con la IA siendo utilizada tanto para mejorar la detección de amenazas como para llevar a cabo ciberataques automatizados. El Máster Online de Inteligencia Artificial Aplicada a la Ciberseguridad ofrece una formación especializada para entender y aprovechar la IA en el contexto de la ciberseguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1781029711378-e17c0c6bd0d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxMjg3NDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/06/como-ser-un-experto-en-inteligencia.html",
-    "fuente": "El Lado Del Mal",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "1.bp.blogspot.com",
-        "blogger.googleusercontent.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "mypublicinbox.com",
-        "www.campusciberseguridad.com",
-        "www.cloudflare.com",
-        "www.elladodelmal.com",
-        "www.mypublicinbox.com",
-        "www.youtube.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/libros/143-machine-learning-aplicado-a-ciberseguridad-tecnicas-y-ejemplos-en-la-deteccion-de-amenazas.html",
-        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
-        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
-        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5-w4CjRYuiA9cve6WBCYrQASMcW-sc2a00lOTS-4QZ7W_8d_1jNSoUcDB02w1LVNQHJmoLtNRcNo4D4NHzkbX8IkiPl-uRzIuOmsnP_ddYQeCN33TqQrV6VTrmXeXPk5nOYS9l21K44xjzQ17mHPERvc15MbcFbZZfTtG3RFKk9YEXxPt6Rq1/w640-h416/master0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZcerZjkT6loOpfiSgwHml2LfPdbF1IoAikSkpP65FZGqNd5bXNHIrZzvQjss-DMMsMm-TamyaIzLeBDWg2gYzQbWusHz5_eEjvn1VWz8dewyd9NSejIxiBIf4GUwezt_5D-zN1hUD7yUDANSjc2dIq3cxLQHyXx1m3wyqfWAqQzVKU7qVUEeQ/w640-h420/Ia2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0zxIwvwCTi92B5dlMBbWzhU1EhnABfPIwWzEWazn3aEbacwT2_HnfFlgShz1ojCxOXrNCPQc_Fd6QGoghE-WO0ovhuFv0KExs9eInZsyX4l05ZyNFWaZCkZ03vYDiRqrwxZnxzr8xard-RKokzNKu5127wB_0QiglGQN4Du_QHKHJk6R3Uk3U/w640-h404/guardian0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiShfjZi4e346sSNNNJ3-SnUtpZvAdDk9OVbEr0qajR_DpsDVZUKdd8v3Fo2KOQiO8nCnqmkq4b-WheiWhXbVMWGNPuFD4qMAEHrOYrmkGgGDJyNQIPwp63r19MZx1ibfgGAw8j8B5wnhLaGLangGu34XiycvnbYtIN64xOIp6_DsczjafJVti/w640-h612/ia1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl8kfPnA6md-k64Fo9bAfum4skU9tZf4yQ2adRgjl72x_OgSfwFxHXTygojaHSavpmkgCcdXKzqeuzXw9pubx18QTSB7HuqXkHPVXCVuQACUfhtXqNBLHy3uj5DTx3qtyWFaxz/w315-h400/CiberAmenazas.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoMJT4UGo3Flz7B9gi4RlU5MxoV_ey0iTiX7Bn1n2utwX6tR-0lbTU6dbzQqcZSXASKm4iQdM-Tm7dgHzTpik9y72H0JQb5ePY5ue9RHDMcNFuypPCn1JJZm0eK6xQxleIH-Kr9nQ4PL9YmyQW2xYHkzwiWu6eeZwxo3AdNprONiLKobTJInFb/w640-h158/ia31.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
-        "https://elladodelmal.com",
-        "https://www.campusciberseguridad.com/blog-alumno/como-un-alumno-del-campus-conquisto-el-blog-de-chema-alonso/",
-        "https://www.campusciberseguridad.com/masters/master-en-inteligencia-artificial-aplicada-ciberseguridad/?utm_source=chema+w26&amp;utm_medium=chema+w26",
-        "https://www.elladodelmal.com/2026/02/llm-guardian-v30-sentinel.html"
-      ]
-    }
-  },
-  {
-    "id": 746,
-    "fecha": "2026-06-21T22:10:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Estafas de verano con IA",
-    "resumen": "Los ciberdelincuentes están utilizando inteligencia artificial (IA) para llevar a cabo ataques más sofisticados y personalizados durante el verano, lo que los hace más difíciles de detectar. Estos ataques pueden incluir phishing y otros tipos de estafas en línea, por lo que es importante tomar medidas de seguridad para evitar caer en ellas.",
-    "url_imagen": "https://images.unsplash.com/photo-1753513291124-4f615bf1f6de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNzk4MDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/las-nuevas-estafas-del-verano-y-como-evitar-caer-en-ellas/",
-    "fuente": "CyberSecurity News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 745,
-    "fecha": "2026-06-21T19:25:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Supabase",
-    "resumen": "Se ha identificado una vulnerabilidad de divulgación de información (CVE-2026-56214) en los endpoints de Supabase PostgREST RPC, que permite a atacantes no autenticados enumerar organizaciones y revelar el estado de facturación utilizando la clave pública sb_publishable, lo que puede ser utilizado para perfilado dirigido. La vulnerabilidad tiene un CVSS Score de 7.5, clasificada como alta.",
-    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk5MDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-56214",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1119",
-        "name": "Automated Collection"
-      },
-      {
-        "id": "T1061",
-        "name": "Phishing for Information"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1595",
-        "name": "Active Scanning (se infiere que los atacantes pueden realizar un escaneo activo para identificar y explotar la vulnerabilidad)"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-56214"
-      ]
-    }
-  },
-  {
-    "id": 744,
-    "fecha": "2026-06-21T19:24:57Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2026-56082",
-    "resumen": "Se ha identificado una vulnerabilidad de control de acceso inadecuado en la función public.record_build_time de PostgREST RPC en Capgo, que permite a un atacante no autenticado insertar filas en public.build_logs para organizaciones arbitrarias y sobrescribir registros de uso y facturación existentes, lo que puede provocar un ataque de denegación de servicio con impacto financiero. La vulnerabilidad tiene un puntaje CVSS de 7.5 (ALTO) y se puede explotar mediante el uso de la clave publicable anon de Supabase.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwNjk4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-56082",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-56082"
       ]
     }
   }
