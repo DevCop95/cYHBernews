@@ -34,10 +34,11 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "sending",
-      "text": "🟠 *Unit 42*\n\n*OperTraitor expone riesgos críticos de RBAC en operadores de Kubernetes que comprometen la postura de seguridad*\n\nLa herramienta OperTraitor permite auditar privilegios de operadores de Kubernetes, detectando configuraciones excesivas de RBAC y mitigando la exposición de identidades no humanas. Su uso reduce la superficie de ataque de agentes automatizados que pueden ser explotados para escalada de privilegios o movimiento lateral.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1069` — Permission Groups Discovery\n⚔️ `T1087` — Account Discovery\n⚔️ `T1548` — Abuse Elevation Control Mechanism\n⚔️ `T1021` — Remote Services\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "0a8decbf2b4248a184c7a5e12b06521f"
+      "attempt_id": "0a8decbf2b4248a184c7a5e12b06521f",
+      "message_id": 2895,
+      "sent_at": "2026-09-29T12:05:05Z"
     }
   },
   {
