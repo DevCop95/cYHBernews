@@ -67,9 +67,10 @@
       ]
     },
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🟠 *Schneier on Security*\n\n*Policía alemana usa vinculación de dispositivos para interceptar mensajes en WhatsApp y Signal sin romper cifrado*\n\nLas autoridades conectan ordenadores controlados a cuentas de mensajería mediante la función de dispositivos vinculados, explotando acceso físico, phishing de códigos de verificación o interceptación de SMS, lo que permite la captura de mensajes en tiempo real sin necesidad de vulnerar el cifrado de extremo a extremo. Se recomienda habilitar la visibilidad y alerta de dispositivos vinculados en las apps para detectar conexiones no autorizadas.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n\n🔍 *IoCs:*\n🔗 Dominios: cybernews[.]com, netzpolitik[.]org\n🔗 URLs: hxxps://cybernews[.]com/privacy/police-telegram-whatsapp-signal-surveillance-linked-devices/, hxxps://netzpolitik[.]org/2026/messenger-ueberwachung-immer-mehr-polizei-ueberwacht-messenger-wie-whatsapp/#2026-02-20_ZKA_Messenger-Ueberwachung\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/using-device-linking-to-eavesdrop-on-whatsapp-and-signal.html)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "28c5fc6dbf62414db302446788e67f54"
     }
   },
   {
