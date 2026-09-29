@@ -1,5 +1,178 @@
 [
   {
+    "id": 2851,
+    "fecha": "2026-09-29T12:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "OperTraitor expone riesgos críticos de RBAC en operadores de Kubernetes que comprometen la postura de seguridad",
+    "resumen": "La herramienta OperTraitor permite auditar privilegios de operadores de Kubernetes, detectando configuraciones excesivas de RBAC y mitigando la exposición de identidades no humanas. Su uso reduce la superficie de ataque de agentes automatizados que pueden ser explotados para escalada de privilegios o movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:opertraitors how kubernetes operators betray your security posture",
+    "ttps": [
+      {
+        "id": "T1069",
+        "name": "Permission Groups Discovery"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Unit 42*\n\n*OperTraitor expone riesgos críticos de RBAC en operadores de Kubernetes que comprometen la postura de seguridad*\n\nLa herramienta OperTraitor permite auditar privilegios de operadores de Kubernetes, detectando configuraciones excesivas de RBAC y mitigando la exposición de identidades no humanas. Su uso reduce la superficie de ataque de agentes automatizados que pueden ser explotados para escalada de privilegios o movimiento lateral.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1069` — Permission Groups Discovery\n⚔️ `T1087` — Account Discovery\n⚔️ `T1548` — Abuse Elevation Control Mechanism\n⚔️ `T1021` — Remote Services\n⚔️ `T1562.001` — Disable or Modify Tools\n\n🔗 [Leer más](https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2850,
+    "fecha": "2026-09-29T12:01:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Policía alemana usa vinculación de dispositivos para interceptar mensajes en WhatsApp y Signal sin romper cifrado",
+    "resumen": "Las autoridades conectan ordenadores controlados a cuentas de mensajería mediante la función de dispositivos vinculados, explotando acceso físico, phishing de códigos de verificación o interceptación de SMS, lo que permite la captura de mensajes en tiempo real sin necesidad de vulnerar el cifrado de extremo a extremo. Se recomienda habilitar la visibilidad y alerta de dispositivos vinculados en las apps para detectar conexiones no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/using-device-linking-to-eavesdrop-on-whatsapp-and-signal.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:using device linking to eavesdrop on whatsapp and signal",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "cybernews.com",
+        "netzpolitik.org"
+      ],
+      "url": [
+        "https://cybernews.com/privacy/police-telegram-whatsapp-signal-surveillance-linked-devices/",
+        "https://netzpolitik.org/2026/messenger-ueberwachung-immer-mehr-polizei-ueberwacht-messenger-wie-whatsapp/#2026-02-20_ZKA_Messenger-Ueberwachung"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🟠 *Schneier on Security*\n\n*Policía alemana usa vinculación de dispositivos para interceptar mensajes en WhatsApp y Signal sin romper cifrado*\n\nLas autoridades conectan ordenadores controlados a cuentas de mensajería mediante la función de dispositivos vinculados, explotando acceso físico, phishing de códigos de verificación o interceptación de SMS, lo que permite la captura de mensajes en tiempo real sin necesidad de vulnerar el cifrado de extremo a extremo. Se recomienda habilitar la visibilidad y alerta de dispositivos vinculados en las apps para detectar conexiones no autorizadas.\n\n🟠 Severidad: *ALTA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1078` — Valid Accounts\n\n🔍 *IoCs:*\n🔗 Dominios: cybernews[.]com, netzpolitik[.]org\n🔗 URLs: hxxps://cybernews[.]com/privacy/police-telegram-whatsapp-signal-surveillance-linked-devices/, hxxps://netzpolitik[.]org/2026/messenger-ueberwachung-immer-mehr-polizei-ueberwacht-messenger-wie-whatsapp/#2026-02-20_ZKA_Messenger-Ueberwachung\n\n🔗 [Leer más](https://www.schneier.com/blog/archives/2026/09/using-device-linking-to-eavesdrop-on-whatsapp-and-signal.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2849,
+    "fecha": "2026-09-29T12:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vietnamita acusado de lavado de dinero por estafa “pig butchering” de $16 M en criptomonedas",
+    "resumen": "Un ciudadano vietnamita fue procesado por participar en una operación de “pig butchering” que defraudó a una víctima de $16 millones en cripto, utilizando técnicas de ingeniería social y transferencias anónimas para lavar los fondos. El caso destaca la creciente sofisticación de los fraudes cripto y la necesidad de reforzar la detección de actividades sospechosas en plataformas de intercambio.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:vietnamese man charged in 16 million pig butchering crypto scam",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      }
+    ],
+    "iocs": {},
+    "telegram": {
+      "status": "pending",
+      "text": "🟡 *Bleeping Computer*\n\n*Vietnamita acusado de lavado de dinero por estafa “pig butchering” de $16 M en criptomonedas*\n\nUn ciudadano vietnamita fue procesado por participar en una operación de “pig butchering” que defraudó a una víctima de $16 millones en cripto, utilizando técnicas de ingeniería social y transferencias anónimas para lavar los fondos. El caso destaca la creciente sofisticación de los fraudes cripto y la necesidad de reforzar la detección de actividades sospechosas en plataformas de intercambio.\n\n🟡 Severidad: *MEDIA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1566` — Phishing\n⚔️ `T1588.006` — Vulnerabilities\n\n🔗 [Leer más](https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2848,
+    "fecha": "2026-09-29T12:01:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Ataque práctico permite falsificar firmas RSA‑1024 con 1.380 CPU core‑years y 232 consultas al oráculo",
+    "resumen": "Investigadores demostraron la falsificación de firmas RSA‑1024 sin factorizar el módulo, usando 1.380 años de CPU y 232 consultas a un oráculo RSA, reduciendo significativamente el coste computacional frente a ataques tradicionales. El vector explota debilidades en la generación de firmas y requiere pre‑cálculo intensivo, pero permite crear firmas válidas en pocos meses.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/09/como-falsificar-firmas-rsa-sin.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo falsificar firmas rsa sin factorizar el módulo usando 1 380 cpu core years",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "datatracker.ietf.org",
+        "eprint.iacr.org",
+        "rfc-editor.org",
+        "www.rfc-editor.org",
+        "www.tomshardware.com"
+      ],
+      "url": [
+        "http://rfc-editor.org/rfc/rfc8017",
+        "https://datatracker.ietf.org/doc/html/rfc9576",
+        "https://eprint.iacr.org/2007/424",
+        "https://eprint.iacr.org/2007/424.pdf",
+        "https://eprint.iacr.org/2026/2131.pdf",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.rfc-editor.org/info/rfc8017/",
+        "https://www.rfc-editor.org/info/rfc9474/",
+        "https://www.tomshardware.com/tech-industry/cyber-security/novel-attack-on-rsa-cryptography-might-bring-computation-requirements-for-cracking-down-to-manageable-levels"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔵 *El Lado Del Mal*\n\n*Ataque práctico permite falsificar firmas RSA‑1024 con 1.380 CPU core‑years y 232 consultas al oráculo*\n\nInvestigadores demostraron la falsificación de firmas RSA‑1024 sin factorizar el módulo, usando 1.380 años de CPU y 232 consultas a un oráculo RSA, reduciendo significativamente el coste computacional frente a ataques tradicionales. El vector explota debilidades en la generación de firmas y requiere pre‑cálculo intensivo, pero permite crear firmas válidas en pocos meses.\n\n🔵 Severidad: *INFO*\n\n🔍 *IoCs:*\n🔗 Dominios: datatracker[.]ietf[.]org, eprint[.]iacr[.]org, rfc-editor[.]org\n🔗 URLs: hxxp://rfc-editor[.]org/rfc/rfc8017, hxxps://datatracker[.]ietf[.]org/doc/html/rfc9576, hxxps://eprint[.]iacr[.]org/2007/424\n\n🔗 [Leer más](http://www.elladodelmal.com/2026/09/como-falsificar-firmas-rsa-sin.html)",
+      "attempts": 0
+    }
+  },
+  {
+    "id": 2847,
+    "fecha": "2026-09-29T12:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas CVE‑2026‑7192 y CVE‑2026‑7193 comprometen router 4G T‑CPE301K de Dbit",
+    "resumen": "Dos vulnerabilidades, una de desbordamiento de pila (CVE‑2026‑7192) y otra de credenciales predeterminadas (CVE‑2026‑7193), permiten a un atacante remoto provocar DoS o escalar a root vía Telnet en el mini‑router 4G T‑CPE301K. No existe parche disponible, lo que obliga a mitigar aislando el dispositivo y bloqueando el acceso externo.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-t-cpe301k-4g-mini-wifi-router-de-shenzhen-dbit",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-7192,cve-2026-7193",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "wa.me",
+        "www.dbitnet.com"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.dbitnet.com/en/advantage/"
+      ],
+      "cve": [
+        "CVE-2026-7192",
+        "CVE-2026-7193"
+      ]
+    },
+    "telegram": {
+      "status": "pending",
+      "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidades críticas CVE‑2026‑7192 y CVE‑2026‑7193 comprometen router 4G T‑CPE301K de Dbit*\n\nDos vulnerabilidades, una de desbordamiento de pila (CVE‑2026‑7192) y otra de credenciales predeterminadas (CVE‑2026‑7193), permiten a un atacante remoto provocar DoS o escalar a root vía Telnet en el mini‑router 4G T‑CPE301K. No existe parche disponible, lo que obliga a mitigar aislando el dispositivo y bloqueando el acceso externo.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-7192, CVE-2026-7193\n🔗 Dominios: pinterest[.]com, wa[.]me, www[.]dbitnet[.]com\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]dbitnet[.]com/en/advantage/\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-t-cpe301k-4g-mini-wifi-router-de-shenzhen-dbit)",
+      "attempts": 0
+    }
+  },
+  {
     "id": 2846,
     "fecha": "2026-09-29T03:54:45Z",
     "categoria": "Ciberseguridad",
@@ -55090,18 +55263,5 @@
         "CVE-2026-4020"
       ]
     }
-  },
-  {
-    "id": 732,
-    "fecha": "2026-06-20T02:55:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Reino Unido usa IA para verificar edad",
-    "resumen": "El Reino Unido implementará tecnología de verificación de edad basada en reconocimiento facial para solicitantes de asilo, a pesar de que las pruebas internas del Ministerio del Interior han revelado riesgos de errores que podrían tener consecuencias significativas en la vida de las personas. La tecnología de reconocimiento facial utilizada puede ser propensa a errores, lo que plantea preocupaciones sobre la privacidad y la seguridad de los datos personales.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
-    "fuente": "Wired Security",
-    "ttps": [],
-    "iocs": {}
   }
 ]
