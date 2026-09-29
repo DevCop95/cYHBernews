@@ -1,5 +1,153 @@
 [
   {
+    "id": 2851,
+    "fecha": "2026-09-29T12:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "OperTraitor expone riesgos críticos de RBAC en operadores de Kubernetes que comprometen la postura de seguridad",
+    "resumen": "La herramienta OperTraitor permite auditar privilegios de operadores de Kubernetes, detectando configuraciones excesivas de RBAC y mitigando la exposición de identidades no humanas. Su uso reduce la superficie de ataque de agentes automatizados que pueden ser explotados para escalada de privilegios o movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/agentic-ai-kubernetes-operator-risks/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:opertraitors how kubernetes operators betray your security posture",
+    "ttps": [
+      {
+        "id": "T1069",
+        "name": "Permission Groups Discovery"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2850,
+    "fecha": "2026-09-29T12:01:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Policía alemana usa vinculación de dispositivos para interceptar mensajes en WhatsApp y Signal sin romper cifrado",
+    "resumen": "Las autoridades conectan ordenadores controlados a cuentas de mensajería mediante la función de dispositivos vinculados, explotando acceso físico, phishing de códigos de verificación o interceptación de SMS, lo que permite la captura de mensajes en tiempo real sin necesidad de vulnerar el cifrado de extremo a extremo. Se recomienda habilitar la visibilidad y alerta de dispositivos vinculados en las apps para detectar conexiones no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/09/using-device-linking-to-eavesdrop-on-whatsapp-and-signal.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:using device linking to eavesdrop on whatsapp and signal",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "cybernews.com",
+        "netzpolitik.org"
+      ],
+      "url": [
+        "https://cybernews.com/privacy/police-telegram-whatsapp-signal-surveillance-linked-devices/",
+        "https://netzpolitik.org/2026/messenger-ueberwachung-immer-mehr-polizei-ueberwacht-messenger-wie-whatsapp/#2026-02-20_ZKA_Messenger-Ueberwachung"
+      ]
+    }
+  },
+  {
+    "id": 2849,
+    "fecha": "2026-09-29T12:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vietnamita acusado de lavado de dinero por estafa “pig butchering” de $16 M en criptomonedas",
+    "resumen": "Un ciudadano vietnamita fue procesado por participar en una operación de “pig butchering” que defraudó a una víctima de $16 millones en cripto, utilizando técnicas de ingeniería social y transferencias anónimas para lavar los fondos. El caso destaca la creciente sofisticación de los fraudes cripto y la necesidad de reforzar la detección de actividades sospechosas en plataformas de intercambio.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:vietnamese man charged in 16 million pig butchering crypto scam",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2848,
+    "fecha": "2026-09-29T12:01:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Ataque práctico permite falsificar firmas RSA‑1024 con 1.380 CPU core‑years y 232 consultas al oráculo",
+    "resumen": "Investigadores demostraron la falsificación de firmas RSA‑1024 sin factorizar el módulo, usando 1.380 años de CPU y 232 consultas a un oráculo RSA, reduciendo significativamente el coste computacional frente a ataques tradicionales. El vector explota debilidades en la generación de firmas y requiere pre‑cálculo intensivo, pero permite crear firmas válidas en pocos meses.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/09/como-falsificar-firmas-rsa-sin.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo falsificar firmas rsa sin factorizar el módulo usando 1 380 cpu core years",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "datatracker.ietf.org",
+        "eprint.iacr.org",
+        "rfc-editor.org",
+        "www.rfc-editor.org",
+        "www.tomshardware.com"
+      ],
+      "url": [
+        "http://rfc-editor.org/rfc/rfc8017",
+        "https://datatracker.ietf.org/doc/html/rfc9576",
+        "https://eprint.iacr.org/2007/424",
+        "https://eprint.iacr.org/2007/424.pdf",
+        "https://eprint.iacr.org/2026/2131.pdf",
+        "https://www.deusto.es/es/inicio/estudia/estudios/curso-seminario/quantum-post-quantum",
+        "https://www.rfc-editor.org/info/rfc8017/",
+        "https://www.rfc-editor.org/info/rfc9474/",
+        "https://www.tomshardware.com/tech-industry/cyber-security/novel-attack-on-rsa-cryptography-might-bring-computation-requirements-for-cracking-down-to-manageable-levels"
+      ]
+    }
+  },
+  {
+    "id": 2847,
+    "fecha": "2026-09-29T12:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas CVE‑2026‑7192 y CVE‑2026‑7193 comprometen router 4G T‑CPE301K de Dbit",
+    "resumen": "Dos vulnerabilidades, una de desbordamiento de pila (CVE‑2026‑7192) y otra de credenciales predeterminadas (CVE‑2026‑7193), permiten a un atacante remoto provocar DoS o escalar a root vía Telnet en el mini‑router 4G T‑CPE301K. No existe parche disponible, lo que obliga a mitigar aislando el dispositivo y bloqueando el acceso externo.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2ODMzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-t-cpe301k-4g-mini-wifi-router-de-shenzhen-dbit",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-7192,cve-2026-7193",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "pinterest.com",
+        "wa.me",
+        "www.dbitnet.com"
+      ],
+      "url": [
+        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
+        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed",
+        "https://www.dbitnet.com/en/advantage/"
+      ],
+      "cve": [
+        "CVE-2026-7192",
+        "CVE-2026-7193"
+      ]
+    }
+  },
+  {
     "id": 2846,
     "fecha": "2026-09-29T03:54:45Z",
     "categoria": "Ciberseguridad",
@@ -52842,124 +52990,6 @@
         "https://i.blogs.es/f48a2d/fotonica/1024_2000.jpeg",
         "https://www.forbesargentina.com/millonarios/quienes-son-multimillonarios-acompanaron-trump-su-cumbre-china-xi-jinping-n90815",
         "https://www.reuters.com/world/china/chinas-control-over-indium-phosphide-exports-threatens-ai-data-centre-rollout-2026-06-11/"
-      ]
-    }
-  },
-  {
-    "id": 739,
-    "fecha": "2026-06-21T09:43:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Expiración de claves criptográficas",
-    "resumen": "La expiración de claves criptográficas utilizadas para asegurar la secuencia de arranque de computadoras con Windows y Linux a partir del 24 de junio puede afectar la seguridad de los sistemas, ya que estos dependen de estas claves para verificar la autenticidad del software durante el arranque. Esto podría dejar los sistemas vulnerables a ataques de bootkit y otros tipos de malware si no se actualizan adecuadamente.",
-    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIwMzUwMjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/a-critical-deadline-is-approaching-for-windows-and-linux-security/",
-    "fuente": "Wired Security",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 736,
-    "fecha": "2026-06-20T16:14:59Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Hackers filtran datos de MSG",
-    "resumen": "Un grupo de hackers ha reclamado la filtración de datos robados de Madison Square Garden, lo que podría implicar una brecha de datos con posibles vectores de ataque como phishing o exploits de vulnerabilidades. El incidente destaca la importancia de la ciberseguridad en la protección de la privacidad digital de los clientes y usuarios.",
-    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5NzIwOTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/security-news-this-week-hackers-claim-to-leak-stolen-madison-square-garden-data/",
-    "fuente": "Wired Security",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 735,
-    "fecha": "2026-06-20T16:14:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ransomware Prinz Eugen",
-    "resumen": "El nuevo ransomware Prinz Eugen prioriza la cifrado de archivos recientemente modificados, aumentando el impacto en la disponibilidad de datos, y no deja nota de rescate en el sistema, complicando la negociación con los atacantes. El vector de ataque no ha sido especificado, pero es probable que se utilicen técnicas de phishing o explotación de vulnerabilidades para infectar los sistemas.",
-    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5NzIwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-prinz-eugen-ransomware-prioritizes-recent-files-for-encryption/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 734,
-    "fecha": "2026-06-20T13:52:00Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "IA salva quesería",
-    "resumen": "La implementación de agentes de IA en la quesería Petaluma Creamery de California mejoró significativamente su operativa, permitiendo la automatización de tareas y la predicción de pedidos, lo que ayudó a salvar el negocio de la quiebra. Los agentes de IA se integraron con la plataforma de Salesforce y permitieron la digitalización de datos, la optimización de rutas de reparto y el control de la trazabilidad de la leche.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217780-03809da32358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5NjM1MjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/queseria-artesanal-california-estuvo-a-punto-quebrar-hoy-negocio-boyante-gracias-a-algo-agentes-ia",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "fortune.com",
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://fortune.com/2026/05/15/petaluma-creamery-salesforce-ai-agents-saved-family-business/",
-        "https://i.blogs.es/3aeba0/cafeteria-robot/375_142.jpeg",
-        "https://i.blogs.es/a4443b/fabrica-queso/1024_2000.jpeg"
-      ]
-    }
-  },
-  {
-    "id": 733,
-    "fecha": "2026-06-20T11:13:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Gravity SMTP",
-    "resumen": "La vulnerabilidad CVE-2026-4020, con una puntuación CVSS de 5.3, permite a atacantes no autenticados extraer datos sensibles como claves API, secretos y tokens OAuth de sitios que utilizan el plugin Gravity SMTP de WordPress. El vector de ataque aprovecha una falla de divulgación de información en el plugin, que ha sido parcheada recientemente.",
-    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5NTQwMjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1061",
-        "name": "Phishing (no se menciona explícitamente, pero se puede inferir que se podría utilizar para obtener datos sensibles)"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials (se menciona explícitamente la extracción de claves API, secretos y tokens OAuth)"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-4020"
       ]
     }
   }
