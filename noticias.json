@@ -22,9 +22,10 @@
     ],
     "iocs": {},
     "telegram": {
-      "status": "pending",
+      "status": "sending",
       "text": "🔴 *Dark Reading*\n\n*Vulnerabilidad zero‑day en TDengine permite colapsar servidores OT de sectores industriales*\n\nUn flaw crítico en la base de datos de series temporales TDengine, presente en entornos IoT, energía y automoción, permite a un atacante remoto ejecutar código y provocar denegación de servicio en servidores de tecnología operativa. La exposición afecta a infraestructuras críticas y requiere parche inmediato.\n\n🔴 Severidad: *CRÍTICA*\n\n📋 *MITRE ATT&CK:*\n⚔️ `T1190` — Exploit Public-Facing Application\n⚔️ `T1499` — Endpoint Denial of Service\n\n🔗 [Leer más](https://www.darkreading.com/ics-ot-security/one-packet-crash-servers-tdengine)",
-      "attempts": 0
+      "attempts": 1,
+      "attempt_id": "277a256832be43a789950b097d344a13"
     }
   },
   {
