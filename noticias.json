@@ -167,10 +167,11 @@
       ]
     },
     "telegram": {
-      "status": "sending",
-      "text": "🔴 *INCIBE-CERT*\n\n*Vulnerabilidades críticas CVE‑2026‑7192 y CVE‑2026‑7193 comprometen router 4G T‑CPE301K de Dbit*\n\nDos vulnerabilidades, una de desbordamiento de pila (CVE‑2026‑7192) y otra de credenciales predeterminadas (CVE‑2026‑7193), permiten a un atacante remoto provocar DoS o escalar a root vía Telnet en el mini‑router 4G T‑CPE301K. No existe parche disponible, lo que obliga a mitigar aislando el dispositivo y bloqueando el acceso externo.\n\n🔴 Severidad: *CRÍTICA*\n\n🔍 *IoCs:*\n🔴 CVEs: CVE-2026-7192, CVE-2026-7193\n🔗 Dominios: pinterest[.]com, wa[.]me, www[.]dbitnet[.]com\n🔗 URLs: hxxp://pinterest[.]com/pin/create/link/?url=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT, hxxps://wa[.]me/?text=hxxps://www[.]incibe[.]es/incibe-cert/alerta-temprana/avisos/feed, hxxps://www[.]dbitnet[.]com/en/advantage/\n\n🔗 [Leer más](https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-t-cpe301k-4g-mini-wifi-router-de-shenzhen-dbit)",
+      "status": "sent",
       "attempts": 1,
-      "attempt_id": "ecd83fab16cc4079a5986ce2bc5ab500"
+      "attempt_id": "ecd83fab16cc4079a5986ce2bc5ab500",
+      "message_id": 2891,
+      "sent_at": "2026-09-29T12:04:36Z"
     }
   },
   {
