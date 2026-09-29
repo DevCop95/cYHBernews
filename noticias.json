@@ -1,5 +1,28 @@
 [
   {
+    "id": 2846,
+    "fecha": "2026-09-29T03:54:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad zero‑day en TDengine permite colapsar servidores OT de sectores industriales",
+    "resumen": "Un flaw crítico en la base de datos de series temporales TDengine, presente en entornos IoT, energía y automoción, permite a un atacante remoto ejecutar código y provocar denegación de servicio en servidores de tecnología operativa. La exposición afecta a infraestructuras críticas y requiere parche inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2NTQwODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/one-packet-crash-servers-tdengine",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:one packet can crash ot servers in industrial sectors",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2845,
     "fecha": "2026-09-28T21:02:42Z",
     "categoria": "Ciberseguridad",
@@ -52939,18 +52962,5 @@
         "CVE-2026-4020"
       ]
     }
-  },
-  {
-    "id": 732,
-    "fecha": "2026-06-20T02:55:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Reino Unido usa IA para verificar edad",
-    "resumen": "El Reino Unido implementará tecnología de verificación de edad basada en reconocimiento facial para solicitantes de asilo, a pesar de que las pruebas internas del Ministerio del Interior han revelado riesgos de errores que podrían tener consecuencias significativas en la vida de las personas. La tecnología de reconocimiento facial utilizada puede ser propensa a errores, lo que plantea preocupaciones sobre la privacidad y la seguridad de los datos personales.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODE5MjQxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
-    "fuente": "Wired Security",
-    "ttps": [],
-    "iocs": {}
   }
 ]
