@@ -1,5 +1,121 @@
 [
   {
+    "id": 2868,
+    "fecha": "2026-09-30T09:18:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Phishing explota herramientas RMM para mantener acceso persistente en entornos MSP",
+    "resumen": "Microsoft detectó campañas de phishing que comprometen credenciales y utilizan el RMM de MSP360 para desplegar ScreenConnect, creando canales de acceso remoto redundantes que facilitan movimientos laterales y persistencia. La técnica amplía la superficie de ataque de proveedores gestionados, obligando a reforzar la segmentación de redes y la monitorización de sesiones remotas.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3NTk4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:phishing abuses rmm tools for persistent access",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2867,
+    "fecha": "2026-09-30T09:18:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-22755 permite ejecución remota de comandos en cámaras VIVOTEK",
+    "resumen": "La falla de inyección de comandos en el firmware de múltiples modelos VIVOTEK otorga a un atacante privilegios de root y control total del dispositivo, afectando infraestructuras críticas. Se recomienda aplicar inmediatamente el firmware corregido publicado por el fabricante.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3NTk4OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-03",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-22755",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.vivotek.com"
+      ],
+      "url": [
+        "https://www.vivotek.com/en-US/resource/download-center/software-app-vadp-package"
+      ],
+      "cve": [
+        "CVE-2026-22755"
+      ]
+    }
+  },
+  {
+    "id": 2866,
+    "fecha": "2026-09-30T09:18:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sudáfrica solicita asistencia tras ransomware que compromete el control de tráfico aéreo",
+    "resumen": "Un kit de ransomware ha sido detectado en al menos una red operativa de control de tráfico aéreo, obligando al gobierno sudafricano a pedir apoyo internacional para contener la amenaza y restaurar la disponibilidad del servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3NTk4OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/south-africa-help-cyberattack-air-traffic-control",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:south africa seeks help after cyberattack targets air traffic control",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2865,
+    "fecha": "2026-09-30T09:18:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-13695 permite inyección SQL UNION en Integratec",
+    "resumen": "La falla CVE-2026-13695 (CVSS 9.1) afecta al parámetro sInfo en POST /login/ap_Login.aspx/start, posibilitando extracción de credenciales y datos de usuarios, además de potencial escalada de privilegios y denegación parcial de servicio. No existe parche disponible; se recomienda mitigación mediante validación estricta de entradas y WAF.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3NTk4ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-la-aplicacion-de-integratec",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-13695",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-13695"
+      ]
+    }
+  },
+  {
+    "id": 2864,
+    "fecha": "2026-09-30T09:18:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Herramientas “nudify” basadas en IA generan deepfakes de desnudos y alcanzan 40 millones de visitas mensuales",
+    "resumen": "Plataformas de generación de imágenes “nudify” emplean modelos de difusión para crear deepfakes pornográficos sin consentimiento, exponiendo a millones de usuarios a riesgos de extorsión y daño reputacional; la escalada de tráfico indica una creciente demanda y potencial para campañas de phishing y blackmail automatizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3NTk4ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/las-webs-que-desnudan-con-ia-alcanzan-los-40-millones-de-visitas-al-mes/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:las webs que desnudan con ia alcanzan los 40 millones de visitas al mes",
+    "ttps": [
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2863,
     "fecha": "2026-09-30T00:03:16Z",
     "categoria": "IA",
@@ -52771,135 +52887,6 @@
     "url_imagen": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
     "fuente": "Wired Security",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 760,
-    "fecha": "2026-06-22T20:39:57Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque de phishing con reputación falsa",
-    "resumen": "Los atacantes están utilizando múltiples canales en línea, incluyendo GitHub, YouTube y VirusTotal, para crear una ilusión de confianza y difundir un hijacker de portapapeles cross-platform, lo que puede llevar a una posible pérdida de criptomonedas. El ataque aprovecha la confianza de los usuarios en estas plataformas para robar información sensible.",
-    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA3OTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/crypto-heist-fake-reputation-boosting-campaign",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1586",
-        "name": "Reputation Manipulation"
-      },
-      {
-        "id": "T1056",
-        "name": "Keylogging"
-      },
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 759,
-    "fecha": "2026-06-22T20:39:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque de cadena de suministro en WordPress",
-    "resumen": "Varios plugins de WordPress de ShapedPlugin fueron comprometidos en un ataque de cadena de suministro después de que actores maliciosos desconocidos lograron manipular los canales oficiales de lanzamiento y agregar código backdoor a las versiones Pro de los plugins, que se distribuyeron a través de canales de actualización oficiales. Los atacantes comprometieron el pipeline de construcción y distribución del proveedor, inyectando código backdoor en las versiones Pro de los plugins.",
-    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA3OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 757,
-    "fecha": "2026-06-22T16:48:17Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Contenido AI en TikTok supera el 50%",
-    "resumen": "Un estudio de Kapwing encontró que el 59% de los primeros 500 vídeos mostrados a cuentas nuevas en TikTok son \"AI slop\", contenido generado por inteligencia artificial de baja calidad, lo que triplica la tasa encontrada en YouTube. El contenido infantil es el más afectado, con un 57,4% de vídeos clasificados como AI slop.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217963-67e30c290e6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/aplicaciones/problema-no-que-haya-ia-tiktok-que-mitad-que-ves-nada-entrar",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "thenextweb.com",
-        "unsplash.com",
-        "www.kapwing.com",
-        "www.theguardian.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/15a1f0/threads/375_142.jpeg",
-        "https://i.blogs.es/55319c/ia-tiktok/1024_2000.jpeg",
-        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/1024_2000.png",
-        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/1366_2000.png",
-        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/450_1000.png",
-        "https://i.blogs.es/b7daa5/01_tiktok-ai-slop-in-numbers/650_1200.png",
-        "https://thenextweb.com/news/tiktok-ai-slop-59-percent-new-users-kapwing-study",
-        "https://unsplash.com/es/@robin_rednine?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-        "https://unsplash.com/es/fotos/un-par-de-cerdos-que-estan-acostados-6y7jACxmhP8",
-        "https://www.kapwing.com/resources/the-tiktok-ai-slop-report/",
-        "https://www.theguardian.com/technology/2025/nov/19/tiktok-users-power-reduce-ai-content-on-feeds"
-      ]
-    }
-  },
-  {
-    "id": 755,
-    "fecha": "2026-06-22T16:48:02Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Webshells siguen siendo populares",
-    "resumen": "Las webshells continúan siendo una herramienta popular para ataques cibernéticos, permitiendo a los atacantes acceder y controlar sistemas comprometidos, y un nuevo ejemplo ha sido identificado en Github con solo dos meses de antigüedad. Esto destaca la persistencia de esta técnica de ataque y la necesidad de monitorear constantemente los sistemas para detectar y prevenir este tipo de amenazas.",
-    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33096",
-    "fuente": "SANS ISC",
-    "ttps": [
-      {
-        "id": "T1100",
-        "name": "Web Shell"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1046",
-        "name": "Network Service Discovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 753,
-    "fecha": "2026-06-22T16:47:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Mercado de credenciales robadas",
-    "resumen": "Los atacantes pueden pagar a terceros para buscar credenciales robadas en grandes bases de datos, lo que facilita el acceso a información confidencial de empresas y dominios específicos, aumentando el riesgo de ataques de phishing y malware. Esto representa un nuevo vector de ataque en el mercado underground de credenciales robadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNDY4Njh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/a-glimpse-into-the-search-your-target-market-for-stolen-credentials/",
-    "fuente": "Bleeping Computer",
     "ttps": [],
     "iocs": {}
   }
