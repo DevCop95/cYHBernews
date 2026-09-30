@@ -1,5 +1,144 @@
 [
   {
+    "id": 2873,
+    "fecha": "2026-09-30T17:30:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Investigadores ucranianos detectan kit de explotación iPhone “DarkSword” en oleada de ataques rusos",
+    "resumen": "El malware “DarkSword”, clasificado como “hit-and-run”, aprovecha vulnerabilidades desconocidas en iOS para instalar payloads sin persistencia, ampliando la campaña de ataques rusos contra dispositivos móviles. Su detección sugiere un vector de ataque dirigido a usuarios corporativos y gubernamentales que requieren actualización inmediata de parches y reforzamiento de EDR móvil.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3ODk0MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
+    "fuente": "The Record",
+    "dedup_key": "txt:mobile malware warning from ukrainian researchers includes iphone exploit kit",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2872,
+    "fecha": "2026-09-30T17:30:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "APT “Star Blizzard” despliega la táctica RedFlick para ampliar su campaña de phishing contra objetivos ucranianos",
+    "resumen": "El grupo ruso Star Blizzard ha introducido la técnica “RedFlick”, que sustituye a ClickFix, para distribuir el backdoor CosmicPulse mediante correos de phishing dirigidos a ONG, think tanks y periodistas vinculados a Ucrania, incrementando la superficie de ataque y el riesgo de exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3ODk0MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:russia s star blizzard ditches clickfix to widen phishing net",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2871,
+    "fecha": "2026-09-30T17:30:27Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Amenazas usan Custom GPT de ChatGPT para distribuir RAT mediante señuelos ClickFix",
+    "resumen": "Los atacantes crean GPT personalizados que simulan ofertas legítimas y redirigen a víctimas a sitios maliciosos con lures ClickFix que descargan RAT, ampliando la superficie de ataque de plataformas de IA confiables. La campaña detectada en septiembre 2026 muestra la explotación de funciones de personalización de ChatGPT para evadir filtros y propagar malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1752451399417-eb6e072269bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3ODk0Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers abuse chatgpt custom gpts to deliver rat via clickfix lures",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2870,
+    "fecha": "2026-09-30T17:30:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "HPE Networking Instant On APs expone 18 vulnerabilidades críticas y altas, incluido RCE y SSRF",
+    "resumen": "Se identificaron 18 CVE en versiones ≤3.4.1.0 de los APs Instant On, con vectores de ataque que permiten ejecución remota de código, escalado de privilegios, SSRF y denegación de servicio sin autenticación. La mitigación requiere actualización a 3.4.2.0, segmentación de interfaces de gestión y políticas de firewall.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3ODk0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-instant-aps-de-hpe-networking",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-76721,cve-2026-76722,cve-2026-76723,cve-2026-76724,cve-2026-76725,cve-2026-76726,cve-2026-76727,cve-2026-76728,cve-2026-76729,cve-2026-76730,cve-2026-76731,cve-2026-76732,cve-2026-76733,cve-2026-76734,cve-2026-76735,cve-2026-76736,cve-2026-76737,cve-2026-76738",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "3.4.1.0",
+        "3.4.2.0"
+      ],
+      "cve": [
+        "CVE-2026-76721",
+        "CVE-2026-76722",
+        "CVE-2026-76723",
+        "CVE-2026-76724",
+        "CVE-2026-76725",
+        "CVE-2026-76726",
+        "CVE-2026-76727",
+        "CVE-2026-76728",
+        "CVE-2026-76729",
+        "CVE-2026-76730",
+        "CVE-2026-76731",
+        "CVE-2026-76732",
+        "CVE-2026-76733",
+        "CVE-2026-76734",
+        "CVE-2026-76735",
+        "CVE-2026-76736",
+        "CVE-2026-76737",
+        "CVE-2026-76738"
+      ]
+    }
+  },
+  {
+    "id": 2869,
+    "fecha": "2026-09-30T17:30:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "PDF malicioso se consolida como principal vector de phishing y malware en correos de América Latina",
+    "resumen": "Los análisis de amenazas revelan que los archivos PDF son el formato más explotado por actores maliciosos para distribuir campañas de phishing y malware vía email, incrementando el riesgo de compromisos de credenciales y ejecución de código en la región.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3ODk0MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/cibercrimen/pdf-malicioso-amenazas-correo-electronico-america-latina/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:pdf malicioso uno de los principales formatos utilizados en amenazas por correo electrónico en américa latina",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2868,
     "fecha": "2026-09-30T09:18:17Z",
     "categoria": "Ciberseguridad",
@@ -52776,117 +52915,6 @@
     "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxODI5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/google-sets-sept-30-deadline-for.html",
     "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 767,
-    "fecha": "2026-06-22T22:44:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad PixelSmash en FFmpeg",
-    "resumen": "Se ha descubierto una vulnerabilidad en FFmpeg conocida como PixelSmash, que podría permitir la ejecución remota de código en servidores Jellyfin bajo ciertas condiciones, y también podría causar una condición de denegación de servicio en aplicaciones como Kodi, Emby, Nextcloud, PhotoPrism y OBS Studio. La explotación de esta vulnerabilidad podría tener un impacto significativo en la seguridad de los sistemas que utilizan FFmpeg.",
-    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/ffmpeg-fixes-pixelsmash-flaw-in-widely-used-video-decoder/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 766,
-    "fecha": "2026-06-22T22:44:26Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "OXLOADER: Nueva carga maliciosa",
-    "resumen": "Investigadores de ciberseguridad han descubierto una nueva campaña que utiliza un cargador de malware llamado OXLOADER para entregar CastleStealer, aprovechando anuncios maliciosos de Google Ads como punto de partida. El actor amenazante parece ser de habla rusa y tiene motivaciones financieras, distribuyendo el malware a través de estos anuncios para obtener beneficios ilícitos.",
-    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/new-oxloader-loader-uses-malicious.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 765,
-    "fecha": "2026-06-22T22:44:19Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Pérdida de $15M en bot MEV",
-    "resumen": "Un atacante manipuló la lógica de detección de oportunidades del bot MEV (Maximal Extractable Value) de JaredFromSubway, creando oportunidades de trading de criptomonedas falsas, lo que resultó en una pérdida de $15 millones. El vector de ataque se centró en explotar la lógica de oportunidad-detección del bot, permitiendo al atacante realizar operaciones fraudulentas.",
-    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjgyNjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/jaredfromsubway-mev-bot-hacked-in-15-million-crypto-theft/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 762,
-    "fecha": "2026-06-22T20:40:09Z",
-    "categoria": "IA",
-    "severidad": "CRITICA",
-    "titulo": "IA en hogares a través de robots aspiradores",
-    "resumen": "China está llevando la inteligencia artificial (IA) a millones de hogares a través de robots aspiradores avanzados, que incorporan sensores y algoritmos de navegación y decisión para limpiar y orientarse en entornos domésticos, con marcas como Roborock, Ecovacs y Xiaomi liderando el mercado. Estos dispositivos están cambiando la forma en que la IA se integra en la vida cotidiana, con capacidades de percepción y toma de decisiones que van más allá de la simple aspiración.",
-    "url_imagen": "https://images.unsplash.com/photo-1696258686286-1191184126aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA4MDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/china-ha-encontrado-atajo-inesperado-para-llevar-ia-a-millones-hogares-robot-aspirador",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "media.irobot.com",
-        "news.bbc.co.uk",
-        "platform.instagram.com",
-        "web.archive.org",
-        "www.idc.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/06389e/electrolux-trilobite-2/1024_2000.jpeg",
-        "https://i.blogs.es/06389e/electrolux-trilobite-2/1366_2000.jpeg",
-        "https://i.blogs.es/06389e/electrolux-trilobite-2/450_1000.jpeg",
-        "https://i.blogs.es/06389e/electrolux-trilobite-2/650_1200.jpeg",
-        "https://i.blogs.es/6e0e31/xiaomi-h50-pro-copia/1024_2000.jpeg",
-        "https://i.blogs.es/6e0e31/xiaomi-h50-pro-copia/1366_2000.jpeg",
-        "https://i.blogs.es/6e0e31/xiaomi-h50-pro-copia/450_1000.jpeg",
-        "https://i.blogs.es/6e0e31/xiaomi-h50-pro-copia/650_1200.jpeg",
-        "https://i.blogs.es/bf1e31/china-robot-aspirador-ia/1024_2000.jpeg",
-        "https://i.blogs.es/dc844a/empleo-ia/375_142.jpeg",
-        "https://media.irobot.com/2002-09-18-iRobot-Introduces-Roomba-Intelligent-FloorVac-The-First-Automatic-Floor-Cleaner-In-The-U-S",
-        "https://media.irobot.com/2026-01-23-iRobot-Completes-Court-Supervised-Transaction-with-Picea,-Enabling-the-Next-Chapter-of-Growth",
-        "https://web.archive.org/web/20031003195913/http://news.bbc.co.uk/2/hi/technology/3031219.stm",
-        "https://www.idc.com/resource-center/blog/%E5%85%A8%E7%90%83%E5%AE%B6%E7%94%A8%E6%B8%85%E6%B4%81%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%9B%E5%85%A5%E5%85%A8%E5%9C%BA%E6%99%AF%E7%AB%9E%E4%BA%89%E6%97%B6%E4%BB%A3%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%93%81/"
-      ]
-    }
-  },
-  {
-    "id": 761,
-    "fecha": "2026-06-22T20:40:04Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "OpenAI Lanza \"Patch the Planet\"",
-    "resumen": "OpenAI ha lanzado \"Patch the Planet\", una iniciativa para corregir errores en software de código abierto, junto con una versión mejorada de GPT-5.5-Cyber, con el objetivo de abordar las preocupaciones sobre la ciberseguridad de los modelos de IA. Esta iniciativa busca fortalecer la seguridad de los modelos de lenguaje y reducir los riesgos asociados con las vulnerabilidades en software de código abierto.",
-    "url_imagen": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxNjA4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/openai-launches-full-scale-effort-to-patch-open-source-bugs-as-it-takes-on-anthropics-mythos/",
-    "fuente": "Wired Security",
     "ttps": [],
     "iocs": {}
   }
