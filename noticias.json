@@ -1,5 +1,98 @@
 [
   {
+    "id": 2863,
+    "fecha": "2026-09-30T00:03:16Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "NVIDIA Kumo Tabular revoluciona la precisión y eficiencia en predicciones de datos estructurados",
+    "resumen": "Kumo Tabular, la nueva solución de NVIDIA, combina GPUs de última generación con optimizaciones de kernels y técnicas de sparsity para lograr mejoras de hasta 30 % en precisión y 40 % en velocidad frente a modelos tradicionales en benchmarks de tabular data. El avance impacta directamente en entornos de detección de fraude, análisis de riesgo y operaciones de SOC que dependen de modelos de clasificación rápida y fiable.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557010061-315772f6efef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MjY1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://huggingface.co/blog/nvidia/kumo-tabular",
+    "fuente": "Hugging Face",
+    "dedup_key": "txt:nvidia kumo tabular sets a new accuracy efficiency frontier for tabular prediction",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2862,
+    "fecha": "2026-09-30T00:03:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-84411 en MikroTik RouterOS permite ejecución remota como root",
+    "resumen": "Un integer underflow en la gestión de cuerpos HTTP del servicio web de RouterOS <7.24 permite a un atacante no autenticado ejecutar código arbitrario con privilegios de root o provocar denegación de servicio mediante una única petición manipulada. Se recomienda actualizar a RouterOS 7.23 o superior y aislar los dispositivos detrás de firewalls.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MjY1OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-06",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-84411",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "mikrotik.com"
+      ],
+      "url": [
+        "https://mikrotik.com/download"
+      ],
+      "cve": [
+        "CVE-2026-84411"
+      ]
+    }
+  },
+  {
+    "id": 2861,
+    "fecha": "2026-09-30T00:03:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Unsloth Studio permite ejecución arbitraria de Python al inspeccionar modelos IA",
+    "resumen": "La falla, corregida recientemente, explotaba la opción trust_remote_code para que modelos IA maliciosos ejecutaran código Python durante la inspección, comprometiendo la integridad del entorno de desarrollo. El vector de ataque se basa en la carga de paquetes no verificados, afectando pipelines de entrenamiento y despliegue.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MjY1OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/unsloth-studio-flaw-model-inspection-code-execution",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:unsloth studio flaw turns routine model inspection into code execution",
+    "ttps": [
+      {
+        "id": "T1059.006",
+        "name": "Python"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2860,
+    "fecha": "2026-09-30T00:03:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA impulsa fraude online y el 53 % de usuarios españoles reporta intentos de estafa en 2024",
+    "resumen": "Un estudio de Kaspersky muestra que la accesibilidad de modelos de IA permite a ciberdelincuentes automatizar phishing y scams a gran escala, afectando a más de la mitad de los internautas en España durante el último año.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3MjY1ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/mas-de-la-mitad-de-los-usuarios-espanoles-de-internet-ha-sufrido-fraudes-online/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:más de la mitad de los usuarios españoles de internet ha sufrido fraudes online",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2859,
     "fecha": "2026-09-29T19:46:25Z",
     "categoria": "Ciberseguridad",
@@ -52809,124 +52902,5 @@
     "fuente": "Bleeping Computer",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 752,
-    "fecha": "2026-06-22T11:46:04Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Noruega restringe IA en escuelas",
-    "resumen": "Noruega ha impuesto una prohibición prácticamente total a las herramientas de IA generativa en las escuelas primarias, con el objetivo de evitar que la IA afecte negativamente la educación temprana de sus jóvenes, y permitir su uso supervisado en la secundaria inferior. La medida busca proteger a los niños de saltarse etapas fundamentales en su educación y promover la educación tradicional.",
-    "url_imagen": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxMjg3NjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/medio-mundo-se-pregunta-como-integrar-ia-escuelas-noruega-ha-encontrado-respuesta-no-haciendolo",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "unsplash.com",
-        "www.reuters.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/44b1fe/chatgpt-image-22-jun-2026-10_22_29/1024_2000.png",
-        "https://i.blogs.es/c25a24/gemini_generated_image_809x3f809x3f809x/375_142.jpeg",
-        "https://i.blogs.es/ff1056/rana-y-cazo/1024_391.jpeg",
-        "https://i.blogs.es/ff1056/rana-y-cazo/1366_521.jpeg",
-        "https://i.blogs.es/ff1056/rana-y-cazo/650_247.jpeg",
-        "https://unsplash.com/es/fotos/chico-con-camiseta-gris-de-cuello-redondo-leyendo-libro--fP2-cL-6_U",
-        "https://www.abcnyheter.no/nyheter/klar-beskjed-fra-regjeringen-ki-ma-ut-av-barneskolen/1580110",
-        "https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/"
-      ]
-    }
-  },
-  {
-    "id": 751,
-    "fecha": "2026-06-22T11:45:59Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Estafas de la Copa Mundial",
-    "resumen": "Los estafadores están utilizando la IA para crear estafas más sofisticadas, como sitios web clonados y boletos falsos, lo que dificulta que los fanáticos distingan entre lo real y lo falso, aumentando el riesgo de phishing y fraude. Los vectores de ataque incluyen sitios web falsos y correos electrónicos fraudulentos que aprovechan la emoción y la urgencia de los eventos deportivos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219687-ddce079f704b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxMjg3NTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/world-cup-scams-are-getting-harder-to-spot/",
-    "fuente": "Wired Security",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.002",
-        "name": "Spearphishing Link"
-      },
-      {
-        "id": "T1189",
-        "name": "Drive-by Compromise (no se menciona explícitamente, pero se puede inferir que los sitios web falsos podrían ser utilizados para esto)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1586",
-        "name": "Phishing: Spearphishing Attachment (no se menciona explícitamente, pero se puede inferir que los correos electrónicos fraudulentos podrían incluir archivos o enlaces maliciosos)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 750,
-    "fecha": "2026-06-22T11:45:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "CSIS Neutraliza Botnets",
-    "resumen": "El Servicio de Inteligencia de Seguridad de Canadá (CSIS) obtuvo una orden judicial para acceder a servidores, routers y dispositivos IoT infectados en suelo canadiense y neutralizar dos botnets controlados por actores extranjeros, utilizando por primera vez sus poderes de orden de reducción de amenazas para alterar y neutralizar la infraestructura maliciosa. Esto representa un enfoque innovador en la lucha contra las amenazas cibernéticas, permitiendo a las autoridades tomar medidas proactivas contra la infraestructura de botnets.",
-    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxMjg3NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/canadas-spy-agency-used-first-of-its.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 749,
-    "fecha": "2026-06-22T11:45:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "AryStinger: 4.300 routers comprometidos",
-    "resumen": "La campaña AryStinger ha comprometido al menos 4.300 routers domésticos antiguos, principalmente con chipsets Realtek RTL819X, como el D-Link DIR-850L, para utilizarlos como proxies y nodos de reconocimiento en ataques, también se ha detectado una variante que afecta a NAS de QNAP. Los routers comprometidos pueden ser utilizados para ataques de phishing, DDoS y otros tipos de ciberataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIxMjg3NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/arystinger-convierte-4-300-routers-antiguos-en-una-red-de-reconocimiento-y-proxies-para-ataques/?utm_source=rss&utm_medium=rss&utm_campaign=arystinger-convierte-4-300-routers-antiguos-en-una-red-de-reconocimiento-y-proxies-para-ataques",
-    "fuente": "Una al Día (Hispasec)",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1496",
-        "name": "Resource Hijacking"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/arystinger-convierte-4-300-routers-antiguos-en-una-red-de-reconocimiento-y-proxies-para-ataques/"
-      ]
-    }
   }
 ]
