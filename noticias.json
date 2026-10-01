@@ -1,5 +1,107 @@
 [
   {
+    "id": 2882,
+    "fecha": "2026-10-01T03:48:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-102427 permite ejecución remota de código sin autenticación en Joomla CCK <8.3.16",
+    "resumen": "La extensión OrdaSoft Joomla CCK vulnera la autenticación al exponer site/uploader.php, permitiendo a un atacante subir un polyglot imagen/PHP y ejecutar código arbitrario con privilegios del servidor web. El vector es una carga de archivo sin validación de extensión ni control de ACL, impactando sitios Joomla sin parchear.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4MjY1MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-102427",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-102427",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "ordasoft.com"
+      ],
+      "cve": [
+        "CVE-2026-102427"
+      ]
+    }
+  },
+  {
+    "id": 2881,
+    "fecha": "2026-10-01T03:48:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "UAT-11587 de China-nexus infiltra organizaciones gubernamentales asiáticas con backdoor Antino",
+    "resumen": "Cisco Talos detectó la campaña UAT-11587 que compromete entidades gubernamentales y de política en Taiwán, India, Filipinas y Camboya mediante el backdoor “Antino”, previamente desconocido, facilitando acceso persistente y exfiltración de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4MjY1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/china-nexus-uat-11587-targets-government-and-policy-organizations-across-asia-with-antino-backdoor/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:china nexus uat 11587 targets government and policy organizations across asia with antino backdoor",
+    "ttps": [
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2880,
+    "fecha": "2026-10-01T03:48:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Múltiples vulnerabilidades críticas en firmware Anjvision YSSD-RTMP-H5 permiten control total del dispositivo",
+    "resumen": "El firmware 3.3.2.4 del Anjvision YSSD-RTMP-H5 contiene fallos críticos (CVE-2026-100291 a-100299) que incluyen autenticación ausente en ONVIF, inyección de comandos OS, SSRF y ausencia de verificación criptográfica de actualizaciones, posibilitando acceso remoto, ejecución de código a nivel de SO y toma completa del dispositivo. No existe parche disponible y el fabricante no colabora con CISA.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4MjY1Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-05",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-100291,cve-2026-100292,cve-2026-100293,cve-2026-100294,cve-2026-100295,cve-2026-100296,cve-2026-100297,cve-2026-100298,cve-2026-100299",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "3.3.2.4"
+      ],
+      "domain": [
+        "www.anjvision.com"
+      ],
+      "url": [
+        "http://www.anjvision.com/problem/list-129-cn.html"
+      ],
+      "cve": [
+        "CVE-2026-100291",
+        "CVE-2026-100292",
+        "CVE-2026-100293",
+        "CVE-2026-100294",
+        "CVE-2026-100295",
+        "CVE-2026-100296",
+        "CVE-2026-100297",
+        "CVE-2026-100298",
+        "CVE-2026-100299"
+      ]
+    }
+  },
+  {
+    "id": 2879,
+    "fecha": "2026-10-01T03:48:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers rusos despliegan técnica RedFlick para instalar el backdoor CosmicPulse",
+    "resumen": "El actor estatal conocido como Star Blizzard ha adoptado el nuevo vector RedFlick, que combina phishing dirigido y ejecución de código en memoria para instalar el malware CosmicPulse, aumentando la persistencia en entornos corporativos. La técnica aprovecha vulnerabilidades de ejecución lateral y evade detección de EDR tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4MjY1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:russian state hackers use new redflick technique to push malware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2878,
     "fecha": "2026-09-30T21:48:38Z",
     "categoria": "Ciberseguridad",
@@ -52885,99 +52987,6 @@
         "name": "Email Collection"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 781,
-    "fecha": "2026-06-23T14:46:44Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "IA vs Consciencia",
-    "resumen": "Un ingeniero de Microsoft ha demostrado que la inteligencia artificial (IA) no es consciente de sí misma utilizando un editor de mapas de Age of Empires II para crear puertas lógicas NAND con cabras, mostrando que la antropomorfización de los modelos de lenguaje a gran escala (LLM) es un fenómeno común. El estudio revela que la interfaz de chat puede crear una ilusión de consciencia, pero en realidad, la IA se basa en operaciones matemáticas y puertas lógicas.",
-    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjYwMDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/ingeniero-microsoft-tuvo-idea-genial-para-demostrar-que-ia-no-consciente-usar-cabras-age-of-empires-ii",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "404media.co",
-        "adewynter.github.io",
-        "arxiv.org",
-        "platform.instagram.com",
-        "www.theatlantic.com",
-        "www.theguardian.com",
-        "www.xataka.com",
-        "www.youtube.com"
-      ],
-      "url": [
-        "https://adewynter.github.io/notes/aoe2-circuits?ref=404media.co",
-        "https://arxiv.org/pdf/2605.31514",
-        "https://i.blogs.es/5d4518/utilizando-ia/375_142.jpeg",
-        "https://i.blogs.es/7a66b7/megafono/375_142.jpeg",
-        "https://i.blogs.es/d3031c/nand/1024_2000.png",
-        "https://www.theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/?ref=404media.co",
-        "https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt"
-      ]
-    }
-  },
-  {
-    "id": 779,
-    "fecha": "2026-06-23T14:46:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Desmantelamiento de SocGholish",
-    "resumen": "El desmantelamiento de SocGholish destaca la amenaza de los sistemas de distribución de tráfico (TDS) maliciosos, que proporcionan acceso inicial a las redes de las víctimas para grupos de ciberdelincuencia como Evil Corp, permitiendo ataques como phishing y ransomware. Los TDS son un vector de ataque clave para la infección de redes y la posterior explotación por parte de actores maliciosos.",
-    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjU5ODl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/socgholish-takedown-malicious-tds-threats",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 778,
-    "fecha": "2026-06-23T14:46:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "GitHub Actualiza Acciones para Bloquear Ataques",
-    "resumen": "GitHub ha actualizado \"actions/checkout\" para bloquear patrones de ataques comunes que explotan el uso riesgoso del disparador \"pull_request_target workflow\" para ejecutar código malicioso con privilegios completos, mejorando así la seguridad de la cadena de suministro de software. Esta actualización entra en vigor a partir del 18 de junio de 2026.",
-    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjU5ODN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/github-updates-actionscheckout-to-block.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 777,
-    "fecha": "2026-06-23T14:46:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Explotación sin exploit",
-    "resumen": "Los atacantes pueden aprovechar vulnerabilidades recién descubiertas mucho más rápido de lo que la mayoría de las organizaciones pueden parchearlas, por lo que es crucial que los equipos de seguridad validen la explotabilidad de estas vulnerabilidades antes de que se publique un exploit público. Esto puede ayudar a proteger contra ataques que utilizan técnicas de zero-day y exploits no públicos.",
-    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMjU5Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/the-exploit-doesnt-exist-you-can-still-prove-it-works-against-you/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
     "iocs": {}
   }
 ]
