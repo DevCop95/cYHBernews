@@ -1,5 +1,142 @@
 [
   {
+    "id": 2887,
+    "fecha": "2026-10-01T12:24:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Viidure Dashcam Android permiten acceso público a datos y credenciales hard-coded",
+    "resumen": "Dos CVE (CVE-2026-94204 y CVE-2026-96587) exponen buckets de almacenamiento en la nube con permisos de lectura pública y credenciales en texto plano, posibilitando a atacantes la extracción, modificación o borrado de videos, firmware y datos de usuarios. No hay parche disponible; se recomienda aislar la aplicación detrás de firewalls y bloquear el acceso externo.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4NTc0Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-94204,cve-2026-96587",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1530",
+        "name": "Data from Cloud Storage"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      },
+      {
+        "id": "T1565.002",
+        "name": "Transmitted Data Manipulation"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      }
+    ],
+    "iocs": {
+      "url": [
+        "https://viidure.app/"
+      ],
+      "cve": [
+        "CVE-2026-94204",
+        "CVE-2026-96587"
+      ]
+    }
+  },
+  {
+    "id": 2886,
+    "fecha": "2026-10-01T12:24:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "EE. UU. impone sanciones a 10 entidades vinculadas a campaña de malware en cajeros de Venezuela",
+    "resumen": "OFAC sanciona a varios nacionales y empresas venezolanas por operar una red de malware que compromete cajeros automáticos para lavar fondos robados, evidenciando un esquema de cibercrimen financiero transnacional.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4NTc0NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua",
+    "fuente": "The Record",
+    "dedup_key": "txt:us sanctions 10 over atm malware scheme tied to tren de aragua",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2885,
+    "fecha": "2026-10-01T12:24:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Threat actors reutilizan cliente ScreenConnect para establecer accesos persistentes en entornos corporativos",
+    "resumen": "Los atacantes aprovechan vulnerabilidades de configuración y credenciales débiles en ScreenConnect para desplegar sesiones remotas no autorizadas, facilitando movimiento lateral y exfiltración de datos. La técnica requiere poca sofisticación pero permite mantener presencia prolongada sin detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4NTc0NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33388",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:screenconnect client ab used by attackers thu oct 1st",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2884,
+    "fecha": "2026-10-01T12:24:30Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Investigadores factorizan RSA-896 en 10 días usando 30 GPU-Core-Years y IA",
+    "resumen": "Stephen A. Weiss aplicó el algoritmo Number Field Sieve optimizado con IA para migrar CADOS-NFS a GPUs, logrando la factorización del RSA-896 en 10 días con 30 GPU-Core-Years. El hecho evidencia que claves RSA-1024 son vulnerables con recursos de cómputo accesibles y acelera la urgencia de migrar a criptografía post-cuántica.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218198-816a64915f81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4NTc0NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/factorizacion-de-rsa-challenge-rsa-896.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:factorización de rsa challenge rsa 896 en 10 días con 30 gpu core years y un poco de ayuda de la ia",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "archive.org"
+      ]
+    }
+  },
+  {
+    "id": 2883,
+    "fecha": "2026-10-01T12:24:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cuatro vulnerabilidades XSS de severidad media afectan al software Entradium de Crocantickets",
+    "resumen": "INCIBE ha divulgado CVE-2026-7173 a CVE-2026-7176, todas XSS (almacenado y reflejado) que permiten a un atacante remoto inyectar JavaScript y robar sesiones o manipular la compra de entradas. Las fallas fueron corregidas en las versiones 20260409151659 y 20260409153543.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4NTc0Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-entradium-de-crocantickets",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-7173,cve-2026-7174,cve-2026-7175,cve-2026-7176",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-7173",
+        "CVE-2026-7174",
+        "CVE-2026-7175",
+        "CVE-2026-7176"
+      ]
+    }
+  },
+  {
     "id": 2882,
     "fecha": "2026-10-01T03:48:53Z",
     "categoria": "Ciberseguridad",
@@ -52840,153 +52977,6 @@
     "enlace_original": "https://therecord.media/five-eyes-alert-artificial-intelligence",
     "fuente": "The Record",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 789,
-    "fecha": "2026-06-23T19:55:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Amenaza en workflows de desarrollo",
-    "resumen": "Se ha identificado una debilidad en los flujos de trabajo de CI/CD que afecta a varias herramientas y plataformas, incluyendo Azure Sentinel de Microsoft, AI Agent Development Kit de Google, la base de datos analítica Doris de Apache, Workers SDK de Cloudflare y Black de la Python Software Foundation, lo que permite a atacantes realizar solicitudes de extracción maliciosas. Esta vulnerabilidad puede ser explotada a través de ataques de suplantación de identidad y phishing dirigidos a desarrolladores.",
-    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNDQ1MzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/application-security/cordyceps-malicious-pull-requests-developer-workflows",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1556",
-        "name": "Session Hijacking (no se menciona explícitamente, pero se infiere que podría ser utilizado en ataques de suplantación de identidad)"
-      },
-      {
-        "id": "T1586",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 788,
-    "fecha": "2026-06-23T19:55:24Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Crypto Post-Quantum para 2030",
-    "resumen": "El presidente Trump ha firmado una orden ejecutiva que establece plazos estrictos para que las agencias federales migren a criptografía post-cuántica, con fechas límite para el establecimiento de claves y firmas digitales en 2030 y 2031, respectivamente, debido a la amenaza potencial de los ordenadores cuánticos a la seguridad de la información. Los sistemas de seguridad nacional seguirán un camino separado.",
-    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNDQ1MjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/trump-order-sets-2030-deadline-for.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 787,
-    "fecha": "2026-06-23T19:55:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque ClickFix en macOS",
-    "resumen": "Un nuevo ataque de malware llamado ClickFix utiliza comandos de Terminal para descargar, montar y ejecutar malware de robo de información desde archivos de imagen de disco (DMG) maliciosos, afectando la seguridad de los sistemas macOS. El ataque se lleva a cabo de manera silenciosa, lo que puede dificultar su detección.",
-    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNDQ1MTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-macos-clickfix-attack-silently-mounts-dmgs-to-push-infostealer/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se infiere que el ataque utiliza comandos de Terminal para ejecutar malware)"
-      },
-      {
-        "id": "T1070",
-        "name": "Indicator Removal"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 786,
-    "fecha": "2026-06-23T17:14:28Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Nvidia reduce consumo de agua",
-    "resumen": "Nvidia ha desarrollado un sistema de refrigeración líquida que utiliza agua caliente para enfriar sus servidores de IA, lo que podría reducir el consumo de agua en centros de datos en un 100%. El sistema utiliza un líquido compuesto por un 75% de agua y un 25% de propilenglicol que absorbe el calor generado por los chips y lo expulsa mediante radiadores externos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219345-06ea2bf3eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4Njh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/solucion-nvidia-para-reducir-a-cero-consumo-agua-centros-datos-apunta-a-ser-genialidad-usar-agua-caliente",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "escholarship.org",
-        "platform.instagram.com",
-        "techcrunch.com",
-        "www.iea.org",
-        "www.nytimes.com",
-        "www.sciencedirect.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://escholarship.org/uc/item/1vx545q7",
-        "https://i.blogs.es/4b280b/coolit/375_142.jpeg",
-        "https://i.blogs.es/5a26a4/nvidia-agua-centros-de-datos-1/1024_2000.jpeg",
-        "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/",
-        "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
-        "https://www.nytimes.com/2026/01/27/technology/microsoft-water-ai-data-centers.html",
-        "https://www.sciencedirect.com/science/article/pii/S2666389925002788#sec3"
-      ]
-    }
-  },
-  {
-    "id": 783,
-    "fecha": "2026-06-23T17:14:07Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Agente AI falso evita escaneos de seguridad",
-    "resumen": "Un equipo de seguridad creó un agente AI falso que pasó todos los escaneos de seguridad y alcanzó aproximadamente 26,000 agentes, incluyendo algunos en cuentas corporativas, después de ser publicado en un mercado de habilidades populares y promocionado a través de un anuncio en Instagram. El payload del agente era inofensivo por diseño, recopilando solo la dirección de correo electrónico del usuario.",
-    "url_imagen": "https://images.unsplash.com/photo-1675557009875-436f71457475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyMzQ4NDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/fake-ai-agent-skill-passed-security.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Spearphishing via Servicio"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1056",
-        "name": "Input Capture"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1114",
-        "name": "Email Collection"
-      }
-    ],
     "iocs": {}
   }
 ]
