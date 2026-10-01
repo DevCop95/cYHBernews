@@ -1,5 +1,119 @@
 [
   {
+    "id": 2892,
+    "fecha": "2026-10-01T20:05:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Warlock ransomware compromete a grandes organizaciones en España y Portugal",
+    "resumen": "El grupo chino detrás de Warlock, con perfil híbrido de ciberdelincuencia y APT estatal, ha desplegado campañas de ransomware dirigidas a entidades de alto valor en ambos países, explotando vulnerabilidades sin parchear y técnicas de phishing para la fase de intrusión.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4ODUxMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/warlock-ransomware-spanish-portuguese",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:warlock ransomware hits large spanish portuguese orgs",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2891,
+    "fecha": "2026-10-01T20:05:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Policía española detiene a un menor de 16 años sospechoso de liderar el grupo ransomware KillSec y confisca",
+    "resumen": "La operación policial incautó los servidores y la infraestructura web utilizada por KillSec para extorsionar a organizaciones mediante robo de datos y amenazas de publicación, neutralizando un vector de ataque activo. La detención del presunto líder, de apenas 16 años, representa un golpe significativo al ecosistema de ransomware en Europa.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4ODUxMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:police arrest 16 year old suspected of running killsec seize ransomware leak site and servers",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1102",
+        "name": "Web Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2890,
+    "fecha": "2026-10-01T20:05:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Los cibercriminales superan a los defensores en la carrera temprana de IA, advierte Microsoft",
+    "resumen": "Según Microsoft, los atacantes están explotando modelos de lenguaje y herramientas de generación automática para acelerar la identificación de vulnerabilidades, la creación de malware y la fase post-compromiso, mientras los equipos de seguridad no logran equipararse. Este desfase aumenta el riesgo de exploits zero-day y campañas de ransomware dirigidas a infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4ODUxMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/microsoft-says-threat-actors-are-ahead-in-the-early-ai-race/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft says threat actors are ahead in the early ai race",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1587.001",
+        "name": "Malware"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2889,
+    "fecha": "2026-10-01T20:05:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica permite ejecución remota de código en Next.js 16.2-16.3.5 mediante ImageResponse SVG",
+    "resumen": "La falla en la función ImageResponse de next/og para Node.js permite a un atacante inyectar SVG controlado y ejecutar código arbitrario en el servidor; afecta versiones 16.2.0 a 16.3.5 y requiere actualización a 16.3.6 o mitigación de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4ODUxMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ejecucion-remota-de-codigo-en-nextjs-de-vercel",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:ejecución remota de código en next js de vercel",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2888,
+    "fecha": "2026-10-01T20:05:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Phishing evoluciona en correos y requiere detección y contención inmediatas",
+    "resumen": "Los ataques de phishing ahora emplean técnicas de ofuscación y contenido dinámico, dificultando la identificación visual; la respuesta rápida mediante EDR y análisis de indicadores de compromiso es esencial para limitar la exposición.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA4ODUxMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/phishing-correo-electronico-ya-no-se-ve-igual/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:el phishing sigue llegando por correo pero ya no se ve igual",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2887,
     "fecha": "2026-10-01T12:24:38Z",
     "categoria": "Ciberseguridad",
@@ -52869,113 +52983,6 @@
     "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzNzF8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/falsas-alertas-emergencia-brasil-acceso-indebido-defensa-civil/",
     "fuente": "WeLiveSecurity",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 795,
-    "fecha": "2026-06-23T22:09:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataques a Salesforce se amplían",
-    "resumen": "Los atacantes han ampliado su alcance después de infiltrarse en el proveedor de aplicaciones Klue, utilizando tokens OAuth para robar datos de clientes de Salesforce, lo que indica un vector de ataque basado en la autorización de terceros. El impacto real se centra en la exposición de datos confidenciales de los clientes afectados.",
-    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/scope-salesforce-attacks-expands-icarus-leaks-data",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1552",
-        "name": "Credential Access"
-      },
-      {
-        "id": "T1552.004",
-        "name": "OAuth Access Token"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 794,
-    "fecha": "2026-06-23T22:09:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "FortiBleed: Ataque a Firewalls",
-    "resumen": "Un broker de acceso inicial (IAB) de habla rusa ha lanzado una operación de recolección de credenciales a gran escala llamada FortiBleed, que ha afectado a más de 430,000 firewalls FortiGate en todo el mundo, utilizando técnicas como fuerza bruta y explotación de servicios expuestos para recolectar más de 110 millones de credenciales. La campaña, activa desde febrero de 2026, representa un vector de ataque significativo para las organizaciones que utilizan estos firewalls.",
-    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1NTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1003",
-        "name": "OS Credential Dumping"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 792,
-    "fecha": "2026-06-23T22:09:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Reducción de siniestros cyber en Europa",
-    "resumen": "Según el informe Global Cyber Claims Trends Report de Marsh, se ha producido una disminución en las notificaciones de siniestros cyber en Europa en 2025, aunque la gravedad de estos incidentes sigue siendo alta. Esto sugiere que, aunque el número de ataques puede estar disminuyendo, su impacto y complejidad siguen siendo significativos.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNTI1NDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/europa-reduce-los-siniestros-cyber-pero-mantiene-alta-su-gravedad/",
-    "fuente": "CyberSecurity News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 791,
-    "fecha": "2026-06-23T19:55:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Brecha de datos en Dialog",
-    "resumen": "La empresa de eventos privados Dialog, cofundada por Peter Thiel, informó que un hacker \"criminal\" había accedido a detalles personales de sus miembros, aunque una investigación encontró que un sitio web mal configurado podría haber permitido el acceso a los archivos sin necesidad de un ataque cibernético. El incidente destaca la importancia de la configuración segura de los sitios web para prevenir brechas de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1709120395858-92f1c7c577f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNDQ1NDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/dialog-hack-website-misconfiguration/",
-    "fuente": "Wired Security",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 790,
-    "fecha": "2026-06-23T19:55:38Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Alerta de Five Eyes sobre IA",
-    "resumen": "Las agencias de inteligencia de los Five Eyes emiten una alerta conjunta sobre la amenaza que la inteligencia artificial (IA) representa para la ciberseguridad, destacando que el plazo para abordar estos desafíos es de meses, no años. Esto implica un impacto potencial significativo en la seguridad de la información y la infraestructura crítica.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219504-b9fe7c155773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNDQ1Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/five-eyes-alert-artificial-intelligence",
-    "fuente": "The Record",
     "ttps": [],
     "iocs": {}
   }
