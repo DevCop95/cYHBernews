@@ -1,5 +1,138 @@
 [
   {
+    "id": 2907,
+    "fecha": "2026-10-02T17:20:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en la app macOS de ChatGPT permite extracción de datos sensibles por atacantes",
+    "resumen": "Un flaw de ejecución remota en la aplicación oficial de ChatGPT para macOS, recientemente parcheado, permitía a un actor malicioso leer archivos locales y capturar credenciales mediante escalada de privilegios. El vector explotaba la gestión de procesos del cliente y afecta a usuarios corporativos que integran el modelo en flujos de trabajo críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5NjE2Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:a flaw in chatgpt s mac app could have let hackers grab sensitive data",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2906,
+    "fecha": "2026-10-02T17:20:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Alcalde de Vicksburg confirma cierre de sistemas por ransomware y apertura de investigación federal",
+    "resumen": "Un ataque de ransomware obligó al municipio de Vicksburg, Mississippi, a desconectar sus sistemas críticos, interrumpiendo temporalmente los servicios públicos. El FBI y autoridades locales están llevando a cabo una investigación conjunta para identificar al actor y mitigar el impacto.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5NjE2Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/vicksburg-mississippi-government-ransomware-attack",
+    "fuente": "The Record",
+    "dedup_key": "txt:mississippi mayor says ransomware incident led city to shut down systems",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2905,
+    "fecha": "2026-10-02T17:20:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "GitLab alerta sobre vulnerabilidad crítica RCE en su servicio AI Gateway que permite ejecución arbitraria de comandos",
+    "resumen": "GitLab ha emitido un aviso urgente para parchear una vulnerabilidad de ejecución remota de código (RCE) en el componente AI Gateway, que expone a los atacantes a la capacidad de ejecutar comandos arbitrarios en instancias comprometidas. El vector de ataque se basa en la manipulación de peticiones al API del gateway, afectando a todas las instalaciones que utilizan la integración de IA sin aplicar el parche.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5NjE2MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-critical-rce-vulnerability-in-ai-gateway-service/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:gitlab warns of critical rce vulnerability in ai gateway service",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2904,
+    "fecha": "2026-10-02T17:20:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Steam Client Service permite escalada a SYSTEM sin UAC en Windows",
+    "resumen": "Un proof of concept llamado BrokenPipe demuestra que un usuario estándar puede elevar sus privilegios a NT AUTHORITY\\SYSTEM mediante el servicio de cliente de Steam, sin requerir credenciales de administrador ni disparar el UAC; la vulnerabilidad aún no tiene CVE asignado ni parche oficial.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5NjE2MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-en-steam-para-windows-permite-escalar-privilegios-a-system-sin-uac",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:un fallo en steam para windows permite escalar privilegios a system sin uac",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control"
+      },
+      {
+        "id": "T1543.003",
+        "name": "Windows Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2903,
+    "fecha": "2026-10-02T17:20:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Apache HTTP Server 2.4.0-2.4.68 presenta 20 vulnerabilidades, 3 críticas, riesgo de RCE y DoS",
+    "resumen": "Se identifican 20 CVE en Apache HTTP Server, incluidas tres vulnerabilidades críticas que permiten ejecución de código arbitrario, denegación de servicio y elevación de privilegios mediante módulos mod_http2, mod_rewrite y mod_ssl. La mitigación consiste en actualizar a la versión 2.4.69.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5NjE2MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-http-server-de-apache",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-56154,cve-2026-57941,cve-2026-59797",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-56154",
+        "CVE-2026-57941",
+        "CVE-2026-59797"
+      ]
+    }
+  },
+  {
     "id": 2902,
     "fecha": "2026-10-02T09:19:17Z",
     "categoria": "Ciberseguridad",
@@ -52795,157 +52928,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 814,
-    "fecha": "2026-06-24T11:42:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en MISP",
-    "resumen": "La versión 2.4.109 de MISP presenta una vulnerabilidad (CVE-2019-12868) con una puntuación CVSS de 7.2, permitiendo la ejecución de comandos remotos por parte de un super administrador debido a la deserialización de archivos PHAR. Esto puede ser explotado a través de entradas de usuario controladas en la función file_exists de PHP.",
-    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMDEzNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2019-12868",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2019-12868"
-      ]
-    }
-  },
-  {
-    "id": 813,
-    "fecha": "2026-06-24T11:42:30Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en MISP",
-    "resumen": "La vulnerabilidad CVE-2018-6926 (CVSS 7.2) en MISP 2.4.87 permite a los administradores del sitio inyectar comandos arbitrarios del sistema operativo en ciertos sistemas Red Hat Enterprise Linux y CentOS, aunque el impacto es limitado debido a que la opción solo está disponible para el administrador del sitio. El vector de ataque se enfoca en la inyección de comandos del sistema operativo a través de la opción del servidor en el archivo ServersController.php.",
-    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMDEzNTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-6926",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2018-6926"
-      ]
-    }
-  },
-  {
-    "id": 812,
-    "fecha": "2026-06-24T11:42:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Cisco Unified CM",
-    "resumen": "Se ha identificado una vulnerabilidad crítica (CVE-2026-20230) en Cisco Unified Communications Manager que permite a actores maliciosos realizar escrituras de archivos en el sistema y potencialmente obtener acceso de root, lo que ha comenzado a ser explotada después de que se publicó un proof-of-concept (PoC) que revela el vector de ataque. La vulnerabilidad se debe a una validación de entrada HTTP impropera y puede ser explotada de forma remota sin autenticación.",
-    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMDEzNDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material"
-      },
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-20230"
-      ]
-    }
-  },
-  {
-    "id": 811,
-    "fecha": "2026-06-24T11:18:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Cisco Umbrella",
-    "resumen": "Se ha identificado una vulnerabilidad de alto riesgo (CVSS 8.2) en Cisco Umbrella Insights Virtual Appliances 2.1.0 y versiones anteriores, que permite a un atacante local autenticado iniciar sesión con privilegios root en una máquina virtual afectada debido a credenciales estáticas por defecto. El vector de ataque implica el uso de la consola del hipervisor para conectarse localmente y explotar las credenciales estáticas.",
-    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk5MjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-12350",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2017-12350"
-      ]
-    }
-  },
-  {
-    "id": 810,
-    "fecha": "2026-06-24T11:18:34Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "China lidera supercomputación",
-    "resumen": "El supercomputador chino LineShine ha alcanzado los 2,198 exaflops de rendimiento en el benchmark HPL, superando al estadounidense El Capitan, y lo hace sin utilizar GPUs, sino CPUs ARMv9 con soporte SVE y SME, permitiendo un procesamiento excepcional de vectores y matrices. Esto demuestra la capacidad de China para avanzar tecnológicamente a pesar de los vetos y aranceles de EEUU.",
-    "url_imagen": "https://images.unsplash.com/photo-1767966783202-c5659292bd39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk5MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/ordenadores/supercomputador-potente-mundo-esta-china-otra-parte-historia-interesante",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "developer.arm.com",
-        "platform.instagram.com",
-        "top500.org",
-        "www.eni.com",
-        "www.jonpeddie.com",
-        "www.netlib.org",
-        "www.rdworldonline.com",
-        "www.reuters.com",
-        "www.servethehome.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://developer.arm.com/community/arm-community-blogs/b/architectures-and-processors-blog/posts/arm-scalable-matrix-extension-introduction",
-        "https://i.blogs.es/0ac875/alia-marenostrum4/375_142.jpeg",
-        "https://i.blogs.es/4cdf9a/captura-de-pantalla-2026-06-24-a-las-10.08.55/1024_2000.jpeg",
-        "https://i.blogs.es/4cdf9a/captura-de-pantalla-2026-06-24-a-las-10.08.55/1366_2000.jpeg",
-        "https://i.blogs.es/4cdf9a/captura-de-pantalla-2026-06-24-a-las-10.08.55/450_1000.jpeg",
-        "https://i.blogs.es/4cdf9a/captura-de-pantalla-2026-06-24-a-las-10.08.55/650_1200.jpeg",
-        "https://i.blogs.es/f01d8f/lineshine-supercomputador-china/1024_2000.jpeg",
-        "https://top500.org/lists/top500/2026/06/",
-        "https://www.eni.com/en-IT/media/press-release/2026/06/eni-ranks-as-world-s-leading-company-top500-global-ranking.html",
-        "https://www.jonpeddie.com/news/china-builds-exascale-supercomputer-without-gpus/",
-        "https://www.netlib.org/benchmark/hpl/",
-        "https://www.rdworldonline.com/hold-your-exaflops-why-comparing-ai-clusters-to-supercomputers-is-bananas/",
-        "https://www.reuters.com/world/china/china-beats-us-with-worlds-fastest-supercomputer-race-not-geared-ai-work-2026-06-23/",
-        "https://www.servethehome.com/arm-cpus-take-number-1-in-latest-top500-list-with-chinese-lineshine/"
-      ]
-    }
   }
 ]
