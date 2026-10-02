@@ -1,5 +1,153 @@
 [
   {
+    "id": 2897,
+    "fecha": "2026-10-02T00:30:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Críticas vulnerabilidades en Armatura One permiten ejecución remota y extracción de credenciales",
+    "resumen": "Las fallas CVE-2023-46604 y CVE-2026-9459x en la versión <4.7.2 de Armatura One permiten deserialización no autenticada vía OpenWire y uso de claves criptográficas hard-coded, posibilitando ejecución de código con privilegios máximos y descifrado de credenciales almacenadas. Afecta sistemas de control de acceso físico en sectores críticos; se recomienda actualizar a la versión 4.7.2 (o 4.6.1_USA) inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MDEwMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2023-46604,cve-2026-94591,cve-2026-94592,cve-2026-94593,cve-2026-94594",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1552.006",
+        "name": "Group Policy Preferences"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "rewcon.co"
+      ],
+      "cve": [
+        "CVE-2023-46604",
+        "CVE-2026-94591",
+        "CVE-2026-94592",
+        "CVE-2026-94593",
+        "CVE-2026-94594"
+      ]
+    }
+  },
+  {
+    "id": 2896,
+    "fecha": "2026-10-02T00:30:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Irán extradita a sospechoso de hackear universidades estadounidenses y robar propiedad intelectual",
+    "resumen": "Un ciudadano iraní, acusado de participar en decenas de brechas que comprometieron datos académicos y propiedad intelectual de instituciones estadounidenses, fue entregado por Montenegro a autoridades estadounidenses, evidenciando una campaña de espionaje cibernético dirigida a la investigación académica.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MDEwMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/iran-montenegro-hacker-extradition",
+    "fuente": "The Record",
+    "dedup_key": "txt:iranian accused of hacking american universities extradited from montenegro",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2895,
+    "fecha": "2026-10-02T00:30:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas emergentes: zero-day en IA, 543 k secretos expuestos y RCE por inspección de modelos",
+    "resumen": "La semana destaca vulnerabilidades críticas en pipelines de IA, incluyendo una cadena zero-day que permite ejecución remota al inspeccionar modelos, filtración masiva de 543 000 secretos en cachés y múltiples vectores de abuso de compilación y almacenamiento. Los ataques aprovechan funciones legítimas como inspección y caching, ampliando la superficie de ataque en entornos de desarrollo y despliegue de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MDEwMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday ai powered zero day chain 543k live secrets model inspection rce and 13 more stories",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1569.002",
+        "name": "Service Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2894,
+    "fecha": "2026-10-02T00:30:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Fortinet alerta sobre vulnerabilidad crítica en FortiMail explotada en ataques zero-day (CVE-2026-104286)",
+    "resumen": "La falla permite ejecución remota de código y comandos no autorizados en servidores FortiMail, con explotación activa reportada en campañas dirigidas. Afecta a entornos de correo corporativo y requiere parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MDEwMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "cve:cve-2026-104286",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-104286"
+      ]
+    }
+  },
+  {
+    "id": 2893,
+    "fecha": "2026-10-02T00:30:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-76504 permite eludir autenticación en Cisco Catalyst SD-WAN Manager",
+    "resumen": "Un atacante remoto no autenticado puede explotar una omisión de autenticación en la API del Cisco Catalyst SD-WAN Manager, obteniendo privilegios de administrador mediante manipulación de URI en solicitudes HTTP; la vulnerabilidad ya está siendo explotada activamente. Se recomienda actualizar a las versiones corregidas o, como mitigación temporal, restringir el acceso a redes y puertos de confianza.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MDEwMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-en-catalyst-sd-wan-manager-de-cisco",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-76504",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "20.12.8.2",
+        "20.15.6.1",
+        "20.18.4.1",
+        "20.9.10.1",
+        "26.1.2.1"
+      ],
+      "cve": [
+        "CVE-2026-76504"
+      ]
+    }
+  },
+  {
     "id": 2892,
     "fecha": "2026-10-01T20:05:32Z",
     "categoria": "Ciberseguridad",
@@ -52879,111 +53027,5 @@
         "https://www.elladodelmal.com/2016/08/revisar-la-configuracion-hsts-y-hpkp-en.html"
       ]
     }
-  },
-  {
-    "id": 801,
-    "fecha": "2026-06-24T02:49:58Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Airbus prueba IA en aterrizajes",
-    "resumen": "Airbus está investigando el uso de inteligencia artificial (IA) para mejorar la seguridad y precisión en los aterrizajes de aviones comerciales, mediante la implementación de cámaras y visión artificial en el avión para analizar en tiempo real las referencias de la pista. La tecnología, llamada Vision Landing Application, apunta a ser útil en aeródromos remotos o con poca infraestructura avanzada, y en entornos donde la navegación por satélite pueda estar degradada o no disponible.",
-    "url_imagen": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/movilidad/airbus-esta-probando-ia-maniobras-delicadas-vuelo-aterrizaje",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.airbus.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/76a582/airbus-landing/1024_2000.jpeg",
-        "https://i.blogs.es/92bb8f/airbus-avion-aterrizaje/1024_2000.jpeg",
-        "https://i.blogs.es/92bb8f/airbus-avion-aterrizaje/1366_2000.jpeg",
-        "https://i.blogs.es/92bb8f/airbus-avion-aterrizaje/450_1000.jpeg",
-        "https://i.blogs.es/92bb8f/airbus-avion-aterrizaje/650_1200.jpeg",
-        "https://i.blogs.es/d78062/f-35/375_142.jpeg",
-        "https://www.airbus.com/en/newsroom/press-releases/2020-06-airbus-concludes-attol-with-fully-autonomous-flight-tests",
-        "https://www.airbus.com/en/newsroom/press-releases/2023-01-airbus-tests-new-technologies-to-enhance-pilot-assistance",
-        "https://www.airbus.com/en/newsroom/press-releases/2023-03-airbus-achieves-in-flight-autonomous-guidance-and-control-of-a",
-        "https://www.airbus.com/en/newsroom/stories/2024-05-meet-optimate-an-extra-pair-of-eyes-and-ears-for-pilots",
-        "https://www.airbus.com/en/newsroom/stories/2026-06-computer-vision-automated-landing-and-embedded-ai-for-tomorrows-cockpits",
-        "https://www.easa.europa.eu/sites/default/files/dfu/Easy%20Access%20Rules%20for%20CS-AWO.pdf"
-      ]
-    }
-  },
-  {
-    "id": 800,
-    "fecha": "2026-06-24T02:49:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Protección de datos ante amenazas cuánticas",
-    "resumen": "El gobierno ha emitido una orden ejecutiva para acelerar la transición a la criptografía post-cuántica (PQC), con el fin de proteger los datos contra los potentes computadores cuánticos que se esperan en el futuro, mitigando así el riesgo de ataques a la seguridad de la información. Esto implica la adopción de nuevos algoritmos y protocolos de cifrado resistentes a ataques cuánticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/trump-directs-federal-agencies-quantum-cryptography",
-    "fuente": "The Record",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 799,
-    "fecha": "2026-06-24T02:49:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidades en Dify",
-    "resumen": "Se han descubierto cuatro vulnerabilidades en la plataforma Dify, que permiten a los atacantes acceder y exfiltrar silenciosamente datos sensibles, incluyendo historias de chat de aplicaciones de inteligencia artificial (IA), a través de técnicas de \"wiretap\" (interceptación de comunicaciones). Estas vulnerabilidades podrían ser explotadas para obtener acceso no autorizado a información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzODV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/application-security/difytap-bugs-wiretap-ai-chat-histories",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 798,
-    "fecha": "2026-06-24T02:49:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque cibernético en Tata Electronics",
-    "resumen": "Tata Electronics ha confirmado un ataque cibernético que ha afectado partes de su infraestructura de TI, con hackers filtrando datos. El incidente de seguridad puede tener implicaciones significativas para la empresa y sus clientes, ya que la filtración de datos puede ser utilizada para ataques de phishing o otros tipos de explotación.",
-    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzNzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/tata-electronics-confirms-cyberattack-as-hackers-leak-data/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1005",
-        "name": "Data from Local System"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 797,
-    "fecha": "2026-06-24T02:49:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Alertas Falsas en Brasil",
-    "resumen": "Se investiga un incidente de seguridad en Brasil donde se enviaron notificaciones de emergencia falsas a través de una cuenta no autorizada del sistema nacional de alertas, lo que pone en riesgo la seguridad de infraestructuras críticas y la confianza en el sistema de alertas de emergencia. El incidente podría implicar vulnerabilidades en el sistema de Defensa Civil y potenciales vectores de ataque como phishing o exploits.",
-    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyNjkzNzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/falsas-alertas-emergencia-brasil-acceso-indebido-defensa-civil/",
-    "fuente": "WeLiveSecurity",
-    "ttps": [],
-    "iocs": {}
   }
 ]
