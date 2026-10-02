@@ -1,5 +1,107 @@
 [
   {
+    "id": 2912,
+    "fecha": "2026-10-02T21:45:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft alerta que gobiernos lideran el 27 % de incidentes cibernéticos en 2026",
+    "resumen": "El Microsoft Digital Defense Report indica que el sector público fue el más atacado, incrementando su exposición de 17 % a 27 % en un año, lo que obliga a reforzar la postura de defensa y la coordinación interagencial.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5Nzc1MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:preparing governments for an era of interconnected cyber risk",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2911,
+    "fecha": "2026-10-02T21:45:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA incorpora dos vulnerabilidades activamente explotadas de Zammad al catálogo KEV",
+    "resumen": "CISA añadió CVE-2026-102489 (session fixation) y CVE-2026-102490 (privilege escalation) de Zammad al catálogo KEV, obligando a agencias federales a priorizar su remediación inmediata bajo el BOD 26-04.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5Nzc1MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/10/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-102489,cve-2026-102490",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-102489",
+        "CVE-2026-102490"
+      ]
+    }
+  },
+  {
+    "id": 2910,
+    "fecha": "2026-10-02T21:45:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "RemoteThreat impulsa red teaming avanzado para evaluar fallos de defensa en entornos corporativos",
+    "resumen": "La startup de operaciones ofensivas introduce simulaciones de ataque que replican técnicas de actores avanzados, permitiendo a los equipos de seguridad validar respuestas post-compromiso y detectar brechas de detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5Nzc1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/remotethreat-bets-security-teams-need-to-test-what-happens-after-defenses-fail",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:remotethreat bets security teams need to test what happens after defenses fail",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2909,
+    "fecha": "2026-10-02T21:45:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "GitLab corrige vulnerabilidad crítica en AI Gateway que permitía ejecución de comandos en servidores auto-alojados",
+    "resumen": "La falla, presente en versiones del AI Gateway de GitLab, permitía a usuarios autenticados con Duo Agent Platform ejecutar comandos arbitrarios bajo condiciones específicas; el parche está disponible en las versiones 19.2.4, 19.3.2 y 19.4.1. SECTOR: Tecnología",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5Nzc1Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:gitlab patches critical 9 9 ai gateway flaw allowing command execution on self hosted servers",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2908,
+    "fecha": "2026-10-02T21:45:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-13043 permite acceso arbitrario a memoria kernel en WatchGuard Endpoint Security",
+    "resumen": "La falta de autenticación en el controlador Kernel Memory Access Driver (PSKMAD) de WatchGuard Endpoint Security para Windows permite a un atacante local autenticado ejecutar comandos privilegiados y leer o modificar la memoria del núcleo y de procesos críticos. Se recomienda actualizar a la versión 8.00.26.0012 o superior para mitigar el riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1756671994948-183e2d833da0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5Nzc1MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ausencia-de-autenticacion-en-endpoint-security-de-watchguard",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-13043",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-13043"
+      ]
+    }
+  },
+  {
     "id": 2907,
     "fecha": "2026-10-02T17:20:29Z",
     "categoria": "Ciberseguridad",
@@ -52820,113 +52922,6 @@
     "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-max-severity-ubiquiti-flaws-exploited-in-attacks/",
     "fuente": "Bleeping Computer",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 819,
-    "fecha": "2026-06-24T14:22:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque Ransomware a Bajaj Auto",
-    "resumen": "La empresa automotriz india Bajaj Auto ha sido afectada por un incidente de ransomware, del cual se enteró el martes por la mañana, y ha tomado medidas precautorias para contener su impacto. El vector de ataque no ha sido especificado, pero se trata de un incidente de seguridad que puede tener implicaciones significativas para la empresa y su infraestructura.",
-    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5NDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/indian-auto-giant-bajaj-auto-hit-by-ransomware",
-    "fuente": "The Record",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 818,
-    "fecha": "2026-06-24T14:22:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Adversarios Autónomos Avanzados",
-    "resumen": "La ciberseguridad enfrenta una nueva era de amenazas con la emergencia de adversarios autónomos avanzados que pueden operar a velocidades superiores a las capacidades humanas, lo que reduce significativamente el tiempo de respuesta y aumenta el riesgo de brechas de seguridad. Los vectores de ataque pueden incluir exploits de zero-day y malware avanzado, lo que requiere una respuesta inmediata y eficaz para mitigar el daño.",
-    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5NDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/dawn-of-apex-agentic-adversary.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 817,
-    "fecha": "2026-06-24T14:22:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en MacOS",
-    "resumen": "Se ha descubierto una brecha en MacOS que permite a los atacantes deshabilitar herramientas de seguridad y del navegador integrado sin necesidad de privilegios de administrador o exploits de kernel, lo que facilita ataques como phishing o malware. Esta vulnerabilidad puede ser explotada por atacantes para comprometer la seguridad de los sistemas MacOS.",
-    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/application-security/apple-macos-security-gap-users-disable-security-tools",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 816,
-    "fecha": "2026-06-24T14:22:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Debilidades en Cordyceps CI/CD",
-    "resumen": "Se ha identificado una nueva clase de debilidad en los flujos de trabajo de CI/CD que permite a los atacantes secuestrar flujos de trabajo y comprometer las cadenas de suministro de código abierto, afectando a más de 300 repositorios de GitHub. La vulnerabilidad, conocida como Cordyceps, puede permitir a los atacantes controlar completamente los repositorios de algunas de las organizaciones más grandes del mundo.",
-    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/cordyceps-cicd-flaws-expose-300-github.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 815,
-    "fecha": "2026-06-24T14:21:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataques de ingeniería social",
-    "resumen": "Los service desks se han convertido en un objetivo favorito para los atacantes que buscan restablecer contraseñas, cambiar la autenticación multifactor (MFA) y obtener acceso a cuentas corporativas, aprovechando técnicas de ingeniería social como el phishing y el engaño telefónico. Las organizaciones pueden defenderse implementando medidas de seguridad como la verificación de identidad y la conciencia sobre la seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMTA5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/securing-the-service-desk-why-social-engineering-attacks-keep-succeeding/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1598",
-        "name": "Phishing para ingeniería social no se menciona explícitamente, pero se puede inferir que el engaño telefónico se relaciona con T1598.001 - Engaño telefónico"
-      },
-      {
-        "id": "T1598.001",
-        "name": "Engaño telefónico"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1556",
-        "name": "Modificación de la autenticación"
-      }
-    ],
     "iocs": {}
   }
 ]
