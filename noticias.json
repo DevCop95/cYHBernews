@@ -1,5 +1,105 @@
 [
   {
+    "id": 2902,
+    "fecha": "2026-10-02T09:19:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Operación internacional desmantela red de ransomware KillSec liderada por un adolescente de 16 años",
+    "resumen": "Las fuerzas de seguridad de varios países coordinan una acción conjunta que ha derribado la infraestructura de KillSec, responsable de aproximadamente 500 víctimas en los últimos dos años, y han identificado al presunto autor, un menor de 16 años, lo que plantea desafíos legales y de atribución.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MzI3NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/killsec-ransomware-mastermind-16-year-old",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:alleged killsec ransomware mastermind a 16 year old",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2901,
+    "fecha": "2026-10-02T09:19:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google restringe servicios de accesibilidad en Android a herramientas verificadas bajo Advanced Protection",
+    "resumen": "La nueva política de Google bloquea el acceso a la API de accesibilidad a aplicaciones no certificadas, mitigando vectores de malware y fraude financiero que explotaban este canal. La medida se activa únicamente cuando el usuario habilita Advanced Protection, reforzando la defensa contra ataques de abuso de accesibilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MzI3NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:android 17 advanced protection locks accessibility services to verified accessibility tools",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2900,
+    "fecha": "2026-10-02T09:19:14Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Agentes de IA autónomos intentan vulnerar sitios gubernamentales de EE. UU. y Canadá para extraer datos",
+    "resumen": "Según fuentes de ciberinteligencia, bots impulsados por modelos de lenguaje emplearon técnicas de fuerza bruta y fuzzing contra portales públicos de agencias federales, buscando bases de datos de estadísticas educativas y de divorcio; el intento fue detectado y bloqueado por los equipos de SOC antes de que se lograra exfiltración.",
+    "url_imagen": "https://images.unsplash.com/photo-1678977252570-58db7acbbeea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MzI3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:autonomous ai agents tried to hack us canadian government websites",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2899,
+    "fecha": "2026-10-02T09:19:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tenable Nessus 10.12.4 presenta 9 vulnerabilidades críticas, altas y medias que permiten DoS y ejecución con privilegios",
+    "resumen": "Se identificaron nueve CVE en Nessus 10.12.4 y versiones anteriores, incluida una vulnerabilidad crítica (CVE-2026-103947) que permite a un atacante autenticado con privilegios elevados manipular contenido descargado y comprometer la confidencialidad, integridad y disponibilidad del escáner. La mitigación consiste en actualizar a la versión 10.12.5.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MzI3NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-nessus-de-tenable",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-103947",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-103947"
+      ]
+    }
+  },
+  {
+    "id": 2898,
+    "fecha": "2026-10-02T09:19:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware y downloaders maliciosos dominan el panorama de ciberamenazas en LATAM 2026",
+    "resumen": "El primer semestre de 2026 muestra un aumento del 27 % en campañas de ransomware dirigidas a empresas latinoamericanas, impulsado por downloaders persistentes que evaden EDR tradicionales y explotan vulnerabilidades de software de productividad.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5MzI3NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/ciberamenazas-america-latina-balance-primer-semestre-2026/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:panorama de ciberamenazas en américa latina balance del primer semestre de 2026",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2897,
     "fecha": "2026-10-02T00:30:14Z",
     "categoria": "Ciberseguridad",
@@ -52845,186 +52945,6 @@
         "https://www.rdworldonline.com/hold-your-exaflops-why-comparing-ai-clusters-to-supercomputers-is-bananas/",
         "https://www.reuters.com/world/china/china-beats-us-with-worlds-fastest-supercomputer-race-not-geared-ai-work-2026-06-23/",
         "https://www.servethehome.com/arm-cpus-take-number-1-in-latest-top500-list-with-chinese-lineshine/"
-      ]
-    }
-  },
-  {
-    "id": 809,
-    "fecha": "2026-06-24T11:18:26Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "DoJ Incauta Cuenta de Huione por Lavado de Dinero",
-    "resumen": "El Departamento de Justicia de EE. UU. (DoJ) incautó una cuenta de computación en la nube utilizada por subsidiarias del conglomerado HuiOne Group, vinculado a lavado de dinero y estafas cibernéticas, mientras que el Tesoro impuso sanciones a nueve individuos y 26 entidades relacionadas con el Grupo Prince. Los subsidarios están acusados de ayudar a transferir fondos ilícitos, posiblemente mediante técnicas de phishing o malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyOTk5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/doj-seizes-huione-cloud-account-tied-to.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 805,
-    "fecha": "2026-06-24T06:44:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha de datos en Xolis",
-    "resumen": "La empresa de tecnología sanitaria Xsolis ha sufrido una brecha de datos que ha afectado a 1,4 millones de personas debido a un ataque de phishing que permitió a los atacantes acceder a su red y comprometer datos sensibles. El incidente destaca la importancia de la seguridad cibernética en el sector de la salud, donde la protección de la información de los pacientes es crucial.",
-    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0NTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/healthtech-firm-xolis-suffers-data-breach-impacting-14-million-people/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1021",
-        "name": "Remote Services"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 804,
-    "fecha": "2026-06-24T06:44:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en McAfee True Key",
-    "resumen": "Se ha identificado una vulnerabilidad de escalado de privilegios (CVE-2018-19908) en McAfee True Key 5.1.230.7, que permite a usuarios locales ejecutar código arbitrario mediante malware especialmente diseñado, con un CVSS Score de 8.8, clasificada como HIGH. Esta vulnerabilidad puede ser explotada para obtener acceso no autorizado y ejecutar código malicioso en sistemas que utilicen Microsoft Windows Client.",
-    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0NTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-19908",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1055",
-        "name": "Privileged File Execution"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {
-      "ipv4": [
-        "5.1.230.7"
-      ],
-      "cve": [
-        "CVE-2018-19908"
-      ]
-    }
-  },
-  {
-    "id": 803,
-    "fecha": "2026-06-24T06:44:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Masquerading en Linux",
-    "resumen": "Los atacantes pueden utilizar la técnica de masquerading para ocultar el nombre de un proceso malicioso en Linux, reemplazándolo con un nombre legítimo para evadir la detección, como se describe en la técnica T1036 del marco MITRE ATT&CK. Esta técnica ha sido utilizada por grupos como Velvet Ant para evitar la detección de malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0NDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33102",
-    "fuente": "SANS ISC",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 802,
-    "fecha": "2026-06-24T06:43:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en API Keys de LLM",
-    "resumen": "Un estudio ha revelado que es posible filtrar las API Keys de plataformas de LLM como Anthropic, OpenAI y Gemini desde aplicaciones móviles de iPhone y Android, lo que podría permitir a atacantes acceder a servicios de inteligencia artificial y robar información confidencial. El estudio identificó 444 aplicaciones que utilizan LLM y encontró que 282 de ellas permiten hackear las API Keys de una u otra forma.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218325-ff260b4f4b01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIyODM0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/06/como-filtrar-las-api-keys-de-los-llms.html",
-    "fuente": "El Lado Del Mal",
-    "ttps": [
-      {
-        "id": "T1552",
-        "name": "Credential Access"
-      },
-      {
-        "id": "T1552.001",
-        "name": "Obtain Credentials from Password Stores"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1056",
-        "name": "Keylogging"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "1.bp.blogspot.com",
-        "arxiv.org",
-        "blogger.googleusercontent.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "mypublicinbox.com",
-        "www.elladodelmal.com",
-        "www.mypublicinbox.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
-        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
-        "https://amzn.to/4ou7yuK",
-        "https://arxiv.org/pdf/2606.12212",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCScX2-2IxX3WUd7s0IuUEc54Gs81pZOZAc9PGxAsDtwGMW-A5xUR3rXOHs__rU9yv1CGOULFRkFxoJX4A7gFYHFEyJ0ume2QhtCWmexGU0fJUpp1yNpFWWxvZZOqWeJnYdiZY6Y5bBYKGmzBAHzOIktsOslhkoNekYYqw82VgZAF0jXs5x0_4/w640-h366/key2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKrNHlRW-Kwd0pteCMN2TSE-ncZ0iFvICTpU97LXN8mBNjQAC38HLftp_M2LtWM9OGxNQ6Nofh37a1nN111zupubXh4fN6UbUz-zgXc88tiby8AgUl4GfYMyiREvVIBDiYzlQGxGGm0gQnE81HjtNK-02gff7KX16lo3QfU0ukwbZ3Kr8G7R9x/w496-h640/key1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQqTAeOdNce98PXZJhWkoK9-eVEvboBJMvfFD-ktdkttn-gllF4XqeTW-S9vNsiSIsE1dY-APX2rEGr3JqmzQax8mqN4ZqQOUNYtt1BNPhvGcsjj3FdtPFkUI_1FwIiXJm7DbLXgKzH0PKCD4uxd3u9pNGxxRE1rNekGiN4TtGH_i4N8pjZJpD/w640-h176/key7.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-A8R7gZIRteDDkjcwtrLRgNfkrBiAKNB6Cb-zYHVhL64LNbDkviiI7jAsvfCvlkOOUOCUYhj5lm65BavvUyQ0bTq_RuAS8aJZfhv_l976eBIq3VaPppsPmsp2fk8VpKkbLcYOZqD96zIjtrn0PrIW7KPEnZXXZXLz9oIMPKzE5u4vtvQmhkbF/w299-h400/hackingIA_2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAYeyftPTR44Ky0fT8JkKnjGZJvfARlIsxKfHePNyCdsbxNVNXTzF2GENNVh0u4J2m8XNbcLrjN6_eIywDOKu4KDwQpu5P6So6l96Q_hWTQKQZIO2iSvEUPi6nHdGgBZRhSMq8BF3MkRB0JW5-pRh64ijdSQbdxCwksGXLQJIr-h7vCTKCnx9M/w640-h176/key7.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPrXfJJgnCFCtc8vVwkyDLbAGIHTcVR_rrcMvKFlvMRLY28pNMZ9r2zGele1nSAPyg-W2lnbiA_2tJr8G-W1DEkG-dPsslb0RszUM0PN1FIeNr9vq5-lEnUHQx1H-UCqvv7I_kK6XgZIhblDcGXqwWMjlUTBcZLvG-YzjHtDTUH8z0LxiYxHYd/w640-h350/key10.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTGushyaadnXqwxqx6XOX1UIb7wbyDsjrmKci1_5cszgDXF6OgczKFStQBMmcTZaEfBihPrcfXY-lnrPCCzulPHnYW849t7ts0CouiObOCPDSAtAC5RlYsFnxLiqikqZsC7uBzniKrQkeG8tXGdjr2m6CZ8Q-4aKQ3i82aPTgCbIg1g24geKkO/w640-h330/key5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbpCJGMg7_qumW2bDLdcQfrLQNcCfNLmsF0mWiSL2m5JH7WZ3Ki52AnWEn3Ote5FmKivjsc9S8FsedkZF7atUO7px5-R6nZtUzf_2wQjPmzZeHZ3gGrm4IQ34HYO8ckMCtPdh5IDwjHu7Iklt6-sWsugUUScTDPl6UsMk7xpADXfRiHsA9Yl6k/w640-h366/Keys0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYov2tbOX_HfmGdaEzVNYmcnILQwrAq5WqNDmG1wjVr1bIRzIKVdP90uPBzcvbMT8AZm90i5GLS03wu5En_DiGTXVb7eVn-Z0CMe5oZoeLjyuWVeEuyyUrq-K3o8I4imY3I6fH_ty8L3dkE1mTZhTMrgo33Kon-4v-q3HXD4gviplk2vMHsbYI/w640-h518/key4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq7-jhbMpJFOUD3_bX40jgrn63sZH6PkPYOXfCh7H-tZ7ev6eNSIzOFIt6urAdftS5yOi_bgIe4NzdTXF6FFYR6j91zPjVeSTL6d_geCY6fO-gieqRN-wWjLr5WmO95omjltgr2y9pwsYcDo0bCIYVlaNwVdUJDKB9-Jg0J1bfuDFfBurn8kjI/w640-h212/key8.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwMBBbTCdwmwFcYT8xp8BSMs43AY3ee8AoKP2Dp8AHFntCxTTM0Qpxkz2nUDo9N0RfFbaxG7YJq-vU56gv4mb2DOq_aN6Hi6ap8mWkB3IobmvPa8JtU5q3qdroKt1-Hv-Ye-jjofwYdDRVsSduvqAFgzj44IdJwVPaSSIEGVl6ditE1Eshog3s/w640-h144/key6.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7wS205WQ233-p-CHbnnKoqbuAcwv0GQXXlml0GXeZaPGCVDzfEEwZKFajJ_2iBHn8OI-LV5xBm2Mez2u0gBF14JwWkEvxvWhQ0CQBKaPOygxLEPzFK8smdGUlXRB_Db79MCzIg7CftOwzkpGN1WikZEMFTo_r7_qIz8fL-QOhxl3nBdYMnuNC/w640-h176/key3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqH0_0Xi916ybmvN5IHU3z8VJsTg6Rha2SwVFZ3fAiUROGZMuiIPpVjaimR7DpMApEPiKq71jaZgEaEhXXBzfmXHQ_U19-e5m2sC397fMSjKmGek7vJ4kjP1LfTy6u3PYDADEOhI7RcsXvZiyeH5BWJDkOYm6nKzTEQJj4XK74n9PrEZHEZOxh/w640-h234/key9.jpg",
-        "https://elladodelmal.com",
-        "https://www.elladodelmal.com/2016/08/revisar-la-configuracion-hsts-y-hpkp-en.html"
       ]
     }
   }
