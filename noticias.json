@@ -1,5 +1,129 @@
 [
   {
+    "id": 2922,
+    "fecha": "2026-10-03T11:00:47Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "OpenAI lanza AstaBrief, modelo de generación rápida de informes de código abierto",
+    "resumen": "AstaBrief, basado en arquitectura de transformer optimizada, permite crear reportes estructurados en segundos, reduciendo la carga de procesamiento en entornos empresariales; su código abierto facilita auditorías de seguridad y adaptación a requisitos de compliance.",
+    "url_imagen": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwMjUyNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://huggingface.co/blog/allenai/astabrief",
+    "fuente": "Hugging Face",
+    "dedup_key": "txt:open sourcing astabrief the fast report generation model in asta",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2921,
+    "fecha": "2026-10-03T11:00:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades de autorización en Meari IoT Cloud Platform OpenAPI permiten manipular dispositivos y extraer credenciales",
+    "resumen": "Dos CVE (CVE-2026-101104 y CVE-2026-96613) exponen fallos de autorización que permiten a usuarios autenticados modificar configuraciones y acceder al shadow de cualquier dispositivo IoT, comprometiendo credenciales, datos de propietarios y red. No hay parche disponible; se recomienda aislar el servicio tras firewalls y restringir el acceso externo.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwMjUyNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-101104,cve-2026-96613",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.meari.com"
+      ],
+      "url": [
+        "https://www.meari.com/en/downLoadCenter"
+      ],
+      "cve": [
+        "CVE-2026-101104",
+        "CVE-2026-96613"
+      ]
+    }
+  },
+  {
+    "id": 2920,
+    "fecha": "2026-10-03T11:00:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ICE almacena fotos de manifestantes en base de datos de Palantir sin autorización judicial",
+    "resumen": "Según documentos judiciales desclasificados, agentes del DHS recopilaron imágenes de observadores de operaciones de ICE en Maine y las ingresaron a una plataforma Palantir, vulnerando normas de privacidad y potencialmente exponiendo datos sensibles a accesos no controlados.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwMjUyNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/ice-has-been-dumping-protester-photos-into-a-palantir-database/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:ice has been dumping protester photos into a palantir database",
+    "ttps": [
+      {
+        "id": "T1530",
+        "name": "Data from Cloud Storage"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2919,
+    "fecha": "2026-10-03T11:00:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en middleware SWIFT permite explotación de MFA hardware en entornos críticos",
+    "resumen": "Se descubrió una vulnerabilidad de ejecución remota de código (RCE) en el middleware de SWIFT que permite eludir la autenticación multifactor basada en hardware, exponiendo a bancos y agencias gubernamentales a compromisos de transferencia de fondos. Se recomienda aplicar los parches de inmediato y reforzar la segmentación de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwMjUyNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/swift-banking-govt-middleware-rce",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:swift banking amp government middleware enables rce",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2918,
+    "fecha": "2026-10-03T11:00:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "15 vulnerabilidades XSS de severidad media descubiertas en la aplicación empresarial Repasat, parcheadas en abril 2026",
+    "resumen": "INCIBE ha divulgado 15 CVE (CVE-2026-59659 a CVE-2026-59673) que permiten ejecución de código arbitrario vía Cross-Site Scripting en endpoints críticos de Repasat; la explotación requiere interacción del usuario y privilegios de bajo nivel. El vendor lanzó el parche 20260402, mitigando el vector de ataque en todos los parámetros afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwMjUyMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-la-aplicacion-de-repasat",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-59659,cve-2026-59660,cve-2026-59661,cve-2026-59662,cve-2026-59663,cve-2026-59664,cve-2026-59665,cve-2026-59666,cve-2026-59667,cve-2026-59668,cve-2026-59669,cve-2026-59670,cve-2026-59671,cve-2026-59672,cve-2026-59673,cve-2026-59683",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-59659",
+        "CVE-2026-59660",
+        "CVE-2026-59661",
+        "CVE-2026-59662",
+        "CVE-2026-59663",
+        "CVE-2026-59664",
+        "CVE-2026-59665",
+        "CVE-2026-59666",
+        "CVE-2026-59667",
+        "CVE-2026-59668",
+        "CVE-2026-59669",
+        "CVE-2026-59670",
+        "CVE-2026-59671",
+        "CVE-2026-59672",
+        "CVE-2026-59673",
+        "CVE-2026-59683"
+      ]
+    }
+  },
+  {
     "id": 2917,
     "fecha": "2026-10-03T03:31:12Z",
     "categoria": "Ciberseguridad",
@@ -52780,154 +52904,5 @@
         "CVE-2023-4734"
       ]
     }
-  },
-  {
-    "id": 831,
-    "fecha": "2026-06-24T22:13:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Operaciones de ciberdelincuencia desmanteladas",
-    "resumen": "Microsoft y fuerzas del orden han desmantelado tres operaciones de \"ciberdelincuencia como servicio\" mediante el ataque a la infraestructura de malware, afectando más de 300 servidores y debilitando la cadena de suministro de ciberdelincuencia. Esto representa un enfoque integral para combatir el ciberdelito, afectando tanto a los actores como a la infraestructura subyacente.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/stealc-amadey-socgholish-malware-takedown-europol-microsoft",
-    "fuente": "The Record",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 830,
-    "fecha": "2026-06-24T22:13:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque a Cisco SD-WAN",
-    "resumen": "Investigadores creen que se utilizó \"rogue peering\" para conectarse a los dispositivos SD-WAN de la víctima y obtener privilegios de administrador y acceso de nivel raíz, explotando una vulnerabilidad que fue divulgada 2 meses después del ataque. El vector de ataque sugiere una sofisticación en la técnica de explotación, potencialmente permitiendo a los atacantes acceder a redes críticas.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-hit-cisco-sd-wan-flaw-2-months-before-disclosure",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1133",
-        "name": "External Remote Services"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 829,
-    "fecha": "2026-06-24T22:13:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Hacker \"Snoopy\" condenado",
-    "resumen": "Un joven de 21 años, conocido por el alias \"Snoopy\", ha sido condenado a 18 meses de prisión por su participación en el ataque cibernético a cuentas de DraftKings en noviembre de 2022, un incidente que pone de relieve la importancia de la seguridad de la autenticación y la protección de datos en la industria del juego en línea. El ataque probablemente involucró técnicas de phishing o explotación de vulnerabilidades para acceder a las cuentas.",
-    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 827,
-    "fecha": "2026-06-24T19:40:50Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Red de malware Amadey y StealC desmantelada",
-    "resumen": "Una operación conjunta de fuerzas del orden, en colaboración con empresas del sector privado como Bitdefender, Bitsight, ESET y Microsoft, ha logrado desmantelar la infraestructura criminal que alimentaba a los malware Amadey y StealC, recuperando 27 millones de credenciales robadas y afectando las campañas de ransomware, fraude financiero y ataques a infraestructuras críticas. La operación ha interrumpido las \"líneas de montaje\" utilizadas por los cibercriminales para lanzar estos ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwNTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials (se menciona que se recuperaron 27 millones de credenciales robadas)"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 825,
-    "fecha": "2026-06-24T19:40:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Amenaza en la cadena de suministro de IA",
-    "resumen": "Se han detectado habilidades maliciosas en OpenClaw que pueden comprometer la seguridad de la cadena de suministro de inteligencia artificial (IA), incluyendo paquetes que contienen infostealers y otras amenazas que evaden controles de seguridad. Estas habilidades maliciosas pueden ser utilizadas para ataques de phishing o malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1744640326166-433469d102f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/malicious-openclaw-skills-clawhub-threaten-ai-supply-chain",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploitation for Client Execution"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion"
-      }
-    ],
-    "iocs": {}
   }
 ]
