@@ -1,5 +1,133 @@
 [
   {
+    "id": 2917,
+    "fecha": "2026-10-03T03:31:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-101148 permite a atacantes crear y descargar copias completas en WordPress BackupSheep",
+    "resumen": "La falta de validación de la clave de integración en BackupSheep ≤ 1.8 permite a actores no autenticados generar y descargar backups completos, incluyendo hashes de contraseñas, y eliminar archivos arbitrarios, facilitando toma de control del sitio. No existe parche; la recomendación es desinstalar el plugin inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5OTgyNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-101148",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-101148",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "wordpress.org"
+      ],
+      "cve": [
+        "CVE-2026-101148"
+      ]
+    }
+  },
+  {
+    "id": 2916,
+    "fecha": "2026-10-03T03:31:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-64893 permite interceptar credenciales en controladores Johnson Controls EasyIO Neo",
+    "resumen": "La transmisión en texto claro de datos sensibles en los controladores EC y CW de EasyIO Neo expone credenciales y sesiones a ataques de sniffing o MITM; se recomienda actualizar a firmware V3.3b64/ V3.3b26 y habilitar HTTPS/TLS.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5OTgyNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-05",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-64893",
+    "ttps": [
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      },
+      {
+        "id": "T1557.001",
+        "name": "LLMNR/NBT-NS Poisoning and SMB Relay"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.johnsoncontrols.com"
+      ],
+      "url": [
+        "https://www.johnsoncontrols.com/trust-center/cybersecurity/resources",
+        "https://www.johnsoncontrols.com/trust-center/cybersecurity/security-advisories"
+      ],
+      "cve": [
+        "CVE-2026-64893"
+      ]
+    }
+  },
+  {
+    "id": 2915,
+    "fecha": "2026-10-03T03:31:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Juez de EE. UU. descarta demanda de periodistas salvadoreños contra Pegasus por falta de jurisdicción",
+    "resumen": "El tribunal federal de California desestimó la acción legal de los reporteros de El Faro que alegaban haber sido espiados con Pegasus, al no establecerse competencia territorial. La decisión deja sin recurso judicial a las víctimas y subraya la complejidad de perseguir a proveedores de software de vigilancia estatal.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5OTgyNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/judge-dismisses-spyware-case-brought-by-salvadoran-journalists",
+    "fuente": "The Record",
+    "dedup_key": "txt:judge dismisses spyware case brought by salvadoran journalists targeted with pegasus",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2914,
+    "fecha": "2026-10-03T03:31:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Kiteworks y Citrix evidencian fallas críticas en la respuesta a vulnerabilidades zero-day",
+    "resumen": "Ambas compañías enfrentaron incidentes donde se recomendó apagar la plataforma de protección de datos de Kiteworks durante nueve horas, mientras Citrix mantuvo silencio antes de lanzar un parche, subrayando la dificultad de contener exploits sin divulgación previa.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5OTgyNjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/kiteworks-citrix-incidents-challenges-zero-day-response",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:kiteworks amp citrix incidents show challenges of zero day response",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2913,
+    "fecha": "2026-10-03T03:31:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Fortra Core Privileged Access Manager expone seis CVE críticos que permiten ejecución como root y extracción",
+    "resumen": "Se han divulgado seis vulnerabilidades (CVE-2026-12627, CVE-2026-79898, CVE-2026-79901, entre otras) en las versiones 8.1.0.0-8.1.0.23 y 9.0.0.0-9.0.0.6 que pueden provocar desbordamiento de pila, inyección de comandos y generación predecible de contraseñas de cuentas de servicio AD, habilitando ataques de escalada de privilegios y robo de credenciales. Se recomienda actualizar a 8.1.0.24 o 9.0.0.7 y rotar las contraseñas de las cuentas de servicio afectadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA5OTgyNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-core-privileged-access-manager-de-fortra",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-12627,cve-2026-79898,cve-2026-79901",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1202",
+        "name": "Indirect Command Execution"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "8.1.0.0",
+        "8.1.0.23",
+        "8.1.0.24",
+        "9.0.0.0",
+        "9.0.0.6",
+        "9.0.0.7"
+      ],
+      "cve": [
+        "CVE-2026-12627",
+        "CVE-2026-79898",
+        "CVE-2026-79901"
+      ]
+    }
+  },
+  {
     "id": 2912,
     "fecha": "2026-10-02T21:45:32Z",
     "categoria": "Ciberseguridad",
@@ -52800,128 +52928,6 @@
         "name": "Virtualization/Sandbox Evasion"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 824,
-    "fecha": "2026-06-24T19:40:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad crítica en Lantronix EDS5000",
-    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) advirtió sobre la explotación activa de una vulnerabilidad crítica (CVE-2025-67038, puntuación CVSS: 9.8) en dispositivos Lantronix EDS5000 Series, que permite la inyección de código y podría resultar en la ejecución de código arbitrario, afectando a las agencias del Gobierno de EE. UU. SECTOR: Gobierno",
-    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzAwMzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2025-67038"
-      ]
-    }
-  },
-  {
-    "id": 823,
-    "fecha": "2026-06-24T16:58:51Z",
-    "categoria": "IA",
-    "severidad": "CRITICA",
-    "titulo": "Adobe lidera en IA",
-    "resumen": "A pesar de la percepción de que Adobe estaba amenazada por la IA, la empresa ha logrado resultados históricos con ingresos récord de 6.620 millones de dólares en el segundo trimestre fiscal de 2026, gracias a su plataforma de IA generativa Firefly, que ha superado los 250 millones de dólares de ARR y sigue creciendo. La confianza de las empresas en Adobe y su enfoque en soluciones \"AI First\" han permitido que la empresa se posicione como líder en el sector.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218661-0322e4bc4c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/creiamos-que-adobe-estaba-amenazada-muerte-ia-resulta-que-pocas-empresas-que-esta-ganando-dinero-ella",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "blog.adobe.com",
-        "longyield.substack.com",
-        "news.adobe.com",
-        "petapixel.com",
-        "platform.instagram.com",
-        "www.creativebloq.com",
-        "www.google.com",
-        "www.investopedia.com",
-        "www.reddit.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://blog.adobe.com/en/publish/2026/03/19/adobe-firefly-expands-video-image-creation-with-new-ai-capabilities-custom-models",
-        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/1024_2000.jpeg",
-        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/1366_2000.jpeg",
-        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/450_1000.jpeg",
-        "https://i.blogs.es/4cf488/captura-de-pantalla-2026-06-24-a-las-11.57.55/650_1200.jpeg",
-        "https://i.blogs.es/5b223c/adobe/1024_2000.jpeg",
-        "https://i.blogs.es/fa749d/canva2/375_142.jpeg",
-        "https://longyield.substack.com/p/adobe-inc-ai-winner-or-disrupted",
-        "https://news.adobe.com/news/2026/03/leadership-update",
-        "https://petapixel.com/2025/05/20/if-you-have-adobe-creative-cloud-your-price-could-increase-next-month/",
-        "https://www.creativebloq.com/photography/photo-editing-software/after-25-loyal-years-adobes-price-hike-has-forced-me-to-say-goodbye",
-        "https://www.investopedia.com/articles/financial-analysis/062716/gaap-vs-nongaap-which-should-you-consider-evaluation.asp",
-        "https://www.wheresyoured.at/hatersguide-adobe/"
-      ]
-    }
-  },
-  {
-    "id": 822,
-    "fecha": "2026-06-24T16:58:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Operación Endgame desmantela malware",
-    "resumen": "La operación conjunta de Microsoft, Europol y socios internacionales ha desmantelado la infraestructura utilizada por las operaciones de malware Amadey y StealC, como parte de la Operación Endgame, que se centra en servicios cibercriminales y bandas de ransomware. El impacto real incluye la interrupción de los vectores de ataque de estos malware, reduciendo el riesgo de infecciones y robos de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/amadey-stealc-malware-operations-disrupted-in-operation-endgame-action/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 821,
-    "fecha": "2026-06-24T16:58:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad MISP",
-    "resumen": "Se ha detectado una vulnerabilidad (CVE-2020-8892) en versiones anteriores a 2.4.121 de MISP, con un CVSS Score de 8.1, que permite ataques de fuerza bruta a través del método HTTP PUT no bloqueado, lo que podría permitir accesos no autorizados. La vulnerabilidad afecta a la autenticación y podría ser explotada para obtener acceso no autorizado al sistema.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-8892",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2020-8892"
-      ]
-    }
-  },
-  {
-    "id": 820,
-    "fecha": "2026-06-24T16:58:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidades críticas en Ubiquiti",
-    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de Estados Unidos (CISA) advierte sobre la explotación activa de vulnerabilidades de gravedad máxima en el sistema operativo UniFi OS de Ubiquiti y en servidores serie-a-ethernet de Lantronix, lo que permite a los atacantes aprovechar estas debilidades para llevar a cabo ataques. Estas vulnerabilidades pueden ser utilizadas como vectores de ataque para comprometer la seguridad de las redes.",
-    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMjAzMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-max-severity-ubiquiti-flaws-exploited-in-attacks/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
     "iocs": {}
   }
 ]
