@@ -1,5 +1,104 @@
 [
   {
+    "id": 2927,
+    "fecha": "2026-10-03T15:37:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de command injection en Teltonika RutOS 00.07.06.21 permite ejecución remota de código",
+    "resumen": "La versión 00.07.06.21 del firmware RutOS de Teltonika contiene una falla de inyección de comandos que un atacante remoto puede explotar para ejecutar código arbitrario en el dispositivo, comprometiendo la integridad de la red IoT. Se recomienda aplicar el parche oficial y restringir el acceso a la interfaz de gestión.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNDE4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52692",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:remote teltonika rutos 00 07 06 21 command injection",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2926,
+    "fecha": "2026-10-03T15:37:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-103956 permite escalada a super-admin en Loom for AWS antes de 1.6.1",
+    "resumen": "Falta de autenticación en una función crítica permite a actores remotos obtener autoridad de super-admin sobre el plano de control del agente, registrar servidores de herramientas, leer credenciales de integración y reescribir políticas IAM. Afecta despliegues sin proveedor de identidad; la mitigación es actualizar a la versión 1.6.1 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNDE4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-103956",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-103956",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-103956"
+      ]
+    }
+  },
+  {
+    "id": 2925,
+    "fecha": "2026-10-03T15:37:35Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Gemini 4 Argon y OpenAI DevDay 2026 impulsan agentes de IA para ciberseguridad y automatización empresarial",
+    "resumen": "Google lanzó Gemini 4 Argon, optimizado para tareas complejas y detección de amenazas, mientras OpenAI mostró agentes persistentes capaces de programar y gestionar infraestructuras de seguridad en tiempo real. Ambos avances elevan el riesgo de uso malicioso y demandan nuevas contramedidas en SOCs.",
+    "url_imagen": "https://images.unsplash.com/photo-1779787819289-e292176abf69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNDE4NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/gemini-4-argon-y-openai-devday-2026",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:gemini 4 argon y openai devday 2026 la carrera por agentes de ia entra en una nueva etapa",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2924,
+    "fecha": "2026-10-03T15:37:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Monta monta.app permiten control administrativo y DoS en estaciones de carga EV",
+    "resumen": "CVE-2026-95102 y CVE-2026-97363 exponen WebSocket sin autenticación y sin limitación de intentos, facilitando suplantación de estaciones y ataques de denegación de servicio. La falta de autenticación y de control de sesiones permite escalada de privilegios y compromete infraestructuras de energía y transporte.",
+    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNDE4NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-93474,cve-2026-95102,cve-2026-97212,cve-2026-97363",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.first.org"
+      ],
+      "url": [
+        "https://www.first.org/cvss/calculator/4-0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4-0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4-0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+        "https://www.first.org/cvss/calculator/4-0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+      ],
+      "cve": [
+        "CVE-2026-93474",
+        "CVE-2026-95102",
+        "CVE-2026-97212",
+        "CVE-2026-97363"
+      ]
+    }
+  },
+  {
+    "id": 2923,
+    "fecha": "2026-10-03T15:37:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "YARA-X 1.21.0 incorpora 5 mejoras y 4 correcciones de errores críticos",
+    "resumen": "La nueva versión de YARA-X refina la detección de indicadores de compromiso con reglas optimizadas y corrige vulnerabilidades que podrían ser explotadas para evadir análisis. Se recomienda actualizar en todos los endpoints para mantener la integridad del pipeline de detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNDE4NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33392",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:yara x 1 21 0 release sat oct 3rd",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2922,
     "fecha": "2026-10-03T11:00:47Z",
     "categoria": "IA",
@@ -52766,142 +52865,6 @@
     "iocs": {
       "cve": [
         "CVE-2022-36124"
-      ]
-    }
-  },
-  {
-    "id": 837,
-    "fecha": "2026-06-25T01:06:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "CISOs Necesitan Código Ético",
-    "resumen": "Un experto en la industria aboga por un código de ética para Directores de Seguridad de la Información (CISOs) para prevenir prácticas de auto-interés que podrían comprometer la seguridad de la empresa y nacional, como kickbacks y empleos ficticios. Esto resalta la importancia de la integridad en la toma de decisiones de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ciso-code-of-ethics",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 836,
-    "fecha": "2026-06-25T01:06:08Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Extensión maliciosa Edge",
-    "resumen": "Una extensión maliciosa de Microsoft Edge llamada 'Edgecution' ha sido utilizada en un ataque de ransomware para escapar del sandbox del navegador y desplegar una backdoor basada en Python, aprovechando la funcionalidad de Native Messaging para comunicarse con el malware. El ataque demuestra un vector de ataque innovador que explota las vulnerabilidades en la seguridad de los navegadores y las extensiones.",
-    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1Njh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1211",
-        "name": "Exploitation for Credential Access"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 835,
-    "fecha": "2026-06-25T01:06:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Spyware con texto prohibido evita análisis AI",
-    "resumen": "Desarrolladores de malware están agregando texto sobre armas nucleares y biológicas a su spyware para evitar el análisis automático de la inteligencia artificial (IA), utilizando técnicas como comentarios de JavaScript y sustitución de caracteres para engañar a los sistemas de detección. Esto puede causar problemas en sistemas de detección que no aíslan claramente el contenido como datos no confiables, pero no evita la detección estática mediante reglas YARA, comprobaciones de entropía y otros métodos.",
-    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis-2.html",
-    "fuente": "Schneier on Security",
-    "ttps": [
-      {
-        "id": "T1497",
-        "name": "Obfuscation"
-      },
-      {
-        "id": "T1497.003",
-        "name": "Steganography"
-      },
-      {
-        "id": "T1497.001",
-        "name": "Binary Padding"
-      },
-      {
-        "id": "T1497.002",
-        "name": "Software Packing"
-      },
-      {
-        "id": "T1480",
-        "name": "Execution Guardrails"
-      }
-    ],
-    "iocs": {
-      "url": [
-        "https://socket.dev/blog/mini-shai-hulud-miasma-and-hades-worms-target-bioinformatics-and-mcp-developers-via-malicious"
-      ]
-    }
-  },
-  {
-    "id": 834,
-    "fecha": "2026-06-25T01:05:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Amenazas cibernéticas en la Copa Mundial",
-    "resumen": "La Copa Mundial de la FIFA 2026 enfrenta un aumento en las amenazas cibernéticas, incluyendo ciberdelincuencia persistente, ingeniería social y amenazas a la infraestructura, lo que plantea un desafío significativo para la seguridad de la información y la protección de los datos de los participantes y espectadores. Los vectores de ataque incluyen phishing y otros métodos de ingeniería social para explotar vulnerabilidades en la infraestructura de los estadios y sistemas de información.",
-    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNDk1NTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/2026-fifa-world-cup-faces-surge-cyber-threats",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 832,
-    "fecha": "2026-06-24T22:13:32Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Vim",
-    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros (CVE-2023-4734) con una puntuación CVSS de 7.8 en versiones de Vim anteriores a 9.0.1846, lo que podría permitir ataques de elevación de privilegios en sistemas que utilizan esta versión de Vim, incluyendo macOS. La vulnerabilidad se encuentra en el repositorio de GitHub de Vim.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzMzkyMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-4734",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2023-4734"
       ]
     }
   }
