@@ -1,5 +1,108 @@
 [
   {
+    "id": 2931,
+    "fecha": "2026-10-03T20:32:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-55393 permite path traversal y exposición de configuraciones en robots Teledyne FLIR",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en la interfaz web de Teledyne FLIR Aware2 permite a atacantes no autenticados leer archivos de configuración y parámetros de seguridad mediante traversal de rutas en versiones ≤6.9.0.2 y ≤1.7.9.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNTk1Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-55393",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-55393",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1552.004",
+        "name": "Private Keys"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "6.9.0.2"
+      ],
+      "cve": [
+        "CVE-2026-55393"
+      ]
+    }
+  },
+  {
+    "id": 2930,
+    "fecha": "2026-10-03T20:32:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades de escalada de privilegios y path traversal en ABB PCM600 afectan a sistemas críticos de energía",
+    "resumen": "Dos CVE (CVE-2026-15952 y CVE-2026-15953) en ABB Protection and Control IED Manager PCM600 permiten a un atacante con acceso local y credenciales válidas elevar privilegios mediante el servicio Scheduler o sobrescribir archivos fuera del directorio de extracción. La mitigación recomendada es alinear la cuenta del servicio Scheduler con la cuenta de la aplicación PCM600 y restringir la confianza de certificados IED a entornos seguros.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNTk1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-15952,cve-2026-15953",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-15952",
+        "CVE-2026-15953"
+      ]
+    }
+  },
+  {
+    "id": 2929,
+    "fecha": "2026-10-03T20:32:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Meta lanza Muse, agente IA que genera perfiles detallados de contactos con riesgos de privacidad",
+    "resumen": "Muse, el nuevo agente conversacional de Meta, recopila y modela datos de amigos y familiares para crear perfiles granulares, exponiendo a los usuarios a potenciales filtraciones y abuso de información personal. El vector de ataque radica en la extracción masiva de datos mediante consultas automatizadas, lo que compromete la confidencialidad bajo regulaciones como GDPR.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNTk1MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/muse-creates-detailed-profiles-of-all-your-friends-and-family/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:muse creates detailed profiles of all your friends and family",
+    "ttps": [
+      {
+        "id": "T1119",
+        "name": "Automated Collection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2928,
+    "fecha": "2026-10-03T20:31:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Detienen a presunto miembro de ShinyHunters en Jordania y colabora con el FBI",
+    "resumen": "Autoridades jordanas arrestaron a “Rey”, presunto integrante del grupo de extorsión ShinyHunters, quien ahora coopera con el FBI para identificar a otros miembros y desarticular la infraestructura de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNTk1MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:shinyhunters hacker reportedly detained in jordan aiding fbi",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2927,
     "fecha": "2026-10-03T15:37:38Z",
     "categoria": "Ciberseguridad",
@@ -52805,66 +52908,6 @@
         "https://www.elladodelmal.com/2025/03/adivina-adivinanza-esta-un-robot-con-ia.html",
         "https://www.elladodelmal.com/2025/12/que-hacer-para-desplegar-inteligencia.html",
         "https://www.santander.com/en/stories/santander-turns-its-ai-first-strategy-into-measurable-impact-and-extends-ai-access-to-all-185000-employees"
-      ]
-    }
-  },
-  {
-    "id": 841,
-    "fecha": "2026-06-25T06:44:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Brecha de datos en ElParking",
-    "resumen": "Se ha detectado un acceso no autorizado a datos personales de clientes de ElParking, contenido de forma inmediata sin comprometer contraseñas ni datos de pago, y notificado a la AEPD. El incidente fue identificado por los sistemas de seguridad de la empresa el 14 de junio.",
-    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNjk4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/elparking-confirma-un-acceso-no-autorizado-a-datos-de-clientes-y-notifica-el-incidente-a-la-aepd/",
-    "fuente": "CyberSecurity News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 840,
-    "fecha": "2026-06-25T02:49:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad MISP CVE-2023-37306",
-    "resumen": "Se ha identificado una vulnerabilidad en MISP 2.4.172 (CVE-2023-37306) con una puntuación CVSS de 7.5, que permite a un atacante obtener información sensible debido a la mala gestión de extensiones de archivos de certificado en la sincronización del servidor. El vector de ataque se basa en el análisis de los mensajes de error generados por el sistema.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3NzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-37306",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2023-37306"
-      ]
-    }
-  },
-  {
-    "id": 839,
-    "fecha": "2026-06-25T02:49:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Disrupción de botnet Amadey",
-    "resumen": "El equipo de investigación de ESET colaboró en la Operación Endgame para interrumpir la botnet Amadey y el infostealer Stealc, proporcionando análisis técnico y seguimiento de infraestructura para desmantelar estas amenazas. La operación tuvo un impacto significativo en la reducción de la capacidad de ataque de estas herramientas maliciosas, que se utilizaban para realizar ataques de phishing y robo de información.",
-    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/eset-operacion-endgame-disrupcion-amadey-stealc/",
-    "fuente": "WeLiveSecurity",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 838,
-    "fecha": "2026-06-25T02:49:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Apache Avro",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2022-36124) con una puntuación CVSS de 7.5 en el SDK de Apache Avro para Rust, que puede provocar una falta de memoria en el sistema debido a un consumo excesivo de memoria por parte de un Lector, afectando a versiones anteriores a 0.14.0. La actualización a la versión 0.14.0 de apache-avro soluciona este problema.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzNTU3NjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-36124",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2022-36124"
       ]
     }
   }
