@@ -1,5 +1,42 @@
 [
   {
+    "id": 2937,
+    "fecha": "2026-10-04T11:43:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "TA419, grupo de espionaje chino, lanza campañas de phishing contra expertos en IA de EE. UU",
+    "resumen": "El actor TA419 ha usado correos de suplantación de economistas y empleados de Anthropic para robar credenciales de investigadores y asesores de política de IA en think tanks, universidades y despachos legales, ampliando la superficie de ataque a la comunidad de IA estadounidense.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTExMTQxODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:china aligned ta419 targets u s ai policy experts with microsoft aitm phishing",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2936,
+    "fecha": "2026-10-04T11:42:54Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Anthropic solicita a usuarios de Claude compartir datos de voz para entrenar su modelo de IA",
+    "resumen": "La empresa ha lanzado una campaña de recolección voluntaria de conversaciones de voz de sus usuarios de Claude, con el objetivo de enriquecer los embeddings y mejorar la capacidad de reconocimiento y generación de audio en futuros modelos. La iniciativa plantea riesgos de privacidad y posibles vectores de exfiltración de datos sensibles si la gestión de consentimientos y el almacenamiento no cumplen con normativas como GDPR.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTExMTQxNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:anthropic asks claude users to share voice data for ai model training",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2935,
     "fecha": "2026-10-04T04:00:02Z",
     "categoria": "Ciberseguridad",
@@ -52829,53 +52866,6 @@
         "name": "Valid Accounts"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 847,
-    "fecha": "2026-06-25T11:37:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Mistic Backdoor: Nueva Amenaza",
-    "resumen": "Un nuevo backdoor llamado Mistic, también conocido como MLTBackdoor, ha sido identificado en campañas de ataques dirigidos a múltiples organizaciones en sectores como seguros, educación, TI y servicios profesionales desde abril de 2026, con posibles motivaciones financieras y vinculaciones a un Initial Access Broker (IAB). El backdoor se ha utilizado en campañas como ClickFix y ModeloRAT, lo que sugiere un enfoque sofisticado en la infiltración y el acceso a sistemas.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzODc0NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/new-mistic-backdoor-linked-to-kongtuke.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1046",
-        "name": "Network Service Discovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 846,
-    "fecha": "2026-06-25T11:37:39Z",
-    "categoria": "IA",
-    "severidad": "INFO",
-    "titulo": "Policía británica: fallos en predicción del crimen",
-    "resumen": "La policía del Reino Unido ha desarrollado un sistema de predicción del crimen utilizando inteligencia artificial (IA), pero una investigación de WIRED ha revelado que algunos resultados no son confiables debido a problemas en la implementación de la analítica predictiva. Esto plantea preocupaciones sobre la precisión y la confiabilidad de los sistemas de predicción del crimen basados en IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzODc0NTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/british-police-built-a-sprawling-crime-prediction-machine-some-results-couldnt-be-trusted/",
-    "fuente": "Wired Security",
-    "ttps": [],
     "iocs": {}
   }
 ]
