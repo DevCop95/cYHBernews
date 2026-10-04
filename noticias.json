@@ -1,5 +1,28 @@
 [
   {
+    "id": 2938,
+    "fecha": "2026-10-04T16:21:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS en YesWiki 4.6.7 permite ejecución de script remoto mediante acción Bazar valeur",
+    "resumen": "CVE-2026-105224 afecta a YesWiki < 4.6.7; un atacante puede inyectar HTML no escapado en la acción bazar/actions/valeur.php y servir una página con un img onerror que ejecuta código JavaScript en el navegador de cualquier usuario que visualice la página. El vector de ataque es remoto y se aprovecha de la falta de sanitización de contenido externo, comprometiendo la integridad de la sesión y potencialmente facilitando phishing o ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTExMzA5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/339110",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-105224",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-105224"
+      ]
+    }
+  },
+  {
     "id": 2937,
     "fecha": "2026-10-04T11:43:01Z",
     "categoria": "Ciberseguridad",
@@ -52841,31 +52864,5 @@
         "https://unaaldia.hispasec.com/fortibleed-pone-en-el-punto-de-mira-a-fortigate-para-robar-credenciales-a-gran-escala/"
       ]
     }
-  },
-  {
-    "id": 848,
-    "fecha": "2026-06-25T14:21:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Contraseñas comprometidas",
-    "resumen": "Las contraseñas comprometidas siguen siendo una de las principales causas de brechas de seguridad, permitiendo a los ciberdelincuentes acceder a sistemas y redes sin necesidad de exploits sofisticados o malware avanzado, lo que destaca la importancia de la autenticación segura y la gestión de contraseñas. Los ciberdelincuentes aprovechan estas vulnerabilidades para iniciar ataques, como phishing o ataques de fuerza bruta, que pueden tener un impacto significativo en la seguridad de la información.",
-    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODIzOTczMTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/la-amenaza-silenciosa-que-sigue-abriendo-puertas-a-los-ciberdelincuentes/",
-    "fuente": "CyberSecurity News",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
   }
 ]
