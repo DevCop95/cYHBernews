@@ -1,5 +1,86 @@
 [
   {
+    "id": 2958,
+    "fecha": "2026-10-05T21:47:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-93326 permite eludir validaciones de políticas en pipelines de Git mediante definiciones de compilación",
+    "resumen": "La vulnerabilidad permite que un paso de construcción de origen Git falsifique la URL remota del repositorio, evadiendo controles basados en SHA, datos de commit o firmas, lo que facilita la inserción de código malicioso sin ser detectado por políticas de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMzY4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/340774",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-93326",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-93326"
+      ]
+    }
+  },
+  {
+    "id": 2957,
+    "fecha": "2026-10-05T21:47:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-105636 permite exfiltración de metadatos internos vía webhook con redirección no validada en Plane 1.3.x",
+    "resumen": "La vulnerabilidad en Plane (≤ 1.3.x) permite a un atacante crear un webhook que redirige a direcciones internas, obteniendo datos de metadata de la nube y exponiéndolos a través de la API de webhook-logs; el vector es una redirección HTTP sin filtro de destinos internos. Se corrige en la versión 1.4.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMzY4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-105636",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-105636",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-105636"
+      ]
+    }
+  },
+  {
+    "id": 2956,
+    "fecha": "2026-10-05T21:47:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-96940 permite a atacantes autenticados leer buzones en Exchange",
+    "resumen": "La falla de autorización débil en Microsoft Exchange Server permite a un atacante con credenciales válidas escalar privilegios y acceder a los correos de otros usuarios, con un CVSS de 8.8. Microsoft emitió actualizaciones de seguridad fuera de ciclo para mitigar el riesgo antes de que se divulguen exploits activos.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMzY4NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-96940",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-96940"
+      ]
+    }
+  },
+  {
+    "id": 2955,
+    "fecha": "2026-10-05T21:47:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Autoridad italiana multa a IQVIA con 7 millones de euros por fallas en anonimización de datos de salud",
+    "resumen": "La GPDP sanciona a IQVIA por procesos deficientes que expusieron potencialmente a un millón de pacientes, vulnerando normas de protección de datos y aumentando el riesgo de re-identificación. La multa subraya la necesidad de controles de privacidad robustos y auditorías de anonimización en entornos de salud.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMzY4Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/iqvia-fined-78-million-for-failing-to-properly-anonymize-health-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:iqvia fined 7 8 million for failing to properly anonymize health data",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2954,
     "fecha": "2026-10-05T13:26:31Z",
     "categoria": "Ciberseguridad",
@@ -52654,86 +52735,5 @@
         "https://cambridgeanalytica.org/data-breaches-scandals/passports-driver-licenses-exposed-public-internet-2026-51096/"
       ]
     }
-  },
-  {
-    "id": 871,
-    "fecha": "2026-06-26T11:42:39Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque de suministro Miasma",
-    "resumen": "El malware Miasma ha evolucionado para comprometer nuevos paquetes npm, incluyendo LeoPlatform y RStreams, y ha propagado su ataque a la plataforma Go, aprovechando GitHub Actions para expandir su alcance. El ataque de suministro aprovecha vulnerabilidades en la cadena de suministro para infectar sistemas y potencialmente robar información sensible.",
-    "url_imagen": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NzQxNTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/miasma-malware-targets-npm-packages-and.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 870,
-    "fecha": "2026-06-26T11:42:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en bloqueador de anuncios",
-    "resumen": "Un bloqueador de anuncios para YouTube con más de 10 millones de instalaciones en Chrome presenta una vulnerabilidad que permite inyectar JavaScript desde un servidor remoto, lo que eleva el riesgo de ataques maliciosos, especialmente en entornos corporativos, aunque no hay pruebas de uso malicioso hasta el momento. La vulnerabilidad se debe a un mecanismo que permite la ejecución de código JavaScript sin necesidad de actualizar la extensión.",
-    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NzQxNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/un-popular-bloqueador-de-anuncios-en-chrome-expone-una-via-latente-para-inyectar-javascript/?utm_source=rss&utm_medium=rss&utm_campaign=un-popular-bloqueador-de-anuncios-en-chrome-expone-una-via-latente-para-inyectar-javascript",
-    "fuente": "Una al Día (Hispasec)",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/un-popular-bloqueador-de-anuncios-en-chrome-expone-una-via-latente-para-inyectar-javascript/"
-      ]
-    }
-  },
-  {
-    "id": 869,
-    "fecha": "2026-06-26T06:53:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Rusia usa Cellebrite pese a corte",
-    "resumen": "Rusia ha seguido utilizando la herramienta de hacking de teléfonos Cellebrite para reprimir a disidentes, a pesar de que la empresa anunció en marzo de 2021 que dejaría de trabajar con el país, lo que sugiere que la empresa no ha podido retirar su tecnología de gobiernos autoritarios, según investigadores. Esto plantea preocupaciones sobre la capacidad de controlar el uso de herramientas de seguridad en manos de gobiernos con malas intenciones.",
-    "url_imagen": "https://images.unsplash.com/photo-1739054730201-4b6463484e3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NTY4MDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/russia-used-cellebrite-tool-after-company-pulled-out-of-country",
-    "fuente": "The Record",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 868,
-    "fecha": "2026-06-26T06:52:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Arrestan a grupo de SIM-swapping",
-    "resumen": "Las autoridades polacas han arrestado a cuatro miembros de un grupo de ciberdelincuencia organizada acusados de realizar ataques de SIM-swapping, lo que les permitió robar millones en criptomonedas mediante el acceso no autorizado a cuentas de correo electrónico y socios de telecomunicaciones. El vector de ataque incluyó el aprovechamiento de vulnerabilidades en los sistemas de seguridad de los proveedores de servicios de telecomunicaciones.",
-    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NTY3NzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/poland-busts-sim-swapping-gang-tied-to-millions-in-crypto-theft/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise no se menciona, pero se puede inferir que el grupo utilizó técnicas de ingeniería social para obtener acceso no autorizado."
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1557",
-        "name": "Adversary-in-the-Middle"
-      }
-    ],
-    "iocs": {}
   }
 ]
