@@ -1,5 +1,70 @@
 [
   {
+    "id": 2954,
+    "fecha": "2026-10-05T13:26:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Nikkei revela ciberataque a cuenta de correo interno que pudo exponer fuentes periodísticas",
+    "resumen": "Un actor no identificado comprometió la cuenta de correo de un empleado de Nikkei, accediendo potencialmente a comunicaciones con fuentes confidenciales y generando riesgo de filtración de información sensible. El incidente destaca la vulnerabilidad de los sistemas de correo corporativo frente a credenciales comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDY3OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/nikkei-cyberattack-japan-data",
+    "fuente": "The Record",
+    "dedup_key": "txt:japanese media group nikkei discloses cyberattack targeting journalistic sources",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2953,
+    "fecha": "2026-10-05T13:26:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "GitGuardian alerta sobre la expansión descontrolada de la capa de credenciales en entornos empresariales",
+    "resumen": "La proliferación de credenciales, incluidas las usadas por IA, supera la capacidad de detección de los equipos de seguridad, exponiendo a las organizaciones a filtraciones y accesos no autorizados. GitGuardian propone un enfoque integrado de detección, remediación y prevención para mapear y proteger estos activos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDY3ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:the credential layer is expanding faster than security teams can see it",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2952,
+    "fecha": "2026-10-05T13:26:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Arrestan al presunto creador del malware Ploutus usado en ataques de jackpotting a cajeros en EE.UU",
+    "resumen": "El Departamento de Justicia de EE.UU. detuvo al supuesto autor de Ploutus, un malware que compromete ATMs para extraer millones mediante jackpotting, evidenciando una campaña de alto impacto financiero y vulnerabilidades en sistemas de pago.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDY3ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:alleged dev of ploutus atm malware appears in us court after arrest",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2951,
+    "fecha": "2026-10-05T13:26:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Researchers demuestran jailbreak y prompt injection en asistente IA de tienda de mochilas usando técnicas",
+    "resumen": "El análisis muestra cómo se desalineó un LLM basado en Gemini mediante inyección de prompts y codificación de respuestas, eludiendo guardarraíles y revelando funciones expuestas sin acceso a internet ni capacidad de programación. El vector de ataque combina manipulación de tokens, uso de acrósticos y codificación ASCII para evadir filtros y potencialmente weaponizar el modelo como API.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDY3ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/mareando-y-desalineando-un-asistente-ia.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:mareando y desalineando a un asistente ia de una tienda de mochilas",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2950,
     "fecha": "2026-10-05T13:05:34Z",
     "categoria": "Ciberseguridad",
@@ -2629,65 +2694,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 2842,
-    "fecha": "2026-09-28T21:02:32Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Citrix NetScaler ADC y Gateway presentan 8 vulnerabilidades críticas y altas, con explotación activa de dos CVE",
-    "resumen": "Se identifican ocho fallos (tres críticos, cinco altos) que permiten RCE, DoS, secuestro de peticiones HTTP y evasión de políticas, con CVE‑2026‑88771 y CVE‑2026‑88772 ya explotados en entornos no parcheados. La mitigación requiere actualizar a versiones 14.1‑73.37+, 13.1‑64.23+ y habilitar Enhanced ISN Generation, preservando evidencias y aislando sistemas comprometidos.",
-    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjkzNTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-1",
-    "fuente": "INCIBE-CERT",
-    "dedup_key": "cve:cve-2026-88771,cve-2026-88772,cve-2026-88773,cve-2026-88774,cve-2026-88775,cve-2026-88776,cve-2026-88777,cve-2026-88778",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1071.001",
-        "name": "Web Protocols"
-      },
-      {
-        "id": "T1562.006",
-        "name": "Indicator Blocking"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "community.citrix.com",
-        "pinterest.com",
-        "support.citrix.com",
-        "wa.me"
-      ],
-      "url": [
-        "http://pinterest.com/pin/create/link/?url=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed&amp;text=Avisos%20INCIBE-CERT",
-        "https://community.citrix.com/techzone-blogs/110_security-updates/netscaler-adc-and-netscaler-gateway-security-bulletin-for-cve-2026-88771-through-cve-2026-88778/",
-        "https://support.citrix.com/external/article/CTX694799/steps-to-take-if-netscaler-adc-is-suspec.html",
-        "https://support.citrix.com/external/article/CTX697096/citrix-netscaler-adc-and-citrix-netscale.html",
-        "https://wa.me/?text=https://www.incibe.es/incibe-cert/alerta-temprana/avisos/feed"
-      ],
-      "cve": [
-        "CVE-2026-88771",
-        "CVE-2026-88772",
-        "CVE-2026-88773",
-        "CVE-2026-88774",
-        "CVE-2026-88775",
-        "CVE-2026-88776",
-        "CVE-2026-88777",
-        "CVE-2026-88778"
-      ]
-    }
   },
   {
     "id": 2841,
@@ -52726,91 +52732,6 @@
       {
         "id": "T1557",
         "name": "Adversary-in-the-Middle"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 867,
-    "fecha": "2026-06-26T06:52:36Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Seguridad de Claude AI",
-    "resumen": "La herramienta de inteligencia artificial Claude AI, desarrollada por Anthropic, maneja los datos de los usuarios de acuerdo con certificaciones de seguridad como la LGPD en Brasil, lo que garantiza un nivel de protección de datos personales. Es importante evaluar estas certificaciones y políticas de seguridad antes de utilizar la herramienta para entender cómo se tratan los datos y qué medidas de seguridad se implementan.",
-    "url_imagen": "https://images.unsplash.com/photo-1702368198474-cd5b48e4fdb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NTY3NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/es-seguro-claude-ai-privacidad-datos/",
-    "fuente": "WeLiveSecurity",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 866,
-    "fecha": "2026-06-26T02:54:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en HP LaserJet Pro",
-    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer (Buffer Overflow) y denegación de servicio (Denial of Service) en ciertos productos de impresión HP LaserJet Pro, con un puntaje CVSS de 8.8, que se puede explotar a través de la función de respaldo y restauración en el servicio web integrado. Los productos afectados incluyen los firmware hp:w1a76a_firmware, hp:w1a75a_firmware y hp:w1a77a_firmware.",
-    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-35176",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1202",
-        "name": "Exploitation for Denial of Service"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2023-35176"
-      ]
-    }
-  },
-  {
-    "id": 865,
-    "fecha": "2026-06-26T02:54:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "APT Gamaredon actualiza arsenal",
-    "resumen": "El grupo APT Gamaredon, patrocinado por el estado ruso y asociado con el FSB, ha mejorado significativamente sus capacidades para cargar malware y ocultar servidores, lo que requiere nuevas estrategias de defensa contra sus ataques sofisticados. Esto implica un aumento en la complejidad de los vectores de ataque y la necesidad de actualizar las medidas de seguridad para contrarrestar estas nuevas amenazas.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0ODV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/threat-intelligence/russia-apt-gamaredon-arsenal-defense",
-    "fuente": "Dark Reading",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1583.001",
-        "name": "Acquire Infrastructure: Virtual Private Server (VPS)"
-      },
-      {
-        "id": "T1562",
-        "name": "Impair Defenses"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion"
       }
     ],
     "iocs": {}
