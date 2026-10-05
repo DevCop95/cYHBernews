@@ -1,5 +1,37 @@
 [
   {
+    "id": 2945,
+    "fecha": "2026-10-05T03:44:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Grupo de ransomware Warlock compromete SharePoint de operador de agua, telecomunicaciones y entidad gubernamental",
+    "resumen": "Warlock, vinculado a China, explotó vulnerabilidades CVE-2023-xxxx en SharePoint para obtener acceso inicial y desplegar ransomware en una empresa de agua, un operador de telecomunicaciones, una administración regional y una universidad, provocando cifrado de datos críticos y demandas de rescate.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTExNzE4ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/warlock-ransomware-breach-sharepoint-in-water-telecom-operator-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:warlock ransomware breach sharepoint in water telecom operator attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2944,
+    "fecha": "2026-10-05T03:44:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-14378 permite bypass de autenticación y toma de control total en WordPress DevKit Pro 2.3.0",
+    "resumen": "La vulnerabilidad en el plugin DevKit Pro para WordPress permite a un atacante no autenticado establecer una cookie `original_user_id` con el ID de cualquier administrador, extraer el nonce expuesto y ejecutar el handler `revert_switch` para obtener una sesión de administrador completa. Impacta a todos los sitios WordPress que usen el plugin hasta la versión 2.3.0, facilitando toma de control total del sitio.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTExNzE4ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-14378",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-14378",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14378"
+      ]
+    }
+  },
+  {
     "id": 2943,
     "fecha": "2026-10-04T23:48:15Z",
     "categoria": "Ciberseguridad",
@@ -52785,53 +52817,6 @@
     "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MTcxOTV8&ixlib=rb-4.1.0&q=80&w=1080",
     "enlace_original": "https://thehackernews.com/2026/06/surviving-mythos-era-richard-bejtlich.html",
     "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 858,
-    "fecha": "2026-06-25T19:53:08Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque de phishing en Shop",
-    "resumen": "Actores maliciosos están abusando de la aplicación de seguimiento de pedidos Shop, de Shopify, para agregar recibos de compra falsos en los historiales de pedidos de los usuarios, con el fin de engañarlos y obtener datos sensibles o instalar software de acceso remoto a través de ataques de phishing de callback. Esto representa un vector de ataque significativo para la seguridad de los usuarios de la aplicación.",
-    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MTcxODl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/order-tracking-app-shop-abused-to-push-callback-phishing-attacks/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.002",
-        "name": "Spearphishing Link"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1219",
-        "name": "Remote Access Tools"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 857,
-    "fecha": "2026-06-25T19:53:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "IA transforma ciberseguridad",
-    "resumen": "La inteligencia artificial (IA) ha reducido significativamente los tiempos de explotación de vulnerabilidades, lo que obliga a las empresas a replantear su estrategia de gestión de vulnerabilidades, ya que la aplicación de parches ya no es suficiente. Esto implica que las empresas deben adoptar enfoques más proactivos y dinámicos para abordar las amenazas de ciberseguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1761223976379-04c361d3068a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MTcxODB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/la-ia-obliga-a-replantear-la-gestion-de-vulnerabilidades-en-las-empresas/",
-    "fuente": "CyberSecurity News",
     "ttps": [],
     "iocs": {}
   }
