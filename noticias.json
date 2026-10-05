@@ -1,5 +1,128 @@
 [
   {
+    "id": 2950,
+    "fecha": "2026-10-05T13:05:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-100103 en Perforce P4 Search permite escalado a privilegio máximo y ejecución de código arbitrario",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) en contenedores de P4 Search < 2026.4.2 restablece el token de autenticación a un valor predeterminado público, permitiendo a un atacante no autenticado con acceso a la red obtener privilegios de administrador y ejecutar código en el servidor P4.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDU1MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-100103",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-100103",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-100103"
+      ]
+    }
+  },
+  {
+    "id": 2949,
+    "fecha": "2026-10-05T13:05:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Explotados en la wild los zero-days CVE-2026-88771 y CVE-2026-88772 en NetScaler de Citrix",
+    "resumen": "Unit 42 confirma actividad de exploits contra dispositivos NetScaler, aprovechando vulnerabilidades de ejecución remota sin parche (CVE-2026-88771) y de bypass de autenticación (CVE-2026-88772). Los atacantes están usando estos vectores para comprometer infraestructuras de entrega de aplicaciones, lo que exige parcheo inmediato y monitoreo de indicadores de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDU1MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/",
+    "fuente": "Unit 42",
+    "dedup_key": "cve:cve-2026-88771,cve-2026-88772",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-88771",
+        "CVE-2026-88772"
+      ]
+    }
+  },
+  {
+    "id": 2948,
+    "fecha": "2026-10-05T13:05:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Los ataques impulsados por IA aceleran la evolución de las estrategias de defensa cibernética",
+    "resumen": "Los adversarios utilizan modelos de lenguaje y agentes autónomos para automatizar exploits, phishing y generación de malware, reduciendo los tiempos de respuesta de los SOC. La encuesta de Dark Reading muestra que el 78 % de los equipos de seguridad consideran crítico integrar detección basada en IA y análisis de comportamiento para contrarrestar estas amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDU1Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-attacks-security-strategies",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:need for speed ai driven attacks are changing security strategies",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2947,
+    "fecha": "2026-10-05T13:05:25Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Apple endurece controles de Full Disk Access en macOS para limitar acceso de agentes de IA a datos sensibles",
+    "resumen": "Apple implementará restricciones más estrictas al permiso Full Disk Access, obligando a los desarrolladores de agentes de IA a solicitar consentimiento explícito antes de leer archivos, correos y historial de navegación, mitigando vectores de exfiltración de datos. La medida responde a abusos detectados donde agentes de IA accedían a información del usuario sin autorización clara.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442135136-760c813028c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDU1MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:apple plans tighter macos full disk access controls over ai agent data access",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2946,
+    "fecha": "2026-10-05T13:05:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-61500 en Rejetto HFS permite secuestro de sesión y ejecución remota de código",
+    "resumen": "La falla afecta a versiones 3.0.0-3.2.0 de Rejetto HTTP File Server y permite a un atacante falsificar la cookie de administrador para ejecutar código arbitrario en el servidor, con explotación activa en la wild. Se recomienda actualizar a la versión 3.2.1 y restringir el acceso externo.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyMDU1MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo/?utm_source=rss&utm_medium=rss&utm_campaign=una-vulnerabilidad-critica-en-rejetto-hfs-permite-falsificar-sesiones-de-administrador-y-ejecutar-codigo",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-61500",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-61500"
+      ]
+    }
+  },
+  {
     "id": 2945,
     "fecha": "2026-10-05T03:44:42Z",
     "categoria": "Ciberseguridad",
@@ -52690,134 +52813,6 @@
         "name": "Virtualization/Sandbox Evasion"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 864,
-    "fecha": "2026-06-26T02:54:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware Gaslight para macOS",
-    "resumen": "Se ha descubierto un malware macOS basado en Rust, llamado Gaslight, que utiliza inyección de prompts para engañar a las herramientas de análisis de inteligencia artificial (IA) y evitar su análisis, lo que puede permitirle evadir la detección y persistir en el sistema. El malware puede ser particularmente peligroso debido a su capacidad para manipular los resultados del análisis de IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion"
-      },
-      {
-        "id": "T1497.001",
-        "name": "System Call Tampering no se menciona explícitamente, pero se puede inferir que el malware utiliza técnicas de evasión, por lo que se puede considerar la técnica general."
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion es la técnica más adecuada, ya que el malware utiliza inyección de prompts para engañar a las herramientas de análisis de IA."
-      },
-      {
-        "id": "T1562",
-        "name": "Impair Defenses"
-      },
-      {
-        "id": "T1211",
-        "name": "Exploitation for Defense Evasion no se menciona explícitamente, pero se puede inferir que el malware utiliza técnicas de evasión, por lo que se puede considerar la técnica general, pero en este caso, es más adecuada T1497."
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 863,
-    "fecha": "2026-06-26T02:54:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Gamaredon: Nuevas Tácticas",
-    "resumen": "El grupo Gamaredon ha actualizado su conjunto de herramientas, utilizando túneles, workers y dead drops para ocultar su infraestructura de comando y control (C&C) y exfiltrar datos robados, según un análisis de ESET Research, lo que indica una creciente dependencia del grupo en servicios online legítimos para evadir la detección. Esto sugiere un vector de ataque más sofisticado, aprovechando la complejidad de la infraestructura en línea para realizar ataques de phishing, malware y ransomware.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0NzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/gamaredon-2025-infraestructura-avanzada-tuneles-workers-dead-drops/",
-    "fuente": "WeLiveSecurity",
-    "ttps": [
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1090",
-        "name": "Proxy"
-      },
-      {
-        "id": "T1105",
-        "name": "Ingress Tool Transfer"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1567",
-        "name": "Exfiltration Over Web Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 862,
-    "fecha": "2026-06-26T02:54:24Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "IA incrementa riesgos de ciberseguridad",
-    "resumen": "La adopción masiva de la Inteligencia Artificial (IA) en las pequeñas y medianas empresas (pymes) multiplica los riesgos de ciberseguridad, ya que estas empresas pueden no tener los recursos necesarios para protegerse contra ataques cibernéticos avanzados. Esto puede exponer a las pymes a vulnerabilidades como el phishing, el ransomware y los ataques de día cero (zero-day).",
-    "url_imagen": "https://images.unsplash.com/photo-1675557009875-436f71457475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NDI0NjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/la-adopcion-masiva-de-la-ia-multiplica-los-riesgos-de-ciberseguridad-en-las-pymes/",
-    "fuente": "CyberSecurity News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 860,
-    "fecha": "2026-06-25T22:18:16Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware en WhatsApp",
-    "resumen": "Kaspersky ha detectado una campaña de malware que utiliza WhatsApp para distribuir archivos maliciosos VBScript (VBS) disfrazados de documentos empresariales y financieros, afectando a usuarios en múltiples países, incluyendo España, a través de un vector de ataque de ingeniería social. La campaña sigue activa y puede comprometer la seguridad de los dispositivos de los usuarios.",
-    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MjU4OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/detectan-malware-distribuido-por-whatsapp-en-espana/",
-    "fuente": "CyberSecurity News",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1193",
-        "name": "Spearphishing via Service"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1056",
-        "name": "Keylogging no se menciona, pero se puede inferir que el malware podría tener esta capacidad, sin embargo, no se menciona explícitamente, por lo que no se incluye."
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 859,
-    "fecha": "2026-06-25T19:53:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "INFO",
-    "titulo": "Desafíos en la investigación de incidentes",
-    "resumen": "Los equipos de operaciones de seguridad enfrentan dificultades para responder a preguntas básicas durante la investigación de incidentes, como qué sucedió y qué evidencia se tiene, debido a la sobrecarga de telemetría y la dependencia en alertas para el triaje inicial. La investigación efectiva requiere ir más allá de las alertas y considerar el contexto completo.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0MTcxOTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/surviving-mythos-era-richard-bejtlich.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
     "iocs": {}
   }
 ]
