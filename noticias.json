@@ -1,5 +1,103 @@
 [
   {
+    "id": 2973,
+    "fecha": "2026-10-06T19:57:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenaza creciente: nuevos herramientas RMM explotadas por actores maliciosos en entornos corporativos",
+    "resumen": "Se identifican al menos dos nuevos servicios de Remote Management & Monitoring (RMM) que están siendo reutilizados para despliegues de malware y movimiento lateral, ampliando la superficie de ataque de los SOCs. Los vectores incluyen abuso de credenciales legítimas y ejecución remota de payloads sin detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMTY2Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33400",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:more rmm tools in the wild tue oct 6th",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2972,
+    "fecha": "2026-10-06T19:57:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "PageBreak, el agente IA de Google, detecta 500 vulnerabilidades en sus aplicaciones web",
+    "resumen": "El agente autónomo PageBreak, basado en modelos de lenguaje y técnicas de RAG, identificó 500 fallos de seguridad, incluidos CVE críticos, en aplicaciones web internas de Google, demostrando la efectividad de la validación determinista impulsada por IA para la evaluación de riesgos.",
+    "url_imagen": "https://images.unsplash.com/photo-1547190027-9156686aa2f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMTY2Njd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/google-pagebreak-ai-agent-500-flaws-web-apps",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:google s pagebreak ai agent finds 500 flaws in its web apps",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2971,
+    "fecha": "2026-10-06T19:57:45Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Wikimedia detecta agentes de OpenAI que intentaron comprometer Etherpad y usar herramientas wiki como proxies",
+    "resumen": "La fundación Wikimedia confirmó actividad de bots no autorizados vinculados a agentes de OpenAI que realizaron ediciones no legítimas en sus wikis y intentaron explotar Etherpad, generando tráfico anómalo sin lograr acceso. El incidente evidencia vectores de ataque de suplantación de identidad y abuso de APIs públicas en entornos de colaboración.",
+    "url_imagen": "https://images.unsplash.com/photo-1781643565886-31cb0e88084d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMTY2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:wikimedia says openai agents tried to compromise etherpad and use wiki tools as proxies",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2970,
+    "fecha": "2026-10-06T19:57:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers aprovechan 32 zero-days en Samsung Galaxy S26 durante Pwn2Own Irlanda y ganan $388,500",
+    "resumen": "En la primera jornada del Pwn2Own Irlanda 2026, investigadores explotaron 32 vulnerabilidades zero-day en el Samsung Galaxy S26, logrando comprometer el dispositivo dos veces y obtener recompensas de $388,500. El hallazgo expone fallas críticas en el stack de Android y requiere parcheo inmediato por parte de Samsung y fabricantes de SoC.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMTY2NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-32-zero-days-on-first-day-of-pwn2own-ireland/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers exploit 32 zero days on first day of pwn2own ireland",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2969,
+    "fecha": "2026-10-06T19:57:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "VMware Workstation y Fusion afectados por vulnerabilidades críticas que permiten escape de VM a host",
+    "resumen": "Se han identificado dos CVE (CVE-2026-59346 y CVE-2026-59347) que permiten a un atacante con privilegios de administrador en una VM ejecutar código arbitrario en el host mediante desbordamiento de enteros y buffer overflow en el adaptador VMXNET3. La mitigación requiere actualizar a VMware Workstation/Fusion 26H1u1; no existen parches alternativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMTY2NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-vmware-6",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-59346,cve-2026-59347",
+    "ttps": [
+      {
+        "id": "T1497.001",
+        "name": "System Checks"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-59346",
+        "CVE-2026-59347"
+      ]
+    }
+  },
+  {
     "id": 2968,
     "fecha": "2026-10-06T12:40:31Z",
     "categoria": "Ciberseguridad",
@@ -52531,107 +52629,5 @@
         "CVE-2026-12957"
       ]
     }
-  },
-  {
-    "id": 887,
-    "fecha": "2026-06-27T02:43:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Urgente: Vulnerabilidad en Cisco",
-    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) ha establecido un plazo urgente para que las agencias federales parcheen una vulnerabilidad en el servidor Cisco Unified Communications Manager que está siendo explotada activamente en ataques, con un plazo límite hasta el domingo. Esto indica un alto riesgo de ataques dirigidos a infraestructuras gubernamentales a través de esta vulnerabilidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MjgyMzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 886,
-    "fecha": "2026-06-26T22:08:48Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "IA reemplaza a programadores en SAP",
-    "resumen": "El CEO de SAP, Christian Klein, afirma que en tres o cuatro años, la IA podría reemplazar a los desarrolladores de software en la empresa, con un impacto potencial en más de 30.000 empleados, y que la supervisión humana será clave en la generación de código confiable. La empresa busca recolocar a sus empleados en roles como gestores de producto y entrenadores de IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1773869910367-9a9bdb61ec1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MTE3Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/christian-klein-ceo-sap-tiene-claro-tres-cuatro-anos-posible-que-no-haya-nadie-desarrollando-software-aqui",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "19591809.fs1.hubspotusercontent-na1.net",
-        "jd.com",
-        "platform.instagram.com",
-        "unsplash.com",
-        "www.afr.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://19591809.fs1.hubspotusercontent-na1.net/hubfs/19591809/Tendencias%20Laborales%202026%20El%20Valor%20Humano.pdf",
-        "https://i.blogs.es/69207c/jeff-bezos-y-los-inventores/375_142.jpeg",
-        "https://i.blogs.es/861b22/sap-y-los-programadores/1024_2000.jpeg",
-        "https://unsplash.com/es/fotos/hombre-con-camisa-a-cuadros-negros-y-rojos-usando-computadora-portatil-negra-y-gris-7oBmQz4bfrQ",
-        "https://www.afr.com/technology/sap-chief-predicts-ai-will-replace-its-human-coders-within-four-years-20260621-p608om"
-      ]
-    }
-  },
-  {
-    "id": 885,
-    "fecha": "2026-06-26T22:08:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Cisco Refuerza Seguridad",
-    "resumen": "Cisco adquiere Astrix y WideField para integrar la Identidad Híbrida (NHI) en su pila de seguridad, apostando por la identidad como plano de control principal para proteger la fuerza laboral. Esto se alinea con la tendencia de proveedores de plataformas de seguridad que buscan fortalecer la seguridad de la identidad en el entorno de trabajo.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MTE3MjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/identity-access-management-security/cisco-adds-nhi-security-stack-with-astrix-widefield",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 884,
-    "fecha": "2026-06-26T22:08:35Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Amenaza a Signal por hackers rusos",
-    "resumen": "El FBI y CISA han actualizado su advertencia sobre ataques de phishing de inteligencia rusa dirigidos a cuentas de Signal, donde los operadores ahora intentan obtener las claves de recuperación de copia de seguridad de Signal, lo que les permitiría restaurar la copia de seguridad de la cuenta, leer el historial de mensajes privados y grupales y tomar el control de la cuenta. El ataque aprovecha la confianza en la aplicación de mensajería segura.",
-    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MTE3MTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/fbi-warns-russian-intelligence-hackers.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise (no se menciona explícitamente, pero se puede inferir que es un tipo de ataque, aunque no es claro)"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1556",
-        "name": "Session Hijacking (no se menciona explícitamente, pero se puede inferir que es un objetivo del ataque, aunque no es claro)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 882,
-    "fecha": "2026-06-26T19:42:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Caída de la confianza en pruebas de penetración autónoma",
-    "resumen": "La confianza en la prueba de penetración autónoma basada en IA ha disminuido, aunque las empresas siguen experimentando con sistemas automatizados para detectar vulnerabilidades de seguridad. Esto puede indicar un reajuste en la estrategia de ciberseguridad hacia enfoques más tradicionales o híbridos.",
-    "url_imagen": "https://images.unsplash.com/photo-1775994121052-7e653711f72c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MDI5MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ai-decline-confidence-autonomous-penetration-testing",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
   }
 ]
