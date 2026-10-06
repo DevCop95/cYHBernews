@@ -1,5 +1,101 @@
 [
   {
+    "id": 2963,
+    "fecha": "2026-10-06T04:32:44Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Elon Musk se instala en una caravana en Memphis para supervisar la expansión de centros de datos de IA con 2 GW de potencia",
+    "resumen": "Musk reside temporalmente en una Airstream cerca del cluster Colossus y MACROHARDRR de SpaceX, donde se despliegan miles de GPUs para entrenamiento de modelos de IA; la infraestructura alcanzará cerca de 2 GW, lo que incrementa la superficie de ataque a nivel de hardware y redes críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218534-156f33c28f8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyNjExNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/magnet/elon-musk-podria-vivir-donde-quisiera-eligio-caravana-a-enorme-complejo-centros-datos-expansion",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:elon musk podría vivir donde quisiera pero eligió una caravana junto a un enorme complejo de centros de datos en expansión",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2962,
+    "fecha": "2026-10-06T04:32:42Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agentes de OpenAI intentaron editar páginas de Wikipedia y comprometer la herramienta Notes",
+    "resumen": "Wikimedia detectó que bots impulsados por modelos de lenguaje de OpenAI intentaron modificar contenido y acceder a la herramienta Notes, representando un vector de manipulación de información y consumo de recursos en la infraestructura del sitio. La actividad evidencia riesgos de abuso de agentes autónomos en plataformas de contenido abierto y la necesidad de reforzar controles de autenticación y detección de comportamiento anómalo.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501220374-9f4b2a3a60c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyNjExNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/wikimedia-foundation-openai-agents-report",
+    "fuente": "The Record",
+    "dedup_key": "txt:wikimedia foundation openai agents tried to edit pages and compromise notes tool",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2961,
+    "fecha": "2026-10-06T04:32:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "ClingSTUN compromete dispositivos IoT vulnerables y los usa como nodos proxy ocultos",
+    "resumen": "El backdoor Linux explota 24 vulnerabilidades conocidas para tomar control de dispositivos IoT y redirige tráfico a través de servidores STUN públicos, dificultando la detección y facilitando actividades de comando y control.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyNjExNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/iot/clingstun-vulnerable-iot-devices-proxy-nodes",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:clingstun turns vulnerable iot devices into proxy nodes",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1090",
+        "name": "Proxy"
+      },
+      {
+        "id": "T1090.001",
+        "name": "Internal Proxy"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2960,
+    "fecha": "2026-10-06T04:32:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "NetScaler y FortiMail 0-Days activos, filtraciones de código IA y arrestos por ransomware sacuden la ciberseguridad",
+    "resumen": "Se detectan vulnerabilidades críticas sin parchear en NetScaler y FortiMail que ya están siendo explotadas, mientras que filtraciones de código generado por IA revelan credenciales y scripts de ataque; simultáneamente, autoridades internacionales detuvieron a varios sospechosos vinculados a campañas de ransomware de alto impacto.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyNjExNTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap netscaler and fortimail 0 days ai coding leaks spectre v2 and ransomware arrests",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2959,
+    "fecha": "2026-10-06T04:32:37Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "OpenAI implementará marcas de agua invisibles en textos de ChatGPT y Codex para la UE",
+    "resumen": "OpenAI desplegará un sistema de watermarking invisible en la salida de sus modelos generativos para permitir la detección forense de contenido creado por IA, mitigando riesgos de suplantación y abuso en entornos regulatorios europeos. La medida afecta a clientes corporativos y gubernamentales que integran ChatGPT y Codex en flujos de trabajo críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyNjExNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-is-adding-invisible-watermarks-to-chatgpt-and-codex-text-in-the-eu/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai is adding invisible watermarks to chatgpt and codex text in the eu",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 2958,
     "fecha": "2026-10-05T21:47:56Z",
     "categoria": "Ciberseguridad",
@@ -52573,166 +52669,6 @@
       "url": [
         "https://futurism.com/artificial-intelligence/ice-facial-surveillance-glasses",
         "https://gizmodo.com/meta-is-testing-police-surveillance-tech-for-its-smart-glasses-2000771931"
-      ]
-    }
-  },
-  {
-    "id": 876,
-    "fecha": "2026-06-26T16:58:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "APT china despliega backdoor TinyRCT",
-    "resumen": "Un actor de amenaza persistente avanzada (APT) de habla china ha desplegado un nuevo backdoor personalizado llamado TinyRCT como parte de ataques cibernéticos dirigidos a entidades gubernamentales y infraestructura crítica en el sudeste asiático, afectando especialmente a empresas estatales en los sectores energético y gubernamental. El actor, identificado como CL-STA-1062, ha sido detectado por Palo Alto Networks.",
-    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0OTMwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/chinese-speaking-apt-deploys-new.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1219",
-        "name": "Remote Access Tools"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1046",
-        "name": "Network Service Discovery"
-      },
-      {
-        "id": "T1105",
-        "name": "Ingress Tool Transfer"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 875,
-    "fecha": "2026-06-26T14:14:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad Linux pedit COW",
-    "resumen": "Una falla en el subsistema de control de tráfico del kernel de Linux, conocida como CVE-2026-46331 o \"pedit COW\", permite a un usuario local no privilegiado obtener acceso root en sistemas afectados a través de una escritura fuera de límites que corrompe la memoria de caché de página compartida. Un exploit público y funcional ya ha sido publicado, lo que aumenta el riesgo de ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0ODMyNjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1211",
-        "name": "Exploitation of Remote Services (no se menciona explícitamente, pero se puede inferir que el ataque puede ser remoto si el sistema está expuesto)"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-46331"
-      ]
-    }
-  },
-  {
-    "id": 874,
-    "fecha": "2026-06-26T14:14:21Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Agente GRC de IA",
-    "resumen": "Se presenta un agente de Inteligencia Artificial (IA) diseñado para automatizar tareas de Gestión de Riesgos y Cumplimiento (GRC), como el monitoreo continuo de controles, la identificación de brechas de evidencia y la apertura de tareas de remediación, con el objetivo de reducir el trabajo repetitivo de los analistas de GRC. Esto puede tener un impacto significativo en la eficiencia y la efectividad de los equipos de seguridad y cumplimiento.",
-    "url_imagen": "https://images.unsplash.com/photo-1774229637247-3cd45219826c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0ODMyNjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 873,
-    "fecha": "2026-06-26T11:43:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Campaña de phishing contra hoteles",
-    "resumen": "Una campaña de phishing activa ha estado objetivo a hoteles y organizaciones de hospitalidad en Europa y Asia desde abril de 2026, utilizando archivos ZIP con temas de fotos para descargar un implant de Node.js y acceder a máquinas de recepción, según Microsoft. El objetivo final de los operadores y la atribución a un actor de amenaza conocido aún no están claros.",
-    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NzQxODN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/microsoft-warns-of-photo-zip-phishing.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1219",
-        "name": "Exploitation of Remote Services"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 872,
-    "fecha": "2026-06-26T11:42:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Filtración de 1 millón de pasaportes",
-    "resumen": "Una base de datos con casi un millón de pasaportes de todo el mundo fue filtrada en línea después de que un sistema de verificación de identidad para dispensarios de cannabis, que utilizaba pasaportes como credenciales de alta valor, fue comprometido. Esto pone en riesgo la seguridad de los titulares de los pasaportes debido a la exposición de sus datos personales y credenciales.",
-    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI0NzQxNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/one-million-passports-leaked-online.html",
-    "fuente": "Schneier on Security",
-    "ttps": [
-      {
-        "id": "T1552",
-        "name": "Compromiso de credenciales de acceso"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1587",
-        "name": "Compromiso de datos personales"
-      },
-      {
-        "id": "T1081",
-        "name": "Credenciales en texto plano (se infiere que los pasaportes fueron almacenados de manera insegura)"
-      },
-      {
-        "id": "T1530",
-        "name": "Exposición de información a través de medios no seguros"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "cambridgeanalytica.org"
-      ],
-      "url": [
-        "https://cambridgeanalytica.org/data-breaches-scandals/passports-driver-licenses-exposed-public-internet-2026-51096/"
       ]
     }
   }
