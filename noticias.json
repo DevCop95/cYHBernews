@@ -1,5 +1,101 @@
 [
   {
+    "id": 2988,
+    "fecha": "2026-10-07T18:24:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ShinyHunters extorsiona unidad de negocio de Boeing antes de la detención del líder adolescente",
+    "resumen": "Un adolescente jordano, presunto cabecilla del grupo ShinyHunters, fue detenido y colabora con el FBI mientras la célula extorsionaba datos de una filial recientemente escindida de Boeing, evidenciando un ataque de robo y extorsión de información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzOTc0NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:shinyhunters extorted boeing spin off prior to arrests",
+    "ttps": [
+      {
+        "id": "T1039",
+        "name": "Data from Network Shared Drive"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2987,
+    "fecha": "2026-10-07T18:23:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ocho paquetes npm maliciosos distribuyen el RAT Overlord y un stealer tras 40,767 descargas",
+    "resumen": "Investigadores de ciberseguridad identificaron la campaña MALFEX, operada por un actor único que ha publicado 12 paquetes npm desde agosto 2023; ocho de ellos contienen el troyano de acceso remoto Overlord y ladrones de credenciales, propagándose vía la cadena de suministro de Node.js.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzOTc0Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:eight malicious npm packages downloaded 40 767 times deliver overlord rat and stealer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2986,
+    "fecha": "2026-10-07T18:23:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft Outlook bloqueará archivos .msix y .msixbundle como adjuntos a partir de noviembre",
+    "resumen": "A partir del próximo mes, Outlook Web y el cliente de Windows impedirán la entrega de paquetes MSIX y MSIXBundle, mitigando la explotación de vulnerabilidades de ejecución de código que podrían ocultarse en estos contenedores de aplicaciones. La medida refuerza la defensa perimetral contra ataques de phishing y malware basados en instaladores de Windows.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzOTc0Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-outlook-to-block-msix-attachments-used-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft outlook to block msix attachments starting november",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2985,
+    "fecha": "2026-10-07T18:23:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Atacantes explotan CVE-2026-21589 en Atlassian Data Center tras publicación de PoC",
+    "resumen": "La vulnerabilidad crítica CVE-2026-21589 permite lectura de archivos sin autenticación y, en despliegues con Crowd, escalada a privilegios de administrador; se detectaron intentos de explotación en cuestión de horas tras la divulgación de una prueba de concepto. El vector de ataque se basa en peticiones HTTP manipuladas que acceden a rutas internas, exponiendo datos sensibles y potencialmente comprometiendo la integridad del entorno.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzOTc0MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto/?utm_source=rss&utm_medium=rss&utm_campaign=atacantes-aprovechan-un-fallo-critico-en-atlassian-data-center-tras-publicarse-una-prueba-de-concepto",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "cve:cve-2026-21589",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-21589"
+      ]
+    }
+  },
+  {
+    "id": 2984,
+    "fecha": "2026-10-07T18:23:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Path Traversal CVE-2026-5703 en SenNet Datalogger Serie 200 permite acceso a archivos críticos del sistema",
+    "resumen": "INCIBE ha divulgado una vulnerabilidad de alta severidad (CVSS 7.1) que afecta al portal web del SenNet Datalogger Serie 200 de Satel Iberia; un atacante autenticado puede manipular la URL para leer o listar cualquier archivo accesible por el usuario del servidor. La explotación permite la exposición de datos confidenciales y se corrige en la versión firmware V7.2a.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzOTc0MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/path-traversal-en-sennet-datalogger-serie-200-de-satel-iberia",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-5703",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-5703"
+      ]
+    }
+  },
+  {
     "id": 2983,
     "fecha": "2026-10-07T09:43:17Z",
     "categoria": "Ciberseguridad",
@@ -52357,126 +52453,5 @@
         "https://www.theguardian.com/technology/2019/feb/14/elon-musk-backed-ai-writes-convincing-news-fiction"
       ]
     }
-  },
-  {
-    "id": 902,
-    "fecha": "2026-06-27T13:23:51Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "OpenAI Lanza GPT-5.6 Sol",
-    "resumen": "OpenAI ha lanzado una versión limitada de GPT-5.6, llamada Sol, con acceso restringido y mayores salvaguardas cibernéticas, como parte de su colaboración con el gobierno de EE. UU., lo que refleja un enfoque en la seguridad y la privacidad en el desarrollo de modelos de lenguaje avanzados. Las versiones Terra y Luna también se han lanzado, cada una con un equilibrio diferente entre eficiencia, potencia y velocidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1770368787729-6a42187b668c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NjY2MzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/openai-limits-gpt-56-rollout-as-sol.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 901,
-    "fecha": "2026-06-27T10:55:52Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Mythos 5 desbloqueado para empresas de EE. UU",
-    "resumen": "El Departamento de Comercio de EE. UU. ha autorizado la reactivación del modelo de IA Mythos 5, pero solo para un conjunto selecto de organizaciones estadounidenses consideradas \"de confianza\", lo que establece un precedente peligroso en el control de la tecnología de IA avanzada. Esto podría tener implicaciones significativas en la forma en que se distribuyen y controlan los modelos de IA en el futuro, especialmente en relación con la seguridad y la privacidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218661-0322e4bc4c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NTc3NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/servicios/mythos-vuelve-solo-para-selecto-club-empresas-estadounidenses-deja-algo-claro-quien-controla-ia-potente-mundo",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "openai.com",
-        "platform.instagram.com",
-        "www.semafor.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/3540da/porti/1024_2000.jpeg",
-        "https://i.blogs.es/5467c4/original/375_142.jpeg",
-        "https://openai.com/index/previewing-gpt-5-6-sol/",
-        "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies"
-      ]
-    }
-  },
-  {
-    "id": 900,
-    "fecha": "2026-06-27T10:55:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "FCC Refuerza Reglas para Cables Submarinos",
-    "resumen": "La Comisión Federal de Comunicaciones (FCC) ha votado para endurecer las reglas de protección de cables submarinos, incluyendo la licencia obligatoria para los propietarios y operadores de equipos de terminal de línea submarina (SLTE), con el objetivo de mejorar la seguridad y reducir el riesgo de ataques cibernéticos y físicos. Esto impacta directamente la infraestructura crítica de comunicaciones y puede tener implicaciones en la ciberseguridad de la información transmitida a través de estos cables.",
-    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NTc3NDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/fcc-votes-to-toughen-rules-undersea-cables",
-    "fuente": "The Record",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 899,
-    "fecha": "2026-06-27T10:55:38Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Demandas contra IA",
-    "resumen": "Más de 100 demandas activas en junio de 2026 contra empresas de IA como OpenAI, Google y Meta por el uso de contenido protegido sin permiso, lo que puede cambiar cómo se recopilan y utilizan los datos para entrenar modelos de IA. Las empresas se enfrentan a un futuro incierto, con posibles consecuencias como el pago de licencias retroactivas y la limpieza de bases de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1770169272345-9636d5ef2681?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NTc3Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/servicios/quien-esta-demandando-a-quien-ia-mapa-100-juicios-que-explica-todo",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "arxiv.org",
-        "chatgptiseatingtheworld.com",
-        "informationisbeautiful.net",
-        "papers.ssrn.com",
-        "platform.instagram.com",
-        "www.skadden.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://arxiv.org/html/2502.15858v2",
-        "https://i.blogs.es/b4f45f/magnific_quiero-que-hagas-que-la-i_e8ajnpwdql/375_142.jpeg",
-        "https://i.blogs.es/dfe402/maaaa/1024_2000.jpeg",
-        "https://i.blogs.es/dfe402/maaaa/1366_2000.jpeg",
-        "https://i.blogs.es/dfe402/maaaa/450_1000.jpeg",
-        "https://i.blogs.es/dfe402/maaaa/650_1200.jpeg",
-        "https://i.blogs.es/e14286/mapi/1024_2000.jpeg",
-        "https://informationisbeautiful.net/visualizations/the-rise-of-generative-ai-large-language-models-llms-like-chatgpt/#suing",
-        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5253011",
-        "https://www.skadden.com/insights/publications/2025/05/copyright-office-report"
-      ]
-    }
-  },
-  {
-    "id": 898,
-    "fecha": "2026-06-27T10:55:32Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulneración de LastPass",
-    "resumen": "Se ha producido una nueva vulneración de datos en LastPass, donde los usuarios han sido víctimas del robo de información, lo que supone un riesgo significativo para la privacidad y seguridad de los afectados. La noticia también menciona la colaboración de Microsoft en la desmantelación de una infraestructura importante de infostealer, un tipo de malware diseñado para robar información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NTc3MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/security-news-this-week-lastpass-users-had-their-data-stolen-again/",
-    "fuente": "Wired Security",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1056",
-        "name": "Keylogging"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
   }
 ]
