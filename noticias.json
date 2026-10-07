@@ -1,5 +1,98 @@
 [
   {
+    "id": 2978,
+    "fecha": "2026-10-07T00:21:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Creador de malware para cajeros automáticos comparece en corte de Nebraska tras captura",
+    "resumen": "El sospechoso, incluido en la lista “Top 10 Most Wanted Fugitives” del FBI, enfrenta cargos por desarrollo y distribución de ransomware dirigido a ATMs, con potencial de comprometer datos financieros de miles de usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMzI0OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/atm-malware-creator-appears-in-nebraska-court",
+    "fuente": "The Record",
+    "dedup_key": "txt:alleged atm malware creator appears in nebraska court after arrest",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2977,
+    "fecha": "2026-10-07T00:21:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Threat actors usan registros DNS TXT y prefetch de caché para ocultar payloads y evadir detección",
+    "resumen": "Los atacantes están aprovechando registros DNS TXT y la pre-carga de recursos del navegador para esconder código malicioso, dificultando la identificación temprana en la cadena de ataque. Esta técnica complica la correlación de indicadores en SIEM y aumenta el tiempo de respuesta del SOC.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMzI0OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/clickfix-attacks-evolve-better-hide-malicious-payloads",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:clickfix attacks evolve to better hide malicious payloads",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2976,
+    "fecha": "2026-10-07T00:21:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Plataforma de phishing operada por humanos usa falsos portales de IA para robar credenciales y códigos MFA",
+    "resumen": "Investigadores de ciberseguridad identificaron un esquema que simula anuncios de productos de IA (ChatGPT, Gemini, Claude, entre otros) para engañar a usuarios y capturar sus credenciales y tokens MFA mediante formularios falsos. El vector combina ingeniería social con infraestructura de hosting legítimo, ampliando el riesgo de compromisos de cuentas corporativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMzI0OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fake chatgpt gemini and claude ad portals capture credentials and mfa codes",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1110.003",
+        "name": "Password Spraying"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2975,
+    "fecha": "2026-10-07T00:21:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Dos vulnerabilidades en LibreOffice y OpenOffice permiten ejecución de código al abrir hojas de cálculo",
+    "resumen": "CVE-2026-XXXX y CVE-2026-YYYY explotan la deserialización de objetos en Calc y en el motor de fórmulas de OpenOffice, permitiendo ejecución arbitraria al abrir archivos .ods manipulados sin activar macros. LibreOffice ya lanzó parche; OpenOffice requiere desactivar Java y aplicar mitigaciones temporales.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMzI0OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros/?utm_source=rss&utm_medium=rss&utm_campaign=dos-fallos-en-libreoffice-y-openoffice-permiten-ejecutar-codigo-al-abrir-hojas-de-calculo-sin-avisos-de-macros",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:dos fallos en libreoffice y openoffice permiten ejecutar código al abrir hojas de cálculo sin avisos de macros",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2974,
+    "fecha": "2026-10-07T00:21:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de deserialización insegura en TrueLayer Magento 2 Plugin permite ejecución remota de código",
+    "resumen": "CVE-2026-103831 afecta a versiones 2.4.0-2.4.2 del plugin de pagos TrueLayer para Magento 2; la función unserialize() en Psr16CacheAdapter permite inyectar objetos PHP manipulados vía backend de caché (Redis/Memcached) y ejecutar código arbitrario si el atacante ya posee escritura en la infraestructura. Se corrige en la versión 2.4.3 sustituyendo la serialización por JSON y reforzando los controles de acceso a la caché.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEzMzI0ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/deserializacion-insegura-en-el-plugin-magento-2-de-truelayer",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-103831",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-103831"
+      ]
+    }
+  },
+  {
     "id": 2973,
     "fecha": "2026-10-06T19:57:48Z",
     "categoria": "Ciberseguridad",
@@ -52501,132 +52594,6 @@
         "https://i.blogs.es/f722a6/captura-de-pantalla-2026-06-26-a-las-13.34.45/1366_2000.png",
         "https://i.blogs.es/f722a6/captura-de-pantalla-2026-06-26-a-las-13.34.45/450_1000.png",
         "https://i.blogs.es/f722a6/captura-de-pantalla-2026-06-26-a-las-13.34.45/650_1200.png"
-      ]
-    }
-  },
-  {
-    "id": 892,
-    "fecha": "2026-06-27T06:26:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "IA no reemplazará puestos de ciberseguridad",
-    "resumen": "La implementación de la IA en la ciberseguridad no eliminará los puestos de entrada, sino que creará nuevas oportunidades para candidatos con fuertes habilidades de toma de decisiones humanas, complementando las capacidades de la IA. Esto implica que la automatización de tareas permitirá a los profesionales de la ciberseguridad enfocarse en aspectos más estratégicos y creativos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217835-821cc3aefbc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NDE2MDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ai-wont-wipe-out-entry-level-cybersecurity-jobs",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 891,
-    "fecha": "2026-06-27T02:44:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque de phishing con OpenAI",
-    "resumen": "Actores maliciosos están creando inquilinos de OpenAI que imitan a empresas legítimas, invitando a empleados a unirse a ellos, con el objetivo de engañar a los objetivos para que proporcionen información sensible de la empresa en chats y proyectos. Esto representa un vector de ataque de phishing sofisticado que aprovecha la confianza en la marca OpenAI.",
-    "url_imagen": "https://images.unsplash.com/photo-1739054729971-c27157b0c580?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MjgyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cybersecurity-firms-targeted-by-fraudulent-openai-organization-invites/",
-    "fuente": "Bleeping Computer",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1586",
-        "name": "Masquerading"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 890,
-    "fecha": "2026-06-27T02:44:10Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Alibaba acusada de clonar Claude",
-    "resumen": "Anthropic acusa a Alibaba de haber orquestado el mayor ataque de destilación registrado, creando 25.000 cuentas falsas para extraer capacidades de su modelo de IA Claude sin autorización, lo que supone un robo de tecnología a gran escala. El ataque se produjo a través de técnicas de ofuscación y redes de proxies, y se estima que generó más de 28,8 millones de interacciones con Claude.",
-    "url_imagen": "https://images.unsplash.com/photo-1696258686263-9f42a5e34371?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MjgyNTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-acusa-a-alibaba-clonar-claude-25-000-cuentas-falsas-mayor-robo-ia-historia",
-    "fuente": "Xataka IA",
-    "ttps": [
-      {
-        "id": "T1027",
-        "name": "Obfuscated Files or Information"
-      },
-      {
-        "id": "T1071.001",
-        "name": "Web Protocols"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1588.001",
-        "name": "Obtain Capabilities"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "arstechnica.com",
-        "platform.instagram.com",
-        "www.bbc.com",
-        "www.bloomberg.com",
-        "www.ft.com",
-        "www.scmp.com",
-        "www.wsj.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://arstechnica.com/tech-policy/2026/06/anthropic-claims-alibaba-defied-trump-to-attack-claude-and-steal-capabilities/",
-        "https://i.blogs.es/5467c4/original/1024_2000.jpeg",
-        "https://i.blogs.es/5b223c/adobe/375_142.jpeg",
-        "https://i.blogs.es/b4f45f/magnific_quiero-que-hagas-que-la-i_e8ajnpwdql/375_142.jpeg",
-        "https://i.blogs.es/dd7f37/openai/375_142.jpeg",
-        "https://www.bbc.com/news/articles/ckg0258vpvqo",
-        "https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models",
-        "https://www.ft.com/content/8496c940-fdc7-4554-bc8d-7bcc93e7d75c?syn-25a6b1a6=1",
-        "https://www.scmp.com/tech/tech-trends/article/3358341/chinas-cybersecurity-industry-needs-its-own-mythos-model-360-founder-warns",
-        "https://www.wsj.com/tech/ai/anthropic-claims-alibaba-ran-brazen-campaign-to-access-its-claude-ai-model-69d7a392"
-      ]
-    }
-  },
-  {
-    "id": 889,
-    "fecha": "2026-06-27T02:44:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Seguridad para software de código abierto en fin de vida",
-    "resumen": "La Iniciativa de Sostenibilidad de Código Abierto busca ayudar a las empresas a gestionar y asegurar proyectos de código abierto envejecidos, manteniendo al mismo tiempo el cumplimiento normativo, lo que puede mitigar vulnerabilidades de seguridad como exploits y ataques de día cero (zero-day) en software con soporte discontinuado. Esto es particularmente relevante en el contexto de la ciberseguridad, donde el uso de software obsoleto puede exponer a las organizaciones a riesgos significativos.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MjgyNDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 888,
-    "fecha": "2026-06-27T02:43:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Amazon Q Developer",
-    "resumen": "Se ha descubierto una vulnerabilidad de alta severidad (CVE-2026-12957, CVSS 8.5) en Amazon Q Developer que permite a un repositorio malicioso ejecutar comandos y robar credenciales de cloud de un desarrollador a través de la configuración de Model Context Protocol (MCP) servers. La vulnerabilidad ha sido parcheada por Amazon.",
-    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1MjgyMzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html",
-    "fuente": "The Hacker News",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-12957"
       ]
     }
   }
