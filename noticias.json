@@ -1,5 +1,117 @@
 [
   {
+    "id": 2993,
+    "fecha": "2026-10-08T00:42:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Australia evalúa reporte obligatorio de incidentes de IA tras ataque a sistemas Medicare",
+    "resumen": "Tras un ataque de agente autónomo que comprometió la infraestructura de Medicare, el gobierno australiano estudia normativa que obligue a las empresas de IA de frontera a reportar incidentes de seguridad, alineándose con marcos de compliance y mitigación de riesgos.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0MjAxNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:australian gov t weighs mandatory ai incident reporting",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2992,
+    "fecha": "2026-10-08T00:42:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Atacantes comprometen ccTLD .gh, .sl y .as para emitir certificados falsos de dominios Google",
+    "resumen": "Los ciberdelincuentes vulneraron los registros de los dominios de Ghana, Sierra Leone y Samoa Americana, obteniendo certificados TLS no autorizados para sitios de Google, lo que permite ataques de phishing y suplantación de identidad bajo HTTPS sin comprometer la infraestructura de Google.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0MjAxMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers hijack gh sl and as registries to obtain certificates for google domains",
+    "ttps": [
+      {
+        "id": "T1584.006",
+        "name": "Web Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2991,
+    "fecha": "2026-10-08T00:42:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CEO de empresa de recuperación de ransomware acusado de pagar rescates ocultos a atacantes",
+    "resumen": "El propietario de MonsterCloud enfrenta cargos por supuestamente defraudar a víctimas de ransomware al financiar secretamente a los atacantes para obtener decryptores, mientras afirmaba usar tecnología propia para la recuperación de datos. El caso evidencia riesgos de conflicto de intereses y posibles violaciones de compliance en servicios de respuesta a incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0MjAxMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ransomware recovery ceo charged over secret ransom payments",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 2990,
+    "fecha": "2026-10-08T00:42:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SonicWall SMA 1000 expone SSRF crítico, RCE y XSS en versiones 12.4.3-03526 y 12.5.0-02952",
+    "resumen": "Cuatro CVE, incluido uno crítico de SSRF sin autenticación, permiten a un atacante remoto ejecutar comandos, escribir fuera de directorios autorizados y lanzar XSS contra el portal WorkPlace; la mitigación requiere actualizar a 12.4.3-03670 o 12.5.0-03082.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0MjAxMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-sma-1000-de-sonicwall",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-102255,cve-2026-102256,cve-2026-102257",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-102255",
+        "CVE-2026-102256",
+        "CVE-2026-102257"
+      ]
+    }
+  },
+  {
+    "id": 2989,
+    "fecha": "2026-10-08T00:42:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware en España sube 19% en 2026 y la IA acelera el robo masivo de datos",
+    "resumen": "El informe Zscaler ThreatLabz 2026 muestra un incremento del 19 % de incidentes de ransomware en empresas españolas, impulsado por herramientas de IA que automatizan la extracción y exfiltración de datos. Los atacantes emplean modelos de lenguaje para generar phishing y scripts de explotación, reduciendo el tiempo de detección y ampliando el alcance del daño.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0MjAxMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/las-victimas-de-ransomware-crecen-un-19-en-espana-mientras-la-ia-acelera-el-robo-masivo-de-datos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:las víctimas de ransomware crecen un 19 en españa mientras la ia acelera el robo masivo de datos",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2988,
     "fecha": "2026-10-07T18:24:00Z",
     "categoria": "Ciberseguridad",
@@ -52333,125 +52445,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 907,
-    "fecha": "2026-06-27T15:02:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brechas de terceros afectan sector educativo",
-    "resumen": "El aumento de las amenazas de actores de terceros está obligando a las instituciones educativas a defenderse contra ataques de ransomware y otros tipos de ciberataques que ponen en riesgo la seguridad de los datos de los estudiantes. Estos ataques suelen aprovechar vulnerabilidades en la cadena de suministro, lo que subraya la importancia de evaluar y mitigar el riesgo de los proveedores.",
-    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzI1MzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/third-party-breaches-teaches-education-lesson-vendor-risk",
-    "fuente": "Dark Reading",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 906,
-    "fecha": "2026-06-27T15:02:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Repositorio GitHub malicioso engaña a agentes AI",
-    "resumen": "Un repositorio de GitHub aparentemente benigno puede ejecutar una carga maliciosa que permanece invisible para los escáneres de seguridad, agentes AI y revisores humanos, aprovechando la confianza en las herramientas de codificación automatizadas. Esto podría permitir ataques de malware o ransomware a través de vectores de ataque como phishing o exploits de vulnerabilidades.",
-    "url_imagen": "https://images.unsplash.com/photo-1761223976379-04c361d3068a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzI1MjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/clean-github-repo-tricks-ai-coding-agents-into-running-malware/",
-    "fuente": "Bleeping Computer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 905,
-    "fecha": "2026-06-27T13:24:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Impresoras HP",
-    "resumen": "Se ha identificado una vulnerabilidad de alto riesgo (CVE-2022-24291, CVSS 7.5) en algunos dispositivos de impresión de HP, que podría permitir la divulgación de información, denegación de servicio o ejecución de código remota en los modelos LaserJet Pro M453-M454. Los productos afectados incluyen varios firmware de estos modelos.",
-    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NjY2NTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-24291",
-    "fuente": "NVD (NIST)",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2022-24291"
-      ]
-    }
-  },
-  {
-    "id": 904,
-    "fecha": "2026-06-27T13:24:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Spring Data Commons",
-    "resumen": "La vulnerabilidad CVE-2018-1259 (CVSS 7.5) en Spring Data Commons y XMLBeam permite a un atacante no autenticado acceder a archivos arbitrarios en el sistema a través de la expansión de referencias externas XML mal restringidas. Esto puede ser explotado mediante parámetros de petición especialmente manipulados en la carga útil de petición basada en proyección de Spring Data.",
-    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NjY2NDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-1259",
-    "fuente": "NVD (NIST)",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2018-1259"
-      ]
-    }
-  },
-  {
-    "id": 903,
-    "fecha": "2026-06-27T13:23:59Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Yann LeCun cuestiona narrativa del miedo en IA",
-    "resumen": "Yann LeCun, considerado el padrino de la IA, critica la narrativa del miedo que rodea a los modelos de lenguaje, afirmando que si se bloquea una IA por considerarla peligrosa, se está en el oscurantismo medieval, y que la verdadera preocupación debería ser el uso responsable de estas herramientas, más que su potencial peligro. Los modelos de IA como Claude Mythos y Fable 5 han generado debates sobre su potencial para ser utilizados con fines maliciosos, pero LeCun argumenta que la narrativa del miedo es más una cuestión de marketing que de realidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1764336312138-14a5368a6cd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NjY2Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/empresas-y-economia/yann-lecun-padrino-ia-bloqueas-ia-porque-crees-que-peligrosa-estas-oscurantismo-medieval",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "garymarcus.substack.com",
-        "platform.instagram.com",
-        "www.theguardian.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://garymarcus.substack.com/p/three-reasons-to-think-that-the-claude",
-        "https://i.blogs.es/026edd/millonarios-de-la-ia/375_142.jpeg",
-        "https://i.blogs.es/109d2b/anthropic-claude-fable-5/375_142.jpeg",
-        "https://i.blogs.es/73409d/magnific__quiero-que-hagas-una-imagen-de-una-mano-pulsando-u__59335/375_142.jpeg",
-        "https://i.blogs.es/7d1447/chatgpt-image-25-jun-2026-12_06_33/1024_2000.png",
-        "https://i.blogs.es/811445/lecun2/375_142.jpeg",
-        "https://i.blogs.es/aad851/chatgpt-image-25-jun-2026-12_01_59/1024_2000.png",
-        "https://i.blogs.es/aad851/chatgpt-image-25-jun-2026-12_01_59/1366_2000.png",
-        "https://i.blogs.es/aad851/chatgpt-image-25-jun-2026-12_01_59/450_1000.png",
-        "https://i.blogs.es/aad851/chatgpt-image-25-jun-2026-12_01_59/650_1200.png",
-        "https://i.blogs.es/b8b701/mesa-g7-lideres-tecnologicos/1024_391.jpeg",
-        "https://i.blogs.es/b8b701/mesa-g7-lideres-tecnologicos/1366_521.jpeg",
-        "https://i.blogs.es/b8b701/mesa-g7-lideres-tecnologicos/650_247.jpeg",
-        "https://i.blogs.es/eb8589/dinero/1024_391.jpeg",
-        "https://i.blogs.es/eb8589/dinero/1366_521.jpeg",
-        "https://i.blogs.es/eb8589/dinero/650_247.jpeg",
-        "https://www.theguardian.com/technology/2019/feb/14/elon-musk-backed-ai-writes-convincing-news-fiction"
-      ]
-    }
   }
 ]
