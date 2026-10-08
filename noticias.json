@@ -1,5 +1,137 @@
 [
   {
+    "id": 2998,
+    "fecha": "2026-10-08T09:54:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hitachi Energy Asset Suite vulnerabilidades sin autenticación permiten RCE y DoS",
+    "resumen": "Hitachi Energy informa que versiones ≤9.9.0 de Asset Suite presentan servlets sin autenticación que permiten carga de archivos de configuración y ejecución de comandos, generando divulgación de información, alteración de integridad y denegación de servicio. Se recomienda actualizar a 9.9.1 o deshabilitar los servlets afectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0NTMyNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-03",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-11796,cve-2026-7395",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1565",
+        "name": "Data Manipulation"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.hitachienergy.com"
+      ],
+      "url": [
+        "https://www.hitachienergy.com/contact-us/"
+      ],
+      "cve": [
+        "CVE-2026-11796",
+        "CVE-2026-7395"
+      ]
+    }
+  },
+  {
+    "id": 2997,
+    "fecha": "2026-10-08T09:53:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "EE.UU. ofrece recompensa de 10 millones de dólares por el presunto hacker chino de Hafnium",
+    "resumen": "Autoridades estadounidenses ponen 10 M USD por información que conduzca a la captura de Zhang Yu, figura clave en la campaña Hafnium que comprometió miles de sistemas y exfiltró documentos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0NTMyMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/accused-hafnium-hacker-zhang-yu-10million-reward",
+    "fuente": "The Record",
+    "dedup_key": "txt:us posts 10 million reward for accused chinese hafnium hacker",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2996,
+    "fecha": "2026-10-08T09:53:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "16 extensiones maliciosas de Firefox suplantan carteras cripto para robar frases de recuperación",
+    "resumen": "Investigadores de ciberseguridad identificaron 16 extensiones de Mozilla Firefox que interceptan frases de recuperación y claves privadas durante flujos de importación de wallets, enviando los datos a servidores controlados por los atacantes. El vector de compromiso es la instalación engañosa de extensiones que aparentan ser portales de wallets, utilidades de escritorio y herramientas de navegador.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0NTMyMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:16 malicious firefox extensions pose as rabby and okx wallets to steal recovery phrases",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 2995,
+    "fecha": "2026-10-08T09:53:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Omisión de autenticación permite registrar cuentas y capturar OTP en Frappe Cloud y ERPNext",
+    "resumen": "CVE-2026-4894 es una vulnerabilidad de validación insuficiente en el endpoint /api/method/press.api.account/signup que permite a un atacante remoto inyectar múltiples correos y recibir el OTP sin validar cada dirección, facilitando suplantación y enumeración de usuarios. La falla, de severidad media (CVSS 6.9), ya ha sido parcheada por Frappe Technologies.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0NTMyMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-en-multiples-productos-de-frappe-technologies",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-4894",
+    "ttps": [
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1110.004",
+        "name": "Credential Stuffing"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-4894"
+      ]
+    }
+  },
+  {
+    "id": 2994,
+    "fecha": "2026-10-08T09:53:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Detectan diez dominios de phishing de AliExpress semanas antes de su activación mediante análisis de tráfico DNS",
+    "resumen": "EfficientIP Research Labs identificó y bloqueó diez dominios desechables que simulaban a AliExpress, usando patrones de consultas DNS para anticipar su registro y evitar la redirección a sitios fraudulentos. La detección temprana reduce la superficie de ataque de campañas de phishing dirigidas a consumidores.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0NTMyMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/detectan-dominios-de-phishing-de-aliexpress-antes-de-su-activacion/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:detectan dominios de phishing de aliexpress antes de su activación",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1583.001",
+        "name": "Domains"
+      },
+      {
+        "id": "T1071.004",
+        "name": "DNS"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2993,
     "fecha": "2026-10-08T00:42:20Z",
     "categoria": "Ciberseguridad",
@@ -52287,163 +52419,6 @@
     "enlace_original": "https://t.me/Cyber_Security_Channel/114026",
     "fuente": "TG: Cyber Security Channel",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 913,
-    "fecha": "2026-06-27T15:43:53Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Inyección SQL ciega en WordPress",
-    "resumen": "Se ha descubierto una vulnerabilidad de inyección SQL ciega no autenticada en la versión 28.1.4 de WordPress Contest Gallery, lo que permite a atacantes extraer información sensible de la base de datos sin necesidad de credenciales de acceso. El vector de ataque se basa en la explotación de una vulnerabilidad de inyección SQL ciega, que puede ser utilizada para obtener información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52609",
-    "fuente": "Exploit-DB",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1055",
-        "name": "Unauthenticated SQL Injection"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise no se aplica en este caso, pero T1055 si se aplica, por lo que se mantiene y se elimina T1589."
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 912,
-    "fecha": "2026-06-27T15:43:47Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Explotación de 0-day en Firefox y Android",
-    "resumen": "Se ha descubierto una cadena de explotación completa desde el navegador hasta el kernel en dispositivos Android 17, aprovechando dos vulnerabilidades zero-day en Firefox antes de la versión 151.0.2 (CVE-2026-10702), lo que permite el rootear de dispositivos Android. El vector de ataque comienza con un exploit en el navegador Firefox y finaliza con la ejecución de código arbitrario en el kernel del sistema operativo.",
-    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMjd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/androidMalware/2931",
-    "fuente": "TG: Android Malware",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1211",
-        "name": "Exploitation for Privilege Escalation (Explotación para Escalada de Privilegios)"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-10702"
-      ]
-    }
-  },
-  {
-    "id": 911,
-    "fecha": "2026-06-27T15:43:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Brecha de seguridad en Tata Electronics",
-    "resumen": "Tata Electronics, subsidiaria del Grupo Tata, ha confirmado una brecha de seguridad que ha expuesto datos confidenciales, con el grupo World Leaks reclamando responsabilidad y alegando haber exfiltrado más de 200,000 archivos, totalizando aproximadamente 630 gigabytes de información sensible. El incidente pone de relieve la importancia de la ciberseguridad en la protección de la información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114027",
-    "fuente": "TG: Cyber Security Channel",
-    "ttps": [
-      {
-        "id": "T1021",
-        "name": "Remote Services"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1552.001",
-        "name": "Compromiso de credenciales (No se menciona explícitamente, pero se infiere que los atacantes tuvieron acceso no autorizado)"
-      },
-      {
-        "id": "T1586",
-        "name": "Compromiso de datos (No se menciona explícitamente, pero se infiere que los atacantes exfiltraron datos)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 910,
-    "fecha": "2026-06-27T15:43:35Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-53070 en Linux",
-    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux (CVE-2026-53070) relacionada con el protocolo SCTP, que podría provocar la caída de paquetes debido a un problema con la detección del nivel de recursividad en la función de transmisión de túneles UDP. La solución implica deshabilitar las interrupciones de software (BH) antes de llamar a `udp_tunnel_xmit_skb()` y `udp_tunnel6_xmit_skb()`.",
-    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/177971",
-    "fuente": "TG: CVE Notify",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-53070"
-      ]
-    }
-  },
-  {
-    "id": 908,
-    "fecha": "2026-06-27T15:43:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en OpenEMR 7.0.2",
-    "resumen": "Se ha identificado una vulnerabilidad de lectura de archivos arbitrarios en OpenEMR 7.0.2, lo que permite a un atacante acceder a archivos sensibles del sistema, potencialmente exponiendo información confidencial a través de un vector de ataque de inyección de parámetros. Esta vulnerabilidad puede ser explotada para obtener acceso no autorizado a datos sensibles.",
-    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52610",
-    "fuente": "Exploit-DB",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      }
-    ],
     "iocs": {}
   }
 ]
