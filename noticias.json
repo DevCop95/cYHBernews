@@ -1,5 +1,136 @@
 [
   {
+    "id": 3003,
+    "fecha": "2026-10-08T18:21:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "UAC-0099 actualiza el dropper “MatchBoil” con técnicas de evasión avanzadas",
+    "resumen": "El actor de ciberespionaje ruso UAC-0099 ha lanzado una nueva versión del malware “MatchBoil”, incorporando ofuscación de código y anti-VM para dificultar su detección en entornos de defensa ucranianos. La campaña sigue enfocada en organizaciones gubernamentales y de infraestructura crítica, elevando el riesgo de exfiltración de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0ODM2NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:russian spies give matchboil malware a stealthy facelift",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1497.001",
+        "name": "System Checks"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3002,
+    "fecha": "2026-10-08T18:21:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Japón registra aumento abrupto de filtraciones de datos web por abuso de APIs móviles y vulnerabilidades en Metabase",
+    "resumen": "El JPCERT/CC alerta sobre una ola de fugas de información personal en organizaciones japonesas, donde los atacantes explotan APIs de aplicaciones móviles y vulnerabilidades conocidas en Metabase para extraer datos sensibles. El vector combina técnicas de enumeración de endpoints y explotación de CVE sin divulgación pública, incrementando el riesgo de exposición masiva.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0ODM2NzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:japan sees sharp rise in web data leaks amid mobile api abuse and metabase attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3001,
+    "fecha": "2026-10-08T18:21:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FakeGit reactiva campaña y distribuye SmartLoader en más de 17 000 repositorios de GitHub",
+    "resumen": "La campaña FakeGit, reactivada este mes, ha creado 17 610 repositorios falsos en GitHub que entregan el loader SmartLoader, usado para instalar el infostealer StealC y robar credenciales. El vector de ataque se basa en la confianza del ecosistema de código abierto, explotando la falta de verificación de origen en descargas de scripts.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0ODM2Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fakegit malware campaign returns with 17 610 malicious github repos",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3000,
+    "fecha": "2026-10-08T18:21:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cisco publica 7 vulnerabilidades críticas y altas en Meraki, exige actualización inmediata",
+    "resumen": "Se identificaron 7 CVE, incluida una crítica (CVE-2026-76464) que permite corrupción de memoria y ejecución de código arbitrario en gateways, switches y AP Meraki; la explotación puede comprometer confidencialidad, integridad y disponibilidad del entorno. Se recomienda aplicar los parches de versión especificados sin demora, no existen mitigaciones temporales.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0ODM2NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-cisco-16",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-76464",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "17.18.4.1",
+        "31.1.8.1"
+      ],
+      "cve": [
+        "CVE-2026-76464"
+      ]
+    }
+  },
+  {
+    "id": 2999,
+    "fecha": "2026-10-08T18:21:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amatera se consolida como el infostealer líder en detecciones de América Latina tras campañas de ingeniería social",
+    "resumen": "Amatera extrae credenciales, cookies y activos digitales mediante módulos de keylogging y dumping de navegadores, propagándose a través de campañas de phishing tipo ClickFix que usan enlaces maliciosos y documentos ofimáticos. Su presencia creciente en la región eleva el riesgo de compromisos de cuentas corporativas y de usuarios finales, demandando detección basada en comportamiento y bloqueo de IOCs en EDR y SIEM.",
+    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE0ODM2NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/malware/amatera-infostealer-en-aumento-america-latina/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:amatera qué es y cómo funciona el infostealer que lidera las detecciones en américa latina",
+    "ttps": [
+      {
+        "id": "T1056.001",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 2998,
     "fecha": "2026-10-08T09:54:00Z",
     "categoria": "Ciberseguridad",
@@ -52276,149 +52407,5 @@
         "CVE-2026-6450"
       ]
     }
-  },
-  {
-    "id": 918,
-    "fecha": "2026-06-27T19:14:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware Android alcanza 100K descargas",
-    "resumen": "Un malware de Android disfrazado como lector de documentos ha alcanzado 100.000 descargas en Google Play, aprovechando la confianza de los usuarios para infectar dispositivos y potencialmente realizar actividades maliciosas como phishing o robo de datos. El malware, conocido como Anatsa banker, utiliza técnicas de engaño para evadir la detección y comprometer la seguridad de los dispositivos.",
-    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/androidMalware/2930",
-    "fuente": "TG: Android Malware",
-    "ttps": [
-      {
-        "id": "T1192",
-        "name": "Spearphishing via Aplicación"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1625",
-        "name": "Cryptographic Techniques"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 917,
-    "fecha": "2026-06-27T19:14:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en YouTrack",
-    "resumen": "Se ha identificado una vulnerabilidad de tipo \"prototype pollution\" en la versión de YouTrack anterior a 2026.2.16593, específicamente en el componente \"websandbox bridge\", lo que podría permitir ataques de inyección de código malicioso. La vulnerabilidad CVE-2026-57926 afecta a usuarios que no han actualizado su software a la versión más reciente.",
-    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/177978",
-    "fuente": "TG: CVE Notify",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-57926"
-      ]
-    }
-  },
-  {
-    "id": 916,
-    "fecha": "2026-06-27T19:14:08Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "ChatGPT Humano",
-    "resumen": "Un programador ha creado un chat llamado \"Your AI Slop Bores Me\" donde 16.000 personas fingen ser ChatGPT para no tener que usar la inteligencia artificial real, destacando la fatiga de la IA y la búsqueda de contenido auténtico y creado por humanos en un internet cada vez más dominado por material generado por máquinas. El juego convierte los defectos sistémicos de los modelos de lenguaje en mecánicas jugables, permitiendo a los usuarios interactuar de manera humana en un entorno de chat.",
-    "url_imagen": "https://images.unsplash.com/photo-1752451399417-eb6e072269bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/aplicaciones/harto-ia-programador-creo-chat-donde-16-000-personas-fingen-ser-chatgpt-para-no-tener-que-usarlo",
-    "fuente": "Xataka IA",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "fairplayforkids.org",
-        "platform.instagram.com",
-        "www.fastcompany.com",
-        "www.linkedin.com",
-        "www.merriam-webster.com",
-        "www.researchgate.net",
-        "www.storyboard18.com",
-        "www.xataka.com",
-        "www.youraislopbores.me",
-        "youraislopbores.me"
-      ],
-      "url": [
-        "https://fairplayforkids.org/wp-content/uploads/2026/03/YouTube-Letter-AI-Slop.pdf",
-        "https://i.blogs.es/0f842f/captura-de-pantalla-2026-06-25-a-las-11.14.28/1024_2000.jpeg",
-        "https://i.blogs.es/0f842f/captura-de-pantalla-2026-06-25-a-las-11.14.28/1366_2000.jpeg",
-        "https://i.blogs.es/0f842f/captura-de-pantalla-2026-06-25-a-las-11.14.28/450_1000.jpeg",
-        "https://i.blogs.es/0f842f/captura-de-pantalla-2026-06-25-a-las-11.14.28/650_1200.jpeg",
-        "https://i.blogs.es/c1c907/gemini_generated_image_6w6u2o6w6u2o6w6u/1024_2000.jpeg",
-        "https://i.blogs.es/e27bd7/captura-de-pantalla-2026-06-25-a-las-11.11.50/1024_2000.jpeg",
-        "https://i.blogs.es/e27bd7/captura-de-pantalla-2026-06-25-a-las-11.11.50/1366_2000.jpeg",
-        "https://i.blogs.es/e27bd7/captura-de-pantalla-2026-06-25-a-las-11.11.50/450_1000.jpeg",
-        "https://i.blogs.es/e27bd7/captura-de-pantalla-2026-06-25-a-las-11.11.50/650_1200.jpeg",
-        "https://i.blogs.es/f33982/slop-evader/375_142.jpeg",
-        "https://www.fastcompany.com/91505685/your-ai-slop-bores-me-website-game-makes-humans-larp-chatgpt",
-        "https://www.merriam-webster.com/wordplay/word-of-the-year",
-        "https://www.researchgate.net/publication/401618720_AI_Slop_in_Academic_Publishing_History_Characteristics_Manifestations_Causes_and_Mitigation_Strategies",
-        "https://www.storyboard18.com/digital/ai-fatigue-rises-in-2026-as-consumer-excitement-drops-to-19-report-95162.htm",
-        "https://www.youraislopbores.me/",
-        "https://youraislopbores.me/#google_vignette",
-        "https://youraislopboresme.ai/how-to-play-your-ai-slop-bores-me"
-      ]
-    }
-  },
-  {
-    "id": 915,
-    "fecha": "2026-06-27T19:14:01Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Rusia utiliza SMS falsos para robo de credenciales",
-    "resumen": "El Servicio de Seguridad de Ucrania (SSU) y el FBI descubrieron una campaña de ataques cibernéticos a largo plazo orquestada por servicios de inteligencia rusos, que utilizó SMS falsos de apoyo para robar credenciales de mensajería de funcionarios gubernamentales, personal militar, políticos y activistas en Ucrania, Europa y EE. UU., lo que representa un vector de ataque de phishing sofisticado. Los ataques cibernéticos sistemáticos tenían como objetivo robar información sensible.",
-    "url_imagen": "https://images.unsplash.com/photo-1781209443149-dd12a52cc358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc2NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html",
-    "fuente": "The Hacker News",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.002",
-        "name": "Spearphishing Link"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 914,
-    "fecha": "2026-06-27T15:43:59Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Brecha en utility californiana",
-    "resumen": "Una empresa de servicios de agua en California está investigando una supuesta brecha de seguridad atribuida a un grupo de hackers vinculado a Irán, lo que renueva las preocupaciones sobre intrusiones patrocinadas por estados en la infraestructura crítica de EE. UU., con autoridades evaluando el alcance y el impacto en la tecnología operativa. El incidente podría tener implicaciones significativas para la seguridad nacional y la protección de la infraestructura crítica.",
-    "url_imagen": "https://images.unsplash.com/photo-1782338937633-890b1429bc4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1NzUwMzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114026",
-    "fuente": "TG: Cyber Security Channel",
-    "ttps": [],
-    "iocs": {}
   }
 ]
