@@ -1,5 +1,118 @@
 [
   {
+    "id": 3023,
+    "fecha": "2026-10-09T22:11:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Japón confirma la detención y extradición a Alemania de un operativo ruso del grupo Qilin ransomware",
+    "resumen": "La Agencia Nacional de Policía japonesa arrestó a un ciudadano ruso vinculado al grupo Qilin, responsable de campañas de ransomware dirigidas a infraestructuras críticas, y confirmó su entrega a autoridades alemanas para proceso judicial.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1ODM4OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/japan-germany-ransomware-arrest",
+    "fuente": "The Record",
+    "dedup_key": "txt:japan confirms arrest of russian qilin operative extradition to germany",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3022,
+    "fecha": "2026-10-09T22:11:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha en ASOS expone vulnerabilidad de identidades en SaaS y compromete red corporativa",
+    "resumen": "El ataque a la cadena de suministro SaaS de ASOS demostró que la toma de control de una única cuenta de usuario permite movimiento lateral profundo, exponiendo datos de clientes y sistemas internos. La falta de segmentación y de controles de privilegios mínimos facilitó la escalada de privilegios dentro de la red corporativa.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1ODM4OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:asos breach reveals the risks in customer facing saas",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1570",
+        "name": "Lateral Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3021,
+    "fecha": "2026-10-09T22:11:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña de robo de credenciales infiltra flujos de trabajo maliciosos en más de 340 repositorios de GitHub",
+    "resumen": "Investigadores de seguridad identificaron que actores maliciosos comprometieron cuentas de mantenedores de código abierto y plantaron GitHub Actions con payloads de extracción de credenciales, afectando cientos de repositorios y potencialmente exponiendo tokens de acceso y secretos de CI/CD. La técnica aprovecha la confianza implícita en los flujos de trabajo automatizados para escalar el acceso a entornos de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1ODM4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:credential stealing github actions workflows planted in tens of thousands of repositories",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3020,
+    "fecha": "2026-10-09T22:11:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers usan redirecciones de Bing y anuncios de Google para distribuir instaladores falsos de Claude con payload ClickFix",
+    "resumen": "Se detectó una campaña que aprovecha URLs de redirección de resultados de búsqueda en Bing y anuncios de Google Ads para dirigir a víctimas a instaladores falsos de Claude, que despliegan el malware ClickFix capaz de ejecutar código remoto y robar credenciales. El vector combina abuso de plataformas publicitarias legítimas con ingeniería social dirigida a usuarios de IA generativa.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1ODM4OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers abuse google ads bing redirects to push claude clickfix attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3019,
+    "fecha": "2026-10-09T22:11:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-107406 permite ejecución remota y DoS en NetScaler ADC y Gateway vía SAML",
+    "resumen": "Vulnerabilidad crítica de desbordamiento de memoria en versiones específicas de NetScaler ADC y NetScaler Gateway configurados como proveedor SAML permite a un atacante no autenticado ejecutar código arbitrario o provocar una denegación de servicio. Se recomienda actualizar a las versiones 14.1-73.46, 13.1-64.29 o posteriores según corresponda.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1ODM4ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-memoria-en-netscaler-adc-y-netscaler-gateway-de-citrix",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-107406",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-107406"
+      ]
+    }
+  },
+  {
     "id": 3018,
     "fecha": "2026-10-09T17:55:03Z",
     "categoria": "Ciberseguridad",
@@ -52191,221 +52304,5 @@
     "dedup_key": "txt:cisa adds exploited ptc windchill rce flaw to kev as web shell attacks continue",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 940,
-    "fecha": "2026-06-28T21:59:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad SQL en JoomCCK",
-    "resumen": "La extensión JoomCCK de Joomla expone una tarea de controlador frontal que construye sentencias SQL concatenando parámetros de solicitud de usuario sin escapar ni parametrizar, lo que permite ataques de inyección SQL. Esto puede permitir a atacantes ejecutar código malicioso en la base de datos del sitio web.",
-    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2ODM5Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178298",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-49048",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1055",
-        "name": "Unauthenticated Input"
-      },
-      {
-        "id": "T1055.001",
-        "name": "Unrestricted File Upload no aplica, en su lugar:"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-49048"
-      ]
-    }
-  },
-  {
-    "id": 939,
-    "fecha": "2026-06-28T16:07:09Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha de datos expone 14,2M logins",
-    "resumen": "Una brecha de datos en el sistema de correo electrónico de KDDI Corporation, un operador de telecomunicaciones japonés, ha expuesto hasta 14,2 millones de logins de correo electrónico de usuarios de seis proveedores de servicios de internet (ISPs), lo que puede permitir ataques de phishing y otros tipos de fraudes. El incidente afecta a cinco ISPs adicionales que utilizan el sistema de correo electrónico de KDDI.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2NjI4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:data breach exposes up to 14 2 million email logins at six isps",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1589",
-        "name": "Gather Victim Host Information"
-      },
-      {
-        "id": "T1590",
-        "name": "Gather Victim Org Information"
-      },
-      {
-        "id": "T1588",
-        "name": "Obtain Initial Access"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 938,
-    "fecha": "2026-06-28T13:27:21Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Nadella advierte sobre IA insostenible",
-    "resumen": "Satya Nadella, CEO de Microsoft, advierte que el modelo actual de desarrollo de la IA no es sostenible ni legítimo ante la sociedad, ya que un pequeño grupo de empresas está acumulando el valor generado por la IA mientras agita el miedo sobre sus riesgos, y destaca la necesidad de demostrar el impacto real de la IA en la sociedad. La concentración de poder y recursos en unas pocas empresas como OpenAI y Anthropic es vista como un problema, y Microsoft busca abaratar el acceso a la IA para sus clientes empresariales con modelos de bajo coste y herramientas como Copilot Cowork.",
-    "url_imagen": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2NTMyNDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/empresas-y-economia/satya-nadella-ceo-microsoft-sociedad-no-va-a-tolerar-que-solo-unas-pocas-empresas-hagan-todo-aprendizaje",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:satya nadella ceo de microsoft la sociedad no va a tolerar que solo unas pocas empresas hagan todo el aprendizaje",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "news.microsoft.com",
-        "platform.instagram.com",
-        "unsplash.com",
-        "www.businessinsider.com",
-        "www.wsj.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/23c5be/nadella-microsoft/1024_2000.jpeg",
-        "https://i.blogs.es/44b1fe/chatgpt-image-22-jun-2026-10_22_29/375_142.png",
-        "https://i.blogs.es/dc844a/empleo-ia/375_142.jpeg",
-        "https://unsplash.com/es/@heinrich_boll?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
-        "https://www.businessinsider.com/anthropic-ceo-warning-ai-could-eliminate-jobs-2025-5",
-        "https://www.wsj.com/tech/ai/microsofts-pivotal-ai-product-is-running-into-big-problems-ce235b28",
-        "https://www.wsj.com/tech/ai/microsofts-satya-nadella-we-cant-let-ai-giants-eat-the-economy-b9d33b9f"
-      ]
-    }
-  },
-  {
-    "id": 937,
-    "fecha": "2026-06-28T11:03:34Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Adopción de IA en EE.UU",
-    "resumen": "Un estudio de Pew Research Center revela que el 49% de los adultos estadounidenses utilizan herramientas de IA con frecuencia, aunque solo el 16% cree que la IA trae beneficios, destacando preocupaciones sobre la seguridad de los datos y la privacidad. La adopción de modelos de lenguaje como ChatGPT, Gemini y Copilot es cada vez más común, pero la percepción negativa hacia la IA también aumenta, especialmente entre los jóvenes.",
-    "url_imagen": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2NDQ2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/49-estadounidenses-usan-ia-frecuencia-solo-16-cree-que-sera-buena-para-mundo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:un 49 de estadounidenses ya usan la ia con frecuencia solo un 16 cree que trae algo bueno",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "datatonics.substack.com",
-        "platform.instagram.com",
-        "unsplash.com",
-        "www.pewresearch.org",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://datatonics.substack.com/p/519-the-ai-monitor-2026-ipsos",
-        "https://i.blogs.es/0a4359/about_half_of_us_adults_now_use_ai_chatbots_up_from_a_third_in_2024/1024_2000.png",
-        "https://i.blogs.es/0a4359/about_half_of_us_adults_now_use_ai_chatbots_up_from_a_third_in_2024/1366_2000.png",
-        "https://i.blogs.es/0a4359/about_half_of_us_adults_now_use_ai_chatbots_up_from_a_third_in_2024/450_1000.png",
-        "https://i.blogs.es/0a4359/about_half_of_us_adults_now_use_ai_chatbots_up_from_a_third_in_2024/650_1200.png",
-        "https://i.blogs.es/42ead6/chatgpt-copia-2/1024_2000.jpeg",
-        "https://i.blogs.es/5b5277/captura-de-pantalla-2026-06-22-a-las-16.20.47/1024_2000.jpeg",
-        "https://i.blogs.es/5b5277/captura-de-pantalla-2026-06-22-a-las-16.20.47/1366_2000.jpeg",
-        "https://i.blogs.es/5b5277/captura-de-pantalla-2026-06-22-a-las-16.20.47/450_1000.jpeg",
-        "https://i.blogs.es/5b5277/captura-de-pantalla-2026-06-22-a-las-16.20.47/650_1200.jpeg",
-        "https://i.blogs.es/6ac569/quickly/1024_2000.png",
-        "https://i.blogs.es/6ac569/quickly/1366_2000.png",
-        "https://i.blogs.es/6ac569/quickly/450_1000.png",
-        "https://i.blogs.es/6ac569/quickly/650_1200.png",
-        "https://i.blogs.es/bbfac2/negative/1024_2000.png",
-        "https://i.blogs.es/bbfac2/negative/1366_2000.png",
-        "https://i.blogs.es/bbfac2/negative/450_1000.png",
-        "https://i.blogs.es/bbfac2/negative/650_1200.png",
-        "https://i.blogs.es/dc00d6/chatgpt/1024_2000.png",
-        "https://i.blogs.es/dc00d6/chatgpt/1366_2000.png",
-        "https://i.blogs.es/dc00d6/chatgpt/450_1000.png",
-        "https://i.blogs.es/dc00d6/chatgpt/650_1200.png",
-        "https://unsplash.com/es/fotos/una-persona-sosteniendo-un-telefono-inteligente-en-la-mano-5Ib2B9MBJhQ",
-        "https://www.pewresearch.org/internet/2025/04/03/artificial-intelligence-in-daily-life-views-and-experiences/pi_2025-04-03_us-public-and-ai-experts_1-02/",
-        "https://www.pewresearch.org/internet/2026/06/17/americans-and-ai-2026-chatbots-smart-devices-and-views-on-impact/"
-      ]
-    }
-  },
-  {
-    "id": 936,
-    "fecha": "2026-06-28T11:03:25Z",
-    "categoria": "IA",
-    "severidad": "CRITICA",
-    "titulo": "Foxconn apuesta por IA y robots",
-    "resumen": "Foxconn, el principal fabricante de componentes a nivel mundial, busca expandirse más allá de la ensambladura de productos electrónicos y convertirse en una multinacional líder en IA y robótica, con un enfoque en la plataforma de IA Vera Rubin de Nvidia y el desarrollo de robots humanoides para tareas de montaje. Esto podría tener un impacto significativo en la industria de la tecnología y la ciberseguridad, ya que la integración de IA y robótica en la fabricación y el ensamblaje de componentes electrónicos podría introducir nuevos vectores de ataque y vulnerabilidades en la cadena de suministro.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218661-0322e4bc4c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2NDQ2MDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/empresas-y-economia/foxconn-quiere-fabricarlo-todo-todo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:foxconn quiere fabricarlo todo todo",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.foxconn.com",
-        "www.tiktok.com",
-        "www.wsj.com",
-        "www.xataka.com",
-        "www.xatakamovil.com"
-      ],
-      "url": [
-        "https://i.blogs.es/136e43/foxconn9/1024_2000.jpeg",
-        "https://i.blogs.es/136e43/foxconn9/1366_2000.jpeg",
-        "https://i.blogs.es/136e43/foxconn9/450_1000.jpeg",
-        "https://i.blogs.es/136e43/foxconn9/650_1200.jpeg",
-        "https://i.blogs.es/1507c1/foxconn2/1024_2000.jpeg",
-        "https://i.blogs.es/1507c1/foxconn2/1366_2000.jpeg",
-        "https://i.blogs.es/1507c1/foxconn2/450_1000.jpeg",
-        "https://i.blogs.es/1507c1/foxconn2/650_1200.jpeg",
-        "https://i.blogs.es/1d4e6c/foxconn/375_142.jpeg",
-        "https://i.blogs.es/26974d/portada-marcas-chinas/375_142.jpeg",
-        "https://i.blogs.es/36a137/foxconn6/1024_2000.jpeg",
-        "https://i.blogs.es/36a137/foxconn6/1366_2000.jpeg",
-        "https://i.blogs.es/36a137/foxconn6/450_1000.jpeg",
-        "https://i.blogs.es/36a137/foxconn6/650_1200.jpeg",
-        "https://i.blogs.es/6a4fa3/foxconn/1024_2000.jpeg",
-        "https://i.blogs.es/6e12da/foxconn3/1024_2000.jpeg",
-        "https://i.blogs.es/6e12da/foxconn3/1366_2000.jpeg",
-        "https://i.blogs.es/6e12da/foxconn3/450_1000.jpeg",
-        "https://i.blogs.es/6e12da/foxconn3/650_1200.jpeg",
-        "https://i.blogs.es/877161/foxconn5/1024_2000.jpeg",
-        "https://i.blogs.es/877161/foxconn5/1366_2000.jpeg",
-        "https://i.blogs.es/877161/foxconn5/450_1000.jpeg",
-        "https://i.blogs.es/877161/foxconn5/650_1200.jpeg",
-        "https://i.blogs.es/9462bc/foxconn8/1024_2000.jpeg",
-        "https://i.blogs.es/9462bc/foxconn8/1366_2000.jpeg",
-        "https://i.blogs.es/9462bc/foxconn8/450_1000.jpeg",
-        "https://i.blogs.es/9462bc/foxconn8/650_1200.jpeg",
-        "https://i.blogs.es/f11842/foxconn4/1024_2000.jpeg",
-        "https://i.blogs.es/f11842/foxconn4/1366_2000.jpeg",
-        "https://i.blogs.es/f11842/foxconn4/450_1000.jpeg",
-        "https://i.blogs.es/f11842/foxconn4/650_1200.jpeg",
-        "https://i.blogs.es/f615ae/centros-de-datos-parque/375_142.png",
-        "https://www.foxconn.com/en-us",
-        "https://www.tiktok.com/@xataka/video/7654551491784658179",
-        "https://www.wsj.com/tech/schneider-electric-foxconn-to-partner-on-ai-data-centers-ca6ce28c",
-        "https://www.xatakamovil.com/mercado/china-quiere-castigar-a-taiwan-a-traves-foxconn-pulmon-apple-sony-nintendo-huawei"
-      ]
-    }
   }
 ]
