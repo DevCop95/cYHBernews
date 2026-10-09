@@ -1,5 +1,117 @@
 [
   {
+    "id": 3018,
+    "fecha": "2026-10-09T17:55:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Satel Netco Design vulnerable a stored XSS, DoS por regex y path traversal (CVE-2026-105269-275)",
+    "resumen": "Tres vulnerabilidades críticas (CVE-2026-105269, CVE-2026-104628, CVE-2026-105275) permiten a usuarios autenticados ejecutar scripts en navegadores de otros usuarios, provocar denegación de servicio mediante expresiones regulares y acceder o escribir fuera del directorio permitido. La explotación afecta la infraestructura de comunicaciones y requiere la actualización inmediata a la versión v2.1.7.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1Njg1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-101024,cve-2026-104628,cve-2026-105269,cve-2026-105275",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-101024",
+        "CVE-2026-104628",
+        "CVE-2026-105269",
+        "CVE-2026-105275"
+      ]
+    }
+  },
+  {
+    "id": 3017,
+    "fecha": "2026-10-09T17:55:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "iRhythm confirma brecha de datos que afecta a cientos de miles de usuarios de sensores cardíacos",
+    "resumen": "La empresa de biosensores iRhythm ha notificado a autoridades estatales la filtración de datos personales y de salud de más de 200 000 pacientes, exponiendo información sensible a posibles ataques de phishing y extorsión.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1Njg1MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/irhythm-data-breach-reports",
+    "fuente": "The Record",
+    "dedup_key": "txt:hundreds of thousands impacted by data breach at biosensor firm irhythm",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3016,
+    "fecha": "2026-10-09T17:54:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "DarkSword iOS Exploit Kit P7 incorpora robo de wallets y comandos remotos en dispositivos móviles",
+    "resumen": "El nuevo variante P7 de DarkSword reduce su huella en iOS, añade extracción de credenciales del llavero y carteras criptográficas, y habilita comunicación bidireccional C2 para ejecutar órdenes del atacante. Impacta a usuarios de iPhone y potencialmente a aplicaciones financieras que gestionan criptomonedas.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1Njg1MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:p7 darksword ios exploit kit adds crypto wallet data theft and remote commands",
+    "ttps": [
+      {
+        "id": "T1555.004",
+        "name": "Windows Credential Manager"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3015,
+    "fecha": "2026-10-09T17:54:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Amenazas explotan vulnerabilidades sin parchear de AhsayCBS para instalar webshells y mineros de criptomonedas",
+    "resumen": "Se detectó que actores maliciosos aprovechan una vulnerabilidad crítica (CVE-2024-XXXX) y una de gravedad media en la plataforma de backup AhsayCBS para cargar webshells y desplegar malware de minería de criptomonedas, comprometiendo la confidencialidad e integridad de los datos respaldados. La falta de parches y la exposición de puertos de gestión facilitan el vector de ataque remoto.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1Njg0OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:unpatched ahsaycbs flaws exploited to deploy webshells mine crypto",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3014,
+    "fecha": "2026-10-09T17:54:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-79842 permite eludir autenticación en HPE iMC versiones <7.3",
+    "resumen": "Un bypass de autenticación sin credenciales en HPE Intelligent Management Center (iMC) permite a un atacante remoto ejecutar funciones privilegiadas y modificar datos sensibles; la mitigación requiere actualizar a la versión 7.3 E0713 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1Njg0OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-en-intelligent-management-center-de-hpe",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-79842",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-79842"
+      ]
+    }
+  },
+  {
     "id": 3013,
     "fecha": "2026-10-09T10:00:44Z",
     "categoria": "Ciberseguridad",
@@ -6373,29 +6485,6 @@
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:webinar tomorrow inside real world google workspace breaches",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 2742,
-    "fecha": "2026-09-22T09:02:35Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en AWS AgentCore Harness permite inyección de prompts para robar credenciales de identidad",
-    "resumen": "La configuración por defecto de AgentCore Harness en AWS expone un vector de prompt injection que permite a un atacante extraer credenciales almacenadas en el vault del agente, comprometiendo la identidad de los recursos en la nube. Se describen los pasos críticos de mitigación, incluyendo endurecimiento de políticas IAM y aislamiento de entornos de ejecución.",
-    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAwNjc3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unit42.paloaltonetworks.com/securing-aws-agentcore-harness-credentials/",
-    "fuente": "Unit 42",
-    "dedup_key": "txt:a vault with a heap view the uncomfortable space between agentcore harness and identity",
-    "ttps": [
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1059.001",
-        "name": "PowerShell"
-      }
-    ],
     "iocs": {}
   },
   {
@@ -52318,69 +52407,5 @@
         "https://www.xatakamovil.com/mercado/china-quiere-castigar-a-taiwan-a-traves-foxconn-pulmon-apple-sony-nintendo-huawei"
       ]
     }
-  },
-  {
-    "id": 935,
-    "fecha": "2026-06-28T11:03:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Lanzamiento YARA-X 1.18.0 y 1.19.0",
-    "resumen": "Se han lanzado las versiones 1.18.0 y 1.19.0 de YARA-X, que incluyen mejoras y correcciones de errores para fortalecer la detección de malware y la seguridad de los sistemas. Estas actualizaciones pueden impactar la eficacia de las herramientas de seguridad que utilizan YARA-X para identificar y mitigar amenazas.",
-    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2NDQ2MDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33106",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:yara x 1 18 0 and 1 19 0 release sun jun 28th",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 934,
-    "fecha": "2026-06-28T07:02:24Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-13482",
-    "resumen": "Se ha detectado una vulnerabilidad en skypilot-org skypilot versión 0.12.0, que afecta la función de codificación de nombres de usuario, permitiendo el uso de hashes débiles y posibles ataques remotos con complejidad alta y exploitabilidad difícil. La explotación ya es pública y puede ser utilizada por atacantes.",
-    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MzAxNDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178089",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-13482",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-13482"
-      ]
-    }
-  },
-  {
-    "id": 933,
-    "fecha": "2026-06-28T06:16:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-10644",
-    "resumen": "Se ha descubierto una vulnerabilidad de escritura fuera de límites en el controlador UART SERCOM-G1 de Microchip, utilizado por la familia de SoC PIC32CM-JH, que puede provocar una corrupción de memoria de un solo byte y potencialmente causar un fallo o denegación de servicio. La explotación requiere una configuración específica y un atacante adjunto que pueda proporcionar datos de entrada a través de la conexión serial.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MjczNjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178087",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-10644",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-10644"
-      ]
-    }
-  },
-  {
-    "id": 932,
-    "fecha": "2026-06-28T06:15:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Campaña Malware SmartLoader",
-    "resumen": "Se ha detectado una campaña de malware llamada SmartLoader, que ha sido rastreada por decenas de compañías de seguridad y se caracteriza por estar altamente ofuscada en Lua, lo que ha dificultado su análisis. La campaña ha sido objeto de estudio y reversión por parte de investigadores y hackers, quienes buscan entender su funcionamiento y origen.",
-    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MjczNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9032",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:be smartloader big ass fuck off malware campaign tracked by dozens of anti malware companies heavily obfuscat",
-    "ttps": [],
-    "iocs": {}
   }
 ]
