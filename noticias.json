@@ -1,5 +1,121 @@
 [
   {
+    "id": 3008,
+    "fecha": "2026-10-09T01:00:36Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Nueva guía FOR577 amplía técnicas forenses para rastrear actividad de agentes IA como Claude Code y Copilot",
+    "resumen": "La actualización incluye scripts y metodologías para identificar rastros de uso de asistentes de código basados en IA, cubriendo artefactos de historial y archivos de configuración en entornos Windows y Linux, facilitando la detección de abuso en incident response.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1MDc2Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33410",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:reconstructing ai agent activity two new scripts for forensic review thu oct 8th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3007,
+    "fecha": "2026-10-09T01:00:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "FBI revela que hackers vinculados a empresa china robaron correos de gobiernos y salud en SE Asia",
+    "resumen": "Los atacantes, asociados a Integrity Technology Group, explotaron vulnerabilidades web para extraer millones de correos de entidades gubernamentales, policiales, sanitarias y religiosas, comprometiendo datos sensibles y facilitando acceso a terceros.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1MDc2MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fbi says china linked hackers ran portal giving third parties access to stolen emails",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3006,
+    "fecha": "2026-10-09T01:00:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "FBI desmantela dominios chinos que alojaban herramientas de hacking usadas contra infraestructura crítica",
+    "resumen": "El FBI incautó siete dominios vinculados al grupo estatal chino Flax Typhoon, que operaba los malware MicroScan y FishHub para comprometer infraestructuras críticas y organizaciones globales, evidenciando un vector de ataque basado en servidores de comando y control externos.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1MDc2MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-chinese-hacking-tools-used-to-breach-critical-infrastructure/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fbi disrupts chinese hacking tools used to breach critical infrastructure",
+    "ttps": [
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3005,
+    "fecha": "2026-10-09T01:00:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Splunk Enterprise y Secure Gateway presentan 22 vulnerabilidades críticas que permiten RCE y escalada de privilegios",
+    "resumen": "Se identifican 22 CVE en versiones específicas de Splunk Enterprise (10.4.0-10.4.2, 10.2.0-10.2.6, 10.0.0-10.0.9, 9.4.0-9.4.14) y Secure Gateway, con vectores de ataque que incluyen ejecución remota de código, SSRF y acceso no autenticado a la API REST de Patroni. La mitigación requiere actualizar a versiones 10.4.3+, 10.2.7+, 10.0.10+, 9.4.15+ o a Secure Gateway 3.10.11/3.9.25/3.8.72.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1MDc2MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-splunk",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-76264,cve-2026-76265,cve-2026-76268,cve-2026-76272,cve-2026-76280,cve-2026-76281,cve-2026-76284",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76264",
+        "CVE-2026-76265",
+        "CVE-2026-76268",
+        "CVE-2026-76272",
+        "CVE-2026-76280",
+        "CVE-2026-76281",
+        "CVE-2026-76284"
+      ]
+    }
+  },
+  {
+    "id": 3004,
+    "fecha": "2026-10-09T01:00:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Informe Mid-Year Threat Landscape 2026 advierte aumento de IA como servicio de cibercrimen y riesgos híbridos",
+    "resumen": "El reporte de Inetum muestra más de 60 000 alertas en su LiveSOC durante el primer semestre, con amenazas automatizadas que combinan modelos de IA y ransomware como servicio, impulsadas por tensiones geopolíticas. Se destaca la proliferación de actores que usan herramientas de IA para generar exploits y campañas de phishing dirigidas a infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1MDc2MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-el-cibercrimen-como-servicio-y-los-conflictos-hibridos-impulsan-una-nueva-era-de-riesgo-digital/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia el cibercrimen como servicio y los conflictos híbridos impulsan una nueva era de riesgo digital",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3003,
     "fecha": "2026-10-08T18:21:12Z",
     "categoria": "Ciberseguridad",
@@ -52334,78 +52450,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 925,
-    "fecha": "2026-06-27T21:59:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ejecución de código arbitrario en Notepad++",
-    "resumen": "Se ha descubierto una vulnerabilidad en Notepad++ 8.9.6 que permite la ejecución de código arbitrario, lo que podría permitir a atacantes remotos ejecutar código malicioso en el sistema afectado a través de vectores de ataque como phishing o exploits de día cero. Esta vulnerabilidad puede tener un impacto significativo en la seguridad de los sistemas que utilizan esta versión de Notepad++.",
-    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1OTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52606",
-    "fuente": "Exploit-DB",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 924,
-    "fecha": "2026-06-27T21:59:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Red cibernética china desmantelada",
-    "resumen": "La FBI, en colaboración con Google y Lumen, ha desmantelado una red de ciberdelincuencia con base en China, asociada a pérdidas de aproximadamente $1.9 mil millones en todo el mundo, afectando a múltiples campañas de fraude, compromiso de cuentas y lavado de dinero. La operación ha interrumpido la infraestructura utilizada por la red para llevar a cabo estos delitos.",
-    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1ODR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114029",
-    "fuente": "TG: Cyber Security Channel",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 923,
-    "fecha": "2026-06-27T21:59:39Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en jackson-databind",
-    "resumen": "Se ha descubierto una vulnerabilidad en la biblioteca jackson-databind (CVE-2026-54514) que permite a un atacante realizar consultas DNS arbitrarias durante la deserialización de JSON no confiable, lo que podría ser utilizado para ataques de resolución de nombres de dominio o como vector de ataque para otros tipos de exploits. La vulnerabilidad se ha corregido en las versiones 2.18.8, 2.21.4 y 3.1.4.",
-    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178041",
-    "fuente": "TG: CVE Notify",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-54514"
-      ]
-    }
-  },
-  {
-    "id": 921,
-    "fecha": "2026-06-27T21:59:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad SQL en Drupal Core",
-    "resumen": "Se ha identificado una vulnerabilidad de inyección de SQL basada en errores en la versión 10.5.5 de Drupal Core, lo que podría permitir a atacantes extraer o manipular datos sensibles a través de vectores de ataque como phishing o explotación de zero-day. El impacto real depende de la configuración y los permisos del sitio web afectado.",
-    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1OTc1Njd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52608",
-    "fuente": "Exploit-DB",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 920,
-    "fecha": "2026-06-27T19:16:01Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-6450",
-    "resumen": "Se ha descubierto una vulnerabilidad en ParseCRL_Extensions que permite omitir extensiones críticas en Listas de Revocación de Certificados (CRL), lo que permite aceptar CRL maliciosas con extensiones críticas no manejadas si tienen una firma de confianza. Esto afecta solo a versiones con soporte CRL habilitado y donde se ha parseado una CRL maliciosa con una firma de confianza.",
-    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI1ODc3NjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/177977",
-    "fuente": "TG: CVE Notify",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-6450"
-      ]
-    }
   }
 ]
