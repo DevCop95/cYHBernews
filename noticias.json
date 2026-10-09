@@ -1,5 +1,136 @@
 [
   {
+    "id": 3013,
+    "fecha": "2026-10-09T10:00:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en AWS Bedrock AgentCore permite tomar control total con un solo prompt de IA",
+    "resumen": "La falla, ya corregida, permitía a un atacante explotar un agente de chatbot en Bedrock para ejecutar comandos arbitrarios y comprometer toda la infraestructura cloud de la organización. El vector de ataque se basa en la inyección de prompts maliciosos que escalan privilegios dentro del entorno AWS.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1NDAwNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:agentcorruption puts aws environments at risk with single prompt",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3012,
+    "fecha": "2026-10-09T10:00:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en GoBalance permite secuestrar direcciones .onion mediante recuperación de claves Tor",
+    "resumen": "Un flaw en la herramienta GoBalance expone la clave privada que genera la dirección .onion, permitiendo a un atacante redirigir el tráfico a un sitio controlado. El vector aprovecha información pública del formato de clave y afecta a infraestructuras de dark web que dependen de GoBalance para alta disponibilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1NDAwNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:gobalance flaw lets attackers hijack onion addresses by recovering tor format keys",
+    "ttps": [
+      {
+        "id": "T1552.004",
+        "name": "Private Keys"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3011,
+    "fecha": "2026-10-09T10:00:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS reflejado en la plataforma eCommerce de BeeTienda permite ejecución de JavaScript en navegadores",
+    "resumen": "Se ha divulgado CVE-2026-4264 (CVSS 5.1) que afecta al parámetro search de la demo de BeeTienda, explotable sin autenticación y sin requerir interacción del usuario, posibilitando inyección de scripts en la página de resultados. La falta de sanitización adecuada expone a clientes y administradores a secuestro de sesión y phishing.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1NDAwNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-reflejado-en-la-plataforma-ecommerce-de-beetienda",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-4264",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-4264"
+      ]
+    }
+  },
+  {
+    "id": 3010,
+    "fecha": "2026-10-09T10:00:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "MATCHBOIL evoluciona 2024-2026 manteniendo su objetivo de descarga maliciosa",
+    "resumen": "ESET detalla la reingeniería del downloader MATCHBOIL usado por el grupo UAC-0099, con nuevas técnicas de evasión y ofuscación que preservan su capacidad de distribuir payloads ransomware y spyware.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1NDAwMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/matchboil-malware-uac-0099-evolucion/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:matchboil nuevos trucos las mismas intenciones maliciosas",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3009,
+    "fecha": "2026-10-09T10:00:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "La IA se integra en todas las fases de los ciberataques, desde reconocimiento hasta movimiento lateral",
+    "resumen": "Los grupos de amenazas patrocinados por estados emplean modelos de lenguaje y herramientas de generación automática para identificar vulnerabilidades, crear malware personalizado y automatizar el robo de credenciales, ampliando la velocidad y el alcance de sus campañas. Esta evolución introduce nuevos vectores de ataque basados en generación de código y evasión adaptativa, obligando a reforzar la detección basada en comportamiento y la defensa en profundidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1NDAwMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-ya-interviene-en-todas-las-fases-del-ciberataque/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia ya interviene en todas las fases del ciberataque",
+    "ttps": [
+      {
+        "id": "T1589",
+        "name": "Gather Victim Identity Information"
+      },
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3008,
     "fecha": "2026-10-09T01:00:36Z",
     "categoria": "IA",
@@ -52250,205 +52381,6 @@
     "fuente": "TG: vx-underground",
     "dedup_key": "txt:be smartloader big ass fuck off malware campaign tracked by dozens of anti malware companies heavily obfuscat",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 931,
-    "fecha": "2026-06-28T06:15:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Asistentes IA",
-    "resumen": "Se ha descubierto una forma de \"weaponizar\" a los asistentes IA basados en modelos de lenguaje (LLM) para que realicen tareas sin restricciones, lo que podría permitir a los atacantes utilizarlos para resolver captchas cognitivos, crear código malicioso o realizar otras actividades maliciosas. Los asistentes IA pueden ser \"apificados\" y utilizados como un servicio en el mundo del cibercrimen.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218504-81ed5eb52cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MjczNTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/06/weaponinzing-token-consumption-en-llm.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "txt:weaponinzing token consumption en llm based ai assistant",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "1.bp.blogspot.com",
-        "blogger.googleusercontent.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "mypublicinbox.com",
-        "www.elladodelmal.com",
-        "www.mypublicinbox.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/5_0xword-pocket",
-        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
-        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
-        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgId_y-Y5exk30ygC0UbJiEZfgrCVSENwrUsBLa3VrwXDg_d14PEupjlaXq3KX0VN2uA4rBh9yRNoSZrvkG5NzFyD1jfS1EHGppveli3WqEuk4N-u6yyBRf-Yc1aHHpBeNgS1XwmsmjUTB1oJywmRyCqgsX4Or9a3NmnVaRnnU2GiIuGPRWDbd-/s746/Token2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgId_y-Y5exk30ygC0UbJiEZfgrCVSENwrUsBLa3VrwXDg_d14PEupjlaXq3KX0VN2uA4rBh9yRNoSZrvkG5NzFyD1jfS1EHGppveli3WqEuk4N-u6yyBRf-Yc1aHHpBeNgS1XwmsmjUTB1oJywmRyCqgsX4Or9a3NmnVaRnnU2GiIuGPRWDbd-/w400-h260/Token2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc8IZuuob6qRdFeqtZbymMwHOcf4nCJ-nG4yAywBfQZ_7Q466rBeaAvFMwIJOs7wUkPC-n8tDQfnwLVyXTBKSQXam4zsPFHTz5uFXh_W7gf9fxsKMk0MXWT8Vk8Jimwd_XHn1ItipBSSdNE6xKh2KrZ6XFUDbGoIhG02X6ag8JwkkKCI57F_uN/s756/token1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc8IZuuob6qRdFeqtZbymMwHOcf4nCJ-nG4yAywBfQZ_7Q466rBeaAvFMwIJOs7wUkPC-n8tDQfnwLVyXTBKSQXam4zsPFHTz5uFXh_W7gf9fxsKMk0MXWT8Vk8Jimwd_XHn1ItipBSSdNE6xKh2KrZ6XFUDbGoIhG02X6ag8JwkkKCI57F_uN/w400-h235/token1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFmIptGra5g0AK-FsvsQbH_LGMkD6dTaW_NIToIqvKQmlwdG25-G20b-SU1avhAWOOoN80bpHtjuJqfqDmj-PyF4oHG19B255OXg7sYHWK4SyLaycekSbnC93AARzHDMOPnxajwn1AruspauSUgHW6vFkivCCAnbfFi2V7QfU15qXlG54evACO/s812/Token3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFmIptGra5g0AK-FsvsQbH_LGMkD6dTaW_NIToIqvKQmlwdG25-G20b-SU1avhAWOOoN80bpHtjuJqfqDmj-PyF4oHG19B255OXg7sYHWK4SyLaycekSbnC93AARzHDMOPnxajwn1AruspauSUgHW6vFkivCCAnbfFi2V7QfU15qXlG54evACO/w368-h400/Token3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJOD7N7Q8pj20TRn8WIQpQFc4A5CIzUL5-jPB_0HkaK6u1ept6Zw83_L-EicIMI5z64Esr4BszbxBmRAzHSWA6PeVJlXJ8YHvDk5Xz7y08g1vT0Dhqin8gtP6HmQQdfbWDK8KWRhHWJkQqmlIPT2um-JtW4if5e4hTQ-kexslgVLcsEv97jF0o/s842/Token7.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJOD7N7Q8pj20TRn8WIQpQFc4A5CIzUL5-jPB_0HkaK6u1ept6Zw83_L-EicIMI5z64Esr4BszbxBmRAzHSWA6PeVJlXJ8YHvDk5Xz7y08g1vT0Dhqin8gtP6HmQQdfbWDK8KWRhHWJkQqmlIPT2um-JtW4if5e4hTQ-kexslgVLcsEv97jF0o/w301-h400/Token7.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNHviHUOS4ikrJylCoxljAvdU8i0wcbZnR0BxadriGYjERVeCXg8MOU2fCmXU4FlCq5BPCih_kmL86OlEt3RvqLuWOuN9YgDUsSd_Yk3pluPspYcRDIEj_8-WN4qBA8AagBqQ_j2Gu_9axi8wbTKO65rod6o-hHBOlV1sRS2TpmneOP-m3tfEF/s940/Token0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNHviHUOS4ikrJylCoxljAvdU8i0wcbZnR0BxadriGYjERVeCXg8MOU2fCmXU4FlCq5BPCih_kmL86OlEt3RvqLuWOuN9YgDUsSd_Yk3pluPspYcRDIEj_8-WN4qBA8AagBqQ_j2Gu_9axi8wbTKO65rod6o-hHBOlV1sRS2TpmneOP-m3tfEF/w640-h420/Token0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWgDZKuNSUk7jNkRCJwJQA5BFs_y27Z9sQQbf5PW6sg0_RR3oQKQWD2W8YFv6xK_cWrJF35KKc3B4-Suv2mx8EEoSIq93JOCRJp77EPCSl47RGMusjibyQ6tRokIJvy_qNQ7KmnsHCDPmRhwAibTp_T1wHyhb47E6QlvnHTXsc8GuoFLxFUr4Q/s562/Token14.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWgDZKuNSUk7jNkRCJwJQA5BFs_y27Z9sQQbf5PW6sg0_RR3oQKQWD2W8YFv6xK_cWrJF35KKc3B4-Suv2mx8EEoSIq93JOCRJp77EPCSl47RGMusjibyQ6tRokIJvy_qNQ7KmnsHCDPmRhwAibTp_T1wHyhb47E6QlvnHTXsc8GuoFLxFUr4Q/w400-h340/Token14.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJpDRhvoBnz_xKbWge_1bOjU9kmUKCDU3dcD9_vnc0wOZI8aPEdGWGqqnM5MTvUSUNlehrFmkgRXWeYPhLzMoXaCxkJhijOTQupAZZhooWYkOwrmzXQrA6B5hFSENjgiUZ7iZOPGRuwMci3iaGgDcZxm58wMJOFy96ez09ZBdNEH5z5xRrkaZ/s552/Token13.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnJpDRhvoBnz_xKbWge_1bOjU9kmUKCDU3dcD9_vnc0wOZI8aPEdGWGqqnM5MTvUSUNlehrFmkgRXWeYPhLzMoXaCxkJhijOTQupAZZhooWYkOwrmzXQrA6B5hFSENjgiUZ7iZOPGRuwMci3iaGgDcZxm58wMJOFy96ez09ZBdNEH5z5xRrkaZ/w400-h358/Token13.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ln72x2sRFKxi310RPjNet42OeQvswqD3W_brfEJ5JwyLljwZ5rxrIv3L-U8h7SlHsMWE5mvOi7Z4zdDEXTDzFFW_cF6bBAovn3NiUyBjrgdiXG0OJM_DR3f_qiayfxMK3D3qMZi2trthAL9aqAn7YZ0sDLQxRxedLhXDMP0MY5QS23Jyae_a/s1572/Token10.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ln72x2sRFKxi310RPjNet42OeQvswqD3W_brfEJ5JwyLljwZ5rxrIv3L-U8h7SlHsMWE5mvOi7Z4zdDEXTDzFFW_cF6bBAovn3NiUyBjrgdiXG0OJM_DR3f_qiayfxMK3D3qMZi2trthAL9aqAn7YZ0sDLQxRxedLhXDMP0MY5QS23Jyae_a/w512-h640/Token10.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBiXimT984KsdgKNr34IpQB_uL3AfjDOieOAGMKgkyjl7ycysbmtnKOxbj2K77xdZisMrhPsVaX6Ljd-uKfMXsyK1P6I-8HH34bgXWD4LCHx9suFG-N_XOSEZg4D2Rb8Z0PQG47jVX0C0U6d66QHRfV_yMAMnauWjCQsN9ji4Vz-eSVnuoqW3L/s554/Token12.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBiXimT984KsdgKNr34IpQB_uL3AfjDOieOAGMKgkyjl7ycysbmtnKOxbj2K77xdZisMrhPsVaX6Ljd-uKfMXsyK1P6I-8HH34bgXWD4LCHx9suFG-N_XOSEZg4D2Rb8Z0PQG47jVX0C0U6d66QHRfV_yMAMnauWjCQsN9ji4Vz-eSVnuoqW3L/w400-h336/Token12.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOMhnB7V0yi-K5O9Ql8VLoQPe2eVgTmtgIeviBR6aOo_ywC2qc9WCyyOAVSQNaNrJ9VKNq-asi2VDmyaPzYUiseCTnmW2SqV_ghvBaM8PPrAH5vWiVLMo-i3KeAAUmDrcMTKIskJtohyphenhyphenGPEUuTTHT9ukwPEATYu_R89313QmBw4cJzBgUGdkpy/s846/Token5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOMhnB7V0yi-K5O9Ql8VLoQPe2eVgTmtgIeviBR6aOo_ywC2qc9WCyyOAVSQNaNrJ9VKNq-asi2VDmyaPzYUiseCTnmW2SqV_ghvBaM8PPrAH5vWiVLMo-i3KeAAUmDrcMTKIskJtohyphenhyphenGPEUuTTHT9ukwPEATYu_R89313QmBw4cJzBgUGdkpy/w349-h400/Token5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZwL6nZa23SQjCmr1yoywuoyH_AySuCS-HmnNXjVVsCBN9r57mJEL-oLMjJzA1WEH94p8w8sA9Pf73kyILiRyUA5-8PAmxbbqDSELibt6sJOVlWGti6s10_e0LYTp9wlq9J16LHBI8-_fM-DST9hIw0CfIXmPqQsMHhtsoia6K97znNcCijQDK/s320/Token8.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZwL6nZa23SQjCmr1yoywuoyH_AySuCS-HmnNXjVVsCBN9r57mJEL-oLMjJzA1WEH94p8w8sA9Pf73kyILiRyUA5-8PAmxbbqDSELibt6sJOVlWGti6s10_e0LYTp9wlq9J16LHBI8-_fM-DST9hIw0CfIXmPqQsMHhtsoia6K97znNcCijQDK/s628/Token8.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio47FUxX2Wpgw76lw_XfKHNNZxVk4K5PGundT6DM7NI6Srgmbj0DbPXDUd8ei1exvRfyvysIVn947heoyZJjJvPrdey1mIBM9VfRbWZD6aiooangtxFtB9LjMxLfgu39NURYXb_avPHH7gp9JvpnvYjqkLLyYtplofg4s5iYLuCHxUdvY1LlS8/s752/Token9.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio47FUxX2Wpgw76lw_XfKHNNZxVk4K5PGundT6DM7NI6Srgmbj0DbPXDUd8ei1exvRfyvysIVn947heoyZJjJvPrdey1mIBM9VfRbWZD6aiooangtxFtB9LjMxLfgu39NURYXb_avPHH7gp9JvpnvYjqkLLyYtplofg4s5iYLuCHxUdvY1LlS8/w400-h306/Token9.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJcfvCriShrTil8Y3MNQASaWOk-BJZizOKK2TvXWmrnn_71MusnHH9Ma_qEf2_bX36JvLEsLNFDJsLmBkkEr590FBt39uHkVn8JkdEBfuRT8TQC6-M7EjVbQ37xXstHChSL5l9Szf6YgC_sX8hLip46_JbtB9MXoxyyYBsqbszEocVz15SQuMt/s808/Token4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJcfvCriShrTil8Y3MNQASaWOk-BJZizOKK2TvXWmrnn_71MusnHH9Ma_qEf2_bX36JvLEsLNFDJsLmBkkEr590FBt39uHkVn8JkdEBfuRT8TQC6-M7EjVbQ37xXstHChSL5l9Szf6YgC_sX8hLip46_JbtB9MXoxyyYBsqbszEocVz15SQuMt/w371-h400/Token4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgbiWs7uoEd_K4S-JSNB1cghDX7eCp2ALkTYO0tymki2dX-HB__llfaF6_Sr6PqnsZCIcF8-3VIVTliKIiSiWY3hRvnut_CB-gYl5drPuY5LFhTMWaIbgX6_08SBtAfJ7MdH5BdYF715Ugl5Ne_-nCex8SLSwV1bgg9r3gc4bbqolt0F1A8C-9/s576/Token11.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgbiWs7uoEd_K4S-JSNB1cghDX7eCp2ALkTYO0tymki2dX-HB__llfaF6_Sr6PqnsZCIcF8-3VIVTliKIiSiWY3hRvnut_CB-gYl5drPuY5LFhTMWaIbgX6_08SBtAfJ7MdH5BdYF715Ugl5Ne_-nCex8SLSwV1bgg9r3gc4bbqolt0F1A8C-9/w389-h400/Token11.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjget7Vb5jYfeN9-6KNjBA3WXralsjMJu5Q6WUisNJ0pFXS_UrKQab1fA_KHeiwN73PlHT_oorSqW-VqhKNxurXUG52a8Z8xt2KkQWZ72JJkfTW4xuYUnAybRBCmDcNJ63toZ06Gt5Yz_nxkuqzqGkJxXNcGv9ILG-fClufl-jkw0dtgBXaQTwT/s858/Token6.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjget7Vb5jYfeN9-6KNjBA3WXralsjMJu5Q6WUisNJ0pFXS_UrKQab1fA_KHeiwN73PlHT_oorSqW-VqhKNxurXUG52a8Z8xt2KkQWZ72JJkfTW4xuYUnAybRBCmDcNJ63toZ06Gt5Yz_nxkuqzqGkJxXNcGv9ILG-fClufl-jkw0dtgBXaQTwT/w344-h400/Token6.jpg",
-        "https://elladodelmal.com",
-        "https://www.elladodelmal.com/2026/06/captchas-cognitivos-para-humanos-y.html",
-        "https://www.elladodelmal.com/2026/06/footprinting-fingerprinting-ai.html",
-        "https://www.elladodelmal.com/2026/06/hacking-llm-assistants-just-for-fun.html"
-      ]
-    }
-  },
-  {
-    "id": 930,
-    "fecha": "2026-06-28T02:59:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en RustDesk",
-    "resumen": "Se ha identificado la vulnerabilidad CVE-2026-58056 en RustDesk, que permite a un atacante inyectar entradas de teclado y mouse, y acceder a capturas de pantalla sin autorización, aprovechando que las banderas de capacidad no se limpian después de una sesión de transferencia de archivos. Esto permite a un atacante actuar fuera del alcance autorizado, representando un riesgo significativo para la seguridad de los sistemas que utilizan RustDesk.",
-    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MTU1NjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178083",
-    "fuente": "TG: CVE Notify",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1055",
-        "name": "Input Capture"
-      },
-      {
-        "id": "T1113",
-        "name": "Screen Capture"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1212",
-        "name": "Exploitation de Vulnerabilidades de Software"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-58056"
-      ]
-    }
-  },
-  {
-    "id": 929,
-    "fecha": "2026-06-28T02:59:16Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-58057",
-    "resumen": "La versión de Flowise anterior a 3.1.3 presenta una vulnerabilidad (CVE-2026-58057) que permite a un usuario autenticado inyectar código arbitrario en el contexto del servidor Flowise mediante la configuración de un nodo MCP personalizado, aprovechando una comparación sensible a mayúsculas y minúsculas en la validación de variables de entorno. El ataque puede ser realizado a través de la variable de entorno 'node_options' en sistemas Windows, donde los nombres de variables de entorno son insensibles a mayúsculas y minúsculas.",
-    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MTU1NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178084",
-    "fuente": "TG: CVE Notify",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-58057"
-      ]
-    }
-  },
-  {
-    "id": 928,
-    "fecha": "2026-06-28T02:59:08Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-58058 en Nmap",
-    "resumen": "La versión de Nmap hasta 7.99 presenta una vulnerabilidad (CVE-2026-58058) que permite a un atacante realizar lecturas fuera de límites y provocar un crash durante escaneos IPv6 raw, mediante el envío de respuestas IPv6 truncadas con encabezados de extensión manipulados. Esto puede ser explotado por un objetivo escaneado o un atacante en el camino que devuelve una respuesta IPv6 maliciosa.",
-    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MTU1NDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178085",
-    "fuente": "TG: CVE Notify",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "netutil.cc"
-      ],
-      "cve": [
-        "CVE-2026-58058"
-      ]
-    }
-  },
-  {
-    "id": 927,
-    "fecha": "2026-06-28T02:59:02Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en YAMCS",
-    "resumen": "Se ha identificado una vulnerabilidad de enumeración de usuarios en la versión 5.12.7 de yamcs-core de YAMCS, lo que podría permitir a atacantes determinar la existencia de cuentas de usuario válidas a través de vectores de ataque como phishing o brute force. Esta vulnerabilidad puede ser explotada para obtener información sensible sobre los usuarios del sistema.",
-    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI2MTU1NDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52604",
-    "fuente": "Exploit-DB",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1598",
-        "name": "Phishing for Information"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1069",
-        "name": "Permission Groups Discovery"
-      },
-      {
-        "id": "T1133",
-        "name": "External Remote Services"
-      }
-    ],
     "iocs": {}
   }
 ]
