@@ -1,5 +1,97 @@
 [
   {
+    "id": 3035,
+    "fecha": "2026-10-10T16:51:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Red Lion N-Tron 700 permiten acceso admin y reinicio remoto",
+    "resumen": "Las fallas (CVE-2026-32645, CVE-2026-39460, entre otras) permiten usar credenciales hard-coded y SNMP sin autenticación para obtener privilegios de administrador, leer/editar configuraciones y provocar reinicios continuos vía URL. Se recomienda actualizar a firmware 3.11.1, desactivar SNMP y bloquear el GUI web.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2NTExMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-28745,cve-2026-29797,cve-2026-32645,cve-2026-33272,cve-2026-33367,cve-2026-39453,cve-2026-39460",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      },
+      {
+        "id": "T1569.002",
+        "name": "Service Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-28745",
+        "CVE-2026-29797",
+        "CVE-2026-32645",
+        "CVE-2026-33272",
+        "CVE-2026-33367",
+        "CVE-2026-39453",
+        "CVE-2026-39460"
+      ]
+    }
+  },
+  {
+    "id": 3034,
+    "fecha": "2026-10-10T16:51:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "IA se emplea para engañar a ciberdelincuentes mediante bots que simulan víctimas reales",
+    "resumen": "Las fuerzas anti-ciberdelincuencia despliegan modelos de lenguaje avanzados para crear agentes conversacionales que inducen a los atacantes a revelar tácticas y credenciales, dificultando sus operaciones. Esta técnica de “scam-the-scammer” amplía la superficie de detección y permite recopilar inteligencia de amenazas en tiempo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2NTExMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/ai-is-getting-really-good-at-messing-with-cybercriminals/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:ai is getting really good at messing with cybercriminals",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3033,
+    "fecha": "2026-10-10T16:51:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ejecutivo de ciberseguridad arrestado en EE. UU. por presunta extorsión vinculada a ShinyHunters",
+    "resumen": "Edward Dubrovsky, alto ejecutivo de una firma canadiense, fue detenido en Pensilvania bajo acusación de extorsionar a víctimas mediante amenazas de divulgación de datos robados, presuntamente en coordinación con la operación contra el grupo ShinyHunters. La detención forma parte de la campaña del FBI para desmantelar la infraestructura de extorsión y ransomware del grupo.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2NTEwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cyber exec arrested in case allegedly tied to shinyhunters hackers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3032,
+    "fecha": "2026-10-10T16:51:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Babel propone IA agéntica como herramienta clave contra el cibercrimen financiero en España",
+    "resumen": "Babel detalla cómo los bancos pueden integrar agentes autónomos basados en LLM para detectar y mitigar ataques de phishing, fraude y ransomware, reduciendo la ventana de exposición mediante análisis en tiempo real y respuesta automatizada. La propuesta se enfoca en el sector financiero español, donde la regulación y la presión de compliance exigen soluciones de IA robustas.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2NTEwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/como-convertir-la-ia-agentica-en-aliada-frente-al-cibercrimen-financiero/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:cómo convertir la ia agéntica en aliada frente al cibercrimen financiero",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3031,
     "fecha": "2026-10-10T11:48:27Z",
     "categoria": "Ciberseguridad",
@@ -52140,98 +52232,5 @@
     "dedup_key": "txt:top google security staff warn search data could be hacked if eu rules change",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 954,
-    "fecha": "2026-06-29T15:38:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Dron disarma sospechoso",
-    "resumen": "Un dron de la oficina del sheriff del condado de Sacramento ha sido utilizado para disarmar a un sospechoso armado en una casa, utilizando un imán de alta potencia para retirar el cuchillo de la mano del sospechoso. Este incidente demuestra el potencial de la tecnología de drones en la respuesta policial y el manejo de situaciones de alto riesgo.",
-    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NDc1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/robot-police-officers.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:robot police officers",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "www.instagram.com",
-        "yro.slashdot.org"
-      ],
-      "url": [
-        "https://yro.slashdot.org/story/26/06/27/0635220/california-sheriff-says-their-drone-disarmed-a-suspect-shares-video-on-instagram"
-      ]
-    }
-  },
-  {
-    "id": 952,
-    "fecha": "2026-06-29T10:49:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2026-6734",
-    "resumen": "La vulnerabilidad CVE-2026-6734 (CVSS 7.5) en undici permite el enrutamiento de solicitudes entre orígenes, lo que puede causar la exposición de credenciales y datos de solicitud, así como la degradación silenciosa de HTTPS a HTTP. Los usuarios afectados son aplicaciones que utilizan Socks5ProxyAgent y realizan solicitudes a más de un origen.",
-    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-6734",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-6734",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-6734"
-      ]
-    }
-  },
-  {
-    "id": 950,
-    "fecha": "2026-06-29T10:49:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware de Vendor Comprometido",
-    "resumen": "Un archivo sospechoso enviado por un proveedor a una empresa importante contiene malware de alto riesgo con características avanzadas, incluyendo código position independent, secciones extra, extracción de segmentos y compresión ASPack 2, así como capacidades anti-VM y autodestrucción, lo que sugiere una posible comprometición del proveedor o una operación maliciosa deliberada. El malware puede haber infectado a la empresa si se ejecutó el archivo, por lo que se recomienda tomar medidas de seguridad inmediatas.",
-    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9033",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:get dm hey smelly i work for kind of important place vendor sent us weird file its sus af what do u",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1497.001",
-        "name": "Defacement: Malware"
-      },
-      {
-        "id": "T1204.002",
-        "name": "Malicious File"
-      },
-      {
-        "id": "T1497.003",
-        "name": "Data from Local System"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 949,
-    "fecha": "2026-06-29T10:49:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en qSnapper",
-    "resumen": "Se ha identificado una vulnerabilidad de tipo time-to-check-time-of-use (CVE-2026-41045) en la autenticación de polkit en qSnapper, versión anterior a 1.3.3, que permite a un atacante local bypassar la autenticación y operar como usuario root. La vulnerabilidad tiene un CVSS Score de 8.1, clasificada como HIGH.",
-    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-41045",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-41045",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-41045"
-      ]
-    }
   }
 ]
