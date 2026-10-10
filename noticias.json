@@ -1,5 +1,132 @@
 [
   {
+    "id": 3028,
+    "fecha": "2026-10-10T04:15:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Critical vulnerabilities (CVSS 9.8) in Grid Protection Alliance openPDC y openHistorian allow RCE and SSRF",
+    "resumen": "Se identificaron cinco vulnerabilidades críticas, incluyendo deserialización no confiable, SSRF y uso de credenciales hard-coded, que pueden ser explotadas por atacantes no autenticados para ejecutar código remoto y obtener topología de red en sistemas de gestión de energía. Las versiones afectadas son openPDC < 2.9.482 y openHistorian < 2.8.585; los parches están disponibles a partir de 2.9.482 y 2.8.585 respectivamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MDU3NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-100730,cve-2026-101022,cve-2026-104629,cve-2026-105278,cve-2026-105281,cve-2026-85479",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1016.001",
+        "name": "Internet Connection Discovery"
+      },
+      {
+        "id": "T1578",
+        "name": "Modify Cloud Compute Infrastructure"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-100730",
+        "CVE-2026-101022",
+        "CVE-2026-104629",
+        "CVE-2026-105278",
+        "CVE-2026-105281",
+        "CVE-2026-85479"
+      ]
+    }
+  },
+  {
+    "id": 3027,
+    "fecha": "2026-10-10T04:15:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "FBI detiene a otro sospechoso de ShinyHunters vinculado al hack del portal de empleo del FBI",
+    "resumen": "El grupo extorsionista ShinyHunters, que afirmó haber comprometido el portal de empleo del FBI y extraído datos de agentes y candidatos, ve a uno de sus presuntos cómplices arrestado por el FBI, ampliando la investigación de la operación. La captura podría facilitar la identificación de infraestructura y vectores de ataque empleados en la filtración.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MDU3NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fbi arrests another shinyhunters suspect reportedly involved in its jobs portal hack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3026,
+    "fecha": "2026-10-10T04:15:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "FBI detiene a otro presunto miembro de ShinyHunters tras brecha en sistemas federales",
+    "resumen": "La captura del sospechoso cierra parte de la investigación sobre la intrusión que comprometió credenciales y datos internos del FBI, evidenciando uso de herramientas de credential dumping y ransomware como método de extorsión.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MDU3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-arrests-another-suspected-shinyhunters-hacker-after-agency-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fbi arrests another suspected shinyhunters hacker after agency breach",
+    "ttps": [
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3025,
+    "fecha": "2026-10-10T04:15:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Fragmented Jailbreak Attacks en sistemas multi-agente y propuesta de monitor JAMON para mitigación inmediata",
+    "resumen": "Se describen ataques de jailbreak fragmentados que coordinan prompts entre varios agentes de IA para evadir las restricciones de seguridad, con riesgo de ejecución de acciones no autorizadas. El paper presentado en IEEE CYBER-AI 2026 propone JAMON, un monitor de semántica global que detecta y bloquea dichos vectores mediante autorización de segundo factor.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MDU3Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/naked-sun-fragmented-jailbreak-attacks.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:naked sun fragmented jailbreak attacks in multi agents jailbreak monitor jamon",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3024,
+    "fecha": "2026-10-10T04:15:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tenable Identity Exposure SaaS vulnerado por inyección de comandos que permite ejecución como SYSTEM",
+    "resumen": "CVE-2026-106126 permite a un atacante autenticado con privilegios limitados inyectar comandos en el componente Active Directory Events Listener y ejecutar código arbitrario con privilegios SYSTEM en el controlador principal de dominio. La vulnerabilidad afecta a Tenable Identity Exposure versión 3.125.0 y anteriores; la mitigación requiere actualizar a 3.126.0 y reinstalar el listener.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MDU3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-de-comandos-en-tenable-identity-exposure-de-tenable",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-106126",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-106126"
+      ]
+    }
+  },
+  {
     "id": 3023,
     "fecha": "2026-10-09T22:11:35Z",
     "categoria": "Ciberseguridad",
@@ -52205,104 +52332,5 @@
         "chemaalonso@mypublicinbox.email"
       ]
     }
-  },
-  {
-    "id": 945,
-    "fecha": "2026-06-29T10:48:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Estafas en redes sociales",
-    "resumen": "Las redes sociales se han convertido en un punto de entrada para fraudes sofisticados que aprovechan la cercanía y la confianza de plataformas como Instagram, Facebook o WhatsApp, utilizando técnicas como la IA, cuentas robadas y falsas ofertas para elevar el riesgo de estafas. Los ataques pueden incluir phishing, malware y ransomware, aprovechando la falta de conciencia sobre la seguridad en línea de los usuarios.",
-    "url_imagen": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/las-estafas-en-redes-sociales-se-industrializan-la-ia-las-cuentas-robadas-y-las-falsas-ofertas-elevan-el-riesgo/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:las estafas en redes sociales se industrializan la ia las cuentas robadas y las falsas ofertas elevan el riesgo",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1193",
-        "name": "Spearphishing via Service"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 944,
-    "fecha": "2026-06-29T04:15:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad SQL Injection",
-    "resumen": "Se ha descubierto una vulnerabilidad de inyección SQL (CVE-2026-13526) en el sistema de programación de clases y exámenes de SourceCodester 1.0, que afecta la función desconocida del archivo /edit_class.php, permitiendo la manipulación remota del argumento ID. La explotación de esta vulnerabilidad puede ser iniciada de forma remota y el exploit ya ha sido publicado.",
-    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDY1NDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/178323",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-13526",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-13526"
-      ]
-    }
-  },
-  {
-    "id": 943,
-    "fecha": "2026-06-29T04:15:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Locutus",
-    "resumen": "Se ha identificado una vulnerabilidad de contaminación de prototipos (CVE-2026-25521) en las versiones de Locutus desde la 2.0.12 hasta antes de la 2.0.39, que permite contaminar Object.prototype a través de una entrada manipulada utilizando String.prototype, con un CVSS Score de 8.8 (HIGH). La vulnerabilidad ha sido corregida en la versión 2.0.39.",
-    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDY1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-25521",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-25521",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-25521"
-      ]
-    }
-  },
-  {
-    "id": 942,
-    "fecha": "2026-06-29T03:27:50Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque de cadena de suministro en Mastra AI",
-    "resumen": "Microsoft ha atribuido un ataque de cadena de suministro en el ecosistema de Mastra AI a Sapphire Sleet, un grupo norcoreano también conocido como BlueNoroff, que comprometió más de 140 paquetes npm para plantar dependencias maliciosas en proyectos de desarrolladores. El ataque sigue un patrón de ataques de Corea del Norte (DPRK) contra pipelines de desarrollo de Web3 y AI.",
-    "url_imagen": "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDM2NzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114030",
-    "fuente": "TG: Cyber Security Channel",
-    "dedup_key": "txt:microsoft ties mastra ai npm supply chain attack to north korea microsoft attributed a supply chain attack on the mas",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 941,
-    "fecha": "2026-06-29T03:27:42Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad RCE en PTC Windchill",
-    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) agregó una vulnerabilidad de ejecución de código remoto (RCE) crítica en PTC Windchill a su catálogo de Vulnerabilidades Conocidas Explotadas (KEV), debido a evidencia de explotación activa, lo que permite ataques de shell web. La vulnerabilidad afecta el software de gestión de datos de productos (PDM) y gestión del ciclo de vida de productos (PLM) de PTC.",
-    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MDM2NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:cisa adds exploited ptc windchill rce flaw to kev as web shell attacks continue",
-    "ttps": [],
-    "iocs": {}
   }
 ]
