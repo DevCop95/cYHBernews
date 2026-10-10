@@ -1,5 +1,56 @@
 [
   {
+    "id": 3031,
+    "fecha": "2026-10-10T11:48:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft impulsa pruebas de ecosistemas de certificados ante la amenaza post-cuántica",
+    "resumen": "El programa piloto PQC TLS de Microsoft permite a las organizaciones evaluar la resistencia de sus infraestructuras PKI frente a algoritmos cuánticos, mitigando riesgos de ruptura de confidencialidad y autenticación. Se recomienda iniciar pruebas de compatibilidad y despliegue de algoritmos de cifrado post-cuántico antes de la llegada de capacidades de computación cuántica práctica.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MzI5MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:post quantum authentication why organizations should start testing certificate ecosystems now",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3030,
+    "fecha": "2026-10-10T11:48:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenazas de cadena de suministro en la nube impulsadas por infraestructura Web3",
+    "resumen": "Unit 42 describe cómo actores de amenaza explotan vulnerabilidades en proyectos Web3 y dependencias de código abierto para comprometer entornos cloud empresariales, ampliando la superficie de ataque en la cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MzI5MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:evolution of web3 in cloud supply chain attacks",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3029,
+    "fecha": "2026-10-10T11:48:21Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Informe 2026 revela que 1.200 productos de terceros con IA eluden la gestión de identidad en entornos corporativos",
+    "resumen": "El estudio muestra que solo 282 de 1.280 soluciones de IA integradas en terceros usan SSO, dejando a más de mil agentes invisibles para los sistemas de identidad y exponiendo a las organizaciones a riesgos de suplantación y movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE2MzI5MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:the third party agent problem why security built for ai you chose misses the agents you didn t",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3028,
     "fecha": "2026-10-10T04:15:43Z",
     "categoria": "Ciberseguridad",
@@ -52180,156 +52231,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-41045"
-      ]
-    }
-  },
-  {
-    "id": 948,
-    "fecha": "2026-06-29T10:48:31Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "IA: EEUU actúa contra pérdida laboral",
-    "resumen": "La llegada de la IA podría destruir millones de puestos de trabajo en EEUU, lo que ha llevado a la creación de RAISE US, una organización sin ánimo de lucro que busca formar a empleados en perfiles con futuro en la economía de la IA, con el apoyo de empresas como Amazon, Microsoft y Anthropic. El objetivo es armonizar la evolución de la carrera de la IA sin dejar atrás a las personas, con una meta presupuestaria de 1.000 millones de dólares.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218534-156f33c28f8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/eeuu-se-ha-dado-cuenta-que-millones-trabajadores-no-tienen-futuro-ia-se-ha-puesto-manos-a-obra",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:eeuu se ha dado cuenta de que millones de trabajadores no tienen futuro por la ia y se ha puesto manos a la obra",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "fortune.com",
-        "platform.instagram.com",
-        "unsplash.com",
-        "www.designrush.com",
-        "www.goldmansachs.com",
-        "www.theregreview.org",
-        "www.wsj.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://fortune.com/2025/05/28/anthropic-ceo-warning-ai-job-loss/",
-        "https://i.blogs.es/228e3b/hack-capital-uv5_bsypfum-unsplash/375_142.jpeg",
-        "https://i.blogs.es/4b925c/shamin-haky-rik-i9rxpao-unsplash/1024_2000.jpeg",
-        "https://i.blogs.es/861b22/sap-y-los-programadores/1024_682.jpeg",
-        "https://i.blogs.es/861b22/sap-y-los-programadores/500_333.jpeg",
-        "https://i.blogs.es/861b22/sap-y-los-programadores/840_560.jpeg",
-        "https://unsplash.com/es/fotos/dos-hombres-trabajando-en-computadoras-en-una-oficina-RIk-i9rXPao",
-        "https://www.brookings.edu/articles/ai-labor-displacement-and-the-limits-of-worker-retraining/",
-        "https://www.designrush.com/agency/ai-companies/trends/ai-job-displacement-statistics",
-        "https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-global-workforce",
-        "https://www.raiseus.ai/news/release",
-        "https://www.theregreview.org/2025/11/01/seminar-post-pandemic-reforms-to-unemployment-insurance/",
-        "https://www.wsj.com/lifestyle/careers/the-new-push-to-ready-millions-for-ai-career-upheaval-dfb04cc5"
-      ]
-    }
-  },
-  {
-    "id": 947,
-    "fecha": "2026-06-29T10:48:24Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Microsoft retira 119 extensiones maliciosas",
-    "resumen": "Microsoft ha desactivado una operación de extensiones maliciosas en la tienda de Edge Add-ons que ocultaba su carga útil dentro de archivos de imagen y fuente comunes, y luego se activaba días después de la instalación para robar credenciales y ejecutar fraude publicitario, utilizando una técnica conocida como steganografía. Las 119 extensiones retiradas están vinculadas a un solo actor amenazante que ha estado activo desde al menos 2021.",
-    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAxMDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/microsoft-removes-119-edge-extensions.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:microsoft removes 119 edge extensions that hid malware in images and fonts",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1497.001",
-        "name": "Steganografía en archivos de imagen"
-      },
-      {
-        "id": "T1552.001",
-        "name": "Credential Data from Local System"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 946,
-    "fecha": "2026-06-29T10:48:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Venta de datos de asistentes a eventos",
-    "resumen": "La venta de datos de asistentes a eventos se está llevando a cabo mediante el uso de Agentes IA, Web Scrapping y Data Enrich, lo que permite a los vendedores de datos obtener información valiosa sobre los asistentes a eventos sin necesidad de vulnerabilidades o hacking, afectando la privacidad y seguridad de los asistentes. Los vectores de ataque incluyen el registro en eventos y la extracción de datos a través de plataformas de networking.",
-    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3MzAwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/06/el-negocio-de-la-venta-de-datos-de-los_02013726864.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "txt:el negocio de la venta de datos de los asistentes a eventos agentic ai web scrapping data enrich spam",
-    "ttps": [
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1615",
-        "name": "Web Scraping (similar a T1059, pero se enfoca en la extracción de datos de sitios web)"
-      },
-      {
-        "id": "T1583",
-        "name": "Acquire Infrastructure (no se menciona explícitamente, pero se puede inferir que se utiliza para obtener acceso a plataformas de networking y eventos)"
-      },
-      {
-        "id": "T1083",
-        "name": "File and Directory Discovery"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "1.bp.blogspot.com",
-        "blogger.googleusercontent.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "mypublicinbox.com",
-        "www.elladodelmal.com",
-        "www.mypublicinbox.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
-        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDjF1GBOnDN2Wpx9au5QttbnKFq1OwZ_6FU_zUQSdHht8ady1Yuz_AmKAKeD04G6zRMNZvZhUA4FF6DIAMpMPtvhPgrJ6PtBjQReGicPdttiT7wNd5HEshK0Td2w2i_sBe22TlWvJ6zPJRDr5qjemWB256a3bs_UANn0Ieo_DunuC9PVFu3_kX/s1174/eventos3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDjF1GBOnDN2Wpx9au5QttbnKFq1OwZ_6FU_zUQSdHht8ady1Yuz_AmKAKeD04G6zRMNZvZhUA4FF6DIAMpMPtvhPgrJ6PtBjQReGicPdttiT7wNd5HEshK0Td2w2i_sBe22TlWvJ6zPJRDr5qjemWB256a3bs_UANn0Ieo_DunuC9PVFu3_kX/w640-h456/eventos3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ8ZvyRbxuJYX1Qxant6URpWJyLje3PfhH1iW2xfJXUbnHvYYQEfUDhIhNGJvFZZ3oY9PjyBA8pvzzoGJPJDRrsXx3Lhw2lHqTucoWNCQjvBAGtjUCeAm5GovF8-HvnAJOZD0NIsFETpMeyKz8-siNC0tl6wymvMHJF7D3xPQbg_F9Vj2EbybJ/w640-h374/eventos7.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSHCqBPd93cdCn51g71YWc3cxFA14_SPr0CTjWbw5kT9TG8IO8p5Uxd04HmA2ldHr8IWuwuP0RiLMnrY1kOlJYwZfvM5laEXjFb4IU2cIl7Vwogm6u2LygHpHBV44RRGAqWaBK8BGVoSTmU9qSFuPx7BRur-uxwk3JXntZOarPoslWH-oC4BTE/s1552/eventos1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSHCqBPd93cdCn51g71YWc3cxFA14_SPr0CTjWbw5kT9TG8IO8p5Uxd04HmA2ldHr8IWuwuP0RiLMnrY1kOlJYwZfvM5laEXjFb4IU2cIl7Vwogm6u2LygHpHBV44RRGAqWaBK8BGVoSTmU9qSFuPx7BRur-uxwk3JXntZOarPoslWH-oC4BTE/w490-h640/eventos1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmmLlflxJ_ET7kwxaVS-qosijt1tM9az3gW3HP2PG4pHLdaOgcWt2WbdEArmiHAC9D2otg7AMPzeKN9sPfgUMUh2kuJ7AFfDMV5mNwU8O-DzH0mfb6DQmS0GN4n7PH-_U6J512Lms8ZlV0eWPgYA2jLcqotaQPnNmBNVDdPygK0zriVtdq9Nk/s1668/Evento13.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmmLlflxJ_ET7kwxaVS-qosijt1tM9az3gW3HP2PG4pHLdaOgcWt2WbdEArmiHAC9D2otg7AMPzeKN9sPfgUMUh2kuJ7AFfDMV5mNwU8O-DzH0mfb6DQmS0GN4n7PH-_U6J512Lms8ZlV0eWPgYA2jLcqotaQPnNmBNVDdPygK0zriVtdq9Nk/w640-h342/Evento13.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoNtonRKcpY3VPwbysgBE70cxAKJJmyVMsAl0JG9YGQHXHB4uQ6VbELbftCdvSSoeO1LaxTJYfr44NkrGoyUQbMks0qZDVwMQF6G0iGl1w2URtQLh5r7gMydYGFoORAv5FV4um1qwBee9LljsUwlUzDbiARO9AFL1sK_hJ-l9pPAFxhyphenhyphenCrcel-/s2646/Eventos6.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoNtonRKcpY3VPwbysgBE70cxAKJJmyVMsAl0JG9YGQHXHB4uQ6VbELbftCdvSSoeO1LaxTJYfr44NkrGoyUQbMks0qZDVwMQF6G0iGl1w2URtQLh5r7gMydYGFoORAv5FV4um1qwBee9LljsUwlUzDbiARO9AFL1sK_hJ-l9pPAFxhyphenhyphenCrcel-/w640-h360/Eventos6.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9yU-kV05MvlC9pcHJgKDF-etDVRnAcqfMSsfMimKKiC6AF20ckRslQC6qJtI_-QnU92a2B-ATtyAKnlbauJIFipI9_4mzd8v_kt5V455siPposeaFvc9Q9yM61fZrFbyUzTbT3L8myIJ8ybAFtxjATNR1Uw5a_Sxx2qdQgB_vokGTzFHDt2dn/s1718/Evento2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9yU-kV05MvlC9pcHJgKDF-etDVRnAcqfMSsfMimKKiC6AF20ckRslQC6qJtI_-QnU92a2B-ATtyAKnlbauJIFipI9_4mzd8v_kt5V455siPposeaFvc9Q9yM61fZrFbyUzTbT3L8myIJ8ybAFtxjATNR1Uw5a_Sxx2qdQgB_vokGTzFHDt2dn/w640-h352/Evento2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitAHBHIA3LhCCv598FbgVzO5xJ74NkryQdurZElvGXK4dcX41-HxmeHFoOhCo7TIDZYHtI1PNstk27CAPnZ7eYqE5qYi3OdwLAfrtLc5NBKjwjGvJF2SCQf0dJ7aAa5_mnGNfRsReY7_r0n5NX1zpQp8Lu0sF-jgCKes1BYD3yIea95E6vyQfL/s1535/Eventos0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitAHBHIA3LhCCv598FbgVzO5xJ74NkryQdurZElvGXK4dcX41-HxmeHFoOhCo7TIDZYHtI1PNstk27CAPnZ7eYqE5qYi3OdwLAfrtLc5NBKjwjGvJF2SCQf0dJ7aAa5_mnGNfRsReY7_r0n5NX1zpQp8Lu0sF-jgCKes1BYD3yIea95E6vyQfL/w640-h356/Eventos0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW8ybcgdYApRodPC3QJpqYONHmH06oWYUyl_F31fJVDRV9tNY5FXVpWH1Zn_CeBL3ZrZcA4MS28Ox2l9wF7BncFCZKyeZ3UjJ9G0yeDe0S61vUTKEwcU0yA-ZWMkkaDkomxNTF8N7Asuk8JejfQ9CvBcFEvUIymI9ov2ZF23tG5-PGrn7BTzda/s986/eventos5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW8ybcgdYApRodPC3QJpqYONHmH06oWYUyl_F31fJVDRV9tNY5FXVpWH1Zn_CeBL3ZrZcA4MS28Ox2l9wF7BncFCZKyeZ3UjJ9G0yeDe0S61vUTKEwcU0yA-ZWMkkaDkomxNTF8N7Asuk8JejfQ9CvBcFEvUIymI9ov2ZF23tG5-PGrn7BTzda/w640-h240/eventos5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjry__5IsN5-_o-Pz25qbJjnh5hxHKb_uD4Buov7bQB56R4BKg58YOWZblHl9g_arvmezwmMZ8-JArp8NaBRF9ohCr_HhD3VBt1N2Rm7oCD6ZQ8wIm5ZL1Wx2wEaVACsv34vIOOCy7CcKLTX2lJ5v9eVMJ73834HxpeEqQI47LjXtvdzt0GNgyQ/s1874/evntos4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjry__5IsN5-_o-Pz25qbJjnh5hxHKb_uD4Buov7bQB56R4BKg58YOWZblHl9g_arvmezwmMZ8-JArp8NaBRF9ohCr_HhD3VBt1N2Rm7oCD6ZQ8wIm5ZL1Wx2wEaVACsv34vIOOCy7CcKLTX2lJ5v9eVMJ73834HxpeEqQI47LjXtvdzt0GNgyQ/w640-h506/evntos4.jpg",
-        "https://elladodelmal.com",
-        "https://www.elladodelmal.com/2022/04/do-not-sell-my-information-e-mail-phone.html"
-      ],
-      "email": [
-        "chemaalonso@mypublicinbox.email"
       ]
     }
   }
