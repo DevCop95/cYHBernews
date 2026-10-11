@@ -1,5 +1,67 @@
 [
   {
+    "id": 3044,
+    "fecha": "2026-10-11T12:00:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware escrito en Go compromete red de centro de salud tras phishing interno con C2 no detectado",
+    "resumen": "Un actor comprometió la cuenta de correo de un trabajador sanitario y envió un ejecutable Go con múltiples etapas que despliega un panel de control remoto; el C2 aún no está catalogado por AVs, lo que aumenta el riesgo de exfiltración y movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3MjAwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9509",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:someone sent me some really fucking annoying goop",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3043,
+    "fecha": "2026-10-11T12:00:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-94503 permite carga ilimitada de web shells en Zombify 1.7.7 con CVSS 10.0",
+    "resumen": "Vulnerabilidad de unrestricted file upload en Zombify permite a un atacante subir web shells y tomar control total del servidor web. Afecta todas las versiones hasta 1.7.7, exponiendo a organizaciones a compromisos de confidencialidad, integridad y disponibilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3MjAwMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-94503",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-94503",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-94503"
+      ]
+    }
+  },
+  {
     "id": 3042,
     "fecha": "2026-10-11T03:37:28Z",
     "categoria": "Ciberseguridad",
@@ -52962,42 +53024,6 @@
         "https://i.blogs.es/465004/immich-android-tv-javipas3/500_333.jpeg",
         "https://i.blogs.es/465004/immich-android-tv-javipas3/840_560.jpeg",
         "https://unsplash.com/es/fotos/mujer-con-camisa-negra-sentada-al-lado-de-un-monitor-de-computadora-de-pantalla-plana-negra-Im_cQ6hQo10"
-      ]
-    }
-  },
-  {
-    "id": 963,
-    "fecha": "2026-06-29T19:51:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Corte Suprema: Historiales de ubicación protegidos",
-    "resumen": "La Corte Suprema de EE. UU. dictaminó que los historiales de ubicación de los teléfonos celulares están protegidos por la Cuarta Enmienda, lo que significa que la policía debe obtener una orden judicial para solicitar datos de geovallado relacionados con teléfonos celulares individuales, reforzando la privacidad digital. Esto impacta directamente en la forma en que se pueden obtener y utilizar estos datos en investigaciones, limitando el acceso sin autorización judicial.",
-    "url_imagen": "https://images.unsplash.com/photo-1564707944519-7a116ef3841c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/supreme-court-geofencing-ruling-fourth-amendment",
-    "fuente": "The Record",
-    "dedup_key": "txt:justices rule that cellphone location histories are protected by the fourth amendment",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 962,
-    "fecha": "2026-06-29T19:50:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Debilidades en claves RSA",
-    "resumen": "Investigadores han descubierto una nueva clase de claves RSA débiles que contienen muchos ceros, lo que las hace vulnerables a ataques de factorización, y se han encontrado ejemplos de estas claves en el wild, incluyendo certificados emitidos a grandes organizaciones y hosts SSH que utilizan software específico. Estas vulnerabilidades podrían ser el resultado de implementaciones criptográficas fallidas o, especulativamente, de una puerta trasera deliberadamente diseñada.",
-    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/factoring-rsa-keys-with-many-zeros.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:factoring rsa keys with many zeros",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "blog.trailofbits.com",
-        "www.schneier.com"
-      ],
-      "url": [
-        "https://blog.trailofbits.com/2026/06/12/factoring-short-sleeve-rsa-keys-with-polynomials/"
       ]
     }
   }
