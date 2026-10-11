@@ -1,5 +1,60 @@
 [
   {
+    "id": 3051,
+    "fecha": "2026-10-11T21:25:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de autorización faltante en el plugin Cecabank WooCommerce permite escalado de privilegios CVE-2025-58685",
+    "resumen": "La falla de control de acceso en Cecabank WooCommerce Plugin (≤ 0.3.4) permite a un atacante no autenticado ejecutar acciones privilegiadas y comprometer datos de pago. Se recomienda aplicar el parche inmediato y revisar configuraciones de permisos en entornos WordPress.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3NTM5MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/356081",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2025-58685",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2025-58685"
+      ]
+    }
+  },
+  {
+    "id": 3050,
+    "fecha": "2026-10-11T21:25:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nadella exige tratar todos los modelos de IA como potencialmente comprometidos y habilitar contención inmediata",
+    "resumen": "El CEO de Microsoft insta a implementar controles de auditoría independiente, registro inmutable y mecanismos de parada de emergencia para cualquier modelo de IA con acceso a datos críticos, bajo la premisa de que la confianza debe basarse en la observabilidad y no en la opacidad del modelo. Esta postura redefine la responsabilidad de seguridad interna y obliga a los proveedores a ofrecer entornos de ejecución verificables.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3NTM5Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/satya-nadella-ceo-microsoft-debemos-asumir-que-todos-modelos-ia-estan-comprometidos-contenerlos-principio",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:satya nadella ceo de microsoft debemos asumir que todos los modelos de ia están comprometidos y contenerlos desde el principio",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3049,
+    "fecha": "2026-10-11T21:25:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Publican exploit funcional para vulnerabilidad pre-auth de AnyDesk Linux que otorga acceso root",
+    "resumen": "Investigadores revelaron un exploit operativo que aprovecha la RCE sin autenticación en AnyDesk para Linux, permitiendo a un atacante obtener privilegios de root antes de la autorización del usuario; la corrección en la versión 8.0.3 careció de CVE y descripción detallada.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3NTM5MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers publish working exploit for pre auth anydesk linux flaw that gives root access",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3048,
     "fecha": "2026-10-11T17:38:36Z",
     "categoria": "Ciberseguridad",
@@ -52960,48 +53015,6 @@
     "enlace_original": "https://isc.sans.edu/diary/rss/33110",
     "fuente": "SANS ISC",
     "dedup_key": "txt:adding some automation to the favicon ico method of host recon mon jun 29th",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 971,
-    "fecha": "2026-06-29T22:06:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Breach en Nissan por zero-day de Oracle",
-    "resumen": "Nissan informa de una brecha de datos que afecta a empleados actuales y anteriores debido a la explotación de una vulnerabilidad zero-day en Oracle PeopleSoft por parte de actores maliciosos, posiblemente vinculados al grupo de extorsión ShinyHunters. La brecha de datos se produjo a través de ataques que aprovecharon la vulnerabilidad en el sistema de gestión de recursos humanos de la empresa.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA3ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/nissan-discloses-employee-data-breach-linked-to-oracle-zero-day-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:nissan discloses employee data breach linked to oracle zero day attacks",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 970,
-    "fecha": "2026-06-29T19:51:39Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataques de correo electrónico",
-    "resumen": "Los ataques de compromiso de correo electrónico empresarial (BEC) están evolucionando hacia la impersonación convincente en lugar del uso de malware, lo que los hace más difíciles de detectar para los empleados y las defensas de correo electrónico tradicionales, por lo que se requiere el uso de inteligencia artificial (IA) conductual para identificar amenazas sofisticadas y automatizar flujos de trabajo de respuesta. Esto puede ayudar a mejorar la seguridad contra ataques de phishing y otros tipos de amenazas de correo electrónico.",
-    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/webinar-why-business-email-compromise-attacks-keep-succeeding/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:webinar why business email compromise attacks keep succeeding",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 969,
-    "fecha": "2026-06-29T19:51:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataques de Mustang Panda",
-    "resumen": "El grupo de espionaje alineado con China, Mustang Panda, está llevando a cabo dos campañas contra el gobierno indio y objetivos de energía hidroeléctrica, desplegando nuevo malware y utilizando el servicio de nube legítimo Zoho WorkDrive como canal de comando. Se han detectado compromisos activos en redes del gobierno indio, incluyendo máquinas utilizadas por personal administrativo senior.",
-    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:mustang panda uses zoho workdrive as command channel in indian government attacks",
     "ttps": [],
     "iocs": {}
   }
