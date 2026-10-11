@@ -1,5 +1,108 @@
 [
   {
+    "id": 3048,
+    "fecha": "2026-10-11T17:38:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-108576 permite ejecución remota de comandos en TOZED X300 hasta 6.01.3",
+    "resumen": "La vulnerabilidad en la función process_ping del manejador IPPingDiagnostics permite inyección de comandos del sistema operativo mediante manipulación del parámetro Host, con CVSS 10.0 y explotación remota. Afecta a todos los dispositivos TOZED X300 desplegados con firmware ≤6.01.3, exponiendo a la red a compromisos de integridad y posible toma de control.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3NDAzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-108576",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-108576",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059.003",
+        "name": "Windows Command Shell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-108576"
+      ]
+    }
+  },
+  {
+    "id": 3047,
+    "fecha": "2026-10-11T17:38:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Meta lanza Muse, agente IA personal con acceso a correo, pagos y domótica, genera alerta de privacidad y riesgo",
+    "resumen": "Muse se integra a cuentas de correo, pagos y dispositivos IoT mediante automatización de navegador, exponiendo vectores de ataque de credential harvesting y ejecución remota; la historia previa incluye una CVE que permitía control total con un clic y cientos de skills maliciosas en plataformas similares. SECTOR: Tecnología",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3NDAzMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/big-tech-quieren-que-todos-tengamos-nuestro-agente-ia-personal-idea-fantastica-gran-problema-privacidad",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:las big tech quieren que todos tengamos nuestro agente de ia personal es una idea fantástica con un gran problema la privacidad",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3046,
+    "fecha": "2026-10-11T17:38:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Cinco estados de EE. UU. demandan a TP-Link por supuestas vulnerabilidades en routers y vínculos con China",
+    "resumen": "Texas, Florida, Iowa, Montana y Nebraska acusan a TP-Link de engañar a compradores sobre la seguridad de sus dispositivos y su independencia de entidades chinas, lo que podría haber expuesto a usuarios a interceptación de tráfico y acceso no autorizado. La demanda busca compensación y medidas correctivas mientras la empresa niega los cargos.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3NDAzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:tp link sued by four more u s states over router security and china ties",
+    "ttps": [
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3045,
+    "fecha": "2026-10-11T17:38:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Malware en Nippon Columbia expone 8,7 millones de datos de clientes y empleados en Japón",
+    "resumen": "Un ransomware infiltrado en el contratista de Daiichi Kosho comprometió bases de datos de usuarios y personal, revelando información personal sensible y potencialmente facilitando ataques de phishing dirigidos. La exposición afecta a más de 8,6 millones de registros, incrementando el riesgo de fraude y violaciones de privacidad bajo GDPR-like regulaciones locales.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE3NDAzMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:nippon columbia malware incident exposes 8 6 million karaoke fan records",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3044,
     "fecha": "2026-10-11T12:00:29Z",
     "categoria": "Ciberseguridad",
@@ -52901,130 +53004,5 @@
     "dedup_key": "txt:mustang panda uses zoho workdrive as command channel in indian government attacks",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 968,
-    "fecha": "2026-06-29T19:51:26Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad SimpleHelp explotada",
-    "resumen": "Se está explotando una vulnerabilidad crítica (CVE-2026-48558) en SimpleHelp para desplegar el malware Djinn Stealer, un ladrón de información cross-platform que afecta a Windows, macOS y Linux, representando un riesgo significativo para la seguridad de la información en múltiples plataformas. El vector de ataque aprovecha la vulnerabilidad para infiltrar sistemas y robar datos sensibles.",
-    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "cve:cve-2026-48558",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1021",
-        "name": "Remote Services"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-48558"
-      ]
-    }
-  },
-  {
-    "id": 966,
-    "fecha": "2026-06-29T19:51:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-58000",
-    "resumen": "Se ha descubierto una vulnerabilidad de inyección de comandos en luci-proto-openvpn versión 0.11.1, que permite a un usuario autenticado de LuCI con acceso a la configuración del protocolo OpenVPN ejecutar comandos arbitrarios como root mediante la inyección de metacaracteres de shell en el parámetro cl_meta. La vulnerabilidad ha sido corregida en el commit e4ff45e.",
-    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/179157",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-58000",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-58000"
-      ]
-    }
-  },
-  {
-    "id": 965,
-    "fecha": "2026-06-29T19:51:09Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Malware con código \"vibe\"",
-    "resumen": "Un analista sospecha que un malware stager contiene código \"vibe\", caracterizado por comentarios descriptivos inusuales, lo que sugiere un enfoque poco común en la creación de malware. Esto podría indicar una nueva tendencia en la creación de malware, con posibles implicaciones para la detección y el análisis de amenazas.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2Njl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9042",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:chat i don t want to jump to conclusions but i have a sneaking suspicion this malware stager was vibe coded histor",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 964,
-    "fecha": "2026-06-29T19:51:04Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Loop Engineering reemplaza a Prompt Engineering",
-    "resumen": "La técnica de \"loop engineering\" está reemplazando a la \"prompt engineering\" en la interacción con la IA, permitiendo a los usuarios diseñar sistemas de retroalimentación que mejoran la precisión y eficiencia de los resultados, aunque plantea desafíos en términos de costos y complejidad. El enfoque de \"loop engineering\" implica el diseño de bucles que permiten a la IA autoevaluarse y autocorregirse de forma autónoma.",
-    "url_imagen": "https://images.unsplash.com/photo-1696258686286-1191184126aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NjI2NjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/moda-prompt-engineering-paso-se-lleva-loop-engineering",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:la moda del prompt engineering ya pasó ahora lo que se lleva es el loop engineering",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "addyosmani.com",
-        "platform.instagram.com",
-        "unsplash.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://addyosmani.com/blog/loop-engineering/",
-        "https://i.blogs.es/33df39/developer-copia-2/1024_2000.jpeg",
-        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/1024_2000.jpeg",
-        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/1366_2000.jpeg",
-        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/450_1000.jpeg",
-        "https://i.blogs.es/3e7398/captura-de-pantalla-2026-06-29-a-las-16.02.46/650_1200.jpeg",
-        "https://i.blogs.es/465004/immich-android-tv-javipas3/1024_682.jpeg",
-        "https://i.blogs.es/465004/immich-android-tv-javipas3/500_333.jpeg",
-        "https://i.blogs.es/465004/immich-android-tv-javipas3/840_560.jpeg",
-        "https://unsplash.com/es/fotos/mujer-con-camisa-negra-sentada-al-lado-de-un-monitor-de-computadora-de-pantalla-plana-negra-Im_cQ6hQo10"
-      ]
-    }
   }
 ]
