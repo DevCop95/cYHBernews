@@ -1,5 +1,107 @@
 [
   {
+    "id": 3059,
+    "fecha": "2026-10-12T14:16:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware Goop vinculado a Dark Caracal usa .svg y C2 en 85.192.30.227",
+    "resumen": "Goop, un troyano escrito en Go, se propaga mediante archivos .rev y .svg que inducen a la descarga y ejecución, estableciendo comunicación con el servidor C2 85.192.30.227 sin ser detectado por AVs. El grupo de ciberespionaje Dark Caracal (FQOYI_70153.cpl) está detrás, apuntando a una clínica de salud y robando credenciales de correo.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4MTQ1NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9516",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:be me",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1081",
+        "name": "Credentials in Files"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "85.192.30.227"
+      ],
+      "sha256": [
+        "8df20f4fd964c84bce577b3984bb5c65bccb876707cd9d94934a414bce7d7479"
+      ]
+    }
+  },
+  {
+    "id": 3058,
+    "fecha": "2026-10-12T14:15:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-62024 permite carga arbitraria de archivos en CodeBard Help Desk ≤ 1.1.2",
+    "resumen": "La vulnerabilidad de tipo Arbitrary File Upload (CVSS 9.9) afecta a todas las versiones de CodeBard Help Desk hasta la 1.1.2, permitiendo a un atacante remoto subir archivos maliciosos y ejecutar código en el servidor. Se recomienda actualizar inmediatamente a la versión parcheada y reforzar la validación de entradas en los puntos de carga.",
+    "url_imagen": "https://images.unsplash.com/photo-1790172068601-c192a0c1c0b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4MTQ1NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-62024",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-62024",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-62024"
+      ]
+    }
+  },
+  {
+    "id": 3057,
+    "fecha": "2026-10-12T14:15:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Amazon bloquea a Meta Muse por no identificarse como bot, intensificando riesgos de agentes IA personales",
+    "resumen": "La medida de Amazon contra el agente IA de Meta, Muse, evidencia la falta de detección y control de identidades de bots, aumentando la superficie de ataque de suplantación y espionaje en entornos corporativos. La situación subraya la necesidad de políticas BYOA (Bring Your Own Agent) y mecanismos de autenticación robustos.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4MTQ1NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:bring your own agent your employees assistants are already logged in",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3056,
+    "fecha": "2026-10-12T14:15:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "AvisLoader, nuevo loader de Windows con C2 P2P cifrado y persistencia por accesos directos",
+    "resumen": "AvisLoader emplea comunicaciones peer-to-peer cifradas para ocultar su infraestructura C2, utiliza la entrega ClickFix y persistencia mediante accesos directos, y permite ejecución remota de comandos, complicando la detección y mitigación.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4MTQ1NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:inside avisloader a windows malware loader built to resist disruption",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3055,
     "fecha": "2026-10-12T04:03:41Z",
     "categoria": "Ciberseguridad",
@@ -52915,93 +53017,5 @@
     "dedup_key": "txt:gamaredon expands ukraine attacks with new malware and cloud service abuse",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 979,
-    "fecha": "2026-06-29T22:07:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2025-26595",
-    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer (buffer overflow) en X.Org y Xwayland, con un CVSS Score de 7.8, clasificada como alta (HIGH), que podría permitir a un atacante ejecutar código arbitrario. La falla se encuentra en la función XkbVModMaskText(), que no verifica los límites del búfer al copiar nombres de modificadores virtuales.",
-    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-26595",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2025-26595",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "x.org"
-      ],
-      "cve": [
-        "CVE-2025-26595"
-      ]
-    }
-  },
-  {
-    "id": 978,
-    "fecha": "2026-06-29T22:07:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidades en Linux Kernel",
-    "resumen": "Se ha descubierto una nueva vulnerabilidad en el kernel de Linux, conocida como DirtyClone, que permite a un atacante local escalar privilegios y potencialmente tomar el control del sistema, lo que resalta la importancia de mantener actualizados los parches de seguridad y monitorear los sistemas para detectar posibles exploits. La semana también ha visto un aumento en la actividad de malware que utiliza técnicas de inteligencia artificial (IA) para evadir la detección.",
-    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/weekly-recap-linux-kernel-flaws-ai.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:weekly recap linux kernel flaws ai malware tricks turla backdoor infostealers and more",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 977,
-    "fecha": "2026-06-29T22:06:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha en NAIC por zero-day",
-    "resumen": "La Asociación Nacional de Comisionados de Seguros (NAIC) informa que el grupo de extorsión ShinyHunters robó solo datos públicamente disponibles, registros obsoletos y archivos de configuración después de explotar una vulnerabilidad zero-day en un servidor Oracle PeopleSoft. El impacto parece limitado, pero destaca la importancia de parchear vulnerabilidades zero-day en sistemas críticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/naic-says-public-data-stolen-in-shinyhunters-peoplesoft-breach/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:naic says public data stolen in shinyhunters peoplesoft breach",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 976,
-    "fecha": "2026-06-29T22:06:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Apache Tomcat",
-    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-55957) en Apache Tomcat que permite a atacantes autenticarse sin proporcionar la contraseña correcta cuando se utiliza JNDIRealm con GSSAPI. La vulnerabilidad afecta varias versiones de Apache Tomcat, y se recomienda actualizar a versiones más recientes para solucionar el problema.",
-    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI3NzA4MDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/179341",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-55957",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-55957"
-      ]
-    }
   }
 ]
