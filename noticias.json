@@ -1,5 +1,83 @@
 [
   {
+    "id": 3067,
+    "fecha": "2026-10-13T05:11:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-109758 en Perforce Helix Authentication Service permite acceso no autorizado",
+    "resumen": "La versión 25.2 de Perforce HAS incluye un token bearer SCIM por defecto que, si el endpoint es accesible, permite a un atacante autenticarse y manipular usuarios y grupos; combinado con CVE-2026-61834 se logra contaminación de prototipos y ejecución de código remoto en entornos Node.js/Express.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4NjgyNzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/357728",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-109758,cve-2026-61834",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-109758",
+        "CVE-2026-61834"
+      ]
+    }
+  },
+  {
+    "id": 3066,
+    "fecha": "2026-10-13T05:11:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-89111 permite SSRF en SAP Cloud SDK para Python",
+    "resumen": "La falla de OAuth2 SSRF en el SDK de Python para SAP Cloud permite a un atacante manipular el parámetro tenant_subdomain y redirigir solicitudes de token a un servidor controlado, exfiltrando credenciales de cliente en entornos BTP multi-tenant. Impacta a todas las organizaciones que usan el SDK en la nube con alta severidad (CVSS 10.0).",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4NjgyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-89111",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-89111",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-89111"
+      ]
+    }
+  },
+  {
+    "id": 3065,
+    "fecha": "2026-10-13T05:11:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Ledger suspende ventas tras detectar implante de hardware no autorizado en carteras vendidas por CryptoBilis",
+    "resumen": "Se confirmó la presencia de un dispositivo físico malicioso insertado en wallets de Ledger distribuidas por el revendedor CryptoBilis, permitiendo el robo de más de 86 MM USD en fondos de usuarios del sudeste asiático; la investigación apunta a un ataque de supply-chain con extracción de claves privadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4NjgyNjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ledger finds unauthorized hardware implant in cryptobilis sold wallet amid fund theft reports",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3064,
     "fecha": "2026-10-12T22:22:44Z",
     "categoria": "IA",
@@ -52887,100 +52965,5 @@
     "dedup_key": "txt:airdrop and quick share flaws let nearby attackers trigger crashes and bypass checks",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 988,
-    "fecha": "2026-06-30T11:42:07Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Brecha de datos en Aflac",
-    "resumen": "La empresa de seguros Aflac ha informado sobre una brecha de datos después de que atacantes comprometieron los sistemas de su filial en Japón, robando información personal y de cuentas bancarias, lo que supone un riesgo significativo para la privacidad y seguridad de los clientes. El incidente destaca la importancia de la seguridad cibernética en la industria de los seguros.",
-    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/insurance-giant-aflac-discloses-data-breach-after-subsidiary-hack/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:insurance giant aflac discloses data breach after subsidiary hack",
-    "ttps": [
-      {
-        "id": "T1552",
-        "name": "Compromiso de credenciales de acceso"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1589",
-        "name": "Gather Action no se menciona, pero se puede inferir que los atacantes tuvieron acceso a información personal y de cuentas bancarias, lo que sugiere:"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 987,
-    "fecha": "2026-06-30T06:53:40Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Malware gratuito en Reddit",
-    "resumen": "Un usuario ha reportado obtener malware de forma gratuita a través de la plataforma Reddit, lo que sugiere un posible vector de ataque a través de la ingeniería social o descargas maliciosas. El impacto real depende del tipo de malware y la cantidad de usuarios afectados, pero puede incluir robo de datos, ransomware o exploits de vulnerabilidades.",
-    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MDI0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9043",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:omg i got free malware from reddit",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploitation for Client Execution"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 986,
-    "fecha": "2026-06-30T06:53:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad crítica en libssh2",
-    "resumen": "La vulnerabilidad CVE-2026-55200 en libssh2 permite la ejecución remota de código a través de paquetes SSH manipulados, afectando a aplicaciones que utilizan esta biblioteca para soporte SSH-2, y se corrige con comprobaciones de límites adicionales en el código. El vector de ataque implica el envío de paquetes SSH maliciosos para explotar el fallo.",
-    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MDI0MDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/un-fallo-critico-en-libssh2-permite-ejecutar-codigo-remoto-con-paquetes-ssh-manipulados/?utm_source=rss&utm_medium=rss&utm_campaign=un-fallo-critico-en-libssh2-permite-ejecutar-codigo-remoto-con-paquetes-ssh-manipulados",
-    "fuente": "Una al Día (Hispasec)",
-    "dedup_key": "cve:cve-2026-55200",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/un-fallo-critico-en-libssh2-permite-ejecutar-codigo-remoto-con-paquetes-ssh-manipulados/"
-      ],
-      "cve": [
-        "CVE-2026-55200"
-      ]
-    }
   }
 ]
