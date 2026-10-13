@@ -1,5 +1,73 @@
 [
   {
+    "id": 3070,
+    "fecha": "2026-10-13T13:25:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-65162 en NVIDIA AIStore permite ejecución remota y escalada de privilegios",
+    "resumen": "La falla en la API legacy ETL de Kubernetes de AIStore para Linux permite a un atacante remoto manipular host-namespace y configuraciones de seguridad de contenedores, resultando en ejecución de código, escalada de privilegios, divulgación de información y denegación de servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4OTc5NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-65162",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-65162",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1610",
+        "name": "Deploy Container"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-65162"
+      ]
+    }
+  },
+  {
+    "id": 3069,
+    "fecha": "2026-10-13T13:25:54Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Nvidia suspende la producción de la RTX 5090 para redirigir chips GB202 a tarjetas profesionales de IA",
+    "resumen": "Filtraciones indican que Nvidia dejará de fabricar la GeForce RTX 5090, destinando el chip GB202 exclusivamente a la línea RTX Pro y a aceleradores de centros de datos, lo que eleva la presión sobre la oferta de GPUs de consumo y aumenta los precios en el mercado secundario. La medida busca maximizar márgenes al priorizar hardware de alto valor para cargas de trabajo de inteligencia artificial.",
+    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4OTc5NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/componentes/nvidia-deja-fabricar-rtx-5090-tarjeta-potente-para-jugadores-filtracion-su-chip-ira-destinado-a-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nvidia deja de fabricar la rtx 5090 la tarjeta más potente para jugadores según una filtración",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3068,
+    "fecha": "2026-10-13T13:25:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Foschini Group sufre ciberataque que interrumpe sistemas de tres marcas de moda británicas",
+    "resumen": "La investigación confirma que actores no identificados comprometieron la infraestructura IT de The Foschini Group, provocando indisponibilidad parcial de servicios en sus marcas del Reino Unido. El incidente afecta la cadena de suministro digital y podría derivar en exposición de datos de clientes y proveedores.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4OTc5NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/foschini-group-south-africa-cyber",
+    "fuente": "The Record",
+    "dedup_key": "txt:south african clothing retailer foschini group investigating cyberattack on british fashion brands",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3067,
     "fecha": "2026-10-13T05:11:13Z",
     "categoria": "Ciberseguridad",
@@ -52887,82 +52955,6 @@
     "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/mircosoft-adds-smarter-bot-protection-to-teams-meetings/",
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:microsoft adds smarter bot protection to teams meetings",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 991,
-    "fecha": "2026-06-30T11:42:24Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "GLM-5.2: El modelo chino que rivaliza con Mythos",
-    "resumen": "El modelo de lenguaje GLM-5.2, desarrollado por la startup china Zhipu.ai, ha demostrado un rendimiento comparable al de los mejores modelos de empresas de EEUU, incluyendo Claude Opus 4.8 y GPT-5.5, en materia de ciberseguridad, lo que plantea preocupaciones sobre su potencial uso como herramienta para encontrar vulnerabilidades y explotar sistemas. Dos empresas de ciberseguridad independientes, Semgrep y Graphistry, han confirmado que GLM-5.2 es capaz de encadenar exploits de manera similar a un atacante de élite humano.",
-    "url_imagen": "https://images.unsplash.com/photo-1718241905673-a81786aaa609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/creadores-modelo-chino-glm-5-2-afirman-que-igual-peligroso-que-mythos-eso-plantea-momento-sputnik-para-ia-china",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:tenemos un mythos en casa los expertos ya afirman que el modelo chino glm 5 2 es tan peligroso como el de anthropic",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "k.sina.com.cn",
-        "platform.instagram.com",
-        "qz.com",
-        "techcrunch.com",
-        "www.360.cn",
-        "www.axios.com",
-        "www.graphistry.com",
-        "www.reuters.com",
-        "www.theregister.com",
-        "www.xataka.com",
-        "www.youtube.com"
-      ],
-      "url": [
-        "https://i.blogs.es/3b0939/dario/375_142.jpeg",
-        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/1024_2000.jpeg",
-        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/1366_2000.jpeg",
-        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/450_1000.jpeg",
-        "https://i.blogs.es/9be283/captura-de-pantalla-2026-06-30-a-las-10.14.03/650_1200.jpeg",
-        "https://i.blogs.es/ca0810/zai-glm/1024_2000.jpeg",
-        "https://i.blogs.es/fb354b/bomba-atomica/375_142.jpeg",
-        "https://k.sina.com.cn/article_5953189932_162d6782c06704i3g6.html",
-        "https://qz.com/china-360-security-ai-vulnerability-tool-anthropic-mythos-062426",
-        "https://sakana.ai/fugu-release/",
-        "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-        "https://techcrunch.com/2026/06/27/asian-ai-startups-launch-mythos-like-models-as-anthropics-export-ban-drags-on/",
-        "https://www.360.cn/",
-        "https://www.axios.com/2026/06/25/china-glm-52-open-source-hackers",
-        "https://www.graphistry.com/blog/glm-5-2-cybersecurity-open-model",
-        "https://www.reuters.com/article/us-usa-china-blacklist-idUSKBN22Y2QR/",
-        "https://www.reuters.com/legal/litigation/chinas-360-says-it-has-developed-tools-match-anthropics-mythos-2026-06-24/",
-        "https://www.theregister.com/security/2026/06/26/chinese-cybersecurity-company-claims-its-built-a-better-than-mythos-bug-finder/5262642"
-      ]
-    }
-  },
-  {
-    "id": 990,
-    "fecha": "2026-06-30T11:42:19Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ropa para evadir reconocimiento facial",
-    "resumen": "Un investigador ha desarrollado camisetas gráficas que pueden confundir las redes neuronales utilizadas en cámaras de vigilancia con reconocimiento facial, potencialmente permitiendo a los individuos evitar la detección. Esto se logra mediante patrones y diseños que interferen con los algoritmos de aprendizaje automático (ML) utilizados en los sistemas de reconocimiento facial.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/clothes-invisible-facial-recognition",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:can clothes make you invisible to facial recognition",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 989,
-    "fecha": "2026-06-30T11:42:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidades en AirDrop y Quick Share",
-    "resumen": "Se han descubierto seis vulnerabilidades de seguridad en AirDrop y Quick Share, permitiendo a atacantes cercanos provocar fallos y eludir comprobaciones de seguridad en dispositivos Mac o iPhone configurados para recibir archivos de cualquier persona, sin necesidad de conexión previa o interacción del usuario. Los ataques pueden realizarse mediante un laptop dentro del rango inalámbrico, aprovechando estas vulnerabilidades para causar fallos en el servicio de intercambio de archivos.",
-    "url_imagen": "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3MzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/airdrop-and-quick-share-flaws-let.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:airdrop and quick share flaws let nearby attackers trigger crashes and bypass checks",
     "ttps": [],
     "iocs": {}
   }
