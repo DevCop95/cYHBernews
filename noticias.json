@@ -1,5 +1,99 @@
 [
   {
+    "id": 3074,
+    "fecha": "2026-10-13T20:29:50Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Google despliega Gemini 4 Argon, IA de DeepMind para código, finanzas y ciberseguridad",
+    "resumen": "Gemini 4 Argon combina razonamiento avanzado y agentes autónomos para analizar millones de líneas de código, optimizar compilaciones y detectar vulnerabilidades, como la probada por Wiz en datos de pacientes. Su API de hasta un millón de tokens y capacidad de continuación permite trabajos multietapa en programación, análisis financiero y seguridad informática.",
+    "url_imagen": "https://images.unsplash.com/photo-1786539861527-9741097fdfff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MjMzOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/gemini-4-argon-nueva-bestia-google-para-trabajo-pesado-codigo-ciencia-finanzas-ciberseguridad",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:gemini 4 argon es la nueva bestia de google para el trabajo pesado código ciencia finanzas y ciberseguridad",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3073,
+    "fecha": "2026-10-13T20:29:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en firmware SWANN SWIFI-SE2KIC permiten acceso sin autenticación a video en red local",
+    "resumen": "Tres CVE (CVE-2026-107605/107606/107607) en versiones ≤2.0.22 del firmware permiten a un atacante en la LAN visualizar o capturar streams RTSP sin credenciales, exponiendo datos sensibles de vigilancia. La mitigación requiere segmentación de red, firewall y actualización inmediata del firmware.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MjMzODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-107605,cve-2026-107606,cve-2026-107607",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "support.swann.com"
+      ],
+      "url": [
+        "https://support.swann.com/hc/en-us/requests/new"
+      ],
+      "cve": [
+        "CVE-2026-107605",
+        "CVE-2026-107606",
+        "CVE-2026-107607"
+      ]
+    }
+  },
+  {
+    "id": 3072,
+    "fecha": "2026-10-13T20:29:44Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Anthropic alerta que pequeños modelos de IA podrían crear botnets autónomos en dispositivos IoT en meses",
+    "resumen": "Según el laboratorio de IA Anthropic, los modelos de IA de bajo tamaño están a punto de adquirir capacidad de autorreplicación en dispositivos IoT como hornos inteligentes y TV boxes Android, lo que permitiría la generación de worm botnets sin punto de control centralizado, complicando su mitigación. Este vector de ataque combina vulnerabilidades de firmware y la falta de segmentación de red, incrementando el riesgo de compromisos masivos en entornos industriales y domésticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MjMzODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:anthropic warns small ai models could soon form self propagating iot botnets",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3071,
+    "fecha": "2026-10-13T20:29:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft publica parche de octubre 2026 con 1.411 vulnerabilidades y 3 zero-days críticos",
+    "resumen": "El Patch Tuesday de octubre corrige 1.411 fallos, entre ellos un CVE en explotación activa y dos zero-days divulgados públicamente que afectan componentes críticos de Windows y Azure; la exposición prolongada aumenta el riesgo de ransomware y APT dirigidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MjMzODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft october 2026 patch tuesday fixes 1 411 flaws 3 zero days",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3070,
     "fecha": "2026-10-13T13:25:57Z",
     "categoria": "Ciberseguridad",
@@ -52854,108 +52948,6 @@
         "name": "Develop Capabilities (se infiere por la planificación y ejecución a través de foros subterráneos)"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 995,
-    "fecha": "2026-06-30T11:43:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-53916 en Apache ActiveMQ",
-    "resumen": "Se ha identificado una vulnerabilidad de asignación de memoria con valores de tamaño excesivo (CVE-2026-53916) en Apache ActiveMQ, que permite a un cliente no autenticado agotar la memoria del broker a través de una conexión STOMP NIO, afectando versiones anteriores a 5.19.8 y 6.2.7. Se recomienda actualizar a la versión 6.2.7 o 5.19.8 para solucionar el problema.",
-    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk4MTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/180719",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-53916",
-    "ttps": [
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1588",
-        "name": "Obtain Capabilities (no es directamente aplicable, pero se podría considerar que el atacante obtiene la capacidad de agotar la memoria del broker)"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1498",
-        "name": "Network Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-53916"
-      ]
-    }
-  },
-  {
-    "id": 994,
-    "fecha": "2026-06-30T11:42:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en Amazon Q",
-    "resumen": "Una vulnerabilidad en la extensión Amazon Q permite a adversarios ejecutar código arbitrario y robar credenciales de cloud, destacando el creciente riesgo de MCP (Multi-Cloud Persistence). Los atacantes pueden plantar un repositorio malicioso para explotar esta vulnerabilidad y obtener acceso no autorizado a credenciales de cloud.",
-    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cloud-security/amazon-q-vs-extension-flaw-leads-cloud-credential-theft",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:amazon q vs extension flaw leads to cloud credential theft",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 993,
-    "fecha": "2026-06-30T11:42:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque BioShocking engaña a navegadores AI",
-    "resumen": "La técnica BioShocking, desarrollada por la firma de seguridad LayerX, logra engañar a navegadores y asistentes AI, incluyendo ChatGPT Atlas de OpenAI, Comet de Perplexity y la extensión de navegador Claude de Anthropic, para que revelen credenciales de usuario, demostrando una vulnerabilidad en la seguridad de estos sistemas. El ataque aprovecha la capacidad de convencer al navegador AI de que está participando en un juego, lo que lleva a la exposición de información confidencial.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218603-1fc7cca58d6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/new-bioshocking-attack-tricks-ai.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:new bioshocking attack tricks ai browsers into leaking user credentials",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 992,
-    "fecha": "2026-06-30T11:42:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Protección de bots en Teams",
-    "resumen": "Microsoft ha introducido una nueva política de administrador en Teams que permite a los organizadores prevenir que bots de terceros se unan a reuniones sin aprobación, mejorando la seguridad y reduciendo el riesgo de ataques de phishing o malware. Esta medida puede ayudar a mitigar vulnerabilidades en la seguridad de las reuniones en línea.",
-    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MTk3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/mircosoft-adds-smarter-bot-protection-to-teams-meetings/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:microsoft adds smarter bot protection to teams meetings",
-    "ttps": [],
     "iocs": {}
   }
 ]
