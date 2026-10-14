@@ -1,5 +1,93 @@
 [
   {
+    "id": 3084,
+    "fecha": "2026-10-14T08:22:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "DOJ desmantela granjas de laptops en Texas vinculadas a fraude que generó $3 M para Corea del Norte",
+    "resumen": "Operación federal incautó más de 40 domicilios en Texas donde se gestionaban esquemas de trabajo remoto falsos que canalizaban fondos al régimen norcoreano, resultando en dos arrestos y la interrupción de la infraestructura de fraude.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5NjYxNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/north-korea-laptop-farms-worker-scams-doj-raids-texas",
+    "fuente": "The Record",
+    "dedup_key": "txt:two arrested as doj takes down laptop farms responsible for 3 million in north korean revenue",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3083,
+    "fecha": "2026-10-14T08:22:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Pandillas de ransomware intensifican amenazas físicas y acoso a familiares de empleados",
+    "resumen": "Se reporta que grupos de ransomware están coaccionando a víctimas mediante amenazas de violencia, secuestro y vigilancia de familiares, ampliando el vector de presión más allá del cifrado de datos. La veracidad de los casos es difícil de confirmar, pero el potencial de escalada de daño físico obliga a revisar protocolos de respuesta y protección de personal.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5NjYxNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ransomware gangs embrace physical threats family stalking",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3082,
+    "fecha": "2026-10-14T08:22:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad de escritura de 4 bytes permite ejecutar código en enclave VBS de Windows SmartScreen",
+    "resumen": "Investigadores explotaron un bug de escritura y temporización para inyectar código en el enclave VBS que protege contraseñas del filtro anti-phishing SmartScreen, comprometiendo la integridad del sistema incluso bajo control total del atacante.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5NjYxNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:four byte write and timing bug let researchers run code in windows smartscreen enclave",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3081,
+    "fecha": "2026-10-14T08:22:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-14851 expone datos de facturación y PII en el servicio web de Copart",
+    "resumen": "La falta de controles de autorización en el endpoint de PDFs permite a atacantes acceder a información personal y financiera de clientes sin autenticación, con CVSS 9.2. La exposición incluye nombres, direcciones, números de factura y datos de pago, incrementando el riesgo de fraude y suplantación.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5NjYxNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/divulgacion-no-autorizada-de-informacion-en-el-servicio-web-de-facturacion-de",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-14851",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14851"
+      ]
+    }
+  },
+  {
+    "id": 3080,
+    "fecha": "2026-10-14T08:22:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "El 42 % de las organizaciones deja alertas de seguridad sin investigar, según informe de AI Agents en SOC",
+    "resumen": "El estudio de Cybersecurity Insiders y Netskope revela que, pese a la mejora en detección mediante agentes de IA, la falta de recursos operativos deja sin respuesta un número crítico de alertas, aumentando la exposición a exploits y ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5NjYxNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-42-de-las-organizaciones-deja-alertas-de-seguridad-sin-investigar/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el 42 de las organizaciones deja alertas de seguridad sin investigar",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3079,
     "fecha": "2026-10-14T00:10:10Z",
     "categoria": "Ciberseguridad",
@@ -52806,108 +52894,6 @@
       ],
       "cve": [
         "CVE-2026-11769"
-      ]
-    }
-  },
-  {
-    "id": 1005,
-    "fecha": "2026-06-30T17:02:53Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Clipper Crypto Silencioso",
-    "resumen": "Investigadores de ciberseguridad han detectado una campaña activa de extensión de navegador que roba criptomonedas reemplazando direcciones de billetera de manera sigilosa cuando los usuarios incautos inician una transacción, utilizando una extensión falsa de Google Notes. La campaña, denominada Silent Swap por McAfee Labs, se distribuye a través de instaladores no firmados en variantes .NET y Golang.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mzg5NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/silent-swap-crypto-clipper-uses-fake.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:silent swap crypto clipper uses fake google notes extension to replace wallet addresses",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1187",
-        "name": "Forced Authentication (no se menciona explícitamente, pero se infiere que la extensión falsa reemplaza direcciones de billetera, lo que podría requerir autenticación forzada)"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion (no se menciona explícitamente, pero se infiere que la campaña utiliza una extensión falsa para evadir la detección)"
-      },
-      {
-        "id": "T1556",
-        "name": "Modify Authentication Process (se menciona que la extensión falsa reemplaza direcciones de billetera, lo"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1004,
-    "fecha": "2026-06-30T14:11:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad XSS en SYSGUARD 6001",
-    "resumen": "Se ha identificado una vulnerabilidad de cross-site scripting (XSS) almacenada en el producto SYSGUARD 6001 de Eksagate, afectando versiones desde 2.0.2 hasta 6.1.4.0, lo que permite a atacantes inyectar código malicioso en páginas web generadas por el sistema. El proveedor ha confirmado que el producto no es compatible, lo que puede complicar la aplicación de parches de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/180845",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-8403",
-    "ttps": [],
-    "iocs": {
-      "ipv4": [
-        "6.1.4.0"
-      ],
-      "cve": [
-        "CVE-2026-8403"
-      ]
-    }
-  },
-  {
-    "id": 1003,
-    "fecha": "2026-06-30T14:10:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "NIST Reduce Análisis de CVE",
-    "resumen": "El Instituto Nacional de Estándares y Tecnología (NIST) ha reducido el número de Common Vulnerabilities and Exposures (CVE) seleccionadas para análisis en profundidad, lo que ha generado resultados mixtos en cuanto a la cobertura y precisión de las vulnerabilidades, según investigadores. Esto puede impactar la capacidad de los equipos de seguridad para identificar y mitigar vulnerabilidades de manera efectiva.",
-    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2MTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/nist-enrichment-reductions-cve-coverage-accuracy",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:nist enrichment reductions impact cve coverage accuracy",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1002,
-    "fecha": "2026-06-30T14:10:07Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Kali Linux 2026.2 Lanzada",
-    "resumen": "La versión 2026.2 de Kali Linux incluye 9 nuevas herramientas y mejoras significativas en Kali NetHunter, lo que puede impactar en la capacidad de los profesionales de seguridad para realizar pruebas de penetración y análisis de vulnerabilidades. Los nuevos tools y actualizaciones de NetHunter pueden ser utilizados para identificar y explotar vulnerabilidades en sistemas y redes.",
-    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2MDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/linux/kali-linux-20262-released-with-9-new-tools-nethunter-updates/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:kali linux 2026 2 released with 9 new tools nethunter updates",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1001,
-    "fecha": "2026-06-30T14:10:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidades de desbordamiento de memoria",
-    "resumen": "Se han identificado múltiples vulnerabilidades de desbordamiento de memoria (CVE-2026-8655) en NetScaler ADC y NetScaler Gateway, que pueden causar comportamiento impredecible o erróneo y denegación de servicio (DoS) si se configura como equilibrador de carga (LB) de tipo Oracle, proxy DNS o resolutor recursivo DNS. Estas vulnerabilidades pueden ser explotadas para afectar la disponibilidad y la integridad de los servicios.",
-    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg2MDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/180847",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-8655",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-8655"
       ]
     }
   }
