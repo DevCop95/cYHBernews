@@ -1,5 +1,118 @@
 [
   {
+    "id": 3079,
+    "fecha": "2026-10-14T00:10:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-92817 permite escalada de privilegios en Ignition",
+    "resumen": "La falla en el módulo Perspective de Inductive Automation Ignition permite a un usuario autenticado de bajo nivel obtener privilegios de diseñador y ejecutar código arbitrario en el proceso del gateway. Afecta versiones 8.1.0-8.1.54 y 8.3.0-8.3.8; se recomienda actualizar a 8.1.55 o 8.3.9 inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MzY2MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-92817",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-92817"
+      ]
+    }
+  },
+  {
+    "id": 3078,
+    "fecha": "2026-10-14T00:10:09Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Empleado de OpenAI habría usado ChatGPT para planear la instalación de un dispositivo de escucha en la oficina",
+    "resumen": "Según los prompts del chatbot, el ingeniero utilizó ChatGPT para diseñar la colocación de un micrófono oculto días antes de que fuera descubierto en una sala de juntas de alto nivel, evidenciando un caso de abuso interno de IA para espionaje corporativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MzY2MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/an-openai-employee-allegedly-used-a-chatbot-to-help-plant-a-recording-device-at-the-office/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:an openai employee allegedly used a chatbot to help plant a recording device at the office",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3077,
+    "fecha": "2026-10-14T00:10:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Zero-days críticos se esconden en la masiva actualización de Microsoft de octubre",
+    "resumen": "La última Patch Tuesday de Microsoft incluye vulnerabilidades de bypass de seguridad y ejecución remota de código sin autenticación, exponiendo a entornos corporativos a potenciales exploits zero-day. Se recomienda aplicar mitigaciones inmediatas y reforzar la monitorización de EDR para detectar actividad sospechosa.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MzY2MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:zero days lurk in microsoft s overgrown october patch tuesday",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3076,
+    "fecha": "2026-10-14T00:10:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft lanza parche que corrige más de 1.400 vulnerabilidades críticas en Windows y software asociado",
+    "resumen": "La actualización mensual de Microsoft aborda más de 1.400 CVE, incluyendo varios zero-days y fallos de elevación de privilegios que podrían ser explotados por actores avanzados; el volumen supera en un 40 % el lote récord de septiembre, incrementando la superficie de ataque mitigada.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MzY2MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:microsoft patches more than 1 400 security flaws",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3075,
+    "fecha": "2026-10-14T00:10:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Docker corrige vulnerabilidad crítica de dos años en Hub que permitía suplantar usuarios",
+    "resumen": "La falla en la función de conversión de cuentas personales a organizaciones permitía a un atacante subir, descargar o eliminar imágenes como otro usuario; Docker la parcheó el 30 septiembre y no se detectó explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5MzY2MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:docker fixes critical two year old hub flaw that let one user push images as another",
+    "ttps": [
+      {
+        "id": "T1098",
+        "name": "Account Manipulation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3074,
     "fecha": "2026-10-13T20:29:50Z",
     "categoria": "IA",
@@ -52797,157 +52910,5 @@
         "CVE-2026-8655"
       ]
     }
-  },
-  {
-    "id": 1000,
-    "fecha": "2026-06-30T14:09:54Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Eclipse con IA",
-    "resumen": "Un desarrollador ha creado una aplicación con IA para encontrar el lugar más cercano para ver el eclipse solar, utilizando modelos de lenguaje como ChatGPT y GLM-5.2, y plataformas como Claude Code, para planificar y desarrollar la aplicación de manera eficiente. La aplicación utiliza fuentes de datos astronómicas y APIs para determinar las mejores ubicaciones para ver el eclipse.",
-    "url_imagen": "https://images.unsplash.com/photo-1739036868260-c26b292cd85d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1OTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/queria-saber-lugar-cercano-para-ir-a-ver-eclipse-asi-que-he-programado-aplicacion-ia-para-buscarlo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:quería saber el lugar más cercano para ir a ver el eclipse así que he programado una aplicación con ia para buscarlo",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "eclipse.javipas.com",
-        "javipas.com",
-        "opale.imcce.fr",
-        "platform.instagram.com",
-        "project-osrm.org",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://aa.usno.navy.mil/",
-        "https://eclipse.javipas.com/app/",
-        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/1024_2000.jpeg",
-        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/1366_2000.jpeg",
-        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/450_1000.jpeg",
-        "https://i.blogs.es/003fb5/captura-de-pantalla-2026-06-30-a-las-11.25.59/650_1200.jpeg",
-        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/1024_2000.jpeg",
-        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/1366_2000.jpeg",
-        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/450_1000.jpeg",
-        "https://i.blogs.es/077328/captura-de-pantalla-2026-06-30-a-las-11.04.10/650_1200.jpeg",
-        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/1024_2000.jpeg",
-        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/1366_2000.jpeg",
-        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/450_1000.jpeg",
-        "https://i.blogs.es/119871/eclipse-javipas-glm-5-2/650_1200.jpeg",
-        "https://i.blogs.es/3c3c6a/eclipse-glm-2/1024_2000.jpeg",
-        "https://i.blogs.es/3c3c6a/eclipse-glm-2/1366_2000.jpeg",
-        "https://i.blogs.es/3c3c6a/eclipse-glm-2/450_1000.jpeg",
-        "https://i.blogs.es/3c3c6a/eclipse-glm-2/650_1200.jpeg",
-        "https://i.blogs.es/465004/immich-android-tv-javipas3/375_142.jpeg",
-        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/1024_2000.jpeg",
-        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/1366_2000.jpeg",
-        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/450_1000.jpeg",
-        "https://i.blogs.es/817cff/barcelona-eclipse-correciones/650_1200.jpeg",
-        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/1024_2000.jpeg",
-        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/1366_2000.jpeg",
-        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/450_1000.jpeg",
-        "https://i.blogs.es/874131/captura-de-pantalla-2026-06-30-a-las-11.29.05/650_1200.jpeg",
-        "https://i.blogs.es/9264c1/eclipse-1/1024_2000.jpeg",
-        "https://i.blogs.es/9264c1/eclipse-1/1366_2000.jpeg",
-        "https://i.blogs.es/9264c1/eclipse-1/450_1000.jpeg",
-        "https://i.blogs.es/9264c1/eclipse-1/650_1200.jpeg",
-        "https://i.blogs.es/b39fc9/mapa-eclipse/1024_2000.jpeg",
-        "https://i.blogs.es/bde429/refactorizar/1024_2000.jpeg",
-        "https://i.blogs.es/bde429/refactorizar/1366_2000.jpeg",
-        "https://i.blogs.es/bde429/refactorizar/450_1000.jpeg",
-        "https://i.blogs.es/bde429/refactorizar/650_1200.jpeg",
-        "https://i.blogs.es/c83ee2/eclipse-barcelona/1024_2000.jpeg",
-        "https://i.blogs.es/c83ee2/eclipse-barcelona/1366_2000.jpeg",
-        "https://i.blogs.es/c83ee2/eclipse-barcelona/450_1000.jpeg",
-        "https://i.blogs.es/c83ee2/eclipse-barcelona/650_1200.jpeg",
-        "https://javipas.com/2026/06/29/donde-ver-el-eclipse-mi-app-para-probar-glm-5-2-a-tope/",
-        "https://opale.imcce.fr/",
-        "https://project-osrm.org/"
-      ]
-    }
-  },
-  {
-    "id": 999,
-    "fecha": "2026-06-30T14:09:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vigilancia AI Avanzada",
-    "resumen": "La inteligencia artificial (IA) está revolucionando la vigilancia por video, permitiendo búsquedas en lenguaje natural y análisis avanzados de comportamientos en grandes cantidades de footage. Esto abre nuevas posibilidades para la vigilancia masiva, permitiendo a los oficiales de inteligencia buscar patrones y comportamientos específicos de manera eficiente.",
-    "url_imagen": "https://images.unsplash.com/photo-1767966783202-c5659292bd39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1ODl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/06/the-realities-of-ai-video-surveillance.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:the realities of ai video surveillance",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "www.schneier.com"
-      ],
-      "url": [
-        "https://archive.ph/s6mES"
-      ]
-    }
-  },
-  {
-    "id": 998,
-    "fecha": "2026-06-30T14:09:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Desastre Silencioso en Seguridad",
-    "resumen": "Los flujos de trabajo generados por IA pueden suponer un riesgo significativo para la seguridad, ya que la automatización puede funcionar correctamente pero sin que nadie comprenda completamente su funcionamiento interno, lo que puede facilitar ataques como phishing o exploits de vulnerabilidades desconocidas. Esto puede afectar la seguridad de los sistemas y datos, especialmente en entornos donde se confía en la automatización para procesos críticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1ODR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-generated-workflows-silent-security-disaster",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:ai generated workflows are a silent security disaster",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 997,
-    "fecha": "2026-06-30T14:09:39Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "INFO",
-    "titulo": "Riesgo cibernético FIFA 2026",
-    "resumen": "Según Check Point Research, la infraestructura de fraude dirigida a la Copa Mundial de la FIFA 2026 ya había sido construida y desplegada parcialmente antes del inicio del evento, con actividad de actores amenazantes preplanificada en al menos tres sectores y diez idiomas. El informe de amenazas cibernéticas de la Copa Mundial de la FIFA 2026 de Check Point Exposure Management destaca el riesgo cibernético asociado con el evento.",
-    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/what-numbers-say-about-fifa-2026-cyber.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:what the numbers say about fifa 2026 cyber risk",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 996,
-    "fecha": "2026-06-30T14:09:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "INFO",
-    "titulo": "Ataques BEC: Amenaza Coordinada",
-    "resumen": "Los ataques de Business Email Compromise (BEC) son operaciones coordinadas que involucran cuentas comprometidas, investigación financiera y redes de extracción de efectivo, y se planifican y ejecutan a través de foros subterráneos. Estos ataques representan una amenaza significativa para las organizaciones, con vectores de ataque que incluyen phishing y compromiso de cuentas.",
-    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4Mjg1NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/lessons-from-the-underground-how-to-combat-business-email-compromise/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:lessons from the underground how to combat business email compromise",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1056",
-        "name": "Input Capture (se infiere por el compromiso de cuentas)"
-      },
-      {
-        "id": "T1595",
-        "name": "Active Scanning (se infiere por la investigación financiera)"
-      },
-      {
-        "id": "T1587",
-        "name": "Develop Capabilities (se infiere por la planificación y ejecución a través de foros subterráneos)"
-      }
-    ],
-    "iocs": {}
   }
 ]
