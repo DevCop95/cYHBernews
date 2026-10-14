@@ -1,5 +1,110 @@
 [
   {
+    "id": 3089,
+    "fecha": "2026-10-14T14:19:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA alerta sobre vulnerabilidad CVE-2026-104935 en Ivanti Connect Secure y recomienda parche inmediato",
+    "resumen": "La agencia estadounidense advierte que la falla de autenticación bypass (CVSS 8.6) está siendo explotada activamente, con al menos 105 intentos registrados en honeypots; se insta a actualizar todos los dispositivos Ivanti Connect Secure a la versión corregida.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5ODc1OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-104935",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-104935"
+      ]
+    }
+  },
+  {
+    "id": 3088,
+    "fecha": "2026-10-14T14:19:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Agentic Pentesting con IA revela brechas críticas y propone validación de exposición para cerrarlas",
+    "resumen": "El pentesting automatizado basado en agentes de IA identifica rutas de ataque complejas que los escáneres tradicionales omiten, pero las restricciones de seguridad y limitaciones de red dejan activos sin cobertura. Picus Security propone combinar pruebas agentic con validación de exposición y simulación de brechas para mitigar estos puntos ciegos.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5ODc1OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:the blind spots of agentic pentesting and how to close them",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3087,
+    "fecha": "2026-10-14T14:19:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ciberataque a OT compromete sistemas de refrigeración en supermercados franceses y provoca pérdida de productos perecederos",
+    "resumen": "Los atacantes explotaron interfaces web expuestas de controladores Danfoss desactualizados, activando ciclos de desescarche que elevaron la temperatura de vitrinas frigoríficas, obligando al retiro de mercancía y generando interrupciones operativas. El incidente evidencia la vulnerabilidad crítica de la exposición de sistemas OT a Internet y la necesidad de segmentación y parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5ODc1OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unaaldia.hispasec.com/un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses/?utm_source=rss&utm_medium=rss&utm_campaign=un-ciberataque-apaga-vitrinas-frigorificas-en-supermercados-franceses",
+    "fuente": "Una al Día (Hispasec)",
+    "dedup_key": "txt:un ciberataque apaga vitrinas frigoríficas en supermercados franceses",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3086,
+    "fecha": "2026-10-14T14:19:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Seis vulnerabilidades críticas en HPE Integrated Lights-Out permiten eludir autenticación y escalar privilegios",
+    "resumen": "Un investigador de runZero reportó seis CVE en iLO 5/6/7 que pueden ser explotadas remotamente para omitir la autenticación IPMI/RMCP+, obtener sesiones de administrador o provocar DoS; la mitigación requiere actualizar a versiones 3.22, 1.79 y 1.25.01 o superiores y deshabilitar IPMI sobre LAN.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5ODc1OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-integrated-lights-out-de-hpe",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-65206",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-65206"
+      ]
+    }
+  },
+  {
+    "id": 3085,
+    "fecha": "2026-10-14T14:19:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "La UPV lidera VANTAGE, IA multiagente para evaluación de vulnerabilidades y prevención de ciberataques en Europa",
+    "resumen": "El consorcio VANTAGE, financiado por el European Cybersecurity Competence Centre, desarrollará un marco basado en IA multiagente que automatiza la detección y análisis de vulnerabilidades, integrando técnicas de RAG y agentes autónomos para simular ataques y reforzar la defensa. Su despliegue apunta a estandarizar la respuesta a amenazas en infraestructuras críticas europeas.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE5ODc1ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-upv-impulsa-vantage-un-proyecto-de-ia-multiagente-para-prevenir-ciberataques-en-europa/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la upv impulsa vantage un proyecto de ia multiagente para prevenir ciberataques en europa",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3084,
     "fecha": "2026-10-14T08:22:33Z",
     "categoria": "Ciberseguridad",
@@ -52790,111 +52895,5 @@
     "dedup_key": "txt:cia chief highlights major shifts in agency s tech approach",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1010,
-    "fecha": "2026-06-30T19:48:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque a agentes AI con descripciones tóxicas",
-    "resumen": "Investigadores de Microsoft han descubierto que descripciones de herramientas envenenadas pueden hacer que agentes autónomos de IA revelen datos confidenciales sin violar ninguna regla de seguridad, lo que dificulta la detección del ataque. Esto permite a los atacantes obtener acceso a datos de la empresa sin disparar alarmas de seguridad en configuraciones predeterminadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1739054730060-2cfb438ed96a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:microsoft warns poisoned mcp tool descriptions can make ai agents leak data",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1552",
-        "name": "Unconventional Password Brute Force no se aplica, pero se puede considerar T1552.001 - T1552 no aplica, pero se puede considerar T1190 como la técnica más cercana."
-      },
-      {
-        "id": "T1061",
-        "name": "Técnica no especificada (no se menciona explícitamente una técnica específica, pero se puede inferir que se está utilizando una forma de evasión de seguridad)"
-      },
-      {
-        "id": "T1482",
-        "name": "Técnica no especificada (no se menciona explícitamente una técnica específica, pero se puede inferir que se está utilizando una forma de manip"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1009,
-    "fecha": "2026-06-30T17:04:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Samsung Members",
-    "resumen": "Se ha identificado una vulnerabilidad de validación de entrada impropera (CVE-2026-21037) en versiones anteriores a 5.8.01.5 de Samsung Members, permitiendo a atacantes locales acceder a URLs arbitrarias y lanzar actividades arbitrarias con privilegios de Samsung Members. Esto puede ser explotado para realizar ataques de phishing o malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/181301",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-21037",
-    "ttps": [],
-    "iocs": {
-      "ipv4": [
-        "5.8.01.5"
-      ],
-      "cve": [
-        "CVE-2026-21037"
-      ]
-    }
-  },
-  {
-    "id": 1008,
-    "fecha": "2026-06-30T17:04:53Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Aplicaciones iOS de IA expuestas",
-    "resumen": "Investigadores descubrieron que 282 aplicaciones de chatbot de IA para iPhone, casi dos tercios de las 444 analizadas, exponen claves de API y acceso a proxies de IA a través de su tráfico de red, permitiendo a atacantes enviar solicitudes de modelo en la cuenta del desarrollador. El vector de ataque incluye la exposición de claves de API en texto plano, tokens reutilizables y servidores backend sin autenticación.",
-    "url_imagen": "https://images.unsplash.com/photo-1761223976379-04c361d3068a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/282-ios-apps-found-leaking-llm-api-keys.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:282 ios ai apps leak api keys and open ai proxy access in network traffic study",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1007,
-    "fecha": "2026-06-30T17:04:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad BlueHammer explotada",
-    "resumen": "La vulnerabilidad de escalada de privilegios BlueHammer en Microsoft Defender está siendo explotada por grupos de ransomware, lo que supone un riesgo significativo para la seguridad de los sistemas que utilizan este software, especialmente aquellos que no han aplicado las actualizaciones de seguridad pertinentes. El vector de ataque aprovecha la vulnerabilidad para obtener acceso no autorizado y ejecutar código malicioso.",
-    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwODl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-windows-bluehammer-flaw-now-exploited-by-ransomware-gangs/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:cisa windows bluehammer flaw now exploited by ransomware gangs",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1006,
-    "fecha": "2026-06-30T17:04:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-11769 en Grafana Operator",
-    "resumen": "Se ha descubierto una vulnerabilidad de path traversal/privilege escalation en el Grafana Operator, que permite a un atacante obtener el token de servicio de cuenta de Kubernetes del operador de Grafana, afectando versiones <= 5.23. La actualización a la versión 5.24.0 o la implementación de una ValidatingAdmissionPolicy pueden mitigar el problema.",
-    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4MzkwODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/181303",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-11769",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "admissionregistration.k8s.io",
-        "grafana.integreatly.org"
-      ],
-      "cve": [
-        "CVE-2026-11769"
-      ]
-    }
   }
 ]
