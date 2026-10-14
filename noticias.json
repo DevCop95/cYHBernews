@@ -1,5 +1,160 @@
 [
   {
+    "id": 3099,
+    "fecha": "2026-10-14T23:39:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Policía de Macedonia del Norte detiene al presunto administrador del mercado cibercriminal OLVX",
+    "resumen": "La operación conjunta entre el Ministerio del Interior macedonio y el FBI culminó con la captura del supuesto líder del marketplace OLVX, utilizado para la venta de exploits, ransomware y credenciales robadas; la detención permite desarticular la infraestructura de comando y control y potencialmente revelar vectores de ataque activos.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMjExNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/olvx-cybercrime-marketplace-arrest-north-macedonia",
+    "fuente": "The Record",
+    "dedup_key": "txt:north macedonian police arrest alleged administrator behind olvx cybercrime market",
+    "ttps": [
+      {
+        "id": "T1588",
+        "name": "Obtain Capabilities"
+      },
+      {
+        "id": "T1588.002",
+        "name": "Tool"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3098,
+    "fecha": "2026-10-14T23:39:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Descubren proyectos VBA huérfanos incrustados en archivos DWG que pueden servir como vector de malware",
+    "resumen": "Investigadores hallaron código VBA oculto en dibujos AutoCAD (.dwg), lo que permite la ejecución de payloads sin detección y facilita la propagación de malware a través de documentos de ingeniería. Se recomienda inspeccionar y sanitizar archivos DWG antes de su uso en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMjExNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33420",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:orphaned vba projects inside dwg files wed oct 14th",
+    "ttps": [
+      {
+        "id": "T1059.005",
+        "name": "Visual Basic"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3097,
+    "fecha": "2026-10-14T23:39:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cisco advierte de ataques activos que explotan vulnerabilidad crítica en Secure Email Gateway",
+    "resumen": "La falla permite a un remitente no autenticado cargar archivos en el sistema operativo del appliance y ejecutar comandos como root mediante un adjunto malicioso. El vector de ataque se basa en correos filtrados por el gateway, exponiendo a organizaciones a compromisos de infraestructura de correo.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMjExNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cisco warns of active attacks exploiting new critical secure email gateway vulnerability",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3096,
+    "fecha": "2026-10-14T23:39:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Palo Alto Networks alerta sobre vulnerabilidad RCE en PAN-OS explotada en ataques contra firewalls",
+    "resumen": "Se ha publicado un parche crítico para la vulnerabilidad zero-day CVE-2026-0322 que permite ejecución remota de código en dispositivos PAN-OS, ya utilizada en campañas activas contra infraestructuras de red. El vector de ataque se basa en la manipulación de paquetes de gestión y afecta a todas las versiones soportadas del firewall.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMjExNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "cve:cve-2026-0322",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-0322"
+      ]
+    }
+  },
+  {
+    "id": 3095,
+    "fecha": "2026-10-14T23:39:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tres vulnerabilidades críticas en TSplus Remote Access permiten bypass de MFA y acceso remoto no autenticado",
+    "resumen": "Se han identificado tres CVE (CVE-2026-108070, CVE-2026-108071 y CVE-2026-108072) que afectan a TSplus Remote Access 19.20.3.10, permitiendo a atacantes remotos evadir controles de acceso, eludir la autenticación multifactor y ejecutar código arbitrario con privilegios elevados.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMjExNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tsplus-remote-access",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-108070,cve-2026-108071,cve-2026-108072",
+    "ttps": [
+      {
+        "id": "T1111",
+        "name": "Multi-Factor Authentication Interception"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "19.20.3.10"
+      ],
+      "domain": [
+        "socket.io"
+      ],
+      "cve": [
+        "CVE-2026-108070",
+        "CVE-2026-108071",
+        "CVE-2026-108072"
+      ]
+    }
+  },
+  {
     "id": 3094,
     "fecha": "2026-10-14T19:09:30Z",
     "categoria": "Ciberseguridad",
@@ -52744,122 +52899,6 @@
     "enlace_original": "https://t.me/Cyber_Security_Channel/114031",
     "fuente": "TG: Cyber Security Channel",
     "dedup_key": "txt:from last week klue breach cascades into multiple cybersecurity firms attackers breached market intelligence platfor",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1021,
-    "fecha": "2026-06-30T22:13:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en GitHub Enterprise",
-    "resumen": "Se identificó una vulnerabilidad de autorización en GitHub Enterprise Server (CVE-2026-9132) que permitía a un usuario autenticado leer código fuente de repositorios privados a los que no tenía acceso, aprovechando una falta de verificación en el endpoint de descripción de pull request de Copilot. La explotación requería una cuenta autenticada con acceso de lectura a al menos un repositorio.",
-    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/181574",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-9132",
-    "ttps": [
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1550",
-        "name": "Use of Known Vulnerabilities"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploitation of Remote Services (no se ajusta perfectamente, pero se menciona la explotación de una vulnerabilidad en un endpoint de descripción de pull request)"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-9132"
-      ]
-    }
-  },
-  {
-    "id": 1020,
-    "fecha": "2026-06-30T22:13:38Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Agentjacking: Amenaza a Agentes AI",
-    "resumen": "Se ha demostrado una nueva técnica de ataque llamada \"agentjacking\" que explota la incapacidad de los agentes de inteligencia artificial (IA) para distinguir entre contenido e instrucciones, permitiendo a los atacantes manipular y controlar estos agentes a gran escala. Esto puede tener un impacto significativo en la seguridad de los sistemas que dependen de la automatización y la codificación asistida por IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1678957949479-b1e876bee3f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/fake-bug-report-hijacks-ai-coding-agents",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:fake bug report hijacks ai coding agents at scale",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1018,
-    "fecha": "2026-06-30T22:13:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque BioShocking manipula navegadores AI",
-    "resumen": "El ataque BioShocking es una técnica de inyección de comandos que engaña a los navegadores con IA para que ignoren las barreras de seguridad y realicen acciones riesgosas, considerándolas parte de un escenario ficticio. Esto podría permitir el robo de datos y otros ataques maliciosos, aprovechando la capacidad de los modelos de lenguaje para interpretar comandos ambiguos.",
-    "url_imagen": "https://images.unsplash.com/photo-1739054729925-7069f7790e4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-bioshocking-attack-manipulates-ai-browser-into-data-theft/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:new bioshocking attack manipulates ai browser into data theft",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1558",
-        "name": "Steal Application Access Token"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1017,
-    "fecha": "2026-06-30T19:49:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "RustDuck: Botnet de DDoS",
-    "resumen": "La nueva familia de malware RustDuck, escrita en Rust, está secuestrando routers domésticos, cámaras IP, cajas Android y servidores mal seguros para construir una red de bots destinada a realizar ataques de denegación de servicio (DDoS) contra sitios web y servicios en línea. Los investigadores de QiAnXin's XLab han estado rastreando esta amenaza desde febrero de 2026 y destacan su capacidad para evolucionar rápidamente.",
-    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5NTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:rustduck botnet rebuilds in rust to hijack routers and servers for ddos",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1016,
-    "fecha": "2026-06-30T19:49:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ransomware Blackfield exige rescate",
-    "resumen": "El grupo de ransomware Blackfield ha exigido un rescate de $2 millones a Nidec Corporation, un gran fabricante japonés de componentes electrónicos para aplicaciones automotrices y de computación, después de un ataque de ransomware que probablemente involucró técnicas de phishing o explotación de vulnerabilidades. El impacto real incluye la posible pérdida de datos confidenciales y la interrupción de operaciones.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NDg5NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/blackfield-ransomware-asks-nidec-corporation-for-2-million-ransom/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:blackfield ransomware asks nidec corporation for 2 million ransom",
     "ttps": [],
     "iocs": {}
   }
