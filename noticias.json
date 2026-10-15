@@ -1,5 +1,107 @@
 [
   {
+    "id": 3109,
+    "fecha": "2026-10-15T08:01:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft desmantela red china de kits de phishing y mercado ilícito que alimentaba crímenes cibernéticos globales",
+    "resumen": "La unidad de crímenes digitales de Microsoft, junto a agencias internacionales, identificó y cerró la infraestructura operada bajo los códigos Storm-2990 y Storm-3119, que suministraba kits, dominios y servidores de comando y control para campañas de phishing a gran escala. La interrupción elimina un vector crítico de ataque de phishing dirigido, reduciendo la exposición de organizaciones a credenciales comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNTEyNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:the hidden network inside the phishing infrastructure ecosystem powering global cybercrime",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3108,
+    "fecha": "2026-10-15T08:00:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Grupo UAT-6275 enfoca a gobiernos de la CEI, recursos hídricos y energía en campaña de espionaje",
+    "resumen": "Talos y Recorded Future detectaron actividad del actor UAT-6275 contra entidades gubernamentales de la CEI, con indicadores de compromiso que apuntan a infraestructuras críticas de agua y energía, lo que eleva el riesgo de exfiltración de datos sensibles y sabotaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNTEyNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/break-the-silence-kazakhstan-nexus-uat-6275-targets-cis-government-organizations/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:break the silence kazakhstan nexus uat 6275 targets cis government organizations",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3107,
+    "fecha": "2026-10-15T08:00:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Supermercados de EE. UU pierden millones por firmware OT de refrigeradores sin parchear",
+    "resumen": "La falta de actualizaciones en el firmware de los sistemas de refrigeración OT permitió ataques que interrumpieron la cadena de frío, generando pérdidas multimillonarias en cientos de tiendas que delegaron su gestión a terceros.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNTEyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:eu grocers pay a steep price for unpatched fridge firmware",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3106,
+    "fecha": "2026-10-15T08:00:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft y socios interrumpen tres kits de phishing responsables de más de mil millones de mensajes fraudulentos",
+    "resumen": "La operación conjunta de Microsoft, Health-ISAC, JC3 y actores privados desmanteló los kits CoGUI, Haozi y Iron Man System, que desde enero 2026 generaron más de 1 000 millones de correos de phishing dirigidos a sectores críticos. La medida corta la infraestructura de distribución y reduce la superficie de ataque para campañas de credential harvesting.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNTEyNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft disrupts 3 phishing kits linked to over 1 billion scam messages",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3105,
+    "fecha": "2026-10-15T08:00:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Dispositivos IoT en EoL se convierten en botnets por IA generativa sin parchear",
+    "resumen": "La falta de actualizaciones en electrodomésticos inteligentes, como refrigeradores Samsung Family Hub, permite que LLMs como Gemini generen exploits automáticos, exponiendo a botnets, DDoS y acceso remoto no autorizado. Se recomienda parchear o aislar inmediatamente cualquier dispositivo fuera de soporte.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNTEyNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/smart-things-trabajando-mas-alla-de-su.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:smart things trabajando más allá de su end of life parchea los electrodomésticos de tu casa",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3104,
     "fecha": "2026-10-15T02:58:28Z",
     "categoria": "Ciberseguridad",
@@ -52811,161 +52913,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1031,
-    "fecha": "2026-07-01T07:16:49Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Grupo chino ataca sistemas críticos",
-    "resumen": "Un grupo vinculado a China ha comprometido al menos 10 organizaciones regionales en el sudeste asiático, incluyendo dos entidades estatales, y ha desplegado una nueva backdoor para mantener acceso no autorizado, lo que supone un riesgo significativo para la seguridad de los sistemas críticos en la región. Los vectores de ataque no se han especificado, pero el uso de una nueva backdoor sugiere una estrategia de persistencia y evasión.",
-    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyMDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/threat-intelligence/china-linked-group-targets-southeast-asia-critical-systems",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:china linked group targets southeast asia critical systems",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1215",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1021.001",
-        "name": "Remote Desktop Protocol"
-      },
-      {
-        "id": "T1505.003",
-        "name": "Application Access Token: Local"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1030,
-    "fecha": "2026-07-01T07:16:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque de Azure CLI",
-    "resumen": "Un ataque automatizado de \"password spray\" dirigido a la interfaz de línea de comandos de Azure (CLI) ha comprometido al menos 78 cuentas de Microsoft en más de 81 millones de intentos, originándose desde una dirección IPv6 controlada por LSHIY LLC. El ataque aprovecha la falta de autenticación multifactor para realizar intentos de acceso masivos.",
-    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyMDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:azure cli password spray hits at least 78 microsoft accounts in 81m attempts",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise no es aplicable en este caso, en su lugar se puede considerar T1566 - Phishing, pero como no hay suficiente información sobre el tipo de phishing, se puede considerar T1110 como la técnica más relevante para el \"password spray\". Sin embargo, se puede inferir que el ataque también involucra T1557 - Forced Authentication, pero como no hay suficiente información, se puede considerar T1550 como la técnica más cercana."
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1029,
-    "fecha": "2026-07-01T07:16:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "IA acelera la ciberseguridad",
-    "resumen": "La velocidad de la Inteligencia Artificial (IA) ha cambiado la forma en que se aborda la ciberseguridad, haciendo que el síndrome del impostor sea menos relevante debido a la constante necesidad de aprender y adaptarse a nuevas tecnologías y amenazas. La IA ha introducido conceptos como el \"Threat Modeling\" para \"Agentic AI\" y el \"Internet Agéntico\", lo que ha modificado el enfoque de la seguridad hacia la orquestación y gestión de agentes.",
-    "url_imagen": "https://images.unsplash.com/photo-1718241905916-1f9786324de9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/07/la-velocidad-mato-al-impostor.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "txt:la velocidad mató al impostor",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "1.bp.blogspot.com",
-        "blogger.googleusercontent.com",
-        "elladodelmal.com",
-        "es.wikipedia.org",
-        "feeds.feedburner.com",
-        "mypublicinbox.com",
-        "www.mypublicinbox.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvXMFz9Zli9zeZ4vp13EEXYFgeh2Lk3navTyAYrFsDTzfq03A2JovUnis6PXoNuRk0wTGGpkRKj2Zx2dCcA-fhNZQl1LoNhueZwKVTinTQlSzS4P1Wrq-u4RHeIzQ3LW6NqBcsj6nHVWS5VwgLc5M-Y4mUP_lVkmOW-PnLqLifOQAaoRoOKea-/s800/impostor0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvXMFz9Zli9zeZ4vp13EEXYFgeh2Lk3navTyAYrFsDTzfq03A2JovUnis6PXoNuRk0wTGGpkRKj2Zx2dCcA-fhNZQl1LoNhueZwKVTinTQlSzS4P1Wrq-u4RHeIzQ3LW6NqBcsj6nHVWS5VwgLc5M-Y4mUP_lVkmOW-PnLqLifOQAaoRoOKea-/w640-h372/impostor0.jpg",
-        "https://elladodelmal.com"
-      ]
-    }
-  },
-  {
-    "id": 1028,
-    "fecha": "2026-07-01T07:16:32Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Correo electrónico: objetivo ciberdelictivo",
-    "resumen": "La cuenta de correo electrónico es un objetivo clave para los ciberdelincuentes debido a que puede servir como un sistema de identidad, permitiendo a los atacantes acceder a información confidencial y realizar ataques como phishing o ransomware. El acceso no autorizado a la bandeja de entrada puede tener un impacto significativo en la seguridad de la información personal y empresarial.",
-    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAxOTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/por-que-ciberdelincuentes-quieren-acceder-cuenta-correo-electronico/",
-    "fuente": "WeLiveSecurity",
-    "dedup_key": "txt:por qué tu cuenta de correo electrónico es un objetivo clave para los ciberdelincuentes",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1027,
-    "fecha": "2026-07-01T02:59:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-57963",
-    "resumen": "La vulnerabilidad CVE-2026-57963 permite a un atacante inyectar contenido arbitrario con estilos, enlaces de phishing y CSS que manipula la interfaz de usuario del chat, a través de mensajes de chat HTML enviados vía Matrix o XMPP, afectando a usuarios de Thunderbird, que ha sido parcheada en las versiones 152.0.1 y 140.12.1. El impacto incluye posibles ataques de phishing y manipulación de la interfaz de usuario.",
-    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NzQ3NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/182106",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-57963",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-57963"
-      ]
-    }
   }
 ]
