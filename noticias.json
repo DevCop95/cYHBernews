@@ -1,5 +1,141 @@
 [
   {
+    "id": 3104,
+    "fecha": "2026-10-15T02:58:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Unit 42 detecta PEERSTITCH, malware ARM64 que compromete más de 500 firewalls FortiGate vía CVE-2024-47575",
+    "resumen": "El análisis revela que el implant PEERSTITCH persiste en memoria de dispositivos FortiGate ARM64, aprovechando la vulnerabilidad de ejecución remota CVE-2024-47575 para instalar código malicioso y crear un canal de comando y control. La campaña afecta a más de 500 firewalls, exponiendo a organizaciones a potenciales exfiltraciones y movimientos laterales.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMzMxMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
+    "fuente": "Unit 42",
+    "dedup_key": "cve:cve-2024-47575",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-47575"
+      ]
+    }
+  },
+  {
+    "id": 3103,
+    "fecha": "2026-10-15T02:58:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Yam Store opera red de phishing que envía más de mil millones de mensajes maliciosos",
+    "resumen": "El mercado ilícito Yam Store provee infraestructura en la nube y kits de phishing, facilitando la distribución masiva de correos fraudulentos que superan el billón a nivel global, incrementando el riesgo de compromisos de credenciales y fraude financiero.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMzMxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:yam store the phishing network behind a billion messages",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3102,
+    "fecha": "2026-10-15T02:58:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers comprometen servidores Nextcloud mediante backdoor en la app Collabora CODE",
+    "resumen": "Se explotó una vulnerabilidad crítica en la aplicación opcional Collabora Online – Built-in CODE, permitiendo la inserción de web shells con privilegios del servidor web; los ataques se detectaron desde el 10 de septiembre y afectan a instalaciones de Nextcloud que habilitan el plugin.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMzMxMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers backdoor nextcloud servers through critical flaw in collabora s built in code app",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1100",
+        "name": "Web Shell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3101,
+    "fecha": "2026-10-15T02:58:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FBI desmantela granja de laptops de la amenaza norteña Chollima y detiene a dos sospechosos en Texas",
+    "resumen": "El Departamento de Justicia interrumpió la infraestructura de 187 laptops utilizadas por la célula de trabajadores remotos de Corea del Norte, vinculada a campañas de espionaje y ransomware, y acusó a 14 individuos, incluyendo a dos ciudadanos estadounidenses.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMzMxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fbi raids dprk it worker laptop farms in texas us nationals arrested",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3100,
+    "fecha": "2026-10-15T02:58:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Fortinet expone vulnerabilidades críticas en FortiSIEM y FortiSandbox que permiten RCE y bypass de autenticación",
+    "resumen": "Dos CVE críticos (CVE-2026-106173 y CVE-2026-107656) permiten a un atacante remoto no autenticado ejecutar código arbitrario o eludir la autenticación mediante path traversal en gRPC y manipulación de la interfaz web. Se recomienda actualizar a las versiones parcheadas y, como medida temporal, bloquear el puerto TCP 27918 en FortiSIEM.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMzMxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-fortinet-3",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-106173,cve-2026-107656",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-106173",
+        "CVE-2026-107656"
+      ]
+    }
+  },
+  {
     "id": 3099,
     "fecha": "2026-10-14T23:39:12Z",
     "categoria": "Ciberseguridad",
@@ -52831,75 +52967,5 @@
         "CVE-2026-57963"
       ]
     }
-  },
-  {
-    "id": 1026,
-    "fecha": "2026-07-01T02:59:10Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Acceso a Claude Fable restaurado",
-    "resumen": "Anthropic ha confirmado que el Departamento de Comercio ha levantado los controles de exportación sobre los dos modelos más potentes de Claude, Fable 5 y Mythos 5, lo que permitirá restaurar el acceso a estos modelos el miércoles. Esto impacta en el acceso a tecnologías de inteligencia artificial avanzadas, específicamente en modelos de lenguaje como Fable y Mythos.",
-    "url_imagen": "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NzQ3NTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-to-restore-claude-fable-access-on-wednesday/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:anthropic to restore claude fable access on wednesday",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1025,
-    "fecha": "2026-06-30T22:14:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque a endpoints de IA expuestos",
-    "resumen": "Los atacantes están aprovechando endpoints de IA expuestos para llevar a cabo operaciones ofensivas, sin necesidad de autenticación especial, solo necesitan conocer la ubicación del endpoint. Esto representa un vector de ataque significativo, ya que los endpoints de IA pueden ser utilizados para lanzar ataques de phishing, malware y otros tipos de campañas maliciosas.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2NDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cloud-security/attackers-hijack-exposed-ai-endpoints-power-offensive-ops",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:attackers hijack exposed ai endpoints to power offensive ops",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1024,
-    "fecha": "2026-06-30T22:14:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en agentes de codificación AI",
-    "resumen": "La investigación de Adversa AI ha descubierto una vulnerabilidad en agentes de codificación AI de código abierto, permitiendo a atacantes bypassar la comprobación de seguridad GuardFall mediante una técnica de inyección de shell que ha sido pública durante décadas, afectando a 10 de 11 agentes populares testeado. Esto permite a los atacantes ejecutar comandos peligrosos, poniendo en riesgo la seguridad de los sistemas que los utilizan.",
-    "url_imagen": "https://images.unsplash.com/photo-1777449425442-adc413f3d873?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2NDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/06/guardfall-exposes-open-source-ai-coding.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:guardfall exposes open source ai coding agents to decades old shell injection risks",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1023,
-    "fecha": "2026-06-30T22:13:55Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Microsoft acelera seguridad cuántica",
-    "resumen": "Microsoft está acelerando su hoja de ruta de seguridad cuántica debido a los avances en computación cuántica que requieren reemplazar los estándares de cifrado actuales antes de lo esperado, lo que puede mitigar riesgos de ataques cuánticos a la seguridad de la información. Esto implica un impacto significativo en la seguridad de los sistemas y redes, ya que los algoritmos cuánticos pueden potencialmente comprometer la seguridad de los datos cifrados con tecnologías actuales.",
-    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-accelerates-quantum-safe-roadmap-as-risks-grow/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:microsoft accelerates quantum safe roadmap as risks grow",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1022,
-    "fecha": "2026-06-30T22:13:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha en Klue afecta firmas de ciberseguridad",
-    "resumen": "La plataforma de inteligencia de mercado Klue fue comprometida, permitiendo a los atacantes acceder a los entornos de Salesforce de varios clientes, incluidas empresas de ciberseguridad como HackerOne, Huntress y Snyk, destacando el riesgo de la cadena de suministro de SaaS. La brecha inicial en Klue se extendió a múltiples firmas de ciberseguridad, subrayando la importancia de la seguridad en la cadena de suministro.",
-    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4NTc2MzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114031",
-    "fuente": "TG: Cyber Security Channel",
-    "dedup_key": "txt:from last week klue breach cascades into multiple cybersecurity firms attackers breached market intelligence platfor",
-    "ttps": [],
-    "iocs": {}
   }
 ]
