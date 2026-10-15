@@ -1,5 +1,93 @@
 [
   {
+    "id": 3114,
+    "fecha": "2026-10-15T13:58:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataque poco sofisticado expone riesgo de terceros en la infraestructura de un banco europeo",
+    "resumen": "Unit 42 analiza un incidente donde un actor aprovechó vulnerabilidades en un proveedor externo para comprometer la red del banco, destacando la falta de segmentación y la ausencia de monitoreo de tráfico interno; se ofrecen indicadores de compromiso y medidas de detección para mitigar amenazas similares.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNzI3MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/noise-inside-network-third-party-risk/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:the noise inside the network how an unsophisticated attack exposed a third party risk",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3113,
+    "fecha": "2026-10-15T13:58:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Zero-Click spyware se propaga en smartphones mediante anuncios dirigidos y evade detección tradicional",
+    "resumen": "El Citizen Lab documenta la primera evidencia técnica de malware mercenario que se instala sin interacción del usuario a través de campañas de publicidad online, explotando vulnerabilidades de bajo nivel en Android e iOS. El vector de ataque de “malvertising” permite comprometer dispositivos en masa, eludiendo filtros de seguridad y aumentando el riesgo de espionaje persistente.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNzI3MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/nightmare-scenario-zero-click-spyware-is-infecting-phones-via-targeted-ads/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:nightmare scenario zero click spyware is infecting phones via targeted ads",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3112,
+    "fecha": "2026-10-15T13:58:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad zero-click en Claude Code Desktop permite robar credenciales de desarrolladores",
+    "resumen": "Un bug en el panel de vista previa de Claude Code Desktop expone claves SSH, credenciales AWS y tokens OAuth de Claude, habilitando un ataque sin interacción del usuario para extraer información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNzI2OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:anthropic sneakpeek flaw is a silent zero click threat",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3111,
+    "fecha": "2026-10-15T13:58:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Drupal publica parches críticos para vulnerabilidad RCE en Field UI sin necesidad de login",
+    "resumen": "La falla en el módulo Field UI permite ejecución remota de código mediante módulos contribuidos, con al menos un vector que no requiere autenticación; los parches se incluyen en Drupal 11.4.10, 11.3.19 y 10.6.19.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNzI2OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:drupal patches critical core rce flaw with no login path via contributed modules",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3110,
+    "fecha": "2026-10-15T13:58:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica de omisión de autenticación en Stela permite suplantar cuentas admin",
+    "resumen": "CVE-2026-101287 afecta a Stela (versión < 1.60.1) al no validar la integridad de la cookie authProcess, permitiendo a un atacante remoto modificarla y obtener un JWT con privilegios SUPER_ADMIN sin credenciales. La explotación es trivial, requiere solo la manipulación de la cookie y compromete la confidencialidad e integridad del sistema de gestión de eventos.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwNzI2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-en-stela-de-diaple-networking",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-101287",
+    "ttps": [
+      {
+        "id": "T1556.006",
+        "name": "Multi-Factor Authentication"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-101287"
+      ]
+    }
+  },
+  {
     "id": 3109,
     "fecha": "2026-10-15T08:01:00Z",
     "categoria": "Ciberseguridad",
@@ -52812,104 +52900,6 @@
       {
         "id": "T1566",
         "name": "Phishing"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1036,
-    "fecha": "2026-07-01T07:17:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad UltraVNC",
-    "resumen": "Se ha descubierto la vulnerabilidad CVE-2026-7839 en UltraVNC repeater, que utiliza una contraseña predeterminada y hardcoded \"adminadmi2\" para el servidor de administración HTTP, permitiendo a atacantes remotos autenticarse como administradores y obtener control total de la configuración. El ataque puede realizarse a través del puerto HTTP predeterminado (TCP 80) sin limitaciones de velocidad ni bloqueo.",
-    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/182164",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-7839",
-    "ttps": [],
-    "iocs": {
-      "ipv4": [
-        "1.8.2.2"
-      ],
-      "cve": [
-        "CVE-2026-7839"
-      ]
-    }
-  },
-  {
-    "id": 1035,
-    "fecha": "2026-07-01T07:17:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Phishing en hoteles EU y Asia",
-    "resumen": "Campañas de phishing similares han sido detectadas por Microsoft y Trend Micro, utilizando archivos zip maliciosos para propagar malware a través de ingeniería social y ofuscación, incluyendo el abuso de blockchain. Los atacantes logran persistencia en las organizaciones de hospitalidad de la UE y Asia.",
-    "url_imagen": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/phishers-persistence-eu-asia-hospitality-orgs",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:phishers gain persistence at eu asia hospitality orgs",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1034,
-    "fecha": "2026-07-01T07:17:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "ClickFix: Malware a través de API",
-    "resumen": "Un investigador ha analizado 3,000 payloads de ClickFix, revelando que el malware se entrega a través de servidores API que asignan el mismo malware con diferentes disfraces a cada visitante, y se ha descubierto un nuevo método de entrega diseñado para evadir el escaneo de scripts de Windows. Esto indica una evolución en las tácticas de entrega de malware, aumentando el riesgo de infecciones.",
-    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/researcher-analyzes-3000-live-clickfix.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:researcher analyzes 3 000 live clickfix payloads exposing api driven malware delivery",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1033,
-    "fecha": "2026-07-01T07:17:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Paquetes PyPI maliciosos atacan servidores de bots de Telegram",
-    "resumen": "Una campaña de ataque activa desde noviembre pasado ha estado dirigida a desarrolladores de Python que construyen bots de Telegram, utilizando versiones trojanizadas de Pyrogram que permiten a los atacantes leer archivos arbitrarios en servidores comprometidos, lo que puede permitir el control de los servidores de bots de Telegram. Los paquetes maliciosos en PyPI son el vector de ataque principal en esta campaña.",
-    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/malicious-pypi-packages-give-hackers-control-of-telegram-bot-servers/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:malicious pypi packages give hackers control of telegram bot servers",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1032,
-    "fecha": "2026-07-01T07:16:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Phishing contra Metamask",
-    "resumen": "Un correo electrónico de phishing dirigido a usuarios de Metamask, una cartera de criptomonedas, intenta engañar a los usuarios para obtener sus credenciales, aprovechando su popularidad como un objetivo atractivo para los ciberdelincuentes. El vector de ataque es un correo electrónico malicioso que busca explotar la confianza de los usuarios en la plataforma.",
-    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI4OTAyMTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33118",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:why ask credentials if there are secret codes x3f wed jul 1st",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1114",
-        "name": "Email Collection"
-      },
-      {
-        "id": "T1586",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1598",
-        "name": "Obfuscated Files or Information (no se menciona explícitamente, pero se puede inferir que el correo electrónico intenta engañar a los usuarios)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
       }
     ],
     "iocs": {}
