@@ -1,5 +1,143 @@
 [
   {
+    "id": 3119,
+    "fecha": "2026-10-15T18:54:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hack a la Legal Aid Agency del Reino Unido expone registros desde 1978 y amplía alcance del robo",
+    "resumen": "El ataque a la Legal Aid Agency comprometió bases de datos con información legal y personal que data de 1978, incrementando la superficie de exposición y potenciales vectores de phishing dirigidos a profesionales del derecho.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwOTA0OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/uk-legal-aid-cyberattack-data",
+    "fuente": "The Record",
+    "dedup_key": "txt:uk legal aid agency hack worse than thought with stolen records dating back to 1978",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3118,
+    "fecha": "2026-10-15T18:54:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "La gestión de vulnerabilidades debe basarse en datos de explotación reales, no en puntuaciones teóricas de proveedores",
+    "resumen": "Los analistas recomiendan abandonar los índices genéricos asignados por los vendors y priorizar vulnerabilidades con evidencia de exploits activos en el entorno específico de la organización, mejorando la efectividad de la remediación y reduciendo la superficie de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwOTA0OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:vulnerability management isn t about the score it s about how it applies to you",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3117,
+    "fecha": "2026-10-15T18:54:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Candiru, spyware israelí, infecta dispositivos de Al Jazeera vía anuncios sin interacción del usuario",
+    "resumen": "El spyware zero-click Candiru se ejecutó al cargar anuncios en la página de Al Jazeera, comprometiendo equipos sin requerir interacción del usuario y permitiendo acceso remoto a actores estatales. La campaña evidencia la vulnerabilidad de la cadena de suministro publicitaria y la necesidad de reforzar la detección de código malicioso en entornos de entrega de anuncios.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwOTA0OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:citizen lab traces zero click candiru spyware infections at al jazeera to targeted online ads",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3116,
+    "fecha": "2026-10-15T18:54:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers secuestran dispositivos D-Link y Ubiquiti para revender ancho de banda robado en 34 países",
+    "resumen": "Una campaña de proxyjacking compromete routers y puntos de acceso de D-Link y Ubiquiti, instalando proxies residenciales que monetizan el tráfico de los usuarios mediante venta en mercados de ancho de banda. El vector incluye credenciales predeterminadas y vulnerabilidades de gestión remota, afectando a clientes corporativos y residenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwOTA0OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers hijack d link ubiquiti devices to resell your stolen bandwidth",
+    "ttps": [
+      {
+        "id": "T1090",
+        "name": "Proxy"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3115,
+    "fecha": "2026-10-15T18:54:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Juniper Networks publica 106 vulnerabilidades críticas y altas en Junos OS que permiten ejecución de código root",
+    "resumen": "Se identifican 106 CVE en versiones de Junos OS y Junos OS Evolved, incluyendo 9 críticos que pueden ser explotados vía rutas BGP/FlowSpec manipuladas o ataques al proceso rpd, httpd y J-Web, otorgando ejecución de código con privilegios de root y elusión de autenticación. La mitigación requiere actualizar a las versiones corregidas especificadas; no existen parches genéricos y se recomienda revisar cada CVE para posibles mitigaciones temporales.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwOTA0OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-juniper-networks",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-101954,cve-2026-101982,cve-2026-101983,cve-2026-101986,cve-2026-101990,cve-2026-102175,cve-2026-102178,cve-2026-33789,cve-2026-33796",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-101954",
+        "CVE-2026-101982",
+        "CVE-2026-101983",
+        "CVE-2026-101986",
+        "CVE-2026-101990",
+        "CVE-2026-102175",
+        "CVE-2026-102178",
+        "CVE-2026-33789",
+        "CVE-2026-33796"
+      ]
+    }
+  },
+  {
     "id": 3114,
     "fecha": "2026-10-15T13:58:23Z",
     "categoria": "Ciberseguridad",
@@ -52751,157 +52889,6 @@
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:turning indicators into intelligence in opencti with criminal ip",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1041,
-    "fecha": "2026-07-01T11:58:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataques de \"Phantom Squatting\"",
-    "resumen": "Los atacantes están utilizando modelos de lenguaje para generar dominios inexistentes y luego comprarlos para alojar páginas de phishing, aprovechando el tráfico dirigido por herramientas de IA. El método, conocido como \"phantom squatting\", ya se ha detectado en la naturaleza y representa una nueva amenaza de phishing y malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MDcxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:phantom squatting uses ai hallucinated domains for phishing and malware",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1040,
-    "fecha": "2026-07-01T11:58:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Glitch SPY: Nueva amenaza Android",
-    "resumen": "Se ha descubierto una nueva amenaza de malware Android conocida como Glitch SPY, que se distribuye a través de una aplicación falsa de alquileres en Polonia, permitiendo a los atacantes acceder a información sensible del dispositivo y realizar acciones maliciosas. El vector de ataque incluye el uso de una aplicación falsa para engañar a los usuarios y obtener acceso no autorizado a los dispositivos Android.",
-    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MDcxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/androidMalware/2932",
-    "fuente": "TG: Android Malware",
-    "dedup_key": "txt:glitch spy new android rat distributed through a fake polish rental app https cyble com blog glitch spy rat distri",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "cyble.com"
-      ],
-      "url": [
-        "https://cyble.com/blog/glitch-spy-rat-distri...",
-        "https://cyble.com/blog/glitch-spy-rat-distributed-via-fake-polish-app/"
-      ]
-    }
-  },
-  {
-    "id": 1039,
-    "fecha": "2026-07-01T11:58:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-14258",
-    "resumen": "Se ha descubierto una vulnerabilidad en el procesamiento de anuncios de router de IPv6 en dhcpcd, que permite a un atacante enviar un anuncio de router IPv6 especialmente diseñado con una opción de descubrimiento de vecinos de longitud cero, lo que puede provocar un consumo excesivo de CPU y un denegación de servicio. El vector de ataque es a través de un paquete de anuncio de router IPv6 malicioso.",
-    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MDcwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/182244",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14258",
-    "ttps": [
-      {
-        "id": "T1498",
-        "name": "Network Denial of Service"
-      },
-      {
-        "id": "T1498.001",
-        "name": "TCP Flood no es aplicable en este caso, pero se puede inferir una técnica similar de denegación de servicio a través de un paquete malicioso."
-      },
-      {
-        "id": "T1498.002",
-        "name": "No es aplicable, pero se puede considerar una técnica de denegación de servicio a través de un paquete de anuncio de router IPv6 malicioso, similar a T1498.003 - Network Flood."
-      },
-      {
-        "id": "T1498.003",
-        "name": "Network Flood no es exactamente aplicable, pero se puede considerar una técnica similar de denegación de servicio a través de un paquete malicioso."
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14258"
-      ]
-    }
-  },
-  {
-    "id": 1038,
-    "fecha": "2026-07-01T11:58:03Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Lanzamiento de Claude Sonnet 5",
-    "resumen": "Anthropic ha lanzado Claude Sonnet 5, un modelo de lenguaje más conservador y barato que se enfoca en la ciberseguridad, con capacidades limitadas para tareas de seguridad y un comportamiento más \"agéntico\" y seguro. El modelo está diseñado para ser utilizado en agentes de IA que consumen muchos tokens y es más barato que otros modelos de la empresa, aunque su eficacia y costo real pueden variar dependiendo de la aplicación.",
-    "url_imagen": "https://images.unsplash.com/photo-1774229637247-3cd45219826c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MDcwODR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-acaba-lanzar-claude-sonnet-5-objetivo-claro-no-cruzar-ninguna-linea-roja",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:anthropic acaba de lanzar claude sonnet 5 con un objetivo claro no cruzar ninguna línea roja",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.claude.com",
-        "platform.instagram.com",
-        "www-cdn.anthropic.com",
-        "www.anthropic.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://artificialanalysis.ai/#price-and-cost",
-        "https://i.blogs.es/455121/sonnet-5/1024_2000.jpeg",
-        "https://i.blogs.es/7ed8b6/captura-de-pantalla-2026-07-01-a-las-9.46.22/1024_2000.jpeg",
-        "https://i.blogs.es/7ed8b6/captura-de-pantalla-2026-07-01-a-las-9.46.22/1366_2000.jpeg",
-        "https://i.blogs.es/7ed8b6/captura-de-pantalla-2026-07-01-a-las-9.46.22/450_1000.jpeg",
-        "https://i.blogs.es/7ed8b6/captura-de-pantalla-2026-07-01-a-las-9.46.22/650_1200.jpeg",
-        "https://i.blogs.es/a2c835/captura-de-pantalla-2026-07-01-a-las-8.36.37/1024_2000.jpeg",
-        "https://i.blogs.es/a2c835/captura-de-pantalla-2026-07-01-a-las-8.36.37/1366_2000.jpeg",
-        "https://i.blogs.es/a2c835/captura-de-pantalla-2026-07-01-a-las-8.36.37/450_1000.jpeg",
-        "https://i.blogs.es/a2c835/captura-de-pantalla-2026-07-01-a-las-8.36.37/650_1200.jpeg",
-        "https://platform.claude.com/docs/en/about-claude/pricing",
-        "https://www-cdn.anthropic.com/9e6a1044980d8c4ed85669faf9c2a8342e2e9f1e/Claude%20Sonnet%205%20System%20Card.pdf",
-        "https://www.anthropic.com/news/claude-sonnet-5",
-        "https://www.anthropic.com/news/redeploying-fable-5"
-      ],
-      "sha1": [
-        "9e6a1044980d8c4ed85669faf9c2a8342e2e9f1e"
-      ]
-    }
-  },
-  {
-    "id": 1037,
-    "fecha": "2026-07-01T11:57:47Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en Front Gate",
-    "resumen": "Un investigador utilizó Claude Opus 4.7 de Anthropic para identificar una vulnerabilidad en el sitio web de Front Gate, permitiéndole emitir tickets para prácticamente cualquier festival de música en EE. UU., incluyendo Lollapalooza y Bonnaroo, a través de un ataque de ingeniería social o explotación de debilidades en la autenticación. Esto pone en riesgo la seguridad de los sistemas de venta de tickets y la privacidad de los usuarios.",
-    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MDcwNjd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/claude-helped-a-hacker-find-a-way-to-issue-tickets-to-almost-every-us-music-festival/",
-    "fuente": "Wired Security",
-    "dedup_key": "txt:claude helped a hacker find a way to issue tickets to almost every us music festival",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1550",
-        "name": "Exploitation of Remote Services (no se menciona explícitamente, pero se infiere que hay una debilidad en la autenticación)"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      }
-    ],
     "iocs": {}
   }
 ]
