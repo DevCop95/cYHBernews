@@ -1,5 +1,116 @@
 [
   {
+    "id": 3128,
+    "fecha": "2026-10-16T02:57:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-103849 permite ejecución arbitraria en Adobe Commerce sin interacción del usuario",
+    "resumen": "La vulnerabilidad de neutralización inadecuada de elementos especiales en el motor de plantillas de Adobe Commerce permite a un atacante ejecutar código arbitrario bajo el contexto del usuario comprometido, con posibilidad de escalar privilegios y tomar control de la sesión. No se requiere interacción del usuario y el alcance del impacto se extiende más allá del componente vulnerado.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMTk0MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-103849",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-103849",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1546.003",
+        "name": "Windows Management Instrumentation Event Subscription"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-103849"
+      ]
+    }
+  },
+  {
+    "id": 3127,
+    "fecha": "2026-10-16T02:57:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en J4Care dcm4chee-arc-light permiten borrado y fuga de imágenes médicas",
+    "resumen": "Se identifican múltiples CVE (incluyendo CVE-2026-97851 y CVE-2026-107621) que permiten a un atacante sin autenticación eliminar archivos DICOM, sobrescribir registros de pacientes y provocar denegación de servicio mediante bucles infinitos y validaciones insuficientes. El vector de ataque se basa en peticiones REST manipuladas y flujos de datos especialmente diseñados; se recomienda actualizar a la versión 5.35.2 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMTk0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-101021,cve-2026-105273,cve-2026-105279,cve-2026-105667,cve-2026-107621,cve-2026-97851",
+    "ttps": [
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-101021",
+        "CVE-2026-105273",
+        "CVE-2026-105279",
+        "CVE-2026-105667",
+        "CVE-2026-107621",
+        "CVE-2026-97851"
+      ]
+    }
+  },
+  {
+    "id": 3126,
+    "fecha": "2026-10-16T02:57:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Fallas en tribunales de bancarrota federales tras ciberataque a contratista gubernamental",
+    "resumen": "Un ataque dirigido a un contratista del gobierno ha provocado la interrupción total de la generación de avisos de bancarrota, afectando la operatividad de los tribunales federales y retrasando procesos judiciales críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMTk0MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/federal-bankruptcy-courts-dealing-with-cyberattack-outage",
+    "fuente": "The Record",
+    "dedup_key": "txt:federal bankruptcy courts dealing with outages after contractor cyberattack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3125,
+    "fecha": "2026-10-16T02:56:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "ThreatsDay revela RCE en Adobe, robo de wallet DNS y escape de contenedor NVIDIA",
+    "resumen": "La herramienta descubierta permite robar datos y ejecutar payloads de miedo, mientras vulnerabilidades en Adobe y NVIDIA facilitan ejecución remota de código y escape de contenedores, ampliando la superficie de ataque en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMTk0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday adobe rce dns wallet theft nvidia container escape self healing backdoor 23 more",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3124,
     "fecha": "2026-10-15T23:33:31Z",
     "categoria": "Ciberseguridad",
@@ -52804,99 +52915,5 @@
         "CVE-2025-26597"
       ]
     }
-  },
-  {
-    "id": 1053,
-    "fecha": "2026-07-01T17:10:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ousaban Trojan ataca bancos ibéricos",
-    "resumen": "El trojan bancario brasileño Ousaban se dirige a usuarios de Windows en España y Portugal a través de correos electrónicos de phishing que contienen archivos PDF falsos, con el objetivo de robar credenciales de acceso a cuentas bancarias. El ataque utiliza técnicas de evasión como ocultar su carga útil real dentro de una imagen.",
-    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/ousaban-banking-trojan-targets-iberian.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:ousaban banking trojan targets iberian bank users with fake pdf lures",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion"
-      },
-      {
-        "id": "T1027",
-        "name": "Obfuscated Files or Information"
-      },
-      {
-        "id": "T1193",
-        "name": "Spearphishing via Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1052,
-    "fecha": "2026-07-01T14:37:16Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Riesgos de compartir contraseñas de ChatGPT",
-    "resumen": "Compartir contraseñas de servicios de IA como ChatGPT o Claude puede llevar a problemas de privacidad y personalización, ya que estos servicios almacenan información sensible y personalizada de los usuarios, y su uso compartido puede generar conflictos de datos y respuestas inapropiadas. Las empresas que ofrecen estos servicios prohíben expresamente la compartición de credenciales y advierten sobre la responsabilidad de las actividades realizadas con la cuenta.",
-    "url_imagen": "https://images.unsplash.com/photo-1716436329836-208bea5a55e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/compartir-contrasena-chatgpt-claude-no-como-compartir-netflix-hay-gente-aprendiendolo-malas",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:compartir la contraseña de chatgpt o claude no es como compartir la de netflix hay gente aprendiéndolo por las malas",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "openai.com",
-        "platform.instagram.com",
-        "www.anthropic.com",
-        "www.wsj.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/5c8a04/magnific__quiero-que-cojas-la-img5-y-cambies-el-llavero-en-f__63702/1024_2000.jpeg",
-        "https://i.blogs.es/77fa3e/pexels-tima-miroshnichenko-5711017/1024_682.jpeg",
-        "https://i.blogs.es/77fa3e/pexels-tima-miroshnichenko-5711017/500_333.jpeg",
-        "https://i.blogs.es/77fa3e/pexels-tima-miroshnichenko-5711017/840_560.jpeg",
-        "https://openai.com/es-ES/policies/row-terms-of-use/",
-        "https://www.anthropic.com/legal/consumer-terms",
-        "https://www.wsj.com/tech/ai/ai-chatbot-account-sharing-privacy-0df9b6cd"
-      ]
-    }
-  },
-  {
-    "id": 1051,
-    "fecha": "2026-07-01T14:37:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Brechas de datos en Japón",
-    "resumen": "Empresas japonesas como Aflac y Sapporo han notificado recientemente al público sobre brechas de datos, lo que sugiere posibles incidentes de seguridad que podrían haber expuesto información confidencial. Los vectores de ataque no se han especificado, pero es probable que se hayan utilizado técnicas como phishing o exploits de vulnerabilidades conocidas.",
-    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/japan-cyber-breaches-aflac-sapporo-nidec-kddi",
-    "fuente": "The Record",
-    "dedup_key": "txt:japanese insurer brewer manufacturer and telecom disclose cyber breaches",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1050,
-    "fecha": "2026-07-01T14:37:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ransomware AI en navegadores",
-    "resumen": "Investigadores de ciberseguridad han detectado un nuevo malware generado con DeepSeek que combina conceptos de malware de navegador con capacidades reales del navegador Chromium para crear una técnica de ransomware que se ejecuta completamente dentro del navegador en dispositivos Windows y Android. Este es el primer caso documentado de un modelo de inteligencia artificial (AI) utilizado para crear un ransomware que aprovecha la API de Chromium.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MTY2MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/ai-generated-browser-ransomware-abuses.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:ai generated browser ransomware abuses chromium api on windows and android",
-    "ttps": [],
-    "iocs": {}
   }
 ]
