@@ -1,5 +1,109 @@
 [
   {
+    "id": 3137,
+    "fecha": "2026-10-16T13:45:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-105899 permite ejecución remota de código en Adobe ColdFusion con carga de archivos peligrosos",
+    "resumen": "La vulnerabilidad de carga de archivos sin restricciones en ColdFusion permite a un atacante subir archivos con tipos peligrosos y ejecutar código arbitrario sin interacción del usuario, con CVSS 10.0 y cambio de alcance. Se recomienda parchear inmediatamente y reforzar la validación de tipos MIME.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNTgzMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-105899",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-105899",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-105899"
+      ]
+    }
+  },
+  {
+    "id": 3136,
+    "fecha": "2026-10-16T13:45:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Rusia detiene a tres presuntos miembros del grupo DataSuckers tras brecha masiva en cadena de restaurantes",
+    "resumen": "Las autoridades rusas arrestaron a tres sospechosos vinculados al grupo DataSuckers, responsable de un ataque que expuso datos personales de miles de clientes de una cadena de restaurantes en Ucrania y Rusia, evidenciando fallas en la protección de bases de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNTgzMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russia-datasuckers-hackers-arrested",
+    "fuente": "The Record",
+    "dedup_key": "txt:moscow detains suspected datasuckers hackers linked to breaches in ukraine and russia",
+    "ttps": [
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3135,
+    "fecha": "2026-10-16T13:44:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Modelos de IA de código abierto pueden ser comprometidos con backdoors mediante edición de pesos",
+    "resumen": "Un atacante puede insertar backdoors en modelos abiertos modificando sus pesos, usando técnicas de ablación para eliminar filtros de seguridad y activar comandos mediante frases o datos específicos; la carga maliciosa se distribuye vía repositorios como Hugging Face y permite exfiltración de credenciales sin detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNTgyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/backdooring-open-weight-ai-models.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:backdooring open weight ai models",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3134,
+    "fecha": "2026-10-16T13:44:56Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Nuevos modelos de decisión IA emergen y se integran rápidamente en plataformas SOC",
+    "resumen": "En menos de un mes, TypeSafe AI lanzó Jev, un modelo System One inspirado en el pensamiento rápido de Kahneman, mientras OpenAI activó su Decisions API en beta pública, y Cribl ofreció cribl-decision, un adaptador LoRA de código abierto para despliegues locales. La proliferación acelera la automatización de análisis y correlación en entornos SOC, pero introduce vectores de riesgo de manipulación de decisiones y dependencia de proveedores externos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298921-97bfd882ca90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNTgyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai decision models and their impact on ai soc platforms",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3133,
+    "fecha": "2026-10-16T13:44:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-74041 permite ejecución de comandos root en Wazuh Manager 4.14.3-4.14.7",
+    "resumen": "La falla de case-mismatch en la validación de ossec.conf y wazuh-logcollector permite a un usuario autenticado con permiso manager:update_config inyectar directivas LOG_FORMAT en mayúsculas y evadir la revisión, logrando ejecución de código con privilegios de root al recargar el servicio. Se recomienda actualizar a Wazuh Manager 4.14.8 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNTgyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/gestion-incorrecta-de-mayusculas-y-minusculas-en-wazuh-manager",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-74041",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1574.006",
+        "name": "Dynamic Linker Hijacking"
+      },
+      {
+        "id": "T1059.004",
+        "name": "Unix Shell"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-74041"
+      ]
+    }
+  },
+  {
     "id": 3132,
     "fecha": "2026-10-16T07:52:32Z",
     "categoria": "Ciberseguridad",
@@ -52841,123 +52945,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-58451"
-      ]
-    }
-  },
-  {
-    "id": 1062,
-    "fecha": "2026-07-01T19:47:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque VEIL#DROP con PureLogs",
-    "resumen": "La cadena de entrega de malware VEIL#DROP utiliza ingeniería social y páginas de Blogger para distribuir el robo de información PureLogs, iniciando con payloads iniciales a través de spear-phishing o compromiso de drive-by. El impacto real incluye el robo de información confidencial, con vectores de ataque que aprovechan la falta de conciencia del usuario y la vulnerabilidad de plataformas en línea.",
-    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/veildrop-malware-chain-uses-blogger.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:veil drop malware chain uses blogger platform to deliver purelogs stealer",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1061,
-    "fecha": "2026-07-01T19:47:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Amenaza de cadena de suministro AI",
-    "resumen": "Los modelos de lenguaje (LLMs) generan dominios web falsos de marcas legítimas, lo que permite a los atacantes registrarlos para actividades maliciosas, creando un vector de ataque difícil de detectar. Esto representa una nueva amenaza en la cadena de suministro, aprovechando la capacidad de los LLMs para \"hallucinar\" información.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218347-64853a917fd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/endpoint-security/phantom-squatting-ai-driven-supply-chain-threat",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:phantom squatting an emerging ai driven supply chain threat",
-    "ttps": [
-      {
-        "id": "T1586.001",
-        "name": "Masquerading: Domain Name"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1556",
-        "name": "Modify Authentication Process"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1060,
-    "fecha": "2026-07-01T19:47:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ciberataque con AsyncRAT",
-    "resumen": "Desconocidos actores de amenaza están utilizando la herramienta de acceso remoto ScreenConnect para desplegar y ejecutar AsyncRAT, un malware de acceso remoto, a través de sitios web falsificados que ofrecen software popular como OBS Studio y Bandicam. El ataque se lleva a cabo mediante la distribución de archivos de instalación maliciosos que se disfrazan como software legítimo.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/seo-poisoned-software-sites-abuse.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:seo poisoned software sites abuse screenconnect to deploy asyncrat",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero AsyncRAT se ejecuta en el sistema, lo que podría implicar el uso de un ejecutable firmado)"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1219",
-        "name": "Remote Access Tools (se menciona explícitamente el uso de AsyncRAT, un malware de acceso remoto)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1059,
-    "fecha": "2026-07-01T19:47:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "INFO",
-    "titulo": "Brecha en HSIN de DHS",
-    "resumen": "La plataforma de intercambio de información Homeland Security Information Network (HSIN) ha sido comprometida por hackers, lo que ha llevado a una investigación por parte del Departamento de Seguridad Nacional (DHS), afectando la seguridad de la información compartida entre socios federales, estatales, locales y del sector privado. El vector de ataque no ha sido divulgado, pero se considera un incidente de seguridad grave.",
-    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/dhs-confirms-hackers-breached-hsin-info-sharing-platform/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:dhs confirms hackers breached hsin info sharing platform",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1058,
-    "fecha": "2026-07-01T17:10:57Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Flaws críticas en editor AI",
-    "resumen": "Se han descubierto dos vulnerabilidades en Cursor, un editor de código AI, que permiten a un atacante ejecutar comandos arbitrarios en el sistema de un desarrollador a través de una inyección de prompts, escapando del sandbox de seguridad sin necesidad de interacción del usuario. Las vulnerabilidades, identificadas como CVE-2026-50548 y CVE-2026-50549, tienen una calificación de severidad de 9,8 y 9,3, respectivamente.",
-    "url_imagen": "https://images.unsplash.com/photo-1775994121052-7e653711f72c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-50548,cve-2026-50549",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-50548",
-        "CVE-2026-50549"
       ]
     }
   }
