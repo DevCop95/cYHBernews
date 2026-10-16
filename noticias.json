@@ -1,5 +1,106 @@
 [
   {
+    "id": 3142,
+    "fecha": "2026-10-16T18:38:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA y FBI advierten sobre campañas de phishing y smishing contra funcionarios electorales en 2026",
+    "resumen": "Los actores de amenazas emplean correos y mensajes de texto falsificados para robar credenciales y desplegar malware en dispositivos de oficiales y campañas, explotando datos de registro de votantes y estrategias políticas. Se recomienda aplicar controles de autenticación multifactor y monitoreo continuo de indicadores de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNzU4ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:cyber threat actors use a variety of techniques to target election and campaign officials",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3141,
+    "fecha": "2026-10-16T18:38:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Arrestan a negociador de ransomware y exponen fallas críticas en la supervisión de programas de proveedores",
+    "resumen": "La detención de un negociador de ransomware de alto perfil revela vulnerabilidades en la gestión de relaciones con actores externos, evidenciando riesgos de colusión y filtración de información sensible que pueden facilitar ataques de extorsión.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNzU4ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:when your ransomware negotiator works for the other side",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3140,
+    "fecha": "2026-10-16T18:38:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Atacantes manipularon servidores de actualización de AOMEI Backupper para inyectar backdoor durante breves ventanas",
+    "resumen": "Entre mayo y julio de 2026, actores maliciosos alteraron los archivos servidos por los servidores oficiales de actualización de AOMEI Backupper en intervalos de 5-10 minutos, logrando que copias del programa en Windows descargaran y ejecutaran un backdoor. La técnica de hijacking de infraestructura de actualización evidencia la necesidad de validar firmas y emplear canales de distribución seguros.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNzU4ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers tampered with aomei backupper s update servers for minutes to deliver a backdoor",
+    "ttps": [
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3139,
+    "fecha": "2026-10-16T18:37:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Fraude de inversión usa deepfakes y suplantación de identidad de entidad financiera real",
+    "resumen": "ESET desglosó el modus operandi de la estafa, que combina anuncios falsos, deepfakes de figuras públicas y una web que imita la marca de una firma financiera para capturar fondos mediante ingeniería social.",
+    "url_imagen": "https://images.unsplash.com/photo-1581092336206-b9e5146be6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNzU4Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/estafas-enganos/estafa-de-inversion-suplanta-a-vymarkets/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:cómo opera una estafa de inversión que utiliza medios falsos figuras públicas y la identidad de una empresa financiera real",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3138,
+    "fecha": "2026-10-16T18:37:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Stoïk advierte un incremento del 46 % en ciberataques contra el sector comercio tras el incidente en Francia",
+    "resumen": "El ataque a los sistemas de refrigeración de supermercados franceses desencadenó una oleada de incidentes dirigidos a comercios, elevando el número de intentos de intrusión en un 46 % en la última semana. La tendencia sugiere un foco en vulnerabilidades de infraestructura OT y en campañas de phishing dirigidas a personal de tiendas.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxNzU4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/stoik-alerta-de-un-aumento-del-46-de-los-ciberataques-al-comercio-tras-el-incidente-en-francia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:sto k alerta de un aumento del 46 de los ciberataques al comercio tras el incidente en francia",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3137,
     "fecha": "2026-10-16T13:45:04Z",
     "categoria": "Ciberseguridad",
@@ -52848,104 +52949,5 @@
     "dedup_key": "txt:kubota says hackers had month long access to network systems",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1068,
-    "fecha": "2026-07-01T22:15:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad Wildfly Elytron",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2025-23368) con un puntaje CVSS de 8.1 en la integración de Wildfly Elytron, que permite ataques de fuerza bruta debido a la falta de medidas para limitar intentos fallidos de autenticación, afectando productos como redhat:wildfly_core y redhat:jboss_enterprise_application_platform. Esto aumenta el riesgo de acceso no autorizado a través de la interfaz de línea de comandos.",
-    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-23368",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2025-23368",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2025-23368"
-      ]
-    }
-  },
-  {
-    "id": 1067,
-    "fecha": "2026-07-01T22:15:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Sospechoso de Scattered Spider extraditado",
-    "resumen": "Un sospechoso de 19 años ha sido extraditado a EE. UU. por su presunta participación en incidentes de seguridad, incluyendo una brecha de datos en una tienda de joyería de lujo en 2025, en lo que parece ser una operación relacionada con el grupo de hackers conocido como Scattered Spider. Los detalles del caso sugieren un posible enfoque en ataques dirigidos a sectores de lujo y retail.",
-    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/teen-suspect-in-scattered-spider-hacks-extradited-to-us",
-    "fuente": "The Record",
-    "dedup_key": "txt:teen suspect in scattered spider hacks is extradited to us",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1066,
-    "fecha": "2026-07-01T22:15:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Campañas de Phishing Adaptativas",
-    "resumen": "Las campañas de phishing ahora se adaptan automáticamente al dispositivo y sistema operativo (OS) de la víctima, aumentando las tasas de compromiso y rentabilidad de las campañas, mediante el uso de datos de user-agent para entregar payloads específicos para cada OS. Esto permite a los atacantes optimizar sus ataques y aumentar su eficacia.",
-    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/application-security/phishing-campaigns-auto-adapt-victims-device-os",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:crafty phishing campaigns auto adapt to victim s device os",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1583.001",
-        "name": "Source (se infiere que se utiliza algún tipo de entrega de payload específico para cada OS)"
-      },
-      {
-        "id": "T1583",
-        "name": "Acquire Infrastructure (se infiere que se utiliza algún tipo de infraestructura para entregar los payloads)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1065,
-    "fecha": "2026-07-01T22:15:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en Argo CD",
-    "resumen": "Se ha descubierto una vulnerabilidad sin parche en el componente repo-server de Argo CD, que permite a un atacante no autenticado ejecutar código si tiene acceso a la red interna del componente, lo que podría llevar a la toma completa de un clúster de Kubernetes. La vulnerabilidad, encontrada por Synacktiv, no tiene un CVE asignado y no hay una solución disponible.",
-    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxMjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:unpatched argo cd repo server flaw could let attackers take over kubernetes clusters",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1063,
-    "fecha": "2026-07-01T19:48:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-58451 en Horde IMP",
-    "resumen": "La versión de Horde IMP anterior a 7.0.1 contiene una vulnerabilidad de travesía de directorios en lib/Compose.php, permitiendo a atacantes autenticados leer archivos arbitrarios del sistema de archivos del servidor mediante la inclusión de secuencias de travesía en URLs de img src, y también es explotable sin autenticación a través de ataques CSRF contra sesiones autenticadas activas. Esto puede llevar a la exfiltración de archivos sensibles a través de correo electrónico.",
-    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MzUyODN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/183969",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-58451",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-58451"
-      ]
-    }
   }
 ]
