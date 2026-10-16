@@ -1,5 +1,86 @@
 [
   {
+    "id": 3146,
+    "fecha": "2026-10-16T23:16:47Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Microsoft y NVIDIA publican whitepaper para mitigar riesgos de modelos de IA de peso abierto en entornos empresariales",
+    "resumen": "El documento define una taxonomía compartida, métricas de evaluación y controles de seguridad para prevenir vulnerabilidades y uso indebido de modelos de lenguaje de código abierto, enfocándose en la gestión de datos de entrenamiento y la detección de comportamientos maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxOTI2MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:managing open weight model risk in enterprise deployments",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3145,
+    "fecha": "2026-10-16T23:16:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Unit 42 revela los 5 vectores de acceso inicial predominantes en septiembre 2026",
+    "resumen": "El informe destaca que los exploits de borde, el abuso de credenciales y campañas de phishing encabezan los métodos de intrusión, incrementando la superficie de ataque en entornos híbridos y de nube. Se advierte la necesidad de reforzar la detección de anomalías en autenticación y la segmentación de perímetros.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxOTI2MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/top-5-initial-access-vectors-september-2026/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:top 5 initial access threat vectors observed by unit 42 in september 2026",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3144,
+    "fecha": "2026-10-16T23:16:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Explotación de escalada de privilegios en OpenBSD 7.9 encadena vulnerabilidad de 37 años y vulnera KARL, SMAP y SMEP",
+    "resumen": "Un exploit de escalada local publicado hoy combina un desbordamiento entero de 37 años con una falla adicional del kernel, logrando obtener privilegios root en OpenBSD 7.9 y eludiendo la aleatorización KARL y las protecciones SMAP/SMEP. La firma Calif divulgó el análisis completo y el PoC tras el lanzamiento de la versión.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxOTI2MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers demonstrate openbsd root exploit chaining 37 year old shared memory bug",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3143,
+    "fecha": "2026-10-16T23:16:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vercel publica tres vulnerabilidades críticas en Next.js que permiten RCE y DoS",
+    "resumen": "Se identificaron dos CVE críticos (incluido CVE-2026-96889) que permiten ejecución remota de código y denegación de servicio en versiones 10-16 de Next.js mediante App Router, Cache Components y la API Image Optimization. La mitigación requiere actualizar a Next.js 15.5.28 o 16.4.1 y, temporalmente, usar sharp ≥ 0.35.5.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxOTI2MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-nextjs-de-vercel",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-96889",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-96889"
+      ]
+    }
+  },
+  {
     "id": 3142,
     "fecha": "2026-10-16T18:38:07Z",
     "categoria": "Ciberseguridad",
@@ -52884,70 +52965,6 @@
         "name": "Phishing: Spearphishing Attachment (no se menciona explícitamente, pero se puede inferir que el phishing puede incluir archivos o enlaces maliciosos)"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1072,
-    "fecha": "2026-07-01T22:15:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Jodit Editor",
-    "resumen": "Se ha descubierto una vulnerabilidad de polución de prototipo (Prototype Pollution) en el editor Jodit, que permite a un atacante inyectar propiedades no esperadas, eludir lógica de seguridad o causar denegación de servicio, afectando versiones anteriores a 4.12.26. La vulnerabilidad se debe a la falta de filtrado de claves que mutan el prototipo en la función Jodit.modules.Helpers.set().",
-    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/184168",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-55886",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-55886"
-      ]
-    }
-  },
-  {
-    "id": 1071,
-    "fecha": "2026-07-01T22:15:53Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2025-5914",
-    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de enteros en la librería libarchive, específicamente en la función archive_read_format_rar_seek_data(), que puede provocar una condición de doble liberación y permitir la ejecución de código arbitrario o una denegación de servicio. La vulnerabilidad afecta productos como libarchive y sistemas de Red Hat, con un CVSS Score de 7.8 (HIGH).",
-    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-5914",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2025-5914",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2025-5914"
-      ]
-    }
-  },
-  {
-    "id": 1070,
-    "fecha": "2026-07-01T22:15:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "ClickFix, técnica de entrega de malware",
-    "resumen": "La técnica de ingeniería social ClickFix se ha convertido en la norma para la entrega de malware, según investigadores, lo que indica un aumento en el uso de tácticas de phishing y engaño para infectar sistemas. Esto sugiere que los atacantes están aprovechando la vulnerabilidad humana como vector de ataque principal.",
-    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/winner-dominant-malware-delivery-clickfix",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:and the winner in dominant malware delivery clickfix",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1069,
-    "fecha": "2026-07-01T22:15:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Acceso no autorizado a Kubota",
-    "resumen": "La empresa Kubota North America Corporation informó que hackers tuvieron acceso no autorizado a algunos de sus sistemas de red durante más de un mes a principios de este año, lo que podría haber permitido la extracción de datos confidenciales o la instalación de malware. El vector de ataque no se especificó, pero la duración del acceso sugiere una posible falta de monitoreo y respuesta adecuados a incidentes de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NDQxNDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/kubota-says-hackers-had-month-long-access-to-network-systems/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:kubota says hackers had month long access to network systems",
-    "ttps": [],
     "iocs": {}
   }
 ]
