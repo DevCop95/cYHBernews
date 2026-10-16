@@ -1,5 +1,121 @@
 [
   {
+    "id": 3132,
+    "fecha": "2026-10-16T07:52:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en EseeCloud permiten control total de cámaras IP",
+    "resumen": "Tres CVE críticos (CVE-2026-107617, CVE-2026-97858 y CVE-2026-105664) afectan a la app y firmware de EseeCloud, habilitando credenciales hard-coded, re-asignación de dispositivos y respuestas observables que pueden ser explotadas para tomar control remoto de cámaras IP. El vector es red de red externa (AV:N) con impacto completo (C:H/I:H/A:H), afectando infraestructuras críticas y entornos corporativos globales.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMzcxNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-105664,cve-2026-107617,cve-2026-97858",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "4.9.86.0"
+      ],
+      "url": [
+        "https://eseecloud.app/"
+      ],
+      "cve": [
+        "CVE-2026-105664",
+        "CVE-2026-107617",
+        "CVE-2026-97858"
+      ]
+    }
+  },
+  {
+    "id": 3131,
+    "fecha": "2026-10-16T07:52:29Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Estimación de horas de criptoanálisis humano mediante IA revela tendencia a favor de lattices sobre curvas elípticas",
+    "resumen": "Un estudio liderado por Matthew Green, apoyado por modelos Claude 5.1/5.5 y GPT-6, cuantifica el esfuerzo de investigación en criptografía pública a partir de 16 000 publicaciones, mostrando que los ataques basados en lattices superan recientemente a los de ECDLP. La metodología, basada en análisis bibliométrico automatizado, permite inferir presupuestos de investigación pero puede sobreestimar el tiempo real invertido.",
+    "url_imagen": "https://images.unsplash.com/photo-1786539861530-0d0726bf9776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMzcxNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:measuring human cryptanalysis effort",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3130,
+    "fecha": "2026-10-16T07:52:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers vinculados a China usan zero-day de BeyondTrust para comprometer servidores de soporte remoto",
+    "resumen": "El grupo de espionaje cibernético Armory Castle (UNC5221/Warp Panda) explotó la vulnerabilidad CVE-2026-102764 (CVSS 9.3) en BeyondTrust Remote Support, permitiendo ejecución de código remoto y toma de control total de los servidores de asistencia. La falla, de validación de origen en el componente de mensajería interna, fue usada como vector de ataque en agosto 2026, afectando a organizaciones que dependen de la herramienta para acceso remoto.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMzcxNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-102764",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-102764"
+      ]
+    }
+  },
+  {
+    "id": 3129,
+    "fecha": "2026-10-16T07:52:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cisco publica seis vulnerabilidades críticas en Secure Email Gateway que permiten ejecución de código root",
+    "resumen": "Se identifican cinco CVE críticos y uno alto, entre ellos CVE-2026-76519 explotado activamente para escritura arbitraria y ejecución de comandos con privilegios de root en Cisco Secure Email Gateway. La mitigación requiere actualizar a versiones corregidas y, en caso de compromiso, preservar evidencia forense antes de la remediación.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMzcxNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-cisco-17",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-20353,cve-2026-76440,cve-2026-76441,cve-2026-76442,cve-2026-76443,cve-2026-76461,cve-2026-76519",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20353",
+        "CVE-2026-76440",
+        "CVE-2026-76441",
+        "CVE-2026-76443",
+        "CVE-2026-76461",
+        "CVE-2026-76519"
+      ]
+    }
+  },
+  {
     "id": 3128,
     "fecha": "2026-10-16T02:57:09Z",
     "categoria": "Ciberseguridad",
@@ -52842,77 +52958,6 @@
       "cve": [
         "CVE-2026-50548",
         "CVE-2026-50549"
-      ]
-    }
-  },
-  {
-    "id": 1057,
-    "fecha": "2026-07-01T17:10:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Fuga de datos en Google Chrome",
-    "resumen": "Se ha identificado una vulnerabilidad de fuga de información lateral (side-channel) en el componente WebAudio de Google Chrome, afectando versiones anteriores a 150.0.7871.47, permitiendo a un atacante remoto obtener datos de origen cruzado a través de una página HTML maliciosa. La gravedad de la vulnerabilidad CVE-2026-14071 se clasifica como baja.",
-    "url_imagen": "https://images.unsplash.com/photo-1669050716322-7edb22a623d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/183404",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14071",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14071"
-      ]
-    }
-  },
-  {
-    "id": 1056,
-    "fecha": "2026-07-01T17:10:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque masivo a Microsoft 365",
-    "resumen": "Un campaña de ataque de \"password-spraying\" ha generado más de 81 millones de intentos de inicio de sesión en entornos de Microsoft 365 en un período de dos semanas, lo que sugiere un esfuerzo coordinado para explotar vulnerabilidades de autenticación. Los ataques pueden aprovecharse de contraseñas débiles o reutilizadas, poniendo en riesgo la seguridad de los datos y sistemas de las organizaciones afectadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-365-accounts-with-81-million-login-attempts/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:hackers target microsoft 365 accounts with 81 million login attempts",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1055,
-    "fecha": "2026-07-01T17:10:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Google Chrome Android",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-14129) en la implementación de PreviewTab en Google Chrome para Android, versión anterior a 150.0.7871.47, que permite a un atacante remoto realizar spoofing de interfaz de usuario (UI) a través de una página HTML maliciosa, siempre y cuando el usuario realice gestos de interfaz específicos. El nivel de gravedad de esta vulnerabilidad es clasificado como bajo por Chromium.",
-    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/183405",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14129",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14129"
-      ]
-    }
-  },
-  {
-    "id": 1054,
-    "fecha": "2026-07-01T17:10:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2025-26597",
-    "resumen": "Se ha identificado una vulnerabilidad de desbordamiento de búfer en X.Org y Xwayland, con un CVSS Score de 7.8, que puede ser explotada si se llama a la función XkbChangeTypesOfKey() con un grupo 0 y luego con un valor de grupos distinto de cero, lo que puede provocar un desbordamiento de búfer debido a un tamaño incorrecto de las acciones de teclas. Los productos afectados incluyen tigervnc, xwayland, x_server y redhat enterprise_linux.",
-    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5MjU4Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-26597",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2025-26597",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "x.org"
-      ],
-      "cve": [
-        "CVE-2025-26597"
       ]
     }
   }
