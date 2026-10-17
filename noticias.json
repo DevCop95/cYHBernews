@@ -1,5 +1,79 @@
 [
   {
+    "id": 3165,
+    "fecha": "2026-10-17T20:01:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de IP spoofing en Coder < 2.34.7 permite evadir límites de tasa y falsificar auditorías",
+    "resumen": "Coder versiones anteriores a 2.34.7 confía en el primer valor X-Forwarded-For del middleware ExtractRealIPAddress, lo que permite a un atacante forjar direcciones IP y eludir controles de rate-limit en endpoints críticos como login y OTP. Esta falla facilita ataques de fuerza bruta y la manipulación de registros de auditoría, exponiendo a organizaciones a compromisos de credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNjcyODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/377933",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-111934",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111934"
+      ]
+    }
+  },
+  {
+    "id": 3164,
+    "fecha": "2026-10-17T20:01:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-55572 permite inyección SQL crítica en e107 CMS antes de la versión 2.3.7",
+    "resumen": "La vulnerabilidad permite a un atacante no autenticado inyectar código SQL mediante el plugin alt_auth, comprometiendo bases de datos externas configuradas y exponiendo datos sensibles. El vector es la interpolación directa del nombre de usuario en consultas PDO sin sanitizar, con CVSS 10.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNjcyNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-55572",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-55572",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-55572"
+      ]
+    }
+  },
+  {
+    "id": 3163,
+    "fecha": "2026-10-17T20:01:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Canadá avanza con ley de vigilancia que debilita la encriptación a nivel nacional",
+    "resumen": "La nueva legislación canadiense intensifica la presión sobre los mecanismos criptográficos, obligando a proveedores a crear accesos para autoridades y creando riesgos de exposición masiva de datos. Este movimiento se suma a la tendencia global de erosionar la confidencialidad de la información.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNjcyNzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/kernel-panic-encryption-is-getting-squeezed-from-all-sides/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:encryption is getting squeezed from all sides",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3162,
+    "fecha": "2026-10-17T20:01:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Usuario pierde fondos de Exodus tras instalar extensión falsa y expone vulnerabilidad de autocustodia",
+    "resumen": "Un atacante distribuyó una extensión no oficial de Exodus que capturó la frase de recuperación de 12 palabras, permitiendo el robo inmediato de criptoactivos; el incidente subraya la falta de verificación de origen y la necesidad de reforzar la gestión de claves en wallets de autocustodia.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNjcyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/como-recuperar-claves-de-wallets-exodus.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo recuperar claves de wallets de criptomonedas exodus not your keys not your coins o tal vez sí",
+    "ttps": [
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3161,
     "fecha": "2026-10-17T17:43:53Z",
     "categoria": "Ciberseguridad",
@@ -52722,93 +52796,6 @@
     "enlace_original": "https://www.bleepingcomputer.com/news/security/cisco-finally-confirms-attackers-exploiting-unified-cm-flaw/",
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:cisco finally confirms attackers exploiting unified cm flaw",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1095,
-    "fecha": "2026-07-02T13:16:07Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "IA Abierta: Un Peligro",
-    "resumen": "El CEO de Anthropic, Dario Amodei, ha declarado que la IA de código abierto se está convirtiendo en un peligro, similar a lo que Steve Ballmer dijo sobre Linux hace 25 años, lo que ha generado preocupación sobre la seguridad de los modelos de IA abiertos como GLM-5.2, que ha demostrado ser tan peligroso como Opus 4.8 en materia de ciberseguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTgxNjd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/ia-open-source-peligrosa-ceo-anthropic-repite-que-ballmer-dijo-hace-25-anos-al-calificar-a-linux-ser-cancer",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:la ia open source es peligrosa el ceo de anthropic repite lo que ballmer dijo hace 25 años al calificar a linux de ser un cáncer",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "commandlinux.com",
-        "fosspost.org",
-        "platform.instagram.com",
-        "upload.wikimedia.org",
-        "web.archive.org",
-        "www.anthropic.com",
-        "www.flickr.com",
-        "www.suntimes.com",
-        "www.xataka.com",
-        "www.youtube.com"
-      ],
-      "url": [
-        "https://fosspost.org/linux-server-market-share-statistics/",
-        "https://i.blogs.es/7b8f72/ballmer-amodei/1024_2000.jpeg",
-        "https://i.blogs.es/7be5b8/captura-de-pantalla-2026-07-02-a-las-10.32.21/1024_2000.png",
-        "https://i.blogs.es/7be5b8/captura-de-pantalla-2026-07-02-a-las-10.32.21/1366_2000.png",
-        "https://i.blogs.es/7be5b8/captura-de-pantalla-2026-07-02-a-las-10.32.21/450_1000.png",
-        "https://i.blogs.es/7be5b8/captura-de-pantalla-2026-07-02-a-las-10.32.21/650_1200.png",
-        "https://i.blogs.es/8de300/win2/375_142.jpg",
-        "https://i.blogs.es/b2d77b/captura-de-pantalla-2026-07-02-a-las-9.50.50/1024_2000.png",
-        "https://i.blogs.es/b2d77b/captura-de-pantalla-2026-07-02-a-las-9.50.50/1366_2000.png",
-        "https://i.blogs.es/b2d77b/captura-de-pantalla-2026-07-02-a-las-9.50.50/450_1000.png",
-        "https://i.blogs.es/b2d77b/captura-de-pantalla-2026-07-02-a-las-9.50.50/650_1200.png",
-        "https://i.blogs.es/b95c17/microsoft/375_142.jpeg",
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
-        "https://web.archive.org/web/20011129083650/http://www.suntimes.com/output/tech/cst-fin-micro01.html",
-        "https://www.anthropic.com/news/redeploying-fable-5",
-        "https://www.flickr.com/photos/worldbank/"
-      ]
-    }
-  },
-  {
-    "id": 1094,
-    "fecha": "2026-07-02T13:16:01Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "IBM Invierte $5B en Seguridad",
-    "resumen": "IBM asigna 20,000 ingenieros al proyecto Lightwell para abordar vulnerabilidades en la cadena de suministro de software de código abierto, luego de que la IA de Anthropic, Mythos, identificara bugs críticos, destacando la necesidad de mejorar la seguridad en el desarrollo de software. Esto resalta el desafío de proteger la cadena de suministro de software contra ataques de seguridad, como exploits de zero-day y malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTgxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/anthropic-s-ai-finds-bugs-ibm-bets-5b-it-can-fix-them-",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:anthropic s ai finds bugs ibm bets 5b it can fix them",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1093,
-    "fecha": "2026-07-02T13:15:56Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Gestión de Identidad Insuficiente para Agentes AI",
-    "resumen": "La gestión del ciclo de vida de identidades (Identity Lifecycle Management) no fue diseñada para agentes autónomos de IA, lo que genera puntos ciegos estructurales en el modelo de gobernanza tradicional, permitiendo vulnerabilidades en la seguridad de la identidad. Esto se debe a que los agentes de IA no tienen registros de empleo, gerentes ni fechas de salida, lo que complica la detección por parte de herramientas de gestión de identidad y acceso (IGA) tradicionales.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTgxNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/identity-lifecycle-management.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:identity lifecycle management wasn t built for ai agents",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1092,
-    "fecha": "2026-07-02T11:32:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Opera lanza Paste Protect",
-    "resumen": "Opera ha introducido Paste Protect, una característica de seguridad diseñada para bloquear ataques de estilo ClickFix que engañan a los usuarios para que ejecuten comandos maliciosos a través de ingeniería social, mitigando el riesgo de ataques de phishing y ejecución de código malicioso. Esta función se enfoca en prevenir la ejecución de comandos no deseados a través de la manipulación del portapapeles.",
-    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/opera-rolls-out-paste-protect-feature-to-fight-clickfix-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:opera rolls out paste protect feature to fight clickfix attacks",
     "ttps": [],
     "iocs": {}
   }
