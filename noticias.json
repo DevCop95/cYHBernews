@@ -1,5 +1,51 @@
 [
   {
+    "id": 3167,
+    "fecha": "2026-10-17T22:50:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Drupal corrige dos vulnerabilidades críticas de ejecución remota de código antes de que surjan exploits",
+    "resumen": "Se han publicado parches para dos CVE de alta severidad que permiten RCE en cualquier versión soportada de Drupal, mitigando el riesgo de compromisos masivos de sitios web. Los atacantes podrían haber explotado vectores de inyección de parámetros en módulos comunes para ejecutar código arbitrario.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNzc0MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:drupal patches critical rce flaws warns exploits may emerge soon",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3166,
+    "fecha": "2026-10-17T22:50:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-89309 permite acceso no autenticado a API de WMS MobileServer con CVSS 10.0",
+    "resumen": "La vulnerabilidad en el middleware de autorización omite la verificación de credenciales para métodos HTTP distintos de GET/HEAD y para encabezados Authorization malformados, habilitando a un atacante remoto con acceso a la red a ejecutar funciones de la API sin token válido.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNzc0MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-89309",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-89309",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-89309"
+      ]
+    }
+  },
+  {
     "id": 3165,
     "fecha": "2026-10-17T20:01:21Z",
     "categoria": "Ciberseguridad",
@@ -52769,34 +52815,6 @@
         "name": "User Execution"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1097,
-    "fecha": "2026-07-02T13:16:19Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Sobrecarga de datos de seguridad",
-    "resumen": "El crecimiento rápido de los registros de firewall convirtió los datos de seguridad en una carga para la seguridad y el presupuesto, lo que llevó a un CISO a utilizar inteligencia artificial (IA) para filtrar los datos relevantes que deben incluirse en el Sistema de Gestión de Información de Seguridad (SIEM). Esto permitió optimizar la gestión de la seguridad y reducir costos.",
-    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTgxNzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/too-much-security-data-risk",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:when too much security data became the risk",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1096,
-    "fecha": "2026-07-02T13:16:13Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque a vulnerabilidad de Cisco",
-    "resumen": "Se ha confirmado que atacantes están explotando una vulnerabilidad en el sistema Unified Communications Manager (Unified CM) de Cisco, que había sido parcheada a principios de junio, lo que supone un riesgo para la seguridad de las comunicaciones unificadas. El vector de ataque aprovecha la falta de actualización de los sistemas, permitiendo a los atacantes aprovechar la vulnerabilidad antes de que se aplicaran los parches de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTgxNzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisco-finally-confirms-attackers-exploiting-unified-cm-flaw/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:cisco finally confirms attackers exploiting unified cm flaw",
-    "ttps": [],
     "iocs": {}
   }
 ]
