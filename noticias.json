@@ -1,5 +1,69 @@
 [
   {
+    "id": 3150,
+    "fecha": "2026-10-17T02:46:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2024-34323 permite IDOR crítico en ProPhoenix Law RMS versión 2022.2403.3.101",
+    "resumen": "La vulnerabilidad IDOR expone datos sensibles mediante manipulación del parámetro usrLogin$hdnPFID en solicitudes HTTP, con CVSS 10.0, facilitando acceso no autorizado a información confidencial. Se recomienda parchear inmediatamente y revisar logs de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyMDUxNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2024-34323",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2024-34323",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-34323"
+      ]
+    }
+  },
+  {
+    "id": 3149,
+    "fecha": "2026-10-17T02:46:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "NIST, NSA y CISA publican 10 prácticas obligatorias para incidentes de superinteligencia",
+    "resumen": "El documento conjunto define procesos de preparación y respuesta para incidentes donde agentes de superinteligencia (SI) actúan fuera de los parámetros establecidos, incluyendo control de acceso, monitoreo continuo, preservación de evidencia y contención antes de reactivar el agente. Se alinea con los estándares de respuesta a incidentes de NIST y obliga a reportar a agencias federales, reforzando la postura de defensa en entornos de IA de alto riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyMDUxNjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:key practices for incident readiness and response in super intelligence training and evaluation",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3148,
+    "fecha": "2026-10-17T02:46:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "APT lanza campaña de phishing AitM contra afiliados de investigación taiwaneses para robar credenciales Google",
+    "resumen": "La campaña utiliza invitaciones a eventos falsos para redirigir a víctimas a un framework adversario-en-el-medio que captura contraseñas y tokens MFA de cuentas Google, evidenciando un vector de spear-phishing dirigido a instituciones de I+D en Taiwán.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyMDUxNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:uat 11985 uses fake event invites to target taiwan research affiliates with google aitm phishing",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3147,
+    "fecha": "2026-10-17T02:46:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-111472 permite inyección SQL en Profleet de TSG",
+    "resumen": "La falla CVE-2026-111472 (CVSS 9.3) permite a un atacante ejecutar consultas SQL arbitrarias mediante peticiones GET al parámetro ‘Identificación’ del endpoint ‘/cgi-bin/index.php’, comprometiendo la integridad y confidencialidad de la base de datos de Profleet. No existe parche disponible, lo que obliga a aplicar mitigaciones de contención inmediatas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyMDUxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-profleet-de-tsg",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-111472",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111472"
+      ]
+    }
+  },
+  {
     "id": 3146,
     "fecha": "2026-10-16T23:16:47Z",
     "categoria": "IA",
@@ -52861,108 +52925,6 @@
       {
         "id": "T1566",
         "name": "Phishing"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1078,
-    "fecha": "2026-07-02T02:50:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad jsPDF",
-    "resumen": "Se ha identificado una vulnerabilidad de inclusión de archivos locales (local file inclusion) en la biblioteca jsPDF para Node.js, con un CVSS Score de 7.5, que permite a un atacante acceder a contenido de archivos arbitrarios en el sistema de archivos local a través de métodos como `loadFile`, `addImage`, `html` y `addFont`. La vulnerabilidad ha sido corregida en la versión 4.0.0 de jsPDF.",
-    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA2MTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-68428",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2025-68428",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2025-68428"
-      ]
-    }
-  },
-  {
-    "id": 1076,
-    "fecha": "2026-07-02T02:49:57Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Seguridad de correo electrónico insuficiente",
-    "resumen": "Los ataques de phishing modernos, compromiso de correo electrónico empresarial y toma de cuentas explotan identidades confiables y flujos de trabajo legítimos, dificultando su detección por parte de las defensas tradicionales de correo electrónico, por lo que se requiere el uso de IA conductual para automatizar la detección y respuesta. Esto se debe a que los ataques cada vez más sofisticados pueden evadir las medidas de seguridad tradicionales.",
-    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1OTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/webinar-why-traditional-email-security-is-no-longer-enough/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:webinar why traditional email security is no longer enough",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1074,
-    "fecha": "2026-07-02T02:49:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Malware ChocoPoC ataca investigadores",
-    "resumen": "Se ha descubierto un malware llamado ChocoPoC que se disfraza como exploits de proof-of-concept (PoC) en GitHub, entregando un troyano de acceso remoto (RAT) basado en Python que puede ejecutar comandos y robar datos sensibles, apuntando principalmente a investigadores de ciberseguridad a través de phishing y descargas de código malicioso. El vector de ataque incluye la explotación de la confianza en repositorios de código abierto como GitHub.",
-    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1ODR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-chocopoc-malware-targets-researchers-via-trojanized-poc-exploits/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:new chocopoc malware targets researchers via trojanized poc exploits",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1073,
-    "fecha": "2026-07-02T02:49:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Malware vía sitios falsos de DocuSign",
-    "resumen": "Se ha detectado una campaña de malware que utiliza sitios web falsos que imitan a DocuSign para distribuir malware, con casos identificados en Brasil y potencial para expandirse a otros países de Latinoamérica a través de técnicas adaptables. Los vectores de ataque incluyen phishing y suplantación de sitios web confiables para engañar a las víctimas.",
-    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NjA1Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/estafas-enganos/sitios-falsos-docusign-distribuyen-malware-latinoamerica/",
-    "fuente": "WeLiveSecurity",
-    "dedup_key": "txt:sitios falsos de docusign se utilizan para distribuir malware",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1189",
-        "name": "Drive-by Compromise (se infiere por la mención de sitios web falsos)"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1586",
-        "name": "Phishing: Spearphishing Attachment (no se menciona explícitamente, pero se puede inferir que el phishing puede incluir archivos o enlaces maliciosos)"
       }
     ],
     "iocs": {}
