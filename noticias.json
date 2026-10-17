@@ -1,5 +1,55 @@
 [
   {
+    "id": 3153,
+    "fecha": "2026-10-17T07:28:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Proofpoint adquiere Varonis por 6.300 millones en operación de efectivo total",
+    "resumen": "La compra consolida la posición de Proofpoint en el mercado de visibilidad y protección de datos, integrando la plataforma de análisis de comportamiento de Varonis para reforzar detección de amenazas internas y cumplimiento regulatorio.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyMjIxMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/proofpoint-varonis-cybersecurity-acquisition",
+    "fuente": "The Record",
+    "dedup_key": "txt:proofpoint lines up 6 3 billion deal for varonis data security",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3152,
+    "fecha": "2026-10-17T07:28:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers comprometen credenciales de ConnectWise para infiltrarse en 173 inquilinos de Microsoft 365",
+    "resumen": "Investigadores de ciberseguridad detectan una campaña activa donde actores maliciosos usan credenciales robadas de ConnectWise Cloud Backup para acceder a entornos M365 de clientes, permitiendo despliegue de ransomware y exfiltración de datos. La técnica combina phishing dirigido y reutilización de tokens OAuth, ampliando la superficie de ataque de los MSP.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyMjIwOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers use compromised connectwise credential to sign in to 173 microsoft 365 tenants",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3151,
+    "fecha": "2026-10-17T07:28:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SSRF en la exportación a PDF de Wegow permite peticiones externas a través de export.highcharts.com",
+    "resumen": "CVE-2026-101300 es un SSRF que afecta a usuarios autenticados de Wegow, quienes pueden manipular el parámetro <svg> para forzar al servicio de generación de PDF a contactar recursos controlados por el atacante, posibilitando exfiltración o acceso interno. No existe parche disponible; se recomienda bloquear el dominio export.highcharts.com y aplicar filtros de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyMjIwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/server-side-request-forgery-en-la-exportacion-pdf-de-wegow",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-101300",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "backoffice.wegow.com",
+        "export.highcharts.com"
+      ],
+      "cve": [
+        "CVE-2026-101300"
+      ]
+    }
+  },
+  {
     "id": 3150,
     "fecha": "2026-10-17T02:46:09Z",
     "categoria": "Ciberseguridad",
@@ -52815,118 +52865,5 @@
         "CVE-2026-5821"
       ]
     }
-  },
-  {
-    "id": 1082,
-    "fecha": "2026-07-02T06:38:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en libssh",
-    "resumen": "Se ha descubierto una vulnerabilidad en libssh (CVE-2025-14821) con una puntuación CVSS de 7.8, que permite ataques de \"man-in-the-middle\" locales, degradación de la seguridad de las conexiones SSH y manipulación de la información de hosts de confianza, afectando la confidencialidad, integridad y disponibilidad de las comunicaciones SSH en sistemas Windows debido a una configuración predeterminada insegura. La vulnerabilidad se explota a través de la carga automática de archivos de configuración desde el directorio C:\\etc, que puede ser creado y modificado por usuarios locales no privilegiados.",
-    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyODZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-14821",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2025-14821",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1556",
-        "name": "Modify Authentication Process"
-      },
-      {
-        "id": "T1557",
-        "name": "Adversary-in-the-Middle"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2025-14821"
-      ]
-    }
-  },
-  {
-    "id": 1081,
-    "fecha": "2026-07-02T06:38:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad RCE en SharePoint",
-    "resumen": "Se ha detectado una vulnerabilidad de ejecución de código remoto (RCE) en Microsoft SharePoint Server, identificada como CVE-2026-45659, con una puntuación CVSS de 8.8, que se está explotando activamente y ha sido agregada al catálogo de vulnerabilidades conocidas explotadas (KEV) de la Agencia de Ciberseguridad y Seguridad de Infraestructura de EE. UU. (CISA). La vulnerabilidad se debe a la deserialización de datos no confiables, lo que permite la ejecución de código remoto.",
-    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyODB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-45659",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-45659"
-      ]
-    }
-  },
-  {
-    "id": 1079,
-    "fecha": "2026-07-02T06:37:47Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware en fondos de pantalla de Steam",
-    "resumen": "Kaspersky ha detectado una campaña de distribución de malware que se esconde en fondos de pantalla descargados desde Steam Workshop y Wallpaper Engine, lo que podría afectar a los usuarios de la plataforma de juegos en línea. El malware se propaga a través de la descarga de fondos de pantalla infectados, lo que puede permitir a los atacantes acceder a sistemas y datos personales.",
-    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyNjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/detectan-malware-oculto-en-fondos-de-pantalla-descargados-desde-steam/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:detectan malware oculto en fondos de pantalla descargados desde steam",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1219",
-        "name": "Remote Access Tools"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      }
-    ],
-    "iocs": {}
   }
 ]
