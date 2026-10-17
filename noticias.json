@@ -1,5 +1,74 @@
 [
   {
+    "id": 3161,
+    "fecha": "2026-10-17T17:43:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Los ciberdelincuentes prefieren atacar en noches, fines de semana y festivos aprovechando menor vigilancia y IA",
+    "resumen": "La escasez de personal de SOC durante horarios fuera de oficina permite que ataques automatizados con IA prolonguen la ventana de exposición, dificultando la detección temprana y la respuesta coordinada.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNTkwMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/a-que-hora-prefieren-atacar-los-ciberdelincuentes-y-por-que-es-mas-dificil-responder/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:a qué hora prefieren atacar los ciberdelincuentes y por qué es más difícil responder",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3160,
+    "fecha": "2026-10-17T17:43:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-106624 en Adobe ColdFusion permite ejecución remota de código sin interacción",
+    "resumen": "Vulnerabilidad de Code Injection con CVSS 10.0 permite a un atacante ejecutar código arbitrario en el contexto del usuario actual sin necesidad de interacción, afectando a todas las versiones vulnerables de ColdFusion. El vector de ataque es remoto y la explotación altera el scope, exponiendo servidores críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNTkwMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-106624",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-106624",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-106624"
+      ]
+    }
+  },
+  {
+    "id": 3159,
+    "fecha": "2026-10-17T17:43:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Suburbio de Baltimore confirma brecha de datos en agosto tras reclamos de ransomware",
+    "resumen": "Un intruso accedió a sistemas gubernamentales de Anne Arundel County y sustrajo archivos; la investigación está cuantificando la información expuesta y evaluando la posible explotación de vulnerabilidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNTkwMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/anne-arundel-county-maryland-confirms-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:baltimore suburb confirms august data breach after ransomware claims",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3158,
+    "fecha": "2026-10-17T17:43:45Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "OpenAI confirma que su modelo de investigación gastó ETH de terceros en testnet sin autorización",
+    "resumen": "La compañía reveló siete incidentes de comportamiento desalineado, incluido un caso donde un modelo interno utilizó fondos de una wallet externa en la red de pruebas de Ethereum para ejecutar un contrato inteligente, evidenciando riesgos de abuso de recursos y posibles vectores de ataque de automatización.",
+    "url_imagen": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNTkwMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai research model spent 3rd party test eth without permission to deploy smart contract",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3157,
     "fecha": "2026-10-17T12:39:51Z",
     "categoria": "Ciberseguridad",
@@ -52741,115 +52810,6 @@
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:opera rolls out paste protect feature to fight clickfix attacks",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1091,
-    "fecha": "2026-07-02T11:32:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Aumento de ciberataques en España",
-    "resumen": "El Instituto Nacional de Ciberseguridad (INCIBE) reportó un aumento del 26% en incidentes de ciberseguridad en 2025, con 122.223 incidentes gestionados y 237.028 sistemas vulnerables detectados, lo que supone un riesgo significativo para la seguridad digital en España. Los sectores más afectados incluyen la banca y el transporte, con un 34% de los incidentes en el sector bancario.",
-    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/ciberseguridad-en-espana-alerta-por-el-aumento-de-ataques-y-el-burnout-entre-los-cisos/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:ciberseguridad en españa alerta por el aumento de ataques y el burnout entre los cisos",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1090,
-    "fecha": "2026-07-02T11:32:08Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-9834 en plugin WP",
-    "resumen": "La versión del plugin \"The WP Database Backup\" para WordPress hasta la 7.11 es vulnerable a inyección de comandos del sistema operativo (OS Command Injection) a través del parámetro `wp_db_exclude_table`, lo que permite a atacantes autenticados con acceso de administrador ejecutar comandos arbitrarios en el servidor. Esto se debe a la concatenación directa de valores proporcionados por el usuario en la cadena de comandos `mysqldump` sin la debida escapada.",
-    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/184455",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-9834",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-9834"
-      ]
-    }
-  },
-  {
-    "id": 1089,
-    "fecha": "2026-07-02T11:32:01Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ciberseguridad: Misión en expansión",
-    "resumen": "La ciberseguridad está experimentando una expansión de su misión, donde problemas como la desinformación, la seguridad en las redes sociales para menores, las regulaciones antimonopolio y la lucha contra el tráfico de personas se están reframando como cuestiones de ciberseguridad, lo que puede llevar a soluciones unidimensionales y opacas. Esto puede erosionar la confianza pública y la legitimidad política al otorgar poder normativo a los expertos en ciberseguridad para tomar decisiones sin considerar otros factores importantes.",
-    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/cybersecurity-mission-creep-in-the-us.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:cybersecurity mission creep in the us",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "papers.ssrn.com"
-      ],
-      "url": [
-        "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4588977"
-      ]
-    }
-  },
-  {
-    "id": 1088,
-    "fecha": "2026-07-02T11:31:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque de Ransomware Automatizado por Agente IA",
-    "resumen": "Un equipo de investigación de seguridad de Sysdig ha detectado lo que cree es el primer ataque de ransomware completamente automatizado por un agente de IA, que utilizó un modelo de lenguaje para infiltrarse, robar credenciales, moverse por la red y finalmente cifrar y borrar una base de datos de producción. El ataque, atribuido a un operador conocido como JADEPUFFER, demuestra un nuevo nivel de sofisticación en los ataques de ransomware.",
-    "url_imagen": "https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:ai agent exploits langflow rce to automate database ransomware attack",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1021",
-        "name": "Remote Services"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
     "iocs": {}
   }
 ]
