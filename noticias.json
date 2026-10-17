@@ -1,5 +1,91 @@
 [
   {
+    "id": 3157,
+    "fecha": "2026-10-17T12:39:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-108334 permite evadir autenticación y limitación de velocidad en Kuadrant operator mediante manipulación",
+    "resumen": "La vulnerabilidad en el shim WebAssembly del operador Kuadrant no escapa correctamente los valores de coincidencia de HTTPRoute, permitiendo a un atacante que controle rutas crear valores de ruta, encabezado o consulta manipulados que omiten las verificaciones de autenticación y rate-limiting. El tráfico sigue siendo encaminado al backend, exponiendo potenciales vectores de acceso no autorizado y abuso de recursos.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNDA3OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/377878",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-108334",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-108334"
+      ]
+    }
+  },
+  {
+    "id": 3156,
+    "fecha": "2026-10-17T12:39:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-106622 permite SSRF crítico en Adobe ColdFusion con escalada de privilegios sin interacción del usuario",
+    "resumen": "La vulnerabilidad SSRF (CVSS 10.0) en Adobe ColdFusion permite a un atacante forjar peticiones internas y obtener privilegios de sistema sin necesidad de interacción, ampliando el alcance del compromiso. Se recomienda aplicar inmediatamente los parches de Adobe y reforzar la segmentación de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNDA3OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-106622",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-106622",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-106622"
+      ]
+    }
+  },
+  {
+    "id": 3155,
+    "fecha": "2026-10-17T12:39:47Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Ucrania despliega torretas con IA y visión artificial para neutralizar drones rusos a reacción de 600 km/h",
+    "resumen": "Rusia ha incrementado la velocidad de sus drones de ataque mediante pequeños motores a reacción, reduciendo la ventana de detección a menos de 2 s. Kiev responde con sistemas de torreta automatizada equipados con IA de visión y ametralladoras .50, que ya demuestran tasas de intercepción del 30-70 % contra estos objetivos de alta velocidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1785981254566-7d183c6f49f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNDA3ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/magnet/rusia-puso-motores-a-reaccion-a-sus-drones-para-volar-a-600-km-h-respuesta-ucrania-ha-sido-darle-ojos-cerebro-a-ametralladora",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:rusia puso motores a reacción a sus drones para volar a 600 km h la respuesta de ucrania ha sido darle ojos y cerebro a una ametralladora",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3154,
+    "fecha": "2026-10-17T12:39:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Paquete npm malicioso “imgdecode” oculta cargador de shellcode en addon nativo de Windows",
+    "resumen": "Investigadores detectaron que el paquete “imgdecode”, publicado el 30-sep-2026, incluye un loader de shellcode que se ejecuta mediante un addon nativo de Windows, permitiendo la ejecución de código arbitrario en sistemas comprometidos a través de la cadena de suministro de npm. El módulo ya ha sido descargado 979 veces y sigue disponible, representando un vector de ataque de ejecución remota para entornos de desarrollo y producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIyNDA3ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:malfex npm package imgdecode hides shellcode loader in windows native addon",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3153,
     "fecha": "2026-10-17T07:28:20Z",
     "categoria": "Ciberseguridad",
@@ -52765,105 +52851,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1087,
-    "fecha": "2026-07-02T11:31:50Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "IA en Modelado de Amenazas",
-    "resumen": "Se presenta un enfoque híbrido para el modelado de amenazas utilizando IA generativa, reglas deterministas y supervisión humana, destacando la importancia de determinar cuándo delegar en la IA y cuándo utilizar reglas estables o intervención humana. El modelo se aplica a la identificación de riesgos y mitigaciones en fases tempranas del diseño de sistemas, mejorando la reproducibilidad y reduciendo la dependencia de la experiencia especializada.",
-    "url_imagen": "https://images.unsplash.com/photo-1773558057689-847e19466840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/07/ia-generativa-reglas-deterministas-e.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "txt:ia generativa reglas deterministas e intervención humana lo que aprendí modelando amenazas con un pipeline híbrido",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "blogger.googleusercontent.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "mypublicinbox.com",
-        "www.blogger.com",
-        "www.campusciberseguridad.com",
-        "www.slideshare.net"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5-w4CjRYuiA9cve6WBCYrQASMcW-sc2a00lOTS-4QZ7W_8d_1jNSoUcDB02w1LVNQHJmoLtNRcNo4D4NHzkbX8IkiPl-uRzIuOmsnP_ddYQeCN33TqQrV6VTrmXeXPk5nOYS9l21K44xjzQ17mHPERvc15MbcFbZZfTtG3RFKk9YEXxPt6Rq1/w640-h416/master0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6g1sXj-vW5Knr0a9OVVVaebrhnMDo7tv552nBve_xV_du7XEbXt9Jsh7V5Ygyf2Sr2hwKMaDlGlvnslSd9Lj-Qgwc6O216xNxbrfeZkU6k2w8TrNcsrEzmhaYJyBLiEDEdtSD0zisUuxTlR9ocnCooa3uZqv2qTcUxeGaV4KnOSnNeFYx3goG/s1482/modelado0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6g1sXj-vW5Knr0a9OVVVaebrhnMDo7tv552nBve_xV_du7XEbXt9Jsh7V5Ygyf2Sr2hwKMaDlGlvnslSd9Lj-Qgwc6O216xNxbrfeZkU6k2w8TrNcsrEzmhaYJyBLiEDEdtSD0zisUuxTlR9ocnCooa3uZqv2qTcUxeGaV4KnOSnNeFYx3goG/w640-h324/modelado0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEj8as8qzpb5moMs2WDxHdy5oqCGem3eQyL4s4cySLl4ckeg313cc71s5k86hMUS2SsqXjxzi5mB9GA_J3EZEFpwpmwiESdjqjTQlBwglOcfvzB9Bp-dQfhnFJ09RM43dfMq1iUDIbaZ_uyd5mcnFats_vhN1FplN4UG6ZyUh2Erjr4jxRqIbI/s846/fig1_dfd_entrada.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEj8as8qzpb5moMs2WDxHdy5oqCGem3eQyL4s4cySLl4ckeg313cc71s5k86hMUS2SsqXjxzi5mB9GA_J3EZEFpwpmwiESdjqjTQlBwglOcfvzB9Bp-dQfhnFJ09RM43dfMq1iUDIbaZ_uyd5mcnFats_vhN1FplN4UG6ZyUh2Erjr4jxRqIbI/w640-h256/fig1_dfd_entrada.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzYZPwFxyglBiCU1FMks8fgIudn8dTWLnMnyjK3eJWaphE_6667JPEDUbVtrld4Ch7nPBQ9_4-y-UOl0bM6C-w5vFAZuHOBsUoOmC_glJ6l_MyblDkxu3ISzwYi3o-3zvie5RHNQxlAqT5Em91_H1P27xqQD9MoMNjxgkpYX4nQ92_-66OXVSR/s1914/fig3_extraccion_inicial.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzYZPwFxyglBiCU1FMks8fgIudn8dTWLnMnyjK3eJWaphE_6667JPEDUbVtrld4Ch7nPBQ9_4-y-UOl0bM6C-w5vFAZuHOBsUoOmC_glJ6l_MyblDkxu3ISzwYi3o-3zvie5RHNQxlAqT5Em91_H1P27xqQD9MoMNjxgkpYX4nQ92_-66OXVSR/w640-h342/fig3_extraccion_inicial.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCzs9b0FEA2mTsZaxmFa7Gzk3oZuxVdhRg6Q9nDCLiQ0TfyFMnOQ8AY_FzCfFFiORHPXtPaSPb14tQFIRI7__655edO9LfO1pCXPZ_FCyluyN9eh6oyIAIdIv947rBViDqZ4tVT0x_TMwsNktdZ5SBj358N5D_5KO9J9r8Bp4c0uMQq0Ga2SbP/s1100/fig2_pipeline.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCzs9b0FEA2mTsZaxmFa7Gzk3oZuxVdhRg6Q9nDCLiQ0TfyFMnOQ8AY_FzCfFFiORHPXtPaSPb14tQFIRI7__655edO9LfO1pCXPZ_FCyluyN9eh6oyIAIdIv947rBViDqZ4tVT0x_TMwsNktdZ5SBj358N5D_5KO9J9r8Bp4c0uMQq0Ga2SbP/w640-h320/fig2_pipeline.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinqbt6Iq61XFGYICDpPOfv0HfdMmGL01xK_DlV3x3PEk9IjtbbsK3Cl5YfUS-Q91rEvWRgEa0FzeIDTllHx_IPBMMTqtnyJ6i16-L2sNBwxYqNWm0Kvx0Uq9w7iQkwIseiAoBaOC4-PZQXliXqTQYCZf-rjYQwYKamosmm298K52RpEFXRbRRs/s1928/Tabla.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinqbt6Iq61XFGYICDpPOfv0HfdMmGL01xK_DlV3x3PEk9IjtbbsK3Cl5YfUS-Q91rEvWRgEa0FzeIDTllHx_IPBMMTqtnyJ6i16-L2sNBwxYqNWm0Kvx0Uq9w7iQkwIseiAoBaOC4-PZQXliXqTQYCZf-rjYQwYKamosmm298K52RpEFXRbRRs/w640-h116/Tabla.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEix8dYQGHJvKhRftYCqYjkuQ3IQYW2b3bDBamptNpsFUYqiDy56KntgGF-nn3P794sqsjhk0-y4NbVIFsE0qC-x8ac2U_iGuFOeqeFMWwzeXfQgZLaf9I_OP65GQloSh7JRNefMz2x_7YNFWsEZGnBotMrAM_GtuBe1t3bEgliju-rOA5zd7F54/w640-h528/MatiasDanielAdes.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjF7OsvkQ_0OBpFpL-1orPt8MrXcHGmMbH0gkkrXX84q91_pzFkjZ1g_OL3TV1tnZCAEa0vp7o1wdDofuT5R7aT7LhKSYJi0rG0kQOY0T2fGkLOYbOT97J8FLHTUIvEjOvlsMsa3BhXXoc6IRpYM8tYOrBNYa_SSxmEBZhvlz8EcdEUgwsEHLs/s1833/fig4_correccion_hitl.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjF7OsvkQ_0OBpFpL-1orPt8MrXcHGmMbH0gkkrXX84q91_pzFkjZ1g_OL3TV1tnZCAEa0vp7o1wdDofuT5R7aT7LhKSYJi0rG0kQOY0T2fGkLOYbOT97J8FLHTUIvEjOvlsMsa3BhXXoc6IRpYM8tYOrBNYa_SSxmEBZhvlz8EcdEUgwsEHLs/w640-h298/fig4_correccion_hitl.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyivW5f9id3RP4xam4OVDLSOA2Lpb49G2-AJ8XR4MshGvhUWWddBJgZFl0M7q82Z6PwD9pDz8w4cIqjPobEfXOf-gfqdPQwdND0SwqAVcVi4xQzBLtr74STRJpgQA9sfLYq3QdtZ-DgmYHyPbehPHVt3Y2YWyOWhIwCWoTCYyPj6hdOg__3_1l/s880/fig5_informe_final.png",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyivW5f9id3RP4xam4OVDLSOA2Lpb49G2-AJ8XR4MshGvhUWWddBJgZFl0M7q82Z6PwD9pDz8w4cIqjPobEfXOf-gfqdPQwdND0SwqAVcVi4xQzBLtr74STRJpgQA9sfLYq3QdtZ-DgmYHyPbehPHVt3Y2YWyOWhIwCWoTCYyPj6hdOg__3_1l/w490-h640/fig5_informe_final.png",
-        "https://elladodelmal.com",
-        "https://www.blogger.com/video.g?token=AD6v5dyOqeYGkOVE2IDR6MYClwTedG0oAefRUovH7_RzDY8dWeA5-xJqI2ADoAkq1YQ_57uFjLWLA3VwVAc",
-        "https://www.campusciberseguridad.com/masters/master-en-inteligencia-artificial-aplicada-ciberseguridad/?utm_source=chema+w26&amp;utm_medium=chema+w26",
-        "https://www.slideshare.net/slideshow/embed_code/key/1heHl0pU4yUQUM",
-        "https://www.slideshare.net/slideshow/modelando-de-amenazas-automatizado-con-inteligencia-artificial-validacion-humana-y-nucleo-determinista/288353595"
-      ]
-    }
-  },
-  {
-    "id": 1086,
-    "fecha": "2026-07-02T11:31:39Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ransomware IA en navegadores",
-    "resumen": "Se ha detectado un malware que utiliza un modelo de IA para conectar riesgos de navegación con técnicas de ransomware, logrando el objetivo sin explotar vulnerabilidades conocidas, lo que representa un nuevo vector de ataque en el ámbito de la ciberseguridad. Esto sugiere un aumento en la complejidad y sofisticación de los ataques cibernéticos asistidos por IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1749006590324-d6b2e90ab1c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5OTE5MDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/alerta-por-el-primer-ransomware-nativo-del-navegador-asistido-por-ia/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:alerta por el primer ransomware nativo del navegador asistido por ia",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1085,
-    "fecha": "2026-07-02T06:38:24Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Authlib",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-28498) en la biblioteca Python Authlib, que permite a un atacante eludir las protecciones de integridad de los tokens de ID de OpenID Connect (OIDC) al suministrar un token de ID falsificado con un algoritmo criptográfico no compatible, lo que viola los principios de diseño criptográfico y las especificaciones de OIDC. La vulnerabilidad ha sido parcheada en la versión 1.6.9 de Authlib.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQzMDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-28498",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-28498",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-28498"
-      ]
-    }
-  },
-  {
-    "id": 1083,
-    "fecha": "2026-07-02T06:38:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Image Optimizer",
-    "resumen": "La versión 1.7.4 del plugin Image Optimizer para WordPress presenta una vulnerabilidad de eliminación de archivos arbitrarios (CVE-2026-5821) debido a una validación de ruta insuficiente, permitiendo a atacantes autenticados con acceso de nivel Autor eliminar archivos arbitrarios en el servidor. Esto puede provocar denegación de servicio, pérdida de datos o degradación de la seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODI5NzQyOTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/184433",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-5821",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-5821"
-      ]
-    }
   }
 ]
