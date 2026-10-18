@@ -1,5 +1,77 @@
 [
   {
+    "id": 3173,
+    "fecha": "2026-10-18T07:43:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-96534 permite SQL injection en plugins Modern Events Calendar Lite y Pro de WordPress",
+    "resumen": "La falta de sanitización de parámetros en versiones anteriores a 7.37.0 permite a usuarios autenticados con privilegios de suscriptor ejecutar consultas SQL arbitrarias, comprometiendo la integridad de la base de datos. Se recomienda actualizar inmediatamente a la versión 7.37.0 o aplicar mitigaciones de WAF.",
+    "url_imagen": "https://images.unsplash.com/photo-1719400471588-575b23e27bd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzMDk0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/377961",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-96534",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-96534"
+      ]
+    }
+  },
+  {
+    "id": 3172,
+    "fecha": "2026-10-18T07:43:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-94603 permite evadir restricciones de capacidades en contenedores Podman versión 4.4.0-5.8.7 y 6.1.2",
+    "resumen": "La vulnerabilidad permite que una imagen con la anotación io.podman.annotations.checkpoint.runtime.name sea tratada como checkpoint, ignorando --cap-drop=ALL y reduciendo la sandbox a configuraciones más permisivas; afecta a contenedores con privilegios y no a modo rootless. Se corrige en Podman 5.8.8 y 6.1.3.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzMDk0MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-94603",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-94603",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-94603"
+      ]
+    }
+  },
+  {
+    "id": 3171,
+    "fecha": "2026-10-18T07:43:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Grupo chino explota zero-day en BeyondTrust IT Support para espionaje corporativo",
+    "resumen": "Un actor estatal respaldado por China está aprovechando una vulnerabilidad zero-day recién descubierta en el software de soporte remoto BeyondTrust para infiltrarse en entornos empresariales y extraer información sensible. La explotación se realiza mediante credenciales comprometidas y técnicas de movimiento lateral, aumentando el riesgo de filtraciones de datos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzMDk0MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/beyond-trust-cyberattack-china",
+    "fuente": "The Record",
+    "dedup_key": "txt:suspected chinese espionage attackers abusing beyondtrust it support zero day",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3170,
     "fecha": "2026-10-18T02:45:51Z",
     "categoria": "IA",
@@ -52752,52 +52824,6 @@
     "enlace_original": "https://t.me/vxunderground/9065",
     "fuente": "TG: vx-underground",
     "dedup_key": "txt:hello i continue to receive requests to make the malware collection static html like it was from 2019 2023 while",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1104,
-    "fecha": "2026-07-02T16:47:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Handlebars",
-    "resumen": "Se ha identificado una vulnerabilidad de inyección de código JavaScript en la versión 4.7.8 y anteriores de Handlebars, permitiendo a un atacante ejecutar código arbitrario al influir en nombres de archivos de plantillas o argumentos de la CLI, con un CVSS Score de 8.2 (HIGH). La versión 4.7.9 corrige el problema, y se ofrecen soluciones alternativas como la validación de entradas y el uso de un entorno aislado.",
-    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4NDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-33941",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-33941",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-33941"
-      ]
-    }
-  },
-  {
-    "id": 1102,
-    "fecha": "2026-07-02T16:47:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataques ConsentFix y ClickFix",
-    "resumen": "Los ataques ConsentFix y ClickFix permiten a los atacantes robar tokens de Microsoft 365 en cuestión de segundos mediante la utilización de prompts falsos y flujos OAuth, lo que permite bypass a la autenticación multifactor (MFA). Estos ataques explotan debilidades en la configuración de seguridad de los flujos de autorización, permitiendo a los atacantes acceder a cuentas de Microsoft 365 sin autorización.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4MzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/consentfix-and-clickfix-how-microsoft-365-accounts-are-hijacked-in-3-seconds/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:consentfix and clickfix how microsoft 365 accounts are hijacked in 3 seconds",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1101,
-    "fecha": "2026-07-02T16:47:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad \"DirtyClone\" en Kernel Linux",
-    "resumen": "La vulnerabilidad \"DirtyClone\" en el kernel de Linux permite obtener acceso de root debido a la falta de separación entre la caché de páginas utilizada para ejecutables y archivos, y los datos de paquetes procesados a través de rutas de copia cero, lo que permite ataques de elevación de privilegios. Esto puede ser explotado a través de vectores de ataque como zero-day y ataques de tipo exploit.",
-    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4MzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114032",
-    "fuente": "TG: Cyber Security Channel",
-    "dedup_key": "txt:dirtyclone linux kernel vulnerability leads to root access at a high level the vulnerabilities exist because the k",
     "ttps": [],
     "iocs": {}
   }
