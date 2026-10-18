@@ -1,5 +1,58 @@
 [
   {
+    "id": 3175,
+    "fecha": "2026-10-18T12:57:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-95182 permite ejecución remota de código en DeepSeek Harness con ruta de búsqueda no confiable",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) en DeepSeek Harness (commit c291e796) permite a un atacante ejecutar código arbitrario al colocar archivos ejecutables manipulados en rutas de búsqueda no validadas. El vector de ataque se basa en la apertura de contenido falsificado, comprometiendo sistemas que integren el componente dsh.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzMjgyMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-95182",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-95182",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1574.006",
+        "name": "Dynamic Linker Hijacking"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-95182"
+      ]
+    }
+  },
+  {
+    "id": 3174,
+    "fecha": "2026-10-18T12:56:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ConnectWise suspende Cloud Backup tras compromiso de identidades y acceso a inquilinos de Microsoft 365",
+    "resumen": "La empresa desactivó siete identidades de aplicación tras detectar que actores no identificados accedieron a ellas y comprometieron varios tenants de Microsoft 365, exponiendo datos críticos y posibilitando movimientos laterales. El vector incluye credenciales de aplicación expuestas y falta de segmentación de privilegios en entornos SaaS.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzMjgyMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:connectwise suspends cloud backup after attackers compromise microsoft 365 tenants",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3173,
     "fecha": "2026-10-18T07:43:40Z",
     "categoria": "Ciberseguridad",
@@ -52775,55 +52828,6 @@
     "enlace_original": "https://therecord.media/supreme-court-decision-threatens-eu-us-data-sharing",
     "fuente": "The Record",
     "dedup_key": "txt:supreme court decision threatens eu us data transfer agreement",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1106,
-    "fecha": "2026-07-02T19:18:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ransomware se disfraza como Interpol",
-    "resumen": "Una campaña de ransomware utiliza ingeniería social básica para engañar a pequeñas empresas, afectando a varias regiones, incluyendo EE. UU., Europa, Medio Oriente y otras, con un vector de ataque que aprovecha la confianza en la organización internacional. El impacto real puede ser significativo, ya que las pequeñas empresas pueden ser particularmente vulnerables a este tipo de ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk4ODV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-use-interpol-lure-target-small-businesses",
-    "fuente": "Dark Reading (Fallback)",
-    "dedup_key": "txt:ransomware thugs masquerade as interpol to entice small biz",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.002",
-        "name": "Spearphishing Link"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1105,
-    "fecha": "2026-07-02T16:47:30Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Colección Malware VXUG",
-    "resumen": "La colección de malware VXUG ha crecido significativamente, con 233,151 archivos y 38,212 subdirectorios, lo que hace inviable su representación como HTML estático debido a su tamaño y complejidad. Esto plantea desafíos para la gestión y visualización de la colección, especialmente considerando su tamaño comprimido de 13.1TB.",
-    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTA4NTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9065",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:hello i continue to receive requests to make the malware collection static html like it was from 2019 2023 while",
     "ttps": [],
     "iocs": {}
   }
