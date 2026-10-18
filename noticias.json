@@ -1,5 +1,108 @@
 [
   {
+    "id": 3180,
+    "fecha": "2026-10-18T17:45:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-111993 permite almacenamiento en texto plano de contraseñas en Soarkey StudentManagement",
+    "resumen": "Vulnerabilidad en la función UserDao.login de AdminDao.java guarda la contraseña sin cifrar, es explotable localmente y ya existe un exploit público. Compromete la confidencialidad de credenciales en instalaciones que utilizan Soarkey StudentManagement.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNDU1Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/378787",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-111993",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "e08f7f1d5015af407aa4cca0ada3dea189b4937e"
+      ],
+      "cve": [
+        "CVE-2026-111993"
+      ]
+    }
+  },
+  {
+    "id": 3179,
+    "fecha": "2026-10-18T17:45:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware Goop emplea cadena de 8 stagers y shellcode x86 para descargar payloads",
+    "resumen": "El análisis revela que el archivo .iso entrega un acceso directo que ejecuta setup.cmd, el cual desencadena múltiples capas de decodificación Base64 y XOR para generar shellcode independiente de posición x86 que contacta un C2 y descarga un segundo payload. La complejidad de ocho etapas sugiere un intento de evadir análisis estático y apunta a objetivos de desarrollo de software.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNDU1Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9537",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:yeah so i m looking at this goop malware right now and it s beginning to irritate me it s not necessary super",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3178,
+    "fecha": "2026-10-18T17:45:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft publica Patch Tuesday de octubre 2026 con 1.415 vulnerabilidades, 85 críticas",
+    "resumen": "La actualización mensual incluye 1.415 CVE que afectan a Windows, Office y Azure, de los cuales 85 son catalogados como críticos y requieren parcheo inmediato para mitigar riesgos de ejecución remota de código y escalada de privilegios. Se recomienda validar la compatibilidad y desplegar los parches vía WSUS o Microsoft Endpoint Manager antes del fin de mes.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNDU1MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:microsoft patch tuesday for october 2026 snort rules and prominent vulnerabilities",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3177,
+    "fecha": "2026-10-18T17:45:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Detectan proyectos VBA huérfanos incrustados en archivos DWG mediante regla YARA",
+    "resumen": "Se publica una regla YARA que identifica código VBA no referenciado dentro de archivos DWG, mitigando la inserción de payloads maliciosos en entornos CAD. La detección permite bloquear vectores de ataque de macro-based que aprovechan la ejecución automática en software de diseño.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNDU1MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33434",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:orphaned vba projects inside dwg files yara rule sun oct 18th",
+    "ttps": [
+      {
+        "id": "T1059.005",
+        "name": "Visual Basic"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3176,
+    "fecha": "2026-10-18T17:45:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers explotan vulnerabilidad de inyección de comandos en SiteGuard WAF para obtener privilegios de root y SYSTEM",
+    "resumen": "Se detectó una vulnerabilidad de OS command injection en SiteGuard Server Edition que permite a atacantes ejecutar comandos arbitrarios con privilegios de root o SYSTEM, facilitando la toma de control total del servidor vulnerable. La falla afecta a entornos que dependen del WAF para la protección perimetral y requiere parche inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNDU1MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers exploit siteguard waf flaw to run commands as admins",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059.003",
+        "name": "Windows Command Shell"
+      },
+      {
+        "id": "T1059.004",
+        "name": "Unix Shell"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3175,
     "fecha": "2026-10-18T12:57:02Z",
     "categoria": "Ciberseguridad",
@@ -52729,105 +52832,6 @@
     "enlace_original": "https://t.me/vxunderground/9069",
     "fuente": "TG: vx-underground",
     "dedup_key": "txt:me raises hand hi i have a stupid question the fbi seized netnut dot com because its part of the popa botnet but",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1113,
-    "fecha": "2026-07-02T22:03:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Apple ajusta política de parches",
-    "resumen": "Apple ha decidido reducir los ciclos de parches para mantenerse al día con los ataques que utilizan inteligencia artificial (AI) para reducir el tiempo de explotación de vulnerabilidades, lo que puede impactar la seguridad de sus dispositivos. Esto se debe a que los atacantes están utilizando AI para aprovechar las vulnerabilidades de manera más rápida y eficiente.",
-    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/apple-patch-policy-ai",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:apple reverses age old patch policy to keep up with ai",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1112,
-    "fecha": "2026-07-02T22:03:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "FBI incauta plataforma NetNut",
-    "resumen": "El FBI ha incautado cientos de dominios asociados con NetNut, un servicio de proxy residencial utilizado por la red botnet Popa, que comprende al menos dos millones de dispositivos comprometidos por software malicioso sin consentimiento de las víctimas, afectando la privacidad digital y la seguridad en línea. La acción se llevó a cabo después de que varias firmas de seguridad conectaron NetNut con la red botnet Popa.",
-    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
-    "fuente": "Krebs on Security",
-    "dedup_key": "txt:fbi seizes netnut proxy platform popa botnet",
-    "ttps": [
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1496",
-        "name": "Resource Hijacking (se menciona la red botnet Popa, que comprende dispositivos comprometidos para realizar actividades maliciosas)"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1110,
-    "fecha": "2026-07-02T19:18:47Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en OpenSSH",
-    "resumen": "Se ha identificado una vulnerabilidad en OpenSSH (CVE-2026-35385) con una puntuación CVSS de 7.5, considerada de alto riesgo, que permite la instalación de archivos con permisos setuid o setgid al descargar archivos mediante scp como root sin preservar los modos, lo que puede llevar a resultados inesperados y potenciales ataques de elevación de privilegios. La vulnerabilidad afecta a versiones de OpenSSH anteriores a la 10.3.",
-    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-35385",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-35385",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-35385"
-      ]
-    }
-  },
-  {
-    "id": 1108,
-    "fecha": "2026-07-02T19:18:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en PraisonAI",
-    "resumen": "La versión de PraisonAI antes de 0.1.7 presenta una vulnerabilidad (CVE-2026-58653) que permite a un atacante crear problemas que hacen referencia a proyectos de otros espacios de trabajo, causando contaminación de datos entre inquilinos en la agregación de estadísticas de proyectos sin restricciones de espacio de trabajo. Esto se debe a la falta de validación del parámetro project_id en los cuerpos de las solicitudes de creación y actualización de problemas.",
-    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/185483",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-58653",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-58653"
-      ]
-    }
-  },
-  {
-    "id": 1107,
-    "fecha": "2026-07-02T19:18:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Amenaza a acuerdo EU-US de transferencia de datos",
-    "resumen": "La decisión del Tribunal Supremo y la posterior carta de Max Schrems, fundador de noyb, plantean una amenaza al Marco de Privacidad de Datos EU-EE.UU. (DPF), que permite la transferencia de datos personales de la UE a empresas estadounidenses, debido a preocupaciones sobre la privacidad y la seguridad de los datos. Esto podría afectar la compliance con el Reglamento General de Protección de Datos (GDPR) y tener un impacto significativo en las empresas que transfieren datos entre la UE y EE.UU.",
-    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMTk5MDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/supreme-court-decision-threatens-eu-us-data-sharing",
-    "fuente": "The Record",
-    "dedup_key": "txt:supreme court decision threatens eu us data transfer agreement",
     "ttps": [],
     "iocs": {}
   }
