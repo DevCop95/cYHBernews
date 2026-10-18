@@ -1,5 +1,55 @@
 [
   {
+    "id": 3182,
+    "fecha": "2026-10-18T20:00:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Eclipse Milo permiten autorización incorrecta y denegación de servicio",
+    "resumen": "Cinco CVE afectan a Eclipse Milo 0.6.0-1.1.4, habilitando ejecución de métodos prohibidos, fuga de credenciales y agotamiento de memoria que pueden colapsar servidores OPC UA; se recomienda actualizar a la versión 1.1.5.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNTM2MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-58080,cve-2026-60007,cve-2026-61387,cve-2026-62927,cve-2026-63248,cve-2026-63252",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58080",
+        "CVE-2026-60007",
+        "CVE-2026-61387",
+        "CVE-2026-62927",
+        "CVE-2026-63248",
+        "CVE-2026-63252"
+      ]
+    }
+  },
+  {
+    "id": 3181,
+    "fecha": "2026-10-18T20:00:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-105037 permite a cuentas de bajo privilegio leer archivos arbitrarios en imágenes Docker de EnergizeLab",
+    "resumen": "Vulnerabilidad crítica (CVSS 9.9) en el middleware NestJS de EnergizeLab (versiones 1.6.5-1.8.2) permite a usuarios registrados con privilegios bajos acceder a cualquier archivo del servidor mediante rutas controladas, exponiendo código fuente y secretos.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNTM2MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-105037",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-105037",
+    "ttps": [
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-105037"
+      ]
+    }
+  },
+  {
     "id": 3180,
     "fecha": "2026-10-18T17:45:39Z",
     "categoria": "Ciberseguridad",
@@ -52802,37 +52852,5 @@
         "CVE-2025-5777"
       ]
     }
-  },
-  {
-    "id": 1115,
-    "fecha": "2026-07-02T22:03:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-58460",
-    "resumen": "La biblioteca react-native-receive-sharing-intent contiene una vulnerabilidad de path traversal (CVE-2026-58460) que permite a una aplicación maliciosa co-residente escribir archivos fuera del directorio de caché intencionado, lo que puede llevar a la sobrescritura de archivos arbitrarios en el directorio de datos privados de la aplicación, incluyendo bases de datos y configuraciones. El ataque se puede realizar mediante un intent explícito ACTION_SEND malicioso a la actividad share-receiver exportada de la aplicación consumidora.",
-    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/185648",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-58460",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-58460"
-      ]
-    }
-  },
-  {
-    "id": 1114,
-    "fecha": "2026-07-02T22:03:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "FBI Incauta Netnut",
-    "resumen": "La FBI ha incautado el dominio netnut-dot-com por su presunta relación con la botnet Popa, aunque el sitio web oficial de Netnut sigue en línea en netnut-dot-io, lo que plantea dudas sobre si el dominio incautado era un comando y control (C2) real de la botnet o una medida para interrumpir las operaciones de la botnet. El impacto real de esta incautación en la operación de la botnet Popa y la infraestructura de Netnut es incierto.",
-    "url_imagen": "https://images.unsplash.com/photo-1600176842064-635fe81d2441?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwMjk4MTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9069",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:me raises hand hi i have a stupid question the fbi seized netnut dot com because its part of the popa botnet but",
-    "ttps": [],
-    "iocs": {}
   }
 ]
