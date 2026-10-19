@@ -1,5 +1,32 @@
 [
   {
+    "id": 3187,
+    "fecha": "2026-10-19T02:59:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-104736 permite PHP Object Injection en LearnPress 4.4.10",
+    "resumen": "La falta de filtrado de objetos serializados en el parámetro 'checkout-email' permite a atacantes no autenticados inyectar objetos PHP mediante deserialización sin restricción de clases, comprometiendo la integridad del sitio WordPress.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzNzg3NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-104736",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-104736",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-104736"
+      ]
+    }
+  },
+  {
     "id": 3186,
     "fecha": "2026-10-18T22:43:45Z",
     "categoria": "Ciberseguridad",
@@ -52829,45 +52856,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-21441"
-      ]
-    }
-  },
-  {
-    "id": 1121,
-    "fecha": "2026-07-03T02:32:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en AR para WordPress",
-    "resumen": "La vulnerabilidad CVE-2026-14327 en el plugin AR para WordPress permite a atacantes no autenticados leer contenido de archivos arbitrarios en el servidor a través de Directory Traversal, utilizando el parámetro 'file' y explotando handlers AJAX accesibles públicamente. El ataque requiere obtener un nonce y una clave de cifrado válidos, lo cual es factible en instalaciones predeterminadas sin licencia.",
-    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5NDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/185684",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14327",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1005",
-        "name": "Data from Local System"
-      },
-      {
-        "id": "T1083",
-        "name": "File and Directory Discovery"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14327"
       ]
     }
   }
