@@ -1,5 +1,114 @@
 [
   {
+    "id": 3200,
+    "fecha": "2026-10-19T22:01:43Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "TorchNeuron simplifica la ejecución de modelos Hugging Face en AWS Trainium para producción",
+    "resumen": "La integración de TorchNeuron permite desplegar modelos de lenguaje de Hugging Face en la infraestructura de AWS Trainium con configuraciones automatizadas, reduciendo la latencia y el coste de entrenamiento. Esta mejora acelera la adopción de hardware especializado en IA para cargas de trabajo empresariales sin requerir ajustes manuales extensos.",
+    "url_imagen": "https://images.unsplash.com/photo-1772217360642-0f7a7b1b77d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NDczMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://huggingface.co/blog/hf-torchneuron",
+    "fuente": "Hugging Face",
+    "dedup_key": "txt:torchneuron running hf models on aws trainium is easier than ever",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3199,
+    "fecha": "2026-10-19T22:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Juez rechaza la solicitud de WhatsApp para sancionar a NSO Group por presunto espionaje a usuarios",
+    "resumen": "El tribunal federal dictaminó que la falta de pruebas detalladas de WhatsApp impide mantener a NSO Group en desacato, pese a la acusación de uso de spyware contra la plataforma. La decisión mantiene vigente la orden de restricción de 2025 contra la distribución de herramientas de vigilancia.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NDczMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/whatsapp-denied-appeal-alleged-nso-group-violation-injunction",
+    "fuente": "The Record",
+    "dedup_key": "txt:judge denies whatsapp s bid to hold spyware maker in contempt for allegedly targeting users",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3198,
+    "fecha": "2026-10-19T22:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Operación de estafa de soporte técnico de Microsoft infiltrada revela red de distribución de tráfico rusa",
+    "resumen": "El equipo de investigación desmanteló una campaña que suplantaba a Microsoft, empleando un Traffic Distribution System (TDS) gestionado por una entidad rusa para redirigir víctimas a miles de dominios alojados en Cloudflare, facilitando phishing y descarga de payloads.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NDcyOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:researchers infiltrate microsoft tech support scam operation",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1568.001",
+        "name": "Fast Flux DNS"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3197,
+    "fecha": "2026-10-19T22:01:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers encadenan vulnerabilidades Plex2Shell para instalar mineros y backdoor proxy en Linux",
+    "resumen": "Se detectó la explotación de cuatro CVE en Plex Media Server, denominadas Plex2Shell, que permiten la ejecución remota de código para desplegar cryptominers y un proxy inverso como puerta trasera en sistemas Linux. El vector combina vulnerabilidades de deserialización y escalada de privilegios, afectando a entornos de streaming corporativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NDcyOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers exploit plex2shell flaws to install crypto miners and linux proxy backdoor",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1090.001",
+        "name": "Internal Proxy"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3196,
+    "fecha": "2026-10-19T22:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Nikkei revela tercera brecha de datos en un mes, 1,8 millones de registros expuestos",
+    "resumen": "La publicación japonesa confirmó que un ataque interno comprometió 1,83 M de registros personales, evidenciando fallos en la segmentación de redes y en la gestión de credenciales. El incidente aumenta el riesgo de phishing dirigido y posibles ventas en mercados oscuros.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NDcyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:nikkei discloses third data breach in a month 1 8m records exposed",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3195,
     "fecha": "2026-10-19T16:09:29Z",
     "categoria": "IA",
@@ -52696,140 +52805,6 @@
         "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
         "https://www.reuters.com/business/anthropic-weighs-building-it-own-ai-chips-sources-say-2026-04-09/",
         "https://www.theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip"
-      ]
-    }
-  },
-  {
-    "id": 1134,
-    "fecha": "2026-07-03T13:53:23Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "LLMs Chinos Amplían la Brecha",
-    "resumen": "Dos nuevos modelos de lenguaje de empresas chinas compiten con los modelos líderes y de vanguardia de EE. UU., lo que podría ampliar la brecha entre atacantes y defensores en el ámbito de la ciberseguridad, especialmente en cuanto a la detección y mitigación de ataques basados en inteligencia artificial. Esto plantea preocupaciones para los defensores cibernéticos, ya que los modelos de lenguaje avanzados pueden ser utilizados para crear ataques más sofisticados, como phishing y malware personalizados.",
-    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwODY4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/chinese-llms-broaden-gap-between-attackers-and-defenders",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:chinese llms broaden the gap between attackers amp defenders",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1133,
-    "fecha": "2026-07-03T13:53:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataques de Armored Likho",
-    "resumen": "El actor de amenaza desconocido previamente \"Armored Likho\" ha sido identificado como responsable de ataques cibernéticos dirigidos a agencias gubernamentales y al sector eléctrico en Rusia, Brasil y Kazajistán, utilizando el stealer \"BusySnake\" para realizar campañas de espionaje cibernético y motivadas financieramente. Los ataques combinan espionaje cibernético dirigido con campañas financieras que apuntan a individuos privados.",
-    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwODY3OTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/armored-likho-targets-government.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:armored likho targets government agencies power sector with busysnake stealer",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Spearphishing via Correo Electrónico (no se menciona explícitamente, pero se puede inferir que se utilizan técnicas de phishing para distribuir el stealer)"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploitation of Client Application (se puede inferir que el stealer \"BusySnake\" se utiliza para explotar aplicaciones cliente)"
-      },
-      {
-        "id": "T1056",
-        "name": "Keylogging (el stealer \"BusySnake\" puede incluir funcionalidades de keylogging para robar información)"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1132,
-    "fecha": "2026-07-03T11:29:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vigilancia de vehículos sin matrículas",
-    "resumen": "La empresa Flock ofrece una tecnología de \"huella de vehículo\" que permite a los agentes de la ley recopilar y buscar datos sobre los vehículos, incluyendo detalles como calcomanías, estantes y matrículas temporales, incluso sin información completa de la matrícula. Esto puede utilizarse para construir casos más fuertes con menos información inicial y localizar múltiples vehículos que se mueven juntos.",
-    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNzgxNDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/flock-cameras-can-surveil-cars-without-license-plates.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:flock cameras can surveil cars without license plates",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "amp.newsobserver.com"
-      ],
-      "url": [
-        "https://amp.newsobserver.com/news/politics-government/article315990932.html"
-      ]
-    }
-  },
-  {
-    "id": 1131,
-    "fecha": "2026-07-03T11:28:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Pérdida de teléfono: riesgos de fraude",
-    "resumen": "La pérdida o robo de un teléfono móvil puede exponer a los usuarios a riesgos de fraude y robo de datos, especialmente si no se toman medidas de seguridad adecuadas, como bloquear el dispositivo y cambiar contraseñas de cuentas sensibles. Los vectores de ataque pueden incluir acceso no autorizado a cuentas bancarias y otros servicios en línea.",
-    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNzgxMzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/telefono-perdido-como-actuar-para-evitar-fraudes-y-robos-de-datos/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:teléfono perdido cómo actuar para evitar fraudes y robos de datos",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1130,
-    "fecha": "2026-07-03T07:03:37Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Filósofos en IA",
-    "resumen": "Las empresas de IA como Anthropic están contratando a filósofos para definir la ética y la moralidad de los modelos de lenguaje, como Claude, y garantizar que sus interacciones con humanos sean coherentes con los valores humanos. La demanda de filósofos en el sector de la IA ha aumentado significativamente en los últimos años, con un aumento del 16% en las ofertas de empleo que mencionan la inteligencia artificial.",
-    "url_imagen": "https://images.unsplash.com/photo-1764336312138-14a5368a6cd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjIyMTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/nuevo-fichaje-estrella-ia-no-ingeniero-cientifico-datos-domina-estoicismo-filosofos",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:el nuevo fichaje estrella de la ia no es un ingeniero ni un científico de datos pero domina el estoicismo los filósofos",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "ai2050.schmidtsciences.org",
-        "dailynous.com",
-        "platform.instagram.com",
-        "time.com",
-        "unsplash.com",
-        "www.anthropic.com",
-        "www.apaonline.org",
-        "www.cnbc.com",
-        "www.lavanguardia.com",
-        "www.theatlantic.com",
-        "www.theverge.com",
-        "www.varsity.co.uk",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://ai2050.schmidtsciences.org/hard-problems/",
-        "https://dailynous.com/2026/06/03/ai-in-the-philosophy-job-market-guest-post/",
-        "https://i.blogs.es/21660d/carrera-laboral-gen-z/375_142.jpeg",
-        "https://i.blogs.es/8900f0/filosofia-en-ia/1024_2000.jpeg",
-        "https://i.blogs.es/a5e6ff/christian-lendl-nxbucbb_ihq-unsplash/375_142.jpeg",
-        "https://i.blogs.es/ce79f2/carreras/1024_682.jpeg",
-        "https://i.blogs.es/ce79f2/carreras/500_333.jpeg",
-        "https://i.blogs.es/ce79f2/carreras/840_560.jpeg",
-        "https://time.com/7354738/claude-constitution-ai-alignment/",
-        "https://unsplash.com/es/fotos/una-estatua-de-un-hombre-sentado-en-una-roca-frente-a-un-edificio-4tihTsDIS90",
-        "https://www.anthropic.com/constitution",
-        "https://www.apaonline.org/page/ai2050",
-        "https://www.cnbc.com/2025/09/15/sam-altman-losing-sleep-open-ai-ceo-addresses-controversies-interview.html",
-        "https://www.europapress.es/sociedad/educacion-00468/noticia-graduados-filosofia-184-paro-multiplican-20-ingenieria-electronica-09-estudio-20230619114720.html",
-        "https://www.lavanguardia.com/neo/ia/20260414/11513242/google-deepmind-contratado-filosofo-trabajara-ingenieros-que-necesita.html",
-        "https://www.theatlantic.com/technology/2026/06/ai-companies-hiring-philosophers/687417/",
-        "https://www.theverge.com/ai-artificial-intelligence/865185/anthropic-claude-constitution-soul-doc",
-        "https://www.varsity.co.uk/news/31572"
       ]
     }
   }
