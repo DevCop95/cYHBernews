@@ -1,5 +1,109 @@
 [
   {
+    "id": 3195,
+    "fecha": "2026-10-19T16:09:29Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft 365 E7 y Project Perception introducen controles contra agentes internos con IA",
+    "resumen": "Las nuevas funcionalidades de Microsoft 365 E7 y Project Perception permiten detectar y contener comportamientos de agentes autónomos que actúan como insiders, aplicando políticas de mitigación en tiempo real y reforzando la postura de defensa continua.",
+    "url_imagen": "https://images.unsplash.com/photo-1781444504234-46e77eb78d30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0MjYxNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:agents are your newest insiders security must move at their speed",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3194,
+    "fecha": "2026-10-19T16:09:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Filtración de 80 páginas de WhatsApp revela directrices ocultas para el chatbot de Meta",
+    "resumen": "La exposición de documentos internos muestra instrucciones de mitigación de respuestas y “qué no decir”, indicando una falla de configuración que permitió la divulgación de datos sensibles del modelo conversacional. El incidente sugiere riesgos de manipulación de salida y posibles vectores de prompt injection.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0MjYxNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:whatsapp help pages leaked hidden instructions for a meta chatbot",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3193,
+    "fecha": "2026-10-19T16:09:25Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "VLMs y detectores adaptativos superan CAPTCHAs con 85% de precisión en pruebas continuas",
+    "resumen": "Un sistema híbrido que combina un modelo de visión-lenguaje abierto con un detector YOLOv8 afinado logra resolver CAPTCHAs visuales con 85,4 % de exactitud, aprendiendo nuevas clases tras una o dos interacciones sin anotación humana. En un escenario de guerra de armas de un año, el agente se recupera de perturbaciones diseñadas por el operador del CAPTCHA, demostrando que los defensores subestiman la capacidad de adaptación de bots basados en IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442135732-00cab8f454e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0MjYxNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:training ais to solve captchas",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3192,
+    "fecha": "2026-10-19T16:09:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataques de manipulación de resultados mediante solicitudes de retirada de derechos de OnlyFans comprometen sitios",
+    "resumen": "Los cibercriminales usan peticiones de copyright vinculadas a contenido adulto para inyectar código malicioso en portales vulnerables de universidades y gobiernos, alterando SERPs y facilitando phishing. La exposición destaca la necesidad de reforzar la validación de solicitudes de retirada y aplicar filtros de integridad en los sistemas de gestión de contenido.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0MjYxNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:onlyfans copyright takedowns expose compromised websites",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3191,
+    "fecha": "2026-10-19T16:09:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Investigadores federales vinculan a negociadores de ransomware con sitio de extorsión de ShinyHunters",
+    "resumen": "La FBI identificó a ejecutivos de dos firmas de negociación de rescates que colaboraron estrechamente con el grupo ShinyHunters, facilitando la operación de un portal que presiona a víctimas para pagar el rescate tras el robo de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0MjYxNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:feds suspect ransom negotiator ran shinyhunters extortion site",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1102",
+        "name": "Web Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3190,
     "fecha": "2026-10-19T08:40:02Z",
     "categoria": "Ciberseguridad",
@@ -52728,137 +52832,5 @@
         "https://www.varsity.co.uk/news/31572"
       ]
     }
-  },
-  {
-    "id": 1129,
-    "fecha": "2026-07-03T07:03:28Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Claude Fable 5: Acceso temporal limitado",
-    "resumen": "Anthropic ha anunciado que el modelo Claude Fable 5 no estará disponible a través de suscripciones a Claude después del 7 de julio, aunque se trata de un cambio temporal y se espera que el modelo regrese pronto fuera del plan de uso basado. Esto podría afectar a los usuarios que dependen de este modelo para tareas específicas de inteligencia artificial.",
-    "url_imagen": "https://images.unsplash.com/photo-1674544362969-a4269ef0ea69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjIyMDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:claude fable 5 isn t permanently leaving subscriptions anthropic says",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1128,
-    "fecha": "2026-07-03T06:28:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Apache Airflow",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2023-33234) en el proveedor de Kubernetes de Apache Airflow, que permite la ejecución de código arbitrario mediante la modificación de la imagen y los recursos del sidecar xcom a través de la conexión de Airflow, requiriendo permisos elevados (Op o Admin) para su explotación. La actualización a la versión 7.0.0 del proveedor elimina la vulnerabilidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-33234",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2023-33234",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2023-33234"
-      ]
-    }
-  },
-  {
-    "id": 1127,
-    "fecha": "2026-07-03T06:28:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-9725",
-    "resumen": "La vulnerabilidad CVE-2026-9725 en el plugin Printcart Web to Print Product Designer para WooCommerce en WordPress permite la eliminación arbitraria de archivos debido a una insuficiente validación de rutas en la función store_design_data(), lo que puede permitir la ejecución remota de código. Un atacante no autenticado puede explotar esta vulnerabilidad mediante el endpoint nbd_check_use_logged_in para obtener un nonce y eliminar archivos arbitrarios en el servidor.",
-    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwODZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/185742",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-9725",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-9725"
-      ]
-    }
-  },
-  {
-    "id": 1126,
-    "fecha": "2026-07-03T06:27:47Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Satélite con IA analiza imágenes",
-    "resumen": "La NASA y LoftOrbital han desarrollado NAVI-Orbital, un software que utiliza modelos de visión y lenguaje como Gemma 3 para que los satélites puedan analizar y describir lo que ven sin necesidad de enviar imágenes a la Tierra, lo que reduce el tiempo y el costo de análisis. Esto permite aplicaciones civiles y militares, como la detección de vertidos de petróleo o el seguimiento de objetivos militares.",
-    "url_imagen": "https://images.unsplash.com/photo-1677442135131-4d7c123aef1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwNjd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/espacio/nasa-ha-conseguido-que-satelite-entienda-que-ve-mandar-foto-a-tierra",
-    "fuente": "Xataka IA (Fallback)",
-    "dedup_key": "txt:la nasa ha conseguido que un satélite entienda lo que ve sin mandar ni una foto a la tierra",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "arxiv.org",
-        "www.datacamp.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://arxiv.org/abs/2606.18271",
-        "https://i.blogs.es/0eaf82/spatial_density_of_known_satellites_and_objects_around_earth/375_142.jpeg",
-        "https://i.blogs.es/fe51c0/satelite-con-ia/1024_2000.jpeg",
-        "https://www.datacamp.com/es/blog/edge-ai"
-      ]
-    }
-  },
-  {
-    "id": 1125,
-    "fecha": "2026-07-03T06:27:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Spyware en teléfono de eurodiputado",
-    "resumen": "Se ha detectado el spyware Pegasus en el teléfono de Stelios Kouloglou, un ex miembro del comité del Parlamento Europeo que investigaba abusos de spyware comercial, lo que sugiere un posible ataque dirigido contra él. El vector de ataque fue el software Pegasus, un spyware de alto nivel utilizado para infiltrar dispositivos móviles.",
-    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwNTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/pegasus-spyware-european-parliament-pega-committee-member",
-    "fuente": "The Record",
-    "dedup_key": "txt:spyware found on phone of european parliament member probing it",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Drive-by Compromise (se infiere por el uso de spyware para infiltrar dispositivos móviles)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1056",
-        "name": "Keylogging (es una característica común de spyware como Pegasus)"
-      },
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      }
-    ],
-    "iocs": {}
   }
 ]
