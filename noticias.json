@@ -1,5 +1,78 @@
 [
   {
+    "id": 3190,
+    "fecha": "2026-10-19T08:40:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad use-after-free en mxml 4.0.5/4.0.6 permite ejecución remota",
+    "resumen": "CVE-2026-112094 afecta a la función mxml_load_data de mxml-file.c, provocando un use-after-free que puede ser explotado de forma remota para ejecutar código arbitrario. El exploit ya está disponible públicamente y el proyecto aún no ha emitido parche.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzOTkyMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/381320",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-112094",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112094"
+      ]
+    }
+  },
+  {
+    "id": 3189,
+    "fecha": "2026-10-19T08:39:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad sin parche en Broadcom Wi-Fi permite ejecución de código como root en routers cercanos",
+    "resumen": "La falla en el software de configuración Wi-Fi de Broadcom permite a un atacante dentro del rango radioeléctrico ejecutar código arbitrario con privilegios root en routers basados en Broadcom, sin necesidad de contraseña ni emparejamiento, comprometiendo credenciales Wi-Fi y potencialmente la red interna.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzOTkxOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:unpatched broadcom wi fi flaw lets attackers in range run code as root on routers",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3188,
+    "fecha": "2026-10-19T08:39:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de integridad en MobaXterm permite ejecución de código arbitrario en Windows",
+    "resumen": "CVE-2026-112161 afecta a MobaXterm 26.4 GA al descomprimir sin validar el plugin CygUtils64.plugin, permitiendo a un atacante local con permisos de escritura reemplazar cygwin1.dll y ejecutar código bajo el contexto del usuario. La explotación no requiere elevación de privilegios pero compromete la integridad del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIzOTkxOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ausencia-de-verificacion-de-integridad-en-mobaxterm-de-mobatek",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-112161",
+    "ttps": [
+      {
+        "id": "T1574.001",
+        "name": "DLL"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112161"
+      ]
+    }
+  },
+  {
     "id": 3187,
     "fecha": "2026-10-19T02:59:35Z",
     "categoria": "Ciberseguridad",
@@ -52787,76 +52860,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1124,
-    "fecha": "2026-07-03T06:27:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Fallos críticos duplicados por IA",
-    "resumen": "El informe 'Under Pressure: 2026 Exposure Gap Report' de Check Point revela que la proporción de brechas críticas se ha duplicado en el último año, aumentando el riesgo de colapso digital, aunque solo una fracción requiere acción inmediata. La integración de la IA en los sistemas empresariales puede ser un factor contribuyente a este aumento en vulnerabilidades.",
-    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNjAwNDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/la-ia-duplica-los-fallos-criticos-en-las-empresas-y-agrava-el-riesgo-de-colapso-digital/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:la ia duplica los fallos críticos en las empresas y agrava el riesgo de colapso digital",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1123,
-    "fecha": "2026-07-03T02:32:40Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad XSS en weDocs para WordPress",
-    "resumen": "Se ha descubierto una vulnerabilidad de Cross-Site Scripting (XSS) almacenada en el plugin weDocs para WordPress, que utiliza inteligencia artificial (IA) para la base de conocimiento y el chatbot, debido a una insuficiente sanitización de entradas y escapada de salidas en el atributo 'connectorWidth' de los bloques, permitiendo a atacantes autenticados con acceso de contribuidor o superior inyectar scripts web arbitrarios en páginas. Esto afecta todas las versiones hasta la 2.3.0.",
-    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5NjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/185682",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-12734",
-    "ttps": [
-      {
-        "id": "T1064",
-        "name": "Cross-Site Scripting (XSS)"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-12734"
-      ]
-    }
-  },
-  {
-    "id": 1122,
-    "fecha": "2026-07-03T02:32:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en urllib3",
-    "resumen": "Se ha descubierto una vulnerabilidad (CVE-2026-21441) en la biblioteca urllib3 de Python, que puede permitir a un servidor malicioso desencadenar un consumo excesivo de recursos en el cliente a través de una \"bomba de descompresión\" en respuestas de redirección HTTP, afectando a aplicaciones que transmiten contenido de fuentes no confiables con 'preload_content=False'. La actualización a urllib3 v2.6.3 o la deshabilitación de redirecciones puede mitigar este problema.",
-    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwNDU5NTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-21441",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-21441",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-21441"
-      ]
-    }
   }
 ]
