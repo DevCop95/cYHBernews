@@ -1,5 +1,132 @@
 [
   {
+    "id": 3205,
+    "fecha": "2026-10-20T03:19:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Operadores de ransomware explotan activamente la vulnerabilidad PAN-OS CVE-2026-0257",
+    "resumen": "Grupos como Spikey Scorpius (Qilin) y Tarnished Scorpius están aprovechando la falla en PAN-OS para comprometer firewalls de perímetro, permitiendo ejecución remota de código y despliegue de ransomware. La explotación está en fase activa desde octubre, incrementando el riesgo de brechas de datos en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NjYzNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+    "fuente": "Unit 42",
+    "dedup_key": "cve:cve-2026-0257",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-0257"
+      ]
+    }
+  },
+  {
+    "id": 3204,
+    "fecha": "2026-10-20T03:19:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "ConnectWise suspende su servicio Cloud Backup tras ataque de cadena de suministro que compromete acceso no autorizado",
+    "resumen": "La investigación confirmó accesos no autorizados al entorno Cloud Backup de ConnectWise, indicando una posible inserción de código malicioso en la cadena de suministro que afecta a clientes de múltiples sectores. Se recomienda aislar los sistemas comprometidos, revocar credenciales y aplicar parches de mitigación inmediata.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NjYzNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/connectwise-suspends-cloud-backup-service-supply-chain-attack",
+    "fuente": "The Record",
+    "dedup_key": "txt:connectwise suspends cloud backup service after supply chain attack",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3203,
+    "fecha": "2026-10-20T03:19:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "AdFection” entrega spyware sin clic mediante impresiones publicitarias manipuladas",
+    "resumen": "El nuevo vector “AdFection” aprovecha plataformas de pujas de anuncios para inyectar payloads de spyware en impresiones de anuncios, permitiendo la infección sin interacción del usuario y el rastreo de objetivos corporativos. La técnica bypassa filtros tradicionales y requiere revisión de políticas de publicidad y detección basada en comportamiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NjYzNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:adfection turns ad impressions into zero click spyware delivery",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3202,
+    "fecha": "2026-10-20T03:19:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Rank Math PRO comprometido con backdoor autorrestaurable que afecta sitios WordPress",
+    "resumen": "Copias del plugin premium Rank Math PRO distribuidas entre el 15 y 16 de octubre contenían malware que instala un backdoor capaz de reinstalarse tras eliminación; cualquier sitio que instaló o actualizó el plugin está comprometido y requiere respuesta inmediata.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NjYzNTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:popular wordpress seo plugin rank math pro hijacked to deliver self restoring backdoor",
+    "ttps": [
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "rankmath.com"
+      ]
+    }
+  },
+  {
+    "id": 3201,
+    "fecha": "2026-10-20T03:19:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Compromiso del plugin Rank Math PRO inserta backdoors en sitios WordPress mediante ataque de cadena de suministro",
+    "resumen": "La última versión del plugin Rank Math PRO distribuida desde el sitio oficial contiene malware que instala puertas traseras ocultas, permitiendo acceso no autorizado y posible exfiltración de datos en sitios vulnerables. El vector de ataque se basa en la sustitución del paquete de instalación en la cadena de suministro, afectando a miles de sitios WordPress.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NjYzNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:wordpress seo plugin rank math compromised to backdoor websites",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3200,
     "fecha": "2026-10-19T22:01:43Z",
     "categoria": "IA",
@@ -52669,143 +52796,5 @@
     "dedup_key": "txt:honestly if you re wanting to get into malware development and malware reverse engineering specifically in regards",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1139,
-    "fecha": "2026-07-03T22:01:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidades en FatFs",
-    "resumen": "Se han descubierto siete vulnerabilidades en FatFs, una biblioteca de sistema de archivos pequeña que permite a los dispositivos leer y escribir formatos FAT y exFAT, utilizados en millones de dispositivos embebidos, incluyendo cámaras de seguridad, drones y controladores industriales, lo que podría permitir ataques de código arbitrario y ejecución de malware. Los vectores de ataque incluyen la explotación de estas vulnerabilidades para acceder a dispositivos no parcheados.",
-    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMTYxMDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:unpatched flaws disclosed in filesystem bundled into millions of embedded devices",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1138,
-    "fecha": "2026-07-03T19:12:57Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Fable 5 condenado por Anthropic",
-    "resumen": "El modelo de IA Fable 5, lanzado por Anthropic, ha sido condenado al \"preferiría no hacerlo\" debido a restricciones de acceso impuestas por el gobierno de EEUU, lo que ha limitado su disponibilidad global y ha generado preocupación sobre su futuro. El modelo, considerado uno de los más potentes y caros de la historia, ha sido objeto de atención debido a su rendimiento en benchmarks, pero su acceso ha sido cortado y restringido en varias ocasiones.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219074-943fc738e5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMDU5Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/regreso-fable-5-tiene-problema-preocupante-anthropic-ha-condenado-al-preferiria-no-hacerlo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:el regreso de fable 5 tiene un problema preocupante anthropic lo ha condenado al preferiría no hacerlo",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "es.wikipedia.org",
-        "platform.instagram.com",
-        "www.anthropic.com",
-        "www.reddit.com",
-        "www.revistagq.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/0195a2/preferiria-no-hacerlo-fable-5-anthropic/1024_2000.jpeg",
-        "https://i.blogs.es/132baf/captura-de-pantalla-2026-07-03-a-las-12.53.09/1024_2000.png",
-        "https://i.blogs.es/132baf/captura-de-pantalla-2026-07-03-a-las-12.53.09/1366_2000.png",
-        "https://i.blogs.es/132baf/captura-de-pantalla-2026-07-03-a-las-12.53.09/450_1000.png",
-        "https://i.blogs.es/132baf/captura-de-pantalla-2026-07-03-a-las-12.53.09/650_1200.png",
-        "https://i.blogs.es/1c6e82/captura-de-pantalla-2026-07-03-a-las-12.55.30/1024_2000.png",
-        "https://i.blogs.es/1c6e82/captura-de-pantalla-2026-07-03-a-las-12.55.30/1366_2000.png",
-        "https://i.blogs.es/1c6e82/captura-de-pantalla-2026-07-03-a-las-12.55.30/450_1000.png",
-        "https://i.blogs.es/1c6e82/captura-de-pantalla-2026-07-03-a-las-12.55.30/650_1200.png",
-        "https://i.blogs.es/538853/chatgpt-image-9-abr-2026-18_34_42/1024_391.png",
-        "https://i.blogs.es/538853/chatgpt-image-9-abr-2026-18_34_42/1366_521.png",
-        "https://i.blogs.es/538853/chatgpt-image-9-abr-2026-18_34_42/650_247.png",
-        "https://www.anthropic.com/news/redeploying-fable-5",
-        "https://www.revistagq.com/articulo/preferiria-no-hacerlo-bartleby-escribiente-significado"
-      ]
-    }
-  },
-  {
-    "id": 1137,
-    "fecha": "2026-07-03T16:22:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Paquetes npm maliciosos de Corea del Norte",
-    "resumen": "Actores maliciosos con vínculos a Corea del Norte han creado paquetes npm maliciosos que imitan herramientas de polyfill de Rollup para facilitar el acceso remoto y el robo de datos, afectando a desarrolladores que utilizan estas herramientas legítimas. Los paquetes \"rollup-packages-polyfill-core\" y \"rollup-runtime-polyfill-core\" se disfrazan como el proyecto legítimo \"rollup-plugin-polyfill-node\".",
-    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwOTU3NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:north korea linked npm packages mimic rollup polyfills to steal developer secrets",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1136,
-    "fecha": "2026-07-03T16:22:16Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "PhaaS ARToken expone toolkit de phishing",
-    "resumen": "La plataforma de phishing-as-a-service (PhaaS) ARToken, afiliada a EvilTokens, ha sido descubierta con una herramienta extensa para comprometer cuentas de Microsoft 365 a través de ataques de phishing, lo que supone un riesgo significativo para la seguridad de los usuarios de este servicio. Los vectores de ataque incluyen técnicas de ingeniería social y exploits de vulnerabilidades en la autenticación de Microsoft 365.",
-    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwOTU3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/artoken-phaas-exposes-eviltokens-microsoft-365-phishing-toolkit/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:artoken phaas exposes eviltokens microsoft 365 phishing toolkit",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1586",
-        "name": "Phase Transition: Phishing"
-      },
-      {
-        "id": "T1556",
-        "name": "Session Hijacking"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1135,
-    "fecha": "2026-07-03T13:53:31Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Anthropic Desarrolla Chip de IA Propio",
-    "resumen": "Anthropic está en negociaciones con Samsung para desarrollar un chip de IA propio, con el objetivo de reducir su dependencia de terceros y mejorar su competitividad en el mercado de la inteligencia artificial. Esta decisión se produce después de que OpenAI presentara su propio chip de inferencia, \"Jalapeño\", lo que podría dejar a Anthropic en desventaja si no sigue el mismo camino.",
-    "url_imagen": "https://images.unsplash.com/photo-1689443111384-1cf214df988a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMwODY4MTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/anthropic-esta-preparando-justo-unico-que-le-faltaba-para-reforzar-su-liderazgo-ia-chip-propio",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:anthropic ya está preparando justo lo único que le faltaba para reforzar su liderazgo ia un chip propio",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "investor.nvidia.com",
-        "nvidianews.nvidia.com",
-        "openai.com",
-        "platform.instagram.com",
-        "www.reuters.com",
-        "www.theinformation.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/bfde93/oblea-anthropic/1024_2000.jpeg",
-        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/1024_2000.png",
-        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/1366_2000.png",
-        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/450_1000.png",
-        "https://i.blogs.es/f4650c/captura-de-pantalla-2026-07-03-a-las-11.26.19/650_1200.png",
-        "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-and-Samsung-Build-AI-Factory-to-Transform-Global-Intelligent-Manufacturing/default.aspx",
-        "https://nvidianews.nvidia.com/news/samsung-ai-factory",
-        "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
-        "https://www.reuters.com/business/anthropic-weighs-building-it-own-ai-chips-sources-say-2026-04-09/",
-        "https://www.theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip"
-      ]
-    }
   }
 ]
