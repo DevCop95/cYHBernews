@@ -1,5 +1,154 @@
 [
   {
+    "id": 3219,
+    "fecha": "2026-10-20T21:12:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SafePay ransomware intensifica ataques a infraestructura crítica en EE.UU., Europa y Australia",
+    "resumen": "El grupo SafePay ha explotado vulnerabilidades CVE-2020-3259, CVE-2023-27532 y otras para comprometer credenciales y desplazar herramientas legítimas, cifrando datos críticos y exigiendo rescate en criptomonedas. Se recomienda parcheo inmediato, Zero Trust y MFA para mitigar la amenaza.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MzA3NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2020-3259,cve-2023-20269,cve-2023-27532,cve-2024-40711,cve-2024-40766",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1570",
+        "name": "Lateral Tool Transfer"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "104.26.2.223",
+        "140.82.114.4",
+        "167.235.225.149",
+        "173.194.194.94",
+        "185.199.108.133",
+        "37.10.71.188",
+        "5.255.11.134",
+        "77.37.49.40",
+        "88.119.167.239"
+      ],
+      "sha1": [
+        "07353237350c35d6dc2c8f143b649cd07c71f62b",
+        "b498a2683640c983bb069fa2ea9e67cef4a3797d",
+        "bbfed53e3bb1f306f4da97d995cf4ae5b73ad081",
+        "d711a5af5aed48a3b36b98f4fcf52809aebef7a2"
+      ],
+      "sha256": [
+        "327b8b61eb446cc4f710771e44484f62b804ae3d262b57a56575053e2df67917",
+        "6c1d36df94ebe367823e73ba33cfb4f40756a5e8ee1e30e8f0ae55d47e220a6a",
+        "921df888aaabcd828a3723f4c9f5fe8b8379c6b7067d16b2ea10152300417eae",
+        "a0dc80a37eb7e2716c02a94adc8df9baedec192a77bde31669faed228d9ff526",
+        "bbdd3620a67aedec4b9a68b2c9cc880b6631215e129816aea19902a6f4bc6f41",
+        "e79608cf1d6b51324c14bef8883054c1238ed5f080222cc464810e6e14adc346"
+      ],
+      "email": [
+        "contact@cisa.dhs.gov"
+      ],
+      "cve": [
+        "CVE-2020-3259",
+        "CVE-2023-20269",
+        "CVE-2023-27532",
+        "CVE-2024-40711",
+        "CVE-2024-40766"
+      ]
+    }
+  },
+  {
+    "id": 3218,
+    "fecha": "2026-10-20T21:12:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "FBI: la banda ransomware SafePay entre las más activas con más de 600 víctimas desde 2024",
+    "resumen": "El grupo SafePay ha comprometido más de 600 organizaciones desde 2024 mediante fuerza bruta de contraseñas, explotación de vulnerabilidades CVE y campañas de phishing dirigidas a sectores críticos. Las agencias de EE. UU., Reino Unido y Alemania advierten de su capacidad para impactar infraestructuras esenciales y recomiendan reforzar la gestión de credenciales y parches.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MzA3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/fbi-says-safepay-ransomware-gang-among-most-active-600-victims",
+    "fuente": "The Record",
+    "dedup_key": "txt:fbi says safepay ransomware gang among most active with more than 600 victims since 2024",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3217,
+    "fecha": "2026-10-20T21:12:17Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Ingeniero ex-OpenAI detenido por instalar dispositivo de escucha en sede de la empresa",
+    "resumen": "El sospechoso, vinculado a Arabia Saudí, fue arrestado por presunto espionaje interno mediante la colocación de un grabador oculto en una sala de conferencias, evidenciando un vector de amenaza insider que podría comprometer datos confidenciales de modelos de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218390-6b59431c9284?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MzA3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ex openai engineer detained after planting secret recorder at hq",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3216,
+    "fecha": "2026-10-20T21:12:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Compromiso de ocho claves intermedias de eMudhra obliga a parches de emergencia en navegadores y software",
+    "resumen": "La filtración de las claves privadas de ocho certificados intermedios de eMudhra permite la emisión de certificados falsos aceptados por navegadores, exponiendo a usuarios a ataques de MITM; Mozilla y el programa Chrome Root han lanzado actualizaciones de revocación inmediatas.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MzA3MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:eight emudhra ca keys compromised triggering emergency fixes across browsers and software",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3215,
+    "fecha": "2026-10-20T21:12:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PHP alerta a administradores de dos vulnerabilidades críticas y anuncia parches de emergencia para mañana",
+    "resumen": "El equipo de seguridad de PHP advierte que se filtró información sobre dos CVE críticos antes de su divulgación programada, y emitirá actualizaciones de emergencia para mitigar ejecución remota de código y escalada de privilegios. Los administradores deben aplicar los parches inmediatamente para evitar explotación activa.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MzA3MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:php warns admins of two critical flaws emergency patches coming tomorrow",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3214,
     "fecha": "2026-10-20T16:21:27Z",
     "categoria": "Ciberseguridad",
@@ -2531,34 +2680,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 3100,
-    "fecha": "2026-10-15T02:58:20Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Fortinet expone vulnerabilidades críticas en FortiSIEM y FortiSandbox que permiten RCE y bypass de autenticación",
-    "resumen": "Dos CVE críticos (CVE-2026-106173 y CVE-2026-107656) permiten a un atacante remoto no autenticado ejecutar código arbitrario o eludir la autenticación mediante path traversal en gRPC y manipulación de la interfaz web. Se recomienda actualizar a las versiones parcheadas y, como medida temporal, bloquear el puerto TCP 27918 en FortiSIEM.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIwMzMxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-fortinet-3",
-    "fuente": "INCIBE-CERT",
-    "dedup_key": "cve:cve-2026-106173,cve-2026-107656",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1556.001",
-        "name": "Domain Controller Authentication"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-106173",
-        "CVE-2026-107656"
-      ]
-    }
   },
   {
     "id": 3099,
@@ -52698,103 +52819,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1154,
-    "fecha": "2026-07-04T13:14:53Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-53362 en Linux",
-    "resumen": "Se ha resuelto una vulnerabilidad en el núcleo de Linux (CVE-2026-53362) que permitía a un usuario no privilegiado provocar una corrupción de memoria a través de un socket UDPv6 utilizando MSG_MORE y MSG_SPLICE_PAGES, debido a un error en la contabilidad de la longitud de los fragmentos (fraggap) en la ruta de asignación de páginas. El vector de ataque se basa en la explotación de este error para escribir más allá del final de un skb, lo que podría llevar a una ejecución de código arbitrario.",
-    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4OTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/186054",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-53362",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-53362"
-      ]
-    }
-  },
-  {
-    "id": 1152,
-    "fecha": "2026-07-04T13:14:41Z",
-    "categoria": "IA",
-    "severidad": "CRITICA",
-    "titulo": "TOTO invierte en chips de 1 nm",
-    "resumen": "La empresa japonesa TOTO, conocida por sus inodoros inteligentes, invertirá 495 millones de dólares en cinco años para escalar su negocio de fabricación de componentes cerámicos de alta precisión para semiconductores, con el objetivo de apoyar tecnologías de fabricación de próxima generación en el rango de un nanómetro, lo que permitirá la miniaturización necesaria para la tecnología de IA y centros de datos. Esta inversión se enmarca dentro del esfuerzo de Japón por reforzar su cadena de suministro doméstica de semiconductores.",
-    "url_imagen": "https://images.unsplash.com/photo-1772217360642-0f7a7b1b77d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/empresas-y-economia/gran-tapado-ia-mayor-fabricante-wc-inteligentes-japon-va-a-gastar-500-millones-chips-futuro",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:el gran tapado de la ia es el mayor fabricante de wc inteligentes de japón va a gastar 500 millones en los chips del futuro",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "asia.nikkei.com",
-        "finance.biggo.com",
-        "platform.instagram.com",
-        "totobymio.com",
-        "unsplash.com",
-        "www.businesswire.com",
-        "www.trendforce.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://asia.nikkei.com/business/tech/semiconductors/how-toilet-maker-toto-turned-its-ceramics-know-how-into-an-ai-play",
-        "https://asia.nikkei.com/business/tech/semiconductors/japan-s-toto-to-invest-495m-in-chip-materials-targeting-1-nm-era",
-        "https://finance.biggo.com/news/6dCf2p0BoQmpnl366vWO",
-        "https://i.blogs.es/01d34d/iaaaa/375_142.jpeg",
-        "https://i.blogs.es/43d8e7/totito/1024_2000.jpeg",
-        "https://totobymio.com/producto/wc-rp-suspendido-toto/",
-        "https://unsplash.com/es/@omilaev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
-        "https://www.businesswire.com/news/home/20260217852087/en/Palliser-Capital-Publishes-Value-Enhancement-Plan-for-TOTO",
-        "https://www.trendforce.com/presscenter/news/20230105-11526.html"
-      ]
-    }
-  },
-  {
-    "id": 1151,
-    "fecha": "2026-07-04T13:14:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque PolinRider: 108 paquetes maliciosos",
-    "resumen": "Actores de amenaza norcoreanos han publicado 108 paquetes y extensiones maliciosas en plataformas como npm, Packagist, Go y Google Chrome, como parte de la campaña PolinRider, que sigue activa y comprometiendo cuentas de mantenedores para distribuir malware. Los vectores de ataque incluyen la publicación de paquetes maliciosos en repositorios de código abierto y la comprometión de cuentas de desarrolladores.",
-    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA4NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:north korean hackers publish 108 malicious packages and extensions in polinrider campaign",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1150,
-    "fecha": "2026-07-04T10:51:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-14623",
-    "resumen": "Se ha identificado una vulnerabilidad en el proyecto omec amf versión 2.1.1, que afecta la función RRCInactiveTransitionReport del componente NGAP Message Handler, permitiendo un ataque de denegación de servicio (DoS) remoto. La explotación de esta vulnerabilidad ya ha sido divulgada públicamente y puede ser utilizada por atacantes.",
-    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNjIzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/186002",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14623",
-    "ttps": [
-      {
-        "id": "T1498",
-        "name": "Network Denial of Service"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "sha1": [
-        "34bc6724acc97dba1f8691e586da95b042cb612d"
-      ],
-      "cve": [
-        "CVE-2026-14623"
-      ]
-    }
   }
 ]
