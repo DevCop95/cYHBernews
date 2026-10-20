@@ -1,5 +1,106 @@
 [
   {
+    "id": 3214,
+    "fecha": "2026-10-20T16:21:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Descubren zero-day en radio de iPhone explotado por herramienta avanzada de Cellebrite",
+    "resumen": "Un documento filtrado revela que el módulo Advanced Unlocks de Cellebrite contiene una vulnerabilidad zero-day en la radio del iPhone, capaz de evadir las restricciones de Stolen Device Protection y operar a hasta 8 m de distancia, lo que permite desbloqueos no autorizados tras el primer acceso. El hallazgo expone un vector de ataque crítico para dispositivos iOS comprometidos y plantea riesgos de espionaje y extracción de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MTMyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:possible new cellebrite iphone radio zero day",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3213,
+    "fecha": "2026-10-20T16:21:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers usan herramienta AI Cairn para automatizar ataques masivos a cientos de sitios web",
+    "resumen": "Un atacante de habla china comprometió más de 500 dominios utilizando el framework de pruebas de penetración basado en IA, Cairn, para generar exploits y extraer datos de empresas como John Deere, SharkNinja y Cummins. La automatización permite escalar la fase de descubrimiento y explotación, incrementando el riesgo de exfiltración de credenciales y ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MTMyODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:hackers abuse ai pen test tool cairn to automate massive attack spree",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3212,
+    "fecha": "2026-10-20T16:21:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Explotación pública de vulnerabilidad crítica en FortiSIEM permite RCE no autenticado",
+    "resumen": "Investigadores de ciberseguridad divulgaron un PoC que aprovecha la vulnerabilidad CVE-2026-106173 (CVSS 9.4) en Fortinet FortiSIEM, una falla de path traversal que permite la ejecución remota de código sin autenticación. La exposición pública del exploit acelera la presión sobre organizaciones que aún no han aplicado el parche, incrementando el riesgo de compromisos de infraestructura de gestión de eventos y logs.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MTMyODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-106173",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-106173"
+      ]
+    }
+  },
+  {
+    "id": 3211,
+    "fecha": "2026-10-20T16:21:21Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "DHS prohíbe el uso de productos DeepSeek en todas las agencias civiles federales de EE. UU",
+    "resumen": "El Departamento de Seguridad Nacional ordena la eliminación inmediata de los modelos y APIs de DeepSeek de los sistemas gubernamentales, citando riesgos de filtración de datos sensibles y posible manipulación de resultados por vulnerabilidades no divulgadas. La medida afecta a entornos de IA generativa empleados en análisis de inteligencia y automatización de procesos.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027215016-0a4abfdbf1cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MTMyODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:dhs bans deepseek products across us federal civilian agencies",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3210,
+    "fecha": "2026-10-20T16:21:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cómo responder eficazmente ante una notificación de brecha de datos con información limitada",
+    "resumen": "La escasez de detalles en los avisos de brecha obliga a los incident responders a aplicar un enfoque basado en indicadores de compromiso (IOCs) y a validar la exposición mediante análisis forense interno, priorizando la contención y la comunicación regulatoria.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1MTMyODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/que-hacer-ante-una-brecha-de-datos-con-poca-informacion/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:qué hacer cuando una empresa informa una brecha de datos pero aporta poca información",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3209,
     "fecha": "2026-10-20T10:53:42Z",
     "categoria": "Ciberseguridad",
@@ -52695,143 +52796,5 @@
         "CVE-2026-14623"
       ]
     }
-  },
-  {
-    "id": 1149,
-    "fecha": "2026-07-04T10:51:50Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "ChatGPT Codex: Agente de Programación",
-    "resumen": "ChatGPT Codex es un agente de programación que utiliza modelos de GPT especializados en programación para escribir código, analizar proyectos y ejecutar pruebas de forma autónoma, permitiendo a los usuarios trabajar de manera más eficiente en proyectos de programación. Esto puede tener un impacto significativo en la productividad y la calidad del código, pero también plantea desafíos en términos de seguridad y privacidad de los datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNjIzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/basics/chatgpt-codex-que-que-puedes-hacer-como-utilizarlo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:chatgpt codex qué es qué puedes hacer con él y cómo utilizarlo",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "chatgpt.com",
-        "es.wikipedia.org",
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://chatgpt.com/codex/cloud",
-        "https://chatgpt.com/es-ES/codex/",
-        "https://i.blogs.es/3c305f/modo-bloqueo/375_142.jpeg",
-        "https://i.blogs.es/86c90a/chatgpt-codex/1024_2000.jpeg",
-        "https://i.blogs.es/a98c39/dar-la-mano/375_142.jpeg",
-        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/1024_2000.png",
-        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/1366_2000.png",
-        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/450_1000.png",
-        "https://i.blogs.es/b1c427/captura-de-pantalla-2026-07-03-a-las-11.25.09/650_1200.png"
-      ]
-    }
-  },
-  {
-    "id": 1147,
-    "fecha": "2026-07-04T04:49:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Apache ZooKeeper",
-    "resumen": "Se ha identificado una vulnerabilidad (CVE-2026-24281) en Apache ZooKeeper que permite a los atacantes suplantar servidores o clientes mediante la falsificación de registros DNS inversos (PTR) y la presentación de un certificado válido, aunque el atacante debe tener un certificado de confianza para ZKTrustManager. La actualización a la versión 3.8.6 o 3.9.5 corrige este problema al introducir una opción para deshabilitar la búsqueda de DNS inverso.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNDA1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-24281",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-24281",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-24281"
-      ]
-    }
-  },
-  {
-    "id": 1146,
-    "fecha": "2026-07-04T02:30:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad DoS en Netty",
-    "resumen": "Se ha identificado una vulnerabilidad de Denial of Service (DoS) en el framework Netty, que permite a un atacante remoto causar un consumo excesivo de CPU en un servidor Netty HTTP/2 mediante el envío de una gran cantidad de tramas `CONTINUATION`, afectando versiones anteriores a 4.1.132.Final y 4.2.10.Final. La vulnerabilidad se explota mediante el bypass de mitigaciones existentes utilizando tramas de zero-byte.",
-    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMzIyMTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-33871",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-33871",
-    "ttps": [
-      {
-        "id": "T1498",
-        "name": "Network Denial of Service"
-      },
-      {
-        "id": "T1498.001",
-        "name": "TCP Flood"
-      },
-      {
-        "id": "T1498.002",
-        "name": "HTTP Flood"
-      },
-      {
-        "id": "T1498.003",
-        "name": "DNS Flood NO es aplicable en este caso, ya que no se menciona explícitamente el uso de ataques de DNS."
-      },
-      {
-        "id": "T1498.004",
-        "name": "No es aplicable, pero se puede considerar T1498.001 como la técnica más cercana, aunque no es exacta, ya que el ataque es mediante tramas `CONTINUATION` y no necesariamente un flood de TCP."
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-33871"
-      ]
-    }
-  },
-  {
-    "id": 1145,
-    "fecha": "2026-07-04T02:30:06Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Nuevo marco de malware Avalon",
-    "resumen": "Investigadores de ciberseguridad han descubierto un marco de malware modular previamente no documentado llamado Avalon, que se distribuye a través de una cadena de phishing de varios niveles capaz de evadir controles de seguridad tradicionales, y que combina funciones de recolección de credenciales, movimiento lateral, acceso remoto, interrupción de recuperación y ejecución de ransomware. El marco Avalon incluye capacidades de ransomware CrownX, lo que lo hace una amenaza significativa.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMzIyMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:new avalon malware framework packs crownx ransomware capabilities",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1005",
-        "name": "Data from Local System"
-      },
-      {
-        "id": "T1021",
-        "name": "Remote Services"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1144,
-    "fecha": "2026-07-04T02:29:59Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ciberseguridad en Pymes",
-    "resumen": "Las pequeñas y medianas empresas (pymes) enfrentan una creciente superficie de ataque debido a la expansión de su infraestructura digital, lo que hace crucial fortalecer su resiliencia en ciberseguridad para mitigar el impacto de incidentes como phishing, ransomware y ataques de denegación de servicio (DDoS).",
-    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxMzIyMDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/ciberseguridad-pymes-resiliencia/",
-    "fuente": "WeLiveSecurity",
-    "dedup_key": "txt:ciberseguridad en pymes cómo avanzar hacia una mayor resiliencia",
-    "ttps": [],
-    "iocs": {}
   }
 ]
