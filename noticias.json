@@ -1,5 +1,93 @@
 [
   {
+    "id": 3224,
+    "fecha": "2026-10-21T03:16:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad PHP Object Injection en Duplicator y Duplicator Pro permite toma de control de sitios WordPress",
+    "resumen": "CVE-2026-82814 afecta a todas las versiones de Duplicator (≤1.5.17) y Duplicator Pro (≤4.6.10) mediante deserialización de contenido no confiable, habilitando a atacantes no autenticados a inyectar objetos PHP y ejecutar comandos del sistema o eliminar archivos críticos como wp-config.php durante procesos de migración.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1NTI2MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/391373",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-82814",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-82814"
+      ]
+    }
+  },
+  {
+    "id": 3223,
+    "fecha": "2026-10-21T03:16:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-101809 permite toma de control no autenticada del Workflow de Oracle EBS",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en el componente Workflow Notification Mailer de Oracle E-Business Suite versiones 12.2.3-12.2.15 permite a un atacante sin credenciales ejecutar código remoto vía HTTP, comprometiendo la integridad y disponibilidad del flujo de trabajo y potencialmente de otros módulos dependientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1NTI2MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-101809",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-101809",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-101809"
+      ]
+    }
+  },
+  {
+    "id": 3222,
+    "fecha": "2026-10-21T03:16:54Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "IA autónoma permite comprometer más de 100 sitios en 1.200 intentos en menos de 24 h",
+    "resumen": "Un agente de IA multiherramienta recibió instrucciones de menos de 100 caracteres y ejecutó reconocimiento, explotación y ejecución de comandos contra 1.200 dominios, logrando más de 100 compromisos en promedio 23 h y con un coste de ~5.000 USD en tokens. La campaña demuestra la capacidad de los LLM para automatizar flujos de ataque completos sin intervención humana continua.",
+    "url_imagen": "https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1NTI2MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/100-caracteres-1-200-webs-atacadas-100-comprometidas-asi-esta-cambiando-ia-ciberseguridad",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:menos de 100 caracteres 1 200 webs atacadas y más de 100 comprometidas así está cambiando la ia la ciberseguridad",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3221,
+    "fecha": "2026-10-21T03:16:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft reporta 1.415 vulnerabilidades en septiembre, un aumento sin precedentes en Patch Tuesday",
+    "resumen": "El último Patch Tuesday de Microsoft incluye 975 avisos y el mes completo suma 1.415 CVE, superando la media histórica de 100 por mes; el incremento sugiere una mayor exposición a zero-days y una presión creciente sobre los equipos de respuesta.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1NTI2MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/theres-only-so-much-code-the-rise-in-vulnerability-numbers/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:there s only so much code the rise in vulnerability numbers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3220,
+    "fecha": "2026-10-21T03:16:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "California alerta a estudiantes de escuelas públicas por filtración de datos en ETS",
+    "resumen": "El Departamento de Educación del Estado (CDE) informó que el contratista ETS sufrió una brecha de varios meses, exponiendo información personal de miles de alumnos; el vector parece ser acceso no autorizado a bases de datos internas.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI1NTI2MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/california-warns-all-public-school-students-of-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:california warns all public school students of data stolen in contractor breach",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3219,
     "fecha": "2026-10-20T21:12:21Z",
     "categoria": "Ciberseguridad",
@@ -52696,128 +52784,5 @@
         "CVE-2026-14654"
       ]
     }
-  },
-  {
-    "id": 1159,
-    "fecha": "2026-07-04T21:55:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en blackbox_exporter",
-    "resumen": "Se ha descubierto una vulnerabilidad de control de acceso en la interfaz de prueba de blackbox_exporter v0.23.0, que permite a los atacantes detectar puertos y servicios en la intranet, así como descargar recursos, aunque se puede configurar la autenticación para mitigar el problema. La vulnerabilidad tiene un puntaje CVSS de 7.5, clasificada como alta.",
-    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyMDIxMzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2023-26735",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2023-26735",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2023-26735"
-      ]
-    }
-  },
-  {
-    "id": 1158,
-    "fecha": "2026-07-04T19:03:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2026-33810",
-    "resumen": "Se ha identificado una vulnerabilidad en el lenguaje de programación Go (golang:go) con un CVSS Score de 8.2, clasificada como alta, que afecta la validación de cadenas de certificados cuando se utilizan restricciones DNS con nombres de servidor alternativos (SAN) wildcard que tienen una casing diferente a la restricción, lo que podría permitir ataques de suplantación de identidad. Esta vulnerabilidad solo afecta la validación de cadenas de certificados de confianza emitidas por una autoridad de certificación raíz (root CA) en el conjunto de certificados raíz del sistema o en el almacén de certificados del sistema.",
-    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxOTE4Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-33810",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-33810",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-33810"
-      ]
-    }
-  },
-  {
-    "id": 1157,
-    "fecha": "2026-07-04T15:58:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-14630 en ForceInjection AI",
-    "resumen": "Se ha descubierto una vulnerabilidad en ForceInjection AI-fundermentals 2.0/3.0, específicamente en la función get_conversation_history, que permite el uso de un hash débil y puede ser explotada de forma remota con un alto grado de complejidad. La explotación puede ser difícil, pero el exploit ha sido divulgado públicamente y se recomienda instalar un parche para abordar este problema.",
-    "url_imagen": "https://images.unsplash.com/photo-1782330389517-e414cbea868c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxODA2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/186061",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14630",
-    "ttps": [],
-    "iocs": {
-      "sha1": [
-        "f57277fdd9ba373ace72d83c272023ec67f720d6"
-      ],
-      "cve": [
-        "CVE-2026-14630"
-      ]
-    }
-  },
-  {
-    "id": 1156,
-    "fecha": "2026-07-04T15:58:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Entidad gubernamental paga $1M",
-    "resumen": "Una entidad gubernamental de EE. UU. pagó aproximadamente $1 millón para evitar la fuga de archivos robados, según un estudio de caso de Rakesh Krishnan para Ransom-ISAC, basado en un chat de negociación filtrado y el rastro de blockchain que dejó el pago, lo que sugiere un posible caso de extorsión por robo de datos en lugar de un ataque de ransomware tradicional.",
-    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxODA2ODN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:u s government entity paid kairos 1 million in data theft extortion case",
-    "ttps": [
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1567",
-        "name": "Exfiltration Over Web Service"
-      },
-      {
-        "id": "T1589",
-        "name": "Drive-by Compromise no se menciona, pero se puede inferir T1490 -  no se menciona, pero se puede inferir"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1155,
-    "fecha": "2026-07-04T13:15:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "EE.UU. ofrece $10M por info sobre hackers",
-    "resumen": "El Departamento de Estado de EE.UU. ofrece una recompensa de $10 millones por información sobre los grupos UNC5792 y UNC4221, vinculados a Rusia, que han estado detrás de ataques a cuentas de Signal y WhatsApp de funcionarios gubernamentales mediante phishing y abuso de características legítimas de \"dispositivos vinculados\". Los objetivos principales fueron funcionarios que trabajan en políticas relacionadas con Ucrania.",
-    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMxNzA5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114033",
-    "fuente": "TG: Cyber Security Channel",
-    "dedup_key": "txt:us offers 10m for info on russia linked hackers behind signal and whatsapp attacks the state department announced a",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1556",
-        "name": "Session Hijacking (no se menciona explícitamente, pero se infiere por \"dispositivos vinculados\" y abuso de características legítimas)"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1586",
-        "name": "File and Directory Discovery (no se menciona explícitamente, pero se infiere que los atacantes necesitarían explorar las cuentas y dispositivos de los funcionarios para llevar a cabo el ataque)"
-      }
-    ],
-    "iocs": {}
   }
 ]
