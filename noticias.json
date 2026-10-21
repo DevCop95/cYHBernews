@@ -1,5 +1,90 @@
 [
   {
+    "id": 3239,
+    "fecha": "2026-10-21T21:14:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Meta enfrenta multa de 25 000 millones por fallo de privacidad en Nuevo México",
+    "resumen": "La sentencia judicial obliga a Meta a pagar 25 mil millones tras considerarse responsable de la filtración de datos de Cambridge Analytica, impactando sus balances y obligando a revisar sus políticas de protección de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2MTcyNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/meta-new-mexico-penalty-cambridge-analytica-privacy-case",
+    "fuente": "The Record",
+    "dedup_key": "txt:meta on the spot for 25 billion under new mexico privacy ruling",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3238,
+    "fecha": "2026-10-21T21:14:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Marvell, Microsoft y Oracle impulsan estándar NIST FIPS 140-3 L3 para HSM en centros de datos",
+    "resumen": "La alianza busca unificar la implementación de módulos de seguridad hardware (HSM) nivel 3 conforme a NIST FIPS 140-3, reduciendo la superficie de ataque en infraestructuras cloud y hyperscale.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2MTcyNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:marvell microsoft amp oracle work to standardize data center hardware security",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3237,
+    "fecha": "2026-10-21T21:14:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en PHP permite toma de control total y provoca caídas masivas de sitios web",
+    "resumen": "Se detectan dos CVE en el núcleo de PHP que ya están siendo explotados en la wild, permitiendo ejecución remota de código y provocando errores 404 en aproximadamente el 70 % de los sitios sin parchear. La urgencia radica en la necesidad inmediata de actualizar los servidores para evitar compromisos completos.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2MTcyNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:widespread php flaw may cause many site outages today",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3236,
+    "fecha": "2026-10-21T21:14:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en GitLab (CVSS 10.0) permite RCE no autenticado en versiones desde 2014",
+    "resumen": "La falla permite a un atacante ejecutar código arbitrario en instancias auto-gestionadas de GitLab sin credenciales, afectando todas las versiones desde 7.0 (2014). El parche publicado el 21 octubre corrige el problema, pero actualizaciones previas del 12 octubre solo cubrían versiones 19.2+ y dejaron expuestas versiones anteriores.",
+    "url_imagen": "https://images.unsplash.com/photo-1524635962361-d7f8ae9c79b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2MTcyNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:critical gitlab flaw cvss 10 0 could allow unauthenticated rce across 12 years of releases",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3235,
+    "fecha": "2026-10-21T21:14:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Lazarus emplea criptografía post-cuántica para ocultar la entrega de malware en nuevas campañas",
+    "resumen": "El grupo de amenazas Lazarus ha integrado un esquema de cifrado post-cuántico en sus cargas útiles, dificultando el análisis estático y la detección por firmas tradicionales. La técnica combina malware legado con componentes nuevos, ampliando la superficie de ataque contra infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2MTcyNTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:lazarus hackers use post quantum cryptography for malware delivery",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3234,
     "fecha": "2026-10-21T16:37:11Z",
     "categoria": "Ciberseguridad",
@@ -52445,197 +52530,6 @@
         "https://www.elladodelmal.com/2026/05/exploitgym-mythos-gpt-55-gemini-pro-en.html",
         "https://www.elladodelmal.com/2026/06/weaponinzing-token-consumption-en-llm.html",
         "https://www.elladodelmal.com/2026/07/pxpipe-un-proxy-para-insertar-e-prompts.html"
-      ]
-    }
-  },
-  {
-    "id": 1174,
-    "fecha": "2026-07-06T07:08:01Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ciberataques en Mundial 2026",
-    "resumen": "El Mundial 2026 ha generado un aumento significativo en intentos de estafa y fraude, principalmente a través de phishing relacionado con viajes y hoteles, así como la compra de entradas falsas, afectando tanto a aficionados como a empresas. Los vectores de ataque incluyen phishing y estafas en línea, aprovechando la expectación y la falta de precaución de los usuarios.",
-    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMjE2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/el-mundial-2026-dispara-los-ciberataques-contra-empresas-y-aficionados/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:el mundial 2026 dispara los ciberataques contra empresas y aficionados",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1189",
-        "name": "Forced Authentication (no se menciona explícitamente, pero se puede inferir que se intenta obtener información de autenticación)"
-      },
-      {
-        "id": "T1625",
-        "name": "Impersonation (se menciona la compra de entradas falsas, lo que implica suplantación de identidad)"
-      },
-      {
-        "id": "T1595",
-        "name": "Active Scanning (no se menciona explícitamente, pero se puede inferir que se realizan intentos de exploración para encontrar vulnerabilidades, aunque no es claro)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1173,
-    "fecha": "2026-07-06T02:44:40Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Mojo::JSON",
-    "resumen": "La versión de Mojo::JSON anterior a 9.47 para Perl permite el agotamiento de memoria a través de una recursividad ilimitada en el decodificador puro de Perl, lo que puede causar un denial of service si se decodifica un documento JSON no confiable. El vector de ataque se produce a través de la decodificación de un JSON con una estructura anidada profunda, que puede consumir memoria excesiva en el proceso.",
-    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMDU4ODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/188421",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14803",
-    "ttps": [
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1499.001",
-        "name": "Exploitation for Resource Hijacking (Agotamiento de recursos)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1498",
-        "name": "Network Denial of Service"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14803"
-      ]
-    }
-  },
-  {
-    "id": 1172,
-    "fecha": "2026-07-06T02:44:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2017-15683",
-    "resumen": "La vulnerabilidad CVE-2017-15683, con una puntuación CVSS de 8.6, permite a un atacante no autenticado crear un sitio con XML especialmente diseñado para recuperar archivos del sistema operativo fuera de banda en Crafter CMS Crafter Studio versión 3.0.1. Esto representa un riesgo significativo de exposición de datos y acceso no autorizado.",
-    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMDU4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2017-15683",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2017-15683",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1565",
-        "name": "Data Manipulation"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2017-15683"
-      ]
-    }
-  },
-  {
-    "id": 1171,
-    "fecha": "2026-07-05T21:57:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad SQL en Timetabling System",
-    "resumen": "Se ha detectado una vulnerabilidad (CVE-2026-14770) en el sistema de programación de clases y exámenes SourceCodester Class and Exam Timetabling System 1.0, que permite inyección de código SQL a través de la manipulación del argumento ID en el archivo /edit_room.php, permitiendo ataques remotos. La explotación de esta vulnerabilidad ya es pública y puede ser utilizada por atacantes.",
-    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyODg2NTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/188402",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-14770",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1055",
-        "name": "Unauthenticated Input"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-14770"
-      ]
-    }
-  },
-  {
-    "id": 1170,
-    "fecha": "2026-07-05T21:57:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2018-5354",
-    "resumen": "La vulnerabilidad CVE-2018-5354 en el módulo GINA/CP personalizado de ANIXIS Password Reset Client permite a atacantes remotos ejecutar código y escalar privilegios mediante suplantación de identidad, especialmente cuando el cliente está configurado para usar HTTP sin autenticación del servidor. La explotación puede ocurrir a través de un ataque de suplantación de identidad y, en algunos casos, mediante RDP si no se aplica la autenticación a nivel de red.",
-    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMyODg2NDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-5354",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2018-5354",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1021.001",
-        "name": "Remote Desktop Protocol"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2018-5354"
       ]
     }
   }
