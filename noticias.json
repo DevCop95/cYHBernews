@@ -1,5 +1,110 @@
 [
   {
+    "id": 3249,
+    "fecha": "2026-10-22T11:07:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Cisco Talos detecta ocho certificados intermedios comprometidos de la CA eMudhra",
+    "resumen": "Talos identificó que ocho certificados intermedios emitidos por eMudhra fueron comprometidos, permitiendo potenciales falsificaciones de firmas digitales y ataques de man-in-the-middle en infraestructuras PKI. Se recomienda revocar inmediatamente los certificados afectados y revisar las cadenas de confianza en los sistemas críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2NjcyNjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/compromised-intermediate-certificates/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:compromised emudhra intermediate certificates",
+    "ttps": [
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1588.003",
+        "name": "Code Signing Certificates"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3248,
+    "fecha": "2026-10-22T11:07:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers explotan IA agente como Claude de Anthropic para lanzar ataques sofisticados",
+    "resumen": "Grupos de amenaza están utilizando modelos de lenguaje agente, específicamente Claude, para automatizar la elaboración de exploits y phishing, eludiendo controles tradicionales de IA. La falta de guardrails efectivos permite la generación de código malicioso y la orquestación de campañas a escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2NjcyNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:ai guardrails aren t stopping criminal hackers",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3247,
+    "fecha": "2026-10-22T11:07:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Iniciativa de $10 M para reforzar la ciberseguridad de hasta 500 utilities con recursos limitados",
+    "resumen": "El consorcio privado financiará mejoras de defensa, detección y respuesta ante amenazas para utilities vulnerables, mitigando riesgos de ataques a infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2NjcyNjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/utilities-cybersecurity-initiative-accenture",
+    "fuente": "The Record",
+    "dedup_key": "txt:tech trio launches 10 million initiative to help under resourced utilities bolster cybersecurity",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3246,
+    "fecha": "2026-10-22T11:07:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Emiratos Árabes Unidos migra el 50 % de servicios gubernamentales a IA agente con marco de seguridad",
+    "resumen": "El gobierno de los EAU implementará IA agente en la mitad de sus plataformas públicas, estableciendo controles de seguridad, auditoría de modelos y aislamiento de datos para mitigar riesgos de manipulación y fuga de información. La iniciativa incluye requisitos de certificación de proveedores y monitoreo continuo mediante SIEM y EDR.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2NjcyNjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:uae transitions 50 of gov t services to agentic ai",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3245,
+    "fecha": "2026-10-22T11:07:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Autoridades desmantelan 11 000 redes criminales en África y detienen a 1 400 implicados",
+    "resumen": "La operación Serengeti III, coordinada por agencias de seguridad, cerró miles de infraestructuras de BEC, ransomware y estafas online, impactando a sectores financieros y de telecomunicaciones en la región.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2NjcyNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:authorities disrupt nearly 11 000 cybercrime networks in africa",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3244,
     "fecha": "2026-10-22T03:13:53Z",
     "categoria": "Ciberseguridad",
@@ -52392,129 +52497,6 @@
         "https://unsplash.com/es/fotos/foto-de-la-nina-que-pone-la-mano-izquierda-en-un-robot-digital-blanco-0E_vhMVqL9g",
         "https://www.cac.gov.cn/2026-04/10/c_1777558395284407.htm?utm_source=chatgpt.com",
         "https://www.scmp.com/tech/big-tech/article/3359482/bytedance-and-alibaba-disable-humanlike-ai-custom-agents-new-rules-loom"
-      ]
-    }
-  },
-  {
-    "id": 1184,
-    "fecha": "2026-07-06T17:39:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque cibernético en plataforma de anime",
-    "resumen": "Un estudiante japonés fue arrestado por explotar una vulnerabilidad en una plataforma de streaming de anime por suscripción, lo que permitió cancelar fraudulentamente más de 46,000 suscripciones de usuarios, afectando la disponibilidad del servicio. El ataque aprovechó una debilidad en la plataforma para realizar la cancelación masiva de suscripciones.",
-    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1ODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/japanese-teen-arrested-over-attack-disrupted-streaming-service",
-    "fuente": "The Record",
-    "dedup_key": "txt:japanese teen arrested over cyberattack that disrupted anime streaming service",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1492",
-        "name": "Stored Data Manipulation no aplica en este caso, ya que se menciona la cancelación de suscripciones, pero no se especifica que se haya modificado o manipulado datos almacenados."
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1183,
-    "fecha": "2026-07-06T17:39:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "RCS y DNS: El Registro NAPTR",
-    "resumen": "El protocolo RCS (Rich Communication Services) ha ganado popularidad en el último año, gracias a actualizaciones en iOS y Android, y ofrece funcionalidades de seguridad como cifrado de extremo a extremo y firma digital, mejorando la seguridad en comparación con el protocolo SMS tradicional. El uso de RCS se basa en infraestructura de red IP moderna y utiliza protocolos como SIP para establecer conexiones y transportar mensajes.",
-    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33124",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:rcs and dns the naptr record mon jul 6th",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1182,
-    "fecha": "2026-07-06T17:39:30Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Amenaza en Gitea Docker",
-    "resumen": "Actores maliciosos están intentando explotar la vulnerabilidad CVE-2026-20896 en imágenes de Docker de Gitea, una falla crítica con un puntaje CVSS de 9.8 que permite a clientes no autenticados elevar sus privilegios. El vector de ataque se basa en la confianza del encabezado \"X-WEBAUTH-USER\" desde cualquier dirección IP, lo que facilita el acceso no autorizado.",
-    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1NzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-20896",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material (no se menciona explícitamente, pero se puede inferir que se está utilizando la información del encabezado \"X-WEBAUTH-USER\" para autenticar)"
-      },
-      {
-        "id": "T1558",
-        "name": "Steal or Forge Authentication Data (no se menciona explícitamente, pero se puede inferir que se está intentando obtener acceso no autorizado mediante la explotación de la vulnerabilidad)"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-20896"
-      ]
-    }
-  },
-  {
-    "id": 1181,
-    "fecha": "2026-07-06T17:39:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Seguridad en riesgo con IA",
-    "resumen": "La integración de la inteligencia artificial (IA) en el desarrollo de software reduce la fricción entre la idea y la aplicación desplegable, pero también elimina momentos críticos para la toma de decisiones de seguridad, aumentando el riesgo de vulnerabilidades y ataques de seguridad. Esto plantea un desafío significativo para la implementación de medidas de seguridad efectivas en el proceso de desarrollo de software acelerado por la IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNTk1NjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/software-is-now-written-at-the-speed-of-thought-security-isnt/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:software is now written at the speed of thought security isn t",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1180,
-    "fecha": "2026-07-06T12:42:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad GPAC CVE-2025-15668",
-    "resumen": "Se ha identificado una vulnerabilidad en GPAC hasta la versión b40ce70f5, que afecta la función sgpd_del_entry y puede provocar un desbordamiento de buffer basado en heap, requiriendo acceso local para su explotación. Un exploit público está disponible, por lo que se recomienda aplicar el parche f29f955f2a3b5e8e507caad3e52319f961bf37bf para corregir esta vulnerabilidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/188565",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2025-15668",
-    "ttps": [],
-    "iocs": {
-      "sha1": [
-        "f29f955f2a3b5e8e507caad3e52319f961bf37bf"
-      ],
-      "cve": [
-        "CVE-2025-15668"
       ]
     }
   }
