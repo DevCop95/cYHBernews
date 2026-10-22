@@ -1,5 +1,137 @@
 [
   {
+    "id": 3244,
+    "fecha": "2026-10-22T03:13:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hitachi Energy RTU500 series firmware vulnerable a múltiples CVE que provocan DoS y filtrado de credenciales",
+    "resumen": "Se identifican ocho vulnerabilidades críticas (incluidos NULL pointer dereference, use-after-free y transmisión en texto claro) en versiones de firmware 12.7-13.8 del RTU500, con CVSS hasta 8.8, que permiten denegación de servicio y bypass de autenticación en entornos IEC 60870-5-104. Se recomienda actualizar a la versión 13.9.1 o aplicar mitigaciones temporales según el CSAF.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2Mzg4MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-11856,cve-2026-17539,cve-2026-28388,cve-2026-6276,cve-2026-6653,cve-2026-6732,cve-2026-8927,cve-2026-8932,cve-2026-9079",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.hitachienergy.com"
+      ],
+      "url": [
+        "https://www.hitachienergy.com/contact-us/"
+      ],
+      "cve": [
+        "CVE-2026-11856",
+        "CVE-2026-17539",
+        "CVE-2026-28388",
+        "CVE-2026-6276",
+        "CVE-2026-6653",
+        "CVE-2026-6732",
+        "CVE-2026-8927",
+        "CVE-2026-8932",
+        "CVE-2026-9079"
+      ]
+    }
+  },
+  {
+    "id": 3243,
+    "fecha": "2026-10-22T03:13:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers explotan vulnerabilidades críticas de PHP días antes del parche oficial",
+    "resumen": "AWS detectó intentos de abuso de los bugs PHP2Shell, con explotación masiva en la red cuatro días antes de la publicación del parche, aumentando el riesgo de compromisos de servidores web. SECTOR: Tecnología",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2Mzg4MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/hackers-exploited-the-php-vulnerabilities-days-before-they-were-patched/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:hackers exploited the php vulnerabilities days before they were patched",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3242,
+    "fecha": "2026-10-22T03:13:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Brecha en TiDB revela suposiciones erróneas de seguridad en entornos cloud",
+    "resumen": "Un ataque a la infraestructura de TiDB expuso datos sensibles de clientes, evidenciando la falta de visibilidad y control sobre la protección de información en la nube. El incidente subraya la necesidad de reforzar la segmentación, cifrado en reposo y auditorías continuas de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2Mzg4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:tidb breach exposes flawed cloud security assumptions",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3241,
+    "fecha": "2026-10-22T03:13:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "LiteLLM 1.107.0 comprometido por ataque de cadena de suministro con robo de credenciales y puerta trasera",
+    "resumen": "El paquete Python LiteLLM, distribuido vía PyPI y Docker, fue infiltrado mediante una cadena de suministro que insertó un módulo de credential stealer y un backdoor, afectando a usuarios que instalaron la versión 1.107.0. La amenaza permite la extracción de credenciales y acceso remoto no autorizado, requiriendo revisión inmediata de dependencias y mitigación mediante bloqueo y rotación de secretos.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2Mzg4Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:litellm compromised in supply chain attack delivering credential stealer and backdoor",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1053.005",
+        "name": "Scheduled Task"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3240,
+    "fecha": "2026-10-22T03:13:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google Chrome incorpora detección de estafas con Gemini y alerta contra ataques ClickFix",
+    "resumen": "La nueva capa de protección de Chrome emplea el modelo Gemini de Google AI para identificar sitios web engañosos y bloquear comandos sospechosos asociados a ataques ClickFix, reduciendo la superficie de phishing y malware en navegadores. La funcionalidad se despliega vía actualización automática y se integra con los mecanismos de seguridad existentes del navegador.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2Mzg4MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google chrome adds gemini powered scam detection warns users of clickfix attacks",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3239,
     "fecha": "2026-10-21T21:14:24Z",
     "categoria": "Ciberseguridad",
@@ -52383,153 +52515,6 @@
       ],
       "cve": [
         "CVE-2025-15668"
-      ]
-    }
-  },
-  {
-    "id": 1179,
-    "fecha": "2026-07-06T12:42:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Francia abandona cifrado no seguro",
-    "resumen": "Francia dejará de certificar productos de seguridad que carezcan de cifrado resistente a ataques cuánticos, lo que obligará a organismos gubernamentales y operadores críticos a migrar a sistemas más seguros, con un plazo para que las empresas solo compren productos seguros cuánticamente para 2030. Esto representa un cambio significativo en la política de ciberseguridad del país, con el objetivo de proteger la infraestructura crítica y los datos sensibles contra posibles ataques cuánticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3NDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/france-to-stop-certifying-non-quantum-safe-encryption.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:france to stop certifying non quantum safe encryption",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "www.reuters.com"
-      ],
-      "url": [
-        "https://www.reuters.com/legal/litigation/france-stop-certifying-products-without-quantum-safe-encryption-2026-06-16/"
-      ]
-    }
-  },
-  {
-    "id": 1178,
-    "fecha": "2026-07-06T12:42:24Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "INFO",
-    "titulo": "Evaluación de Plataformas AI SOC",
-    "resumen": "La evaluación de plataformas de Seguridad de Operaciones (SOC) con Inteligencia Artificial (AI) requiere considerar seis capacidades clave que distinguen a los líderes de las soluciones de AI agregadas, incluyendo la integración de SIEM, SOAR y capacidades de detección, triage, investigación y respuesta autónomas. Esto es crucial para mejorar los resultados de seguridad y diferenciar entre productos con etiquetas similares pero funcionalidades muy diferentes.",
-    "url_imagen": "https://images.unsplash.com/photo-1782330300409-f6c1ae5f64cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/how-to-evaluate-ai-soc-platform-in-2026.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:how to evaluate an ai soc platform in 2026 6 capabilities that separate leaders from bolt on ai solutions",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1177,
-    "fecha": "2026-07-06T12:42:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Opera GX",
-    "resumen": "Un fallo en Opera GX permitía la instalación de mods sin permiso, lo que podía ser utilizado por sitios web maliciosos para extraer datos de páginas visitadas, pero ya ha sido corregido en versiones posteriores a 130.0.5847.89, exigiendo interacción explícita del usuario. La vulnerabilidad afectaba la privacidad de los usuarios al navegar.",
-    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNDE3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/opera-gx-corrige-un-fallo-que-permitia-instalar-mods-sin-permiso-y-filtrar-datos-al-navegar/?utm_source=rss&utm_medium=rss&utm_campaign=opera-gx-corrige-un-fallo-que-permitia-instalar-mods-sin-permiso-y-filtrar-datos-al-navegar",
-    "fuente": "Una al Día (Hispasec)",
-    "dedup_key": "txt:opera gx corrige un fallo que permitía instalar mods sin permiso y filtrar datos al navegar",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/opera-gx-corrige-un-fallo-que-permitia-instalar-mods-sin-permiso-y-filtrar-datos-al-navegar/"
-      ]
-    }
-  },
-  {
-    "id": 1176,
-    "fecha": "2026-07-06T07:08:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "SkillCloak Evade Scanners",
-    "resumen": "Investigadores de la Universidad de Ciencia y Tecnología de Hong Kong descubrieron que los escáneres estáticos pueden ser engañados por habilidades maliciosas de agentes de codificación de IA mediante técnicas de empaquetado autoextraíble, permitiendo que el malware pase desapercibido en más del 90% de los casos. Se desarrolló un verificador en tiempo de ejecución para detectar la mayoría de estos ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMjE2OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:skillcloak lets malicious ai agent skills evade static scanners with self extracting packing",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1218.001",
-        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el empaquetado autoextraíble podría estar relacionado con la ejecución de archivos maliciosos."
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1562.001",
-        "name": "Disable or Modify Tools"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1175,
-    "fecha": "2026-07-06T07:08:07Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Anthropic Refuerza Seguridad en Fable",
-    "resumen": "Anthropic ha relanzado Fable con mejoras en la seguridad para prevenir técnicas de Jailbreak que permiten a los usuarios explotar capacidades avanzadas, y ha iniciado un programa de Bug Bounty en HackerONE para identificar y corregir vulnerabilidades de seguridad. Esto se debe a que un Jailbreak anterior llevó a que Fable fuera prohibido para evitar su uso por parte de \"malos actores\".",
-    "url_imagen": "https://images.unsplash.com/photo-1718241905450-a26e6c964239?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzMjE2ODd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/07/anthropic-cyber-jailbreak-bug-bounty.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "txt:anthropic cyber jailbreak bug bounty severity framework para fable o mythos",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "1.bp.blogspot.com",
-        "blogger.googleusercontent.com",
-        "bugcrowd.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "hackerone.com",
-        "mypublicinbox.com",
-        "www.anthropic.com",
-        "www.elladodelmal.com",
-        "www.mypublicinbox.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
-        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
-        "https://0xword.com/es/libros/255-bug-hunter.html",
-        "https://1.bp.blogspot.com/-wPU2d-hy3rM/XiyVNgM4kGI/AAAAAAAAy70/Pk1IP6-v7bQLVUNL2iWneVOgRP494eWrACLcBGAsYHQ/s640/MPICHemaalonso.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9i_i-xHSj0JvW2VCQT60I9qwEWJFVAD-zVF4_3cqSfblEgVyxNL_bBFenYC9hJbo8yFJuSnqlGj4LzB5faEzT05qOfvajG65MIvK9pfPMP_qdKMigEKc-BDxodXj5dmu00uQanb4qZOTxZJH-z7mVTQSDp5-LJIvjzuN36E5PsV9H6q7zuW6B/w486-h640/Fable5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTiqC9XywA4H6y7gs0BPm2qflhW-UQ8SucQBRrggUtKLSGjcvyLYdW166amLCp0NClFJ5AAgSgZNmUua_PqOsPso0DCx8BCoChurpPFDKCMmrHCU1MGkrE0ihySinCDOoTYOz82c-AKZXANxFkJHHv-6NC20JnqrzXL_e6f0STEq7rJDV1yyWg/w640-h378/Atlas3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgW81jUfXraYD6hxh4tL2Aw0ELbM-P08mjUvicUk317CWafOWn6DCBWNYikIfIV99zDOaKQeWZJBUtxL_vNHrcppL-RVqt027eStt7Sl0LQ9JHXgs-OHFT6EwTrzHBIsm8d63fEbDly2KN8DGCbUkC6TPdrQuRO69FlHcl-HAsBok3NZm8RTtdF/w640-h346/e6.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmJmH82usXWHXvioX8zM91iGyLnMKiXWGW6MzsBN9gaeRsSwIA5w1PyCcakyB7EJAPg0sW_QnqrG3wYKy2i4CKzU-3Ad-Piu3cNmfCpI5f3vh3OQJZdcmyEmeBdbJ8Yi-3nEUBy70p2pYhLGUe7Zp3RQWb1RzYnH0BMB1droK_6f6YBb8F1RCg/w640-h413/Fable2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6zU-gS4y5MogC-9KmrxzhTTrkiInOR9LXwJMPnfJ11JWzarAxTHZeRKCd873R1Mez0AUW6PiXUGa4y-xV7VOUI36BbTuEFOLZYEpQZZl9wTqIjyjVZmVUThfZJkVatg4MkIkESt46zvdPkUXkvRXTlBBozrqgdxXZLKfI19g5zQgZrO-7H_HP/w640-h402/Fable0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxkr6NJpYgLX3xK3CVSvpYZQreF9Tsym0F5th_KagvdfqdQvlexws_6jSTICHIZIrye4NVevI9vglf7jqeNAUqZmxNXeGUuFnVmxzE_YIcla7V2xVhpCWOAI7rGTlTN5IsWvFp_XJdNV_sxg8R0VXoe42Gb-rtnYHx6qcwV_-aQ6VDu1cIIMlc/w306-h400/BugHunter1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOj5uBNUPH4lyGSMXLZhmwynfhtEej6_H9csNF_SQxclUAoD8ykj4pg1ayolqdpV_kzE2VK_sOGLGz3doRUN_mT4HaJmc2cs721pV5G-PuAVauD77JktN33tMUmJx9_ktoPW3Pv02fGx7EN4dxp_n_OuVeB5A4AjG9lDkAhz5InD1VZQJaQbNi/w640-h590/Fable4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLlvIAHxPeFIJovHTipbBElijBJHup27Hs2t1E-E-Kq3UPbRoSM2Ex3xcurSVBdVt79HhaLq4UoWzUbSk8rECmn3PcM8yqUx6jfIjpPREpnqpoAGGmcHfByRzO-eL25V2ClBrplKv7IBOo9euZ1Wo82scxm4ZdlsvimZAfFAS0ItIhEiezlios/w616-h640/Fable3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv5mqKsbWnR2adX4bjGmJGXEbM0KuIC8BI1S7mM51C8temhzgGGcpN7eCqm-gwS8X5LSR0h30fmogrhf59Gd87_cDfQt0Ol5vL4V-qq_4LjO40D2b9GlLsVG532ByNJ0sPTEML6HHERsgcwEdWftN6C42iGzvJKaMkLH6xYQanLMssX0Xk_Ps4/w640-h306/fable1.jpg",
-        "https://bugcrowd.com/engagements/openai",
-        "https://elladodelmal.com",
-        "https://hackerone.com/anthropic-cyber-jailbreak/",
-        "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
-        "https://www.elladodelmal.com/2026/05/exploitbench-un-benchmark-para-medir.html",
-        "https://www.elladodelmal.com/2026/05/exploitgym-mythos-gpt-55-gemini-pro-en.html",
-        "https://www.elladodelmal.com/2026/06/weaponinzing-token-consumption-en-llm.html",
-        "https://www.elladodelmal.com/2026/07/pxpipe-un-proxy-para-insertar-e-prompts.html"
       ]
     }
   }
