@@ -1,5 +1,115 @@
 [
   {
+    "id": 3265,
+    "fecha": "2026-10-23T11:02:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "State Bank of India sufre filtración de datos personales de clientes expuesta en mercado negro",
+    "resumen": "Un filtrado de PII de clientes del banco ha sido detectado y puesto a la venta en foros clandestinos, incrementando el riesgo de phishing y fraude financiero en la región. El incidente subraya la necesidad de reforzar la segmentación de datos y la monitorización de exfiltración en entornos bancarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NTMzNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:state bank of india suffers a customer pii data leak",
+    "ttps": [
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1074",
+        "name": "Data Staged"
+      },
+      {
+        "id": "T1567.002",
+        "name": "Exfiltration to Cloud Storage"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3264,
+    "fecha": "2026-10-23T11:02:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Pillow permite ejecución de código mediante imágenes EPS manipuladas",
+    "resumen": "CVE-2026-112900 afecta a la biblioteca Pillow de Python al pasar nombres de archivo a Ghostscript sin validación, habilitando ejecución de comandos del sistema en servidores que procesen imágenes EPS maliciosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NTMzNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-112900",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112900"
+      ]
+    }
+  },
+  {
+    "id": 3263,
+    "fecha": "2026-10-23T11:02:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Railway alerta a desarrolladores a rotar secretos tras detección de actividad sospechosa en variables de entorno",
+    "resumen": "La plataforma Cloud Railway emitió un aviso urgente tras identificar actividad anómala en los sistemas que almacenan variables de entorno de clientes, indicando posible exposición de credenciales. Se recomienda rotar inmediatamente todas las claves y revisar logs de acceso para mitigar riesgos de acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NTMzNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:railway warns devs to rotate secrets after potential breach",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3262,
+    "fecha": "2026-10-23T11:02:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Fortinet publica actualizaciones críticas para FortiOS, FortiManager y FortiMail con mitigaciones",
+    "resumen": "Se corrigen vulnerabilidades críticas y de alta gravedad en múltiples versiones de FortiOS, FortiManager, FortiAnalyzer, FortiMail y FortiAuthenticator, detectadas mediante pruebas asistidas por IA; se recomienda actualizar inmediatamente y restringir la gestión a IPs de confianza con MFA.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NTMzNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-actualizaciones-en-productos-de-fortinet",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:múltiples actualizaciones en productos de fortinet",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3261,
+    "fecha": "2026-10-23T11:02:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "MythicRatatoskr, backdoor que usó la red Yggdrasil para ocultar C2 antes del ataque Sandworm",
+    "resumen": "ESET identificó el malware MythicRatatoskr, un backdoor desconocido que aprovecha la red descentralizada Yggdrasil para esconder su infraestructura de comando y control, facilitando la intrusión previa al ataque destructivo atribuido a Sandworm.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NTMzMzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/mythicratatoskr-backdoor-yggdrasil-sandworm/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:mythicratatoskr el backdoor que utilizó la red yggdrasil antes de un ataque destructivo de sandworm",
+    "ttps": [
+      {
+        "id": "T1090.002",
+        "name": "External Proxy"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3260,
     "fecha": "2026-10-23T03:11:22Z",
     "categoria": "Ciberseguridad",
@@ -52303,115 +52413,6 @@
         "name": "Comando y Control Nativo del Sistema Operativo"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1201,
-    "fecha": "2026-07-07T06:42:21Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Avance en IA: Claude desarrolla mecanismo de acceso consciente",
-    "resumen": "Anthropic ha identificado un espacio interno en el modelo de lenguaje Claude, llamado J-space, que permite representar conceptos antes de escribirlos, lo que sugiere un mecanismo de acceso consciente emergente durante el proceso de entrenamiento. Esto abre una grieta en la comprensión de la \"caja negra\" de la inteligencia artificial generativa, permitiendo observar patrones internos ligados a palabras que el modelo podría usar después.",
-    "url_imagen": "https://images.unsplash.com/photo-1767966783202-c5659292bd39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MDY1NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/claude-ha-desarrollado-mecanismo-para-acceso-consciente-anthropic-acaba-abrir-grieta-caja-negra-ia",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:claude ha desarrollado un mecanismo para el acceso consciente anthropic acaba de abrir una grieta en la caja negra de la ia",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/0fd5c9/claude-estudio/1024_2000.jpeg",
-        "https://i.blogs.es/56b122/j-lens2/1024_2000.jpeg",
-        "https://i.blogs.es/56b122/j-lens2/1366_2000.jpeg",
-        "https://i.blogs.es/56b122/j-lens2/450_1000.jpeg",
-        "https://i.blogs.es/56b122/j-lens2/650_1200.jpeg",
-        "https://i.blogs.es/bfde93/oblea-anthropic/375_142.jpeg",
-        "https://i.blogs.es/c1b908/j-lens1/1024_2000.jpeg",
-        "https://i.blogs.es/c1b908/j-lens1/1366_2000.jpeg",
-        "https://i.blogs.es/c1b908/j-lens1/450_1000.jpeg",
-        "https://i.blogs.es/c1b908/j-lens1/650_1200.jpeg",
-        "https://transformer-circuits.pub/2026/workspace/index.html"
-      ]
-    }
-  },
-  {
-    "id": 1200,
-    "fecha": "2026-07-07T06:42:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Medios ucranianos objetivo prioritario",
-    "resumen": "Funcionarios de seguridad ucranianos informan de ataques no reportados previamente contra organizaciones de medios de comunicación, indicando un aumento en las actividades de hacking por parte de Rusia, lo que sugiere un enfoque en la industria mediática como objetivo prioritario. Estos ataques pueden incluir técnicas como phishing o exploits de vulnerabilidades para comprometer la seguridad de los medios de comunicación.",
-    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MDY1MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/ukraine-media-organizations-priority-hacking-targets-russia",
-    "fuente": "The Record",
-    "dedup_key": "txt:ukrainian media outlets now among priority targets for russian hackers",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1199,
-    "fecha": "2026-07-07T02:40:26Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Nueva reCAPTCHA con códigos QR",
-    "resumen": "Google ha introducido una nueva función de reCAPTCHA que utiliza códigos QR para verificar la presencia humana y la integridad del dispositivo, como medida para contrarrestar la capacidad de la IA para superar los desafíos visuales tradicionales. Esta función, llamada \"Verificación móvil\", está en fase experimental y requiere que los usuarios escaneen un código QR con su móvil para acceder a ciertos sitios web.",
-    "url_imagen": "https://images.unsplash.com/photo-1555255707-c07966088b7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/seguridad/seleccionar-todos-semaforos-no-suficiente-para-demostrar-que-no-eres-robot-ahora-hay-que-escanear-codigos-qr",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:seleccionar todos los semáforos ya no es suficiente para demostrar que no eres un robot ahora hay que escanear códigos qr",
-    "ttps": [],
-    "iocs": {
-      "ipv4": [
-        "1.0.1.1"
-      ],
-      "domain": [
-        "cloud.google.com",
-        "cybernews.com",
-        "platform.instagram.com",
-        "reclaimthenet.org",
-        "support.google.com",
-        "www.reddit.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://cybernews.com/privacy/google-qr-code-recaptcha-requires-approved-phone/?__cf_chl_rt_tk=V7XLlA_2RfA5IAxavW3qFmYv8jS0FmzsME3JnF8t85o-1783324263-1.0.1.1-tee2InVZTUEoCs7zWDVMWOwqE_BwxhA0kgep4KvUUHI",
-        "https://i.blogs.es/3781b0/recaptchaqr/1024_2000.jpeg",
-        "https://i.blogs.es/5dceac/captcha1/1024_682.jpeg",
-        "https://i.blogs.es/5dceac/captcha1/500_333.jpeg",
-        "https://i.blogs.es/5dceac/captcha1/840_560.jpeg",
-        "https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users"
-      ]
-    }
-  },
-  {
-    "id": 1198,
-    "fecha": "2026-07-07T02:40:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque a BONK cryptocurrency",
-    "resumen": "BonkDAO ha sido víctima de una \"propuesta de gobernanza maliciosa\" en la que atacantes con una gran cantidad de BONK han votado para transferir $20 millones en criptomonedas a sus propias carteras, aprovechando su influencia en la gobernanza de la criptomoneda. El ataque explota la falta de controles adecuados en el mecanismo de votación de la plataforma.",
-    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/attackers-vote-themselves-20-million-bonk-crypto",
-    "fuente": "The Record",
-    "dedup_key": "txt:attackers vote themselves 20 million in bonk cryptocurrency",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1197,
-    "fecha": "2026-07-07T02:40:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Vulnerabilidad NetScaler atacada",
-    "resumen": "La vulnerabilidad de divulgación de memoria en los productos NetScaler de Citrix está siendo explotada por atacantes después de que investigadores publicaron una prueba de concepto (PoC), lo que permite a los atacantes potencialmente acceder a información confidencial. El vector de ataque se basa en la explotación de esta vulnerabilidad para obtener acceso no autorizado a los sistemas afectados.",
-    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/citrixbleed-ing-again-netscaler-vulnerability-under-attack",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:citrixbleed ing again netscaler vulnerability under attack",
-    "ttps": [],
     "iocs": {}
   }
 ]
