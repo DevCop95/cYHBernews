@@ -1,5 +1,84 @@
 [
   {
+    "id": 3260,
+    "fecha": "2026-10-23T03:11:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Siemens publica parches críticos para vulnerabilidades de Path Traversal y exposición de contraseñas en API S7 Webserver",
+    "resumen": "Dos CVE (CVE-2026-85114 y CVE-2026-85115) permiten a un atacante escribir archivos fuera del directorio permitido y extraer contraseñas de restauración PLC mediante mensajes de error; ambos impactan entornos industriales críticos. Siemens recomienda actualizar a .NET Client Library ≥ 3.3.61/3.3.62 y reforzar la segmentación de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3MjUwODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-85114,cve-2026-85115",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+        "https://www.siemens.com/industrialsecurity",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-85114",
+        "CVE-2026-85115"
+      ]
+    }
+  },
+  {
+    "id": 3259,
+    "fecha": "2026-10-23T03:11:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Arista alerta sobre zero-day de inyección SQL en VeloCloud Orchestrator explotado en ataques",
+    "resumen": "Un flaw de SQL injection en el VeloCloud Orchestrator permite a usuarios con credenciales de solo lectura escalar a privilegios de operador, comprometiendo la gestión central de redes SD-WAN. El vector activo se basa en autenticación válida y explotación remota, con indicadores de compromiso ya detectados en entornos de proveedores de telecomunicaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3MjUwNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:arista warns of critical velocloud sql injection zero day exploited in attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3258,
+    "fecha": "2026-10-23T03:11:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Fortinet investiga vulnerabilidades críticas de PHP que permiten ejecución remota de código (CVE-2026-109618/109619)",
+    "resumen": "Se detectan intentos activos de explotación de dos vulnerabilidades críticas en el núcleo de PHP que podrían habilitar RCE en productos Fortinet como FortiADC, FortiSIEM y FortiClient Cloud; la empresa aún no confirma versiones afectadas y recomienda aplicar los parches de PHP 8.2.35-8.5.12.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3MjUwNzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-fortinet",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-109618,cve-2026-109619",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ]
+    }
+  },
+  {
     "id": 3257,
     "fecha": "2026-10-22T21:14:24Z",
     "categoria": "Ciberseguridad",
@@ -52334,87 +52413,5 @@
     "dedup_key": "txt:citrixbleed ing again netscaler vulnerability under attack",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1196,
-    "fecha": "2026-07-07T02:40:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Amenazas en dispositivos y AI",
-    "resumen": "Se han identificado vulnerabilidades en dispositivos domésticos que pueden ser utilizados como botnets de proxy, y se han detectado casos de ransomware en navegadores, además de fallos en la confianza de los sistemas de inteligencia artificial (AI) que pueden ser explotados. Los vectores de ataque incluyen dependencias de código sucio y la confianza excesiva en instrucciones no verificadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1782338937659-9a2cc59a8a69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/monday-recap-proxy-botnets-browser.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:weekly recap proxy botnets browser ransomware ai agent tricks fake poc malware and more",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1195,
-    "fecha": "2026-07-07T02:40:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataques de EtherRAT vía Microsoft Teams",
-    "resumen": "Actores maliciosos están utilizando llamadas de voz en Microsoft Teams para impersonar al personal de soporte de TI y engañar a empleados para que instalen el malware EtherRAT, lo que les da acceso inicial a redes corporativas a través de un vector de ataque de ingeniería social. El impacto real puede incluir el robo de datos y la propagación de malware dentro de la red.",
-    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzOTIwMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:fake it support calls on microsoft teams push etherrat malware",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1192",
-        "name": "Spearphishing via Service - no se menciona explícitamente, pero se puede inferir una técnica similar a través de la impersonación del personal de soporte de TI."
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1219",
-        "name": "Exploitation of Remote Services - no se menciona explícitamente, pero se puede inferir que los atacantes utilizan el malware EtherRAT para explotar servicios remotos."
-      },
-      {
-        "id": "T1189",
-        "name": "Drive-by Compromise no se menciona, pero se puede inferir que el malware EtherRAT se instala en"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1194,
-    "fecha": "2026-07-06T22:10:39Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Navegadores de IA: Riesgo de Seguridad",
-    "resumen": "Los navegadores agénticos, como ChatGPT Atlas, presentan un riesgo de seguridad debido a su capacidad para interpretar y ejecutar acciones en la web, lo que los hace vulnerables a técnicas como el prompt injection, permitiendo a los atacantes alterar su comportamiento y ejecutar acciones no autorizadas. La investigación de la Universidad de Washington encontró que cuatro de los siete navegadores agénticos populares analizados abrían vías de riesgo relevantes.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218534-156f33c28f8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODMzNzU4NDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/seguridad/navegadores-ia-llegaron-promesa-cambiarlo-todo-no-solo-no-han-hecho-peligro",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:los navegadores de ia llegaron con la promesa de cambiarlo todo no solo no lo han hecho son un peligro",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "developer.mozilla.org",
-        "franziroesner.com",
-        "openai.com",
-        "platform.instagram.com",
-        "www.datacamp.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://blog.google/products-and-platforms/products/chrome/new-ai-features-for-chrome/",
-        "https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy",
-        "https://franziroesner.com/pdf/roesner_kohlbrenner_2026_agentic_sop.pdf",
-        "https://i.blogs.es/602196/suplantacion-nombres-usuario-whatsaapp-1/375_142.jpeg",
-        "https://i.blogs.es/fec3a6/navegadores-con-ia-amenaza-de-seguridad-1/1024_2000.jpeg",
-        "https://openai.com/es-ES/index/introducing-chatgpt-atlas/",
-        "https://www.datacamp.com/blog/prompt-injection-attack?utm_cid=23552157100&utm_aid=188237542530&utm_campaign=230119_1-ps-other~dsa-tofu~ai_2-b2c_3-emea_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na&utm_loc=1005493-&utm_mtd=-c&utm_kw=&utm_source=google&utm_medium=paid_search&utm_content=ps-other~emea-en~dsa~tofu~blog~artificial-intelligence&gad_source=1&gad_campaignid=23552157100&gbraid=0AAAAADQ9WsEILdTkPRgQ0UZqPSdf1wM9H&gclid=CjwKCAjwpK3SBhASEiwAtV1SPAgkw0hJBAB2GQxIBRfDwrGKuH78rqV4Oh40UleWP23-kPHHtILQEhoCBGkQAvD_BwE",
-        "https://www.perplexity.ai/comet"
-      ]
-    }
   }
 ]
