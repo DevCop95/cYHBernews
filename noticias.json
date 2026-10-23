@@ -1,5 +1,55 @@
 [
   {
+    "id": 3276,
+    "fecha": "2026-10-23T23:45:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Fraude de ingeniería social impulsado por IA engaña a help desks y compromete accesos críticos",
+    "resumen": "Amenazas utilizan modelos de lenguaje para generar solicitudes de soporte convincentes, explotando procesos de autenticación humana sin necesidad de malware; el vector es el phishing interno vía llamadas al help desk, aumentando el riesgo de escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3OTkxMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:trust is not what it seems and fraudsters are counting on it",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3275,
+    "fecha": "2026-10-23T23:45:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ruby corrige tres bugs críticos del motor Onigmo que permitían RCE en GitLab",
+    "resumen": "Se publicaron Ruby 4.0.9, 3.4.12 y 3.3.13 que parchean vulnerabilidades de corrupción de memoria en Onigmo, explotables mediante patrones regex especialmente diseñados y que permitían ejecución remota de código en instancias de GitLab. Los CVE asociados afectan a entornos que procesan repositorios con Ruby, incrementando la superficie de ataque de CI/CD.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3OTkxMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ruby fixes three regex engine bugs responsible for four critical gitlab rce flaws",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3274,
     "fecha": "2026-10-23T20:57:03Z",
     "categoria": "Ciberseguridad",
@@ -52350,67 +52400,5 @@
         "https://www.scmp.com/tech/big-tech/article/3345471/alibaba-recruits-google-deepmind-contributor-join-qwen-ai-team-sources-say?module=top_story&pgtype=section"
       ]
     }
-  },
-  {
-    "id": 1213,
-    "fecha": "2026-07-07T17:09:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad GitLost",
-    "resumen": "La vulnerabilidad GitLost permite a un atacante no autenticado crear un Issue en un repositorio público de GitHub y luego extraer datos de forma silenciosa desde repositorios privados de la misma organización, aprovechando las Agentic Workflows. Esto representa un vector de ataque significativo para la privacidad y seguridad de los datos almacenados en GitHub.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxNzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/gitlost-leaks-private-data-github-agentic-workflows",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:gitlost flaw leaks private data from github s agentic workflows",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1212,
-    "fecha": "2026-07-07T17:09:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque a M365 vía Device-Code Flow",
-    "resumen": "Se ha detectado una campaña de phishing que aprovecha el flujo de código de dispositivo de Microsoft para apuntar a cuentas de Microsoft 365, utilizando engaños de colaboración para llevar a los usuarios a la experiencia de inicio de sesión de dispositivo legítima de Microsoft, sin necesidad de una página de contraseña falsa. El ataque se ha observado desde finales de junio de 2026 hasta principios de julio.",
-    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxNjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:debull tooling abuses microsoft device code flow to target m365 accounts",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
   }
 ]
