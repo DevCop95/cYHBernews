@@ -1,5 +1,127 @@
 [
   {
+    "id": 3269,
+    "fecha": "2026-10-23T16:26:54Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Unitree Robotics lanza “Unitree Rehearsal”, un bucle IA auto-evolutivo para acelerar el desarrollo de robots humanoides",
+    "resumen": "La compañía china implementa un sistema cerrado donde agentes de IA buscan literatura, generan código de control, lo prueban en simulación y validan resultados para robots reales, reduciendo la intervención humana y acelerando la adquisición de nuevas habilidades. El proyecto, que ya usa GPT-6, busca crear un ciclo de mejora continua alimentado por datos del mundo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NzI4MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/carrera-china-eeuu-humanoides-entra-otra-fase-unitree-quiere-que-sus-robots-aprendan-a-mejorarse-solos",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la carrera entre china y eeuu por los humanoides entra en otra fase unitree quiere que sus robots aprendan a mejorarse solos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3268,
+    "fecha": "2026-10-23T16:26:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Siemens anuncia múltiples CVE críticos en productos APOGEE, TALON y Desigo que permiten DoS y lecturas fuera de límites",
+    "resumen": "Se identifican vulnerabilidades de out-of-bounds read, integer underflow y buffer overflow en versiones de APOGEE, TALON y Desigo, con CVSS 8.2, que pueden ser explotadas remotamente para denegar servicios críticos. Siemens recomienda actualización inmediata donde exista parche y segmentación de red donde no haya fix.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NzI4MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-08",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-102073,cve-2026-102074,cve-2026-102075,cve-2026-102076,cve-2026-89208",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-102073",
+        "CVE-2026-102074",
+        "CVE-2026-102075",
+        "CVE-2026-102076",
+        "CVE-2026-89208"
+      ]
+    }
+  },
+  {
+    "id": 3267,
+    "fecha": "2026-10-23T16:26:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "eMudhra emite ocho certificados TLS con claves privadas de 3 a 8 bits, exponiendo vulnerabilidad crítica de MITM",
+    "resumen": "La autoridad certificadora india eMudhra Limited emitió ocho certificados TLS con claves privadas de entropía insuficiente (3-8 bits), permitiendo a atacantes con capacidad de interceptación de tráfico realizar ataques man-in-the-middle contra conexiones VPN y otros servicios TLS. La falla requiere monitoreo activo de transparency logs y la revocación inmediata de los certificados comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NzI4MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/compromised-tls-certificates.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:compromised tls certificates",
+    "ttps": [
+      {
+        "id": "T1557.001",
+        "name": "LLMNR/NBT-NS Poisoning and SMB Relay"
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3266,
+    "fecha": "2026-10-23T16:26:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers comprometen firewalls FortiGate y GlobalProtect y roban 70 000 credenciales",
+    "resumen": "Investigadores de ciberseguridad revelan una campaña que explota dispositivos de borde expuestos, accediendo a firewalls Fortinet y VPNs Palo Alto para extraer credenciales válidas. El ataque ha afectado a organizaciones globales, facilitando movimientos laterales y posibles compromisos adicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3NzI4MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers breach enterprise firewalls and vpns exposing over 70 000 credentials",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3265,
     "fecha": "2026-10-23T11:02:27Z",
     "categoria": "Ciberseguridad",
@@ -52281,138 +52403,6 @@
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:the github actions attack pattern your ci security scanners miss",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1205,
-    "fecha": "2026-07-07T11:43:34Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Google demanda a estafadores chinos por uso de Gemini",
-    "resumen": "Google está demandando a una red de ciberdelincuentes china que utilizaba el modelo de lenguaje Gemini para automatizar estafas de phishing, ofreciendo servicios de phishing como servicio a través de Telegram y creando sitios web falsos que imitan a Google, YouTube y agencias gubernamentales. El grupo ofrecía cerca de 300 plantillas de estafas y Google ha trabajado con operadores de telecomunicaciones para bloquear mensajes de texto maliciosos y reducir los intentos de phishing exitosos.",
-    "url_imagen": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MjQ2MTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/google-is-suing-chinese-scammers-who-are-using-gemini.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:google is suing chinese scammers who are using gemini",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.002",
-        "name": "Spearphishing Link"
-      },
-      {
-        "id": "T1586",
-        "name": "Creación de Sitios Web Falsos"
-      },
-      {
-        "id": "T1586.001",
-        "name": "Sitios Web Falsos para Phishing"
-      },
-      {
-        "id": "T1056",
-        "name": "Creación de Servicios Maliciosos (como servicio de phishing)"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "arstechnica.com",
-        "www.digitaltrends.com"
-      ],
-      "url": [
-        "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams/",
-        "https://www.digitaltrends.com/phones/scammers-used-gemini-ai-to-power-a-massive-phishing-operation-and-google-just-sued-them/"
-      ]
-    }
-  },
-  {
-    "id": 1204,
-    "fecha": "2026-07-07T11:43:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Hackers chinos atacan universidades",
-    "resumen": "Un grupo de amenazas sospechado de estar alineado con China ha sido observado explotando vulnerabilidades en el software de webmail Roundcube, específicamente la CVE-2024-42009 con una puntuación CVSS de 9.3, para extraer credenciales de departamentos de física e ingeniería de universidades en EE. UU. y Canadá. El ataque aprovecha fallos de seguridad críticos, ahora parcheados, en la solución de correo electrónico de código abierto.",
-    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MjQ2MDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2024-42009",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1190.001",
-        "name": "Exploit Public-Facing Application: Web Application"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1552.001",
-        "name": "Unsecured Credentials: Credentials In Files"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2024-42009"
-      ]
-    }
-  },
-  {
-    "id": 1203,
-    "fecha": "2026-07-07T11:43:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Windows: Copia de seguridad de configuración",
-    "resumen": "Microsoft habilitará por defecto la herramienta de copia de seguridad y restauración de configuración de Windows en sistemas empresariales que utilicen Microsoft Entra después de actualizar a Windows 11 26H2, mejorando la resiliencia y la recuperación en caso de incidentes de seguridad. Esto puede reducir el impacto de ataques de ransomware y otros incidentes que afectan la configuración del sistema.",
-    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MjQ2MDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-enable-windows-backup-for-organizations-by-default/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:microsoft to enable windows settings backup by default for orgs",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1202,
-    "fecha": "2026-07-07T06:42:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware WatchBeam.exe",
-    "resumen": "Se ha detectado el malware WatchBeam.exe, que se caracteriza por ser extremadamente activo y ruidoso, creando múltiples procesos de cmd.exe de manera sospechosa, lo que sugiere un posible vector de ataque para ejecutar comandos maliciosos en el sistema infectado. El comportamiento de WatchBeam.exe indica una posible técnica de evasión de detección y persistencia en el sistema.",
-    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0MDY1NDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9101",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:i want to give a big shoutout to watchbeam exe watchbeam is the loudest malware i ve ever seen when i say runs",
-    "ttps": [
-      {
-        "id": "T1055",
-        "name": "Ejecución de Comando"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1497",
-        "name": "Técnica de Evasión de Detección"
-      },
-      {
-        "id": "T1569",
-        "name": "Técnica de Persistencia"
-      },
-      {
-        "id": "T1106",
-        "name": "Comando y Control Nativo del Sistema Operativo"
-      }
-    ],
     "iocs": {}
   }
 ]
