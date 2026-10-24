@@ -1,5 +1,119 @@
 [
   {
+    "id": 3283,
+    "fecha": "2026-10-24T10:10:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Siemens RUGGEDCOM CROSSBOW vulnerado por múltiples SQL-Injection críticos, parche disponible en v6.0",
+    "resumen": "Diez CVE de alta gravedad (CVSS 8.8) permiten a atacantes autenticados ejecutar SQL arbitrario, robar credenciales administrativas y provocar denegación de servicio en infraestructuras críticas; se recomienda actualizar inmediatamente a la versión 6.0 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4MzY2NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-12",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-89196,cve-2026-89197,cve-2026-89198,cve-2026-89199,cve-2026-89200,cve-2026-89201,cve-2026-89202,cve-2026-89203,cve-2026-89204,cve-2026-89205,cve-2026-89206",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+        "https://www.siemens.com/industrialsecurity",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-89196",
+        "CVE-2026-89197",
+        "CVE-2026-89198",
+        "CVE-2026-89199",
+        "CVE-2026-89200",
+        "CVE-2026-89201",
+        "CVE-2026-89202",
+        "CVE-2026-89203",
+        "CVE-2026-89204",
+        "CVE-2026-89205",
+        "CVE-2026-89206"
+      ]
+    }
+  },
+  {
+    "id": 3282,
+    "fecha": "2026-10-24T10:10:46Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Herramientas de IA generan ataques masivos a bajo costo comprometiendo cientos de dominios",
+    "resumen": "Un nuevo vector de amenaza usa modelos de lenguaje de código abierto para comprometer 105 sitios y, en otro caso, adquirir control total de dominios por apenas $12, evidenciando la necesidad de replantear las defensas tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1792263278178-902c7f7d0324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4MzY2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai tools are generating massive attacks for little cost",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3281,
+    "fecha": "2026-10-24T10:10:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad RCE en la app abandonada Popcorn Time expone millones de dispositivos",
+    "resumen": "Investigadores desactivaron remotamente el actualizador vulnerable de Time4Popcorn, un fork del cliente BitTorrent, mitigando una falla que permitía ejecución de código con privilegios elevados en millones de equipos. El vector de ataque era la actualización automática sin firma, explotable mediante payloads RCE.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4MzY2NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:abandoned popcorn time app exposed millions of devices to rce attacks",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3280,
+    "fecha": "2026-10-24T10:10:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Rufus de Amazon permite ejecutar PowerShell y Nmap, ampliando la superficie de ataque de asistentes IA",
+    "resumen": "El asistente IA de Amazon, inicialmente orientado a compras, brinda instrucciones de PowerShell con privilegios de administrador y uso de Nmap, facilitando la escalada de privilegios y el reconocimiento de red sin intervención autónoma. Este vector de abuso destaca la necesidad de reforzar guardrails y monitoreo de IA en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4MzY2NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/rufus-el-asistente-ia-de-amazon-de.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:rufus el asistente ia de amazon de shopping assistant a hacer troubleshouting de red con powershell y nmap en una charla",
+    "ttps": [
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1018",
+        "name": "Remote System Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3279,
     "fecha": "2026-10-24T03:07:54Z",
     "categoria": "Ciberseguridad",
@@ -52275,108 +52389,6 @@
         "name": "Use Alternate Authentication Material"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1220,
-    "fecha": "2026-07-07T19:49:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Nagios XI",
-    "resumen": "La versión xi-5.7.5 de Nagios XI presenta una vulnerabilidad de inyección de comandos del sistema operativo (CVE-2021-25297) con un CVSS Score de 8.8, permitiendo a un atacante autenticado ejecutar comandos arbitrarios en el servidor a través de una petición HTTP maliciosa. La vulnerabilidad se debe a un saneamiento inapropiado de la entrada de usuario en el archivo switch.inc.php.",
-    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-25297",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2021-25297",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1131",
-        "name": "Input Validation"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2021-25297"
-      ]
-    }
-  },
-  {
-    "id": 1219,
-    "fecha": "2026-07-07T19:49:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Registro DNS NIMLOC detectado",
-    "resumen": "Se ha detectado el uso de registros DNS NIMLOC, un tipo de registro menos común que puede ser utilizado para fines de comunicación y resolución de nombres, y que ha sido identificado por herramientas como Zeek en los registros de DNS. Esto puede tener implicaciones en la ciberseguridad, ya que la comprensión de estos registros puede ayudar a identificar posibles vectores de ataque, como el uso de registros DNS no estándar para eludir la detección.",
-    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33128",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:more odd dns records nimloc tue jul 7th",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1218,
-    "fecha": "2026-07-07T19:49:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Malware RedWing en Telegram",
-    "resumen": "Se ha descubierto una nueva operación de malware Android llamada RedWing, que se ofrece como un servicio de fraude bancario listo para usar a través de Telegram, permitiendo a criminales de baja habilidad tomar el control de un teléfono víctima, robar sus credenciales bancarias y capturar códigos de un solo uso que protegen sus cuentas. La operación parece ser una variante del herramienta de malware rentable Oblivion.",
-    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:redwing maas packages android bank fraud as a telegram rental service",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1056.001",
-        "name": "Keylogging"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1217,
-    "fecha": "2026-07-07T19:49:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Malware LONGLEASH de hackers chinos",
-    "resumen": "Los hackers chinos identificados como 'UAT-7810' están desarrollando activamente el malware LONGLEASH para expandir su red Operational Relay Box (ORB) comprometiendo dispositivos de red con acceso a Internet, principalmente routers Ruckus sin parches. Esto permite a los atacantes ampliar su capacidad de lanzar ataques desde una red de relés operativos.",
-    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/chinese-hackers-develop-longleash-malware-to-expand-orb-network/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:chinese hackers develop longleash malware to expand orb network",
-    "ttps": [],
     "iocs": {}
   }
 ]
