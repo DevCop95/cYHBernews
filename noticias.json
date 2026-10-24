@@ -1,5 +1,60 @@
 [
   {
+    "id": 3292,
+    "fecha": "2026-10-24T22:50:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-110063 permite escalada de privilegios en Azure VM Inspector",
+    "resumen": "La falla de resolución de enlaces en VM Inspector de Azure permite a un atacante no autenticado ejecutar enlaces manipulados y obtener privilegios de administrador en máquinas virtuales a través de la red. Con CVSS 10.0, el vector de ataque es remoto y sin autenticación, impactando entornos de nube híbrida.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4ODIyNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-110063",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-110063",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-110063"
+      ]
+    }
+  },
+  {
+    "id": 3291,
+    "fecha": "2026-10-24T22:50:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en PHP expone servidores web a ejecución remota de código",
+    "resumen": "Se ha identificado una falla de tipo remote code execution en versiones populares de PHP que permite a un atacante inyectar y ejecutar comandos arbitrarios mediante vectores de entrada no sanitizados, afectando a entornos de producción sin parches. La explotación requiere acceso a la capa de aplicación y puede comprometer la confidencialidad e integridad de datos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4ODIyNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33450",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:php vulnerability wrap up fri oct 23rd",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3290,
+    "fecha": "2026-10-24T22:50:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft anuncia fin de soporte de Windows Server 2016 en enero 2027",
+    "resumen": "Windows Server 2016 dejará de recibir parches de seguridad a partir de enero 2027, obligando a organizaciones a migrar o enfrentar exposición a vulnerabilidades sin mitigación oficial. La medida incrementa el riesgo de explotación de CVE no corregidos en entornos críticos que aún operen la versión.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4ODIyNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft windows server 2016 reaches end of support in january",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3289,
     "fecha": "2026-10-24T20:07:27Z",
     "categoria": "Ciberseguridad",
@@ -52284,93 +52339,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1229,
-    "fecha": "2026-07-08T05:46:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Falso positivo en Windows Defender",
-    "resumen": "Un mod de videojuego para Baldur's Gate 3 fue detectado como malware por Windows Defender debido a su uso de la función GetAsyncKeyState para registrar pulsaciones de teclas, lo que generó una alerta de seguridad falsa. La investigación reveló que el mod no era malware, sino una herramienta legítima para el juego que fue malinterpretada por el software de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1782330389090-3df48ad9c975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0ODk2MTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/vxunderground/9105",
-    "fuente": "TG: vx-underground",
-    "dedup_key": "txt:be me get dm is this malware windows defender went crazy when i tried this video game mod download l",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1228,
-    "fecha": "2026-07-08T02:13:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en ProtonVPN",
-    "resumen": "Se ha detectado una vulnerabilidad de ruta de servicio no citada (Unquoted Service Path) en la versión 4.4.1 de ProtonVPN, lo que podría permitir a un atacante local ejecutar código malicioso con privilegios elevados. Esta vulnerabilidad puede ser explotada a través de un ataque de tipo privilege escalation.",
-    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NzY4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52624",
-    "fuente": "Exploit-DB",
-    "dedup_key": "txt:local protonvpn v4 4 1 unquoted service path",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1574",
-        "name": "Hijack Execution Flow"
-      },
-      {
-        "id": "T1574.002",
-        "name": "Unquoted Service Path"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1227,
-    "fecha": "2026-07-08T02:13:36Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Nagios XI",
-    "resumen": "La versión xi-5.7.5 de Nagios XI presenta una vulnerabilidad de inyección de comandos del Sistema Operativo (CVE-2021-25298) con un CVSS Score de 8.8, lo que permite a un atacante autenticado ejecutar comandos arbitrarios en el servidor mediante una petición HTTP maliciosa. La vulnerabilidad se encuentra en el archivo cloud-vm.inc.php debido a un saneamiento inapropiado de la entrada de usuario.",
-    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NzY4MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-25298",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2021-25298",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2021-25298"
-      ]
-    }
   }
 ]
