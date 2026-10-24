@@ -1,5 +1,95 @@
 [
   {
+    "id": 3286,
+    "fecha": "2026-10-24T15:18:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-105944 permite creación de superusuario sin autenticación en Apache Pulsar Manager",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) permite a cualquier actor con acceso a la red crear cuentas de administrador y proxyar peticiones al API de Pulsar usando credenciales configuradas, comprometiendo totalmente el clúster. El proyecto está descontinuado, por lo que no habrá parches; se recomienda retirar Pulsar Manager y revocar sus credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4NTUwODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-105944",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-105944",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "pulsar.apache.org"
+      ],
+      "url": [
+        "https://pulsar.apache.org/docs/administration-ui"
+      ],
+      "cve": [
+        "CVE-2026-105944"
+      ]
+    }
+  },
+  {
+    "id": 3285,
+    "fecha": "2026-10-24T15:17:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "AI acelera la detección y explotación de vulnerabilidades antiguas en PHP, revelando un nuevo vector de ataque",
+    "resumen": "Investigadores de seguridad emplearon modelos de lenguaje generativos para identificar vulnerabilidades de años en el motor PHP, y luego automatizaron exploits que aprovechan esas fallas con mayor rapidez y precisión. El uso de IA reduce el tiempo de descubrimiento a días, incrementando el riesgo de ataques dirigidos contra aplicaciones web críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4NTUwNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the php meltdown shows how ai makes bugs more exploitable",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1588.001",
+        "name": "Malware"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3284,
+    "fecha": "2026-10-24T15:17:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "BlackX bootkit explota vulnerabilidad Baton Drop para evadir Secure Boot y comprometer Kaspersky y Avast",
+    "resumen": "El bootkit UEFI BlackX, detectado en una campaña de espionaje de 2026, aprovecha la vulnerabilidad legacy Baton Drop para saltarse Secure Boot e inyectar un driver malicioso que desactiva funcionalidades de Kaspersky y Avast, facilitando la persistencia y el robo de credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4NTUwNzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:blackx uefi bootkit exploits baton drop flaw to bypass secure boot",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      },
+      {
+        "id": "T1547.006",
+        "name": "Kernel Modules and Extensions"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3283,
     "fecha": "2026-10-24T10:10:49Z",
     "categoria": "Ciberseguridad",
@@ -52282,111 +52372,6 @@
       {
         "id": "T1486",
         "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1223,
-    "fecha": "2026-07-07T22:08:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en Dialogflow CX",
-    "resumen": "Una vulnerabilidad crítica en Dialogflow CX de Google permitía a un atacante con derechos de edición en un agente habilitado para Code Block comprometer otros agentes habilitados para Code Block en el mismo proyecto de Google Cloud, permitiéndoles leer conversaciones en vivo, robar datos y enviar mensajes maliciosos. La firma de seguridad Varonis descubrió esta vulnerabilidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NjIxMjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:rogue agent flaw could have let attackers hijack google dialogflow cx chatbots",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1539",
-        "name": "Steal Application Access Token"
-      },
-      {
-        "id": "T1212",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1222,
-    "fecha": "2026-07-07T22:08:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Breach en Accenture",
-    "resumen": "La empresa de servicios de TI Accenture ha confirmado una brecha de seguridad después de que un actor de amenaza ofreciera 35 GB de código fuente y otros datos robados para su venta, lo que sugiere un posible ataque de ransomware o exfiltración de datos. El vector de ataque no se ha especificado, pero la brecha puede tener un impacto significativo en la seguridad de los clientes de Accenture.",
-    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NjIxMjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/accenture-confirms-breach-after-hacker-offers-stolen-data-for-sale/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:accenture confirms breach after hacker offers stolen data for sale",
-    "ttps": [
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1005",
-        "name": "Data from Local System"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1041",
-        "name": "Exfiltration Over C2 Channel"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1221,
-    "fecha": "2026-07-07T22:08:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Credenciales robadas, arma favorita",
-    "resumen": "El robo y abuso de credenciales sigue siendo una táctica efectiva para los ciberdelincuentes, con técnicas como el descifrado de contraseñas y el uso de cuentas legítimas comprometidas como los métodos más probables de ataque. Esto resalta la importancia de implementar medidas de seguridad robustas para proteger las credenciales y prevenir el acceso no autorizado.",
-    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NjIxMTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/las-credenciales-robadas-siguen-siendo-el-arma-favorita-de-los-ciberdelincuentes/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:las credenciales robadas siguen siendo el arma favorita de los ciberdelincuentes",
-    "ttps": [
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1552.001",
-        "name": "Valid Accounts: Local Account"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material"
       }
     ],
     "iocs": {}
