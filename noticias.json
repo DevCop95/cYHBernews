@@ -1,5 +1,76 @@
 [
   {
+    "id": 3279,
+    "fecha": "2026-10-24T03:07:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-102785 permite ejecución remota no autenticada en YOOtheme Pro 5.0.0-5.0.52",
+    "resumen": "La falla en el manejador de transformación de imágenes de YOOtheme Pro permite a un atacante reutilizar firmas de URLs legítimas, inyectar operaciones de imagen y escribir un polyglot PNG/PHP en el directorio público, logrando ejecución de código arbitrario. Impacta a todos los sitios Joomla que utilicen la extensión YOOtheme Pro sin parches.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4MTEyNzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-102785",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-102785",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "yootheme.com"
+      ],
+      "cve": [
+        "CVE-2026-102785"
+      ]
+    }
+  },
+  {
+    "id": 3278,
+    "fecha": "2026-10-24T03:07:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora CVE-2026-114625 de inyección SQL en Arista VeloCloud al catálogo KEV",
+    "resumen": "La vulnerabilidad crítica CVE-2026-114625 permite ejecución de código remoto mediante inyección SQL en el orquestador VeloCloud, con evidencia de explotación activa y requerimiento de remediación inmediata bajo la BOD 26-04 para agencias federales.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4MTEyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-114625",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114625"
+      ]
+    }
+  },
+  {
+    "id": 3277,
+    "fecha": "2026-10-24T03:07:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware afiliado usa agentes de IA en framework autónomo Phantom para intrusiones coordinadas",
+    "resumen": "Investigadores de ciberseguridad identificaron un ecosistema de intrusión impulsado por IA, donde el framework “Phantom” automatiza la cadena de ataque de grupos ransomware INC y The Gentlemen, permitiendo despliegues rápidos de exploits y exfiltración de datos. El actor, de habla rusa, combina capacidades de red team autónomo con extorsión de datos, elevando el riesgo de campañas dirigidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4MTEyNjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:exposed infrastructure reveals how ransomware affiliates used ai agents to execute intrusions",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3276,
     "fecha": "2026-10-23T23:45:14Z",
     "categoria": "Ciberseguridad",
@@ -52307,98 +52378,5 @@
     "dedup_key": "txt:chinese hackers develop longleash malware to expand orb network",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1216,
-    "fecha": "2026-07-07T19:49:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Google desmantela redes proxy maliciosas",
-    "resumen": "Google, en colaboración con el FBI y otras organizaciones, ha iniciado acciones contra la red de proxies residenciales NetNut, también conocida como Popa, como parte de su esfuerzo por desmantelar redes de proxies maliciosas que pueden ser utilizadas para ataques de phishing, DDoS y otros tipos de ciberdelincuencia. Esta acción sigue a la interrupción de la red de proxies IPIDEA en enero de 2026, demostrando el compromiso de Google con la ciberseguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NTM3NDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/google-continua-desmantelando-redes-proxy-residenciales-maliciosas/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:google continúa desmantelando redes proxy residenciales maliciosas",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1215,
-    "fecha": "2026-07-07T17:09:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Nagios XI",
-    "resumen": "La versión xi-5.7.5 de Nagios XI presenta una vulnerabilidad de inyección de comandos del sistema operativo (CVE-2021-25296) con un puntaje CVSS de 8.8, lo que permite a un atacante autenticado ejecutar comandos arbitrarios en el servidor de Nagios XI a través de una petición HTTP maliciosa. El vector de ataque se encuentra en el archivo windowswmi.inc.php debido a un saneamiento inapropiado de la entrada de usuario.",
-    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxODN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2021-25296",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2021-25296",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1132",
-        "name": "Data Encoding"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2021-25296"
-      ]
-    }
-  },
-  {
-    "id": 1214,
-    "fecha": "2026-07-07T17:09:38Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Qwen de Alibaba lidera descargas",
-    "resumen": "El modelo de IA Qwen de Alibaba es el más descargado del mundo, con cerca de un millón de descargas diarias, aunque la empresa aún no genera ingresos significativos con esta tecnología, lo que preocupa a los inversores. La estrategia de Alibaba se centra en ofrecer modelos de IA abiertos para ganar popularidad y mercado, pero aún no ha logrado traducir esto en beneficios financieros.",
-    "url_imagen": "https://images.unsplash.com/photo-1677442135732-00cab8f454e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0NDQxNzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/modelo-ia-qwen-alibaba-nueva-joya-corona-unico-problema-que-no-ganan-dinero",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:el modelo de ia qwen de alibaba es la nueva joya de la corona el único problema es que no ganan dinero con él",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "news.aibase.com",
-        "pandaily.com",
-        "platform.instagram.com",
-        "www.bloomberg.com",
-        "www.nytimes.com",
-        "www.reuters.com",
-        "www.scmp.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://en.ara.cat/economy/jack-ma-returns-he-reappears-at-chinese-government-event-after-being-missing-for-five-years_1_5288061.html",
-        "https://i.blogs.es/6a02eb/qwen/1024_2000.jpeg",
-        "https://i.blogs.es/6a02eb/qwen/1366_2000.jpeg",
-        "https://i.blogs.es/6a02eb/qwen/450_1000.jpeg",
-        "https://i.blogs.es/6a02eb/qwen/650_1200.jpeg",
-        "https://i.blogs.es/8fef63/f412fa02-b8c1-40f6-ac4c-13b2144b6eac/375_142.jpeg",
-        "https://i.blogs.es/ce09f2/qwen-alibaba-modelos-ia-abiertos/1024_2000.jpeg",
-        "https://news.aibase.com/news/24462",
-        "https://pandaily.com/alibaba-approves-qwen-lead-lin-junyang-s-resignation-cto-zhou-jingren-assumes-control-deep-mind-s-zhou-hao-joins",
-        "https://www.bloomberg.com/news/articles/2026-04-02/alibaba-unveils-third-closed-source-ai-model-in-focus-on-profit",
-        "https://www.nytimes.com/2026/07/06/business/alibaba-ai-qwen.html",
-        "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
-        "https://www.scmp.com/tech/big-tech/article/3345471/alibaba-recruits-google-deepmind-contributor-join-qwen-ai-team-sources-say?module=top_story&pgtype=section"
-      ]
-    }
   }
 ]
