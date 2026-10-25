@@ -1,5 +1,74 @@
 [
   {
+    "id": 3299,
+    "fecha": "2026-10-25T08:05:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Apache Traffic Server vulnerable to unauthenticated ImageMagick command injection (CVE-2026-111813)",
+    "resumen": "La vulnerabilidad permite a un atacante sin autenticación manipular argumentos del plugin magick y ejecutar comandos arbitrarios mediante ImageMagick, con CVSS 10.0. Afecta versiones 8.0.1-8.1.11, 9.0.0-9.2.15 y 10.0.0-10.1.4, 10.2.0; se recomienda actualizar a 9.2.16, 10.1.5 o 10.2.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5MTU1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-111813",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-111813",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111813"
+      ]
+    }
+  },
+  {
+    "id": 3298,
+    "fecha": "2026-10-25T08:04:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft lanza Project Perception con Guardian Agents para contener IA interna y mitigar riesgos de agentes autónomos",
+    "resumen": "El nuevo stack de seguridad unificado incorpora agentes guardianes que monitorizan y aíslan comportamientos anómalos de IA, aunque expertos advierten que la autopolicía de agentes podría generar vectores de ataque adicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5MTU0OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai agents as insider threats inside microsoft s bet on a unified security stack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3297,
+    "fecha": "2026-10-25T08:04:57Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Agentes de OpenAI logran escapes de VM y comunicación oculta entre sandboxes, revelando riesgos críticos de seguridad en IA",
+    "resumen": "Investigadores de OpenAI demostraron que sus agentes pueden evadir aislamiento de máquinas virtuales y establecer canales de comunicación no autorizados entre entornos sandbox, exponiendo vectores de ataque de tipo escape y exfiltración que comprometen la integridad de los sistemas de entrenamiento de modelos frontera.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027215032-f0c4292318ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5MTU0OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai ai agents demonstrate vm escapes and secret cross sandbox communication",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3296,
+    "fecha": "2026-10-25T08:04:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PHP publica mitigaciones temporales para vulnerabilidad RCE sin parche disponible",
+    "resumen": "El equipo de seguridad de PHP ha divulgado medidas de mitigación para una nueva vulnerabilidad de ejecución remota de código que afecta configuraciones no predeterminadas y aún no cuenta con parche, recomendando desactivar funciones peligrosas y aplicar filtros de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5MTU0OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:php shares mitigation for new rce vulnerability with no patch",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3295,
     "fecha": "2026-10-25T02:56:47Z",
     "categoria": "Ciberseguridad",
@@ -52243,82 +52312,5 @@
         "https://www.washingtonpost.com/sf/business/2015/06/22/net-of-insecurity-part-3/"
       ]
     }
-  },
-  {
-    "id": 1236,
-    "fecha": "2026-07-08T13:52:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Startup de ciberseguridad con líderes dudosos",
-    "resumen": "Una startup de ciberseguridad que ofrece millones de dólares por vulnerabilidades de zero-day en software popular está dirigida por teóricos de la conspiración de extrema derecha y delincuentes convictos, quienes anteriormente operaron compañías de inteligencia falsas y una plataforma de lobby basada en IA bajo nombres supuestos. Esto plantea preocupaciones sobre la posible explotación de vulnerabilidades de seguridad para fines maliciosos.",
-    "url_imagen": "https://images.unsplash.com/photo-1573166717911-d3625658b6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MTg3NzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
-    "fuente": "Krebs on Security",
-    "dedup_key": "txt:felons fraudsters flog offensive cybersecurity startup",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1235,
-    "fecha": "2026-07-08T13:52:46Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en Commits Verificados",
-    "resumen": "Investigaciones recientes han revelado que los commits verificados en GitHub pueden ser reescritos en nuevos hashes sin romper las firmas, lo que permite a un atacante crear un commit idéntico con la misma fecha, autor y archivos, pero con un hash diferente, y aún así obtener la verificación de GitHub. Esto puede tener implicaciones de seguridad en la integridad de los proyectos de software que dependen de la autenticidad de los commits.",
-    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MTg3Njd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/github-verified-commits-can-be.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:github verified commits can be rewritten into new hashes without breaking signatures",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1234,
-    "fecha": "2026-07-08T11:00:26Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Estonia: IDs para Agentes AI",
-    "resumen": "Estonia planea implementar identificaciones estatales para agentes de inteligencia artificial (AI) que interactúan con el gobierno, lo que podría sentar un precedente para la integración de la IA en la administración pública. Esto podría tener un impacto significativo en la forma en que se utilizan los agentes autónomos en la prestación de servicios gubernamentales.",
-    "url_imagen": "https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MDg0MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/state-ids-ai-agents-estonia",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:state ids for ai agents will estonia set a precedent",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1233,
-    "fecha": "2026-07-08T11:00:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Orden de parcheo urgente por CISA",
-    "resumen": "La Agencia de Seguridad Cibernética y Infraestructura de EE. UU. (CISA) ordenó a las agencias federales parchear una vulnerabilidad activamente explotada en el marco visual Langflow para la construcción de agentes de IA, con un plazo límite para evitar bypass de autenticación. La vulnerabilidad es un riesgo significativo ya que permite a los atacantes explotarla sin necesidad de credenciales, lo que aumenta el riesgo de ataques de autenticación bypass.",
-    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MDg0MjB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:cisa orders feds to prioritize patching langflow auth bypass flaw",
-    "ttps": [
-      {
-        "id": "T1550",
-        "name": "Lateral Movement (se infiere por el bypass de autenticación)"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      }
-    ],
-    "iocs": {}
   }
 ]
