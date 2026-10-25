@@ -1,5 +1,50 @@
 [
   {
+    "id": 3303,
+    "fecha": "2026-10-25T18:03:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-79844 permite bypass de autenticación y ejecución remota de comandos en AOS-10 con CVSS 10.0",
+    "resumen": "La vulnerabilidad de bypass de autenticación en la interfaz de AOS-10 permite a un atacante no autenticado ejecutar comandos arbitrarios en el host subyacente, siempre que se cumplan condiciones externas específicas, exponiendo el sistema a compromisos totales.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTE0Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-79844",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-79844",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-79844"
+      ]
+    }
+  },
+  {
+    "id": 3302,
+    "fecha": "2026-10-25T18:03:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Agentes de codificación IA secuestrados por archivo AGENTS.md malicioso en carpeta Downloads",
+    "resumen": "Investigadores detectaron que un archivo markdown AGENTS.md colocado en la carpeta Downloads engañó a un agente de codificación basado en IA, provocando la instalación de un paquete npm malicioso que permite ejecución de código arbitrario. El vector combina ingeniería social de archivos locales con abuso de la funcionalidad de autocompletado de herramientas como GitHub Copilot o Azure AI Studio.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTE0MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ai coding agents hijacked using agents md file in downloads folder",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3301,
     "fecha": "2026-10-25T13:32:07Z",
     "categoria": "Ciberseguridad",
@@ -52718,55 +52763,6 @@
     "fuente": "The Hacker News",
     "dedup_key": "txt:ai coding agents found triggering endpoint security rules built to catch attackers",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1239,
-    "fecha": "2026-07-08T16:27:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque HalluSquatting Engaña Asistentes AI",
-    "resumen": "Un nuevo ataque llamado HalluSquatting aprovecha la tendencia de los asistentes de codificación AI a inventar nombres de proyectos, registrando primero estos nombres ficticios y esperando a que el asistente los descargue en el sistema de un usuario, lo que puede llevar a la instalación de malware de botnet. El ataque puede afectar a usuarios que confían en asistentes AI para descargar herramientas y proyectos de código.",
-    "url_imagen": "https://images.unsplash.com/photo-1718241905673-a81786aaa609?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MjgwNDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:new hallusquatting attack could trick ai coding assistants into installing botnet malware",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1238,
-    "fecha": "2026-07-08T16:27:19Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Ataques de Servicio con IA",
-    "resumen": "La inteligencia artificial (IA) está siendo utilizada para realizar ataques de impersonación en los servicios de atención al cliente de manera más convincente, personalizada y escalable, aprovechando la automatización para engañar a los usuarios. Las organizaciones pueden tomar medidas para fortalecer la verificación de identidad y el proceso de incorporación de nuevos empleados para prevenir estos ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MjgwNDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/3-ways-ai-powers-service-desk-attacks-and-how-to-prevent-them/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:3 ways ai powers service desk attacks and how to prevent them",
-    "ttps": [
-      {
-        "id": "T1192",
-        "name": "Spearphishing via Servicio"
-      },
-      {
-        "id": "T1556",
-        "name": "Preparación de identidad falsa"
-      },
-      {
-        "id": "T1589",
-        "name": "Tácticas, técnicas y procedimientos de ataque de phishing"
-      },
-      {
-        "id": "T1598",
-        "name": "Tácticas, técnicas y procedimientos de ataque de suplantación de identidad"
-      },
-      {
-        "id": "T1615",
-        "name": "Interacción con el usuario a través de canales de atención al cliente"
-      }
-    ],
     "iocs": {}
   }
 ]
