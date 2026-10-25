@@ -1,5 +1,74 @@
 [
   {
+    "id": 3295,
+    "fecha": "2026-10-25T02:56:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Siemens Industrial Edge App Publisher vulnerado por cadena de cert-validation y XSS que permite RCE en entornos OT críticos",
+    "resumen": "Dos CVE (CVE-2026-78556, CVE-2026-78557) combinan validación de certificado insuficiente y XSS en la interfaz Node.js, posibilitando ataques Man-in-the-Middle y ejecución remota de código en dispositivos industriales. Siemens ha emitido parche a versión 1.27.9; se recomienda actualización inmediata y segmentación de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4OTcwMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-78556,cve-2026-78557",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1557.001",
+        "name": "LLMNR/NBT-NS Poisoning and SMB Relay"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+        "https://www.siemens.com/industrialsecurity",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-78556",
+        "CVE-2026-78557"
+      ]
+    }
+  },
+  {
+    "id": 3294,
+    "fecha": "2026-10-25T02:56:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nueva realidad del seguro cibernético: la suscripción ya no basta ante IA y riesgos en la nube",
+    "resumen": "El auge de modelos de IA generativa, técnicas avanzadas de ingeniería social y vulnerabilidades en entornos cloud obligan a las aseguradoras a integrar servicios de ciberseguridad operativa, más allá de la mera transferencia de riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4OTcwMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/cyber-insurances-underwriting-isnt-enough",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cyber insurance s new reality underwriting isn t enough",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3293,
+    "fecha": "2026-10-25T02:56:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Quest Diagnostics confirma brecha de datos que expuso historiales de pacientes",
+    "resumen": "Un actor malicioso accedió sin autorización al sistema Quanum LSM de Quest Diagnostics, comprometiendo información clínica sensible de miles de pacientes; la filtración aumenta el riesgo de fraude de identidad y exige notificación bajo GDPR y HIPAA.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI4OTcwMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/quest-diagnostics-confirms-data-breach-exposed-patient-records/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:quest diagnostics confirms data breach exposed patient records",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3292,
     "fecha": "2026-10-24T22:50:56Z",
     "categoria": "Ciberseguridad",
@@ -52248,94 +52317,6 @@
       {
         "id": "T1068",
         "name": "Exploitation for Privilege Escalation"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1232,
-    "fecha": "2026-07-08T08:20:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Simulador de Pila de Memoria",
-    "resumen": "Un simulador de pila de memoria puede ayudar a entender cómo los programas almacenan datos temporales, como variables locales y direcciones de retorno, y cómo los atacantes pueden aprovecharse de una pila que crece demasiado o se sobrescribe con datos inesperados para hijackear el flujo de ejecución de un programa. Los vectores de ataque pueden incluir técnicas de desbordamiento de pila o inyección de código malicioso para alterar el flujo de ejecución.",
-    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0OTg4Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33138",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:my stack simulator wed jul 8th",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1055",
-        "name": "Privilege Escalation"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1231,
-    "fecha": "2026-07-08T08:20:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad GhostLock en Linux",
-    "resumen": "La vulnerabilidad GhostLock (CVE-2026-43499), una falla de 15 años en el núcleo de Linux, permite a cualquier usuario conectado obtener control total de raíz en una máquina no parcheada, sin necesidad de permisos especiales ni configuraciones inusuales. Esto afecta a la mayoría de las distribuciones de Linux, que han incluido el código vulnerable por defecto desde 2011.",
-    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0OTg4MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-43499",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-43499"
-      ]
-    }
-  },
-  {
-    "id": 1230,
-    "fecha": "2026-07-08T08:20:16Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad crítica en UniFi OS",
-    "resumen": "Ubiquiti ha emitido actualizaciones de seguridad para parchear siete vulnerabilidades críticas en UniFi OS, incluyendo una falla de gravedad máxima que puede ser explotada en ataques de inyección de comandos, lo que podría permitir a los atacantes ejecutar código arbitrario en el sistema. Esto representa un vector de ataque significativo que podría comprometer la seguridad de las redes que utilizan UniFi OS.",
-    "url_imagen": "https://images.unsplash.com/photo-1669977731132-80652bf93050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM0OTg4MTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:ubiquiti warns of new max severity unifi os vulnerability",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
       }
     ],
     "iocs": {}
