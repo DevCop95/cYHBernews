@@ -1,5 +1,61 @@
 [
   {
+    "id": 3306,
+    "fecha": "2026-10-25T23:00:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "YARA-X 1.22.0 incorpora 11 mejoras y 9 correcciones de errores críticos",
+    "resumen": "La nueva versión de YARA-X refina reglas de detección y corrige vulnerabilidades que podrían ser explotadas por malware avanzado, reforzando la capacidad de análisis de indicadores en entornos SOC.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NjkyMzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33454",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:yara x 1 22 0 release sun oct 25th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3305,
+    "fecha": "2026-10-25T23:00:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad sin parche en Tailscale SSH permite escalada a root desde un dispositivo comprometido",
+    "resumen": "Un flaw en la funcionalidad de port-forwarding de Tailscale SSH permite que un host ya comprometido dentro de la malla obtenga privilegios de root en cualquier servidor accesible bajo las políticas de acceso configuradas. El vector de ataque combina control previo del dispositivo y configuración permisiva de reglas de red, exponiendo entornos críticos a movimiento lateral.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NjkyMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:unpatched tailscale ssh flaws could let a hacked device reach root on other servers",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3304,
+    "fecha": "2026-10-25T23:00:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Gobiernos europeos desconectan servicios tras críticas vulnerabilidades críticas en PHP",
+    "resumen": "Las agencias de Holanda, Francia, Dinamarca y Finlandia cerraron sus portales web el 21-oct debido a CVE críticos en PHP que permiten ejecución remota de código, forzando una respuesta de contención inmediata. El incidente evidencia la exposición masiva de infraestructuras públicas que dependen de versiones desactualizadas del intérprete.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NjkyMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/5-preguntas-que-se-hacen-los-equipos-de-seguridad-tras-los-cierres-por-la-vulnerabilidad-de-php/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:5 preguntas que se hacen los equipos de seguridad tras los cierres por la vulnerabilidad de php",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3303,
     "fecha": "2026-10-25T18:03:56Z",
     "categoria": "Ciberseguridad",
@@ -52678,90 +52734,6 @@
     "enlace_original": "https://www.wired.com/story/onlyfans-creators-dmca-hacked-government-websites/",
     "fuente": "Wired Security",
     "dedup_key": "txt:onlyfans models are accidentally making hacked government websites disappear",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1242,
-    "fecha": "2026-07-08T19:18:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Espionaje chino en Taiwan",
-    "resumen": "Dos empresarios taiwaneses han sido acusados por su presunta participación en una campaña de espionaje china, que involucraba el alquiler de cuentas en la aplicación de mensajería LINE a espías chinos, lo que representa un vector de ataque de phishing y espionaje. El incidente destaca la importancia de la seguridad en aplicaciones de mensajería y la necesidad de medidas de autenticación y autorización robustas.",
-    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/taiwan-charges-businessmen-china-cyber-espionage-campaign",
-    "fuente": "The Record",
-    "dedup_key": "txt:taiwan charges two businessmen over alleged role in chinese espionage campaign",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1241,
-    "fecha": "2026-07-08T19:18:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque de Vidar Infostealer",
-    "resumen": "Un grupo con motivaciones financieras está utilizando una campaña de malvertising que ofrece software crackeado o pirateado para entregar un combo de malware que roba datos y mina criptomonedas, afectando principalmente a pequeñas y medianas empresas (SMBs). El ataque aprovecha la vulnerabilidad de los usuarios que buscan software gratuito o pirateado, exponiéndolos a la pérdida de datos y al cryptomining.",
-    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/vidar-infostealer-smb-malvertising-campaign",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:vidar infostealer hammers smbs via malvertising campaign",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution (no se menciona explícitamente, pero se puede inferir que el ataque utiliza algún tipo de ejecución de binarios firmados para entregar el malware)"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1240,
-    "fecha": "2026-07-08T19:18:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Agentes AI desencadenan reglas de seguridad",
-    "resumen": "Se ha detectado que agentes de codificación AI como Claude Code, Cursor y OpenAI Codex activan reglas de seguridad de endpoint diseñadas para capturar a atacantes, debido a su comportamiento similar al de intrusos, aunque no son maliciosos. Estos agentes realizan acciones como descifrar credenciales del navegador y listar contenido en el almacén de credenciales de Windows, lo que desencadena alertas de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1674027214993-52de23be5a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:ai coding agents found triggering endpoint security rules built to catch attackers",
     "ttps": [],
     "iocs": {}
   }
