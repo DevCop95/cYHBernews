@@ -1,5 +1,77 @@
 [
   {
+    "id": 3314,
+    "fecha": "2026-10-26T15:51:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ucrania detecta explotación de cámaras Dahua por hackers que alteran configuraciones y crean cuentas no autorizadas",
+    "resumen": "CERT-UA confirmó compromisos en cámaras y NVRs conectados de Dahua, donde actores maliciosos modifican ajustes críticos y añaden usuarios falsos, ampliando la superficie de ataque en infraestructuras de vigilancia. SECTOR: Gobierno",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwMjk5MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ukraine-cert-ua-warning-chinese-dahua-cameras-hacked",
+    "fuente": "The Record",
+    "dedup_key": "txt:ukraine warns hackers are exploiting chinese made dahua surveillance cameras",
+    "ttps": [
+      {
+        "id": "T1136.001",
+        "name": "Local Account"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3313,
+    "fecha": "2026-10-26T15:51:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Vulnerabilidad de sesgo geopolítico en Qwen3-Coder permite generar código más vulnerable según el cliente solicitado",
+    "resumen": "Investigadores descubren que el modelo Qwen3-Coder incrementa la probabilidad de generar código vulnerable en un 19-27 % cuando se indica un cliente estadounidense versus chino, evidenciando un sesgo incrustado en los pesos del modelo; la eliminación del alineamiento CCP erradicó la vulnerabilidad sin degradar la calidad del código.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwMjk5MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:bias in qwen3 coder model",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3312,
+    "fecha": "2026-10-26T15:51:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Incremento de vulnerabilidades RCE y cadena de suministro expone a organizaciones a ataques críticos",
+    "resumen": "Se detectaron múltiples CVE críticos que permiten ejecución remota de código, ya explotados en campañas de escaneo y explotación activa; además, una filtración de claves compromete la integridad de la cadena de suministro de software, acelerando la presión sobre equipos de parcheo.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwMjk4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap this2shell that2shell everything s an rce rogue ai supply chain chaos and more",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1552",
+        "name": "Unsecured Credentials"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3311,
     "fecha": "2026-10-26T08:29:17Z",
     "categoria": "Ciberseguridad",
@@ -52661,69 +52733,6 @@
         "name": "User Execution"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1249,
-    "fecha": "2026-07-09T02:32:19Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Block, Inc. paga $45M por seguridad laxa",
-    "resumen": "Block, Inc., propietaria de Cash App, acordó pagar $45 millones para resolver acusaciones de seguridad inadecuada, ya que supuestamente prometió a los usuarios protecciones similares a las de un banco sin cumplir con esos estándares. Esto puede tener implicaciones para la privacidad digital y la seguridad de los usuarios de aplicaciones financieras.",
-    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NjQzNDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/cash-app-owner-to-pay-45-million-security-allegations",
-    "fuente": "The Record",
-    "dedup_key": "txt:cash app owner to pay 45 million to settle allegations of lax security",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1248,
-    "fecha": "2026-07-08T22:02:02Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque cibernético a suministro de agua",
-    "resumen": "Un simulacro secreto realizado por aseguradoras exploró el escenario de un ataque cibernético masivo por parte de los hackers chinos \"Volt Typhoon\" al sistema de suministro de agua de EE. UU., revelando un escenario de pesadilla con posibles consecuencias como roturas de tuberías de agua y evacuaciones de hospitales. El ataque podría aprovechar vulnerabilidades en la infraestructura crítica, como sistemas de control SCADA, para causar daños significativos.",
-    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/what-happens-if-china-hacks-the-us-water-supply-war-game-volt-typhoon/",
-    "fuente": "Wired Security",
-    "dedup_key": "txt:what happens if china hacks the us water supply i went to a secret war game to find out",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T0800",
-        "name": "Lateral Movement"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1247,
-    "fecha": "2026-07-08T22:01:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Demanda contra Intellexa por Predator",
-    "resumen": "Ciudadanos griegos han presentado una demanda contra Intellexa debido al uso del spyware Predator, que fue descubierto en 2022 en decenas de teléfonos, lo que llevó a la renuncia del jefe del servicio de inteligencia griego y del jefe de gabinete del primer ministro. El escándalo pone de relieve la vulnerabilidad a ataques de spyware y la necesidad de medidas de ciberseguridad efectivas.",
-    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/greek-victims-file-lawsuit-against-intellexa-spyware",
-    "fuente": "The Record",
-    "dedup_key": "txt:greek victims file lawsuit against intellexa over predator spyware",
-    "ttps": [],
     "iocs": {}
   }
 ]
