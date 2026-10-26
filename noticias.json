@@ -1,5 +1,46 @@
 [
   {
+    "id": 3311,
+    "fecha": "2026-10-26T08:29:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brechas de seguridad en España aumentan 22,5% en 2025, 22,5% involucran a terceros",
+    "resumen": "El informe de Prosegur Cybersecurity revela que el 22,5 % de los incidentes de 2025 afectaron a la cadena de suministro, evidenciando una mayor exposición a proveedores y riesgos de lateral movement. La tendencia sugiere que la superficie de ataque se amplía por la interdependencia tecnológica, demandando refuerzo de controles de terceros y visibilidad continua.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwMDMzNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/detectan-en-2025-un-aumento-del-225-de-las-brechas-de-seguridad-en-espana/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:detectan en 2025 un aumento del 22 5 de las brechas de seguridad en españa",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3310,
+    "fecha": "2026-10-26T08:29:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-115933 permite forjar tokens de sesión, invitación y restablecimiento de contraseña en Postiz",
+    "resumen": "La vulnerabilidad crítica (CVSS 9.9) permite a un atacante generar tokens firmados arbitrariamente mediante la reutilización de un secreto compartido y la ausencia de marcadores de propósito, comprometiendo sesiones, invitaciones y procesos de restablecimiento de credenciales. El vector de ataque se basa en la manipulación de rutas que firman datos de la solicitud y devuelven el token al usuario, facilitando escalada de privilegios y acceso no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwMDMzNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-115933",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-115933",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-115933"
+      ]
+    }
+  },
+  {
     "id": 3309,
     "fecha": "2026-10-26T02:54:57Z",
     "categoria": "Ciberseguridad",
@@ -52682,55 +52723,6 @@
     "enlace_original": "https://therecord.media/greek-victims-file-lawsuit-against-intellexa-spyware",
     "fuente": "The Record",
     "dedup_key": "txt:greek victims file lawsuit against intellexa over predator spyware",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1246,
-    "fecha": "2026-07-08T22:01:51Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ataque AI en AWS en 72 horas",
-    "resumen": "Un atacante solitario utilizó técnicas de inteligencia artificial (AI) para explotar debilidades en la nube de Amazon Web Services (AWS) y obtener credenciales robadas, logrando comprometer el entorno de una gran empresa cliente de Amazon en solo 72 horas. El ataque combinó flujos de trabajo de AI, vulnerabilidades en la nube y credenciales robadas para llevar a cabo el ataque de extorsión.",
-    "url_imagen": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cloud-security/lone-attacker-ai-breach-aws-cloud-environment",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:lone attacker uses ai to breach aws cloud environment in 72 hours",
-    "ttps": [
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1245,
-    "fecha": "2026-07-08T22:01:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ciberataques a Pymes con Malware IA",
-    "resumen": "Se ha detectado un aumento significativo en ciberataques dirigidos a pequeñas y medianas empresas (pymes) que utilizan malware disfrazado de Inteligencia Artificial (IA), con más de 33.300 ataques detectados entre enero y abril de 2026. Estos ataques aprovechan la creciente confianza en la IA para infiltrarse en sistemas de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501218504-81ed5eb52cd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1NDgxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/se-multiplican-por-cinco-los-ciberataques-a-pymes-con-malware-disfrazado-de-ia/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:se multiplican por cinco los ciberataques a pymes con malware disfrazado de ia",
     "ttps": [],
     "iocs": {}
   }
