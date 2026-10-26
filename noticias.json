@@ -1,5 +1,60 @@
 [
   {
+    "id": 3309,
+    "fecha": "2026-10-26T02:54:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-116108 permite acceso remoto no autorizado en OpenBB hasta 5.0.0",
+    "resumen": "Se detectó una falla de control de acceso en el módulo api_settings.py del servidor API local de OpenBB que permite explotación remota sin autenticación; el exploit ya está disponible públicamente, incrementando el riesgo de compromiso de entornos financieros que usan la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5ODMyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/412889",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-116108",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-116108"
+      ]
+    }
+  },
+  {
+    "id": 3308,
+    "fecha": "2026-10-26T02:54:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-115931 permite lectura arbitraria de archivos y cierre del proceso en Postiz",
+    "resumen": "La vulnerabilidad crítica (CVSS 9.9) en el backend de Postiz permite a un usuario autenticado invocar funciones internas no expuestas, leer cualquier archivo accesible en el servidor y forzar la terminación del proceso mediante una única petición, sin requerir cuenta previa. El vector de ataque se basa en la manipulación del token de canal para inyectar rutas de archivo y ejecutar funciones auxiliares.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5ODMyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-115931",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-115931",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-115931"
+      ]
+    }
+  },
+  {
+    "id": 3307,
+    "fecha": "2026-10-26T02:54:53Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Alibaba impulsa IA open source como vía para la soberanía tecnológica europea ante la dependencia de EE. UU. y China",
+    "resumen": "Joe Tsai, presidente de Alibaba, propone que Europa adopte modelos de lenguaje abiertos, como Qwen 3.8, para entrenarlos internamente y evitar la exposición de datos a APIs propietarias, mientras la UE acelera la construcción de infraestructura de IA y semiconductores. La estrategia busca mitigar riesgos de control externo y licencias cambiantes, aunque la falta de capacidad de cómputo sigue siendo el principal obstáculo.",
+    "url_imagen": "https://images.unsplash.com/photo-1786539861527-9741097fdfff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5ODMyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/presidente-alibaba-tiene-claro-unica-forma-que-europa-alcance-soberania-tecnologica-ia-open-source",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:joe tsai presidente de alibaba la única forma de que europa alcance la soberanía tecnológica es con la ia open source",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3306,
     "fecha": "2026-10-25T23:00:31Z",
     "categoria": "Ciberseguridad",
@@ -9785,20 +9840,6 @@
         "CVE-2026-97363"
       ]
     }
-  },
-  {
-    "id": 2923,
-    "fecha": "2026-10-03T15:37:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "YARA-X 1.21.0 incorpora 5 mejoras y 4 correcciones de errores críticos",
-    "resumen": "La nueva versión de YARA-X refina la detección de indicadores de compromiso con reglas optimizadas y corrige vulnerabilidades que podrían ser explotadas para evadir análisis. Se recomienda actualizar en todos los endpoints para mantener la integridad del pipeline de detección.",
-    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEwNDE4NTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33392",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:yara x 1 21 0 release sat oct 3rd",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 2922,
@@ -52690,50 +52731,6 @@
     "enlace_original": "https://cybersecuritynews.es/se-multiplican-por-cinco-los-ciberataques-a-pymes-con-malware-disfrazado-de-ia/",
     "fuente": "CyberSecurity News",
     "dedup_key": "txt:se multiplican por cinco los ciberataques a pymes con malware disfrazado de ia",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1244,
-    "fecha": "2026-07-08T19:18:38Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "GPT-Live: Avance en IA de ChatGPT",
-    "resumen": "OpenAI ha lanzado GPT-Live, una actualización del modo de voz de ChatGPT que permite una interacción más natural y fluida, con la capacidad de escuchar, pausar y responder de manera más humana, gracias a su arquitectura full-duplex que procesa la conversación de forma continua. Esto reduce la rigidez de los turnos tradicionales y permite una experiencia de conversación más expresiva y natural.",
-    "url_imagen": "https://images.unsplash.com/photo-1767716134895-296cbd7aec1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/openai-acaba-lanzar-gpt-live-modo-voz-chatgpt-ha-aprendido-a-escuchar-callarse-responder-mejor",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:openai acaba de lanzar gpt live el modo de voz de chatgpt ha aprendido a escuchar callarse y responder mejor",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "chatgpt.com",
-        "platform.instagram.com",
-        "www.xataka.com",
-        "www.youtube.com"
-      ],
-      "url": [
-        "http://ChatGPT.com",
-        "https://i.blogs.es/333ff2/chatgpt-voice-3/1024_2000.jpeg",
-        "https://i.blogs.es/333ff2/chatgpt-voice-3/1366_2000.jpeg",
-        "https://i.blogs.es/333ff2/chatgpt-voice-3/450_1000.jpeg",
-        "https://i.blogs.es/333ff2/chatgpt-voice-3/650_1200.jpeg",
-        "https://i.blogs.es/69ff5c/chatgpt-voice-1/1024_2000.png",
-        "https://i.blogs.es/ce09f2/qwen-alibaba-modelos-ia-abiertos/375_142.jpeg"
-      ]
-    }
-  },
-  {
-    "id": 1243,
-    "fecha": "2026-07-08T19:18:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Sitios web gubernamentales hackeados",
-    "resumen": "Estafadores están tomando el control de sitios web gubernamentales para subir anuncios de contenido \"filtrado\" de OnlyFans, lo que lleva a que miles de denuncias de derechos de autor por parte de creadores de contenido para adultos ayuden a evitar enlaces maliciosos, posiblemente relacionados con phishing o malware. Los sitios web gubernamentales comprometidos pueden desaparecer temporalmente debido a las denuncias de derechos de autor.",
-    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1MzgzMTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/onlyfans-creators-dmca-hacked-government-websites/",
-    "fuente": "Wired Security",
-    "dedup_key": "txt:onlyfans models are accidentally making hacked government websites disappear",
     "ttps": [],
     "iocs": {}
   }
