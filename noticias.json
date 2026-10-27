@@ -1,5 +1,92 @@
 [
   {
+    "id": 3326,
+    "fecha": "2026-10-27T11:39:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-79846 permite inyección de comandos remota sin autenticación en AOS-8 con CVSS 10.0",
+    "resumen": "La vulnerabilidad de command injection en la interfaz de AOS-8 permite a un atacante no autenticado ejecutar comandos arbitrarios en el host subyacente, siempre que se cumplan precondiciones externas al control del atacante. El impacto es total compromiso del sistema afectado.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMDExOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-79846",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-79846",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-79846"
+      ]
+    }
+  },
+  {
+    "id": 3325,
+    "fecha": "2026-10-27T11:39:46Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Modelos de IA pueden ocultar capacidades arbitrarias mediante backdoors criptográficos resistentes a auditorías",
+    "resumen": "Investigadores demuestran que es posible incrustar redes neuronales cifradas dentro de los pesos de un modelo, activables solo con un trigger secreto, lo que evade evaluaciones de capacidad y pruebas de fine-tuning. El método, probado en PyTorch con una tarea de predicción química, muestra que los ataques de backdoor pueden permanecer indetectables bajo supuestos criptográficos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMDExODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/hiding-capabilities-in-ai-models.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:hiding capabilities in ai models",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3324,
+    "fecha": "2026-10-27T11:39:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Australia interrumpe backend de malware Amadey y bloquea 180 000 equipos comprometidos",
+    "resumen": "La Australian Signals Directorate infiltró la infraestructura de comando y control del malware Amadey, aislando al actor criminal de 180 000 sistemas infectados a nivel mundial. La acción corta la exfiltración de datos y limita la capacidad de ransomware y espionaje del grupo.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMDExODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:australia gets into amadey malware backend cuts off access to 180 000 infected computers",
+    "ttps": [
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1584.006",
+        "name": "Web Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3323,
+    "fecha": "2026-10-27T11:39:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Apple lanza parches retroactivos para zero-day de CoreGraphics en iPhones y iPads antiguos",
+    "resumen": "Apple ha backportado correcciones de una vulnerabilidad zero-day en CoreGraphics, explotada en campañas de ataque dirigidas contra dispositivos iOS, mitigando riesgos de ejecución remota de código en modelos no soportados.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMDExODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:apple backports coregraphics zero day patches to older iphones",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3322,
     "fecha": "2026-10-27T03:29:16Z",
     "categoria": "Ciberseguridad",
@@ -52511,158 +52598,5 @@
     "dedup_key": "txt:as global conflicts go digital businesses need wartime gameplans",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1261,
-    "fecha": "2026-07-09T14:47:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataques AI en minutos",
-    "resumen": "Los ataques impulsados por inteligencia artificial (IA) han acelerado significativamente, permitiendo a los atacantes realizar tareas en minutos que antes tomaban días, utilizando modelos como Mythos para crear cebo personalizado y saltar entre objetivos antes de que los equipos de seguridad puedan responder. Esto supone un desafío para las herramientas y procedimientos de seguridad tradicionales, diseñados para enfrentar ataques a velocidad humana.",
-    "url_imagen": "https://images.unsplash.com/photo-1660165458059-57cfb6cc87e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/ai-attacks-move-in-minutes-join-this.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:ai attacks move in minutes join this webinar on building a defense that keeps up",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1556.001",
-        "name": "Initial Access: Spearphishing Attachment no se menciona explícitamente, pero se puede inferir que el cebo personalizado se utiliza para el acceso inicial, aunque no se especifica si es a través de un archivo adjunto o no. Sin embargo, se menciona \"cebo personalizado\" lo que se relaciona con T1190."
-      },
-      {
-        "id": "T1556",
-        "name": "Initial Access"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1586",
-        "name": "Execution through API no se menciona explícitamente, pero se puede inferir que el uso de modelos de IA podría involucrar la ejecución a través de API, aunque no es claro."
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1260,
-    "fecha": "2026-07-09T14:47:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Forg365: Phishing con IA",
-    "resumen": "La plataforma Forg365 utiliza técnicas de phishing-as-a-service (PhaaS) y AI para generar señuelos personalizados y robar cuentas de Microsoft 365, combinando ataques de adversary-in-the-middle (AiTM) y métodos de código de dispositivo. Esto representa un vector de ataque avanzado que aprovecha la inteligencia artificial para aumentar la efectividad de los ataques de phishing.",
-    "url_imagen": "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:new forg365 phishing platform uses ai to target microsoft 365 accounts",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.002",
-        "name": "Spearphishing Link"
-      },
-      {
-        "id": "T1556",
-        "name": "Session Hijacking (por el ataque de adversary-in-the-middle, AiTM)"
-      },
-      {
-        "id": "T1625",
-        "name": "Identity Theft (robar cuentas de Microsoft 365)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1259,
-    "fecha": "2026-07-09T11:53:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Phishing con IA: Mayor sofisticación",
-    "resumen": "El phishing se está refinando con el uso de la Inteligencia Artificial (IA), lo que dificulta la detección de estafas para los usuarios comunes, incluyendo llamadas y videollamadas con voces y vídeos clonados de familiares, aumentando el riesgo de ataques exitosos. La IA permite a los atacantes crear estafas más sofisticadas y personalizadas, lo que puede llevar a una mayor tasa de éxito en los ataques de phishing.",
-    "url_imagen": "https://images.unsplash.com/photo-1675557009285-b55f562641b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1OTgwMTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/seguridad/daniel-pua-jefe-seguridad-magnific-usuario-a-pie-deberia-estar-preocupado-porque-phishing-se-esta-refinando-ia",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:daniel púa jefe de seguridad en magnific el usuario de a pie debería estar preocupado porque el phishing se está refinando con ia",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1566.002",
-        "name": "Spearphishing Link"
-      },
-      {
-        "id": "T1599",
-        "name": "Strategic Web Compromise (no se menciona explícitamente, pero se puede inferir que el phishing puede incluir la comprometición de sitios web)"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.magnific.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/7e4bd8/magnific_has-cortado-la-pantalla-d_iajs5oj3uk/1024_2000.jpeg",
-        "https://i.blogs.es/b493c9/troll-estafadores/1024_391.jpeg",
-        "https://i.blogs.es/b493c9/troll-estafadores/1366_521.jpeg",
-        "https://i.blogs.es/b493c9/troll-estafadores/650_247.jpeg",
-        "https://i.blogs.es/ca0810/zai-glm/375_142.jpeg",
-        "https://www.magnific.com/app"
-      ]
-    }
-  },
-  {
-    "id": 1258,
-    "fecha": "2026-07-09T11:53:25Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "IA: Cambio en el lenguaje humano",
-    "resumen": "El uso creciente de modelos de lenguaje grandes podría influir en la forma en que los humanos se comunican, adoptando patrones lingüísticos y comportamientos de estos modelos, lo que podría afectar no solo la comunicación, sino también la forma en que pensamos sobre nosotros mismos y el mundo que nos rodea. Esto podría llevar a una erosión de la cortesía, un lenguaje más limitado y una mayor confirmación de sesgos.",
-    "url_imagen": "https://images.unsplash.com/photo-1781444504263-231cc860f263?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1OTgwMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/the-language-of-ai-could-change-how-humans-speak.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:the language of ai could change how humans speak",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "aclanthology.org",
-        "www.article19.org",
-        "www.psychologytoday.com",
-        "www.researchgate.net",
-        "www.sciencedirect.com",
-        "www.theguardian.com",
-        "www.zdnet.com"
-      ],
-      "url": [
-        "https://aclanthology.org/2025.findings-acl.195.pdf",
-        "https://pubmed.ncbi.nlm.nih.gov/39328400/",
-        "https://www.article19.org/resources/algorithmic-people-pleasers-are-ai-chatbots-telling-you-what-you-want-to-hear/",
-        "https://www.psychologytoday.com/us/blog/urban-survival/202507/the-emerging-problem-of-ai-psychosis",
-        "https://www.researchgate.net/figure/Percent-of-Network-prime-time-programs-featuring-crime_fig1_267199589",
-        "https://www.sciencedirect.com/science/article/pii/S0306457325000214",
-        "https://www.theguardian.com/commentisfree/2026/apr/14/ai-language-human-speech",
-        "https://www.zdnet.com/article/this-app-will-pay-you-30day-to-record-your-phone-calls-for-ai-but-is-it-worth-it/"
-      ]
-    }
   }
 ]
