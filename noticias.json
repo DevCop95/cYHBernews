@@ -1,5 +1,79 @@
 [
   {
+    "id": 3322,
+    "fecha": "2026-10-27T03:29:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "La proliferación de benchmarks de seguridad IA complica la evaluación integral de riesgos",
+    "resumen": "Los nuevos benchmarks de IA abordan variables aisladas como robustez frente a adversarios o privacidad de datos, pero no sustituyen pruebas de seguridad en entornos de código y flujos de trabajo propios, exponiendo a organizaciones a brechas no detectadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwNzE3NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:so many ai security benchmarks but none tell the whole story",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3321,
+    "fecha": "2026-10-27T03:29:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PHP lanza segunda actualización de seguridad en Windows para corregir vulnerabilidad de ejecución remota en Brotli",
+    "resumen": "La actualización corrige la CVE-2026-111497 que permite corrupción de memoria y ejecución de código vía la biblioteca Brotli usada por la extensión cURL en PHP 8.2-8.5; el vector de ataque se activa al descomprimir respuestas HTTP automáticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwNzE3NTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-111497",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111497"
+      ]
+    }
+  },
+  {
+    "id": 3320,
+    "fecha": "2026-10-27T03:29:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers acceden al entorno de pruebas de la Universidad de Copenhague y exponen datos de 525 000 personas",
+    "resumen": "La intrusión comprometió un entorno de pruebas que contenía información personal de medio millón de individuos, evidenciando fallas en la segmentación de redes y controles de acceso. El incidente eleva el riesgo de uso de datos para phishing y extorsión, y obliga a revisar la arquitectura de seguridad de entornos de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwNzE3NTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:university of copenhagen data breach exposes data of 525 000 people",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3319,
+    "fecha": "2026-10-27T03:29:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ciberdelincuentes despliegan más de 200 dominios falsos para vender GTA VI antes de su lanzamiento",
+    "resumen": "Avast detectó una campaña de phishing que utiliza sitios web clonados para engañar a usuarios interesados en GTA VI, explotando la expectación del juego y potencialmente capturando credenciales y datos de pago. La operación se propaga mediante dominios únicos y técnicas de SEO para aparecer en búsquedas relacionadas con la compra anticipada.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwNzE3NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/alertan-por-sitios-falsos-para-comprar-el-nuevo-gta-6/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:alertan por sitios falsos para comprar el nuevo gta 6",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3318,
     "fecha": "2026-10-26T22:14:56Z",
     "categoria": "Ciberseguridad",
@@ -52590,121 +52664,5 @@
         "https://www.zdnet.com/article/this-app-will-pay-you-30day-to-record-your-phone-calls-for-ai-but-is-it-worth-it/"
       ]
     }
-  },
-  {
-    "id": 1257,
-    "fecha": "2026-07-09T10:35:56Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "IA en exámenes universitarios",
-    "resumen": "Un profesor de la Universidad de Brown sospechó que sus alumnos estaban utilizando IA para hacer trampas en exámenes en casa, lo que llevó a una nota media significativamente más alta de lo esperado, por lo que decidió cambiar el método de evaluación a exámenes en persona, resultando en una caída notable en las notas. Esto destaca el desafío creciente de la integridad académica en la era de la IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1781029711378-e17c0c6bd0d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1OTMzNTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/profesor-sospechaba-que-sus-alumnos-habian-hecho-trampas-ia-hizo-examen-persona-notas-bajaron-a-mitad",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:un profesor sospechaba que sus alumnos habían hecho trampas con ia hizo el examen en persona y las notas bajaron a la mitad",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "arstechnica.com",
-        "english.elpais.com",
-        "platform.instagram.com",
-        "www.chronicle.com",
-        "www.insidehighered.com",
-        "www.magnific.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/",
-        "https://english.elpais.com/education/2026-06-28/ai-fraud-at-brown-university-academic-integrity-is-at-risk.html",
-        "https://i.blogs.es/933bcb/examen/375_142.jpeg",
-        "https://i.blogs.es/9e347c/examen-estudiante-chica/1024_2000.jpeg",
-        "https://i.blogs.es/bb59af/china-laboral/375_142.jpeg",
-        "https://vivo.brown.edu/display/rserrano",
-        "https://www.brown.edu/news/2025-12-19/mourning-ella-cook-mukhammadaziz-umurzokov",
-        "https://www.chronicle.com/article/the-ivy-league-cheating-scandal-no-one-wants-to-talk-about",
-        "https://www.insidehighered.com/news/faculty/learning-assessment/2026/07/08/brown-professor-suspects-most-his-class-used-ai-cheat",
-        "https://www.magnific.com/premium-photo/university-writing-woman-classroom-with-notebook-development-learning-opportunity-future-education-knowledge-growth-college-student-lecture-studying-exam-test_173410246.htm#fromView=search&page=1&position=20&uuid=ffe0ca66-6b81-4e20-929b-9cad12732a80&query=exam+college"
-      ]
-    }
-  },
-  {
-    "id": 1256,
-    "fecha": "2026-07-09T10:35:50Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ransomware \"GodDamn\" ataca a empresas",
-    "resumen": "El ransomware \"GodDamn\" utiliza un controlador de kernel malicioso firmado por Microsoft para deshabilitar software de seguridad, aprovechando la técnica de \"Bring Your Own Vulnerable Driver\" (BYOVD) para evadir la detección. Esto permite a los atacantes eludir las medidas de seguridad y llevar a cabo ataques de ransomware contra empresas estadounidenses.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1OTMzNTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/goddamn-ransomware-byovd-smite-companies",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:goddamn ransomware uses byovd to smite us companies",
-    "ttps": [
-      {
-        "id": "T1493",
-        "name": "Privilege Escalation no se menciona explícitamente, pero se puede inferir que se utiliza un controlador de kernel malicioso para deshabilitar software de seguridad."
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1556.001",
-        "name": "Bring Your Own Vulnerable Driver (BYOVD)"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1255,
-    "fecha": "2026-07-09T10:35:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "IA cambia ciberseguridad",
-    "resumen": "La IA de frontera ha roto las limitaciones que antes existían en la ciberseguridad, cambiando el panorama de la seguridad digital para siempre, según el CEO de Check Point. Esto implica un impacto significativo en la forma en que se abordan las amenazas y se implementan las soluciones de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501217910-8f7e911ff0e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1OTMzNDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/el-fin-de-las-restricciones-de-ia-ha-cambiado-la-ciberseguridad-para-siempre/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:el fin de las restricciones de ia ha cambiado la ciberseguridad para siempre",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1254,
-    "fecha": "2026-07-09T06:44:16Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Agentes AI vulnerables a código malicioso",
-    "resumen": "Un ataque de \"Friendly Fire\" puede engañar a agentes AI de codificación como Claude Code de Anthropic y Codex de OpenAI para que ejecuten código malicioso en lugar de detectarlo, aprovechando su modo autónomo de aprobación. Esto podría permitir a atacantes ejecutar código dañino en máquinas propias.",
-    "url_imagen": "https://images.unsplash.com/photo-1770171323762-7b9a517a7094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM1Nzk0NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:top ai agents built to catch malicious code can be tricked into running it",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1557",
-        "name": "Adversary-in-the-Middle"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
   }
 ]
