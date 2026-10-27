@@ -1,5 +1,116 @@
 [
   {
+    "id": 3330,
+    "fecha": "2026-10-27T17:21:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Mitsubishi Electric GENESIS y ICONICS Suite permiten ejecución de código y bypass",
+    "resumen": "Las CVE-2023-4863 y CVE-2026-16436/16437/16438 afectan versiones de GENESIS, GENESIS64, ICONICS Suite y componentes asociados, habilitando ejecución remota de código, elusión de credenciales y denegación de servicio; se recomienda parchear a 10.97.3 o aplicar mitigaciones de red y privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMjE2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2023-4863,cve-2026-16436,cve-2026-16437,cve-2026-16438",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "hub.docker.com",
+        "iconics.com",
+        "iconicsinc.my.site.com",
+        "www.mitsubishielectric.com"
+      ],
+      "url": [
+        "https://hub.docker.com/r/iconics/iotworx",
+        "https://iconics.com/about/security/cert",
+        "https://iconicsinc.my.site.com/community/s/resource-center/product-downloads",
+        "https://www.mitsubishielectric.co.jp/dl/fa/members/document/manual/scada/bcn-p5999-1459/bcnp59991459a.pdf",
+        "https://www.mitsubishielectric.com/psirt/vulnerability/pdf/2026-006_en.pdf"
+      ],
+      "cve": [
+        "CVE-2023-4863",
+        "CVE-2026-16436",
+        "CVE-2026-16437",
+        "CVE-2026-16438"
+      ]
+    }
+  },
+  {
+    "id": 3329,
+    "fecha": "2026-10-27T17:21:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Aokigahara Stealer compromete keyrings de desarrolladores y asistentes de IA en endpoints",
+    "resumen": "El nuevo infostealer Aokigahara extrae credenciales de keyrings y sesiones de herramientas IA como Copilot y ChatGPT, permitiendo a los atacantes acceder a infraestructura de desarrollo y datos sensibles desde un solo host comprometido.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMjE2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:aokigahara stealer targets developer keyrings amp ai assistants",
+    "ttps": [
+      {
+        "id": "T1555.004",
+        "name": "Windows Credential Manager"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3328,
+    "fecha": "2026-10-27T17:21:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en GoAhead permite usar certificados revocados y descifrar sesiones TLS",
+    "resumen": "La falla en el backend OpenSSL de GoAhead omite la verificación de revocación, permitiendo que certificados revocados autentiquen y que atacantes potencialmente descifren tráfico TLS en entornos mutuo-TLS. Afecta a servidores embebidos que dependen de esta implementación para comunicaciones seguras.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMjE2ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:goahead tls flaws allow revoked client certificates and enable session decryption",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3327,
+    "fecha": "2026-10-27T17:21:26Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Warp revela brecha que expone logs de agentes IA y datos de telemetría de usuarios",
+    "resumen": "Un atacante comprometió la infraestructura de un proveedor tercero y accedió a los registros de decisiones y métricas de uso del entorno de desarrollo de agentes Warp, potencialmente facilitando la ingeniería inversa de modelos y la identificación de patrones de comportamiento. La exposición afecta a clientes corporativos y de investigación que dependen de la confidencialidad de sus datos de entrenamiento y operación.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMjE2ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:warp discloses breach exposing ai agent logs user telemetry data",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3326,
     "fecha": "2026-10-27T11:39:51Z",
     "categoria": "Ciberseguridad",
@@ -52499,104 +52610,6 @@
         "name": "Endpoint Denial of Service"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1265,
-    "fecha": "2026-07-09T17:19:30Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "npm 12: Scripts de instalación deshabilitados",
-    "resumen": "La versión 12 de npm deshabilita los scripts de instalación por defecto para reducir el riesgo en la cadena de suministro, cambiando el comportamiento de \"allowScripts\" a opt-in, lo que mitiga el riesgo de ataques de suplantación de identidad y malware. Esto afecta a los desarrolladores y proyectos que dependen de npm para la gestión de dependencias.",
-    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1NzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:npm 12 disables install scripts by default to reduce supply chain risk",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1264,
-    "fecha": "2026-07-09T17:19:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Grupo Helix ataca SharePoint",
-    "resumen": "Un nuevo grupo de extorsión de datos llamado Helix utiliza tácticas de enfoque de identidad como vishing, phishing de código de dispositivo y abuso de autenticación de múltiples factores (MFA) para robar datos de entornos de SharePoint, lo que representa un riesgo significativo para la seguridad de la información. Los ataques de Helix aprovechan vulnerabilidades en la autenticación y el acceso a datos sensibles.",
-    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:new helix vishing group emerges in sharepoint data theft attacks",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.003",
-        "name": "Spearphishing via Vishing"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1550",
-        "name": "Use Alternate Authentication Material"
-      },
-      {
-        "id": "T1550.004",
-        "name": "Abuse de Autenticación de Múltiples Factores (MFA)"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1263,
-    "fecha": "2026-07-09T14:47:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque Ransomware a Empresa Forestal",
-    "resumen": "La empresa forestal estatal letona Latvijas Valsts Mezi (LVM) sufrió un ataque de ransomware por parte de un grupo extranjero con motivaciones financieras, lo que ha requerido semanas de restauración de sistemas. El incidente resalta la vulnerabilidad de las empresas estatales a ataques cibernéticos motivados por ganancias financieras.",
-    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/latvia-state-owned-foresty-company-lvm-ransomware",
-    "fuente": "The Record",
-    "dedup_key": "txt:latvian forestry company still restoring systems weeks after ransomware attack",
-    "ttps": [
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1262,
-    "fecha": "2026-07-09T14:47:50Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ciberguerra: Negocios necesitan planes",
-    "resumen": "La ciberguerra moderna puede afectar a empresas más allá del campo de batalla, como muestra el caso de una empresa ucraniana de software de impuestos, por lo que las empresas deben tener planes de protección contra ataques cibernéticos como phishing, malware y ransomware. El impacto real puede incluir brechas de datos y pérdidas financieras significativas.",
-    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MDg0NzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/businesses-wartime-cybersecurity-gameplans",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:as global conflicts go digital businesses need wartime gameplans",
-    "ttps": [],
     "iocs": {}
   }
 ]
