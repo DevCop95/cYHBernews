@@ -1,5 +1,127 @@
 [
   {
+    "id": 3335,
+    "fecha": "2026-10-27T21:47:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-105781 permite ejecución remota de código en Adobe Campaign Classic",
+    "resumen": "Vulnerabilidad de SQL Injection con CVSS 10.0 que permite a un atacante ejecutar comandos SQL arbitrarios y obtener ejecución de código bajo el contexto del usuario comprometido, sin necesidad de interacción. El vector de ataque es remoto y afecta a todas las instancias de Adobe Campaign Classic expuestas.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMzc2NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-105781",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-105781",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-105781"
+      ]
+    }
+  },
+  {
+    "id": 3334,
+    "fecha": "2026-10-27T21:47:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Operador del ransomware Hive Nefilim condenado a más de cinco años tras declararse culpable",
+    "resumen": "Artem Stryzhak, ciudadano ucraniano vinculado a Hive y a otro grupo de ransomware, aceptó cargos federales en EE. UU. La sentencia refleja la intensificación de la persecución de actores de ransomware que comprometen infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMzc2NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
+    "fuente": "The Record",
+    "dedup_key": "txt:nefilim hive ransomware operator given five year plus sentence after guilty plea",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3333,
+    "fecha": "2026-10-27T21:47:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "CyberStrikeAI despliega 44 agentes de IA para automatizar ataques cibernéticos contra objetivos en Japón",
+    "resumen": "Investigadores de ciberseguridad identificaron tres campañas que emplean agentes autónomos de IA para ejecutar reconocimiento, explotación de vulnerabilidades CVE y movimiento lateral, reduciendo la intervención humana y acelerando la exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMzc2NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:cyberstrikeai uses 44 ai agents to automate hacking operations against japan targets",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3332,
+    "fecha": "2026-10-27T21:47:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers comprometen script de analítica de Convertr y roban datos de tarjetas de pago",
+    "resumen": "Un grupo de skimming infiltró el script compartido de analítica de Convertr, interceptando datos de tarjetas durante el proceso de checkout y exfiltrando la información a servidores externos. El vector explotado es la inyección de código en la cadena de suministro del script, afectando a todos los comercios que lo integran.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMzc2NTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers hijack convertr analytics script to steal payment card data",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1056.004",
+        "name": "Credential API Hooking"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3331,
+    "fecha": "2026-10-27T21:47:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-4337 permite carga arbitraria de archivos en PuMuKIT versiones <5.0.8",
+    "resumen": "La falla de tipo unrestricted file upload permite a usuarios no autenticados subir y sobrescribir archivos en rutas con permisos de escritura, posibilitando ejecución de código o borrado de datos. Aún no existe parche y el riesgo se clasifica como alta (CVSS 8.8).",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxMzc2NTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/carga-sin-restricciones-de-archivos-en-la-aplicacion-pumukit",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-4337",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-4337"
+      ]
+    }
+  },
+  {
     "id": 3330,
     "fecha": "2026-10-27T17:21:33Z",
     "categoria": "Ciberseguridad",
@@ -52473,143 +52595,6 @@
     "fuente": "The Record",
     "dedup_key": "txt:eu takes member states to court over unimplemented cybersecurity law",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1270,
-    "fecha": "2026-07-09T19:37:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataques a GitHub con cuentas dormidas",
-    "resumen": "Los laboratorios de seguridad de Datadog han detectado varias campañas que utilizan cuentas de GitHub inactivas y tokens de OAuth comprometidos para enumerar organizaciones, repositorios y cuentas de usuario corporativas a través de la API de GitHub, lo que permite a los atacantes mezclarse con el tráfico legítimo y mapear las estructuras organizativas de las empresas. Los atacantes utilizan herramientas de scraping automatizadas con agentes de usuario personalizados o legítimos para llevar a cabo estos ataques.",
-    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4NzR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:dormant github accounts help attackers blend in while mapping corporate orgs",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1582",
-        "name": "Dynamic Resolution"
-      },
-      {
-        "id": "T1556",
-        "name": "Session Hijacking no se menciona explícitamente, pero se puede inferir que se está utilizando T1556.001 - Token Manipulation (OAuth)"
-      },
-      {
-        "id": "T1595",
-        "name": "Active Scanning no se menciona explícitamente, pero se puede inferir que se está utilizando T1595.002 - Scanning for Open Source Repositories"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1269,
-    "fecha": "2026-07-09T19:37:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Microsoft prevé más actualizaciones de seguridad",
-    "resumen": "Microsoft anticipa un aumento en las actualizaciones de seguridad de Windows debido al uso creciente de inteligencia artificial (IA) para detectar vulnerabilidades en su base de código, lo que puede revelar más CVE y exploits potenciales. Esto implica un enfoque proactivo en ciberseguridad, utilizando herramientas de IA para identificar y parchear vulnerabilidades antes de que sean explotadas por ataques como phishing o ransomware.",
-    "url_imagen": "https://images.unsplash.com/photo-1624718666169-674e3779c524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4Njl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:microsoft expects more windows security updates from ai discovered flaws",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1268,
-    "fecha": "2026-07-09T17:19:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad CVE-2026-61474 en MISP",
-    "resumen": "Se ha identificado una vulnerabilidad de autorización en el endpoint de creación de atributos de MISP, permitiendo a un usuario autenticado con permisos para agregar atributos, asociar un atributo con un grupo de intercambio sin la autorización correspondiente, lo que podría llevar a un bypass de control de acceso y exponer relaciones de grupos de intercambio restringidos. La actualización corrige la lógica de autorización para verificar los permisos del grupo de intercambio siempre que se proporcione un sharing_group_id no vacío.",
-    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1ODh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/194007",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-61474",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1068.001",
-        "name": "Exploitation of Vulnerability"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1555.003",
-        "name": "Credentials in Files (No se menciona explícitamente, pero se infiere que se podría obtener acceso no autorizado a información restringida)"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-61474"
-      ]
-    }
-  },
-  {
-    "id": 1267,
-    "fecha": "2026-07-09T17:19:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "NSA revive TAO",
-    "resumen": "La NSA ha cambiado el nombre de su Oficina de Operaciones de Redes de Computadora (CNO) a Tailored Access Operations (TAO), un nombre que evoca nostalgia en la comunidad digital por su origen en la década de 1990 y su asociación con operaciones de hacking de élite. El cambio de nombre puede reflejar un enfoque renovado en las capacidades de acceso avanzado y operaciones cibernéticas ofensivas de la unidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1ODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/nsa-revives-tao-name-for-elite-hacking-unit",
-    "fuente": "The Record",
-    "dedup_key": "txt:nsa revives tailored access operations name for elite hacking unit",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1266,
-    "fecha": "2026-07-09T17:19:35Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Puertas de AI: Acceso ilimitado",
-    "resumen": "Un incidente de criptominería ha puesto de relieve cómo las puertas de enlace de IA (AI gateways) pueden proporcionar a los atacantes acceso a modelos de IA, infraestructura en la nube y datos de gestión de identidad y acceso (IAM), lo que puede permitir ataques de mayor alcance. Los vectores de ataque pueden incluir exploits de vulnerabilidades en los modelos de IA o en la infraestructura subyacente.",
-    "url_imagen": "https://images.unsplash.com/photo-1674544362969-a4269ef0ea69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MTc1NzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-gateways-keys-kingdom",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:ai gateways offer attackers the keys to the kingdom",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1582",
-        "name": "Exploitation for Credential Access"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
     "iocs": {}
   }
 ]
