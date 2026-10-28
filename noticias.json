@@ -1,5 +1,131 @@
 [
   {
+    "id": 3339,
+    "fecha": "2026-10-28T03:45:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "EPICS Base ≤7.0.10 vulnerado por integer overflow permite ejecución remota y DoS crítico",
+    "resumen": "Varias CVE (2026-114595 a 2026-114598) en EPICS Base ≤7.0.10 presentan desbordamiento de enteros y validación insuficiente que pueden provocar corrupción de memoria, denegación de servicio o ejecución arbitraria de código remoto; se recomienda actualizar a la versión 7.0.11.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxNTkxMzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-114595,cve-2026-114596,cve-2026-114597,cve-2026-114598",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "epics-controls.org"
+      ],
+      "url": [
+        "https://epics-controls.org/support/"
+      ],
+      "cve": [
+        "CVE-2026-114595",
+        "CVE-2026-114596",
+        "CVE-2026-114597",
+        "CVE-2026-114598"
+      ]
+    }
+  },
+  {
+    "id": 3338,
+    "fecha": "2026-10-28T03:45:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-80097 en Microsoft Authenticator permite a apps Android sin permisos robar tokens",
+    "resumen": "La falla permite que una aplicación Android no privilegiada se haga pasar por Microsoft Authenticator y capture tokens de inicio de sesión de cuentas de trabajo, facilitando suplantación de identidad y acceso a recursos internos; ya corregida en la versión 6.2606.4246.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxNTkxMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-80097",
+    "ttps": [
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-80097"
+      ]
+    }
+  },
+  {
+    "id": 3337,
+    "fecha": "2026-10-28T03:45:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "GMO Group advierte a clientes cerrar PCs y aislar red ante amenaza de ransomware inminente",
+    "resumen": "El grupo japonés GMO ha detectado que un actor comprometió su servicio Onamae Desktop Cloud y está extorsionando con la publicación de datos, exigiendo el cierre inmediato de equipos y desconexión de internet para evitar la ejecución de ransomware. La amenaza apunta a clientes corporativos que utilizan la infraestructura cloud del proveedor, incrementando el riesgo de cifrado masivo y pérdida de disponibilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1608452964553-9b4d97b2752f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxNTkxMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:japan s gmo urges customers to shut down pcs amid ransomware threat",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3336,
+    "fecha": "2026-10-28T03:45:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sisense Cloud BI Platform expone dos vulnerabilidades XSS críticas con CVSS 8.3",
+    "resumen": "Dos vulnerabilidades de tipo stored XSS (CVE-2026-117493 y CVE-2026-117494) permiten la inyección de código JavaScript en widgets y en la API de procesamiento SVG, comprometiendo la confidencialidad de datos en la plataforma SaaS de inteligencia de negocios. No existe parche disponible; la mitigación requiere validación de entrada y políticas de contenido estrictas.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxNTkxMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-cloud-bi-platform-de-sisense",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-117493,cve-2026-117494",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-117493",
+        "CVE-2026-117494"
+      ]
+    }
+  },
+  {
     "id": 3335,
     "fecha": "2026-10-27T21:47:44Z",
     "categoria": "Ciberseguridad",
@@ -52470,130 +52596,6 @@
     "enlace_original": "https://www.darkreading.com/cyber-risk/iran-cyber-crosshairs-beyond-critical-infrastructure",
     "fuente": "Dark Reading",
     "dedup_key": "txt:iran s cyber crosshairs focus beyond critical infrastructure",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1274,
-    "fecha": "2026-07-09T22:18:01Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "GigaWiper: Backdoor Windows con wipe de disco",
-    "resumen": "Se ha descubierto GigaWiper, un backdoor de Windows que combina tres herramientas destructivas: un wiper de disco, un sobreescritor de la unidad de Windows y un ransomware falso que cifra archivos sin guardar la clave, permitiendo a los operadores elegir el método de ataque. El backdoor ofrece estos métodos como comandos, lo que facilita la ejecución de ataques personalizados.",
-    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MzU0ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:new gigawiper windows backdoor bundles disk wiping fake ransomware and spyware",
-    "ttps": [
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1491",
-        "name": "Defacement"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution no se menciona explícitamente, pero se puede inferir que el backdoor se ejecuta en el sistema, por lo que se puede considerar T1055 - Privileged File or Directory Discovery o T1543 - Create or Modify System Process, pero la información no es lo suficientemente clara."
-      },
-      {
-        "id": "T1562",
-        "name": "Impair Defenses"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1273,
-    "fecha": "2026-07-09T19:38:12Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Sistema de Gestión",
-    "resumen": "Se ha identificado una vulnerabilidad de Control de Acceso Incorrecto (CVE-2020-25514) con un puntaje CVSS de 8.4 en el Sistema de Gestión de Bibliotecas Simple Library Management System versión 1.0, permitiendo el acceso no autorizado a través del panel de inicio de sesión. Esto puede ser explotado a través de un ataque de acceso no autorizado al sitio web.",
-    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4OTN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-25514",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2020-25514",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1550",
-        "name": "Use of Alternate Authentication Material"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "url": [
-        "http://(site"
-      ],
-      "cve": [
-        "CVE-2020-25514"
-      ]
-    }
-  },
-  {
-    "id": 1272,
-    "fecha": "2026-07-09T19:38:07Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "China apuesta por chips de IA nacionales",
-    "resumen": "Las Big Tech chinas están invirtiendo en fabricantes de chips nacionales para reducir su dependencia de Nvidia y otros proveedores extranjeros, con un aumento del 30% anual en la inversión en aceleradores de IA nacionales. Esto se debe a los problemas burocráticos y las restricciones de exportación impuestas por EEUU, lo que ha llevado a las empresas chinas a buscar alternativas nacionales para el entrenamiento de modelos de IA.",
-    "url_imagen": "https://images.unsplash.com/photo-1770745778460-9d9f1a7e8632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4ODd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/empresas-y-economia/big-tech-chinas-tienen-plan-mayor-apuesta-su-historia-a-fabricantes-chips-nacionales",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:las big tech chinas tienen un plan la mayor apuesta de su historia a las fabricantes de chips nacionales",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.bloomberg.com",
-        "www.businesstimes.com",
-        "www.swfte.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/604826/fabrica-tsmc/1024_682.jpeg",
-        "https://i.blogs.es/604826/fabrica-tsmc/500_333.jpeg",
-        "https://i.blogs.es/604826/fabrica-tsmc/840_560.jpeg",
-        "https://i.blogs.es/a462a7/original/1024_2000.jpeg",
-        "https://i.blogs.es/ba5dee/obleadechips/375_142.jpeg",
-        "https://i.blogs.es/da2519/fabricacionchip/375_142.jpeg",
-        "https://www.bloomberg.com/news/articles/2026-06-09/china-prepares-295-billion-plan-to-fund-nationwide-ai-buildout",
-        "https://www.businesstimes.com.sg/companies-markets/chinese-firms-leave-nvidia-local-ai-suppliers-survey-shows",
-        "https://www.swfte.com/blog/glm-5-open-source-model-huawei-2026"
-      ]
-    }
-  },
-  {
-    "id": 1271,
-    "fecha": "2026-07-09T19:38:00Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "UE demanda a estados por ley de ciberseguridad",
-    "resumen": "La Unión Europea ha iniciado acciones legales contra Irlanda, España, Francia y los Países Bajos por no implementar la Directiva NIS2, que establece medidas de ciberseguridad para infraestructuras críticas, más de 20 meses después del plazo establecido. Esto puede aumentar el riesgo de brechas de seguridad y ataques cibernéticos en sectores críticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MjU4ODB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/eu-cyber-filing-ireland-spain-france-netherlands-nis2",
-    "fuente": "The Record",
-    "dedup_key": "txt:eu takes member states to court over unimplemented cybersecurity law",
     "ttps": [],
     "iocs": {}
   }
