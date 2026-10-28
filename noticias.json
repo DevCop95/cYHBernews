@@ -1,5 +1,123 @@
 [
   {
+    "id": 3344,
+    "fecha": "2026-10-28T12:03:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Adobe lanza parches críticos para ocho vulnerabilidades en Campaign Classic",
+    "resumen": "Se corrigen ocho fallos, incluido CVE-2026-104351 con CVSS 9.9, que permiten inyección de código, ejecución arbitraria y escalada de privilegios en la plataforma de marketing de Adobe; la explotación requeriría acceso interno o credenciales comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxODkwMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-104351",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-104351"
+      ]
+    }
+  },
+  {
+    "id": 3343,
+    "fecha": "2026-10-28T12:03:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA alerta sobre explotación activa de la vulnerabilidad crítica Node2Shell en Brotli",
+    "resumen": "La agencia estadounidense CISA confirma que actores maliciosos están aprovechando la falla Node2Shell/Broccoli2Shell/HTTP2Shell para ejecutar código remoto en servidores que procesan tráfico HTTP/2 comprimido, incrementando el riesgo de compromisos de infraestructura crítica. Se recomienda aplicar los parches de mitigación y reforzar la inspección de tráfico Brotli en los perímetros.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxODkwMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa warns of hackers now exploiting critical node2shell flaw",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3342,
+    "fecha": "2026-10-28T12:03:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Crece el riesgo de Shadow AI: empleados envían datos sensibles a servicios de IA sin control corporativo",
+    "resumen": "El uso no autorizado de herramientas de IA genera filtración de información confidencial, incrementando los incidentes de brecha en un 43 % y costando en promedio 5,39 M USD, según el informe IBM Cost of a Data Breach 2026. La falta de gobernanza de IA y de detección de uso interno convierte a estas prácticas en una vulnerabilidad crítica para cualquier organización.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxODkwMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/shadow-ai-los-datos-de-tu-empresa-que.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:shadow ai los datos de tu empresa que tus empleados enviaron a servicios ia sin que tú lo supieras",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3341,
+    "fecha": "2026-10-28T12:03:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "WatchGuard reporta siete vulnerabilidades críticas en Fireware OS que permiten RCE y DoS",
+    "resumen": "Se identificaron 7 CVE en Fireware OS (versiones 2025-2026 y 12.x) que permiten ejecución de código arbitrario, escalada de privilegios sin autenticación y denegación de servicio mediante vectores como WireGuard, autenticación AD, FireCluster y SIP proxy. La mitigación requiere actualizar a Fireware OS 2026.4, 12.12.4 o 12.5.22 según el modelo.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxODkwMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-fireware-os-de-watchguard",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-103593,cve-2026-103594,cve-2026-112709,cve-2026-112710,cve-2026-93857,cve-2026-93865,cve-2026-93866",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "secorizon.com"
+      ],
+      "cve": [
+        "CVE-2026-103593",
+        "CVE-2026-103594",
+        "CVE-2026-112709",
+        "CVE-2026-112710",
+        "CVE-2026-93857",
+        "CVE-2026-93865",
+        "CVE-2026-93866"
+      ]
+    }
+  },
+  {
+    "id": 3340,
+    "fecha": "2026-10-28T12:03:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "IA potencia ataques cibernéticos en 2026: análisis de cinco incidentes críticos",
+    "resumen": "Los casos documentados revelan que los adversarios usan modelos de lenguaje y herramientas de generación automática para crear malware polimórfico y spear-phishing altamente personalizados, explotando vulnerabilidades zero-day en infraestructuras críticas. La evidencia muestra limitaciones en la evasión de EDR tradicionales, obligando a reforzar detección basada en comportamiento y análisis de embeddings.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMxODkwMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/inteligencia-artificial-ciberseguridad-casos-2026/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:inteligencia artificial y ciberseguridad qué nos muestran realmente los casos de 2026",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3339,
     "fecha": "2026-10-28T03:45:31Z",
     "categoria": "Ciberseguridad",
@@ -52478,125 +52596,5 @@
         "CVE-2026-15318"
       ]
     }
-  },
-  {
-    "id": 1279,
-    "fecha": "2026-07-10T02:34:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad SQL en Zoo Management",
-    "resumen": "Se ha identificado una vulnerabilidad de inyección SQL (CVE-2020-25487) con un puntaje CVSS de 7.8 en el sistema de gestión de zoológicos PHPGURUKUL, que utiliza PHP y MySQL, permitiendo ataques de inyección SQL a través del archivo zms/animal-detail.php. Esto puede permitir a atacantes acceder o manipular datos sensibles en la base de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NTA4Njl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-25487",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2020-25487",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1055",
-        "name": "Unconventional Password Authentication no aplica en este caso, pero se puede inferir"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services:"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2020-25487"
-      ]
-    }
-  },
-  {
-    "id": 1278,
-    "fecha": "2026-07-10T02:34:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Amenaza zero-day en Windows Defender",
-    "resumen": "Un investigador publicó un exploit de prueba de concepto (PoC) para una vulnerabilidad zero-day en Windows Defender, lo que podría permitir ataques dirigidos a sistemas Windows, aprovechando un vector de ataque en la propia herramienta de seguridad de Microsoft. La publicación de este exploit sigue a la divulgación de varias otras vulnerabilidades zero-day en productos de Microsoft.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NTA4NjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/microsoft-rogueplanet-zero-day-threat",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:microsoft reins in rogueplanet zero day threat",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1277,
-    "fecha": "2026-07-10T02:34:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Amenazas silenciosas",
-    "resumen": "La semana ha visto una serie de incidentes de seguridad causados por pequeñas brechas en la configuración y el comportamiento de los administradores, incluyendo el secuestro de buckets de cloud y una cadena de explotación de vulnerabilidades de elevación de privilegios en Windows (LPE), lo que destaca la importancia de la seguridad básica y la vigilancia constante. Estos incidentes, aunque no son espectaculares, pueden tener un impacto significativo en la seguridad de los sistemas y los datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1581092336206-b9e5146be6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NTA4NTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:threatsday cloud bucket hijacking windows lpe chain global fraud bust 17 more stories",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1276,
-    "fecha": "2026-07-09T22:18:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad XSS en Bagisto",
-    "resumen": "Se ha identificado una vulnerabilidad de cross-site scripting (XSS) almacenada en versiones de Bagisto anteriores a 2.4.4, permitiendo a atacantes no autenticados ejecutar JavaScript arbitrario en navegadores de administradores mediante la inyección de plantillas en el registro de cuentas de cliente. La explotación se logra a través de la falta del directivo v-pre de Vue.js en el template create.blade.php, lo que permite a Vue.js evaluar expresiones de plantilla almacenadas como JavaScript en vivo cuando un administrador abre la página de Crear Orden para el cliente afectado.",
-    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MzU0OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/194436",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-60120",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Drive-by Compromise"
-      },
-      {
-        "id": "T1055",
-        "name": "Unauthenticated Web Logon"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-60120"
-      ]
-    }
-  },
-  {
-    "id": 1275,
-    "fecha": "2026-07-09T22:18:07Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Irán amplía objetivos cibernéticos",
-    "resumen": "Irán ha expandido su enfoque de ciberataques más allá de la infraestructura crítica, lo que significa que cualquier empresa con vulnerabilidades expuestas a Internet puede ser objetivo de múltiples amenazas, incluyendo posibles ataques de phishing, malware y ransomware. Esto subraya la importancia de una postura de seguridad proactiva y continua vigilancia.",
-    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2MzU0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyber-risk/iran-cyber-crosshairs-beyond-critical-infrastructure",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:iran s cyber crosshairs focus beyond critical infrastructure",
-    "ttps": [],
-    "iocs": {}
   }
 ]
