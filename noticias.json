@@ -1,5 +1,75 @@
 [
   {
+    "id": 3348,
+    "fecha": "2026-10-28T18:16:22Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "El rol del CISO evoluciona para proteger y defender en la era de agentes de IA",
+    "resumen": "Con la adopción de agentes autónomos y modelos de lenguaje, los CISOs deben establecer controles de identidad y datos que permitan la innovación sin comprometer la seguridad, y actualizar sus defensas frente a amenazas impulsadas por IA como ataques de generación de phishing y evasión de EDR.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330299602-8dcca2aea607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMTEzODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:the ciso s evolving role protecting and defending in the agentic era",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3347,
+    "fecha": "2026-10-28T18:16:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenazas cibernéticas en temporada alta retail: ransomware y ataques impulsados por IA",
+    "resumen": "Unit 42 detalla cómo los ciberdelincuentes combinan ransomware tradicional con vectores basados en modelos de lenguaje para comprometer sistemas de punto de venta y datos de clientes durante el pico de compras. Se recomiendan controles de segmentación de red, monitoreo de anomalías en tráfico de IA y planes de respuesta rápida para mitigar la pérdida de confianza y la exposición regulatoria.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMTEzODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/unwrapping-retail-cyber-threats/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:unwrapping retail peak season cyber threats",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3346,
+    "fecha": "2026-10-28T18:16:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Atacante escanea credenciales suplantando bots de OpenAI, Anthropic y Meta",
+    "resumen": "Un actor de amenaza utiliza bots que se hacen pasar por agentes de IA de OpenAI, Anthropic y Meta para automatizar búsquedas de credenciales expuestas en foros y repositorios públicos, explotando la confianza en nombres de marcas de IA. La campaña incrementa el riesgo de compromisos de cuentas corporativas y de desarrollo al recolectar datos sensibles sin detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMTEzNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:attacker relentlessly scans for credentials by impersonating ai bots",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3345,
+    "fecha": "2026-10-28T18:16:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-14571 permite Blind SQL Injection en módulo de autenticación de Futurum Software",
+    "resumen": "La falla de validación de inputs y configuración deficiente del WAF permite a un atacante no autenticado ejecutar consultas arbitrarias y extraer datos sensibles de la base de datos. INCIBE ha coordinado la publicación y la corrección inmediata del defecto.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMTEzNzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-sqli-en-el-modulo-de-autenticacion-de-usuarios-de-futurum-software",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-14571",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14571"
+      ]
+    }
+  },
+  {
     "id": 3344,
     "fecha": "2026-10-28T12:03:34Z",
     "categoria": "Ciberseguridad",
@@ -52499,102 +52569,5 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 1283,
-    "fecha": "2026-07-10T11:46:48Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ex negociador de ransomware condenado",
-    "resumen": "Un ex empleado de la empresa de respuesta a incidentes de ciberseguridad DigitalMint ha sido condenado a 70 meses de prisión por participar en ataques de ransomware BlackCat (ALPHV) contra empresas estadounidenses, lo que pone de relieve la amenaza interna y la importancia de la evaluación de confianza en el sector de la ciberseguridad. Los ataques de ransomware como BlackCat suelen utilizar técnicas de phishing y explotación de vulnerabilidades para infiltrarse en las redes de las víctimas.",
-    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/us-ransomware-negotiator-gets-4-years-in-prison-for-blackcat-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:former ransomware negotiator gets 4 years for blackcat attacks",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1282,
-    "fecha": "2026-07-10T06:40:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Sistema de Gestión de Bibliotecas",
-    "resumen": "Se ha identificado una vulnerabilidad de permisos no seguros (CVE-2020-25515) con un CVSS Score de 7.8, considerada como alta, en el Sistema de Gestión de Bibliotecas Simple Library Management System versión 1.0, que permite el acceso no autorizado a través de la página de libros nuevos. El vector de ataque se encuentra en la URL http://(site)/lms/index.php?page=books.",
-    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NjU2Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2020-25515",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2020-25515",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1555",
-        "name": "Credentials from Password Stores"
-      },
-      {
-        "id": "T1585",
-        "name": "Verify Security Controls (no se menciona explícitamente, pero se infiere que el atacante podría verificar los controles de seguridad para explotar la vulnerabilidad)"
-      }
-    ],
-    "iocs": {
-      "url": [
-        "http://(site"
-      ],
-      "cve": [
-        "CVE-2020-25515"
-      ]
-    }
-  },
-  {
-    "id": 1281,
-    "fecha": "2026-07-10T06:40:22Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Agentes AI: Nueva Identidad",
-    "resumen": "Los agentes de inteligencia artificial (AI) requieren un enfoque fundamentalmente diferente para su gestión, ya que no pueden ser tratados como cuentas de servicio o tokens de API, lo que supone un desafío para la mayoría de las organizaciones. Esto implica reconsiderar la autenticación, autorización y gestión de identidades en entornos que incorporan agentes autónomos y modelos de lenguaje avanzados.",
-    "url_imagen": "https://images.unsplash.com/photo-1751448582395-27fc57293f1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NjU2MjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/identity-access-management-security/ai-agents-new-kind-identity-most-organizations-not-ready",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:ai agents are a new kind of identity amp most organizations aren t ready",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1280,
-    "fecha": "2026-07-10T02:34:35Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Sipeed PicoClaw",
-    "resumen": "Se ha identificado una debilidad (CVE-2026-15318) en Sipeed PicoClaw hasta la versión 0.2.9, que afecta la autorización en el manejador de canales MQTT, permitiendo una manipulación remota del parámetro client_id. Un exploit público está disponible, lo que podría facilitar ataques remotos.",
-    "url_imagen": "https://images.unsplash.com/photo-1535929427778-27d835b3a7f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2NTA4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/194503",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-15318",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-15318"
-      ]
-    }
   }
 ]
