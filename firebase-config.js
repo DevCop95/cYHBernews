@@ -2,6 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getFirestore, doc, getDoc, setDoc, updateDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
 import { initializeAppCheck, ReCaptchaV3Provider } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app-check.js";
+import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA3VP-eq3En0rD2fAXd_mi9E60rdTO_e1U",
@@ -23,7 +24,13 @@ try {
   app = initializeApp(firebaseConfig);
   db = getFirestore(app);
   analytics = getAnalytics(app);
-  
+
+  // Autenticamos anónimamente para que Firestore Security Rules puedan exigir
+  // request.auth != null y así evitar accesos/escrituras completamente anónimos.
+  signInAnonymously(getAuth(app)).catch((error) => {
+    console.error("Error en autenticación anónima de Firebase:", error);
+  });
+
   const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
   if (!isLocalhost) {
