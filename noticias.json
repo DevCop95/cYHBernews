@@ -1,5 +1,144 @@
 [
   {
+    "id": 3353,
+    "fecha": "2026-10-29T00:35:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "GhostAction intensifica ataques a la cadena de suministro apuntando a repositorios de código en GitHub",
+    "resumen": "La campaña de GhostAction desplaza su foco a endpoints de desarrolladores y accesos en la nube, explotando vulnerabilidades en pipelines CI/CD para insertar payloads y robar credenciales. El vector de ataque se basa en compromisos de dependencias y tokens de acceso, incrementando el riesgo de filtraciones masivas de código fuente.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMzQxNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ghostaction hacking wave fizzles but attackers lurk on in github",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1608.001",
+        "name": "Upload Malware"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3352,
+    "fecha": "2026-10-29T00:35:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Volt Typhoon empleó la red oculta Silent Train en cuatro campañas de explotación zero-day",
+    "resumen": "El grupo de espionaje cibernético vinculado a China utilizó Silent Train, una infraestructura de acceso encubierta basada en dispositivos SOHO, IoT y entornos empresariales, para lanzar cuatro campañas que explotaron vulnerabilidades zero-day y mantuvieron acceso estratégico prolongado. La red fue detectada y desactivada por Lumen Technologies Black Lotus Labs a finales de 2023.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMzQxMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:volt typhoon used covert silent train network in four zero day exploitation campaigns",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1090.001",
+        "name": "Internal Proxy"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3351,
+    "fecha": "2026-10-29T00:35:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "EE.UU. incauta dominio principal de Virtualine, hosting blindado usado por ransomware",
+    "resumen": "La autoridad federal confiscó el dominio de Virtualine, un servicio de bullet-proof hosting promocionado en foros de cibercrimen para alojar infraestructura de ransomware y otras operaciones ilícitas, interrumpiendo la cadena de suministro de malware. La medida afecta a actores de amenazas que dependen de hosting anónimo para evadir detección y respuesta.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMzQxMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/police-seize-virtualine-bulletproof-service-tied-to-ransowmare-cybercrime/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:police seize virtualine bulletproof service tied to ransowmare cybercrime",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3350,
+    "fecha": "2026-10-29T00:35:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en NoviGest Desktop App permiten RMI sin autenticación y XXE",
+    "resumen": "Dos CVE (CVE-2026-112197 y CVE-2026-112198) afectan a la versión 7.4.4-292 de NoviGest, exponiendo un servicio Java RMI sin autenticación que permite ejecución de SQL arbitraria y una vulnerabilidad XXE en la importación de archivos SAFT, ambas explotables por un atacante con acceso de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMzQxMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-novigest-desktop-app-de-tactis",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-112197,cve-2026-112198",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1221",
+        "name": "Template Injection"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112197",
+        "CVE-2026-112198"
+      ]
+    }
+  },
+  {
+    "id": 3349,
+    "fecha": "2026-10-29T00:35:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Detectan campaña que usa binarios legítimos de ChatGPT y Claude para distribuir malware Yoba",
+    "resumen": "Check Point Research identifica a Yoba, un malware que suplanta ejecutables oficiales de ChatGPT y Claude para ejecutar payloads de ransomware y herramientas de espionaje, aprovechando la confianza del usuario en IA. La campaña se propaga mediante descargas falsas y phishing dirigido a profesionales que integran IA en sus flujos de trabajo.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyMzQxMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/detectan-una-campana-que-utiliza-binarios-legitimos-de-chatgpt-y-claude-para-infectar-a-usuarios-de-ia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:detectan una campaña que utiliza binarios legítimos de chatgpt y claude para infectar a usuarios de ia",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3348,
     "fecha": "2026-10-28T18:16:22Z",
     "categoria": "IA",
@@ -52364,210 +52503,6 @@
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:the replicant in your directory ai agents and the identity security gap",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1288,
-    "fecha": "2026-07-10T14:11:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "SDK malicioso en npm roba claves cripto",
-    "resumen": "Un atacante distribuyó una versión maliciosa del SDK @injectivelabs/sdk-ts en npm, que roba frases semilla y claves privadas al generar o importar wallets, afectando a usuarios que instalaron la versión 1.20.21. Se recomienda actuar como si las credenciales ya estuvieran comprometidas.",
-    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://unaaldia.hispasec.com/un-sdk-de-injective-en-npm-distribuye-un-ladron-de-claves-para-criptowallets/?utm_source=rss&utm_medium=rss&utm_campaign=un-sdk-de-injective-en-npm-distribuye-un-ladron-de-claves-para-criptowallets",
-    "fuente": "Una al Día (Hispasec)",
-    "dedup_key": "txt:un sdk de injective en npm distribuye un ladrón de claves para criptowallets",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1556",
-        "name": "Modify Authentication Process"
-      },
-      {
-        "id": "T1056",
-        "name": "Keylogger"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {
-      "domain": [
-        "unaaldia.hispasec.com"
-      ],
-      "url": [
-        "https://unaaldia.hispasec.com",
-        "https://unaaldia.hispasec.com/un-sdk-de-injective-en-npm-distribuye-un-ladron-de-claves-para-criptowallets/"
-      ]
-    }
-  },
-  {
-    "id": 1287,
-    "fecha": "2026-07-10T11:47:09Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Meta AI crea imágenes sin permiso",
-    "resumen": "Meta AI ha lanzado una función que permite a los usuarios crear imágenes con las caras de otras personas sin permiso, utilizando sus fotos de Instagram como referencia, lo que abre la puerta a posibles abusos y usos poco éticos. Los usuarios pueden evitar que se creen imágenes con su cara desactivando los permisos de Instagram o configurando sus ajustes de privacidad.",
-    "url_imagen": "https://images.unsplash.com/photo-1781209443149-dd12a52cc358?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/basics/meta-ai-crea-imagenes-tu-cara-permiso-usando-tus-fotos-instagram-como-funciona-dos-modos-evitarlo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:meta ai puede crear imágenes con tu cara sin permiso usando tus fotos de instagram cómo funciona y dos modos de evitarlo",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/209c67/meta-ai/1024_2000.jpeg",
-        "https://i.blogs.es/211574/desactiva/1024_2000.jpeg",
-        "https://i.blogs.es/211574/desactiva/1366_2000.jpeg",
-        "https://i.blogs.es/211574/desactiva/450_1000.jpeg",
-        "https://i.blogs.es/211574/desactiva/650_1200.jpeg",
-        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/1024_2000.png",
-        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/1366_2000.png",
-        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/450_1000.png",
-        "https://i.blogs.es/ae6aa4/captura-de-pantalla-2026-07-10-a-las-12.46.37/650_1200.png",
-        "https://i.blogs.es/e9a7bb/meta-ai/375_142.jpeg"
-      ]
-    }
-  },
-  {
-    "id": 1286,
-    "fecha": "2026-07-10T11:47:04Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque de phishing evasivo",
-    "resumen": "Un nuevo método de ataque de phishing utiliza \"comment stuffing\" en archivos HTML adjuntos para evadir la detección basada en IA, lo que representa un desafío para los sistemas de seguridad que confían en algoritmos de aprendizaje automático para detectar amenazas. Este enfoque inusual puede ser un vector de ataque efectivo contra las medidas de seguridad tradicionales.",
-    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33144",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:comment stuffing in an html phishing attachment as a mechanism for evading ai based detection x3f fri jul 10th",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1497",
-        "name": "Virtualization/Sandbox Evasion"
-      },
-      {
-        "id": "T1497.001",
-        "name": "Sandbox Evasion"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1285,
-    "fecha": "2026-07-10T11:46:59Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vigilancia AI: Amenaza a la Libertad",
-    "resumen": "La implementación de sistemas de vigilancia basados en IA con reconocimiento facial y seguimiento digital puede tener efectos desalentadores en las libertades personales y la democracia, ya que permite la identificación y sanción inmediata de infractores, y su uso se está expandiendo en todo el mundo, incluyendo América del Norte, América del Sur, Europa, Asia y África. La combinación de IA, bases de datos masivas y aplicación personalizada de la ley puede llevar a una sociedad de vigilancia totalitaria, como ya se está viendo en China.",
-    "url_imagen": "https://images.unsplash.com/photo-1782088545589-46e4ece8190e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/ai-surveillance-and-social-progress.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:ai surveillance and social progress",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "bookanalysis.com",
-        "notechforice.com",
-        "slate.com",
-        "time.com",
-        "www.bbc.com",
-        "www.biometricupdate.com",
-        "www.cambridge.org",
-        "www.cnn.com",
-        "www.lemonde.fr",
-        "www.lgbtqnation.com",
-        "www.motherjones.com",
-        "www.npr.org",
-        "www.nytimes.com",
-        "www.schneier.com",
-        "www.theafricareport.com",
-        "www.theguardian.com",
-        "www.theregister.com",
-        "www.visiontimes.com"
-      ],
-      "url": [
-        "https://bookanalysis.com/1984/telescreen/",
-        "https://notechforice.com/wp-content/uploads/2026/06/Tech-Behind-ICE-Oligarchs-Immigration-Enforcement-and-the-Threat-to-Democracy.pdf",
-        "https://nsarchive.gwu.edu/briefing-book/intelligence/2020-06-25/spying-americans-new-release-infamous-huston-plan",
-        "https://slate.com/technology/2023/12/ai-mass-spying-internet-surveillance.html",
-        "https://time.com/collections/davos-2019/5502592/china-social-credit-score/",
-        "https://www.alsur.lat/sites/default/files/2025-11/Facial%20recognition%20and%20surveillance-1.pdf",
-        "https://www.bbc.com/news/world-us-canada-48218827",
-        "https://www.biometricupdate.com/202510/facial-recognition-strengthens-security-for-asias-expanding-rail-metro-sector-panel",
-        "https://www.cambridge.org/core/books/chilling-effects/22383D541B3BC45C9145E85DA4824E10#fndtn-metrics",
-        "https://www.cnn.com/2025/12/04/china/china-ai-censorship-surveillance-report-intl-hnk",
-        "https://www.lemonde.fr/en/pixels/article/2025/09/01/the-discreet-rise-of-facial-recognition-around-the-world_6744911_13.html",
-        "https://www.lgbtqnation.com/2026/01/publishers-are-stepping-back-from-lgbtq-books-amid-bans-the-current-gop-president/",
-        "https://www.motherjones.com/politics/2025/04/clearview-ai-immigration-ice-fbi-surveillance-facial-recognition-hoan-ton-that-hal-lambert-trump/",
-        "https://www.npr.org/2018/10/31/662696776/what-its-like-to-be-on-the-blacklist-in-chinas-new-social-credit-system",
-        "https://www.nytimes.com/2018/07/08/business/china-surveillance-technology.html",
-        "https://www.theafricareport.com/420018/facial-recognition-ai-driven-surveillance-how-china-is-exporting-its-toolkit-to-africa/",
-        "https://www.theguardian.com/commentisfree/2026/jul/06/ai-surveillance-policy",
-        "https://www.theguardian.com/technology/artificialintelligenceai",
-        "https://www.theregister.com/software/2024/09/16/oracle-cloud-ai-will-enable-mass-surveillance-says-ellison/516672",
-        "https://www.visiontimes.com/2026/05/05/chinas-cameras-catch-minor-offenses-but-miss-missing-persons-french-report-says.html"
-      ],
-      "md5": [
-        "22383D541B3BC45C9145E85DA4824E10"
-      ]
-    }
-  },
-  {
-    "id": 1284,
-    "fecha": "2026-07-10T11:46:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataque \"Ill Bloom\" drena $3.1M",
-    "resumen": "La vulnerabilidad \"Ill Bloom\" en el software de wallets de criptomonedas permite a los atacantes explotar la debilidad en la generación de frases de recuperación, lo que les permite acceder y drenar fondos de las cuentas, con un impacto real de $3.1 millones en una sola oleada coordinada. Los atacantes pueden trabajar con la frase de recuperación débilmente generada para tomar el control de los fondos.",
-    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2ODQwMTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:attackers exploit ill bloom vulnerability to drain 3 1 million from cryptocurrency wallets",
-    "ttps": [
-      {
-        "id": "T1552",
-        "name": "Credential Access"
-      },
-      {
-        "id": "T1552.001",
-        "name": "Obtain Credentials from Password Stores"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
     "iocs": {}
   }
 ]
