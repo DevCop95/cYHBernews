@@ -1,5 +1,119 @@
 [
   {
+    "id": 3368,
+    "fecha": "2026-10-29T22:28:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Informan explotaciones limitadas de vulnerabilidades PHP2Shell en servidores gubernamentales de EE. UU",
+    "resumen": "Se registraron al menos seis incidentes que aprovechan bugs de PHP2Shell, vinculados a una campaña sospechosa de origen chino que comprometió servidores afiliados al gobierno estadounidense, evidenciando un vector de ataque de ejecución remota.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMTI4ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/php2shell-successful-exploitation-reports-emerge",
+    "fuente": "The Record",
+    "dedup_key": "txt:limited reports of php bug exploitation emerge",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3367,
+    "fecha": "2026-10-29T22:27:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Correos de phishing con temática Anthropic evaden herramientas de seguridad de correo líderes",
+    "resumen": "Un estudio revela que campañas de phishing que imitan a Anthropic utilizan técnicas de ingeniería social avanzadas para pasar filtros de Secure Email Gateway, exponiendo a organizaciones a posibles compromisos de credenciales. El vector se basa en contenido aparentemente legítimo y referencias a IA, dificultando la detección basada en firmas tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMTI4Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:anthropic themed phishing emails bypass top security tools",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3366,
+    "fecha": "2026-10-29T22:27:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en firewalls y trojans bancarios rentados impulsan ataques con PDFs weaponizados y robo de tokens",
+    "resumen": "Se reportan fallos críticos en firewalls que permiten bypass de inspección, mientras grupos de crimen organizado alquilan trojans bancarios para campañas de credential harvesting; además, se observan PDFs weaponizados que ejecutan payloads mediante exploits de Adobe y robos de tokens de autenticación, con algunos actores empleando IA para automatizar la generación de malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMTI4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday critical firewall flaws banking trojans rented weaponized pdf token theft 26 more stories",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3365,
+    "fecha": "2026-10-29T22:27:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña de malware usa modelos de Hugging Face para secuestrar GPUs y minar criptomonedas",
+    "resumen": "Un actor malicioso reaprovecha modelos de Hugging Face para infiltrarse en servidores con GPUs, instalar backdoors y ejecutar minería de criptomonedas, con más de 28 000 descargas del modelo comprometido. La operación también incluye un kit falso de Solana en GitHub que engaña a agentes de codificación IA para desplegar un RAT NetSupport.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMTI4NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hugging face malware campaign returns to hijack gpus for crypto mining",
+    "ttps": [
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3364,
+    "fecha": "2026-10-29T22:27:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cisco publica parches críticos para cinco CVE que permiten RCE y DoS en ASA/FTD y Node.js",
+    "resumen": "Se identificaron cinco vulnerabilidades (una crítica, cuatro altas) en Cisco Secure Firewall ASA, FTD y componentes basados en Node.js que permiten ejecución remota de código, divulgación de datos y denegación de servicio; Cisco ya ha lanzado actualizaciones de firmware y software para mitigar el riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMTI4NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-cisco-20",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-105482,cve-2026-105483,cve-2026-106069,cve-2026-111497,cve-2026-76418",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "9.16.4.104",
+        "9.18.4.96",
+        "9.20.4.50",
+        "9.22.3.200",
+        "9.23.1.48",
+        "9.24.1.27",
+        "9.24.10.1"
+      ],
+      "cve": [
+        "CVE-2026-105482",
+        "CVE-2026-105483",
+        "CVE-2026-106069",
+        "CVE-2026-111497",
+        "CVE-2026-76418"
+      ]
+    }
+  },
+  {
     "id": 3363,
     "fecha": "2026-10-29T17:57:12Z",
     "categoria": "Ciberseguridad",
@@ -52432,96 +52546,5 @@
         "https://i.blogs.es/9f1dd3/openai-portada/1024_2000.jpeg"
       ]
     }
-  },
-  {
-    "id": 1303,
-    "fecha": "2026-07-10T21:57:10Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Unión Europea aprueba ley de escaneo de CSAM",
-    "resumen": "La ley conocida como Chat Control 2.0, aprobada en el Parlamento Europeo, permite a empresas como Google, Meta y Microsoft escanear los mensajes de los usuarios para detectar contenido de abuso sexual infantil (CSAM), lo que puede tener implicaciones en la privacidad digital y la seguridad en línea. El escaneo puede realizarse mediante herramientas de inteligencia artificial (IA) y algoritmos de detección de patrones para identificar contenido sospechoso.",
-    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MjA2MzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/chat-control-2-csam-scans-european-parliament-passage",
-    "fuente": "The Record",
-    "dedup_key": "txt:europe revives law allowing big tech to scan for csam",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1302,
-    "fecha": "2026-07-10T19:21:35Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Condenas por Ryuk y Blackcat/AlphV",
-    "resumen": "Un operador de Ryuk ha admitido su culpabilidad en un tribunal federal de Oregón por conspiración y fraude informático, mientras que un conspirador de Blackcat/AlphV ha recibido una sentencia de 70 meses en una corte federal de Florida por ayudar a extorsionar a múltiples víctimas mediante ransomware. Estos casos destacan el impacto de la justicia en la lucha contra el ransomware y la importancia de la cooperación internacional para desmantelar estas redes criminales.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced",
-    "fuente": "The Record",
-    "dedup_key": "txt:ryuk operator pleads guilty blackcat alphv conspirator gets nearly 6 year sentence",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1301,
-    "fecha": "2026-07-10T19:21:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataques cibernéticos en salud aumentan",
-    "resumen": "Los ciberataques contra hospitales y clínicas aumentaron modestamente en el primer semestre de 2026, mientras que los ataques contra proveedores de servicios y otros negocios de salud más que se duplicaron, lo que indica un cambio en los vectores de ataque hacia la cadena de suministro de la industria de la salud. Esto sugiere un aumento en la exposición a riesgos de seguridad para la industria en general.",
-    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyOTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/threat-intelligence/cybercriminals-healthcare-businesses-attacks-surge",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:cybercriminals flock to healthcare businesses as attacks surge",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1300,
-    "fecha": "2026-07-10T19:21:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Amenaza de seguridad en ShareFile",
-    "resumen": "Progress Software ha ordenado a los clientes de ShareFile que desactiven los servidores de Windows que ejecutan sus Storage Zone Controllers debido a una \"creíble amenaza de seguridad externa\", lo que ha llevado a la empresa a deshabilitar temporalmente el acceso a las cuentas afectadas como medida de precaución. La amenaza específica no ha sido divulgada, pero se está investigando con equipos de seguridad internos y externos.",
-    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyODV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:urgent progress tells sharefile customers to shut down storage zone controllers over security threat",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1299,
-    "fecha": "2026-07-10T19:21:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ryuk Ransomware: Condena en EE. UU",
-    "resumen": "Un hombre armenio de 34 años se declaró culpable de hackear empresas estadounidenses y desplegar el ransomware Ryuk para cifrar sus sistemas, enfrentando hasta 15 años de prisión. El caso destaca la persistente amenaza del ransomware y la importancia de la cooperación internacional en la lucha contra el cibercrimen.",
-    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyODF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-pleads-guilty-in-the-us-faces-15-years-in-prison/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:ryuk ransomware member pleads guilty in the us faces 15 years in prison",
-    "ttps": [
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {}
   }
 ]
