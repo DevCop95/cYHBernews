@@ -1,5 +1,126 @@
 [
   {
+    "id": 3363,
+    "fecha": "2026-10-29T17:57:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hacker usa malware para revelar cartas y ganar en mesas de póker online de alto nivel",
+    "resumen": "Se detectó software malicioso instalado en los equipos de jugadores profesionales de póker en línea, permitiendo al atacante interceptar datos de juego y visualizar las cartas de los oponentes, lo que facilitó fraudes y pérdidas económicas significativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyOTY2MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/a-hacker-targeted-high-stakes-poker-players-with-malware-that-exposed-their-cards/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:a hacker targeted high stakes poker players with malware that exposed their cards",
+    "ttps": [
+      {
+        "id": "T1113",
+        "name": "Screen Capture"
+      },
+      {
+        "id": "T1056.001",
+        "name": "Keylogging"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3362,
+    "fecha": "2026-10-29T17:57:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-98432 en el kernel Linux permite ejecución remota como root mediante exploit",
+    "resumen": "Un flaw en el código TCP del kernel Linux, con CVSS 9.8, afecta a Ubuntu, RHEL y otras distribuciones; Anthropic confirmó que su modelo de IA generó un exploit que otorga acceso root sin credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyOTY2Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-98432",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-98432"
+      ]
+    }
+  },
+  {
+    "id": 3361,
+    "fecha": "2026-10-29T17:57:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "319 extensiones de Chrome con 13,4 M de instalaciones secuestran búsquedas para generar ingresos publicitarios",
+    "resumen": "Un operativo de hijacking de búsquedas utiliza 319 extensiones de Chrome para redirigir consultas a servidores de tracking, monetizando tráfico mediante Bing y Yahoo; la campaña afecta a millones de usuarios y permite la inserción de código publicitario sin consentimiento.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyOTY2Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/chrome-extensions-with-134-million-installs-caught-hijacking-searches/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:chrome extensions with 13 4 million installs caught hijacking searches",
+    "ttps": [
+      {
+        "id": "T1185",
+        "name": "Browser Session Hijacking"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3360,
+    "fecha": "2026-10-29T17:57:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cinco vulnerabilidades CVE-2026-5697 a CVE-2026-5702 en SABBATIC permiten XSS y CSRF",
+    "resumen": "INCIBE reportó cinco CVE de severidad media que afectan a la plataforma de digitalización de tickets SABBATIC, explotables vía XSS almacenado en varios endpoints y una vulnerabilidad CSRF que permite acciones no autorizadas en usuarios autenticados. Las fallas fueron mitigadas en versiones 7.96.0.1 y 7.96.0.2.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyOTY2MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-la-aplicacion-de-sabbatic",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-5697,cve-2026-5698,cve-2026-5699,cve-2026-5700,cve-2026-5702",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "7.96.0.1",
+        "7.96.0.2"
+      ],
+      "cve": [
+        "CVE-2026-5697",
+        "CVE-2026-5698",
+        "CVE-2026-5699",
+        "CVE-2026-5700",
+        "CVE-2026-5702"
+      ]
+    }
+  },
+  {
+    "id": 3359,
+    "fecha": "2026-10-29T17:57:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "ESET revela incremento de campañas APT dirigidas a infraestructuras críticas en H2-2026",
+    "resumen": "El informe de ESET Research muestra un 27 % más de indicadores de compromiso (IOCs) vinculados a grupos APT que apuntan a sistemas SCADA y plataformas cloud, empleando exploits zero-day y técnicas de phishing avanzadas. Se advierte la necesidad de reforzar la detección de payloads basados en herramientas de administración remota y actualizar los controles de acceso privilegiado.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyOTY2MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/informes/reporte-actividad-apt-activity-report-q2-2026-q3-2026/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:eset apt activity report del segundo y tercer semestre de 2026",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3358,
     "fecha": "2026-10-29T09:16:22Z",
     "categoria": "Ciberseguridad",
@@ -52401,102 +52522,6 @@
         "name": "User Execution"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1298,
-    "fecha": "2026-07-10T19:21:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vodafone bloquea 640M ciberamenazas",
-    "resumen": "El servicio Vodafone Secure Net bloqueó 640 millones de ciberamenazas en un mes, un 38% más que el máximo anterior, lo que indica un aumento significativo en los intentos de ataques cibernéticos, como phishing, malware y ransomware, en la red fija. Esto destaca la importancia de los servicios de protección integrados en la red para prevenir brechas de seguridad y proteger a los clientes de amenazas emergentes.",
-    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MTEyNzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/vodafone-secure-net-bloquea-640-millones-de-ciberamenazas-en-un-mes/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:vodafone secure net bloquea 640 millones de ciberamenazas en un mes",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1297,
-    "fecha": "2026-07-10T16:52:43Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Nuevos modelos de IA: Grok 4.5 y Muse Spark 1.1",
-    "resumen": "Los nuevos modelos de IA Grok 4.5 y Muse Spark 1.1 ofrecen un rendimiento notable, acercándose al de los modelos frontera de OpenAI y Anthropic, con un precio significativamente más bajo, lo que podría revolucionar el mercado de la IA. Estos modelos podrían tener un impacto significativo en la industria, ya que ofrecen un rendimiento similar al de los modelos más avanzados a un costo mucho menor.",
-    "url_imagen": "https://images.unsplash.com/photo-1778319300615-03d67b057e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MDIzNjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/nuevos-grok-4-5-muse-spark-1-1-tienen-apuesta-rompedora-hacer-90-sus-rivales-al-20-su-precio",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:los nuevos grok 4 5 y muse spark 1 1 tienen una apuesta rompedora hacer el 90 de sus rivales al 20 de su precio",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "ai.meta.com",
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
-        "https://artificialanalysis.ai/?cost=intelligence-vs-cost-per-task",
-        "https://i.blogs.es/25dfc8/captura-de-pantalla-2026-07-10-a-las-11.35.25/1024_2000.png",
-        "https://i.blogs.es/25dfc8/captura-de-pantalla-2026-07-10-a-las-11.35.25/1366_2000.png",
-        "https://i.blogs.es/25dfc8/captura-de-pantalla-2026-07-10-a-las-11.35.25/450_1000.png",
-        "https://i.blogs.es/25dfc8/captura-de-pantalla-2026-07-10-a-las-11.35.25/650_1200.png",
-        "https://i.blogs.es/3c8f70/china-eeuu/375_142.jpeg",
-        "https://i.blogs.es/6335ae/zai-glm-5-2/375_142.jpeg",
-        "https://i.blogs.es/b87435/captura-de-pantalla-2026-07-10-a-las-12.24.18/1024_2000.png",
-        "https://i.blogs.es/b87435/captura-de-pantalla-2026-07-10-a-las-12.24.18/1366_2000.png",
-        "https://i.blogs.es/b87435/captura-de-pantalla-2026-07-10-a-las-12.24.18/450_1000.png",
-        "https://i.blogs.es/b87435/captura-de-pantalla-2026-07-10-a-las-12.24.18/650_1200.png",
-        "https://i.blogs.es/ca093d/grok-muse/1024_2000.jpeg",
-        "https://i.blogs.es/ca093d/grok-muse/1366_2000.jpeg",
-        "https://i.blogs.es/ca093d/grok-muse/450_1000.jpeg",
-        "https://i.blogs.es/ca093d/grok-muse/650_1200.jpeg",
-        "https://i.blogs.es/d95950/grok-muse-spark/1024_2000.jpeg",
-        "https://x.ai/news/grok-4-5"
-      ]
-    }
-  },
-  {
-    "id": 1296,
-    "fecha": "2026-07-10T16:52:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Ataque cibernético Odido",
-    "resumen": "La policía holandesa ha descubierto evidencia que sugiere la participación de criminales locales en el ataque cibernético a la proveedora de telecomunicaciones Odido, que expuso los datos personales de más de 6 millones de clientes. El incidente destaca la importancia de la colaboración entre las fuerzas del orden y las empresas para combatir el cibercrimen.",
-    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MDIzNTh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/dutch-police-suspect-dutch-accomplice-in-odido-cyberattack",
-    "fuente": "The Record",
-    "dedup_key": "txt:dutch police trace odido telco cyberattack to suspected local accomplice",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1295,
-    "fecha": "2026-07-10T16:52:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque láser resetea contraseñas",
-    "resumen": "Investigadores del equipo de seguridad Donjon de Ledger han demostrado que un pulso láser precisamente sincronizado puede resetear la contraseña de una tarjeta de wallet criptográfico Tangem, permitiendo al atacante controlar la wallet y transferir monedas sin necesidad de la contraseña original. El ataque requiere acceso físico a la tarjeta y un equipo especializado.",
-    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MDIzNTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:laser attack resets tangem wallet passwords on cards that can t be patched",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1294,
-    "fecha": "2026-07-10T16:52:24Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "INFO",
-    "titulo": "Hackers holandeses sospechosos",
-    "resumen": "La Policía Nacional Holandesa ha encontrado \"fuertes indicios\" de que hackers holandeses estuvieron involucrados en la brecha de seguridad en el proveedor de telecomunicaciones Odido en febrero, lo que sugiere un posible ataque interno o una campaña de hacking dirigida. La investigación sigue en curso para determinar el alcance y los vectores de ataque utilizados en la brecha.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MDIzNDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/police-suspects-dutch-hackers-were-involved-in-odido-breach/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:police suspects dutch hackers were involved in odido breach",
-    "ttps": [],
     "iocs": {}
   }
 ]
