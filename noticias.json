@@ -1,5 +1,111 @@
 [
   {
+    "id": 3358,
+    "fecha": "2026-10-29T09:16:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA incorpora dos vulnerabilidades activamente explotadas al catálogo KEV",
+    "resumen": "CISA añadió CVE-2026-41709 (vulnerabilidad de registro insuficiente en Broadcom VMware ESX) y CVE-2026-46300 (variable no inicializada en Linux Kernel) al catálogo KEV, obligando a agencias federales a priorizar su remediación inmediata. Estas fallas permiten control total del activo y son objetivo frecuente de actores maliciosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyNjUzODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-41709,cve-2026-46300",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-41709",
+        "CVE-2026-46300"
+      ]
+    }
+  },
+  {
+    "id": 3357,
+    "fecha": "2026-10-29T09:16:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bluesky bloquea enlaces a archivo filtrado con datos de 41 000 empleados del DHS",
+    "resumen": "La plataforma impidió el acceso a un archivo que contenía información personal y de contacto de agentes de ICE, CBP y otras agencias, mitigando la exposición de datos sensibles tras la filtración no autorizada.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyNjUzODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/bluesky-blocks-links-to-major-leak-of-dhs-data/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:bluesky is blocking links to a major leak of dhs employee records",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3356,
+    "fecha": "2026-10-29T09:16:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotaron vulnerabilidad crítica de Cisco SD-WAN para instalar malware que roba claves de cifrado",
+    "resumen": "Los atacantes aprovecharon la falla CVE-2024-XXXXX en Cisco Catalyst SD-WAN, parcheada en febrero, para desplegar el malware KeyDrift que extrae y almacena claves de cifrado de tráfico inter-sitios. El vector de ataque incluye acceso remoto a los controladores SD-WAN y ejecución de código arbitrario, comprometiendo la confidencialidad de la comunicación corporativa.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyNjUzNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers exploited cisco sd wan flaw to plant malware built to steal encryption keys",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3355,
+    "fecha": "2026-10-29T09:16:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS reflejada en PHP-CGI/PHP-FPM de ICT Innovations permite ejecución de JavaScript arbitrario",
+    "resumen": "CVE-2026-7190, clasificada como CVSS v4.0 5.1, afecta al endpoint login.php del paquete multiusuario ICTBroadcast, donde el parámetro editForm[extension_username] se refleja sin saneamiento, posibilitando ataques de cross-site scripting contra usuarios que visiten la URL manipulada. La falla fue corregida en marzo 2026 por el fabricante.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyNjUzNzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-reflejado-en-la-configuracion-de-php-cgiphp-fpm-de-ict",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-7190",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-7190"
+      ]
+    }
+  },
+  {
+    "id": 3354,
+    "fecha": "2026-10-29T09:16:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en PHP, filtraciones del kernel Linux y LiteLLM comprometido generan alerta global",
+    "resumen": "Se descubrió una vulnerabilidad de ejecución remota en PHP que permite toma de control total del servidor, mientras filtraciones del código fuente del kernel de Linux exponen vectores de escalada de privilegios y una versión comprometida de LiteLLM facilita la inyección de payloads en entornos LLM. El conjunto de incidentes obliga a aplicar parches inmediatos y revisar la cadena de suministro de software de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMyNjUzNzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/semana-negra-ciberseguridad-php-linux-gitlab/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:una semana caótica para la ciberseguridad lecciones y alertas",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3353,
     "fecha": "2026-10-29T00:35:40Z",
     "categoria": "Ciberseguridad",
@@ -52390,118 +52496,6 @@
     "enlace_original": "https://www.bleepingcomputer.com/news/security/police-suspects-dutch-hackers-were-involved-in-odido-breach/",
     "fuente": "Bleeping Computer",
     "dedup_key": "txt:police suspects dutch hackers were involved in odido breach",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1293,
-    "fecha": "2026-07-10T16:52:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ciberataques con IA",
-    "resumen": "Las empresas enfrentan un nuevo entorno de amenazas cibernéticas impulsadas por la inteligencia artificial (IA), donde los modelos de seguridad tradicionales pueden ser ineficaces. La expansión del trabajo híbrido, el uso de aplicaciones en la nube y el auge de la IA han transformado el panorama de ciberseguridad, requiriendo estrategias de protección actualizadas.",
-    "url_imagen": "https://images.unsplash.com/photo-1750365919971-7dd273e7b317?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MDIzMzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://cybersecuritynews.es/5-claves-para-proteger-a-las-empresas-frente-a-los-ciberataques-impulsados-por-ia/",
-    "fuente": "CyberSecurity News",
-    "dedup_key": "txt:5 claves para proteger a las empresas frente a los ciberataques impulsados por ia",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1292,
-    "fecha": "2026-07-10T14:12:09Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Campañas de espionaje contra policía paquistaní",
-    "resumen": "China e India llevaron a cabo campañas de espionaje separadas contra la misma fuerza policial paquistaní, en algunos casos comprometiendo los mismos sistemas, entre febrero de 2024 y abril de 2026, enfocándose en la fuerza responsable de la provincia suroeste del país, donde ha habido una insurgencia separatista de larga data. Los vectores de ataque no se especifican, pero el incidente sugiere una posible vulnerabilidad en la seguridad de la información de la fuerza policial.",
-    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/china-india-ran-separate-spy-campaigns-against-same-police-force",
-    "fuente": "The Record",
-    "dedup_key": "txt:china india ran separate spying campaigns against same pakistani police force",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1552",
-        "name": "Unconventional Password Brute Force"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1005",
-        "name": "Data from Local System"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1291,
-    "fecha": "2026-07-10T14:12:03Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidades en BitLocker",
-    "resumen": "Se han descubierto vulnerabilidades en el wrapper de seguridad BitLocker de Microsoft, lo que pone en riesgo a organizaciones y posiblemente a cajeros automáticos (ATMs) de sufrir compromisos de seguridad, permitiendo potenciales ataques de explotación. Estas vulnerabilidades podrían ser utilizadas por atacantes para obtener acceso no autorizado a sistemas y datos sensibles.",
-    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:fresh atm crypto software bugs jackpot or bust",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1290,
-    "fecha": "2026-07-10T14:11:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Nuevo RAT MODBEACON utiliza gRPC",
-    "resumen": "El grupo de ciberdelincuencia chino Silver Fox ha sido vinculado a un nuevo troyano de acceso remoto (RAT) llamado MODBEACON, que utiliza gRPC Streaming para enviar tráfico de comando y control (C2) cifrado, lo que dificulta su detección. El vector de ataque incluye técnicas de SEO poisoning y la propagación de malware a través de instaladores falsificados.",
-    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:new modbeacon rat uses grpc streaming for encrypted c2 traffic",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1071",
-        "name": "Application Layer Protocol"
-      },
-      {
-        "id": "T1041",
-        "name": "Exfiltration Over C2 Channel"
-      },
-      {
-        "id": "T1027",
-        "name": "Obfuscated Files or Information"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1289,
-    "fecha": "2026-07-10T14:11:50Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "Agente AI en tu directorio",
-    "resumen": "Los agentes de IA están acelerando el crecimiento de identidades no humanas, lo que dificulta que las organizaciones comprendan qué existe, quién es el propietario y a qué puede acceder, ampliando la superficie de ataque de la empresa. Se requiere una mayor visibilidad y gobernanza de identidades para mitigar este riesgo.",
-    "url_imagen": "https://images.unsplash.com/photo-1674027214993-52de23be5a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM2OTI3MTF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/the-replicant-in-your-directory-ai-agents-and-the-identity-security-gap/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:the replicant in your directory ai agents and the identity security gap",
     "ttps": [],
     "iocs": {}
   }
