@@ -1,5 +1,114 @@
 [
   {
+    "id": 3383,
+    "fecha": "2026-10-30T19:52:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Investigación revela spyware y bloatware en unidades de coche aftermarket con ayuda de IA Claude",
+    "resumen": "Un analista utilizó Claude para desensamblar una unidad de cabeza aftermarket y descubrió un asistente de voz con WebView, servicios de ubicación de Baidu, grabadora de llamadas y un cliente DAB, consumiendo un 33 % de CPU en reposo, lo que expone vulnerabilidades críticas en el firmware IoT del vehículo.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzODk5MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/10/bloatware-in-aftermarket-auto-parts.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:bloatware in aftermarket auto parts",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3382,
+    "fecha": "2026-10-30T19:52:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers chinos emplean el framework IA ARTEX para comprometer más de 200 organizaciones globales",
+    "resumen": "Se detectó que el grupo estatal Vapor Panda utilizó ARTEX, una herramienta de pentesting basada en Go con modelos de lenguaje, para automatizar exploits y credenciales en objetivos de alto valor, ampliando la superficie de ataque mediante generación de payloads adaptativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzODk5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:chinese hackers use ai powered artex to target over 200 organizations worldwide",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3381,
+    "fecha": "2026-10-30T19:52:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Trezor alerta sobre posible implante de robo de cripto en wallet Safe 5 vendido en SE Asia",
+    "resumen": "Se han recibido informes creíbles de un implante hardware que extrae claves privadas de la Trezor Safe 5, comprometiendo fondos de usuarios en la región. El vector es físico-software, indicando una cadena de suministro comprometida y riesgo de exfiltración de activos digitales.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzODk5MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:trezor warns of suspected crypto theft implant in hardware wallet",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3380,
+    "fecha": "2026-10-30T19:51:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-14467 permite exfiltración de metadatos en Forocoches mediante imágenes externas",
+    "resumen": "La falla de tipo CWE-200 en el editor de comentarios de Forocoches expone IP, User-Agent y timestamps al cargar imágenes con URLs maliciosas, facilitando tracking de usuarios sin autorización. El vector es una petición HTTP/HTTPS automática al servidor del atacante al visualizar el comentario; la vulnerabilidad ha sido parcheada.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzODk5MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/exposicion-de-informacion-en-el-editor-de-comentarios-de-forocoches",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-14467",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14467"
+      ]
+    }
+  },
+  {
+    "id": 3379,
+    "fecha": "2026-10-30T19:51:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Binance sufre ciberataque que compromete 6.300 millones de dólares en criptoactivos",
+    "resumen": "El intercambio confirmó una intrusión que ha congelado aproximadamente 3.000 millones de dólares y forzó la paralización de retiros, indicando posible acceso a credenciales de cuentas privilegiadas y vulnerabilidades en la gestión de claves. El incidente eleva el riesgo de pérdida de fondos y exige revisión inmediata de controles de acceso y monitoreo de anomalías.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzODk5MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/binance-sufre-un-ciberataque-que-afecta-a-6-300-millones-de-dolares-en-criptoactivos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:binance sufre un ciberataque que afecta a 6 300 millones de dólares en criptoactivos",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3378,
     "fecha": "2026-10-30T12:02:31Z",
     "categoria": "Ciberseguridad",
@@ -52393,166 +52502,6 @@
     "fuente": "TG: Cyber Security Channel",
     "dedup_key": "txt:medtronic data breach hits 3 8 million people shinyhunters suspected of ransom payment medtronic confirmed that shi",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1322,
-    "fecha": "2026-07-11T13:08:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad SSL Stripping en EMC RecoverPoint",
-    "resumen": "La vulnerabilidad CVE-2016-6650, con una puntuación CVSS de 7.5, afecta a versiones anteriores a 5.0 de EMC RecoverPoint y EMC RecoverPoint para máquinas virtuales, permitiendo a atacantes explotarla mediante SSL Stripping para comprometer el sistema. Los productos afectados incluyen Dell RecoverPoint para máquinas virtuales y EMC RecoverPoint.",
-    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NzUzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2016-6650",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2016-6650",
-    "ttps": [
-      {
-        "id": "T1189",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1587",
-        "name": "Forge Web Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2016-6650"
-      ]
-    }
-  },
-  {
-    "id": 1320,
-    "fecha": "2026-07-11T10:11:54Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en osTicket",
-    "resumen": "La vulnerabilidad CVE-2018-7195, con una puntuación CVSS de 8.1, permite a atacantes remotos restablecer contraseñas arbitrarias en versiones de osTicket anteriores a la 1.10.2, aprovechando el acceso de invitado y adivinando un número de 6 dígitos. Esto puede ser utilizado para realizar ataques de phishing o tomar el control de cuentas.",
-    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2018-7195",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2018-7195",
-    "ttps": [
-      {
-        "id": "T1110",
-        "name": "Brute Force"
-      },
-      {
-        "id": "T1187",
-        "name": "Forced Authentication"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2018-7195"
-      ]
-    }
-  },
-  {
-    "id": 1319,
-    "fecha": "2026-07-11T10:11:49Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Meta AI utiliza fotos de Instagram sin permiso",
-    "resumen": "Meta ha activado por defecto la opción de utilizar fotos de Instagram públicas para entrenar su modelo de IA, Muse Image, sin pedir permiso a los usuarios, lo que genera preocupaciones sobre la privacidad y el uso de datos personales. Los usuarios pueden desactivar esta opción manualmente, pero es importante destacar que el modelo tiene salvaguardas para evitar la creación de contenido delicado.",
-    "url_imagen": "https://images.unsplash.com/photo-1767955006100-cf73d990599f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/privacidad/meta-acaba-convertir-tus-fotos-instagram-materia-prima-para-su-ia-pedirte-permiso-como-desactivarlo",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:meta acaba de convertir tus fotos de instagram en materia prima para su ia sin pedirte permiso cómo desactivarlo",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.nytimes.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/3cf7e7/meta/375_142.jpeg",
-        "https://i.blogs.es/b7aa01/instagram-metaai/1024_2000.jpeg",
-        "https://i.blogs.es/cad723/instagram-metaai-02/1024_2000.jpeg",
-        "https://i.blogs.es/cad723/instagram-metaai-02/1366_2000.jpeg",
-        "https://i.blogs.es/cad723/instagram-metaai-02/450_1000.jpeg",
-        "https://i.blogs.es/cad723/instagram-metaai-02/650_1200.jpeg",
-        "https://i.blogs.es/d4d05e/instagram-metaai-01/1024_2000.jpeg",
-        "https://i.blogs.es/d4d05e/instagram-metaai-01/1366_2000.jpeg",
-        "https://i.blogs.es/d4d05e/instagram-metaai-01/450_1000.jpeg",
-        "https://i.blogs.es/d4d05e/instagram-metaai-01/650_1200.jpeg",
-        "https://www.nytimes.com/2026/07/08/technology/meta-instagram-ai.html"
-      ]
-    }
-  },
-  {
-    "id": 1318,
-    "fecha": "2026-07-11T10:11:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Wireshark 4.6.7: Correcciones de vulnerabilidades",
-    "resumen": "La versión 4.6.7 de Wireshark corrige 12 vulnerabilidades y 16 errores, mejorando la seguridad y estabilidad de la herramienta de análisis de protocolos de red. Estas correcciones son cruciales para prevenir posibles ataques que exploten las vulnerabilidades existentes en versiones anteriores.",
-    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ3MDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33146",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:wireshark 4 6 7 released sat jul 11th",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1317,
-    "fecha": "2026-07-11T10:11:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Ghostcommit engaña a AI",
-    "resumen": "La técnica \"Ghostcommit\" oculta inyecciones de comandos en imágenes PNG para engañar a agentes de IA, como CodeRabbit y Bugbot, y potencialmente robar secretos de repositorios, demostrando una vulnerabilidad en la revisión de código automatizada. Los atacantes pueden utilizar esta técnica para extraer información confidencial de los repositorios, como claves de acceso y contraseñas almacenadas en archivos .env.",
-    "url_imagen": "https://images.unsplash.com/photo-1756908992154-c8a89f5e517f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NjQ2OTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:ghostcommit hides prompt injection in images to fool ai agents steal secrets",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials (se menciona el robo de claves de acceso y contraseñas almacenadas en archivos .env)"
-      },
-      {
-        "id": "T1497.001",
-        "name": "No se ajusta perfectamente, pero se podría considerar como una forma de T1497.001 - Virtualization/Sandbox Evasion (engañar a agentes de IA)"
-      }
-    ],
     "iocs": {}
   }
 ]
