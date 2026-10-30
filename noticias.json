@@ -1,5 +1,142 @@
 [
   {
+    "id": 3373,
+    "fecha": "2026-10-30T04:10:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-61564 permite ejecución remota de código en AVideo antes de 8.1.0",
+    "resumen": "La vulnerabilidad en el endpoint install/checkConfiguration.php de AVideo permite a un atacante no autenticado inyectar código PHP arbitrario mediante la manipulación de parámetros como webSiteRootURL y systemRootPath, logrando ejecución de comandos, lectura/escritura de archivos y una segunda vía de SQL-injection. Requiere que el archivo videos/configuration.php no exista, lo que ocurre en despliegues nuevos o tras su eliminación.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMzM0Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-61564",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-61564",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-61564"
+      ]
+    }
+  },
+  {
+    "id": 3372,
+    "fecha": "2026-10-30T04:10:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenazas norcoreanas integran IA en sus campañas para acelerar ataques y evadir detección",
+    "resumen": "Microsoft Threat Intelligence detecta que grupos de APT de Corea del Norte adoptan modelos de lenguaje y herramientas de generación automática para crear phishing, malware y scripts de explotación, reduciendo tiempos de desarrollo y mejorando la evasión de EDR. Esta tendencia indica una madurez creciente en la incorporación de IA a la cadena de ataque de actores estatales.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMzM0MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:tracking ai adoption in north korean threat actor tradecraft",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3371,
+    "fecha": "2026-10-30T04:10:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hitachi Energy CoreTec expone vulnerabilidades críticas de OS command injection y escalada de privilegios",
+    "resumen": "Se identificaron dos CVE (CVE-2026-13162 y CVE-2026-43284) que permiten a usuarios autenticados ejecutar comandos arbitrarios y a usuarios locales escalar a root mediante manipulación del daemon de sincronización horaria y del subsistema IPsec ESP del kernel Linux. La explotación afecta versiones CoreTec 4/≤3.4.0 y CoreTec 5/≤3.4.0, con impacto alto (CVSS ≥ 7.5) en confidencialidad, integridad y disponibilidad del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMzM0MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-13162,cve-2026-43284",
+    "ttps": [
+      {
+        "id": "T1059.004",
+        "name": "Unix Shell"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1543.004",
+        "name": "Launch Daemon"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.hitachienergy.com"
+      ],
+      "url": [
+        "https://www.hitachienergy.com/contact-us/"
+      ],
+      "cve": [
+        "CVE-2026-13162",
+        "CVE-2026-43284"
+      ]
+    }
+  },
+  {
+    "id": 3370,
+    "fecha": "2026-10-30T04:10:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en firmware UEFI permite ejecución de código en el arranque de la mayoría de servidores",
+    "resumen": "Un flaw de ejecución de código en el firmware UEFI, presente en la mayoría de los servidores y centros de datos, permite a un atacante comprometer el sistema antes de que se inicie el SO, facilitando despliegues de rootkits persistentes. La explotación requiere acceso físico o privilegios de bajo nivel y afecta a todos los fabricantes que utilizan UEFI sin parches aplicados.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMzM0MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/most-servers-on-the-planet-are-vulnerable-to-a-code-execution-flaw-in-uefi-firmware/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:most servers on the planet are vulnerable to this firmware code execution flaw",
+    "ttps": [
+      {
+        "id": "T1542.001",
+        "name": "System Firmware"
+      },
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3369,
+    "fecha": "2026-10-30T04:10:29Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Campaña Yoba usa falsos clientes de ChatGPT y Claude para distribuir mineros de criptomonedas mediante ejecutables firmados",
+    "resumen": "Los atacantes despliegan loaders y mineros de criptomonedas bajo la apariencia de aplicaciones de escritorio de IA (GPT-5.6 Sol, GPT-6 Astra, Claude Opus) usando proyectos falsos en GitHub y ejecutables firmados, facilitando la evasión de AV y la instalación silenciosa en sistemas Windows.",
+    "url_imagen": "https://images.unsplash.com/photo-1591696331111-ef9586a5b17a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzMzM0Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fake chatgpt and claude apps abuse signed executables to deploy crypto miners",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3368,
     "fecha": "2026-10-29T22:28:00Z",
     "categoria": "Ciberseguridad",
@@ -52458,93 +52595,5 @@
     "dedup_key": "txt:gpt 5 6 y chatgpt work openai apuesta por convertir la ia en un compañero de trabajo autónomo",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 1308,
-    "fecha": "2026-07-11T02:10:55Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Cámaras de matrículas en el punto de mira",
-    "resumen": "Expertos consideran que la necesidad de una orden judicial para búsquedas en cámaras de matrículas (ALPR) limitaría radicalmente su uso en redes de cámaras y cambiaría la forma en que se realiza la policía moderna, afectando la privacidad digital y la seguridad. Esto podría impactar la forma en que se realizan las investigaciones y el seguimiento de vehículos.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/license-plate-cameras-may-be-next-target-after-supreme-court-reins-in-location-tracking",
-    "fuente": "The Record",
-    "dedup_key": "txt:license plate cameras may be next target after supreme court reins in location tracking",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1307,
-    "fecha": "2026-07-11T02:10:50Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad Squidbleed",
-    "resumen": "Se ha descubierto una vulnerabilidad de 29 años en el proxy Squid, conocida como \"Squidbleed\", que permite la fuga de solicitudes HTTP. Esta vulnerabilidad puede ser explotada por atacantes para obtener información confidencial, destacando la importancia de actualizar y parchear los sistemas para prevenir ataques de seguridad.",
-    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.schneier.com/blog/archives/2026/07/friday-squid-blogging-squidbleed-vulnerability.html",
-    "fuente": "Schneier on Security",
-    "dedup_key": "txt:friday squid blogging squidbleed vulnerability",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "www.schneier.com"
-      ]
-    }
-  },
-  {
-    "id": 1306,
-    "fecha": "2026-07-11T02:10:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidades en U-Boot",
-    "resumen": "Se han descubierto seis vulnerabilidades en el cargador de arranque U-Boot que podrían permitir a los atacantes ejecutar código malicioso durante el arranque del dispositivo, lo que podría habilitar ataques de firmware sigilosos que comprometan las protecciones de seguridad e instalen malware persistente. Los vectores de ataque incluyen la ejecución de código arbitrario durante el proceso de arranque, lo que podría tener un impacto significativo en la seguridad de los dispositivos.",
-    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:new u boot flaws could enable stealthy firmware attacks",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1305,
-    "fecha": "2026-07-10T21:57:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad CVE-2019-14749",
-    "resumen": "Se ha detectado una vulnerabilidad de inyección CSV en osTicket, que permite a atacantes inyectar fórmulas maliciosas en hojas de cálculo exportadas, afectando a usuarios que acceden a estas hojas de cálculo con aplicaciones como Excel o OpenOffice Calc. La vulnerabilidad se encuentra en versiones anteriores a 1.10.7 y 1.12.x anteriores a 1.12.1.",
-    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MjA2NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2019-14749",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2019-14749",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2019-14749"
-      ]
-    }
-  },
-  {
-    "id": 1304,
-    "fecha": "2026-07-10T21:57:16Z",
-    "categoria": "IA",
-    "severidad": "ALTA",
-    "titulo": "Reorganización de OpenAI",
-    "resumen": "OpenAI está reorganizando sus productos de IA, concentrando funciones en una sola marca y retirando Atlas el 9 de agosto de 2026, lo que obliga a los usuarios a adaptarse a una nueva experiencia de escritorio y a entender qué aplicación conviene abrir para cada tarea. La nueva aplicación de ChatGPT reúne Chat, Work y Codex en un mismo entorno, cada uno con un enfoque distinto en tareas como conversar, investigar y desarrollar software.",
-    "url_imagen": "https://images.unsplash.com/photo-1782155789201-b6d7ea3704c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MjA2MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/openai-queria-simplificar-sus-productos-ia-ha-terminado-ensalada-chatgpt-atlas-codex",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:openai quería simplificar sus productos de ia ha terminado con una ensalada de chatgpt atlas y codex",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "chromewebstore.google.com",
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/1960e7/sol-gpt-5-6-openai/375_142.jpeg",
-        "https://i.blogs.es/9f1dd3/openai-portada/1024_2000.jpeg"
-      ]
-    }
   }
 ]
