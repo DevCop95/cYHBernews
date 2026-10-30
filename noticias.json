@@ -1,5 +1,107 @@
 [
   {
+    "id": 3378,
+    "fecha": "2026-10-30T12:02:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FrostyNeighbor, el APT respaldado por Rusia, intensifica ataques destructivos en Ucrania",
+    "resumen": "El grupo de amenaza persistente avanzada “FrostyNeighbor” ha ejecutado un ataque de alto impacto contra infraestructuras críticas ucranianas, evidenciando una mayor coordinación con objetivos cibernéticos rusos y potenciales apoyos de Belarús.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzNjE3NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:as russia s cyberwar evolves belarus steps forward",
+    "ttps": [
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3377,
+    "fecha": "2026-10-30T12:02:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extensión oficial Claude Code para VS Code comprometida e instala backdoor SSH persistente",
+    "resumen": "Investigadores de ciberseguridad detectaron que la extensión Claude Code de Anthropic, publicada en el registro Open VSX, fue alterada para desplegar un backdoor SSH que persiste en los hosts infectados; el vector de compromiso se rastrea al marketplace de Cursor, que retiró temporalmente la extensión para eliminar el malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzNjE3NDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:official claude code vs code extension compromised to install persistent ssh backdoor",
+    "ttps": [
+      {
+        "id": "T1059.004",
+        "name": "Unix Shell"
+      },
+      {
+        "id": "T1098.004",
+        "name": "SSH Authorized Keys"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3376,
+    "fecha": "2026-10-30T12:02:26Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Cloudflare despliega DLP AI con Workers y Clef para detectar documentos oficiales en imágenes en milisegundos",
+    "resumen": "La solución combina Cloudflare Workers, el modelo multimodal Clef y almacenamiento Edge (R2, D1) para inspeccionar imágenes y bloquear fugas de DNI, pasaportes o tarjetas de crédito, ofreciendo detección en <50 ms globalmente. Se trata de un control de datos en el perímetro (WAF/CASB) que puede integrarse en flujos de email, chat y contact center.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501218534-156f33c28f8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzNjE3NDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/10/como-evitar-fugas-de-documentos-con-un.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cómo evitar fugas de documentos con un dlp ai para ficheros de imágenes con cloudflare workers ai y clef",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3375,
+    "fecha": "2026-10-30T12:02:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Quishing: códigos QR usados en campañas de phishing aumentan riesgo de compromisos",
+    "resumen": "ESET detecta un crecimiento significativo de ataques de phishing que emplean códigos QR para redirigir a víctimas a sitios maliciosos, facilitando la descarga de payloads o la captura de credenciales. La técnica aprovecha la confianza del usuario en la facilidad de escaneo y requiere políticas de educación y filtrado de URLs en dispositivos móviles.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzNjE3NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-moviles/quishing-estafas-codigos-qr-como-protegerte/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:quishing cómo funcionan las estafas con códigos qr y cómo protegerte",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3374,
+    "fecha": "2026-10-30T12:02:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bitdefender y NETGEAR advierten sobre el incremento de amenazas en hogares IoT para 2026",
+    "resumen": "El informe conjunto revela un 42 % de aumento en vulnerabilidades explotables en dispositivos domésticos, destacando vectores de ataque mediante firmware desactualizado y redes Wi-Fi sin segmentación, lo que eleva el riesgo de botnets y ransomware en entornos residenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMzNjE3NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/alertan-del-aumento-de-los-riesgos-de-seguridad-en-los-hogares-conectados/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:alertan del aumento de los riesgos de seguridad en los hogares conectados",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3373,
     "fecha": "2026-10-30T04:10:38Z",
     "categoria": "Ciberseguridad",
@@ -52451,149 +52553,6 @@
         "name": "No se ajusta perfectamente, pero se podría considerar como una forma de T1497.001 - Virtualization/Sandbox Evasion (engañar a agentes de IA)"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 1316,
-    "fecha": "2026-07-11T07:47:58Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en W3 Total Cache",
-    "resumen": "La versión 2.9.4 del plugin W3 Total Cache para WordPress presenta una vulnerabilidad de Directory Traversal (CVE-2026-9282) que permite a atacantes no autenticados leer contenido de archivos arbitrarios en el servidor, lo que puede incluir información sensible, siempre y cuando se active el modo de minimización manual y se proporcione un nombre de archivo de minimización con formato manual.",
-    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/cveNotify/195987",
-    "fuente": "TG: CVE Notify",
-    "dedup_key": "cve:cve-2026-9282",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2026-9282"
-      ]
-    }
-  },
-  {
-    "id": 1313,
-    "fecha": "2026-07-11T07:47:38Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "SYNAPTIC Sentinel v0.3.22",
-    "resumen": "SYNAPTIC Sentinel es un auditor de seguridad de código abierto que se integra en Visual Studio Code, revisando el código, dependencias y configuración sin enviar datos fuera de la máquina, utilizando modelos de IA para identificar vulnerabilidades y ofrecer recomendaciones de seguridad. El uso de SYNAPTIC Sentinel puede ayudar a los desarrolladores a identificar y mitigar riesgos de seguridad en sus proyectos, especialmente aquellos que utilizan asistentes de IA para generar código.",
-    "url_imagen": "https://images.unsplash.com/photo-1666875758414-bdc6c0d6f64e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NTYwNTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "http://www.elladodelmal.com/2026/07/synaptic-sentinel-v0322-el-auditor-de.html",
-    "fuente": "El Lado Del Mal",
-    "dedup_key": "cve:cve-2026-41242,cve-2026-48068",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "0xword.com",
-        "blogger.googleusercontent.com",
-        "deepwiki.com",
-        "elladodelmal.com",
-        "feeds.feedburner.com",
-        "marketplace.visualstudio.com",
-        "mypublicinbox.com"
-      ],
-      "url": [
-        "http://feeds.feedburner.com/ElLadoDelMal",
-        "https://0xWord.com",
-        "https://0xword.com/es/libros/245-hacking-pentesting-con-inteligencia-artificial.html",
-        "https://0xword.com/es/libros/251-hacking-ia-jailbreak-prompt-injection-hallucinations-unalignment.html",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0xgLZMlNBevXRAK2QGVIE2HuBjJ0iJwACEd5Fals3n4JB_UvqaOcyfBc5ybiUMkkPtHDDWf5EiY2qvDw6vXjFtLCY1Th4vYA61M2DP9kCmp3cbbf74pfC5QpVVoK0pIOt7rZRLq3moAVx4cZBvxm1dIVKYRf56y9sQn4-rztlmwVAjqNhwJDN/s2692/Sentinel4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0xgLZMlNBevXRAK2QGVIE2HuBjJ0iJwACEd5Fals3n4JB_UvqaOcyfBc5ybiUMkkPtHDDWf5EiY2qvDw6vXjFtLCY1Th4vYA61M2DP9kCmp3cbbf74pfC5QpVVoK0pIOt7rZRLq3moAVx4cZBvxm1dIVKYRf56y9sQn4-rztlmwVAjqNhwJDN/w640-h342/Sentinel4.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXrz31YOKEycxxxPtr1LiBwrsZhIP0EJ6Jv7YBJgfiIBxNu7eVG_ui-nNcJQgoFsAo_a5ad6CK2M6Qw63o3wUPYk7pnzAht9MBePcM3g_PW_xPgr6TgSD_xq9sEaISk8r4WAms4p-JYJzdnYNvKmYTamSDYPJdL96bihKa3Shsz8IQE0B8UTj2/w640-h436/Sentinel0.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgruNScbm-cX3WfBhTjd8u9xsKa6FE9tohxRkOgr4S4k3M_Y6ln2jmOeErVDdnr1uO3qJjCRemH91I8-mMegc_ZcgTZBXMa_nTTxOd6gEBsP232dpkT05h9vztiknVbIiSQqjraYPlc1f4YWyDRJZgPF3mIlG7ZFYKbEqtBijwDIrviZ415qQYW/s2694/sentinel3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgruNScbm-cX3WfBhTjd8u9xsKa6FE9tohxRkOgr4S4k3M_Y6ln2jmOeErVDdnr1uO3qJjCRemH91I8-mMegc_ZcgTZBXMa_nTTxOd6gEBsP232dpkT05h9vztiknVbIiSQqjraYPlc1f4YWyDRJZgPF3mIlG7ZFYKbEqtBijwDIrviZ415qQYW/w640-h344/sentinel3.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvttjooUqDKC1IpRhRwTTwm9PkSHDZQTvTPyaG-iTSjG2RSDHNtNyA08Rgn034kqz1QO4uvRDS1UCC4t6c4bzQoARVI1kUpM3UT4e6Qc0h5flF_PIxVXWwr_6x6taOXCr3QI1JMNrGpsaU7uCZjlCxmjnMz_UMWhgymV4AJiGsZjkA5lduTTTX/s2726/sentinel1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvttjooUqDKC1IpRhRwTTwm9PkSHDZQTvTPyaG-iTSjG2RSDHNtNyA08Rgn034kqz1QO4uvRDS1UCC4t6c4bzQoARVI1kUpM3UT4e6Qc0h5flF_PIxVXWwr_6x6taOXCr3QI1JMNrGpsaU7uCZjlCxmjnMz_UMWhgymV4AJiGsZjkA5lduTTTX/w640-h344/sentinel1.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2GtbwAeJQd2d8g_sw4DM7VEYQUBv84iwsOJKFMpT4TZJh1kVaKJtOFyW3VCKmfPhhiDLcUrVbHQmf1AuKcBpR-6ivqj-eNyjS3nu6MdxzRcAC168LHMlUEiUQYCfW8TX_gD9_dkyRLmBvu_rwiOlIyWO1Ir-JeLY5JOxlWVJswBGzPH-wyqZD/w640-h464/sentinel8.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6hDgAXReqyqSFjBXhsIKoOXqcS7vcZGZ-O1NjnKnVR69DbQK4Sp7KBw3r1ksj504FkSUHR0YF8SdAQXGLCFUsg9xWmnckNRIbQS7dKAn5fbiHWqQhHMQV3yDSibfBvR-RzFiVGC6waBDNw9bnwEi9xidtYRaqn7ZBPLTf2MX10s_PghA2brxA/s2690/Sentinel5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6hDgAXReqyqSFjBXhsIKoOXqcS7vcZGZ-O1NjnKnVR69DbQK4Sp7KBw3r1ksj504FkSUHR0YF8SdAQXGLCFUsg9xWmnckNRIbQS7dKAn5fbiHWqQhHMQV3yDSibfBvR-RzFiVGC6waBDNw9bnwEi9xidtYRaqn7ZBPLTf2MX10s_PghA2brxA/w640-h344/Sentinel5.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGlxuPvsCIvroRvztIaGw6Munmx4sWMdpXbWYXzTFmt8ZXBxrPSdENqyHKUlKYR2KI2pb48LVg_mLlJhaxy9R9xdnapH4UVUPD8YReOyl22-yhIImdXUzHRzE8egQuQBBhcoKeOLkbhBuXZe_8OU8hWB0CXFkF4lI2altrnGCW12nY0bXt7hsd/w299-h400/HackingIA_web.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8WmawgPTuJUI5Ay5yG51HuODkDTSc6bW2rgibmKUjmlfZu9IMSk0MvqHhVK5_wg9mzeCNJWbsrTabSx4jinxmVoXlAYJDTPZG2QABPOdHgSUdq9olBd5zMaupTrWVzJl9YL2jQ2SfXj_XJTGSUC3bUrTbifwRrwrq4Kf2RrwhfiRSlp6XEIuP/s2698/Sentinel2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8WmawgPTuJUI5Ay5yG51HuODkDTSc6bW2rgibmKUjmlfZu9IMSk0MvqHhVK5_wg9mzeCNJWbsrTabSx4jinxmVoXlAYJDTPZG2QABPOdHgSUdq9olBd5zMaupTrWVzJl9YL2jQ2SfXj_XJTGSUC3bUrTbifwRrwrq4Kf2RrwhfiRSlp6XEIuP/w640-h344/Sentinel2.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZoyt0GnOs8bxWrR3MIwi-PJprtdOlFHSbOu4PMzPC9bPRKc2SPmALCYqCJtRlnGOU4PIyUnUwNHBC9gkM-bmgzeYKCGZ6LEgOVvS5y19Li0Cx1Kdalwi9Rmud_xJM7V4hbQYQY8VyqFxwn-JYIUGgpY31Z9hKvIHcQSNT3hJPJePY750jPHSU/w640-h350/Saulo_Flores.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicZbq7z1QIW5RDLoHBFH4O2XtgQCjhHZ4YI70ksUtOQpkc1cersCsUNnlBy8wtEAnuOPOrm2KTYMBs9K3jCobjjSod4rx7ymfE0lcTFRy6LeGkzbpdGBBSx8LbifDrZfrgAsQDmDWu_rrz4htL0YJljBRe4esKTfZ0api8aLViQ398JCXBKsyX/w308-h400/HackingYPentestingconIA.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiudQltvag5X5ibyRWXs1WJJJfQgXk6RAq6bb_O20ac8TMEH7jCqCULdN08sfwVMNRCyjf171qu2GG9Y91qOI3rAnafMTzTcLMt9iXFxk5WatIaBT_H9VSyKzvZ7ntGRFg-03-Cm6IF4U9aEgz4c8SiUN_l1NmLi5Y4MozynGOFCLPalAswKN_d/w640-h368/sentinel9.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZJG2hEqfwOvyxt7MHwsGfR1JspNiJHivaS-UeLzhufXylbNmGb6Gtb2FltdtVQdMN-WVxmSUAPy5VtFjmTg2GYp8QBoJVLLrq8MCCWnglqiRrR_h0kK48vju6sVN30YfX6oH_4oHCV9cKsApE618nrkwOirnNbXNzaFD1Y78XiqQ6mAA1xP-c/s2696/Sentinel6.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZJG2hEqfwOvyxt7MHwsGfR1JspNiJHivaS-UeLzhufXylbNmGb6Gtb2FltdtVQdMN-WVxmSUAPy5VtFjmTg2GYp8QBoJVLLrq8MCCWnglqiRrR_h0kK48vju6sVN30YfX6oH_4oHCV9cKsApE618nrkwOirnNbXNzaFD1Y78XiqQ6mAA1xP-c/w640-h342/Sentinel6.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcKQ9N14OXiChOGrjwDBXsDoXV_ZHYWroHvE12X6MOeq5NHRG5GFatRk1AGpfDFXaYNkZTSLdUpd-AuZKXLOSaq42yECFNNCA2aAHGSJKR_qL-E4HzW_bupYEcUgdscu-uovSzY2mC0SeEFoorRWEx_4IyBJBsHvEaD_LCuzKNKo-Vc6sL0Egq/s2834/Sentinel7.jpg",
-        "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcKQ9N14OXiChOGrjwDBXsDoXV_ZHYWroHvE12X6MOeq5NHRG5GFatRk1AGpfDFXaYNkZTSLdUpd-AuZKXLOSaq42yECFNNCA2aAHGSJKR_qL-E4HzW_bupYEcUgdscu-uovSzY2mC0SeEFoorRWEx_4IyBJBsHvEaD_LCuzKNKo-Vc6sL0Egq/w640-h342/Sentinel7.jpg",
-        "https://deepwiki.com/golab-arch/synaptic-sentinel",
-        "https://elladodelmal.com",
-        "https://golab.cl/sentinel.html",
-        "https://marketplace.visualstudio.com/items?itemName=RealGoLab.synaptic-sentinel"
-      ],
-      "cve": [
-        "CVE-2026-41242",
-        "CVE-2026-48068"
-      ]
-    }
-  },
-  {
-    "id": 1311,
-    "fecha": "2026-07-11T05:36:01Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "GPT-5.6: Nuevas Funcionalidades",
-    "resumen": "La nueva versión de GPT, GPT-5.6, presenta tres variantes diferentes: Sol, Terra y Luna, cada una con características y capacidades únicas, incluyendo mejoras en programación, investigación científica y ciberseguridad. Estas mejoras pueden tener un impacto significativo en la forma en que se utilizan los modelos de lenguaje en diversas aplicaciones y sectores.",
-    "url_imagen": "https://images.unsplash.com/photo-1675557009317-bb59e35aba82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NDgxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/basics/gpt-5-6-novedades-todo-que-cambia-chatgpt-nueva-version-su-modelo-inteligencia-artificial",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:gpt 5 6 novedades y todo lo que cambia en chatgpt con la nueva versión de su modelo de inteligencia artificial",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "platform.instagram.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://i.blogs.es/aee970/gpt/1024_2000.jpeg"
-      ]
-    }
-  },
-  {
-    "id": 1310,
-    "fecha": "2026-07-11T02:11:06Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Meta contamina agua",
-    "resumen": "Un centro de datos de Meta en Cheyenne, Wyoming, ha sido encontrado contaminando el agua con bacterias potencialmente mortales, específicamente Cupriavidus gilardii, lo que ha llevado a las autoridades a prohibir el vertido de residuos en la red de agua potable. La contaminación se detectó durante pruebas rutinarias de contaminación fecal y se desconoce el origen exacto del patógeno dentro de las instalaciones.",
-    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.xataka.com/robotica-e-ia/no-que-centro-datos-meta-consuma-mucha-poca-agua-que-esta-contaminandola",
-    "fuente": "Xataka IA",
-    "dedup_key": "txt:no es que un centro de datos de meta consuma mucha o poca agua es que está contaminándola",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "datacenters.atmeta.com",
-        "futurism.com",
-        "platform.instagram.com",
-        "www.sciencedirect.com",
-        "www.theguardian.com",
-        "www.xataka.com"
-      ],
-      "url": [
-        "https://datacenters.atmeta.com/2024/07/hello-cheyenne/",
-        "https://futurism.com/health-medicine/meta-ai-data-center-pathogen-bacteria-water",
-        "https://i.blogs.es/44d339/magnific_quiero-que-edites-la-img5_1seionqr4r/375_142.jpeg",
-        "https://i.blogs.es/6efc0d/meta-contaminacion/1024_2000.jpeg",
-        "https://www.sciencedirect.com/science/article/pii/S1201971226000780",
-        "https://www.theguardian.com/us-news/2026/jul/08/meta-datacenter-ai-wyoming-water"
-      ]
-    }
-  },
-  {
-    "id": 1309,
-    "fecha": "2026-07-11T02:11:00Z",
-    "categoria": "IA",
-    "severidad": "BAJA",
-    "titulo": "OpenAI avanza con GPT-5.6",
-    "resumen": "OpenAI busca consolidar su posición en el mercado de la IA con GPT-5.6 y ChatGPT Work, siguiendo la tendencia iniciada por Anthropic con Claude Cowork, con el objetivo de integrar la IA como un compañero de trabajo autónomo y eficiente. Esto podría tener un impacto significativo en la automatización de tareas y la colaboración humana-máquina en diversas industrias.",
-    "url_imagen": "https://images.unsplash.com/photo-1761740533449-b8d4385e60b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3MzU4NjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://iaenespanol.substack.com/p/gpt-56-y-chatgpt-work-openai-apuesta",
-    "fuente": "IA en Español",
-    "dedup_key": "txt:gpt 5 6 y chatgpt work openai apuesta por convertir la ia en un compañero de trabajo autónomo",
-    "ttps": [],
     "iocs": {}
   }
 ]
