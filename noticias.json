@@ -1,5 +1,87 @@
 [
   {
+    "id": 3400,
+    "fecha": "2026-10-31T15:01:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extensión maliciosa de Claude Code con puerta trasera SSH persistente detectada por Microsoft",
+    "resumen": "Microsoft Security identificó una extensión falsamente etiquetada como Claude Code que instala un backdoor SSH persistente, permitiendo acceso remoto no autorizado y ejecución de comandos. Se recomienda bloquear la extensión, monitorear conexiones SSH inesperadas y aplicar firmas de detección en EDR y SIEM.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTg4ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:inside a malicious claude code branded extension and its persistent ssh backdoor",
+    "ttps": [
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3399,
+    "fecha": "2026-10-31T15:01:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-89209 permite bypass de autenticación SAML en módulos Siemens Mendix",
+    "resumen": "Un atacante remoto no autenticado puede reutilizar una aserción SAML válida en flujos IdP-initiated para obtener acceso no autorizado a aplicaciones Mendix; se recomienda actualizar a versiones 4.2.4 o 3.6.29 según la compatibilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTg4Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-89209",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+        "https://www.siemens.com/industrialsecurity",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-89209"
+      ]
+    }
+  },
+  {
+    "id": 3398,
+    "fecha": "2026-10-31T15:01:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hack de Binance de $6.3 mil millones ejecutado en 20 minutos por hackers norcoreanos",
+    "resumen": "Investigaciones de firmas de rastreo de cripto atribuyen el robo a la agrupación conocida como TraderTraitor, vinculada al Estado de Corea del Norte, que explotó vulnerabilidades en la arquitectura de retiro de Binance para transferir fondos en menos de media hora.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTg4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the 6 3 billion binance hack was pulled off in just 20 minutes",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3397,
     "fecha": "2026-10-31T12:54:17Z",
     "categoria": "Ciberseguridad",
