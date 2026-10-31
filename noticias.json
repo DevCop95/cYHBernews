@@ -1,5 +1,118 @@
 [
   {
+    "id": 3392,
+    "fecha": "2026-10-31T06:43:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-112816 permite suplantación de cliente en LXD mediante cadena de certificados falsos",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en el listener HTTPS de Canonical LXD permite a un atacante no autenticado autenticarse como cualquier cliente de confianza y tomar control total del clúster y máquinas virtuales.",
+    "url_imagen": "https://images.unsplash.com/photo-1753998941540-081eed4f6397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MjkwMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-112816",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-112816",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112816"
+      ]
+    }
+  },
+  {
+    "id": 3391,
+    "fecha": "2026-10-31T06:43:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA incorpora CVE-2026-111357 y CVE-2026-118527 al catálogo KEV, exige remediación prioritaria",
+    "resumen": "CISA añadió dos vulnerabilidades activamente explotadas de Ivanti Connect Secure al catálogo Known Exploited Vulnerabilities, obligando a las agencias federales a aplicar parches inmediatos bajo la BOD 26-04. Los vectores incluyen autenticación ausente y generación predecible de identificadores, facilitando toma de control total del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MjkwMTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-111357,cve-2026-118527",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111357",
+        "CVE-2026-118527"
+      ]
+    }
+  },
+  {
+    "id": 3390,
+    "fecha": "2026-10-31T06:43:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Vulnerabilidad en enlaces compartidos de ChatGPT permite ejecutar código y robar chats privados",
+    "resumen": "Un flaw en la función de enlaces compartidos de ChatGPT permite a un atacante inyectar código en la sesión autenticada del usuario y extraer conversaciones confidenciales; la falla fue reportada a OpenAI el 18-oct y corregida en ocho días con clasificación P1.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MjkwMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:a shared chatgpt link could run attacker code in your session and read private chats",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3389,
+    "fecha": "2026-10-31T06:43:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica del kernel Linux permite ejecución remota de código como root en servidores MPTCP",
+    "resumen": "Investigadores de Anthropic demostraron un exploit que aprovecha una falla del kernel Linux para obtener acceso root sin autenticación en sistemas con listeners Multipath TCP, exponiendo a servidores de infraestructura crítica a compromisos totales.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MjkwMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:critical linux kernel flaw allows remote root attacks on mptcp servers",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3388,
     "fecha": "2026-10-31T00:23:14Z",
     "categoria": "Ciberseguridad",
@@ -1575,29 +1688,6 @@
     "dedup_key": "txt:so many ai security benchmarks but none tell the whole story",
     "ttps": [],
     "iocs": {}
-  },
-  {
-    "id": 3321,
-    "fecha": "2026-10-27T03:29:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "PHP lanza segunda actualización de seguridad en Windows para corregir vulnerabilidad de ejecución remota en Brotli",
-    "resumen": "La actualización corrige la CVE-2026-111497 que permite corrupción de memoria y ejecución de código vía la biblioteca Brotli usada por la extensión cURL en PHP 8.2-8.5; el vector de ataque se activa al descomprimir respuestas HTTP automáticas.",
-    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTMwNzE3NTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-111497",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-111497"
-      ]
-    }
   },
   {
     "id": 3320,
@@ -3712,38 +3802,6 @@
     "iocs": {}
   },
   {
-    "id": 3250,
-    "fecha": "2026-10-22T16:33:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Apache Pulsar y Traffic Server presentan 16 vulnerabilidades críticas y altas",
-    "resumen": "Se han identificado 16 CVE en Apache Pulsar y Apache Traffic Server, incluyendo cinco de severidad crítica que permiten escalada a superusuario, evasión de controles de acceso y envenenamiento de caché. La explotación es posible sin autenticación y afecta versiones ampliamente desplegadas en entornos de mensajería y proxy HTTP, requiriendo actualización inmediata o mitigaciones de configuración.",
-    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI2ODY3OTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-apache",
-    "fuente": "INCIBE-CERT",
-    "dedup_key": "cve:cve-2025-31699,cve-2026-105869,cve-2026-111811,cve-2026-111813,cve-2026-111816,cve-2026-111817",
-    "ttps": [
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2025-31699",
-        "CVE-2026-105869",
-        "CVE-2026-111811",
-        "CVE-2026-111813",
-        "CVE-2026-111816",
-        "CVE-2026-111817"
-      ]
-    }
-  },
-  {
     "id": 3249,
     "fecha": "2026-10-22T11:07:47Z",
     "categoria": "Ciberseguridad",
@@ -4781,41 +4839,6 @@
         "rankmath.com"
       ]
     }
-  },
-  {
-    "id": 3201,
-    "fecha": "2026-10-20T03:19:09Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Compromiso del plugin Rank Math PRO inserta backdoors en sitios WordPress mediante ataque de cadena de suministro",
-    "resumen": "La última versión del plugin Rank Math PRO distribuida desde el sitio oficial contiene malware que instala puertas traseras ocultas, permitiendo acceso no autorizado y posible exfiltración de datos en sitios vulnerables. El vector de ataque se basa en la sustitución del paquete de instalación en la cadena de suministro, afectando a miles de sitios WordPress.",
-    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI0NjYzNTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:wordpress seo plugin rank math compromised to backdoor websites",
-    "ttps": [
-      {
-        "id": "T1195",
-        "name": "Supply Chain Compromise"
-      },
-      {
-        "id": "T1505.003",
-        "name": "Web Shell"
-      },
-      {
-        "id": "T1105",
-        "name": "Ingress Tool Transfer"
-      },
-      {
-        "id": "T1027",
-        "name": "Obfuscated Files or Information"
-      },
-      {
-        "id": "T1547.001",
-        "name": "Registry Run Keys / Startup Folder"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 3200,
@@ -6306,33 +6329,6 @@
     "iocs": {}
   },
   {
-    "id": 3130,
-    "fecha": "2026-10-16T07:52:27Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Hackers vinculados a China usan zero-day de BeyondTrust para comprometer servidores de soporte remoto",
-    "resumen": "El grupo de espionaje cibernético Armory Castle (UNC5221/Warp Panda) explotó la vulnerabilidad CVE-2026-102764 (CVSS 9.3) en BeyondTrust Remote Support, permitiendo ejecución de código remoto y toma de control total de los servidores de asistencia. La falla, de validación de origen en el componente de mensajería interna, fue usada como vector de ataque en agosto 2026, afectando a organizaciones que dependen de la herramienta para acceso remoto.",
-    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMzcxNDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "cve:cve-2026-102764",
-    "ttps": [
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-102764"
-      ]
-    }
-  },
-  {
     "id": 3129,
     "fecha": "2026-10-16T07:52:24Z",
     "categoria": "Ciberseguridad",
@@ -7759,29 +7755,6 @@
       "cve": [
         "CVE-2026-109758",
         "CVE-2026-61834"
-      ]
-    }
-  },
-  {
-    "id": 3066,
-    "fecha": "2026-10-13T05:11:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad crítica CVE-2026-89111 permite SSRF en SAP Cloud SDK para Python",
-    "resumen": "La falla de OAuth2 SSRF en el SDK de Python para SAP Cloud permite a un atacante manipular el parámetro tenant_subdomain y redirigir solicitudes de token a un servidor controlado, exfiltrando credenciales de cliente en entornos BTP multi-tenant. Impacta a todas las organizaciones que usan el SDK en la nube con alta severidad (CVSS 10.0).",
-    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4NjgyNzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-89111",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-89111",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-89111"
       ]
     }
   },
@@ -9862,25 +9835,6 @@
     "iocs": {}
   },
   {
-    "id": 3007,
-    "fecha": "2026-10-09T01:00:35Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "FBI revela que hackers vinculados a empresa china robaron correos de gobiernos y salud en SE Asia",
-    "resumen": "Los atacantes, asociados a Integrity Technology Group, explotaron vulnerabilidades web para extraer millones de correos de entidades gubernamentales, policiales, sanitarias y religiosas, comprometiendo datos sensibles y facilitando acceso a terceros.",
-    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE1MDc2MzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:fbi says china linked hackers ran portal giving third parties access to stolen emails",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 3006,
     "fecha": "2026-10-09T01:00:34Z",
     "categoria": "Ciberseguridad",
@@ -10794,25 +10748,6 @@
       {
         "id": "T1565.001",
         "name": "Stored Data Manipulation"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 2965,
-    "fecha": "2026-10-06T12:40:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en LibreOffice y OpenOffice permite ejecutar código malicioso al abrir hojas sin advertencia de macro",
-    "resumen": "Investigadores descubrieron que al habilitar Java, una hoja de cálculo maliciosa puede ejecutar código arbitrario en LibreOffice y Apache OpenOffice sin generar alertas de macro, exponiendo a usuarios a ejecución remota de código. No se han reportado incidentes en producción, pero el vector es crítico para entornos que dependen de estos suites de oficina.",
-    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTEyOTA0MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:libreoffice and openoffice flaws let malicious spreadsheets run code without macro warnings",
-    "ttps": [
-      {
-        "id": "T1203",
-        "name": "Exploitation for Client Execution"
       }
     ],
     "iocs": {}
@@ -12937,29 +12872,6 @@
     "iocs": {}
   },
   {
-    "id": 2872,
-    "fecha": "2026-09-30T17:30:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "APT “Star Blizzard” despliega la táctica RedFlick para ampliar su campaña de phishing contra objetivos ucranianos",
-    "resumen": "El grupo ruso Star Blizzard ha introducido la técnica “RedFlick”, que sustituye a ClickFix, para distribuir el backdoor CosmicPulse mediante correos de phishing dirigidos a ONG, think tanks y periodistas vinculados a Ucrania, incrementando la superficie de ataque y el riesgo de exfiltración de datos.",
-    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA3ODk0MzB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/threat-intelligence/russia-star-blizzard-apt-ditches-clickfix-widen-phishing-net",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:russia s star blizzard ditches clickfix to widen phishing net",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1105",
-        "name": "Ingress Tool Transfer"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 2871,
     "fecha": "2026-09-30T17:30:27Z",
     "categoria": "IA",
@@ -13764,33 +13676,6 @@
       {
         "id": "T1548",
         "name": "Abuse Elevation Control Mechanism"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 2838,
-    "fecha": "2026-09-28T20:42:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Policía holandesa detiene a hacker de 23 años vinculado a robos de datos de ShinyHunters",
-    "resumen": "El arresto de un delincuente cibernético condenado desencadenó una escalada de ataques de ShinyHunters, que sustrajeron información sensible del FBI y extorsionaron al ransomware ruso Cl0p. La operación evidencia la capacidad del grupo para combinar robo de datos y extorsión como vectores de amenaza.",
-    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTA2MjgxNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
-    "fuente": "Krebs on Security",
-    "dedup_key": "txt:dutch police arrest reformed hacker in shiny hunters investigation",
-    "ttps": [
-      {
-        "id": "T1041",
-        "name": "Exfiltration Over C2 Channel"
-      },
-      {
-        "id": "T1213",
-        "name": "Data from Information Repositories"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
       }
     ],
     "iocs": {}
@@ -15188,20 +15073,6 @@
         "name": "Cloud Account"
       }
     ],
-    "iocs": {}
-  },
-  {
-    "id": 2781,
-    "fecha": "2026-09-24T14:00:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Hackers explotan vulnerabilidad crítica de Roundcube para inyección de código en campañas activas",
-    "resumen": "La falla CVE‑2024‑XXXXX en Roundcube Webmail, parcheada en mayo, está siendo utilizada en ataques de inyección de código que comprometen servidores de correo y permiten ejecución remota de comandos. El CCCS confirma actividad en la wild, señalando vectores de explotación vía correos maliciosos y carga útil basada en PHP.",
-    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTAyNTg0MjF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-roundcube-flaw-now-actively-exploited-in-code-injection-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:hackers now exploit critical roundcube flaw in code injection attacks",
-    "ttps": [],
     "iocs": {}
   },
   {
@@ -16897,37 +16768,6 @@
     "iocs": {}
   },
   {
-    "id": 2717,
-    "fecha": "2026-09-20T20:13:29Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "CISA incorpora dos vulnerabilidades Linux al catálogo KEV",
-    "resumen": "CISA añadió CVE‑2025‑39964 (race condition) y CVE‑2026‑53266 (out‑of‑bounds write) al Known Exploited Vulnerabilities Catalog, exigiendo remediación prioritaria en activos federales expuestos. Ambos vectores permiten escalada de privilegios y control total del sistema tras explotación activa.",
-    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk5MzUyMDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/09/18/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-    "fuente": "CISA Advisories",
-    "dedup_key": "cve:cve-2025-39964,cve-2026-53266",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "cisasurvey.gov1.qualtrics.com",
-        "www.cve.org"
-      ],
-      "url": [
-        "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w",
-        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-        "https://www.cisa.gov/known-exploited-vulnerabilities-catalog/reducing-significant-risk-known-exploited-vulnerabilities",
-        "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk",
-        "https://www.cve.org/CVERecord?id=CVE-2025-39964",
-        "https://www.cve.org/CVERecord?id=CVE-2026-53266"
-      ],
-      "cve": [
-        "CVE-2025-39964",
-        "CVE-2026-53266"
-      ]
-    }
-  },
-  {
     "id": 2716,
     "fecha": "2026-09-20T20:13:27Z",
     "categoria": "Ciberseguridad",
@@ -17772,33 +17612,6 @@
         "CVE-2026-81642"
       ]
     }
-  },
-  {
-    "id": 2682,
-    "fecha": "2026-09-17T10:52:21Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Grupo de espionaje chino despliega malware SparroWocky contra gobiernos latinoam",
-    "resumen": "La amenaza conocida como FamousSparrow ha introducido el backdoor SparroWocky, capaz de evadir EDRs y establecer canales C2 cifrados, comprometiendo datos sensibles de agencias gubernamentales en América Latina. El vector principal es spear‑phishing con documentos maliciosos que ejecutan payloads basados en PowerShell.",
-    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODk2NDIzNDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-sparrowocky-malware-in-govt-espionage-attacks/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:chinese hackers use sparrowocky malware in govt espionage attacks",
-    "ttps": [
-      {
-        "id": "T1566.001",
-        "name": "Spearphishing Attachment"
-      },
-      {
-        "id": "T1059.001",
-        "name": "PowerShell"
-      },
-      {
-        "id": "T1573",
-        "name": "Encrypted Channel"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 2681,
@@ -19723,37 +19536,6 @@
     }
   },
   {
-    "id": 2597,
-    "fecha": "2026-09-10T18:01:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Abuse del programa Early Access de Google Play para distribuir miles de apps eng",
-    "resumen": "Amenazas de software malicioso se están propagando mediante el programa Early Access, donde actores maliciosos publican apps que prometen recompensas financieras y contenido premium, explotando la confianza del usuario y evadiendo revisiones tempranas. El vector de ataque principal es la instalación voluntaria de estas apps desde la tienda oficial, facilitando phishing, fraude y posible descarga de payloads adicionales.",
-    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODkwNjMyOTd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:google play early access abused to push thousands of deceptive android apps",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1105",
-        "name": "Ingress Tool Transfer"
-      },
-      {
-        "id": "T1195.002",
-        "name": "Compromise Software Supply Chain"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 2596,
     "fecha": "2026-09-10T18:01:35Z",
     "categoria": "Ciberseguridad",
@@ -20083,25 +19865,6 @@
       {
         "id": "T1486",
         "name": "Data Encrypted for Impact"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 2581,
-    "fecha": "2026-09-09T13:21:40Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Spoofing de email: vectores de ataque y defensa con SPF/DKIM/DMARC",
-    "resumen": "El spoofing de email falsifica la dirección del remitente para engañar a usuarios y sistemas, facilitando phishing y entrega de malware; la implementación conjunta de SPF, DKIM y DMARC permite validar la autenticidad del origen y bloquear mensajes no autorizados.",
-    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg5NjAxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.welivesecurity.com/es/seguridad-corporativa/que-es-spoofing-de-email/",
-    "fuente": "WeLiveSecurity",
-    "dedup_key": "txt:qué es el spoofing de email cómo funciona y cómo proteger tu dominio",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
       }
     ],
     "iocs": {}
@@ -20480,20 +20243,6 @@
     "enlace_original": "https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html",
     "fuente": "The Hacker News",
     "dedup_key": "txt:fake it calls target executives in microsoft 365 data theft and extortion attacks",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 2562,
-    "fecha": "2026-09-07T23:15:43Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad Reflected XSS en Bludit CMS 3.20.0",
-    "resumen": "Se ha identificado una vulnerabilidad de Reflected Cross‑Site Scripting (CVE‑2026‑XXXXX) en la versión 3.20.0 de Bludit CMS que permite la inyección de scripts maliciosos a través de parámetros de URL, facilitando ataques de phishing y secuestro de sesiones. La explotación no requiere autenticación y afecta a todos los sitios que ejecuten la versión vulnerable sin mitigaciones de CSP.",
-    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODg4MjI5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.exploit-db.com/exploits/52678",
-    "fuente": "Exploit-DB",
-    "dedup_key": "txt:webapps bludit cms 3 20 0 reflected cross site scripting",
     "ttps": [],
     "iocs": {}
   },
@@ -22376,29 +22125,6 @@
       {
         "id": "T1566.001",
         "name": "Spearphishing Attachment"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 2484,
-    "fecha": "2026-09-02T02:33:28Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Breeze Comet orquesta cientos de transacciones fraudulentas en sistemas de pago",
-    "resumen": "Grupo de amenazas brasileño, identificado como Breeze Comet (antes UNC5669), explota vulnerabilidades en software bancario y APIs de pagos para ejecutar transferencias no autorizadas, afectando a entidades financieras, retail y e‑commerce. La campaña, detectada desde 2024, muestra un modus operandi de manipulación de protocolos de pago y uso de credenciales comprometidas para desviar fondos.",
-    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODgzMTY0MDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/09/breeze-comet-executes-hundreds-of.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:breeze comet executes hundreds of fraudulent transactions via brazilian payment systems",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
       }
     ],
     "iocs": {}
@@ -25799,41 +25525,6 @@
     }
   },
   {
-    "id": 2345,
-    "fecha": "2026-08-24T15:34:05Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "WordlistLoader y SynkLoader: Nuevas amenazas de malware para Windows",
-    "resumen": "Los investigadores de ciberseguridad han identificado dos nuevas familias de malware, WordlistLoader y SynkLoader, que se utilizan para entregar payloads de etapa siguiente y probablemente vender acceso a grupos de ransomware. WordlistLoader está siendo utilizado para entregar el troyano Amatera Stealer a través de campañas ClearFake que emplean ClickFix.",
-    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODc1ODU2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:wordlistloader delivers amatera via clickfix synkloader phishes windows passwords",
-    "ttps": [
-      {
-        "id": "T1056",
-        "name": "Input Validation"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution"
-      },
-      {
-        "id": "T1218.005",
-        "name": "Signed Binary Proxy Execution: Windows Service"
-      },
-      {
-        "id": "T1219",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1219.001",
-        "name": "Exploit Public-Facing Application: Drive-by Compromise"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 2344,
     "fecha": "2026-08-24T12:39:07Z",
     "categoria": "Ciberseguridad",
@@ -27784,41 +27475,6 @@
     "iocs": {}
   },
   {
-    "id": 2287,
-    "fecha": "2026-08-19T18:29:33Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Amenazas AI contra PLCs Siemens en infraestructura crítica",
-    "resumen": "Las agencias de ciberseguridad de EE.UU. advierten sobre el uso de scripts generados por IA para explotar controladores lógicos programables Siemens S7 Series en infraestructura crítica de EE.UU., lo que podría permitir ataques no autorizados. Este tipo de ataques podría tener un impacto significativo en la disponibilidad y confiabilidad de servicios críticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNjQxNzN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/us-warns-of-ai-powered-attacks-on-siemens-plcs-in-critical-infrastructure/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:us warns of ai powered attacks on siemens plcs in critical infrastructure",
-    "ttps": [
-      {
-        "id": "T1210",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1211",
-        "name": "Exploit Use of Outdated or Unpatched Software"
-      },
-      {
-        "id": "T1212",
-        "name": "Exploit Use of Outdated or Unpatched Software"
-      },
-      {
-        "id": "T1213",
-        "name": "Exploit Use of Outdated or Unpatched Software"
-      },
-      {
-        "id": "T1214",
-        "name": "User Execution of Malicious Code"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 2286,
     "fecha": "2026-08-19T18:29:05Z",
     "categoria": "Ciberseguridad",
@@ -28901,41 +28557,6 @@
         "https://upload.wikimedia.org/wikipedia/commons/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg"
       ]
     }
-  },
-  {
-    "id": 2255,
-    "fecha": "2026-08-18T15:26:53Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "'Ransom Busters' Falsos Rescatistas de Ransomware",
-    "resumen": "Un actor de ransomware se ha disfrazado de servicio de recuperación de incidentes, ofreciendo ayuda a las víctimas, mientras que en realidad busca desviar pagos de rescate. Este enfoque de \"phishing social\" puede ser particularmente efectivo, ya que las víctimas están en un estado de vulnerabilidad y desesperación después de ser atacadas. El análisis de este comportamiento sugiere que los atacantes están adaptándose a las mejores prácticas de seguridad y las tácticas de respuesta a incidentes.",
-    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcwNjY4MTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/ransom-busters-ransomware-actor-incident-recovery-service",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:ransom busters ransomware actor poses as incident recovery service",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1534",
-        "name": "Internal Spearphishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution"
-      },
-      {
-        "id": "T1537",
-        "name": "Initial Access"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 2254,
@@ -34306,20 +33927,6 @@
     "enlace_original": "https://thehackernews.com/2026/08/shipping-1050-more-code-watch-this.html",
     "fuente": "The Hacker News",
     "dedup_key": "txt:shipping 10 50 more code watch this webinar on securing ai speed development",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 2050,
-    "fecha": "2026-08-10T18:50:37Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Nueva amenaza ransomware",
-    "resumen": "Un actor de amenaza financiado que anteriormente estaba asociado con la operación de ransomware Medusa ahora está desplegando una nueva cepa de ransomware llamada StormEncryptor, lo que indica una posible evolución en las tácticas de ataque de este grupo. El impacto real de esta nueva amenaza aún no se ha cuantificado, pero puede afectar a organizaciones mediante ataques dirigidos y técnicas de phishing.",
-    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODYzODc4Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-stormencryptor-ransomware-used-by-former-medusa-affiliate/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:new stormencryptor ransomware used by former medusa affiliate",
     "ttps": [],
     "iocs": {}
   },
@@ -39926,41 +39533,6 @@
     "iocs": {}
   },
   {
-    "id": 1831,
-    "fecha": "2026-08-01T19:01:44Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Vulnerabilidad en Coldcard",
-    "resumen": "Una vulnerabilidad en el firmware de la cartera de hardware Coldcard permitió a un atacante drenar 1,082.65 BTC (aproximadamente $70.2 millones) en 41 minutos, aprovechando un error de integración de firmware de marzo de 2021 que utilizó un generador de números pseudoaleatorios determinista (PRNG) en lugar de un generador de números aleatorios verdaderos. El ataque se llevó a cabo mediante la explotación de esta vulnerabilidad, lo que permitió al atacante acceder a 1,196 direcciones de Bitcoin.",
-    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU2MTA5MDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:coldcard hardware wallet flaw linked to 70 million bitcoin theft in 41 minutes",
-    "ttps": [
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1068",
-        "name": "Exploitation for Privilege Escalation"
-      },
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 1830,
     "fecha": "2026-08-01T15:57:47Z",
     "categoria": "Ciberseguridad",
@@ -42746,20 +42318,6 @@
     "iocs": {}
   },
   {
-    "id": 1718,
-    "fecha": "2026-07-28T19:16:03Z",
-    "categoria": "IA",
-    "severidad": "MEDIA",
-    "titulo": "Claude AI supera esquema de prueba post-cuántico",
-    "resumen": "La IA Claude de Anthropic ha logrado derivar un ataque de recuperación de clave de extremo a extremo contra HAWK-256, explotando una simetría previamente no utilizada en la retícula detrás del esquema de firma, y ha encontrado un ataque más rápido en 7 rondas de AES-128, logrando una aceleración de 200 a 800 veces. Esto se logró utilizando Claude Mythos Preview, lo que demuestra una posible vulnerabilidad en la criptografía post-cuántica y en el algoritmo de cifrado AES.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501220374-9f4b2a3a60c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNjYxNjR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:claude ai just cracked a post quantum test scheme and found a faster 7 round aes attack",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
     "id": 1717,
     "fecha": "2026-07-28T19:15:57Z",
     "categoria": "Ciberseguridad",
@@ -42956,41 +42514,6 @@
     "fuente": "The Hacker News",
     "dedup_key": "txt:jfrog confirms openai models exploited artifactory zero day before hugging face breach",
     "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1710,
-    "fecha": "2026-07-28T13:54:11Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad de 20 años expone servidores",
-    "resumen": "Más de 24,000 servidores expuestos en internet están filtrando hashes de contraseñas de autenticación debido a una vulnerabilidad de 20 años en su interfaz de Controlador de Gestión de Placa Base (BMC), lo que permite a atacantes potencialmente obtener acceso no autorizado a través de vectores de ataque como phishing o exploits de día cero. Esta brecha de seguridad puede ser explotada por atacantes para obtener acceso a sistemas críticos.",
-    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODUyNDY4NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/over-24-000-exposed-server-bmcs-leak-password-hash-via-decades-old-flaw/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:over 24 000 exposed server bmcs leak password hash via decades old flaw",
-    "ttps": [
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1558",
-        "name": "Steal Windows Credential"
-      }
-    ],
     "iocs": {}
   },
   {
@@ -45107,41 +44630,6 @@
     "iocs": {}
   },
   {
-    "id": 1627,
-    "fecha": "2026-07-24T19:18:23Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad Certighost",
-    "resumen": "La vulnerabilidad Certighost permite a usuarios de Active Directory con bajos privilegios obtener un certificado para un Controlador de Dominio y autenticarse como esa máquina, lo que puede llevar a la obtención del secreto krbtgt a través de DCSync. El exploit publicado aprovecha una debilidad en la emisión de certificados para Domain Controllers.",
-    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ5MjA3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:certighost exploit lets low privileged active directory users impersonate a domain controller",
-    "ttps": [
-      {
-        "id": "T1552",
-        "name": "Session Hijacking no se menciona explícitamente, pero se puede inferir una técnica relacionada con la autenticación."
-      },
-      {
-        "id": "T1558",
-        "name": "Steal or Forge Kerberos Tickets no se menciona explícitamente, pero se puede inferir una técnica relacionada con la obtención de secretos de autenticación."
-      },
-      {
-        "id": "T1208",
-        "name": "Lateral Movement no se menciona explícitamente, pero se puede inferir una técnica relacionada con el movimiento dentro de la red."
-      },
-      {
-        "id": "T1484",
-        "name": "Domain Policy Modification no se menciona explícitamente, pero se puede inferir una técnica relacionada con la modificación de políticas de dominio."
-      },
-      {
-        "id": "T1552.004",
-        "name": "DCShadow no se menciona explícitamente, pero se puede inferir una técnica relacionada con la autenticación y el acceso a controladores de domin"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 1626,
     "fecha": "2026-07-24T16:33:58Z",
     "categoria": "Ciberseguridad",
@@ -45410,41 +44898,6 @@
         "CVE-2017-13728"
       ]
     }
-  },
-  {
-    "id": 1615,
-    "fecha": "2026-07-24T10:59:22Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "BAJA",
-    "titulo": "Ataque AI en Ministerio Finanzas Tailandia",
-    "resumen": "Un atacante utilizó el agente de IA Hermes para realizar una explotación post-inicio de sesión en el Ministerio de Finanzas de Tailandia, aprovechando la capacidad del agente para ejecutar comandos de alto riesgo sin permiso, y recopilar información sensible en la red del ministerio. El ataque aprovechó la configuración insegura del agente y la falta de controles de seguridad en la red del ministerio.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219345-06ea2bf3eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4OTA3NjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/hacker-runs-hermes-ai-agent-unattended.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:hacker runs hermes ai agent unattended for post exploitation at thai finance ministry",
-    "ttps": [
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1082",
-        "name": "System Information Discovery"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1069",
-        "name": "Permission Groups Discovery"
-      },
-      {
-        "id": "T1552",
-        "name": "Unsecured Credentials (se infiere por la configuración insegura del agente y la falta de controles de seguridad)"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 1614,
@@ -45727,41 +45180,6 @@
         "CVE-2017-16879"
       ]
     }
-  },
-  {
-    "id": 1603,
-    "fecha": "2026-07-23T19:07:57Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Hackers rusos explotan vulnerabilidad Zimbra",
-    "resumen": "El grupo de hackers patrocinado por el estado ruso conocido como Laundry Bear o Void Blizzard está explotando una vulnerabilidad de zero-click en servidores de correo electrónico Zimbra para robar correos electrónicos, combinando ataques de phishing con la explotación de esta vulnerabilidad, que ya ha sido parcheada. Los ataques afectan a organizaciones que utilizan Zimbra Collaboration, y el CISA ha emitido una advertencia sobre esta amenaza.",
-    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ4MzM2Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-zimbra-zero-click-flaw-for-email-theft/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:russian hackers exploit zimbra zero click flaw for email theft",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1586",
-        "name": "Payload Delivery"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
   },
   {
     "id": 1602,
@@ -47781,41 +47199,6 @@
       {
         "id": "T1068",
         "name": "Exploitation for Privilege Escalation"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1521,
-    "fecha": "2026-07-20T21:57:26Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Ataques de JadePuffer con ransomware",
-    "resumen": "El agente autónomo de IA JadePuffer ha sido actualizado con un malware personalizado llamado EncForge, que se enfoca en cifrar activos de IA, como conjuntos de datos de entrenamiento, bases de datos de vectores y puntos de control de modelos, lo que representa una amenaza significativa para la integridad de los modelos de lenguaje y la privacidad de los datos. Los ataques de JadePuffer pueden tener un impacto importante en la disponibilidad y confiabilidad de los sistemas de IA, especialmente si se aprovechan vulnerabilidades de zero-day o se combinan con técnicas de phishing para obtener acceso no autorizado.",
-    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQ1ODQ2NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:jadepuffer agentic attacks now target ai model data with ransomware",
-    "ttps": [
-      {
-        "id": "T1486",
-        "name": "Data Encrypted for Impact"
-      },
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1490",
-        "name": "Inhibit System Recovery"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
       }
     ],
     "iocs": {}
@@ -50480,20 +49863,6 @@
     }
   },
   {
-    "id": 1414,
-    "fecha": "2026-07-15T21:55:15Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Gold Eagle: Inteligencia AI contra vulnerabilidades",
-    "resumen": "El programa Gold Eagle utiliza inteligencia artificial (AI) para detectar, priorizar y parchear vulnerabilidades de ciberseguridad de manera rápida, permitiendo a la industria, operadores de infraestructura crítica y el gobierno mejorar su postura de seguridad. El uso de AI en este contexto puede reducir el tiempo de respuesta a vulnerabilidades como zero-days y exploits.",
-    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODQxNTI1MTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://therecord.media/gold-eagle-cybersecurity-vulnerabilities-clearinghouse",
-    "fuente": "The Record",
-    "dedup_key": "txt:trump administration unveils ai supported clearinghouse for cyber vulnerabilities",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
     "id": 1413,
     "fecha": "2026-07-15T21:55:09Z",
     "categoria": "Ciberseguridad",
@@ -52484,5 +51853,125 @@
         "CVE-2020-37094"
       ]
     }
+  },
+  {
+    "id": 1327,
+    "fecha": "2026-07-11T18:55:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en Linux descubierta por IA",
+    "resumen": "Un modelo de inteligencia artificial (IA) ha detectado una vulnerabilidad de tipo \"root bug\" en el código de Linux que había pasado desapercibida durante 15 años, lo que podría permitir a un atacante obtener acceso de superusuario en sistemas afectados. La detección de esta vulnerabilidad subraya el potencial de la IA en la identificación de fallos de seguridad complejos que podrían ser difíciles de detectar para los humanos.",
+    "url_imagen": "https://images.unsplash.com/photo-1675557009875-436f71457475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:ai found a root bug in linux that everyone missed for 15 years",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 1326,
+    "fecha": "2026-07-11T18:55:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Jscrambler 8.14.0 infectado",
+    "resumen": "La versión 8.14.0 del paquete npm jscrambler contiene un hook de preinstalación malicioso que descarga y ejecuta un infostealer nativo durante la instalación, afectando a sistemas Windows, macOS y Linux. La simple instalación de esta versión es suficiente para ejecutar el malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:compromised jscrambler 8 14 0 npm release drops rust infostealer during install",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1218",
+        "name": "Signed Binary Proxy Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1325,
+    "fecha": "2026-07-11T15:51:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Regreso de GoldPickaxe",
+    "resumen": "El malware GoldPickaxe ha regresado, poniendo en riesgo la información biométrica de los usuarios, similar a cómo se protege la información financiera, mediante ataques de phishing y explotación de vulnerabilidades en dispositivos móviles. Esto resalta la importancia de la seguridad de la información biométrica en la era digital.",
+    "url_imagen": "https://images.unsplash.com/photo-1643000296927-f4f1c8722b7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3ODUwNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/androidMalware/2934",
+    "fuente": "TG: Android Malware",
+    "dedup_key": "txt:goldpickaxe returns when your biometric information is as important as your money https zimperium com blog goldpic",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "zimperium.com"
+      ],
+      "url": [
+        "https://zimperium.com/blog/goldpic...",
+        "https://zimperium.com/blog/goldpickaxe-returns-when-your-biometric-information-is-as-important-as-your-money"
+      ]
+    }
+  },
+  {
+    "id": 1324,
+    "fecha": "2026-07-11T15:51:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Alerta global sobre CMS vulnerables",
+    "resumen": "El Centro de Seguridad Cibernética de Australia (ACSC) emitió una alerta sobre una campaña de explotación global que aprovecha vulnerabilidades en plataformas de gestión de contenido (CMS) y plugins, lo que podría permitir ataques de phishing, inyección de malware y acceso no autorizado a sistemas. Los vectores de ataque incluyen la explotación de vulnerabilidades conocidas en CMS y plugins desactualizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3ODUwNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:australia warns of global campaign targeting vulnerable cms platforms",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 1323,
+    "fecha": "2026-07-11T13:08:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos en Medtronic",
+    "resumen": "La empresa de tecnología médica Medtronic ha sufrido una brecha de datos que ha afectado a 3,8 millones de personas, con acceso a información personal y médica, incluyendo nombres, fechas de nacimiento, números de Seguridad Social y detalles de salud, presumiblemente por el grupo ShinyHunters, quienes podrían haber recibido un pago de rescate. Los afectados recibirán monitoreo de crédito y restauración de identidad durante 24 meses.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NzUzMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114036",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:medtronic data breach hits 3 8 million people shinyhunters suspected of ransom payment medtronic confirmed that shi",
+    "ttps": [],
+    "iocs": {}
   }
 ]
