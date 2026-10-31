@@ -1,5 +1,136 @@
 [
   {
+    "id": 3397,
+    "fecha": "2026-10-31T12:54:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "VOLTA infostealer usa LLMs para priorizar víctimas y robar carteras cripto",
+    "resumen": "El malware auto-eliminable VOLTA extrae credenciales, sesiones y wallets de criptomonedas, y emplea grandes modelos de lenguaje para perfilar a los usuarios y clasificar sus activos más valiosos, optimizando la fase de exfiltración. Esta técnica de victim-prioritization aumenta la rentabilidad del ransomware y complica la detección basada en patrones tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTEyNTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:appraisal by ai model driven victim prioritization in the volta infostealer",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3396,
+    "fecha": "2026-10-31T12:54:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hitachi Energy TRO600 series vulnerabilidades críticas CVE-2026-10756 y CVE-2026-106087 permiten RCE y fuga de datos",
+    "resumen": "Dos CVE de alta gravedad afectan a versiones ≤9.2.1.6 del TRO600, permitiendo a atacantes autenticados evadir restricciones de red y a actores no autenticados leer archivos arbitrarios, comprometiendo confidencialidad y disponibilidad de infraestructuras energéticas. Se recomienda actualizar a las versiones 9.1.2.0 o 9.2.2.1 según corresponda.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTEyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-106087,cve-2026-10756",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "9.1.1.0",
+        "9.1.2.0",
+        "9.2.1.6",
+        "9.2.2.1"
+      ],
+      "domain": [
+        "www.hitachienergy.com"
+      ],
+      "url": [
+        "https://www.hitachienergy.com/contact-us/"
+      ],
+      "cve": [
+        "CVE-2026-106087",
+        "CVE-2026-10756"
+      ]
+    }
+  },
+  {
+    "id": 3395,
+    "fecha": "2026-10-31T12:54:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware Volta-Autodoxer usa IA para robar credenciales, tarjetas y datos de apps",
+    "resumen": "El nuevo infostealer “Volta-Autodoxer” incorpora modelos de IA para automatizar la extracción de información sensible, incluyendo credenciales, números de tarjetas y sesiones de Discord y UberEats. Su capacidad de “autodox” permite recopilar y exfiltrar datos a gran escala sin interacción manual del atacante.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTEyNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:spooky new infostealer malware uses ai to autodox victims",
+    "ttps": [
+      {
+        "id": "T1119",
+        "name": "Automated Collection"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1081",
+        "name": "Credentials in Files"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3394,
+    "fecha": "2026-10-31T12:54:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers roban datos de tarjetas de pago en el retailer de moda Resolve",
+    "resumen": "Un ataque a la plataforma de pagos de Resolve expuso números de tarjetas de crédito de clientes, indicando posible compromiso de los sistemas de procesamiento de transacciones y falta de segmentación de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTEyNTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+    "fuente": "The Record",
+    "dedup_key": "txt:fashion retailer resolve says hackers stole payment card information",
+    "ttps": [
+      {
+        "id": "T1530",
+        "name": "Data from Cloud Storage"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3393,
+    "fecha": "2026-10-31T12:54:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Chainalysis confirma brecha de datos tras ataque con técnicas agente ofensivas que expusieron credenciales de clientes",
+    "resumen": "La firma de análisis blockchain sufrió una intrusión que utilizó agentes autónomos para comprometer sistemas internos, revelando nombres, correos, IDs y roles organizacionales de usuarios. El incidente destaca riesgos de IA aplicada a la fase de reconocimiento y movimiento lateral en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0NTEyNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:chainalysis discloses data breach from offensive agentic techniques",
+    "ttps": [
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1087.004",
+        "name": "Cloud Account"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3392,
     "fecha": "2026-10-31T06:43:34Z",
     "categoria": "Ciberseguridad",
@@ -27650,29 +27781,6 @@
     }
   },
   {
-    "id": 2281,
-    "fecha": "2026-08-19T15:26:45Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Operación SilkParasite: Ciberespionaje en Asia Central con cinco nuevos RATs",
-    "resumen": "La operación de ciberespionaje SilkParasite, detectada en 2025, está utilizando siete familias de herramientas de acceso remoto (RAT), cinco de las cuales son inéditas, para atacar a organismos gubernamentales en Asia Central. Los atacantes están aprovechando vulnerabilidades desconocidas para infiltrarse en los sistemas de los objetivos.",
-    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODcxNTMyMDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/08/silkparasite-espionage-campaign-targets.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:silkparasite espionage campaign targets central asian governments with five new rats",
-    "ttps": [
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1210",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {}
-  },
-  {
     "id": 2280,
     "fecha": "2026-08-19T15:26:37Z",
     "categoria": "Ciberseguridad",
@@ -37424,24 +37532,6 @@
     "iocs": {
       "cve": [
         "CVE-2026-64531"
-      ]
-    }
-  },
-  {
-    "id": 1909,
-    "fecha": "2026-08-05T11:16:50Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Vulnerabilidad en Zimbra",
-    "resumen": "La vulnerabilidad CVE-2022-27924, con una puntuación CVSS de 7.5, permite a un atacante no autenticado inyectar comandos arbitrarios de memcache en instancias de Zimbra Collaboration, lo que puede causar sobreescritura de entradas arbitrarias en la caché. Esto afecta las versiones 8.8.15 y 9.0 de Zimbra Collaboration.",
-    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODU5Mjg2MTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2022-27924",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2022-27924",
-    "ttps": [],
-    "iocs": {
-      "cve": [
-        "CVE-2022-27924"
       ]
     }
   },
