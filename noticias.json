@@ -1,5 +1,106 @@
 [
   {
+    "id": 3388,
+    "fecha": "2026-10-31T00:23:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque a la cadena de suministro inserta extensiones maliciosas de Anthropic Claude en 5 000 dispositivos",
+    "resumen": "Un código defectuoso en una extensión comprometida de Claude permitió la inserción de payloads que intentaron propagarse como worm en aproximadamente 5 000 máquinas de desarrollo, aunque la falla impidió la completa explotación. El vector involucró la distribución de paquetes de extensión a través del repositorio oficial, comprometiendo la integridad del entorno de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MDYxOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:a supply chain attack put malicious anthropic claude extensions on thousands of devices",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3387,
+    "fecha": "2026-10-31T00:23:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "DOJ alerta sobre riesgos de privacidad en la posible venta de chats de Character.AI",
+    "resumen": "El Departamento de Justicia solicita la designación de un ombudsman de privacidad para definir límites regulatorios al intercambio de datos generados por usuarios en la plataforma de IA conversacional Character.AI, señalando posibles vulneraciones de datos personales.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MDYxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/doj-raises-privacy-concerns-over-character-ai-sale",
+    "fuente": "The Record",
+    "dedup_key": "txt:doj raises privacy concerns over potential sale of character ai chats",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3386,
+    "fecha": "2026-10-31T00:23:10Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Extensión de código Claude trojeada compromete Cursor, IDE impulsado por IA",
+    "resumen": "Dos vulnerabilidades críticas fueron introducidas en Cursor mediante una extensión de Claude modificada con troyano, permitiendo ejecución remota de código y extracción de credenciales de desarrolladores. El incidente subraya la exposición de IDEs integrados con IA a ataques de supply chain y la necesidad de controles de integridad de plugins.",
+    "url_imagen": "https://images.unsplash.com/photo-1792263278178-902c7f7d0324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MDYxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:devs hit by trojanized claude code extension for cursor",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3385,
+    "fecha": "2026-10-31T00:23:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en TeamViewer permite que el host comprometido ataque al cliente que controla la sesión",
+    "resumen": "La falla permite que el equipo host, bajo control remoto, ejecute código o provoque un crash en la aplicación del cliente que inicia la sesión, afectando Windows, macOS y Linux. El vector de ataque se basa en la manipulación de paquetes de control de pantalla y puede ser explotado sin interacción del usuario tras la conexión.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MDYxOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:teamviewer flaw lets remote computers attack users who connect to control them",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3384,
+    "fecha": "2026-10-31T00:23:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "SonicWall advierte sobre riesgos críticos de configuraciones erróneas en firewalls empresariales",
+    "resumen": "La solución SonicWall Network Security Manager centraliza la visibilidad y corrige fallos operativos que permiten accesos no autorizados, mitigando vectores de ataque como lateral movement y exfiltración de datos. Su gestión continua del ciberriesgo busca reducir la exposición a vulnerabilidades de configuración que facilitan compromisos de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0MDYxODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-riesgo-que-se-esconde-tras-una-mala-configuracion/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el riesgo que se esconde tras una mala configuración",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3383,
     "fecha": "2026-10-30T19:52:05Z",
     "categoria": "Ciberseguridad",
@@ -52383,125 +52484,5 @@
         "CVE-2020-37094"
       ]
     }
-  },
-  {
-    "id": 1327,
-    "fecha": "2026-07-11T18:55:25Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Vulnerabilidad en Linux descubierta por IA",
-    "resumen": "Un modelo de inteligencia artificial (IA) ha detectado una vulnerabilidad de tipo \"root bug\" en el código de Linux que había pasado desapercibida durante 15 años, lo que podría permitir a un atacante obtener acceso de superusuario en sistemas afectados. La detección de esta vulnerabilidad subraya el potencial de la IA en la identificación de fallos de seguridad complejos que podrían ser difíciles de detectar para los humanos.",
-    "url_imagen": "https://images.unsplash.com/photo-1675557009875-436f71457475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.wired.com/story/security-news-this-week-ai-found-a-root-bug-in-linux-that-everyone-missed-for-15-years/",
-    "fuente": "Wired Security",
-    "dedup_key": "txt:ai found a root bug in linux that everyone missed for 15 years",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 1326,
-    "fecha": "2026-07-11T18:55:18Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Jscrambler 8.14.0 infectado",
-    "resumen": "La versión 8.14.0 del paquete npm jscrambler contiene un hook de preinstalación malicioso que descarga y ejecuta un infostealer nativo durante la instalación, afectando a sistemas Windows, macOS y Linux. La simple instalación de esta versión es suficiente para ejecutar el malware.",
-    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3OTYxMTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
-    "fuente": "The Hacker News",
-    "dedup_key": "txt:compromised jscrambler 8 14 0 npm release drops rust infostealer during install",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204.002",
-        "name": "Malicious File"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1218",
-        "name": "Signed Binary Proxy Execution"
-      },
-      {
-        "id": "T1499",
-        "name": "Endpoint Denial of Service"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1325,
-    "fecha": "2026-07-11T15:51:17Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Regreso de GoldPickaxe",
-    "resumen": "El malware GoldPickaxe ha regresado, poniendo en riesgo la información biométrica de los usuarios, similar a cómo se protege la información financiera, mediante ataques de phishing y explotación de vulnerabilidades en dispositivos móviles. Esto resalta la importancia de la seguridad de la información biométrica en la era digital.",
-    "url_imagen": "https://images.unsplash.com/photo-1643000296927-f4f1c8722b7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3ODUwNzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/androidMalware/2934",
-    "fuente": "TG: Android Malware",
-    "dedup_key": "txt:goldpickaxe returns when your biometric information is as important as your money https zimperium com blog goldpic",
-    "ttps": [],
-    "iocs": {
-      "domain": [
-        "zimperium.com"
-      ],
-      "url": [
-        "https://zimperium.com/blog/goldpic...",
-        "https://zimperium.com/blog/goldpickaxe-returns-when-your-biometric-information-is-as-important-as-your-money"
-      ]
-    }
-  },
-  {
-    "id": 1324,
-    "fecha": "2026-07-11T15:51:07Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "Alerta global sobre CMS vulnerables",
-    "resumen": "El Centro de Seguridad Cibernética de Australia (ACSC) emitió una alerta sobre una campaña de explotación global que aprovecha vulnerabilidades en plataformas de gestión de contenido (CMS) y plugins, lo que podría permitir ataques de phishing, inyección de malware y acceso no autorizado a sistemas. Los vectores de ataque incluyen la explotación de vulnerabilidades conocidas en CMS y plugins desactualizados.",
-    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3ODUwNjh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
-    "fuente": "Bleeping Computer",
-    "dedup_key": "txt:australia warns of global campaign targeting vulnerable cms platforms",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      },
-      {
-        "id": "T1204",
-        "name": "User Execution"
-      },
-      {
-        "id": "T1189",
-        "name": "Drive-by Compromise"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1078",
-        "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 1323,
-    "fecha": "2026-07-11T13:08:52Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Brecha de datos en Medtronic",
-    "resumen": "La empresa de tecnología médica Medtronic ha sufrido una brecha de datos que ha afectado a 3,8 millones de personas, con acceso a información personal y médica, incluyendo nombres, fechas de nacimiento, números de Seguridad Social y detalles de salud, presumiblemente por el grupo ShinyHunters, quienes podrían haber recibido un pago de rescate. Los afectados recibirán monitoreo de crédito y restauración de identidad durante 24 meses.",
-    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODM3NzUzMzJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://t.me/Cyber_Security_Channel/114036",
-    "fuente": "TG: Cyber Security Channel",
-    "dedup_key": "txt:medtronic data breach hits 3 8 million people shinyhunters suspected of ransom payment medtronic confirmed that shi",
-    "ttps": [],
-    "iocs": {}
   }
 ]
