@@ -1,5 +1,65 @@
 [
   {
+    "id": 3403,
+    "fecha": "2026-10-31T18:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Filtración masiva revela datos de 41 000 empleados del Departamento de Seguridad Nacional, incluidos agentes",
+    "resumen": "La filtración expone ubicaciones de instalaciones, números de móvil y afiliaciones a programas de vigilancia, además de la integración de software Palantir y el chatbot Grok de xAI, aumentando el riesgo de spear-phishing y espionaje interno.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0Njk2ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:massive leak exposes 41 000 homeland security workers including undercover ice agents",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3402,
+    "fecha": "2026-10-31T18:01:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Florida alerta fuga de 4,9 millones de SSN en sitio de ayuda financiera estudiantil",
+    "resumen": "El Departamento de Educación de Florida confirmó una brecha en el portal de ayuda financiera que expuso números de Seguro Social de casi 5 millones de usuarios, potencialmente facilitando ataques de phishing y fraude de identidad. La vulnerabilidad se detectó el 19 de octubre y se está investigando su origen y alcance.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0Njk2ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/florida-warns-5-million-affected-financial-aid-site-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:florida warns that 4 9 million people had social security numbers leaked in financial aid site breach",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3401,
+    "fecha": "2026-10-31T18:01:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Exploit \"SMS of Death\" (CVE-2026-58882) permite colapsar remotamente dispositivos Android sin parchear",
+    "resumen": "Un investigador divulgó un PoC que, mediante un SMS malicioso, provoca la caída del servicio celular y el bloqueo total del teléfono Android vulnerable, explotando la falla recientemente parcheada CVE-2026-58882. El vector de ataque es remoto y no requiere interacción del usuario.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0Njk2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "cve:cve-2026-58882",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58882"
+      ]
+    }
+  },
+  {
     "id": 3400,
     "fecha": "2026-10-31T15:01:21Z",
     "categoria": "Ciberseguridad",
