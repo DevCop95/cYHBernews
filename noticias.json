@@ -1,5 +1,32 @@
 [
   {
+    "id": 3409,
+    "fecha": "2026-11-01T00:14:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120185 permite escalada de privilegios en YznCMS 2.2.0",
+    "resumen": "Vulnerabilidad de gestión de privilegios en la función Backend de app/admin/controller/auth/Group.php permite ejecución remota y elevación de derechos en YznCMS ≤2.2.0; se corrige con la actualización a la versión 2.2.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM0OTIwNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/430954",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-120185",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120185"
+      ]
+    }
+  },
+  {
     "id": 3408,
     "fecha": "2026-11-01T00:01:36Z",
     "categoria": "Ciberseguridad",
