@@ -1,5 +1,37 @@
 [
   {
+    "id": 3417,
+    "fecha": "2026-11-01T15:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de comando remoto en WAVLINK WN553X1-B (CVE-2026-120229) permite ejecución OS",
+    "resumen": "La falla en la función sub_416B50 del binario /bin/ioos permite inyección de comandos del sistema operativo mediante manipulación del parámetro file_id, explotable de forma remota. El exploit está públicamente disponible, lo que eleva el riesgo de compromisos en dispositivos de red expuestos.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1NDUyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/431030",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-120229",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120229"
+      ]
+    }
+  },
+  {
+    "id": 3416,
+    "fecha": "2026-11-01T15:01:27Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "OpenAI duplica límites de uso de ChatGPT Pro e integra funciones Work en la interfaz estándar",
+    "resumen": "OpenAI anuncia la ampliación de cuotas para usuarios Pro y la incorporación de herramientas colaborativas de Work directamente en ChatGPT, unificando también los límites de uso entre ChatGPT y Codex para simplificar la gestión de recursos.",
+    "url_imagen": "https://images.unsplash.com/photo-1785981254669-6877ddef798b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1NDUyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai says it s doubling pro usage limits and bringing work features to chat",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3415,
     "fecha": "2026-11-01T12:01:26Z",
     "categoria": "Ciberseguridad",
