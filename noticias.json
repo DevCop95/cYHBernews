@@ -1,5 +1,23 @@
 [
   {
+    "id": 3420,
+    "fecha": "2026-11-01T18:01:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-74760 permite a atacante local suplantar cuenta en Google::Auth Perl",
+    "resumen": "La vulnerabilidad en Google::Auth 0.11-0.12 para Perl omite la verificación del parámetro OAuth state, permitiendo que un proceso local envíe un código de autorización propio y obtenga un refresh token bajo la identidad del usuario víctima. El atacante puede ejecutar comandos gcloud con privilegios de la cuenta comprometida.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1NTYwODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/431043",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-74760",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-74760"
+      ]
+    }
+  },
+  {
     "id": 3419,
     "fecha": "2026-11-01T16:10:15Z",
     "categoria": "Ciberseguridad",
