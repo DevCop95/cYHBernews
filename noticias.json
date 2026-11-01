@@ -1,5 +1,42 @@
 [
   {
+    "id": 3419,
+    "fecha": "2026-11-01T16:10:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-102649 permite forjar webhooks y ejecutar planes de Terraform en Burrito",
+    "resumen": "La vulnerabilidad en el operador Kubernetes de Burrito (versión < 0.13.0) acepta eventos webhook sin firma cuando webhookSecret está vacío, permitiendo a un atacante crear o borrar recursos TerraformPullRequest y forzar la generación de planes de infraestructura con credenciales almacenadas. Aunque el auto-apply está deshabilitado, la exposición del plan y la posible ejecución de código en proveedores pueden comprometer entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1NDk0MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-102649",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-102649",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-102649"
+      ]
+    }
+  },
+  {
+    "id": 3418,
+    "fecha": "2026-11-01T16:10:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Alpine Linux reconstruye su servidor GitLab tras intento de ataque RCE crítico",
+    "resumen": "Hackers intentaron explotar una vulnerabilidad crítica de GitLab en la infraestructura de desarrollo de Alpine Linux entre el 20 y 21 de octubre, obligando al proyecto a reinstalar GitLab y restablecer todas las contraseñas por riesgo de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1NDk0MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:alpine linux rebuilds gitlab after attempted rce attack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3417,
     "fecha": "2026-11-01T15:01:33Z",
     "categoria": "Ciberseguridad",
