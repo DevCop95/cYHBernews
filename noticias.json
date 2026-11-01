@@ -1,5 +1,23 @@
 [
   {
+    "id": 3410,
+    "fecha": "2026-11-01T03:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-61826 permite ejecución de acciones sin autenticación en Bazarr 1.5.7-beta.13 y versiones anteriores",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) omite la autenticación en varios endpoints de la API de Plex, permitiendo a un atacante anónimo ejecutar POST para modificar configuraciones, robar tokens X-Plex-Token y provocar SSRF y denegación de servicio. Afecta a instalaciones de Bazarr integradas con Sonarr/Radarr que gestionan contenido multimedia.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1MDIwOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-61826",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-61826",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-61826"
+      ]
+    }
+  },
+  {
     "id": 3409,
     "fecha": "2026-11-01T00:14:25Z",
     "categoria": "Ciberseguridad",
