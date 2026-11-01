@@ -1,5 +1,23 @@
 [
   {
+    "id": 3415,
+    "fecha": "2026-11-01T12:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-84295 permite acceso no autenticado a credenciales admin en WS_FTP Server 2024-0.5 y 2025-0.2",
+    "resumen": "La vulnerabilidad de autenticación insuficiente en versiones anteriores a 2024.0.6 y 2025.0.3 de Progress Software WS_FTP Server expone credenciales administrativas a atacantes remotos sin credenciales, facilitando escalada de privilegios y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1MzQ0ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-84295",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-84295",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-84295"
+      ]
+    }
+  },
+  {
     "id": 3414,
     "fecha": "2026-11-01T09:01:27Z",
     "categoria": "Ciberseguridad",
