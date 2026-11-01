@@ -1,5 +1,28 @@
 [
   {
+    "id": 3412,
+    "fecha": "2026-11-01T06:29:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-61991 permite RCE no autenticado en AjaxLoadMore Cache ≤ 3.1.1 con CVSS 10.0",
+    "resumen": "La vulnerabilidad crítica permite a un atacante ejecutar código arbitrario de forma remota sin credenciales, explotando la gestión de caché en versiones ≤ 3.1.1 de AjaxLoadMore. Se recomienda actualizar inmediatamente a la versión parcheada y aplicar mitigaciones de firewall para bloquear tráfico sospechoso.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1MTQ1NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-61991",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-61991",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-61991"
+      ]
+    }
+  },
+  {
     "id": 3411,
     "fecha": "2026-11-01T06:01:55Z",
     "categoria": "Ciberseguridad",
