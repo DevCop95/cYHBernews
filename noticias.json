@@ -1,5 +1,40 @@
 [
   {
+    "id": 3422,
+    "fecha": "2026-11-01T21:01:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Expertos advierten sobre aumento de deepfakes y suplantación de identidad mediante IA en estafas online",
+    "resumen": "La IA generativa está facilitando la creación de deepfakes de voz y vídeo, incrementando el riesgo de phishing y suplantación de cuentas; se recomiendan cinco medidas técnicas de detección y mitigación para organizaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1NjY4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/cinco-consejos-para-detectar-deepfakes-voces-clonadas-y-cuentas-secuestradas/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:cinco consejos para detectar deepfakes voces clonadas y cuentas secuestradas",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3421,
+    "fecha": "2026-11-01T21:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120338 permite ejecución remota de Python en sandbox Deno de Prefab UI",
+    "resumen": "La vulnerabilidad permite a un atacante que suministre código Python ejecutar operaciones de lectura/escritura y acceso a red en el servidor mediante Pyodide con permisos Deno sin restricciones, comprometiendo la integridad del sistema y permitiendo persistencia mediante archivos .pth. Fue corregida en Prefab UI 0.21.0 revocando los permisos Deno antes de cargar el código y limitando el acceso a cdn.jsdelivr.net.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1NjY4OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-120338",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-120338",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "cdn.jsdelivr.net"
+      ],
+      "cve": [
+        "CVE-2026-120338"
+      ]
+    }
+  },
+  {
     "id": 3420,
     "fecha": "2026-11-01T18:01:22Z",
     "categoria": "Ciberseguridad",
