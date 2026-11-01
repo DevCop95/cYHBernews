@@ -1,5 +1,58 @@
 [
   {
+    "id": 3414,
+    "fecha": "2026-11-01T09:01:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-7233 en Artifex MuPDF permite lectura fuera de límites en función fz_subset_cff_for_gids",
+    "resumen": "La falla de tipo out-of-bounds read en la función fz_subset_cff_for_gids del manejador CFF Index de MuPDF es explotable localmente y ya tiene código de prueba pública, lo que incrementa el riesgo de comprometer la integridad de documentos PDF. No se ha recibido respuesta del proyecto pese a la notificación previa.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1MjM2ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/430994",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-7233",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-7233"
+      ]
+    }
+  },
+  {
+    "id": 3413,
+    "fecha": "2026-11-01T09:01:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers roban $2.7 M a traders de Polymarket mediante script comprometido de DebugBear",
+    "resumen": "Código malicioso sustituyó un script de optimización de página en Polymarket, capturó credenciales y transfirió fondos de 726 wallets a cuentas controladas por los atacantes; la plataforma iniciará reembolsos totales.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1MjM2ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers steal about 2 7 million from polymarket traders via hijacked debugbear script",
+    "ttps": [
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3412,
     "fecha": "2026-11-01T06:29:10Z",
     "categoria": "Ciberseguridad",
