@@ -154,7 +154,7 @@ export function t(key) {
 // ─────────────────────────────────────────────────────────
 // CACHÉ DE TRADUCCIONES DINÁMICAS (Google Translate)
 // ─────────────────────────────────────────────────────────
-const CACHE_KEY = 'cyhbernews-trans-cache';
+const CACHE_KEY = 'cyhbernews-trans-cache-v2';
 export let translationCache = {};
 try {
     translationCache = JSON.parse(sessionStorage.getItem(CACHE_KEY) || '{}');
@@ -172,7 +172,7 @@ function saveTranslationCache() {
 
 export async function translateText(text, targetLang) {
     if (!text || targetLang === 'es') return text;
-    const trimmed = text.trim();
+    const trimmed = text.replace(/[\u202F\u00A0]/g, ' ').replace(/[\u2010\u2011\u2012\u2013\u2014]/g, '-').trim();
     if (!trimmed) return text;
     if (translationCache[trimmed]) {
         return translationCache[trimmed];
@@ -219,14 +219,23 @@ export async function translateNewsItem(news, targetLang) {
     let title = origTitle;
     let summary = origSummary;
 
-    if (translatedCombined && translatedCombined.includes('|||')) {
-        const parts = translatedCombined.split(/\|\|\|/);
-        title = parts[0] ? parts[0].trim() : origTitle;
-        summary = parts[1] ? parts[1].trim() : origSummary;
-    } else if (translatedCombined) {
-        const altParts = translatedCombined.split(/\s*\|\|\|\s*/);
-        title = altParts[0] ? altParts[0].trim() : origTitle;
-        summary = altParts[1] ? altParts[1].trim() : origSummary;
+    if (translatedCombined) {
+        const parts = translatedCombined.split(/\s*\|\s*\|\s*\|\s*/);
+        if (parts.length >= 2) {
+            title = parts[0].trim() || origTitle;
+            summary = parts.slice(1).join(' ').trim() || origSummary;
+        } else {
+            title = await translateText(origTitle, 'en');
+            summary = await translateText(origSummary, 'en');
+        }
+    }
+
+    // Safety fallback: if translated summary is suspiciously truncated
+    if (origSummary.length > 80 && (!summary || summary.length < origSummary.length * 0.35)) {
+        const fallbackSummary = await translateText(origSummary, 'en');
+        if (fallbackSummary && fallbackSummary.length >= origSummary.length * 0.35) {
+            summary = fallbackSummary;
+        }
     }
 
     let fuente = origSource;

@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════
    MODAL — Vista previa de noticia
    ═══════════════════════════════════════════════════════════ */
-import { getNewsId, getCleanTitle } from './utils.js';
-import { getLang, getRelativeTime, translateNewsItem } from './i18n.js';
-import { statsCache, getLikedNews, toggleLike } from './stats.js';
-import { refreshIcons, shareContent } from './ui.js';
+import { getNewsId, getCleanTitle } from './utils.js?v=14';
+import { getLang, getRelativeTime, translateNewsItem } from './i18n.js?v=14';
+import { statsCache, getLikedNews, toggleLike } from './stats.js?v=14';
+import { refreshIcons, shareContent } from './ui.js?v=14';
 
 const newsModal = document.getElementById('news-modal');
 const modalBackdrop = newsModal ? newsModal.querySelector('.news-modal-backdrop') : null;

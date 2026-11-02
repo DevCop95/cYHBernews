@@ -1,9 +1,9 @@
 /* ═══════════════════════════════════════════════════════════
    RENDER — Plantillas HTML de hero y tarjetas del grid
    ═══════════════════════════════════════════════════════════ */
-import { getNewsId, getCleanTitle, getCleanSummary, escapeHTML, escapeAttribute } from './utils.js';
-import { t, getLang, getRelativeTime } from './i18n.js';
-import { statsCache, getLikedNews } from './stats.js';
+import { getNewsId, getCleanTitle, getCleanSummary, escapeHTML, escapeAttribute } from './utils.js?v=14';
+import { t, getLang, getRelativeTime } from './i18n.js?v=14';
+import { statsCache, getLikedNews } from './stats.js?v=14';
 
 export function getBadgeHtml(severidad, isHero = false) {
     if (!severidad) return '';
@@ -50,24 +50,31 @@ export function renderHeroCard(news, trans) {
     const isLiked = !!getLikedNews()[id];
 
     return `
-        <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="hero-card" data-id="${id}">
-            ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy">` : ''}
+        <div class="hero-card" data-id="${id}">
+            ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy" class="card-preview-trigger" data-news-id="${id}">` : ''}
             <div class="hero-content">
-                ${badgeHtml}
-                <span class="hero-category">${escapeHTML(category)}</span>
-                <h1 class="hero-title">${escapeHTML(title)}</h1>
+                <div class="hero-header-row">
+                    ${badgeHtml}
+                    <span class="hero-category">${escapeHTML(category)}</span>
+                </div>
+                <h1 class="hero-title">
+                    <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a>
+                </h1>
                 <p class="hero-desc">${escapeHTML(summary)}</p>
                 <div class="hero-meta">
                     <div class="hero-source">
                         <div class="hero-source-avatar">${initial}</div>
-                        ${escapeHTML(fuente)}
+                        <span>${escapeHTML(fuente)}</span>
                     </div>
-                    &bull; <span class="views-display" data-news-id="${id}">${formatViews}</span> &bull; ${timeStr}
+                    <span class="hero-meta-dot">&bull;</span>
+                    <span class="views-display" data-news-id="${id}">${formatViews}</span>
+                    <span class="hero-meta-dot">&bull;</span>
+                    <span class="hero-time">${timeStr}</span>
                 </div>
                 <div class="hero-actions">
-                    <button class="read-story-btn">
-                        ${t('readFullStory')} <i data-lucide="arrow-right"></i>
-                    </button>
+                    <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer" class="read-story-btn">
+                        <span>${t('readFullStory')}</span> <i data-lucide="arrow-right"></i>
+                    </a>
                     <button class="share-btn action-btn hero-action-btn like-btn ${isLiked ? 'active' : ''}" data-id="${id}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaLike')}">
                         <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
                         <span class="action-label">${t('ariaLike')}</span>
@@ -79,7 +86,7 @@ export function renderHeroCard(news, trans) {
                     </button>
                 </div>
             </div>
-        </a>
+        </div>
     `;
 }
 

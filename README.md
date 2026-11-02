@@ -6,7 +6,7 @@ A technology and cybersecurity newspaper with a premium iOS/macOS-inspired visua
 
 See the live site here:
 
-👉 [https://devcop95.github.io/cYHBernews/](https://devcop95.github.io/cYHBernews/)
+👉 [https://cyhbernews.dev101x.online/](https://cyhbernews.dev101x.online/)
 
 ## ✨ Main Features
 

@@ -9,12 +9,12 @@
      js/render.js → plantillas de hero y tarjetas
      js/modal.js  → vista previa de noticia
    ═══════════════════════════════════════════════════════════ */
-import { getNewsId, getCleanTitle, getCleanSummary, normalizeText } from './js/utils.js';
-import { translations, translationCache, getLang, setLang, t, translateNewsItem, updateStaticTranslations } from './js/i18n.js';
-import { refreshIcons, showToast, shareContent, initTheme, initBackToTop, initLoader, setLoaderProgress, showLoader, hideLoader } from './js/ui.js';
-import { statsCache, getLikedNews, fetchStatsForNews, incrementView, toggleLike } from './js/stats.js';
-import { renderHeroCard, renderGridCard } from './js/render.js';
-import { initModal } from './js/modal.js';
+import { getNewsId, getCleanTitle, getCleanSummary, normalizeText } from './js/utils.js?v=14';
+import { translations, translationCache, getLang, setLang, t, translateNewsItem, updateStaticTranslations } from './js/i18n.js?v=14';
+import { refreshIcons, showToast, shareContent, initTheme, initBackToTop, initLoader, setLoaderProgress, showLoader, hideLoader } from './js/ui.js?v=14';
+import { statsCache, getLikedNews, fetchStatsForNews, incrementView, toggleLike } from './js/stats.js?v=14';
+import { renderHeroCard, renderGridCard } from './js/render.js?v=14';
+import { initModal } from './js/modal.js?v=14';
 
 function main() {
     const newsGrid      = document.getElementById('news-grid');
@@ -207,7 +207,7 @@ function main() {
         }
 
         const [featured, ...rest] = currentResults;
-        const newsToRender = rest.slice(0, state.visibleCount - 1);
+        const newsToRender = rest.slice(0, state.visibleCount);
 
         // Translate the news items in parallel
         const allItemsToTranslate = [featured, ...newsToRender].filter(Boolean);
@@ -288,10 +288,10 @@ function main() {
     function updatePager() {
         if (!pager || !pagerStatus || !loadMoreButton) return;
         const totalRest = Math.max(0, currentResults.length - 1);
-        const shown = Math.min(state.visibleCount - 1, totalRest);
+        const shown = Math.min(state.visibleCount, totalRest);
         const remaining = Math.max(0, totalRest - shown);
 
-        pager.hidden = currentResults.length <= PAGE_SIZE;
+        pager.hidden = totalRest <= 0;
         pagerStatus.textContent = t('pagerStatus')
             .replace('{shown}', shown)
             .replace('{total}', totalRest);
@@ -326,7 +326,7 @@ function main() {
         }
 
         // Interceptar clic en la tarjeta para contar vista
-        const cardLink = e.target.closest('.news-card, a.hero-card');
+        const cardLink = e.target.closest('.news-card, .hero-card');
         if (cardLink) {
             const id = cardLink.dataset.id;
             if (id) {
