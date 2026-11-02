@@ -1,5 +1,32 @@
 [
   {
+    "id": 3427,
+    "fecha": "2026-11-02T06:29:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad remota de código en dayrui XunRuiCMS (CVE-2026-120348) versiones ≤4.7.4",
+    "resumen": "La función _get_tpl_content en dayrui/Fcms/Library/Notice.php permite inyección de código remoto, explotable mediante peticiones HTTP manipuladas. El exploit está disponible públicamente y afecta a todas las instalaciones de XunRuiCMS hasta la versión 4.7.4.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MDA5Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/431251",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-120348",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120348"
+      ]
+    }
+  },
+  {
     "id": 3426,
     "fecha": "2026-11-02T06:01:58Z",
     "categoria": "Ciberseguridad",
