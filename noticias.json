@@ -1,5 +1,73 @@
 [
   {
+    "id": 3437,
+    "fecha": "2026-11-02T18:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "PapRAT intensifica campaña de ciberespionaje en Sudeste Asiático usando funciones legítimas de Windows",
+    "resumen": "El grupo de amenaza vinculado a la India despliega tres cadenas de ataque que aprovechan funcionalidades nativas de Windows para infiltrarse en organizaciones de la región, incrementando el riesgo de exfiltración de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NDI1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:paprat cyber espionage campaign leaves a bitter taste in south asia",
+    "ttps": [
+      {
+        "id": "T1218",
+        "name": "System Binary Proxy Execution"
+      },
+      {
+        "id": "T1047",
+        "name": "Windows Management Instrumentation"
+      },
+      {
+        "id": "T1021.002",
+        "name": "SMB/Windows Admin Shares"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3436,
+    "fecha": "2026-11-02T18:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google desmantela botnet de 1,3 M de dispositivos Android usados en fraude publicitaria",
+    "resumen": "La operación, liderada por Google, recuperó el control de más de 1,3 millones de TV boxes Android que operaban bajo un backdoor vendido por el fabricante Videostrong a ciberdelincuentes, permitiendo tráfico de red no autorizado y generación de clics fraudulentos.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NDI1MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google disrupts 1 3 million device android botnet says tv box maker sold criminal access",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3435,
+    "fecha": "2026-11-02T18:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "BTCPay Server alerta sobre robos de hot wallets en versiones obsoletas del software",
+    "resumen": "El mantenedor de BTCPay Server advierte que atacantes están vaciando hot wallets en instancias que ejecutan versiones antiguas, explotando vulnerabilidades no parcheadas del procesador de pagos cripto. Se recomienda actualizar inmediatamente a la última versión para mitigar el riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NDI0OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:btcpay server warns of hot wallet crypto thefts on outdated instances",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3434,
     "fecha": "2026-11-02T15:01:50Z",
     "categoria": "Ciberseguridad",
