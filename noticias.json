@@ -1,5 +1,91 @@
 [
   {
+    "id": 3444,
+    "fecha": "2026-11-02T21:01:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-105780 en Adobe Campaign Classic permite ejecución arbitraria de código sin interacción del usuario",
+    "resumen": "Vulnerabilidad de autorización incorrecta (CVSS 9.9) en Adobe Campaign Classic permite a un atacante de bajo privilegio ejecutar código arbitrario en el contexto del usuario comprometido, sin necesidad de interacción. El vector de ataque es remoto y el alcance se amplía a componentes críticos del servidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NTMyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-105780",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-105780",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-105780"
+      ]
+    }
+  },
+  {
+    "id": 3443,
+    "fecha": "2026-11-02T21:01:32Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Google ejecuta modelo Gemma 4 en satélite con TPU, primer paso hacia centros de datos espaciales",
+    "resumen": "La prueba demostró que una unidad de procesamiento tensorial (TPU) de nivel de centro de datos puede generar respuestas de IA en órbita, validando la viabilidad de la computación espacial para ampliar capacidad de procesamiento. El experimento, parte del Project Suncatcher, abre la puerta a una futura red de satélites interconectados que aprovechen energía solar constante.",
+    "url_imagen": "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NTMyOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/google-ha-dado-paso-clave-centros-datos-espaciales-acaba-ejecutar-ia-orbita",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:google ha dado un paso clave hacia los centros de datos espaciales acaba de ejecutar ia en orbita",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3442,
+    "fecha": "2026-11-02T21:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Langflow permiten ejecución remota de código sin autenticación",
+    "resumen": "Dos fallos críticos en la herramienta open-source Langflow, usada para crear agentes y flujos de IA, permiten a un atacante no autenticado eludir la autenticación y ejecutar código arbitrario en servidores; la mitigación requiere actualizar a la versión 1.13.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NTMyODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:critical langflow flaws could let unauthenticated attackers run code on servers",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3441,
+    "fecha": "2026-11-02T21:01:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google y socios desmantelan botnet XCPE de más de 1,3 millones de Android TV boxes infectados",
+    "resumen": "La operación conjunta eliminó la infraestructura de comando y control del malware XCPE, que comprometía dispositivos de streaming para ejecutar ransomware y fraude publicitario, mitigando una amenaza que afectaba a usuarios globales. Se detectó que el fabricante del hardware insertó deliberadamente el código malicioso, violando políticas de la Play Store y exponiendo datos de usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NTMyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google disrupts million device xcpe android malware botnet bans tv box maker",
+    "ttps": [
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1195.002",
+        "name": "Compromise Software Supply Chain"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3440,
     "fecha": "2026-11-02T19:38:24Z",
     "categoria": "Ciberseguridad",
