@@ -1,5 +1,32 @@
 [
   {
+    "id": 3428,
+    "fecha": "2026-11-02T09:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120308 permite escalada de privilegios vía montaje de volúmenes en entornos multi-tenant de Beta9",
+    "resumen": "La vulnerabilidad permite a un atacante con token de workspace montar rutas arbitrarias en el sistema de archivos del worker, accediendo y modificando datos de otros inquilinos. Afecta a gateway 0.1.769 y worker 0.1.745; parcheado en gateway 0.1.776 y worker 0.1.756.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MTAwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-120308",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-120308",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120308"
+      ]
+    }
+  },
+  {
     "id": 3427,
     "fecha": "2026-11-02T06:29:39Z",
     "categoria": "Ciberseguridad",
