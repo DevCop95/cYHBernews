@@ -1,5 +1,61 @@
 [
   {
+    "id": 3425,
+    "fecha": "2026-11-02T03:01:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-120323 permite divulgación de información en samanhappy MCPHub ≤1.1.7",
+    "resumen": "La vulnerabilidad en la función src/utils/passthroughHeaders.ts de MCPHub permite a un atacante remoto extraer datos sensibles mediante manipulación del parámetro passthroughHeaders; se recomienda actualizar a la versión 1.1.8 que incluye el parche 040f7b9ae004070bdfe5084cde6bc2c609f78e76.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1ODg0OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/431136",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-120323",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "040f7b9ae004070bdfe5084cde6bc2c609f78e76"
+      ],
+      "cve": [
+        "CVE-2026-120323"
+      ]
+    }
+  },
+  {
+    "id": 3424,
+    "fecha": "2026-11-02T03:01:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA y automatización impulsan campañas de suplantación de marcas mediante dominios falsos y webs fraudulentas",
+    "resumen": "Los atacantes emplean modelos de lenguaje y generación automática de contenido para registrar dominios similares y crear sitios web falsos que replican la apariencia de marcas legítimas, aumentando la escala y rapidez de los phishing de marca. Esta técnica combina IA generativa con infraestructura de registro masivo, elevando el riesgo de fraude y pérdida de confianza del consumidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1ODg0ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/la-ia-y-la-automatizacion-facilitan-nuevas-formas-de-suplantacion-de-marcas-en-internet/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:la ia y la automatizacion facilitan nuevas formas de suplantacion de marcas en internet",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1584.003",
+        "name": "Virtual Private Server"
+      },
+      {
+        "id": "T1584",
+        "name": "Compromise Infrastructure"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3423,
     "fecha": "2026-11-02T00:01:35Z",
     "categoria": "Ciberseguridad",
