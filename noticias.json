@@ -1,5 +1,23 @@
 [
   {
+    "id": 3423,
+    "fecha": "2026-11-02T00:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120306 permite escalada a root en pods privilegiados de Buildah con aislamiento chroot",
+    "resumen": "La vulnerabilidad CVE-2026-120306 (CVSS 9.9) permite a un atacante con token de workspace inyectar comandos en la definición de imagen y ejecutar código como uid 0 dentro del pod trabajador, aprovechando CAP_DAC_OVERRIDE y namespaces compartidos. La falla afecta a entornos de CI/CD que usan Buildah en modo chroot y se corrige en la versión worker 0.1.756 con aislamiento OCI completo.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM1Nzc2OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-120306",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-120306",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120306"
+      ]
+    }
+  },
+  {
     "id": 3422,
     "fecha": "2026-11-01T21:01:37Z",
     "categoria": "Ciberseguridad",
