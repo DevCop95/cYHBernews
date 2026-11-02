@@ -1,5 +1,46 @@
 [
   {
+    "id": 3430,
+    "fecha": "2026-11-02T12:02:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-8923 permite RCE autenticado en ManageEngine Eventlog Analyzer y Log360 antes de la versión 13062",
+    "resumen": "La falla CVE-2026-8923 otorga ejecución remota de código a usuarios autenticados mediante la opción Log Forward en versiones vulnerables de Eventlog Analyzer y Log360, exponiendo a organizaciones a compromisos de integridad de logs. Se recomienda aplicar el parche oficial y revisar configuraciones de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MjA5MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/431317",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-8923",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-8923"
+      ]
+    }
+  },
+  {
+    "id": 3429,
+    "fecha": "2026-11-02T12:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Synology alerta sobre aumento de ataques ransomware C3RB3R a dispositivos NAS",
+    "resumen": "Synology emitió un aviso crítico instando a actualizar todos los modelos de NAS tras la detección de una campaña activa de ransomware C3RB3R que cifra datos y exige rescate, explotando vulnerabilidades de acceso remoto sin parchear. Se recomienda aplicar los últimos firmware y reforzar la segmentación de red para mitigar la propagación.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MjA5MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:synology warns of c3rb3r ransomware attacks targeting nas devices",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3428,
     "fecha": "2026-11-02T09:01:32Z",
     "categoria": "Ciberseguridad",
