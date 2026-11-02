@@ -1,5 +1,52 @@
 [
   {
+    "id": 3440,
+    "fecha": "2026-11-02T19:38:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Polymarket reembolsa $3,9 M a víctimas tras compromiso de su plataforma de predicción",
+    "resumen": "El análisis post-mortem del incidente del 29 octubre revela que el mercado de predicciones sufrió una brecha que permitió el robo de fondos, y la empresa ha anunciado la devolución total y compensación por la indisponibilidad del sitio. SECTOR: Tecnología",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NDgzMDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/polymarket-returning-funds-to-customers-after-site-compromise",
+    "fuente": "The Record",
+    "dedup_key": "txt:polymarket pledges to give 3 9 million back to victims after site compromise",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3439,
+    "fecha": "2026-11-02T19:38:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Resumen semanal: CVEs críticos, botnet DDoS Linux, phishing por código de dispositivo y spyware Android",
+    "resumen": "La semana mostró vulnerabilidades activas (incluidos CVE críticos) explotadas para crear una botnet DDoS basada en Linux, campañas de phishing que usan códigos de dispositivos y la distribución de spyware dirigido a Android, evidenciando la facilidad de abuso de configuraciones débiles.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NDgzMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap critical cves linux ddos botnet device code phishing android spyware and more",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3438,
+    "fecha": "2026-11-02T19:38:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Fintech Sageworks de Abrigo se recupera tras ataque cibernético que interrumpió servicios críticos",
+    "resumen": "La plataforma de gestión de riesgos Sageworks volvió a estar operativa, excepto la funcionalidad de cara al prestatario, después de una interrupción causada por actividad anómala que indica un posible compromiso de la infraestructura. El incidente evidencia la exposición de sistemas financieros a ataques de acceso no autorizado y subraya la necesidad de reforzar la detección y respuesta en entornos de fintech.",
+    "url_imagen": "https://images.unsplash.com/photo-1572784739336-b5c149e87aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NDgzMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fintech platform sageworks taken offline after suspected cyberattack",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3437,
     "fecha": "2026-11-02T18:01:41Z",
     "categoria": "Ciberseguridad",
