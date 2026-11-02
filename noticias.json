@@ -1,5 +1,95 @@
 [
   {
+    "id": 3434,
+    "fecha": "2026-11-02T15:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Apple alerta a usuarios en 99 países sobre spyware mercenario de alta sofisticación",
+    "resumen": "Apple ha emitido avisos globales indicando la presencia de spyware de actores mercenarios, señalando su coste extremo y complejidad, lo que eleva el riesgo de espionaje persistente en dispositivos. No se identifican actores ni regiones específicas, subrayando la naturaleza transnacional del ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1790172068601-c192a0c1c0b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MzE3MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
+    "fuente": "The Record",
+    "dedup_key": "txt:apple warns users in 99 countries of mercenary spyware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3433,
+    "fecha": "2026-11-02T15:01:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "El informe de riesgos de IA de Microsoft omite la exposición de agencias gubernamentales a vulnerabilidades",
+    "resumen": "El Digital Defense Report señala a los gobiernos como objetivo principal de ataques impulsados por IA, pero no menciona que la mayoría de los vectores provienen de fallos de software de Microsoft, lo que amplía la superficie de ataque para actores estatales y criminales.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MzE3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:microsoft s ai risk report misses this key detail",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3432,
+    "fecha": "2026-11-02T15:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Actor estatal iraní compromete nube gubernamental de Israel y Kurdistán iraquí en campaña de espionaje cibernético",
+    "resumen": "Investigadores de Dream Research Labs revelan que entre agosto y octubre de 2026 un grupo alineado con Irán infiltró cuentas de alto nivel en Israel y accedió a la infraestructura cloud del gobierno kurdo, usando técnicas de spear-phishing y malware de acceso remoto.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MzE3MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:darkblinders compromises israeli target and iraqi kurdish government cloud environment",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3431,
+    "fecha": "2026-11-02T15:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers alteran sistemas de refrigeración en supermercados europeos y provocan interrupciones operativas",
+    "resumen": "Un grupo de atacantes accedió remotamente a los controladores de temperatura de los sistemas de refrigeración de varias cadenas de supermercados en Europa, modificando los ajustes y forzando el cierre de unidades críticas, lo que generó pérdidas de inventario y paralización temporal de tiendas. El vector de ataque se basó en acceso no autorizado a redes OT mediante credenciales comprometidas y falta de segmentación.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2MzE3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers disrupt refrigeration systems at european supermarkets",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3430,
     "fecha": "2026-11-02T12:02:01Z",
     "categoria": "Ciberseguridad",
