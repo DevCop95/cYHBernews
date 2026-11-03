@@ -1,5 +1,114 @@
 [
   {
+    "id": 3449,
+    "fecha": "2026-11-03T00:03:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Análisis de datos revela que pocos CVE generan la mayoría de los exploits en ataques reales",
+    "resumen": "Un estudio de Microsoft Security muestra que un subconjunto reducido de vulnerabilidades CVE de alto impacto concentra la mayor parte de los exploits observados, permitiendo a los equipos de defensa priorizar según probabilidad de explotación, exposición y radio de daño.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NjQyMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:what exploited vulnerabilities have in common a data driven analysis of real world attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3448,
+    "fecha": "2026-11-03T00:03:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Unit 42 informa sobre aumento de ciberespionaje y adopción de IA en campañas ofensivas",
+    "resumen": "El informe de Unit 42 revela que actores de amenazas están integrando modelos de lenguaje y herramientas de generación de contenido AI para automatizar spear-phishing y malware, mientras intensifican campañas de extorsión financiera contra sectores críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NjQyMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/u42-threat-intelligence-highlights-oct-2026/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:unit 42 threat intelligence highlights nov 2 2026",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3447,
+    "fecha": "2026-11-03T00:03:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Mayor exchange de cripto en Brasil confirma ciberataque y fuga de $46 millones",
+    "resumen": "La plataforma Mercado Bitcoin sufrió un ataque que permitió la extracción no autorizada de más de $46 millones en criptomonedas, evidenciando fallas en sus controles de acceso y monitoreo de transacciones. El incidente impacta la confianza del mercado financiero brasileño y podría desencadenar investigaciones regulatorias.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NjQyMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+    "fuente": "The Record",
+    "dedup_key": "txt:largest crypto exchange in brazil confirms cyberattack as millions flow out of platform",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3446,
+    "fecha": "2026-11-03T00:03:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Brecha en Binance expone vulnerabilidades de separación de sistemas y genera pérdidas multimillonarias",
+    "resumen": "Un solo laptop comprometido permitió a atacantes escalar privilegios y robar miles de millones en criptomonedas, evidenciando controles insuficientes y falta de pruebas de vectores de ataque en la arquitectura de la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NjQyMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:one compromised laptop billions lost the binance attack path warning",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3445,
+    "fecha": "2026-11-03T00:03:22Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "SOC debe evaluar madurez antes de desplegar agentes de IA según encuesta 2026 de Prophet Security",
+    "resumen": "El 40 % de los equipos de seguridad ya usan IA a diario y el 56 % la están probando; sin embargo, solo 4 % no planean adoptarla, lo que obliga a validar procesos, datos y control de acceso antes de integrar agentes autónomos en el SOC. La encuesta de más de 250 CISOs destaca la necesidad de marcos de gobernanza y pruebas de resiliencia contra manipulaciones de modelos.",
+    "url_imagen": "https://images.unsplash.com/photo-1789845043994-0741ead89a50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NjQyMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:is your soc ready for ai agents a maturity check before you deploy",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3444,
     "fecha": "2026-11-02T21:01:34Z",
     "categoria": "Ciberseguridad",
