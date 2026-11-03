@@ -9,12 +9,12 @@
      js/render.js → plantillas de hero y tarjetas
      js/modal.js  → vista previa de noticia
    ═══════════════════════════════════════════════════════════ */
-import { getNewsId, getCleanTitle, getCleanSummary, normalizeText } from './js/utils.js?v=14';
-import { translations, translationCache, getLang, setLang, t, translateNewsItem, updateStaticTranslations } from './js/i18n.js?v=14';
-import { refreshIcons, showToast, shareContent, initTheme, initBackToTop, initLoader, setLoaderProgress, showLoader, hideLoader } from './js/ui.js?v=14';
-import { statsCache, getLikedNews, fetchStatsForNews, incrementView, toggleLike } from './js/stats.js?v=14';
-import { renderHeroCard, renderGridCard } from './js/render.js?v=14';
-import { initModal } from './js/modal.js?v=14';
+import { getNewsId, getCleanTitle, getCleanSummary, normalizeText } from './js/utils.js?v=15';
+import { translations, translationCache, getLang, setLang, t, translateNewsItem, updateStaticTranslations } from './js/i18n.js?v=15';
+import { refreshIcons, showToast, shareContent, initTheme, initBackToTop, initLoader, setLoaderProgress, showLoader, hideLoader } from './js/ui.js?v=15';
+import { statsCache, getLikedNews, fetchStatsForNews, incrementView, toggleLike } from './js/stats.js?v=15';
+import { renderHeroCard, renderGridCard } from './js/render.js?v=15';
+import { initModal, openNewsModal } from './js/modal.js?v=15';
 
 function main() {
     const newsGrid      = document.getElementById('news-grid');
@@ -32,6 +32,7 @@ function main() {
     let allNews = [];
     let currentResults = [];
     let archiveManifest = [];
+    let archivePromise = null;
 
     const PAGE_SIZE = 12;
     const state = {
@@ -109,6 +110,37 @@ function main() {
         }
     }
 
+    
+    async function checkUrlParamsAndOpenModal() {
+        const params = new URLSearchParams(window.location.search);
+        const targetId = params.get('noticia') || params.get('news') || params.get('id');
+        if (!targetId) return;
+
+        let found = allNews.find(n => String(n.id) === String(targetId) || getNewsId(n.enlace_original) === String(targetId));
+
+        if (!found && archivePromise) {
+            await archivePromise;
+            found = allNews.find(n => String(n.id) === String(targetId) || getNewsId(n.enlace_original) === String(targetId));
+        }
+
+        if (!found) {
+            try {
+                const res = await fetch('noticias.json');
+                if (res.ok) {
+                    const raw = await res.json();
+                    found = raw.find(n => String(n.id) === String(targetId) || getNewsId(n.enlace_original) === String(targetId));
+                    if (found && !allNews.some(n => n.enlace_original === found.enlace_original)) {
+                        allNews.push(found);
+                    }
+                }
+            } catch (_) {}
+        }
+
+        if (found) {
+            await openNewsModal(found.id || getNewsId(found.enlace_original));
+        }
+    }
+
     async function loadNews() {
         try {
             setLoaderProgress(20);
@@ -116,7 +148,8 @@ function main() {
             setLoaderProgress(70);
             await applyFilters();
             setLoaderProgress(100);
-            loadArchivesInBackground();
+            archivePromise = loadArchivesInBackground();
+            await checkUrlParamsAndOpenModal();
         } catch (error) {
             console.error(error);
             setLoaderProgress(100);
@@ -522,7 +555,7 @@ function main() {
     initBackToTop();
     refreshIcons();
     updateStaticTranslations();
-    initModal((id) => allNews.find(n => getNewsId(n.enlace_original) === id));
+    initModal((id) => allNews.find(n => String(n.id) === String(id) || getNewsId(n.enlace_original) === String(id)));
     loadNews();
 }
 

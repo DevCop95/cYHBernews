@@ -1,10 +1,10 @@
 /* ═══════════════════════════════════════════════════════════
    MODAL — Vista previa de noticia
    ═══════════════════════════════════════════════════════════ */
-import { getNewsId, getCleanTitle } from './utils.js?v=14';
-import { getLang, getRelativeTime, translateNewsItem } from './i18n.js?v=14';
-import { statsCache, getLikedNews, toggleLike } from './stats.js?v=14';
-import { refreshIcons, shareContent } from './ui.js?v=14';
+import { getNewsId, getCleanTitle } from './utils.js?v=15';
+import { getLang, getRelativeTime, translateNewsItem } from './i18n.js?v=15';
+import { statsCache, getLikedNews, toggleLike } from './stats.js?v=15';
+import { refreshIcons, shareContent } from './ui.js?v=15';
 
 const newsModal = document.getElementById('news-modal');
 const modalBackdrop = newsModal ? newsModal.querySelector('.news-modal-backdrop') : null;
@@ -24,7 +24,12 @@ let currentModalNews = null;
 let lastFocusedElement = null;
 let findNewsById = () => null;
 
-async function openNewsModal(id, triggerElement) {
+function getShareUrl(news) {
+    const origin = (typeof window !== 'undefined' && window.location && window.location.origin && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://cyhbernews.dev101x.online';
+    return (news && news.id) ? `${origin}/share/${news.id}/` : (news ? news.enlace_original : '');
+}
+
+export async function openNewsModal(id, triggerElement) {
     lastFocusedElement = triggerElement || document.activeElement;
     const news = findNewsById(id);
     if (!news || !newsModal) return;
@@ -36,7 +41,9 @@ async function openNewsModal(id, triggerElement) {
     const category = trans.category;
     const fuente = trans.fuente;
     const initial = (fuente || 'N')[0].toUpperCase();
-    const isLiked = !!getLikedNews()[id];
+
+    const newsInternalId = getNewsId(news.enlace_original);
+    const isLiked = !!getLikedNews()[newsInternalId];
 
     if (news.url_imagen) {
         modalImg.src = news.url_imagen;
@@ -53,19 +60,27 @@ async function openNewsModal(id, triggerElement) {
     modalSourceName.textContent = fuente;
     modalTime.textContent = getRelativeTime(news.fecha);
 
-    modalLikeBtn.dataset.id = id;
+    modalLikeBtn.dataset.id = newsInternalId;
     modalLikeBtn.dataset.title = title;
     modalLikeBtn.classList.toggle('active', isLiked);
     const likeSvg = modalLikeBtn.querySelector('svg');
     if (likeSvg) likeSvg.setAttribute('fill', isLiked ? 'currentColor' : 'none');
     const likeCount = modalLikeBtn.querySelector('.like-count');
-    const likes = statsCache[id]?.likes || 0;
+    const likes = statsCache[newsInternalId]?.likes || 0;
     if (likeCount) likeCount.textContent = likes > 0 ? likes : '';
 
-    modalShareBtn.dataset.url = news.enlace_original;
+    const shareUrl = getShareUrl(news);
+    modalShareBtn.dataset.url = shareUrl;
     modalShareBtn.dataset.title = title;
 
     modalReadBtn.href = news.enlace_original;
+
+    // Sincronizar URL para reflejar la noticia abierta sin recargar
+    try {
+        const url = new URL(window.location);
+        url.searchParams.set('noticia', news.id || newsInternalId);
+        window.history.replaceState({ modalOpen: true, newsId: news.id }, '', url);
+    } catch (_) {}
 
     newsModal.classList.add('active');
     newsModal.setAttribute('aria-hidden', 'false');
@@ -75,12 +90,23 @@ async function openNewsModal(id, triggerElement) {
     refreshIcons();
 }
 
-function closeNewsModal() {
+export function closeNewsModal() {
     if (!newsModal) return;
     newsModal.classList.remove('active');
     newsModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
     currentModalNews = null;
+
+    // Limpiar parámetro de URL si estaba presente
+    try {
+        const url = new URL(window.location);
+        if (url.searchParams.has('noticia') || url.searchParams.has('news') || url.searchParams.has('id')) {
+            url.searchParams.delete('noticia');
+            url.searchParams.delete('news');
+            url.searchParams.delete('id');
+            window.history.replaceState({}, '', url);
+        }
+    } catch (_) {}
 
     if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
         lastFocusedElement.focus();
@@ -110,6 +136,13 @@ export function initModal(newsLookup) {
     if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeNewsModal);
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && newsModal && newsModal.classList.contains('active')) {
+            closeNewsModal();
+        }
+    });
+
+    window.addEventListener('popstate', () => {
+        const params = new URLSearchParams(window.location.search);
+        if (!params.get('noticia') && !params.get('news') && !params.get('id') && newsModal && newsModal.classList.contains('active')) {
             closeNewsModal();
         }
     });

@@ -1,9 +1,9 @@
 /* ═══════════════════════════════════════════════════════════
    RENDER — Plantillas HTML de hero y tarjetas del grid
    ═══════════════════════════════════════════════════════════ */
-import { getNewsId, getCleanTitle, getCleanSummary, escapeHTML, escapeAttribute } from './utils.js?v=14';
-import { t, getLang, getRelativeTime } from './i18n.js?v=14';
-import { statsCache, getLikedNews } from './stats.js?v=14';
+import { getNewsId, getCleanTitle, getCleanSummary, escapeHTML, escapeAttribute } from './utils.js?v=15';
+import { t, getLang, getRelativeTime } from './i18n.js?v=15';
+import { statsCache, getLikedNews } from './stats.js?v=15';
 
 export function getBadgeHtml(severidad, isHero = false) {
     if (!severidad) return '';
@@ -32,6 +32,11 @@ export function getBadgeHtml(severidad, isHero = false) {
     return `<div class="${className}" style="background-color: ${color}"><i data-lucide="${icon}"></i> ${text}</div>`;
 }
 
+function getShareUrl(news) {
+    const origin = (typeof window !== 'undefined' && window.location && window.location.origin && !window.location.origin.startsWith('file')) ? window.location.origin : 'https://cyhbernews.dev101x.online';
+    return (news && news.id) ? `${origin}/share/${news.id}/` : (news ? news.enlace_original : '');
+}
+
 export function renderHeroCard(news, trans) {
     if (!news) return '';
     const id = getNewsId(news.enlace_original);
@@ -48,17 +53,18 @@ export function renderHeroCard(news, trans) {
     const formatViews = views > 0 ? `${views} ${t('views')}` : t('new');
 
     const isLiked = !!getLikedNews()[id];
+    const shareUrl = getShareUrl(news);
 
     return `
         <div class="hero-card" data-id="${id}">
-            ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy" class="card-preview-trigger" data-news-id="${id}">` : ''}
+            ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy" class="card-preview-trigger" data-news-id="${news.id || id}">` : ''}
             <div class="hero-content">
                 <div class="hero-header-row">
                     ${badgeHtml}
                     <span class="hero-category">${escapeHTML(category)}</span>
                 </div>
                 <h1 class="hero-title">
-                    <a href="${escapeAttribute(news.enlace_original)}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a>
+                    <a href="#" class="card-preview-trigger" data-news-id="${news.id || id}">${escapeHTML(title)}</a>
                 </h1>
                 <p class="hero-desc">${escapeHTML(summary)}</p>
                 <div class="hero-meta">
@@ -80,7 +86,7 @@ export function renderHeroCard(news, trans) {
                         <span class="action-label">${t('ariaLike')}</span>
                         <span class="like-count">${likes > 0 ? likes : ''}</span>
                     </button>
-                    <button class="share-btn action-btn hero-action-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaShare')}">
+                    <button class="share-btn action-btn hero-action-btn" data-url="${escapeAttribute(shareUrl)}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaShare')}">
                         <i data-lucide="share-2"></i>
                         <span class="action-label">${t('ariaShare')}</span>
                     </button>
@@ -104,10 +110,11 @@ export function renderGridCard(news, trans) {
     const formatViews = views > 0 ? `${views} ${t('views')}` : t('new');
 
     const isLiked = !!getLikedNews()[id];
+    const shareUrl = getShareUrl(news);
 
     return `
         <div class="news-card" data-id="${id}">
-            <div class="card-thumbnail card-preview-trigger" data-news-id="${id}">
+            <div class="card-thumbnail card-preview-trigger" data-news-id="${news.id || id}">
                 ${news.url_imagen ? `<img src="${escapeAttribute(news.url_imagen)}" alt="${escapeAttribute(title)}" loading="lazy">` : ''}
                 ${badgeHtml}
                 <div class="card-thumbnail-overlay">
@@ -116,7 +123,7 @@ export function renderGridCard(news, trans) {
                             <i data-lucide="heart" fill="${isLiked ? 'currentColor' : 'none'}"></i>
                             <span class="like-count">${likes > 0 ? likes : ''}</span>
                         </button>
-                        <button class="share-btn" data-url="${escapeAttribute(news.enlace_original)}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaShare')}">
+                        <button class="share-btn" data-url="${escapeAttribute(shareUrl)}" data-title="${escapeAttribute(title)}" aria-label="${t('ariaShare')}">
                             <i data-lucide="share-2"></i>
                         </button>
                     </div>
@@ -125,7 +132,7 @@ export function renderGridCard(news, trans) {
             <div class="card-details">
                 <div class="card-source-icon">${initial}</div>
                 <div class="card-info">
-                    <h3 class="card-title">${escapeHTML(title)}</h3>
+                    <h3 class="card-title card-preview-trigger" data-news-id="${news.id || id}">${escapeHTML(title)}</h3>
                     <div class="card-meta-small">
                         <span class="source">${escapeHTML(fuente)}</span>
                         <div class="stats"><span class="views-display" data-news-id="${id}">${formatViews}</span> &bull; ${timeStr}</div>

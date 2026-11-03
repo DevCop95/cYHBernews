@@ -597,3 +597,6 @@ body.sidebar-closed .sidebar-item span {
   background: var(--accent); color: #fff; text-decoration: none;
 }
 .modal-read-full:hover { background: var(--accent-hover); }
+
+.card-title.card-preview-trigger { cursor: pointer; transition: color 0.15s ease; }
+.card-title.card-preview-trigger:hover { color: var(--accent); }
