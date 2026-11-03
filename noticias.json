@@ -1,5 +1,64 @@
 [
   {
+    "id": 3461,
+    "fecha": "2026-11-03T12:03:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Apache HertzBeat 1.7-1.9 vulnerables a consumo de CPU por XPath sin validar (CVE-2026-114442)",
+    "resumen": "Una validación incompleta de expresiones XPath en el colector HTTP permite a un usuario autenticado con permisos de creación de plantillas enviar XPath maliciosos que provocan evaluación repetida y agotamiento de CPU, afectando la disponibilidad del servicio. La vulnerabilidad se corrige en la versión 1.9.1; se recomienda actualizar inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MDc0MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/433539",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-114442,cve-2026-24343",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114442",
+        "CVE-2026-24343"
+      ]
+    }
+  },
+  {
+    "id": 3460,
+    "fecha": "2026-11-03T12:03:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers explotan vulnerabilidad en BTCPay Server 2.4.1 para robar Bitcoin y Litecoin de hot wallets",
+    "resumen": "Se detectó que actores maliciosos comprometieron instancias de BTCPay Server versiones ≤2.4.1, accediendo a las claves privadas de hot wallets y transfiriendo fondos en BTC y LTC; la mitigación requiere actualizar al release más reciente y revisar configuraciones de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MDczOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers exploit btcpay server flaw to steal bitcoin and litecoin from hot wallets",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552.004",
+        "name": "Private Keys"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3459,
     "fecha": "2026-11-03T11:07:12Z",
     "categoria": "Ciberseguridad",
