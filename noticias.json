@@ -1,5 +1,108 @@
 [
   {
+    "id": 3465,
+    "fecha": "2026-11-03T15:03:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Grupo de ransomware 3AM usa bucles generados por IA para atacar escuelas europeas",
+    "resumen": "Investigadores detectaron que el grupo 3AM empleó un modelo de lenguaje para generar y ajustar comandos durante la intrusión, indicando un nivel de automatización parcial en la campaña contra instituciones educativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MTgxODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:3am affiliate embraces ai like loops in european school attack",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3464,
+    "fecha": "2026-11-03T15:03:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Gartner advierte que menos del 10 % de vulnerabilidades son explotadas y critica la priorización errónea",
+    "resumen": "El informe de Gartner muestra que la mayoría de los CVE se tratan como críticos pese a que solo una fracción es aprovechada por atacantes, lo que genera ineficiencia operativa y mantiene riesgos críticos sin atender. Recomienda adoptar métricas de exposición real y automatizar la priorización basada en probabilidad de explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MTgxODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:the 4 elements of exposure prioritization and how to operationalize them",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3463,
+    "fecha": "2026-11-03T15:02:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware 3AM cifra 37 equipos en una red escolar del Reino Unido en ataque presuntamente asistido por IA",
+    "resumen": "El grupo afiliado a 3AM explotó un host no gestionado para propagar ransomware y cifrar 37 de aproximadamente 50 máquinas en una institución educativa, indicando posible uso de herramientas de IA para automatizar la detección y evasión.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MTgxODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:uk school estate hit by 3am ransomware in suspected ai assisted attack",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3462,
+    "fecha": "2026-11-03T15:02:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tenable Identity Exposure corrige CVE-2026-119314 de ejecución remota y dos vulnerabilidades medias",
+    "resumen": "Se parchea una vulnerabilidad crítica de command injection (CVE-2026-119314) que permite a un atacante con privilegios limitados ejecutar comandos como SYSTEM en el controlador de dominio PDCe, además de dos fallas de DoS y exposición de datos. La actualización a 3.93.6 o 3.77.18 elimina el riesgo en entornos que gestionan identidades y Active Directory.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MTgxNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-tenable-identity-exposure-0",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-119314",
+    "ttps": [
+      {
+        "id": "T1059.003",
+        "name": "Windows Command Shell"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1530",
+        "name": "Data from Cloud Storage"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-119314"
+      ]
+    }
+  },
+  {
     "id": 3461,
     "fecha": "2026-11-03T12:03:22Z",
     "categoria": "Ciberseguridad",
