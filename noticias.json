@@ -1,5 +1,51 @@
 [
   {
+    "id": 3454,
+    "fecha": "2026-11-03T06:03:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Grupo BYOD vincula incidente de ransomware en Michigan State University a campaña contra hospitales",
+    "resumen": "El cibercrimen atribuido al grupo BYOD se relaciona con una intrusión que obligó a la universidad a activar protocolos de respuesta a incidentes, evidenciando una posible expansión de su modus operandi hacia el sector salud.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2ODU3ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/michigan-state-university-byod-gang-cyber-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:michigan state cyber incident claimed by ransomware gang behind recent hospital attack",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3453,
+    "fecha": "2026-11-03T06:02:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Atacantes explotan CVE-2026-58115 en Siemens IoT2050 para instalar backdoors remotos",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) permite a un atacante no autenticado ejecutar código arbitrario en dispositivos SIMATIC IoT2050 Advanced, facilitando la implantación de puertas traseras y control remoto. VulnCheck confirma explotación activa, lo que eleva el riesgo de compromisos en infraestructuras industriales conectadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2ODU3Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-58115",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58115"
+      ]
+    }
+  },
+  {
     "id": 3452,
     "fecha": "2026-11-03T03:02:19Z",
     "categoria": "Ciberseguridad",
