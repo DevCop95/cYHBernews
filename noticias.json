@@ -1,5 +1,171 @@
 [
   {
+    "id": 3470,
+    "fecha": "2026-11-03T18:03:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Campaña de descargas falsas usa instaladores Inno trojeados para distribuir payloads de monetización",
+    "resumen": "Microsoft Threat Intelligence detectó una campaña que reemplaza instaladores Inno legítimos con versiones trojeadas que entregan múltiples ofertas de monetización, proporcionando indicadores de compromiso y guías de investigación para toda la sesión de instalación.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mjg5OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:fake download campaign uses trojanized installers to deliver monetization payloads",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3469,
+    "fecha": "2026-11-03T18:03:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Critical SQL Injection CVE-2026-63017 y CVE-2026-63774 afectan Subnet Solutions PowerSYSTEM Center",
+    "resumen": "Los CVE-2026-63017 y CVE-2026-63774 permiten a usuarios autenticados de bajo privilegio ejecutar comandos SQL no autorizados y escalar privilegios en PowerSYSTEM Center, impactando entornos de manufactura crítica y energía. Se recomienda actualizar a PowerSYSTEM Center 2026 Update 1.1 y deshabilitar el acceso a herramientas de desarrollo del navegador.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mjg5OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-63017,cve-2026-63774",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1505.003",
+        "name": "Web Shell"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "subnet.com"
+      ],
+      "email": [
+        "support@subnet.com"
+      ],
+      "cve": [
+        "CVE-2026-63017",
+        "CVE-2026-63774"
+      ]
+    }
+  },
+  {
+    "id": 3468,
+    "fecha": "2026-11-03T18:03:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Binance detalla robo de $6.43 mil millones por campaña de ingeniería social y abuso de herramienta IA",
+    "resumen": "La investigación de Binance revela que los atacantes combinaron un instalador Homebrew manipulado con un esquema de entrevistas falsas para comprometer a dos ingenieros, usando una herramienta de IA para generar credenciales y scripts maliciosos, logrando el mayor hurto de cripto de la historia. El vector incluye suplantación de identidad, malware de carga lateral y abuso de credenciales internas, exponiendo fallas en la cadena de suministro y en los controles de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mjg5ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:binance reveals how fake job interviews and ai tool abuse led to 6 43 billion theft",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3467,
+    "fecha": "2026-11-03T18:03:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Barracuda alerta sobre vulnerabilidades críticas que otorgan acceso root a dispositivos",
+    "resumen": "Barracuda Networks emitió un aviso de emergencia para parchear dos CVE que permiten ejecución de comandos con privilegios de root, exponiendo a servidores y appliances a compromisos totales. Se recomienda aplicar los parches inmediatamente y reforzar la monitorización de actividad privilegiada.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mjg5ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:barracuda warns of critical flaws allowing root access to devices",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3466,
+    "fecha": "2026-11-03T18:03:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Android Security Bulletin noviembre 2026 revela 23 vulnerabilidades críticas, incluido CVE-2026-58868",
+    "resumen": "Google publica 216 CVE para Android 14-17, destacando un buffer overflow en FrameDecoder.cpp (CVE-2026-58868) que permite RCE sin interacción del usuario; se recomienda parchear a nivel 2026-11-05.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mjg5ODF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/boletin-de-seguridad-de-android-noviembre-2026",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:boletin de seguridad de android noviembre 2026",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20499",
+        "CVE-2026-20519",
+        "CVE-2026-20520",
+        "CVE-2026-20545",
+        "CVE-2026-20546",
+        "CVE-2026-20547",
+        "CVE-2026-20548",
+        "CVE-2026-20549",
+        "CVE-2026-25285",
+        "CVE-2026-53256",
+        "CVE-2026-55275",
+        "CVE-2026-55283",
+        "CVE-2026-58814",
+        "CVE-2026-58868",
+        "CVE-2026-58876",
+        "CVE-2026-58882",
+        "CVE-2026-58936",
+        "CVE-2026-58984",
+        "CVE-2026-59044",
+        "CVE-2026-59045",
+        "CVE-2026-59048",
+        "CVE-2026-80604",
+        "CVE-2026-89774"
+      ]
+    }
+  },
+  {
     "id": 3465,
     "fecha": "2026-11-03T15:03:04Z",
     "categoria": "Ciberseguridad",
