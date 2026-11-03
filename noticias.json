@@ -1,5 +1,113 @@
 [
   {
+    "id": 3474,
+    "fecha": "2026-11-03T19:41:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Binance confirma robo de $6.34 mil millones mediante ingeniería social y descarga maliciosa",
+    "resumen": "Un grupo atribuido a Corea del Norte engañó a un ingeniero de Binance con una entrevista de trabajo falsa y un archivo malicioso, obteniendo acceso al entorno de producción y sustraendo fondos. El ataque evidencia la vulnerabilidad de procesos de reclutamiento y la necesidad de reforzar la verificación de archivos y la segmentación de redes.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzQ5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/binance-says-hackers-used-well-known-tricks-to-carry-out-a-dollar634-billion-heist/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:binance says hackers used well known tricks to carry out a 6 34 billion heist",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3473,
+    "fecha": "2026-11-03T19:41:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Apple advierte a legisladores alemanes y personal de política exterior sobre espionaje con spyware",
+    "resumen": "Apple emitió alertas directas a funcionarios de Alemania y a representantes de 99 países, indicando que sus dispositivos fueron objetivo de campañas de spyware sofisticado, lo que sugiere una campaña de vigilancia estatal o patrocinada por actores avanzados. SECTOR: Gobierno",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzQ4OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/german-officials-among-apple-spyware-warning-recipients",
+    "fuente": "The Record",
+    "dedup_key": "txt:several german lawmakers and foreign policy staff received apple warnings on spyware",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3472,
+    "fecha": "2026-11-03T19:41:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques de LLMjacking provocan cargos fraudulentos de más de $1 millón en servicios de IA en la nube",
+    "resumen": "Grupos de amenaza secuestran modelos de lenguaje para generar peticiones masivas que inflan facturas de plataformas cloud, alcanzando pérdidas superiores a $100 000 diarios en organizaciones vulnerables. La técnica explota credenciales de API y falta de límites de uso, requiriendo controles de autenticación y monitoreo de consumo.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzQ4OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google llmjacking attacks rack up 1 million in cloud ai charges",
+    "ttps": [
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3471,
+    "fecha": "2026-11-03T19:41:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "MediaTek publica 56 vulnerabilidades, 6 críticas en módemes (CVE-2026-20499 a CVE-2026-20549)",
+    "resumen": "El boletín de noviembre 2026 de MediaTek revela 56 CVE, con seis vulnerabilidades críticas que permiten escalada de privilegios remota vía escritura fuera de límites en el módem, explotables sin interacción del usuario al conectar a una estación base comprometida. Se recomienda aplicar inmediatamente los parches de firmware suministrados por los fabricantes de dispositivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MzQ4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-mediatek-1",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en productos de mediatek",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20499",
+        "CVE-2026-20545",
+        "CVE-2026-20546",
+        "CVE-2026-20547",
+        "CVE-2026-20548",
+        "CVE-2026-20549"
+      ]
+    }
+  },
+  {
     "id": 3470,
     "fecha": "2026-11-03T18:03:15Z",
     "categoria": "Ciberseguridad",
