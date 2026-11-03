@@ -1,5 +1,51 @@
 [
   {
+    "id": 3456,
+    "fecha": "2026-11-03T09:02:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-104353 permite ejecución remota de código en Adobe Campaign Classic",
+    "resumen": "Vulnerabilidad de OS Command Injection (CVSS 9.9) en Adobe Campaign Classic permite a un atacante de bajo privilegio ejecutar código arbitrario sin interacción del usuario, con alcance ampliado al contexto del usuario comprometido.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2OTY1Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-104353",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-104353",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-104353"
+      ]
+    }
+  },
+  {
+    "id": 3455,
+    "fecha": "2026-11-03T09:02:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Agentes de IA que navegan en la web pueden redirigir a sitios fraudulentos y comprometer usuarios",
+    "resumen": "Los asistentes y agentes autónomos de IA pueden recomendar o acceder a URLs maliciosas, exponiendo a los usuarios a phishing y malware mediante enlaces falsos generados en tiempo real. Se recomienda reforzar filtros de URL, monitorizar tráfico de IA y aplicar políticas de zero-trust en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2OTY1MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/seguridad-digital/sitios-web-falsos-agentes-ia-como-protegerse/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:sitios web falsos y agentes de ia riesgos y como protegerse",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3454,
     "fecha": "2026-11-03T06:03:01Z",
     "categoria": "Ciberseguridad",
