@@ -1,5 +1,60 @@
 [
   {
+    "id": 3477,
+    "fecha": "2026-11-03T21:01:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de divulgación de información CVE-2026-95777 afecta la interfaz de gestión de HPE Fabric Composer",
+    "resumen": "Un atacante con privilegios bajos puede explotar la vulnerabilidad en la interfaz de gestión de HPE Networking Fabric Composer para extraer datos sensibles almacenados en el sistema, comprometiendo la confidencialidad de la infraestructura. Se recomienda aplicar el parche de HPE y restringir el acceso a la interfaz de gestión.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mzk3MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/435182",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-95777",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-95777"
+      ]
+    }
+  },
+  {
+    "id": 3476,
+    "fecha": "2026-11-03T21:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-28336 permite inyección de comandos en SolarWinds Dameware con CVSS 9.9",
+    "resumen": "La vulnerabilidad de command injection en SolarWinds Dameware requiere autenticación previa pero permite a un atacante ejecutar código arbitrario en el host remoto, comprometiendo su integridad y confidencialidad. Se recomienda aplicar los parches de mitigación y reforzar la segmentación de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mzk3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-28336",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-28336",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-28336"
+      ]
+    }
+  },
+  {
+    "id": 3475,
+    "fecha": "2026-11-03T21:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google desmantela la botnet X.CPE que comprometía miles de Android TV y dispositivos IoT",
+    "resumen": "La investigación reveló que la mayor parte de los 30 000 dispositivos infectados eran Android TV set-top boxes, con presencia adicional en equipos de telemedicina, karaoke y señalización digital, lo que evidencia una campaña de malware IoT de amplio alcance.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3Mzk3MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/google-dismantles-botnet-hidden-android-tv-boxes",
+    "fuente": "The Record",
+    "dedup_key": "txt:google dismantles massive botnet hidden in android tv boxes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3474,
     "fecha": "2026-11-03T19:41:40Z",
     "categoria": "Ciberseguridad",
