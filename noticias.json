@@ -1,5 +1,46 @@
 [
   {
+    "id": 3452,
+    "fecha": "2026-11-03T03:02:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-61567 permite ejecución remota de comandos y escalada en AVideo 8.1.0",
+    "resumen": "La vulnerabilidad en el endpoint `view/videosListToLive.php` de AVideo permite a un atacante no autenticado inyectar rutas manipuladas que se ejecutan sin sanitizar en ffprobe/ffmpeg, logrando ejecución de código arbitrario como usuario del servidor web y auto-otorgarse privilegios de streamer. Además, la falta de validación del `APISecret` y la confianza ciega en JSON de sesión facilitan la extracción de credenciales y la persistencia en la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NzQ5Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-61567",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-61567",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-61567"
+      ]
+    }
+  },
+  {
+    "id": 3451,
+    "fecha": "2026-11-03T03:02:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers chinos emplean el framework de IA ARTEX para ataques automatizados contra más de 200 organizaciones",
+    "resumen": "Un grupo de amenazas respaldado por China utilizó ARTEX, un framework open-source de pruebas de penetración multi-agente basado en IA, para lanzar campañas coordinadas que comprometieron a más de 200 entidades en 14 países, explotando vectores de reconocimiento y movimiento lateral automatizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NzQ5MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:chinese hackers use artex ai in automated attacks against 200 orgs",
+    "ttps": [
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3450,
     "fecha": "2026-11-03T02:59:13Z",
     "categoria": "Ciberseguridad",
