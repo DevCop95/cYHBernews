@@ -1,5 +1,87 @@
 [
   {
+    "id": 3459,
+    "fecha": "2026-11-03T11:07:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers bielorrusos y pro-ucranianos comprometen la agencia estadística rusa Rosstat y roban datos",
+    "resumen": "El grupo de actores atribuido a Belarús y a simpatizantes ucranianos anunció la intrusión en Rosstat, accediendo a bases de datos que incluyen información demográfica y fiscal, lo que potencialmente expone a entidades estatales a extorsión y espionaje. El vector de ataque aún no se ha revelado, pero se sospecha uso de phishing dirigido y explotación de vulnerabilidades no divulgadas.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MDQwMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/hackers-ukraine-belarus-russia",
+    "fuente": "The Record",
+    "dedup_key": "txt:russia s statistics agency confirms cyberattack claimed by belarusian and ukrainian hackers",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1025",
+        "name": "Data from Removable Media"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3458,
+    "fecha": "2026-11-03T11:07:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "15 vulnerabilidades críticas en ALO Suite de AM System, CVE-2026-108047 destaca",
+    "resumen": "INCIBE ha divulgado 15 CVE en la versión 25_09_15.03_35 de ALO Suite, incluyendo una vulnerabilidad de escalada de privilegios (CVE-2026-108047) con CVSS 8.6 que permite a un atacante remoto crear usuarios con privilegios administrativos. El fabricante ha publicado la corrección en la versión 26_04_15.03_10; se recomienda actualizar inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MDQwMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-alo-suite-de-am-system",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en alo suite de am system",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1136.001",
+        "name": "Local Account"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-108046",
+        "CVE-2026-108047",
+        "CVE-2026-108048",
+        "CVE-2026-108049",
+        "CVE-2026-108050",
+        "CVE-2026-108051",
+        "CVE-2026-108052",
+        "CVE-2026-108053",
+        "CVE-2026-108054",
+        "CVE-2026-108055",
+        "CVE-2026-108056",
+        "CVE-2026-108057",
+        "CVE-2026-108058",
+        "CVE-2026-108059",
+        "CVE-2026-108060"
+      ]
+    }
+  },
+  {
+    "id": 3457,
+    "fecha": "2026-11-03T11:07:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "80 % de las empresas carecen de protocolos de ciberseguridad en proyectos de IA",
+    "resumen": "El estudio revela que la mayoría de organizaciones no implementan controles de seguridad específicos para modelos de lenguaje y sistemas de IA, exponiéndolos a ataques de phishing automatizado, generación de malware y explotación de vulnerabilidades de IA. La ausencia de políticas aumenta el riesgo de compromisos en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3MDQwMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/8-de-cada-de-10-empresas-no-cuentan-con-protocolos-de-ciberseguridad-en-sus-proyectos-de-ia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:8 de cada de 10 empresas no cuentan con protocolos de ciberseguridad en sus proyectos de ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3456,
     "fecha": "2026-11-03T09:02:17Z",
     "categoria": "Ciberseguridad",
