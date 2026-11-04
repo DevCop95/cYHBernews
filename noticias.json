@@ -1,5 +1,86 @@
 [
   {
+    "id": 3485,
+    "fecha": "2026-11-04T01:32:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-44179 permite ejecución remota de código en XWiki mediante macro excerpt-include",
+    "resumen": "La vulnerabilidad en la macro excerpt-include de XWiki (versions 1.13-1.14.4) permite inyección de sintaxis al no escapar el título de la página incluida, lo que otorga ejecución de código bajo los privilegios del macro a cualquier usuario con permisos de edición. Afecta la confidencialidad, integridad y disponibilidad de toda la instalación hasta que se aplique la corrección en la versión 1.14.5.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTU5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-44179",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-44179",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-44179"
+      ]
+    }
+  },
+  {
+    "id": 3484,
+    "fecha": "2026-11-04T01:32:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "mSecure alerta a usuarios para cambiar contraseñas, reiniciar 2FA y eliminar passkeys tras actividad sospechosa",
+    "resumen": "La empresa mSeven Software advierte que se detectó actividad anómala en la aplicación mSecure, recomendando a todos los clientes actualizar credenciales, restablecer autenticación de dos factores y revocar passkeys para mitigar posible compromiso de datos. Se insta a aplicar medidas inmediatas de mitigación y monitorizar accesos sospechosos.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTU5NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:msecure warns users to change passwords reset 2fa and passkeys after suspicious activity",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3483,
+    "fecha": "2026-11-04T01:32:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "WorkOS confirma brecha interna tras uso de ARTEX AI por atacante para acceder a datos de ventas",
+    "resumen": "Un actor malicioso explotó la herramienta de IA ARTEX para infiltrarse en la aplicación de ventas de WorkOS, obteniendo contactos comerciales y resúmenes de comunicaciones de clientes, lo que indica un vector de ataque basado en generación de contenido automatizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTU5NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:workos says attacker used artex ai to breach internal sales app",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3482,
+    "fecha": "2026-11-04T01:32:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Gorbag, nuevo grupo alineado con Rusia, usa infostealers para espiar organizaciones ucranianas cerca del frente",
+    "resumen": "ESET identificó a Gorbag, un actor de amenaza respaldado por Rusia que despliega infostealers y herramientas de reconocimiento para extraer datos sensibles de entidades ucranianas en zonas de conflicto, ampliando la superficie de ataque en el entorno geopolítico.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTU5NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/gorbag-grupo-rusia-roba-informacion-organizaciones-ucrania/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:gorbag el nuevo grupo alineado con rusia que recopila inteligencia de organizaciones ucranianas",
+    "ttps": [
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1560.001",
+        "name": "Archive via Utility"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3481,
     "fecha": "2026-11-04T00:03:24Z",
     "categoria": "Ciberseguridad",
