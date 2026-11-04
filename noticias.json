@@ -69,6 +69,36 @@
     "iocs": {}
   },
   {
+    "id": 3493,
+    "fecha": "2026-11-04T11:16:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cuatro vulnerabilidades críticas (CVE-2026-111036 a 111040) afectan Coupa Spend Platform",
+    "resumen": "Se han identificado cuatro fallos en Coupa Total Spend Management Platform, incluyendo SSRF, XSS reflejado, inyección CSV y HTML persistente, con CVSS entre 5.1 y 8.4, que permiten a atacantes autenticados extraer datos internos o ejecutar código en el cliente. No existe parche disponible; se recomienda aplicar mitigaciones de red y sanitización de entradas mientras se espera una solución del proveedor.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3OTA5OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-coupa-total-spend-management-platform-de-coupa",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en coupa total spend management platform de coupa",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111036",
+        "CVE-2026-111037",
+        "CVE-2026-111038",
+        "CVE-2026-111040"
+      ]
+    }
+  },
+  {
     "id": 3492,
     "fecha": "2026-11-04T09:04:49Z",
     "categoria": "Ciberseguridad",
