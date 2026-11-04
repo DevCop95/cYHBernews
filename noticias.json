@@ -1,5 +1,65 @@
 [
   {
+    "id": 3508,
+    "fecha": "2026-11-04T19:56:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Use-After-Free CVE-2026-58926 en EVS HAL permite fuga de file descriptors",
+    "resumen": "Un atacante con privilegios puede explotar una condición de carrera en EVS HAL mediante las llamadas doneWithFrame y setMaxFramesInFlight para liberar un buffer_handle_t aún en uso, manipulando memoria heap y obteniendo descriptors de archivo del proceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MjIxODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/437907",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-58926",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-58926"
+      ]
+    }
+  },
+  {
+    "id": 3507,
+    "fecha": "2026-11-04T19:56:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2025-49602 permite que administradores removidos mantengan acceso en EJBCA 9",
+    "resumen": "La vulnerabilidad crítica (CVSS 9.8) en Keyfactor EJBCA 9 conserva la autenticación TLS de un administrador eliminado, permitiendo acceso prolongado más allá del límite configurado de 30 s. Impacta la confidencialidad y control de la PKI en entornos gubernamentales y financieros.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MjIxODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-49602",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-49602",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-49602"
+      ]
+    }
+  },
+  {
+    "id": 3506,
+    "fecha": "2026-11-04T19:56:17Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Researchers detect \"prompt adware\" que compromete OpenAI Codex mediante toolkit de jailbreak",
+    "resumen": "Check Point Research revela que el toolkit de jailbreak Haiou altera las instrucciones de confianza de OpenAI Codex para inyectar publicidad de un gateway IA de terceros, creando un vector de abuso de confianza en agentes de IA. La técnica permite a actores maliciosos monetizar interacciones con modelos de lenguaje sin que el usuario lo perciba.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219345-06ea2bf3eb80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MjIxNzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers uncover prompt adware hidden in openai codex jailbreak toolkit",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3505,
     "fecha": "2026-11-04T18:02:56Z",
     "categoria": "Ciberseguridad",
