@@ -1,5 +1,91 @@
 [
   {
+    "id": 3481,
+    "fecha": "2026-11-04T00:03:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora CVE-2026-119977 de WordPress al catálogo KEV y exige remediación federal",
+    "resumen": "CISA añadió la vulnerabilidad TOCTOU en WordPress Core (CVE-2026-119977) al Known Exploited Vulnerabilities Catalog tras confirmar explotación activa, obligando a las agencias federales a priorizar su parcheo bajo la BOD 26-04. La medida refuerza el enfoque de gestión de riesgos y requiere verificación de compromisos previos a la aplicación del parche.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTA2MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-119977",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-119977"
+      ]
+    }
+  },
+  {
+    "id": 3480,
+    "fecha": "2026-11-04T00:03:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques a sistemas de refrigeración de supermercados europeos provocan deshielo masivo y pérdida de inventario",
+    "resumen": "Grupos no identificados comprometieron los controles de refrigeradores en múltiples cadenas de supermercados, explotando vulnerabilidades de IoT para desactivar los sistemas de enfriamiento y generar pérdidas de stock. El incidente evidencia la necesidad de reforzar la segmentación de redes y la monitorización de dispositivos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTA2MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/british-businesses-caught-in-europe-wide-supermarket-fridge-attacks",
+    "fuente": "The Record",
+    "dedup_key": "txt:british businesses caught in europe wide supermarket fridge attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3479,
+    "fecha": "2026-11-04T00:03:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques a refrigeradores conectados en Europa exponen vulnerabilidades críticas en la cadena de frío",
+    "resumen": "Investigaciones revelan que la combinación de conectividad IoT, acceso remoto sin control y configuraciones predeterminadas débiles permite a actores maliciosos comprometer sistemas de refrigeración en sectores críticos, generando riesgos de interrupción y contaminación de productos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTA2MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:fresh european fridge attacks put cold chain security in focus",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3478,
+    "fecha": "2026-11-04T00:03:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers comprometen la infraestructura de actualización de cPGuard para distribuir backdoor y robo de datos",
+    "resumen": "Los atacantes infiltraron el proceso de autoupdate de cPGuard, insertando un backdoor y un script de extracción de información confidencial, lo que permite acceso persistente y exfiltración de datos de los clientes afectados. Se recomienda revisar integridad de actualizaciones y aplicar mitigaciones inmediatas.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NTA1OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers hijack cpguard autoupdate to deploy backdoor steal data",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3477,
     "fecha": "2026-11-03T21:01:47Z",
     "categoria": "Ciberseguridad",
