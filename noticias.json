@@ -1,5 +1,85 @@
 [
   {
+    "id": 3488,
+    "fecha": "2026-11-04T03:04:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-84730 permite ejecución remota de comandos root en routers ASUS",
+    "resumen": "Un desbordamiento de búfer basado en pila en el firmware de ciertos routers ASUS permite a un atacante no autenticado y cercano ejecutar comandos arbitrarios con privilegios de root mediante un nombre de dispositivo manipulado. La falla afecta la funcionalidad AiCloud y requiere parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NjE0ODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/436506",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-84730",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-84730"
+      ]
+    }
+  },
+  {
+    "id": 3487,
+    "fecha": "2026-11-04T03:04:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Filtración de 69 GB de datos de trabajadores filipinos expuesta por exfiltración rápida de backups SQL",
+    "resumen": "Un actor no identificado robó copias de seguridad de SQL Server del Philippine Overseas Employment Administration en menos de 30 min, comprometiendo información personal de miles de migrantes. La brecha evidencia falta de segmentación y monitoreo de exfiltración en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NjE0NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:philippine migrant worker data likely leaked in 69gb government breach",
+    "ttps": [
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1074",
+        "name": "Data Staged"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3486,
+    "fecha": "2026-11-04T03:04:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cadena de suministro de blockchain Chainstack sufre brecha de datos por ataque impulsado por IA",
+    "resumen": "Un atacante externo accedió a sistemas de producción de Chainstack, exponiendo datos de clientes y hashes de contraseñas; el incidente forma parte de una campaña de ataque a gran escala que utiliza herramientas de IA para automatizar la explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NjE0NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:chainstack reports production systems breach exposing customer data and password hashes",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1609",
+        "name": "Container Administration Command"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3485,
     "fecha": "2026-11-04T01:32:31Z",
     "categoria": "Ciberseguridad",
