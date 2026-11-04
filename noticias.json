@@ -1,5 +1,51 @@
 [
   {
+    "id": 3510,
+    "fecha": "2026-11-04T21:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2025-31704 permite ejecución remota de código en Dahua Intelligent Connection Center",
+    "resumen": "Vulnerabilidad crítica (CVSS 9.8) que permite a un atacante remoto enviar una solicitud manipulada y ejecutar comandos arbitrarios en el sistema de gestión de video de Dahua, exponiendo a instalaciones a compromisos totales.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MjYxMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2025-31704",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2025-31704",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2025-31704"
+      ]
+    }
+  },
+  {
+    "id": 3509,
+    "fecha": "2026-11-04T21:01:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Zyxel corrige zero-day que permitió comprometer cerca de 1 000 switches de red GS1900",
+    "resumen": "La vulnerabilidad sin parchear en los switches GS1900 de Zyxel fue explotada para extraer configuraciones y credenciales, afectando a aproximadamente 1 000 dispositivos globalmente; el parche ya está disponible y se recomienda su despliegue inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MjYwOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:zyxel fixes zero day exploited to hack nearly 1 000 network switches",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3508,
     "fecha": "2026-11-04T19:56:25Z",
     "categoria": "Ciberseguridad",
