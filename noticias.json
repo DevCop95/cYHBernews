@@ -1,5 +1,67 @@
 [
   {
+    "id": 3492,
+    "fecha": "2026-11-04T09:04:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-62126 permite DoS sin limitación de recursos en miniOrange SAML SP 6.1.0",
+    "resumen": "La vulnerabilidad de asignación de recursos sin throttling en el plugin miniOrange SAML SP Single Sign On permite a un atacante generar un HTTP DoS contra servidores que ejecutan versiones hasta 6.1.0. Afecta a entornos que dependen de SAML para SSO, exponiendo disponibilidad crítica.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3ODMwODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/436799",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-62126",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-62126"
+      ]
+    }
+  },
+  {
+    "id": 3491,
+    "fecha": "2026-11-04T09:04:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Google alerta que ataques LLMjacking generan hasta 1 millón en cargos cloud",
+    "resumen": "Google informó que actores maliciosos están secuestrando claves de API de LLM mediante phishing, fugas de código o configuraciones expuestas, para consumir recursos de IA de alto costo. El abuso de servicios como PaLM y Vertex AI está provocando facturaciones de hasta $1 MM por empresa, elevando el riesgo financiero y de detección en entornos cloud.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3ODMwODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google warns llmjacking attacks are costing some enterprises up to 1 million in cloud charges",
+    "ttps": [
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1555.004",
+        "name": "Windows Credential Manager"
+      },
+      {
+        "id": "T1027.004",
+        "name": "Compile After Delivery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3490,
     "fecha": "2026-11-04T06:05:37Z",
     "categoria": "Ciberseguridad",
