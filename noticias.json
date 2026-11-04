@@ -1,5 +1,98 @@
 [
   {
+    "id": 3505,
+    "fecha": "2026-11-04T18:02:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ciberataque sospechoso de origen ruso interrumpe el sitio web de Kyiv Independent",
+    "resumen": "Un ataque dirigido, presumiblemente ruso, logró deshabilitar temporalmente la plataforma digital del medio ucraniano Kyiv Independent, evidenciando vulnerabilidades en la infraestructura web y potenciales vectores de DDoS o compromisos de servidores.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MTUzNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ukraine-kyiv-independent-cyberattack",
+    "fuente": "The Record",
+    "dedup_key": "txt:ukrainian news outlet kyiv independent hit by suspected russian cyberattack",
+    "ttps": [
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3504,
+    "fecha": "2026-11-04T18:02:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en APT de Debian y Ubuntu permite ataque MitM y ejecución de código como root",
+    "resumen": "Un flaw en el gestor de paquetes APT permite a un atacante que intercepte descargas sustituir paquetes verificados por código malicioso que se ejecuta con privilegios de root; el vector requiere que APT reintente descargas fallidas, comportamiento habilitado por defecto desde Debian 12.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MTUzNzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:debian and ubuntu apt flaw lets mitm attackers swap verified packages and run code as root",
+    "ttps": [
+      {
+        "id": "T1557",
+        "name": "Adversary-in-the-Middle"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3503,
+    "fecha": "2026-11-04T18:02:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hacker compromete lanzador PC de NIKKE y distribuye malware de acceso remoto y robo de datos",
+    "resumen": "Un ataque de cadena de suministro alteró los scripts del lanzador de Goddess of Victory: NIKKE, insertando un troyano que captura credenciales y datos de carteras de criptomonedas, afectando a usuarios de Windows. La amenaza se propaga mediante descargas oficiales, incrementando el riesgo de compromiso de sistemas de juego y entornos domésticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MTUzNzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:nikke pc game launcher hacked to spread remote access data stealing malware",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3502,
+    "fecha": "2026-11-04T18:02:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Omisión de autenticación crítica en NetApp StorageGRID CVE-2026-22058 afecta versiones 11-3 a 12.1",
+    "resumen": "NetApp ha divulgado una vulnerabilidad de tipo authentication bypass (CVE-2026-22058) que permite a un atacante con acceso a puertos específicos de la Grid Network ejecutar peticiones no autorizadas, comprometiendo la confidencialidad e integridad de los datos almacenados. La explotación requiere conocimiento profundo del producto; se recomienda actualizar a StorageGRID 11.9.0.15, 12.0.0.9 o 12.1.0.1, o migrar a versiones corregidas para mitigar el riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MTUzNjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/omision-de-autenticacion-en-storagegrid-de-netapp",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-22058",
+    "ttps": [
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "11.9.0.15",
+        "12.0.0.9",
+        "12.1.0.1"
+      ],
+      "cve": [
+        "CVE-2026-22058"
+      ]
+    }
+  },
+  {
     "id": 3501,
     "fecha": "2026-11-04T15:03:12Z",
     "categoria": "Ciberseguridad",
