@@ -1,5 +1,78 @@
 [
   {
+    "id": 3501,
+    "fecha": "2026-11-04T15:03:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2000-0411 en scripts CGI de envío de correo permite fuga de variables y ejecución remota",
+    "resumen": "La falla en el script CGI-bin expone variables de entorno al añadir parámetros en la URL y permite manipular la dirección “To”, facilitando spam y potencial ejecución arbitraria de código mediante sendmail. El riesgo persiste en sistemas legacy sin parchear.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MDQ1OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33488",
+    "fuente": "SANS ISC",
+    "dedup_key": "cve:cve-2000-0411",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2000-0411"
+      ]
+    }
+  },
+  {
+    "id": 3500,
+    "fecha": "2026-11-04T15:03:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "APT29 compromete script de analítica web para distribuir exploits a iOS y Android",
+    "resumen": "El grupo ruso APT29 ejecuta una campaña de watering hole que inyecta JavaScript malicioso en el servicio Plerdy SEO Tracker, permitiendo la entrega de payloads dirigidos a dispositivos móviles mediante suplantación de dominios y ataques a la cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MDQ1ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:apt29 linked hackers hijack web analytics script to deliver ios and android exploits",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3499,
+    "fecha": "2026-11-04T15:03:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Stoïk advierte sobre riesgos de terceros tras ciberataque a supermercados en siete países europeos",
+    "resumen": "El sabotaje a sistemas de refrigeración de más de 700 tiendas en Francia se replicó en noviembre en Bélgica, Luxemburgo, Países Bajos, Suecia, Irlanda, Finlandia y Estonia, evidenciando vulnerabilidades en la cadena de suministro y la exposición a actores externos. La incidencia subraya la necesidad de reforzar controles de terceros y segmentación de redes en el sector retail.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MDQ1ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/stoik-alerta-de-los-riesgos-de-terceros-tras-un-ciberataque-a-supermercados-en-siete-paises-europeos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:sto k alerta de los riesgos de terceros tras un ciberataque a supermercados en siete paises europeos",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3498,
     "fecha": "2026-11-04T13:25:07Z",
     "categoria": "Ciberseguridad",
