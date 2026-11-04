@@ -1,5 +1,55 @@
 [
   {
+    "id": 3490,
+    "fecha": "2026-11-04T06:05:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Binance revela campaña de meses que permitió el robo de $6.3 mil millones mediante ingeniería social y técnicas",
+    "resumen": "El intercambio de criptomonedas Binance confirmó que un actor estatal norcoreano ejecutó un ataque coordinado que combinó entrevistas de reclutamiento falsas y otras tácticas de ingeniería social para sustraer $6.3 mil millones en octubre, evidenciando vulnerabilidades en procesos de onboarding y controles de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NzIzMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/binance-cryptocurrency-theft-months-long-campaign-nkorea",
+    "fuente": "The Record",
+    "dedup_key": "txt:binance ceo says months long campaign led to 6 3 billion theft as n korea denies responsibility",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3489,
+    "fecha": "2026-11-04T06:05:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Barracuda revela dos vulnerabilidades (CVE-2026-116606) que permiten eludir autorización y obtener acceso root",
+    "resumen": "La combinación de un bypass de autorización pre-autenticación y una inyección de comandos permite a un atacante escalar privilegios y obtener acceso root en dispositivos Barracuda vulnerables, con un CVSS de 9.3.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM3NzIzMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-116606",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-116606"
+      ]
+    }
+  },
+  {
     "id": 3488,
     "fecha": "2026-11-04T03:04:40Z",
     "categoria": "Ciberseguridad",
