@@ -1,5 +1,87 @@
 [
   {
+    "id": 3532,
+    "fecha": "2026-11-05T12:07:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-102895 permite acceso administrativo no autenticado en GPUStack 2.1.1",
+    "resumen": "La vulnerabilidad en la función get_current_user de GPUStack permite que un atacante remoto falsifique la IP 127.0.0.1 y obtenga privilegios de administrador, creando API-keys persistentes y ejecutando código mediante POST /v2/inference-backends/from-yaml. Se observó explotación en entornos de producción y el parche está disponible en la versión 2.2.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4ODA0Nzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-102895",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-102895"
+      ]
+    }
+  },
+  {
+    "id": 3531,
+    "fecha": "2026-11-05T12:07:55Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Apple, Microsoft y NVIDIA alertan que agentes de IA autónomos pueden comprometer sistemas empresariales",
+    "resumen": "Los nuevos agentes de IA pueden acceder a archivos, ejecutar código y enviar mensajes sin supervisión, creando vectores de ataque de ejecución remota y exfiltración de datos. La advertencia subraya la necesidad de controles de seguridad de IA y políticas de uso restringido en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027214993-52de23be5a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4ODA0NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://iaenespanol.substack.com/p/los-agentes-de-ia-tambien-pueden",
+    "fuente": "IA en Español",
+    "dedup_key": "txt:los agentes de ia tambien pueden convertirse en una amenaza para las empresas apple microsoft y nvidia advierten sobre los riesgos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3530,
+    "fecha": "2026-11-05T12:07:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "WatchGuard AuthPoint Gateway expone tres CVE críticos que permiten DoS, MITM y escalada de privilegios",
+    "resumen": "Tres vulnerabilidades (CVE-2026-121639, CVE-2026-121638 y CVE-2026-121640) afectan a AuthPoint Authentication Gateway versiones ≤7.5, permitiendo denegación de servicio, ataques man-in-the-middle contra proveedores LDAP/RADIUS/ADFS y ejecución de acciones administrativas no autorizadas. Se recomienda actualizar a la versión 7.6.0 inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4ODA0Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-authpoint-gateway-de-watchguard",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-121638,cve-2026-121639,cve-2026-121640",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1557.001",
+        "name": "LLMNR/NBT-NS Poisoning and SMB Relay"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-121638",
+        "CVE-2026-121639",
+        "CVE-2026-121640"
+      ]
+    }
+  },
+  {
     "id": 3529,
     "fecha": "2026-11-05T11:15:09Z",
     "categoria": "Ciberseguridad",
