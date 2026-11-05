@@ -1,5 +1,72 @@
 [
   {
+    "id": 3520,
+    "fecha": "2026-11-05T03:02:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-122158 permite acceso no autorizado en InvoiceShelf hasta la versión 2.4.3",
+    "resumen": "La vulnerabilidad en la función MemberService::create permite manipular los campos companies[].id y companies[].role para evadir controles de acceso y ejecutar ataques remotos. Se ha publicado un exploit público; la mitigación consiste en actualizar a InvoiceShelf 2.4.4 o 3.0.0-alpha.4.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NDc3Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/438994",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-122158",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "c798b513c3ab6e672a1678774720fbb282f4d0c6"
+      ],
+      "cve": [
+        "CVE-2026-122158"
+      ]
+    }
+  },
+  {
+    "id": 3519,
+    "fecha": "2026-11-05T03:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ciberataque compromete sistemas de refrigeración de bancos de sangre en Francia",
+    "resumen": "Un actor malicioso alteró los parámetros de temperatura y descongelado de tres unidades de refrigeración de la entidad nacional de sangre, poniendo en riesgo la viabilidad de los productos sanguíneos almacenados.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NDc3MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cyberattack disrupts blood storage refrigeration systems in france",
+    "ttps": [
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3518,
+    "fecha": "2026-11-05T03:01:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberataques a sistemas de refrigeración en Europa obligan a reforzar la defensa OT del sector distribución",
+    "resumen": "Los incidentes dirigidos a controladores de refrigeración expusieron vulnerabilidades en entornos OT, permitiendo acceso remoto y posible manipulación de la cadena de frío en retail, salud e industria. Se recomienda aplicar parches, segmentar redes y monitorizar tráfico anómalo con EDR y SIEM.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NDc3MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/los-ciberataques-a-sistemas-de-refrigeracion-en-europa-ponen-en-alerta-al-sector-de-la-distribucion/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:los ciberataques a sistemas de refrigeracion en europa ponen en alerta al sector de la distribucion",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1489",
+        "name": "Service Stop"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3517,
     "fecha": "2026-11-05T01:33:06Z",
     "categoria": "Ciberseguridad",
