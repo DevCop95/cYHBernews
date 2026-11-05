@@ -1,5 +1,87 @@
 [
   {
+    "id": 3514,
+    "fecha": "2026-11-05T00:04:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Tencent lanza Hy4, modelo de IA multimodal con visión y restricción de datos ofensivos de ciberseguridad",
+    "resumen": "Hy4 incorpora capacidades de visión, CAD y programación, pero su entrenamiento excluye material ofensivo sobre explotación de vulnerabilidades, enfocándose en defensa y análisis de seguridad. La decisión busca limitar el uso malicioso aunque mantiene conocimientos de ingeniería inversa y pruebas de penetración para fines defensivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MzcwODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/tencent-acaba-lanzar-nueva-ia-interesante-no-solo-que-sabe-hacer-sino-que-ha-decidido-no-ensenarle",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:tencent acaba de lanzar una nueva ia lo interesante no es solo lo que sabe hacer sino lo que ha decidido no ensenarle",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3513,
+    "fecha": "2026-11-05T00:04:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora CVE-2024-27834 al catálogo KEV y exige remediación prioritaria en agencias federales",
+    "resumen": "CISA añadió la vulnerabilidad de autenticación insuficiente en productos Apple (CVE-2024-27834) al catálogo Known Exploited Vulnerabilities, confirmando su explotación activa. El BOD 26-04 obliga a las agencias del sector público a aplicar parches de forma inmediata y a validar compromisos previos al arreglo.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MzcwNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/11/04/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "fuente": "CISA Advisories (Fallback)",
+    "dedup_key": "cve:cve-2024-27834",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2024-27834"
+      ]
+    }
+  },
+  {
+    "id": 3512,
+    "fecha": "2026-11-05T00:04:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vercel despliega credenciales de sesión vinculadas al dispositivo para mitigar robos de cookies",
+    "resumen": "Vercel implementa progresivamente Device Bound Session Credentials (DBSC) en su plataforma, añadiendo una capa de defensa contra malware de robo de información que captura cookies de sesión. La medida dificulta la reutilización de cookies en dispositivos no autorizados, reduciendo el riesgo de secuestro de sesiones en entornos de desarrollo y producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MzcwNzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:vercel rolls out new protection against stolen session cookie attacks",
+    "ttps": [
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3511,
+    "fecha": "2026-11-05T00:04:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque híbrido de ransomware con agentes de IA compromete centros educativos del Reino Unido",
+    "resumen": "Bitdefender revela que el grupo 3AM utilizó IA para automatizar la fase de reconocimiento y despliegue de payloads, combinando scripts generados por modelos de lenguaje con intervención humana para cifrar datos y exigir rescate. El vector incluye phishing dirigido y explotación de vulnerabilidades en sistemas de gestión educativa.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4MzcwNzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/documentan-un-ataque-hibrido-de-ransomware-con-agentes-de-ia-en-europa/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:documentan un ataque hibrido de ransomware con agentes de ia en europa",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3510,
     "fecha": "2026-11-04T21:01:41Z",
     "categoria": "Ciberseguridad",
