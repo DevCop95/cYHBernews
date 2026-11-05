@@ -1,5 +1,114 @@
 [
   {
+    "id": 3529,
+    "fecha": "2026-11-05T11:15:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-123036 expone secretos en Ansible-core 2.19 pese a no_log:true",
+    "resumen": "La vulnerabilidad permite que valores marcados con no_log:true se filtren vía el campo exception en los logs, comprometiendo credenciales en CI/CD y terminales. Afecta a entornos que usan Ansible-core 2.19 y versiones posteriores.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NzczMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/439232",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-123036",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123036"
+      ]
+    }
+  },
+  {
+    "id": 3528,
+    "fecha": "2026-11-05T11:15:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-100109 permite a atacantes crear cuentas admin en sitios WordPress con WooCommerce",
+    "resumen": "La vulnerabilidad crítica (CVSS 9.8) en el plugin Security For WooCommerce (v1.0.10-v1.0.16) omite verificaciones de capacidad al crear usuarios, permitiendo a visitantes no autenticados asignar roles de administrador y tomar control total del sitio.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NzczMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-100109",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-100109",
+    "ttps": [
+      {
+        "id": "T1136.001",
+        "name": "Local Account"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-100109"
+      ]
+    }
+  },
+  {
+    "id": 3527,
+    "fecha": "2026-11-05T11:15:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad GhostMap en Android permite a apps maliciosas iniciar bucle de arranque persistente sin permisos",
+    "resumen": "Un flaw sin requerir permisos en Android permite a un atacante instalar una aplicación que fuerza al dispositivo a entrar en un boot loop continuo, causando denegación de servicio total y posible pérdida de datos. La explotación no necesita interacción del usuario más allá de la instalación inicial.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NzczMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ghostmap android flaw lets malicious app trigger persistent boot loop",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3526,
+    "fecha": "2026-11-05T11:15:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Siete vulnerabilidades críticas (CVE-2026-111489-111494) comprometen MatchPoint de TPC Software",
+    "resumen": "La plataforma de gestión deportiva MatchPoint presenta siete fallos, entre ellos una credencial estática (CVE-2026-111489) y una IDOR en la API (CVE-2026-111490) que permiten acceso no autenticado a datos personales y financieros. Además, se detectan almacenamiento de credenciales en texto plano, inyección SQL local y validación TLS deficiente, exponiendo a usuarios a suplantación y manipulación de tráfico.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NzczMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-matchpoint-de-tpc-software",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en matchpoint de tpc software",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111489",
+        "CVE-2026-111490",
+        "CVE-2026-111491",
+        "CVE-2026-111492",
+        "CVE-2026-111493",
+        "CVE-2026-111494",
+        "CVE-2026-111495"
+      ]
+    }
+  },
+  {
     "id": 3525,
     "fecha": "2026-11-05T09:04:50Z",
     "categoria": "Ciberseguridad",
