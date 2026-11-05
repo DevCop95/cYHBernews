@@ -1,5 +1,38 @@
 [
   {
+    "id": 3525,
+    "fecha": "2026-11-05T09:04:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Varias aerolíneas asiáticas confirman brechas de datos tras ataque al proveedor español Amadeus",
+    "resumen": "Se ha detectado acceso no autorizado a los sistemas de Amadeus IT Group, comprometiendo datos de pasajeros de Japan Airlines, Cathay Pacific, Korean Air, Asiana, Singapore y Malaysia Airlines; el vector parece ser una explotación de credenciales en la plataforma de reservas.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4Njk0OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:more asian airlines announce data breaches after attack on spanish it provider amadeus",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3524,
+    "fecha": "2026-11-05T09:04:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "SlippyNunchucks secuestra DNS de Sogou Input Method para distribuir malware DarkVigil en Asia y Europa",
+    "resumen": "La investigación atribuye a un actor alineado con China el abuso de la funcionalidad de actualización de Sogou Input Method para inyectar código malicioso mediante secuestro de DNS, permitiendo la descarga y ejecución de DarkVigil en sistemas de usuarios de habla china. El vector combina ingeniería social y manipulación de resoluciones DNS, ampliando la superficie de ataque a entornos corporativos y domésticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4Njk0ODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/slippynunchucks-sogou-input-method-distribucion-malware/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:slippynunchucks abuso de sogou input method para desplegar darkvigil mediante secuestro de dns",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3523,
     "fecha": "2026-11-05T06:02:49Z",
     "categoria": "Ciberseguridad",
