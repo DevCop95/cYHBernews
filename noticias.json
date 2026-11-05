@@ -1,5 +1,93 @@
 [
   {
+    "id": 3517,
+    "fecha": "2026-11-05T01:33:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-97693 permite escape de sandbox y acceso a datos entre inquilinos en Yuxi AI Platform",
+    "resumen": "La vulnerabilidad de aislamiento insuficiente entre contenedores Docker permite a un usuario autenticado de bajo privilegio ejecutar comandos en sandboxes de otros inquilinos, robar secretos y manipular bases PostgreSQL, Neo4j o MinIO, sin necesidad de vulnerabilidades de kernel. Afecta versiones 0.6.0.beta1 a 0.7.1; la mitigación requiere actualización a 0.7.1 y rotación de credenciales predeterminadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NDIzODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-97693",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-97693",
+    "ttps": [
+      {
+        "id": "T1609",
+        "name": "Container Administration Command"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-97693"
+      ]
+    }
+  },
+  {
+    "id": 3516,
+    "fecha": "2026-11-05T01:33:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Rails Active Storage permite escritura y lectura arbitraria de archivos",
+    "resumen": "Un atacante puede explotar la integración de ImageMagick en Active Storage para subir imágenes maliciosas, logrando crear o sobrescribir archivos y acceder a datos sensibles, lo que facilita movimiento lateral dentro del servidor comprometido.",
+    "url_imagen": "https://images.unsplash.com/photo-1593407088324-762bb4a610e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NDIzODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:critical rails bug threatens to derail vulnerable servers",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3515,
+    "fecha": "2026-11-05T01:32:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "DreamHost confirma brecha de datos que expuso credenciales FTP y sesiones de webmail",
+    "resumen": "Un atacante mantuvo acceso no autorizado al gestor de archivos de DreamHost durante dos meses, robando nombres de usuario y contraseñas FTP/SFTP de clientes, lo que compromete la confidencialidad de datos y permite potenciales accesos laterales a servidores web.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NDIzNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:dreamhost confirms data breach exposed ftp logins and webmail sessions",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3514,
     "fecha": "2026-11-05T00:04:40Z",
     "categoria": "Ciberseguridad",
