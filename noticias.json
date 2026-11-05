@@ -1,5 +1,116 @@
 [
   {
+    "id": 3537,
+    "fecha": "2026-11-05T18:04:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Aumento significativo de phishing por email en Q3 2026 según Microsoft Threat Intelligence",
+    "resumen": "Microsoft detectó un repunte marcado de campañas de phishing vía email en el tercer trimestre de 2026, con descenso de QR-code phishing y recuperación de ataques con CAPTCHA, además de aumentos en spoofing de dominios de servicios empresariales.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MDE4NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:email threat landscape q3 2026 trends and insights",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3536,
+    "fecha": "2026-11-05T18:03:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers vinculados al Estado ruso lanzan campaña de espionaje zero-click contra iPhone y Android en Ucrania, EE",
+    "resumen": "La operación, detectada por investigadores de seguridad, emplea vulnerabilidades sin interacción del usuario para extraer datos confidenciales de dispositivos móviles en múltiples regiones, indicando un nivel de sofisticación típico de actores estatales.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MDE4NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russia-hackers-smartphone-cyberattacks",
+    "fuente": "The Record",
+    "dedup_key": "txt:russian state linked hackers target iphone android devices in zero click espionage campaign",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3535,
+    "fecha": "2026-11-05T18:03:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Detectada nueva campaña de explotación contra Cisco IOS vinculada a CVE-2023-20198",
+    "resumen": "Análisis de honeypot revela intentos de explotación de Cisco IOS que aprovechan la vulnerabilidad CVE-2023-20198, potencialmente permitiendo ejecución remota de código en dispositivos de red críticos. El vector se basa en paquetes especialmente formateados que evaden filtros tradicionales y requiere actualización inmediata de firmware.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MDE4Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33492",
+    "fuente": "SANS ISC",
+    "dedup_key": "cve:cve-2023-20198",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1609",
+        "name": "Container Administration Command"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-20198"
+      ]
+    }
+  },
+  {
+    "id": 3534,
+    "fecha": "2026-11-05T18:03:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en OpenSSH permite acceso a cuentas Linux sin contraseña mediante contraseña sobresize",
+    "resumen": "La falla “sshole” en OpenSSH permite a un atacante autenticarse en cuentas Alpine Linux y otras basadas en musl que tienen deshabilitada la autenticación por contraseña, simplemente enviando una cadena de contraseña excesivamente larga que desencadena un desbordamiento de búfer. El vector de ataque es remoto y no requiere credenciales válidas, exponiendo sistemas críticos que dependen de OpenSSH para acceso seguro.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MDE4MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openssh flaw lets attackers log into password disabled linux accounts",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3533,
     "fecha": "2026-11-05T15:05:20Z",
     "categoria": "Ciberseguridad",
