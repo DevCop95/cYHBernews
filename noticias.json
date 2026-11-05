@@ -1,5 +1,70 @@
 [
   {
+    "id": 3523,
+    "fecha": "2026-11-05T06:02:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-102435 permite eliminación arbitraria de archivos en Ultra Addons para Contact Form 7 de WordPress",
+    "resumen": "La vulnerabilidad en la función _getObjAttr de Ultra Addons for Contact Form 7 (hasta la versión 3.5.54) permite a atacantes no autenticados borrar archivos arbitrarios, incluido wp-config.php, cuando el add-on PDF Generator está activo, facilitando ejecución remota de código. La cadena de gadgets se basa en la presencia de un formulario CF7 configurado para generación de PDF y la destrucción del objeto WPCF7_Submission.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NTg1Njl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-102435",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-102435",
+    "ttps": [
+      {
+        "id": "T1070.004",
+        "name": "File Deletion"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-102435"
+      ]
+    }
+  },
+  {
+    "id": 3522,
+    "fecha": "2026-11-05T06:02:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Empleados de la Casa Blanca usan proxies residenciales y exponen IP para alquiler",
+    "resumen": "Analistas de seguridad detectaron que personal de la Casa Blanca utiliza servicios de proxy residencial, permitiendo que direcciones IP públicas sean alquiladas a terceros, lo que amplía la superficie de ataque y facilita actividades de anonimato malicioso. La presencia de un proveedor ruso vinculado a ciberataques electorales aumenta el riesgo de espionaje y compromisos de la cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NTg1NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:want to rent an internet address at the white house",
+    "ttps": [
+      {
+        "id": "T1090",
+        "name": "Proxy"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3521,
+    "fecha": "2026-11-05T06:02:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "OpenAI genera 948 exploits de escalada de privilegios en Linux con IA en 30 horas",
+    "resumen": "El nuevo modelo de IA de OpenAI automatizó la identificación, reproducción y parcheo de 948 vulnerabilidades LPE en el kernel de Linux, procesando 2,308 hallazgos y consumiendo $1.2 M en costos de API. La capacidad de generar exploits a escala plantea riesgos de abuso por actores maliciosos y exige vigilancia reforzada en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM4NTg1NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai ai pipeline generates 948 linux root escalation exploits in 30 hour run",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3520,
     "fecha": "2026-11-05T03:02:07Z",
     "categoria": "Ciberseguridad",
