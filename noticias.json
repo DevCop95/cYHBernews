@@ -1,5 +1,28 @@
 [
   {
+    "id": 3541,
+    "fecha": "2026-11-05T21:02:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Truffle Security lanza programa gratuito para revocar 1,4 millones de claves API expuestas",
+    "resumen": "La iniciativa Secrets Revocation Program permite a los emisores de API invalidar rápidamente claves comprometidas que siguen activas, mitigando riesgos de acceso no autorizado y posibles ataques de abuso de servicios.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MTI1NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:nearly 1 5 million exposed secrets targeted in new revocation program",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3540,
     "fecha": "2026-11-05T20:09:57Z",
     "categoria": "Ciberseguridad",
