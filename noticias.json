@@ -1,5 +1,63 @@
 [
   {
+    "id": 3562,
+    "fecha": "2026-11-06T18:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-73098 permite ejecución de código estático en Apache Juneau versiones ≤9.2.0",
+    "resumen": "Vulnerabilidad de control inadecuado de código dinámico permite que un atacante cargue clases arbitrarias y ejecute sus inicializadores estáticos al procesar valores de tipo java.lang.Class, con CVSS 10.0. Afecta a todas las implementaciones de Apache Juneau hasta la versión 9.2.0; se recomienda actualizar a 9.2.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5ODgxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-73098",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-73098",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      },
+      {
+        "id": "T1546.015",
+        "name": "Component Object Model Hijacking"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-73098"
+      ]
+    }
+  },
+  {
+    "id": 3561,
+    "fecha": "2026-11-06T18:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Instalación de parche de vulnerabilidad WordPress permite ejecución remota temporal",
+    "resumen": "Durante la fase de despliegue del parche, el proceso de descompresión reutiliza código no parcheado, lo que permite a un atacante ejecutar código arbitrario en el servidor si actúa en el intervalo crítico. Se recomienda bloquear el acceso web al directorio de actualización y aplicar mitigaciones de red hasta completar la instalación.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5ODgwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:installing the fix for an exploited wordpress flaw can expose some sites one last time",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3560,
     "fecha": "2026-11-06T15:01:35Z",
     "categoria": "Ciberseguridad",
