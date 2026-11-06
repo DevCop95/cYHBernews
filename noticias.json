@@ -1,5 +1,57 @@
 [
   {
+    "id": 3553,
+    "fecha": "2026-11-06T09:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA y agencias federales advierten sobre ataques a sistemas de refrigeración industrial y cadena de frío",
+    "resumen": "Se detecta actividad maliciosa que explota vulnerabilidades en controladores de temperatura accesibles por Internet, permitiendo alteraciones remotas que pueden provocar pérdida de inventario, incendios y riesgos sanitarios; se recomienda endurecer la autenticación, aislar OT y aplicar parches críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NTU2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:us government partners urge hardening industrial refrigeration and cold chain monitoring systems",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "email": [
+        "HHSCyber@hhs.gov",
+        "contact@cisa.dhs.gov"
+      ]
+    }
+  },
+  {
+    "id": 3552,
+    "fecha": "2026-11-06T09:01:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Reino Unido alerta sobre grave riesgo de IA para infraestructuras críticas nacionales",
+    "resumen": "El nuevo gobierno laborista británico impulsa medidas preventivas ante vulnerabilidades de modelos de IA que podrían ser explotadas para comprometer redes de energía, telecomunicaciones y sistemas industriales. Se prioriza la detección de vectores de ataque basados en generación de contenido malicioso y manipulación de datos en tiempo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NTU2ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:uk warns its critical infrastructure faces grave risk",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3551,
+    "fecha": "2026-11-06T09:01:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ataques remotos elevan temperatura de refrigeradores en Europa y riesgo para Latinoamérica",
+    "resumen": "En menos de un mes, actores maliciosos manipularon a distancia sistemas de refrigeración de supermercados y un banco de sangre en Francia, demostrando vulnerabilidades en protocolos IoT de control de temperatura. La misma arquitectura está desplegada en Latinoamérica, lo que expone a la región a potenciales interrupciones de cadena de frío y compromisos de datos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NTU2ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/cibercrimen/heladeras-hackeadas-en-europa-esta-america-latina-preparada/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:ataques a sistemas de refrigeracion en europa esta america latina preparada para un incidente similar",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3550,
     "fecha": "2026-11-06T06:01:53Z",
     "categoria": "Ciberseguridad",
