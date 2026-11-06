@@ -1,5 +1,95 @@
 [
   {
+    "id": 3566,
+    "fecha": "2026-11-06T19:35:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Modelos chinos de IA como DeepSeek y GLM demuestran habilidades de hacking cercanas a los modelos cibernéticos de OpenAI",
+    "resumen": "En pruebas de penetración simulada, los modelos de lenguaje DeepSeek y GLM lograron comprometer redes ficticias con técnicas comparables a los modelos avanzados de OpenAI, evidenciando un riesgo emergente de IA generativa como herramienta de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5OTM3MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:free chinese ai models are getting scary good at hacking",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3565,
+    "fecha": "2026-11-06T19:35:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Archivos de incidentes se convierten en datos de entrenamiento para IA, exponiendo nuevas vulnerabilidades",
+    "resumen": "Los registros de seguridad están siendo reutilizados por proveedores de IA para entrenar modelos de lenguaje, lo que genera riesgos de filtración de datos sensibles y posibles vectores de exfiltración. Se advierte a los equipos de SOC reforzar la clasificación y el control de acceso a dichos archivos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5OTM3MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai gave your incident archive a second job",
+    "ttps": [
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3564,
+    "fecha": "2026-11-06T19:35:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "OpenAI lanza GPT-6 Cyber, modelo IA orientado a detección y mitigación de vulnerabilidades críticas",
+    "resumen": "GPT-6 Cyber incorpora capacidades avanzadas de análisis de código y generación de exploits, permitiendo identificar y proponer parches para vulnerabilidades en navegadores y sistemas operativos con mayor precisión y alineación de seguridad. Su despliegue marca un punto de inflexión en la automatización de la investigación de ciberamenazas, reduciendo tiempos de respuesta en incidentes críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5OTM3MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai launches gpt 6 cyber after ai helps find 81 firefox flaws 948 linux exploits",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3563,
+    "fecha": "2026-11-06T19:35:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Herramientas de seguridad falsas en GitHub distribuyen backdoors y ladrones de información",
+    "resumen": "Se detectaron repositorios maliciosos que ofrecen supuestas utilidades de ciberseguridad, pero al instalarse implantan backdoors y malware de tipo infostealer, comprometiendo credenciales y datos sensibles de profesionales del sector. La campaña aprovecha la confianza en proyectos de código abierto y requiere revisión exhaustiva de firmas y hashes antes de su uso.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5OTM3MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fake security tools on github push backdoors and infostealers",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3562,
     "fecha": "2026-11-06T18:01:42Z",
     "categoria": "Ciberseguridad",
