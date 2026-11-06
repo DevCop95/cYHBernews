@@ -1,5 +1,77 @@
 [
   {
+    "id": 3549,
+    "fecha": "2026-11-06T03:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Amenazas usan framework de IA agente ARTEX para extraer y explotar secretos OAuth en GitHub",
+    "resumen": "Microsoft Threat Intelligence detectó que actores maliciosos emplean el framework ofensivo ARTEX, basado en IA agente, para buscar secretos de aplicaciones OAuth expuestos en repositorios de GitHub y comprometer dichas aplicaciones, permitiendo acciones autenticadas dentro del tenant de la organización objetivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MzQxMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:threat actors use agentic ai tooling to find and abuse exposed secrets",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3548,
+    "fecha": "2026-11-06T03:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers usan invitaciones falsas de OpenAI, SpaceX y Anthropic para robar credenciales de Microsoft y Google",
+    "resumen": "Se detectó una campaña de phishing-as-a-service que envía invitaciones a eventos ficticios de OpenAI, SpaceX y Anthropic, explotando la confianza en marcas de IA para capturar sesiones de autenticación y credenciales de cuentas corporativas de Microsoft y Google. La táctica combina ingeniería social con infraestructura de phishing automatizada, elevando el riesgo de compromiso de entornos SaaS.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MzQxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fake openai spacex events used to steal microsoft google accounts",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1550.003",
+        "name": "Pass the Ticket"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3547,
+    "fecha": "2026-11-06T03:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "SASE impulsado por IA refuerza la seguridad unificada en entornos híbridos globales",
+    "resumen": "La integración de modelos de IA en arquitecturas SASE permite correlacionar eventos de red en tiempo real y aplicar políticas adaptativas, mitigando amenazas como ransomware y phishing en infraestructuras distribuidas. La solución aborda la complejidad normativa al ofrecer visibilidad centralizada y cumplimiento automático bajo marcos como GDPR e ISO 27001.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MzQxMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/sase-e-ia-la-conectividad-global-ante-el-reto-de-la-seguridad-unificada/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:sase e ia la conectividad global ante el reto de la seguridad unificada",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3546,
     "fecha": "2026-11-06T01:41:24Z",
     "categoria": "Ciberseguridad",
