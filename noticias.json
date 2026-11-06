@@ -1,5 +1,51 @@
 [
   {
+    "id": 3560,
+    "fecha": "2026-11-06T15:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Estafadores usan IA para suplantar CEOs y robar más de 100 millones de dólares, según EE. UU",
+    "resumen": "La investigación federal revela que actores criminales emplearon modelos de lenguaje para generar correos de suplantación de ejecutivos, facilitando un esquema de fraude de más de 100 MM USD; se busca la extradición de tres sospechosos desde Europa.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NzcyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ceo-spoofing-scammers-charged",
+    "fuente": "The Record",
+    "dedup_key": "txt:ceo spoofing scammers used ai to help steal more than 100 million feds say",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3559,
+    "fecha": "2026-11-06T15:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft publica parche RCE para CVE-2026-83844 en Paint vía Store, excluyendo Windows Update",
+    "resumen": "El error de lectura fuera de límites en Windows Paint (CVE-2026-83844) permite ejecución remota de código a través de la red; el parche solo se distribuye mediante Microsoft Store, lo que obliga a los administradores a revisar los procesos de actualización de software.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NzcyOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-83844",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-83844"
+      ]
+    }
+  },
+  {
     "id": 3558,
     "fecha": "2026-11-06T12:01:53Z",
     "categoria": "Ciberseguridad",
