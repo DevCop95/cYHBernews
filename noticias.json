@@ -1,5 +1,40 @@
 [
   {
+    "id": 3550,
+    "fecha": "2026-11-06T06:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CWPdoor inserta backdoor en servidores Linux mediante versión trojada de cwpsrv",
+    "resumen": "El malware CWPdoor se propaga a través de una variante comprometida del servidor web cwpsrv del panel de gestión Control Web Panel, permitiendo a actores maliciosos ejecutar comandos arbitrarios y exfiltrar datos en sistemas Linux vulnerables. La campaña se dirige a entornos de hosting compartido y requiere actualización de firmas de detección y revisión de integridad de binarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NDQ5MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-linux-servers-using-trojanized-cwp-web-server/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers backdoor linux servers using trojanized cwp web server",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3549,
     "fecha": "2026-11-06T03:01:50Z",
     "categoria": "Ciberseguridad",
