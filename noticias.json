@@ -1,5 +1,49 @@
 [
   {
+    "id": 3558,
+    "fecha": "2026-11-06T12:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-118423 permite ejecución remota de código en WordPress mediante carga de PHP en WP Libre Form",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) en el plugin WP Libre Form 1.5.0.1 no valida el tipo de archivo, permitiendo a atacantes no autenticados subir y ejecutar scripts PHP en el servidor web.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NjY1MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-118423",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-118423",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "1.5.0.1"
+      ],
+      "cve": [
+        "CVE-2026-118423"
+      ]
+    }
+  },
+  {
+    "id": 3557,
+    "fecha": "2026-11-06T12:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "DigiCert sufre brecha de datos tras migración de servidor que expuso sistema interno a internet",
+    "resumen": "La migración errónea dejó accesible un servidor interno, permitiendo a actores no autorizados extraer información de clientes y documentos de identidad; el incidente afecta la confidencialidad de datos críticos y requiere notificación bajo GDPR.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5NjY1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/digicert-data-breach-exposes-customer-information-identity-documents/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:digicert data breach exposes customer information identity documents",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3556,
     "fecha": "2026-11-06T11:12:50Z",
     "categoria": "Ciberseguridad",
