@@ -1,5 +1,93 @@
 [
   {
+    "id": 3569,
+    "fecha": "2026-11-06T21:01:37Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "India fija 24 meses para lanzar su primera GPU nacional enfocada en IA y reduce dependencia de proveedores externos",
+    "resumen": "El Gobierno indio, bajo la India Semiconductor Mission 2.0, planea diseñar y producir una GPU propia en dos años, apoyada por los procesadores RISC-V SHAKTI y VEGA, para abastecer la creciente demanda de cómputo de IA. El proyecto implica desafíos de fabricación, cadena de suministro y certificación de rendimiento antes de su comercialización.",
+    "url_imagen": "https://images.unsplash.com/photo-1786539861652-ceb1167cc717?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5OTg4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/india-anuncia-planes-para-desarrollar-gpu-nacionales-24-meses-busca-dar-salida-comercial-a-sus-chips-risc-v",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:india anuncia planes para desarrollar gpu nacionales en 24 meses mientras busca dar salida comercial a sus chips risc v",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3568,
+    "fecha": "2026-11-06T21:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA incorpora CVE-2026-19868 de SonicWall SonicOS SSLVPN al catálogo KEV",
+    "resumen": "La vulnerabilidad CVE-2026-19868 permite autenticación de factor único en SSLVPN de SonicWall, facilitando acceso no autorizado y control total del activo. CISA exige remediación prioritaria para agencias federales y recomienda su adopción a nivel empresarial.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5OTg4OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-19868",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1133",
+        "name": "External Remote Services"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19868"
+      ]
+    }
+  },
+  {
+    "id": 3567,
+    "fecha": "2026-11-06T21:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extensión maliciosa de navegador explota Claude Dispatch para ejecutar código en equipos de usuarios",
+    "resumen": "Investigadores de Forever Security demostraron que una extensión de navegador puede abusar de la función Dispatch de Claude Desktop, permitiendo la ejecución remota de scripts en el host del usuario sin requerir privilegios elevados. El vector combina ingeniería social en la instalación de la extensión con la interacción de la API de Claude, ampliando la superficie de ataque de los entornos de IA generativa.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5OTg4OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:malicious browser extensions could use claude dispatch to run code on users computers",
+    "ttps": [
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1546",
+        "name": "Event Triggered Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3566,
     "fecha": "2026-11-06T19:35:15Z",
     "categoria": "Ciberseguridad",
