@@ -1,5 +1,47 @@
 [
   {
+    "id": 3543,
+    "fecha": "2026-11-06T00:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ransomware interrumpe Wi-Fi y equipos en la red de la Queens Public Library",
+    "resumen": "Un ataque de ransomware comprometió la infraestructura de red de la biblioteca pública de Queens, afectando el acceso Wi-Fi y los equipos en sitio en sus 66 sucursales, obligando a emitir alertas a los 2,3 millones de usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MjMyOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/queens-library-ransomware-causes-disruptions",
+    "fuente": "The Record",
+    "dedup_key": "txt:queens public library says ransomware attack disrupted wi fi on site computers",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3542,
+    "fecha": "2026-11-06T00:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Sistemas de correo del gobierno de EE. UU. vulnerables por registros DNS erróneos que permiten abuso",
+    "resumen": "Errores o registros DNS obsoletos otorgan a actores maliciosos control parcial sobre la entrega y enrutamiento de correos institucionales, facilitando phishing y spoofing dirigidos. La exposición afecta la confidencialidad e integridad de la comunicación gubernamental y requiere revisión inmediata de la zona DNS.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM5MjMyOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:us government email systems open to abuse thanks to typos",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3541,
     "fecha": "2026-11-05T21:02:31Z",
     "categoria": "Ciberseguridad",
