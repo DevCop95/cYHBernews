@@ -1,5 +1,50 @@
 [
   {
+    "id": 3585,
+    "fecha": "2026-11-07T15:01:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Se corrige vulnerabilidad de use-after-free en net/sched:sch_teql (CVE-2026-99282)",
+    "resumen": "La actualización del kernel Linux soluciona un use-after-free en la función teql_master_xmit() que permitía que un paquete liberado fuera reutilizado tras un retorno NET_XMIT_DROP del qdisc inferior, potencialmente habilitando ejecución de código arbitrario en entornos con VLAN y TEQL configurados. La corrección introduce la verificación con dev_xmit_complete() para distinguir correctamente los resultados consumidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNjM2ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/446432",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-99282",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-99282"
+      ]
+    }
+  },
+  {
+    "id": 3584,
+    "fecha": "2026-11-07T15:01:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CTM360 revela campañas de estafas con tarjetas de regalo que suplantan marcas y celebridades",
+    "resumen": "Los atacantes utilizan suplantación de identidad de marcas reconocidas y pasos de verificación falsos para capturar datos personales y suscribir a víctimas a servicios no deseados, monetizando a través de redes de afiliados. La técnica combina phishing y fraude de suscripción, incrementando el riesgo de exposición de información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNjM2ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ctm360 exposes fake gift card scams exploiting trusted brands",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3583,
     "fecha": "2026-11-07T12:01:36Z",
     "categoria": "Ciberseguridad",
