@@ -1,5 +1,50 @@
 [
   {
+    "id": 3579,
+    "fecha": "2026-11-07T06:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-73099 permite CSRF crítico en Apache Juneau hasta la versión 9.2.0",
+    "resumen": "Vulnerabilidad CSRF de CVSS 10.0 en el parámetro \"content\" del servidor REST de Apache Juneau permite inyección de cuerpo de petición vía enlaces cross-site, eludiendo CORS y tokens anti-CSRF. Afecta a todas las versiones hasta 9.2.0; se recomienda actualizar a 9.2.1 o desactivar el parámetro.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwMzEzMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-73099",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-73099",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-73099"
+      ]
+    }
+  },
+  {
+    "id": 3578,
+    "fecha": "2026-11-07T06:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Storm-3358 emplea el framework ofensivo de IA ARTEX contra el sector financiero",
+    "resumen": "En octubre de 2026, el actor de amenaza motivado por ganancias financieras Storm-3358 comenzó a usar ARTEX, un framework de IA agente, para automatizar spear-phishing y exfiltración de datos en bancos y fintechs. La campaña amplía el uso de IA ofensiva, incrementando la velocidad de generación de payloads y la evasión de detección en entornos de seguridad tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwMzEzMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:artex abuse expands as cybercriminals target financial sector",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3577,
     "fecha": "2026-11-07T03:01:45Z",
     "categoria": "Ciberseguridad",
