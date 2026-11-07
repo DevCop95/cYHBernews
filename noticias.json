@@ -1,5 +1,24 @@
 [
   {
+    "id": 3580,
+    "fecha": "2026-11-07T09:01:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Claude Code expone contraseñas y claves API en 1.122 repositorios públicos de GitHub",
+    "resumen": "La función “Don’t ask again” del asistente de codificación de Anthropic guarda comandos con credenciales en archivos de configuración accesibles públicamente, permitiendo su extracción masiva. Apiiro detectó 1.122 repositorios expuestos, lo que genera riesgo inmediato de compromiso de entornos de desarrollo y acceso no autorizado a servicios.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNDIwODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:claude code s don t ask again file exposes passwords and keys in 1 122 public copies on github",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3579,
     "fecha": "2026-11-07T06:01:52Z",
     "categoria": "Ciberseguridad",
