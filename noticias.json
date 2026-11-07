@@ -1,5 +1,59 @@
 [
   {
+    "id": 3582,
+    "fecha": "2026-11-07T10:29:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "wpForo Forum plugin para WordPress vulnerado por SQL Injection (CVE-2026-95870) en versiones ≤3.2.1",
+    "resumen": "La falta de escape y preparación de la parámetro ‘data’ permite a atacantes no autenticados inyectar consultas SQL arbitrarias y extraer datos sensibles del backend. La vulnerabilidad se activa al registrar campos de formulario tipo checkbox o select con opción isMultiChoice en la configuración del foro.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNDczODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/446267",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-95870",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-95870"
+      ]
+    }
+  },
+  {
+    "id": 3581,
+    "fecha": "2026-11-07T10:29:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-73100 permite exfiltración de credenciales vía logs en Apache Juneau",
+    "resumen": "La vulnerabilidad de inserción de información sensible en archivos de registro expone encabezados de autorización, cookies y claves API cuando se genera un error de servidor. Un atacante que provoque un error 5xx puede capturar esas credenciales leyendo los logs, afectando a todas las implementaciones de Apache Juneau ≤ 9.2.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNDczODB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-73100",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-73100",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-73100"
+      ]
+    }
+  },
+  {
     "id": 3580,
     "fecha": "2026-11-07T09:01:25Z",
     "categoria": "Ciberseguridad",
