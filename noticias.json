@@ -1,5 +1,58 @@
 [
   {
+    "id": 3577,
+    "fecha": "2026-11-07T03:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Regresión en la aplicación de algoritmos FIPS en hashlib de Python 3.14.10 expone CVE-2026-119170",
+    "resumen": "La actualización de Python 3.14.10 introduce una regresión que desactiva la verificación de algoritmos FIPS en el módulo hashlib cuando OpenSSL opera en modo FIPS, permitiendo potenciales bypass de políticas criptográficas. Sólo los entornos que usan OpenSSL FIPS y esa versión específica están en riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwMjA1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/445822",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-119170",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-119170"
+      ]
+    }
+  },
+  {
+    "id": 3576,
+    "fecha": "2026-11-07T03:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-71495 permite SSRF crítico en Wanderer antes de la versión 0.20.0",
+    "resumen": "La vulnerabilidad SSRF de CVE-2026-71495 en el endpoint POST /api/v1/trail/download de Wanderer expone servicios internos y metadatos de la nube a atacantes no autenticados, facilitando reconocimiento interno y potencial denegación de servicio. Se corrige en la versión 0.20.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwMjA1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-71495",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-71495",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1018",
+        "name": "Remote System Discovery"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-71495"
+      ]
+    }
+  },
+  {
     "id": 3575,
     "fecha": "2026-11-07T01:00:46Z",
     "categoria": "Ciberseguridad",
