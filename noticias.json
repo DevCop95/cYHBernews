@@ -1,5 +1,40 @@
 [
   {
+    "id": 3586,
+    "fecha": "2026-11-07T17:48:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "La ola de hackeos a refrigeradores IoT alerta sobre vulnerabilidades críticas en infraestructura esencial",
+    "resumen": "Ataques dirigidos a dispositivos conectados, como refrigeradores en laboratorios de sangre y supermercados, evidencian fallos de seguridad básicos que permiten comprometer cadenas de suministro y datos sensibles. El vector principal es la exposición de interfaces de gestión sin autenticación, explotada mediante técnicas de escaneo y acceso remoto.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNzM3MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/kernel-panic-refrigeration-hacks-internet-of-things/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:the fridge hacking spree is an internet of things wake up call",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3585,
     "fecha": "2026-11-07T15:01:28Z",
     "categoria": "Ciberseguridad",
