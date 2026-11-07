@@ -1,5 +1,32 @@
 [
   {
+    "id": 3587,
+    "fecha": "2026-11-07T18:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-123991 permite carga no restringida en DataEase ≤2.10.27",
+    "resumen": "La vulnerabilidad en la función WhitelistUtils.endsWithAny del filtro de autenticación permite a un atacante remoto subir archivos arbitrarios manipulando el parámetro File; el exploit está disponible públicamente. La actualización a la versión 2.10.28 corrige el problema al reforzar la autenticación del endpoint de carga estática.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNzQ1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/446472",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-123991",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123991"
+      ]
+    }
+  },
+  {
     "id": 3586,
     "fecha": "2026-11-07T17:48:30Z",
     "categoria": "Ciberseguridad",
