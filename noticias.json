@@ -1,5 +1,23 @@
 [
   {
+    "id": 3583,
+    "fecha": "2026-11-07T12:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-73101 permite filtrado de excepciones internas en Apache Juneau versión ≤9.2.0",
+    "resumen": "La vulnerabilidad expone clases y mensajes de excepción en la cabecera \"Thrown\" y cuerpo de error, revelando información sensible a atacantes remotos. Afecta a servidores REST de Apache Juneau y se corrige en la versión 9.2.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwNTI4OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-73101",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-73101",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-73101"
+      ]
+    }
+  },
+  {
     "id": 3582,
     "fecha": "2026-11-07T10:29:42Z",
     "categoria": "Ciberseguridad",
