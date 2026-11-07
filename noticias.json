@@ -1,5 +1,42 @@
 [
   {
+    "id": 3590,
+    "fecha": "2026-11-07T22:04:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackeo a congeladores de supermercados europeos revela vulnerabilidad sistémica en la cadena de suministro",
+    "resumen": "El ataque a los sistemas de control de congeladores expuso fallos de segmentación y autenticación, permitiendo a actores maliciosos comprometer múltiples tiendas y provocar pérdidas de inventario a gran escala.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwODkwNjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:why europe s freezer hacks spread so far so fast",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3589,
+    "fecha": "2026-11-07T22:04:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Se corrige CVE-2026-99284 que permitía escritura no autorizada en el kernel Linux mediante skb_zerocopy",
+    "resumen": "La vulnerabilidad en la función net:skbuff permite que un usuario sin privilegios sobrescriba datos del caché de páginas de archivos de solo lectura al perder la marca SKBFL_SHARED_FRAG durante skb_zerocopy, facilitando escalada de privilegios. El parche propaga correctamente el flag shared-frag, cerrando el vector de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwODkwNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/446817",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-99284",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-99284"
+      ]
+    }
+  },
+  {
     "id": 3588,
     "fecha": "2026-11-07T21:01:41Z",
     "categoria": "Ciberseguridad",
