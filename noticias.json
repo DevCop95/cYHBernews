@@ -1,5 +1,56 @@
 [
   {
+    "id": 3572,
+    "fecha": "2026-11-07T00:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-109469 permite bypass de autorización y elevación de privilegios en Entra Device Registration",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) permite a un atacante no autorizado usar una clave controlada por el usuario para eludir controles de autorización y escalar privilegios dentro de la red afectada.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwMDk3MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-109469",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-109469",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-109469"
+      ]
+    }
+  },
+  {
+    "id": 3571,
+    "fecha": "2026-11-07T00:01:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Análisis de Unit 42 sobre los ciberataques a sistemas de refrigeración en Europa",
+    "resumen": "Unit 42 detalla una campaña dirigida a infraestructuras de refrigeración industrial que explota vulnerabilidades en controladores PLC y protocolos de red, comprometiendo la cadena de frío y exponiendo datos operacionales. Se recomiendan segmentación de redes, parches urgentes y monitoreo continuo de anomalías.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwMDk3MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:turning up the heat inside the attacks on europe s refrigeration system",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3570,
+    "fecha": "2026-11-07T00:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "SonicWall corrige vulnerabilidad SSL-VPN MFA bypass explotada en ataques contra firewalls SonicOS",
+    "resumen": "Se han publicado actualizaciones que mitigan siete CVE, entre ellas una falla de autenticación SSL-VPN que permite eludir MFA y ha sido utilizada en campañas de acceso no autorizado. El vector implica explotación remota de la puerta de enlace VPN, incrementando el riesgo de compromiso de redes corporativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwMDk2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:sonicwall warns of new ssl vpn mfa bypass flaw exploited in attacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3569,
     "fecha": "2026-11-06T21:01:37Z",
     "categoria": "IA",
