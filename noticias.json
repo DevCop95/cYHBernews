@@ -1,5 +1,32 @@
 [
   {
+    "id": 3603,
+    "fecha": "2026-11-08T21:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-17132 permite ejecución remota de SQL en IBM API Connect 12.1.0.0-12.1.1.2",
+    "resumen": "Vulnerabilidad crítica (CVSS 9.9) que permite a un atacante autenticado ejecutar comandos SQL arbitrarios mediante inyección en IBM API Connect, comprometiendo la integridad de los datos del gateway.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxNzE2ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-17132",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-17132",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.1.0.0",
+        "12.1.1.2"
+      ],
+      "cve": [
+        "CVE-2026-17132"
+      ]
+    }
+  },
+  {
     "id": 3602,
     "fecha": "2026-11-08T19:48:09Z",
     "categoria": "Ciberseguridad",
