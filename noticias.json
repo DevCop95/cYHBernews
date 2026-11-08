@@ -1,5 +1,36 @@
 [
   {
+    "id": 3599,
+    "fecha": "2026-11-08T12:01:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-17117 permite ejecución remota de código en IBM API Connect 10.x y 12.x",
+    "resumen": "Vulnerabilidad de alta severidad (CVSS 9.9) en IBM API Connect 10.0.8.0-10.0.8.12 y 12.1.0.0-12.1.1.2 permite a un atacante autenticado modificar atributos de objetos restringidos y ejecutar código arbitrario en el servidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxMzkyODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-17117",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-17117",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.1.0.0",
+        "12.1.1.2"
+      ],
+      "cve": [
+        "CVE-2026-17117"
+      ]
+    }
+  },
+  {
     "id": 3598,
     "fecha": "2026-11-08T09:01:17Z",
     "categoria": "Ciberseguridad",
