@@ -1,5 +1,23 @@
 [
   {
+    "id": 3600,
+    "fecha": "2026-11-08T13:43:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-124330 permite path traversal remoto en FlowCI flow-core-x ≤1.23.49",
+    "resumen": "La vulnerabilidad en la clase LocalFileManager permite a un atacante remoto manipular el parámetro fileName para ejecutar un path traversal y acceder a archivos arbitrarios en el servidor; la explotación requiere alta complejidad pero el exploit ya está disponible públicamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxNDUzOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447058",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-124330",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124330"
+      ]
+    }
+  },
+  {
     "id": 3599,
     "fecha": "2026-11-08T12:01:22Z",
     "categoria": "Ciberseguridad",
