@@ -1,5 +1,42 @@
 [
   {
+    "id": 3594,
+    "fecha": "2026-11-08T03:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Operación de influencia rusa usa IA para difundir correos falsos y documentos falsificados contra escuelas",
+    "resumen": "La campaña empleó modelos de lenguaje para generar correos de spear-phishing y documentos gubernamentales falsos, creando una fachada local que apuntó a instituciones educativas en la región, ampliando la superficie de ataque de influencia.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxMDY4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:opera o de influ ncia russa tem como alvo generalizado a america latina",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3593,
+    "fecha": "2026-11-08T03:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-123551 permite robo de tokens de sesión en OpenAM 14.0.0-16.1.3",
+    "resumen": "Vulnerabilidad de divulgación de información en OpenAM permite a atacantes no autenticados leer tokens de sesión activos mediante WebSocket y eludir la verificación de agente, facilitando el secuestro de cuentas de usuario y administrador. Impacta entornos que usan OpenAM < 16.1.4 para gestión de identidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxMDY4ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-123551",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-123551",
+    "ttps": [
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123551"
+      ]
+    }
+  },
+  {
     "id": 3592,
     "fecha": "2026-11-08T00:01:40Z",
     "categoria": "Ciberseguridad",
