@@ -1,5 +1,39 @@
 [
   {
+    "id": 3601,
+    "fecha": "2026-11-08T18:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-107331 permite a atacante autenticado en IBM DataStage on Cloud Pak obtener información sensible",
+    "resumen": "Vulnerabilidad de recorrido de ruta absoluta en IBM DataStage on Cloud Pak for Data 5.4.0.0 (CVE-2026-107331) con CVSS 9.9 permite a un atacante autenticado ejecutar lecturas de archivos arbitrarios y exfiltrar datos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxNjA4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-107331",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-107331",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "5.4.0.0"
+      ],
+      "cve": [
+        "CVE-2026-107331"
+      ]
+    }
+  },
+  {
     "id": 3600,
     "fecha": "2026-11-08T13:43:16Z",
     "categoria": "Ciberseguridad",
