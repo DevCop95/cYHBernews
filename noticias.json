@@ -1,5 +1,63 @@
 [
   {
+    "id": 3596,
+    "fecha": "2026-11-08T06:01:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2024-28834 en GnuTLS permite ataque side-channel Minerva mediante flag reproducible",
+    "resumen": "La falla criptográfica identificada como Minerva explota el comportamiento determinista de GnuTLS al usar GNUTLS_PRIVKEY_FLAG_REPRODUCIBLE, provocando una variación de nonce que revela información por temporización. Afecta a cualquier servicio que dependa de GnuTLS para TLS/DTLS, incrementando el riesgo de extracción de claves.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxMTc2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447029",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2024-28834",
+    "ttps": [
+      {
+        "id": "T1552.004",
+        "name": "Private Keys"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2024-28834"
+      ]
+    }
+  },
+  {
+    "id": 3595,
+    "fecha": "2026-11-08T06:01:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-16920 permite a atacante autenticado evadir controles en IBM API Connect 12.1.x",
+    "resumen": "Vulnerabilidad de confused deputy con CVSS 9.9 permite a un atacante autenticado eludir restricciones de seguridad y ejecutar operaciones no autorizadas en IBM API Connect versiones 12.1.0.0 a 12.1.1.2.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxMTc2ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-16920",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-16920",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.1.0.0",
+        "12.1.1.2"
+      ],
+      "cve": [
+        "CVE-2026-16920"
+      ]
+    }
+  },
+  {
     "id": 3594,
     "fecha": "2026-11-08T03:01:32Z",
     "categoria": "Ciberseguridad",
