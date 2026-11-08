@@ -1,5 +1,32 @@
 [
   {
+    "id": 3598,
+    "fecha": "2026-11-08T09:01:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-97195 permite XSS en plugin Secure Custom Fields de WordPress antes de 6.9.8",
+    "resumen": "La falta de saneado de definiciones de campos persistentes permite inyectar JavaScript que se ejecuta en el navegador de cualquier usuario que visualice la página afectada; en entornos multisite, un administrador sin capacidad unfiltered_html puede comprometer sesiones de otros usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxMjg0Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447050",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-97195",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-97195"
+      ]
+    }
+  },
+  {
     "id": 3597,
     "fecha": "2026-11-08T06:21:52Z",
     "categoria": "Ciberseguridad",
