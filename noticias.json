@@ -1,5 +1,50 @@
 [
   {
+    "id": 3592,
+    "fecha": "2026-11-08T00:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Stored XSS en el plugin Subscribe2 de WordPress (CVE-2026-120531) permite ejecución de scripts",
+    "resumen": "El plugin Subscribe2 – Form, Email Subscribers & Newsletters presenta una falla de Stored Cross-Site Scripting en el parámetro data[ip] que afecta a todas las versiones hasta la 10.47, permitiendo a actores sin credenciales inyectar código JavaScript que se ejecuta al cargar la página comprometida. La ausencia de sanitización y escape adecuados expone a sitios WordPress a compromisos de sesión y posible escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwOTYxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/446820",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-120531",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120531"
+      ]
+    }
+  },
+  {
+    "id": 3591,
+    "fecha": "2026-11-08T00:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-16884 permite a atacante remoto extraer datos sensibles en IBM API Connect 12.1.x",
+    "resumen": "Vulnerabilidad crítica de XXE (CVSS 9.9) en IBM API Connect versiones 12.1.0.0 a 12.1.1.2 permite a un atacante remoto leer archivos internos y potencialmente comprometer la confidencialidad del entorno de API. Se recomienda aplicar el parche de IBM y deshabilitar la resolución de entidades externas.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQwOTYwOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-16884",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-16884",
+    "ttps": [],
+    "iocs": {
+      "ipv4": [
+        "12.1.0.0",
+        "12.1.1.2"
+      ],
+      "cve": [
+        "CVE-2026-16884"
+      ]
+    }
+  },
+  {
     "id": 3590,
     "fecha": "2026-11-07T22:04:25Z",
     "categoria": "Ciberseguridad",
