@@ -1,5 +1,32 @@
 [
   {
+    "id": 3602,
+    "fecha": "2026-11-08T19:48:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "IBM Bob 1.0.4-2.0.1 vulnerables a ejecución remota de código (CVE-2026-9764)",
+    "resumen": "La falta de control adecuado de la entrada de usuario permite a un atacante remoto inyectar código arbitrario en sistemas que ejecutan IBM Bob versiones 1.0.4 a 2.0.1, comprometiendo la integridad del servidor. Se recomienda aplicar el parche oficial y revisar los controles de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxNjcyOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447327",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-9764",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9764"
+      ]
+    }
+  },
+  {
     "id": 3601,
     "fecha": "2026-11-08T18:01:32Z",
     "categoria": "Ciberseguridad",
