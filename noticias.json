@@ -1,5 +1,74 @@
 [
   {
+    "id": 3618,
+    "fecha": "2026-11-09T12:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-124621 permite ejecución remota en Java Library Management System de Kongxin",
+    "resumen": "La falla de autorización indebida en funciones críticas del UI Swing permite a un atacante remoto ejecutar operaciones de gestión de usuarios y libros sin privilegios. El exploit está públicamente disponible y afecta a todas las versiones bajo el modelo de rolling release.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMjU3MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447644",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-124621",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "70a6eb6b96fe64575d8051f1a59055bfc5dc5885"
+      ],
+      "cve": [
+        "CVE-2026-124621"
+      ]
+    }
+  },
+  {
+    "id": 3617,
+    "fecha": "2026-11-09T12:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-17150 permite ejecución remota de código en IBM API Connect",
+    "resumen": "Una validación insuficiente de módulos personalizados permite a un atacante autenticado ejecutar código arbitrario y acceder a datos de otros inquilinos en IBM API Connect 10.0.8.x y 12.1.0-12.1.1.2. El vector de ataque se basa en la carga de contenido malicioso que se procesa sin sanitización, comprometiendo la separación de tenants.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMjU2OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-17150",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-17150",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.1.0.0",
+        "12.1.1.2"
+      ],
+      "cve": [
+        "CVE-2026-17150"
+      ]
+    }
+  },
+  {
     "id": 3616,
     "fecha": "2026-11-09T11:52:06Z",
     "categoria": "Ciberseguridad",
