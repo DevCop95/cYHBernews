@@ -1,5 +1,66 @@
 [
   {
+    "id": 3611,
+    "fecha": "2026-11-09T09:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-124580 permite ejecución remota de comandos en dispositivos VW2100 y VEC10GP de Feiyuxing",
+    "resumen": "La vulnerabilidad en la función handle_wechat_cn_wifi del endpoint Weixin Auth permite inyección de comandos OS mediante manipulación del parámetro extend, explotable de forma remota y ya divulgada públicamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMTQ5MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447489",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-124580",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124580"
+      ]
+    }
+  },
+  {
+    "id": 3610,
+    "fecha": "2026-11-09T09:01:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Perry Johnson Companies paga acuerdos a 4 estados tras hack que expuso datos de pacientes en 2023",
+    "resumen": "La filtración comprometió bases de datos de transcripción, codificación e imágenes médicas, exponiendo información personal y de salud de miles de pacientes; la empresa acordó indemnizaciones para Connecticut, New Jersey, Nueva York y Michigan.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMTQ4OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/medical-services-company-settles-with-4-state-ags",
+    "fuente": "The Record",
+    "dedup_key": "txt:medical services company settles with 4 states over 2023 hack of sensitive patient records",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3609,
+    "fecha": "2026-11-09T09:01:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS almacenado CVE-2026-124637 afecta a Tankuam Places de Kompini",
+    "resumen": "La falla permite inyección de JavaScript arbitrario mediante los campos cliNom y cliCognoms del formulario de edición de perfil, sin validación ni escape, lo que posibilita la ejecución de código en el navegador de la víctima. Afecta a versiones anteriores a apl.00007.00005 (diciembre 2025) y se corrige en la versión posterior.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMTQ4OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-xss-almacenado-en-tankuam-places",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-124637",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.luxorgymtarrega.com"
+      ],
+      "url": [
+        "https://www.luxorgymtarrega.com/dadespersonals/modificarClient/ID"
+      ],
+      "cve": [
+        "CVE-2026-124637"
+      ]
+    }
+  },
+  {
     "id": 3608,
     "fecha": "2026-11-09T06:01:19Z",
     "categoria": "Ciberseguridad",
