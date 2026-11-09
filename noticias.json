@@ -1,5 +1,51 @@
 [
   {
+    "id": 3605,
+    "fecha": "2026-11-09T00:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Kaspersky detecta variante de MacSync que roba credenciales y criptomonedas en macOS",
+    "resumen": "La nueva versión de MacSync, identificada en septiembre 2026, amplía su cadena de infección y combina técnicas de credential dumping con módulos de minería de criptomonedas, afectando a usuarios de macOS y evadiendo EDR tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxODI0OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/descubierto-un-nuevo-malware-que-roba-credenciales-y-criptomonedas-a-usuarios-de-macos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:descubierto un nuevo malware que roba credenciales y criptomonedas a usuarios de macos",
+    "ttps": [
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3604,
+    "fecha": "2026-11-09T00:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad XSS en Convene Board Management Portal permite ejecución remota CVE-2026-124498",
+    "resumen": "La manipulación del parámetro REDIRECT_URL en /jsp/ge/dummy_launcher.jsp genera un cross-site scripting que puede ser explotado de forma remota sin autenticación. El exploit está públicamente disponible, incrementando el riesgo de comprometer la integridad de los portales de gestión de juntas.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxODI0OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447395",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-124498",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124498"
+      ]
+    }
+  },
+  {
     "id": 3603,
     "fecha": "2026-11-08T21:01:29Z",
     "categoria": "Ciberseguridad",
