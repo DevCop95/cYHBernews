@@ -1,5 +1,70 @@
 [
   {
+    "id": 3607,
+    "fecha": "2026-11-09T01:02:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad remota CVE-2026-124502 en Skuul School Management permite bypass de autorización",
+    "resumen": "La falla en GraduationController::resetGraduation permite a un atacante remoto omitir controles de autorización y manipular datos de estudiantes; se recomienda actualizar a la versión 3.0.0 que incluye el parche b42f2c80a8e5e01ca6e607bbd97f137ede368ac9.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxODYxNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/447399",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-124502",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "b42f2c80a8e5e01ca6e607bbd97f137ede368ac9"
+      ],
+      "cve": [
+        "CVE-2026-124502"
+      ]
+    }
+  },
+  {
+    "id": 3606,
+    "fecha": "2026-11-09T01:02:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-17134 permite ejecución remota de SQL en IBM API Connect 12.1.x",
+    "resumen": "Una vulnerabilidad de inyección SQL (CVSS 9.9) en IBM API Connect versiones 12.1.0.0 a 12.1.1.2 permite a un atacante autenticado ejecutar comandos SQL arbitrarios en el backend de la plataforma. El vector de ataque requiere acceso autenticado a la API, pero una vez explotado compromete la integridad de los datos y puede conducir a escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQxODYxNjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-17134",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-17134",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.1.0.0",
+        "12.1.1.2"
+      ],
+      "cve": [
+        "CVE-2026-17134"
+      ]
+    }
+  },
+  {
     "id": 3605,
     "fecha": "2026-11-09T00:01:33Z",
     "categoria": "Ciberseguridad",
