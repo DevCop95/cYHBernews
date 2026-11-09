@@ -1,5 +1,97 @@
 [
   {
+    "id": 3616,
+    "fecha": "2026-11-09T11:52:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers roban $133 millones a Crédit Mutuel Arkéa mediante ataque a proveedor de servicios",
+    "resumen": "Un grupo de ciberdelincuentes comprometió la cadena de suministro del banco francés, explotando credenciales de un proveedor para autorizar transferencias fraudulentas que alcanzaron los $133 millones, obligando a la entidad a suspender varios sistemas críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMjUxMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers pull off 133 million french bank heist via service provider",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3615,
+    "fecha": "2026-11-09T11:52:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-115252 permite ejecución remota de PHP en WordPress sin autenticación",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) en el plugin Confection WordPress Cable (v0.4.0-v0.4.7) omite verificaciones de capacidad y nonce, guardando configuraciones en un archivo PHP servible y habilitando ejecución arbitraria de código por usuarios no autenticados.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMjUxMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-115252",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-115252",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-115252"
+      ]
+    }
+  },
+  {
+    "id": 3614,
+    "fecha": "2026-11-09T11:52:03Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Claude Code comparte el correo del usuario con sitios web sin consentimiento",
+    "resumen": "La herramienta de generación de código de Anthropic envía automáticamente la dirección de correo del usuario a páginas que la solicitan, sin confirmación, exponiendo datos de identificación y creando un vector de filtrado de información sensible. Desde la versión 2.1.317 se habilita un aviso previo, pero los scripts generados pueden seguir propagando el email.",
+    "url_imagen": "https://images.unsplash.com/photo-1775185172785-4bbd6b0fc8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMjUxMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/claude-code-guardaba-tu-correo-para-saber-quien-eres-algunas-webs-acabaron-recibiendolo",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:claude code guardaba tu correo para saber quien eres algunas webs acabaron recibiendolo",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "noreply.net"
+      ]
+    }
+  },
+  {
+    "id": 3613,
+    "fecha": "2026-11-09T11:52:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad de credenciales por defecto permite a investigadores desbloquear y arrancar vehículos de dos fabricantes",
+    "resumen": "Los investigadores descubrieron que los sistemas de autenticación de las apps móviles de dos marcas automotrices usan la contraseña predeterminada “admin:admin” en servidores ForgeRock, lo que permite el acceso total a cuentas de usuarios y el control remoto de puertas y motor. La falla expone a miles de propietarios a ataques de toma de control remoto sin necesidad de exploits avanzados.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMjUxMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/default-adminadmin-server-password.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:default admin admin server password helps researchers hack two automakers unlock and start cars",
+    "ttps": [
+      {
+        "id": "T1078.001",
+        "name": "Default Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3612,
+    "fecha": "2026-11-09T11:51:57Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "LLMJacking permite a cibercriminales robar tokens y consumir modelos IA sin coste para la víctima",
+    "resumen": "El informe de Google Threat Intelligence Group detalla cómo actores maliciosos comprometen cuentas cloud y API keys de LLMs mediante phishing, malware y robo de tokens OAuth, configurando los modelos para generar consumo masivo y facturación al propietario. La técnica amplía la superficie de ataque en entornos SaaS y GPU on-premise, requiriendo controles de acceso estrictos y monitorización de uso.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027215032-f0c4292318ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMjUxMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/11/llmjacking-como-los-cibercriminales.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:llmjacking como los cibercriminales usan tokens ia que pagas tu",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3611,
     "fecha": "2026-11-09T09:01:41Z",
     "categoria": "Ciberseguridad",
