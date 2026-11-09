@@ -1,5 +1,78 @@
 [
   {
+    "id": 3623,
+    "fecha": "2026-11-09T18:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Jpom 2.10.0-2.11.12 presenta vulnerabilidad de bypass de autenticación CVE-2026-120201 que permite acceso",
+    "resumen": "La falla permite a atacantes no autenticados inyectar condiciones en el encabezado JPOM-USER-TOKEN, explotando el parser de Hutool para ejecutar comandos mediante las funciones de script de Jpom. El vector es una petición HTTP manipulada que otorga privilegios de super-administrador.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNDcyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/448296",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-120201",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120201"
+      ]
+    }
+  },
+  {
+    "id": 3622,
+    "fecha": "2026-11-09T18:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers comprometen acceso confiado de Qubole a AWS y roban datos de clientes",
+    "resumen": "Un atacante obtuvo credenciales del rol de confianza que Qubole usa para acceder a cuentas AWS de sus clientes, permitiendo la extracción de secretos y datos entre el 14 y 26 de octubre, según informó Wiz. El vector de ataque se basa en la suplantación de credenciales de confianza en entornos multi-tenant de nube, exponiendo a múltiples organizaciones a filtraciones de información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNDcyODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers exploit qubole s trusted aws access to breach customer accounts and steal data",
+    "ttps": [
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      },
+      {
+        "id": "T1530",
+        "name": "Data from Cloud Storage"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3621,
+    "fecha": "2026-11-09T18:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Beget reconstruye su infraestructura cloud tras ataque de malware borrador de datos",
+    "resumen": "Un ransomware tipo wiper comprometió los servidores de Beget, obligando a la empresa rusa a reinstaurar toda la arquitectura cloud desde cero, lo que genera interrupciones de servicio y exposición de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNDcyODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:russian cloud firm beget rebuilds from scratch after data wiper attack",
+    "ttps": [
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3620,
     "fecha": "2026-11-09T15:02:37Z",
     "categoria": "Ciberseguridad",
