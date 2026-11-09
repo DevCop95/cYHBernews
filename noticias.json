@@ -1,5 +1,59 @@
 [
   {
+    "id": 3620,
+    "fecha": "2026-11-09T15:02:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-110468 permite carga ilimitada de archivos y ejecución remota en WidzialniCMS",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en el endpoint /panel/controllers/save_photo.php de WidzialniCMS permite a un atacante no autenticado subir archivos arbitrarios mediante manipulación del parámetro currentpath, logrando ejecución de código en el servidor. El fallo se corrige en la versión 2.5.",
+    "url_imagen": "https://images.unsplash.com/photo-1717802019159-74496e3ee504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMzY1NTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-110468",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-110468",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-110468"
+      ]
+    }
+  },
+  {
+    "id": 3619,
+    "fecha": "2026-11-09T15:02:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque cibernético asistido por IA compromete la interfaz de asistente de hosting alemán",
+    "resumen": "Hackers explotaron una vulnerabilidad en la herramienta que permite conectar asistentes de IA a cuentas de clientes, logrando acceso no autorizado a la infraestructura del proveedor de hosting. El vector combina ingeniería social y manipulación de prompts para evadir controles de autenticación.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMzY1NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cyberattack-germany-ai-mittwald",
+    "fuente": "The Record",
+    "dedup_key": "txt:alleged ai aided cyberattack exploits assistant interface to breach german web host",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3618,
     "fecha": "2026-11-09T12:01:41Z",
     "categoria": "Ciberseguridad",
