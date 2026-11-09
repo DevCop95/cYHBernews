@@ -1,5 +1,40 @@
 [
   {
+    "id": 3608,
+    "fecha": "2026-11-09T06:01:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-17147 permite ejecución remota de código en IBM API Connect 10.0.8-12 y 12.1.0-1.2",
+    "resumen": "Vulnerabilidad de path traversal (CVSS 9.9) permite a un atacante autenticado ejecutar código arbitrario y realizar acciones administrativas no autorizadas en IBM API Connect versiones afectadas. Se requiere acceso autenticado y explotación de rutas no validadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyMDQwNzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-17147",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-17147",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "12.1.0.0",
+        "12.1.1.2"
+      ],
+      "cve": [
+        "CVE-2026-17147"
+      ]
+    }
+  },
+  {
     "id": 3607,
     "fecha": "2026-11-09T01:02:43Z",
     "categoria": "Ciberseguridad",
