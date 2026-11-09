@@ -1,5 +1,60 @@
 [
   {
+    "id": 3626,
+    "fecha": "2026-11-09T21:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "FORGE Lab emplea herramientas agentic para descubrir vulnerabilidades de seguridad de memoria en Rust",
+    "resumen": "Investigadores de Microsoft FORGE Lab identificaron bugs de seguridad de memoria en las bibliotecas core y std de Rust, demostrando que código Rust seguro puede provocar undefined behavior mediante patrones de confianza mal ubicados en código unsafe, usando la herramienta AI Hyenas.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNTgxMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:forge lab uses agentic tools to identify memory safety issues in rust",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3625,
+    "fecha": "2026-11-09T21:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers comprometen bee-js y Swarm Desktop de Ethersphere para robar claves de wallet",
+    "resumen": "Los atacantes abusaron del pipeline de releases de Ethersphere para publicar versiones maliciosas de bee-js 13.3.0 y Swarm Desktop 0.56.2, que descargan y ejecutan código capaz de extraer la clave privada y la contraseña del wallet del nodo y abrir una puerta trasera.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNTgxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers compromise ethersphere s bee js and swarm desktop to deliver wallet stealing malware",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1552.004",
+        "name": "Private Keys"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3624,
+    "fecha": "2026-11-09T21:01:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Francia atribuye a hackers iraníes los ciberataques que provocaron incendios en más de 700 supermercados",
+    "resumen": "Los ataques de octubre comprometieron sistemas de refrigeración en cientos de comercios, generando pérdidas de alimentos y al menos 15 incendios, según autoridades que señalan a un grupo respaldado por el Estado iraní.",
+    "url_imagen": "https://images.unsplash.com/photo-1552260310-cc8c1f795c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNTgwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:france blames iranian hackers for supermarket attacks that sparked fires",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3623,
     "fecha": "2026-11-09T18:01:36Z",
     "categoria": "Ciberseguridad",
