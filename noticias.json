@@ -1,5 +1,73 @@
 [
   {
+    "id": 3636,
+    "fecha": "2026-11-10T03:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-110469 permite carga ilimitada de archivos y ejecución remota en WidzialniCMS",
+    "resumen": "Vulnerabilidad de Unrestricted File Upload en /panel/upload.php de WidzialniCMS permite a un atacante no autenticado subir archivos arbitrarios a cualquier ruta del servidor y ejecutar código remoto; parcheada en la versión 2.5.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNzk2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-110469",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-110469",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-110469"
+      ]
+    }
+  },
+  {
+    "id": 3635,
+    "fecha": "2026-11-10T03:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bitter Hackers despliegan nuevo backdoor PapRAT en campaña de ciberespionaje contra organizaciones de Asia del Sur",
+    "resumen": "El grupo APT conocido como Bitter (también APT-C-08, Hazy Tiger, entre otros) ha utilizado el remoto access trojan PapRAT, escrito en C++ y Rust, para ejecutar comandos y exfiltrar archivos en objetivos de gobiernos y empresas de Asia del Sur, ampliando su arsenal de herramientas de espionaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNzk2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/bitter-hackers-deploy-new-paprat.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:bitter hackers deploy new paprat backdoor in cyberespionage campaign targeting south asia",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3634,
+    "fecha": "2026-11-10T03:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "N-able desconecta su plataforma cloud tras la divulgación de más de 30 zero-days críticos",
+    "resumen": "La empresa ha puesto offline los entornos N-central alojados y ha recomendado a los clientes on-premise apagar sus servidores, ante la publicación de más de 30 vulnerabilidades zero-day que permiten la toma de control total del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyNzk2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:n able takes cloud platform offline after 30 zero days published",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3633,
     "fecha": "2026-11-10T00:01:36Z",
     "categoria": "Ciberseguridad",
