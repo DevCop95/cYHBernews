@@ -1,5 +1,65 @@
 [
   {
+    "id": 3655,
+    "fecha": "2026-11-10T18:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-89103 permite a atacante no autenticado ejecutar acciones privilegiadas en SAP Gateway",
+    "resumen": "La vulnerabilidad activa la ACL predeterminada con privilegios elevados, permitiendo que un atacante con acceso de red se haga pasar por servidor interno y realice operaciones no autorizadas. El vector de ataque es remoto y sin autenticación, con impacto crítico en confidencialidad, integridad y disponibilidad del entorno SAP.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMzM3MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-89103",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-89103",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-89103"
+      ]
+    }
+  },
+  {
+    "id": 3654,
+    "fecha": "2026-11-10T18:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Blind Eagle lanza campaña de phishing judicial en Latinoamérica para distribuir RAT tipo AsyncRAT",
+    "resumen": "El actor amenaza, Blind Eagle, reutiliza notificaciones judiciales falsas en portugués y español para engañar a usuarios y desplegar un Remote Access Trojan con código similar a AsyncRAT y DCRat, ampliando su superficie de ataque en la región.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMzM3MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:blind eagle uses fake court notices to deliver remote access trojan across latin america",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3653,
+    "fecha": "2026-11-10T18:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Binance alerta sobre vulnerabilidad en iOS que permite filtrar semillas de wallets y credenciales",
+    "resumen": "Se ha identificado una falla en iOS 26.7.1, 27.0.1 y 27.2 que permite a aplicaciones de terceros leer archivos privados de otras apps, exponiendo frases semilla, claves secretas y credenciales de acceso; Binance advierte a sus usuarios de posible robo de fondos.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMzM3MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:binance warns of ios flaw that could leak crypto wallet secrets",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3652,
     "fecha": "2026-11-10T17:11:05Z",
     "categoria": "Ciberseguridad",
