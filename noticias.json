@@ -1,5 +1,60 @@
 [
   {
+    "id": 3645,
+    "fecha": "2026-11-10T09:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-124600 permite captura de credenciales en tránsito por HTTP sin cifrar",
+    "resumen": "La vulnerabilidad CVE-2026-124600 en GV-Face expone credenciales y datos de autenticación al transmitirlos por HTTP sin cifrado, facilitando la intercepción por actores con acceso a la red. El vector de ataque es la captura de tráfico (sniffing) en entornos donde no se aplica TLS.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMDEzMDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-124600",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-124600",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124600"
+      ]
+    }
+  },
+  {
+    "id": 3644,
+    "fecha": "2026-11-10T09:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en sitios del gobierno británico exponen información de alto nivel",
+    "resumen": "Un investigador descubrió que código público reveló datos sensibles en varios departamentos del Reino Unido, creando vectores de acceso no autorizado a información clasificada.",
+    "url_imagen": "https://images.unsplash.com/photo-1669052700037-db884b37b2d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMDEzMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/security-flaws-across-uk-government-sites-exposed-god-tier-information/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:security flaws across uk government sites exposed god tier information",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3643,
+    "fecha": "2026-11-10T09:01:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Google lanza parche de emergencia para el octavo zero-day de Chrome explotado en 2024",
+    "resumen": "La actualización crítica corrige una vulnerabilidad crítica en Chrome (CVE-2024-xxxx) que ha sido utilizada en campañas de explotación activa desde principios de año, afectando a usuarios y entornos corporativos. El vector de ataque es ejecución remota de código mediante contenido web malicioso, incrementando el riesgo de compromiso de sesiones y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMDEyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google patches eighth chrome zero day exploited in attacks this year",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3642,
     "fecha": "2026-11-10T07:32:10Z",
     "categoria": "Ciberseguridad",
