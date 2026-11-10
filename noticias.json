@@ -1,5 +1,32 @@
 [
   {
+    "id": 3646,
+    "fecha": "2026-11-10T12:01:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-95651 permite actualización no autenticada de keytab GSS-TSIG en ManageEngine DDI Central",
+    "resumen": "La falla permite a un atacante remoto sin credenciales modificar keytab GSS-TSIG en el agente Linux, comprometiendo la autenticación Kerberos y facilitando movimientos laterales en entornos de DNS/DHCP gestionados. Afecta a todas las instalaciones de Zoho ManageEngine DDI Central ≤ 6500, requiriendo parche inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMTIwODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/449018",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-95651",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.006",
+        "name": "Multi-Factor Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-95651"
+      ]
+    }
+  },
+  {
     "id": 3645,
     "fecha": "2026-11-10T09:01:45Z",
     "categoria": "Ciberseguridad",
