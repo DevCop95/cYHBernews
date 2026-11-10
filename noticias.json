@@ -1,5 +1,73 @@
 [
   {
+    "id": 3642,
+    "fecha": "2026-11-10T07:32:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad XSS almacenada CVE-2026-93427 afecta a ARMember Premium hasta la versión 7.8.1",
+    "resumen": "La falta de sanitización y escape de datos en el campo personalizado de registro permite a atacantes no autenticados inyectar scripts arbitrarios que se ejecutan al cargar la página afectada, comprometiendo la integridad de los usuarios de WordPress. Se recomienda aplicar el parche oficial y revisar los perfiles de usuarios para detectar inyecciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyOTU5MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/448985",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-93427",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-93427"
+      ]
+    }
+  },
+  {
+    "id": 3641,
+    "fecha": "2026-11-10T07:32:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120017 permite bypass de autenticación en SAP NetWeaver AS ABAP con impacto crítico",
+    "resumen": "La vulnerabilidad CVE-2026-120017 (CVSS 10.0) permite a un atacante no autenticado inyectar assertions manipuladas y eludir la verificación de credenciales, comprometiendo cuentas privilegiadas y propagándose a sistemas conectados. El riesgo abarca confidencialidad, integridad y disponibilidad de todo el entorno SAP.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyOTU5Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-120017",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-120017",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120017"
+      ]
+    }
+  },
+  {
+    "id": 3640,
+    "fecha": "2026-11-10T07:32:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Google lanza actualización de Chrome para corregir zero-day activo CVE-2026-125350 en componente XML",
+    "resumen": "La actualización de Chrome corrige nueve vulnerabilidades, destacando un uso después de liberación (use-after-free) en el parser XML que ya está siendo explotado en campañas dirigidas. El parche mitiga la ejecución remota de código y reduce la superficie de ataque para actores avanzados.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQyOTU5MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-125350",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125350"
+      ]
+    }
+  },
+  {
     "id": 3639,
     "fecha": "2026-11-10T06:01:32Z",
     "categoria": "Ciberseguridad",
