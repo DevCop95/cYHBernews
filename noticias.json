@@ -1,5 +1,109 @@
 [
   {
+    "id": 3663,
+    "fecha": "2026-11-10T23:35:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft publica zero-day de Outlook y múltiples CVE críticos en Exchange, SharePoint y LDAP",
+    "resumen": "Se ha divulgado un zero-day activamente explotado contra Outlook, junto a una serie de vulnerabilidades críticas (CVE) en Exchange, SharePoint, Windows Search y LDAP que requieren parcheo inmediato para evitar compromisos de autenticación y ejecución remota.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTM3MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:november patch tuesday an overflowing cornucopia of cves",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3662,
+    "fecha": "2026-11-10T23:35:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Explotan vulnerabilidad RCE en SGLang y comprometen datos de NEAR AI y 100 usuarios",
+    "resumen": "Un atacante aprovechó una falla de ejecución remota en el motor de inferencia SGLang para ejecutar código en un servidor de NEAR AI, accediendo a peticiones confidenciales y robando información de 18 agentes y aproximadamente 100 usuarios. El incidente evidencia riesgos críticos en entornos de inferencia AI que operan en TEEs.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTM3MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:sglang rce exploit breaches near ai steals data from 18 agents and about 100 users",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3661,
+    "fecha": "2026-11-10T23:35:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha en Railway expone credenciales y genera $740 000 en cargos fraudulentos de IA",
+    "resumen": "Hackers aprovecharon vulnerabilidades en la infraestructura de Railway para robar secretos de autenticación de clientes y ejecutar servicios de IA no autorizados, acumulando aproximadamente $740 000 en cargos fraudulentos y potencialmente comprometiendo hasta 100 000 espacios de trabajo.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTM3MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:railway breach leads to 740 000 in fraudulent ai charges",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1555.004",
+        "name": "Windows Credential Manager"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3660,
+    "fecha": "2026-11-10T23:35:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Lazarus APT lanza Operation FlashHole con IA y cifrado poscuántico contra organizaciones surcoreanas",
+    "resumen": "La campaña, activa desde julio 2025, emplea modelos de lenguaje para generar payloads y utiliza algoritmos de cifrado poscuántico para evadir detección, apuntando a infraestructuras críticas en Corea del Sur. El uso de IA y criptografía avanzada eleva el riesgo de exfiltración y dificulta la respuesta de los SOC.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTM3MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/identifican-una-nueva-campana-de-lazarus-apt-que-utiliza-ia-y-cifrado-poscuantico/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:identifican una nueva campana de lazarus apt que utiliza ia y cifrado poscuantico",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1567.001",
+        "name": "Exfiltration to Code Repository"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3659,
     "fecha": "2026-11-10T21:01:52Z",
     "categoria": "Ciberseguridad",
