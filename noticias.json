@@ -1,5 +1,83 @@
 [
   {
+    "id": 3659,
+    "fecha": "2026-11-10T21:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad use-after-free en Windows User Manager Service permite escalada de privilegios local (CVE-2026-95987)",
+    "resumen": "Un error de uso después de liberación (use-after-free) en el servicio User Manager de Windows permite a un atacante con acceso autorizado ejecutar código con privilegios de sistema, facilitando la elevación de privilegios en entornos locales. La vulnerabilidad afecta a todas las versiones soportadas de Windows y requiere parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNDQ1MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/452668",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-95987",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-95987"
+      ]
+    }
+  },
+  {
+    "id": 3658,
+    "fecha": "2026-11-10T21:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Ciberdelincuentes incrementan infección masiva de spyware en usuarios promedio",
+    "resumen": "Un nuevo informe revela que grupos criminales están desplegando spyware a gran escala, comprometiendo dispositivos de usuarios comunes y ampliando la superficie de ataque mediante técnicas de phishing y explotación de vulnerabilidades no divulgadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNDQ1MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/spyware-cyber-crime-iverify",
+    "fuente": "The Record",
+    "dedup_key": "txt:cybercriminals are increasingly infecting regular people with spyware",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3657,
+    "fecha": "2026-11-10T21:01:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft publica 1.260 correcciones en Patch Tuesday de noviembre, 68 críticas y 167 vulnerabilidades Chromium en Edge",
+    "resumen": "La actualización mensual de Microsoft aborda 1.260 CVE, incluyendo 68 críticos que afectan a Windows y 167 fallos en Chromium que comprometen Microsoft Edge, aumentando la superficie de ataque en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNDQ1MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33508",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:microsoft patch tuesday november 2027 tue nov 10th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3656,
+    "fecha": "2026-11-10T21:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-111760 permite ejecución de código en clones recursivos de Git",
+    "resumen": "Un error de truncamiento entero en el manejo del índice de Git permite que repositorios maliciosos ejecuten código arbitrario al clonar recursivamente con submódulos; el parche se incluye en Git 2.56.1 y versiones 2.50.2-2.55.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNDQ1MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-111760",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111760"
+      ]
+    }
+  },
+  {
     "id": 3655,
     "fecha": "2026-11-10T18:01:50Z",
     "categoria": "Ciberseguridad",
