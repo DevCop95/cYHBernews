@@ -1,5 +1,65 @@
 [
   {
+    "id": 3649,
+    "fecha": "2026-11-10T15:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-76964 permite ejecución remota de código en SAP NetWeaver AS ABAP con CVSS 10.0",
+    "resumen": "La vulnerabilidad de validación insuficiente de entrada de red en SAP NetWeaver Application Server ABAP permite a un atacante no autenticado enviar tráfico especialmente manipulado que provoca corrupción de memoria y ejecución arbitraria de código, comprometiendo total confidencialidad, integridad y disponibilidad del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1594398985750-3b54ec074a0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMjI5MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-76964",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-76964",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76964"
+      ]
+    }
+  },
+  {
+    "id": 3648,
+    "fecha": "2026-11-10T15:01:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA acelera la ingeniería inversa de software y malware, simplificando el análisis de amenazas complejas",
+    "resumen": "Investigadores emplearon modelos de lenguaje y técnicas de generación de código para desensamblar, mapear y recrear tanto aplicaciones legítimas como el malware Turla, reduciendo significativamente el tiempo de análisis y aumentando la capacidad de los atacantes para evadir detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMjI5MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:ai makes reverse engineering mainstream software amp malware far easier",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3647,
+    "fecha": "2026-11-10T15:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SAP lanza parche crítico para 35 vulnerabilidades, incluye ICM2SHELL y PROXYGATE de severidad máxima",
+    "resumen": "La actualización de noviembre 2026 corrige 35 CVE en SAP NetWeaver, Web Dispatcher y Gateway, destacando los exploits ICM2SHELL y PROXYGATE que permiten ejecución remota de código y bypass de autenticación. Se recomienda aplicar inmediatamente los parches para mitigar riesgos de compromiso en entornos ERP.",
+    "url_imagen": "https://images.unsplash.com/photo-1608742213509-815b97c30b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMjI5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:sap patches icm2shell and proxygate maximum severity flaws",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3646,
     "fecha": "2026-11-10T12:01:25Z",
     "categoria": "Ciberseguridad",
