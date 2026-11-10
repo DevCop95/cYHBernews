@@ -1,5 +1,90 @@
 [
   {
+    "id": 3652,
+    "fecha": "2026-11-10T17:11:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Fireworks confirma robo de datos y facturación en brechas de octubre afectando cuentas de clientes",
+    "resumen": "La compañía de IA Fireworks informó que atacantes accedieron a información de facturación y datos personales de un número limitado de cuentas, notificando a los usuarios afectados y activando su protocolo de respuesta a incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1790172068601-c192a0c1c0b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMzA2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ai-company-fireworks-says-hackers-stole-data-in-oct-attacks",
+    "fuente": "The Record",
+    "dedup_key": "txt:ai company fireworks says hackers stole data billing info during october breaches",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3651,
+    "fecha": "2026-11-10T17:11:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "AhsayCBS sufre explotación de CVE-2026-105133 y CVE-2026-105134 para instalar backdoor Python evadiendo sandbox",
+    "resumen": "Investigadores de Huntress detectaron en octubre 2026 una cadena de ataques que aprovecha dos vulnerabilidades parchadas en AhsayCBS para eludir la autenticación y ejecutar código arbitrario mediante un implante Python diseñado para evadir entornos sandbox. El vector combina escalada de privilegios y ejecución remota, afectando a todas las instancias no actualizadas del producto.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMzA2NjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-105133,cve-2026-105134",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.006",
+        "name": "Python"
+      },
+      {
+        "id": "T1497.001",
+        "name": "System Checks"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-105133",
+        "CVE-2026-105134"
+      ]
+    }
+  },
+  {
+    "id": 3650,
+    "fecha": "2026-11-10T17:11:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica de bypass de autenticación en Xen Orchestra permite secuestro de hosts XCP-ng",
+    "resumen": "Un flaw de autenticación en Xen Orchestra está siendo explotado activamente para obtener privilegios de administrador y tomar control de servidores de virtualización XCP-ng, exponiendo entornos críticos a compromisos completos.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzMzA2NjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:critical xen orchestra auth bypass flaw exploited to hijack vm servers",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3649,
     "fecha": "2026-11-10T15:01:50Z",
     "categoria": "Ciberseguridad",
