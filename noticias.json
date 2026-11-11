@@ -1,5 +1,64 @@
 [
   {
+    "id": 3670,
+    "fecha": "2026-11-11T03:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-121352 en Adobe Connect permite escalada de privilegios sin interacción del usuario",
+    "resumen": "Vulnerabilidad de autorización incorrecta (CVSS 10.0) en Adobe Connect permite a un atacante elevar sus privilegios y acceder a recursos sensibles sin necesidad de interacción del usuario, con alcance ampliado.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNjYxMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-121352",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-121352",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-121352"
+      ]
+    }
+  },
+  {
+    "id": 3669,
+    "fecha": "2026-11-11T03:01:47Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Microsoft Research revela detección de agentes ocultos en neuronas de modelos IA mediante edición de menos de diez pesos",
+    "resumen": "La investigación muestra que un modelo de IA puede ser convertido en agente durmiente al modificar menos de diez neuronas, inyectando un payload breve, pero que agentes de frontera pueden identificar estas alteraciones anómalas en los pesos. Este hallazgo implica un nuevo vector de ataque de manipulación de modelos y una posible contramedida basada en monitoreo de integridad de pesos.",
+    "url_imagen": "https://images.unsplash.com/photo-1736430043488-0c369959a5c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNjYxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:detecting sleeper agents hiding in ai model neurons",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3668,
+    "fecha": "2026-11-11T03:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Artex, la herramienta de IA para pentesting, se convierte en arma de ataques de credenciales y brechas en la nube",
+    "resumen": "Forks del framework open source Artex y 45 herramientas similares permiten ejecutar ataques de credenciales y compromisos de entornos cloud a velocidad de máquina, afectando a múltiples industrias.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNjYxMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:artex the ai pen test tool hackers turned into a weapon",
+    "ttps": [
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1528",
+        "name": "Steal Application Access Token"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3667,
     "fecha": "2026-11-11T00:01:56Z",
     "categoria": "Ciberseguridad",
