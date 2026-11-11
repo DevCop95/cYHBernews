@@ -1,5 +1,108 @@
 [
   {
+    "id": 3667,
+    "fecha": "2026-11-11T00:01:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-20183 permite a atacante autenticado modificar configuración en Cisco ISE",
+    "resumen": "La falta de validación del lado del servidor en la interfaz web de Cisco Identity Services Engine permite a un atacante con credenciales de administrador enviar peticiones HTTP manipuladas y alterar descripciones de archivos críticos. El vector de ataque requiere acceso administrativo válido, lo que eleva el riesgo de manipulación de políticas de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTUzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/454529",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-20183",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20183"
+      ]
+    }
+  },
+  {
+    "id": 3666,
+    "fecha": "2026-11-11T00:01:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-121351 en Adobe Connect permite lectura arbitraria sin interacción del usuario",
+    "resumen": "La vulnerabilidad de path traversal en Adobe Connect (CVE-2026-121351, CVSS 10.0) permite a un atacante leer archivos del sistema fuera del directorio permitido sin necesidad de interacción del usuario. El vector de ataque es remoto y afecta a todas las instalaciones que ejecuten versiones vulnerables del servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTUzMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-121351",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-121351",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-121351"
+      ]
+    }
+  },
+  {
+    "id": 3665,
+    "fecha": "2026-11-11T00:01:52Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Hugging Face habilita pagos del Hub mediante cuentas de Google Cloud",
+    "resumen": "La plataforma de modelos de IA permite a los usuarios facturar el acceso a Hugging Face Hub usando la facturación de Google Cloud, simplificando la gestión de costos para despliegues en la nube. Esta integración favorece la adopción de modelos LLM y pipelines de inference en entornos empresariales.",
+    "url_imagen": "https://images.unsplash.com/photo-1758626052247-79003b45f802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTUzMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://huggingface.co/blog/hub-gcp-marketplace",
+    "fuente": "Hugging Face",
+    "dedup_key": "txt:pay for hugging face hub with your google cloud account",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3664,
+    "fecha": "2026-11-11T00:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora seis CVE explotados activamente al catálogo KEV, entre ellos CVE-2026-124194 de Microsoft Outlook",
+    "resumen": "La agencia añade seis vulnerabilidades con evidencia de explotación, incluyendo un bypass de autenticación en Barracuda ESG y un use-after-free en Chromium, obligando a agencias federales a priorizar su mitigación bajo el BOD 26-04.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNTUzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:cisa adds six known exploited vulnerabilities to catalog",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1204",
+        "name": "User Execution"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111560",
+        "CVE-2026-111793",
+        "CVE-2026-116606",
+        "CVE-2026-124194",
+        "CVE-2026-125350",
+        "CVE-2026-20320"
+      ]
+    }
+  },
+  {
     "id": 3663,
     "fecha": "2026-11-10T23:35:17Z",
     "categoria": "Ciberseguridad",
