@@ -1,5 +1,140 @@
 [
   {
+    "id": 3685,
+    "fecha": "2026-11-11T15:02:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Arrestan a tres individuos por fraude de suplantación con IA que robó más de 129 MUSD",
+    "resumen": "Los acusados usaron modelos de generación de voz e imagen para imitar a ejecutivos y abogados, induciendo a empleados a transferir fondos mediante instrucciones falsas; la operación, detectada entre 2024-2026, evidencia la amenaza de “security from AI” en ataques de ingeniería social.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MDkzMjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/11/three-people-arrested-for-ai-enhanced-impersonation-fraud.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:three people arrested for ai enhanced impersonation fraud",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3684,
+    "fecha": "2026-11-11T15:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Hackers intentan shells inversos en servidores Qlik Sense y explotan vulnerabilidades de ActiveMQ y Veeam",
+    "resumen": "En octubre 2026, actores de amenaza intentaron ejecutar comandos PowerShell reverse shell contra varios entornos Qlik Sense en la UE, sin éxito, y prepararon etapas de explotación para ActiveMQ y Veeam, indicando una campaña de reconocimiento y ataque coordinado.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MDkzMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers target qlik sense servers with reverse shells stage activemq and veeam exploits",
+    "ttps": [
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3683,
+    "fecha": "2026-11-11T15:01:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "N-able publica hotfixes críticos para vulnerabilidades zero-day en su plataforma RMM N-central",
+    "resumen": "La empresa lanzó parches de emergencia para corregir varias vulnerabilidades zero-day que comprometían la confidencialidad e integridad del entorno RMM, obligando a desconectar temporalmente los servicios alojados. El vector de ataque incluye ejecución remota de código a través de la interfaz de gestión.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MDkzMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:n able releases security hotfixes for zero day vulnerabilities",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3682,
+    "fecha": "2026-11-11T15:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ivanti Endpoint Manager y CSA afectados por CVE-2026-121653 y CVE-2026-121683 críticos que permiten RCE",
+    "resumen": "Dos vulnerabilidades críticas (CVE-2026-121653, inyección SQL → RCE; CVE-2026-121683, falta de autenticación → alteración del registro de certificados) afectan a Ivanti Endpoint Manager 2024 SU7 y a Ivanti Cloud Services Appliance 5.0.8, permitiendo ejecución remota sin credenciales y compromisos de confianza en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MDkzMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-ivanti-5",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-121653,cve-2026-121683",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1112",
+        "name": "Modify Registry"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "5.0.8.1"
+      ],
+      "cve": [
+        "CVE-2026-121653",
+        "CVE-2026-121683"
+      ]
+    }
+  },
+  {
+    "id": 3681,
+    "fecha": "2026-11-11T15:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Turla despliega el framework Cereal en servidores Microsoft Exchange para exfiltración y C2 interno",
+    "resumen": "ESET Research revela que el grupo APT Turla utiliza Cereal, un conjunto de herramientas que compromete Exchange, extrae correos, ejecuta comandos en memoria y convierte el servidor en nodo de comando y control, ampliando la superficie de ataque en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MDkzMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/investigaciones/turla-cereal-microsoft-exchange/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:cereal como turla se oculta dentro de servidores microsoft exchange",
+    "ttps": [
+      {
+        "id": "T1114",
+        "name": "Email Collection"
+      },
+      {
+        "id": "T1059.003",
+        "name": "Windows Command Shell"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      },
+      {
+        "id": "T1071.003",
+        "name": "Mail Protocols"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3680,
     "fecha": "2026-11-11T12:01:44Z",
     "categoria": "Ciberseguridad",
@@ -10206,30 +10341,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 3258,
-    "fecha": "2026-10-23T03:11:14Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "Fortinet investiga vulnerabilidades críticas de PHP que permiten ejecución remota de código (CVE-2026-109618/109619)",
-    "resumen": "Se detectan intentos activos de explotación de dos vulnerabilidades críticas en el núcleo de PHP que podrían habilitar RCE en productos Fortinet como FortiADC, FortiSIEM y FortiClient Cloud; la empresa aún no confirma versiones afectadas y recomienda aplicar los parches de PHP 8.2.35-8.5.12.",
-    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI3MjUwNzV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/impacto-de-vulnerabilidades-criticas-de-php-en-productos-fortinet",
-    "fuente": "INCIBE-CERT",
-    "dedup_key": "cve:cve-2026-109618,cve-2026-109619",
-    "ttps": [
-      {
-        "id": "T1190",
-        "name": "Exploit Public-Facing Application"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ]
-    }
   },
   {
     "id": 3257,
