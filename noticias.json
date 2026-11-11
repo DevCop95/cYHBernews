@@ -1,5 +1,55 @@
 [
   {
+    "id": 3691,
+    "fecha": "2026-11-11T18:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Red respaldada por Irán dirigió ataques a sinagogas y bancos en Europa mediante FaceTime",
+    "resumen": "La acusación revela que el grupo utilizó ingeniería social vía FaceTime para coordinar ataques contra sinagogas en Bélgica, Países Bajos y Londres, y contra edificios bancarios en Ámsterdam y París, evidenciando una campaña de influencia y sabotaje dirigida a infraestructuras críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MjAxMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/iran-backed-network-directed-london-attacks-over-facetime",
+    "fuente": "The Record",
+    "dedup_key": "txt:iran backed network directed london attacks over facetime us prosecutors say",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3690,
+    "fecha": "2026-11-11T18:01:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers despliegan agentes AntiFox AI en Alibaba Cloud para robar credenciales de AWS",
+    "resumen": "Se detectó que grupos de amenaza utilizan la plataforma de pruebas de penetración open-source AntiFox, ejecutada en instancias autogestionadas de Alibaba Cloud, para comprometer servicios web y extraer claves de acceso a entornos AWS mediante técnicas de credential-theft.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MjAxMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers use antifox ai agents in aws credential theft attacks",
+    "ttps": [
+      {
+        "id": "T1584.006",
+        "name": "Web Services"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      },
+      {
+        "id": "T1555",
+        "name": "Credentials from Password Stores"
+      },
+      {
+        "id": "T1555.001",
+        "name": "Keychain"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3689,
     "fecha": "2026-11-11T17:18:41Z",
     "categoria": "Ciberseguridad",
