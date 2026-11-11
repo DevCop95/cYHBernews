@@ -1,5 +1,46 @@
 [
   {
+    "id": 3677,
+    "fecha": "2026-11-11T09:01:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-93487 en Octopus Server permite escalada de privilegios mediante triggers de proyecto",
+    "resumen": "La validación incorrecta de permisos en versiones vulnerables de Octopus Server permite a usuarios no autorizados crear triggers que ejecuten runbooks o despliegues, facilitando escalada de privilegios y posible compromiso de entornos CI/CD.",
+    "url_imagen": "https://images.unsplash.com/photo-1719255417989-b6858e87359e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzODc3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/455244",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-93487",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-93487"
+      ]
+    }
+  },
+  {
+    "id": 3676,
+    "fecha": "2026-11-11T09:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft lanza parches para 1.259 vulnerabilidades, incluido bug de Outlook que expone hashes NTLMv2",
+    "resumen": "La actualización de seguridad cubre 726 fallos en Windows y 174 en Office, mitigando un exploit activo en Outlook que permitía la extracción de hashes NTLMv2, reduciendo el riesgo de ataques de pass-the-hash.",
+    "url_imagen": "https://images.unsplash.com/photo-1705579605556-c0ebe229b5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzODc3MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:microsoft patches 1 259 flaws including exploited outlook bug that may expose ntlmv2 hashes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3675,
     "fecha": "2026-11-11T06:49:59Z",
     "categoria": "Ciberseguridad",
