@@ -1,5 +1,60 @@
 [
   {
+    "id": 3680,
+    "fecha": "2026-11-11T12:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PHP2Shell (CVE-2026-109618) permite ejecución remota de código en versiones de PHP >5.4",
+    "resumen": "La vulnerabilidad RCE en el núcleo de PHP, identificada como CVE-2026-109618, permite a un atacante inyectar y ejecutar código arbitrario mediante peticiones especialmente formateadas. Afecta a todas las implementaciones de PHP posteriores a la versión 5.4, exponiendo servidores web críticos si no se parchea.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzOTg1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52704",
+    "fuente": "Exploit-DB",
+    "dedup_key": "cve:cve-2026-109618",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-109618"
+      ]
+    }
+  },
+  {
+    "id": 3679,
+    "fecha": "2026-11-11T12:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Microsoft publica parche de noviembre 2026 con 45 vulnerabilidades RCE críticas entre 1328 hallazgos",
+    "resumen": "La actualización mensual incluye 1328 vulnerabilidades en productos Windows, de las cuales 60 son críticas y 45 permiten ejecución remota de código, elevando el riesgo de compromisos a nivel de red. Se recomienda aplicar los parches inmediatamente y actualizar firmas de IDS/IPS como Snort para mitigar la exposición.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzOTg1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/microsoft-patch-tuesday-for-november-2026/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:microsoft patch tuesday for november 2026 snort rules and prominent vulnerabilities",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3678,
+    "fecha": "2026-11-11T12:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Escalada de privilegios local en Iperius Backup 8.8.3 (CVE-2026-112174) permite ejecución como SYSTEM",
+    "resumen": "La vulnerabilidad CVE-2026-112174 permite a usuarios con privilegios bajos explotar la separación insuficiente entre la GUI y el servicio de Iperius Backup, ejecutando código con contexto SYSTEM o Administrador en Windows. La mitigación consiste en actualizar a la versión 8.8.9, que aplica permisos restrictivos por defecto.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzOTg0OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escalada-de-privilegios-en-iperius-backup-de-enter",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-112174",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112174"
+      ]
+    }
+  },
+  {
     "id": 3677,
     "fecha": "2026-11-11T09:01:48Z",
     "categoria": "Ciberseguridad",
