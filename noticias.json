@@ -1,5 +1,108 @@
 [
   {
+    "id": 3689,
+    "fecha": "2026-11-11T17:18:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Falcon C2, framework de comando y control basado en navegador que apunta a gobiernos",
+    "resumen": "Falcon C2 utiliza scripts maliciosos, extensiones de navegador y el implante Antino para establecer canales C2 ocultos, facilitando espionaje y exfiltración de datos en entornos gubernamentales. El método de evasión se basa en la ejecución dentro del proceso del navegador, dificultando su detección por soluciones tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MTc1MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/falcon-c2-browser-compromise/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:the xg files falcon c2 flying under the browser radar",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1546.015",
+        "name": "Component Object Model Hijacking"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1055",
+        "name": "Process Injection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3688,
+    "fecha": "2026-11-11T17:18:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Zoom Workplace Windows parchea vulnerabilidad crítica CVE-2026-108186 que permite escalada de privilegios sin autenticación",
+    "resumen": "La actualización corrige una falla de validación de entrada (CVE-2026-108186, CVSS 9.6) que permite a un atacante no autenticado ejecutar código con privilegios elevados en sistemas Windows. Se recomienda aplicar el parche inmediatamente y revisar logs de actividad sospechosa.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MTc1MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-108186",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-108186"
+      ]
+    }
+  },
+  {
+    "id": 3687,
+    "fecha": "2026-11-11T17:18:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Maersk confirma brecha de datos y exige 5 M USD por ransomware WhiteArmor",
+    "resumen": "Un actor amenaza accedió a un sistema legado heredado y extrajo información confidencial, desplegando el ransomware WhiteArmor que cifra los datos y demanda 5 millones de dólares. El incidente afecta la continuidad operativa y la confidencialidad de datos críticos de la empresa global de logística.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MTc1MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:maersk confirms data breach as whitearmor ransomware demands 5 million",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3686,
+    "fecha": "2026-11-11T17:18:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-90436 permite ejecución remota de código en Confluence Data Center con Remote API",
+    "resumen": "Un atacante no autenticado puede explotar la deserialización insegura de Apache Axis 1.x en Confluence Data Center para ejecutar código arbitrario si la Remote API (XML-RPC/SOAP) está activa. Atlassian corrige en la versión 9.2.28 LTS y elimina la función en la rama 10.0; se recomienda actualizar o deshabilitar la API inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MTc1MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ejecucion-remota-de-codigo-en-confluence-data-center-de-atlassian",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-90436",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-90436"
+      ]
+    }
+  },
+  {
     "id": 3685,
     "fecha": "2026-11-11T15:02:01Z",
     "categoria": "Ciberseguridad",
