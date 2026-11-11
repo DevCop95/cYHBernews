@@ -1,5 +1,80 @@
 [
   {
+    "id": 3695,
+    "fecha": "2026-11-11T21:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Amenazas activan GSocket en servidores Linux para C2 cifrado tras parchear vulnerabilidad",
+    "resumen": "Grupos de threat actors implantan GSocket en sistemas Linux comprometidos, manteniendo canales de comando y control cifrados aun después de que la vulnerabilidad inicial sea mitigada, dificultando la detección y respuesta. Se recomiendan indicadores de compromiso y hardening de sockets para contrarrestar la técnica.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MzA5MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:the global socket how threat actors are weaponizing gsocket for stealthy c2",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3694,
+    "fecha": "2026-11-11T21:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "N-able desconecta plataforma N-central tras detectar 33 vulnerabilidades críticas que permiten toma de control",
+    "resumen": "El proveedor de RMM cerró temporalmente N-central y emitió un hotfix para mitigar exploits públicos de supuestos zero-days que podrían ser usados para comprometer infraestructuras gestionadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MzA5MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:n able takes n central platform offline after discovery of 33 flaws",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3693,
+    "fecha": "2026-11-11T21:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Qilin se consolida como el programa de afiliados ransomware más activo con 365 víctimas en 90 días",
+    "resumen": "El grupo criminal Qilin ha comprometido al menos 365 organizaciones en tres meses, evidenciando errores operacionales que apuntan a su administrador, un individuo de 36 años radicado en San Petersburgo, Rusia.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MzA4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:who runs the ransomware group qilin",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3692,
+    "fecha": "2026-11-11T21:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Notion revela que la brecha en Fireworks AI expuso transcripciones de chats de Notion AI",
+    "resumen": "La intrusión en el proveedor de infraestructura de IA, Fireworks AI, comprometió datos de conversaciones generadas por Notion AI en un número limitado de espacios de trabajo, potencialmente revelando información sensible de usuarios. El incidente destaca riesgos de cadena de suministro en entornos de IA generativa y la necesidad de controles de acceso estrictos.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0MzA4OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:notion says fireworks breach exposed customer ai chat transcripts",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3691,
     "fecha": "2026-11-11T18:01:52Z",
     "categoria": "Ciberseguridad",
