@@ -1,5 +1,69 @@
 [
   {
+    "id": 3675,
+    "fecha": "2026-11-11T06:49:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ruflo MCP Bridge 3.16.2 permite ejecución remota de código sin autenticación",
+    "resumen": "La versión 3.16.2 de Ruflo MCP Bridge contiene una vulnerabilidad de remote code execution (RCE) que permite a un atacante ejecutar código arbitrario en el servidor afectado sin credenciales. El vector de ataque se basa en la manipulación de paquetes de control del puente MCP, exponiendo sistemas críticos en entornos de automatización industrial.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNzk4MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52705",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:remote ruflo mcp bridge 3 16 2 remote code execution",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3674,
+    "fecha": "2026-11-11T06:49:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-121353 permite ejecución arbitraria de código en Adobe Connect sin interacción del usuario",
+    "resumen": "La vulnerabilidad de inyección CRLF en Adobe Connect (CVSS 10.0) permite a un atacante ejecutar código arbitrario bajo el contexto del usuario actual, posibilitando escalada de privilegios y control de sesión sin necesidad de interacción. El vector de ataque se basa en la manipulación de secuencias CRLF en peticiones HTTP, afectando a todas las instancias del servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNzk3OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-121353",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-121353",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-121353"
+      ]
+    }
+  },
+  {
+    "id": 3673,
+    "fecha": "2026-11-11T06:49:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incluye CVE-2026-20320 y vulnerabilidad en Openwave en catálogo KEV por explotación activa",
+    "resumen": "La agencia estadounidense CISA añadió a su lista KEV fallas en Cisco BroadWorks y Openwave Messaging Webtop Media Transcoder, confirmando ataques en curso que aprovechan la restricción inadecuada de entidades externas XML y permiten ejecución remota de código.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNzk3OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-20320",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-20320"
+      ]
+    }
+  },
+  {
     "id": 3672,
     "fecha": "2026-11-11T06:01:48Z",
     "categoria": "Ciberseguridad",
