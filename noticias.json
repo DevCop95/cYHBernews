@@ -1,5 +1,46 @@
 [
   {
+    "id": 3672,
+    "fecha": "2026-11-11T06:01:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "F-Secure publica taxonomía de 26 riesgos de IA y medidas de mitigación para consumidores",
+    "resumen": "El informe detalla vectores de daño en sistemas de IA, desde respuestas engañosas de chatbots hasta la manipulación de agentes autónomos, y propone controles de seguridad y gobernanza para prevenir su explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNzY5MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:f secure identifies 26 ways ai can harm consumers and where to stop them",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3671,
+    "fecha": "2026-11-11T06:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotan vulnerabilidad crítica de bypass de autenticación en Xen Orchestra (VSA-2026-062) para obtener",
+    "resumen": "Vates VMS confirma que la falla de análisis de cookies REST permite eludir la autenticación y ha sido utilizada en ataques activos, otorgando acceso administrativo a servidores Xen Orchestra. La ausencia de un CVE dificulta la priorización, pero se recomienda aplicar el parche inmediato y revisar tokens de sesión.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQzNzY5MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers exploit critical xen orchestra auth bypass flaw to gain admin access",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3670,
     "fecha": "2026-11-11T03:01:49Z",
     "categoria": "Ciberseguridad",
