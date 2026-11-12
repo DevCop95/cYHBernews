@@ -1,5 +1,83 @@
 [
   {
+    "id": 3708,
+    "fecha": "2026-11-12T03:01:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Descubierta vulnerabilidad de inyección SQL en la aplicación web pizzafy-1.0 que permite extracción de datos sensibles",
+    "resumen": "Análisis confirma que pizzafy-1.0 contiene una falla de SQLi en su endpoint de autenticación, explotable sin autenticación y capaz de ejecutar consultas arbitrarias en la base de datos subyacente, comprometiendo información de usuarios y credenciales. Se recomienda parchear inmediatamente, aplicar filtros de entrada y reforzar la monitorización de logs de base de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NTI1MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52703",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps pizzafy 1 0 sqli",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3707,
+    "fecha": "2026-11-12T03:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-121356 en Adobe Connect permite SSRF y escalada de privilegios sin interacción del usuario",
+    "resumen": "Vulnerabilidad SSRF crítica (CVSS 10.0) en Adobe Connect permite a un atacante forjar solicitudes internas y obtener privilegios elevados sin necesidad de interacción del usuario, afectando la confidencialidad y disponibilidad del servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NTI1MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-121356",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-121356",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-121356"
+      ]
+    }
+  },
+  {
+    "id": 3706,
+    "fecha": "2026-11-12T03:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "China despliega proyecto de IA para espionaje en la industria de semiconductores de Taiwán",
+    "resumen": "El Partido Comunista ha implementado un sistema de Big Data basado en IA que recopila y analiza grandes volúmenes de datos para perfilar a profesionales del sector de chips taiwanés, facilitando posibles campañas de targeting y explotación. La operación combina scraping masivo y técnicas de aprendizaje automático para identificar vulnerabilidades de ingeniería social.",
+    "url_imagen": "https://images.unsplash.com/photo-1730724620330-1751d9a4a6f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NTI1MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:chinese ai project scouts spies in taiwan chip industry",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3705,
+    "fecha": "2026-11-12T03:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "eMudhra revoca ocho certificados intermedios tras manejo inadecuado de claves privadas",
+    "resumen": "La autoridad certificadora eMudhra anuló ocho certificados intermedios tras descubrirse una gestión defectuosa de claves privadas en su proceso de generación, elevando el riesgo de suplantación de identidad en infraestructuras TLS.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NTI1MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:emudhra revokes 8 more ca certificates after private key mishap",
+    "ttps": [
+      {
+        "id": "T1552.004",
+        "name": "Private Keys"
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3704,
     "fecha": "2026-11-12T00:53:14Z",
     "categoria": "Ciberseguridad",
