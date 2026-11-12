@@ -1,5 +1,85 @@
 [
   {
+    "id": 3729,
+    "fecha": "2026-11-12T18:01:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de ejecución remota de comandos en Synametrics Syncrify 6.2 permite control total del servidor",
+    "resumen": "La versión 6.2 de Synametrics Syncrify contiene una falla de command injection que permite a un atacante remoto ejecutar código arbitrario bajo los privilegios del servicio, comprometiendo la integridad y disponibilidad de los datos sincronizados. Se recomienda aplicar el parche oficial y restringir el acceso al puerto de gestión.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MDY1MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52700",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:remote synametrics syncrify 6 2 command execution",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3728,
+    "fecha": "2026-11-12T18:01:53Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Atacantes emplean agentes autónomos de IA de código abierto para comprometer semiconductores, defensa y sociedad civil",
+    "resumen": "El framework de agentes Cairn AI permite a actores maliciosos ejecutar campañas de intrusión automatizadas contra infraestructuras críticas, aprovechando vulnerabilidades de software y credenciales expuestas. La operación muestra la evolución de los vectores de ataque hacia IA autónoma, incrementando la velocidad y el alcance de compromisos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338937804-e6b9e0c683f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MDY1MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/cairn-framework-ai-autonomous-attacks/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:attackers use autonomous ai to target semiconductor defense and civil society sectors",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3727,
+    "fecha": "2026-11-12T18:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Autoridades europeas desmantelan servidores del malware SteaIC por segunda vez en 2024",
+    "resumen": "La investigación alemana vinculó la infraestructura renovada a Virtualine, un proveedor de hosting bulletproof incautado por el FBI, con apoyo de la policía de Frankfurt y la unidad holandesa de delitos tecnológicos.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MDY1MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/european-authorities-take-down-stealic-malware-second-time",
+    "fuente": "The Record",
+    "dedup_key": "txt:european authorities take down steaic malware servers for second time this year",
+    "ttps": [
+      {
+        "id": "T1584.006",
+        "name": "Web Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3726,
+    "fecha": "2026-11-12T18:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica en Red Hat Quay permite leer y sobrescribir imágenes privadas en cualquier registro",
+    "resumen": "Un flaw en Red Hat Quay permite a un atacante con acceso al registro leer y sobrescribir imágenes privadas sin necesidad de credenciales cuando el acceso anónimo está habilitado, y sigue explotable con cuentas válidas si está deshabilitado; Red Hat ha publicado builds corregidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MDY1MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:critical red hat quay flaw lets attackers read and overwrite all private container images in a registry",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3725,
+    "fecha": "2026-11-12T18:01:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Nuevo zero-day Windows SignDrop permite a atacantes obtener privilegios SYSTEM",
+    "resumen": "El investigador Abdelhamid Naceri, alias Nightmare Eclipse, divulgó un exploit zero-day que aprovecha la función SignDrop de Windows para escalar privilegios a nivel SYSTEM sin requerir código firmado. El vector de ataque se basa en la manipulación de firmas digitales y afecta a todas las versiones soportadas de Windows, exponiendo a organizaciones a compromisos críticos de integridad y confidencialidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MDY1MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new windows signdrop zero day gives hackers system privileges",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3724,
     "fecha": "2026-11-12T15:01:52Z",
     "categoria": "Ciberseguridad",
