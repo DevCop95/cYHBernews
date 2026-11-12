@@ -1,5 +1,78 @@
 [
   {
+    "id": 3704,
+    "fecha": "2026-11-12T00:53:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft FORGE Lab reporta 33 CVE y 38 correcciones en kernel Linux tras investigación con IA",
+    "resumen": "El equipo de investigación MDASH de Microsoft identificó 59 vulnerabilidades en el kernel Linux, de las cuales 33 recibieron asignación CVE y se implementaron 38 parches, incluyendo ocho exploits locales de escalada de privilegios demostrados. El estudio destaca los retos de validar hallazgos generados por IA y llevarlos a la integración upstream.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDQ3OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:lessons from 59 linux kernel bug reports",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3703,
+    "fecha": "2026-11-12T00:53:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Reino Unido y Francia publican primeras directrices para empresas de hacking comercial",
+    "resumen": "Las normas exigen a los proveedores de servicios de ciberinteligencia (CCIC) validar clientes, implementar controles técnicos contra el uso indebido y mantener sistemas de monitoreo y reporte de abusos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDQ3OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/britain-france-set-out-guidelines-for-commercial-hacking-firms",
+    "fuente": "The Record",
+    "dedup_key": "txt:britain france set out first guidelines for commercial hacking firms",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3702,
+    "fecha": "2026-11-12T00:53:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Investigadores descubren la cadena de ataque “Greeter” que deja mensajes “hello” en logs para ocultar rastros",
+    "resumen": "La campaña “Greeter” utiliza técnicas de movimiento lateral en entornos cloud, insertando mensajes “hello” en registros para dificultar la correlación de eventos y evadir detección por SIEM. El vector incluye credenciales comprometidas y abuso de APIs de gestión de infraestructura.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDQ3OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:attackers say hello to a different scale of cloud attack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3701,
+    "fecha": "2026-11-12T00:53:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Campaña activa de malware compromete entornos ScreenConnect y afecta a decenas de MSPs",
+    "resumen": "Un actor amenaza a proveedores de servicios gestionados mediante la infiltración de instancias vulnerables de ScreenConnect, desplegando clientes de acceso remoto no autorizados en dispositivos de clientes, lo que permite movimiento lateral y exfiltración de datos. La investigación de ConnectWise indica que la campaña está dirigida a infraestructuras críticas de MSPs y sus clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDQ3ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:active screenconnect attacks breach msps impact dozens of organizations",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3700,
     "fecha": "2026-11-12T00:02:14Z",
     "categoria": "Ciberseguridad",
