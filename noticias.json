@@ -1,5 +1,65 @@
 [
   {
+    "id": 3714,
+    "fecha": "2026-11-12T09:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Un 33 % de retailers europeos reporta pérdidas de datos tras ciberataques en 2024",
+    "resumen": "El 87 % de los comercios minoristas ha sufrido incidentes de seguridad, impulsados por retrasos en parches y uso descontrolado de IA generativa, lo que incrementa la exposición a ransomware y filtraciones de datos. La falta de gobernanza de IA y la gestión de vulnerabilidades son los vectores críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NzQxMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/casi-un-tercio-de-las-empresas-de-retail-en-europa-sufre-perdidas-de-datos-por-ciberataques/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:casi un tercio de las empresas de retail en europa sufre perdidas de datos por ciberataques",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3713,
+    "fecha": "2026-11-12T09:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "South River Technologies Titan MFT Server 26.0.0 permite ejecución remota de código",
+    "resumen": "Se ha identificado una vulnerabilidad de ejecución de código remoto en Titan MFT Server 26.0.0 que permite a un atacante sin autenticación ejecutar comandos arbitrarios en el servidor afectado, comprometiendo la integridad y confidencialidad de los archivos transferidos. La vulnerabilidad afecta a entornos de transferencia de archivos críticos y requiere parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NzQxMTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52701",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:remote south river technologies titan mft server 26 0 0 code execution",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3712,
+    "fecha": "2026-11-12T09:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ataque con 4.837 cuentas de GitHub comprometidas despliega robador de secretos CI en más de 1.800 repositorios",
+    "resumen": "Un actor malicioso utilizó credenciales robadas de 4.837 usuarios de GitHub para inyectar un malware que extrae secretos y credenciales de nube desde los flujos CI, comprometiendo al menos 1.806 repositorios. La técnica amplía la superficie de ataque al aprovechar permisos de escritura en proyectos de terceros.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808219-1f103401bc85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NzQxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attacker used 4 837 hijacked github accounts to run a ci secret stealer in 1 806 repositories",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3711,
     "fecha": "2026-11-12T06:01:50Z",
     "categoria": "Ciberseguridad",
