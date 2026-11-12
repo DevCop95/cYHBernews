@@ -1,5 +1,113 @@
 [
   {
+    "id": 3700,
+    "fecha": "2026-11-12T00:02:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ARTEX y herramientas de red teaming impulsadas por IA facilitan ataques automatizados contra defensas",
+    "resumen": "Unit 42 revela que actores de amenaza emplean ARTEX y similares para generar payloads, phishing y exploits con generación automática de código, reduciendo tiempo de desarrollo y aumentando la evasión. Se recomiendan controles de detección de anomalías en LLMs y hardening de entornos de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDE3MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/artex-and-ai-powered-red-teaming-tools/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:artex and ai powered red teaming tools what defenders need to know",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3699,
+    "fecha": "2026-11-12T00:02:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora cuatro CVE explotados al catálogo KEV, entre ellos CVE-2026-123158 en OpenSSH",
+    "resumen": "CISA añadió cuatro vulnerabilidades activamente explotadas, destacando CVE-2026-123158 que permite ejecución arbitraria en OpenSSH de OpenBSD; la medida obliga a agencias federales a priorizar parches bajo la BOD 26-04.",
+    "url_imagen": "https://images.unsplash.com/photo-1617208203738-f71ee5c873ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDE3MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/11/09/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:cisa adds four known exploited vulnerabilities to catalog",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-102895",
+        "CVE-2026-116779",
+        "CVE-2026-123158",
+        "CVE-2026-123218"
+      ]
+    }
+  },
+  {
+    "id": 3698,
+    "fecha": "2026-11-12T00:02:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Polonia cierra la plataforma gubernamental ePUAP tras ciberataque que interrumpe servicios públicos",
+    "resumen": "Un ataque dirigido a ePUAP, el sistema nacional de trámites y comunicación con autoridades, provocó la suspensión total del servicio mientras se investiga el vector de intrusión y el posible compromiso de datos de usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDE3MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/poland-shuts-down-government-services-platform-cyberattack",
+    "fuente": "The Record",
+    "dedup_key": "txt:poland shuts down government services platform epuap following cyberattack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3697,
+    "fecha": "2026-11-12T00:02:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Japón destina fondos de emergencia a ciberseguridad ante aumento de brechas asistidas por IA",
+    "resumen": "El gobierno japonés aprueba un paquete de financiación que refuerza equipos de respuesta público-privada y crea una unidad de IA bajo el Ministerio de Economía para detectar y mitigar incidentes automatizados. La medida amplía el uso de las nuevas facultades de defensa cibernética activa del Estado frente al crecimiento de ataques que emplean modelos de lenguaje y herramientas de generación automática.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDE3Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:japan pushes emergency funding for cybersecurity as ai assisted breaches rise",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3696,
+    "fecha": "2026-11-12T00:02:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Baker Tilly informa a clientes sobre brecha de datos en proveedor externo que expuso información personal",
+    "resumen": "La firma de consultoría ha detectado una intrusión en un tercero que comprometió datos personales de clientes y sus dependientes, requiriendo notificaciones bajo GDPR y medidas de mitigación.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0NDE3MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:baker tilly notifies clients of data breach at third party provider",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3695,
     "fecha": "2026-11-11T21:01:45Z",
     "categoria": "Ciberseguridad",
