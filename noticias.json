@@ -1,5 +1,116 @@
 [
   {
+    "id": 3718,
+    "fecha": "2026-11-12T11:33:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque con scripts generados por IA permite movimiento lateral en retailer estadounidense en minutos",
+    "resumen": "El adversario, tras fallar con comandos manuales, empleó un modelo de lenguaje para crear scripts que explotaron vulnerabilidades internas, logrando desplazamiento lateral en menos de cinco minutos y comprometiendo datos de clientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0ODMyMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:inside an ai attack against a us retailer",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1021.002",
+        "name": "SMB/Windows Admin Shares"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3717,
+    "fecha": "2026-11-12T11:33:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Falla crítica pre-auth en MongoDB (CVE-2026-118383) puede colapsar servidores en failover",
+    "resumen": "Un atacante no autenticado puede enviar dos peticiones que provocan un crash del nodo MongoDB cuando es promovido a primario durante un failover, comprometiendo la disponibilidad del clúster. MongoDB lanzó versiones parcheadas esta semana para mitigar la vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1591910957363-44bd276747cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0ODMxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-118383",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-118383"
+      ]
+    }
+  },
+  {
+    "id": 3716,
+    "fecha": "2026-11-12T11:33:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft confirma fallos en la instalación de actualizaciones de seguridad de noviembre 2026 en Windows 11",
+    "resumen": "Las actualizaciones críticas de noviembre 2026 no se completan en sistemas Windows 11 que ya tengan aplicada la actualización de vista previa de octubre, lo que deja expuestos a vulnerabilidades conocidas y retrasa la postura de defensa. El problema afecta a entornos corporativos que dependen de parches automáticos para cumplir con requisitos de compliance.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0ODMxOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft confirms windows security updates installation issues",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3715,
+    "fecha": "2026-11-12T11:33:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Desbordamiento de búfer crítico en Arista EOS permite RCE vía BGP (CVE-2026-121289)",
+    "resumen": "La vulnerabilidad CVE-2026-121289 en el agente BGP de Arista EOS permite ejecutar código arbitrario al procesar paquetes BGP manipulados, comprometiendo sesiones de enrutamiento y potencialmente toda la infraestructura de red. Se recomienda actualizar a las versiones 4.37.0F o superiores y habilitar TCP-AO para autenticación de pares BGP.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0ODMxOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-en-eos-de-arista",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-121289",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021.006",
+        "name": "Windows Remote Management"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-121289"
+      ]
+    }
+  },
+  {
     "id": 3714,
     "fecha": "2026-11-12T09:01:55Z",
     "categoria": "Ciberseguridad",
