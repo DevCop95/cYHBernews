@@ -1,5 +1,96 @@
 [
   {
+    "id": 3724,
+    "fecha": "2026-11-12T15:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-121889 en Adobe Connect permite SSRF y escalada de privilegios sin interacción del usuario",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) de Server-Side Request Forgery en Adobe Connect permite a un atacante interno o externo forzar peticiones HTTP desde el servidor y obtener privilegios de administrador sin necesidad de interacción del usuario. El vector de ataque se basa en la manipulación de parámetros de URL que el backend procesa sin validación adecuada.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0OTU3MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-121889",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-121889",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-121889"
+      ]
+    }
+  },
+  {
+    "id": 3723,
+    "fecha": "2026-11-12T15:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Google Cloud advierte tres vulnerabilidades de canal lateral en CPUs AMD Turin que pueden filtrar datos",
+    "resumen": "Google Cloud ha emitido un parche obligatorio para los sistemas operativos invitados y recomienda reiniciar las VMs para mitigar tres fallas de canal lateral en procesadores AMD Turin, que permiten a un atacante en el mismo núcleo inferir datos de procesos o del kernel. La mitigación ya está aplicada contra ataques entre VMs y entre VMs y el host.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0OTU3MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/google-cloud-warns-three-amd-turin-cpu.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google cloud warns three amd turin cpu flaws could leak data across processes in vms",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3722,
+    "fecha": "2026-11-12T15:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Apify revierte tokens API y obliga reinicio 2FA tras acceso no autorizado a sistemas internos",
+    "resumen": "La plataforma de automatización revocó credenciales OAuth y rotó secretos críticos tras detectar una brecha que comprometió tokens internos, obligando a todos los usuarios a restablecer la autenticación de dos factores.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0OTU3MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:apify rotates api tokens prompts 2fa resets after breach",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3721,
+    "fecha": "2026-11-12T15:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en MiVoice MX-ONE de Mitel permiten acceso admin y ejecución de comandos",
+    "resumen": "Mitel reporta tres vulnerabilidades (una crítica, una alta y una media) en los componentes Provisioning Manager y Service Node Manager de MiVoice MX-ONE 8.0-8.2; un atacante con acceso a la red local puede obtener datos de configuración, privilegios administrativos o ejecutar comandos arbitrarios. Se recomienda actualizar a la versión 8.2 con los hotfixes correspondientes o esperar la corrección en la versión 8.3.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0OTU3MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-mivoice-mx-one-de-mitel",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en mivoice mx one de mitel",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "8.0.0.33"
+      ]
+    }
+  },
+  {
     "id": 3720,
     "fecha": "2026-11-12T12:02:30Z",
     "categoria": "Ciberseguridad",
