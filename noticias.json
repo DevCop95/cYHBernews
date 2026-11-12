@@ -1,5 +1,47 @@
 [
   {
+    "id": 3720,
+    "fecha": "2026-11-12T12:02:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-126644 permite sobrescritura de archivos críticos vía symlink en módulo authorized_key de Ansible",
+    "resumen": "La falla de seguimiento de enlaces en el módulo authorized_key de la colección ansible.posix permite a un usuario local no privilegiado reemplazar su directorio ~/.ssh por un symlink y, al ejecutar la tarea como root, crear o sobrescribir archivos en rutas arbitrarias como /etc/apt/apt.conf.d/, comprometiendo la integridad y disponibilidad del sistema. No eleva privilegios, pero facilita ataques de manipulación de configuración.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0ODQ5NTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/458065",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-11837,cve-2026-126644",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-11837",
+        "CVE-2026-126644"
+      ]
+    }
+  },
+  {
+    "id": 3719,
+    "fecha": "2026-11-12T12:02:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Node.js corrige 16 vulnerabilidades críticas que permiten crash y fuga de datos en HTTP/2",
+    "resumen": "Se parchearon 16 fallas en Node.js, entre ellas dos vulnerabilidades en HTTP/2 que permiten a clientes no autenticados provocar caídas del servidor y exfiltrar memoria, afectando versiones 22.x, 24.x y 26.x. Los parches están disponibles en 22.23.5, 24.22.3 y 26.13.1, mitigando riesgos de denegación de servicio y divulgación de información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1793623794326-655498bacbdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0ODQ5NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:node js fixes 16 flaws including http 2 bugs that crash servers and leak other connections data",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3718,
     "fecha": "2026-11-12T11:33:21Z",
     "categoria": "Ciberseguridad",
