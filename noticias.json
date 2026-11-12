@@ -1,5 +1,67 @@
 [
   {
+    "id": 3732,
+    "fecha": "2026-11-12T20:10:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-117551 permite ejecución remota de código en Joomla jDownloads <4.1.8",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en la extensión jDownloads de Joomla permite a usuarios con permiso de carga subir archivos ejecutables y ejecutar código PHP en el servidor, facilitando compromisos completos del sitio.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MTQyMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-117551",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-117551",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "jdownloads.com"
+      ],
+      "cve": [
+        "CVE-2026-117551"
+      ]
+    }
+  },
+  {
+    "id": 3731,
+    "fecha": "2026-11-12T20:10:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "United Airlines prohíbe el uso de agentes de IA de terceros por riesgo de exposición de credenciales y compras no",
+    "resumen": "La aerolínea advierte que compartir credenciales con asistentes de IA externos puede filtrar datos sensibles y generar acciones automatizadas no deseadas, como compras fraudulentas, por lo que bloqueará su acceso a sus sistemas.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MTQyMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/united-airlines-to-block-customers-using-ai-agents",
+    "fuente": "The Record",
+    "dedup_key": "txt:united to block customers from using ai agents citing cyber threats",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3730,
+    "fecha": "2026-11-12T20:09:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotan zero-day “4EverAble2Shell” en N-central para instalar mineros de criptomonedas",
+    "resumen": "La vulnerabilidad sin parchear en N-able N-central permite ejecución remota de código, y ya se detectan al menos 21 servidores comprometidos, incluidos 19 con la última actualización de seguridad. El vector de ataque se basa en la explotación directa del flaw para desplegar payloads de minería y potencialmente escalar a movimientos laterales.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MTQxOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new n able 4everable2shell zero day exploited hours after poc released",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3729,
     "fecha": "2026-11-12T18:01:57Z",
     "categoria": "Ciberseguridad",
