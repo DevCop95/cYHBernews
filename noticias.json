@@ -1,5 +1,113 @@
 [
   {
+    "id": 3764,
+    "fecha": "2026-11-13T21:02:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Plataformas de pentesting impulsadas por IA reducen la barrera de entrada para atacantes y aceleran intrusiones",
+    "resumen": "Herramientas de testing automatizado basadas en modelos de lenguaje y agentes autónomos encadenan reconocimiento, explotación de vulnerabilidades y movimiento lateral, permitiendo a actores con escasa experiencia lanzar ataques más rápidos y sofisticados.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2MDM3MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/artex-and-beyond/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:artex and beyond ai enabled penetration testing platforms",
+    "ttps": [
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3763,
+    "fecha": "2026-11-13T21:02:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CISA incorpora CVE-2026-114713 y CVE-2026-123039 al catálogo KEV",
+    "resumen": "CISA añadió al Known Exploited Vulnerabilities Catalog dos CVE activos que afectan a UnrealIRCd y a múltiples productos Check Point, exigiendo remediación prioritaria en entornos federales. La medida refuerza la BOD 26-04, que obliga a las agencias a validar compromisos antes de parchear y a adoptar gestión de vulnerabilidades basada en riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2MDM3MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-114713,cve-2026-123039",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114713",
+        "CVE-2026-123039"
+      ]
+    }
+  },
+  {
+    "id": 3762,
+    "fecha": "2026-11-13T21:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Osaka alerta sobre filtración de datos que afecta a 1 millón de residentes en medio de oleada de incidentes",
+    "resumen": "La autoridad municipal advierte a sus 2,8 millones de habitantes sobre correos electrónicos fraudulentos que simulan ser comunicaciones oficiales, tras confirmar una brecha que expuso información personal de aproximadamente 1 millón de usuarios. El incidente se produce en un contexto de creciente actividad de phishing y ataques dirigidos a entidades públicas en el país.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2MDM3MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/city-of-osaka-japan-email-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:city of osaka warns of data breach impacting 1 million as japan reels from dozens of cyber incidents",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3761,
+    "fecha": "2026-11-13T21:01:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "FBI revela que hackers norcoreanos robaron más de $400 M en cripto mediante videollamadas deepfake",
+    "resumen": "La investigación del FBI atribuye el robo a la campaña “FaceStealer”, que usó deepfake de IA para suplantar a ejecutivos y engañar a víctimas en llamadas de Zoom, logrando transferencias a monederos anónimos. El ataque combina ingeniería social avanzada con falsificación de video, ampliando el riesgo de fraude en entornos de criptomonedas.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2MDM3MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:fbi says north korean hackers stole over 400 million in crypto using deepfake video calls",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3760,
     "fecha": "2026-11-13T19:54:58Z",
     "categoria": "Ciberseguridad",
