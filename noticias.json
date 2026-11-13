@@ -1,5 +1,23 @@
 [
   {
+    "id": 3739,
+    "fecha": "2026-11-13T01:59:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vault CE y Enterprise vulnerables a bypass de reglas ACL por slash final (CVE-2026-93335)",
+    "resumen": "La falta de aplicación consistente de reglas explícitas de denegación en rutas que difieren solo por una barra diagonal final permite a usuarios autenticados con permisos amplios de borrado eludir políticas restrictivas y desactivar motores de secretos, métodos de autenticación o dispositivos de auditoría. La vulnerabilidad se corrige en Vault CE 2.2.2 y en Enterprise 2.2.2, 1.21.14 y 1.19.25.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MzUxODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/460896",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-93335",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-93335"
+      ]
+    }
+  },
+  {
     "id": 3738,
     "fecha": "2026-11-13T00:02:00Z",
     "categoria": "IA",
