@@ -1,5 +1,72 @@
 [
   {
+    "id": 3753,
+    "fecha": "2026-11-13T15:02:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Citrix NetScaler ADC y Gateway expuestos a 9 CVE críticos, incluido CVE-2026-120869",
+    "resumen": "Se han divulgado 29 vulnerabilidades en la familia NetScaler, 10 críticas, que permiten omitir autenticación o provocar DoS sin credenciales. Los CVE afectan a procesamiento de paquetes, DNS-DoH, OTP y consola, requiriendo actualización inmediata a versiones 14.1-73.57/13.1-64.39 o superiores.",
+    "url_imagen": "https://images.unsplash.com/photo-1573166613605-3b4dfcbf1268?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1ODIxNjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-citrix-3",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en productos de citrix",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-107407",
+        "CVE-2026-107408",
+        "CVE-2026-107409",
+        "CVE-2026-107410",
+        "CVE-2026-107412",
+        "CVE-2026-107415",
+        "CVE-2026-111334",
+        "CVE-2026-120864",
+        "CVE-2026-120868",
+        "CVE-2026-120869"
+      ]
+    }
+  },
+  {
+    "id": 3752,
+    "fecha": "2026-11-13T15:02:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ransomware compromete la infraestructura cloud de ActiveCloud y deja a clientes sin acceso por varios días",
+    "resumen": "Un grupo de atacantes logró infiltrarse en los sistemas de ActiveCloud, desplegó ransomware que cifró componentes críticos de su plataforma cloud, provocando interrupciones prolongadas en los servicios de sus clientes. El incidente evidencia la vulnerabilidad de entornos SaaS frente a ataques de cifrado y la necesidad de reforzar controles de acceso y detección de actividades sospechosas.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1ODIxNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/belarus-cloud-provider-activecloud-ransomware-attack",
+    "fuente": "The Record",
+    "dedup_key": "txt:ransomware attack on belarusian cloud firm disrupts businesses for days",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3751,
     "fecha": "2026-11-13T12:02:34Z",
     "categoria": "Ciberseguridad",
