@@ -1,5 +1,72 @@
 [
   {
+    "id": 3748,
+    "fecha": "2026-11-13T09:02:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Edito CMS expone JWT en URL GET, permitiendo robo de token por atacante local (CVE-2026-59080)",
+    "resumen": "La vulnerabilidad permite a un atacante con acceso al historial del navegador capturar el JWT enviado por GET y ejecutar acciones en nombre del usuario antes de que expire; el vendor califica la explotación como muy baja y no emitirá parche.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1NjA1Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/461298",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-59080",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-59080"
+      ]
+    }
+  },
+  {
+    "id": 3747,
+    "fecha": "2026-11-13T09:02:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers explotan vulnerabilidades PHP2Shell en gateways Check Point para instalar backdoor TSGA y borrar archivos ESXi",
+    "resumen": "Un actor desconocido aprovechó la vulnerabilidad PHP2Shell y un escalado de privilegios en Gaia OS de Check Point para obtener acceso inicial, desplegar el backdoor TSGA y eliminar datos en hosts ESXi sin parchear, afectando principalmente a organizaciones israelíes.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1NjA1MzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers exploit php2shell flaws in check point gateways to deploy tsga backdoor and wipe esxi files",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3746,
+    "fecha": "2026-11-13T09:02:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Operación internacional arresta a 354 sospechosos en mercados oscuros de cibercrimen",
+    "resumen": "La operación conjunta de agencias policiales desmanteló los marketplaces Archetyp, Nemesis, Tor2Door, Bohemia y Kingdom, capturando a vendedores y compradores vinculados a actividades ilícitas en la dark web.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1NjA1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:police arrest 354 suspects in dark web cybercrime crackdown",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3745,
     "fecha": "2026-11-13T06:01:58Z",
     "categoria": "Ciberseguridad",
