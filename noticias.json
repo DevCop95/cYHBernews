@@ -1,5 +1,46 @@
 [
   {
+    "id": 3745,
+    "fecha": "2026-11-13T06:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "ConnectWise investiga brechas en ScreenConnect tras incidentes en casi 50 organizaciones",
+    "resumen": "Investigadores de ciberseguridad detectaron abuso de la herramienta de acceso remoto ScreenConnect, permitiendo acceso no autorizado a redes de cerca de 50 clientes; la vulnerabilidad se atribuye a credenciales comprometidas y a una configuración insuficiente de segmentación, exponiendo datos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1NDk3MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
+    "fuente": "The Record",
+    "dedup_key": "txt:connectwise investigates screenconnect breaches after reports of incidents at nearly 50 organizations",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3744,
+    "fecha": "2026-11-13T06:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña Macfinger ClickFix distribuye el infostealer DownTheDRAIN para macOS",
+    "resumen": "La operación Macfinger ClickFix utiliza técnicas de phishing y descarga automática para instalar el malware DownTheDRAIN en equipos macOS, permitiendo extracción de credenciales y datos sensibles. El vector principal es un enlace malicioso en correos de ingeniería social que ejecuta un payload firmado con certificado comprometido.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1NDk3MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33518",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:macfinger clickfix campaign sends downthedrain infostealer for macos fri nov 13th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3743,
     "fecha": "2026-11-13T03:02:04Z",
     "categoria": "Ciberseguridad",
