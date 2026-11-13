@@ -1,5 +1,52 @@
 [
   {
+    "id": 3760,
+    "fecha": "2026-11-13T19:54:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de inyección SQL (SQLi) detectada en Automotive Shop Management System 1.0",
+    "resumen": "Se ha identificado una vulnerabilidad de inyección SQL en la versión 1.0 del sistema de gestión de talleres automotrices, permitiendo a un atacante ejecutar consultas arbitrarias en la base de datos y potencialmente exfiltrar datos sensibles de clientes y operaciones. El vector de ataque se basa en la falta de sanitización de entradas en formularios web críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1OTk2OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52697",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps automotive shop management system 1 0 sqli",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3759,
+    "fecha": "2026-11-13T19:54:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nuevos ataques Mior y Skyfall permiten a hosts en la nube robar datos de VMs AMD SEV-SNP",
+    "resumen": "Investigadores revelan que los exploits Mior y Skyfall comprometen el hipervisor y, en el caso de Mior, también el BIOS, permitiendo la extracción y manipulación de memoria en máquinas virtuales protegidas por AMD SEV-SNP. La vulnerabilidad expone datos confidenciales y falsifica informes de integridad, impactando entornos de nube pública y privada.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1OTk2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new mior and skyfall attacks let rogue cloud hosts steal secrets from amd sev snp vms",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3758,
+    "fecha": "2026-11-13T19:54:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Trezor confirma implantes maliciosos en tres wallets Safe 5 y publica parche de emergencia",
+    "resumen": "Se detectaron implantes de hardware en dispositivos Safe 5 vendidos por el revendedor CryptoBilis que extraían frases de recuperación y las enviaban vía red celular a actores maliciosos; Trezor lanzó una actualización de firmware para neutralizar la amenaza.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1OTk2OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:trezor confirms crypto stealing implants in three wallets releases fix",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3757,
     "fecha": "2026-11-13T18:03:01Z",
     "categoria": "Ciberseguridad",
