@@ -1,5 +1,79 @@
 [
   {
+    "id": 3743,
+    "fecha": "2026-11-13T03:02:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de ejecución remota (RCE) detectada en Open eClass 3.15 afecta plataformas educativas",
+    "resumen": "Se ha identificado una vulnerabilidad de ejecución remota en Open eClass 3.15 que permite a un atacante remoto inyectar código arbitrario mediante peticiones manipuladas, comprometiendo la integridad del servidor y los datos de los usuarios. El vector de ataque se basa en la falta de sanitización de parámetros en módulos críticos del LMS, lo que exige parche inmediato y revisión de controles de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1Mzg5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.exploit-db.com/exploits/52698",
+    "fuente": "Exploit-DB",
+    "dedup_key": "txt:webapps open eclass 3 15 rce",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3742,
+    "fecha": "2026-11-13T03:02:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Maersk confirma que incidente cibernético reciente comprometió su sistema legado de gestión portuaria",
+    "resumen": "El ataque, vinculado a ransomware, afectó la operatividad de sistemas críticos de Maersk, evidenciando vulnerabilidades en infraestructuras legacy y ampliando la ola de incidentes contra puertos globales.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1Mzg5MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/shipping-giant-maersk-says-recent-incident-affected-legacy-system",
+    "fuente": "The Record",
+    "dedup_key": "txt:shipping giant maersk says recent cyber incident affected legacy system",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3741,
+    "fecha": "2026-11-13T03:01:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Organizaciones sin inventario criptográfico dificultan la adopción de post-quantum cryptography",
+    "resumen": "La falta de un mapeo completo de activos criptográficos impide que muchas entidades definan una hoja de ruta clara para migrar a algoritmos resistentes a la computación cuántica, exponiéndolas a riesgos de ruptura futura.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1Mzg5MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:getting past the post quantum cryptography discovery phase",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3740,
+    "fecha": "2026-11-13T03:01:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "SCKit, nuevo malware tipo worm, compromete MSPs mediante ataques a ScreenConnect",
+    "resumen": "El toolkit SCKit se propaga desde dispositivos de clientes infectados a los equipos de técnicos de MSPs a través de vulnerabilidades en ScreenConnect, permitiendo la toma de control de redes gestionadas y la instalación de payloads adicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1Mzg5MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new worm like sckit malware targets msps in screenconnect attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3739,
     "fecha": "2026-11-13T01:59:45Z",
     "categoria": "Ciberseguridad",
