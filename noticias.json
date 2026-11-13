@@ -1,5 +1,42 @@
 [
   {
+    "id": 3750,
+    "fecha": "2026-11-13T11:20:44Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Claude de Anthropic sufre interrupción global y afecta conectores de Microsoft 365",
+    "resumen": "El modelo de lenguaje Claude experimentó una degradación del servicio que impide el inicio de sesión y el uso de la API, impactando especialmente el conector de Outlook, Teams y otras herramientas de Microsoft 365. La caída, reportada en la página de estado de Anthropic, obliga a los clientes a monitorear los indicadores de disponibilidad mientras se investiga la causa.",
+    "url_imagen": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1Njg4NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/claude-tambien-se-cae-todo-mundo-se-suma-al-caos-outlook-teams",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:claude tambien se cae en todo el mundo y se suma al caos de outlook y teams",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3749,
+    "fecha": "2026-11-13T11:20:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Check Point alerta sobre zero-day que permite escalada a root y persistencia en dispositivos desde octubre",
+    "resumen": "Check Point Software ha emitido hotfixes de emergencia para mitigar una vulnerabilidad de alta severidad que actores maliciosos explotan para obtener privilegios de root y mantener acceso persistente en sistemas vulnerables. La amenaza está activa desde finales de octubre, requiriendo parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1694954960354-f671619ea37d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1Njg4NDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:check point warns of zero day flaw exploited for root access",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3748,
     "fecha": "2026-11-13T09:02:16Z",
     "categoria": "Ciberseguridad",
