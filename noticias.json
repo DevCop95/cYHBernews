@@ -1,5 +1,28 @@
 [
   {
+    "id": 3751,
+    "fecha": "2026-11-13T12:02:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en eMudhra emBridge permite enumeración de archivos vía API FileBrowser (CVE-2026-125659)",
+    "resumen": "La falta de controles de autorización en los endpoints FileBrowser de emBridge permite a un atacante no autenticado en la LAN enumerar nombres y estructuras de directorios mediante peticiones HTTPS manipuladas. No se logra acceso a contenidos, ejecución de código ni a claves criptográficas, pero expone información sensible del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1NzEzNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/461640",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-125659",
+    "ttps": [
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125659"
+      ]
+    }
+  },
+  {
     "id": 3750,
     "fecha": "2026-11-13T11:20:44Z",
     "categoria": "IA",
