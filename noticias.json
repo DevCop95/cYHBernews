@@ -1,5 +1,77 @@
 [
   {
+    "id": 3738,
+    "fecha": "2026-11-13T00:02:00Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "DeepMind usa IA Gemini Carbon para verificar formalmente el código del cifrado de Signal en un mes",
+    "resumen": "El marco AlphaProof Code combinó modelos de IA y expertos humanos para generar pruebas formales en Lean, detectando errores y validando propiedades de seguridad del protocolo de Signal sin encontrar nuevas vulnerabilidades. Esta automatización reduce de años a semanas el tiempo de verificación de implementaciones criptográficas críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501219008-5f436ead74d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MjgxMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/verificar-codigo-signal-era-reto-que-llevaba-anos-trabajo-expertos-deepmind-dice-que-su-ia-ha-hecho-mes",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:verificar el codigo de signal era un reto que llevaba anos de trabajo de expertos deepmind dice que su ia lo ha hecho en un mes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3737,
+    "fecha": "2026-11-13T00:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "EE. UU. incautan $1.200 M de fondos robados a Binance y desmantelan herramientas “FaceStealer” vinculadas a Corea del Norte",
+    "resumen": "El Departamento de Justicia y el FBI confiscaron $1.200 millones obtenidos mediante un esquema de robo de criptomonedas que utilizó la herramienta de suplantación facial “FaceStealer”, atribuido a un grupo patrocinado por Corea del Norte; la operación incluye la identificación de wallets y servidores de comando y control.",
+    "url_imagen": "https://images.unsplash.com/photo-1555209183-8facf96a4349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MjgxMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted",
+    "fuente": "The Record",
+    "dedup_key": "txt:feds announce seizure of 1 2 billion from binance theft also takedown of facestealer tools",
+    "ttps": [
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3736,
+    "fecha": "2026-11-13T00:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-76173 permite inyección SQL ciega en WhatsApp para Dolibarr 1.9",
+    "resumen": "La falla CVE-2026-76173 (CVSS 8.8) expone el endpoint public/webhook/receiver.php a inyección SQL ciega sin autenticación cuando WHATSAPP_WEBHOOK_ALLOW está habilitado, permitiendo extracción de datos y degradación del ERP/CRM. El fabricante ha publicado ya el parche correctivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ1MjgxMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-whatsapp-para-dolibarr-de-sgestion-easysoft",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-76173",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76173"
+      ]
+    }
+  },
+  {
     "id": 3735,
     "fecha": "2026-11-12T21:01:52Z",
     "categoria": "Ciberseguridad",
