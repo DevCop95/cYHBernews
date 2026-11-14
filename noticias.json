@@ -1,5 +1,32 @@
 [
   {
+    "id": 3780,
+    "fecha": "2026-11-14T22:38:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-110697 permite robo de tokens en Quay mediante inyección de comodines en SQL LIKE",
+    "resumen": "La vulnerabilidad crítica (CVSS 9.9) en la función de listado de cuentas robot de Quay construye patrones SQL LIKE con nombres de espacio controlados por el usuario sin escapar caracteres comodín, permitiendo a un atacante con un guion bajo extraer tokens de autenticación de otros inquilinos y ejecutar operaciones no autorizadas sobre imágenes.",
+    "url_imagen": "https://images.unsplash.com/photo-1607971584791-aca00eb17fd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2OTU4ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-110697",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-110697",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-110697"
+      ]
+    }
+  },
+  {
     "id": 3779,
     "fecha": "2026-11-14T21:01:47Z",
     "categoria": "Ciberseguridad",
