@@ -1,5 +1,32 @@
 [
   {
+    "id": 3778,
+    "fecha": "2026-11-14T18:20:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-124822 permite eliminación arbitraria de archivos en plugin WordPress Easy DragDrop File Uploader",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) en Easy DragDrop File Uploader < 1.1.10 permite a usuarios no autenticados borrar cualquier archivo del servidor al no validar la ruta suministrada, comprometiendo la integridad de sitios WordPress.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2ODA0MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-124822",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-124822",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124822"
+      ]
+    }
+  },
+  {
     "id": 3777,
     "fecha": "2026-11-14T18:02:15Z",
     "categoria": "Ciberseguridad",
