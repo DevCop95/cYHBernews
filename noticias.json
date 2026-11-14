@@ -1,5 +1,94 @@
 [
   {
+    "id": 3777,
+    "fecha": "2026-11-14T18:02:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264)",
+    "resumen": "La función read_samples_voc del decodificador VOC permite escritura fuera de límites, explotable de forma remota y ya se ha divulgado un exploit público. Se recomienda aplicar el parche 0b40408b o actualizar a la versión corregida por el vendor.",
+    "url_imagen": "https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2NzkzMzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463446",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129264",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129264"
+      ]
+    }
+  },
+  {
+    "id": 3776,
+    "fecha": "2026-11-14T18:02:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-124815 permite ejecución de SQL injection sin autenticación en plugin Clockinator Lite WordPress",
+    "resumen": "El plugin Clockinator Lite < 1.1.0 expone acciones de borrado de registros y acepta nombres de tabla suministrados por el usuario sin validación, lo que habilita a atacantes no autenticados a inyectar SQL, eliminar cualquier tabla de la base de datos y extraer hashes de contraseñas. El vector de ataque es una petición HTTP manipulada que ejecuta consultas arbitrarias contra el DB backend.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2NzkzMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-124815",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-124815",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124815"
+      ]
+    }
+  },
+  {
+    "id": 3775,
+    "fecha": "2026-11-14T18:02:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cursor sufre brecha de seguridad que permite la distribución de extensión maliciosa de Claude Code",
+    "resumen": "Un atacante comprometió credenciales de Fireworks AI y utilizó el marketplace de Cursor para publicar una extensión de Claude Code con código malicioso, exponiendo a los usuarios a ejecución remota de código. La vulnerabilidad afecta la cadena de suministro de herramientas de desarrollo IA y requiere revisión inmediata de accesos y firmas de extensiones.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2NzkzMjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cursor confirms security breach led to malicious claude code extension",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3774,
     "fecha": "2026-11-14T15:01:48Z",
     "categoria": "Ciberseguridad",
