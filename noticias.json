@@ -1,5 +1,75 @@
 [
   {
+    "id": 3774,
+    "fecha": "2026-11-14T15:01:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Aumento del ransomware impulsado por IA con herramientas automatizadas",
+    "resumen": "Ataques de ransomware están incorporando modelos de lenguaje y generadores de código para crear payloads sin intervención humana, reduciendo tiempos de desarrollo y ampliando la superficie de ataque. La automatización basada en IA permite a actores de bajo nivel lanzar campañas dirigidas con mayor rapidez y evasión.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2Njg1MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:beware the new ai fueled ransomware boom",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1568",
+        "name": "Dynamic Resolution"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3773,
+    "fecha": "2026-11-14T15:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ciberdelincuentes lanzan campañas de phishing y malware vinculadas al hype de GTA 6",
+    "resumen": "Los atacantes aprovechan la expectativa del lanzamiento de GTA 6 para distribuir payloads maliciosos mediante descargas falsas, sitios de venta fraudulentos y ofertas de acceso anticipado, incrementando el riesgo de infección por ransomware y robo de credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2Njg1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.welivesecurity.com/es/estafas-enganos/gta-6-estafas-descargas-maliciosas/",
+    "fuente": "WeLiveSecurity",
+    "dedup_key": "txt:gta 6 esta por llegar pero los estafadores ya aprovechan la expectativa",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1003",
+        "name": "OS Credential Dumping"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3772,
     "fecha": "2026-11-14T06:02:04Z",
     "categoria": "Ciberseguridad",
