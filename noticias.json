@@ -1,5 +1,28 @@
 [
   {
+    "id": 3779,
+    "fecha": "2026-11-14T21:01:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-129456 en FRRouting permite denegación de servicio por BGP attribute malformado",
+    "resumen": "Un error en bgpd de FRRouting procesa atributos Tunnel Encapsulation (type 23) con longitud TLV inconsistente, provocando desbalance de referencias y uso de memoria liberada que lleva a abortar bgpd y caer todas las sesiones BGP; el vector de ataque es un UPDATE BGP malicioso enviado por un vecino establecido.",
+    "url_imagen": "https://images.unsplash.com/photo-1790172068601-c192a0c1c0b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2OTAxMDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463451",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129456",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129456"
+      ]
+    }
+  },
+  {
     "id": 3778,
     "fecha": "2026-11-14T18:20:17Z",
     "categoria": "Ciberseguridad",
