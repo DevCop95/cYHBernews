@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264) | cYHBernews</title>
+    <meta name="description" content="La función read_samples_voc del decodificador VOC permite escritura fuera de límites, explotable de forma remota y ya se ha divulgado un exploit público. Se recomienda aplicar el parche 0b40408b o actualizar a la versión corregida por el vendor.">
+    <link rel="canonical" href="https://cyhbernews.dev101x.online/share/3777/">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- Open Graph / Facebook / WhatsApp / Telegram / LinkedIn -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="cYHBernews | Tu Periódico Tech">
+    <meta property="og:url" content="https://cyhbernews.dev101x.online/share/3777/">
+    <meta property="og:title" content="Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264)">
+    <meta property="og:description" content="La función read_samples_voc del decodificador VOC permite escritura fuera de límites, explotable de forma remota y ya se ha divulgado un exploit público. Se recomienda aplicar el parche 0b40408b o actualizar a la versión corregida por el vendor.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2NzkzMzV8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080">
+    <meta property="og:image:secure_url" content="https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2NzkzMzV8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080">
+    <meta property="og:image:alt" content="Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264)">
+    <meta property="og:locale" content="es_ES">
+    <meta property="article:published_time" content="2026-11-14T18:02:15Z">
+    <meta property="article:section" content="Ciberseguridad">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cYHBernews">
+    <meta name="twitter:url" content="https://cyhbernews.dev101x.online/share/3777/">
+    <meta name="twitter:title" content="Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264)">
+    <meta name="twitter:description" content="La función read_samples_voc del decodificador VOC permite escritura fuera de límites, explotable de forma remota y ya se ha divulgado un exploit público. Se recomienda aplicar el parche 0b40408b o actualizar a la versión corregida por el vendor.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2NzkzMzV8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080">
+    <meta name="twitter:image:alt" content="Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264)">
+
+    <!-- Redirección instantánea para usuarios -->
+    <meta http-equiv="refresh" content="0; url=../../?noticia=3777">
+    <script>
+        window.location.replace("../../?noticia=3777");
+    </script>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --text-heading: #f0f6fc;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --btn-bg: #21262d;
+            --btn-border: #363b42;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .share-card {
+            max-width: 600px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-img-wrap {
+            width: 100%;
+            height: 240px;
+            overflow: hidden;
+            background: #000;
+        }
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-header-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.75rem;
+        }
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+        }
+        .source-name {
+            font-size: 0.85rem;
+            color: #8b949e;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            color: var(--text-heading);
+            line-height: 1.4;
+            margin-bottom: 0.85rem;
+        }
+        .card-summary {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #8b949e;
+            margin-bottom: 1.5rem;
+        }
+        .actions {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.8rem 1.25rem;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        .btn-primary {
+            background: #238636;
+            color: #ffffff;
+            border: 1px solid rgba(240, 246, 252, 0.1);
+        }
+        .btn-primary:hover {
+            background: #2ea043;
+        }
+        .btn-secondary {
+            background: var(--btn-bg);
+            color: var(--accent);
+            border: 1px solid var(--btn-border);
+        }
+        .btn-secondary:hover {
+            background: #30363d;
+            color: var(--accent-hover);
+        }
+        .redirect-notice {
+            font-size: 0.8rem;
+            color: #6e7681;
+            text-align: center;
+            margin-top: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="share-card">
+        <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1645701180165-0e94c666d643?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2NzkzMzV8&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264)" class="card-img"></div>
+        <div class="card-body">
+            <div class="card-header-meta">
+                <span class="badge">Ciberseguridad</span>
+                <span class="source-name">TG: CVE Notify</span>
+            </div>
+            <h1 class="card-title">Vulnerabilidad remota de out-of-bounds write en sox_ng ≤14.8.1 (CVE-2026-129264)</h1>
+            <p class="card-summary">La función read_samples_voc del decodificador VOC permite escritura fuera de límites, explotable de forma remota y ya se ha divulgado un exploit público. Se recomienda aplicar el parche 0b40408b o actualizar a la versión corregida por el vendor.</p>
+            <div class="actions">
+                <a href="../../?noticia=3777" class="btn btn-primary">
+                    Ver noticia en cYHBernews &rarr;
+                </a>
+                <a href="https://t.me/cveNotify/463446" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    Ir directo a la noticia original &nearr;
+                </a>
+            </div>
+            <p class="redirect-notice">Redirigiendo automáticamente a cYHBernews...</p>
+        </div>
+    </div>
+</body>
+</html>
