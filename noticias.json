@@ -1,5 +1,37 @@
 [
   {
+    "id": 3771,
+    "fecha": "2026-11-14T03:02:11Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Un agente de IA para facturación expone cinco brechas críticas de seguridad empresarial",
+    "resumen": "Un agente de IA que automatiza el procesamiento de facturas puede ser manipulado vía correo malicioso para alterar datos bancarios de proveedores, evadiendo alertas tradicionales; Token Security detalla los cinco vectores de ataque y recomendaciones de mitigación.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2MjUzMzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:how one ai agent exposed five critical enterprise security gaps",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3770,
+    "fecha": "2026-11-14T03:02:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FFmpeg 9.0.2 presenta overflow off-by-one en get_exponent_dynamic() (CVE-2026-125257)",
+    "resumen": "La vulnerabilidad permite a un atacante enviar audio manipulado a aplicaciones que codifican Nellymoser con trellis habilitado, provocando escritura fuera del heap y posible ejecución de código arbitrario. Afecta a todas las implementaciones que integren FFmpeg ≤ 9.0.2.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ2MjUzMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463234",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-125257",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125257"
+      ]
+    }
+  },
+  {
     "id": 3769,
     "fecha": "2026-11-14T01:32:04Z",
     "categoria": "Ciberseguridad",
