@@ -1,5 +1,55 @@
 [
   {
+    "id": 3788,
+    "fecha": "2026-11-15T15:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de bypass de autenticación en Cyrus SASL 2.1.28 permite acceso sin credenciales (CVE-2026-129483)",
+    "resumen": "La falla en el mecanismo SRP del servidor permite a un cliente no autenticado enviar un valor A múltiplo de N, forzando un secreto compartido cero y autenticándose como cualquier usuario sin contraseña, además de extraer claves de sesión.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NTQ5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463527",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129483",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1212",
+        "name": "Exploitation for Credential Access"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129483"
+      ]
+    }
+  },
+  {
+    "id": 3787,
+    "fecha": "2026-11-15T15:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Italia multa a Meta con 805 millones por acceso no consentido a galería Android de Facebook",
+    "resumen": "La autoridad de protección de datos italiana (Garante) sanciona a Meta por habilitar por defecto una función que extrae fotos, videos y metadatos de la galería del dispositivo sin obtener el consentimiento explícito del usuario, vulnerando la normativa GDPR. La multa de €805 M se impone con un plazo de 60 días para regularizar la práctica.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NTQ5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:italy fines meta 805 million over facebook s android gallery access without explicit consent",
+    "ttps": [
+      {
+        "id": "T1119",
+        "name": "Automated Collection"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3786,
     "fecha": "2026-11-15T12:01:33Z",
     "categoria": "Ciberseguridad",
