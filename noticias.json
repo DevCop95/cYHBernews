@@ -1,5 +1,63 @@
 [
   {
+    "id": 3790,
+    "fecha": "2026-11-15T16:29:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-12591 permite escalada de privilegios y ejecución remota en ManageEngine M365 Manager Plus < 4818",
+    "resumen": "Vulnerabilidad crítica (CVSS 9.9) en la interfaz de administración delegada de ManageEngine M365 Manager Plus permite a un técnico autenticado eludir la validación de permisos y elevar sus privilegios, posibilitando ejecución de código remoto en el servidor de gestión.",
+    "url_imagen": "https://images.unsplash.com/photo-1793623794326-655498bacbdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NjAxOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-12591",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-12591",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-12591"
+      ]
+    }
+  },
+  {
+    "id": 3789,
+    "fecha": "2026-11-15T16:29:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Filtración de datos de empleados de TSMC expuesta en venta online tras ataque a proveedor cloud",
+    "resumen": "Un actor amenaza con subastar 6,9 GB de información confidencial de personal de TSMC, evidenciando una brecha en la cadena de suministro de nube que compromete datos personales y potencialmente credenciales internas.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NjAxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:tsmc employee data breach linked to cloud provider",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1567",
+        "name": "Exfiltration Over Web Service"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3788,
     "fecha": "2026-11-15T15:01:46Z",
     "categoria": "Ciberseguridad",
