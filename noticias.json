@@ -1,5 +1,65 @@
 [
   {
+    "id": 3795,
+    "fecha": "2026-11-15T21:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-119077 permite ejecución remota por PHP Object Injection en plugin WordPress ELEX HelpDesk",
+    "resumen": "El plugin ELEX WordPress HelpDesk & Customer Ticketing System (≤ 3.3.9) es vulnerable a PHP Object Injection sin autenticación, explotable mediante una petición GET para obtener el nonce y una POST con el campo ticket_label manipulado, lo que permite la ejecución arbitraria de código en el servidor. El vector de ataque es remoto, sin requerir credenciales, y afecta a cualquier sitio WordPress que utilice el shortcode [wsdesk_support].",
+    "url_imagen": "https://images.unsplash.com/photo-1592609930961-219235eded71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NzY1MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-119077",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-119077",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-119077"
+      ]
+    }
+  },
+  {
+    "id": 3794,
+    "fecha": "2026-11-15T21:01:50Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Nvidia evalúa producir su propia 3D RAM para reducir dependencia de Samsung y mitigar escasez de memoria IA",
+    "resumen": "Según filtraciones, Nvidia está considerando que TSMC fabrique 3D RAM bajo su dirección para asegurar el suministro de memoria crítica en GPUs de IA, evitando la limitada capacidad de Samsung, Micron y SK Hynix. La medida busca estabilizar precios y garantizar disponibilidad de HBM personalizada hasta al menos 2028.",
+    "url_imagen": "https://images.unsplash.com/photo-1777449425442-adc413f3d873?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NzY1MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/componentes/produccion-memoria-siendo-drama-nvidia-planea-dar-salto-para-no-depender-samsung-se-habria-pedido-a-tsmc",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:nvidia se esta planteando una decision radical para dejar de depender de samsung en la produccion de memoria",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3793,
+    "fecha": "2026-11-15T21:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "FBI alerta que la herramienta IA ARTEX automatiza ataques globales contra infraestructuras críticas",
+    "resumen": "El FBI informó que el framework de penetration testing impulsado por IA, ARTEX, está siendo explotado para orquestar campañas de explotación automatizada, incluyendo la reciente brecha de la cadena de suministro de ConnectWise que afectó entornos Microsoft 365. Se advierte a los SOC la necesidad de detectar actividades de reconocimiento y explotación generadas por agentes autónomos.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NzY1MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fbi warns artex ai hacking tool is powering global cyberattacks",
+    "ttps": [
+      {
+        "id": "T1595",
+        "name": "Active Scanning"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3792,
     "fecha": "2026-11-15T18:01:34Z",
     "categoria": "Ciberseguridad",
