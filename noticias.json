@@ -1,5 +1,50 @@
 [
   {
+    "id": 3786,
+    "fecha": "2026-11-15T12:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-125851 permite carga de web shell en Hotel Booking Lite versiones ≤2.5.1 con CVSS 9.9",
+    "resumen": "Vulnerabilidad de carga ilimitada de archivos peligrosos permite a un atacante subir un web shell y ejecutar código arbitrario en el servidor web que hospeda Hotel Booking Lite. Afecta a todas las instalaciones del plugin sin restricción de tipo de archivo, exponiendo a compromisos de confidencialidad e integridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NDQwOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-125851",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-125851",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125851"
+      ]
+    }
+  },
+  {
+    "id": 3785,
+    "fecha": "2026-11-15T12:01:25Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Plexicus.ai lanza un enjambre de agentes IA para automatizar pentesting, explotación y parcheo en minutos",
+    "resumen": "La plataforma Plexicus.ai integra agentes IA colaborativos que realizan reconocimiento, generación de exploits y creación automática de pull-requests de mitigación, reduciendo el ciclo de vulnerabilidad de horas a minutos. Su arquitectura “swarm” permite configurar profundidad, vectores (auth, API, SSRF) y restricciones legales antes de la ejecución.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027444636-ce7379d51252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3NDQwODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/11/como-hacer-pentesting-con-un-enjambre.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:plexicus ai como hacer pentesting con un enjambre de agentes ia de seguridad ofensiva",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "demo.testfire.net"
+      ]
+    }
+  },
+  {
     "id": 3784,
     "fecha": "2026-11-15T06:01:41Z",
     "categoria": "Ciberseguridad",
