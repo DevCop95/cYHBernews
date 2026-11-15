@@ -1,5 +1,28 @@
 [
   {
+    "id": 3796,
+    "fecha": "2026-11-15T23:00:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-129525 permite fuga de datos entre issues y pull requests en API de repositorios",
+    "resumen": "La falta de verificación de contexto en varios endpoints de la API permitía a usuarios con acceso solo a issues leer información de pull requests y viceversa, exponiendo datos como timeline, etiquetas y reacciones; el problema se corrigió en las versiones 28.2.0, 28.3.0 y 28.4.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1752069005653-d6ffdf06a0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3ODM2NTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463580",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129525",
+    "ttps": [
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129525"
+      ]
+    }
+  },
+  {
     "id": 3795,
     "fecha": "2026-11-15T21:01:52Z",
     "categoria": "Ciberseguridad",
