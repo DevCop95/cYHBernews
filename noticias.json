@@ -1,5 +1,55 @@
 [
   {
+    "id": 3784,
+    "fecha": "2026-11-15T06:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-129360 permite bypass de autenticación en Magma 1.9.0",
+    "resumen": "La falla en la función desconocida de orc8r/cloud/go/services/obsidian/access/operator.go permite que un atacante remoto manipule el encabezado X-Magma-Client-Cert-Serial para evadir la autenticación del componente Obsidian REST. Afecta a todas las implementaciones de Linux Foundation Magma hasta la versión 1.9.0, exponiendo redes de telecomunicaciones y servicios de back-haul.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3MjI1MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463473",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129360",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129360"
+      ]
+    }
+  },
+  {
+    "id": 3783,
+    "fecha": "2026-11-15T06:01:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Cloudflare advierte sobre jailbreak y prompt injection en asistentes IA y propone guardrails en el edge",
+    "resumen": "En la charla “The Model is not the Perimeter” se demostraron técnicas de jailbreak, inyección de prompts y manipulación de memoria para comprometer modelos de lenguaje alojados en la frontera, resaltando la necesidad de aplicar guardrails de seguridad en el edge. El vector de ataque incluye APIs expuestas y falta de validación de entradas, lo que permite eludir controles y provocar filtración de datos o comportamiento malicioso.",
+    "url_imagen": "https://images.unsplash.com/photo-1609602420235-b1be6de11059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3MjI0OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/11/cloudflare-connect-2026-en-video-y.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:cloudflare connect 2026 en video y online",
+    "ttps": [
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      },
+      {
+        "id": "T1608.002",
+        "name": "Upload Tool"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3782,
     "fecha": "2026-11-15T03:01:54Z",
     "categoria": "Ciberseguridad",
