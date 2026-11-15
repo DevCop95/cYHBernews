@@ -1,5 +1,28 @@
 [
   {
+    "id": 3781,
+    "fecha": "2026-11-15T00:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad remota CVE-2026-129352 permite desbordamiento de buffer en TRENDnet TEW-657BRM",
+    "resumen": "La falla en /usr/sbin/upgrade_flash.cgi genera un stack-based buffer overflow explotable de forma remota, con código público disponible. El dispositivo está fuera de soporte desde hace más de 15 años, lo que complica la mitigación y expone a redes que aún lo operan.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3MDA4ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463458",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129352",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129352"
+      ]
+    }
+  },
+  {
     "id": 3780,
     "fecha": "2026-11-14T22:38:04Z",
     "categoria": "Ciberseguridad",
