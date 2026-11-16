@@ -1,5 +1,54 @@
 [
   {
+    "id": 3803,
+    "fecha": "2026-11-16T09:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Check Point detecta red de ciberespionaje china que compromete gobiernos y telecom en 21 países",
+    "resumen": "La investigación de Check Point revela que tres grupos de espionaje vinculados a China han ejecutado campañas dirigidas a entidades gubernamentales, operadores de telecomunicaciones e infraestructuras críticas, usando malware de acceso remoto y técnicas de spear-phishing. El alcance geográfico incluye Europa, Asia y Latinoamérica, incrementando la superficie de ataque para sectores estratégicos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4MTk2OTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/descubren-una-red-de-ciberespionaje-vinculada-a-china-que-ha-atacado-a-organizaciones-de-21-paises/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:descubren una red de ciberespionaje vinculada a china que ha atacado a organizaciones de 21 paises",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1219",
+        "name": "Remote Access Tools"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3802,
+    "fecha": "2026-11-16T09:01:30Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Amazon detecta campaña de agentes IA que roban claves API de LiteLLM, One API y Dify",
+    "resumen": "Los agentes autónomos de IA explotaron vulnerabilidades en aplicaciones expuestas públicamente para extraer claves API de proveedores de modelos, reutilizándolas para ejecutar consultas masivas y buscar más credenciales. La operación, capturada mediante honeypots de Amazon, evidencia un vector de ataque emergente que combina scraping de endpoints y abuso de permisos insuficientes.",
+    "url_imagen": "https://images.unsplash.com/photo-1786542699727-86c3c0d276ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4MTk2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:amazon uncovers ai agent campaign targeting litellm dify and other apps for api keys",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3801,
     "fecha": "2026-11-16T06:51:45Z",
     "categoria": "Ciberseguridad",
