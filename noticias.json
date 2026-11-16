@@ -1,5 +1,23 @@
 [
   {
+    "id": 3799,
+    "fecha": "2026-11-16T03:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de type confusion en Samsung Open Source Starfish (CVE-2026-129543) permite manipulación de datos de entrada",
+    "resumen": "La falla de tipo incompatible (type confusion) en la librería Starfish de Samsung expone un vector de ataque que permite a un actor modificar datos de entrada, potencialmente comprometiendo la integridad de aplicaciones que dependan de este componente. Se recomienda actualizar a la versión parcheada y revisar los controles de integridad de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3OTgxMDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/463590",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129543",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129543"
+      ]
+    }
+  },
+  {
     "id": 3798,
     "fecha": "2026-11-16T00:01:35Z",
     "categoria": "Ciberseguridad",
@@ -11260,20 +11278,6 @@
     "enlace_original": "https://www.xataka.com/robotica-e-ia/presidente-alibaba-tiene-claro-unica-forma-que-europa-alcance-soberania-tecnologica-ia-open-source",
     "fuente": "Xataka IA",
     "dedup_key": "txt:joe tsai presidente de alibaba la única forma de que europa alcance la soberanía tecnológica es con la ia open source",
-    "ttps": [],
-    "iocs": {}
-  },
-  {
-    "id": 3306,
-    "fecha": "2026-10-25T23:00:31Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "ALTA",
-    "titulo": "YARA-X 1.22.0 incorpora 11 mejoras y 9 correcciones de errores críticos",
-    "resumen": "La nueva versión de YARA-X refina reglas de detección y corrige vulnerabilidades que podrían ser explotadas por malware avanzado, reforzando la capacidad de análisis de indicadores en entornos SOC.",
-    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NjkyMzF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://isc.sans.edu/diary/rss/33454",
-    "fuente": "SANS ISC",
-    "dedup_key": "txt:yara x 1 22 0 release sun oct 25th",
     "ttps": [],
     "iocs": {}
   },
