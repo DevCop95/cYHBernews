@@ -1,5 +1,140 @@
 [
   {
+    "id": 3817,
+    "fecha": "2026-11-16T19:10:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-93664 permite ejecución remota no autenticada en Station Launcher de 3DEXPERIENCE",
+    "resumen": "Vulnerabilidad de deserialización de datos no confiables en la aplicación Station Launcher (plataforma 3DEXPERIENCE R2023x-R2026x) permite a un atacante ejecutar código arbitrario sin autenticación, con CVSS 10.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTYyMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-93664",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-93664",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-93664"
+      ]
+    }
+  },
+  {
+    "id": 3816,
+    "fecha": "2026-11-16T19:09:59Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Hugging Face y OpenRouter colaboran para simplificar la ejecución de modelos de peso abierto",
+    "resumen": "La alianza permite desplegar rápidamente modelos de IA de código abierto mediante integraciones estándar y APIs unificadas, reduciendo la complejidad operativa para desarrolladores y equipos de MLOps.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTYxOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://huggingface.co/blog/openrouter",
+    "fuente": "Hugging Face",
+    "dedup_key": "txt:hugging face and openrouter join forces to make open weight models easy to run",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3815,
+    "fecha": "2026-11-16T19:09:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Google detecta agentes de IA autónomos que generan y ejecutan exploits a partir de parches de software",
+    "resumen": "Los atacantes están empleando marcos multi-agente como ARTEX, CAIRN, CyberStrikeAI y PentAGI, alimentados por LLMs, para automatizar la creación y despliegue de exploits en fases múltiples, reduciendo significativamente el tiempo de respuesta y aumentando la superficie de ataque. La detección se realizó mediante análisis de telemetría de Cloud Security y correlación de indicadores de compromiso en entornos de producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTYxOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:google finds hackers using ai agents to build and run exploits from software patches",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1608.001",
+        "name": "Upload Malware"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3814,
+    "fecha": "2026-11-16T19:09:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Critical CVE-2026-84869 and CVE-2026-127063 in ConnectWise ScreenConnect allow remote file execution and API",
+    "resumen": "Dos vulnerabilidades críticas (CVE-2026-84869 en el cliente y CVE-2026-127063 en la extensión RMM+) permiten a un atacante transferir y ejecutar archivos en sesiones remotas y enviar comandos arbitrarios a equipos gestionados si se mantiene el secreto API predeterminado. Se recomienda actualizar a ScreenConnect 26.6.5 o superior y desactivar inmediatamente las extensiones RMM+ y sus integraciones asociadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTYxOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-screenconnect-y-en-la-extension-rmm",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-127063,cve-2026-84869",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1543.003",
+        "name": "Windows Service"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-127063",
+        "CVE-2026-84869"
+      ]
+    }
+  },
+  {
+    "id": 3813,
+    "fecha": "2026-11-16T19:09:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Smishing masivo suplantando a Netflix busca robar datos de pago de usuarios",
+    "resumen": "Campaña de fraude por SMS envía mensajes falsos de rechazo de pago de Netflix, induciendo a víctimas a revelar credenciales y datos bancarios; el vector de ataque es social engineering vía smishing, con potencial de fraude financiero significativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1624916145576-5b5772d9bccb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTYxOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/nueva-estafa-por-sms-suplanta-a-netflix-para-robar-datos-de-pago/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:nueva estafa por sms suplanta a netflix para robar datos de pago",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3812,
     "fecha": "2026-11-16T15:02:28Z",
     "categoria": "Ciberseguridad",
