@@ -1,5 +1,54 @@
 [
   {
+    "id": 3798,
+    "fecha": "2026-11-16T00:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120522 permite escritura arbitraria de archivos y ejecución remota en Fluent Forms Cloud Storage Manager",
+    "resumen": "La vulnerabilidad en los endpoints REST del plugin permite a atacantes no autenticados inyectar credenciales de Google Drive y aprovechar una ruta sin validar para escribir archivos PHP fuera del directorio permitido, posibilitando ejecución remota de código. Impacta a todos los sitios WordPress que usan el plugin hasta la versión 1.2.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3ODcyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-120522",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-120522",
+    "ttps": [
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120522"
+      ]
+    }
+  },
+  {
+    "id": 3797,
+    "fecha": "2026-11-16T00:01:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "YARA-X 1.23.0 lanza 4 mejoras y 16 correcciones de errores",
+    "resumen": "La nueva versión de YARA-X incorpora mejoras en la velocidad de escaneo y soporte ampliado para expresiones regulares, además de corregir fallos que podían generar falsos positivos en la detección de indicadores de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ3ODcyOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33496",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:yara x 1 23 0 release sun nov 15th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3796,
     "fecha": "2026-11-15T23:00:55Z",
     "categoria": "Ciberseguridad",
