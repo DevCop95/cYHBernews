@@ -1,5 +1,32 @@
 [
   {
+    "id": 3800,
+    "fecha": "2026-11-16T06:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-122662 crítico (CVSS 9.8) permite inyección de objetos en Barn2 Plugins Document Library Pro",
+    "resumen": "Vulnerabilidad de deserialización de datos no confiables en Document Library Pro versiones < 4.2.2 permite ejecución de código arbitrario mediante inyección de objetos. Impacta sitios WordPress que usan el plugin, exponiendo a compromisos de integridad y confidencialidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1581397867212-e05b3692d16b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4MDg4OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-122662",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-122662",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-122662"
+      ]
+    }
+  },
+  {
     "id": 3799,
     "fecha": "2026-11-16T03:01:46Z",
     "categoria": "Ciberseguridad",
