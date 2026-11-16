@@ -1,5 +1,91 @@
 [
   {
+    "id": 3821,
+    "fecha": "2026-11-16T19:44:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-87027 permite reducir entropía de claves TDE en EDB Postgres 15-18",
+    "resumen": "La inicialización incompleta de la clave de cifrado de archivos temporales en EDB Postgres Extended y Advanced Server (v15-v18) reduce la entropía de 256 a 64 bits, facilitando ataques de lectura local tras un crash. La falla se corrige en las versiones 15.20, 16.16, 17.12 y 18.7; es necesario reiniciar el servidor tras la actualización.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTgyNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/464571",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-87027",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-87027"
+      ]
+    }
+  },
+  {
+    "id": 3820,
+    "fecha": "2026-11-16T19:44:05Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Técnica de “Sleeper Agent” oculta payloads en modelos de IA de código abierto con mínima alteración del peso",
+    "resumen": "Investigadores demuestran que malware puede incrustarse en tan solo 0,00001 % de los parámetros de una red neuronal, dificultando su detección mediante análisis estático y comprometiendo la integridad de modelos de IA distribuidos. El vector de ataque aprovecha la capacidad de los modelos de peso abierto para introducir código malicioso sin alterar significativamente el rendimiento, lo que plantea riesgos críticos para despliegues en producción y cadenas de suministro de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1717501217986-f2c4842edfd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTgyNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:sleeper agent tactic hides payloads in open weight ai models",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3819,
+    "fecha": "2026-11-16T19:44:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Se detectan múltiples 0-Days en Windows, Chrome y dispositivos IoT, mientras IA acelera la búsqueda de vulnerabilidades",
+    "resumen": "Un conjunto de vulnerabilidades críticas, incluyendo contraseñas predeterminadas y actualizaciones comprometidas, permite acceso no autorizado a sistemas operativos, navegadores y electrodomésticos; la IA está siendo usada por investigadores y atacantes para identificar y explotar rápidamente estos fallos.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548237-096f735f344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTgyNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap n able 0 days windows 0 days chrome 0 days fridge 0 days and more bad days",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3818,
+    "fecha": "2026-11-16T19:44:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Desbordamiento de pila crítico en router D-Link DIR-600L (CVE-2026-129354) permite ejecución remota",
+    "resumen": "Un atacante remoto puede explotar una vulnerabilidad de desbordamiento de búfer en la función hnap_main del firmware 2.17b02, enviando una cabecera SOAPAction manipulada que corrompe la memoria y provoca ejecución de código arbitrario sin autenticación. Se recomienda desactivar la administración remota, limitar el acceso a la interfaz de gestión y reemplazar el dispositivo, ya que la revisión B está fuera de soporte.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NTgyNDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/desbordamiento-de-bufer-basado-en-pila-en-dir-600l-de-d-link",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-129354",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129354"
+      ]
+    }
+  },
+  {
     "id": 3817,
     "fecha": "2026-11-16T19:10:01Z",
     "categoria": "Ciberseguridad",
