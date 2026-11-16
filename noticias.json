@@ -1,5 +1,117 @@
 [
   {
+    "id": 3812,
+    "fecha": "2026-11-16T15:02:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Exploitan CVE-2026-42271 y CVE-2026-48710 en LiteLLM/Starlette para ejecución remota sin autenticación",
+    "resumen": "Se detectaron intentos de explotación de los CVE-2026-42271 y CVE-2026-48710 mediante peticiones a /mcp-rest/test/tools/list en honeypots, permitiendo cadena de vulnerabilidades que culmina en ejecución de código remoto sin credenciales. Horizon3.ai publicó el análisis técnico del vector de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NDEzNDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33522",
+    "fuente": "SANS ISC",
+    "dedup_key": "cve:cve-2026-42271,cve-2026-48710",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-42271",
+        "CVE-2026-48710"
+      ]
+    }
+  },
+  {
+    "id": 3811,
+    "fecha": "2026-11-16T15:02:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Seis vulnerabilidades sin parche en controladores Danfoss AK-SM800A permiten toma de control remoto sin autenticación",
+    "resumen": "La consultora Midnight Blue detectó seis fallos críticos en los controladores de refrigeración Danfoss AK-SM800A que permiten a un atacante remoto ejecutar comandos y tomar el control del dispositivo sin necesidad de iniciar sesión; el firmware más reciente (v5.4.0) no corrige los defectos y no existe parche disponible.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NDEzNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:six unpatched danfoss refrigeration controller flaws could allow remote takeover without login",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3810,
+    "fecha": "2026-11-16T15:02:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Google advierte que los ataques totalmente automatizados con IA están a la vuelta de la esquina",
+    "resumen": "Los actores de amenaza están adoptando flujos de trabajo agenticos impulsados por marcos ofensivos basados en IA para descubrir y explotar vulnerabilidades a velocidad de máquina, reduciendo los ciclos de detección y respuesta. Esta tendencia eleva el riesgo de ataques masivos y requiere reforzar la detección de comportamientos anómalos en entornos de producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NDEzNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google warns that fully automated ai attacks are coming soon",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3809,
+    "fecha": "2026-11-16T15:02:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades IDOR CVE-2026-127043 y CVE-2026-127044 comprometen datos en myGESTIÓN y STEL Order",
+    "resumen": "Dos vulnerabilidades de referencia directa insegura a objetos (IDOR) permiten a usuarios autenticados extraer fichajes y datos personales de empleados modificando los parámetros trabajador y empleadoId. La falla en myGESTIÓN ya tiene parche, mientras que STEL Order sigue sin solución, exponiendo información sensible de recursos humanos.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NDEzNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/vulnerabilidades-de-referencia-directa-insegura-objetos-en-mygestion-y-stel",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-127043,cve-2026-127044",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-127043",
+        "CVE-2026-127044"
+      ]
+    }
+  },
+  {
+    "id": 3808,
+    "fecha": "2026-11-16T15:02:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Phishing en Europa se triplica respecto al promedio mundial según estudio de Proofpoint en Web Summit 2026",
+    "resumen": "El informe de Proofpoint muestra que la actividad de phishing en la región europea creció tres veces más rápido que el resto del planeta, impulsada por campañas de espionaje estatal y ataques dirigidos a infraestructuras críticas. El aumento eleva el riesgo de compromisos de credenciales y exfiltración de datos sensibles en sectores clave.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4NDEzNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/las-amenazas-de-phishing-aumentan-en-europa-a-un-ritmo-tres-veces-superior-al-mundial/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:las amenazas de phishing aumentan en europa a un ritmo tres veces superior al mundial",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3807,
     "fecha": "2026-11-16T12:31:29Z",
     "categoria": "Ciberseguridad",
