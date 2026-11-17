@@ -1,5 +1,73 @@
 [
   {
+    "id": 3838,
+    "fecha": "2026-11-17T06:02:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Barracuda sufre brecha en la nube tras ataque con framework de IA ARTEX",
+    "resumen": "Hackers robaron una clave de acceso a la nube y emplearon el framework de pruebas de penetración ARTEX AI para comprometer la infraestructura de Barracuda, exponiendo datos de clientes y configuraciones críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4OTUzMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:barracuda links cloud breach to artex ai powered cyberattack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3837,
+    "fecha": "2026-11-17T06:02:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120387 permite bypass de autenticación en CIRCUTOR PowerStudio SCADA vía JWT sin firma",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en la versión desktop de CIRCUTOR PowerStudio SCADA WAVE permite a un atacante no autenticado enviar un JWT con algoritmo “none” y el servidor lo acepta sin validar la firma, posibilitando suplantación de identidad y acceso a funciones protegidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1598281944140-e3673d72513c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4OTUzMzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-120387",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-120387",
+    "ttps": [
+      {
+        "id": "T1621",
+        "name": "Multi-Factor Authentication Request Generation"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120387"
+      ]
+    }
+  },
+  {
+    "id": 3836,
+    "fecha": "2026-11-17T06:02:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "N-able lanza hotfix crítico para N-central que corrige múltiples vulnerabilidades explotables en RMM",
+    "resumen": "La actualización Hotfix 3 (versión 2026.4) cierra varias fallas críticas en la plataforma RMM/UEM de N-central, mitigando la explotación de bugs previos que permitían la instalación de cryptominers. Se recomienda aplicar inmediatamente en entornos de gestión remota para evitar compromisos de integridad y disponibilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4OTUzMjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:n able patches 17 n central flaws as attackers exploit earlier bugs to deploy crypto miners",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3835,
     "fecha": "2026-11-17T04:01:57Z",
     "categoria": "Ciberseguridad",
