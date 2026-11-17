@@ -1,5 +1,65 @@
 [
   {
+    "id": 3835,
+    "fecha": "2026-11-17T04:01:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de bucle infinito CVE-2026-125275 permite DoS en NervesHub al validar certificados TLS",
+    "resumen": "Un atacante no autenticado puede provocar denegación de servicio enviando un certificado cliente con una CA no registrada, explotando un bucle infinito en la verificación de certificados de NervesHub versiones 1.0.0-2.5.3. El fallo afecta a dispositivos IoT que confían en CAStore y requiere reinicio del nodo para recuperar el servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4ODgxMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/465240",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-125275",
+    "ttps": [
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125275"
+      ]
+    }
+  },
+  {
+    "id": 3834,
+    "fecha": "2026-11-17T04:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Actores vinculados a China comprometen 10 organizaciones con ataques autónomos basados en IA",
+    "resumen": "Los adversarios reutilizaron la herramienta de código abierto Cairn para lanzar campañas automatizadas contra sectores de fabricación avanzada, defensa y ONGs de derechos civiles, explotando vulnerabilidades de ejecución remota y técnicas de phishing dirigidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4ODgxMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:china nexus actors breach 10 organizations in ai driven attacks",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3833,
+    "fecha": "2026-11-17T04:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Google Project Zero reduce el plazo de divulgación a 30 días por amenazas impulsadas por IA",
+    "resumen": "Ante la aceleración de descubrimiento y explotación de vulnerabilidades mediante modelos de IA, Project Zero acorta su política de divulgación de “90+30” a un plazo fijo de 30 días, buscando limitar la ventana de ataque. Esta medida afecta a todos los proveedores de software que dependen de procesos de parcheo tradicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1532522750741-628fde798c73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4ODgxMTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:google project zero cuts bug disclosures to 30 days amid ai threats",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3832,
     "fecha": "2026-11-17T03:01:46Z",
     "categoria": "Ciberseguridad",
