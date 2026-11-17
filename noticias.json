@@ -1,5 +1,101 @@
 [
   {
+    "id": 3859,
+    "fecha": "2026-11-17T18:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2011-10042 permite inyección de comandos en Memcached vía HTTP::Session en Perl",
+    "resumen": "La vulnerabilidad crítica (CVSS 9.8) afecta a HTTP::Session < 0.43, donde el ID de sesión enviado en la cookie se usa sin saneamiento como clave en Memcached, permitiendo inyección de comandos mediante CR/LF. Un atacante remoto puede ejecutar comandos arbitrarios en el servidor de caché y comprometer la integridad del sistema.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mzg1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2011-10042",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2011-10042",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2011-10042"
+      ]
+    }
+  },
+  {
+    "id": 3858,
+    "fecha": "2026-11-17T18:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Dispositivos de autenticación por código facilitan phishing contra agentes de IA como GitHub Copilot CLI",
+    "resumen": "Un estudio de laboratorio evidencia que el flujo de autenticación por código de dispositivo, usado por clientes OAuth, permite ataques de phishing dirigidos a agentes de codificación IA, comprometiendo credenciales y tokens de acceso. La vulnerabilidad afecta a entornos de desarrollo que integran Copilot CLI y potencialmente a cualquier herramienta que emplee el mismo flujo.",
+    "url_imagen": "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mzg1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:the risks of device code authentication for ai coding agents",
+    "ttps": [
+      {
+        "id": "T1528",
+        "name": "Steal Application Access Token"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3857,
+    "fecha": "2026-11-17T18:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-109830 permite inyección de comandos en firmware de Siemens meta-iot2050",
+    "resumen": "La vulnerabilidad de OS Command Injection en la herramienta de actualización de firmware de meta-iot2050 (versión ≥ 01.03.01) permite a un atacante que modifique el archivo de configuración ejecutar comandos arbitrarios como root, con CVSS 7.3 (HIGH). Siemens aún no dispone de parche y recomienda aislar los dispositivos mediante firewalls, VPNs y las guías de seguridad industrial.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mzg1MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-109830",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+        "https://www.siemens.com/industrialsecurity",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-109830"
+      ]
+    }
+  },
+  {
+    "id": 3856,
+    "fecha": "2026-11-17T18:01:36Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Apple refuerza permisos de macOS para limitar acceso de datos a apps con agentes de IA",
+    "resumen": "La nueva versión beta 2 de macOS 27.3 introduce controles granulares en Device Control, Data Access y Full Disk Access, obligando a los usuarios a autorizar explícitamente cada interacción de apps con datos sensibles, mitigando vectores de abuso por agentes de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1782338938900-a15304523070?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mzg0OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:apple tightens macos app permissions to limit data access amid ai agent security risks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3855,
     "fecha": "2026-11-17T16:17:26Z",
     "categoria": "Ciberseguridad",
