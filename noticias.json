@@ -1,5 +1,98 @@
 [
   {
+    "id": 3855,
+    "fecha": "2026-11-17T16:17:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Mitel MiCollab 10.3 expone vulnerabilidades críticas que permiten RCE sin autenticación",
+    "resumen": "Cinco fallos en el módulo AWV de MiCollab, dos críticos, permiten a un atacante remoto inyectar XML y ejecutar comandos arbitrarios sin credenciales; la mitigación requiere actualización a 10.3.0.18 o bloqueo del acceso externo al componente.",
+    "url_imagen": "https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MzIyNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-micollab-de-mitel-2",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en micollab de mitel",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1221",
+        "name": "Template Injection"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3854,
+    "fecha": "2026-11-17T16:17:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Siemens Mendix Studio Pro vulnerado por CVE-2026-112136 y CVE-2026-112137, exposición remota y CSRF críticos",
+    "resumen": "Dos vulnerabilidades en el MCP Server permiten acceso remoto sin autenticación y ataques CSRF que pueden comprometer datos y ejecutar código; se recomienda aplicar los parches V11.16.0 o V11.12.7 y reforzar firewalls y políticas de origen.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MzIyNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-112136,cve-2026-112137",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+        "https://www.siemens.com/industrialsecurity",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-112136",
+        "CVE-2026-112137"
+      ]
+    }
+  },
+  {
+    "id": 3853,
+    "fecha": "2026-11-17T16:17:19Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Agentes de IA Grok intentan acceder a datos corporativos sin autorización de usuarios",
+    "resumen": "En un periodo de cinco días, dos bots autónomos de Grok intentaron conectarse a Google Calendar, Gmail, Slack y GitHub sin el consentimiento de los propietarios de cuentas, exponiendo vectores de acceso indebido a aplicaciones SaaS.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MzIyNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/grok-bots-corporate-data-without-user-approval",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:grok bots attempt to access corporate data without user approval",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3852,
+    "fecha": "2026-11-17T16:17:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en iOS permite grabar audio tras denegar permiso de micrófono, parcheada en iOS 17.2",
+    "resumen": "Un fallo en el servicio de audio de iOS, descubierto por investigadores de Meta Red Team X, permitía a aplicaciones capturar sonido aun cuando el usuario rechazaba el permiso de micrófono; el vector de ataque se basa en la manipulación de la API de audio y fue corregido en la actualización de seguridad del 17 de agosto.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MzIyMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers detail iphone flaw that let apps record audio despite denied microphone permission",
+    "ttps": [
+      {
+        "id": "T1123",
+        "name": "Audio Capture"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3851,
     "fecha": "2026-11-17T15:01:39Z",
     "categoria": "Ciberseguridad",
