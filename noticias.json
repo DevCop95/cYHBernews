@@ -1,5 +1,133 @@
 [
   {
+    "id": 3864,
+    "fecha": "2026-11-17T21:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "OPTIMJACK expone vulnerabilidad en cadena de suministro de scripts de proveedores y compromete sitios web",
+    "resumen": "El ataque a la cadena de suministro mediante el script comprometido de un proveedor permite a actores maliciosos inyectar código en miles de sitios, eludiendo segmentación insuficiente y facilitando la ejecución de payloads. La vulnerabilidad subraya la necesidad de aislar y validar componentes de terceros en entornos web.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NDkzMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/optimjack-supply-chain-attack/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:borrowed code real consequences what optimjack teaches us",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3863,
+    "fecha": "2026-11-17T21:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Dorsett Controls InfoScan <=1.45.0 expone múltiples CVE críticos que permiten extracción de credenciales",
+    "resumen": "Se identifican seis vulnerabilidades (CVE-2026-117659, CVE-2026-120157, CVE-2026-120255, CVE-2026-120260, CVE-2026-120271, CVE-2026-120298) que facilitan la validación inadecuada de certificados, exposición de información sensible y uso de claves criptográficas hard-coded, afectando infraestructuras de agua y aguas residuales. La mitigación requiere actualizar a InfoScan v1.46 o aplicar los parches manuales provistos por el fabricante.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NDkyOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:dorsett controls infoscan",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1552.006",
+        "name": "Group Policy Preferences"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-117659",
+        "CVE-2026-120157",
+        "CVE-2026-120255",
+        "CVE-2026-120260",
+        "CVE-2026-120271",
+        "CVE-2026-120298"
+      ]
+    }
+  },
+  {
+    "id": 3862,
+    "fecha": "2026-11-17T21:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Extracción de sospechoso de ransomware kazajo a EE. UU. tras extradición desde Italia",
+    "resumen": "EE. UU. acusa a Roman Khlynovskiy de participar en campañas de ransomware contra entidades de salud, educación y empresas, operando bajo el grupo “8 Digits Team” vinculado a INC y Lynx. La extradición desde Italia permite iniciar procesos judiciales y potenciales acciones de mitigación contra la infraestructura comprometida.",
+    "url_imagen": "https://images.unsplash.com/photo-1790172068601-c192a0c1c0b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NDkyOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx",
+    "fuente": "The Record",
+    "dedup_key": "txt:kazakh ransomware hacking suspect extradited from italy",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3861,
+    "fecha": "2026-11-17T21:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Dos vulnerabilidades RCE permiten evadir la nueva defensa Android de Telegram y ejecutar código externo",
+    "resumen": "Investigadores de NebuSec demostraron que widgets maliciosos pueden sortear el filtro de seguridad introducido en la app Android de Telegram, ejecutando JavaScript arbitrario fuera del sandbox y comprometiendo dispositivos. El vector de ataque se basa en la interacción de bots que envían widgets, lo que expone a usuarios a ejecución remota de código sin requerir privilegios elevados.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NDkyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers claim two rce exploits that bypass telegram s new android defenses",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3860,
+    "fecha": "2026-11-17T21:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Japón desconecta el superordenador Fugaku tras una brecha de seguridad que compromete la infraestructura",
+    "resumen": "El ataque cibernético forzó la desconexión del Fugaku, el superordenador más rápido del mundo, afectando la capacidad de investigación y potencialmente exponiendo datos sensibles de proyectos de IA y simulación. Se investiga si el vector involucró vulnerabilidades de red o acceso no autorizado a sistemas de gestión.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NDkyOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:japan takes fugaku supercomputer offlline after cyberattack",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3859,
     "fecha": "2026-11-17T18:01:46Z",
     "categoria": "Ciberseguridad",
