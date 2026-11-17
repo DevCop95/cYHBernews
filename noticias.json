@@ -1,5 +1,104 @@
 [
   {
+    "id": 3846,
+    "fecha": "2026-11-17T12:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-111240 permite autenticación sin contraseña en módulo JAAS JDBC con puntuación CVSS 9.8",
+    "resumen": "La vulnerabilidad permite a un atacante remoto autenticarse sin contraseña si la cuenta tiene el campo password NULL, obteniendo roles asignados; afecta a implementaciones que usan el módulo JAAS JDBC con contraseñas nulas y requiere actualización a versiones 10.3.0 o 11.0.0-M2.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MTY5MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-111240",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-111240",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556.006",
+        "name": "Multi-Factor Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111240"
+      ]
+    }
+  },
+  {
+    "id": 3845,
+    "fecha": "2026-11-17T12:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Nueva campaña de phishing dirige a página que extrae registros MX de dominios",
+    "resumen": "Analistas detectaron una campaña que, tras capturar credenciales de correo, redirige a los usuarios a un sitio que consulta los registros MX del dominio objetivo para mapear infraestructura y facilitar ataques posteriores. La técnica combina ingeniería social con recolección pasiva de datos de DNS.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MTY5MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33526",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:a phishing page interested in mx records tue nov 17th",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1016.001",
+        "name": "Internet Connection Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3844,
+    "fecha": "2026-11-17T12:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Operación ShadowCloud usa backdoors en GitHub y SharePoint para C2 en gobiernos de Asia y África",
+    "resumen": "Kaspersky detectó una campaña que implanta puertas traseras no documentadas en entornos GitHub y Microsoft SharePoint, permitiendo a actores maliciosos establecer canales de comando y control encubiertos contra sectores gubernamentales. El vector aprovecha servicios legítimos para evadir detección y facilita exfiltración de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MTY5MTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new gitdoor and graphdoor backdoors turn github and sharepoint into covert c2 channels",
+    "ttps": [
+      {
+        "id": "T1102",
+        "name": "Web Service"
+      },
+      {
+        "id": "T1071.001",
+        "name": "Web Protocols"
+      },
+      {
+        "id": "T1048.003",
+        "name": "Exfiltration Over Unencrypted Non-C2 Protocol"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3843,
+    "fecha": "2026-11-17T12:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft prueba bloqueo remoto de dispositivos Windows perdidos o robados sin borrado de datos",
+    "resumen": "La nueva funcionalidad en fase de prueba permite a administradores de TI de entornos empresariales aplicar un lock remoto a equipos Windows comprometidos, manteniendo la integridad del contenido para facilitar la recuperación y evitar la pérdida de información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MTY5MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-testing-remote-lock-for-lost-or-stolen-windows-devices/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft testing remote lock for lost or stolen windows devices",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3842,
     "fecha": "2026-11-17T09:01:40Z",
     "categoria": "Ciberseguridad",
@@ -9341,41 +9440,6 @@
       {
         "id": "T1078",
         "name": "Valid Accounts"
-      }
-    ],
-    "iocs": {}
-  },
-  {
-    "id": 3437,
-    "fecha": "2026-11-02T18:01:41Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "PapRAT intensifica campaña de ciberespionaje en Sudeste Asiático usando funciones legítimas de Windows",
-    "resumen": "El grupo de amenaza vinculado a la India despliega tres cadenas de ataque que aprovechan funcionalidades nativas de Windows para infiltrarse en organizaciones de la región, incrementando el riesgo de exfiltración de datos sensibles.",
-    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTM2NDI1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:paprat cyber espionage campaign leaves a bitter taste in south asia",
-    "ttps": [
-      {
-        "id": "T1218",
-        "name": "System Binary Proxy Execution"
-      },
-      {
-        "id": "T1047",
-        "name": "Windows Management Instrumentation"
-      },
-      {
-        "id": "T1021.002",
-        "name": "SMB/Windows Admin Shares"
-      },
-      {
-        "id": "T1566",
-        "name": "Phishing"
-      },
-      {
-        "id": "T1020",
-        "name": "Automated Exfiltration"
       }
     ],
     "iocs": {}
