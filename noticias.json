@@ -1,5 +1,93 @@
 [
   {
+    "id": 3851,
+    "fecha": "2026-11-17T15:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-83139 permite acceso no autorizado en Oracle Order Management de E-Business Suite",
+    "resumen": "Un atacante de bajo privilegio con acceso HTTP puede explotar la falla en Product Diagnostic Tools para comprometer datos críticos del módulo Order Management; CVSS 6.5 con impacto alto en confidencialidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1694954960354-f671619ea37d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mjc2OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/465540",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-83139",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-83139"
+      ]
+    }
+  },
+  {
+    "id": 3850,
+    "fecha": "2026-11-17T15:01:37Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Tiny 2.1, modelo de IA de 380 KB que funciona en MS-DOS y hardware 486",
+    "resumen": "Un proyecto open-source permite ejecutar un modelo de lenguaje de 367 k parámetros en un disquete de 1,44 MB bajo MS-DOS, usando Turbo C y 8-bit weights; aunque limitado a preguntas simples, demuestra la viabilidad de LLM ultra-ligeros en entornos legacy. SECTOR: Tecnología",
+    "url_imagen": "https://images.unsplash.com/photo-1738641928061-e68c5e8e2f2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mjc2OTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/alguien-ha-creado-modelo-ia-que-disquete-funciona-486-ms-dos-ha-programado-otra-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:alguien ha creado un modelo de ia que cabe en un disquete y funciona en un 486 con ms dos lo ha programado otra ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3849,
+    "fecha": "2026-11-17T15:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "NIST publica guía definitiva de criptografía post-cuántica y GAO alerta retrasos en adopción",
+    "resumen": "La nueva guía del NIST establece los algoritmos candidatos para reemplazar RSA y ECC ante la amenaza de computación cuántica, mientras el informe del GAO revela que la mayoría de agencias federales carecen de planes operativos para su implementación.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mjc2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:nist finalizes post quantum cryptography guidance gao offers a reality check",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3848,
+    "fecha": "2026-11-17T15:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers eluden el SHA pinning de GitHub Actions y comprometen la cadena de suministro de software",
+    "resumen": "Investigadores descubren que actores maliciosos inyectan código falsificado en Trivy, simulando el checkout oficial de GitHub, vulnerando la defensa basada en SHA pinning y permitiendo ejecución de payloads en pipelines CI/CD. Se recomienda reforzar la verificación de firmas y aplicar políticas de restricción de acciones externas.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mjc2OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers found a way around github sha pinning this webinar explains how to close the gap",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1568.001",
+        "name": "Fast Flux DNS"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3847,
+    "fecha": "2026-11-17T15:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Juez federal absuelve a dos hermanos acusados de robar $25 M en Ethereum mediante bug de la blockchain",
+    "resumen": "El tribunal determinó que no hay pruebas suficientes para sostener los cargos de fraude y acceso no autorizado contra los acusados, pese a que el presunto ataque explotó una vulnerabilidad de 12 segundos en el protocolo Ethereum. El caso resalta riesgos de bugs críticos en cadenas de bloques públicas y la necesidad de auditorías continuas.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5Mjc2ODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/court-clears-brothers-of-25-million-ethereum-crypto-heist-charges/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:court clears brothers of 25 million ethereum crypto heist charges",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3846,
     "fecha": "2026-11-17T12:02:00Z",
     "categoria": "Ciberseguridad",
