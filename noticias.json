@@ -1,5 +1,82 @@
 [
   {
+    "id": 3832,
+    "fecha": "2026-11-17T03:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-19732 permite inyección de comandos OS en Station Launcher de 3DEXPERIENCE R2023x-R2026x",
+    "resumen": "Vulnerabilidad crítica (CVSS 9.9) de OS Command Injection en la aplicación Station Launcher del platform 3DEXPERIENCE permite a un atacante ejecutar comandos arbitrarios en el servidor backend, comprometiendo la integridad y disponibilidad del entorno. Afecta versiones R2023x a R2026x y requiere mitigación inmediata.",
+    "url_imagen": "https://images.unsplash.com/photo-1698086032723-77b19d2ce2f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4ODQ1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-19732",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-19732",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19732"
+      ]
+    }
+  },
+  {
+    "id": 3831,
+    "fecha": "2026-11-17T03:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña masiva de phishing usa simulación de caída de Microsoft 365 para atacar múltiples sectores",
+    "resumen": "Microsoft Threat Intelligence detectó una oleada de correos de phishing que se hacen pasar por una interrupción de Microsoft 365, distribuidos globalmente y dirigidos a organizaciones de diversos ámbitos. El vector de ataque se basa en enlaces maliciosos que intentan robar credenciales y desplegar payloads de ransomware o spyware.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4ODQ1MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:high volume phishing campaign uses microsoft 365 outage lures to target multiple industry sectors",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3830,
+    "fecha": "2026-11-17T03:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataque de cadena de suministro a Optimizely inyecta JavaScript malicioso en sitios de marcas globales",
+    "resumen": "El compromiso de la plataforma Optimizely permite la carga de scripts que roban criptomonedas y datos de pago, además de explotar vulnerabilidades en dispositivos iOS, afectando a sitios como Zoom, CNN y Salesforce.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ4ODQ0OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:optimizely supply chain attack infects major brands sites with malware",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3829,
     "fecha": "2026-11-17T00:01:44Z",
     "categoria": "Ciberseguridad",
