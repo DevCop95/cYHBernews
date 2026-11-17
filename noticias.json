@@ -1,5 +1,83 @@
 [
   {
+    "id": 3842,
+    "fecha": "2026-11-17T09:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Stored XSS CVE-2026-129031 en Cool Plugins Conditional Fields for Elementor Form afecta versiones",
+    "resumen": "La falla permite la inyección de scripts arbitrarios en formularios generados por el plugin, facilitando ataques de cross-site scripting persistente contra sitios WordPress que lo utilicen. Se recomienda actualizar a la versión corregida o aplicar mitigaciones de filtrado de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MDYxMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/465322",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129031",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129031"
+      ]
+    }
+  },
+  {
+    "id": 3841,
+    "fecha": "2026-11-17T09:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-77033 permite ejecución remota de comandos en Station Launcher de 3DEXPERIENCE",
+    "resumen": "Vulnerabilidad de OS Command Injection (CVSS 9.9) afecta a Station Launcher en la plataforma 3DEXPERIENCE desde la versión R2023x hasta R2026x, permitiendo a un atacante ejecutar comandos arbitrarios en el servidor backend. Se requiere parchear o aplicar mitigaciones de entrada sanitizada inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MDYwOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-77033",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-77033",
+    "ttps": [
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-77033"
+      ]
+    }
+  },
+  {
+    "id": 3840,
+    "fecha": "2026-11-17T09:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Nuevos RAT basados en HTTP/3 comprometen gobiernos del Sudeste Asiático mediante canales C2 ocultos",
+    "resumen": "La campaña de ciberespionaje despliega los RAT PerfectPioneer y KUKURAT con comunicación C2 sobre QUIC, evadiendo inspección profunda de paquetes y dificultando la detección en redes gubernamentales. El uso de HTTP/3 permite túneles cifrados y bajo perfil, incrementando el riesgo de exfiltración de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MDYwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/custom-rats-target-southeast-asia-governments/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:quic and covert novel http 3 powered rats target southeast asian governments",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3839,
+    "fecha": "2026-11-17T09:01:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-112209 permite XSS reflejado en endpoints NNws_ShwNewDup y NPcd/NFG_VerNoticia de Novanet Web",
+    "resumen": "Vulnerabilidad de tipo reflected XSS (CWE-79) en los parámetros GET cod_primaria y cod_secundaria permite a un atacante remoto ejecutar JavaScript arbitrario en el navegador de la víctima sin autenticación. Afecta a todas las instalaciones de la plataforma Novanet Web utilizada por clubes de fútbol, con potencial de robo de sesión y defacement.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5MDYwOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/cross-site-scripting-reflejado-en-novanet-web-de-novanet",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-112209",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112209"
+      ]
+    }
+  },
+  {
     "id": 3838,
     "fecha": "2026-11-17T06:02:14Z",
     "categoria": "Ciberseguridad",
