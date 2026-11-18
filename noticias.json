@@ -1,5 +1,131 @@
 [
   {
+    "id": 3869,
+    "fecha": "2026-11-18T00:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers insert malicious JavaScript into 178 sitios mediante la plataforma Optimizely",
+    "resumen": "Investigadores detectaron código JavaScript malicioso en 178 dominios de alto tráfico alojados en Optimizely, confirmando una brecha que permite la inyección de payloads y posible robo de datos de usuarios. El vector de ataque se basa en la manipulación de la capa de experimentación web, exponiendo a los clientes a riesgos de phishing y malware.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NjAwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/optimizely-malicious-code-customer-sites",
+    "fuente": "The Record",
+    "dedup_key": "txt:website management platform optimizely confirms hackers put malicious code into customer sites",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3868,
+    "fecha": "2026-11-18T00:01:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ataques de malware a través de Optimizely exponen a 178 organizaciones a riesgos de proveedores terceros",
+    "resumen": "Más de 178 empresas, entre ellas marcas de gran relevancia, permitieron la distribución de malware tipo Hydra a visitantes de sus sitios web mediante la integración de la plataforma de terceros Optimizely, evidenciando vulnerabilidades en la cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NjAwOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:optimizely malware attacks highlight third party vendor risks",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3867,
+    "fecha": "2026-11-18T00:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Oracle lanzará parches para 11 vulnerabilidades críticas de Java SE, incluido CVE-2026-114938, con riesgo de RCE remoto",
+    "resumen": "Oracle emitirá actualizaciones el 17-nov-2026 para 11 fallas en Java SE que permiten ejecución de código remoto sin autenticación, con CVSS máximo 8.1; el CVE-2026-114938 afecta OpenJDK y requiere mitigación inmediata.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NjAwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-114938",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114938"
+      ]
+    }
+  },
+  {
+    "id": 3866,
+    "fecha": "2026-11-18T00:01:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica Java4Shell (CVE-2024-XXXX) permite RCE sin autenticación en OpenJDK y apps empresariales",
+    "resumen": "La falla Java4Shell en OpenJDK permite a atacantes no autenticados ejecutar código remoto en entornos que usan Jenkins, Jira, Confluence y Keycloak, exponiendo datos sensibles y posibilitando despliegues de malware. Se recomienda parchear inmediatamente y aplicar mitigaciones de defensa en profundidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839721176-2fa91fdce725?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NjAwOTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:critical java4shell flaw allows rce attacks on major java applications",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3865,
+    "fecha": "2026-11-18T00:01:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Deepfakes impulsan un aumento del 31 % en fraudes de identidad según informe de Sumsub",
+    "resumen": "El Identity Fraud Report 2026-2027 de Sumsub muestra que el uso de deepfakes alimentados por IA ha incrementado los intentos de suplantación de identidad en un 31 % a nivel global, afectando principalmente a procesos de KYC y compliance. La tendencia sugiere una mayor sofisticación de ataques de phishing visual y falsificación de documentos, requiriendo reforzar detección de medios sintéticos en pipelines de verificación.",
+    "url_imagen": "https://images.unsplash.com/photo-1616329967295-4adbd4660c45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NjAwODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/el-fraude-evoluciona-con-la-ia-los-deepfakes-crecen-un-31/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:el fraude evoluciona con la ia los deepfakes crecen un 31",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3864,
     "fecha": "2026-11-17T21:01:41Z",
     "categoria": "Ciberseguridad",
