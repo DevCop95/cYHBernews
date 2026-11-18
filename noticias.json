@@ -1,5 +1,94 @@
 [
   {
+    "id": 3888,
+    "fecha": "2026-11-18T12:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-114784 permite toma de control remota de Oracle Business Intelligence Enterprise Edition",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en Oracle Business Intelligence Enterprise Edition permite a un atacante no autenticado con acceso HTTP comprometer el sistema y obtener control total. Afecta versiones 8.2.0.0.0 y 26.01.0.0.0, con potencial de impacto en productos relacionados.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMDMyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-114784",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-114784",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114784"
+      ]
+    }
+  },
+  {
+    "id": 3887,
+    "fecha": "2026-11-18T12:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Grupo de espionaje ruso Cold Relic compromete datos de Google Workspace para infiltrar segunda organización estadounidense",
+    "resumen": "El actor estatal utilizó credenciales robadas de Google Workspace como punto de entrada y ejecutó movimientos laterales para comprometer una segunda entidad en EE. UU., evidenciando una cadena de ataque basada en acceso a la nube y explotación de configuraciones de confianza entre proveedores.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMDMyODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:russian cold relic hackers use stolen google workspace data to breach second u s organization",
+    "ttps": [
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      },
+      {
+        "id": "T1199",
+        "name": "Trusted Relationship"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3886,
+    "fecha": "2026-11-18T12:01:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-74127 permite ejecución de firmware no firmado en PSP de AMD Zen y Zen+",
+    "resumen": "La ROM de arranque del PSP verifica incorrectamente firmas criptográficas, permitiendo a un atacante con acceso local a la memoria flash SPI ejecutar código arbitrario con privilegios de plataforma, comprometiendo la cadena de arranque y la integridad del sistema. No existe mitigación de firmware; la defensa depende de controles de acceso físico y lógico a la SPI.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMDMyODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/verificacion-incorrecta-de-la-firma-criptografica-en-procesadores-zen-y-zen-de",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-74127",
+    "ttps": [
+      {
+        "id": "T1542.003",
+        "name": "Bootkit"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-74127"
+      ]
+    }
+  },
+  {
     "id": 3885,
     "fecha": "2026-11-18T11:58:02Z",
     "categoria": "Ciberseguridad",
