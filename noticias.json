@@ -1,5 +1,119 @@
 [
   {
+    "id": 3893,
+    "fecha": "2026-11-18T15:02:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Grupo de amenaza alineado con Corea del Norte combina blockchain y robo de información dirigida",
+    "resumen": "Talos de Cisco identifica infraestructura maliciosa de UAT-12643 que usa cadenas de bloques para ocultar C2 y despliega módulos de infostealing contra objetivos financieros.",
+    "url_imagen": "https://images.unsplash.com/photo-1567641091594-71640a68f847?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMTQxMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:uat 12643 suspected north korea aligned actor blends blockchain resilience with targeted infostealing",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3892,
+    "fecha": "2026-11-18T15:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Sitio web de la IIHF sufre defacement tras disputa por exclusión de Rusia",
+    "resumen": "Hackers reemplazaron la página principal de la Federación Internacional de Hockey sobre Hielo con un mensaje pro-ruso, evidenciando un ataque de defacement que apunta a la controversia política y compromete la integridad institucional.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMTQxMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/russia-hockey-cyberattack-championships",
+    "fuente": "The Record",
+    "dedup_key": "txt:ice hockey governing body website defaced amid dispute over russia s exclusion",
+    "ttps": [
+      {
+        "id": "T1491",
+        "name": "Defacement"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3891,
+    "fecha": "2026-11-18T15:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Aplicaciones de firma electrónica brasileñas permiten ejecución remota de código y fraude",
+    "resumen": "Un análisis revela que varios middleware de autenticación gubernamentales presentan vulnerabilidades de RCE que pueden ser explotadas para falsificar documentos legales críticos, exponiendo a entidades públicas y privadas a riesgos de integridad y fraude.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMTQxMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:major brazilian signature apps enable rce amp fraud",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3890,
+    "fecha": "2026-11-18T15:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Variante silenciosa de EggStreme evade herramientas de detección en ataques a gobiernos filipinos",
+    "resumen": "El grupo APT chino ha recompilado el malware EggStreme, cambiando hashes y dominios para eludir EDR y SIEM, continuando su campaña contra entidades gubernamentales de Filipinas.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMTQxMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new eggstreme malware variant goes silent to evade security tools in government attacks",
+    "ttps": [
+      {
+        "id": "T1027",
+        "name": "Obfuscated Files or Information"
+      },
+      {
+        "id": "T1568.001",
+        "name": "Fast Flux DNS"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3889,
+    "fecha": "2026-11-18T15:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Deepfakes y suplantación de helpdesk impulsan ataques de ingeniería social contra corporaciones",
+    "resumen": "Los atacantes emplean videos generados por IA y falsos tickets de soporte para engañar a empleados y obtener credenciales de acceso, evidenciando la necesidad de reforzar los procesos de verificación de identidad en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1753545975907-dcb51efdd0d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMTQxMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:from deepfakes to helpdesk impersonation why stronger verification matters",
+    "ttps": [
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3888,
     "fecha": "2026-11-18T12:01:33Z",
     "categoria": "Ciberseguridad",
