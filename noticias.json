@@ -1,5 +1,78 @@
 [
   {
+    "id": 3902,
+    "fecha": "2026-11-18T21:02:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-114835 permite toma de control sin autenticación del Oracle Access Manager en Fusion Middleware",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en el componente Admin Console de Oracle Access Manager permite a un atacante no autenticado con acceso HTTP comprometer totalmente el sistema, afectando versiones 12.2.1.4.0 y 14.1.2.1.0 y potencialmente extendiéndose a otros productos del stack.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMzU3NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-114835",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-114835",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114835"
+      ]
+    }
+  },
+  {
+    "id": 3901,
+    "fecha": "2026-11-18T21:02:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "F5 BIG-IP expone seis vulnerabilidades críticas que pueden provocar RCE y caída del TMM sin autenticación",
+    "resumen": "Se identificaron seis CVE críticos en BIG-IP que, mediante iRules o políticas APM específicas, permiten a un atacante provocar la caída del Traffic Management Microkernel y ejecutar código remoto, interrumpiendo el tráfico hasta su reinicio. La vulnerabilidad afecta a entornos de balanceo de carga y requiere parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1568027762272-e4da8b386fe9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMzU3Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:f5 warns 6 critical big ip flaws can crash traffic in specific setups may allow rce",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3900,
+    "fecha": "2026-11-18T21:02:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Coinbase bloquea $4.7 M en transferencias a estafa de deepfake de Elon Musk usando IA",
+    "resumen": "La plataforma detectó y detuvo $4.7 millones en cripto enviados a cuentas vinculadas a un fraude que empleó un deepfake generado por IA de Elon Musk durante una transmisión en vivo de Tesla, explotando la confianza del público. El vector de ataque combina ingeniería social, phishing visual y manipulación de wallets de criptomonedas.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMzU3MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:coinbase blocks 4 7 million in transfers to elon musk deepfake scam",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3899,
     "fecha": "2026-11-18T20:45:29Z",
     "categoria": "Ciberseguridad",
