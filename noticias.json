@@ -1,5 +1,64 @@
 [
   {
+    "id": 3878,
+    "fecha": "2026-11-18T06:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad de inyección de comandos OS (CVE-2026-118900) afecta a la app Android Imperial Palaces Guide",
+    "resumen": "La falla permite a un atacante ejecutar comandos arbitrarios con los privilegios de la aplicación, comprometiendo la integridad del dispositivo Android del usuario. El vector de ataque se basa en la manipulación de entradas no sanitizadas dentro de la app oficial de la Agencia Imperial del Hogar.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5ODE3MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/468408",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-118900",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-118900"
+      ]
+    }
+  },
+  {
+    "id": 3877,
+    "fecha": "2026-11-18T06:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-64629 permite ejecución de código en Siemens Simcenter Femap vía archivo X_T",
+    "resumen": "Una vulnerabilidad de lectura fuera de límites (CVE-2026-64629) en Simcenter Femap permite a un atacante ejecutar código arbitrario al procesar archivos X_T especialmente manipulados. Siemens ha publicado la versión V2606.0002 con corrección; se recomienda actualizar y aislar el acceso de red a los sistemas de ingeniería.",
+    "url_imagen": "https://images.unsplash.com/photo-1694954960354-f671619ea37d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5ODE3MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-64629",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.siemens.com"
+      ],
+      "url": [
+        "https://www.siemens.com/cert/advisories",
+        "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+        "https://www.siemens.com/industrialsecurity",
+        "https://www.siemens.com/productcert/terms-of-use"
+      ],
+      "cve": [
+        "CVE-2026-64629"
+      ]
+    }
+  },
+  {
     "id": 3876,
     "fecha": "2026-11-18T03:01:45Z",
     "categoria": "Ciberseguridad",
@@ -13684,20 +13743,6 @@
         "CVE-2026-111813"
       ]
     }
-  },
-  {
-    "id": 3298,
-    "fecha": "2026-10-25T08:04:59Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "MEDIA",
-    "titulo": "Microsoft lanza Project Perception con Guardian Agents para contener IA interna y mitigar riesgos de agentes autónomos",
-    "resumen": "El nuevo stack de seguridad unificado incorpora agentes guardianes que monitorizan y aíslan comportamientos anómalos de IA, aunque expertos advierten que la autopolicía de agentes podría generar vectores de ataque adicionales.",
-    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5MTU0OTl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-    "fuente": "Dark Reading",
-    "dedup_key": "txt:ai agents as insider threats inside microsoft s bet on a unified security stack",
-    "ttps": [],
-    "iocs": {}
   },
   {
     "id": 3297,
