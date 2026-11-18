@@ -1,5 +1,46 @@
 [
   {
+    "id": 3876,
+    "fecha": "2026-11-18T03:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-100397 permite escalada de privilegios en Rucio mediante token SSH falsificado",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) en Rucio 1.14.0-41.1.1 permite a un atacante no autenticado obtener un token SSH-Challenge y reutilizarlo como X-Rucio-Auth-Token para acceder a cualquier cuenta, incluida la administrativa, explotando la falta de distinción entre nonces y tokens. Se corrige en versiones 35.9.1, 38.6.1, 40.4.2 y 41.1.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NzA5MDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-100397",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-100397",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-100397"
+      ]
+    }
+  },
+  {
+    "id": 3875,
+    "fecha": "2026-11-18T03:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Microsoft lanza Perception y nuevo stack de seguridad para proteger agentes de IA en entornos corporativos",
+    "resumen": "La actualización de Microsoft Perception incorpora controles de integridad, aislamiento y monitoreo continuo para mitigar riesgos de agentes autónomos, integrándose al stack de Microsoft Security que protege la superficie digital contra exploits y accesos no autorizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ5NzA5MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:security for the agentic era powered by microsoft perception",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3874,
     "fecha": "2026-11-18T01:03:38Z",
     "categoria": "Ciberseguridad",
