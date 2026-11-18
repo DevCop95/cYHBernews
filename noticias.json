@@ -1,5 +1,69 @@
 [
   {
+    "id": 3885,
+    "fecha": "2026-11-18T11:58:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware C2 adopta blockchain público para crear “dead drops” a prueba de interrupciones",
+    "resumen": "Los actores de amenaza están migrando sus infraestructuras de comando y control a redes blockchain públicas, eliminando servidores centralizados y dominios estáticos, lo que dificulta la detección y el bloqueo por parte de los equipos de SOC. Esta técnica permite comunicaciones resilientes y anónimas, incrementando la persistencia de campañas de ransomware y espionaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMDMwODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:the challenge of defending against bulletproof dead drops on public blockchains",
+    "ttps": [
+      {
+        "id": "T1108",
+        "name": "Redundant Access"
+      },
+      {
+        "id": "T1573.001",
+        "name": "Symmetric Cryptography"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3884,
+    "fecha": "2026-11-18T11:57:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incluye en KEV la vulnerabilidad crítica RCE de Puppet (CVE-2026-115731) con explotación activa",
+    "resumen": "La falla RCE en Perforce Puppet, con CVSS 9.4, está siendo explotada en entornos empresariales para ejecución remota de código, afectando la gestión de infraestructura como código. CISA la ha catalogado como vulnerabilidad conocida explotada, recomendando parche inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMDMwNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-115731",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-115731"
+      ]
+    }
+  },
+  {
+    "id": 3883,
+    "fecha": "2026-11-18T11:57:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de lectura fuera de límites en Leptonica (CVE-2026-112213) permite divulgación de datos en JPEG 2000",
+    "resumen": "INCIBE reporta CVE-2026-112213 en Leptonica 1.87.0, donde la función pixReadMemJp2kCore() desborda buffers al procesar imágenes JPEG 2000 manipuladas, exponiendo memoria adjunta. Se corrige en jp2kio.c; se recomienda actualizar y recompilar la biblioteca.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMDMwNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/lectura-fuera-de-limites-en-leptonica-de-dan-bloomberg",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-112213",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-112213"
+      ]
+    }
+  },
+  {
     "id": 3882,
     "fecha": "2026-11-18T09:01:57Z",
     "categoria": "Ciberseguridad",
