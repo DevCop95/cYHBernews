@@ -1,5 +1,51 @@
 [
   {
+    "id": 3899,
+    "fecha": "2026-11-18T20:45:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidades en CreditNirvana exponen 6,6 M de cuentas y 315 000 grabaciones de llamadas",
+    "resumen": "Dos CVE críticos en la plataforma de IA de cobro CreditNirvana permiten a atacantes extraer correos, SMS y reportes crediticios, comprometiendo datos de millones de usuarios y grabaciones de llamadas. El vector de ataque se basa en inyección de consultas no sanitizadas y autenticación rota, lo que facilita el acceso masivo a información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1694954960354-f671619ea37d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMzQ3Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/ai-debt-collection-service-exposed-66-million-accounts-and-315000-call-recordings/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:an ai debt collection service exposed 6 6 million accounts and 315 000 call recordings",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3898,
+    "fecha": "2026-11-18T20:45:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-123007 en NGINX HTTP/2 permite ejecución remota sin autenticación",
+    "resumen": "La falla “nginx2root” afecta versiones de NGINX desde 1.9.5 y permite a atacantes no autenticados ejecutar código arbitrario en servidores con HTTP/2 habilitado; los parches llegan en 1.31.9 y 1.30.7.",
+    "url_imagen": "https://images.unsplash.com/photo-1581092336206-b9e5146be6f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMzQ3MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-123007",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123007"
+      ]
+    }
+  },
+  {
     "id": 3897,
     "fecha": "2026-11-18T18:01:46Z",
     "categoria": "Ciberseguridad",
