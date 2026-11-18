@@ -1,5 +1,78 @@
 [
   {
+    "id": 3897,
+    "fecha": "2026-11-18T18:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-114824 permite toma de control remoto de Oracle Platform Security for Java",
+    "resumen": "Vulnerabilidad crítica (CVSS 10.0) en Oracle Platform Security for Java, versiones 12.2.1.4.0 y 14.1.2.0.0, permite a un atacante no autenticado con acceso HTTP ejecutar código arbitrario y comprometer todo el componente.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMjQ5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-114824",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-114824",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114824"
+      ]
+    }
+  },
+  {
+    "id": 3896,
+    "fecha": "2026-11-18T18:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Artex se consolida como la nueva herramienta “point-and-shoot” de IA para escanear vulnerabilidades y lanzar",
+    "resumen": "Artex y herramientas similares permiten a atacantes novatos explotar sistemas vulnerables mediante prompts dirigidos a chatbots, automatizando la fase de descubrimiento y ejecución sin conocimientos profundos de explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMjQ5MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/artex-ai-hacking-tools/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:artex is criminals new favorite point and shoot ai hacking tool",
+    "ttps": [
+      {
+        "id": "T1595.002",
+        "name": "Vulnerability Scanning"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3895,
+    "fecha": "2026-11-18T18:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "EE.UU. atribuye a Irán la campaña de ciberataques a frigoríficos en Francia con evaluación de baja confianza",
+    "resumen": "Inteligencia estadounidense señala a Irán como probable autor de los ataques a sistemas de control de refrigeración en instalaciones francesas, indicando vectores de malware dirigido a infraestructuras críticas. La valoración de “low confidence” sugiere evidencia fragmentada y la posibilidad de ampliación a otros objetivos europeos.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMjQ5MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html",
+    "fuente": "Schneier on Security",
+    "dedup_key": "txt:france is blaming iran for the fridge cyberattack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3894,
+    "fecha": "2026-11-18T18:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataque a TPM permite vulnerar Windows Hello y PIN de BitLocker en días tras abrir el chasis",
+    "resumen": "Investigadores de la Technische Universität Berlin demostraron que, al abrir el caso de PCs AMD e Intel, se puede reiniciar el bloqueo del TPM y forzar PINs cortos de Windows Hello y BitLocker en cuestión de días, exponiendo credenciales de cifrado. El vector de ataque físico combinado con fuerza bruta contra PINs de 4-6 dígitos compromete la confidencialidad de datos en dispositivos vulnerables.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwMjQ4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:new attack bypasses tpm lockout to crack windows hello and bitlocker pins in days not years",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3893,
     "fecha": "2026-11-18T15:02:02Z",
     "categoria": "Ciberseguridad",
