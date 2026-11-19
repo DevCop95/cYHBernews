@@ -1,5 +1,67 @@
 [
   {
+    "id": 3931,
+    "fecha": "2026-11-19T21:01:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de integer underflow en libumqtt (CVE-2026-125132) permite DoS y divulgación de datos",
+    "resumen": "La falla de integer underflow en libumqtt ≤ 1.1.1 (CVE-2026-125132) permite a un atacante remoto provocar denegación de servicio, corrupción de memoria o filtrado de información. No hay parche disponible; se recomienda aislar los sistemas y aplicar controles de red estrictos.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMjIxMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-125132",
+    "ttps": [
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125132"
+      ]
+    }
+  },
+  {
+    "id": 3930,
+    "fecha": "2026-11-19T21:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "8 vulnerabilidades críticas y altas en CAST Imaging 3.6.2, incluido CVE-2026-109857",
+    "resumen": "Se reportan ocho CVE en CAST Imaging 3.6.2 que permiten suplantación OpenID Connect, escalada de privilegios y acceso a archivos sin credenciales; una es crítica (CVE-2026-109857) y la corrección está disponible en versiones posteriores. Las organizaciones deben validar la compilación parcheada y aplicar la actualización inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1650303923845-fea02ee7a52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMjIxMDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-cast-imaging-de-cast-software",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-109857",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1556.006",
+        "name": "Multi-Factor Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-109857"
+      ]
+    }
+  },
+  {
     "id": 3929,
     "fecha": "2026-11-19T20:50:25Z",
     "categoria": "Ciberseguridad",
