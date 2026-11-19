@@ -1,5 +1,46 @@
 [
   {
+    "id": 3908,
+    "fecha": "2026-11-19T02:41:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-130778 permite bypass de autenticación en Incus antes de la versión 7.6.0",
+    "resumen": "La vulnerabilidad de autenticación en Incus permite a atacantes remotos añadir un certificado de confianza a la cadena TLS del cliente, obteniendo acceso a nivel de clúster y eludiendo controles de autorización basados en scriptlets. El CVSS 10.0 indica riesgo crítico para entornos que usan Incus sin parchear.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNTYwODJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-130778",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-130778",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-130778"
+      ]
+    }
+  },
+  {
+    "id": 3907,
+    "fecha": "2026-11-19T02:41:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Brecha de datos compromete información de 50 cooperativas de crédito irlandesas tras hackeo a proveedor IT",
+    "resumen": "El ataque a Wellington IT expuso datos personales de miembros de 50 credit unions, mayormente en Irlanda, indicando posible acceso no autorizado a bases de datos de clientes y potencial uso para phishing o fraude. Se recomienda revisión inmediata de controles de acceso y notificación a afectados bajo GDPR.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNTYwNzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:data breach impacts 40 irish credit unions in reported it provider hack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3906,
     "fecha": "2026-11-19T00:01:51Z",
     "categoria": "Ciberseguridad",
