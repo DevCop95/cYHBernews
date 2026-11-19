@@ -1,5 +1,113 @@
 [
   {
+    "id": 3920,
+    "fecha": "2026-11-19T12:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "NVIDIA investiga supuesta filtración de datos tras reclamo del ransomware Gentlemen",
+    "resumen": "La compañía confirmó que está analizando la inclusión de información interna en el sitio de filtraciones de Gentlemen, indicando un posible acceso no autorizado y exposición de credenciales críticas. Se evalúan vectores de ataque de ransomware y se activan protocolos de respuesta a incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1669279857939-1f7762f85c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwODk3MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:nvidia investigating gentlemen ransomware breach claims",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3919,
+    "fecha": "2026-11-19T12:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ucrania detiene a cuatro presuntos miembros del grupo de ransomware Conti vinculados a ataques internacionales",
+    "resumen": "Las autoridades ucranianas arrestaron a cuatro individuos sospechosos de pertenecer a Conti, responsable de múltiples campañas de extorsión con ransomware que comprometieron infraestructuras críticas y datos sensibles en varios países. La captura podría facilitar la desarticulación de la infraestructura de comando y control del grupo y reducir la amenaza de futuros despliegues de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwODk3MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/vxunderground/9601",
+    "fuente": "TG: vx-underground",
+    "dedup_key": "txt:on november 18th 2026 ukrainian authorities arrested four individuals believed to be tied to conti ransomware",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3918,
+    "fecha": "2026-11-19T12:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "HPE Networking expone 76 vulnerabilidades críticas, incluyendo CVE-2026-79844 y CVE-2026-95787",
+    "resumen": "La revisión de seguridad de HPE revela 33 vulnerabilidades críticas y 33 altas en sus productos AOS-10, AOS-8 y Aruba AirWave, que permiten ejecución remota de código, bypass de autenticación y inyección SQL. Se recomienda actualizar a las versiones parcheadas y segmentar el acceso de gestión mediante VLAN o firewalls.",
+    "url_imagen": "https://images.unsplash.com/photo-1537202756582-8d9fc0953564?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwODk2OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-hpe-networking",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en productos de hpe networking",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "8.10.0.23",
+        "8.10.0.24",
+        "8.13.3.0",
+        "8.13.3.1",
+        "8.13.3.2"
+      ],
+      "cve": [
+        "CVE-2026-79844",
+        "CVE-2026-79845",
+        "CVE-2026-79846",
+        "CVE-2026-79847",
+        "CVE-2026-79848",
+        "CVE-2026-79849",
+        "CVE-2026-79850",
+        "CVE-2026-79851",
+        "CVE-2026-79852",
+        "CVE-2026-79853",
+        "CVE-2026-79854",
+        "CVE-2026-79855",
+        "CVE-2026-79856",
+        "CVE-2026-79857",
+        "CVE-2026-79858",
+        "CVE-2026-79859",
+        "CVE-2026-79860",
+        "CVE-2026-79861",
+        "CVE-2026-79862",
+        "CVE-2026-79863",
+        "CVE-2026-79864",
+        "CVE-2026-79865",
+        "CVE-2026-79866",
+        "CVE-2026-79867",
+        "CVE-2026-79868",
+        "CVE-2026-79869",
+        "CVE-2026-79870",
+        "CVE-2026-79871",
+        "CVE-2026-79872",
+        "CVE-2026-79873",
+        "CVE-2026-79874",
+        "CVE-2026-79875",
+        "CVE-2026-79876",
+        "CVE-2026-95787",
+        "CVE-2026-95788",
+        "CVE-2026-95789",
+        "CVE-2026-95790",
+        "CVE-2026-95791"
+      ]
+    }
+  },
+  {
     "id": 3917,
     "fecha": "2026-11-19T11:55:47Z",
     "categoria": "Ciberseguridad",
