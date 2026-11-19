@@ -1,5 +1,101 @@
 [
   {
+    "id": 3927,
+    "fecha": "2026-11-19T18:02:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en firmware de Elecbrakes (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)",
+    "resumen": "Las fallas de autenticación y de actualización de firmware permiten a un atacante modificar firmware, desactivar luces de freno o tomar control total del sistema de frenado. Afecta a los controladores EB2, VM1 y ELBC2000 desplegados en sistemas de transporte de Australia y Nueva Zelanda, con CVSS máximo 9.6.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMTEzMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-124281,cve-2026-125273,cve-2026-96805",
+    "ttps": [
+      {
+        "id": "T1609",
+        "name": "Container Administration Command"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124281",
+        "CVE-2026-125273",
+        "CVE-2026-96805"
+      ]
+    }
+  },
+  {
+    "id": 3926,
+    "fecha": "2026-11-19T18:01:59Z",
+    "categoria": "IA",
+    "severidad": "MEDIA",
+    "titulo": "Google crea un entorno espejo de internet para entrenar agentes de IA en Chrome sin riesgos de comportamiento inesperado",
+    "resumen": "La iniciativa de Google despliega una red paralela que actúa como sandbox masivo, permitiendo entrenar y validar agentes de navegación basados en IA antes de su despliegue en producción, mitigando la exposición a comportamientos no deseados.",
+    "url_imagen": "https://images.unsplash.com/photo-1770170389700-eb0f9b910ed8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMTEzMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:google built a giant mirror dimension internet to test its chrome ai agents",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3925,
+    "fecha": "2026-11-19T18:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "phpAfterShell permite ejecución remota de código mediante manipulación de sesiones PHP CVE-2026-126714",
+    "resumen": "La vulnerabilidad phpAfterShell (CVE-2026-126714) explota la escritura interrumpida de sesiones en PHP para inyectar objetos maliciosos y, combinada con una cadena de gadgets, lograr ejecución de código en el servidor. Las versiones actuales de PHP corrigen el fallo, pero los sistemas sin parche quedan expuestos a ataques de escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMTEzMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-126714",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-126714"
+      ]
+    }
+  },
+  {
+    "id": 3924,
+    "fecha": "2026-11-19T15:02:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Uber confirma brecha de datos de conductores tras comprometer credenciales de proveedor de IA de terceros",
+    "resumen": "Hackers accedieron a un proveedor de IA externo y exfiltraron licencias de conducir y datos personales de al menos 7,870 conductores en EE. UU., descubriendo la intrusión el 9 de octubre. Uber notifica a los afectados y ofrece monitoreo de crédito mientras investiga el vector de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMDA1MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/Cyber_Security_Channel/114116",
+    "fuente": "TG: Cyber Security Channel",
+    "dedup_key": "txt:uber confirms driver data breach via third party ai vendor",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3922,
     "fecha": "2026-11-19T15:02:09Z",
     "categoria": "Ciberseguridad",
