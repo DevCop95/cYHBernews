@@ -1,5 +1,96 @@
 [
   {
+    "id": 3929,
+    "fecha": "2026-11-19T20:50:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Brecha en Transport for London expone datos de 265 000 usuarios de tarjetas Oyster",
+    "resumen": "Un acceso no autorizado a la base de datos de TfL reveló información de cuentas de usuarios de tarjetas Oyster, comprometiendo nombres, direcciones y detalles de pago; el incidente sugiere fallos en la segmentación de acceso y control de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMjE0MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:transport for london breach exposes 265 000 oyster card users data",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      },
+      {
+        "id": "T1039",
+        "name": "Data from Network Shared Drive"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3928,
+    "fecha": "2026-11-19T20:50:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Atlassian publica 143 CVE, 266 críticos, afecta Jira, Confluence y Bamboo",
+    "resumen": "Se reportan 318 vulnerabilidades en productos Data Center y Server, con vectores de ejecución remota de código, escalada de privilegios y denegación de servicio, destacando CVE-2026-4800 (Lodash), CVE-2026-47884 (Spring MVC) y CVE-2026-76183 (Tomcat). La mitigación requiere aplicar los parches LTS indicados y, para versiones Server, planificar la migración a ediciones con soporte.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMjE0MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-atlassian-2",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en productos de atlassian",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-101296",
+        "CVE-2026-101356",
+        "CVE-2026-103119",
+        "CVE-2026-110879",
+        "CVE-2026-47884",
+        "CVE-2026-47890",
+        "CVE-2026-4800",
+        "CVE-2026-59083",
+        "CVE-2026-59084",
+        "CVE-2026-59283",
+        "CVE-2026-59313",
+        "CVE-2026-65905",
+        "CVE-2026-71290",
+        "CVE-2026-75595",
+        "CVE-2026-76183",
+        "CVE-2026-86248",
+        "CVE-2026-86350",
+        "CVE-2026-91403"
+      ]
+    }
+  },
+  {
     "id": 3927,
     "fecha": "2026-11-19T18:02:02Z",
     "categoria": "Ciberseguridad",
