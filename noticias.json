@@ -1,5 +1,83 @@
 [
   {
+    "id": 3906,
+    "fecha": "2026-11-19T00:01:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Java y NGINX elevan el riesgo a nivel “Yellow” en Infocon",
+    "resumen": "Se reportan fallas críticas en entornos Java y NGINX que podrían permitir ejecución remota de código, coincidiendo con una interrupción mayor de Microsoft 365; el impacto potencial justifica la alerta de nivel “Yellow”.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNDY1MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33532",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:java4shell nginx2shell and more why we are not at yellow wed nov 18th",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3905,
+    "fecha": "2026-11-19T00:01:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Grupo APT ruso reutiliza datos robados para lanzar campañas de suplantación y phishing contra nuevas víctimas",
+    "resumen": "El actor avanzado, vinculado a Rusia, está explotando información extraída de una brecha en la nube para crear impersonaciones creíbles y ejecutar ataques de ingeniería social dirigidos a múltiples organizaciones. La técnica amplifica el riesgo de compromiso al reutilizar credenciales y datos confidenciales en campañas de phishing automatizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1602529710584-458a995c8785?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNDY1MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:russia s cold relic apt turns one cloud breach into another",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3904,
+    "fecha": "2026-11-19T00:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-129448 en Apache Roller permite RCE sin autenticación",
+    "resumen": "Apache Roller presenta una deserialización no autenticada en el endpoint XML-RPC que permite ejecución remota de código con CVSS 9.8; la ASF confirma explotación activa en entornos de producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1580863651132-bc3149992f01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNDY1MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-129448",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129448"
+      ]
+    }
+  },
+  {
+    "id": 3903,
+    "fecha": "2026-11-19T00:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "FBI y autoridades ucranianas detienen a cuatro miembros de una banda de ransomware responsable de $40,5 M en rescates",
+    "resumen": "La operación conjunta capturó a sospechosos vinculados a al menos 28 víctimas corporativas, evidenciando la capacidad de desarticular infraestructuras de comando y control de ransomware a escala global. El caso subraya la necesidad de reforzar detección de actividades de extorsión y mejorar la respuesta a incidentes de ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNDY1MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:ukraine fbi arrest ransomware gang members tied to 40m in ransoms",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1071",
+        "name": "Application Layer Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3902,
     "fecha": "2026-11-18T21:02:25Z",
     "categoria": "Ciberseguridad",
