@@ -1,5 +1,46 @@
 [
   {
+    "id": 3914,
+    "fecha": "2026-11-19T09:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de Code Injection (CVE-2026-129048) permite RCE en WP Photo Album Plus hasta la versión 9.3.06.003",
+    "resumen": "La falta de control en la generación de código del plugin WP Photo Album Plus permite la inclusión remota de código y ejecución arbitraria en sitios WordPress vulnerables. Afecta a todas las instalaciones que ejecuten versiones anteriores a 9.3.06.003, exponiendo datos y potencialmente comprometiendo la infraestructura web.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNzg5MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/470496",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129048",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129048"
+      ]
+    }
+  },
+  {
+    "id": 3913,
+    "fecha": "2026-11-19T09:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "África recupera el puesto de región más atacada con Nigeria liderando el aumento de ciberamenazas",
+    "resumen": "Nigeria registró más del doble de incidentes de ciberseguridad respecto al año anterior, situándose como el principal objetivo en África, seguido por Angola y Kenya dentro del top-5 global de países más atacados. SECTOR: Todos",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNzg5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:africa retakes top spot as most attacked region led by nigeria surge",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3912,
     "fecha": "2026-11-19T06:02:23Z",
     "categoria": "Ciberseguridad",
