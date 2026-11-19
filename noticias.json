@@ -1,5 +1,71 @@
 [
   {
+    "id": 3910,
+    "fecha": "2026-11-19T03:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "JetBrains Datalore < 2026.2.1 permite path traversal no autenticado CVE-2026-111093",
+    "resumen": "Una vulnerabilidad de path traversal en el endpoint /report-blob permite a un atacante no autenticado leer archivos arbitrarios del sistema de archivos del servidor. Afecta a todas las instancias de Datalore desplegadas antes de la versión 2026.2.1, exponiendo datos sensibles y potencialmente facilitando escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNTczMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/470306",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-111093",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111093"
+      ]
+    }
+  },
+  {
+    "id": 3909,
+    "fecha": "2026-11-19T03:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Detectan campaña masiva de phishing que despliega 29 sitios falsos de banca en siete semanas",
+    "resumen": "Netskope Threat Labs revela que un kit fraudulento reutilizable permite a los atacantes lanzar rápidamente 29 dominios de phishing bancario, aumentando el riesgo de credential harvesting a gran escala. La campaña apunta a usuarios de servicios financieros y aprovecha plantillas de diseño idénticas para evadir filtros de detección.",
+    "url_imagen": "https://images.unsplash.com/photo-1611418636162-eb07ae0aa4a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwNTczMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/detectan-una-campana-masiva-de-phishing-que-crea-29-bancos-falsos-con-un-solo-kit-fraudulento/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:detectan una campana masiva de phishing que crea 29 bancos falsos con un solo kit fraudulento",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      },
+      {
+        "id": "T1036",
+        "name": "Masquerading"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3908,
     "fecha": "2026-11-19T02:41:22Z",
     "categoria": "Ciberseguridad",
