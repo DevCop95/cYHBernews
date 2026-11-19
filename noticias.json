@@ -1,5 +1,47 @@
 [
   {
+    "id": 3922,
+    "fecha": "2026-11-19T15:02:09Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Ucrania desmantela red ransomware que extorsionó a empresas petroleras y de salud de EE.UU",
+    "resumen": "Las autoridades ucranianas detuvieron a cuatro presuntos miembros de una célula ransomware que habría cobrado más de 40 millones de dólares mediante cifrado y amenazas a compañías del sector energético y sanitario. El operativo revela un nuevo vector de extorsión dirigido a infraestructuras críticas y datos de pacientes, incrementando la superficie de ataque para actores de APT.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMDA1Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ukraine-ransomware-arrests-cyber",
+    "fuente": "The Record",
+    "dedup_key": "txt:ukraine exposes ransomware network extorting us oil healthcare firms",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3921,
+    "fecha": "2026-11-19T15:02:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ruby corrige siete vulnerabilidades de memoria en regex y cadena, cinco con PoC RCE",
+    "resumen": "Se descubrieron siete fallas de seguridad en el motor de expresiones regulares y la conversión de mayúsculas/minúsculas de Ruby; cinco de ellas cuentan con pruebas de concepto que permiten ejecución remota de código. Los parches ya están disponibles en las versiones actualizadas, mitigando el riesgo de explotación en entornos que ejecutan Ruby.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMDA1MjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ruby releases fixes for 7 regex and string flaws warns 5 have proof of concept rce",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3920,
     "fecha": "2026-11-19T12:01:42Z",
     "categoria": "Ciberseguridad",
@@ -14164,37 +14206,6 @@
       }
     ],
     "iocs": {}
-  },
-  {
-    "id": 3303,
-    "fecha": "2026-10-25T18:03:56Z",
-    "categoria": "Ciberseguridad",
-    "severidad": "CRITICA",
-    "titulo": "CVE-2026-79844 permite bypass de autenticación y ejecución remota de comandos en AOS-10 con CVSS 10.0",
-    "resumen": "La vulnerabilidad de bypass de autenticación en la interfaz de AOS-10 permite a un atacante no autenticado ejecutar comandos arbitrarios en el host subyacente, siempre que se cumplan condiciones externas específicas, exponiendo el sistema a compromisos totales.",
-    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTI5NTE0Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-79844",
-    "fuente": "NVD (NIST)",
-    "dedup_key": "cve:cve-2026-79844",
-    "ttps": [
-      {
-        "id": "T1210",
-        "name": "Exploitation of Remote Services"
-      },
-      {
-        "id": "T1059",
-        "name": "Command and Scripting Interpreter"
-      },
-      {
-        "id": "T1548",
-        "name": "Abuse Elevation Control Mechanism"
-      }
-    ],
-    "iocs": {
-      "cve": [
-        "CVE-2026-79844"
-      ]
-    }
   },
   {
     "id": 3302,
