@@ -1,5 +1,42 @@
 [
   {
+    "id": 3933,
+    "fecha": "2026-11-19T21:40:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Se parchean siete vulnerabilidades críticas en PHP que permiten ejecución de código bajo ciertas configuraciones",
+    "resumen": "La actualización de noviembre corrige siete fallos críticos en PHP, algunos explotables mediante técnicas tipo PHP2Shell según la configuración del servidor, requiriendo aplicación inmediata de los parches.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMjQ0NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:critical php flaws allow code execution but don t panic php2shell style",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3932,
+    "fecha": "2026-11-19T21:40:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-132165 permite ejecución remota de código en Drupal antes de 11.4.13",
+    "resumen": "Un atacante no autenticado puede explotar el instalador de Drupal para reinstalar la aplicación, tomar control del sitio y ejecutar código arbitrario en el servidor; la mitigación requiere actualizar a Drupal 10.6.22, 11.3.22 o 11.4.13 y proteger el instalador.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMjQ0Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/ejecucion-remota-de-codigo-en-drupal",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-132165",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-132165"
+      ]
+    }
+  },
+  {
     "id": 3931,
     "fecha": "2026-11-19T21:01:54Z",
     "categoria": "Ciberseguridad",
@@ -247,6 +284,29 @@
     "dedup_key": "txt:uber confirms driver data breach via third party ai vendor",
     "ttps": [],
     "iocs": {}
+  },
+  {
+    "id": 3923,
+    "fecha": "2026-11-19T15:02:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-131033 permite a atacante remoto extraer datos sensibles vía extensión en Chrome 158.0.8127.36",
+    "resumen": "La falta de autorización en extensiones de Google Chrome versiones anteriores a 158.0.8127.36 permite a un atacante remoto ejecutar código y robar información confidencial mediante una extensión maliciosa. El CVE tiene severidad alta y afecta a todos los usuarios de Chrome.",
+    "url_imagen": "https://images.unsplash.com/photo-1711411915583-d6d1d9439047?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMDA1MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/470902",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-131033",
+    "ttps": [
+      {
+        "id": "T1546.015",
+        "name": "Component Object Model Hijacking"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-131033"
+      ]
+    }
   },
   {
     "id": 3922,
