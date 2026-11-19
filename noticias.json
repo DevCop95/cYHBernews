@@ -1,5 +1,82 @@
 [
   {
+    "id": 3917,
+    "fecha": "2026-11-19T11:55:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Hackers comprometen servidor cloud de N-able y desactivan gestión de seguridad de correo en 3 regiones",
+    "resumen": "Amenaza desconocida obtuvo acceso no autorizado a un servidor de Mail Assure y Spam Experts Hosted Cloud, provocando la inhabilitación de interfaces de gestión y APIs, lo que interrumpe la protección de correo electrónico en tres regiones. N-able ha iniciado mitigaciones y refuerzos para evitar recurrencias mientras continúa la investigación.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwODkzNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers breach n able cloud server disrupting email security management across 3 regions",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3916,
+    "fecha": "2026-11-19T11:55:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Microsoft prueba modo Lockdown en Edge que desactiva WebGL, WebGL2 y WebGPU para reducir superficie de ataque",
+    "resumen": "La funcionalidad en desarrollo bloquea las APIs gráficas del navegador, limitando vectores de ataque basados en renderizado 3D y ejecución de código vía GPU, reforzando la postura de defensa en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608172664-837c6675ceba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwODkzNDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft tests new edge lockdown mode that disables gpu apis",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3915,
+    "fecha": "2026-11-19T11:55:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Synology publica cuatro vulnerabilidades críticas (CVE-2026-120382, CVE-2026-76954) que permiten ejecución remota",
+    "resumen": "Las vulnerabilidades afectan a DSM 7.x, BeeStation OS y NGINX con HTTP/2, permitiendo a atacantes no autenticados ejecutar código, leer o modificar archivos y provocar denegación de servicio. Synology ha emitido parches y recomienda actualizar a las versiones DSM 7.4.1-90080-2 o superiores inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUwODkzNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-synology",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-120382,cve-2026-76954",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120382",
+        "CVE-2026-76954"
+      ]
+    }
+  },
+  {
     "id": 3914,
     "fecha": "2026-11-19T09:01:50Z",
     "categoria": "Ciberseguridad",
