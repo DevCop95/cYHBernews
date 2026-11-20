@@ -1,5 +1,39 @@
 [
   {
+    "id": 3951,
+    "fecha": "2026-11-20T20:34:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "WhatsApp corrige CVE-2026-23871 y otras dos vulnerabilidades críticas en Android",
+    "resumen": "Meta ha lanzado parches que solucionan tres fallos de seguridad en la app Android, incluido CVE-2026-23871 que permite la validación incompleta de URLs de respuesta a anuncios y que se sospecha fue usado en campañas de phishing y estafas. La corrección afecta a WhatsApp y WhatsApp Business versiones anteriores a 2.26.17.4, mitigando la ejecución de código remoto y el acceso no autorizado a datos de usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMDY4ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-23871",
+    "ttps": [
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1204.001",
+        "name": "Malicious Link"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "2.26.17.4"
+      ],
+      "cve": [
+        "CVE-2026-23871"
+      ]
+    }
+  },
+  {
     "id": 3950,
     "fecha": "2026-11-20T18:01:48Z",
     "categoria": "Ciberseguridad",
