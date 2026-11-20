@@ -1,5 +1,31 @@
 [
   {
+    "id": 3939,
+    "fecha": "2026-11-20T03:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de SQL injection remota en sumiie24 School-Management-System (CVE-2026-133415)",
+    "resumen": "Se ha identificado una inyección SQL en la función desconocida del archivo parent_Registration.php que permite la ejecución remota mediante manipulación del parámetro student_reg. El exploit está publicado y afecta a todas las versiones del sistema, sin disponibilidad de parches oficiales.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNDM3MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/473082",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-133415",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "d946d649c7c95e101fc5679ecd91999533bb10d7"
+      ],
+      "cve": [
+        "CVE-2026-133415"
+      ]
+    }
+  },
+  {
     "id": 3938,
     "fecha": "2026-11-20T02:26:58Z",
     "categoria": "IA",
