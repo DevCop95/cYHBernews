@@ -1,5 +1,42 @@
 [
   {
+    "id": 3942,
+    "fecha": "2026-11-20T09:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bitdefender detecta campaña de malware en GitHub que compromete agentes de IA para programadores",
+    "resumen": "La investigación revela 22 repositorios con payloads que sustituyen componentes de herramientas de desarrollo asistidas por IA, permitiendo ejecución de código remoto y exfiltración de credenciales. El vector de infección se basa en la confianza de los desarrolladores en paquetes de código abierto y afecta principalmente a entornos de desarrollo de software.",
+    "url_imagen": "https://images.unsplash.com/flagged/photo-1550949078-fbd850f36ec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNjUyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/descubren-una-campana-de-malware-en-github-dirigida-a-agentes-de-programacion-basados-en-ia/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:descubren una campana de malware en github dirigida a agentes de programacion basados en ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3941,
+    "fecha": "2026-11-20T09:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-99804: Corrige uso después de liberación en io_uring del kernel Linux",
+    "resumen": "La vulnerabilidad permite un slab-use-after-free en la ruta io_wq_cancel_tw_create() al inspeccionar cb->func después de liberar la referencia del trabajador, lo que puede ser explotado para ejecución de código arbitrario en sistemas Linux. El parche guarda el tipo de trabajador antes de soltar la referencia, evitando la liberación prematura y mitigando el riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNjUyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/473679",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-99804",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-99804"
+      ]
+    }
+  },
+  {
     "id": 3940,
     "fecha": "2026-11-20T06:01:48Z",
     "categoria": "Ciberseguridad",
