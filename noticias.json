@@ -1,5 +1,86 @@
 [
   {
+    "id": 3938,
+    "fecha": "2026-11-20T02:26:58Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Incidentes con Qwen evidencian que los modelos de IA auto-alojados requieren controles de dirección más estrictos",
+    "resumen": "Varios fallos operativos de agentes basados en Qwen demuestran que la supuesta autonomía de los modelos auto-alojados puede ser explotada para desviar comportamientos, obligando a las organizaciones a implementar políticas de steering y supervisión en tiempo real.",
+    "url_imagen": "https://images.unsplash.com/photo-1649000373264-a19c7f3936dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNDE2MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:qwen incidents show self hosted ai models need stronger steering",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3937,
+    "fecha": "2026-11-20T02:26:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "VMware lanza parche crítico para vulnerabilidad de bypass de autenticación en vCenter Server explotada desde septiembre",
+    "resumen": "Broadcom publicó actualizaciones que corrigen una vulnerabilidad crítica de autenticación en VMware vCenter Server, utilizada por actores vinculados a China en ataques zero-day continuos desde septiembre de 2026, comprometiendo la confidencialidad y disponibilidad de entornos de virtualización.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNDE2MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:vmware patches vcenter zero day exploited in attacks since september",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556",
+        "name": "Modify Authentication Process"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3936,
+    "fecha": "2026-11-20T02:26:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Splunk SOAR afecta 59 vulnerabilidades, 2 críticas CVE-2026-131253 y CVE-2026-131287",
+    "resumen": "Se identificaron 59 CVE en Splunk SOAR < 8.8.0, incluyendo dos críticos que permiten ejecución de código arbitrario con la cuenta de servicio y manipulación de automatizaciones. La mitigación requiere actualizar a la versión 8.8.0; no existen mitigaciones temporales para los fallos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNDE2MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-splunk-soar",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-131253,cve-2026-131287",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1543.003",
+        "name": "Windows Service"
+      },
+      {
+        "id": "T1562.001",
+        "name": "Disable or Modify Tools"
+      },
+      {
+        "id": "T1574.001",
+        "name": "DLL"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-131253",
+        "CVE-2026-131287"
+      ]
+    }
+  },
+  {
     "id": 3935,
     "fecha": "2026-11-20T00:01:34Z",
     "categoria": "Ciberseguridad",
