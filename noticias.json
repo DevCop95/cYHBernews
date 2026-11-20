@@ -1,5 +1,63 @@
 [
   {
+    "id": 3935,
+    "fecha": "2026-11-20T00:01:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad de race condition en OpenPLC Runtime permite crear cuentas admin sin autenticación (CVE-2026-126088)",
+    "resumen": "La condición de carrera en OpenPLC Runtime ≤ 4.2.4 permite a un atacante remoto crear múltiples cuentas de administrador sin credenciales, comprometiendo la integridad de sistemas de control industrial. Se recomienda actualizar a la versión 4.3.0 y aislar los dispositivos PLC detrás de firewalls y VPNs.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMzI4OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-126088",
+    "ttps": [
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1136.001",
+        "name": "Local Account"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-126088"
+      ]
+    }
+  },
+  {
+    "id": 3934,
+    "fecha": "2026-11-20T00:01:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-19707 permite ejecución remota en Airlock Gateway de Ergon",
+    "resumen": "La falla de escritura fuera de límites en el decodificador HTML de Smart Form Protection permite RCE y denegación de servicio en versiones 8.5.0-8.5.2 y 8.6.0; la explotación requiere que la aplicación protegida acepte contenido HTML controlado por el atacante. Se recomienda actualizar a 8.5.3 o 8.6.1 y revisar configuraciones de protección de formularios.",
+    "url_imagen": "https://images.unsplash.com/photo-1612534526511-dd27833d6e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxMzI4ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-airlock-gateway-de-ergon",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-19707",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19707"
+      ]
+    }
+  },
+  {
     "id": 3933,
     "fecha": "2026-11-19T21:40:41Z",
     "categoria": "Ciberseguridad",
