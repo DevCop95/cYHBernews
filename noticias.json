@@ -1,5 +1,56 @@
 [
   {
+    "id": 3950,
+    "fecha": "2026-11-20T18:01:48Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers emplean la herramienta IA autónoma Cairn para descubrir zero-day y comprometer servidor de aplicación",
+    "resumen": "Amenaza utiliza el framework open-source de penetration testing basado en IA, Cairn, para automatizar la búsqueda de vulnerabilidades desconocidas y explotar una zero-day en un software de diagnóstico médico, logrando acceso total al servidor.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxOTc3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers use autonomous ai tool cairn to find zero day take over server",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3949,
+    "fecha": "2026-11-20T18:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PHP publica parches críticos para 18 vulnerabilidades, 7 CVE de severidad crítica, incluyendo ejecución remota de código",
+    "resumen": "Se corrigen 18 vulnerabilidades en PHP 8.2-8.5, con 7 CVE críticos que permiten RCE, manipulación de sesiones y corrupción de memoria; la mitigación temporal para PHP-FPM es desactivar la reutilización de conexiones FastCGI.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxOTc3MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-php-0",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en php",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1556.001",
+        "name": "Domain Controller Authentication"
+      },
+      {
+        "id": "T1548.003",
+        "name": "Sudo and Sudo Caching"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-115560",
+        "CVE-2026-126714",
+        "CVE-2026-129182",
+        "CVE-2026-129289",
+        "CVE-2026-129474",
+        "CVE-2026-129481",
+        "CVE-2026-129496"
+      ]
+    }
+  },
+  {
     "id": 3948,
     "fecha": "2026-11-20T15:01:54Z",
     "categoria": "Ciberseguridad",
