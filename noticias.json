@@ -1,5 +1,51 @@
 [
   {
+    "id": 3946,
+    "fecha": "2026-11-20T12:02:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-130991 permite a atacante remoto leer memoria en sandbox de Chrome <158.0.8127.36",
+    "resumen": "Una vulnerabilidad de recurso no inicializado en el módulo Media de Google Chrome permite la fuga de memoria del sandbox mediante una página HTML maliciosa, con severidad media según Chromium. El vector de ataque es la ejecución de código remoto en el navegador antes de la versión 158.0.8127.36.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNzYxMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/473851",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-130991",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-130991"
+      ]
+    }
+  },
+  {
+    "id": 3945,
+    "fecha": "2026-11-20T12:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Tenable Security Center 6.9.1 expone CVE-2026-131888 y CVE-2026-131889 críticos que permiten inyección SQL",
+    "resumen": "Las vulnerabilidades críticas (CVE-2026-131888, CVE-2026-131889) permiten a usuarios autenticados, incluso con privilegios bajos, manipular la base de datos o ejecutar código arbitrario en el host, comprometiendo confidencialidad e integridad. Se recomienda actualizar a Security Center 6.10.0 que corrige los 21 defectos reportados.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxNzYxMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-security-center-de-tenable",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-131888,cve-2026-131889",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-131888",
+        "CVE-2026-131889"
+      ]
+    }
+  },
+  {
     "id": 3944,
     "fecha": "2026-11-20T11:56:58Z",
     "categoria": "Ciberseguridad",
