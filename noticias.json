@@ -1,5 +1,61 @@
 [
   {
+    "id": 3948,
+    "fecha": "2026-11-20T15:01:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad KVM CVE-2026-99312 permite a VMs huéspedes leer 127 GB de memoria del host AMD",
+    "resumen": "Un fallo en el hipervisor KVM del kernel Linux permite a una VM acceder a la memoria del host, exponiendo hasta 127 GB de datos, incluido el de otras VMs en entornos multi-tenant. El vector afecta a servidores con procesadores AMD y virtualización anidada habilitada; la corrección ya está disponible en los kernels actualizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxODY5MTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-99312",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1497.001",
+        "name": "System Checks"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-99312"
+      ]
+    }
+  },
+  {
+    "id": 3947,
+    "fecha": "2026-11-20T15:01:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "WatchGuard Dimension expone tres CVE críticos que permiten RCE y secuestro de sesiones de admin",
+    "resumen": "Tres vulnerabilidades críticas (CVE-2026-86130, CVE-2026-86094 y CVE-2026-84322) afectan a WatchGuard Dimension 2.0-2.3.1, permitiendo ejecución remota de código sin autenticación y suplantación de administradores privilegiados mediante tokens de sesión expuestos. La mitigación consiste en actualizar a la versión 2.3.2 o superior.",
+    "url_imagen": "https://images.unsplash.com/photo-1793623794326-655498bacbdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUxODY5MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-dimension-de-watchguard",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-84322,cve-2026-86094,cve-2026-86130",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-84322",
+        "CVE-2026-86094",
+        "CVE-2026-86130"
+      ]
+    }
+  },
+  {
     "id": 3946,
     "fecha": "2026-11-20T12:02:04Z",
     "categoria": "Ciberseguridad",
