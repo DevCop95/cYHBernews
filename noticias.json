@@ -1,5 +1,51 @@
 [
   {
+    "id": 3961,
+    "fecha": "2026-11-21T06:02:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SSRF en Quay (CVE-2026-133958) permite a admin autenticado acceder a redes internas",
+    "resumen": "La falta de validación de URLs en los webhooks de notificación permite a un administrador autenticado explotar SSRF y forzar peticiones HTTP hacia recursos internos, incluidos servicios de metadatos de nube. El vector de ataque se basa en la manipulación de la URL del webhook para redirigir tráfico del worker de Quay a destinos no autorizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyNDA5MjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475224",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-133958",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-133958"
+      ]
+    }
+  },
+  {
+    "id": 3960,
+    "fecha": "2026-11-21T06:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotan CVE-2026-76466 en Cisco Expressway y comprometen red interna de organización rusa",
+    "resumen": "Se confirmó la explotación de la vulnerabilidad crítica CVE-2026-76466 (CVSS 9.8) en Cisco Expressway, permitiendo a un atacante no autenticado acceder remotamente y comprometer al menos cuatro dispositivos, extendiendo el acceso a la red interna. El incidente se detectó tras la publicación de un PoC, evidenciando la rapidez de la cadena de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1580492516497-3c86977a6137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyNDA5MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-76466",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-76466"
+      ]
+    }
+  },
+  {
     "id": 3959,
     "fecha": "2026-11-21T03:01:39Z",
     "categoria": "Ciberseguridad",
