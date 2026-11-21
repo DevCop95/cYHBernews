@@ -1,5 +1,60 @@
 [
   {
+    "id": 3973,
+    "fecha": "2026-11-21T21:01:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-75521 permite escalada a superusuario vía certificado falsificado en Miren Runtime",
+    "resumen": "La vulnerabilidad en el servidor QUIC/HTTP3 RPC de Miren Runtime (antes de 0.11.1) no verifica la cadena de confianza del certificado cliente, permitiendo a un atacante presentar un certificado autofirmado y obtener privilegios de superusuario en el clúster. El exploit posibilita divulgación, alteración o interrupción de aplicaciones, discos y credenciales hasta que se aplique la corrección en la versión 0.11.1.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643392-8dd713152ae9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyOTQ4ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-75521",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-75521",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-75521"
+      ]
+    }
+  },
+  {
+    "id": 3972,
+    "fecha": "2026-11-21T21:01:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "Comité de Seguridad Nacional de EE. UU advierte sobre riesgos de usar modelos de IA de código abierto chinos",
+    "resumen": "La investigación del House Homeland Security Committee señala que la adopción de modelos de IA de peso abierto provenientes de China expone a las compañías a posibles filtraciones de datos y a la inserción de backdoors, incrementando la superficie de ataque en entornos críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1564551713171-b1a90c34daa5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyOTQ4Nzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation",
+    "fuente": "The Record",
+    "dedup_key": "txt:us companies use of chinese open weight ai draws rebuke from house chairmen",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3971,
+    "fecha": "2026-11-21T21:01:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Agentes de IA autónomos descubren zero-day en MONAI Label y obtienen acceso root en servidor universitario",
+    "resumen": "Hackers vinculados a China emplearon agentes de IA autónomos para explotar una vulnerabilidad sin autenticación que permite escritura fuera del directorio de datos en MONAI Label 0.8.5 y versiones anteriores, logrando privilegios de root en un servidor universitario alojado en AWS.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyOTQ4Nzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:attackers ai agents found a zero day in medical imaging software and gained root access",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3970,
     "fecha": "2026-11-21T19:32:02Z",
     "categoria": "Ciberseguridad",
