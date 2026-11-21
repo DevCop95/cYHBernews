@@ -1,5 +1,94 @@
 [
   {
+    "id": 3954,
+    "fecha": "2026-11-21T00:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Vishing masivo y robo de datos en la nube apuntan a sectores de salud y finanzas",
+    "resumen": "Análisis de campañas de vishing y extorsión que comprometen credenciales y datos críticos en entornos cloud, con indicadores de compromiso y medidas de mitigación para SOCs.",
+    "url_imagen": "https://images.unsplash.com/photo-1794908471673-651c8f9048ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMTkzMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/com-affiliate-vishing-attacks/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:dialing for data inside the com s high profile heists",
+    "ttps": [
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      },
+      {
+        "id": "T1530",
+        "name": "Data from Cloud Storage"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3953,
+    "fecha": "2026-11-21T00:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Legislatura de West Virginia sufre incidente cibernético que afecta sus sistemas informáticos",
+    "resumen": "Un ataque de tipo ransomware/interrupción comprometió la disponibilidad de los sistemas IT de la legislatura estatal, sin evidencia de propagación a otras agencias gubernamentales. La investigación está en curso y se recomienda reforzar la segmentación de red y la monitorización de EDR.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMTkyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/west-virginia-legislature-cyberattack",
+    "fuente": "The Record",
+    "dedup_key": "txt:west virginia legislature hit with cyber incident affecting it systems",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1490",
+        "name": "Inhibit System Recovery"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3952,
+    "fecha": "2026-11-21T00:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Bell Canada confirma brecha de datos por actor “agentic” que sustrajo información de clientes empresariales",
+    "resumen": "El 17 de noviembre de 2026, un actor de amenaza clasificado como “agentic” comprometió sistemas internos de Bell Canada y extrajo datos críticos de clientes corporativos, incluyendo registros de pedidos y aprovisionamiento de circuitos de telecomunicaciones. La filtración expone vulnerabilidades en la gestión de identidades y procesos de aprovisionamiento, potencialmente facilitando ataques de phishing dirigidos y fraude de telecomunicaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMTkyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:bell canada says agentic hacker stole enterprise customer data",
+    "ttps": [
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      },
+      {
+        "id": "T1039",
+        "name": "Data from Network Shared Drive"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3951,
     "fecha": "2026-11-20T20:34:44Z",
     "categoria": "Ciberseguridad",
