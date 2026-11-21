@@ -1,5 +1,38 @@
 [
   {
+    "id": 3956,
+    "fecha": "2026-11-21T02:34:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Grupo de amenazas vinculado a China explota zero-day en VMware vCenter antes del parche oficial",
+    "resumen": "La última oleada de actualizaciones críticas de VMware vCenter fue precedida por un ataque de un actor chino que ya disponía de un zero-day no divulgado, permitiendo ejecución remota de código y posible compromiso total del entorno virtualizado. La vulnerabilidad aún no tiene CVE asignado y se detectó mediante indicadores de compromiso en redes de telecomunicaciones.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMjg0NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:china s armory castle lays siege to vmware vcenter zero day",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3955,
+    "fecha": "2026-11-21T02:34:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bazuka, nuevo malware Android, usa superposiciones falsas y LLM para robar credenciales y controlar dispositivos",
+    "resumen": "Investigadores de ThreatFabric revelan que Bazuka incorpora un framework completo con integración de modelos de lenguaje grande para gestionar víctimas, empleando superposiciones de pantalla falsas que ocultan la captura de credenciales y permiten control remoto del dispositivo. El vector de ataque combina técnicas de phishing visual y ejecución de comandos a través del LLM, ampliando la superficie de compromiso en entornos móviles.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMjg0NTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:bazuka android malware uses fake screen overlays to hide credential theft and device control",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3954,
     "fecha": "2026-11-21T00:01:40Z",
     "categoria": "Ciberseguridad",
