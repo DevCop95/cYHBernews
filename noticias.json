@@ -1,5 +1,76 @@
 [
   {
+    "id": 3959,
+    "fecha": "2026-11-21T03:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CTO de “RansomwareHelp” es procesado por fraude electrónico tras operación del FBI",
+    "resumen": "El director de tecnología y cofundador de ransomwarehelp.com, que ofrecía supuestos “herramientas criptográficas avanzadas” para descifrar datos secuestrados, fue acusado de wire fraud por cobrar a víctimas por servicios inexistentes y pagar a los atacantes por claves de descifrado.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMzAwOTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+    "fuente": "Krebs on Security",
+    "dedup_key": "txt:cto of ransomwarehelp indicted for wire fraud",
+    "ttps": [
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "ransomwarehelp.com"
+      ]
+    }
+  },
+  {
+    "id": 3958,
+    "fecha": "2026-11-21T03:01:37Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "36% de CISOs permiten agentes de IA autónomos en acciones de bajo riesgo en SOC, 60% lo harán en 12 meses",
+    "resumen": "Según una encuesta de a16z, más de un tercio de los directores de seguridad de grandes organizaciones ya delegan tareas de bajo riesgo a agentes de IA, y la adopción autónoma se proyecta al 60% en el próximo año, posicionando la IA en SOC como la iniciativa principal para 2027.",
+    "url_imagen": "https://images.unsplash.com/photo-1630332458162-acc073374da7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMzAwOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:the path to ai autonomy in the soc",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3957,
+    "fecha": "2026-11-21T03:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Broadcom alerta 5 vulnerabilidades críticas en VMware vCenter, incluye CVE-2026-123890",
+    "resumen": "Se reportan cinco fallos en productos Broadcom que afectan a VMware vCenter y componentes asociados; uno es crítico (CVE-2026-123890) y permite acceso administrativo sin credenciales, explotado por el grupo ARMORY CASTLE. Se recomienda aplicar los parches específicos por versión y revisar sesiones y cuentas SSO no autorizadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyMzAwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-de-broadcom-0",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-123890",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "13.1.5.0"
+      ],
+      "cve": [
+        "CVE-2026-123890"
+      ]
+    }
+  },
+  {
     "id": 3956,
     "fecha": "2026-11-21T02:34:21Z",
     "categoria": "Ciberseguridad",
