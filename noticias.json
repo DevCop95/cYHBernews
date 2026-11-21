@@ -1,5 +1,32 @@
 [
   {
+    "id": 3963,
+    "fecha": "2026-11-21T11:28:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Uncaught Exception en Phoenix Framework permite DoS a través de serializador legado CVE-2026-129344",
+    "resumen": "Un atacante no autenticado puede provocar denegación de servicio explotando una excepción no capturada en Phoenix.Channel.Server.send/4 al enviar payloads binarios con un serializador legacy, afectando versiones 1.5.7-1.5.15, 1.6.0-rc.0-1.6.17, 1.7.0-rc.0-1.7.24 y 1.8.0-rc.0-1.8.16. El fallo reinicia el supervisor PubSub y vacía el registro de suscripciones mientras mantiene los sockets conectados.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyNjA1MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475316",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-129344",
+    "ttps": [
+      {
+        "id": "T1499.002",
+        "name": "Service Exhaustion Flood"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129344"
+      ]
+    }
+  },
+  {
     "id": 3962,
     "fecha": "2026-11-21T09:01:37Z",
     "categoria": "Ciberseguridad",
