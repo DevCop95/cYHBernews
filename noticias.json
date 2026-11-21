@@ -1,5 +1,77 @@
 [
   {
+    "id": 3970,
+    "fecha": "2026-11-21T19:32:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-134007 permite SQL injection remoto en itsourcecode Banking Management System 1.0",
+    "resumen": "La falla en el archivo manage_handover.php permite la inyección de SQL mediante manipulación del parámetro ID, explotable de forma remota y ya divulgada públicamente, afectando la confidencialidad e integridad de datos bancarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyODk1MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475554",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-134007",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-134007"
+      ]
+    }
+  },
+  {
+    "id": 3969,
+    "fecha": "2026-11-21T19:32:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-14914 permite carga ilimitada de web shells en Tegsoft Contact Center antes de 2026-11-16",
+    "resumen": "La vulnerabilidad de tipo unrestricted file upload permite a un atacante subir un web shell y ejecutar código arbitrario en el servidor web del Contact Center de Tegsoft, con CVSS 10.0. Afecta versiones anteriores a la actualización 2026-11-16 y requiere mitigación inmediata mediante parche y restricción de tipos MIME.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyODk1MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-14914",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-14914",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-14914"
+      ]
+    }
+  },
+  {
+    "id": 3968,
+    "fecha": "2026-11-21T19:31:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad en Microsoft Entra Connect Health permite robar correos de administradores y configuración de inquilinos",
+    "resumen": "Un atacante explotó una falla en el servicio Entra Connect Health de Microsoft para obtener direcciones de correo de administradores y datos de configuración de tenants, comprometiendo la confidencialidad de entornos cloud. La vulnerabilidad afecta a todas las organizaciones que sincronizan identidades con Azure AD y requiere parcheo inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1767972464040-8bfee42d7bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyODk1MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft entra connect health flaw exploited to steal tenant data",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1087",
+        "name": "Account Discovery"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3967,
     "fecha": "2026-11-21T18:01:35Z",
     "categoria": "Ciberseguridad",
