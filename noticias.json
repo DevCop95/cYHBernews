@@ -1,5 +1,40 @@
 [
   {
+    "id": 3967,
+    "fecha": "2026-11-21T18:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Página web maliciosa permite secuestrar Meta Muse y extraer chats privados y credenciales almacenadas",
+    "resumen": "Investigadores demostraron que una página web controlada puede robar conversaciones y memorias de usuarios de Meta Muse sin activar prompts de autorización, exponiendo también credenciales vinculadas a cuentas externas. El vector de ataque se basa en la ejecución de scripts en el entorno del asistente, comprometiendo la confidencialidad de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyODQwOTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:a single malicious webpage let researchers hijack meta muse and access private chats",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1119",
+        "name": "Automated Collection"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3966,
     "fecha": "2026-11-21T15:01:40Z",
     "categoria": "Ciberseguridad",
