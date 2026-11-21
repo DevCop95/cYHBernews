@@ -1,5 +1,59 @@
 [
   {
+    "id": 3966,
+    "fecha": "2026-11-21T15:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-94451 en Quarkus REST Data Panache permite filtrado inseguro y posible DoS",
+    "resumen": "La vulnerabilidad permite a un atacante manipular el parámetro sort en endpoints generados automáticamente, exponiendo datos no autorizados y forzando consultas costosas que pueden degradar o interrumpir el servicio. Afecta a aplicaciones Java que usan Quarkus para exponer APIs REST.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyNzMzMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475358",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-94451",
+    "ttps": [
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-94451"
+      ]
+    }
+  },
+  {
+    "id": 3965,
+    "fecha": "2026-11-21T15:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "FBI sufre segunda brecha en dos meses, atacan la base NCIC de datos policiales nacionales",
+    "resumen": "Un actor no identificado comprometió nuevamente los sistemas del FBI, accediendo al National Crime Information Center y potencialmente exponiendo datos críticos de investigaciones y antecedentes penales. El incidente sugiere una campaña dirigida contra infraestructuras de información policial con posible uso de técnicas de credential stuffing y explotación de vulnerabilidades internas.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUyNzMyOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fbi reportedly hacked again this time targeting nationwide police database",
+    "ttps": [
+      {
+        "id": "T1110.004",
+        "name": "Credential Stuffing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3964,
     "fecha": "2026-11-21T12:01:45Z",
     "categoria": "Ciberseguridad",
