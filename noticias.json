@@ -1,5 +1,32 @@
 [
   {
+    "id": 3990,
+    "fecha": "2026-11-22T15:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-120539 permite RCE remoto en BuddyPress ≤1.5.4 sin autenticación",
+    "resumen": "La vulnerabilidad en el plugin BuddyPress para WordPress permite a atacantes no autenticados ejecutar código arbitrario mediante una petición GET que inyecta payloads ${…} en la URI, explotando la evaluación con eval() en versiones hasta 1.5.4. El vector afecta a sitios que tengan activo BuddyPress y Paid Memberships Pro, sin requerir configuración adicional.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNTk2OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-120539",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-120539",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120539"
+      ]
+    }
+  },
+  {
     "id": 3989,
     "fecha": "2026-11-22T12:01:38Z",
     "categoria": "Ciberseguridad",
