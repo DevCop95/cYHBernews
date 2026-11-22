@@ -1,5 +1,55 @@
 [
   {
+    "id": 3981,
+    "fecha": "2026-11-22T03:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "OpenShot Video Editor 4.1.1 vulnerado por deserialización insegura CVE-2026-134704 permite ejecución de código",
+    "resumen": "La vulnerabilidad permite que un archivo .osp manipulado contenga un gadget __reduce__ de pickle, ejecutando código con los privilegios del usuario al abrir el proyecto. Afecta a todas las versiones hasta 4.1.1 y requiere interacción del usuario para la explotación.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051546-bdcc3ee72def?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMTY1MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475644",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-134704",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1204.002",
+        "name": "Malicious File"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-134704"
+      ]
+    }
+  },
+  {
+    "id": 3980,
+    "fecha": "2026-11-22T03:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "BADBOX botnet reactivada y genera 40 mil millones de solicitudes de anuncios diarias en Android TV",
+    "resumen": "La botnet BADBOX, detectada en decenas de miles de Android TV boxes, ha retomado operaciones masivas de fraude publicitario, explotando vulnerabilidades de firmware para inyectar código malicioso y generar tráfico de anuncios a escala global. El vector principal sigue siendo la instalación de paquetes APK no firmados mediante actualizaciones OTA comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1654588836225-f6953d1b697d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMTY0OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:badbox botnet returns with record breaking 40 billion daily ad requests",
+    "ttps": [
+      {
+        "id": "T1496",
+        "name": "Resource Hijacking"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3979,
     "fecha": "2026-11-22T01:27:03Z",
     "categoria": "Ciberseguridad",
