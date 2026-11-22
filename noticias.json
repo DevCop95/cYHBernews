@@ -1,5 +1,51 @@
 [
   {
+    "id": 3992,
+    "fecha": "2026-11-22T18:02:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de lectura arbitraria de archivos (CVE-2026-132147) en debbugs permite exfiltrar datos vía",
+    "resumen": "La falla en versions.cgi de debbugs no sanitiza correctamente los nombres de paquetes en los parámetros de consulta, lo que permite a un atacante leer cualquier línea de archivos del sistema que contenga espacios. El vector de ataque se basa en consultas HTTP manipuladas y afecta a todas las instancias del BTS de Debian expuestas.",
+    "url_imagen": "https://images.unsplash.com/photo-1669054626218-f0b57b8ec632?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNzA1Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475842",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-132147",
+    "ttps": [
+      {
+        "id": "T1005",
+        "name": "Data from Local System"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-132147"
+      ]
+    }
+  },
+  {
+    "id": 3991,
+    "fecha": "2026-11-22T18:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cleverbridge confirma filtración de números de tarjetas y CVV tras ataque de hackers",
+    "resumen": "La plataforma de e-commerce Cleverbridge sufrió una brecha que expuso datos de pago de clientes, incluyendo números de tarjeta y códigos CVV, indicando posible compromiso de su infraestructura de procesamiento de pagos. El incidente requiere notificación a los titulares y revisión de controles de acceso y cifrado.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNzA1MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cleverbridge warns hackers stole credit card numbers cvvs in data breach",
+    "ttps": [
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3990,
     "fecha": "2026-11-22T15:01:32Z",
     "categoria": "Ciberseguridad",
