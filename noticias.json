@@ -1,5 +1,82 @@
 [
   {
+    "id": 3986,
+    "fecha": "2026-11-22T09:01:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-94259 permite SQL injection en plugin SMS Alert WordPress < 4.0.4",
+    "resumen": "El plugin SMS Alert para WordPress, versiones anteriores a 4.0.4, no sanitiza ni escapa un parámetro usado en consultas SQL, habilitando una inyección SQL explotable por usuarios con privilegios de administrador. La falla afecta a miles de sitios que utilizan el plugin para notificaciones SMS, exponiendo datos y potencialmente permitiendo escalada de privilegios.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMzgxMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475661",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-94259",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-94259"
+      ]
+    }
+  },
+  {
+    "id": 3985,
+    "fecha": "2026-11-22T09:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-110513 permite secuestro de sesión en Apache Iggy por reutilización de JWT",
+    "resumen": "Vulnerabilidad de expiración insuficiente de sesión (CVSS 9.8) permite a un atacante usar un JWT expirado de un usuario borrado para autenticarse como el siguiente usuario creado con el mismo ID, comprometiendo privilegios en despliegues HTTP. Se recomienda actualizar a Apache Iggy 0.10.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1768839722988-91767bb82b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMzgxMDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-110513",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-110513",
+    "ttps": [
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-110513"
+      ]
+    }
+  },
+  {
+    "id": 3984,
+    "fecha": "2026-11-22T09:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "OpenRouter elimina tres proveedores tras detección de robo de prompts durante meses",
+    "resumen": "Dragos confirmó que atacantes accedieron a datos de solicitudes de IA en tres proveedores de inferencia, vulnerando la configuración Zero Data Retention y permaneciendo ocultos hasta la investigación. El incidente expone fallas en la segregación y auditoría de logs en plataformas de enrutamiento de modelos LLM.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMzgwOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openrouter drops 3 providers after researchers catch months of prompt theft at ai hosting firms",
+    "ttps": [
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      },
+      {
+        "id": "T1083",
+        "name": "File and Directory Discovery"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3983,
     "fecha": "2026-11-22T06:01:58Z",
     "categoria": "Ciberseguridad",
