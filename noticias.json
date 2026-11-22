@@ -1,5 +1,28 @@
 [
   {
+    "id": 3989,
+    "fecha": "2026-11-22T12:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad Stored XSS (CVE-2026-131774) afecta WooCommerce Fortnox Integration hasta la versión 4.8.1",
+    "resumen": "La integración de WooCommerce con Fortnox presenta una falla de neutralización de entrada que permite la ejecución de scripts almacenados en páginas generadas, comprometiendo la integridad de los datos de los comercios electrónicos. El vector de ataque es la inyección de código JavaScript a través de campos no sanitizados, explotable por atacantes con acceso a la interfaz de administración.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNDg4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475806",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-131774",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-131774"
+      ]
+    }
+  },
+  {
     "id": 3988,
     "fecha": "2026-11-22T11:43:26Z",
     "categoria": "Ciberseguridad",
