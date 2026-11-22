@@ -1,5 +1,63 @@
 [
   {
+    "id": 3976,
+    "fecha": "2026-11-22T00:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-134540 en llama.cpp permite ejecución remota",
+    "resumen": "La falla en la función common_sampler_init de llama.cpp 0.7.0-dev permite manipular grammar_triggers[].type y evadir la validación de entrada, habilitando un ataque remoto sin autenticación. Se recomienda actualizar a la versión b12405 con el parche 9f26fe11c73c7e74a5e99e7f1b6370ad8e1cb22d para mitigar la vulnerabilidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1595928796398-1d0ac507eed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMDU3MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475561",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-134540",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "9f26fe11c73c7e74a5e99e7f1b6370ad8e1cb22d"
+      ],
+      "cve": [
+        "CVE-2026-134540"
+      ]
+    }
+  },
+  {
+    "id": 3975,
+    "fecha": "2026-11-22T00:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "The Container Store restablece su sitio web y sistemas tras incidente de ciberseguridad",
+    "resumen": "La empresa matriz Neighborhood Intelligence confirmó que el sitio y los sistemas críticos del retailer fueron recuperados tras un ataque que interrumpió sus operaciones el fin de semana. No se han divulgado detalles sobre el vector de ataque ni datos comprometidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMDU3MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/container-store-restores-systems-cyberattack",
+    "fuente": "The Record",
+    "dedup_key": "txt:container store restores systems after cyberattack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 3974,
+    "fecha": "2026-11-22T00:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Signal impone bloqueo de capturas de pantalla para evitar que agentes IA lean chats privados en Android e iOS",
+    "resumen": "La nueva política de Signal desactiva por defecto la función de screenshots, mitigando la exposición de datos a agentes de IA integrados en iOS 27 y versiones de Android que intenten extraer contenido cifrado. La medida es parcial, ya que vulnerabilidades de captura de pantalla a nivel de hardware o accesos root pueden eludirla.",
+    "url_imagen": "https://images.unsplash.com/photo-1562957103-b3a2f95fceaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMDU3MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:signal blocks ai agents from reading private chats via screenshots on android and ios",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3973,
     "fecha": "2026-11-21T21:01:23Z",
     "categoria": "Ciberseguridad",
