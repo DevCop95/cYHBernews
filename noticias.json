@@ -1,5 +1,73 @@
 [
   {
+    "id": 3979,
+    "fecha": "2026-11-22T01:27:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-127057 permite acceso no autorizado en dispositivos Danfoss AK-SC 355 y AK-SM 800",
+    "resumen": "La vulnerabilidad crítica (CVSS 9.9) afecta a todas las versiones de los controladores Danfoss AK-SC 355 y AK-SM 800 que conservan credenciales predeterminadas o contraseñas conocidas, facilitando acceso no autorizado a sistemas industriales. Se recomienda cambiar inmediatamente las credenciales y aplicar mitigaciones de hardening.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMTA4MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-127057",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-127057",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1078.001",
+        "name": "Default Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-127057"
+      ]
+    }
+  },
+  {
+    "id": 3978,
+    "fecha": "2026-11-22T01:26:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenaza china emplea herramienta IA Cairn para ataque persistente y posible zero-day en universidades",
+    "resumen": "Un actor vinculado a China utilizó el framework de pentesting de código abierto Cairn AI para comprometer redes de dos instituciones académicas, logrando persistencia y, según los investigadores, identificar una vulnerabilidad zero-day no divulgada.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMTA4MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+    "fuente": "The Record",
+    "dedup_key": "txt:amazon says chinese hackers used cairn ai tool to discover apparent zero day during attack on university",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547",
+        "name": "Boot or Logon Autostart Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3977,
+    "fecha": "2026-11-22T01:26:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers comprometen Rackspace Spot y acceden a secretos de Kubernetes en clústeres de clientes",
+    "resumen": "Rackspace informó que atacantes usaron credenciales comprometidas para infiltrarse en la plataforma Spot, desplegar workloads no autorizados y extraer secretos de Kubernetes, exponiendo datos críticos de múltiples clientes. El vector incluye phishing o credential stuffing y afecta la confidencialidad e integridad de los entornos cloud.",
+    "url_imagen": "https://images.unsplash.com/photo-1596457233038-45a990575b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMTA4MTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:rackspace spot breach let hackers access customer kubernetes secrets",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3976,
     "fecha": "2026-11-22T00:01:58Z",
     "categoria": "Ciberseguridad",
