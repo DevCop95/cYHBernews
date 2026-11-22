@@ -1,5 +1,63 @@
 [
   {
+    "id": 3994,
+    "fecha": "2026-11-22T19:53:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-125294 permite escalada de privilegios en Nexter Blocks Pro de WordPress",
+    "resumen": "La vulnerabilidad en la función `tpgb_ajax_register_user()` de Nexter Blocks Pro (≤ 5.0.10) permite a un atacante no autenticado registrar una cuenta que obtiene el rol Administrator mediante manipulación de caracteres Unicode y colación de base de datos. La cadena de explotación incluye la obtención pública del nonce, un POST de registro forjado y el flujo de autologin del plugin, concediendo control total del sitio.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNzcxOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-125294",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-125294",
+    "ttps": [
+      {
+        "id": "T1136",
+        "name": "Create Account"
+      },
+      {
+        "id": "T1136.001",
+        "name": "Local Account"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1548.002",
+        "name": "Bypass User Account Control"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125294"
+      ]
+    }
+  },
+  {
+    "id": 3993,
+    "fecha": "2026-11-22T19:53:12Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Hackers explotan vulnerabilidad en la nube de GL.iNet para instalar malware en routers y dispositivos KVM",
+    "resumen": "Se confirmó que actores maliciosos aprovecharon una falla en el servicio de gestión remota en la nube de GL.iNet para cargar malware personalizado, creando backdoors y reverse shells que permiten acceso remoto no autorizado a routers y KVM. El vector de ataque combina explotación de la API cloud con ejecución de código en dispositivos IoT, incrementando la superficie de ataque de infraestructuras distribuidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNzcxOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers exploit gl inet cloud flaw to infect routers kvm devices",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3992,
     "fecha": "2026-11-22T18:02:07Z",
     "categoria": "Ciberseguridad",
