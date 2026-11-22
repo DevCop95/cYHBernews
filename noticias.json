@@ -1,5 +1,47 @@
 [
   {
+    "id": 3983,
+    "fecha": "2026-11-22T06:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Uso de hojas de cálculo para contraseñas expone a empresas a riesgos críticos de seguridad",
+    "resumen": "Almacenar credenciales en spreadsheets impide la visibilidad de contraseñas débiles, reutilizadas o comprometidas, aumentando la superficie de ataque de phishing y credential stuffing; la adopción de soluciones de gestión centralizada como NordPass permite auditoría, rotación automática y compartición segura.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMjczMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:still tracking company passwords in spreadsheets you re flying blind",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 3982,
+    "fecha": "2026-11-22T06:01:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-133648 permite MITM en conexiones TLS de Flowintel antes de v4.1.0",
+    "resumen": "La vulnerabilidad desactiva la verificación de certificados TLS en la API MISP y en conexiones IMAP/SMTP STARTTLS, permitiendo a un atacante en la ruta interceptar claves API, credenciales de correo y datos de inteligencia sin autenticación ni interacción del usuario. Afecta a todas las versiones de Flowintel anteriores a 4.1.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzMjczMTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-133648",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-133648",
+    "ttps": [
+      {
+        "id": "T1557.001",
+        "name": "LLMNR/NBT-NS Poisoning and SMB Relay"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-133648"
+      ]
+    }
+  },
+  {
     "id": 3981,
     "fecha": "2026-11-22T03:01:42Z",
     "categoria": "Ciberseguridad",
