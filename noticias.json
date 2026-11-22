@@ -1,5 +1,36 @@
 [
   {
+    "id": 3995,
+    "fecha": "2026-11-22T21:02:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "N-able MailAssure (SpamExperts) permite conexión LDAP arbitraria a hosts internos (CVE-2026-134624)",
+    "resumen": "La vulnerabilidad permite a un usuario autenticado de la API forzar al servidor a conectar con cualquier host y puerto internos, verificando su accesibilidad y enviando datos manipulados, lo que facilita descubrimiento de red y posibles ataques internos.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzODEzMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475846",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-134624",
+    "ttps": [
+      {
+        "id": "T1018",
+        "name": "Remote System Discovery"
+      },
+      {
+        "id": "T1046",
+        "name": "Network Service Discovery"
+      },
+      {
+        "id": "T1049",
+        "name": "System Network Connections Discovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-134624"
+      ]
+    }
+  },
+  {
     "id": 3994,
     "fecha": "2026-11-22T19:53:18Z",
     "categoria": "Ciberseguridad",
