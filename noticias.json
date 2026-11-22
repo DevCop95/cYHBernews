@@ -1,5 +1,46 @@
 [
   {
+    "id": 3988,
+    "fecha": "2026-11-22T11:43:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-114516 permite lectura arbitraria de archivos en Etherpad 1.8.14-3.3.2",
+    "resumen": "La vulnerabilidad de path traversal sin autenticación en el manejador /static/ de Etherpad permite a un atacante remoto leer cualquier archivo accesible al proceso y, tras extraer credenciales, ejecutar código arbitrario en el servidor. Afecta versiones 1.8.14 a 3.3.2 y se corrige en la 3.3.3.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNDc4MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-114516",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-114516",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-114516"
+      ]
+    }
+  },
+  {
+    "id": 3987,
+    "fecha": "2026-11-22T11:43:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Ghostscript vulnerado permite escape de sandbox y ejecución remota mediante archivos subidos maliciosos",
+    "resumen": "Un CVE recién parcheado en Ghostscript permite a un atacante evadir el sandbox y ejecutar código arbitrario en servidores que procesan PDFs o PostScript, afectando a aplicaciones web que delegan la conversión de archivos. La vulnerabilidad se explota mediante la carga de archivos especialmente diseñados y ya se ha distribuido un parche crítico.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758412-5957b60d7969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTUzNDc4MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:researchers demonstrate ghostscript sandbox escape rce via crafted file uploads in popular apps",
+    "ttps": [
+      {
+        "id": "T1497.001",
+        "name": "System Checks"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 3986,
     "fecha": "2026-11-22T09:01:43Z",
     "categoria": "Ciberseguridad",
