@@ -1,5 +1,65 @@
 [
   {
+    "id": 4003,
+    "fecha": "2026-11-23T09:02:07Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-134935 permite a usuarios locales cambiar la propiedad de archivos raíz en Omarchy",
+    "resumen": "La versión del paquete dell-xps-touchpad-haptics anterior a 1.0.0-4 en Omarchy permite a usuarios locales crear un symlink en .config/omarchy/dell-haptic.conf para tomar control de archivos propiedad de root, exponiendo escalada de privilegios local. Se recomienda actualizar inmediatamente a la versión corregida.",
+    "url_imagen": "https://images.unsplash.com/photo-1583743493454-f122b10f8920?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MjQ1Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/476411",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-134935",
+    "ttps": [
+      {
+        "id": "T1222.001",
+        "name": "Windows File and Directory Permissions Modification"
+      },
+      {
+        "id": "T1548.001",
+        "name": "Setuid and Setgid"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-134935"
+      ]
+    }
+  },
+  {
+    "id": 4002,
+    "fecha": "2026-11-23T09:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "AI-assisted cyberattacks provocan pagos no autorizados en bancos y fintechs indios",
+    "resumen": "CERT-In alerta sobre actores que usan modelos de IA para automatizar spear-phishing y generación de credenciales, comprometiendo sistemas ICT y ejecutando transferencias fraudulentas en entidades bancarias y de servicios financieros. El vector combina deepfake de voz y scripts de automatización para evadir controles de autenticación.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MjQ1MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:ai assisted cyberattacks trigger unauthorized payments at indian banks and fintech firms",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4001,
+    "fecha": "2026-11-23T09:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA alerta sobre explotación activa de vulnerabilidad crítica RCE en Cisco Expressway",
+    "resumen": "La agencia CISA advierte que actores maliciosos están explotando en producción la vulnerabilidad RCE recientemente parcheada en Cisco Expressway, afectando a agencias federales y potencialmente a entornos corporativos. Se recomienda aplicar de inmediato los parches y reforzar la monitorización de tráfico hacia los servidores Expressway.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642261-3ccbfafa481b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MjQ1MTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:cisa flags critical cisco rce flaw as actively exploited in attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4000,
     "fecha": "2026-11-23T06:02:08Z",
     "categoria": "Ciberseguridad",
