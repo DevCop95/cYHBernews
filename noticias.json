@@ -1,5 +1,28 @@
 [
   {
+    "id": 4010,
+    "fecha": "2026-11-23T15:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-134814 permite inyección de JavaScript en binary-parser antes de 2.3.1",
+    "resumen": "La falla de code injection en la librería binary-parser permite a un atacante que controla definiciones de parser ejecutar código arbitrario en entornos Node.js, exponiendo aplicaciones que procesan datos binarios a compromisos de integridad y confidencialidad. El CVSS base 9.2 indica riesgo crítico; se recomienda actualizar a la versión 2.3.1 o aplicar mitigaciones de validación de entrada.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0NDYxMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-134814",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-134814"
+      ]
+    }
+  },
+  {
     "id": 4009,
     "fecha": "2026-11-23T13:17:30Z",
     "categoria": "Ciberseguridad",
