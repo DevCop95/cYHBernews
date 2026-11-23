@@ -1,5 +1,31 @@
 [
   {
+    "id": 3998,
+    "fecha": "2026-11-23T03:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad remota CVE-2026-134785 en Bagisto MangoPay permite falsificar datos",
+    "resumen": "La falla en la función MangoPayStandardController::success permite la explotación remota mediante la manipulación de la verificación de autenticidad de datos, comprometiendo la integridad de los pagos. Afecta a todas las implementaciones del gateway Bagisto MangoPay que operen bajo el modelo de entrega continua sin versiones fijas.",
+    "url_imagen": "https://images.unsplash.com/photo-1650765815273-da496048137b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MDI4OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/475928",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-134785",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "c061edcc7973cb37a77a9f9ae523db170c3e28ed"
+      ],
+      "cve": [
+        "CVE-2026-134785"
+      ]
+    }
+  },
+  {
     "id": 3997,
     "fecha": "2026-11-23T00:02:20Z",
     "categoria": "Ciberseguridad",
