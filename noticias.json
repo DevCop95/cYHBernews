@@ -1,5 +1,76 @@
 [
   {
+    "id": 4013,
+    "fecha": "2026-11-23T18:02:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad out-of-bounds read en servidor DNS (CVE-2026-96975) permite DoS remoto",
+    "resumen": "La falla de lectura fuera de límites en el servidor DNS permite a un atacante no autenticado generar denegación de servicio a través de consultas manipuladas, afectando la disponibilidad de la infraestructura de red. Se recomienda aplicar los parches del proveedor y reforzar filtros de tráfico DNS.",
+    "url_imagen": "https://images.unsplash.com/photo-1585816193150-a7538a4b2a1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0NTY5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/477871",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-96975",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-96975"
+      ]
+    }
+  },
+  {
+    "id": 4012,
+    "fecha": "2026-11-23T18:02:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-103782 en Dell Enterprise Sonic Distribution permite ejecución remota de comandos con privilegios bajos",
+    "resumen": "La vulnerabilidad de Argument Injection en versiones anteriores a 4.6.1 de Dell Enterprise Sonic Distribution permite a un atacante remoto con bajos privilegios ejecutar comandos arbitrarios y acceder al sistema de archivos. El CVSS 9.9 indica riesgo crítico y requiere parche inmediato.",
+    "url_imagen": "https://images.unsplash.com/photo-1637249796683-463fcf0bc9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0NTY5NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-103782",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-103782",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021.004",
+        "name": "SSH"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-103782"
+      ]
+    }
+  },
+  {
+    "id": 4011,
+    "fecha": "2026-11-23T18:02:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Nuevo marco de análisis permite rastrear origen de actores de ransomware durante una década",
+    "resumen": "El framework introduce técnicas de atribución basadas en indicadores de compromiso y patrones de infraestructura, facilitando la identificación de grupos responsables y acortando los tiempos de respuesta ante incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0NTY5MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:behind the alias how one researcher unmasked a decade of ransomware actors",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4010,
     "fecha": "2026-11-23T15:02:00Z",
     "categoria": "Ciberseguridad",
