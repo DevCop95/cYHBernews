@@ -1,5 +1,102 @@
 [
   {
+    "id": 4009,
+    "fecha": "2026-11-23T13:17:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Mattermost 11.7-11.11 permite a usuarios autenticados eludir ABAC y robar archivos sensibles (CVE-2026-19531)",
+    "resumen": "La vulnerabilidad en versiones 11.7.x-11.11.x de Mattermost no verifica los permisos de descarga bajo la política ABAC, permitiendo a un miembro autenticado del canal extraer archivos a los que no tiene acceso mediante un bot agente. Requiere parcheo inmediato para evitar filtración de datos internos.",
+    "url_imagen": "https://images.unsplash.com/photo-1618335829737-2228915674e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0Mzk4NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/476469",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-19531",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-19531"
+      ]
+    }
+  },
+  {
+    "id": 4008,
+    "fecha": "2026-11-23T13:17:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "IA de compra autónoma Instinct expone riesgo de fraude al gestionar tarjetas virtuales en Black Friday",
+    "resumen": "Un usuario configuró al agente IA Instinct para monitorizar precios y preparar compras del Google Pixel 11 Pro, cargando una tarjeta virtual en Stripe. La práctica evidencia vulnerabilidades operativas, pues la IA podría ejecutar pagos no autorizados o ser manipulada por phishing, comprometiendo datos de pago.",
+    "url_imagen": "https://images.unsplash.com/photo-1664139542493-a0d84c83e184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0Mzk4NDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/le-he-pedido-a-instinct-que-vigile-precio-movil-black-friday-baja-200-euros-compra",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:le he pedido a instinct que vigile el precio de un movil hasta black friday si baja 200 euros lo compra el",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4007,
+    "fecha": "2026-11-23T13:17:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers comprometen sitio del Ministerio de Relaciones Exteriores de Austria y roban datos de contactos diplomáticos",
+    "resumen": "Un actor no identificado vulneró la infraestructura web del Ministerio austríaco, extrayendo nombres y datos de contacto oficiales de funcionarios en Viena y misiones en el exterior, lo que expone a la diplomacia a posibles campañas de spear-phishing y espionaje.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0Mzk4NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
+    "fuente": "The Record",
+    "dedup_key": "txt:hackers breach austrian foreign ministry website access diplomats contact details",
+    "ttps": [
+      {
+        "id": "T1589",
+        "name": "Gather Victim Identity Information"
+      },
+      {
+        "id": "T1589.001",
+        "name": "Credentials"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4006,
+    "fecha": "2026-11-23T13:17:22Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad de escritura fuera de límites CVE-2026-133646 permite DoS en Synchronet BBS vía SSH",
+    "resumen": "La falla de tipo buffer overflow en la función answer() de Synchronet BBS (v3.20b-v3.21e) permite a un cliente SSH no autenticado sobrescribir memoria y bloquear hilos de conexión, provocando denegación de servicio. Se recomienda aplicar el parche disponible en el commit cb6d77dbca o actualizar a v3.22 o superior antes de finales de 2026.",
+    "url_imagen": "https://images.unsplash.com/photo-1794908471673-651c8f9048ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0Mzk4NDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/escritura-fuera-de-limites-en-synchronet-bbs-de-synchronet",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-133646",
+    "ttps": [
+      {
+        "id": "T1499.001",
+        "name": "OS Exhaustion Flood"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "gitlab.synchro.net",
+        "synchro.net"
+      ],
+      "url": [
+        "https://gitlab.synchro.net/main/sbbs/-/commit/cb6d77dbca"
+      ],
+      "cve": [
+        "CVE-2026-133646"
+      ]
+    }
+  },
+  {
     "id": 4005,
     "fecha": "2026-11-23T12:02:20Z",
     "categoria": "Ciberseguridad",
