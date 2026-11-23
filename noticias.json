@@ -1,5 +1,46 @@
 [
   {
+    "id": 4000,
+    "fecha": "2026-11-23T06:02:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-131782 permite inyección de objetos en Simple Shopping Cart de WordPress con CVSS 9.8",
+    "resumen": "Vulnerabilidad de deserialización de datos no confiables en el plugin Simple Shopping Cart (versión ≤5.3.3) permite a un atacante ejecutar código arbitrario mediante object injection. El vector de ataque es la carga de datos manipulados a través de la funcionalidad de pago PayPal, exponiendo sitios WordPress a compromisos completos.",
+    "url_imagen": "https://images.unsplash.com/photo-1633242817503-60e9390aee53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MTM3Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-131782",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-131782",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-131782"
+      ]
+    }
+  },
+  {
+    "id": 3999,
+    "fecha": "2026-11-23T06:02:03Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Proveedores de seguridad abordan controles de acceso para agentes de IA en entornos empresariales",
+    "resumen": "Los controles de identidad, tiempo de ejecución y desarrollo convergen para limitar a los agentes de IA a sus tareas asignadas, pero la heterogeneidad de enfoques de los vendors obliga a los CISO a evaluar soluciones de gestión de acceso y aislamiento de procesos.",
+    "url_imagen": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MTM3MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:how security vendors are tackling access control challenges for ai agents",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 3998,
     "fecha": "2026-11-23T03:01:32Z",
     "categoria": "Ciberseguridad",
