@@ -1,5 +1,54 @@
 [
   {
+    "id": 4005,
+    "fecha": "2026-11-23T12:02:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-134882 permite ejecución remota de comandos en routers TOTOLINK A7100RU",
+    "resumen": "Vulnerabilidad de OS command injection en la función exportOvpn del CGI /cgi-bin/cstecgi.cgi permite a un atacante remoto ejecutar código arbitrario con privilegios del sistema en dispositivos TOTOLINK A7100RU. El vector de ataque es la manipulación del parámetro Username vía HTTP.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MzUzNDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-134882",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-134882",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.008",
+        "name": "Network Device CLI"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-134882"
+      ]
+    }
+  },
+  {
+    "id": 4004,
+    "fecha": "2026-11-23T12:02:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Procuradores de Oregon y Virginia demandan a SpaceX por deepfakes sexualizados de menores",
+    "resumen": "Las autoridades estatales acusan a varias empresas de Elon Musk de no implementar controles adecuados contra la generación de imágenes deepfake sexualmente explícitas que involucran a personas reales, incluidos menores, lo que plantea riesgos de abuso y violación de privacidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0MzUzMzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:states sue spacex over grok deepfakes",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4003,
     "fecha": "2026-11-23T09:02:07Z",
     "categoria": "Ciberseguridad",
