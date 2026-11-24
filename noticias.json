@@ -1,5 +1,176 @@
 [
   {
+    "id": 4042,
+    "fecha": "2026-11-24T18:02:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad Use-After-Free CVE-2026-119055 en Schneider Electric EcoStruxure Power Build Rapsody",
+    "resumen": "La falla de tipo use-after-free (CVE-2026-119055) puede ser explotada por un atacante local que abra un archivo SSD malicioso, provocando corrupción de memoria y ejecución de código arbitrario. Afecta versiones ≤2.9.1.0 (FR) y equivalentes en ESP, PT, BEL y NL; Schneider ha publicado parches en versiones 2.9.12.0101 y superiores.",
+    "url_imagen": "https://images.unsplash.com/photo-1782605423352-1e32132fb08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NDMzMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-119055",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "2.9.1.0"
+      ],
+      "domain": [
+        "www.se.com"
+      ],
+      "url": [
+        "https://www.se.com/ww/en/product-country-selector/?pageType=product-range&sourceId=2309"
+      ],
+      "cve": [
+        "CVE-2026-119055"
+      ]
+    }
+  },
+  {
+    "id": 4041,
+    "fecha": "2026-11-24T18:02:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Legisladores exigen a empresas de verificación de identidad reforzar seguridad tras brecha en IDscan en septiembre",
+    "resumen": "Un comunicado bipartidista del Congreso alerta que los proveedores de identificación digital deben subsanar vulnerabilidades críticas tras el incidente que expuso datos sensibles de usuarios en septiembre, incrementando el riesgo de fraude de identidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060932014-4deda4932554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NDMzMjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/idscan-data-breach-warning-congressional-letter",
+    "fuente": "The Record",
+    "dedup_key": "txt:lawmakers warn id verification companies to bolster security after september hack",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4040,
+    "fecha": "2026-11-24T18:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Volant Manticore emplea backdoor KuboShell basado en IPFS para espionaje contra telecom y críticos en Chipre",
+    "resumen": "El grupo iraní Volant Manticore ha usado KuboShell, un malware que aprovecha IPFS como canal C2, y despliega el framework post-compromiso Homa para infiltrar operadores de telecomunicaciones, aerolíneas e infraestructuras críticas en Chipre.",
+    "url_imagen": "https://images.unsplash.com/photo-1778259205831-cf8f8bfebc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NDMzMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:iran aligned volant manticore uses ipfs based kuboshell backdoor in espionage campaigns",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4039,
+    "fecha": "2026-11-24T18:01:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Radware revela brecha que expuso claves de acceso a la nube de clientes por API WAF expuesta",
+    "resumen": "Un atacante explotó una API de gestión de Cloud WAF sin protección, obteniendo credenciales y claves de acceso a entornos cloud de varios clientes, lo que permite potenciales movimientos laterales y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1590065707046-4fde65275b2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NDMzMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:radware discloses breach exposing customer cloud access keys",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4038,
+    "fecha": "2026-11-24T18:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Broadcom publica 19 vulnerabilidades críticas en VMware Tanzu, incluidos CVE-2026-115560 y CVE-2026-129182",
+    "resumen": "Se reportan ocho vulnerabilidades críticas y varias altas que permiten ejecución remota de código o elevación de privilegios en componentes PHP y Brotli de la suite Tanzu; la explotación requiere que el proceso descomprima datos controlados por un atacante. Broadcom recomienda actualizar los buildpacks PHP y los paquetes Brotli a las versiones parcheadas y, de ser posible, desactivar la codificación Brotli en el balanceador.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NDMzMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-productos-vmware-tanzu-de-broadcom",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en productos vmware tanzu de broadcom",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-111497",
+        "CVE-2026-115560",
+        "CVE-2026-126714",
+        "CVE-2026-129182",
+        "CVE-2026-129289",
+        "CVE-2026-129474",
+        "CVE-2026-129481",
+        "CVE-2026-129496"
+      ]
+    }
+  },
+  {
+    "id": 4037,
+    "fecha": "2026-11-24T15:02:02Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-128797 permite exposición de panel de administración web a IPv6 pública sin firewall",
+    "resumen": "La vulnerabilidad CVE-2026-128797 (CVSS 10.0) hace que el panel de administración en el puerto 8080 escuche en todas las interfaces, incluyendo IPv6 pública, exponiendo APIs internas a Internet sin protección de firewall.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MzI1MjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-128797",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-128797",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-128797",
+        "CVE-2026-50224"
+      ]
+    }
+  },
+  {
+    "id": 4036,
+    "fecha": "2026-11-24T15:01:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Okta detecta al grupo vishing INCEPTION, rebrandeado de ShinyHunters, operando con nuevas campañas de phishing",
+    "resumen": "El equipo de Threat Intelligence de Okta identifica al cluster O-UNC-053, ahora bajo el nombre INCEPTION, como continuador de la célula extorsiva ShinyHunters, empleando ataques de vishing para capturar credenciales y redirigir a páginas de phishing. La reactivación sugiere un aumento de la superficie de ataque en entornos SaaS y federación de identidades.",
+    "url_imagen": "https://images.unsplash.com/photo-1585835301403-3046a2509a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MzI1MTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:okta links shinyhunters associated vishing group to new inception data leak site",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.003",
+        "name": "Spearphishing via Service"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4034,
     "fecha": "2026-11-24T14:00:28Z",
     "categoria": "Ciberseguridad",
