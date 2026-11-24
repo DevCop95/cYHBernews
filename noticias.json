@@ -1,5 +1,65 @@
 [
   {
+    "id": 4034,
+    "fecha": "2026-11-24T14:00:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "El NCSC británico detecta aumento marcado de ataques cibernéticos impulsados por IA desde septiembre",
+    "resumen": "El National Cyber Security Centre informa que la incorporación de modelos de IA a campañas de phishing, generación de malware y automatización de exploits ha incrementado la velocidad, escala y persistencia de los incidentes. Advierte que la tendencia sugiere una mayor capacidad de los actores amenazantes para lanzar campañas masivas con menor esfuerzo humano.",
+    "url_imagen": "https://images.unsplash.com/photo-1759662011366-8a743eae9649?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1Mjg4Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/cyberattacks-uk-artificial-intelligence",
+    "fuente": "The Record",
+    "dedup_key": "txt:uk cyber agency seeing marked rise in ai driven attacks",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4033,
+    "fecha": "2026-11-24T14:00:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "VMware vCenter expone vulnerabilidad crítica CVE-2026-123903 con puntuación 9.8 que permite eludir autenticación",
+    "resumen": "Broadcom lanzó parches para 23 CVE que afectan a VMware ESX, vCenter, Workstation, Fusion y Avi Load Balancer; el flaw en vmdir (CVE-2026-123903) permite a un atacante remoto eludir la autenticación y ejecutar código arbitrario.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1Mjg4MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-123903",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123903"
+      ]
+    }
+  },
+  {
+    "id": 4032,
+    "fecha": "2026-11-24T14:00:21Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Incidentes críticos vinculados a IA aumentan 150 % en los últimos dos años según informe de Allianz",
+    "resumen": "El estudio de Allianz Commercial revela que los incidentes de seguridad y litigios asociados a sistemas de IA han crecido de forma sostenida, evidenciando una exposición creciente a vulnerabilidades de modelos de lenguaje, ataques de prompt injection y uso malicioso de herramientas generativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1Mjg4MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/los-incidentes-criticos-relacionados-con-la-ia-han-aumentado-mas-de-un-150-en-dos-anos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:los incidentes criticos relacionados con la ia han aumentado mas de un 150 en dos anos",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4031,
     "fecha": "2026-11-24T12:02:15Z",
     "categoria": "Ciberseguridad",
