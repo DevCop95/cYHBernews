@@ -1,5 +1,31 @@
 [
   {
+    "id": 4026,
+    "fecha": "2026-11-24T06:02:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-135457 permite inyección de código remoto en Student-Management-System de amirhamza05",
+    "resumen": "La vulnerabilidad en la función installer endpoint (install.php) permite la manipulación del parámetro db_name para ejecutar código arbitrario a distancia; el exploit ya está disponible públicamente y afecta versiones sin identificación de release.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MDAxNTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/478576",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-135457",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "449397e35d42e3779f14f0bfc654ab307103f7e3"
+      ],
+      "cve": [
+        "CVE-2026-135457"
+      ]
+    }
+  },
+  {
     "id": 4025,
     "fecha": "2026-11-24T03:01:38Z",
     "categoria": "Ciberseguridad",
