@@ -1,5 +1,63 @@
 [
   {
+    "id": 4048,
+    "fecha": "2026-11-24T21:09:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-109484 permite elevación de privilegios en Azure App Service con puntuación CVSS 10.0",
+    "resumen": "La vulnerabilidad de inyección de elementos especiales en Azure App Service permite a un atacante no autenticado ejecutar código con privilegios elevados a nivel de red, comprometiendo la confidencialidad e integridad de los servicios hospedados. Se recomienda parchear inmediatamente y revisar los controles de acceso y segmentación de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1581080972400-da57f10ea9cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NTQ1NzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-109484",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-109484",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1548",
+        "name": "Abuse Elevation Control Mechanism"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-109484"
+      ]
+    }
+  },
+  {
+    "id": 4047,
+    "fecha": "2026-11-24T21:09:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Danfoss AK-SM 8xxA Series vulnerado por CVE-2026-129713 permite ejecución remota de código con privilegios de webserver",
+    "resumen": "La vulnerabilidad de desbordamiento de búfer en el manejador CGI no autenticado permite a un atacante enviar peticiones HTTP/S POST maliciosas y obtener ejecución arbitraria con privilegios de servidor web. Afecta a todas las versiones ≤5.4.0 y se mitiga con la actualización 5.5.x y la eliminación de modo estricto.",
+    "url_imagen": "https://images.unsplash.com/photo-1742522197047-0fbf649b17bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NTQ1NzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-129713",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-129713"
+      ]
+    }
+  },
+  {
     "id": 4046,
     "fecha": "2026-11-24T21:01:31Z",
     "categoria": "Ciberseguridad",
@@ -285,6 +343,33 @@
       }
     ],
     "iocs": {}
+  },
+  {
+    "id": 4035,
+    "fecha": "2026-11-24T15:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-125735 permite inyección SQL en CabinPaq de Don Hierro y elusión de control de acceso",
+    "resumen": "La vulnerabilidad de alta severidad (CVSS 8.6) permite a un atacante con acceso físico al terminal ejecutar consultas SQL arbitrarias y abrir compartimentos sin autorización. El fabricante ha mitigado el problema mediante consultas parametrizadas y refuerzo de la validación de entradas.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MzI1MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/inyeccion-sql-en-cabinpaq-de-don-hierro",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-125735",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-125735"
+      ]
+    }
   },
   {
     "id": 4034,
