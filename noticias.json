@@ -1,5 +1,77 @@
 [
   {
+    "id": 4019,
+    "fecha": "2026-11-24T00:02:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Dispositivos OT Serial Gateways revelan falta de autenticación y exposición a ataques",
+    "resumen": "Los gateways industriales de acceso serial transmiten su estado de seguridad sin protección, permitiendo a actores maliciosos identificar y explotar la ausencia de autenticación en entornos críticos. Esto aumenta el riesgo de compromisos de control y sabotaje en infraestructuras OT.",
+    "url_imagen": "https://images.unsplash.com/photo-1563206767-5b18f218e8de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0Nzg1NjR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/ics-ot-security/industrial-serial-gateways-broadcast-insecure",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:industrial serial gateways broadcast that they re insecure",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4018,
+    "fecha": "2026-11-24T00:02:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "VMware 0-Day y múltiples vulnerabilidades de ejecución remota comprometen infraestructuras críticas",
+    "resumen": "Se reveló un zero-day en VMware que permite ejecución de código arbitrario, junto a exploits Java4Shell, NGINX2Root y Ruby2Shell que amplifican la cadena de ataque mediante movimiento lateral y escalada de privilegios. Los vectores incluyen claves comprometidas y mensajes de confianza, aumentando el riesgo de compromisos en entornos de nube y data centers.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0Nzg1NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:weekly recap vmware 0 day java4shell nginx2root ruby2shell and a whole lot of shell trouble",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4017,
+    "fecha": "2026-11-24T00:02:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "OpenRouter elimina tres proveedores de IA por filtración de prompts y datos sensibles",
+    "resumen": "OpenRouter expulsó a tres proveedores de modelos de lenguaje tras detectar violaciones a sus políticas de manejo de datos, incluyendo exposición de prompts y secretos de usuarios, lo que compromete la confidencialidad y la integridad de la información procesada.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0Nzg1NjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/openrouter-drops-ai-providers-over-leaked-prompts-and-secrets/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openrouter drops ai providers over leaked prompts and secrets",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4016,
     "fecha": "2026-11-23T21:01:38Z",
     "categoria": "Ciberseguridad",
