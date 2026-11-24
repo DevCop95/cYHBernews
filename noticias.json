@@ -1,5 +1,121 @@
 [
   {
+    "id": 4046,
+    "fecha": "2026-11-24T21:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Ataques con agentes de IA autónomos automatizan intrusiones multi-plataforma y dejan rastros operacionales",
+    "resumen": "Se documentan campañas que emplean agentes de IA autónomos para coordinar accesos, escalar privilegios y exfiltrar datos usando herramientas legítimas, evidenciando una nueva capa de automatización en la cadena de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NTQwOTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/autonomous-ai-agent-threat-campaigns/",
+    "fuente": "Unit 42",
+    "dedup_key": "txt:recent trends and tactics of agentic ai attacks",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4045,
+    "fecha": "2026-11-24T21:01:29Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Colorado confirma ciberataque que derribó la app myColorado y expuso datos de 150 000 usuarios",
+    "resumen": "Un actor malicioso accedió a la infraestructura de la aplicación estatal, comprometiendo información personal de aproximadamente 150 000 residentes que utilizaban la app para identificación digital y acceso a servicios gubernamentales. El incidente evidencia fallas en la gestión de credenciales y la necesidad de reforzar controles de acceso y monitoreo continuo.",
+    "url_imagen": "https://images.unsplash.com/photo-1750108534790-213f65d792d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NTQwODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/mycolorado-app-down-data-breach",
+    "fuente": "The Record",
+    "dedup_key": "txt:colorado says cyberattack took down mycolorado app warns 150 000 had data stolen",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1560.001",
+        "name": "Archive via Utility"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4044,
+    "fecha": "2026-11-24T21:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidad en .NET permite evadir Windows Code Integrity y VirtualBox (CVE-2026-87268)",
+    "resumen": "Un error en la carga de archivos .NET permite a un atacante local ejecutar código no confiable, eludiendo las protecciones de Code Integrity de Windows y el endurecimiento de procesos de Oracle VirtualBox. El vector de ataque se basa en una manipulación de un solo bit que altera la validación de firmas, afectando entornos Windows con .NET y máquinas virtuales.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NTQwODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-87268",
+    "ttps": [
+      {
+        "id": "T1210",
+        "name": "Exploitation of Remote Services"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-87268"
+      ]
+    }
+  },
+  {
+    "id": 4043,
+    "fecha": "2026-11-24T21:01:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Cinco CVE críticos afectan al portal de empleo de GlobalEduca, incluida IDOR y XSS",
+    "resumen": "INCIBE reportó cinco vulnerabilidades (CVE-2026-124828 a CVE-2026-124832) que permiten acceso no autorizado a archivos y ejecución de código JavaScript en el portal de gestión de candidaturas, impactando la confidencialidad de datos personales y la integridad de la plataforma. Las correcciones fueron desplegadas el 16/10/2026, pero los entornos no actualizados siguen expuestos.",
+    "url_imagen": "https://images.unsplash.com/photo-1494778752932-64ee27ba2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NTQwODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-el-portal-de-empleo-de-globaleduca",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "txt:multiples vulnerabilidades en el portal de empleo de globaleduca",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-124828",
+        "CVE-2026-124829",
+        "CVE-2026-124830",
+        "CVE-2026-124831",
+        "CVE-2026-124832"
+      ]
+    }
+  },
+  {
     "id": 4042,
     "fecha": "2026-11-24T18:02:05Z",
     "categoria": "Ciberseguridad",
