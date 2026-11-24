@@ -1,5 +1,65 @@
 [
   {
+    "id": 4031,
+    "fecha": "2026-11-24T12:02:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad DoS CVE-2026-97893 en Apache Jena ARQ permite consumo excesivo de memoria",
+    "resumen": "La falla en el optimizador ARQ SPARQL Query Optimiser de Apache Jena ARQ (pre-6.3.0) permite a un atacante provocar denegación de servicio mediante consultas SPARQL manipuladas que agotan la memoria del servidor. Se recomienda actualizar a la versión 6.3.0 o desactivar la optimización con arq:optPathFlatten=false.",
+    "url_imagen": "https://images.unsplash.com/photo-1624969862644-791f3dc98927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MjE3MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/478918",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-97893",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-97893"
+      ]
+    }
+  },
+  {
+    "id": 4030,
+    "fecha": "2026-11-24T12:02:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Filtración de bases de datos expone 3,5 mil millones de credenciales y documentos confidenciales",
+    "resumen": "La exposición de dos bases de datos sin protección reveló nombres de usuario, contraseñas y archivos de cientos de millones de usuarios, permitiendo a actores maliciosos comprometer cuentas y acceder a información sensible.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MjE3MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.wired.com/story/3-billion-usernames-passwords-and-documents-leaked-online/",
+    "fuente": "Wired Security",
+    "dedup_key": "txt:database leaks expose 3 5 billion usernames passwords and documents",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1213",
+        "name": "Data from Information Repositories"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4029,
+    "fecha": "2026-11-24T12:02:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "LaLiga confirma robo de datos personales de aficionados tras ciberataque a sus servicios digitales",
+    "resumen": "Un grupo de hackers accedió a los sistemas de LaLiga y varios clubes españoles, exfiltrando información personal de los seguidores, lo que genera riesgos de phishing y suplantación de identidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MjE3Mjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/laliga-hacked-spain-top-professional-league-confirms-cyber-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:laliga hacked spain s top football league confirms theft of fans personal data",
+    "ttps": [
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4028,
     "fecha": "2026-11-24T09:02:30Z",
     "categoria": "Ciberseguridad",
