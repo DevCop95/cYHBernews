@@ -1,5 +1,58 @@
 [
   {
+    "id": 4028,
+    "fecha": "2026-11-24T09:02:30Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-128791 permite eliminación remota de grabaciones vía HTTP DELETE sin autenticación",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) afecta a cualquier cliente Wi-Fi que pueda enviar una petición HTTP DELETE a la ruta /meeting-recording/delete, provocando la supresión permanente de archivos de grabación sin requerir credenciales. El vector de ataque es de red sin autenticación, lo que expone a entornos corporativos y de videoconferencia a pérdida de datos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MTA5NTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-128791",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-128791",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1485",
+        "name": "Data Destruction"
+      },
+      {
+        "id": "T1070.004",
+        "name": "File Deletion"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-128791"
+      ]
+    }
+  },
+  {
+    "id": 4027,
+    "fecha": "2026-11-24T09:02:24Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "OpenAI y Cisco lanzan Shirudo, herramienta Linux con IA que bloquea exploits antes del parcheo",
+    "resumen": "Shirudo es un runtime open-source que permite a agentes de IA generar controles eBPF dinámicos para aislar vulnerabilidades en tiempo real, ampliando la ventana de mitigación sin interrumpir servicios. La colaboración apunta a reforzar la defensa de entornos Linux contra ataques de día cero y exploits no parcheados.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1MTA5NDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:openai and cisco unveil ai assisted linux security tool to block exploits before patching",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4026,
     "fecha": "2026-11-24T06:02:29Z",
     "categoria": "Ciberseguridad",
