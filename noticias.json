@@ -1,5 +1,81 @@
 [
   {
+    "id": 4051,
+    "fecha": "2026-11-24T23:58:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "NGINX HTTP/2 vulnerable a use-after-free CVE-2026-123633 permite ejecución remota",
+    "resumen": "El flaw afecta a versiones 1.25.0-1.25.3 de NGINX, explotable vía peticiones HTTP/2 malformadas que provocan liberación prematura de memoria y ejecución de código arbitrario; se recomienda aplicar el parche de la rama 1.25.4 inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1623018035782-b269248df916?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NjQ3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://unit42.paloaltonetworks.com/cve-2026-123633-nginx-http2-vulnerability/",
+    "fuente": "Unit 42",
+    "dedup_key": "cve:cve-2026-123633",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123633"
+      ]
+    }
+  },
+  {
+    "id": 4050,
+    "fecha": "2026-11-24T23:58:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Vulnerabilidades en la infraestructura terrestre de satélites aumentan riesgo de ciberataques críticos",
+    "resumen": "La exposición de sistemas de control y enlaces de datos en tierra a fallas de seguridad permite vectores de ataque como acceso no autorizado y manipulación de comandos, amenazando la disponibilidad de servicios críticos de comunicaciones espaciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1606167497835-b905197ed54e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NjQ3MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/satellites-ground-level-cybersecurity-problem",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:satellites have a ground level cybersecurity problem",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1569.002",
+        "name": "Service Execution"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      },
+      {
+        "id": "T1021.001",
+        "name": "Remote Desktop Protocol"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4049,
+    "fecha": "2026-11-24T23:58:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Black Friday impulsa oleada de phishing y credenciales comprometidas en campañas masivas",
+    "resumen": "Durante el periodo de mayor actividad comercial del año, los atacantes aprovechan la saturación de comunicaciones para difundir correos de phishing y enlaces maliciosos que roban credenciales de usuarios y comprometen infraestructuras empresariales. SonicWall advierte que la falta de filtros de autenticación y la ausencia de MFA aumentan el riesgo de brechas de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NjQ3MzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/black-friday-credenciales-comprometidas-phishing-y-enlaces-maliciosos/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:black friday credenciales comprometidas phishing y enlaces maliciosos",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4048,
     "fecha": "2026-11-24T21:09:35Z",
     "categoria": "Ciberseguridad",
