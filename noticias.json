@@ -1,5 +1,77 @@
 [
   {
+    "id": 4025,
+    "fecha": "2026-11-24T03:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-62841 permite elevación de privilegios en Azure Event Grid con puntuación CVSS 10.0",
+    "resumen": "Vulnerabilidad de autenticación insuficiente en Azure Event Grid permite a un atacante no autenticado escalar privilegios y comprometer recursos en la red de la nube. El vector de ataque es remoto y no requiere credenciales válidas, exponiendo a clientes de Azure a potenciales movimientos laterales.",
+    "url_imagen": "https://images.unsplash.com/photo-1596397125864-8d99cd4af8fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0ODkyOTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-62841",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-62841",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-62841"
+      ]
+    }
+  },
+  {
+    "id": 4024,
+    "fecha": "2026-11-24T03:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Subred 109.160.32.0/24 de BANATSYNC SRL muestra actividad de escaneo masivo en DShield",
+    "resumen": "Los sensores de DShield registran escaneos continuos desde la red asignada al proveedor de hosting rumano, indicando posible reconocimiento previo a ataques de fuerza bruta o explotación de vulnerabilidades. Se recomienda reforzar la monitorización de tráfico y aplicar filtros de origen en firewalls perimetrales.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0ODkyOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://isc.sans.edu/diary/rss/33550",
+    "fuente": "SANS ISC",
+    "dedup_key": "txt:scanning from subnet 109 160 32 0 24 mon nov 23rd",
+    "ttps": [
+      {
+        "id": "T1595.001",
+        "name": "Scanning IP Blocks"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "ipv4": [
+        "109.160.32.0"
+      ]
+    }
+  },
+  {
+    "id": 4023,
+    "fecha": "2026-11-24T03:01:29Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "CrowdStrike adquiere Zscaler por $44 mil millones para integrar endpoint protection y zero-trust con IA",
+    "resumen": "La compra combina la plataforma de detección y respuesta de CrowdStrike con la arquitectura zero-trust de Zscaler, permitiendo una gestión centralizada de agentes de IA y mejorando la postura contra amenazas avanzadas.",
+    "url_imagen": "https://images.unsplash.com/photo-1786539861520-6e91dc64a958?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0ODkyODl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/endpoint-security/crowdstrike-ai-security-push-zscaler-deal",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:crowdstrike makes ai security push with blockbuster zscaler deal",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4022,
     "fecha": "2026-11-24T02:24:14Z",
     "categoria": "Ciberseguridad",
