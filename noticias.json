@@ -1,5 +1,77 @@
 [
   {
+    "id": 4022,
+    "fecha": "2026-11-24T02:24:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad out-of-bounds write en routers ASUS (CVE-2026-93457) permite DoS remoto sin autenticación",
+    "resumen": "La falla permite a un atacante cercano enviar paquetes LLTD manipulados que sobrescriben memoria del proceso, provocando denegación de servicio en routers ASUS vulnerables. Requiere proximidad física y no necesita credenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0ODcwNTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/478395",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-93457",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-93457"
+      ]
+    }
+  },
+  {
+    "id": 4021,
+    "fecha": "2026-11-24T02:24:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-130169 permite forjar JWT y eludir autenticación en AutoGPT Platform",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) en AutoGPT Platform 0.6.26-0.7.4 expone una clave JWT hardcodeada, habilitando a un atacante a crear tokens válidos y obtener privilegios de administrador sin interacción del usuario. El fallo afecta a entornos que despliegan agentes autónomos y se corrige a partir de la versión 0.8.0.",
+    "url_imagen": "https://images.unsplash.com/photo-1646215957764-f7bfe45d0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0ODcwNTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-130169",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-130169",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-130169"
+      ]
+    }
+  },
+  {
+    "id": 4020,
+    "fecha": "2026-11-24T02:24:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad en Azure API Management permite el robo de credenciales de API de clientes",
+    "resumen": "Un fallo en los niveles Classic de Azure API Management fue explotado para extraer credenciales almacenadas, con evidencias de ataques dirigidos a compañías energéticas noruegas; la exposición compromete la confidencialidad de los servicios y requiere rotación inmediata de secretos y revisión de políticas de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1511376777868-611b54f68947?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU0ODcwNDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:microsoft azure flaw exploited to steal customers api credentials",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4019,
     "fecha": "2026-11-24T00:02:44Z",
     "categoria": "Ciberseguridad",
