@@ -1,5 +1,62 @@
 [
   {
+    "id": 4057,
+    "fecha": "2026-11-25T06:02:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-129514 permite ejecución remota de comandos en hex.pm mediante deserialización Erlang",
+    "resumen": "Vulnerabilidad de deserialización de datos no confiables en el parser application/vnd.hex+erlang de hex.pm permite a un atacante no autenticado ejecutar comandos del sistema operativo mediante una petición POST manipulada; la falla, con CVSS 10.0, fue explotada activamente el 23-nov-2026.",
+    "url_imagen": "https://images.unsplash.com/photo-1689608170538-7cee8b22dac0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1ODY1Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-129514",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-129514",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1578",
+        "name": "Modify Cloud Compute Infrastructure"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      }
+    ],
+    "iocs": {
+      "sha1": [
+        "379b0a29bcc95164249f38ad7d772a37a8ff9533",
+        "ab1bbcef7cc8395d1056d3b1aa6a174353492d59"
+      ],
+      "cve": [
+        "CVE-2026-129514"
+      ]
+    }
+  },
+  {
+    "id": 4056,
+    "fecha": "2026-11-25T06:02:13Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Grupo APT alineado con China modifica SoftEther VPN para evadir detección en redes corporativas",
+    "resumen": "La amenaza recompila el código fuente de SoftEther VPN, eliminando indicadores de compromiso y firmas de detección, facilitando la infiltración furtiva y el exfiltrado de datos. Se trata de una campaña de espionaje dirigida a infraestructuras críticas y entornos empresariales.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807802-497b674c6ac2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1ODY1MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:webworm apt slithers into networks with customized softether vpn",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4055,
     "fecha": "2026-11-25T03:01:55Z",
     "categoria": "Ciberseguridad",
