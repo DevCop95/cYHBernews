@@ -1,5 +1,109 @@
 [
   {
+    "id": 4078,
+    "fecha": "2026-11-25T21:01:50Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-59415 permite inyección de IDs y borrado masivo en TypesenseVectorStore",
+    "resumen": "La vulnerabilidad de inyección en la operación delete de TypesenseVectorStore permite a un atacante manipular IDs de documento para romper la sintaxis del filtro y eliminar arbitrariamente cualquier registro, incluida la eliminación total de la colección. Afecta a aplicaciones que usan VectorStore.delete con IDs controlados externamente, exponiendo datos críticos a pérdida.",
+    "url_imagen": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NDA1MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-59415",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-59415",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-59415"
+      ]
+    }
+  },
+  {
+    "id": 4077,
+    "fecha": "2026-11-25T21:01:47Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CISA incorpora 10 CVE explotados al catálogo KEV, obliga a remediación federal",
+    "resumen": "CISA añadió diez vulnerabilidades activamente explotadas, entre ellas CVE-2026-103406 (OS command injection) y CVE-2026-133311 (autenticación débil), al Known Exploited Vulnerabilities Catalog. La Directiva Operacional BOD 26-04 exige a las agencias federales priorizar su parcheo inmediato para mitigar riesgos críticos en activos expuestos.",
+    "url_imagen": "https://images.unsplash.com/photo-1619168145709-66767177bbab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NDA1MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+    "fuente": "CISA Advisories",
+    "dedup_key": "txt:cisa adds 10 known exploited vulnerabilities to catalog",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1110.001",
+        "name": "Password Guessing"
+      },
+      {
+        "id": "T1222",
+        "name": "File and Directory Permissions Modification"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406",
+        "CVE-2026-133275",
+        "CVE-2026-133303",
+        "CVE-2026-133311",
+        "CVE-2026-133323",
+        "CVE-2026-133324",
+        "CVE-2026-133469"
+      ]
+    }
+  },
+  {
+    "id": 4076,
+    "fecha": "2026-11-25T21:01:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Italia y Suiza alertan sobre ciberataques autónomos impulsados por IA contra infraestructuras críticas",
+    "resumen": "Las agencias de ciberseguridad de ambos países advierten que agentes de IA automatizados están siendo empleados para lanzar ataques dirigidos a sistemas de energía, transporte y telecomunicaciones, incrementando la velocidad y sofisticación de la explotación. Se recomienda reforzar la detección de comportamientos anómalos y actualizar los modelos de threat intel con indicadores de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1607428899307-ccc89f148912?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NDA1MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:italy and switzerland warn of autonomous ai driven cyberattacks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4075,
+    "fecha": "2026-11-25T21:01:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SolarWinds Serv-U expone CVE-2026-123168 y CVE-2026-123172 que permiten escalada a root en Linux",
+    "resumen": "Dos vulnerabilidades críticas en Serv-U 2026.3 y versiones anteriores permiten a un atacante con privilegios elevados escalar a root en servidores Linux y ejecutar acciones con privilegios de administrador; la mitigación requiere actualizar a Serv-U 2026.4.",
+    "url_imagen": "https://images.unsplash.com/photo-1666875758381-9e627d24133e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NDA1MDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-serv-u-de-solarwinds-0",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-123168,cve-2026-123172",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123168",
+        "CVE-2026-123172"
+      ]
+    }
+  },
+  {
     "id": 4074,
     "fecha": "2026-11-25T19:27:19Z",
     "categoria": "Ciberseguridad",
