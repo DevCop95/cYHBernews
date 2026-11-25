@@ -1,5 +1,91 @@
 [
   {
+    "id": 4068,
+    "fecha": "2026-11-25T15:02:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-135724: Null pointer dereference en FFmpeg < 9.1 permite DoS vía archivos HEIF/AVIF",
+    "resumen": "La vulnerabilidad en avformat_stream_group_create() de libavformat permite que un atacante provoque una desreferenciación de puntero nulo al procesar archivos HEIF/AVIF manipulados, causando un crash del proceso. El vector de ataque se basa en la carga de archivos maliciosos que desencadenan la falla durante la asignación de la cuadrícula de mosaicos.",
+    "url_imagen": "https://images.unsplash.com/photo-1719253481072-5579e62d0a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MTg5Mzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/482110",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-135724",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-135724"
+      ]
+    }
+  },
+  {
+    "id": 4067,
+    "fecha": "2026-11-25T15:02:14Z",
+    "categoria": "IA",
+    "severidad": "CRITICA",
+    "titulo": "Análisis de la actividad de enjambre agente de OpenAI revela tácticas de ataque emergentes en 2026",
+    "resumen": "El informe detalla cómo los enjambres de agentes autónomos vinculados a OpenAI operan mediante infraestructura pública, evidenciando vectores de compromiso basados en APIs expuestas y técnicas de evasión de detección. Se comparan con patrones observados en campañas APT recientes, destacando riesgos para entornos de nube y desarrollo de IA.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330420909-3f95e4e9b4d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MTg5MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://blog.talosintelligence.com/the-great-escape-tradecraft-insights-from-an-agentic-swarm/",
+    "fuente": "Cisco Talos",
+    "dedup_key": "txt:the great escape tradecraft insights from an agentic swarm",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4066,
+    "fecha": "2026-11-25T15:02:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "Aseguradoras cibernéticas advierten brecha entre clientes con defensa AI y los desprotegidos",
+    "resumen": "El informe de Dark Reading revela que la falta de soluciones de IA para detección y respuesta está creando dos clases de asegurados, incrementando la exposición a ataques automatizados y presionando la viabilidad de los modelos de pólizas actuales.",
+    "url_imagen": "https://images.unsplash.com/photo-1793623794326-655498bacbdf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MTg5MzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:cyber insurers see new divide ai defense haves amp have nots",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4065,
+    "fecha": "2026-11-25T15:02:08Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotan CVE-2026-120705 y CVE-2026-129243 en GeoServer para ejecutar RCE sin autenticación",
+    "resumen": "Investigadores de watchTowr confirman que actores de amenaza están aprovechando dos vulnerabilidades recién parcheadas en GeoServer (CVE-2026-120705, CVE-2026-129243) para lanzar cadenas de ejecución remota de código sin necesidad de credenciales, comprometiendo servidores GIS críticos. El vector combina lectura arbitraria de archivos y deserialización insegura, exponiendo datos sensibles y posibilitando la toma de control del host.",
+    "url_imagen": "https://images.unsplash.com/photo-1558346547-4439467bd1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MTg5Mjh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-120705,cve-2026-129243",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-120705",
+        "CVE-2026-129243"
+      ]
+    }
+  },
+  {
+    "id": 4064,
+    "fecha": "2026-11-25T15:02:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Evilgrade 2026 explota certificados intermedios filtrados para comprometer instaladores de software",
+    "resumen": "La nueva versión de Evilgrade reutiliza una CA intermedia de eMudhra comprometida para falsificar firmas TLS en descargas de instaladores (pip, git, curl | sh), permitiendo la inyección de malware sin necesidad de modificar el trust store del objetivo. El vector se basa en la confianza implícita en la cadena de certificación pública y afecta a procesos de actualización y despliegue de software.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064548016-0b5c13ca2c85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MTg5MjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/11/evilgrade-2026-18-anos-despues-tu.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "txt:evilgrade 2026 18 anos despues tu software sigue instalando lo que le diga quien tenga el certificado",
+    "ttps": [],
+    "iocs": {
+      "domain": [
+        "faradaysec.com"
+      ],
+      "url": [
+        "https://faradaysec.com"
+      ]
+    }
+  },
+  {
     "id": 4063,
     "fecha": "2026-11-25T12:02:05Z",
     "categoria": "Ciberseguridad",
