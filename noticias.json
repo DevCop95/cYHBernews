@@ -1,5 +1,33 @@
 [
   {
+    "id": 4063,
+    "fecha": "2026-11-25T12:02:05Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers explotan vulnerabilidad crítica RCE en Drupal para secuestrar sitios web",
+    "resumen": "La vulnerabilidad crítica CVE-2024-XXXXX en Drupal permite ejecución remota de código y ha sido explotada activamente desde el jueves, comprometiendo sitios no parcheados mediante inyección de payloads. Se recomienda aplicar el parche oficial de inmediato y reforzar la monitorización de logs de actividad.",
+    "url_imagen": "https://images.unsplash.com/photo-1780764818910-80526d8aeb6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MDgxMjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers now exploit critical drupal rce flaw to hijack sites",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4062,
+    "fecha": "2026-11-25T12:02:00Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "FinCEN del Tesoro EE.UU. desconecta sistemas tras incidente de ciberseguridad que expuso acceso no autorizado",
+    "resumen": "El Departamento del Tesoro retiró de línea varios sistemas críticos de FinCEN después de detectar un ataque que comprometió un subconjunto limitado de sus plataformas, indicando posible exfiltración de datos sensibles. La medida busca contener la brecha y prevenir mayor propagación mientras se investiga el vector de intrusión.",
+    "url_imagen": "https://images.unsplash.com/photo-1659274270360-eaa4475d5557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MDgxMjB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:treasury s fincen takes systems offline after cybersecurity incident",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4061,
     "fecha": "2026-11-25T09:02:38Z",
     "categoria": "Ciberseguridad",
