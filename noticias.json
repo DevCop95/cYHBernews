@@ -1,5 +1,86 @@
 [
   {
+    "id": 4060,
+    "fecha": "2026-11-25T08:53:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en sistemas de visas permiten ataques que podrían bloquear entradas internacionales",
+    "resumen": "Se identificaron fallas en plataformas de inmigración de varios países que permiten a atacantes interferir con procesos de solicitud y validación de visas, comprometiendo la disponibilidad y confidencialidad de datos de viajeros.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642578-7faacdc6336e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1OTY4Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:god mode flaws could wreak border control havoc",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1499",
+        "name": "Endpoint Denial of Service"
+      },
+      {
+        "id": "T1565.001",
+        "name": "Stored Data Manipulation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4059,
+    "fecha": "2026-11-25T08:53:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers comprometen 24 servidores de gestión de Check Point en campaña con herramientas ofensivas impulsadas por IA",
+    "resumen": "Un actor desconocido utilizó tooling ofensivo basado en IA para infiltrarse en 24 servidores de gestión de Check Point, afectando a 22 organizaciones de sectores financieros, energía y gobierno, lo que indica un vector de ataque híbrido que combina vulnerabilidades de gestión con técnicas de generación automática de exploits.",
+    "url_imagen": "https://images.unsplash.com/photo-1753715613382-dc3e8456dbc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1OTY4MzV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers compromise 24 check point management servers in suspected ai driven attack campaign",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1608.003",
+        "name": "Install Digital Certificate"
+      },
+      {
+        "id": "T1588.006",
+        "name": "Vulnerabilities"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4058,
+    "fecha": "2026-11-25T08:53:53Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers comprometen el sistema de análisis de inteligencia de la CIA y exponen datos sensibles",
+    "resumen": "Un grupo de atacantes desconocidos logró infiltrarse en la plataforma de código abierto utilizada por la CIA para el análisis de inteligencia, potencialmente accediendo a fuentes y metodologías de recopilación de datos. El incidente sugiere una vulnerabilidad en la cadena de suministro de software de código abierto y plantea riesgos de exposición de información clasificada.",
+    "url_imagen": "https://images.unsplash.com/photo-1790172068601-c192a0c1c0b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1OTY4MzN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:hackers reportedly breached cia intelligence analysis system",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4057,
     "fecha": "2026-11-25T06:02:18Z",
     "categoria": "Ciberseguridad",
