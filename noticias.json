@@ -1,5 +1,32 @@
 [
   {
+    "id": 4052,
+    "fecha": "2026-11-25T00:01:51Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-128798 permite a clientes WiFi obtener metadatos de reuniones sin autenticación",
+    "resumen": "La vulnerabilidad crítica (CVSS 10.0) expone información del dispositivo y metadatos de grabaciones de reuniones a cualquier cliente Wi-Fi conectado, sin requerir credenciales. El vector de ataque es la red inalámbrica local, facilitando espionaje interno y posible extracción de datos sensibles.",
+    "url_imagen": "https://images.unsplash.com/photo-1685716851721-7e1419f2db18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NjQ5MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-128798",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-128798",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1040",
+        "name": "Network Sniffing"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-128798"
+      ]
+    }
+  },
+  {
     "id": 4051,
     "fecha": "2026-11-24T23:58:59Z",
     "categoria": "Ciberseguridad",
