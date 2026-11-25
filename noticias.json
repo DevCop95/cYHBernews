@@ -1,5 +1,28 @@
 [
   {
+    "id": 4061,
+    "fecha": "2026-11-25T09:02:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad SSRF CVE-2026-80249 en Dell Secure Connect Gateway versiones <5.36.00.16 permite fuga de datos",
+    "resumen": "SSRF en Dell SCG Virtual Edition permite a un atacante local acceder a servicios internos y extraer información confidencial. El vector requiere acceso al appliance y puede ser explotado sin credenciales adicionales.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064642639-e398cf05badb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1OTczNTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/481843",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-80249",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-80249"
+      ]
+    }
+  },
+  {
     "id": 4060,
     "fecha": "2026-11-25T08:53:57Z",
     "categoria": "Ciberseguridad",
