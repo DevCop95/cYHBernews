@@ -1,5 +1,71 @@
 [
   {
+    "id": 4055,
+    "fecha": "2026-11-25T03:01:55Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad remota CVE-2026-136445 en JaguarJack catch-admin permite manipulación de atributos de objetos",
+    "resumen": "La falla en la función store del archivo RolesController.php permite ejecución remota de código mediante atributos de objetos dinámicos; el exploit ya está disponible y se recomienda aplicar el parche 3ae60d57ea6840bb33456596ad799b0a39ca94a2.",
+    "url_imagen": "https://images.unsplash.com/photo-1785670831344-ede74ce198f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NzU3MTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/481615",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-136445",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "3ae60d57ea6840bb33456596ad799b0a39ca94a2"
+      ],
+      "cve": [
+        "CVE-2026-136445"
+      ]
+    }
+  },
+  {
+    "id": 4054,
+    "fecha": "2026-11-25T03:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "SOC puede recuperar 450 horas de analista por cada 1.000 alertas investigadas mediante automatización de análisis",
+    "resumen": "ANY.RUN estima que la automatización de la investigación de indicadores de compromiso (IOC) y la reducción de revisiones manuales permitirían a los equipos SOC ganar 450 horas de analista por cada mil alertas, mitigando la sobrecarga operativa y mejorando la capacidad de respuesta. Esta mejora impacta directamente en la eficiencia del SOC y en la reducción del riesgo cibernético al acelerar la detección y contención.",
+    "url_imagen": "https://images.unsplash.com/photo-1618060931775-18ed14951776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NzU3MDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:2027 soc budget reset 5 priorities to cut costs and reduce cyber risk",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4053,
+    "fecha": "2026-11-25T03:01:46Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Bitdefender detecta campaña de malware que usa GTA 6 como señuelo para infectar Windows",
+    "resumen": "La amenaza distribuye un falso cliente “GTA VI Cloud” mediante sitios web fraudulentos, instalando ransomware y troyanos dirigidos a usuarios de PlayStation, Xbox y PC; el vector principal es ingeniería social basada en la expectación del lanzamiento del juego.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU1NzU3MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/alertan-de-una-campana-de-malware-que-utiliza-gta-6-como-gancho/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:alertan de una campana de malware que utiliza gta 6 como gancho",
+    "ttps": [
+      {
+        "id": "T1189",
+        "name": "Drive-by Compromise"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4052,
     "fecha": "2026-11-25T00:01:51Z",
     "categoria": "Ciberseguridad",
