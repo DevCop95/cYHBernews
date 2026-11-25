@@ -1,5 +1,66 @@
 [
   {
+    "id": 4074,
+    "fecha": "2026-11-25T19:27:19Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CEO de firma de recuperación de ransomware es acusado por supuesta financiación de cibercriminales",
+    "resumen": "Un gran jurado federal imputó al CEO de una empresa de recuperación de ransomware por mentir sobre sus servicios y pagar rescates a grupos criminales, lo que evidencia vulnerabilidades en la cadena de suministro de respuesta a incidentes.",
+    "url_imagen": "https://images.unsplash.com/photo-1633948760408-acbd63da255b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MzQ4Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/ransomware-doj-indictment-recovery",
+    "fuente": "The Record",
+    "dedup_key": "txt:florida ransomware recovery ceo indicted for allegedly paying hacker ransoms",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4073,
+    "fecha": "2026-11-25T19:27:16Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "IA acelera la generación de informes en pruebas de penetración reduciendo carga operativa",
+    "resumen": "Herramientas basadas en modelos de lenguaje automatizan la documentación y reporte de pentests, permitiendo a los equipos manejar más compromisos sin comprometer la confidencialidad de los datos del cliente. La solución se despliega on-premise, mitigando riesgos de exfiltración durante el proceso de generación de informes.",
+    "url_imagen": "https://images.unsplash.com/photo-1694954960354-f671619ea37d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MzQ4MzZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:more pentests without more pentesters where ai safely helps",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4072,
+    "fecha": "2026-11-25T19:27:14Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidades críticas en Vorecol HRMS SaaS: XSS, exposición de datos e inyección SQL (CVE-2026-133737-133739)",
+    "resumen": "Se han divulgado tres CVE que afectan la plataforma web de Vorecol, incluyendo XSS reflejado (CVE-2026-133737), filtrado de credenciales y secretos TOTP (CVE-2026-133738) e inyección SQL basada en errores (CVE-2026-133739). Un atacante autenticado puede ejecutar código en el navegador de otro usuario, robar información sensible o extraer datos de la base mediante consultas manipuladas, sin que exista parche disponible.",
+    "url_imagen": "https://images.unsplash.com/photo-1542255034-288a8a58a2a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2MzQ4MzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.incibe.es/incibe-cert/alerta-temprana/avisos/multiples-vulnerabilidades-en-la-plataforma-web-de-vorecol",
+    "fuente": "INCIBE-CERT",
+    "dedup_key": "cve:cve-2026-133737,cve-2026-133738,cve-2026-133739",
+    "ttps": [
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-133737",
+        "CVE-2026-133738",
+        "CVE-2026-133739"
+      ]
+    }
+  },
+  {
     "id": 4071,
     "fecha": "2026-11-25T18:01:47Z",
     "categoria": "Ciberseguridad",
