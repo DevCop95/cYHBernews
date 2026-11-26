@@ -1,5 +1,47 @@
 [
   {
+    "id": 4095,
+    "fecha": "2026-11-26T15:01:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Drupal alerta sobre vulnerabilidad crítica CVE-2026-136716 que permite toma de control de sitios",
+    "resumen": "Drupal ha identificado una falla de tipo improper condition check en su núcleo, catalogada como CVE-2026-136716, que ya está siendo explotada activamente para tomar control total de sitios web. La vulnerabilidad afecta a todas las instalaciones no parcheadas y requiere actualización inmediata para mitigar el riesgo de compromiso.",
+    "url_imagen": "https://images.unsplash.com/photo-1672307974995-cd253f7f7eeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MDUzMDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "cve:cve-2026-132165,cve-2026-136716",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-132165",
+        "CVE-2026-136716"
+      ]
+    }
+  },
+  {
+    "id": 4094,
+    "fecha": "2026-11-26T15:01:35Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Malware SYS01 usa gestión de navegadores para robar correos de Gmail y Outlook",
+    "resumen": "La última variante del infostealer SYS01, distribuida vía anuncios de Meta, fuerza la instalación de una extensión mediante políticas de gestión empresarial del navegador, capturando credenciales y correos electrónicos de Gmail y Outlook. El vector de ataque combina publicidad maliciosa y abuso de APIs de gestión de extensiones.",
+    "url_imagen": "https://images.unsplash.com/photo-1680008863630-42f34973707b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MDUyOTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:sys010 malware abuses browser management to spy on gmail outlook",
+    "ttps": [
+      {
+        "id": "T1129",
+        "name": "Shared Modules"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4093,
     "fecha": "2026-11-26T12:01:39Z",
     "categoria": "Ciberseguridad",
