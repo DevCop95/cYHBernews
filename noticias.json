@@ -1,5 +1,47 @@
 [
   {
+    "id": 4090,
+    "fecha": "2026-11-26T09:02:03Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "InfraTrust alerta sobre vulnerabilidades en la cadena de suministro de appliances de red explotadas en noviembre",
+    "resumen": "El informe InfraTrust de Eclypsium indica que la mayoría de los avisos de seguridad de infraestructura del último mes se deben a fallos en software de terceros integrado en dispositivos, facilitando ataques de cadena de suministro contra appliances de red.",
+    "url_imagen": "https://images.unsplash.com/photo-1740560051549-cc6799220d48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2ODM3MjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:infratrust warns of exploited supply chain flaws in network appliances",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4089,
+    "fecha": "2026-11-26T09:02:01Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Kaspersky reporta más de 2 millones de detecciones de herramientas de ataque lateral en seis meses",
+    "resumen": "El informe de Kaspersky Anti Targeted Attack (KATA) muestra que los actores de amenaza emplean cientos de herramientas para movimientos laterales, evidenciando brechas en la segmentación de redes corporativas. Se recomienda reforzar la visibilidad de tráfico interno y desplegar EDR con detección de comportamiento anómalo.",
+    "url_imagen": "https://images.unsplash.com/photo-1754039984985-ef607d80113a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2ODM3MjF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/mas-de-2-millones-de-detecciones-de-herramientas-de-ciberataque-en-empresas-en-seis-meses/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:mas de 2 millones de detecciones de herramientas de ciberataque en empresas en seis meses",
+    "ttps": [
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4088,
     "fecha": "2026-11-26T06:01:40Z",
     "categoria": "Ciberseguridad",
