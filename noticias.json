@@ -1,5 +1,37 @@
 [
   {
+    "id": 4088,
+    "fecha": "2026-11-26T06:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "CVE-2026-119452 permite a mantenedor de GitLab robar cookies de sesión y suplantar cuentas",
+    "resumen": "La vulnerabilidad en GitLab CE/EE (versions 13.7.0-19.6.2) permite a un usuario autenticado con rol Maintainer extraer la cookie de sesión de otro usuario mediante manipulación del flujo de autenticación del proxy de dependencias. El ataque resulta en escalada de privilegios y acceso no autorizado a repositorios y datos confidenciales.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NzI5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/483447",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-119452",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-119452"
+      ]
+    }
+  },
+  {
+    "id": 4087,
+    "fecha": "2026-11-26T06:01:38Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Nemotron 3.5 Parse permite fine-tuning con datos abiertos y reduce latencia de inferencia en entornos productivos",
+    "resumen": "La nueva versión de Nemotron 3.5 Parse incorpora pipelines de entrenamiento con datasets públicos y optimizaciones de hardware que aceleran la inferencia hasta un 30 % sin sacrificar precisión, facilitando su despliegue en aplicaciones empresariales de IA generativa.",
+    "url_imagen": "https://images.unsplash.com/photo-1767955006100-cf73d990599f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NzI4OTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+    "fuente": "Hugging Face",
+    "dedup_key": "txt:building on nemotron 3 5 parse open data fine tuning and faster inference",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4086,
     "fecha": "2026-11-26T03:40:41Z",
     "categoria": "Ciberseguridad",
