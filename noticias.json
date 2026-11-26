@@ -1,5 +1,42 @@
 [
   {
+    "id": 4097,
+    "fecha": "2026-11-26T17:08:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-126984 permite SSRF crítico en la función get_remote_artifact_url() de pulp_python",
+    "resumen": "La vulnerabilidad SSRF (CVE-2026-126984) permite a un atacante de red o a un usuario con acceso al content app manipular el parámetro redirect para forzar descargas arbitrarias, exponiendo credenciales y permitiendo la inyección de archivos maliciosos en el repositorio de Python. El vector de ataque se basa en la falta de validación de URL y afecta a entornos que usan la característica de caché pull-through de pulp_python.",
+    "url_imagen": "https://images.unsplash.com/photo-1773245148692-bb4fa68e26fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MTI5MDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-126984",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-126984",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-126984"
+      ]
+    }
+  },
+  {
+    "id": 4096,
+    "fecha": "2026-11-26T17:08:20Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Remus malware roba correos de Gmail mediante extensión falsa de Google Sheets",
+    "resumen": "El troyano Remus se propaga como una extensión de Chrome que simula Google Sheets y extrae mensajes de Gmail, explotando un zero-day en la integración de la API de Gmail. La campaña apunta a usuarios corporativos, comprometiendo la confidencialidad de la correspondencia y facilitando posteriores ataques de phishing o ransomware.",
+    "url_imagen": "https://images.unsplash.com/photo-1583695477819-357b45d15825?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MTI5MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:remus malware steals gmail messages via fake google sheets extension",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4095,
     "fecha": "2026-11-26T15:01:43Z",
     "categoria": "Ciberseguridad",
