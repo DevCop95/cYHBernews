@@ -1,5 +1,72 @@
 [
   {
+    "id": 4085,
+    "fecha": "2026-11-26T03:01:57Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Friendica 2026.05-1 presenta vulnerabilidad de autorización que permite editar publicaciones de otros usuarios",
+    "resumen": "La falla en la función item_edit() permite a usuarios autenticados con acceso local modificar o eliminar contenido de publicaciones ajenas mediante la manipulación del parámetro post_id. El vector de ataque se basa en peticiones POST a /item, comprometiendo la integridad de los mensajes y la confianza en la plataforma.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NjIxMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/483336",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-137309",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-137309"
+      ]
+    }
+  },
+  {
+    "id": 4084,
+    "fecha": "2026-11-26T03:01:54Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "ARTEX, el framework de IA agente que amenaza con acelerar reconocimiento y explotación en redes",
+    "resumen": "ARTEX, una herramienta de pruebas de penetración basada en IA, está siendo reutilizada por grupos como Storm-0940 y Onyx Sleet para automatizar reconocimiento de red, ataques de credenciales y explotación de aplicaciones web, reduciendo significativamente los tiempos de ataque. Los defensores deben monitorizar indicadores de compromiso asociados y aplicar controles de detección de actividades de IA autónoma.",
+    "url_imagen": "https://images.unsplash.com/photo-1731781916225-03a9107a0cbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NjIxMTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+    "fuente": "Microsoft Security",
+    "dedup_key": "txt:what defenders need to know about artex the agentic ai framework threat actors abuse",
+    "ttps": [
+      {
+        "id": "T1018",
+        "name": "Remote System Discovery"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4083,
+    "fecha": "2026-11-26T03:01:52Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "INFO",
+    "titulo": "FIFA confirma acceso no autorizado a datos personales y empresariales de usuarios",
+    "resumen": "La entidad suiza de fútbol informó que atacantes comprometieron un conjunto limitado de información personal y comercial, activando la investigación conjunta con autoridades y fuerzas de seguridad. El incidente evidencia riesgos de exposición de datos en plataformas deportivas de alto tráfico.",
+    "url_imagen": "https://images.unsplash.com/photo-1590865948290-0b718c33d28e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NjIxMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/fifa-data-breach-limited",
+    "fuente": "The Record",
+    "dedup_key": "txt:fifa says hackers accessed limited set of personal and business information",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4082,
     "fecha": "2026-11-26T00:01:42Z",
     "categoria": "Ciberseguridad",
