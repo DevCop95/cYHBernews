@@ -1,5 +1,99 @@
 [
   {
+    "id": 4082,
+    "fecha": "2026-11-26T00:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad heap overflow en AutomationDirect C-More EA9 (CVE-2026-127280) permite ejecución de código",
+    "resumen": "La falla de desbordamiento de buffer en la versión ≤ V6.80 del software C-More EA9 permite a un atacante ejecutar código arbitrario al persuadir al usuario de abrir un archivo de proyecto malicioso. Afecta a entornos OT de manufactura, energía y agua, requiriendo actualización a V6.81 o mitigaciones de aislamiento y control de acceso.",
+    "url_imagen": "https://images.unsplash.com/photo-1606606767399-01e271823a2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NTEzMDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+    "fuente": "CISA Advisories",
+    "dedup_key": "cve:cve-2026-127280",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "www.automationdirect.com"
+      ],
+      "url": [
+        "https://www.automationdirect.com/support/software-downloads"
+      ],
+      "cve": [
+        "CVE-2026-127280"
+      ]
+    }
+  },
+  {
+    "id": 4081,
+    "fecha": "2026-11-26T00:01:40Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers chinos y norcoreanos integran herramienta IA Artex en campañas de intrusión",
+    "resumen": "Microsoft detectó que grupos de amenaza de China y Corea del Norte están incorporando el modelo de IA Artex a sus kits de explotación, facilitando la automatización de phishing y la generación de payloads personalizados. La rápida adopción sugiere una elevación del nivel de sofisticación en ataques dirigidos a infraestructuras críticas y corporativas.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NTEzMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/microsoft-china-salt-typhoon-using-artex-ai-tool",
+    "fuente": "The Record",
+    "dedup_key": "txt:microsoft china s salt typhoon hackers are using artex",
+    "ttps": [
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4080,
+    "fecha": "2026-11-26T00:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Palo Alto Networks alerta sobre explotación en cadena de vulnerabilidades PHP2Shell y Fragnesia",
+    "resumen": "Amenazas están combinando exploits de PHP2Shell y Fragnesia para comprometer interfaces de gestión de firewalls Palo Alto accesibles desde Internet, permitiendo ejecución remota de código y posible toma de control total del dispositivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NTEyOTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:palo alto networks warns of fragnesia flaw exploited in pan os attacks",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4079,
+    "fecha": "2026-11-26T00:01:34Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Check Point reporta un incremento del 28 % en ciberataques contra comercios minoristas durante Black Friday",
+    "resumen": "La investigación de Check Point muestra que los vectores de phishing y malware se dispararon en la temporada de compras, elevando el riesgo de brechas de datos en tiendas físicas y e-commerce. Se recomienda reforzar EDR, MFA y monitoreo de tráfico para mitigar la ola de amenazas.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807924-85fec223ed5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NTEyOTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://cybersecuritynews.es/los-ciberataques-al-comercio-minorista-suben-un-28-por-el-black-friday/",
+    "fuente": "CyberSecurity News",
+    "dedup_key": "txt:los ciberataques al comercio minorista suben un 28 por el black friday",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4078,
     "fecha": "2026-11-25T21:01:50Z",
     "categoria": "Ciberseguridad",
