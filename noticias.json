@@ -1,5 +1,76 @@
 [
   {
+    "id": 4093,
+    "fecha": "2026-11-26T12:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad crítica CVE-2026-135203 permite ejecución remota de código en Eclipse Ditto",
+    "resumen": "La falta de ClassShutter en el motor Rhino de Eclipse Ditto permite a scripts JavaScript manipulados ejecutar reflexión Java y evadir el sandbox, comprometiendo credenciales y el clúster. Afecta versiones 0.3.0-M1 a 3.8.15 y 3.9.0-9, explotable por usuarios con permisos de conexión.",
+    "url_imagen": "https://images.unsplash.com/photo-1772235231771-f17980e811e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2OTQ0OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/483559",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-135203",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-135203"
+      ]
+    }
+  },
+  {
+    "id": 4092,
+    "fecha": "2026-11-26T12:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Phishing kits con alta tasa de evasión superan filtros de email y web en 2024",
+    "resumen": "Los kits de phishing más efectivos logran evadir soluciones de email security, web gateways y safe browsing, alcanzando una tasa de breakthrough superior al 30 % según análisis de Push Security, lo que incrementa el riesgo de compromisos de credenciales en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1733590626196-c0935181a07a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2OTQ0OTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:most wanted the phishing kits and techniques getting past security controls",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1566.002",
+        "name": "Spearphishing Link"
+      },
+      {
+        "id": "T1562",
+        "name": "Impair Defenses"
+      },
+      {
+        "id": "T1562.004",
+        "name": "Disable or Modify System Firewall"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4091,
+    "fecha": "2026-11-26T12:01:30Z",
+    "categoria": "IA",
+    "severidad": "ALTA",
+    "titulo": "Evaluación operativa de agentes LLM para revisión de seguridad de código en entornos productivos",
+    "resumen": "Un estudio de Airbnb compara agentes IA de revisión de Pull Requests contra vulnerabilidades reales extraídas de tickets de bug bounty, pentests y hallazgos internos, mostrando que la detección depende del prompt de producción y que los falsos positivos no se cuantifican. El método usa datasets “blameful” y “blameless” para medir precisión y cobertura en CI/CD.",
+    "url_imagen": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2OTQ0OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "http://www.elladodelmal.com/2026/11/como-medir-si-tus-agentes-ia-de.html",
+    "fuente": "El Lado Del Mal",
+    "dedup_key": "cve:cve-2022-1471",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2022-1471"
+      ]
+    }
+  },
+  {
     "id": 4090,
     "fecha": "2026-11-26T09:02:03Z",
     "categoria": "Ciberseguridad",
