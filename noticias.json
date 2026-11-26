@@ -1,5 +1,32 @@
 [
   {
+    "id": 4086,
+    "fecha": "2026-11-26T03:40:41Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "1Password confirma robo de datos de clientes tras compromiso de cuenta GitHub corporativa",
+    "resumen": "Un atacante accedió a la cuenta GitHub de un empleado y desplegó código malicioso en los servicios backend, exfiltrando credenciales y datos sensibles de usuarios. El incidente evidencia la falta de segmentación y control de acceso en entornos de desarrollo.",
+    "url_imagen": "https://images.unsplash.com/photo-1593707246815-21fe48e92d61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU2NjQ0NDF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:1password customer data stolen after employee github account breach",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1020",
+        "name": "Automated Exfiltration"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4085,
     "fecha": "2026-11-26T03:01:57Z",
     "categoria": "Ciberseguridad",
