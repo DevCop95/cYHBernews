@@ -1,5 +1,42 @@
 [
   {
+    "id": 4101,
+    "fecha": "2026-11-26T21:01:45Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-78114 permite Session Fixation crítico en Apache JSPWiki 2.10-3.0.0",
+    "resumen": "La vulnerabilidad de Session Fixation (CVE-2026-78114) permite a un atacante fijar un ID de sesión antes de la autenticación y reutilizarlo tras el login, comprometiendo la integridad de la sesión en todas las plataformas. Se recomienda actualizar a JSPWiki 3.0.1 o 2.12.6 para mitigar el riesgo.",
+    "url_imagen": "https://images.unsplash.com/photo-1620825937374-87fc7d6bddc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MjY5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-78114",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-78114",
+    "ttps": [
+      {
+        "id": "T1539",
+        "name": "Steal Web Session Cookie"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-78114"
+      ]
+    }
+  },
+  {
+    "id": 4100,
+    "fecha": "2026-11-26T21:01:43Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Microsoft advierte que la IA acelerará la aparición de vulnerabilidades y provocará más interrupciones",
+    "resumen": "El presidente de Microsoft, Brad Smith, alerta que la automatización del descubrimiento de fallos mediante modelos de IA está generando una carrera contra el tiempo para parchear vulnerabilidades, lo que incrementa el riesgo de caídas de infraestructuras críticas. El aumento de vulnerabilidades reportadas en CVE y casos como la interrupción de la NSA por parches urgentes evidencian la presión sobre los equipos de seguridad.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MjY5MDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/seguridad/tenemos-que-prepararnos-para-proximos-meses-presidente-microsoft-alerta-riesgo-caidas-ligado-a-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:tenemos que prepararnos para los proximos meses el presidente de microsoft alerta del riesgo de mas caidas ligado a la ia",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4099,
     "fecha": "2026-11-26T18:01:32Z",
     "categoria": "Ciberseguridad",
