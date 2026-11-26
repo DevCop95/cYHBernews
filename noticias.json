@@ -1,5 +1,58 @@
 [
   {
+    "id": 4099,
+    "fecha": "2026-11-26T18:01:32Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-137411 permite SQL injection remoto en ProjectWorlds Online Jewellery Shopping System 1.0",
+    "resumen": "La función searchItem del archivo dashbord_model.php es vulnerable a inyección SQL mediante el parámetro q, permitiendo ejecución de comandos arbitrarios en la base de datos desde cualquier origen. El exploit está publicado, lo que eleva el riesgo de compromiso de datos de clientes y disponibilidad del servicio.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644807804-ffacfd7a4137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MTYwOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/484028",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-137411",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-137411"
+      ]
+    }
+  },
+  {
+    "id": 4098,
+    "fecha": "2026-11-26T18:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "PolinRider infecta más de 7 600 repositorios de GitHub con loader Python para distribuir malware",
+    "resumen": "El grupo vinculado a Corea del Norte ha insertado un cargador Python en paquetes utils y conftest.py de repositorios GitHub, activándose al importarse y permitiendo la descarga de payloads maliciosos desde febrero 2025. La campaña amplía la superficie de ataque a desarrolladores y proyectos de código abierto, incrementando el riesgo de compromisos en la cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1660644808226-a5b2e691fc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3MTYwODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:north korea linked polinrider poisons over 7 600 github repositories to spread malware",
+    "ttps": [
+      {
+        "id": "T1195.001",
+        "name": "Compromise Software Dependencies and Development Tools"
+      },
+      {
+        "id": "T1059.006",
+        "name": "Python"
+      },
+      {
+        "id": "T1105",
+        "name": "Ingress Tool Transfer"
+      },
+      {
+        "id": "T1564.001",
+        "name": "Hidden Files and Directories"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4097,
     "fecha": "2026-11-26T17:08:27Z",
     "categoria": "Ciberseguridad",
