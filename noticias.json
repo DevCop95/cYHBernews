@@ -1,5 +1,101 @@
 [
   {
+    "id": 4124,
+    "fecha": "2026-11-27T18:01:34Z",
+    "categoria": "IA",
+    "severidad": "INFO",
+    "titulo": "Nvidia Blackwell llega a un centro de datos de Shanghái sin licencia EE.UU., posible violación de export control",
+    "resumen": "Se detectó hardware Blackwell de Nvidia en un datacenter de Shanghai vinculado a Alice Huang, pese a la prohibición de exportación sin licencia, lo que implica riesgo de sanciones y exposición de capacidad de IA avanzada a actores chinos.",
+    "url_imagen": "https://images.unsplash.com/photo-1782330298761-3e41cd894295?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MDI0OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/empresas-y-economia/chips-blackwell-nvidia-aparecen-centro-datos-shanghai-vinculado-a-alice-huang",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:los chips blackwell de nvidia aparecen en un centro de datos de shanghai vinculado a alice huang",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4123,
+    "fecha": "2026-11-27T18:01:31Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "SAP confirma incidente de ciberseguridad tras presunta filtración de código fuente",
+    "resumen": "La infraestructura de desarrollo de SAP fue comprometida, permitiendo a actores no identificados acceder potencialmente al código fuente de sus productos, lo que eleva el riesgo de vulnerabilidades no divulgadas. Se recomienda revisión inmediata de integridad de artefactos y aplicación de controles de cadena de suministro.",
+    "url_imagen": "https://images.unsplash.com/photo-1780253256194-34e5867ccb8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MDI0OTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/sap-germany-cyberattack-github",
+    "fuente": "The Record",
+    "dedup_key": "txt:software giant sap confirms cyber incident amid reports of source code breach",
+    "ttps": [
+      {
+        "id": "T1213.001",
+        "name": "Confluence"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4122,
+    "fecha": "2026-11-27T18:01:28Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "Matters.AI cierra la mayor ronda Pre-Series A de India para mitigar riesgos de datos con IA autónoma",
+    "resumen": "La startup de seguridad integra cuatro herramientas legadas en una plataforma autónoma que emplea IA context-aware para rastrear la linaje de datos sensibles, analizar la intención de usuarios y ejecutar remediaciones automáticas en entornos empresariales.",
+    "url_imagen": "https://images.unsplash.com/photo-1770171323762-7b9a517a7094?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MDI0ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+    "fuente": "Dark Reading",
+    "dedup_key": "txt:matters ai lands india s largest cybersecurity pre series a round to fight ai data risks",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4121,
+    "fecha": "2026-11-27T18:01:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Grupo de hackers patrocinado por Vietnam lanza campaña de espionaje en el Sudeste Asiático contra defensa del Mar",
+    "resumen": "La operación, denominada WeaveLotus, incluye al menos cinco intrusiones dirigidas a instituciones militares, gubernamentales y legislativas de Tailandia y otros países de la región, con el objetivo de recolectar información sobre acuerdos y capacidades defensivas en el Mar del Sur de China.",
+    "url_imagen": "https://images.unsplash.com/photo-1549605659-32d82da3a059?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MDI0ODh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:suspected vietnam linked hackers target southeast asia in south china sea espionage campaign",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4120,
+    "fecha": "2026-11-27T18:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad zero-day en Cacti permite ejecución remota de código sin autenticación",
+    "resumen": "Se ha divulgado públicamente un exploit de prueba de concepto que aprovecha una falla sin parchear en la plataforma de monitoreo Cacti, otorgando a atacantes no autenticados la capacidad de ejecutar comandos arbitrarios en servidores vulnerables. La ausencia de mitigaciones aumenta el riesgo de compromisos en infraestructuras de red críticas.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179212804-868bef932d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MDI0ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:unpatched cacti zero day with public poc gives remote code execution",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.003",
+        "name": "Windows Command Shell"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      },
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4119,
     "fecha": "2026-11-27T15:02:17Z",
     "categoria": "Ciberseguridad",
