@@ -1,5 +1,32 @@
 [
   {
+    "id": 4109,
+    "fecha": "2026-11-27T06:01:39Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-9790 permite acceso sin autenticación a endpoints críticos desde cualquier cliente Wi-Fi",
+    "resumen": "La vulnerabilidad CVE-2026-9790 (CVSS 10.0) expone endpoints como /user/hasSimCard y /api/device-info, permitiendo a cualquier dispositivo conectado a la red Wi-Fi obtener información del dispositivo sin autenticación. Este vector de ataque facilita la recolección de datos y potenciales movimientos laterales en entornos corporativos.",
+    "url_imagen": "https://images.unsplash.com/photo-1543148898-0a32d4cf6d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3NTkzMDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-9790",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-9790",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1082",
+        "name": "System Information Discovery"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-9790"
+      ]
+    }
+  },
+  {
     "id": 4108,
     "fecha": "2026-11-27T03:01:27Z",
     "categoria": "Ciberseguridad",
