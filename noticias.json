@@ -1,5 +1,85 @@
 [
   {
+    "id": 4104,
+    "fecha": "2026-11-27T00:01:56Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-137660 permite ataque remoto en stylefeng Guns 2.2 por clave criptográfica hard-coded",
+    "resumen": "La falla en la función TokenAndPermissionInterceptor.preHandle del componente JWT Signing usa una clave criptográfica codificada, posibilitando la explotación remota sin autenticación. Afecta a todas las implementaciones de stylefeng Guns ≤ 2.2, exponiendo datos y permisos de usuarios.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3Mzc3MTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/484175",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-137660",
+    "ttps": [
+      {
+        "id": "T1552.001",
+        "name": "Credentials In Files"
+      },
+      {
+        "id": "T1606.001",
+        "name": "Web Cookies"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-137660"
+      ]
+    }
+  },
+  {
+    "id": 4103,
+    "fecha": "2026-11-27T00:01:49Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Amenaza a 10 M de servicios NGINX y más de 250 extensiones maliciosas expone servidores de IA",
+    "resumen": "Se detectaron vulnerabilidades en configuraciones de NGINX que permiten la toma de control de servidores que alojan modelos de IA, mientras que extensiones de navegador comprometidas facilitan la inyección de código y el secuestro de sesiones. El vector combina exploits de desbordamiento de memoria y credenciales robadas, incrementando el riesgo de ransomware y exfiltración de datos.",
+    "url_imagen": "https://images.unsplash.com/photo-1761497039673-83fea602ae8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3Mzc3MTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:threatsday 10m nginx services at risk 250 malicious extensions ai server hijacking 17 more stories",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1059.007",
+        "name": "JavaScript"
+      },
+      {
+        "id": "T1486",
+        "name": "Data Encrypted for Impact"
+      },
+      {
+        "id": "T1041",
+        "name": "Exfiltration Over C2 Channel"
+      }
+    ],
+    "iocs": {}
+  },
+  {
+    "id": 4102,
+    "fecha": "2026-11-27T00:01:47Z",
+    "categoria": "IA",
+    "severidad": "BAJA",
+    "titulo": "OpenAI corrige bug que aceleró el consumo de límites de uso de GPT-6.2 en un 40%",
+    "resumen": "La corrección elimina el cálculo erróneo que descontaba de forma insuficiente el consumo de tokens, provocando que los usuarios alcancen los límites de cuota un 40 % más rápido. El ajuste impacta a clientes de la API y a sus estrategias de gestión de costos en entornos de producción.",
+    "url_imagen": "https://images.unsplash.com/photo-1770210217380-d78a69acdc77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3Mzc3MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:openai warns gpt 6 2 astra will hit usage limits 40 faster because it fixed a bug",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4101,
     "fecha": "2026-11-26T21:01:45Z",
     "categoria": "Ciberseguridad",
