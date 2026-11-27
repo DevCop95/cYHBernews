@@ -1,5 +1,54 @@
 [
   {
+    "id": 4106,
+    "fecha": "2026-11-27T01:50:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Campaña de phishing “GoodGuys” usa entrevistas falsas para robar credenciales de Google y Okta",
+    "resumen": "El grupo “GoodGuys” envía invitaciones a supuestas entrevistas pagas y webinars, simulando marcas como Google, Nvidia, Accenture y SpaceX, para capturar credenciales corporativas de Google Workspace y Okta mediante enlaces de phishing. El vector de ataque combina spear-phishing y suplantación de identidad, afectando a entornos empresariales que dependen de SSO.",
+    "url_imagen": "https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3NDQyMTd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:fake paid expert interviews impersonate brands to steal google logins",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4105,
+    "fecha": "2026-11-27T01:50:15Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "IA acelera la explotación masiva de vulnerabilidades y compromete gestores de contraseñas y servicios críticos",
+    "resumen": "La automatización basada en IA está reduciendo drásticamente el tiempo entre la divulgación de vulnerabilidades y su explotación, como se evidenció en los incidentes de Todoist, 1Password y brechas en PHP que afectaron bancos y transportes. La amenaza se extiende a cualquier organización que dependa de credenciales y aplicaciones web, obligando a replantear la velocidad de parcheado y la defensa contra ataques automatizados.",
+    "url_imagen": "https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3NDQyMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/opinion/inseguridad-se-ha-convertido-condicion-estructural-internet",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:la inseguridad se ha convertido en una condicion estructural de internet",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1555.003",
+        "name": "Credentials from Web Browsers"
+      },
+      {
+        "id": "T1555.004",
+        "name": "Windows Credential Manager"
+      },
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1568.001",
+        "name": "Fast Flux DNS"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4104,
     "fecha": "2026-11-27T00:01:56Z",
     "categoria": "Ciberseguridad",
