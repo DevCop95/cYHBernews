@@ -1,5 +1,40 @@
 [
   {
+    "id": 4116,
+    "fecha": "2026-11-27T12:50:04Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-137743 en Free5GC 4.2.3 permite condición de carrera remota en UDR",
+    "resumen": "La falla en el archivo internal/sbi/processor/subs_to_notify_collection.go del componente UDR de Free5GC genera una race condition explotable de forma remota, facilitando ataques de denegación de servicio o manipulación de datos. Se ha publicado un exploit y se recomienda aplicar el parche a4151ce11589976705991d3b32253d82ce1938a0 inmediatamente.",
+    "url_imagen": "https://images.unsplash.com/photo-1654498770512-c9045a3b6be0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3ODM4MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/484387",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-137743",
+    "ttps": [],
+    "iocs": {
+      "sha1": [
+        "a4151ce11589976705991d3b32253d82ce1938a0"
+      ],
+      "cve": [
+        "CVE-2026-137743"
+      ]
+    }
+  },
+  {
+    "id": 4115,
+    "fecha": "2026-11-27T12:49:59Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "AFP sufre ciberataque que obliga a desconectar su plataforma global de distribución de noticias",
+    "resumen": "La agencia francesa Agence France-Presse fue víctima de un ataque que forzó la caída de su principal sistema de entrega de contenidos a medios internacionales, generando interrupciones en la cadena de suministro informativo.",
+    "url_imagen": "https://images.unsplash.com/photo-1763568258439-de52f4b4e7f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3ODM4MDB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/france-afp-hit-by-cyberattack",
+    "fuente": "The Record",
+    "dedup_key": "txt:cyberattack disrupts global news distribution platform at france s afp",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
     "id": 4114,
     "fecha": "2026-11-27T12:01:38Z",
     "categoria": "Ciberseguridad",
