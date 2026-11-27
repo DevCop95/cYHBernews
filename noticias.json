@@ -1,5 +1,55 @@
 [
   {
+    "id": 4108,
+    "fecha": "2026-11-27T03:01:27Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Exim < 4.100.2 permite escritura fuera de límites en heap vía tráfico SMTP (CVE-2026-137702)",
+    "resumen": "Una vulnerabilidad de tipo heap out-of-bounds write en el código de expansión de Exim, explotable mediante tráfico SMTP malicioso, permite ejecución de código con privilegios root. Afecta a servidores de correo que ejecuten versiones anteriores a 4.100.2, exponiendo a organizaciones a compromisos de integridad y confidencialidad.",
+    "url_imagen": "https://images.unsplash.com/photo-1590971862391-06cac0657603?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3NDg0ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/484231",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-137702",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-137702"
+      ]
+    }
+  },
+  {
+    "id": 4107,
+    "fecha": "2026-11-27T03:01:25Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "OpenClaw populariza agentes IA autoalojados y revela vulnerabilidad que permite control remoto con un clic",
+    "resumen": "El proyecto open source OpenClaw, pionero en agentes de IA locales, alcanzó 42 000 instancias expuestas y una vulnerabilidad crítica que permite la toma de control total del agente sin autenticación, evidenciando riesgos de despliegues masivos de IA autónoma.",
+    "url_imagen": "https://images.unsplash.com/photo-1562813733-b31f71025d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3NDg0ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.xataka.com/robotica-e-ia/hace-ano-instale-openclaw-he-matado-agentes-que-tamagotchis-sigo-convencido-que-cambio-ia",
+    "fuente": "Xataka IA",
+    "dedup_key": "txt:abrio la veda de los agentes de ia gratuitos y acaba de cumplir un ano openclaw ha hecho facil lo dificil",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "domain": [
+        "star-history.com"
+      ]
+    }
+  },
+  {
     "id": 4106,
     "fecha": "2026-11-27T01:50:17Z",
     "categoria": "Ciberseguridad",
