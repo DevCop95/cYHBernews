@@ -1,5 +1,47 @@
 [
   {
+    "id": 4114,
+    "fecha": "2026-11-27T12:01:38Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-137721 permite inyección de comandos en Mitel OpenScape 4000 y Manager con CVSS 10.0",
+    "resumen": "Vulnerabilidad crítica en el componente Platform de Mitel OpenScape 4000 y su Manager permite ejecución arbitraria de comandos por falta de saneamiento de parámetros, afectando versiones V10 y V11 específicas. El exploit puede comprometer todo el sistema de telefonía empresarial.",
+    "url_imagen": "https://images.unsplash.com/photo-1544256718-3bcf237f3974?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3ODA4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-137721",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-137721",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-137721"
+      ]
+    }
+  },
+  {
+    "id": 4113,
+    "fecha": "2026-11-27T12:01:33Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Gobierno británico suspende servicios críticos tras incidente cibernético",
+    "resumen": "El Departamento de Trabajo y Pensiones del Reino Unido confirmó la interrupción de varios sistemas como medida preventiva ante un ataque que aún se investiga, potencialmente afectando la disponibilidad de datos de beneficiarios. Se están activando protocolos de respuesta y se alerta a usuarios sobre posibles intentos de phishing vinculados al incidente.",
+    "url_imagen": "https://images.unsplash.com/photo-1614064643087-96ce7f0737c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU3ODA4OTN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/uk-department-work-pensions-cyber-incident",
+    "fuente": "The Record",
+    "dedup_key": "txt:british government takes services offline following cyber incident",
+    "ttps": [
+      {
+        "id": "T1566",
+        "name": "Phishing"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4112,
     "fecha": "2026-11-27T09:01:38Z",
     "categoria": "Ciberseguridad",
