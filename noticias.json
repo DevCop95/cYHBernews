@@ -1,5 +1,77 @@
 [
   {
+    "id": 4127,
+    "fecha": "2026-11-27T21:02:18Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad out-of-bounds read en Windows DNS (CVE-2026-119970) permite filtrado de datos a atacante autorizado",
+    "resumen": "La falla de lectura fuera de límites en el servicio DNS de Windows expone información sensible a través de la red, requiriendo credenciales válidas para su explotación. Afecta a todas las versiones soportadas de Windows Server y cliente, incrementando el riesgo de espionaje interno.",
+    "url_imagen": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MTMzMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/484877",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-119970",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-119970"
+      ]
+    }
+  },
+  {
+    "id": 4126,
+    "fecha": "2026-11-27T21:02:17Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-134963 permite inyección de código en WPMasterToolKit versiones ≤2.26.1 con CVSS 9.9",
+    "resumen": "Vulnerabilidad de control inadecuado de generación de código (code injection) en el plugin WordPress WPMasterToolKit permite a un atacante remoto ejecutar código arbitrario en el servidor web. Afecta a todas las instalaciones que utilicen versiones hasta la 2.26.1, exponiendo datos y comprometiendo la integridad del sitio.",
+    "url_imagen": "https://images.unsplash.com/photo-1509479200622-4503f27f12ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MTMzMzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-134963",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-134963",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-134963"
+      ]
+    }
+  },
+  {
+    "id": 4125,
+    "fecha": "2026-11-27T21:02:10Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "BAJA",
+    "titulo": "pCloud confirma brecha en su gestor de contraseñas tras accesos sospechosos con 2FA activado",
+    "resumen": "Un atacante logró eludir la autenticación de dos factores y acceder a cuentas de pCloud Pass, comprometiendo credenciales almacenadas y potencialmente exponiendo datos sensibles de usuarios. El incidente destaca la necesidad de reforzar la arquitectura de gestión de sesiones y monitorizar dispositivos desconocidos.",
+    "url_imagen": "https://images.unsplash.com/photo-1654375408506-382720d3e05f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MTMzMzB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:pcloud confirms password manager hack after suspicious login alerts",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1556.006",
+        "name": "Multi-Factor Authentication"
+      },
+      {
+        "id": "T1110",
+        "name": "Brute Force"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4124,
     "fecha": "2026-11-27T18:01:34Z",
     "categoria": "IA",
