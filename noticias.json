@@ -1,5 +1,89 @@
 [
   {
+    "id": 4135,
+    "fecha": "2026-11-28T06:01:44Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Vulnerabilidad CVE-2026-135792 permite ejecución remota en Panabit Smart Gateway",
+    "resumen": "La falla en la función send_email_authcode del archivo user.cgi permite inyección de comandos del sistema operativo mediante manipulación del parámetro Username, explotable de forma remota. El exploit ya está disponible públicamente, lo que eleva el riesgo de compromiso total del dispositivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1664179209614-360755a8b21c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4NDU3MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/485002",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-135792",
+    "ttps": [],
+    "iocs": {
+      "cve": [
+        "CVE-2026-135792"
+      ]
+    }
+  },
+  {
+    "id": 4134,
+    "fecha": "2026-11-28T06:01:42Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "CVE-2026-123342 en Adobe Campaign Classic permite ejecución arbitraria de código con privilegios bajos",
+    "resumen": "Vulnerabilidad de Code Injection (CVSS 9.9) en Adobe Campaign Classic permite a un atacante de bajo privilegio ejecutar código arbitrario sin interacción del usuario, ampliando el alcance a nivel de sistema. El vector de ataque se basa en la generación inadecuada de código dentro del motor de la aplicación.",
+    "url_imagen": "https://images.unsplash.com/photo-1605360846282-023d330bad8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4NDU3MDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://nvd.nist.gov/vuln/detail/CVE-2026-123342",
+    "fuente": "NVD (NIST)",
+    "dedup_key": "cve:cve-2026-123342",
+    "ttps": [
+      {
+        "id": "T1203",
+        "name": "Exploitation for Client Execution"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      },
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      },
+      {
+        "id": "T1547.001",
+        "name": "Registry Run Keys / Startup Folder"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-123342"
+      ]
+    }
+  },
+  {
+    "id": 4133,
+    "fecha": "2026-11-28T06:01:36Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Riesgo oculto de máquinas virtuales sin gestión expone brechas críticas en entornos de firewall",
+    "resumen": "Máquinas virtuales olvidadas y servidores sin parches generan puntos ciegos que permiten escalada de privilegios y movimiento lateral, pese a la presencia de firewalls perimetrales. La falta de control centralizado y automatización del ciclo de vida de recursos amplifica la superficie de ataque.",
+    "url_imagen": "https://images.unsplash.com/photo-1585745074026-a798b375ac0f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4NDU2OTZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:your firewall isn t enough the hidden risk of unmanaged vms",
+    "ttps": [
+      {
+        "id": "T1068",
+        "name": "Exploitation for Privilege Escalation"
+      },
+      {
+        "id": "T1021",
+        "name": "Remote Services"
+      },
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4132,
     "fecha": "2026-11-28T03:01:26Z",
     "categoria": "Ciberseguridad",
