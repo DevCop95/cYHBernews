@@ -1,5 +1,42 @@
 [
   {
+    "id": 4132,
+    "fecha": "2026-11-28T03:01:26Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "El Reino Unido pospone el National Cyber Action Plan hasta el 9 de diciembre",
+    "resumen": "El gobierno británico retrasa la publicación del plan estratégico destinado a reforzar la defensa contra hackers estatales y criminales, ahora prevista para el 9 de diciembre. La demora podría afectar la coordinación de medidas de mitigación en sectores críticos.",
+    "url_imagen": "https://images.unsplash.com/photo-1678691683378-15f1da95c21e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MzQ4ODZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://therecord.media/britain-delays-national-cyber-action-plan-again",
+    "fuente": "The Record",
+    "dedup_key": "txt:uk s long awaited national cyber action plan delayed until december",
+    "ttps": [],
+    "iocs": {}
+  },
+  {
+    "id": 4131,
+    "fecha": "2026-11-28T03:01:23Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "MEDIA",
+    "titulo": "Hackers comprometen la plataforma Cloud One de la Fuerza Aérea EE.UU. en nueva brecha federal",
+    "resumen": "Se confirma la intrusión en Cloud One, el entorno de cómputo de la Fuerza Aérea, ampliando la ola de ataques que ha afectado a agencias como FBI, CIA y el Departamento del Tesoro; el vector parece ser credenciales comprometidas y posible movimiento lateral dentro de la infraestructura cloud.",
+    "url_imagen": "https://images.unsplash.com/photo-1561328275-2cfb67933607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MzQ4ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:us air force cloud platform reportedly hacked in latest federal breach",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      },
+      {
+        "id": "T1078.004",
+        "name": "Cloud Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4130,
     "fecha": "2026-11-28T00:02:06Z",
     "categoria": "Ciberseguridad",
