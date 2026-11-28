@@ -1,5 +1,24 @@
 [
   {
+    "id": 4136,
+    "fecha": "2026-11-28T08:08:28Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Hackers comprometen descargas oficiales de Q-Dir y DesktopOK para distribuir malware de acceso remoto",
+    "resumen": "Investigadores de ciberseguridad identificaron una cadena de suministro que inserta binarios maliciosos en los instaladores de Q-Dir y DesktopOK alojados en SoftwareOK, afectando tanto descargas directas como actualizaciones automáticas y permitiendo acceso remoto no autorizado.",
+    "url_imagen": "https://images.unsplash.com/photo-1666615435088-4865bf5ed3fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4NTMzMDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+    "fuente": "The Hacker News",
+    "dedup_key": "txt:hackers trojanize official q dir and desktopok downloads to deliver remote access malware",
+    "ttps": [
+      {
+        "id": "T1195",
+        "name": "Supply Chain Compromise"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4135,
     "fecha": "2026-11-28T06:01:44Z",
     "categoria": "Ciberseguridad",
