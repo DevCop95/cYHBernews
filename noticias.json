@@ -1,5 +1,55 @@
 [
   {
+    "id": 4130,
+    "fecha": "2026-11-28T00:02:06Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "ALTA",
+    "titulo": "Vulnerabilidad CVE-2026-138004 permite command injection remoto en routers TRENDnet TEW-751DR/733GR",
+    "resumen": "La falla en la función soapcgi_main del endpoint UPnP IGD permite inyección de comandos del sistema operativo mediante manipulación del parámetro service, explotable de forma remota. El exploit está públicamente disponible, lo que eleva el riesgo de compromiso total del dispositivo.",
+    "url_imagen": "https://images.unsplash.com/photo-1504139969750-3244f9258fce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MjQxMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://t.me/cveNotify/484890",
+    "fuente": "TG: CVE Notify",
+    "dedup_key": "cve:cve-2026-138004",
+    "ttps": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059.008",
+        "name": "Network Device CLI"
+      },
+      {
+        "id": "T1566.001",
+        "name": "Spearphishing Attachment"
+      }
+    ],
+    "iocs": {
+      "cve": [
+        "CVE-2026-138004"
+      ]
+    }
+  },
+  {
+    "id": 4129,
+    "fecha": "2026-11-28T00:01:58Z",
+    "categoria": "Ciberseguridad",
+    "severidad": "CRITICA",
+    "titulo": "Boston Scientific confirma brecha de datos que expone información personal y médica de pacientes",
+    "resumen": "La compañía de tecnología médica ha notificado a cientos de individuos afectados tras un ataque que comprometió bases de datos con historiales clínicos y datos de identificación. El vector parece ser un acceso no autorizado a sistemas internos, potencialmente mediante credenciales comprometidas.",
+    "url_imagen": "https://images.unsplash.com/photo-1625696825581-166f8343fcda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDA0MzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTU4MjQxMTh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "enlace_original": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+    "fuente": "Bleeping Computer",
+    "dedup_key": "txt:new boston scientific data breach exposes personal medical info",
+    "ttps": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts"
+      }
+    ],
+    "iocs": {}
+  },
+  {
     "id": 4128,
     "fecha": "2026-11-27T23:36:04Z",
     "categoria": "Ciberseguridad",
